@@ -1,0 +1,3490 @@
+{
+  "results": [
+    {
+      "repository": "https://github.com/eclipse/jetty.project.git",
+      "sha1": "4993291af050185295bfe87dadf2f48158f84d31",
+      "url": "https://github.com/eclipse/jetty.project/commit/4993291af050185295bfe87dadf2f48158f84d31",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testForward() : void renamed to public testForwardInContext() : void in class org.eclipse.jetty.servlet.DispatcherTest",
+          "leftSideLocation": {
+            "filePath": "jetty-servlet/src/test/java/org/eclipse/jetty/servlet/DispatcherTest.java",
+            "startLine": 114,
+            "endLine": 130,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-servlet/src/test/java/org/eclipse/jetty/servlet/DispatcherTest.java",
+            "startLine": 125,
+            "endLine": 178,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.eclipse.jetty.servlet.DispatcherTest.AssertForwardServlet renamed to org.eclipse.jetty.servlet.DispatcherTest.DumpForwardServlet",
+          "leftSideLocation": {
+            "filePath": "jetty-servlet/src/test/java/org/eclipse/jetty/servlet/DispatcherTest.java",
+            "startLine": 881,
+            "endLine": 911,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-servlet/src/test/java/org/eclipse/jetty/servlet/DispatcherTest.java",
+            "startLine": 1006,
+            "endLine": 1057,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": false
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testForward() : void renamed to public testForwardInContext() : void in class org.eclipse.jetty.servlet.DispatcherTest",
+          "leftSideLocation": {
+            "filePath": "jetty-servlet/src/test/java/org/eclipse/jetty/servlet/DispatcherTest.java",
+            "startLine": 114,
+            "endLine": 130,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-servlet/src/test/java/org/eclipse/jetty/servlet/DispatcherTest.java",
+            "startLine": 125,
+            "endLine": 178,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/eclipse/jetty.project.git",
+      "sha1": "4916377686107ca94c6d4e55fc390415bf06289e",
+      "url": "https://github.com/eclipse/jetty.project/commit/4916377686107ca94c6d4e55fc390415bf06289e",
+      "ourApproach": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	_exactMap : Index.Mutable<MappedResource<E>> to _exactMap : Map<String,MappedResource<E>> in class org.eclipse.jetty.http.pathmap.PathMappings",
+          "leftSideLocation": {
+            "filePath": "jetty-http/src/main/java/org/eclipse/jetty/http/pathmap/PathMappings.java",
+            "startLine": 46,
+            "endLine": 49,
+            "startColumn": 52,
+            "endColumn": 17
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http/src/main/java/org/eclipse/jetty/http/pathmap/PathMappings.java",
+            "startLine": 54,
+            "endLine": 54,
+            "startColumn": 50,
+            "endColumn": 77
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private getMatchedIteratively(path String) : MatchedResource<E> extracted from public getMatched(path String) : MatchedResource<E> in class org.eclipse.jetty.http.pathmap.PathMappings",
+          "leftSideLocation": {
+            "filePath": "jetty-http/src/main/java/org/eclipse/jetty/http/pathmap/PathMappings.java",
+            "startLine": 148,
+            "endLine": 254,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http/src/main/java/org/eclipse/jetty/http/pathmap/PathMappings.java",
+            "startLine": 242,
+            "endLine": 341,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	_exactMap : Index.Mutable<MappedResource<E>> to _exactMap : Map<String,MappedResource<E>> in class org.eclipse.jetty.http.pathmap.PathMappings",
+          "leftSideLocation": {
+            "filePath": "jetty-http/src/main/java/org/eclipse/jetty/http/pathmap/PathMappings.java",
+            "startLine": 46,
+            "endLine": 49,
+            "startColumn": 52,
+            "endColumn": 17
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http/src/main/java/org/eclipse/jetty/http/pathmap/PathMappings.java",
+            "startLine": 54,
+            "endLine": 54,
+            "startColumn": 50,
+            "endColumn": 77
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private getMatchedIteratively(path String) : MatchedResource<E> extracted from public getMatched(path String) : MatchedResource<E> in class org.eclipse.jetty.http.pathmap.PathMappings",
+          "leftSideLocation": {
+            "filePath": "jetty-http/src/main/java/org/eclipse/jetty/http/pathmap/PathMappings.java",
+            "startLine": 148,
+            "endLine": 254,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http/src/main/java/org/eclipse/jetty/http/pathmap/PathMappings.java",
+            "startLine": 242,
+            "endLine": 341,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/eclipse/jetty.project.git",
+      "sha1": "7e1de8b1e2877663c1ff25b1e3cc15be6de35271",
+      "url": "https://github.com/eclipse/jetty.project/commit/7e1de8b1e2877663c1ff25b1e3cc15be6de35271",
+      "ourApproach": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	public start(configuration Configuration, resolveAlias boolean) : void inlined to public start(configuration Configuration) : void in class org.eclipse.jetty.test.KeyStoreScannerTest",
+          "leftSideLocation": {
+            "filePath": "tests/test-integration/src/test/java/org/eclipse/jetty/test/KeyStoreScannerTest.java",
+            "startLine": 94,
+            "endLine": 113,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "tests/test-integration/src/test/java/org/eclipse/jetty/test/KeyStoreScannerTest.java",
+            "startLine": 90,
+            "endLine": 109,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	public start(configuration Configuration, resolveAlias boolean) : void inlined to public start(configuration Configuration) : void in class org.eclipse.jetty.test.KeyStoreScannerTest",
+          "leftSideLocation": {
+            "filePath": "tests/test-integration/src/test/java/org/eclipse/jetty/test/KeyStoreScannerTest.java",
+            "startLine": 94,
+            "endLine": 113,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "tests/test-integration/src/test/java/org/eclipse/jetty/test/KeyStoreScannerTest.java",
+            "startLine": 90,
+            "endLine": 109,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/eclipse/jetty.project.git",
+      "sha1": "90fe5621f9260ea4df61ff1e341bee204210660f",
+      "url": "https://github.com/eclipse/jetty.project/commit/90fe5621f9260ea4df61ff1e341bee204210660f",
+      "ourApproach": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.eclipse.jetty.security.openid.OpenIdProvider.OpenIdAuthEndpoint renamed to org.eclipse.jetty.security.openid.OpenIdProvider.AuthEndpoint",
+          "leftSideLocation": {
+            "filePath": "jetty-openid/src/test/java/org/eclipse/jetty/security/openid/OpenIdProvider.java",
+            "startLine": 147,
+            "endLine": 253,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-openid/src/test/java/org/eclipse/jetty/security/openid/OpenIdProvider.java",
+            "startLine": 156,
+            "endLine": 262,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.eclipse.jetty.security.openid.OpenIdProvider.OpenIdTokenEndpoint renamed to org.eclipse.jetty.security.openid.OpenIdProvider.TokenEndpoint",
+          "leftSideLocation": {
+            "filePath": "jetty-openid/src/test/java/org/eclipse/jetty/security/openid/OpenIdProvider.java",
+            "startLine": 255,
+            "endLine": 291,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-openid/src/test/java/org/eclipse/jetty/security/openid/OpenIdProvider.java",
+            "startLine": 264,
+            "endLine": 301,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.eclipse.jetty.security.openid.OpenIdProvider.OpenIdConfigServlet renamed to org.eclipse.jetty.security.openid.OpenIdProvider.ConfigServlet",
+          "leftSideLocation": {
+            "filePath": "jetty-openid/src/test/java/org/eclipse/jetty/security/openid/OpenIdProvider.java",
+            "startLine": 293,
+            "endLine": 306,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-openid/src/test/java/org/eclipse/jetty/security/openid/OpenIdProvider.java",
+            "startLine": 334,
+            "endLine": 348,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.eclipse.jetty.security.openid.OpenIdProvider.OpenIdAuthEndpoint renamed to org.eclipse.jetty.security.openid.OpenIdProvider.AuthEndpoint",
+          "leftSideLocation": {
+            "filePath": "jetty-openid/src/test/java/org/eclipse/jetty/security/openid/OpenIdProvider.java",
+            "startLine": 147,
+            "endLine": 253,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-openid/src/test/java/org/eclipse/jetty/security/openid/OpenIdProvider.java",
+            "startLine": 156,
+            "endLine": 262,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.eclipse.jetty.security.openid.OpenIdProvider.OpenIdTokenEndpoint renamed to org.eclipse.jetty.security.openid.OpenIdProvider.TokenEndpoint",
+          "leftSideLocation": {
+            "filePath": "jetty-openid/src/test/java/org/eclipse/jetty/security/openid/OpenIdProvider.java",
+            "startLine": 255,
+            "endLine": 291,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-openid/src/test/java/org/eclipse/jetty/security/openid/OpenIdProvider.java",
+            "startLine": 264,
+            "endLine": 301,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.eclipse.jetty.security.openid.OpenIdProvider.OpenIdConfigServlet renamed to org.eclipse.jetty.security.openid.OpenIdProvider.ConfigServlet",
+          "leftSideLocation": {
+            "filePath": "jetty-openid/src/test/java/org/eclipse/jetty/security/openid/OpenIdProvider.java",
+            "startLine": 293,
+            "endLine": 306,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-openid/src/test/java/org/eclipse/jetty/security/openid/OpenIdProvider.java",
+            "startLine": 334,
+            "endLine": 348,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/eclipse/jetty.project.git",
+      "sha1": "0b3387704008d5f522e577106e1aa366a4efcf23",
+      "url": "https://github.com/eclipse/jetty.project/commit/0b3387704008d5f522e577106e1aa366a4efcf23",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private send(command String, wait int) : String extracted from public execute() : void in class org.eclipse.jetty.maven.plugin.JettyStopMojo",
+          "leftSideLocation": {
+            "filePath": "jetty-maven-plugin/src/main/java/org/eclipse/jetty/maven/plugin/JettyStopMojo.java",
+            "startLine": 65,
+            "endLine": 108,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-maven-plugin/src/main/java/org/eclipse/jetty/maven/plugin/JettyStopMojo.java",
+            "startLine": 183,
+            "endLine": 219,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private send(command String, wait int) : String extracted from public execute() : void in class org.eclipse.jetty.maven.plugin.JettyStopMojo",
+          "leftSideLocation": {
+            "filePath": "jetty-maven-plugin/src/main/java/org/eclipse/jetty/maven/plugin/JettyStopMojo.java",
+            "startLine": 65,
+            "endLine": 108,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-maven-plugin/src/main/java/org/eclipse/jetty/maven/plugin/JettyStopMojo.java",
+            "startLine": 183,
+            "endLine": 219,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/eclipse/jetty.project.git",
+      "sha1": "aadc86d36a46a6aa1970b602d561ee3e3d56a1c9",
+      "url": "https://github.com/eclipse/jetty.project/commit/aadc86d36a46a6aa1970b602d561ee3e3d56a1c9",
+      "ourApproach": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	void to boolean in method public offer(frame Frame, callback Callback) : boolean from class org.eclipse.jetty.http3.internal.ControlFlusher",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-common/src/main/java/org/eclipse/jetty/http3/internal/ControlFlusher.java",
+            "startLine": 54,
+            "endLine": 60,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-common/src/main/java/org/eclipse/jetty/http3/internal/ControlFlusher.java",
+            "startLine": 55,
+            "endLine": 68,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	void to boolean in method public offer(instructions List<Instruction>) : boolean from class org.eclipse.jetty.http3.internal.InstructionFlusher",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-common/src/main/java/org/eclipse/jetty/http3/internal/InstructionFlusher.java",
+            "startLine": 53,
+            "endLine": 59,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-common/src/main/java/org/eclipse/jetty/http3/internal/InstructionFlusher.java",
+            "startLine": 54,
+            "endLine": 64,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	queue : Queue<Entry> to entries : Queue<Entry> in class org.eclipse.jetty.http3.internal.MessageFlusher",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-common/src/main/java/org/eclipse/jetty/http3/internal/MessageFlusher.java",
+            "startLine": 37,
+            "endLine": 37,
+            "startColumn": 32,
+            "endColumn": 58
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-common/src/main/java/org/eclipse/jetty/http3/internal/MessageFlusher.java",
+            "startLine": 37,
+            "endLine": 37,
+            "startColumn": 32,
+            "endColumn": 60
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	void to boolean in method public offer(endPoint QuicStreamEndPoint, frame Frame, callback Callback) : boolean from class org.eclipse.jetty.http3.internal.MessageFlusher",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-common/src/main/java/org/eclipse/jetty/http3/internal/MessageFlusher.java",
+            "startLine": 48,
+            "endLine": 54,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-common/src/main/java/org/eclipse/jetty/http3/internal/MessageFlusher.java",
+            "startLine": 48,
+            "endLine": 55,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private fail(x Throwable) : void renamed to public failed(x Throwable) : void in class org.eclipse.jetty.http3.internal.MessageFlusher",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-common/src/main/java/org/eclipse/jetty/http3/internal/MessageFlusher.java",
+            "startLine": 101,
+            "endLine": 110,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-common/src/main/java/org/eclipse/jetty/http3/internal/MessageFlusher.java",
+            "startLine": 105,
+            "endLine": 118,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	void to boolean in method public offer(frame Frame, callback Callback) : boolean from class org.eclipse.jetty.http3.internal.ControlFlusher",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-common/src/main/java/org/eclipse/jetty/http3/internal/ControlFlusher.java",
+            "startLine": 54,
+            "endLine": 60,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-common/src/main/java/org/eclipse/jetty/http3/internal/ControlFlusher.java",
+            "startLine": 55,
+            "endLine": 68,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	void to boolean in method public offer(instructions List<Instruction>) : boolean from class org.eclipse.jetty.http3.internal.InstructionFlusher",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-common/src/main/java/org/eclipse/jetty/http3/internal/InstructionFlusher.java",
+            "startLine": 53,
+            "endLine": 59,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-common/src/main/java/org/eclipse/jetty/http3/internal/InstructionFlusher.java",
+            "startLine": 54,
+            "endLine": 64,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private fail(x Throwable) : void renamed to public failed(x Throwable) : void in class org.eclipse.jetty.http3.internal.MessageFlusher",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-common/src/main/java/org/eclipse/jetty/http3/internal/MessageFlusher.java",
+            "startLine": 101,
+            "endLine": 110,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-common/src/main/java/org/eclipse/jetty/http3/internal/MessageFlusher.java",
+            "startLine": 105,
+            "endLine": 118,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	void to boolean in method public offer(endPoint QuicStreamEndPoint, frame Frame, callback Callback) : boolean from class org.eclipse.jetty.http3.internal.MessageFlusher",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-common/src/main/java/org/eclipse/jetty/http3/internal/MessageFlusher.java",
+            "startLine": 48,
+            "endLine": 54,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-common/src/main/java/org/eclipse/jetty/http3/internal/MessageFlusher.java",
+            "startLine": 48,
+            "endLine": 55,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	queue : Queue<Entry> to entries : Queue<Entry> in class org.eclipse.jetty.http3.internal.MessageFlusher",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-common/src/main/java/org/eclipse/jetty/http3/internal/MessageFlusher.java",
+            "startLine": 37,
+            "endLine": 37,
+            "startColumn": 32,
+            "endColumn": 58
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-common/src/main/java/org/eclipse/jetty/http3/internal/MessageFlusher.java",
+            "startLine": 37,
+            "endLine": 37,
+            "startColumn": 32,
+            "endColumn": 60
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/eclipse/jetty.project.git",
+      "sha1": "b937a31b72eb7e42093613a6a7434bcf15397773",
+      "url": "https://github.com/eclipse/jetty.project/commit/b937a31b72eb7e42093613a6a7434bcf15397773",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public getProducer() : Runnable renamed to public getProducerTask() : Runnable in class org.eclipse.jetty.quic.client.ClientProtocolSession",
+          "leftSideLocation": {
+            "filePath": "jetty-quic/quic-client/src/main/java/org/eclipse/jetty/quic/client/ClientProtocolSession.java",
+            "startLine": 71,
+            "endLine": 75,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-quic/quic-client/src/main/java/org/eclipse/jetty/quic/client/ClientProtocolSession.java",
+            "startLine": 71,
+            "endLine": 75,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public abstract getProducer() : Runnable renamed to public abstract getProducerTask() : Runnable in class org.eclipse.jetty.quic.common.ProtocolSession",
+          "leftSideLocation": {
+            "filePath": "jetty-quic/quic-common/src/main/java/org/eclipse/jetty/quic/common/ProtocolSession.java",
+            "startLine": 52,
+            "endLine": 52,
+            "startColumn": 5,
+            "endColumn": 44
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-quic/quic-common/src/main/java/org/eclipse/jetty/quic/common/ProtocolSession.java",
+            "startLine": 52,
+            "endLine": 52,
+            "startColumn": 5,
+            "endColumn": 48
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public getProducer() : Runnable renamed to public getProducerTask() : Runnable in class org.eclipse.jetty.quic.server.ServerProtocolSession",
+          "leftSideLocation": {
+            "filePath": "jetty-quic/quic-server/src/main/java/org/eclipse/jetty/quic/server/ServerProtocolSession.java",
+            "startLine": 64,
+            "endLine": 68,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-quic/quic-server/src/main/java/org/eclipse/jetty/quic/server/ServerProtocolSession.java",
+            "startLine": 64,
+            "endLine": 68,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	public produce() : void inlined to public onFillable() : void in class org.eclipse.jetty.quic.common.QuicConnection",
+          "leftSideLocation": {
+            "filePath": "jetty-quic/quic-common/src/main/java/org/eclipse/jetty/quic/common/QuicConnection.java",
+            "startLine": 160,
+            "endLine": 163,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-quic/quic-common/src/main/java/org/eclipse/jetty/quic/common/QuicConnection.java",
+            "startLine": 152,
+            "endLine": 156,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public getProducer() : Runnable renamed to public getProducerTask() : Runnable in class org.eclipse.jetty.quic.client.ClientProtocolSession",
+          "leftSideLocation": {
+            "filePath": "jetty-quic/quic-client/src/main/java/org/eclipse/jetty/quic/client/ClientProtocolSession.java",
+            "startLine": 71,
+            "endLine": 75,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-quic/quic-client/src/main/java/org/eclipse/jetty/quic/client/ClientProtocolSession.java",
+            "startLine": 71,
+            "endLine": 75,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	public produce() : void inlined to public onFillable() : void in class org.eclipse.jetty.quic.common.QuicConnection",
+          "leftSideLocation": {
+            "filePath": "jetty-quic/quic-common/src/main/java/org/eclipse/jetty/quic/common/QuicConnection.java",
+            "startLine": 160,
+            "endLine": 163,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-quic/quic-common/src/main/java/org/eclipse/jetty/quic/common/QuicConnection.java",
+            "startLine": 152,
+            "endLine": 156,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public getProducer() : Runnable renamed to public getProducerTask() : Runnable in class org.eclipse.jetty.quic.server.ServerProtocolSession",
+          "leftSideLocation": {
+            "filePath": "jetty-quic/quic-server/src/main/java/org/eclipse/jetty/quic/server/ServerProtocolSession.java",
+            "startLine": 64,
+            "endLine": 68,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-quic/quic-server/src/main/java/org/eclipse/jetty/quic/server/ServerProtocolSession.java",
+            "startLine": 64,
+            "endLine": 68,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public abstract getProducer() : Runnable renamed to public abstract getProducerTask() : Runnable in class org.eclipse.jetty.quic.common.ProtocolSession",
+          "leftSideLocation": {
+            "filePath": "jetty-quic/quic-common/src/main/java/org/eclipse/jetty/quic/common/ProtocolSession.java",
+            "startLine": 52,
+            "endLine": 52,
+            "startColumn": 5,
+            "endColumn": 44
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-quic/quic-common/src/main/java/org/eclipse/jetty/quic/common/ProtocolSession.java",
+            "startLine": 52,
+            "endLine": 52,
+            "startColumn": 5,
+            "endColumn": 48
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/eclipse/jetty.project.git",
+      "sha1": "4eaff8e8808534800609352cf09a5919178dc803",
+      "url": "https://github.com/eclipse/jetty.project/commit/4eaff8e8808534800609352cf09a5919178dc803",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testRequestHasHTTP2Version() : void renamed to public testRequestHasHTTP3Version() : void in class org.eclipse.jetty.http3.tests.HttpClientTransportOverHTTP3Test",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-tests/src/test/java/org/eclipse/jetty/http3/tests/HttpClientTransportOverHTTP3Test.java",
+            "startLine": 41,
+            "endLine": 65,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-tests/src/test/java/org/eclipse/jetty/http3/tests/HttpClientTransportOverHTTP3Test.java",
+            "startLine": 41,
+            "endLine": 65,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public process() : void renamed to public produce() : void in class org.eclipse.jetty.quic.common.ProtocolSession",
+          "leftSideLocation": {
+            "filePath": "jetty-quic/quic-common/src/main/java/org/eclipse/jetty/quic/common/ProtocolSession.java",
+            "startLine": 52,
+            "endLine": 57,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-quic/quic-common/src/main/java/org/eclipse/jetty/quic/common/ProtocolSession.java",
+            "startLine": 54,
+            "endLine": 59,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.eclipse.jetty.quic.server.ServerQuicConnection.QuicProducer moved to org.eclipse.jetty.quic.common.QuicConnection.QuicProducer",
+          "leftSideLocation": {
+            "filePath": "jetty-quic/quic-server/src/main/java/org/eclipse/jetty/quic/server/ServerQuicConnection.java",
+            "startLine": 140,
+            "endLine": 147,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-quic/quic-common/src/main/java/org/eclipse/jetty/quic/common/QuicConnection.java",
+            "startLine": 291,
+            "endLine": 298,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.eclipse.jetty.quic.server.ServerQuicConnection.QuicProducer moved to org.eclipse.jetty.quic.common.QuicConnection.QuicProducer",
+          "leftSideLocation": {
+            "filePath": "jetty-quic/quic-server/src/main/java/org/eclipse/jetty/quic/server/ServerQuicConnection.java",
+            "startLine": 140,
+            "endLine": 147,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-quic/quic-common/src/main/java/org/eclipse/jetty/quic/common/QuicConnection.java",
+            "startLine": 291,
+            "endLine": 298,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testRequestHasHTTP2Version() : void renamed to public testRequestHasHTTP3Version() : void in class org.eclipse.jetty.http3.tests.HttpClientTransportOverHTTP3Test",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-tests/src/test/java/org/eclipse/jetty/http3/tests/HttpClientTransportOverHTTP3Test.java",
+            "startLine": 41,
+            "endLine": 65,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-tests/src/test/java/org/eclipse/jetty/http3/tests/HttpClientTransportOverHTTP3Test.java",
+            "startLine": 41,
+            "endLine": 65,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public process() : void renamed to public produce() : void in class org.eclipse.jetty.quic.common.ProtocolSession",
+          "leftSideLocation": {
+            "filePath": "jetty-quic/quic-common/src/main/java/org/eclipse/jetty/quic/common/ProtocolSession.java",
+            "startLine": 52,
+            "endLine": 57,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-quic/quic-common/src/main/java/org/eclipse/jetty/quic/common/ProtocolSession.java",
+            "startLine": 54,
+            "endLine": 59,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/eclipse/jetty.project.git",
+      "sha1": "16a91b04a8f236d31aaf94866c0136235c206c8d",
+      "url": "https://github.com/eclipse/jetty.project/commit/16a91b04a8f236d31aaf94866c0136235c206c8d",
+      "ourApproach": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	_quicheConfig : QuicheConfig to quicheConfig : QuicheConfig in class org.eclipse.jetty.quic.server.QuicServerConnector",
+          "leftSideLocation": {
+            "filePath": "jetty-quic/quic-server/src/main/java/org/eclipse/jetty/quic/server/QuicServerConnector.java",
+            "startLine": 45,
+            "endLine": 45,
+            "startColumn": 32,
+            "endColumn": 66
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-quic/quic-server/src/main/java/org/eclipse/jetty/quic/server/QuicServerConnector.java",
+            "startLine": 45,
+            "endLine": 45,
+            "startColumn": 32,
+            "endColumn": 65
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	_sslContextFactory : SslContextFactory.Server to sslContextFactory : SslContextFactory.Server in class org.eclipse.jetty.quic.server.QuicServerConnector",
+          "leftSideLocation": {
+            "filePath": "jetty-quic/quic-server/src/main/java/org/eclipse/jetty/quic/server/QuicServerConnector.java",
+            "startLine": 44,
+            "endLine": 44,
+            "startColumn": 44,
+            "endColumn": 62
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-quic/quic-server/src/main/java/org/eclipse/jetty/quic/server/QuicServerConnector.java",
+            "startLine": 44,
+            "endLine": 44,
+            "startColumn": 44,
+            "endColumn": 61
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	_localPort : int to localPort : int in class org.eclipse.jetty.quic.server.QuicServerConnector",
+          "leftSideLocation": {
+            "filePath": "jetty-quic/quic-server/src/main/java/org/eclipse/jetty/quic/server/QuicServerConnector.java",
+            "startLine": 47,
+            "endLine": 47,
+            "startColumn": 26,
+            "endColumn": 41
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-quic/quic-server/src/main/java/org/eclipse/jetty/quic/server/QuicServerConnector.java",
+            "startLine": 47,
+            "endLine": 47,
+            "startColumn": 26,
+            "endColumn": 40
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	_manager : ServerDatagramSelectorManager to selectorManager : ServerDatagramSelectorManager in class org.eclipse.jetty.quic.server.QuicServerConnector",
+          "leftSideLocation": {
+            "filePath": "jetty-quic/quic-server/src/main/java/org/eclipse/jetty/quic/server/QuicServerConnector.java",
+            "startLine": 43,
+            "endLine": 43,
+            "startColumn": 49,
+            "endColumn": 57
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-quic/quic-server/src/main/java/org/eclipse/jetty/quic/server/QuicServerConnector.java",
+            "startLine": 43,
+            "endLine": 43,
+            "startColumn": 49,
+            "endColumn": 64
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	_datagramChannel : DatagramChannel to datagramChannel : DatagramChannel in class org.eclipse.jetty.quic.server.QuicServerConnector",
+          "leftSideLocation": {
+            "filePath": "jetty-quic/quic-server/src/main/java/org/eclipse/jetty/quic/server/QuicServerConnector.java",
+            "startLine": 46,
+            "endLine": 46,
+            "startColumn": 38,
+            "endColumn": 54
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-quic/quic-server/src/main/java/org/eclipse/jetty/quic/server/QuicServerConnector.java",
+            "startLine": 46,
+            "endLine": 46,
+            "startColumn": 38,
+            "endColumn": 53
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	_manager : ServerDatagramSelectorManager to selectorManager : ServerDatagramSelectorManager in class org.eclipse.jetty.quic.server.QuicServerConnector",
+          "leftSideLocation": {
+            "filePath": "jetty-quic/quic-server/src/main/java/org/eclipse/jetty/quic/server/QuicServerConnector.java",
+            "startLine": 43,
+            "endLine": 43,
+            "startColumn": 49,
+            "endColumn": 57
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-quic/quic-server/src/main/java/org/eclipse/jetty/quic/server/QuicServerConnector.java",
+            "startLine": 43,
+            "endLine": 43,
+            "startColumn": 49,
+            "endColumn": 64
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	_sslContextFactory : SslContextFactory.Server to sslContextFactory : SslContextFactory.Server in class org.eclipse.jetty.quic.server.QuicServerConnector",
+          "leftSideLocation": {
+            "filePath": "jetty-quic/quic-server/src/main/java/org/eclipse/jetty/quic/server/QuicServerConnector.java",
+            "startLine": 44,
+            "endLine": 44,
+            "startColumn": 44,
+            "endColumn": 62
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-quic/quic-server/src/main/java/org/eclipse/jetty/quic/server/QuicServerConnector.java",
+            "startLine": 44,
+            "endLine": 44,
+            "startColumn": 44,
+            "endColumn": 61
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	_datagramChannel : DatagramChannel to datagramChannel : DatagramChannel in class org.eclipse.jetty.quic.server.QuicServerConnector",
+          "leftSideLocation": {
+            "filePath": "jetty-quic/quic-server/src/main/java/org/eclipse/jetty/quic/server/QuicServerConnector.java",
+            "startLine": 46,
+            "endLine": 46,
+            "startColumn": 38,
+            "endColumn": 54
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-quic/quic-server/src/main/java/org/eclipse/jetty/quic/server/QuicServerConnector.java",
+            "startLine": 46,
+            "endLine": 46,
+            "startColumn": 38,
+            "endColumn": 53
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	_quicheConfig : QuicheConfig to quicheConfig : QuicheConfig in class org.eclipse.jetty.quic.server.QuicServerConnector",
+          "leftSideLocation": {
+            "filePath": "jetty-quic/quic-server/src/main/java/org/eclipse/jetty/quic/server/QuicServerConnector.java",
+            "startLine": 45,
+            "endLine": 45,
+            "startColumn": 32,
+            "endColumn": 66
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-quic/quic-server/src/main/java/org/eclipse/jetty/quic/server/QuicServerConnector.java",
+            "startLine": 45,
+            "endLine": 45,
+            "startColumn": 32,
+            "endColumn": 65
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	_localPort : int to localPort : int in class org.eclipse.jetty.quic.server.QuicServerConnector",
+          "leftSideLocation": {
+            "filePath": "jetty-quic/quic-server/src/main/java/org/eclipse/jetty/quic/server/QuicServerConnector.java",
+            "startLine": 47,
+            "endLine": 47,
+            "startColumn": 26,
+            "endColumn": 41
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-quic/quic-server/src/main/java/org/eclipse/jetty/quic/server/QuicServerConnector.java",
+            "startLine": 47,
+            "endLine": 47,
+            "startColumn": 26,
+            "endColumn": 40
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/eclipse/jetty.project.git",
+      "sha1": "f061cc41db254fef49be9dcfbed65531029e5b71",
+      "url": "https://github.com/eclipse/jetty.project/commit/f061cc41db254fef49be9dcfbed65531029e5b71",
+      "ourApproach": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	applicationSession : HTTP3SessionClient to session : HTTP3SessionClient in class org.eclipse.jetty.http3.client.internal.ClientHTTP3Session",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-client/src/main/java/org/eclipse/jetty/http3/client/internal/ClientHTTP3Session.java",
+            "startLine": 47,
+            "endLine": 47,
+            "startColumn": 38,
+            "endColumn": 56
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-client/src/main/java/org/eclipse/jetty/http3/client/internal/ClientHTTP3Session.java",
+            "startLine": 47,
+            "endLine": 47,
+            "startColumn": 38,
+            "endColumn": 45
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	applicationSession : HTTP3SessionServer to session : HTTP3SessionServer in class org.eclipse.jetty.http3.server.internal.ServerHTTP3Session",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-server/src/main/java/org/eclipse/jetty/http3/server/internal/ServerHTTP3Session.java",
+            "startLine": 46,
+            "endLine": 46,
+            "startColumn": 38,
+            "endColumn": 56
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-server/src/main/java/org/eclipse/jetty/http3/server/internal/ServerHTTP3Session.java",
+            "startLine": 46,
+            "endLine": 46,
+            "startColumn": 38,
+            "endColumn": 45
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	applicationSession : HTTP3SessionClient to session : HTTP3SessionClient in class org.eclipse.jetty.http3.client.internal.ClientHTTP3Session",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-client/src/main/java/org/eclipse/jetty/http3/client/internal/ClientHTTP3Session.java",
+            "startLine": 47,
+            "endLine": 47,
+            "startColumn": 38,
+            "endColumn": 56
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-client/src/main/java/org/eclipse/jetty/http3/client/internal/ClientHTTP3Session.java",
+            "startLine": 47,
+            "endLine": 47,
+            "startColumn": 38,
+            "endColumn": 45
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	applicationSession : HTTP3SessionServer to session : HTTP3SessionServer in class org.eclipse.jetty.http3.server.internal.ServerHTTP3Session",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-server/src/main/java/org/eclipse/jetty/http3/server/internal/ServerHTTP3Session.java",
+            "startLine": 46,
+            "endLine": 46,
+            "startColumn": 38,
+            "endColumn": 56
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-server/src/main/java/org/eclipse/jetty/http3/server/internal/ServerHTTP3Session.java",
+            "startLine": 46,
+            "endLine": 46,
+            "startColumn": 38,
+            "endColumn": 45
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/eclipse/jetty.project.git",
+      "sha1": "7fc3faecaf4d0414c39cbb8b776337718000928d",
+      "url": "https://github.com/eclipse/jetty.project/commit/7fc3faecaf4d0414c39cbb8b776337718000928d",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public parseInstructionBuffer(buffer ByteBuffer) : void renamed to public parseInstructions(buffer ByteBuffer) : void in class org.eclipse.jetty.http3.qpack.QpackDecoder",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/QpackDecoder.java",
+            "startLine": 169,
+            "endLine": 195,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/QpackDecoder.java",
+            "startLine": 169,
+            "endLine": 195,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public parseInstructionBuffer(buffer ByteBuffer) : void renamed to public parseInstructions(buffer ByteBuffer) : void in class org.eclipse.jetty.http3.qpack.QpackEncoder",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/QpackEncoder.java",
+            "startLine": 212,
+            "endLine": 237,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/QpackEncoder.java",
+            "startLine": 212,
+            "endLine": 237,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public parseInstructionBuffer(buffer ByteBuffer) : void renamed to public parseInstructions(buffer ByteBuffer) : void in class org.eclipse.jetty.http3.qpack.QpackDecoder",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/QpackDecoder.java",
+            "startLine": 169,
+            "endLine": 195,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/QpackDecoder.java",
+            "startLine": 169,
+            "endLine": 195,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public parseInstructionBuffer(buffer ByteBuffer) : void renamed to public parseInstructions(buffer ByteBuffer) : void in class org.eclipse.jetty.http3.qpack.QpackEncoder",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/QpackEncoder.java",
+            "startLine": 212,
+            "endLine": 237,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/QpackEncoder.java",
+            "startLine": 212,
+            "endLine": 237,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/eclipse/jetty.project.git",
+      "sha1": "a092078668adc808a022d7f9856da62d7bd57926",
+      "url": "https://github.com/eclipse/jetty.project/commit/a092078668adc808a022d7f9856da62d7bd57926",
+      "ourApproach": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private libQuiche() : LibQuiche inlined to private iterableStreamIds(write boolean) : List<Long> in class org.eclipse.jetty.quic.quiche.QuicheConnection",
+          "leftSideLocation": {
+            "filePath": "jetty-quic/quic-quiche/src/main/java/org/eclipse/jetty/quic/quiche/QuicheConnection.java",
+            "startLine": 533,
+            "endLine": 538,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-quic/quic-quiche/src/main/java/org/eclipse/jetty/quic/quiche/QuicheConnection.java",
+            "startLine": 339,
+            "endLine": 361,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private libQuiche() : LibQuiche inlined to public isConnectionClosed() : boolean in class org.eclipse.jetty.quic.quiche.QuicheConnection",
+          "leftSideLocation": {
+            "filePath": "jetty-quic/quic-quiche/src/main/java/org/eclipse/jetty/quic/quiche/QuicheConnection.java",
+            "startLine": 533,
+            "endLine": 538,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-quic/quic-quiche/src/main/java/org/eclipse/jetty/quic/quiche/QuicheConnection.java",
+            "startLine": 416,
+            "endLine": 424,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private libQuiche() : LibQuiche inlined to public isConnectionEstablished() : boolean in class org.eclipse.jetty.quic.quiche.QuicheConnection",
+          "leftSideLocation": {
+            "filePath": "jetty-quic/quic-quiche/src/main/java/org/eclipse/jetty/quic/quiche/QuicheConnection.java",
+            "startLine": 533,
+            "endLine": 538,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-quic/quic-quiche/src/main/java/org/eclipse/jetty/quic/quiche/QuicheConnection.java",
+            "startLine": 426,
+            "endLine": 434,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private libQuiche() : LibQuiche inlined to public isConnectionInEarlyData() : boolean in class org.eclipse.jetty.quic.quiche.QuicheConnection",
+          "leftSideLocation": {
+            "filePath": "jetty-quic/quic-quiche/src/main/java/org/eclipse/jetty/quic/quiche/QuicheConnection.java",
+            "startLine": 533,
+            "endLine": 538,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-quic/quic-quiche/src/main/java/org/eclipse/jetty/quic/quiche/QuicheConnection.java",
+            "startLine": 436,
+            "endLine": 444,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private libQuiche() : LibQuiche inlined to public nextTimeout() : long in class org.eclipse.jetty.quic.quiche.QuicheConnection",
+          "leftSideLocation": {
+            "filePath": "jetty-quic/quic-quiche/src/main/java/org/eclipse/jetty/quic/quiche/QuicheConnection.java",
+            "startLine": 533,
+            "endLine": 538,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-quic/quic-quiche/src/main/java/org/eclipse/jetty/quic/quiche/QuicheConnection.java",
+            "startLine": 446,
+            "endLine": 454,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private libQuiche() : LibQuiche inlined to public onTimeout() : void in class org.eclipse.jetty.quic.quiche.QuicheConnection",
+          "leftSideLocation": {
+            "filePath": "jetty-quic/quic-quiche/src/main/java/org/eclipse/jetty/quic/quiche/QuicheConnection.java",
+            "startLine": 533,
+            "endLine": 538,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-quic/quic-quiche/src/main/java/org/eclipse/jetty/quic/quiche/QuicheConnection.java",
+            "startLine": 456,
+            "endLine": 464,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private libQuiche() : LibQuiche inlined to public getNegotiatedProtocol() : String in class org.eclipse.jetty.quic.quiche.QuicheConnection",
+          "leftSideLocation": {
+            "filePath": "jetty-quic/quic-quiche/src/main/java/org/eclipse/jetty/quic/quiche/QuicheConnection.java",
+            "startLine": 533,
+            "endLine": 538,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-quic/quic-quiche/src/main/java/org/eclipse/jetty/quic/quiche/QuicheConnection.java",
+            "startLine": 466,
+            "endLine": 477,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private libQuiche() : LibQuiche inlined to public statistics() : String in class org.eclipse.jetty.quic.quiche.QuicheConnection",
+          "leftSideLocation": {
+            "filePath": "jetty-quic/quic-quiche/src/main/java/org/eclipse/jetty/quic/quiche/QuicheConnection.java",
+            "startLine": 533,
+            "endLine": 538,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-quic/quic-quiche/src/main/java/org/eclipse/jetty/quic/quiche/QuicheConnection.java",
+            "startLine": 479,
+            "endLine": 495,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private libQuiche() : LibQuiche inlined to public close() : boolean in class org.eclipse.jetty.quic.quiche.QuicheConnection",
+          "leftSideLocation": {
+            "filePath": "jetty-quic/quic-quiche/src/main/java/org/eclipse/jetty/quic/quiche/QuicheConnection.java",
+            "startLine": 533,
+            "endLine": 538,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-quic/quic-quiche/src/main/java/org/eclipse/jetty/quic/quiche/QuicheConnection.java",
+            "startLine": 497,
+            "endLine": 510,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private libQuiche() : LibQuiche inlined to public isDraining() : boolean in class org.eclipse.jetty.quic.quiche.QuicheConnection",
+          "leftSideLocation": {
+            "filePath": "jetty-quic/quic-quiche/src/main/java/org/eclipse/jetty/quic/quiche/QuicheConnection.java",
+            "startLine": 533,
+            "endLine": 538,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-quic/quic-quiche/src/main/java/org/eclipse/jetty/quic/quiche/QuicheConnection.java",
+            "startLine": 525,
+            "endLine": 533,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private libQuiche() : LibQuiche inlined to public windowCapacity() : long in class org.eclipse.jetty.quic.quiche.QuicheConnection",
+          "leftSideLocation": {
+            "filePath": "jetty-quic/quic-quiche/src/main/java/org/eclipse/jetty/quic/quiche/QuicheConnection.java",
+            "startLine": 533,
+            "endLine": 538,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-quic/quic-quiche/src/main/java/org/eclipse/jetty/quic/quiche/QuicheConnection.java",
+            "startLine": 535,
+            "endLine": 545,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private libQuiche() : LibQuiche inlined to public windowCapacity(streamId long) : long in class org.eclipse.jetty.quic.quiche.QuicheConnection",
+          "leftSideLocation": {
+            "filePath": "jetty-quic/quic-quiche/src/main/java/org/eclipse/jetty/quic/quiche/QuicheConnection.java",
+            "startLine": 533,
+            "endLine": 538,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-quic/quic-quiche/src/main/java/org/eclipse/jetty/quic/quiche/QuicheConnection.java",
+            "startLine": 547,
+            "endLine": 558,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private libQuiche() : LibQuiche inlined to public shutdownStream(streamId long, writeSide boolean) : void in class org.eclipse.jetty.quic.quiche.QuicheConnection",
+          "leftSideLocation": {
+            "filePath": "jetty-quic/quic-quiche/src/main/java/org/eclipse/jetty/quic/quiche/QuicheConnection.java",
+            "startLine": 533,
+            "endLine": 538,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-quic/quic-quiche/src/main/java/org/eclipse/jetty/quic/quiche/QuicheConnection.java",
+            "startLine": 560,
+            "endLine": 572,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private libQuiche() : LibQuiche inlined to public feedFinForStream(streamId long) : void in class org.eclipse.jetty.quic.quiche.QuicheConnection",
+          "leftSideLocation": {
+            "filePath": "jetty-quic/quic-quiche/src/main/java/org/eclipse/jetty/quic/quiche/QuicheConnection.java",
+            "startLine": 533,
+            "endLine": 538,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-quic/quic-quiche/src/main/java/org/eclipse/jetty/quic/quiche/QuicheConnection.java",
+            "startLine": 574,
+            "endLine": 586,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private libQuiche() : LibQuiche inlined to public feedClearTextForStream(streamId long, buffer ByteBuffer) : int in class org.eclipse.jetty.quic.quiche.QuicheConnection",
+          "leftSideLocation": {
+            "filePath": "jetty-quic/quic-quiche/src/main/java/org/eclipse/jetty/quic/quiche/QuicheConnection.java",
+            "startLine": 533,
+            "endLine": 538,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-quic/quic-quiche/src/main/java/org/eclipse/jetty/quic/quiche/QuicheConnection.java",
+            "startLine": 588,
+            "endLine": 602,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private libQuiche() : LibQuiche inlined to public drainClearTextForStream(streamId long, buffer ByteBuffer) : int in class org.eclipse.jetty.quic.quiche.QuicheConnection",
+          "leftSideLocation": {
+            "filePath": "jetty-quic/quic-quiche/src/main/java/org/eclipse/jetty/quic/quiche/QuicheConnection.java",
+            "startLine": 533,
+            "endLine": 538,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-quic/quic-quiche/src/main/java/org/eclipse/jetty/quic/quiche/QuicheConnection.java",
+            "startLine": 604,
+            "endLine": 619,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private libQuiche() : LibQuiche inlined to public isStreamFinished(streamId long) : boolean in class org.eclipse.jetty.quic.quiche.QuicheConnection",
+          "leftSideLocation": {
+            "filePath": "jetty-quic/quic-quiche/src/main/java/org/eclipse/jetty/quic/quiche/QuicheConnection.java",
+            "startLine": 533,
+            "endLine": 538,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-quic/quic-quiche/src/main/java/org/eclipse/jetty/quic/quiche/QuicheConnection.java",
+            "startLine": 621,
+            "endLine": 629,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private libQuiche() : LibQuiche inlined to private iterableStreamIds(write boolean) : List<Long> in class org.eclipse.jetty.quic.quiche.QuicheConnection",
+          "leftSideLocation": {
+            "filePath": "jetty-quic/quic-quiche/src/main/java/org/eclipse/jetty/quic/quiche/QuicheConnection.java",
+            "startLine": 533,
+            "endLine": 538,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-quic/quic-quiche/src/main/java/org/eclipse/jetty/quic/quiche/QuicheConnection.java",
+            "startLine": 339,
+            "endLine": 361,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private libQuiche() : LibQuiche inlined to public isConnectionClosed() : boolean in class org.eclipse.jetty.quic.quiche.QuicheConnection",
+          "leftSideLocation": {
+            "filePath": "jetty-quic/quic-quiche/src/main/java/org/eclipse/jetty/quic/quiche/QuicheConnection.java",
+            "startLine": 533,
+            "endLine": 538,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-quic/quic-quiche/src/main/java/org/eclipse/jetty/quic/quiche/QuicheConnection.java",
+            "startLine": 416,
+            "endLine": 424,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private libQuiche() : LibQuiche inlined to public isConnectionEstablished() : boolean in class org.eclipse.jetty.quic.quiche.QuicheConnection",
+          "leftSideLocation": {
+            "filePath": "jetty-quic/quic-quiche/src/main/java/org/eclipse/jetty/quic/quiche/QuicheConnection.java",
+            "startLine": 533,
+            "endLine": 538,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-quic/quic-quiche/src/main/java/org/eclipse/jetty/quic/quiche/QuicheConnection.java",
+            "startLine": 426,
+            "endLine": 434,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private libQuiche() : LibQuiche inlined to public isConnectionInEarlyData() : boolean in class org.eclipse.jetty.quic.quiche.QuicheConnection",
+          "leftSideLocation": {
+            "filePath": "jetty-quic/quic-quiche/src/main/java/org/eclipse/jetty/quic/quiche/QuicheConnection.java",
+            "startLine": 533,
+            "endLine": 538,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-quic/quic-quiche/src/main/java/org/eclipse/jetty/quic/quiche/QuicheConnection.java",
+            "startLine": 436,
+            "endLine": 444,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private libQuiche() : LibQuiche inlined to public nextTimeout() : long in class org.eclipse.jetty.quic.quiche.QuicheConnection",
+          "leftSideLocation": {
+            "filePath": "jetty-quic/quic-quiche/src/main/java/org/eclipse/jetty/quic/quiche/QuicheConnection.java",
+            "startLine": 533,
+            "endLine": 538,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-quic/quic-quiche/src/main/java/org/eclipse/jetty/quic/quiche/QuicheConnection.java",
+            "startLine": 446,
+            "endLine": 454,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private libQuiche() : LibQuiche inlined to public onTimeout() : void in class org.eclipse.jetty.quic.quiche.QuicheConnection",
+          "leftSideLocation": {
+            "filePath": "jetty-quic/quic-quiche/src/main/java/org/eclipse/jetty/quic/quiche/QuicheConnection.java",
+            "startLine": 533,
+            "endLine": 538,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-quic/quic-quiche/src/main/java/org/eclipse/jetty/quic/quiche/QuicheConnection.java",
+            "startLine": 456,
+            "endLine": 464,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private libQuiche() : LibQuiche inlined to public getNegotiatedProtocol() : String in class org.eclipse.jetty.quic.quiche.QuicheConnection",
+          "leftSideLocation": {
+            "filePath": "jetty-quic/quic-quiche/src/main/java/org/eclipse/jetty/quic/quiche/QuicheConnection.java",
+            "startLine": 533,
+            "endLine": 538,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-quic/quic-quiche/src/main/java/org/eclipse/jetty/quic/quiche/QuicheConnection.java",
+            "startLine": 466,
+            "endLine": 477,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private libQuiche() : LibQuiche inlined to public statistics() : String in class org.eclipse.jetty.quic.quiche.QuicheConnection",
+          "leftSideLocation": {
+            "filePath": "jetty-quic/quic-quiche/src/main/java/org/eclipse/jetty/quic/quiche/QuicheConnection.java",
+            "startLine": 533,
+            "endLine": 538,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-quic/quic-quiche/src/main/java/org/eclipse/jetty/quic/quiche/QuicheConnection.java",
+            "startLine": 479,
+            "endLine": 495,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private libQuiche() : LibQuiche inlined to public close() : boolean in class org.eclipse.jetty.quic.quiche.QuicheConnection",
+          "leftSideLocation": {
+            "filePath": "jetty-quic/quic-quiche/src/main/java/org/eclipse/jetty/quic/quiche/QuicheConnection.java",
+            "startLine": 533,
+            "endLine": 538,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-quic/quic-quiche/src/main/java/org/eclipse/jetty/quic/quiche/QuicheConnection.java",
+            "startLine": 497,
+            "endLine": 510,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private libQuiche() : LibQuiche inlined to public isDraining() : boolean in class org.eclipse.jetty.quic.quiche.QuicheConnection",
+          "leftSideLocation": {
+            "filePath": "jetty-quic/quic-quiche/src/main/java/org/eclipse/jetty/quic/quiche/QuicheConnection.java",
+            "startLine": 533,
+            "endLine": 538,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-quic/quic-quiche/src/main/java/org/eclipse/jetty/quic/quiche/QuicheConnection.java",
+            "startLine": 525,
+            "endLine": 533,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private libQuiche() : LibQuiche inlined to public windowCapacity() : long in class org.eclipse.jetty.quic.quiche.QuicheConnection",
+          "leftSideLocation": {
+            "filePath": "jetty-quic/quic-quiche/src/main/java/org/eclipse/jetty/quic/quiche/QuicheConnection.java",
+            "startLine": 533,
+            "endLine": 538,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-quic/quic-quiche/src/main/java/org/eclipse/jetty/quic/quiche/QuicheConnection.java",
+            "startLine": 535,
+            "endLine": 545,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private libQuiche() : LibQuiche inlined to public windowCapacity(streamId long) : long in class org.eclipse.jetty.quic.quiche.QuicheConnection",
+          "leftSideLocation": {
+            "filePath": "jetty-quic/quic-quiche/src/main/java/org/eclipse/jetty/quic/quiche/QuicheConnection.java",
+            "startLine": 533,
+            "endLine": 538,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-quic/quic-quiche/src/main/java/org/eclipse/jetty/quic/quiche/QuicheConnection.java",
+            "startLine": 547,
+            "endLine": 558,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private libQuiche() : LibQuiche inlined to public shutdownStream(streamId long, writeSide boolean) : void in class org.eclipse.jetty.quic.quiche.QuicheConnection",
+          "leftSideLocation": {
+            "filePath": "jetty-quic/quic-quiche/src/main/java/org/eclipse/jetty/quic/quiche/QuicheConnection.java",
+            "startLine": 533,
+            "endLine": 538,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-quic/quic-quiche/src/main/java/org/eclipse/jetty/quic/quiche/QuicheConnection.java",
+            "startLine": 560,
+            "endLine": 572,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private libQuiche() : LibQuiche inlined to public feedFinForStream(streamId long) : void in class org.eclipse.jetty.quic.quiche.QuicheConnection",
+          "leftSideLocation": {
+            "filePath": "jetty-quic/quic-quiche/src/main/java/org/eclipse/jetty/quic/quiche/QuicheConnection.java",
+            "startLine": 533,
+            "endLine": 538,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-quic/quic-quiche/src/main/java/org/eclipse/jetty/quic/quiche/QuicheConnection.java",
+            "startLine": 574,
+            "endLine": 586,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private libQuiche() : LibQuiche inlined to public feedClearTextForStream(streamId long, buffer ByteBuffer) : int in class org.eclipse.jetty.quic.quiche.QuicheConnection",
+          "leftSideLocation": {
+            "filePath": "jetty-quic/quic-quiche/src/main/java/org/eclipse/jetty/quic/quiche/QuicheConnection.java",
+            "startLine": 533,
+            "endLine": 538,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-quic/quic-quiche/src/main/java/org/eclipse/jetty/quic/quiche/QuicheConnection.java",
+            "startLine": 588,
+            "endLine": 602,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private libQuiche() : LibQuiche inlined to public drainClearTextForStream(streamId long, buffer ByteBuffer) : int in class org.eclipse.jetty.quic.quiche.QuicheConnection",
+          "leftSideLocation": {
+            "filePath": "jetty-quic/quic-quiche/src/main/java/org/eclipse/jetty/quic/quiche/QuicheConnection.java",
+            "startLine": 533,
+            "endLine": 538,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-quic/quic-quiche/src/main/java/org/eclipse/jetty/quic/quiche/QuicheConnection.java",
+            "startLine": 604,
+            "endLine": 619,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private libQuiche() : LibQuiche inlined to public isStreamFinished(streamId long) : boolean in class org.eclipse.jetty.quic.quiche.QuicheConnection",
+          "leftSideLocation": {
+            "filePath": "jetty-quic/quic-quiche/src/main/java/org/eclipse/jetty/quic/quiche/QuicheConnection.java",
+            "startLine": 533,
+            "endLine": 538,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-quic/quic-quiche/src/main/java/org/eclipse/jetty/quic/quiche/QuicheConnection.java",
+            "startLine": 621,
+            "endLine": 629,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/eclipse/jetty.project.git",
+      "sha1": "f6958de4b2d67639279f663e850d912c075b8a83",
+      "url": "https://github.com/eclipse/jetty.project/commit/f6958de4b2d67639279f663e850d912c075b8a83",
+      "ourApproach": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	apiSession : HTTP3Session to apiSession : HTTP3SessionServer in class org.eclipse.jetty.http3.server.internal.ServerHTTP3Session",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-server/src/main/java/org/eclipse/jetty/http3/server/internal/ServerHTTP3Session.java",
+            "startLine": 47,
+            "endLine": 47,
+            "startColumn": 32,
+            "endColumn": 42
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-server/src/main/java/org/eclipse/jetty/http3/server/internal/ServerHTTP3Session.java",
+            "startLine": 41,
+            "endLine": 41,
+            "startColumn": 38,
+            "endColumn": 48
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	endPoint : EndPoint to endPoint : QuicStreamEndPoint in class org.eclipse.jetty.http3.internal.InstructionFlusher",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-common/src/main/java/org/eclipse/jetty/http3/internal/InstructionFlusher.java",
+            "startLine": 34,
+            "endLine": 34,
+            "startColumn": 28,
+            "endColumn": 36
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-common/src/main/java/org/eclipse/jetty/http3/internal/InstructionFlusher.java",
+            "startLine": 38,
+            "endLine": 38,
+            "startColumn": 38,
+            "endColumn": 46
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	endPoint : EndPoint to endPoint : QuicStreamEndPoint in class org.eclipse.jetty.http3.internal.ControlFlusher",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-common/src/main/java/org/eclipse/jetty/http3/internal/ControlFlusher.java",
+            "startLine": 42,
+            "endLine": 42,
+            "startColumn": 28,
+            "endColumn": 36
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-common/src/main/java/org/eclipse/jetty/http3/internal/ControlFlusher.java",
+            "startLine": 42,
+            "endLine": 42,
+            "startColumn": 38,
+            "endColumn": 46
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private initializeControlStream() : void inlined to public onOpen() : void in class org.eclipse.jetty.http3.client.internal.ClientHTTP3Session",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-client/src/main/java/org/eclipse/jetty/http3/client/internal/ClientHTTP3Session.java",
+            "startLine": 104,
+            "endLine": 120,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-client/src/main/java/org/eclipse/jetty/http3/client/internal/ClientHTTP3Session.java",
+            "startLine": 89,
+            "endLine": 102,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private initializeControlStream() : void inlined to public onOpen() : void in class org.eclipse.jetty.http3.server.internal.ServerHTTP3Session",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-server/src/main/java/org/eclipse/jetty/http3/server/internal/ServerHTTP3Session.java",
+            "startLine": 97,
+            "endLine": 113,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-server/src/main/java/org/eclipse/jetty/http3/server/internal/ServerHTTP3Session.java",
+            "startLine": 79,
+            "endLine": 90,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private initializeControlStream() : void inlined to public onOpen() : void in class org.eclipse.jetty.http3.client.internal.ClientHTTP3Session",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-client/src/main/java/org/eclipse/jetty/http3/client/internal/ClientHTTP3Session.java",
+            "startLine": 104,
+            "endLine": 120,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-client/src/main/java/org/eclipse/jetty/http3/client/internal/ClientHTTP3Session.java",
+            "startLine": 89,
+            "endLine": 102,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	endPoint : EndPoint to endPoint : QuicStreamEndPoint in class org.eclipse.jetty.http3.internal.ControlFlusher",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-common/src/main/java/org/eclipse/jetty/http3/internal/ControlFlusher.java",
+            "startLine": 42,
+            "endLine": 42,
+            "startColumn": 28,
+            "endColumn": 36
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-common/src/main/java/org/eclipse/jetty/http3/internal/ControlFlusher.java",
+            "startLine": 42,
+            "endLine": 42,
+            "startColumn": 38,
+            "endColumn": 46
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private notifyPreface() : Map<Long,Long> extracted from public onPreface() : Map<Long,Long> in class org.eclipse.jetty.http3.internal.HTTP3Session",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-common/src/main/java/org/eclipse/jetty/http3/internal/HTTP3Session.java",
+            "startLine": 38,
+            "endLine": 41,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-common/src/main/java/org/eclipse/jetty/http3/internal/HTTP3Session.java",
+            "startLine": 61,
+            "endLine": 72,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": false
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	endPoint : EndPoint to endPoint : QuicStreamEndPoint in class org.eclipse.jetty.http3.internal.InstructionFlusher",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-common/src/main/java/org/eclipse/jetty/http3/internal/InstructionFlusher.java",
+            "startLine": 34,
+            "endLine": 34,
+            "startColumn": 28,
+            "endColumn": 36
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-common/src/main/java/org/eclipse/jetty/http3/internal/InstructionFlusher.java",
+            "startLine": 38,
+            "endLine": 38,
+            "startColumn": 38,
+            "endColumn": 46
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	apiSession : HTTP3Session to apiSession : HTTP3SessionServer in class org.eclipse.jetty.http3.server.internal.ServerHTTP3Session",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-server/src/main/java/org/eclipse/jetty/http3/server/internal/ServerHTTP3Session.java",
+            "startLine": 47,
+            "endLine": 47,
+            "startColumn": 32,
+            "endColumn": 42
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-server/src/main/java/org/eclipse/jetty/http3/server/internal/ServerHTTP3Session.java",
+            "startLine": 41,
+            "endLine": 41,
+            "startColumn": 38,
+            "endColumn": 48
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private initializeControlStream() : void inlined to public onOpen() : void in class org.eclipse.jetty.http3.server.internal.ServerHTTP3Session",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-server/src/main/java/org/eclipse/jetty/http3/server/internal/ServerHTTP3Session.java",
+            "startLine": 97,
+            "endLine": 113,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-server/src/main/java/org/eclipse/jetty/http3/server/internal/ServerHTTP3Session.java",
+            "startLine": 79,
+            "endLine": 90,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/eclipse/jetty.project.git",
+      "sha1": "80d2cee238787db739c045c1a338bcc4f9e1bf0f",
+      "url": "https://github.com/eclipse/jetty.project/commit/80d2cee238787db739c045c1a338bcc4f9e1bf0f",
+      "ourApproach": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	_instructionList : Queue<Instruction> to _instructionList : LinkedList<Instruction> in class org.eclipse.jetty.http3.qpack.TestDecoderHandler",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/test/java/org/eclipse/jetty/http3/qpack/TestDecoderHandler.java",
+            "startLine": 25,
+            "endLine": 25,
+            "startColumn": 38,
+            "endColumn": 75
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/test/java/org/eclipse/jetty/http3/qpack/TestDecoderHandler.java",
+            "startLine": 25,
+            "endLine": 25,
+            "startColumn": 43,
+            "endColumn": 80
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	_metadataList : Queue<MetaData> to _metadataList : LinkedList<MetaData> in class org.eclipse.jetty.http3.qpack.TestDecoderHandler",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/test/java/org/eclipse/jetty/http3/qpack/TestDecoderHandler.java",
+            "startLine": 24,
+            "endLine": 24,
+            "startColumn": 35,
+            "endColumn": 69
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/test/java/org/eclipse/jetty/http3/qpack/TestDecoderHandler.java",
+            "startLine": 24,
+            "endLine": 24,
+            "startColumn": 40,
+            "endColumn": 74
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.eclipse.jetty.http3.qpack.internal.util.NBitLongEncoder renamed to org.eclipse.jetty.http3.qpack.internal.util.NBitIntegerEncoder",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/internal/util/NBitLongEncoder.java",
+            "startLine": 18,
+            "endLine": 104,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/internal/util/NBitIntegerEncoder.java",
+            "startLine": 18,
+            "endLine": 104,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	streamCancellations : Queue<Integer> to streamCancellations : Queue<Long> in class org.eclipse.jetty.http3.qpack.EncoderParserDebugHandler",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/test/java/org/eclipse/jetty/http3/qpack/EncoderParserDebugHandler.java",
+            "startLine": 24,
+            "endLine": 24,
+            "startColumn": 27,
+            "endColumn": 67
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/test/java/org/eclipse/jetty/http3/qpack/EncoderParserDebugHandler.java",
+            "startLine": 24,
+            "endLine": 24,
+            "startColumn": 24,
+            "endColumn": 64
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	_total : int to _total : long in class org.eclipse.jetty.http3.qpack.internal.util.NBitIntegerParser",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/internal/util/NBitIntegerParser.java",
+            "startLine": 21,
+            "endLine": 21,
+            "startColumn": 17,
+            "endColumn": 23
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/internal/util/NBitIntegerParser.java",
+            "startLine": 21,
+            "endLine": 21,
+            "startColumn": 18,
+            "endColumn": 24
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	sectionAcknowledgements : Queue<Integer> to sectionAcknowledgements : Queue<Long> in class org.eclipse.jetty.http3.qpack.EncoderParserDebugHandler",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/test/java/org/eclipse/jetty/http3/qpack/EncoderParserDebugHandler.java",
+            "startLine": 23,
+            "endLine": 23,
+            "startColumn": 27,
+            "endColumn": 71
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/test/java/org/eclipse/jetty/http3/qpack/EncoderParserDebugHandler.java",
+            "startLine": 23,
+            "endLine": 23,
+            "startColumn": 24,
+            "endColumn": 68
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	_streamId : int to _streamId : long in class org.eclipse.jetty.http3.qpack.internal.StreamInfo",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/internal/StreamInfo.java",
+            "startLine": 26,
+            "endLine": 26,
+            "startColumn": 23,
+            "endColumn": 32
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/internal/StreamInfo.java",
+            "startLine": 26,
+            "endLine": 26,
+            "startColumn": 24,
+            "endColumn": 33
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	_instructionList : Queue<Instruction> to _instructionList : LinkedList<Instruction> in class org.eclipse.jetty.http3.qpack.TestEncoderHandler",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/test/java/org/eclipse/jetty/http3/qpack/TestEncoderHandler.java",
+            "startLine": 22,
+            "endLine": 22,
+            "startColumn": 38,
+            "endColumn": 75
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/test/java/org/eclipse/jetty/http3/qpack/TestEncoderHandler.java",
+            "startLine": 22,
+            "endLine": 22,
+            "startColumn": 43,
+            "endColumn": 80
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	int to long in method public getStreamId() : long from class org.eclipse.jetty.http3.qpack.internal.StreamInfo",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/internal/StreamInfo.java",
+            "startLine": 34,
+            "endLine": 37,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/internal/StreamInfo.java",
+            "startLine": 34,
+            "endLine": 37,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	_multiplier : int to _multiplier : long in class org.eclipse.jetty.http3.qpack.internal.util.NBitIntegerParser",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/internal/util/NBitIntegerParser.java",
+            "startLine": 22,
+            "endLine": 22,
+            "startColumn": 17,
+            "endColumn": 28
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/internal/util/NBitIntegerParser.java",
+            "startLine": 22,
+            "endLine": 22,
+            "startColumn": 18,
+            "endColumn": 29
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public decode(buffer ByteBuffer) : int renamed to public decodeInt(buffer ByteBuffer) : int in class org.eclipse.jetty.http3.qpack.internal.util.NBitIntegerParser",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/internal/util/NBitIntegerParser.java",
+            "startLine": 32,
+            "endLine": 67,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/internal/util/NBitIntegerParser.java",
+            "startLine": 32,
+            "endLine": 35,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	_streamInfoMap : Map<Integer,StreamInfo> to _streamInfoMap : Map<Long,StreamInfo> in class org.eclipse.jetty.http3.qpack.QpackEncoder",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/QpackEncoder.java",
+            "startLine": 88,
+            "endLine": 88,
+            "startColumn": 44,
+            "endColumn": 76
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/QpackEncoder.java",
+            "startLine": 88,
+            "endLine": 88,
+            "startColumn": 41,
+            "endColumn": 73
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.eclipse.jetty.http3.qpack.QpackDecoder.MetaDataNotification from Class org.eclipse.jetty.http3.qpack.QpackDecoder",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/QpackDecoder.java",
+            "startLine": 37,
+            "endLine": 276,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/QpackDecoder.java",
+            "startLine": 54,
+            "endLine": 71,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private notifyInstructionHandler() : void extracted from public decode(streamId long, buffer ByteBuffer, handler Handler) : boolean in class org.eclipse.jetty.http3.qpack.QpackDecoder",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/QpackDecoder.java",
+            "startLine": 75,
+            "endLine": 131,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/QpackDecoder.java",
+            "startLine": 267,
+            "endLine": 272,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private notifyInstructionHandler() : void extracted from package insert(field HttpField) : boolean in class org.eclipse.jetty.http3.qpack.QpackEncoder",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/QpackEncoder.java",
+            "startLine": 126,
+            "endLine": 164,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/QpackEncoder.java",
+            "startLine": 404,
+            "endLine": 409,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private notifyInstructionHandler() : void extracted from public encode(buffer ByteBuffer, streamId int, metadata MetaData) : void in class org.eclipse.jetty.http3.qpack.QpackEncoder",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/QpackEncoder.java",
+            "startLine": 166,
+            "endLine": 235,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/QpackEncoder.java",
+            "startLine": 404,
+            "endLine": 409,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	public decodeLong(buffer ByteBuffer) : long extracted from public decode(buffer ByteBuffer) : int in class org.eclipse.jetty.http3.qpack.internal.util.NBitIntegerParser",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/internal/util/NBitIntegerParser.java",
+            "startLine": 32,
+            "endLine": 67,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/internal/util/NBitIntegerParser.java",
+            "startLine": 37,
+            "endLine": 72,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.eclipse.jetty.http3.qpack.internal.util.NBitLongEncoder renamed to org.eclipse.jetty.http3.qpack.internal.util.NBitIntegerEncoder",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/internal/util/NBitLongEncoder.java",
+            "startLine": 18,
+            "endLine": 104,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/internal/util/NBitIntegerEncoder.java",
+            "startLine": 18,
+            "endLine": 104,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package parseInstruction(buffer ByteBuffer) : void renamed to public parseInstructionBuffer(buffer ByteBuffer) : void in class org.eclipse.jetty.http3.qpack.QpackDecoder",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/QpackDecoder.java",
+            "startLine": 133,
+            "endLine": 136,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/QpackDecoder.java",
+            "startLine": 146,
+            "endLine": 155,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": false
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private notifyInstructionHandler() : void extracted from public decode(streamId long, buffer ByteBuffer, handler Handler) : boolean in class org.eclipse.jetty.http3.qpack.QpackDecoder",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/QpackDecoder.java",
+            "startLine": 75,
+            "endLine": 131,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/QpackDecoder.java",
+            "startLine": 267,
+            "endLine": 272,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public parseInstruction(buffer ByteBuffer) : void renamed to public parseInstructionBuffer(buffer ByteBuffer) : void in class org.eclipse.jetty.http3.qpack.QpackEncoder",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/QpackEncoder.java",
+            "startLine": 121,
+            "endLine": 124,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/QpackEncoder.java",
+            "startLine": 121,
+            "endLine": 128,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": false
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	_streamInfoMap : Map<Integer,StreamInfo> to _streamInfoMap : Map<Long,StreamInfo> in class org.eclipse.jetty.http3.qpack.QpackEncoder",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/QpackEncoder.java",
+            "startLine": 88,
+            "endLine": 88,
+            "startColumn": 44,
+            "endColumn": 76
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/QpackEncoder.java",
+            "startLine": 88,
+            "endLine": 88,
+            "startColumn": 41,
+            "endColumn": 73
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private notifyInstructionHandler() : void extracted from package insert(field HttpField) : boolean in class org.eclipse.jetty.http3.qpack.QpackEncoder",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/QpackEncoder.java",
+            "startLine": 126,
+            "endLine": 164,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/QpackEncoder.java",
+            "startLine": 404,
+            "endLine": 409,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private notifyInstructionHandler() : void extracted from public encode(buffer ByteBuffer, streamId int, metadata MetaData) : void in class org.eclipse.jetty.http3.qpack.QpackEncoder",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/QpackEncoder.java",
+            "startLine": 166,
+            "endLine": 235,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/QpackEncoder.java",
+            "startLine": 404,
+            "endLine": 409,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	_streamId : int to _streamId : long in class org.eclipse.jetty.http3.qpack.internal.StreamInfo",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/internal/StreamInfo.java",
+            "startLine": 26,
+            "endLine": 26,
+            "startColumn": 23,
+            "endColumn": 32
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/internal/StreamInfo.java",
+            "startLine": 26,
+            "endLine": 26,
+            "startColumn": 24,
+            "endColumn": 33
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	int to long in method public getStreamId() : long from class org.eclipse.jetty.http3.qpack.internal.StreamInfo",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/internal/StreamInfo.java",
+            "startLine": 34,
+            "endLine": 37,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/internal/StreamInfo.java",
+            "startLine": 34,
+            "endLine": 37,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public decode(buffer ByteBuffer) : int renamed to public decodeLong(buffer ByteBuffer) : long in class org.eclipse.jetty.http3.qpack.internal.util.NBitIntegerParser",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/internal/util/NBitIntegerParser.java",
+            "startLine": 32,
+            "endLine": 67,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/internal/util/NBitIntegerParser.java",
+            "startLine": 37,
+            "endLine": 72,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": false
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	_total : int to _total : long in class org.eclipse.jetty.http3.qpack.internal.util.NBitIntegerParser",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/internal/util/NBitIntegerParser.java",
+            "startLine": 21,
+            "endLine": 21,
+            "startColumn": 17,
+            "endColumn": 23
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/internal/util/NBitIntegerParser.java",
+            "startLine": 21,
+            "endLine": 21,
+            "startColumn": 18,
+            "endColumn": 24
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	_multiplier : int to _multiplier : long in class org.eclipse.jetty.http3.qpack.internal.util.NBitIntegerParser",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/internal/util/NBitIntegerParser.java",
+            "startLine": 22,
+            "endLine": 22,
+            "startColumn": 17,
+            "endColumn": 28
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/internal/util/NBitIntegerParser.java",
+            "startLine": 22,
+            "endLine": 22,
+            "startColumn": 18,
+            "endColumn": 29
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	int to long in method public decodeLong(buffer ByteBuffer) : long from class org.eclipse.jetty.http3.qpack.internal.util.NBitIntegerParser",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/internal/util/NBitIntegerParser.java",
+            "startLine": 32,
+            "endLine": 67,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/internal/util/NBitIntegerParser.java",
+            "startLine": 37,
+            "endLine": 72,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": false
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	sectionAcknowledgements : Queue<Integer> to sectionAcknowledgements : Queue<Long> in class org.eclipse.jetty.http3.qpack.EncoderParserDebugHandler",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/test/java/org/eclipse/jetty/http3/qpack/EncoderParserDebugHandler.java",
+            "startLine": 23,
+            "endLine": 23,
+            "startColumn": 27,
+            "endColumn": 71
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/test/java/org/eclipse/jetty/http3/qpack/EncoderParserDebugHandler.java",
+            "startLine": 23,
+            "endLine": 23,
+            "startColumn": 24,
+            "endColumn": 68
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	streamCancellations : Queue<Integer> to streamCancellations : Queue<Long> in class org.eclipse.jetty.http3.qpack.EncoderParserDebugHandler",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/test/java/org/eclipse/jetty/http3/qpack/EncoderParserDebugHandler.java",
+            "startLine": 24,
+            "endLine": 24,
+            "startColumn": 27,
+            "endColumn": 67
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/test/java/org/eclipse/jetty/http3/qpack/EncoderParserDebugHandler.java",
+            "startLine": 24,
+            "endLine": 24,
+            "startColumn": 24,
+            "endColumn": 64
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	_metadataList : Queue<MetaData> to _metadataList : LinkedList<MetaData> in class org.eclipse.jetty.http3.qpack.TestDecoderHandler",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/test/java/org/eclipse/jetty/http3/qpack/TestDecoderHandler.java",
+            "startLine": 24,
+            "endLine": 24,
+            "startColumn": 35,
+            "endColumn": 69
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/test/java/org/eclipse/jetty/http3/qpack/TestDecoderHandler.java",
+            "startLine": 24,
+            "endLine": 24,
+            "startColumn": 40,
+            "endColumn": 74
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	_instructionList : Queue<Instruction> to _instructionList : LinkedList<Instruction> in class org.eclipse.jetty.http3.qpack.TestDecoderHandler",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/test/java/org/eclipse/jetty/http3/qpack/TestDecoderHandler.java",
+            "startLine": 25,
+            "endLine": 25,
+            "startColumn": 38,
+            "endColumn": 75
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/test/java/org/eclipse/jetty/http3/qpack/TestDecoderHandler.java",
+            "startLine": 25,
+            "endLine": 25,
+            "startColumn": 43,
+            "endColumn": 80
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	_instructionList : Queue<Instruction> to _instructionList : LinkedList<Instruction> in class org.eclipse.jetty.http3.qpack.TestEncoderHandler",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/test/java/org/eclipse/jetty/http3/qpack/TestEncoderHandler.java",
+            "startLine": 22,
+            "endLine": 22,
+            "startColumn": 38,
+            "endColumn": 75
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/test/java/org/eclipse/jetty/http3/qpack/TestEncoderHandler.java",
+            "startLine": 22,
+            "endLine": 22,
+            "startColumn": 43,
+            "endColumn": 80
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.eclipse.jetty.http3.qpack.QpackDecoder.MetaDataNotification from class org.eclipse.jetty.http3.qpack.QpackDecoder",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/QpackDecoder.java",
+            "startLine": 37,
+            "endLine": 276,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/QpackDecoder.java",
+            "startLine": 54,
+            "endLine": 71,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/eclipse/jetty.project.git",
+      "sha1": "4bdcfff94c54b0ad48497f79c2b86995964f8820",
+      "url": "https://github.com/eclipse/jetty.project/commit/4bdcfff94c54b0ad48497f79c2b86995964f8820",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private parseLiteralFieldLineWithLiteralName(buffer ByteBuffer) : EncodedField renamed to private parseLiteralField(buffer ByteBuffer) : EncodedField in class org.eclipse.jetty.http3.qpack.internal.parser.EncodedFieldSection",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/internal/parser/EncodedFieldSection.java",
+            "startLine": 117,
+            "endLine": 133,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/internal/parser/EncodedFieldSection.java",
+            "startLine": 152,
+            "endLine": 168,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private parseIndexedFieldLine(buffer ByteBuffer) : EncodedField renamed to private parseIndexedField(buffer ByteBuffer) : EncodedField in class org.eclipse.jetty.http3.qpack.internal.parser.EncodedFieldSection",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/internal/parser/EncodedFieldSection.java",
+            "startLine": 87,
+            "endLine": 96,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/internal/parser/EncodedFieldSection.java",
+            "startLine": 92,
+            "endLine": 101,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private parseIndexFieldLineWithPostBaseIndex(buffer ByteBuffer) : EncodedField renamed to private parseIndexedFieldPostBase(buffer ByteBuffer) : EncodedField in class org.eclipse.jetty.http3.qpack.internal.parser.EncodedFieldSection",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/internal/parser/EncodedFieldSection.java",
+            "startLine": 153,
+            "endLine": 161,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/internal/parser/EncodedFieldSection.java",
+            "startLine": 103,
+            "endLine": 111,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private parseLiteralFieldLineWithPostBaseNameReference(buffer ByteBuffer) : EncodedField renamed to private parseNameReferencePostBase(buffer ByteBuffer) : EncodedField in class org.eclipse.jetty.http3.qpack.internal.parser.EncodedFieldSection",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/internal/parser/EncodedFieldSection.java",
+            "startLine": 135,
+            "endLine": 151,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/internal/parser/EncodedFieldSection.java",
+            "startLine": 134,
+            "endLine": 150,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private parseLiteralFieldLineWithNameReference(buffer ByteBuffer) : EncodedField renamed to private parseNameReference(buffer ByteBuffer) : EncodedField in class org.eclipse.jetty.http3.qpack.internal.parser.EncodedFieldSection",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/internal/parser/EncodedFieldSection.java",
+            "startLine": 98,
+            "endLine": 115,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/internal/parser/EncodedFieldSection.java",
+            "startLine": 113,
+            "endLine": 132,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private parseIndexedFieldLine(buffer ByteBuffer) : EncodedField renamed to private parseIndexedField(buffer ByteBuffer) : EncodedField in class org.eclipse.jetty.http3.qpack.internal.parser.EncodedFieldSection",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/internal/parser/EncodedFieldSection.java",
+            "startLine": 87,
+            "endLine": 96,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/internal/parser/EncodedFieldSection.java",
+            "startLine": 92,
+            "endLine": 101,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private parseLiteralFieldLineWithNameReference(buffer ByteBuffer) : EncodedField renamed to private parseNameReference(buffer ByteBuffer) : EncodedField in class org.eclipse.jetty.http3.qpack.internal.parser.EncodedFieldSection",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/internal/parser/EncodedFieldSection.java",
+            "startLine": 98,
+            "endLine": 115,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/internal/parser/EncodedFieldSection.java",
+            "startLine": 113,
+            "endLine": 132,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private parseLiteralFieldLineWithLiteralName(buffer ByteBuffer) : EncodedField renamed to private parseLiteralField(buffer ByteBuffer) : EncodedField in class org.eclipse.jetty.http3.qpack.internal.parser.EncodedFieldSection",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/internal/parser/EncodedFieldSection.java",
+            "startLine": 117,
+            "endLine": 133,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/internal/parser/EncodedFieldSection.java",
+            "startLine": 152,
+            "endLine": 168,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private parseLiteralFieldLineWithPostBaseNameReference(buffer ByteBuffer) : EncodedField renamed to private parseNameReferencePostBase(buffer ByteBuffer) : EncodedField in class org.eclipse.jetty.http3.qpack.internal.parser.EncodedFieldSection",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/internal/parser/EncodedFieldSection.java",
+            "startLine": 135,
+            "endLine": 151,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/internal/parser/EncodedFieldSection.java",
+            "startLine": 134,
+            "endLine": 150,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private parseIndexFieldLineWithPostBaseIndex(buffer ByteBuffer) : EncodedField renamed to private parseIndexedFieldPostBase(buffer ByteBuffer) : EncodedField in class org.eclipse.jetty.http3.qpack.internal.parser.EncodedFieldSection",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/internal/parser/EncodedFieldSection.java",
+            "startLine": 153,
+            "endLine": 161,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/internal/parser/EncodedFieldSection.java",
+            "startLine": 103,
+            "endLine": 111,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/eclipse/jetty.project.git",
+      "sha1": "7c34d3c0cd32d601e90bde6fde2f974cea28803a",
+      "url": "https://github.com/eclipse/jetty.project/commit/7c34d3c0cd32d601e90bde6fde2f974cea28803a",
+      "ourApproach": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	__staticTableByHeader : StaticEntry[] to _staticTableByHeader : StaticEntry[] in class org.eclipse.jetty.http3.qpack.table.StaticTable",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/table/StaticTable.java",
+            "startLine": 88,
+            "endLine": 88,
+            "startColumn": 33,
+            "endColumn": 100
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/table/StaticTable.java",
+            "startLine": 101,
+            "endLine": 101,
+            "startColumn": 33,
+            "endColumn": 99
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	__staticTable : StaticEntry[] to _staticTable : StaticEntry[] in class org.eclipse.jetty.http3.qpack.table.StaticTable",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/table/StaticTable.java",
+            "startLine": 89,
+            "endLine": 89,
+            "startColumn": 33,
+            "endColumn": 85
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/table/StaticTable.java",
+            "startLine": 102,
+            "endLine": 102,
+            "startColumn": 33,
+            "endColumn": 84
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	__staticFieldMap : Map<HttpField,Entry> to _staticFieldMap : Map<HttpField,Entry> in class org.eclipse.jetty.http3.qpack.table.StaticTable",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/table/StaticTable.java",
+            "startLine": 86,
+            "endLine": 86,
+            "startColumn": 41,
+            "endColumn": 75
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/table/StaticTable.java",
+            "startLine": 99,
+            "endLine": 99,
+            "startColumn": 41,
+            "endColumn": 74
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	__staticNameMap : Index<StaticEntry> to _staticNameMap : Index<StaticEntry> in class org.eclipse.jetty.http3.qpack.table.StaticTable",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/table/StaticTable.java",
+            "startLine": 87,
+            "endLine": 87,
+            "startColumn": 38,
+            "endColumn": 53
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/table/StaticTable.java",
+            "startLine": 100,
+            "endLine": 100,
+            "startColumn": 38,
+            "endColumn": 52
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	__staticTable : StaticEntry[] to _staticTable : StaticEntry[] in class org.eclipse.jetty.http3.qpack.table.StaticTable",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/table/StaticTable.java",
+            "startLine": 89,
+            "endLine": 89,
+            "startColumn": 33,
+            "endColumn": 85
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/table/StaticTable.java",
+            "startLine": 102,
+            "endLine": 102,
+            "startColumn": 33,
+            "endColumn": 84
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	__staticFieldMap : Map<HttpField,Entry> to _staticFieldMap : Map<HttpField,Entry> in class org.eclipse.jetty.http3.qpack.table.StaticTable",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/table/StaticTable.java",
+            "startLine": 86,
+            "endLine": 86,
+            "startColumn": 41,
+            "endColumn": 75
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/table/StaticTable.java",
+            "startLine": 99,
+            "endLine": 99,
+            "startColumn": 41,
+            "endColumn": 74
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	__staticNameMap : Index<StaticEntry> to _staticNameMap : Index<StaticEntry> in class org.eclipse.jetty.http3.qpack.table.StaticTable",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/table/StaticTable.java",
+            "startLine": 87,
+            "endLine": 87,
+            "startColumn": 38,
+            "endColumn": 53
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/table/StaticTable.java",
+            "startLine": 100,
+            "endLine": 100,
+            "startColumn": 38,
+            "endColumn": 52
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	__staticTableByHeader : StaticEntry[] to _staticTableByHeader : StaticEntry[] in class org.eclipse.jetty.http3.qpack.table.StaticTable",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/table/StaticTable.java",
+            "startLine": 88,
+            "endLine": 88,
+            "startColumn": 33,
+            "endColumn": 100
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/table/StaticTable.java",
+            "startLine": 101,
+            "endLine": 101,
+            "startColumn": 33,
+            "endColumn": 99
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/eclipse/jetty.project.git",
+      "sha1": "5d07842af88dca685fefebf2cd285da3d8578d1b",
+      "url": "https://github.com/eclipse/jetty.project/commit/5d07842af88dca685fefebf2cd285da3d8578d1b",
+      "ourApproach": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	__staticTable : StaticEntry[] to __staticTable : StaticTable in class org.eclipse.jetty.http3.qpack.QpackContext",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/QpackContext.java",
+            "startLine": 113,
+            "endLine": 113,
+            "startColumn": 40,
+            "endColumn": 92
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/QpackContext.java",
+            "startLine": 38,
+            "endLine": 38,
+            "startColumn": 38,
+            "endColumn": 71
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.eclipse.jetty.http3.qpack.StaticTable from Class org.eclipse.jetty.http3.qpack.QpackContext",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/QpackContext.java",
+            "startLine": 32,
+            "endLine": 497,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/StaticTable.java",
+            "startLine": 14,
+            "endLine": 182,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	__staticTable : StaticEntry[] to __staticTable : StaticTable in class org.eclipse.jetty.http3.qpack.QpackContext",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/QpackContext.java",
+            "startLine": 113,
+            "endLine": 113,
+            "startColumn": 40,
+            "endColumn": 92
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/QpackContext.java",
+            "startLine": 38,
+            "endLine": 38,
+            "startColumn": 38,
+            "endColumn": 71
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.eclipse.jetty.http3.qpack.StaticTable from class org.eclipse.jetty.http3.qpack.QpackContext",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/QpackContext.java",
+            "startLine": 32,
+            "endLine": 497,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/StaticTable.java",
+            "startLine": 14,
+            "endLine": 182,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	Entry to QpackContext.Entry in method public get(header HttpHeader) : QpackContext.Entry from class org.eclipse.jetty.http3.qpack.StaticTable",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/QpackContext.java",
+            "startLine": 239,
+            "endLine": 242,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-qpack/src/main/java/org/eclipse/jetty/http3/qpack/StaticTable.java",
+            "startLine": 175,
+            "endLine": 181,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/eclipse/jetty.project.git",
+      "sha1": "c70f49c773168c5ebea06efbae614cb4512c5cf2",
+      "url": "https://github.com/eclipse/jetty.project/commit/c70f49c773168c5ebea06efbae614cb4512c5cf2",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	protected onClose(quicheConnectionId QuicheConnectionId, session QuicSession) : void renamed to protected closeSession(quicheConnectionId QuicheConnectionId, session QuicSession, x Throwable) : void in class org.eclipse.jetty.http3.client.ClientQuicConnection",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-client/src/main/java/org/eclipse/jetty/http3/client/ClientQuicConnection.java",
+            "startLine": 75,
+            "endLine": 87,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-client/src/main/java/org/eclipse/jetty/http3/client/ClientQuicConnection.java",
+            "startLine": 75,
+            "endLine": 87,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	protected onClose(quicheConnectionId QuicheConnectionId, session QuicSession) : void renamed to protected closeSession(quicheConnectionId QuicheConnectionId, session QuicSession, x Throwable) : void in class org.eclipse.jetty.http3.common.QuicConnection",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-common/src/main/java/org/eclipse/jetty/http3/common/QuicConnection.java",
+            "startLine": 63,
+            "endLine": 67,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-common/src/main/java/org/eclipse/jetty/http3/common/QuicConnection.java",
+            "startLine": 63,
+            "endLine": 67,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	public close(x Throwable) : void extracted from public close() : void in class org.eclipse.jetty.http3.common.QuicSession",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-common/src/main/java/org/eclipse/jetty/http3/common/QuicSession.java",
+            "startLine": 233,
+            "endLine": 252,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-common/src/main/java/org/eclipse/jetty/http3/common/QuicSession.java",
+            "startLine": 241,
+            "endLine": 260,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	protected onClose(quicheConnectionId QuicheConnectionId, session QuicSession) : void renamed to protected closeSession(quicheConnectionId QuicheConnectionId, session QuicSession, x Throwable) : void in class org.eclipse.jetty.http3.client.ClientQuicConnection",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-client/src/main/java/org/eclipse/jetty/http3/client/ClientQuicConnection.java",
+            "startLine": 75,
+            "endLine": 87,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-client/src/main/java/org/eclipse/jetty/http3/client/ClientQuicConnection.java",
+            "startLine": 75,
+            "endLine": 87,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	protected onClose(quicheConnectionId QuicheConnectionId, session QuicSession) : void renamed to protected closeSession(quicheConnectionId QuicheConnectionId, session QuicSession, x Throwable) : void in class org.eclipse.jetty.http3.common.QuicConnection",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-common/src/main/java/org/eclipse/jetty/http3/common/QuicConnection.java",
+            "startLine": 63,
+            "endLine": 67,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-common/src/main/java/org/eclipse/jetty/http3/common/QuicConnection.java",
+            "startLine": 63,
+            "endLine": 67,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	public close(x Throwable) : void extracted from public close() : void in class org.eclipse.jetty.http3.common.QuicSession",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-common/src/main/java/org/eclipse/jetty/http3/common/QuicSession.java",
+            "startLine": 233,
+            "endLine": 252,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-common/src/main/java/org/eclipse/jetty/http3/common/QuicSession.java",
+            "startLine": 241,
+            "endLine": 260,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/eclipse/jetty.project.git",
+      "sha1": "36c0f79a9433322be1b10222be79ec273061abaa",
+      "url": "https://github.com/eclipse/jetty.project/commit/36c0f79a9433322be1b10222be79ec273061abaa",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.eclipse.jetty.http3.server.AddressCodec from Class org.eclipse.jetty.http3.server.QuicConnection",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-server/src/main/java/org/eclipse/jetty/http3/server/QuicConnection.java",
+            "startLine": 40,
+            "endLine": 264,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-server/src/main/java/org/eclipse/jetty/http3/server/AddressCodec.java",
+            "startLine": 26,
+            "endLine": 81,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.eclipse.jetty.http3.server.AddressCodec from Class org.eclipse.jetty.http3.server.ServerDatagramEndPoint",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-server/src/main/java/org/eclipse/jetty/http3/server/ServerDatagramEndPoint.java",
+            "startLine": 41,
+            "endLine": 314,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-server/src/main/java/org/eclipse/jetty/http3/server/AddressCodec.java",
+            "startLine": 26,
+            "endLine": 81,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.eclipse.jetty.http3.server.AddressCodec from class org.eclipse.jetty.http3.server.ServerDatagramEndPoint",
+          "leftSideLocation": {
+            "filePath": "jetty-http3/http3-server/src/main/java/org/eclipse/jetty/http3/server/ServerDatagramEndPoint.java",
+            "startLine": 41,
+            "endLine": 314,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-http3/http3-server/src/main/java/org/eclipse/jetty/http3/server/AddressCodec.java",
+            "startLine": 26,
+            "endLine": 81,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/eclipse/jetty.project.git",
+      "sha1": "9eeb44bfe93761e518dbdd2ed00a9b110514963c",
+      "url": "https://github.com/eclipse/jetty.project/commit/9eeb44bfe93761e518dbdd2ed00a9b110514963c",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.eclipse.jetty.start.usecases.BasicTest from Class org.eclipse.jetty.start.MainTest",
+          "leftSideLocation": {
+            "filePath": "jetty-start/src/test/java/org/eclipse/jetty/start/MainTest.java",
+            "startLine": 35,
+            "endLine": 284,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-start/src/test/java/org/eclipse/jetty/start/usecases/BasicTest.java",
+            "startLine": 42,
+            "endLine": 369,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.eclipse.jetty.start.usecases.BasicTest from class org.eclipse.jetty.start.MainTest",
+          "leftSideLocation": {
+            "filePath": "jetty-start/src/test/java/org/eclipse/jetty/start/MainTest.java",
+            "startLine": 35,
+            "endLine": 284,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "jetty-start/src/test/java/org/eclipse/jetty/start/usecases/BasicTest.java",
+            "startLine": 42,
+            "endLine": 369,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2539 @@
+{
+  "results": [
+    {
+      "repository": "https://git.eclipse.org/r/jgit/jgit.git",
+      "sha1": "a399bd13b1d754d3e0d9c23fc70b1a5705dc7485",
+      "url": "https://git.eclipse.org/c/jgit/jgit.git/commit/?id=a399bd13b1d754d3e0d9c23fc70b1a5705dc7485",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	protected initPreImage(aName String) : void extracted from protected init(aName String, preExists boolean, postExists boolean) : void in class org.eclipse.jgit.patch.PatchApplierTest.Base",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit.test/tst/org/eclipse/jgit/patch/PatchApplierTest.java",
+            "startLine": 74,
+            "endLine": 100,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit.test/tst/org/eclipse/jgit/patch/PatchApplierTest.java",
+            "startLine": 97,
+            "endLine": 106,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	protected initPostImage(aName String) : String extracted from protected init(aName String, preExists boolean, postExists boolean) : void in class org.eclipse.jgit.patch.PatchApplierTest.Base",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit.test/tst/org/eclipse/jgit/patch/PatchApplierTest.java",
+            "startLine": 74,
+            "endLine": 100,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit.test/tst/org/eclipse/jgit/patch/PatchApplierTest.java",
+            "startLine": 108,
+            "endLine": 113,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	protected verifyContent(result Result, path String, expectedContent String) : void extracted from protected verifyContent(result Result, path String, exists boolean) : void in class org.eclipse.jgit.patch.PatchApplierTest.Base",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit.test/tst/org/eclipse/jgit/patch/PatchApplierTest.java",
+            "startLine": 125,
+            "endLine": 143,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit.test/tst/org/eclipse/jgit/patch/PatchApplierTest.java",
+            "startLine": 140,
+            "endLine": 158,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	protected initPreImage(aName String) : void extracted from protected init(aName String, preExists boolean, postExists boolean) : void in class org.eclipse.jgit.patch.PatchApplierTest.Base",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit.test/tst/org/eclipse/jgit/patch/PatchApplierTest.java",
+            "startLine": 74,
+            "endLine": 100,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit.test/tst/org/eclipse/jgit/patch/PatchApplierTest.java",
+            "startLine": 97,
+            "endLine": 106,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	protected initPostImage(aName String) : String extracted from protected init(aName String, preExists boolean, postExists boolean) : void in class org.eclipse.jgit.patch.PatchApplierTest.Base",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit.test/tst/org/eclipse/jgit/patch/PatchApplierTest.java",
+            "startLine": 74,
+            "endLine": 100,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit.test/tst/org/eclipse/jgit/patch/PatchApplierTest.java",
+            "startLine": 108,
+            "endLine": 113,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	protected verifyContent(result Result, path String, expectedContent String) : void extracted from protected verifyContent(result Result, path String, exists boolean) : void in class org.eclipse.jgit.patch.PatchApplierTest.Base",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit.test/tst/org/eclipse/jgit/patch/PatchApplierTest.java",
+            "startLine": 125,
+            "endLine": 143,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit.test/tst/org/eclipse/jgit/patch/PatchApplierTest.java",
+            "startLine": 140,
+            "endLine": 158,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://git.eclipse.org/r/jgit/jgit.git",
+      "sha1": "b39972f8a20e2d9ad62629029b85e443d1bd082d",
+      "url": "https://git.eclipse.org/c/jgit/jgit.git/commit/?id=b39972f8a20e2d9ad62629029b85e443d1bd082d",
+      "ourApproach": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private getNextKey(session ClientSession, service String) : PublicKeyIdentity inlined to protected resolveAttemptedPublicKeyIdentity(session ClientSession, service String) : PublicKeyIdentity in class org.eclipse.jgit.internal.transport.sshd.JGitPublicKeyAuthentication",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit.ssh.apache/src/org/eclipse/jgit/internal/transport/sshd/JGitPublicKeyAuthentication.java",
+            "startLine": 143,
+            "endLine": 210,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit.ssh.apache/src/org/eclipse/jgit/internal/transport/sshd/JGitPublicKeyAuthentication.java",
+            "startLine": 131,
+            "endLine": 199,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private getNextKey(session ClientSession, service String) : PublicKeyIdentity inlined to protected resolveAttemptedPublicKeyIdentity(session ClientSession, service String) : PublicKeyIdentity in class org.eclipse.jgit.internal.transport.sshd.JGitPublicKeyAuthentication",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit.ssh.apache/src/org/eclipse/jgit/internal/transport/sshd/JGitPublicKeyAuthentication.java",
+            "startLine": 143,
+            "endLine": 210,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit.ssh.apache/src/org/eclipse/jgit/internal/transport/sshd/JGitPublicKeyAuthentication.java",
+            "startLine": 131,
+            "endLine": 199,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://git.eclipse.org/r/jgit/jgit.git",
+      "sha1": "a8e683fef6acf3e9f00ac2648fff60b13a28fb13",
+      "url": "https://git.eclipse.org/c/jgit/jgit.git/commit/?id=a8e683fef6acf3e9f00ac2648fff60b13a28fb13",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private addConflict(base CanonicalTreeParser, ours CanonicalTreeParser, theirs CanonicalTreeParser) : DirCacheEntry extracted from protected processEntry(base CanonicalTreeParser, ours CanonicalTreeParser, theirs CanonicalTreeParser, index DirCacheBuildIterator, work WorkingTreeIterator, ignoreConflicts boolean, attributes Attributes[]) : boolean in class org.eclipse.jgit.merge.ResolveMerger",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/merge/ResolveMerger.java",
+            "startLine": 387,
+            "endLine": 742,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/merge/ResolveMerger.java",
+            "startLine": 323,
+            "endLine": 340,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private addConflict(base CanonicalTreeParser, ours CanonicalTreeParser, theirs CanonicalTreeParser) : DirCacheEntry extracted from private updateIndex(base CanonicalTreeParser, ours CanonicalTreeParser, theirs CanonicalTreeParser, result MergeResult<RawText>, attributes Attributes) : void in class org.eclipse.jgit.merge.ResolveMerger",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/merge/ResolveMerger.java",
+            "startLine": 839,
+            "endLine": 890,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/merge/ResolveMerger.java",
+            "startLine": 323,
+            "endLine": 340,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private addConflict(base CanonicalTreeParser, ours CanonicalTreeParser, theirs CanonicalTreeParser) : DirCacheEntry extracted from protected processEntry(base CanonicalTreeParser, ours CanonicalTreeParser, theirs CanonicalTreeParser, index DirCacheBuildIterator, work WorkingTreeIterator, ignoreConflicts boolean, attributes Attributes[]) : boolean in class org.eclipse.jgit.merge.ResolveMerger",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/merge/ResolveMerger.java",
+            "startLine": 387,
+            "endLine": 742,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/merge/ResolveMerger.java",
+            "startLine": 323,
+            "endLine": 340,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private addConflict(base CanonicalTreeParser, ours CanonicalTreeParser, theirs CanonicalTreeParser) : DirCacheEntry extracted from private updateIndex(base CanonicalTreeParser, ours CanonicalTreeParser, theirs CanonicalTreeParser, result MergeResult<RawText>, attributes Attributes) : void in class org.eclipse.jgit.merge.ResolveMerger",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/merge/ResolveMerger.java",
+            "startLine": 839,
+            "endLine": 890,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/merge/ResolveMerger.java",
+            "startLine": 323,
+            "endLine": 340,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://git.eclipse.org/r/jgit/jgit.git",
+      "sha1": "ee6334bccf6d81b1bf513c44897e2a63b6300400",
+      "url": "https://git.eclipse.org/c/jgit/jgit.git/commit/?id=ee6334bccf6d81b1bf513c44897e2a63b6300400",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testSingleBlame() : void renamed to public testBoundLineDelete() : void in class org.eclipse.jgit.api.blame.BlameGeneratorTest",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit.test/tst/org/eclipse/jgit/api/blame/BlameGeneratorTest.java",
+            "startLine": 36,
+            "endLine": 102,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit.test/tst/org/eclipse/jgit/api/blame/BlameGeneratorTest.java",
+            "startLine": 26,
+            "endLine": 64,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	public push(blameCommit RevCommit) : BlameGenerator inlined to public push(description String, id AnyObjectId) : BlameGenerator in class org.eclipse.jgit.blame.BlameGenerator",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/blame/BlameGenerator.java",
+            "startLine": 399,
+            "endLine": 426,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/blame/BlameGenerator.java",
+            "startLine": 398,
+            "endLine": 441,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testSingleBlame() : void renamed to public testBoundLineDelete() : void in class org.eclipse.jgit.api.blame.BlameGeneratorTest",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit.test/tst/org/eclipse/jgit/api/blame/BlameGeneratorTest.java",
+            "startLine": 36,
+            "endLine": 102,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit.test/tst/org/eclipse/jgit/api/blame/BlameGeneratorTest.java",
+            "startLine": 26,
+            "endLine": 64,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	public push(blameCommit RevCommit) : BlameGenerator inlined to public push(description String, id AnyObjectId) : BlameGenerator in class org.eclipse.jgit.blame.BlameGenerator",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/blame/BlameGenerator.java",
+            "startLine": 399,
+            "endLine": 426,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/blame/BlameGenerator.java",
+            "startLine": 398,
+            "endLine": 441,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://git.eclipse.org/r/jgit/jgit.git",
+      "sha1": "207dd4c938830e84c9101d30edb7fe626e04bbe1",
+      "url": "https://git.eclipse.org/c/jgit/jgit.git/commit/?id=207dd4c938830e84c9101d30edb7fe626e04bbe1",
+      "ourApproach": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	deepenNotRefs : List<String> to deepenNots : List<String> in class org.eclipse.jgit.transport.FetchV2Request.Builder",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/FetchV2Request.java",
+            "startLine": 143,
+            "endLine": 143,
+            "startColumn": 22,
+            "endColumn": 55
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/FetchV2Request.java",
+            "startLine": 143,
+            "endLine": 143,
+            "startColumn": 22,
+            "endColumn": 52
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	deepenNotRefs : List<String> to deepenNots : List<String> in class org.eclipse.jgit.transport.FetchRequest",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/FetchRequest.java",
+            "startLine": 38,
+            "endLine": 38,
+            "startColumn": 21,
+            "endColumn": 34
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/FetchRequest.java",
+            "startLine": 38,
+            "endLine": 38,
+            "startColumn": 21,
+            "endColumn": 31
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package addDeepenNotRef(deepenNotRef String) : Builder renamed to package addDeepenNot(deepenNot String) : Builder in class org.eclipse.jgit.transport.FetchV2Request.Builder",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/FetchV2Request.java",
+            "startLine": 247,
+            "endLine": 255,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/FetchV2Request.java",
+            "startLine": 247,
+            "endLine": 255,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package hasDeepenNotRefs() : boolean renamed to package hasDeepenNots() : boolean in class org.eclipse.jgit.transport.FetchV2Request.Builder",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/FetchV2Request.java",
+            "startLine": 239,
+            "endLine": 245,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/FetchV2Request.java",
+            "startLine": 239,
+            "endLine": 245,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package getDeepenNotRefs() : List<String> renamed to package getDeepenNots() : List<String> in class org.eclipse.jgit.transport.FetchRequest",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/FetchRequest.java",
+            "startLine": 147,
+            "endLine": 153,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/FetchRequest.java",
+            "startLine": 147,
+            "endLine": 153,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private parseDeepenNots(deepenNots List<String>) : List<ObjectId> extracted from private fetchV2(pckOut PacketLineOut) : void in class org.eclipse.jgit.transport.UploadPack",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/UploadPack.java",
+            "startLine": 1162,
+            "endLine": 1300,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/UploadPack.java",
+            "startLine": 2474,
+            "endLine": 2490,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package getDeepenNotRefs() : List<String> renamed to package getDeepenNots() : List<String> in class org.eclipse.jgit.transport.FetchRequest",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/FetchRequest.java",
+            "startLine": 147,
+            "endLine": 153,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/FetchRequest.java",
+            "startLine": 147,
+            "endLine": 153,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	deepenNotRefs : List<String> to deepenNots : List<String> in class org.eclipse.jgit.transport.FetchRequest",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/FetchRequest.java",
+            "startLine": 38,
+            "endLine": 38,
+            "startColumn": 21,
+            "endColumn": 34
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/FetchRequest.java",
+            "startLine": 38,
+            "endLine": 38,
+            "startColumn": 21,
+            "endColumn": 31
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package hasDeepenNotRefs() : boolean renamed to package hasDeepenNots() : boolean in class org.eclipse.jgit.transport.FetchV2Request.Builder",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/FetchV2Request.java",
+            "startLine": 239,
+            "endLine": 245,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/FetchV2Request.java",
+            "startLine": 239,
+            "endLine": 245,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package addDeepenNotRef(deepenNotRef String) : Builder renamed to package addDeepenNot(deepenNot String) : Builder in class org.eclipse.jgit.transport.FetchV2Request.Builder",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/FetchV2Request.java",
+            "startLine": 247,
+            "endLine": 255,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/FetchV2Request.java",
+            "startLine": 247,
+            "endLine": 255,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	deepenNotRefs : List<String> to deepenNots : List<String> in class org.eclipse.jgit.transport.FetchV2Request.Builder",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/FetchV2Request.java",
+            "startLine": 143,
+            "endLine": 143,
+            "startColumn": 22,
+            "endColumn": 55
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/FetchV2Request.java",
+            "startLine": 143,
+            "endLine": 143,
+            "startColumn": 22,
+            "endColumn": 52
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private parseDeepenNots(deepenNots List<String>) : List<ObjectId> extracted from private fetchV2(pckOut PacketLineOut) : void in class org.eclipse.jgit.transport.UploadPack",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/UploadPack.java",
+            "startLine": 1162,
+            "endLine": 1300,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/UploadPack.java",
+            "startLine": 2474,
+            "endLine": 2490,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://git.eclipse.org/r/jgit/jgit.git",
+      "sha1": "85734356351ec2df4067b2472a37f6d9bcbb7350",
+      "url": "https://git.eclipse.org/c/jgit/jgit.git/commit/?id=85734356351ec2df4067b2472a37f6d9bcbb7350",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private getExpectedDiffToolOutput(changes List<DiffEntry>) : String[] renamed to private getExpectedToolOutput(changes List<DiffEntry>) : String[] in class org.eclipse.jgit.pgm.DiffToolTest",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit.pgm.test/tst/org/eclipse/jgit/pgm/DiffToolTest.java",
+            "startLine": 225,
+            "endLine": 234,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit.pgm.test/tst/org/eclipse/jgit/pgm/DiffToolTest.java",
+            "startLine": 162,
+            "endLine": 171,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.eclipse.jgit.pgm.DiffToolTest.GitCliJGitWrapperParser moved to org.eclipse.jgit.pgm.ExternalToolTestCase.GitCliJGitWrapperParser",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit.pgm.test/tst/org/eclipse/jgit/pgm/DiffToolTest.java",
+            "startLine": 42,
+            "endLine": 48,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit.pgm.test/tst/org/eclipse/jgit/pgm/ExternalToolTestCase.java",
+            "startLine": 34,
+            "endLine": 40,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.eclipse.jgit.pgm.DiffToolTest.GitCliJGitWrapperParser moved to org.eclipse.jgit.pgm.ExternalToolTestCase.GitCliJGitWrapperParser",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit.pgm.test/tst/org/eclipse/jgit/pgm/DiffToolTest.java",
+            "startLine": 42,
+            "endLine": 48,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit.pgm.test/tst/org/eclipse/jgit/pgm/ExternalToolTestCase.java",
+            "startLine": 34,
+            "endLine": 40,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private getExpectedDiffToolOutput(changes List<DiffEntry>) : String[] renamed to private getExpectedToolOutput(changes List<DiffEntry>) : String[] in class org.eclipse.jgit.pgm.DiffToolTest",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit.pgm.test/tst/org/eclipse/jgit/pgm/DiffToolTest.java",
+            "startLine": 225,
+            "endLine": 234,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit.pgm.test/tst/org/eclipse/jgit/pgm/DiffToolTest.java",
+            "startLine": 162,
+            "endLine": 171,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://git.eclipse.org/r/jgit/jgit.git",
+      "sha1": "7f9cd7d2baee39d6b4413f68ac58932bdd84221b",
+      "url": "https://git.eclipse.org/c/jgit/jgit.git/commit/?id=7f9cd7d2baee39d6b4413f68ac58932bdd84221b",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.eclipse.jgit.lib.GpgSignatureVerifierFactory.DefaultFactory from Class org.eclipse.jgit.lib.GpgSignatureVerifierFactory",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/lib/GpgSignatureVerifierFactory.java",
+            "startLine": 19,
+            "endLine": 71,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/lib/GpgSignatureVerifierFactory.java",
+            "startLine": 29,
+            "endLine": 64,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.eclipse.jgit.transport.SshSessionFactory.DefaultFactory from Class org.eclipse.jgit.transport.SshSessionFactory",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/SshSessionFactory.java",
+            "startLine": 24,
+            "endLine": 134,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/SshSessionFactory.java",
+            "startLine": 39,
+            "endLine": 68,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.eclipse.jgit.lib.GpgSignatureVerifierFactory.DefaultFactory from class org.eclipse.jgit.lib.GpgSignatureVerifierFactory",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/lib/GpgSignatureVerifierFactory.java",
+            "startLine": 19,
+            "endLine": 71,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/lib/GpgSignatureVerifierFactory.java",
+            "startLine": 29,
+            "endLine": 64,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.eclipse.jgit.transport.SshSessionFactory.DefaultFactory from class org.eclipse.jgit.transport.SshSessionFactory",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/SshSessionFactory.java",
+            "startLine": 24,
+            "endLine": 134,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/SshSessionFactory.java",
+            "startLine": 39,
+            "endLine": 68,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://git.eclipse.org/r/jgit/jgit.git",
+      "sha1": "fbce3122e0e41b497ac6e2a8176d46f90d302671",
+      "url": "https://git.eclipse.org/c/jgit/jgit.git/commit/?id=fbce3122e0e41b497ac6e2a8176d46f90d302671",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.eclipse.jgit.lib.GpgSigner.DefaultSigner from Class org.eclipse.jgit.lib.GpgSigner",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/lib/GpgSigner.java",
+            "startLine": 23,
+            "endLine": 125,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/lib/GpgSigner.java",
+            "startLine": 32,
+            "endLine": 61,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.eclipse.jgit.lib.GpgSigner.DefaultSigner from class org.eclipse.jgit.lib.GpgSigner",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/lib/GpgSigner.java",
+            "startLine": 23,
+            "endLine": 125,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/lib/GpgSigner.java",
+            "startLine": 32,
+            "endLine": 61,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://git.eclipse.org/r/jgit/jgit.git",
+      "sha1": "c127a1a6525dd1efe58dac5add7d927ba4b1c990",
+      "url": "https://git.eclipse.org/c/jgit/jgit.git/commit/?id=c127a1a6525dd1efe58dac5add7d927ba4b1c990",
+      "ourApproach": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	Map<String,String> to String in method public replace(url String) : String from class org.eclipse.jgit.transport.UrlConfig",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/RemoteConfig.java",
+            "startLine": 251,
+            "endLine": 258,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/UrlConfig.java",
+            "startLine": 48,
+            "endLine": 62,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.eclipse.jgit.transport.UrlConfig from Class org.eclipse.jgit.transport.RemoteConfig",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/RemoteConfig.java",
+            "startLine": 26,
+            "endLine": 539,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/UrlConfig.java",
+            "startLine": 18,
+            "endLine": 120,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.eclipse.jgit.transport.UrlConfig from class org.eclipse.jgit.transport.RemoteConfig",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/RemoteConfig.java",
+            "startLine": 26,
+            "endLine": 539,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/UrlConfig.java",
+            "startLine": 18,
+            "endLine": 120,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://git.eclipse.org/r/jgit/jgit.git",
+      "sha1": "9683bc71b6c05ce1ca2b5d6c6f7d74fff3db8429",
+      "url": "https://git.eclipse.org/c/jgit/jgit.git/commit/?id=9683bc71b6c05ce1ca2b5d6c6f7d74fff3db8429",
+      "ourApproach": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.eclipse.jgit.transport.JSchSshProtocol2Test moved to org.eclipse.jgit.transport.ssh.jsch.JSchSshProtocol2Test",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit.ssh.jsch.test/tst/org/eclipse/jgit/transport/JSchSshProtocol2Test.java",
+            "startLine": 34,
+            "endLine": 92,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit.ssh.jsch.test/tst/org/eclipse/jgit/transport/ssh/jsch/JSchSshProtocol2Test.java",
+            "startLine": 38,
+            "endLine": 96,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.eclipse.jgit.transport.JSchSshTest moved to org.eclipse.jgit.transport.ssh.jsch.JSchSshTest",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit.ssh.jsch.test/tst/org/eclipse/jgit/transport/JSchSshTest.java",
+            "startLine": 34,
+            "endLine": 86,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit.ssh.jsch.test/tst/org/eclipse/jgit/transport/ssh/jsch/JSchSshTest.java",
+            "startLine": 37,
+            "endLine": 89,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.eclipse.jgit.transport.JschConfigSessionFactoryTest moved to org.eclipse.jgit.transport.ssh.jsch.JschConfigSessionFactoryTest",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit.ssh.jsch.test/tst/org/eclipse/jgit/transport/JschConfigSessionFactoryTest.java",
+            "startLine": 30,
+            "endLine": 262,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit.ssh.jsch.test/tst/org/eclipse/jgit/transport/ssh/jsch/JschConfigSessionFactoryTest.java",
+            "startLine": 31,
+            "endLine": 263,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.eclipse.jgit.transport.OpenSshConfigTest moved to org.eclipse.jgit.transport.ssh.jsch.OpenSshConfigTest",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit.ssh.jsch.test/tst/org/eclipse/jgit/transport/OpenSshConfigTest.java",
+            "startLine": 42,
+            "endLine": 592,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit.ssh.jsch.test/tst/org/eclipse/jgit/transport/ssh/jsch/OpenSshConfigTest.java",
+            "startLine": 42,
+            "endLine": 592,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.eclipse.jgit.transport.CredentialsProviderUserInfo moved to org.eclipse.jgit.internal.transport.ssh.jsch.CredentialsProviderUserInfo",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit.ssh.jsch/src/org/eclipse/jgit/transport/CredentialsProviderUserInfo.java",
+            "startLine": 22,
+            "endLine": 133,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit.ssh.jsch/src/org/eclipse/jgit/internal/transport/ssh/jsch/CredentialsProviderUserInfo.java",
+            "startLine": 25,
+            "endLine": 136,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.eclipse.jgit.internal.transport.jsch.JSchText moved to org.eclipse.jgit.internal.transport.ssh.jsch.JSchText",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit.ssh.jsch/src/org/eclipse/jgit/internal/transport/jsch/JSchText.java",
+            "startLine": 15,
+            "endLine": 35,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit.ssh.jsch/src/org/eclipse/jgit/internal/transport/ssh/jsch/JSchText.java",
+            "startLine": 15,
+            "endLine": 35,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.eclipse.jgit.transport.JschSession moved to org.eclipse.jgit.transport.ssh.jsch.JschSession",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit.ssh.jsch/src/org/eclipse/jgit/transport/JschSession.java",
+            "startLine": 42,
+            "endLine": 390,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit.ssh.jsch/src/org/eclipse/jgit/transport/ssh/jsch/JschSession.java",
+            "startLine": 44,
+            "endLine": 394,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.eclipse.jgit.transport.JschConfigSessionFactory moved to org.eclipse.jgit.transport.ssh.jsch.JschConfigSessionFactory",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit.ssh.jsch/src/org/eclipse/jgit/transport/JschConfigSessionFactory.java",
+            "startLine": 54,
+            "endLine": 541,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit.ssh.jsch/src/org/eclipse/jgit/transport/ssh/jsch/JschConfigSessionFactory.java",
+            "startLine": 59,
+            "endLine": 560,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.eclipse.jgit.transport.OpenSshConfig moved to org.eclipse.jgit.transport.ssh.jsch.OpenSshConfig",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit.ssh.jsch/src/org/eclipse/jgit/transport/OpenSshConfig.java",
+            "startLine": 27,
+            "endLine": 346,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit.ssh.jsch/src/org/eclipse/jgit/transport/ssh/jsch/OpenSshConfig.java",
+            "startLine": 28,
+            "endLine": 361,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.eclipse.jgit.transport.JSchSshProtocol2Test moved to org.eclipse.jgit.transport.ssh.jsch.JSchSshProtocol2Test",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit.ssh.jsch.test/tst/org/eclipse/jgit/transport/JSchSshProtocol2Test.java",
+            "startLine": 34,
+            "endLine": 92,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit.ssh.jsch.test/tst/org/eclipse/jgit/transport/ssh/jsch/JSchSshProtocol2Test.java",
+            "startLine": 38,
+            "endLine": 96,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.eclipse.jgit.transport.JSchSshTest moved to org.eclipse.jgit.transport.ssh.jsch.JSchSshTest",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit.ssh.jsch.test/tst/org/eclipse/jgit/transport/JSchSshTest.java",
+            "startLine": 34,
+            "endLine": 86,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit.ssh.jsch.test/tst/org/eclipse/jgit/transport/ssh/jsch/JSchSshTest.java",
+            "startLine": 37,
+            "endLine": 89,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.eclipse.jgit.transport.JschConfigSessionFactoryTest moved to org.eclipse.jgit.transport.ssh.jsch.JschConfigSessionFactoryTest",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit.ssh.jsch.test/tst/org/eclipse/jgit/transport/JschConfigSessionFactoryTest.java",
+            "startLine": 30,
+            "endLine": 262,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit.ssh.jsch.test/tst/org/eclipse/jgit/transport/ssh/jsch/JschConfigSessionFactoryTest.java",
+            "startLine": 31,
+            "endLine": 263,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.eclipse.jgit.transport.OpenSshConfigTest moved to org.eclipse.jgit.transport.ssh.jsch.OpenSshConfigTest",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit.ssh.jsch.test/tst/org/eclipse/jgit/transport/OpenSshConfigTest.java",
+            "startLine": 42,
+            "endLine": 592,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit.ssh.jsch.test/tst/org/eclipse/jgit/transport/ssh/jsch/OpenSshConfigTest.java",
+            "startLine": 42,
+            "endLine": 592,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.eclipse.jgit.internal.transport.jsch.JSchText moved to org.eclipse.jgit.internal.transport.ssh.jsch.JSchText",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit.ssh.jsch/src/org/eclipse/jgit/internal/transport/jsch/JSchText.java",
+            "startLine": 15,
+            "endLine": 35,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit.ssh.jsch/src/org/eclipse/jgit/internal/transport/ssh/jsch/JSchText.java",
+            "startLine": 15,
+            "endLine": 35,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.eclipse.jgit.transport.JschConfigSessionFactory moved to org.eclipse.jgit.transport.ssh.jsch.JschConfigSessionFactory",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit.ssh.jsch/src/org/eclipse/jgit/transport/JschConfigSessionFactory.java",
+            "startLine": 54,
+            "endLine": 541,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit.ssh.jsch/src/org/eclipse/jgit/transport/ssh/jsch/JschConfigSessionFactory.java",
+            "startLine": 59,
+            "endLine": 560,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.eclipse.jgit.transport.JschSession moved to org.eclipse.jgit.transport.ssh.jsch.JschSession",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit.ssh.jsch/src/org/eclipse/jgit/transport/JschSession.java",
+            "startLine": 42,
+            "endLine": 390,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit.ssh.jsch/src/org/eclipse/jgit/transport/ssh/jsch/JschSession.java",
+            "startLine": 44,
+            "endLine": 394,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.eclipse.jgit.transport.OpenSshConfig moved to org.eclipse.jgit.transport.ssh.jsch.OpenSshConfig",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit.ssh.jsch/src/org/eclipse/jgit/transport/OpenSshConfig.java",
+            "startLine": 27,
+            "endLine": 346,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit.ssh.jsch/src/org/eclipse/jgit/transport/ssh/jsch/OpenSshConfig.java",
+            "startLine": 28,
+            "endLine": 361,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.eclipse.jgit.transport.CredentialsProviderUserInfo moved to org.eclipse.jgit.internal.transport.ssh.jsch.CredentialsProviderUserInfo",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit.ssh.jsch/src/org/eclipse/jgit/transport/CredentialsProviderUserInfo.java",
+            "startLine": 22,
+            "endLine": 133,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit.ssh.jsch/src/org/eclipse/jgit/internal/transport/ssh/jsch/CredentialsProviderUserInfo.java",
+            "startLine": 25,
+            "endLine": 136,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://git.eclipse.org/r/jgit/jgit.git",
+      "sha1": "10ac4499115965ff10e547a0632c89873a06cf91",
+      "url": "https://git.eclipse.org/c/jgit/jgit.git/commit/?id=10ac4499115965ff10e547a0632c89873a06cf91",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private apply(repository Repository, path String, rt RawText, f File, fh FileHeader, checkOut CheckoutMetadata) : void renamed to private applyText(repository Repository, path String, rt RawText, f File, fh FileHeader, checkOut CheckoutMetadata) : void in class org.eclipse.jgit.api.ApplyCommand",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/ApplyCommand.java",
+            "startLine": 376,
+            "endLine": 524,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/ApplyCommand.java",
+            "startLine": 549,
+            "endLine": 699,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	data : TemporaryBuffer to data : StreamSupplier in class org.eclipse.jgit.api.ApplyCommand.StreamLoader",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/ApplyCommand.java",
+            "startLine": 342,
+            "endLine": 342,
+            "startColumn": 27,
+            "endColumn": 31
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/ApplyCommand.java",
+            "startLine": 378,
+            "endLine": 378,
+            "startColumn": 26,
+            "endColumn": 30
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.eclipse.jgit.api.ApplyCommand.BufferLoader renamed to org.eclipse.jgit.api.ApplyCommand.StreamLoader",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/ApplyCommand.java",
+            "startLine": 333,
+            "endLine": 374,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/ApplyCommand.java",
+            "startLine": 368,
+            "endLine": 413,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.eclipse.jgit.api.ApplyCommand.BufferLoader renamed to org.eclipse.jgit.api.ApplyCommand.StreamLoader",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/ApplyCommand.java",
+            "startLine": 333,
+            "endLine": 374,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/ApplyCommand.java",
+            "startLine": 368,
+            "endLine": 413,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	data : TemporaryBuffer to data : StreamSupplier in class org.eclipse.jgit.api.ApplyCommand.StreamLoader",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/ApplyCommand.java",
+            "startLine": 342,
+            "endLine": 342,
+            "startColumn": 27,
+            "endColumn": 31
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/ApplyCommand.java",
+            "startLine": 378,
+            "endLine": 378,
+            "startColumn": 26,
+            "endColumn": 30
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://git.eclipse.org/r/jgit/jgit.git",
+      "sha1": "7fbff35887a4179d33b17fce96191c82b397ebd7",
+      "url": "https://git.eclipse.org/c/jgit/jgit.git/commit/?id=7fbff35887a4179d33b17fce96191c82b397ebd7",
+      "ourApproach": [],
+      "baseline": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	extensions : int to bitmapIdxFile : PackFile in class org.eclipse.jgit.internal.storage.file.Pack",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/storage/file/Pack.java",
+            "startLine": 83,
+            "endLine": 83,
+            "startColumn": 20,
+            "endColumn": 30
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/storage/file/Pack.java",
+            "startLine": 106,
+            "endLine": 106,
+            "startColumn": 19,
+            "endColumn": 32
+          },
+          "developerConfirmation": false
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	extensions : int to bitmapIdxFile : PackFile in class org.eclipse.jgit.internal.storage.file.Pack",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/storage/file/Pack.java",
+            "startLine": 83,
+            "endLine": 83,
+            "startColumn": 20,
+            "endColumn": 30
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/storage/file/Pack.java",
+            "startLine": 106,
+            "endLine": 106,
+            "startColumn": 19,
+            "endColumn": 32
+          },
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://git.eclipse.org/r/jgit/jgit.git",
+      "sha1": "40d6eda3f16f24db20776d33e586737efeddc725",
+      "url": "https://git.eclipse.org/c/jgit/jgit.git/commit/?id=40d6eda3f16f24db20776d33e586737efeddc725",
+      "ourApproach": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	creationDate : Date to createdAt : Instant in class org.eclipse.jgit.internal.transport.http.NetscapeCookieFile",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/transport/http/NetscapeCookieFile.java",
+            "startLine": 95,
+            "endLine": 95,
+            "startColumn": 13,
+            "endColumn": 25
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/transport/http/NetscapeCookieFile.java",
+            "startLine": 97,
+            "endLine": 97,
+            "startColumn": 24,
+            "endColumn": 33
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	creationDate : Date to createdAt : Instant in class org.eclipse.jgit.internal.transport.http.NetscapeCookieFile",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/transport/http/NetscapeCookieFile.java",
+            "startLine": 95,
+            "endLine": 95,
+            "startColumn": 13,
+            "endColumn": 25
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/transport/http/NetscapeCookieFile.java",
+            "startLine": 97,
+            "endLine": 97,
+            "startColumn": 24,
+            "endColumn": 33
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	JAN_01_2030_NOON : long to TEST_EXPIRY_DATE : Instant in class org.eclipse.jgit.internal.transport.http.NetscapeCookieFileTest",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit.test/tst/org/eclipse/jgit/internal/transport/http/NetscapeCookieFileTest.java",
+            "startLine": 53,
+            "endLine": 54,
+            "startColumn": 22,
+            "endColumn": 53
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit.test/tst/org/eclipse/jgit/internal/transport/http/NetscapeCookieFileTest.java",
+            "startLine": 53,
+            "endLine": 54,
+            "startColumn": 31,
+            "endColumn": 38
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	JAN_01_2030_NOON : long to TEST_EXPIRY_DATE : Instant in class org.eclipse.jgit.internal.transport.http.NetscapeCookieFileTest",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit.test/tst/org/eclipse/jgit/internal/transport/http/NetscapeCookieFileTest.java",
+            "startLine": 53,
+            "endLine": 54,
+            "startColumn": 22,
+            "endColumn": 53
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit.test/tst/org/eclipse/jgit/internal/transport/http/NetscapeCookieFileTest.java",
+            "startLine": 53,
+            "endLine": 54,
+            "startColumn": 31,
+            "endColumn": 38
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	creationDate : Date to createdAt : Instant in class org.eclipse.jgit.internal.transport.http.NetscapeCookieFile",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/transport/http/NetscapeCookieFile.java",
+            "startLine": 95,
+            "endLine": 95,
+            "startColumn": 13,
+            "endColumn": 25
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/transport/http/NetscapeCookieFile.java",
+            "startLine": 97,
+            "endLine": 97,
+            "startColumn": 24,
+            "endColumn": 33
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	creationDate : Date to createdAt : Instant in class org.eclipse.jgit.internal.transport.http.NetscapeCookieFile",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/transport/http/NetscapeCookieFile.java",
+            "startLine": 95,
+            "endLine": 95,
+            "startColumn": 13,
+            "endColumn": 25
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/transport/http/NetscapeCookieFile.java",
+            "startLine": 97,
+            "endLine": 97,
+            "startColumn": 24,
+            "endColumn": 33
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://git.eclipse.org/r/jgit/jgit.git",
+      "sha1": "ecad2dc0a62db9ea521aa67a09b48e23bb7cb2ba",
+      "url": "https://git.eclipse.org/c/jgit/jgit.git/commit/?id=ecad2dc0a62db9ea521aa67a09b48e23bb7cb2ba",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.eclipse.jgit.internal.storage.file.LooseObjects from Class org.eclipse.jgit.internal.storage.file.ObjectDirectory",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/storage/file/ObjectDirectory.java",
+            "startLine": 53,
+            "endLine": 766,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/storage/file/LooseObjects.java",
+            "startLine": 32,
+            "endLine": 227,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.eclipse.jgit.internal.storage.file.LooseObjects from class org.eclipse.jgit.internal.storage.file.ObjectDirectory",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/storage/file/ObjectDirectory.java",
+            "startLine": 53,
+            "endLine": 766,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/storage/file/LooseObjects.java",
+            "startLine": 32,
+            "endLine": 227,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://git.eclipse.org/r/jgit/jgit.git",
+      "sha1": "a84a2d22abef94eb632e3da711622638e354e516",
+      "url": "https://git.eclipse.org/c/jgit/jgit.git/commit/?id=a84a2d22abef94eb632e3da711622638e354e516",
+      "ourApproach": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.eclipse.jgit.internal.storage.file.ObjectDirectory.PackList moved to org.eclipse.jgit.internal.storage.file.PackDirectory.PackList",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/storage/file/ObjectDirectory.java",
+            "startLine": 1040,
+            "endLine": 1051,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/storage/file/PackDirectory.java",
+            "startLine": 486,
+            "endLine": 497,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.eclipse.jgit.internal.storage.file.PackDirectory from Class org.eclipse.jgit.internal.storage.file.ObjectDirectory",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/storage/file/ObjectDirectory.java",
+            "startLine": 60,
+            "endLine": 1128,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/storage/file/PackDirectory.java",
+            "startLine": 47,
+            "endLine": 498,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.eclipse.jgit.internal.storage.file.ObjectDirectory.PackList moved to org.eclipse.jgit.internal.storage.file.PackDirectory.PackList",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/storage/file/ObjectDirectory.java",
+            "startLine": 1040,
+            "endLine": 1051,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/storage/file/PackDirectory.java",
+            "startLine": 486,
+            "endLine": 497,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.eclipse.jgit.internal.storage.file.PackDirectory from class org.eclipse.jgit.internal.storage.file.ObjectDirectory",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/storage/file/ObjectDirectory.java",
+            "startLine": 60,
+            "endLine": 1128,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/storage/file/PackDirectory.java",
+            "startLine": 47,
+            "endLine": 498,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://git.eclipse.org/r/jgit/jgit.git",
+      "sha1": "d69fb4d4ac7bcf7d0d84109bba56cf944646fb24",
+      "url": "https://git.eclipse.org/c/jgit/jgit.git/commit/?id=d69fb4d4ac7bcf7d0d84109bba56cf944646fb24",
+      "ourApproach": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	boolean to void in method protected readAdvertisedRefs() : void from class org.eclipse.jgit.transport.BasePackConnection",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/BasePackConnection.java",
+            "startLine": 157,
+            "endLine": 183,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/BasePackConnection.java",
+            "startLine": 134,
+            "endLine": 157,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public openFetch(refSpecs Collection<RefSpec>, additionalPatterns String...) : FetchConnection renamed to private getConnection(c HttpConnection, in InputStream, service String) : FetchConnection in class org.eclipse.jgit.transport.TransportHttp",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/TransportHttp.java",
+            "startLine": 367,
+            "endLine": 387,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/TransportHttp.java",
+            "startLine": 340,
+            "endLine": 354,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": false
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	boolean to void in method private readAdvertisedRefsImpl() : void from class org.eclipse.jgit.transport.BasePackConnection",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/BasePackConnection.java",
+            "startLine": 198,
+            "endLine": 269,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/BasePackConnection.java",
+            "startLine": 159,
+            "endLine": 232,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public exec(command String, environment Map<String,String>, timeout int) : Process renamed to private createProcess(args List<String>) : ProcessBuilder in class org.eclipse.jgit.transport.TransportGitSsh.ExtSession",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/TransportGitSsh.java",
+            "startLine": 216,
+            "endLine": 245,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/TransportGitSsh.java",
+            "startLine": 229,
+            "endLine": 238,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": false
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	Process to ProcessBuilder in method private createProcess(args List<String>) : ProcessBuilder from class org.eclipse.jgit.transport.TransportGitSsh.ExtSession",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/TransportGitSsh.java",
+            "startLine": 216,
+            "endLine": 245,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/TransportGitSsh.java",
+            "startLine": 229,
+            "endLine": 238,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": false
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	public exec(commandName String, environment Map<String,String>, timeout int) : Process inlined to public exec(commandName String, timeout int) : Process in class org.eclipse.jgit.transport.sshd.SshdSession",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit.ssh.apache/src/org/eclipse/jgit/transport/sshd/SshdSession.java",
+            "startLine": 298,
+            "endLine": 321,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit.ssh.apache/src/org/eclipse/jgit/transport/sshd/SshdSession.java",
+            "startLine": 291,
+            "endLine": 312,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	public exec(command String, environment Map<String,String>, timeout int) : Process inlined to public exec(command String, timeout int) : Process in class org.eclipse.jgit.transport.JschSession",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit.ssh.jsch/src/org/eclipse/jgit/transport/JschSession.java",
+            "startLine": 73,
+            "endLine": 78,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit.ssh.jsch/src/org/eclipse/jgit/transport/JschSession.java",
+            "startLine": 65,
+            "endLine": 69,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private readLine() : String inlined to private readAdvertisedRefsImpl() : void in class org.eclipse.jgit.transport.BasePackConnection",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/BasePackConnection.java",
+            "startLine": 185,
+            "endLine": 196,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/BasePackConnection.java",
+            "startLine": 159,
+            "endLine": 232,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private toId(line String, value String) : ObjectId inlined to private readAdvertisedRefsImpl() : void in class org.eclipse.jgit.transport.BasePackConnection",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/BasePackConnection.java",
+            "startLine": 398,
+            "endLine": 407,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/BasePackConnection.java",
+            "startLine": 159,
+            "endLine": 232,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	package readACKorEOF(returnedId MutableObjectId) : AckNackResult inlined to package readACK(returnedId MutableObjectId) : AckNackResult in class org.eclipse.jgit.transport.PacketLineIn",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/PacketLineIn.java",
+            "startLine": 118,
+            "endLine": 148,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/PacketLineIn.java",
+            "startLine": 106,
+            "endLine": 132,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private connect(service String, protocolVersion TransferConfig.ProtocolVersion) : HttpConnection inlined to private connect(service String) : HttpConnection in class org.eclipse.jgit.transport.TransportHttp",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/TransportHttp.java",
+            "startLine": 517,
+            "endLine": 636,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/TransportHttp.java",
+            "startLine": 495,
+            "endLine": 608,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	public openFetch(refSpecs Collection<RefSpec>, additionalPatterns String...) : FetchConnection inlined to public openFetch() : FetchConnection in class org.eclipse.jgit.transport.TransportLocal",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/TransportLocal.java",
+            "startLine": 160,
+            "endLine": 171,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/TransportLocal.java",
+            "startLine": 153,
+            "endLine": 164,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private spawn(cmd String, protocolVersion TransferConfig.ProtocolVersion) : Process inlined to protected spawn(cmd String) : Process in class org.eclipse.jgit.transport.TransportLocal",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/TransportLocal.java",
+            "startLine": 206,
+            "endLine": 243,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/TransportLocal.java",
+            "startLine": 185,
+            "endLine": 216,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private createProcess(args List<String>, environment Map<String,String>) : ProcessBuilder inlined to private createProcess(args List<String>) : ProcessBuilder in class org.eclipse.jgit.transport.TransportGitSsh.ExtSession",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/TransportGitSsh.java",
+            "startLine": 247,
+            "endLine": 260,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/TransportGitSsh.java",
+            "startLine": 229,
+            "endLine": 238,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": false
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private getConnection(c HttpConnection, in InputStream, service String, refSpecs Collection<RefSpec>, additionalPatterns String...) : FetchConnection inlined to private getConnection(c HttpConnection, in InputStream, service String) : FetchConnection in class org.eclipse.jgit.transport.TransportHttp",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/TransportHttp.java",
+            "startLine": 340,
+            "endLine": 358,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/TransportHttp.java",
+            "startLine": 340,
+            "endLine": 354,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": false
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private processLineV1(name String, id ObjectId, avail Map<String,Ref>) : void inlined to private readAdvertisedRefsImpl() : void in class org.eclipse.jgit.transport.BasePackConnection",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/BasePackConnection.java",
+            "startLine": 409,
+            "endLine": 430,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/BasePackConnection.java",
+            "startLine": 159,
+            "endLine": 232,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	public exec(commandName String, environment Map<String,String>, timeout int) : Process inlined to public exec(commandName String, timeout int) : Process in class org.eclipse.jgit.transport.sshd.SshdSession",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit.ssh.apache/src/org/eclipse/jgit/transport/sshd/SshdSession.java",
+            "startLine": 298,
+            "endLine": 321,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit.ssh.apache/src/org/eclipse/jgit/transport/sshd/SshdSession.java",
+            "startLine": 291,
+            "endLine": 312,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	public exec(command String, environment Map<String,String>, timeout int) : Process inlined to public exec(command String, timeout int) : Process in class org.eclipse.jgit.transport.JschSession",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit.ssh.jsch/src/org/eclipse/jgit/transport/JschSession.java",
+            "startLine": 73,
+            "endLine": 78,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit.ssh.jsch/src/org/eclipse/jgit/transport/JschSession.java",
+            "startLine": 65,
+            "endLine": 69,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private readLine() : String inlined to private readAdvertisedRefsImpl() : void in class org.eclipse.jgit.transport.BasePackConnection",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/BasePackConnection.java",
+            "startLine": 185,
+            "endLine": 196,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/BasePackConnection.java",
+            "startLine": 159,
+            "endLine": 232,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private readCapabilitiesV2() : void inlined to private readAdvertisedRefsImpl() : void in class org.eclipse.jgit.transport.BasePackConnection",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/BasePackConnection.java",
+            "startLine": 376,
+            "endLine": 388,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/BasePackConnection.java",
+            "startLine": 159,
+            "endLine": 232,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": false
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private toId(line String, value String) : ObjectId inlined to private readAdvertisedRefsImpl() : void in class org.eclipse.jgit.transport.BasePackConnection",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/BasePackConnection.java",
+            "startLine": 398,
+            "endLine": 407,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/BasePackConnection.java",
+            "startLine": 159,
+            "endLine": 232,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private processLineV1(name String, id ObjectId, avail Map<String,Ref>) : void inlined to private readAdvertisedRefsImpl() : void in class org.eclipse.jgit.transport.BasePackConnection",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/BasePackConnection.java",
+            "startLine": 409,
+            "endLine": 430,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/BasePackConnection.java",
+            "startLine": 159,
+            "endLine": 232,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	boolean to void in method protected readAdvertisedRefs() : void from class org.eclipse.jgit.transport.BasePackConnection",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/BasePackConnection.java",
+            "startLine": 157,
+            "endLine": 183,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/BasePackConnection.java",
+            "startLine": 134,
+            "endLine": 157,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	boolean to void in method private readAdvertisedRefsImpl() : void from class org.eclipse.jgit.transport.BasePackConnection",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/BasePackConnection.java",
+            "startLine": 198,
+            "endLine": 269,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/BasePackConnection.java",
+            "startLine": 159,
+            "endLine": 232,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	package readACKorEOF(returnedId MutableObjectId) : AckNackResult inlined to package readACK(returnedId MutableObjectId) : AckNackResult in class org.eclipse.jgit.transport.PacketLineIn",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/PacketLineIn.java",
+            "startLine": 118,
+            "endLine": 148,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/PacketLineIn.java",
+            "startLine": 106,
+            "endLine": 132,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	public exec(command String, environment Map<String,String>, timeout int) : Process inlined to public exec(command String, timeout int) : Process in class org.eclipse.jgit.transport.TransportGitSsh.ExtSession",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/TransportGitSsh.java",
+            "startLine": 216,
+            "endLine": 245,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/TransportGitSsh.java",
+            "startLine": 200,
+            "endLine": 227,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	public openFetch(refSpecs Collection<RefSpec>, additionalPatterns String...) : FetchConnection inlined to public openFetch() : FetchConnection in class org.eclipse.jgit.transport.TransportHttp",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/TransportHttp.java",
+            "startLine": 367,
+            "endLine": 387,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/TransportHttp.java",
+            "startLine": 356,
+            "endLine": 371,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private connect(service String, protocolVersion TransferConfig.ProtocolVersion) : HttpConnection inlined to private connect(service String) : HttpConnection in class org.eclipse.jgit.transport.TransportHttp",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/TransportHttp.java",
+            "startLine": 517,
+            "endLine": 636,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/TransportHttp.java",
+            "startLine": 495,
+            "endLine": 608,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	public openFetch(refSpecs Collection<RefSpec>, additionalPatterns String...) : FetchConnection inlined to public openFetch() : FetchConnection in class org.eclipse.jgit.transport.TransportLocal",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/TransportLocal.java",
+            "startLine": 160,
+            "endLine": 171,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/TransportLocal.java",
+            "startLine": 153,
+            "endLine": 164,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private spawn(cmd String, protocolVersion TransferConfig.ProtocolVersion) : Process inlined to protected spawn(cmd String) : Process in class org.eclipse.jgit.transport.TransportLocal",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/TransportLocal.java",
+            "startLine": 206,
+            "endLine": 243,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/TransportLocal.java",
+            "startLine": 185,
+            "endLine": 216,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://git.eclipse.org/r/jgit/jgit.git",
+      "sha1": "e9c7ba6fdccf64b16fdadd74106175f95454ec4f",
+      "url": "https://git.eclipse.org/c/jgit/jgit.git/commit/?id=e9c7ba6fdccf64b16fdadd74106175f95454ec4f",
+      "ourApproach": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	createXDGConfigHomeFailed : String to logXDGConfigHomeInvalid : String in class org.eclipse.jgit.internal.JGitText",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/JGitText.java",
+            "startLine": 236,
+            "endLine": 236,
+            "startColumn": 22,
+            "endColumn": 47
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/JGitText.java",
+            "startLine": 439,
+            "endLine": 439,
+            "startColumn": 22,
+            "endColumn": 45
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	createXDGConfigHomeFailed : String to logXDGConfigHomeInvalid : String in class org.eclipse.jgit.internal.JGitText",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/JGitText.java",
+            "startLine": 236,
+            "endLine": 236,
+            "startColumn": 22,
+            "endColumn": 47
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/JGitText.java",
+            "startLine": 439,
+            "endLine": 439,
+            "startColumn": 22,
+            "endColumn": 45
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://git.eclipse.org/r/jgit/jgit.git",
+      "sha1": "eb67862cbaf8f77a7ebb6e01a0d43366d3a223f0",
+      "url": "https://git.eclipse.org/c/jgit/jgit.git/commit/?id=eb67862cbaf8f77a7ebb6e01a0d43366d3a223f0",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private readPublicKey(key Path) : PublicKey extracted from public setTestUserPublicKey(key Path) : void in class org.eclipse.jgit.junit.ssh.SshTestGitServer",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit.junit.ssh/src/org/eclipse/jgit/junit/ssh/SshTestGitServer.java",
+            "startLine": 334,
+            "endLine": 348,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit.junit.ssh/src/org/eclipse/jgit/junit/ssh/SshTestGitServer.java",
+            "startLine": 174,
+            "endLine": 178,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private readKeyPair(keyMaterial byte[]) : KeyPair extracted from public SshTestGitServer(testUser String, testKey Path, repository Repository, hostKey byte[]) in class org.eclipse.jgit.junit.ssh.SshTestGitServer",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit.junit.ssh/src/org/eclipse/jgit/junit/ssh/SshTestGitServer.java",
+            "startLine": 87,
+            "endLine": 136,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit.junit.ssh/src/org/eclipse/jgit/junit/ssh/SshTestGitServer.java",
+            "startLine": 180,
+            "endLine": 186,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private readKeyPair(keyMaterial byte[]) : KeyPair extracted from public SshTestGitServer(testUser String, testKey Path, repository Repository, hostKey byte[]) in class org.eclipse.jgit.junit.ssh.SshTestGitServer",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit.junit.ssh/src/org/eclipse/jgit/junit/ssh/SshTestGitServer.java",
+            "startLine": 87,
+            "endLine": 136,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit.junit.ssh/src/org/eclipse/jgit/junit/ssh/SshTestGitServer.java",
+            "startLine": 180,
+            "endLine": 186,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private readPublicKey(key Path) : PublicKey extracted from public setTestUserPublicKey(key Path) : void in class org.eclipse.jgit.junit.ssh.SshTestGitServer",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit.junit.ssh/src/org/eclipse/jgit/junit/ssh/SshTestGitServer.java",
+            "startLine": 334,
+            "endLine": 348,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit.junit.ssh/src/org/eclipse/jgit/junit/ssh/SshTestGitServer.java",
+            "startLine": 174,
+            "endLine": 178,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://git.eclipse.org/r/jgit/jgit.git",
+      "sha1": "0b9370bec83739afa6dfe68241964d80eec36b43",
+      "url": "https://git.eclipse.org/c/jgit/jgit.git/commit/?id=0b9370bec83739afa6dfe68241964d80eec36b43",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testPushWithSessionLimit() : void renamed to public testCloneAndFetchWithSessionLimit() : void in class org.eclipse.jgit.transport.sshd.ApacheSshTest",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit.ssh.apache.test/tst/org/eclipse/jgit/transport/sshd/ApacheSshTest.java",
+            "startLine": 181,
+            "endLine": 206,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit.ssh.apache.test/tst/org/eclipse/jgit/transport/sshd/ApacheSshTest.java",
+            "startLine": 181,
+            "endLine": 206,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testPushWithSessionLimit() : void renamed to public testCloneAndFetchWithSessionLimit() : void in class org.eclipse.jgit.transport.sshd.ApacheSshTest",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit.ssh.apache.test/tst/org/eclipse/jgit/transport/sshd/ApacheSshTest.java",
+            "startLine": 181,
+            "endLine": 206,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit.ssh.apache.test/tst/org/eclipse/jgit/transport/sshd/ApacheSshTest.java",
+            "startLine": 181,
+            "endLine": 206,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://git.eclipse.org/r/jgit/jgit.git",
+      "sha1": "8d2d683655e2de17cf465fa46af10e0e56b3aaed",
+      "url": "https://git.eclipse.org/c/jgit/jgit.git/commit/?id=8d2d683655e2de17cf465fa46af10e0e56b3aaed",
+      "ourApproach": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.eclipse.jgit.transport.ssh.SshTestHarness moved to org.eclipse.jgit.junit.ssh.SshTestHarness",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit.test/src/org/eclipse/jgit/transport/ssh/SshTestHarness.java",
+            "startLine": 55,
+            "endLine": 419,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit.junit.ssh/src/org/eclipse/jgit/junit/ssh/SshTestHarness.java",
+            "startLine": 54,
+            "endLine": 418,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	factory : DefaultSshSessionFactory to factory : JschConfigSessionFactory in class org.eclipse.jgit.transport.JschConfigSessionFactoryTest",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit.test/tst/org/eclipse/jgit/transport/JschConfigSessionFactoryTest.java",
+            "startLine": 38,
+            "endLine": 38,
+            "startColumn": 27,
+            "endColumn": 67
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit.ssh.jsch.test/tst/org/eclipse/jgit/transport/JschConfigSessionFactoryTest.java",
+            "startLine": 40,
+            "endLine": 40,
+            "startColumn": 27,
+            "endColumn": 67
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.eclipse.jgit.transport.ssh.SshTestBase moved to org.eclipse.jgit.junit.ssh.SshTestBase",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit.test/src/org/eclipse/jgit/transport/ssh/SshTestBase.java",
+            "startLine": 33,
+            "endLine": 811,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit.junit.ssh/src/org/eclipse/jgit/junit/ssh/SshTestBase.java",
+            "startLine": 32,
+            "endLine": 813,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.eclipse.jgit.internal.transport.jsch.JSchText from Class org.eclipse.jgit.internal.JGitText",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/JGitText.java",
+            "startLine": 17,
+            "endLine": 800,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit.ssh.jsch/src/org/eclipse/jgit/internal/transport/jsch/JSchText.java",
+            "startLine": 15,
+            "endLine": 35,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.eclipse.jgit.transport.ssh.SshTestHarness moved to org.eclipse.jgit.junit.ssh.SshTestHarness",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit.test/src/org/eclipse/jgit/transport/ssh/SshTestHarness.java",
+            "startLine": 55,
+            "endLine": 419,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit.junit.ssh/src/org/eclipse/jgit/junit/ssh/SshTestHarness.java",
+            "startLine": 54,
+            "endLine": 418,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.eclipse.jgit.transport.ssh.SshTestBase moved to org.eclipse.jgit.junit.ssh.SshTestBase",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit.test/src/org/eclipse/jgit/transport/ssh/SshTestBase.java",
+            "startLine": 33,
+            "endLine": 811,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit.junit.ssh/src/org/eclipse/jgit/junit/ssh/SshTestBase.java",
+            "startLine": 32,
+            "endLine": 813,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	factory : DefaultSshSessionFactory to factory : JschConfigSessionFactory in class org.eclipse.jgit.transport.JschConfigSessionFactoryTest",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit.test/tst/org/eclipse/jgit/transport/JschConfigSessionFactoryTest.java",
+            "startLine": 38,
+            "endLine": 38,
+            "startColumn": 27,
+            "endColumn": 67
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit.ssh.jsch.test/tst/org/eclipse/jgit/transport/JschConfigSessionFactoryTest.java",
+            "startLine": 40,
+            "endLine": 40,
+            "startColumn": 27,
+            "endColumn": 67
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private isJsch() : boolean extracted from public testSshKeys(keyName String) : void in class org.eclipse.jgit.junit.ssh.SshTestBase",
+          "leftSideLocation": {
+            "filePath": "org.eclipse.jgit.test/src/org/eclipse/jgit/transport/ssh/SshTestBase.java",
+            "startLine": 771,
+            "endLine": 810,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "org.eclipse.jgit.junit.ssh/src/org/eclipse/jgit/junit/ssh/SshTestBase.java",
+            "startLine": 142,
+            "endLine": 144,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ]
+    }
+  ]
+}

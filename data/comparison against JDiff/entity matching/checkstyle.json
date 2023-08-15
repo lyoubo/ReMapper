@@ -1,0 +1,2489 @@
+{
+  "results": [
+    {
+      "repository": "https://github.com/checkstyle/checkstyle.git",
+      "sha1": "5e413ff0036dfb332340fc3fb85af57845906ded",
+      "url": "https://github.com/checkstyle/checkstyle/commit/5e413ff0036dfb332340fc3fb85af57845906ded",
+      "matchedEntities": [
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.checks.coding.MatchXpathCheck",
+            "type": "Class",
+            "name": "MatchXpathCheck",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/MatchXpathCheck.java",
+            "startLine": 38,
+            "endLine": 300,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.checks.coding.MatchXpathCheck",
+            "type": "Class",
+            "name": "MatchXpathCheck",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/MatchXpathCheck.java",
+            "startLine": 38,
+            "endLine": 300,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.checks.coding.MatchXpathCheck",
+            "type": "Method",
+            "name": "findMatchingNodesByXpathQuery",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/MatchXpathCheck.java",
+            "startLine": 279,
+            "endLine": 299,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.checks.coding.MatchXpathCheck",
+            "type": "Method",
+            "name": "findMatchingNodesByXpathQuery",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/MatchXpathCheck.java",
+            "startLine": 279,
+            "endLine": 299,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.gui.TreeTable",
+            "type": "Class",
+            "name": "TreeTable",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/gui/TreeTable.java",
+            "startLine": 53,
+            "endLine": 418,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.gui.TreeTable",
+            "type": "Class",
+            "name": "TreeTable",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/gui/TreeTable.java",
+            "startLine": 53,
+            "endLine": 418,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.gui.TreeTable",
+            "type": "Method",
+            "name": "selectNodeByXpath",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/gui/TreeTable.java",
+            "startLine": 203,
+            "endLine": 227,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.gui.TreeTable",
+            "type": "Method",
+            "name": "selectNodeByXpath",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/gui/TreeTable.java",
+            "startLine": 203,
+            "endLine": 227,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.utils.XpathUtil",
+            "type": "Class",
+            "name": "XpathUtil",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/utils/XpathUtil.java",
+            "startLine": 47,
+            "endLine": 221,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.utils.XpathUtil",
+            "type": "Class",
+            "name": "XpathUtil",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/utils/XpathUtil.java",
+            "startLine": 47,
+            "endLine": 221,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.utils.XpathUtil",
+            "type": "Method",
+            "name": "printXpathBranch",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/utils/XpathUtil.java",
+            "startLine": 175,
+            "endLine": 200,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.utils.XpathUtil",
+            "type": "Method",
+            "name": "printXpathBranch",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/utils/XpathUtil.java",
+            "startLine": 175,
+            "endLine": 200,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.xpath.AbstractNode",
+            "type": "Class",
+            "name": "AbstractNode",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/xpath/AbstractNode.java",
+            "startLine": 40,
+            "endLine": 402,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.xpath.AbstractNode",
+            "type": "Class",
+            "name": "AbstractNode",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/xpath/AbstractNode.java",
+            "startLine": 39,
+            "endLine": 401,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.xpath.AbstractNode",
+            "type": "Method",
+            "name": "getUnderlyingNode",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/xpath/AbstractNode.java",
+            "startLine": 67,
+            "endLine": 72,
+            "startColumn": 5,
+            "endColumn": 51
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.xpath.AbstractNode",
+            "type": "Method",
+            "name": "getUnderlyingNode",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/xpath/AbstractNode.java",
+            "startLine": 66,
+            "endLine": 71,
+            "startColumn": 5,
+            "endColumn": 48
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.xpath.AttributeNode",
+            "type": "Class",
+            "name": "AttributeNode",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/xpath/AttributeNode.java",
+            "startLine": 29,
+            "endLine": 228,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.xpath.AttributeNode",
+            "type": "Class",
+            "name": "AttributeNode",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/xpath/AttributeNode.java",
+            "startLine": 28,
+            "endLine": 227,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.xpath.AttributeNode",
+            "type": "Method",
+            "name": "getUnderlyingNode",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/xpath/AttributeNode.java",
+            "startLine": 176,
+            "endLine": 185,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.xpath.AttributeNode",
+            "type": "Method",
+            "name": "getUnderlyingNode",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/xpath/AttributeNode.java",
+            "startLine": 175,
+            "endLine": 184,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.xpath.ElementNode",
+            "type": "Class",
+            "name": "ElementNode",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/xpath/ElementNode.java",
+            "startLine": 41,
+            "endLine": 427,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.xpath.ElementNode",
+            "type": "Class",
+            "name": "ElementNode",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/xpath/ElementNode.java",
+            "startLine": 28,
+            "endLine": 136,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.xpath.ElementNode",
+            "type": "Method",
+            "name": "ElementNode",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/xpath/ElementNode.java",
+            "startLine": 74,
+            "endLine": 91,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.xpath.ElementNode",
+            "type": "Method",
+            "name": "ElementNode",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/xpath/ElementNode.java",
+            "startLine": 36,
+            "endLine": 49,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.xpath.ElementNode",
+            "type": "Method",
+            "name": "createChildren",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/xpath/ElementNode.java",
+            "startLine": 143,
+            "endLine": 152,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.xpath.ElementNode",
+            "type": "Method",
+            "name": "createChildren",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/xpath/ElementNode.java",
+            "startLine": 51,
+            "endLine": 60,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.xpath.RootNode",
+            "type": "Class",
+            "name": "RootNode",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/xpath/RootNode.java",
+            "startLine": 38,
+            "endLine": 258,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.xpath.RootNode",
+            "type": "Class",
+            "name": "RootNode",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/xpath/RootNode.java",
+            "startLine": 28,
+            "endLine": 106,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.xpath.RootNode",
+            "type": "Method",
+            "name": "RootNode",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/xpath/RootNode.java",
+            "startLine": 53,
+            "endLine": 61,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.xpath.RootNode",
+            "type": "Method",
+            "name": "RootNode",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/xpath/RootNode.java",
+            "startLine": 36,
+            "endLine": 43,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.xpath.XpathMapperTest",
+            "type": "Class",
+            "name": "XpathMapperTest",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/xpath/XpathMapperTest.java",
+            "startLine": 36,
+            "endLine": 1285,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.xpath.XpathMapperTest",
+            "type": "Class",
+            "name": "XpathMapperTest",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/xpath/XpathMapperTest.java",
+            "startLine": 36,
+            "endLine": 1285,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.xpath.XpathMapperTest",
+            "type": "Method",
+            "name": "convertToArray",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/xpath/XpathMapperTest.java",
+            "startLine": 1265,
+            "endLine": 1272,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.xpath.XpathMapperTest",
+            "type": "Method",
+            "name": "convertToArray",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/xpath/XpathMapperTest.java",
+            "startLine": 1265,
+            "endLine": 1272,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/checkstyle/checkstyle.git",
+      "sha1": "3f31f9f303f38d86242bd4ecf67662ab2f2899a8",
+      "url": "https://github.com/checkstyle/checkstyle/commit/3f31f9f303f38d86242bd4ecf67662ab2f2899a8",
+      "matchedEntities": [
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheckTest",
+            "type": "Class",
+            "name": "JavadocStyleCheckTest",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/checks/javadoc/JavadocStyleCheckTest.java",
+            "startLine": 38,
+            "endLine": 585,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheckTest",
+            "type": "Class",
+            "name": "JavadocStyleCheckTest",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/checks/javadoc/JavadocStyleCheckTest.java",
+            "startLine": 38,
+            "endLine": 593,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/checkstyle/checkstyle.git",
+      "sha1": "a8f065738de6c4ff917a2ee57521f6cf8718f2ba",
+      "url": "https://github.com/checkstyle/checkstyle/commit/a8f065738de6c4ff917a2ee57521f6cf8718f2ba",
+      "matchedEntities": [
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.DetailNodeTreeStringPrinter",
+            "type": "Class",
+            "name": "DetailNodeTreeStringPrinter",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/DetailNodeTreeStringPrinter.java",
+            "startLine": 36,
+            "endLine": 181,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.DetailNodeTreeStringPrinter",
+            "type": "Class",
+            "name": "DetailNodeTreeStringPrinter",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/DetailNodeTreeStringPrinter.java",
+            "startLine": 35,
+            "endLine": 177,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.DetailNodeTreeStringPrinter",
+            "type": "Method",
+            "name": "getParseErrorMessage",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/DetailNodeTreeStringPrinter.java",
+            "startLine": 87,
+            "endLine": 103,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.DetailNodeTreeStringPrinter",
+            "type": "Method",
+            "name": "getParseErrorMessage",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/DetailNodeTreeStringPrinter.java",
+            "startLine": 86,
+            "endLine": 99,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.Main",
+            "type": "Class",
+            "name": "Main",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/Main.java",
+            "startLine": 62,
+            "endLine": 884,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.Main",
+            "type": "Class",
+            "name": "Main",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/Main.java",
+            "startLine": 61,
+            "endLine": 883,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.Main",
+            "type": "Method",
+            "name": "main",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/Main.java",
+            "startLine": 99,
+            "endLine": 158,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.Main",
+            "type": "Method",
+            "name": "main",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/Main.java",
+            "startLine": 98,
+            "endLine": 157,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.Main",
+            "type": "Method",
+            "name": "loadProperties",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/Main.java",
+            "startLine": 425,
+            "endLine": 449,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.Main",
+            "type": "Method",
+            "name": "loadProperties",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/Main.java",
+            "startLine": 424,
+            "endLine": 448,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.PackageObjectFactory",
+            "type": "Class",
+            "name": "PackageObjectFactory",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/PackageObjectFactory.java",
+            "startLine": 37,
+            "endLine": 928,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.PackageObjectFactory",
+            "type": "Class",
+            "name": "PackageObjectFactory",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/PackageObjectFactory.java",
+            "startLine": 36,
+            "endLine": 927,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.PackageObjectFactory",
+            "type": "Method",
+            "name": "createModule",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/PackageObjectFactory.java",
+            "startLine": 171,
+            "endLine": 218,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.PackageObjectFactory",
+            "type": "Method",
+            "name": "createModule",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/PackageObjectFactory.java",
+            "startLine": 170,
+            "endLine": 217,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.PackageObjectFactory",
+            "type": "Method",
+            "name": "createObjectFromFullModuleNames",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/PackageObjectFactory.java",
+            "startLine": 267,
+            "endLine": 294,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.PackageObjectFactory",
+            "type": "Method",
+            "name": "createObjectFromFullModuleNames",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/PackageObjectFactory.java",
+            "startLine": 266,
+            "endLine": 293,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.api.Violation",
+            "type": "Class",
+            "name": "Violation",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/api/Violation.java",
+            "startLine": 30,
+            "endLine": 457,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.api.Violation",
+            "type": "Class",
+            "name": "Violation",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/api/Violation.java",
+            "startLine": 30,
+            "endLine": 446,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.api.Violation",
+            "type": "Method",
+            "name": "getViolation",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/api/Violation.java",
+            "startLine": 428,
+            "endLine": 440,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.api.Violation",
+            "type": "Method",
+            "name": "getViolation",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/api/Violation.java",
+            "startLine": 428,
+            "endLine": 444,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.checks.TranslationCheck",
+            "type": "Class",
+            "name": "TranslationCheck",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/TranslationCheck.java",
+            "startLine": 54,
+            "endLine": 732,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.checks.TranslationCheck",
+            "type": "Class",
+            "name": "TranslationCheck",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/TranslationCheck.java",
+            "startLine": 55,
+            "endLine": 731,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.checks.TranslationCheck",
+            "type": "Method",
+            "name": "validateUserSpecifiedLanguageCodes",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/TranslationCheck.java",
+            "startLine": 312,
+            "endLine": 328,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.checks.TranslationCheck",
+            "type": "Method",
+            "name": "validateUserSpecifiedLanguageCodes",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/TranslationCheck.java",
+            "startLine": 313,
+            "endLine": 327,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.DetailNodeTreeStringPrinterTest",
+            "type": "Class",
+            "name": "DetailNodeTreeStringPrinterTest",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/DetailNodeTreeStringPrinterTest.java",
+            "startLine": 36,
+            "endLine": 235,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.DetailNodeTreeStringPrinterTest",
+            "type": "Class",
+            "name": "DetailNodeTreeStringPrinterTest",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/DetailNodeTreeStringPrinterTest.java",
+            "startLine": 35,
+            "endLine": 228,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.DetailNodeTreeStringPrinterTest",
+            "type": "Method",
+            "name": "testMissedHtmlTagParseErrorMessage",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/DetailNodeTreeStringPrinterTest.java",
+            "startLine": 81,
+            "endLine": 99,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.DetailNodeTreeStringPrinterTest",
+            "type": "Method",
+            "name": "testMissedHtmlTagParseErrorMessage",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/DetailNodeTreeStringPrinterTest.java",
+            "startLine": 80,
+            "endLine": 96,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.DetailNodeTreeStringPrinterTest",
+            "type": "Method",
+            "name": "testParseErrorMessage",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/DetailNodeTreeStringPrinterTest.java",
+            "startLine": 101,
+            "endLine": 119,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.DetailNodeTreeStringPrinterTest",
+            "type": "Method",
+            "name": "testParseErrorMessage",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/DetailNodeTreeStringPrinterTest.java",
+            "startLine": 98,
+            "endLine": 114,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.DetailNodeTreeStringPrinterTest",
+            "type": "Method",
+            "name": "testWrongSingletonParseErrorMessage",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/DetailNodeTreeStringPrinterTest.java",
+            "startLine": 121,
+            "endLine": 140,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.DetailNodeTreeStringPrinterTest",
+            "type": "Method",
+            "name": "testWrongSingletonParseErrorMessage",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/DetailNodeTreeStringPrinterTest.java",
+            "startLine": 116,
+            "endLine": 133,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.MainTest",
+            "type": "Class",
+            "name": "MainTest",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/MainTest.java",
+            "startLine": 69,
+            "endLine": 1897,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.MainTest",
+            "type": "Class",
+            "name": "MainTest",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/MainTest.java",
+            "startLine": 69,
+            "endLine": 1898,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.MainTest",
+            "type": "Method",
+            "name": "testExistingTargetFile",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/MainTest.java",
+            "startLine": 385,
+            "endLine": 396,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.MainTest",
+            "type": "Method",
+            "name": "testExistingTargetFile",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/MainTest.java",
+            "startLine": 385,
+            "endLine": 396,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.MainTest",
+            "type": "Method",
+            "name": "testExistingTargetFilePlainOutput",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/MainTest.java",
+            "startLine": 466,
+            "endLine": 478,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.MainTest",
+            "type": "Method",
+            "name": "testExistingTargetFilePlainOutput",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/MainTest.java",
+            "startLine": 466,
+            "endLine": 478,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.MainTest",
+            "type": "Method",
+            "name": "testExistingTargetFileWithViolations",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/MainTest.java",
+            "startLine": 480,
+            "endLine": 507,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.MainTest",
+            "type": "Method",
+            "name": "testExistingTargetFileWithViolations",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/MainTest.java",
+            "startLine": 480,
+            "endLine": 507,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.MainTest",
+            "type": "Method",
+            "name": "testExistingTargetFileWithError",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/MainTest.java",
+            "startLine": 539,
+            "endLine": 567,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.MainTest",
+            "type": "Method",
+            "name": "testExistingTargetFileWithError",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/MainTest.java",
+            "startLine": 539,
+            "endLine": 567,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.MainTest",
+            "type": "Method",
+            "name": "testExistingTargetFileWithOneError",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/MainTest.java",
+            "startLine": 569,
+            "endLine": 598,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.MainTest",
+            "type": "Method",
+            "name": "testExistingTargetFileWithOneError",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/MainTest.java",
+            "startLine": 569,
+            "endLine": 598,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.MainTest",
+            "type": "Method",
+            "name": "testExistingTargetFileWithOneErrorAgainstSunCheck",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/MainTest.java",
+            "startLine": 600,
+            "endLine": 620,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.MainTest",
+            "type": "Method",
+            "name": "testExistingTargetFileWithOneErrorAgainstSunCheck",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/MainTest.java",
+            "startLine": 600,
+            "endLine": 620,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.MainTest",
+            "type": "Method",
+            "name": "testExistingTargetFilePlainOutputProperties",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/MainTest.java",
+            "startLine": 666,
+            "endLine": 678,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.MainTest",
+            "type": "Method",
+            "name": "testExistingTargetFilePlainOutputProperties",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/MainTest.java",
+            "startLine": 666,
+            "endLine": 678,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.MainTest",
+            "type": "Method",
+            "name": "testPropertyFileWithPropertyChaining",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/MainTest.java",
+            "startLine": 680,
+            "endLine": 693,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.MainTest",
+            "type": "Method",
+            "name": "testPropertyFileWithPropertyChaining",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/MainTest.java",
+            "startLine": 680,
+            "endLine": 693,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.MainTest",
+            "type": "Method",
+            "name": "testExistingDirectoryWithViolations",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/MainTest.java",
+            "startLine": 800,
+            "endLine": 835,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.MainTest",
+            "type": "Method",
+            "name": "testExistingDirectoryWithViolations",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/MainTest.java",
+            "startLine": 800,
+            "endLine": 835,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.MainTest",
+            "type": "Method",
+            "name": "testCustomSimpleRootModule",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/MainTest.java",
+            "startLine": 1737,
+            "endLine": 1760,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.MainTest",
+            "type": "Method",
+            "name": "testCustomSimpleRootModule",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/MainTest.java",
+            "startLine": 1737,
+            "endLine": 1761,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.PackageObjectFactoryTest",
+            "type": "Class",
+            "name": "PackageObjectFactoryTest",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/PackageObjectFactoryTest.java",
+            "startLine": 62,
+            "endLine": 534,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.PackageObjectFactoryTest",
+            "type": "Class",
+            "name": "PackageObjectFactoryTest",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/PackageObjectFactoryTest.java",
+            "startLine": 62,
+            "endLine": 534,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.PackageObjectFactoryTest",
+            "type": "Method",
+            "name": "testMakeCheckFromName",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/PackageObjectFactoryTest.java",
+            "startLine": 151,
+            "endLine": 166,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.PackageObjectFactoryTest",
+            "type": "Method",
+            "name": "testMakeCheckFromName",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/PackageObjectFactoryTest.java",
+            "startLine": 151,
+            "endLine": 166,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.PackageObjectFactoryTest",
+            "type": "Method",
+            "name": "testCreateModuleWithNonExistName",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/PackageObjectFactoryTest.java",
+            "startLine": 168,
+            "endLine": 188,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.PackageObjectFactoryTest",
+            "type": "Method",
+            "name": "testCreateModuleWithNonExistName",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/PackageObjectFactoryTest.java",
+            "startLine": 168,
+            "endLine": 188,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.PackageObjectFactoryTest",
+            "type": "Method",
+            "name": "testCreateObjectFromFullModuleNamesWithAmbiguousException",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/PackageObjectFactoryTest.java",
+            "startLine": 238,
+            "endLine": 260,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.PackageObjectFactoryTest",
+            "type": "Method",
+            "name": "testCreateObjectFromFullModuleNamesWithAmbiguousException",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/PackageObjectFactoryTest.java",
+            "startLine": 238,
+            "endLine": 260,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.PackageObjectFactoryTest",
+            "type": "Method",
+            "name": "testCreateObjectFromFullModuleNamesWithCantInstantiateException",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/PackageObjectFactoryTest.java",
+            "startLine": 262,
+            "endLine": 288,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.PackageObjectFactoryTest",
+            "type": "Method",
+            "name": "testCreateObjectFromFullModuleNamesWithCantInstantiateException",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/PackageObjectFactoryTest.java",
+            "startLine": 262,
+            "endLine": 288,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.checks.TranslationCheckTest",
+            "type": "Class",
+            "name": "TranslationCheckTest",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/checks/TranslationCheckTest.java",
+            "startLine": 57,
+            "endLine": 656,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.checks.TranslationCheckTest",
+            "type": "Class",
+            "name": "TranslationCheckTest",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/checks/TranslationCheckTest.java",
+            "startLine": 57,
+            "endLine": 653,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.checks.TranslationCheckTest",
+            "type": "Method",
+            "name": "testLogIoExceptionFileNotFound",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/checks/TranslationCheckTest.java",
+            "startLine": 214,
+            "endLine": 240,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.checks.TranslationCheckTest",
+            "type": "Method",
+            "name": "testLogIoExceptionFileNotFound",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/checks/TranslationCheckTest.java",
+            "startLine": 214,
+            "endLine": 240,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.checks.TranslationCheckTest",
+            "type": "Method",
+            "name": "testLogIoException",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/checks/TranslationCheckTest.java",
+            "startLine": 242,
+            "endLine": 265,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.checks.TranslationCheckTest",
+            "type": "Method",
+            "name": "testLogIoException",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/checks/TranslationCheckTest.java",
+            "startLine": 242,
+            "endLine": 265,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.checks.TranslationCheckTest",
+            "type": "Method",
+            "name": "testLogIllegalArgumentException",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/checks/TranslationCheckTest.java",
+            "startLine": 267,
+            "endLine": 285,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.checks.TranslationCheckTest",
+            "type": "Method",
+            "name": "testLogIllegalArgumentException",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/checks/TranslationCheckTest.java",
+            "startLine": 267,
+            "endLine": 285,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.checks.TranslationCheckTest",
+            "type": "Method",
+            "name": "testWrongUserSpecifiedLanguageCodes",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/checks/TranslationCheckTest.java",
+            "startLine": 596,
+            "endLine": 614,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.checks.TranslationCheckTest",
+            "type": "Method",
+            "name": "testWrongUserSpecifiedLanguageCodes",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/checks/TranslationCheckTest.java",
+            "startLine": 596,
+            "endLine": 611,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/checkstyle/checkstyle.git",
+      "sha1": "3eca7e0e25a9500d86ea7c28df4917b77717ae36",
+      "url": "https://github.com/checkstyle/checkstyle/commit/3eca7e0e25a9500d86ea7c28df4917b77717ae36",
+      "matchedEntities": [
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.DefaultLogger",
+            "type": "Class",
+            "name": "DefaultLogger",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/DefaultLogger.java",
+            "startLine": 41,
+            "endLine": 305,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.DefaultLogger",
+            "type": "Class",
+            "name": "DefaultLogger",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/DefaultLogger.java",
+            "startLine": 34,
+            "endLine": 213,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.DefaultLogger",
+            "type": "Method",
+            "name": "addException",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/DefaultLogger.java",
+            "startLine": 167,
+            "endLine": 175,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.DefaultLogger",
+            "type": "Method",
+            "name": "addException",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/DefaultLogger.java",
+            "startLine": 160,
+            "endLine": 169,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.DefaultLogger",
+            "type": "Method",
+            "name": "auditStarted",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/DefaultLogger.java",
+            "startLine": 177,
+            "endLine": 182,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.DefaultLogger",
+            "type": "Method",
+            "name": "auditStarted",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/DefaultLogger.java",
+            "startLine": 171,
+            "endLine": 178,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.DefaultLogger",
+            "type": "Method",
+            "name": "auditFinished",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/DefaultLogger.java",
+            "startLine": 184,
+            "endLine": 189,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.DefaultLogger",
+            "type": "Method",
+            "name": "auditFinished",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/DefaultLogger.java",
+            "startLine": 180,
+            "endLine": 187,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.api.Violation",
+            "type": "Class",
+            "name": "Violation",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/api/Violation.java",
+            "startLine": 41,
+            "endLine": 561,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.api.Violation",
+            "type": "Class",
+            "name": "Violation",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/api/Violation.java",
+            "startLine": 30,
+            "endLine": 474,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.api.Violation",
+            "type": "Method",
+            "name": "setLocale",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/api/Violation.java",
+            "startLine": 379,
+            "endLine": 392,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.api.Violation",
+            "type": "Method",
+            "name": "setLocale",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/api/Violation.java",
+            "startLine": 361,
+            "endLine": 373,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.api.Violation",
+            "type": "Method",
+            "name": "getViolation",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/api/Violation.java",
+            "startLine": 469,
+            "endLine": 497,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.api.Violation",
+            "type": "Method",
+            "name": "getViolation",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/api/Violation.java",
+            "startLine": 445,
+            "endLine": 457,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.AbstractModuleTestSupport",
+            "type": "Class",
+            "name": "AbstractModuleTestSupport",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/AbstractModuleTestSupport.java",
+            "startLine": 53,
+            "endLine": 562,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.AbstractModuleTestSupport",
+            "type": "Class",
+            "name": "AbstractModuleTestSupport",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/AbstractModuleTestSupport.java",
+            "startLine": 53,
+            "endLine": 562,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.AbstractModuleTestSupport",
+            "type": "Method",
+            "name": "internalGetCheckMessage",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/AbstractModuleTestSupport.java",
+            "startLine": 496,
+            "endLine": 515,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.AbstractModuleTestSupport",
+            "type": "Method",
+            "name": "internalGetCheckMessage",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/AbstractModuleTestSupport.java",
+            "startLine": 496,
+            "endLine": 515,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.DefaultLoggerTest",
+            "type": "Class",
+            "name": "DefaultLoggerTest",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/DefaultLoggerTest.java",
+            "startLine": 49,
+            "endLine": 411,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.DefaultLoggerTest",
+            "type": "Class",
+            "name": "DefaultLoggerTest",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/DefaultLoggerTest.java",
+            "startLine": 44,
+            "endLine": 346,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.DefaultLoggerTest",
+            "type": "Method",
+            "name": "tearDown",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/DefaultLoggerTest.java",
+            "startLine": 53,
+            "endLine": 59,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.DefaultLoggerTest",
+            "type": "Method",
+            "name": "tearDown",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/DefaultLoggerTest.java",
+            "startLine": 48,
+            "endLine": 51,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.DefaultLoggerTest",
+            "type": "Method",
+            "name": "testCtor",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/DefaultLoggerTest.java",
+            "startLine": 61,
+            "endLine": 83,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.DefaultLoggerTest",
+            "type": "Method",
+            "name": "testCtor",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/DefaultLoggerTest.java",
+            "startLine": 53,
+            "endLine": 70,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.DefaultLoggerTest",
+            "type": "Method",
+            "name": "testAddError",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/DefaultLoggerTest.java",
+            "startLine": 153,
+            "endLine": 179,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.DefaultLoggerTest",
+            "type": "Method",
+            "name": "testAddError",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/DefaultLoggerTest.java",
+            "startLine": 140,
+            "endLine": 164,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.DefaultLoggerTest",
+            "type": "Method",
+            "name": "testAddErrorModuleId",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/DefaultLoggerTest.java",
+            "startLine": 181,
+            "endLine": 206,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.DefaultLoggerTest",
+            "type": "Method",
+            "name": "testAddErrorModuleId",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/DefaultLoggerTest.java",
+            "startLine": 166,
+            "endLine": 189,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.DefaultLoggerTest",
+            "type": "Method",
+            "name": "getAuditStartMessageClass",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/DefaultLoggerTest.java",
+            "startLine": 371,
+            "endLine": 374,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.DefaultLoggerTest",
+            "type": "Method",
+            "name": "getAuditStartMessageClass",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/DefaultLoggerTest.java",
+            "startLine": 309,
+            "endLine": 312,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.DefaultLoggerTest",
+            "type": "Method",
+            "name": "getAuditFinishMessageClass",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/DefaultLoggerTest.java",
+            "startLine": 376,
+            "endLine": 379,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.DefaultLoggerTest",
+            "type": "Method",
+            "name": "getAuditFinishMessageClass",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/DefaultLoggerTest.java",
+            "startLine": 314,
+            "endLine": 317,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.DefaultLoggerTest",
+            "type": "Method",
+            "name": "getAuditStartMessage",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/DefaultLoggerTest.java",
+            "startLine": 381,
+            "endLine": 386,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.DefaultLoggerTest",
+            "type": "Method",
+            "name": "getAuditStartMessage",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/DefaultLoggerTest.java",
+            "startLine": 324,
+            "endLine": 327,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.DefaultLoggerTest",
+            "type": "Method",
+            "name": "getAuditFinishMessage",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/DefaultLoggerTest.java",
+            "startLine": 388,
+            "endLine": 393,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.DefaultLoggerTest",
+            "type": "Method",
+            "name": "getAuditFinishMessage",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/DefaultLoggerTest.java",
+            "startLine": 329,
+            "endLine": 332,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.api.ViolationTest",
+            "type": "Class",
+            "name": "ViolationTest",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/api/ViolationTest.java",
+            "startLine": 44,
+            "endLine": 469,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.api.ViolationTest",
+            "type": "Class",
+            "name": "ViolationTest",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/api/ViolationTest.java",
+            "startLine": 35,
+            "endLine": 260,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.api.ViolationTest",
+            "type": "Method",
+            "name": "tearDown",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/api/ViolationTest.java",
+            "startLine": 442,
+            "endLine": 446,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.api.ViolationTest",
+            "type": "Method",
+            "name": "tearDown",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/api/ViolationTest.java",
+            "startLine": 255,
+            "endLine": 258,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/checkstyle/checkstyle.git",
+      "sha1": "1674de82125f5340171fe5900dce845d3f86f0d9",
+      "url": "https://github.com/checkstyle/checkstyle/commit/1674de82125f5340171fe5900dce845d3f86f0d9",
+      "matchedEntities": [
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.checks.coding.VariableDeclarationUsageDistanceCheck",
+            "type": "Class",
+            "name": "VariableDeclarationUsageDistanceCheck",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/VariableDeclarationUsageDistanceCheck.java",
+            "startLine": 38,
+            "endLine": 1007,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.checks.coding.VariableDeclarationUsageDistanceCheck",
+            "type": "Class",
+            "name": "VariableDeclarationUsageDistanceCheck",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/VariableDeclarationUsageDistanceCheck.java",
+            "startLine": 38,
+            "endLine": 1014,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.checks.coding.VariableDeclarationUsageDistanceCheck",
+            "type": "Method",
+            "name": "getFirstNodeInsideSwitchBlock",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/VariableDeclarationUsageDistanceCheck.java",
+            "startLine": 798,
+            "endLine": 835,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.checks.coding.VariableDeclarationUsageDistanceCheck",
+            "type": "Method",
+            "name": "getFirstNodeInsideSwitchBlock",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/VariableDeclarationUsageDistanceCheck.java",
+            "startLine": 798,
+            "endLine": 825,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.checks.coding.VariableDeclarationUsageDistanceCheckTest",
+            "type": "Class",
+            "name": "VariableDeclarationUsageDistanceCheckTest",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/checks/coding/VariableDeclarationUsageDistanceCheckTest.java",
+            "startLine": 31,
+            "endLine": 312,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.checks.coding.VariableDeclarationUsageDistanceCheckTest",
+            "type": "Class",
+            "name": "VariableDeclarationUsageDistanceCheckTest",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/checks/coding/VariableDeclarationUsageDistanceCheckTest.java",
+            "startLine": 31,
+            "endLine": 323,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/checkstyle/checkstyle.git",
+      "sha1": "c590b354047568e41c93cffdc113e1973b333eba",
+      "url": "https://github.com/checkstyle/checkstyle/commit/c590b354047568e41c93cffdc113e1973b333eba",
+      "matchedEntities": [
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.ant.CheckstyleAntTaskTest",
+            "type": "Class",
+            "name": "CheckstyleAntTaskTest",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/ant/CheckstyleAntTaskTest.java",
+            "startLine": 56,
+            "endLine": 836,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.ant.CheckstyleAntTaskTest",
+            "type": "Class",
+            "name": "CheckstyleAntTaskTest",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/ant/CheckstyleAntTaskTest.java",
+            "startLine": 57,
+            "endLine": 853,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.ant.CheckstyleAntTaskTest",
+            "type": "Method",
+            "name": "testLoggedTime",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/ant/CheckstyleAntTaskTest.java",
+            "startLine": 806,
+            "endLine": 824,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.ant.CheckstyleAntTaskTest",
+            "type": "Method",
+            "name": "testLoggedTime",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/ant/CheckstyleAntTaskTest.java",
+            "startLine": 807,
+            "endLine": 822,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/checkstyle/checkstyle.git",
+      "sha1": "077ee041204a186ca08e51e115462d9b58e9b2dd",
+      "url": "https://github.com/checkstyle/checkstyle/commit/077ee041204a186ca08e51e115462d9b58e9b2dd",
+      "matchedEntities": [
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.checks.coding.OneStatementPerLineCheck",
+            "type": "Class",
+            "name": "OneStatementPerLineCheck",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/OneStatementPerLineCheck.java",
+            "startLine": 31,
+            "endLine": 362,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.checks.coding.OneStatementPerLineCheck",
+            "type": "Class",
+            "name": "OneStatementPerLineCheck",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/OneStatementPerLineCheck.java",
+            "startLine": 30,
+            "endLine": 343,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.checks.coding.OneStatementPerLineCheck",
+            "type": "Method",
+            "name": "checkIfSemicolonIsInDifferentLineThanPrevious",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/OneStatementPerLineCheck.java",
+            "startLine": 254,
+            "endLine": 277,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.checks.coding.OneStatementPerLineCheck",
+            "type": "Method",
+            "name": "checkIfSemicolonIsInDifferentLineThanPrevious",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/OneStatementPerLineCheck.java",
+            "startLine": 253,
+            "endLine": 277,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/checkstyle/checkstyle.git",
+      "sha1": "2282a7eca66073d838ace295d1d6874818323fab",
+      "url": "https://github.com/checkstyle/checkstyle/commit/2282a7eca66073d838ace295d1d6874818323fab",
+      "matchedEntities": [
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.utils.AnnotationUtil",
+            "type": "Class",
+            "name": "AnnotationUtil",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/utils/AnnotationUtil.java",
+            "startLine": 29,
+            "endLine": 253,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.utils.AnnotationUtil",
+            "type": "Class",
+            "name": "AnnotationUtil",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/utils/AnnotationUtil.java",
+            "startLine": 29,
+            "endLine": 270,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.utils.AnnotationUtil",
+            "type": "Method",
+            "name": "containsAnnotation",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/utils/AnnotationUtil.java",
+            "startLine": 98,
+            "endLine": 138,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.utils.AnnotationUtil",
+            "type": "Method",
+            "name": "containsAnnotation",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/utils/AnnotationUtil.java",
+            "startLine": 98,
+            "endLine": 133,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheckTest",
+            "type": "Class",
+            "name": "MissingJavadocMethodCheckTest",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/checks/javadoc/MissingJavadocMethodCheckTest.java",
+            "startLine": 31,
+            "endLine": 446,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheckTest",
+            "type": "Class",
+            "name": "MissingJavadocMethodCheckTest",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/checks/javadoc/MissingJavadocMethodCheckTest.java",
+            "startLine": 31,
+            "endLine": 448,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheckTest",
+            "type": "Method",
+            "name": "allowedAnnotationsTest",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/checks/javadoc/MissingJavadocMethodCheckTest.java",
+            "startLine": 83,
+            "endLine": 88,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheckTest",
+            "type": "Method",
+            "name": "allowedAnnotationsTest",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/checks/javadoc/MissingJavadocMethodCheckTest.java",
+            "startLine": 83,
+            "endLine": 90,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheckTest",
+            "type": "Class",
+            "name": "MissingJavadocTypeCheckTest",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/checks/javadoc/MissingJavadocTypeCheckTest.java",
+            "startLine": 31,
+            "endLine": 294,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheckTest",
+            "type": "Class",
+            "name": "MissingJavadocTypeCheckTest",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/checks/javadoc/MissingJavadocTypeCheckTest.java",
+            "startLine": 31,
+            "endLine": 365,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.utils.AnnotationUtilTest",
+            "type": "Class",
+            "name": "AnnotationUtilTest",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/utils/AnnotationUtilTest.java",
+            "startLine": 33,
+            "endLine": 369,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.utils.AnnotationUtilTest",
+            "type": "Class",
+            "name": "AnnotationUtilTest",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/utils/AnnotationUtilTest.java",
+            "startLine": 33,
+            "endLine": 346,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/checkstyle/checkstyle.git",
+      "sha1": "576e8f4a88e521896a27e38a547ba1e2729c2bb2",
+      "url": "https://github.com/checkstyle/checkstyle/commit/576e8f4a88e521896a27e38a547ba1e2729c2bb2",
+      "matchedEntities": [
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheckTest",
+            "type": "Class",
+            "name": "JavadocStyleCheckTest",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/checks/javadoc/JavadocStyleCheckTest.java",
+            "startLine": 38,
+            "endLine": 554,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheckTest",
+            "type": "Class",
+            "name": "JavadocStyleCheckTest",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/checks/javadoc/JavadocStyleCheckTest.java",
+            "startLine": 38,
+            "endLine": 578,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/checkstyle/checkstyle.git",
+      "sha1": "cd28d8c7ebbe51464d96c05db33e7a1f1b3ad86a",
+      "url": "https://github.com/checkstyle/checkstyle/commit/cd28d8c7ebbe51464d96c05db33e7a1f1b3ad86a",
+      "matchedEntities": [
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.checks.design.FinalClassCheck",
+            "type": "Class",
+            "name": "FinalClassCheck",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/design/FinalClassCheck.java",
+            "startLine": 37,
+            "endLine": 509,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.checks.design.FinalClassCheck",
+            "type": "Class",
+            "name": "FinalClassCheck",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/design/FinalClassCheck.java",
+            "startLine": 40,
+            "endLine": 608,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.checks.design.FinalClassCheck",
+            "type": "Method",
+            "name": "beginTree",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/design/FinalClassCheck.java",
+            "startLine": 144,
+            "endLine": 149,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.checks.design.FinalClassCheck",
+            "type": "Method",
+            "name": "beginTree",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/design/FinalClassCheck.java",
+            "startLine": 153,
+            "endLine": 159,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.checks.design.FinalClassCheck",
+            "type": "Method",
+            "name": "visitToken",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/design/FinalClassCheck.java",
+            "startLine": 151,
+            "endLine": 186,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.checks.design.FinalClassCheck",
+            "type": "Method",
+            "name": "visitToken",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/design/FinalClassCheck.java",
+            "startLine": 161,
+            "endLine": 196,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.checks.design.FinalClassCheck",
+            "type": "Method",
+            "name": "visitClass",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/design/FinalClassCheck.java",
+            "startLine": 188,
+            "endLine": 198,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.checks.design.FinalClassCheck",
+            "type": "Method",
+            "name": "visitClass",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/design/FinalClassCheck.java",
+            "startLine": 198,
+            "endLine": 208,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.checks.design.FinalClassCheck",
+            "type": "Method",
+            "name": "visitCtor",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/design/FinalClassCheck.java",
+            "startLine": 200,
+            "endLine": 216,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.checks.design.FinalClassCheck",
+            "type": "Method",
+            "name": "visitCtor",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/design/FinalClassCheck.java",
+            "startLine": 210,
+            "endLine": 227,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.checks.design.FinalClassCheck",
+            "type": "Method",
+            "name": "leaveToken",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/design/FinalClassCheck.java",
+            "startLine": 218,
+            "endLine": 234,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.checks.design.FinalClassCheck",
+            "type": "Method",
+            "name": "leaveToken",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/design/FinalClassCheck.java",
+            "startLine": 229,
+            "endLine": 246,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.checks.design.FinalClassCheck",
+            "type": "Method",
+            "name": "shouldBeDeclaredAsFinal",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/design/FinalClassCheck.java",
+            "startLine": 236,
+            "endLine": 249,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.checks.design.FinalClassCheck",
+            "type": "Method",
+            "name": "shouldBeDeclaredAsFinal",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/design/FinalClassCheck.java",
+            "startLine": 248,
+            "endLine": 261,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.checks.design.FinalClassCheck",
+            "type": "Method",
+            "name": "registerNestedSubclassToOuterSuperClasses",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/design/FinalClassCheck.java",
+            "startLine": 251,
+            "endLine": 272,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.checks.design.FinalClassCheck",
+            "type": "Method",
+            "name": "registerNestedSubclassToOuterSuperClasses",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/design/FinalClassCheck.java",
+            "startLine": 263,
+            "endLine": 282,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.checks.design.FinalClassCheck.ClassDesc",
+            "type": "Method",
+            "name": "ClassDesc",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/design/FinalClassCheck.java",
+            "startLine": 391,
+            "endLine": 405,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.checks.design.FinalClassCheck.TypeDeclarationDescription",
+            "type": "Method",
+            "name": "TypeDeclarationDescription",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/design/FinalClassCheck.java",
+            "startLine": 452,
+            "endLine": 465,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.checks.design.FinalClassCheck",
+            "type": "Method",
+            "name": "getNearestClassWithSameName",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/design/FinalClassCheck.java",
+            "startLine": 274,
+            "endLine": 291,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.checks.design.FinalClassCheck",
+            "type": "Method",
+            "name": "getNearestClassWithSameName",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/design/FinalClassCheck.java",
+            "startLine": 305,
+            "endLine": 350,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.checks.design.FinalClassCheck.ClassDesc",
+            "type": "Method",
+            "name": "getQualifiedName",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/design/FinalClassCheck.java",
+            "startLine": 407,
+            "endLine": 414,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.checks.design.FinalClassCheck.TypeDeclarationDescription",
+            "type": "Method",
+            "name": "getQualifiedName",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/design/FinalClassCheck.java",
+            "startLine": 467,
+            "endLine": 475,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.checks.design.FinalClassCheck.ClassDesc",
+            "type": "Method",
+            "name": "getDepth",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/design/FinalClassCheck.java",
+            "startLine": 445,
+            "endLine": 452,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.checks.design.FinalClassCheck.TypeDeclarationDescription",
+            "type": "Method",
+            "name": "getDepth",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/design/FinalClassCheck.java",
+            "startLine": 477,
+            "endLine": 484,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.checks.design.FinalClassCheck.ClassDesc",
+            "type": "Class",
+            "name": "ClassDesc",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/design/FinalClassCheck.java",
+            "startLine": 361,
+            "endLine": 508,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.checks.design.FinalClassCheck.ClassDesc",
+            "type": "Class",
+            "name": "ClassDesc",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/design/FinalClassCheck.java",
+            "startLine": 496,
+            "endLine": 607,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.checks.design.FinalClassCheck.ClassDesc",
+            "type": "Method",
+            "name": "ClassDesc",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/design/FinalClassCheck.java",
+            "startLine": 391,
+            "endLine": 405,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.checks.design.FinalClassCheck.ClassDesc",
+            "type": "Method",
+            "name": "ClassDesc",
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/design/FinalClassCheck.java",
+            "startLine": 519,
+            "endLine": 531,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.checks.design.FinalClassCheckTest",
+            "type": "Class",
+            "name": "FinalClassCheckTest",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/checks/design/FinalClassCheckTest.java",
+            "startLine": 31,
+            "endLine": 191,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.checks.design.FinalClassCheckTest",
+            "type": "Class",
+            "name": "FinalClassCheckTest",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/checks/design/FinalClassCheckTest.java",
+            "startLine": 31,
+            "endLine": 238,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.checks.design.FinalClassCheckTest",
+            "type": "Method",
+            "name": "testFinalClassInnerAndNestedClasses",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/checks/design/FinalClassCheckTest.java",
+            "startLine": 140,
+            "endLine": 148,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.puppycrawl.tools.checkstyle.checks.design.FinalClassCheckTest",
+            "type": "Method",
+            "name": "testFinalClassInnerAndNestedClasses",
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/checks/design/FinalClassCheckTest.java",
+            "startLine": 140,
+            "endLine": 149,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4798 @@
+{
+  "results": [
+    {
+      "repository": "https://github.com/mockito/mockito.git",
+      "sha1": "8f4af189a9f98190c1ead3aff630e05cda721a89",
+      "url": "https://github.com/mockito/mockito/commit/8f4af189a9f98190c1ead3aff630e05cda721a89",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.invocation.MatcherApplicationStrategy",
+            "type": "Method",
+            "name": "forEachMatcherAndArgument",
+            "filePath": "src/main/java/org/mockito/internal/invocation/MatcherApplicationStrategy.java",
+            "startLine": 60,
+            "endLine": 91,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.invocation.MatcherApplicationStrategy",
+            "type": "Method",
+            "name": "forEachMatcherAndArgument",
+            "filePath": "src/main/java/org/mockito/internal/invocation/MatcherApplicationStrategy.java",
+            "startLine": 44,
+            "endLine": 77,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.invocation.MatcherApplicationStrategy",
+            "type": "Class",
+            "name": "MatcherApplicationStrategy",
+            "filePath": "src/main/java/org/mockito/internal/invocation/MatcherApplicationStrategy.java",
+            "startLine": 20,
+            "endLine": 144,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.invocation.MatcherApplicationStrategy",
+            "type": "Class",
+            "name": "MatcherApplicationStrategy",
+            "filePath": "src/main/java/org/mockito/internal/invocation/MatcherApplicationStrategy.java",
+            "startLine": 16,
+            "endLine": 122,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.invocation.MatcherApplicationStrategyTest",
+            "type": "Method",
+            "name": "shouldMatchAnyEvenIfMatcherIsWrappedInHamcrestMatcher",
+            "filePath": "src/test/java/org/mockito/internal/invocation/MatcherApplicationStrategyTest.java",
+            "startLine": 212,
+            "endLine": 225,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.invocation.MatcherApplicationStrategyTest",
+            "type": "Method",
+            "name": "shouldMatchAnyEvenIfMatcherIsWrappedInHamcrestMatcher",
+            "filePath": "src/test/java/org/mockito/internal/invocation/MatcherApplicationStrategyTest.java",
+            "startLine": 212,
+            "endLine": 226,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.invocation.MatcherApplicationStrategyTest.IntMatcher",
+            "type": "Class",
+            "name": "IntMatcher",
+            "filePath": "src/test/java/org/mockito/internal/invocation/MatcherApplicationStrategyTest.java",
+            "startLine": 227,
+            "endLine": 233,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.invocation.MatcherApplicationStrategyTest.IntMatcher",
+            "type": "Class",
+            "name": "IntMatcher",
+            "filePath": "src/test/java/org/mockito/internal/invocation/MatcherApplicationStrategyTest.java",
+            "startLine": 228,
+            "endLine": 234,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.invocation.MatcherApplicationStrategyTest.RecordingAction",
+            "type": "Field",
+            "name": "matchers",
+            "filePath": "src/test/java/org/mockito/internal/invocation/MatcherApplicationStrategyTest.java",
+            "startLine": 246,
+            "endLine": 246,
+            "startColumn": 42,
+            "endColumn": 88
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.invocation.MatcherApplicationStrategyTest.RecordingAction",
+            "type": "Field",
+            "name": "matchers",
+            "filePath": "src/test/java/org/mockito/internal/invocation/MatcherApplicationStrategyTest.java",
+            "startLine": 247,
+            "endLine": 247,
+            "startColumn": 48,
+            "endColumn": 94
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.invocation.MatcherApplicationStrategyTest.RecordingAction",
+            "type": "Class",
+            "name": "RecordingAction",
+            "filePath": "src/test/java/org/mockito/internal/invocation/MatcherApplicationStrategyTest.java",
+            "startLine": 245,
+            "endLine": 261,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.invocation.MatcherApplicationStrategyTest.RecordingAction",
+            "type": "Class",
+            "name": "RecordingAction",
+            "filePath": "src/test/java/org/mockito/internal/invocation/MatcherApplicationStrategyTest.java",
+            "startLine": 246,
+            "endLine": 262,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.invocation.MatcherApplicationStrategyTest",
+            "type": "Class",
+            "name": "MatcherApplicationStrategyTest",
+            "filePath": "src/test/java/org/mockito/internal/invocation/MatcherApplicationStrategyTest.java",
+            "startLine": 33,
+            "endLine": 278,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.invocation.MatcherApplicationStrategyTest",
+            "type": "Class",
+            "name": "MatcherApplicationStrategyTest",
+            "filePath": "src/test/java/org/mockito/internal/invocation/MatcherApplicationStrategyTest.java",
+            "startLine": 33,
+            "endLine": 279,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.invocation.MatcherApplicationStrategy",
+            "type": "Method",
+            "name": "getMatcherApplicationStrategyFor",
+            "filePath": "src/main/java/org/mockito/internal/invocation/MatcherApplicationStrategy.java",
+            "startLine": 41,
+            "endLine": 58,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.invocation.MatcherApplicationStrategy",
+            "type": "Method",
+            "name": "getMatcherApplicationStrategyFor",
+            "filePath": "src/main/java/org/mockito/internal/invocation/MatcherApplicationStrategy.java",
+            "startLine": 27,
+            "endLine": 42,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.invocation.MatcherApplicationStrategyTest",
+            "type": "Field",
+            "name": "matchers",
+            "filePath": "src/test/java/org/mockito/internal/invocation/MatcherApplicationStrategyTest.java",
+            "startLine": 38,
+            "endLine": 38,
+            "startColumn": 18,
+            "endColumn": 26
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.invocation.MatcherApplicationStrategyTest",
+            "type": "Field",
+            "name": "matchers",
+            "filePath": "src/test/java/org/mockito/internal/invocation/MatcherApplicationStrategyTest.java",
+            "startLine": 38,
+            "endLine": 38,
+            "startColumn": 48,
+            "endColumn": 56
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.invocation.MatcherApplicationStrategy",
+            "type": "Field",
+            "name": "matchers",
+            "filePath": "src/main/java/org/mockito/internal/invocation/MatcherApplicationStrategy.java",
+            "startLine": 23,
+            "endLine": 23,
+            "startColumn": 44,
+            "endColumn": 52
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.invocation.MatcherApplicationStrategy",
+            "type": "Field",
+            "name": "matchers",
+            "filePath": "src/main/java/org/mockito/internal/invocation/MatcherApplicationStrategy.java",
+            "startLine": 19,
+            "endLine": 19,
+            "startColumn": 54,
+            "endColumn": 62
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.invocation.MatcherApplicationStrategy",
+            "type": "Method",
+            "name": "isLastMatcherVarargMatcher",
+            "filePath": "src/main/java/org/mockito/internal/invocation/MatcherApplicationStrategy.java",
+            "startLine": 110,
+            "endLine": 116,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.invocation.MatcherApplicationStrategy",
+            "type": "Method",
+            "name": "isLastMatcherVarargMatcher",
+            "filePath": "src/main/java/org/mockito/internal/invocation/MatcherApplicationStrategy.java",
+            "startLine": 94,
+            "endLine": 100,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.invocation.MatcherApplicationStrategy",
+            "type": "Method",
+            "name": "lastMatcher",
+            "filePath": "src/main/java/org/mockito/internal/invocation/MatcherApplicationStrategy.java",
+            "startLine": 135,
+            "endLine": 137,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.invocation.MatcherApplicationStrategy",
+            "type": "Method",
+            "name": "lastMatcher",
+            "filePath": "src/main/java/org/mockito/internal/invocation/MatcherApplicationStrategy.java",
+            "startLine": 119,
+            "endLine": 121,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.invocation.MatcherApplicationStrategy",
+            "type": "Method",
+            "name": "appendLastMatcherNTimes",
+            "filePath": "src/main/java/org/mockito/internal/invocation/MatcherApplicationStrategy.java",
+            "startLine": 118,
+            "endLine": 127,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.invocation.MatcherApplicationStrategy",
+            "type": "Method",
+            "name": "appendLastMatcherNTimes",
+            "filePath": "src/main/java/org/mockito/internal/invocation/MatcherApplicationStrategy.java",
+            "startLine": 102,
+            "endLine": 111,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.invocation.MatcherApplicationStrategy",
+            "type": "Method",
+            "name": "MatcherApplicationStrategy",
+            "filePath": "src/main/java/org/mockito/internal/invocation/MatcherApplicationStrategy.java",
+            "startLine": 26,
+            "endLine": 39,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.invocation.MatcherApplicationStrategy",
+            "type": "Method",
+            "name": "MatcherApplicationStrategy",
+            "filePath": "src/main/java/org/mockito/internal/invocation/MatcherApplicationStrategy.java",
+            "startLine": 21,
+            "endLine": 25,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/mockito/mockito.git",
+      "sha1": "3e910ea990e61b29ec76d8b47a6d1b1607d9da3f",
+      "url": "https://github.com/mockito/mockito/commit/3e910ea990e61b29ec76d8b47a6d1b1607d9da3f",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.MockSettings",
+            "type": "Interface",
+            "name": "MockSettings",
+            "filePath": "src/main/java/org/mockito/MockSettings.java",
+            "startLine": 21,
+            "endLine": 384,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.MockSettings",
+            "type": "Interface",
+            "name": "MockSettings",
+            "filePath": "src/main/java/org/mockito/MockSettings.java",
+            "startLine": 22,
+            "endLine": 406,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.MockitoCore",
+            "type": "Method",
+            "name": "mockConstruction",
+            "filePath": "src/main/java/org/mockito/internal/MockitoCore.java",
+            "startLine": 148,
+            "endLine": 169,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.MockitoCore",
+            "type": "Method",
+            "name": "mockConstruction",
+            "filePath": "src/main/java/org/mockito/internal/MockitoCore.java",
+            "startLine": 140,
+            "endLine": 169,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.MockitoCore",
+            "type": "Class",
+            "name": "MockitoCore",
+            "filePath": "src/main/java/org/mockito/internal/MockitoCore.java",
+            "startLine": 74,
+            "endLine": 352,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.MockitoCore",
+            "type": "Class",
+            "name": "MockitoCore",
+            "filePath": "src/main/java/org/mockito/internal/MockitoCore.java",
+            "startLine": 70,
+            "endLine": 352,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.configuration.MockAnnotationProcessor",
+            "type": "Method",
+            "name": "processAnnotationForMock",
+            "filePath": "src/main/java/org/mockito/internal/configuration/MockAnnotationProcessor.java",
+            "startLine": 32,
+            "endLine": 73,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.configuration.MockAnnotationProcessor",
+            "type": "Method",
+            "name": "processAnnotationForMock",
+            "filePath": "src/main/java/org/mockito/internal/configuration/MockAnnotationProcessor.java",
+            "startLine": 32,
+            "endLine": 76,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.configuration.MockAnnotationProcessor",
+            "type": "Class",
+            "name": "MockAnnotationProcessor",
+            "filePath": "src/main/java/org/mockito/internal/configuration/MockAnnotationProcessor.java",
+            "startLine": 22,
+            "endLine": 96,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.configuration.MockAnnotationProcessor",
+            "type": "Class",
+            "name": "MockAnnotationProcessor",
+            "filePath": "src/main/java/org/mockito/internal/configuration/MockAnnotationProcessor.java",
+            "startLine": 22,
+            "endLine": 99,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.configuration.plugins.DefaultMockitoPlugins",
+            "type": "Field",
+            "name": "INLINE_ALIAS",
+            "filePath": "src/main/java/org/mockito/internal/configuration/plugins/DefaultMockitoPlugins.java",
+            "startLine": 22,
+            "endLine": 22,
+            "startColumn": 25,
+            "endColumn": 59
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.configuration.plugins.DefaultMockitoPlugins",
+            "type": "Field",
+            "name": "INLINE_ALIAS",
+            "filePath": "src/main/java/org/mockito/internal/configuration/plugins/DefaultMockitoPlugins.java",
+            "startLine": 26,
+            "endLine": 26,
+            "startColumn": 25,
+            "endColumn": 57
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.configuration.plugins.DefaultMockitoPlugins",
+            "type": "Field",
+            "name": "PROXY_ALIAS",
+            "filePath": "src/main/java/org/mockito/internal/configuration/plugins/DefaultMockitoPlugins.java",
+            "startLine": 23,
+            "endLine": 23,
+            "startColumn": 25,
+            "endColumn": 57
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.configuration.plugins.DefaultMockitoPlugins",
+            "type": "Field",
+            "name": "PROXY_ALIAS",
+            "filePath": "src/main/java/org/mockito/internal/configuration/plugins/DefaultMockitoPlugins.java",
+            "startLine": 27,
+            "endLine": 27,
+            "startColumn": 25,
+            "endColumn": 55
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.configuration.plugins.DefaultMockitoPlugins",
+            "type": "Initializer",
+            "name": "static block",
+            "filePath": "src/main/java/org/mockito/internal/configuration/plugins/DefaultMockitoPlugins.java",
+            "startLine": 26,
+            "endLine": 54,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.configuration.plugins.DefaultMockitoPlugins",
+            "type": "Initializer",
+            "name": "static block",
+            "filePath": "src/main/java/org/mockito/internal/configuration/plugins/DefaultMockitoPlugins.java",
+            "startLine": 32,
+            "endLine": 66,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.configuration.plugins.DefaultMockitoPlugins",
+            "type": "Method",
+            "name": "getDefaultPluginClass",
+            "filePath": "src/main/java/org/mockito/internal/configuration/plugins/DefaultMockitoPlugins.java",
+            "startLine": 62,
+            "endLine": 64,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.configuration.plugins.DefaultMockitoPlugins",
+            "type": "Method",
+            "name": "getDefaultPluginClass",
+            "filePath": "src/main/java/org/mockito/internal/configuration/plugins/DefaultMockitoPlugins.java",
+            "startLine": 74,
+            "endLine": 76,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.configuration.plugins.DefaultMockitoPlugins",
+            "type": "Class",
+            "name": "DefaultMockitoPlugins",
+            "filePath": "src/main/java/org/mockito/internal/configuration/plugins/DefaultMockitoPlugins.java",
+            "startLine": 19,
+            "endLine": 98,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.configuration.plugins.DefaultMockitoPlugins",
+            "type": "Class",
+            "name": "DefaultMockitoPlugins",
+            "filePath": "src/main/java/org/mockito/internal/configuration/plugins/DefaultMockitoPlugins.java",
+            "startLine": 23,
+            "endLine": 110,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.configuration.plugins.PluginInitializer",
+            "type": "Method",
+            "name": "loadImpl",
+            "filePath": "src/main/java/org/mockito/internal/configuration/plugins/PluginInitializer.java",
+            "startLine": 29,
+            "endLine": 61,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.configuration.plugins.PluginInitializer",
+            "type": "Method",
+            "name": "loadImpl",
+            "filePath": "src/main/java/org/mockito/internal/configuration/plugins/PluginInitializer.java",
+            "startLine": 27,
+            "endLine": 59,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.configuration.plugins.PluginInitializer",
+            "type": "Method",
+            "name": "loadImpls",
+            "filePath": "src/main/java/org/mockito/internal/configuration/plugins/PluginInitializer.java",
+            "startLine": 63,
+            "endLine": 93,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.configuration.plugins.PluginInitializer",
+            "type": "Method",
+            "name": "loadImpls",
+            "filePath": "src/main/java/org/mockito/internal/configuration/plugins/PluginInitializer.java",
+            "startLine": 61,
+            "endLine": 91,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.configuration.plugins.PluginInitializer",
+            "type": "Class",
+            "name": "PluginInitializer",
+            "filePath": "src/main/java/org/mockito/internal/configuration/plugins/PluginInitializer.java",
+            "startLine": 17,
+            "endLine": 94,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.configuration.plugins.PluginInitializer",
+            "type": "Class",
+            "name": "PluginInitializer",
+            "filePath": "src/main/java/org/mockito/internal/configuration/plugins/PluginInitializer.java",
+            "startLine": 17,
+            "endLine": 92,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.configuration.plugins.PluginLoader",
+            "type": "Method",
+            "name": "PluginLoader",
+            "filePath": "src/main/java/org/mockito/internal/configuration/plugins/PluginLoader.java",
+            "startLine": 27,
+            "endLine": 32,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.configuration.plugins.PluginLoader",
+            "type": "Method",
+            "name": "PluginLoader",
+            "filePath": "src/main/java/org/mockito/internal/configuration/plugins/PluginLoader.java",
+            "startLine": 27,
+            "endLine": 31,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.configuration.plugins.PluginLoader",
+            "type": "Method",
+            "name": "PluginLoader",
+            "filePath": "src/main/java/org/mockito/internal/configuration/plugins/PluginLoader.java",
+            "startLine": 34,
+            "endLine": 47,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.configuration.plugins.PluginLoader",
+            "type": "Method",
+            "name": "PluginLoader",
+            "filePath": "src/main/java/org/mockito/internal/configuration/plugins/PluginLoader.java",
+            "startLine": 33,
+            "endLine": 43,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.configuration.plugins.PluginLoader",
+            "type": "Class",
+            "name": "PluginLoader",
+            "filePath": "src/main/java/org/mockito/internal/configuration/plugins/PluginLoader.java",
+            "startLine": 17,
+            "endLine": 127,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.configuration.plugins.PluginLoader",
+            "type": "Class",
+            "name": "PluginLoader",
+            "filePath": "src/main/java/org/mockito/internal/configuration/plugins/PluginLoader.java",
+            "startLine": 17,
+            "endLine": 123,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.configuration.plugins.PluginRegistry",
+            "type": "Field",
+            "name": "mockMaker",
+            "filePath": "src/main/java/org/mockito/internal/configuration/plugins/PluginRegistry.java",
+            "startLine": 23,
+            "endLine": 28,
+            "startColumn": 29,
+            "endColumn": 49
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.configuration.plugins.PluginRegistry",
+            "type": "Field",
+            "name": "mockMaker",
+            "filePath": "src/main/java/org/mockito/internal/configuration/plugins/PluginRegistry.java",
+            "startLine": 23,
+            "endLine": 27,
+            "startColumn": 29,
+            "endColumn": 49
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.configuration.plugins.PluginRegistry",
+            "type": "Class",
+            "name": "PluginRegistry",
+            "filePath": "src/main/java/org/mockito/internal/configuration/plugins/PluginRegistry.java",
+            "startLine": 18,
+            "endLine": 133,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.configuration.plugins.PluginRegistry",
+            "type": "Class",
+            "name": "PluginRegistry",
+            "filePath": "src/main/java/org/mockito/internal/configuration/plugins/PluginRegistry.java",
+            "startLine": 18,
+            "endLine": 132,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.creation.MockSettingsImpl",
+            "type": "Method",
+            "name": "validatedSettings",
+            "filePath": "src/main/java/org/mockito/internal/creation/MockSettingsImpl.java",
+            "startLine": 257,
+            "endLine": 278,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.creation.MockSettingsImpl",
+            "type": "Method",
+            "name": "validatedSettings",
+            "filePath": "src/main/java/org/mockito/internal/creation/MockSettingsImpl.java",
+            "startLine": 263,
+            "endLine": 284,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.creation.MockSettingsImpl",
+            "type": "Class",
+            "name": "MockSettingsImpl",
+            "filePath": "src/main/java/org/mockito/internal/creation/MockSettingsImpl.java",
+            "startLine": 40,
+            "endLine": 309,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.creation.MockSettingsImpl",
+            "type": "Class",
+            "name": "MockSettingsImpl",
+            "filePath": "src/main/java/org/mockito/internal/creation/MockSettingsImpl.java",
+            "startLine": 40,
+            "endLine": 315,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.creation.settings.CreationSettings",
+            "type": "Method",
+            "name": "CreationSettings",
+            "filePath": "src/main/java/org/mockito/internal/creation/settings/CreationSettings.java",
+            "startLine": 52,
+            "endLine": 71,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.creation.settings.CreationSettings",
+            "type": "Method",
+            "name": "CreationSettings",
+            "filePath": "src/main/java/org/mockito/internal/creation/settings/CreationSettings.java",
+            "startLine": 53,
+            "endLine": 73,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.creation.settings.CreationSettings",
+            "type": "Class",
+            "name": "CreationSettings",
+            "filePath": "src/main/java/org/mockito/internal/creation/settings/CreationSettings.java",
+            "startLine": 24,
+            "endLine": 181,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.creation.settings.CreationSettings",
+            "type": "Class",
+            "name": "CreationSettings",
+            "filePath": "src/main/java/org/mockito/internal/creation/settings/CreationSettings.java",
+            "startLine": 24,
+            "endLine": 188,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.stubbing.defaultanswers.RetrieveGenericsForDefaultAnswers",
+            "type": "Method",
+            "name": "returnTypeForMockWithCorrectGenerics",
+            "filePath": "src/main/java/org/mockito/internal/stubbing/defaultanswers/RetrieveGenericsForDefaultAnswers.java",
+            "startLine": 21,
+            "endLine": 49,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.stubbing.defaultanswers.RetrieveGenericsForDefaultAnswers",
+            "type": "Method",
+            "name": "returnTypeForMockWithCorrectGenerics",
+            "filePath": "src/main/java/org/mockito/internal/stubbing/defaultanswers/RetrieveGenericsForDefaultAnswers.java",
+            "startLine": 18,
+            "endLine": 48,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.stubbing.defaultanswers.RetrieveGenericsForDefaultAnswers",
+            "type": "Class",
+            "name": "RetrieveGenericsForDefaultAnswers",
+            "filePath": "src/main/java/org/mockito/internal/stubbing/defaultanswers/RetrieveGenericsForDefaultAnswers.java",
+            "startLine": 17,
+            "endLine": 144,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.stubbing.defaultanswers.RetrieveGenericsForDefaultAnswers",
+            "type": "Class",
+            "name": "RetrieveGenericsForDefaultAnswers",
+            "filePath": "src/main/java/org/mockito/internal/stubbing/defaultanswers/RetrieveGenericsForDefaultAnswers.java",
+            "startLine": 16,
+            "endLine": 143,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs",
+            "type": "Method",
+            "name": "answer",
+            "filePath": "src/main/java/org/mockito/internal/stubbing/defaultanswers/ReturnsDeepStubs.java",
+            "startLine": 48,
+            "endLine": 75,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs",
+            "type": "Method",
+            "name": "answer",
+            "filePath": "src/main/java/org/mockito/internal/stubbing/defaultanswers/ReturnsDeepStubs.java",
+            "startLine": 49,
+            "endLine": 77,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs",
+            "type": "Class",
+            "name": "ReturnsDeepStubs",
+            "filePath": "src/main/java/org/mockito/internal/stubbing/defaultanswers/ReturnsDeepStubs.java",
+            "startLine": 24,
+            "endLine": 210,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs",
+            "type": "Class",
+            "name": "ReturnsDeepStubs",
+            "filePath": "src/main/java/org/mockito/internal/stubbing/defaultanswers/ReturnsDeepStubs.java",
+            "startLine": 25,
+            "endLine": 213,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.stubbing.defaultanswers.ReturnsMocks",
+            "type": "Method",
+            "name": "answer",
+            "filePath": "src/main/java/org/mockito/internal/stubbing/defaultanswers/ReturnsMocks.java",
+            "startLine": 19,
+            "endLine": 41,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.stubbing.defaultanswers.ReturnsMocks",
+            "type": "Method",
+            "name": "answer",
+            "filePath": "src/main/java/org/mockito/internal/stubbing/defaultanswers/ReturnsMocks.java",
+            "startLine": 21,
+            "endLine": 48,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.stubbing.defaultanswers.ReturnsMocks",
+            "type": "Class",
+            "name": "ReturnsMocks",
+            "filePath": "src/main/java/org/mockito/internal/stubbing/defaultanswers/ReturnsMocks.java",
+            "startLine": 14,
+            "endLine": 42,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.stubbing.defaultanswers.ReturnsMocks",
+            "type": "Class",
+            "name": "ReturnsMocks",
+            "filePath": "src/main/java/org/mockito/internal/stubbing/defaultanswers/ReturnsMocks.java",
+            "startLine": 16,
+            "endLine": 49,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.stubbing.defaultanswers.ReturnsSmartNulls",
+            "type": "Method",
+            "name": "answer",
+            "filePath": "src/main/java/org/mockito/internal/stubbing/defaultanswers/ReturnsSmartNulls.java",
+            "startLine": 42,
+            "endLine": 64,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.stubbing.defaultanswers.ReturnsSmartNulls",
+            "type": "Method",
+            "name": "answer",
+            "filePath": "src/main/java/org/mockito/internal/stubbing/defaultanswers/ReturnsSmartNulls.java",
+            "startLine": 45,
+            "endLine": 74,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.stubbing.defaultanswers.ReturnsSmartNulls",
+            "type": "Class",
+            "name": "ReturnsSmartNulls",
+            "filePath": "src/main/java/org/mockito/internal/stubbing/defaultanswers/ReturnsSmartNulls.java",
+            "startLine": 18,
+            "endLine": 87,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.stubbing.defaultanswers.ReturnsSmartNulls",
+            "type": "Class",
+            "name": "ReturnsSmartNulls",
+            "filePath": "src/main/java/org/mockito/internal/stubbing/defaultanswers/ReturnsSmartNulls.java",
+            "startLine": 21,
+            "endLine": 97,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.util.MockCreationValidator",
+            "type": "Class",
+            "name": "MockCreationValidator",
+            "filePath": "src/main/java/org/mockito/internal/util/MockCreationValidator.java",
+            "startLine": 18,
+            "endLine": 64,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.util.MockCreationValidator",
+            "type": "Class",
+            "name": "MockCreationValidator",
+            "filePath": "src/main/java/org/mockito/internal/util/MockCreationValidator.java",
+            "startLine": 18,
+            "endLine": 64,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.util.MockUtil",
+            "type": "Method",
+            "name": "createMock",
+            "filePath": "src/main/java/org/mockito/internal/util/MockUtil.java",
+            "startLine": 36,
+            "endLine": 57,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.util.MockUtil",
+            "type": "Method",
+            "name": "createMock",
+            "filePath": "src/main/java/org/mockito/internal/util/MockUtil.java",
+            "startLine": 81,
+            "endLine": 103,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.util.MockUtil",
+            "type": "Method",
+            "name": "resetMock",
+            "filePath": "src/main/java/org/mockito/internal/util/MockUtil.java",
+            "startLine": 59,
+            "endLine": 66,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.util.MockUtil",
+            "type": "Method",
+            "name": "resetMock",
+            "filePath": "src/main/java/org/mockito/internal/util/MockUtil.java",
+            "startLine": 105,
+            "endLine": 112,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.util.MockUtil",
+            "type": "Method",
+            "name": "getMockHandler",
+            "filePath": "src/main/java/org/mockito/internal/util/MockUtil.java",
+            "startLine": 68,
+            "endLine": 81,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.util.MockUtil",
+            "type": "Method",
+            "name": "getMockHandler",
+            "filePath": "src/main/java/org/mockito/internal/util/MockUtil.java",
+            "startLine": 114,
+            "endLine": 121,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.util.MockUtil",
+            "type": "Method",
+            "name": "isMock",
+            "filePath": "src/main/java/org/mockito/internal/util/MockUtil.java",
+            "startLine": 92,
+            "endLine": 111,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.util.MockUtil",
+            "type": "Method",
+            "name": "isMock",
+            "filePath": "src/main/java/org/mockito/internal/util/MockUtil.java",
+            "startLine": 132,
+            "endLine": 148,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.util.MockUtil",
+            "type": "Method",
+            "name": "createStaticMock",
+            "filePath": "src/main/java/org/mockito/internal/util/MockUtil.java",
+            "startLine": 144,
+            "endLine": 148,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.util.MockUtil",
+            "type": "Method",
+            "name": "createStaticMock",
+            "filePath": "src/main/java/org/mockito/internal/util/MockUtil.java",
+            "startLine": 198,
+            "endLine": 203,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.util.MockUtil",
+            "type": "Method",
+            "name": "createConstructionMock",
+            "filePath": "src/main/java/org/mockito/internal/util/MockUtil.java",
+            "startLine": 150,
+            "endLine": 158,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.util.MockUtil",
+            "type": "Method",
+            "name": "createConstructionMock",
+            "filePath": "src/main/java/org/mockito/internal/util/MockUtil.java",
+            "startLine": 205,
+            "endLine": 213,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.util.MockUtil",
+            "type": "Method",
+            "name": "clearAllCaches",
+            "filePath": "src/main/java/org/mockito/internal/util/MockUtil.java",
+            "startLine": 160,
+            "endLine": 162,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.util.MockUtil",
+            "type": "Method",
+            "name": "clearAllCaches",
+            "filePath": "src/main/java/org/mockito/internal/util/MockUtil.java",
+            "startLine": 215,
+            "endLine": 219,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.util.MockUtil",
+            "type": "Class",
+            "name": "MockUtil",
+            "filePath": "src/main/java/org/mockito/internal/util/MockUtil.java",
+            "startLine": 25,
+            "endLine": 163,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.util.MockUtil",
+            "type": "Class",
+            "name": "MockUtil",
+            "filePath": "src/main/java/org/mockito/internal/util/MockUtil.java",
+            "startLine": 29,
+            "endLine": 220,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.util.reflection.FieldInitializer.ParameterizedConstructorInstantiator",
+            "type": "Field",
+            "name": "byParameterNumber",
+            "filePath": "src/main/java/org/mockito/internal/util/reflection/FieldInitializer.java",
+            "startLine": 244,
+            "endLine": 268,
+            "startColumn": 50,
+            "endColumn": 18
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.util.reflection.FieldInitializer.ParameterizedConstructorInstantiator",
+            "type": "Field",
+            "name": "byParameterNumber",
+            "filePath": "src/main/java/org/mockito/internal/util/reflection/FieldInitializer.java",
+            "startLine": 244,
+            "endLine": 272,
+            "startColumn": 50,
+            "endColumn": 18
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.util.reflection.FieldInitializer.ParameterizedConstructorInstantiator",
+            "type": "Class",
+            "name": "ParameterizedConstructorInstantiator",
+            "filePath": "src/main/java/org/mockito/internal/util/reflection/FieldInitializer.java",
+            "startLine": 230,
+            "endLine": 334,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.util.reflection.FieldInitializer.ParameterizedConstructorInstantiator",
+            "type": "Class",
+            "name": "ParameterizedConstructorInstantiator",
+            "filePath": "src/main/java/org/mockito/internal/util/reflection/FieldInitializer.java",
+            "startLine": 230,
+            "endLine": 338,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.util.reflection.FieldInitializer",
+            "type": "Class",
+            "name": "FieldInitializer",
+            "filePath": "src/main/java/org/mockito/internal/util/reflection/FieldInitializer.java",
+            "startLine": 23,
+            "endLine": 335,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.util.reflection.FieldInitializer",
+            "type": "Class",
+            "name": "FieldInitializer",
+            "filePath": "src/main/java/org/mockito/internal/util/reflection/FieldInitializer.java",
+            "startLine": 23,
+            "endLine": 339,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.mock.MockCreationSettings",
+            "type": "Interface",
+            "name": "MockCreationSettings",
+            "filePath": "src/main/java/org/mockito/mock/MockCreationSettings.java",
+            "startLine": 18,
+            "endLine": 138,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.mock.MockCreationSettings",
+            "type": "Interface",
+            "name": "MockCreationSettings",
+            "filePath": "src/main/java/org/mockito/mock/MockCreationSettings.java",
+            "startLine": 19,
+            "endLine": 148,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.configuration.plugins.DefaultMockitoPluginsTest",
+            "type": "Method",
+            "name": "provides_plugins",
+            "filePath": "src/test/java/org/mockito/internal/configuration/plugins/DefaultMockitoPluginsTest.java",
+            "startLine": 24,
+            "endLine": 39,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.configuration.plugins.DefaultMockitoPluginsTest",
+            "type": "Method",
+            "name": "provides_plugins",
+            "filePath": "src/test/java/org/mockito/internal/configuration/plugins/DefaultMockitoPluginsTest.java",
+            "startLine": 25,
+            "endLine": 43,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.configuration.plugins.DefaultMockitoPluginsTest",
+            "type": "Class",
+            "name": "DefaultMockitoPluginsTest",
+            "filePath": "src/test/java/org/mockito/internal/configuration/plugins/DefaultMockitoPluginsTest.java",
+            "startLine": 20,
+            "endLine": 40,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.configuration.plugins.DefaultMockitoPluginsTest",
+            "type": "Class",
+            "name": "DefaultMockitoPluginsTest",
+            "filePath": "src/test/java/org/mockito/internal/configuration/plugins/DefaultMockitoPluginsTest.java",
+            "startLine": 21,
+            "endLine": 44,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.util.MockCreationValidatorTest",
+            "type": "Method",
+            "name": "should_fail_when_type_not_mockable",
+            "filePath": "src/test/java/org/mockito/internal/util/MockCreationValidatorTest.java",
+            "startLine": 66,
+            "endLine": 73,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.util.MockCreationValidatorTest",
+            "type": "Method",
+            "name": "should_fail_when_type_not_mockable",
+            "filePath": "src/test/java/org/mockito/internal/util/MockCreationValidatorTest.java",
+            "startLine": 66,
+            "endLine": 73,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.util.MockCreationValidatorTest",
+            "type": "Class",
+            "name": "MockCreationValidatorTest",
+            "filePath": "src/test/java/org/mockito/internal/util/MockCreationValidatorTest.java",
+            "startLine": 20,
+            "endLine": 74,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.util.MockCreationValidatorTest",
+            "type": "Class",
+            "name": "MockCreationValidatorTest",
+            "filePath": "src/test/java/org/mockito/internal/util/MockCreationValidatorTest.java",
+            "startLine": 20,
+            "endLine": 74,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.util.MockUtilTest",
+            "type": "Method",
+            "name": "should_know_if_type_is_mockable",
+            "filePath": "src/test/java/org/mockito/internal/util/MockUtilTest.java",
+            "startLine": 101,
+            "endLine": 110,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.util.MockUtilTest",
+            "type": "Method",
+            "name": "should_know_if_type_is_mockable",
+            "filePath": "src/test/java/org/mockito/internal/util/MockUtilTest.java",
+            "startLine": 101,
+            "endLine": 110,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.util.MockUtilTest",
+            "type": "Class",
+            "name": "MockUtilTest",
+            "filePath": "src/test/java/org/mockito/internal/util/MockUtilTest.java",
+            "startLine": 23,
+            "endLine": 111,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.util.MockUtilTest",
+            "type": "Class",
+            "name": "MockUtilTest",
+            "filePath": "src/test/java/org/mockito/internal/util/MockUtilTest.java",
+            "startLine": 23,
+            "endLine": 111,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockitoinline.ConstructionMockTest",
+            "type": "Class",
+            "name": "ConstructionMockTest",
+            "filePath": "subprojects/inline/src/test/java/org/mockitoinline/ConstructionMockTest.java",
+            "startLine": 23,
+            "endLine": 170,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.mockitoinline.ConstructionMockTest",
+            "type": "Class",
+            "name": "ConstructionMockTest",
+            "filePath": "subprojects/inline/src/test/java/org/mockitoinline/ConstructionMockTest.java",
+            "startLine": 25,
+            "endLine": 187,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.util.MockCreationValidator",
+            "type": "Method",
+            "name": "validateType",
+            "filePath": "src/main/java/org/mockito/internal/util/MockCreationValidator.java",
+            "startLine": 21,
+            "endLine": 26,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.util.MockCreationValidator",
+            "type": "Method",
+            "name": "validateType",
+            "filePath": "src/main/java/org/mockito/internal/util/MockCreationValidator.java",
+            "startLine": 21,
+            "endLine": 26,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.configuration.plugins.PluginInitializer",
+            "type": "Method",
+            "name": "PluginInitializer",
+            "filePath": "src/main/java/org/mockito/internal/configuration/plugins/PluginInitializer.java",
+            "startLine": 23,
+            "endLine": 27,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.configuration.plugins.PluginInitializer",
+            "type": "Method",
+            "name": "PluginInitializer",
+            "filePath": "src/main/java/org/mockito/internal/configuration/plugins/PluginInitializer.java",
+            "startLine": 22,
+            "endLine": 25,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs",
+            "type": "Method",
+            "name": "withSettingsUsing",
+            "filePath": "src/main/java/org/mockito/internal/stubbing/defaultanswers/ReturnsDeepStubs.java",
+            "startLine": 120,
+            "endLine": 131,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs",
+            "type": "Method",
+            "name": "withSettingsUsing",
+            "filePath": "src/main/java/org/mockito/internal/stubbing/defaultanswers/ReturnsDeepStubs.java",
+            "startLine": 122,
+            "endLine": 134,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.util.MockUtil",
+            "type": "Method",
+            "name": "typeMockabilityOf",
+            "filePath": "src/main/java/org/mockito/internal/util/MockUtil.java",
+            "startLine": 32,
+            "endLine": 34,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.util.MockUtil",
+            "type": "Method",
+            "name": "typeMockabilityOf",
+            "filePath": "src/main/java/org/mockito/internal/util/MockUtil.java",
+            "startLine": 77,
+            "endLine": 79,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.Mock",
+            "type": "Annotation Type",
+            "name": "Mock",
+            "filePath": "src/main/java/org/mockito/Mock.java",
+            "startLine": 18,
+            "endLine": 151,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.Mock",
+            "type": "Annotation Type",
+            "name": "Mock",
+            "filePath": "src/main/java/org/mockito/Mock.java",
+            "startLine": 19,
+            "endLine": 159,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.util.MockUtil",
+            "type": "Method",
+            "name": "getMockHandler",
+            "filePath": "src/main/java/org/mockito/internal/util/MockUtil.java",
+            "startLine": 68,
+            "endLine": 81,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.util.MockUtil",
+            "type": "Method",
+            "name": "getMockHandlerOrNull",
+            "filePath": "src/main/java/org/mockito/internal/util/MockUtil.java",
+            "startLine": 150,
+            "endLine": 165,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/mockito/mockito.git",
+      "sha1": "73a861f778e117ad0ccd7388b8d7a614e65c1623",
+      "url": "https://github.com/mockito/mockito/commit/73a861f778e117ad0ccd7388b8d7a614e65c1623",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.debugging.LocationImpl",
+            "type": "Field",
+            "name": "serialVersionUID",
+            "filePath": "src/main/java/org/mockito/internal/debugging/LocationImpl.java",
+            "startLine": 14,
+            "endLine": 14,
+            "startColumn": 31,
+            "endColumn": 71
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.debugging.Java8LocationImpl",
+            "type": "Field",
+            "name": "serialVersionUID",
+            "filePath": "src/main/java/org/mockito/internal/debugging/Java8LocationImpl.java",
+            "startLine": 14,
+            "endLine": 14,
+            "startColumn": 31,
+            "endColumn": 71
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.debugging.LocationImpl",
+            "type": "Field",
+            "name": "stackTraceFilter",
+            "filePath": "src/main/java/org/mockito/internal/debugging/LocationImpl.java",
+            "startLine": 16,
+            "endLine": 16,
+            "startColumn": 43,
+            "endColumn": 84
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.debugging.Java8LocationImpl",
+            "type": "Field",
+            "name": "stackTraceFilter",
+            "filePath": "src/main/java/org/mockito/internal/debugging/Java8LocationImpl.java",
+            "startLine": 16,
+            "endLine": 16,
+            "startColumn": 43,
+            "endColumn": 84
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.debugging.LocationImpl",
+            "type": "Field",
+            "name": "stackTraceLine",
+            "filePath": "src/main/java/org/mockito/internal/debugging/LocationImpl.java",
+            "startLine": 18,
+            "endLine": 18,
+            "startColumn": 20,
+            "endColumn": 34
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.debugging.Java8LocationImpl",
+            "type": "Field",
+            "name": "stackTraceLine",
+            "filePath": "src/main/java/org/mockito/internal/debugging/Java8LocationImpl.java",
+            "startLine": 18,
+            "endLine": 18,
+            "startColumn": 20,
+            "endColumn": 34
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.debugging.LocationImpl",
+            "type": "Field",
+            "name": "sourceFile",
+            "filePath": "src/main/java/org/mockito/internal/debugging/LocationImpl.java",
+            "startLine": 19,
+            "endLine": 19,
+            "startColumn": 20,
+            "endColumn": 30
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.debugging.Java8LocationImpl",
+            "type": "Field",
+            "name": "sourceFile",
+            "filePath": "src/main/java/org/mockito/internal/debugging/Java8LocationImpl.java",
+            "startLine": 19,
+            "endLine": 19,
+            "startColumn": 20,
+            "endColumn": 30
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.debugging.LocationImpl",
+            "type": "Method",
+            "name": "toString",
+            "filePath": "src/main/java/org/mockito/internal/debugging/LocationImpl.java",
+            "startLine": 38,
+            "endLine": 41,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.debugging.Java8LocationImpl",
+            "type": "Method",
+            "name": "toString",
+            "filePath": "src/main/java/org/mockito/internal/debugging/Java8LocationImpl.java",
+            "startLine": 30,
+            "endLine": 33,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.debugging.LocationImpl",
+            "type": "Method",
+            "name": "computeStackTraceInformation",
+            "filePath": "src/main/java/org/mockito/internal/debugging/LocationImpl.java",
+            "startLine": 43,
+            "endLine": 61,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.debugging.Java8LocationImpl",
+            "type": "Method",
+            "name": "computeStackTraceInformation",
+            "filePath": "src/main/java/org/mockito/internal/debugging/Java8LocationImpl.java",
+            "startLine": 35,
+            "endLine": 53,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.debugging.LocationImpl",
+            "type": "Method",
+            "name": "getSourceFile",
+            "filePath": "src/main/java/org/mockito/internal/debugging/LocationImpl.java",
+            "startLine": 63,
+            "endLine": 66,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.debugging.Java8LocationImpl",
+            "type": "Method",
+            "name": "getSourceFile",
+            "filePath": "src/main/java/org/mockito/internal/debugging/Java8LocationImpl.java",
+            "startLine": 55,
+            "endLine": 58,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.exceptions.stacktrace.StackTraceCleaner",
+            "type": "Interface",
+            "name": "StackTraceCleaner",
+            "filePath": "src/main/java/org/mockito/exceptions/stacktrace/StackTraceCleaner.java",
+            "startLine": 7,
+            "endLine": 28,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.exceptions.stacktrace.StackTraceCleaner",
+            "type": "Interface",
+            "name": "StackTraceCleaner",
+            "filePath": "src/main/java/org/mockito/exceptions/stacktrace/StackTraceCleaner.java",
+            "startLine": 7,
+            "endLine": 53,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.MockedConstructionImpl",
+            "type": "Field",
+            "name": "location",
+            "filePath": "src/main/java/org/mockito/internal/MockedConstructionImpl.java",
+            "startLine": 24,
+            "endLine": 24,
+            "startColumn": 28,
+            "endColumn": 57
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.MockedConstructionImpl",
+            "type": "Field",
+            "name": "location",
+            "filePath": "src/main/java/org/mockito/internal/MockedConstructionImpl.java",
+            "startLine": 24,
+            "endLine": 24,
+            "startColumn": 28,
+            "endColumn": 63
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.MockedConstructionImpl",
+            "type": "Class",
+            "name": "MockedConstructionImpl",
+            "filePath": "src/main/java/org/mockito/internal/MockedConstructionImpl.java",
+            "startLine": 18,
+            "endLine": 64,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.MockedConstructionImpl",
+            "type": "Class",
+            "name": "MockedConstructionImpl",
+            "filePath": "src/main/java/org/mockito/internal/MockedConstructionImpl.java",
+            "startLine": 18,
+            "endLine": 64,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.MockedStaticImpl",
+            "type": "Field",
+            "name": "location",
+            "filePath": "src/main/java/org/mockito/internal/MockedStaticImpl.java",
+            "startLine": 38,
+            "endLine": 38,
+            "startColumn": 28,
+            "endColumn": 57
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.MockedStaticImpl",
+            "type": "Field",
+            "name": "location",
+            "filePath": "src/main/java/org/mockito/internal/MockedStaticImpl.java",
+            "startLine": 38,
+            "endLine": 38,
+            "startColumn": 28,
+            "endColumn": 63
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.MockedStaticImpl",
+            "type": "Class",
+            "name": "MockedStaticImpl",
+            "filePath": "src/main/java/org/mockito/internal/MockedStaticImpl.java",
+            "startLine": 32,
+            "endLine": 181,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.MockedStaticImpl",
+            "type": "Class",
+            "name": "MockedStaticImpl",
+            "filePath": "src/main/java/org/mockito/internal/MockedStaticImpl.java",
+            "startLine": 32,
+            "endLine": 181,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.creation.bytebuddy.MockMethodAdvice",
+            "type": "Method",
+            "name": "handle",
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/MockMethodAdvice.java",
+            "startLine": 121,
+            "endLine": 140,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.creation.bytebuddy.MockMethodAdvice",
+            "type": "Method",
+            "name": "handle",
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/MockMethodAdvice.java",
+            "startLine": 121,
+            "endLine": 136,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.creation.bytebuddy.MockMethodAdvice",
+            "type": "Method",
+            "name": "handleStatic",
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/MockMethodAdvice.java",
+            "startLine": 142,
+            "endLine": 158,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.creation.bytebuddy.MockMethodAdvice",
+            "type": "Method",
+            "name": "handleStatic",
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/MockMethodAdvice.java",
+            "startLine": 138,
+            "endLine": 154,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.creation.bytebuddy.MockMethodAdvice",
+            "type": "Class",
+            "name": "MockMethodAdvice",
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/MockMethodAdvice.java",
+            "startLine": 64,
+            "endLine": 768,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.creation.bytebuddy.MockMethodAdvice",
+            "type": "Class",
+            "name": "MockMethodAdvice",
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/MockMethodAdvice.java",
+            "startLine": 64,
+            "endLine": 764,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.creation.bytebuddy.MockMethodInterceptor",
+            "type": "Method",
+            "name": "doIntercept",
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/MockMethodInterceptor.java",
+            "startLine": 54,
+            "endLine": 57,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.creation.bytebuddy.MockMethodInterceptor",
+            "type": "Method",
+            "name": "doIntercept",
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/MockMethodInterceptor.java",
+            "startLine": 54,
+            "endLine": 57,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.creation.bytebuddy.MockMethodInterceptor",
+            "type": "Class",
+            "name": "MockMethodInterceptor",
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/MockMethodInterceptor.java",
+            "startLine": 31,
+            "endLine": 165,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.creation.bytebuddy.MockMethodInterceptor",
+            "type": "Class",
+            "name": "MockMethodInterceptor",
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/MockMethodInterceptor.java",
+            "startLine": 31,
+            "endLine": 165,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.creation.proxy.ProxyMockMaker.MockInvocationHandler",
+            "type": "Method",
+            "name": "invoke",
+            "filePath": "src/main/java/org/mockito/internal/creation/proxy/ProxyMockMaker.java",
+            "startLine": 122,
+            "endLine": 157,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.creation.proxy.ProxyMockMaker.MockInvocationHandler",
+            "type": "Method",
+            "name": "invoke",
+            "filePath": "src/main/java/org/mockito/internal/creation/proxy/ProxyMockMaker.java",
+            "startLine": 122,
+            "endLine": 162,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.creation.proxy.ProxyMockMaker.MockInvocationHandler",
+            "type": "Class",
+            "name": "MockInvocationHandler",
+            "filePath": "src/main/java/org/mockito/internal/creation/proxy/ProxyMockMaker.java",
+            "startLine": 111,
+            "endLine": 158,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.creation.proxy.ProxyMockMaker.MockInvocationHandler",
+            "type": "Class",
+            "name": "MockInvocationHandler",
+            "filePath": "src/main/java/org/mockito/internal/creation/proxy/ProxyMockMaker.java",
+            "startLine": 111,
+            "endLine": 163,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.creation.proxy.ProxyMockMaker",
+            "type": "Class",
+            "name": "ProxyMockMaker",
+            "filePath": "src/main/java/org/mockito/internal/creation/proxy/ProxyMockMaker.java",
+            "startLine": 24,
+            "endLine": 179,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.creation.proxy.ProxyMockMaker",
+            "type": "Class",
+            "name": "ProxyMockMaker",
+            "filePath": "src/main/java/org/mockito/internal/creation/proxy/ProxyMockMaker.java",
+            "startLine": 24,
+            "endLine": 184,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.debugging.Localized",
+            "type": "Method",
+            "name": "Localized",
+            "filePath": "src/main/java/org/mockito/internal/debugging/Localized.java",
+            "startLine": 14,
+            "endLine": 17,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.debugging.Localized",
+            "type": "Method",
+            "name": "Localized",
+            "filePath": "src/main/java/org/mockito/internal/debugging/Localized.java",
+            "startLine": 14,
+            "endLine": 17,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.debugging.Localized",
+            "type": "Class",
+            "name": "Localized",
+            "filePath": "src/main/java/org/mockito/internal/debugging/Localized.java",
+            "startLine": 9,
+            "endLine": 26,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.debugging.Localized",
+            "type": "Class",
+            "name": "Localized",
+            "filePath": "src/main/java/org/mockito/internal/debugging/Localized.java",
+            "startLine": 9,
+            "endLine": 26,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.exceptions.Reporter",
+            "type": "Method",
+            "name": "incorrectUseOfApi",
+            "filePath": "src/main/java/org/mockito/internal/exceptions/Reporter.java",
+            "startLine": 83,
+            "endLine": 94,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.exceptions.Reporter",
+            "type": "Method",
+            "name": "incorrectUseOfApi",
+            "filePath": "src/main/java/org/mockito/internal/exceptions/Reporter.java",
+            "startLine": 83,
+            "endLine": 94,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.exceptions.Reporter",
+            "type": "Method",
+            "name": "incorrectUseOfAdditionalMatchers",
+            "filePath": "src/main/java/org/mockito/internal/exceptions/Reporter.java",
+            "startLine": 256,
+            "endLine": 283,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.exceptions.Reporter",
+            "type": "Method",
+            "name": "incorrectUseOfAdditionalMatchers",
+            "filePath": "src/main/java/org/mockito/internal/exceptions/Reporter.java",
+            "startLine": 256,
+            "endLine": 283,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.exceptions.Reporter",
+            "type": "Method",
+            "name": "reportNoSubMatchersFound",
+            "filePath": "src/main/java/org/mockito/internal/exceptions/Reporter.java",
+            "startLine": 294,
+            "endLine": 300,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.exceptions.Reporter",
+            "type": "Method",
+            "name": "reportNoSubMatchersFound",
+            "filePath": "src/main/java/org/mockito/internal/exceptions/Reporter.java",
+            "startLine": 294,
+            "endLine": 300,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.exceptions.Reporter",
+            "type": "Method",
+            "name": "argumentsAreDifferent",
+            "filePath": "src/main/java/org/mockito/internal/exceptions/Reporter.java",
+            "startLine": 310,
+            "endLine": 341,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.exceptions.Reporter",
+            "type": "Method",
+            "name": "argumentsAreDifferent",
+            "filePath": "src/main/java/org/mockito/internal/exceptions/Reporter.java",
+            "startLine": 310,
+            "endLine": 341,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.exceptions.Reporter",
+            "type": "Method",
+            "name": "createWantedButNotInvokedMessage",
+            "filePath": "src/main/java/org/mockito/internal/exceptions/Reporter.java",
+            "startLine": 367,
+            "endLine": 369,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.exceptions.Reporter",
+            "type": "Method",
+            "name": "createWantedButNotInvokedMessage",
+            "filePath": "src/main/java/org/mockito/internal/exceptions/Reporter.java",
+            "startLine": 367,
+            "endLine": 369,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.exceptions.Reporter",
+            "type": "Method",
+            "name": "wantedButNotInvokedInOrder",
+            "filePath": "src/main/java/org/mockito/internal/exceptions/Reporter.java",
+            "startLine": 371,
+            "endLine": 383,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.exceptions.Reporter",
+            "type": "Method",
+            "name": "wantedButNotInvokedInOrder",
+            "filePath": "src/main/java/org/mockito/internal/exceptions/Reporter.java",
+            "startLine": 371,
+            "endLine": 383,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.exceptions.Reporter",
+            "type": "Method",
+            "name": "createTooManyInvocationsMessage",
+            "filePath": "src/main/java/org/mockito/internal/exceptions/Reporter.java",
+            "startLine": 395,
+            "endLine": 407,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.exceptions.Reporter",
+            "type": "Method",
+            "name": "createTooManyInvocationsMessage",
+            "filePath": "src/main/java/org/mockito/internal/exceptions/Reporter.java",
+            "startLine": 395,
+            "endLine": 407,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.exceptions.Reporter",
+            "type": "Method",
+            "name": "neverWantedButInvoked",
+            "filePath": "src/main/java/org/mockito/internal/exceptions/Reporter.java",
+            "startLine": 409,
+            "endLine": 419,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.exceptions.Reporter",
+            "type": "Method",
+            "name": "neverWantedButInvoked",
+            "filePath": "src/main/java/org/mockito/internal/exceptions/Reporter.java",
+            "startLine": 409,
+            "endLine": 419,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.exceptions.Reporter",
+            "type": "Method",
+            "name": "createTooFewInvocationsMessage",
+            "filePath": "src/main/java/org/mockito/internal/exceptions/Reporter.java",
+            "startLine": 457,
+            "endLine": 471,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.exceptions.Reporter",
+            "type": "Method",
+            "name": "createTooFewInvocationsMessage",
+            "filePath": "src/main/java/org/mockito/internal/exceptions/Reporter.java",
+            "startLine": 457,
+            "endLine": 471,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.exceptions.Reporter",
+            "type": "Method",
+            "name": "noMoreInteractionsWanted",
+            "filePath": "src/main/java/org/mockito/internal/exceptions/Reporter.java",
+            "startLine": 491,
+            "endLine": 505,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.exceptions.Reporter",
+            "type": "Method",
+            "name": "noMoreInteractionsWanted",
+            "filePath": "src/main/java/org/mockito/internal/exceptions/Reporter.java",
+            "startLine": 491,
+            "endLine": 505,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.exceptions.Reporter",
+            "type": "Method",
+            "name": "noMoreInteractionsWantedInOrder",
+            "filePath": "src/main/java/org/mockito/internal/exceptions/Reporter.java",
+            "startLine": 507,
+            "endLine": 516,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.exceptions.Reporter",
+            "type": "Method",
+            "name": "noMoreInteractionsWantedInOrder",
+            "filePath": "src/main/java/org/mockito/internal/exceptions/Reporter.java",
+            "startLine": 507,
+            "endLine": 516,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.exceptions.Reporter",
+            "type": "Method",
+            "name": "noInteractionsWanted",
+            "filePath": "src/main/java/org/mockito/internal/exceptions/Reporter.java",
+            "startLine": 518,
+            "endLine": 536,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.exceptions.Reporter",
+            "type": "Method",
+            "name": "noInteractionsWanted",
+            "filePath": "src/main/java/org/mockito/internal/exceptions/Reporter.java",
+            "startLine": 518,
+            "endLine": 536,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.exceptions.Reporter",
+            "type": "Method",
+            "name": "smartNullPointerException",
+            "filePath": "src/main/java/org/mockito/internal/exceptions/Reporter.java",
+            "startLine": 644,
+            "endLine": 653,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.exceptions.Reporter",
+            "type": "Method",
+            "name": "smartNullPointerException",
+            "filePath": "src/main/java/org/mockito/internal/exceptions/Reporter.java",
+            "startLine": 644,
+            "endLine": 653,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.exceptions.Reporter",
+            "type": "Class",
+            "name": "Reporter",
+            "filePath": "src/main/java/org/mockito/internal/exceptions/Reporter.java",
+            "startLine": 38,
+            "endLine": 1140,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.exceptions.Reporter",
+            "type": "Class",
+            "name": "Reporter",
+            "filePath": "src/main/java/org/mockito/internal/exceptions/Reporter.java",
+            "startLine": 38,
+            "endLine": 1140,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.exceptions.stacktrace.DefaultStackTraceCleaner",
+            "type": "Method",
+            "name": "isIn",
+            "filePath": "src/main/java/org/mockito/internal/exceptions/stacktrace/DefaultStackTraceCleaner.java",
+            "startLine": 14,
+            "endLine": 23,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.exceptions.stacktrace.DefaultStackTraceCleaner",
+            "type": "Method",
+            "name": "isIn",
+            "filePath": "src/main/java/org/mockito/internal/exceptions/stacktrace/DefaultStackTraceCleaner.java",
+            "startLine": 14,
+            "endLine": 17,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.exceptions.stacktrace.DefaultStackTraceCleaner",
+            "type": "Class",
+            "name": "DefaultStackTraceCleaner",
+            "filePath": "src/main/java/org/mockito/internal/exceptions/stacktrace/DefaultStackTraceCleaner.java",
+            "startLine": 9,
+            "endLine": 43,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.exceptions.stacktrace.DefaultStackTraceCleaner",
+            "type": "Class",
+            "name": "DefaultStackTraceCleaner",
+            "filePath": "src/main/java/org/mockito/internal/exceptions/stacktrace/DefaultStackTraceCleaner.java",
+            "startLine": 9,
+            "endLine": 52,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.invocation.DefaultInvocationFactory",
+            "type": "Method",
+            "name": "createInvocation",
+            "filePath": "src/main/java/org/mockito/internal/invocation/DefaultInvocationFactory.java",
+            "startLine": 67,
+            "endLine": 75,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.invocation.DefaultInvocationFactory",
+            "type": "Method",
+            "name": "createInvocation",
+            "filePath": "src/main/java/org/mockito/internal/invocation/DefaultInvocationFactory.java",
+            "startLine": 67,
+            "endLine": 75,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.invocation.DefaultInvocationFactory",
+            "type": "Class",
+            "name": "DefaultInvocationFactory",
+            "filePath": "src/main/java/org/mockito/internal/invocation/DefaultInvocationFactory.java",
+            "startLine": 19,
+            "endLine": 84,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.invocation.DefaultInvocationFactory",
+            "type": "Class",
+            "name": "DefaultInvocationFactory",
+            "filePath": "src/main/java/org/mockito/internal/invocation/DefaultInvocationFactory.java",
+            "startLine": 19,
+            "endLine": 84,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.matchers.LocalizedMatcher",
+            "type": "Method",
+            "name": "LocalizedMatcher",
+            "filePath": "src/main/java/org/mockito/internal/matchers/LocalizedMatcher.java",
+            "startLine": 17,
+            "endLine": 20,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.matchers.LocalizedMatcher",
+            "type": "Method",
+            "name": "LocalizedMatcher",
+            "filePath": "src/main/java/org/mockito/internal/matchers/LocalizedMatcher.java",
+            "startLine": 17,
+            "endLine": 20,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.matchers.LocalizedMatcher",
+            "type": "Class",
+            "name": "LocalizedMatcher",
+            "filePath": "src/main/java/org/mockito/internal/matchers/LocalizedMatcher.java",
+            "startLine": 11,
+            "endLine": 29,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.matchers.LocalizedMatcher",
+            "type": "Class",
+            "name": "LocalizedMatcher",
+            "filePath": "src/main/java/org/mockito/internal/matchers/LocalizedMatcher.java",
+            "startLine": 11,
+            "endLine": 29,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.progress.MockingProgressImpl",
+            "type": "Method",
+            "name": "stubbingStarted",
+            "filePath": "src/main/java/org/mockito/internal/progress/MockingProgressImpl.java",
+            "startLine": 105,
+            "endLine": 109,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.progress.MockingProgressImpl",
+            "type": "Method",
+            "name": "stubbingStarted",
+            "filePath": "src/main/java/org/mockito/internal/progress/MockingProgressImpl.java",
+            "startLine": 105,
+            "endLine": 109,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.progress.MockingProgressImpl",
+            "type": "Class",
+            "name": "MockingProgressImpl",
+            "filePath": "src/main/java/org/mockito/internal/progress/MockingProgressImpl.java",
+            "startLine": 29,
+            "endLine": 241,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.progress.MockingProgressImpl",
+            "type": "Class",
+            "name": "MockingProgressImpl",
+            "filePath": "src/main/java/org/mockito/internal/progress/MockingProgressImpl.java",
+            "startLine": 29,
+            "endLine": 241,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.stubbing.defaultanswers.ReturnsSmartNulls",
+            "type": "Method",
+            "name": "answer",
+            "filePath": "src/main/java/org/mockito/internal/stubbing/defaultanswers/ReturnsSmartNulls.java",
+            "startLine": 42,
+            "endLine": 63,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.stubbing.defaultanswers.ReturnsSmartNulls",
+            "type": "Method",
+            "name": "answer",
+            "filePath": "src/main/java/org/mockito/internal/stubbing/defaultanswers/ReturnsSmartNulls.java",
+            "startLine": 42,
+            "endLine": 64,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.stubbing.defaultanswers.ReturnsSmartNulls",
+            "type": "Class",
+            "name": "ReturnsSmartNulls",
+            "filePath": "src/main/java/org/mockito/internal/stubbing/defaultanswers/ReturnsSmartNulls.java",
+            "startLine": 18,
+            "endLine": 86,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.stubbing.defaultanswers.ReturnsSmartNulls",
+            "type": "Class",
+            "name": "ReturnsSmartNulls",
+            "filePath": "src/main/java/org/mockito/internal/stubbing/defaultanswers/ReturnsSmartNulls.java",
+            "startLine": 18,
+            "endLine": 87,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.invocation.InvocationBuilder",
+            "type": "Method",
+            "name": "toInvocation",
+            "filePath": "src/test/java/org/mockito/internal/invocation/InvocationBuilder.java",
+            "startLine": 39,
+            "endLine": 81,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.invocation.InvocationBuilder",
+            "type": "Method",
+            "name": "toInvocation",
+            "filePath": "src/test/java/org/mockito/internal/invocation/InvocationBuilder.java",
+            "startLine": 39,
+            "endLine": 81,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.invocation.InvocationBuilder",
+            "type": "Class",
+            "name": "InvocationBuilder",
+            "filePath": "src/test/java/org/mockito/internal/invocation/InvocationBuilder.java",
+            "startLine": 23,
+            "endLine": 165,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.invocation.InvocationBuilder",
+            "type": "Class",
+            "name": "InvocationBuilder",
+            "filePath": "src/test/java/org/mockito/internal/invocation/InvocationBuilder.java",
+            "startLine": 23,
+            "endLine": 165,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.stubbing.defaultanswers.ReturnsSmartNullsTest",
+            "type": "Method",
+            "name": "invocationMethodWithArgs",
+            "filePath": "src/test/java/org/mockito/internal/stubbing/defaultanswers/ReturnsSmartNullsTest.java",
+            "startLine": 141,
+            "endLine": 151,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.stubbing.defaultanswers.ReturnsSmartNullsTest",
+            "type": "Method",
+            "name": "invocationMethodWithArgs",
+            "filePath": "src/test/java/org/mockito/internal/stubbing/defaultanswers/ReturnsSmartNullsTest.java",
+            "startLine": 141,
+            "endLine": 151,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.stubbing.defaultanswers.ReturnsSmartNullsTest",
+            "type": "Method",
+            "name": "invocationMethodWithVarArgs",
+            "filePath": "src/test/java/org/mockito/internal/stubbing/defaultanswers/ReturnsSmartNullsTest.java",
+            "startLine": 263,
+            "endLine": 274,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.stubbing.defaultanswers.ReturnsSmartNullsTest",
+            "type": "Method",
+            "name": "invocationMethodWithVarArgs",
+            "filePath": "src/test/java/org/mockito/internal/stubbing/defaultanswers/ReturnsSmartNullsTest.java",
+            "startLine": 263,
+            "endLine": 274,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.stubbing.defaultanswers.ReturnsSmartNullsTest",
+            "type": "Class",
+            "name": "ReturnsSmartNullsTest",
+            "filePath": "src/test/java/org/mockito/internal/stubbing/defaultanswers/ReturnsSmartNullsTest.java",
+            "startLine": 30,
+            "endLine": 373,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.stubbing.defaultanswers.ReturnsSmartNullsTest",
+            "type": "Class",
+            "name": "ReturnsSmartNullsTest",
+            "filePath": "src/test/java/org/mockito/internal/stubbing/defaultanswers/ReturnsSmartNullsTest.java",
+            "startLine": 30,
+            "endLine": 373,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockitointegration.NoByteCodeDependenciesTest",
+            "type": "Method",
+            "name": "pure_mockito_should_not_depend_bytecode_libraries",
+            "filePath": "src/test/java/org/mockitointegration/NoByteCodeDependenciesTest.java",
+            "startLine": 18,
+            "endLine": 49,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockitointegration.NoByteCodeDependenciesTest",
+            "type": "Method",
+            "name": "pure_mockito_should_not_depend_bytecode_libraries",
+            "filePath": "src/test/java/org/mockitointegration/NoByteCodeDependenciesTest.java",
+            "startLine": 18,
+            "endLine": 52,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockitointegration.NoByteCodeDependenciesTest",
+            "type": "Class",
+            "name": "NoByteCodeDependenciesTest",
+            "filePath": "src/test/java/org/mockitointegration/NoByteCodeDependenciesTest.java",
+            "startLine": 16,
+            "endLine": 63,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.mockitointegration.NoByteCodeDependenciesTest",
+            "type": "Class",
+            "name": "NoByteCodeDependenciesTest",
+            "filePath": "src/test/java/org/mockitointegration/NoByteCodeDependenciesTest.java",
+            "startLine": 16,
+            "endLine": 53,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockitointegration.NoJUnitDependenciesTest",
+            "type": "Method",
+            "name": "pure_mockito_should_not_depend_JUnit___ByteBuddy",
+            "filePath": "src/test/java/org/mockitointegration/NoJUnitDependenciesTest.java",
+            "startLine": 23,
+            "endLine": 56,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockitointegration.NoJUnitDependenciesTest",
+            "type": "Method",
+            "name": "pure_mockito_should_not_depend_JUnit___ByteBuddy",
+            "filePath": "src/test/java/org/mockitointegration/NoJUnitDependenciesTest.java",
+            "startLine": 23,
+            "endLine": 58,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockitointegration.NoJUnitDependenciesTest",
+            "type": "Class",
+            "name": "NoJUnitDependenciesTest",
+            "filePath": "src/test/java/org/mockitointegration/NoJUnitDependenciesTest.java",
+            "startLine": 21,
+            "endLine": 68,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.mockitointegration.NoJUnitDependenciesTest",
+            "type": "Class",
+            "name": "NoJUnitDependenciesTest",
+            "filePath": "src/test/java/org/mockitointegration/NoJUnitDependenciesTest.java",
+            "startLine": 21,
+            "endLine": 59,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockitoutil.TestBase",
+            "type": "Method",
+            "name": "invocationOf",
+            "filePath": "src/test/java/org/mockitoutil/TestBase.java",
+            "startLine": 76,
+            "endLine": 89,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockitoutil.TestBase",
+            "type": "Method",
+            "name": "invocationOf",
+            "filePath": "src/test/java/org/mockitoutil/TestBase.java",
+            "startLine": 76,
+            "endLine": 89,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockitoutil.TestBase",
+            "type": "Class",
+            "name": "TestBase",
+            "filePath": "src/test/java/org/mockitoutil/TestBase.java",
+            "startLine": 28,
+            "endLine": 130,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.mockitoutil.TestBase",
+            "type": "Class",
+            "name": "TestBase",
+            "filePath": "src/test/java/org/mockitoutil/TestBase.java",
+            "startLine": 28,
+            "endLine": 130,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.memorytest.ShouldNotStarveMemoryOnLargeStackTraceInvocationsTest",
+            "type": "Initializer",
+            "name": "static block",
+            "filePath": "subprojects/memory-test/src/test/java/org/mockito/memorytest/ShouldNotStarveMemoryOnLargeStackTraceInvocationsTest.java",
+            "startLine": 24,
+            "endLine": 35,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.memorytest.ShouldNotStarveMemoryOnLargeStackTraceInvocationsTest",
+            "type": "Initializer",
+            "name": "static block",
+            "filePath": "subprojects/memory-test/src/test/java/org/mockito/memorytest/ShouldNotStarveMemoryOnLargeStackTraceInvocationsTest.java",
+            "startLine": 22,
+            "endLine": 28,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.memorytest.ShouldNotStarveMemoryOnLargeStackTraceInvocationsTest",
+            "type": "Class",
+            "name": "ShouldNotStarveMemoryOnLargeStackTraceInvocationsTest",
+            "filePath": "subprojects/memory-test/src/test/java/org/mockito/memorytest/ShouldNotStarveMemoryOnLargeStackTraceInvocationsTest.java",
+            "startLine": 16,
+            "endLine": 62,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.memorytest.ShouldNotStarveMemoryOnLargeStackTraceInvocationsTest",
+            "type": "Class",
+            "name": "ShouldNotStarveMemoryOnLargeStackTraceInvocationsTest",
+            "filePath": "subprojects/memory-test/src/test/java/org/mockito/memorytest/ShouldNotStarveMemoryOnLargeStackTraceInvocationsTest.java",
+            "startLine": 15,
+            "endLine": 55,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockitousage.internal.debugging.LocationImplTest",
+            "type": "Method",
+            "name": "shouldLocationNotContainGetStackTraceMethod",
+            "filePath": "src/test/java/org/mockitousage/internal/debugging/LocationImplTest.java",
+            "startLine": 21,
+            "endLine": 25,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockitousage.internal.debugging.LocationFactoryTest",
+            "type": "Method",
+            "name": "shouldLocationNotContainGetStackTraceMethod",
+            "filePath": "src/test/java/org/mockitousage/internal/debugging/LocationFactoryTest.java",
+            "startLine": 19,
+            "endLine": 23,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.debugging.LocationImpl",
+            "type": "Method",
+            "name": "LocationImpl",
+            "filePath": "src/main/java/org/mockito/internal/debugging/LocationImpl.java",
+            "startLine": 25,
+            "endLine": 27,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.debugging.Java8LocationImpl",
+            "type": "Method",
+            "name": "Java8LocationImpl",
+            "filePath": "src/main/java/org/mockito/internal/debugging/Java8LocationImpl.java",
+            "startLine": 21,
+            "endLine": 23,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockitointegration.NoJUnitDependenciesTest",
+            "type": "Method",
+            "name": "checkDependency",
+            "filePath": "src/test/java/org/mockitointegration/NoJUnitDependenciesTest.java",
+            "startLine": 58,
+            "endLine": 67,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockitointegration.ClassLoadabilityChecker",
+            "type": "Method",
+            "name": "checkLoadability",
+            "filePath": "src/test/java/org/mockitointegration/ClassLoadabilityChecker.java",
+            "startLine": 32,
+            "endLine": 43,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockitousage.internal.debugging.LocationImplTest",
+            "type": "Class",
+            "name": "LocationImplTest",
+            "filePath": "src/test/java/org/mockitousage/internal/debugging/LocationImplTest.java",
+            "startLine": 18,
+            "endLine": 63,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.mockitousage.internal.debugging.LocationFactoryTest",
+            "type": "Class",
+            "name": "LocationFactoryTest",
+            "filePath": "src/test/java/org/mockitousage/internal/debugging/LocationFactoryTest.java",
+            "startLine": 17,
+            "endLine": 38,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockitousage.internal.debugging.LocationImplTest",
+            "type": "Method",
+            "name": "provides_location_class",
+            "filePath": "src/test/java/org/mockitousage/internal/debugging/LocationImplTest.java",
+            "startLine": 50,
+            "endLine": 62,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockitousage.internal.debugging.LocationFactoryTest",
+            "type": "Method",
+            "name": "provides_location_class",
+            "filePath": "src/test/java/org/mockitousage/internal/debugging/LocationFactoryTest.java",
+            "startLine": 25,
+            "endLine": 37,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.debugging.LocationImpl",
+            "type": "Method",
+            "name": "LocationImpl",
+            "filePath": "src/main/java/org/mockito/internal/debugging/LocationImpl.java",
+            "startLine": 33,
+            "endLine": 36,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.debugging.Java8LocationImpl",
+            "type": "Method",
+            "name": "Java8LocationImpl",
+            "filePath": "src/main/java/org/mockito/internal/debugging/Java8LocationImpl.java",
+            "startLine": 25,
+            "endLine": 28,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [],
+      "baseline": [
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.debugging.LocationImpl",
+            "type": "Class",
+            "name": "LocationImpl",
+            "filePath": "src/main/java/org/mockito/internal/debugging/LocationImpl.java",
+            "startLine": 12,
+            "endLine": 67,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.debugging.Java8LocationImpl",
+            "type": "Class",
+            "name": "Java8LocationImpl",
+            "filePath": "src/main/java/org/mockito/internal/debugging/Java8LocationImpl.java",
+            "startLine": 12,
+            "endLine": 59,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockitointegration.NoByteCodeDependenciesTest",
+            "type": "Method",
+            "name": "checkDependency",
+            "filePath": "src/test/java/org/mockitointegration/NoByteCodeDependenciesTest.java",
+            "startLine": 51,
+            "endLine": 62,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockitointegration.ClassLoadabilityChecker",
+            "type": "Method",
+            "name": "checkLoadability",
+            "filePath": "src/test/java/org/mockitointegration/ClassLoadabilityChecker.java",
+            "startLine": 32,
+            "endLine": 43,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/mockito/mockito.git",
+      "sha1": "70cf2d2f48506fca24f16963e9c3d2223898ae5a",
+      "url": "https://github.com/mockito/mockito/commit/70cf2d2f48506fca24f16963e9c3d2223898ae5a",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.MockSettings",
+            "type": "Method",
+            "name": "lenient",
+            "filePath": "src/main/java/org/mockito/MockSettings.java",
+            "startLine": 352,
+            "endLine": 363,
+            "startColumn": 5,
+            "endColumn": 28
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.MockSettings",
+            "type": "Method",
+            "name": "lenient",
+            "filePath": "src/main/java/org/mockito/MockSettings.java",
+            "startLine": 352,
+            "endLine": 366,
+            "startColumn": 5,
+            "endColumn": 28
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.MockSettings",
+            "type": "Interface",
+            "name": "MockSettings",
+            "filePath": "src/main/java/org/mockito/MockSettings.java",
+            "startLine": 21,
+            "endLine": 364,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.MockSettings",
+            "type": "Interface",
+            "name": "MockSettings",
+            "filePath": "src/main/java/org/mockito/MockSettings.java",
+            "startLine": 21,
+            "endLine": 384,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.configuration.MockAnnotationProcessor",
+            "type": "Method",
+            "name": "processAnnotationForMock",
+            "filePath": "src/main/java/org/mockito/internal/configuration/MockAnnotationProcessor.java",
+            "startLine": 31,
+            "endLine": 68,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.configuration.MockAnnotationProcessor",
+            "type": "Method",
+            "name": "processAnnotationForMock",
+            "filePath": "src/main/java/org/mockito/internal/configuration/MockAnnotationProcessor.java",
+            "startLine": 31,
+            "endLine": 69,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.configuration.MockAnnotationProcessor",
+            "type": "Class",
+            "name": "MockAnnotationProcessor",
+            "filePath": "src/main/java/org/mockito/internal/configuration/MockAnnotationProcessor.java",
+            "startLine": 21,
+            "endLine": 91,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.configuration.MockAnnotationProcessor",
+            "type": "Class",
+            "name": "MockAnnotationProcessor",
+            "filePath": "src/main/java/org/mockito/internal/configuration/MockAnnotationProcessor.java",
+            "startLine": 21,
+            "endLine": 92,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.creation.MockSettingsImpl",
+            "type": "Method",
+            "name": "lenient",
+            "filePath": "src/main/java/org/mockito/internal/creation/MockSettingsImpl.java",
+            "startLine": 240,
+            "endLine": 244,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.creation.MockSettingsImpl",
+            "type": "Method",
+            "name": "lenient",
+            "filePath": "src/main/java/org/mockito/internal/creation/MockSettingsImpl.java",
+            "startLine": 242,
+            "endLine": 246,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.creation.MockSettingsImpl",
+            "type": "Class",
+            "name": "MockSettingsImpl",
+            "filePath": "src/main/java/org/mockito/internal/creation/MockSettingsImpl.java",
+            "startLine": 38,
+            "endLine": 298,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.creation.MockSettingsImpl",
+            "type": "Class",
+            "name": "MockSettingsImpl",
+            "filePath": "src/main/java/org/mockito/internal/creation/MockSettingsImpl.java",
+            "startLine": 40,
+            "endLine": 309,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.creation.settings.CreationSettings",
+            "type": "Method",
+            "name": "CreationSettings",
+            "filePath": "src/main/java/org/mockito/internal/creation/settings/CreationSettings.java",
+            "startLine": 51,
+            "endLine": 70,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.creation.settings.CreationSettings",
+            "type": "Method",
+            "name": "CreationSettings",
+            "filePath": "src/main/java/org/mockito/internal/creation/settings/CreationSettings.java",
+            "startLine": 52,
+            "endLine": 71,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.creation.settings.CreationSettings",
+            "type": "Method",
+            "name": "isLenient",
+            "filePath": "src/main/java/org/mockito/internal/creation/settings/CreationSettings.java",
+            "startLine": 171,
+            "endLine": 174,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.creation.settings.CreationSettings",
+            "type": "Method",
+            "name": "isLenient",
+            "filePath": "src/main/java/org/mockito/internal/creation/settings/CreationSettings.java",
+            "startLine": 172,
+            "endLine": 175,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.creation.settings.CreationSettings",
+            "type": "Class",
+            "name": "CreationSettings",
+            "filePath": "src/main/java/org/mockito/internal/creation/settings/CreationSettings.java",
+            "startLine": 23,
+            "endLine": 175,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.creation.settings.CreationSettings",
+            "type": "Class",
+            "name": "CreationSettings",
+            "filePath": "src/main/java/org/mockito/internal/creation/settings/CreationSettings.java",
+            "startLine": 24,
+            "endLine": 181,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.exceptions.Reporter",
+            "type": "Class",
+            "name": "Reporter",
+            "filePath": "src/main/java/org/mockito/internal/exceptions/Reporter.java",
+            "startLine": 38,
+            "endLine": 1136,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.exceptions.Reporter",
+            "type": "Class",
+            "name": "Reporter",
+            "filePath": "src/main/java/org/mockito/internal/exceptions/Reporter.java",
+            "startLine": 38,
+            "endLine": 1140,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.stubbing.InvocationContainerImpl",
+            "type": "Method",
+            "name": "InvocationContainerImpl",
+            "filePath": "src/main/java/org/mockito/internal/stubbing/InvocationContainerImpl.java",
+            "startLine": 39,
+            "endLine": 43,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.stubbing.InvocationContainerImpl",
+            "type": "Method",
+            "name": "InvocationContainerImpl",
+            "filePath": "src/main/java/org/mockito/internal/stubbing/InvocationContainerImpl.java",
+            "startLine": 39,
+            "endLine": 43,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.stubbing.InvocationContainerImpl",
+            "type": "Class",
+            "name": "InvocationContainerImpl",
+            "filePath": "src/main/java/org/mockito/internal/stubbing/InvocationContainerImpl.java",
+            "startLine": 28,
+            "endLine": 182,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.stubbing.InvocationContainerImpl",
+            "type": "Class",
+            "name": "InvocationContainerImpl",
+            "filePath": "src/main/java/org/mockito/internal/stubbing/InvocationContainerImpl.java",
+            "startLine": 28,
+            "endLine": 182,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.stubbing.StrictnessSelector",
+            "type": "Method",
+            "name": "determineStrictness",
+            "filePath": "src/main/java/org/mockito/internal/stubbing/StrictnessSelector.java",
+            "startLine": 16,
+            "endLine": 39,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.stubbing.StrictnessSelector",
+            "type": "Method",
+            "name": "determineStrictness",
+            "filePath": "src/main/java/org/mockito/internal/stubbing/StrictnessSelector.java",
+            "startLine": 16,
+            "endLine": 39,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.stubbing.StrictnessSelector",
+            "type": "Class",
+            "name": "StrictnessSelector",
+            "filePath": "src/main/java/org/mockito/internal/stubbing/StrictnessSelector.java",
+            "startLine": 11,
+            "endLine": 42,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.stubbing.StrictnessSelector",
+            "type": "Class",
+            "name": "StrictnessSelector",
+            "filePath": "src/main/java/org/mockito/internal/stubbing/StrictnessSelector.java",
+            "startLine": 11,
+            "endLine": 42,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.mock.MockCreationSettings",
+            "type": "Method",
+            "name": "isLenient",
+            "filePath": "src/main/java/org/mockito/mock/MockCreationSettings.java",
+            "startLine": 120,
+            "endLine": 126,
+            "startColumn": 5,
+            "endColumn": 25
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.mock.MockCreationSettings",
+            "type": "Method",
+            "name": "isLenient",
+            "filePath": "src/main/java/org/mockito/mock/MockCreationSettings.java",
+            "startLine": 120,
+            "endLine": 129,
+            "startColumn": 5,
+            "endColumn": 25
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.mock.MockCreationSettings",
+            "type": "Interface",
+            "name": "MockCreationSettings",
+            "filePath": "src/main/java/org/mockito/mock/MockCreationSettings.java",
+            "startLine": 18,
+            "endLine": 127,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.mock.MockCreationSettings",
+            "type": "Interface",
+            "name": "MockCreationSettings",
+            "filePath": "src/main/java/org/mockito/mock/MockCreationSettings.java",
+            "startLine": 18,
+            "endLine": 138,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.creation.MockSettingsImplTest",
+            "type": "Class",
+            "name": "MockSettingsImplTest",
+            "filePath": "src/test/java/org/mockito/internal/creation/MockSettingsImplTest.java",
+            "startLine": 22,
+            "endLine": 263,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.creation.MockSettingsImplTest",
+            "type": "Class",
+            "name": "MockSettingsImplTest",
+            "filePath": "src/test/java/org/mockito/internal/creation/MockSettingsImplTest.java",
+            "startLine": 22,
+            "endLine": 269,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.Mock",
+            "type": "Annotation Member",
+            "name": "lenient",
+            "filePath": "src/main/java/org/mockito/Mock.java",
+            "startLine": 107,
+            "endLine": 113,
+            "startColumn": 5,
+            "endColumn": 37
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.Mock",
+            "type": "Annotation Member",
+            "name": "lenient",
+            "filePath": "src/main/java/org/mockito/Mock.java",
+            "startLine": 108,
+            "endLine": 117,
+            "startColumn": 5,
+            "endColumn": 37
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.Mock",
+            "type": "Annotation Type",
+            "name": "Mock",
+            "filePath": "src/main/java/org/mockito/Mock.java",
+            "startLine": 18,
+            "endLine": 114,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.Mock",
+            "type": "Annotation Type",
+            "name": "Mock",
+            "filePath": "src/main/java/org/mockito/Mock.java",
+            "startLine": 19,
+            "endLine": 126,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.creation.settings.CreationSettings",
+            "type": "Field",
+            "name": "lenient",
+            "filePath": "src/main/java/org/mockito/internal/creation/settings/CreationSettings.java",
+            "startLine": 47,
+            "endLine": 47,
+            "startColumn": 23,
+            "endColumn": 30
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.creation.settings.CreationSettings",
+            "type": "Field",
+            "name": "strictness",
+            "filePath": "src/main/java/org/mockito/internal/creation/settings/CreationSettings.java",
+            "startLine": 48,
+            "endLine": 48,
+            "startColumn": 26,
+            "endColumn": 62
+          },
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/mockito/mockito.git",
+      "sha1": "d539af2d7afdcfaf1eda4a57911d7f9df107db2a",
+      "url": "https://github.com/mockito/mockito/commit/d539af2d7afdcfaf1eda4a57911d7f9df107db2a",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.creation.bytebuddy.BytecodeGenerator",
+            "type": "Interface",
+            "name": "BytecodeGenerator",
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/BytecodeGenerator.java",
+            "startLine": 7,
+            "endLine": 16,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.creation.bytebuddy.BytecodeGenerator",
+            "type": "Interface",
+            "name": "BytecodeGenerator",
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/BytecodeGenerator.java",
+            "startLine": 13,
+            "endLine": 34,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator",
+            "type": "Method",
+            "name": "InlineBytecodeGenerator",
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/InlineBytecodeGenerator.java",
+            "startLine": 83,
+            "endLine": 169,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator",
+            "type": "Method",
+            "name": "InlineBytecodeGenerator",
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/InlineBytecodeGenerator.java",
+            "startLine": 83,
+            "endLine": 173,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator",
+            "type": "Class",
+            "name": "InlineBytecodeGenerator",
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/InlineBytecodeGenerator.java",
+            "startLine": 49,
+            "endLine": 499,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator",
+            "type": "Class",
+            "name": "InlineBytecodeGenerator",
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/InlineBytecodeGenerator.java",
+            "startLine": 49,
+            "endLine": 503,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.creation.bytebuddy.SubclassBytecodeGenerator",
+            "type": "Method",
+            "name": "mockClass",
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/SubclassBytecodeGenerator.java",
+            "startLine": 130,
+            "endLine": 272,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.creation.bytebuddy.SubclassBytecodeGenerator",
+            "type": "Method",
+            "name": "mockClass",
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/SubclassBytecodeGenerator.java",
+            "startLine": 125,
+            "endLine": 267,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.creation.bytebuddy.SubclassBytecodeGenerator",
+            "type": "Class",
+            "name": "SubclassBytecodeGenerator",
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/SubclassBytecodeGenerator.java",
+            "startLine": 53,
+            "endLine": 325,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.creation.bytebuddy.SubclassBytecodeGenerator",
+            "type": "Class",
+            "name": "SubclassBytecodeGenerator",
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/SubclassBytecodeGenerator.java",
+            "startLine": 48,
+            "endLine": 304,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.creation.bytebuddy.SubclassBytecodeGenerator",
+            "type": "Method",
+            "name": "isGroovyMethod",
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/SubclassBytecodeGenerator.java",
+            "startLine": 296,
+            "endLine": 299,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.creation.bytebuddy.BytecodeGenerator",
+            "type": "Method",
+            "name": "isGroovyMethod",
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/BytecodeGenerator.java",
+            "startLine": 23,
+            "endLine": 33,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/mockito/mockito.git",
+      "sha1": "f6ce1bb04fe0d0ca65f88e4395dea528b6b749bc",
+      "url": "https://github.com/mockito/mockito/commit/f6ce1bb04fe0d0ca65f88e4395dea528b6b749bc",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.stubbing.answers.InvocationInfo",
+            "type": "Method",
+            "name": "isValidException",
+            "filePath": "src/main/java/org/mockito/internal/stubbing/answers/InvocationInfo.java",
+            "startLine": 27,
+            "endLine": 37,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.stubbing.answers.InvocationInfo",
+            "type": "Method",
+            "name": "isValidException",
+            "filePath": "src/main/java/org/mockito/internal/stubbing/answers/InvocationInfo.java",
+            "startLine": 30,
+            "endLine": 36,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.stubbing.answers.InvocationInfo",
+            "type": "Class",
+            "name": "InvocationInfo",
+            "filePath": "src/main/java/org/mockito/internal/stubbing/answers/InvocationInfo.java",
+            "startLine": 17,
+            "endLine": 86,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.stubbing.answers.InvocationInfo",
+            "type": "Class",
+            "name": "InvocationInfo",
+            "filePath": "src/main/java/org/mockito/internal/stubbing/answers/InvocationInfo.java",
+            "startLine": 20,
+            "endLine": 126,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.invocation.InvocationBuilder",
+            "type": "Method",
+            "name": "toInvocation",
+            "filePath": "src/test/java/org/mockito/internal/invocation/InvocationBuilder.java",
+            "startLine": 38,
+            "endLine": 80,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.invocation.InvocationBuilder",
+            "type": "Method",
+            "name": "toInvocation",
+            "filePath": "src/test/java/org/mockito/internal/invocation/InvocationBuilder.java",
+            "startLine": 39,
+            "endLine": 81,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.invocation.InvocationBuilder",
+            "type": "Class",
+            "name": "InvocationBuilder",
+            "filePath": "src/test/java/org/mockito/internal/invocation/InvocationBuilder.java",
+            "startLine": 23,
+            "endLine": 158,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.invocation.InvocationBuilder",
+            "type": "Class",
+            "name": "InvocationBuilder",
+            "filePath": "src/test/java/org/mockito/internal/invocation/InvocationBuilder.java",
+            "startLine": 23,
+            "endLine": 165,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.stubbing.answers.InvocationInfoTest",
+            "type": "Class",
+            "name": "InvocationInfoTest",
+            "filePath": "src/test/java/org/mockito/internal/stubbing/answers/InvocationInfoTest.java",
+            "startLine": 19,
+            "endLine": 211,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.stubbing.answers.InvocationInfoTest",
+            "type": "Class",
+            "name": "InvocationInfoTest",
+            "filePath": "src/test/java/org/mockito/internal/stubbing/answers/InvocationInfoTest.java",
+            "startLine": 17,
+            "endLine": 198,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.stubbing.answers.InvocationInfoTest",
+            "type": "Method",
+            "name": "should_know_valid_throwables",
+            "filePath": "src/test/java/org/mockito/internal/stubbing/answers/InvocationInfoTest.java",
+            "startLine": 21,
+            "endLine": 30,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.stubbing.answers.InvocationInfoExceptionTest",
+            "type": "Method",
+            "name": "should_know_valid_throwables",
+            "filePath": "src/test/java/org/mockito/internal/stubbing/answers/InvocationInfoExceptionTest.java",
+            "startLine": 41,
+            "endLine": 54,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [],
+      "baseline": [
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.stubbing.answers.InvocationInfo",
+            "type": "Method",
+            "name": "isValidException",
+            "filePath": "src/main/java/org/mockito/internal/stubbing/answers/InvocationInfo.java",
+            "startLine": 27,
+            "endLine": 37,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.stubbing.answers.InvocationInfo",
+            "type": "Method",
+            "name": "isValidException",
+            "filePath": "src/main/java/org/mockito/internal/stubbing/answers/InvocationInfo.java",
+            "startLine": 68,
+            "endLine": 77,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/mockito/mockito.git",
+      "sha1": "8cdf0cce796a3497460de93abbe395108feae74c",
+      "url": "https://github.com/mockito/mockito/commit/8cdf0cce796a3497460de93abbe395108feae74c",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.creation.bytebuddy.MockMethodAdvice",
+            "type": "Method",
+            "name": "tryInvoke",
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/MockMethodAdvice.java",
+            "startLine": 329,
+            "endLine": 353,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.creation.bytebuddy.MockMethodAdvice",
+            "type": "Method",
+            "name": "tryInvoke",
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/MockMethodAdvice.java",
+            "startLine": 311,
+            "endLine": 322,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.creation.bytebuddy.MockMethodAdvice",
+            "type": "Class",
+            "name": "MockMethodAdvice",
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/MockMethodAdvice.java",
+            "startLine": 60,
+            "endLine": 774,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.creation.bytebuddy.MockMethodAdvice",
+            "type": "Class",
+            "name": "MockMethodAdvice",
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/MockMethodAdvice.java",
+            "startLine": 63,
+            "endLine": 765,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest",
+            "type": "Method",
+            "name": "should_leave_causing_stack",
+            "filePath": "src/test/java/org/mockito/internal/creation/bytebuddy/InlineDelegateByteBuddyMockMakerTest.java",
+            "startLine": 246,
+            "endLine": 267,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest",
+            "type": "Method",
+            "name": "should_leave_causing_stack",
+            "filePath": "src/test/java/org/mockito/internal/creation/bytebuddy/InlineDelegateByteBuddyMockMakerTest.java",
+            "startLine": 241,
+            "endLine": 267,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest",
+            "type": "Method",
+            "name": "should_remove_recursive_self_call_from_stack_trace",
+            "filePath": "src/test/java/org/mockito/internal/creation/bytebuddy/InlineDelegateByteBuddyMockMakerTest.java",
+            "startLine": 269,
+            "endLine": 291,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest",
+            "type": "Method",
+            "name": "should_remove_recursive_self_call_from_stack_trace",
+            "filePath": "src/test/java/org/mockito/internal/creation/bytebuddy/InlineDelegateByteBuddyMockMakerTest.java",
+            "startLine": 303,
+            "endLine": 328,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest",
+            "type": "Method",
+            "name": "should_handle_missing_or_inconsistent_stack_trace",
+            "filePath": "src/test/java/org/mockito/internal/creation/bytebuddy/InlineDelegateByteBuddyMockMakerTest.java",
+            "startLine": 293,
+            "endLine": 299,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest",
+            "type": "Method",
+            "name": "should_handle_missing_or_inconsistent_stack_trace",
+            "filePath": "src/test/java/org/mockito/internal/creation/bytebuddy/InlineDelegateByteBuddyMockMakerTest.java",
+            "startLine": 330,
+            "endLine": 336,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest",
+            "type": "Class",
+            "name": "InlineDelegateByteBuddyMockMakerTest",
+            "filePath": "src/test/java/org/mockito/internal/creation/bytebuddy/InlineDelegateByteBuddyMockMakerTest.java",
+            "startLine": 45,
+            "endLine": 606,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest",
+            "type": "Class",
+            "name": "InlineDelegateByteBuddyMockMakerTest",
+            "filePath": "src/test/java/org/mockito/internal/creation/bytebuddy/InlineDelegateByteBuddyMockMakerTest.java",
+            "startLine": 40,
+            "endLine": 649,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.creation.bytebuddy.MockMethodAdvice",
+            "type": "Method",
+            "name": "hideRecursiveCall",
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/MockMethodAdvice.java",
+            "startLine": 117,
+            "endLine": 136,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.creation.bytebuddy.MockMethodAdvice",
+            "type": "Method",
+            "name": "removeRecursiveCalls",
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/MockMethodAdvice.java",
+            "startLine": 324,
+            "endLine": 344,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/mockito/mockito.git",
+      "sha1": "b77aee1a3f5c20ae4a85f31d6b6fc60e412ba7e4",
+      "url": "https://github.com/mockito/mockito/commit/b77aee1a3f5c20ae4a85f31d6b6fc60e412ba7e4",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.stubbing.InvocationContainerImpl",
+            "type": "Class",
+            "name": "InvocationContainerImpl",
+            "filePath": "src/main/java/org/mockito/internal/stubbing/InvocationContainerImpl.java",
+            "startLine": 28,
+            "endLine": 175,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.stubbing.InvocationContainerImpl",
+            "type": "Class",
+            "name": "InvocationContainerImpl",
+            "filePath": "src/main/java/org/mockito/internal/stubbing/InvocationContainerImpl.java",
+            "startLine": 28,
+            "endLine": 182,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs",
+            "type": "Method",
+            "name": "deepStub",
+            "filePath": "src/main/java/org/mockito/internal/stubbing/defaultanswers/ReturnsDeepStubs.java",
+            "startLine": 78,
+            "endLine": 102,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs",
+            "type": "Method",
+            "name": "deepStub",
+            "filePath": "src/main/java/org/mockito/internal/stubbing/defaultanswers/ReturnsDeepStubs.java",
+            "startLine": 77,
+            "endLine": 98,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs",
+            "type": "Class",
+            "name": "ReturnsDeepStubs",
+            "filePath": "src/main/java/org/mockito/internal/stubbing/defaultanswers/ReturnsDeepStubs.java",
+            "startLine": 25,
+            "endLine": 214,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs",
+            "type": "Class",
+            "name": "ReturnsDeepStubs",
+            "filePath": "src/main/java/org/mockito/internal/stubbing/defaultanswers/ReturnsDeepStubs.java",
+            "startLine": 24,
+            "endLine": 210,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.stubbing.InvocationContainerImpl",
+            "type": "Method",
+            "name": "getInvocationForStubbing",
+            "filePath": "src/main/java/org/mockito/internal/stubbing/InvocationContainerImpl.java",
+            "startLine": 166,
+            "endLine": 168,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.stubbing.InvocationContainerImpl",
+            "type": "Method",
+            "name": "findStubbedAnswer",
+            "filePath": "src/main/java/org/mockito/internal/stubbing/InvocationContainerImpl.java",
+            "startLine": 172,
+            "endLine": 181,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/mockito/mockito.git",
+      "sha1": "09df1111e3b5a5ebdae658f376461103e4ad889e",
+      "url": "https://github.com/mockito/mockito/commit/09df1111e3b5a5ebdae658f376461103e4ad889e",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.util.reflection.FieldReader",
+            "type": "Method",
+            "name": "read",
+            "filePath": "src/main/java/org/mockito/internal/util/reflection/FieldReader.java",
+            "startLine": 28,
+            "endLine": 35,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.util.reflection.FieldReader",
+            "type": "Method",
+            "name": "read",
+            "filePath": "src/main/java/org/mockito/internal/util/reflection/FieldReader.java",
+            "startLine": 28,
+            "endLine": 35,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.util.reflection.FieldReader",
+            "type": "Class",
+            "name": "FieldReader",
+            "filePath": "src/main/java/org/mockito/internal/util/reflection/FieldReader.java",
+            "startLine": 13,
+            "endLine": 36,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.util.reflection.FieldReader",
+            "type": "Class",
+            "name": "FieldReader",
+            "filePath": "src/main/java/org/mockito/internal/util/reflection/FieldReader.java",
+            "startLine": 13,
+            "endLine": 36,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.moduletest.ModuleAccessTest",
+            "type": "Class",
+            "name": "ModuleAccessTest",
+            "filePath": "subprojects/module-test/src/test/java/org/mockito/moduletest/ModuleAccessTest.java",
+            "startLine": 21,
+            "endLine": 71,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.moduletest.ModuleAccessTest",
+            "type": "Class",
+            "name": "ModuleAccessTest",
+            "filePath": "subprojects/module-test/src/test/java/org/mockito/moduletest/ModuleAccessTest.java",
+            "startLine": 23,
+            "endLine": 94,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.moduletest.ModuleUtil",
+            "type": "Method",
+            "name": "modularJar",
+            "filePath": "subprojects/module-test/src/test/java/org/mockito/moduletest/ModuleUtil.java",
+            "startLine": 32,
+            "endLine": 43,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.moduletest.ModuleUtil",
+            "type": "Method",
+            "name": "modularJar",
+            "filePath": "subprojects/module-test/src/test/java/org/mockito/moduletest/ModuleUtil.java",
+            "startLine": 33,
+            "endLine": 35,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.moduletest.ModuleUtil",
+            "type": "Class",
+            "name": "ModuleUtil",
+            "filePath": "subprojects/module-test/src/test/java/org/mockito/moduletest/ModuleUtil.java",
+            "startLine": 30,
+            "endLine": 147,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.moduletest.ModuleUtil",
+            "type": "Class",
+            "name": "ModuleUtil",
+            "filePath": "subprojects/module-test/src/test/java/org/mockito/moduletest/ModuleUtil.java",
+            "startLine": 31,
+            "endLine": 156,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.moduletest.ModuleUtil",
+            "type": "Method",
+            "name": "type",
+            "filePath": "subprojects/module-test/src/test/java/org/mockito/moduletest/ModuleUtil.java",
+            "startLine": 45,
+            "endLine": 54,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.moduletest.ModuleUtil",
+            "type": "Method",
+            "name": "type",
+            "filePath": "subprojects/module-test/src/test/java/org/mockito/moduletest/ModuleUtil.java",
+            "startLine": 49,
+            "endLine": 63,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/mockito/mockito.git",
+      "sha1": "47ef05814784183cd5c1d297078e2ad7e31cce34",
+      "url": "https://github.com/mockito/mockito/commit/47ef05814784183cd5c1d297078e2ad7e31cce34",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.creation.bytebuddy.ByteBuddyMockMaker",
+            "type": "Class",
+            "name": "ByteBuddyMockMaker",
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/ByteBuddyMockMaker.java",
+            "startLine": 14,
+            "endLine": 67,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.creation.bytebuddy.ByteBuddyMockMaker",
+            "type": "Class",
+            "name": "ByteBuddyMockMaker",
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/ByteBuddyMockMaker.java",
+            "startLine": 15,
+            "endLine": 74,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.creation.bytebuddy.ConstructionCallback",
+            "type": "Interface",
+            "name": "ConstructionCallback",
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/ConstructionCallback.java",
+            "startLine": 7,
+            "endLine": 10,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.creation.bytebuddy.ConstructionCallback",
+            "type": "Interface",
+            "name": "ConstructionCallback",
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/ConstructionCallback.java",
+            "startLine": 7,
+            "endLine": 10,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker",
+            "type": "Method",
+            "name": "InlineByteBuddyMockMaker",
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/InlineByteBuddyMockMaker.java",
+            "startLine": 202,
+            "endLine": 287,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker",
+            "type": "Method",
+            "name": "InlineByteBuddyMockMaker",
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/InlineByteBuddyMockMaker.java",
+            "startLine": 204,
+            "endLine": 292,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker",
+            "type": "Method",
+            "name": "createMock",
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/InlineByteBuddyMockMaker.java",
+            "startLine": 289,
+            "endLine": 314,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker",
+            "type": "Method",
+            "name": "createMock",
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/InlineByteBuddyMockMaker.java",
+            "startLine": 294,
+            "endLine": 297,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker",
+            "type": "Class",
+            "name": "InlineByteBuddyMockMaker",
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/InlineByteBuddyMockMaker.java",
+            "startLine": 42,
+            "endLine": 797,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker",
+            "type": "Class",
+            "name": "InlineByteBuddyMockMaker",
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/InlineByteBuddyMockMaker.java",
+            "startLine": 42,
+            "endLine": 828,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.creation.bytebuddy.MockMethodAdvice.ConstructorShortcut",
+            "type": "Method",
+            "name": "wrap",
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/MockMethodAdvice.java",
+            "startLine": 388,
+            "endLine": 585,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.creation.bytebuddy.MockMethodAdvice.ConstructorShortcut",
+            "type": "Method",
+            "name": "wrap",
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/MockMethodAdvice.java",
+            "startLine": 392,
+            "endLine": 645,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.creation.bytebuddy.MockMethodAdvice.ConstructorShortcut",
+            "type": "Class",
+            "name": "ConstructorShortcut",
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/MockMethodAdvice.java",
+            "startLine": 379,
+            "endLine": 586,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.creation.bytebuddy.MockMethodAdvice.ConstructorShortcut",
+            "type": "Class",
+            "name": "ConstructorShortcut",
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/MockMethodAdvice.java",
+            "startLine": 383,
+            "endLine": 672,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.creation.bytebuddy.MockMethodAdvice",
+            "type": "Class",
+            "name": "MockMethodAdvice",
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/MockMethodAdvice.java",
+            "startLine": 51,
+            "endLine": 680,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.creation.bytebuddy.MockMethodAdvice",
+            "type": "Class",
+            "name": "MockMethodAdvice",
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/MockMethodAdvice.java",
+            "startLine": 55,
+            "endLine": 766,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.creation.bytebuddy.inject.MockMethodDispatcher",
+            "type": "Class",
+            "name": "MockMethodDispatcher",
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/inject/MockMethodDispatcher.java",
+            "startLine": 12,
+            "endLine": 71,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.creation.bytebuddy.inject.MockMethodDispatcher",
+            "type": "Class",
+            "name": "MockMethodDispatcher",
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/inject/MockMethodDispatcher.java",
+            "startLine": 12,
+            "endLine": 74,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.util.MockUtil",
+            "type": "Method",
+            "name": "createMock",
+            "filePath": "src/main/java/org/mockito/internal/util/MockUtil.java",
+            "startLine": 35,
+            "endLine": 46,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.util.MockUtil",
+            "type": "Method",
+            "name": "createMock",
+            "filePath": "src/main/java/org/mockito/internal/util/MockUtil.java",
+            "startLine": 35,
+            "endLine": 56,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.util.MockUtil",
+            "type": "Class",
+            "name": "MockUtil",
+            "filePath": "src/main/java/org/mockito/internal/util/MockUtil.java",
+            "startLine": 24,
+            "endLine": 124,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.util.MockUtil",
+            "type": "Class",
+            "name": "MockUtil",
+            "filePath": "src/main/java/org/mockito/internal/util/MockUtil.java",
+            "startLine": 24,
+            "endLine": 134,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.plugins.MockMaker",
+            "type": "Interface",
+            "name": "MockMaker",
+            "filePath": "src/main/java/org/mockito/plugins/MockMaker.java",
+            "startLine": 18,
+            "endLine": 220,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.plugins.MockMaker",
+            "type": "Interface",
+            "name": "MockMaker",
+            "filePath": "src/main/java/org/mockito/plugins/MockMaker.java",
+            "startLine": 19,
+            "endLine": 240,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest",
+            "type": "Class",
+            "name": "InlineByteBuddyMockMakerTest",
+            "filePath": "src/test/java/org/mockito/internal/creation/bytebuddy/InlineByteBuddyMockMakerTest.java",
+            "startLine": 40,
+            "endLine": 484,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest",
+            "type": "Class",
+            "name": "InlineByteBuddyMockMakerTest",
+            "filePath": "src/test/java/org/mockito/internal/creation/bytebuddy/InlineByteBuddyMockMakerTest.java",
+            "startLine": 36,
+            "endLine": 537,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.creation.bytebuddy.MockMethodAdvice",
+            "type": "Method",
+            "name": "handleConstruction",
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/MockMethodAdvice.java",
+            "startLine": 168,
+            "endLine": 172,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.creation.bytebuddy.MockMethodAdvice",
+            "type": "Method",
+            "name": "handleConstruction",
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/MockMethodAdvice.java",
+            "startLine": 172,
+            "endLine": 176,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.creation.bytebuddy.inject.MockMethodDispatcher",
+            "type": "Method",
+            "name": "handleConstruction",
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/inject/MockMethodDispatcher.java",
+            "startLine": 59,
+            "endLine": 60,
+            "startColumn": 5,
+            "endColumn": 92
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.creation.bytebuddy.inject.MockMethodDispatcher",
+            "type": "Method",
+            "name": "handleConstruction",
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/inject/MockMethodDispatcher.java",
+            "startLine": 62,
+            "endLine": 63,
+            "startColumn": 5,
+            "endColumn": 92
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.creation.bytebuddy.inject.MockMethodDispatcher",
+            "type": "Method",
+            "name": "handleConstruction",
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/inject/MockMethodDispatcher.java",
+            "startLine": 44,
+            "endLine": 51,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.creation.bytebuddy.inject.MockMethodDispatcher",
+            "type": "Method",
+            "name": "handleConstruction",
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/inject/MockMethodDispatcher.java",
+            "startLine": 44,
+            "endLine": 54,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "container": "org.mockito.internal.creation.bytebuddy.ConstructionCallback",
+            "type": "Method",
+            "name": "accept",
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/ConstructionCallback.java",
+            "startLine": 9,
+            "endLine": 9,
+            "startColumn": 5,
+            "endColumn": 96
+          },
+          "rightSideLocation": {
+            "container": "org.mockito.internal.creation.bytebuddy.ConstructionCallback",
+            "type": "Method",
+            "name": "apply",
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/ConstructionCallback.java",
+            "startLine": 9,
+            "endLine": 9,
+            "startColumn": 5,
+            "endColumn": 97
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": []
+    }
+  ]
+}

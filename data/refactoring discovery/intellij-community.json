@@ -1,0 +1,3204 @@
+{
+  "results": [
+    {
+      "repository": "https://github.com/JetBrains/intellij-community.git",
+      "sha1": "029e1a3be3d24cb284f0ee3a8add7897aedf5990",
+      "url": "https://github.com/JetBrains/intellij-community/commit/029e1a3be3d24cb284f0ee3a8add7897aedf5990",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private getReferencesWidth(row int, cell GraphCommitCell) : int renamed to private prepareTemplateComponent(row int, cell GraphCommitCell) : void in class com.intellij.vcs.log.ui.render.GraphCommitCellRenderer",
+          "leftSideLocation": {
+            "filePath": "platform/vcs-log/impl/src/com/intellij/vcs/log/ui/render/GraphCommitCellRenderer.java",
+            "startLine": 94,
+            "endLine": 103,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "platform/vcs-log/impl/src/com/intellij/vcs/log/ui/render/GraphCommitCellRenderer.java",
+            "startLine": 99,
+            "endLine": 102,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	int to void in method private prepareTemplateComponent(row int, cell GraphCommitCell) : void from class com.intellij.vcs.log.ui.render.GraphCommitCellRenderer",
+          "leftSideLocation": {
+            "filePath": "platform/vcs-log/impl/src/com/intellij/vcs/log/ui/render/GraphCommitCellRenderer.java",
+            "startLine": 94,
+            "endLine": 103,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "platform/vcs-log/impl/src/com/intellij/vcs/log/ui/render/GraphCommitCellRenderer.java",
+            "startLine": 99,
+            "endLine": 102,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private getReferencesWidth(row int) : int inlined to private getTooltipXCoordinate(row int) : int in class com.intellij.vcs.log.ui.render.GraphCommitCellRenderer",
+          "leftSideLocation": {
+            "filePath": "platform/vcs-log/impl/src/com/intellij/vcs/log/ui/render/GraphCommitCellRenderer.java",
+            "startLine": 90,
+            "endLine": 92,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "platform/vcs-log/impl/src/com/intellij/vcs/log/ui/render/GraphCommitCellRenderer.java",
+            "startLine": 87,
+            "endLine": 97,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private getGraphWidth(row int) : int inlined to private getTooltipXCoordinate(row int) : int in class com.intellij.vcs.log.ui.render.GraphCommitCellRenderer",
+          "leftSideLocation": {
+            "filePath": "platform/vcs-log/impl/src/com/intellij/vcs/log/ui/render/GraphCommitCellRenderer.java",
+            "startLine": 105,
+            "endLine": 108,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "platform/vcs-log/impl/src/com/intellij/vcs/log/ui/render/GraphCommitCellRenderer.java",
+            "startLine": 87,
+            "endLine": 97,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private getGraphWidth(row int) : int inlined to private getTooltipXCoordinate(row int) : int in class com.intellij.vcs.log.ui.render.GraphCommitCellRenderer",
+          "leftSideLocation": {
+            "filePath": "platform/vcs-log/impl/src/com/intellij/vcs/log/ui/render/GraphCommitCellRenderer.java",
+            "startLine": 105,
+            "endLine": 108,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "platform/vcs-log/impl/src/com/intellij/vcs/log/ui/render/GraphCommitCellRenderer.java",
+            "startLine": 87,
+            "endLine": 97,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/JetBrains/intellij-community.git",
+      "sha1": "a09e77333834ed815777b39ae28744d5beae7861",
+      "url": "https://github.com/JetBrains/intellij-community/commit/a09e77333834ed815777b39ae28744d5beae7861",
+      "ourApproach": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	List<LocalQuickFix> to List<@NotNull LocalQuickFix> in method public abstract registerOrderEntryFixes(reference PsiReference, registrar List<? super IntentionAction>) : List<@NotNull LocalQuickFix> from class com.intellij.codeInsight.intention.QuickFixFactory",
+          "leftSideLocation": {
+            "filePath": "java/java-analysis-api/src/com/intellij/codeInsight/intention/QuickFixFactory.java",
+            "startLine": 425,
+            "endLine": 427,
+            "startColumn": 3,
+            "endColumn": 113
+          },
+          "rightSideLocation": {
+            "filePath": "java/java-analysis-api/src/com/intellij/codeInsight/intention/QuickFixFactory.java",
+            "startLine": 425,
+            "endLine": 426,
+            "startColumn": 3,
+            "endColumn": 131
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	List<LocalQuickFix> to List<@NotNull LocalQuickFix> in method protected createNPEFixes(qualifier PsiExpression, expression PsiExpression, onTheFly boolean, alwaysNull boolean) : List<@NotNull LocalQuickFix> from class com.intellij.codeInspection.dataFlow.DataFlowInspectionBase",
+          "leftSideLocation": {
+            "filePath": "java/java-analysis-impl/src/com/intellij/codeInspection/dataFlow/DataFlowInspectionBase.java",
+            "startLine": 207,
+            "endLine": 212,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "java/java-analysis-impl/src/com/intellij/codeInspection/dataFlow/DataFlowInspectionBase.java",
+            "startLine": 207,
+            "endLine": 212,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	List<LocalQuickFix> to List<@NotNull LocalQuickFix> in method protected createCastFixes(castExpression PsiTypeCastExpression, realType PsiType, onTheFly boolean, alwaysFails boolean) : List<@NotNull LocalQuickFix> from class com.intellij.codeInspection.dataFlow.DataFlowInspectionBase",
+          "leftSideLocation": {
+            "filePath": "java/java-analysis-impl/src/com/intellij/codeInspection/dataFlow/DataFlowInspectionBase.java",
+            "startLine": 200,
+            "endLine": 205,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "java/java-analysis-impl/src/com/intellij/codeInspection/dataFlow/DataFlowInspectionBase.java",
+            "startLine": 200,
+            "endLine": 205,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	List<LocalQuickFix> to List<@NotNull LocalQuickFix> in method protected createUnboxingNullableFixes(qualifier PsiExpression, anchor PsiElement, onTheFly boolean) : List<@NotNull LocalQuickFix> from class com.intellij.codeInspection.dataFlow.DataFlowInspectionBase",
+          "leftSideLocation": {
+            "filePath": "java/java-analysis-impl/src/com/intellij/codeInspection/dataFlow/DataFlowInspectionBase.java",
+            "startLine": 214,
+            "endLine": 216,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "java/java-analysis-impl/src/com/intellij/codeInspection/dataFlow/DataFlowInspectionBase.java",
+            "startLine": 214,
+            "endLine": 216,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	List<LocalQuickFix> to List<@NotNull LocalQuickFix> in method protected createMethodReferenceNPEFixes(methodRef PsiMethodReferenceExpression, onTheFly boolean) : List<@NotNull LocalQuickFix> from class com.intellij.codeInspection.dataFlow.DataFlowInspectionBase",
+          "leftSideLocation": {
+            "filePath": "java/java-analysis-impl/src/com/intellij/codeInspection/dataFlow/DataFlowInspectionBase.java",
+            "startLine": 218,
+            "endLine": 220,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "java/java-analysis-impl/src/com/intellij/codeInspection/dataFlow/DataFlowInspectionBase.java",
+            "startLine": 218,
+            "endLine": 220,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	List<LocalQuickFix> to List<@NotNull LocalQuickFix> in method protected createCastFixes(castExpression PsiTypeCastExpression, realType PsiType, onTheFly boolean, alwaysFails boolean) : List<@NotNull LocalQuickFix> from class com.intellij.codeInspection.dataFlow.DataFlowInspection",
+          "leftSideLocation": {
+            "filePath": "java/java-impl-inspections/src/com/intellij/codeInspection/dataFlow/DataFlowInspection.java",
+            "startLine": 91,
+            "endLine": 126,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "java/java-impl-inspections/src/com/intellij/codeInspection/dataFlow/DataFlowInspection.java",
+            "startLine": 91,
+            "endLine": 125,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	List<LocalQuickFix> to List<@NotNull LocalQuickFix> in method protected createNPEFixes(qualifier PsiExpression, expression PsiExpression, onTheFly boolean, alwaysNull boolean) : List<@NotNull LocalQuickFix> from class com.intellij.codeInspection.dataFlow.DataFlowInspection",
+          "leftSideLocation": {
+            "filePath": "java/java-impl-inspections/src/com/intellij/codeInspection/dataFlow/DataFlowInspection.java",
+            "startLine": 128,
+            "endLine": 178,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "java/java-impl-inspections/src/com/intellij/codeInspection/dataFlow/DataFlowInspection.java",
+            "startLine": 127,
+            "endLine": 176,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	List<LocalQuickFix> to List<@NotNull LocalQuickFix> in method protected createUnboxingNullableFixes(qualifier PsiExpression, anchor PsiElement, onTheFly boolean) : List<@NotNull LocalQuickFix> from class com.intellij.codeInspection.dataFlow.DataFlowInspection",
+          "leftSideLocation": {
+            "filePath": "java/java-impl-inspections/src/com/intellij/codeInspection/dataFlow/DataFlowInspection.java",
+            "startLine": 180,
+            "endLine": 189,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "java/java-impl-inspections/src/com/intellij/codeInspection/dataFlow/DataFlowInspection.java",
+            "startLine": 178,
+            "endLine": 187,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	List<LocalQuickFix> to List<@NotNull LocalQuickFix> in method protected createMethodReferenceNPEFixes(methodRef PsiMethodReferenceExpression, onTheFly boolean) : List<@NotNull LocalQuickFix> from class com.intellij.codeInspection.dataFlow.DataFlowInspection",
+          "leftSideLocation": {
+            "filePath": "java/java-impl-inspections/src/com/intellij/codeInspection/dataFlow/DataFlowInspection.java",
+            "startLine": 72,
+            "endLine": 81,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "java/java-impl-inspections/src/com/intellij/codeInspection/dataFlow/DataFlowInspection.java",
+            "startLine": 73,
+            "endLine": 81,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	List<ChoiceVariantIntentionAction> to List<@NotNull ChoiceVariantIntentionAction> in method public getVariants() : List<@NotNull ChoiceVariantIntentionAction> from class com.intellij.codeInsight.daemon.impl.quickfix.ExtendSealedClassFix",
+          "leftSideLocation": {
+            "filePath": "java/java-impl/src/com/intellij/codeInsight/daemon/impl/quickfix/ExtendSealedClassFix.java",
+            "startLine": 46,
+            "endLine": 61,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "java/java-impl/src/com/intellij/codeInsight/daemon/impl/quickfix/ExtendSealedClassFix.java",
+            "startLine": 46,
+            "endLine": 61,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	List<LocalQuickFix> to List<@NotNull LocalQuickFix> in method public registerFixes(reference PsiReference, registrar List<? super IntentionAction>) : List<@NotNull LocalQuickFix> from class com.intellij.codeInsight.daemon.impl.quickfix.OrderEntryFix",
+          "leftSideLocation": {
+            "filePath": "java/java-impl/src/com/intellij/codeInsight/daemon/impl/quickfix/OrderEntryFix.java",
+            "startLine": 90,
+            "endLine": 211,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "java/java-impl/src/com/intellij/codeInsight/daemon/impl/quickfix/OrderEntryFix.java",
+            "startLine": 90,
+            "endLine": 211,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	List<LocalQuickFix> to List<@NotNull LocalQuickFix> in method public registerOrderEntryFixes(reference PsiReference, registrar List<? super IntentionAction>) : List<@NotNull LocalQuickFix> from class com.intellij.codeInsight.intention.impl.config.QuickFixFactoryImpl",
+          "leftSideLocation": {
+            "filePath": "java/java-impl/src/com/intellij/codeInsight/intention/impl/config/QuickFixFactoryImpl.java",
+            "startLine": 829,
+            "endLine": 833,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "java/java-impl/src/com/intellij/codeInsight/intention/impl/config/QuickFixFactoryImpl.java",
+            "startLine": 829,
+            "endLine": 832,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	List<? extends LocalQuickFix> to List<? extends @NotNull LocalQuickFix> in method private registerFixes() : List<? extends @NotNull LocalQuickFix> from class com.intellij.psi.impl.source.resolve.reference.impl.providers.JavaClassReference",
+          "leftSideLocation": {
+            "filePath": "java/java-impl/src/com/intellij/psi/impl/source/resolve/reference/impl/providers/JavaClassReference.java",
+            "startLine": 482,
+            "endLine": 513,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "java/java-impl/src/com/intellij/psi/impl/source/resolve/reference/impl/providers/JavaClassReference.java",
+            "startLine": 482,
+            "endLine": 513,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	LocalQuickFix[] to LocalQuickFix @Nullable [] in method public getQuickFixes() : LocalQuickFix @Nullable [] from class com.intellij.psi.impl.source.resolve.reference.impl.providers.JavaClassReference",
+          "leftSideLocation": {
+            "filePath": "java/java-impl/src/com/intellij/psi/impl/source/resolve/reference/impl/providers/JavaClassReference.java",
+            "startLine": 554,
+            "endLine": 558,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "java/java-impl/src/com/intellij/psi/impl/source/resolve/reference/impl/providers/JavaClassReference.java",
+            "startLine": 554,
+            "endLine": 558,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	List<V> to List<@NotNull V> in method public getVariants() : List<@NotNull V> from class com.intellij.codeInsight.intention.IntentionActionWithChoice",
+          "leftSideLocation": {
+            "filePath": "platform/analysis-api/src/com/intellij/codeInsight/intention/IntentionActionWithChoice.java",
+            "startLine": 29,
+            "endLine": 35,
+            "startColumn": 3,
+            "endColumn": 34
+          },
+          "rightSideLocation": {
+            "filePath": "platform/analysis-api/src/com/intellij/codeInsight/intention/IntentionActionWithChoice.java",
+            "startLine": 29,
+            "endLine": 35,
+            "startColumn": 3,
+            "endColumn": 43
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	LocalQuickFix[] to LocalQuickFix @Nullable [] in method public getQuickFixes() : LocalQuickFix @Nullable [] from class com.intellij.openapi.paths.PsiDynaReference",
+          "leftSideLocation": {
+            "filePath": "platform/analysis-impl/src/com/intellij/openapi/paths/PsiDynaReference.java",
+            "startLine": 204,
+            "endLine": 213,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "platform/analysis-impl/src/com/intellij/openapi/paths/PsiDynaReference.java",
+            "startLine": 204,
+            "endLine": 213,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	LocalQuickFix[] to LocalQuickFix @Nullable [] in method public getQuickFixes() : LocalQuickFix @Nullable [] from class com.intellij.psi.impl.source.resolve.reference.impl.providers.FileReference",
+          "leftSideLocation": {
+            "filePath": "platform/analysis-impl/src/com/intellij/psi/impl/source/resolve/reference/impl/providers/FileReference.java",
+            "startLine": 586,
+            "endLine": 593,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "platform/analysis-impl/src/com/intellij/psi/impl/source/resolve/reference/impl/providers/FileReference.java",
+            "startLine": 586,
+            "endLine": 593,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	List<? extends LocalQuickFix> to List<? extends @NotNull LocalQuickFix> in method public registerFixes(reference FileReference) : List<? extends @NotNull LocalQuickFix> from class com.intellij.psi.impl.source.resolve.reference.impl.providers.FileReferenceHelper",
+          "leftSideLocation": {
+            "filePath": "platform/analysis-impl/src/com/intellij/psi/impl/source/resolve/reference/impl/providers/FileReferenceHelper.java",
+            "startLine": 165,
+            "endLine": 168,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "platform/analysis-impl/src/com/intellij/psi/impl/source/resolve/reference/impl/providers/FileReferenceHelper.java",
+            "startLine": 165,
+            "endLine": 167,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	List<LocalQuickFix> to List<@NotNull LocalQuickFix> in method public wrapToQuickFixes(actions List<? extends IntentionAction>, file PsiFile) : List<@NotNull LocalQuickFix> from class com.intellij.codeInspection.IntentionWrapper",
+          "leftSideLocation": {
+            "filePath": "platform/lang-api/src/com/intellij/codeInspection/IntentionWrapper.java",
+            "startLine": 125,
+            "endLine": 133,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "platform/lang-api/src/com/intellij/codeInspection/IntentionWrapper.java",
+            "startLine": 126,
+            "endLine": 134,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	List<? extends LocalQuickFix> to List<? extends @NotNull LocalQuickFix> in method public registerQuickFix(reference FileReference) : List<? extends @NotNull LocalQuickFix> from class com.intellij.codeInsight.daemon.quickFix.FileReferenceQuickFixProvider",
+          "leftSideLocation": {
+            "filePath": "platform/lang-impl/src/com/intellij/codeInsight/daemon/quickFix/FileReferenceQuickFixProvider.java",
+            "startLine": 43,
+            "endLine": 86,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "platform/lang-impl/src/com/intellij/codeInsight/daemon/quickFix/FileReferenceQuickFixProvider.java",
+            "startLine": 43,
+            "endLine": 86,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	List<? extends LocalQuickFix> to List<? extends @NotNull LocalQuickFix> in method public registerFixes(reference FileReference) : List<? extends @NotNull LocalQuickFix> from class com.intellij.psi.impl.source.resolve.reference.impl.providers.PsiFileReferenceHelper",
+          "leftSideLocation": {
+            "filePath": "platform/lang-impl/src/com/intellij/psi/impl/source/resolve/reference/impl/providers/PsiFileReferenceHelper.java",
+            "startLine": 44,
+            "endLine": 48,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "platform/lang-impl/src/com/intellij/psi/impl/source/resolve/reference/impl/providers/PsiFileReferenceHelper.java",
+            "startLine": 44,
+            "endLine": 47,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	LocalQuickFix[] to LocalQuickFix @Nullable [] in method public getQuickFixes() : LocalQuickFix @Nullable [] from class org.jetbrains.idea.maven.dom.references.MavenModulePsiReference",
+          "leftSideLocation": {
+            "filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/dom/references/MavenModulePsiReference.java",
+            "startLine": 91,
+            "endLine": 95,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/dom/references/MavenModulePsiReference.java",
+            "startLine": 92,
+            "endLine": 96,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	LocalQuickFix @NotNull [] to LocalQuickFix @Nullable [] in method public getQuickFixes() : LocalQuickFix @Nullable [] from class com.intellij.lang.properties.references.PropertyReference",
+          "leftSideLocation": {
+            "filePath": "plugins/properties/properties-psi-impl/src/com/intellij/lang/properties/references/PropertyReference.java",
+            "startLine": 55,
+            "endLine": 60,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "plugins/properties/properties-psi-impl/src/com/intellij/lang/properties/references/PropertyReference.java",
+            "startLine": 55,
+            "endLine": 60,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	LocalQuickFix[] to LocalQuickFix @Nullable [] in method public getQuickFixes() : LocalQuickFix @Nullable [] from class com.intellij.psi.impl.source.resolve.reference.impl.providers.DtdReferencesProvider.EntityReference",
+          "leftSideLocation": {
+            "filePath": "xml/impl/src/com/intellij/psi/impl/source/resolve/reference/impl/providers/DtdReferencesProvider.java",
+            "startLine": 214,
+            "endLine": 227,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "xml/impl/src/com/intellij/psi/impl/source/resolve/reference/impl/providers/DtdReferencesProvider.java",
+            "startLine": 214,
+            "endLine": 227,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	LocalQuickFix[] to LocalQuickFix @Nullable [] in method public getQuickFixes() : LocalQuickFix @Nullable [] from class com.intellij.psi.impl.source.resolve.reference.impl.providers.DtdReferencesProvider.ElementReference",
+          "leftSideLocation": {
+            "filePath": "xml/impl/src/com/intellij/psi/impl/source/resolve/reference/impl/providers/DtdReferencesProvider.java",
+            "startLine": 122,
+            "endLine": 133,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "xml/impl/src/com/intellij/psi/impl/source/resolve/reference/impl/providers/DtdReferencesProvider.java",
+            "startLine": 122,
+            "endLine": 133,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	LocalQuickFix[] to LocalQuickFix @Nullable [] in method public getQuickFixes() : LocalQuickFix @Nullable [] from class org.intellij.plugins.relaxNG.xml.dom.impl.DefinitionReference",
+          "leftSideLocation": {
+            "filePath": "xml/relaxng/src/org/intellij/plugins/relaxNG/xml/dom/impl/DefinitionReference.java",
+            "startLine": 128,
+            "endLine": 137,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "xml/relaxng/src/org/intellij/plugins/relaxNG/xml/dom/impl/DefinitionReference.java",
+            "startLine": 128,
+            "endLine": 137,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	List<LocalQuickFix> to List<@NotNull LocalQuickFix> in method public abstract registerOrderEntryFixes(reference PsiReference, registrar List<? super IntentionAction>) : List<@NotNull LocalQuickFix> from class com.intellij.codeInsight.intention.QuickFixFactory",
+          "leftSideLocation": {
+            "filePath": "java/java-analysis-api/src/com/intellij/codeInsight/intention/QuickFixFactory.java",
+            "startLine": 425,
+            "endLine": 427,
+            "startColumn": 3,
+            "endColumn": 113
+          },
+          "rightSideLocation": {
+            "filePath": "java/java-analysis-api/src/com/intellij/codeInsight/intention/QuickFixFactory.java",
+            "startLine": 425,
+            "endLine": 426,
+            "startColumn": 3,
+            "endColumn": 131
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	List<LocalQuickFix> to List<@NotNull LocalQuickFix> in method protected createCastFixes(castExpression PsiTypeCastExpression, realType PsiType, onTheFly boolean, alwaysFails boolean) : List<@NotNull LocalQuickFix> from class com.intellij.codeInspection.dataFlow.DataFlowInspectionBase",
+          "leftSideLocation": {
+            "filePath": "java/java-analysis-impl/src/com/intellij/codeInspection/dataFlow/DataFlowInspectionBase.java",
+            "startLine": 200,
+            "endLine": 205,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "java/java-analysis-impl/src/com/intellij/codeInspection/dataFlow/DataFlowInspectionBase.java",
+            "startLine": 200,
+            "endLine": 205,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	List<LocalQuickFix> to List<@NotNull LocalQuickFix> in method protected createNPEFixes(qualifier PsiExpression, expression PsiExpression, onTheFly boolean, alwaysNull boolean) : List<@NotNull LocalQuickFix> from class com.intellij.codeInspection.dataFlow.DataFlowInspectionBase",
+          "leftSideLocation": {
+            "filePath": "java/java-analysis-impl/src/com/intellij/codeInspection/dataFlow/DataFlowInspectionBase.java",
+            "startLine": 207,
+            "endLine": 212,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "java/java-analysis-impl/src/com/intellij/codeInspection/dataFlow/DataFlowInspectionBase.java",
+            "startLine": 207,
+            "endLine": 212,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	List<LocalQuickFix> to List<@NotNull LocalQuickFix> in method protected createUnboxingNullableFixes(qualifier PsiExpression, anchor PsiElement, onTheFly boolean) : List<@NotNull LocalQuickFix> from class com.intellij.codeInspection.dataFlow.DataFlowInspectionBase",
+          "leftSideLocation": {
+            "filePath": "java/java-analysis-impl/src/com/intellij/codeInspection/dataFlow/DataFlowInspectionBase.java",
+            "startLine": 214,
+            "endLine": 216,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "java/java-analysis-impl/src/com/intellij/codeInspection/dataFlow/DataFlowInspectionBase.java",
+            "startLine": 214,
+            "endLine": 216,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	List<LocalQuickFix> to List<@NotNull LocalQuickFix> in method protected createMethodReferenceNPEFixes(methodRef PsiMethodReferenceExpression, onTheFly boolean) : List<@NotNull LocalQuickFix> from class com.intellij.codeInspection.dataFlow.DataFlowInspectionBase",
+          "leftSideLocation": {
+            "filePath": "java/java-analysis-impl/src/com/intellij/codeInspection/dataFlow/DataFlowInspectionBase.java",
+            "startLine": 218,
+            "endLine": 220,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "java/java-analysis-impl/src/com/intellij/codeInspection/dataFlow/DataFlowInspectionBase.java",
+            "startLine": 218,
+            "endLine": 220,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	List<LocalQuickFix> to List<@NotNull LocalQuickFix> in method protected createMethodReferenceNPEFixes(methodRef PsiMethodReferenceExpression, onTheFly boolean) : List<@NotNull LocalQuickFix> from class com.intellij.codeInspection.dataFlow.DataFlowInspection",
+          "leftSideLocation": {
+            "filePath": "java/java-impl-inspections/src/com/intellij/codeInspection/dataFlow/DataFlowInspection.java",
+            "startLine": 72,
+            "endLine": 81,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "java/java-impl-inspections/src/com/intellij/codeInspection/dataFlow/DataFlowInspection.java",
+            "startLine": 73,
+            "endLine": 81,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	List<LocalQuickFix> to List<@NotNull LocalQuickFix> in method protected createCastFixes(castExpression PsiTypeCastExpression, realType PsiType, onTheFly boolean, alwaysFails boolean) : List<@NotNull LocalQuickFix> from class com.intellij.codeInspection.dataFlow.DataFlowInspection",
+          "leftSideLocation": {
+            "filePath": "java/java-impl-inspections/src/com/intellij/codeInspection/dataFlow/DataFlowInspection.java",
+            "startLine": 91,
+            "endLine": 126,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "java/java-impl-inspections/src/com/intellij/codeInspection/dataFlow/DataFlowInspection.java",
+            "startLine": 91,
+            "endLine": 125,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	List<LocalQuickFix> to List<@NotNull LocalQuickFix> in method protected createNPEFixes(qualifier PsiExpression, expression PsiExpression, onTheFly boolean, alwaysNull boolean) : List<@NotNull LocalQuickFix> from class com.intellij.codeInspection.dataFlow.DataFlowInspection",
+          "leftSideLocation": {
+            "filePath": "java/java-impl-inspections/src/com/intellij/codeInspection/dataFlow/DataFlowInspection.java",
+            "startLine": 128,
+            "endLine": 178,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "java/java-impl-inspections/src/com/intellij/codeInspection/dataFlow/DataFlowInspection.java",
+            "startLine": 127,
+            "endLine": 176,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	List<LocalQuickFix> to List<@NotNull LocalQuickFix> in method protected createUnboxingNullableFixes(qualifier PsiExpression, anchor PsiElement, onTheFly boolean) : List<@NotNull LocalQuickFix> from class com.intellij.codeInspection.dataFlow.DataFlowInspection",
+          "leftSideLocation": {
+            "filePath": "java/java-impl-inspections/src/com/intellij/codeInspection/dataFlow/DataFlowInspection.java",
+            "startLine": 180,
+            "endLine": 189,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "java/java-impl-inspections/src/com/intellij/codeInspection/dataFlow/DataFlowInspection.java",
+            "startLine": 178,
+            "endLine": 187,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	List<ChoiceVariantIntentionAction> to List<@NotNull ChoiceVariantIntentionAction> in method public getVariants() : List<@NotNull ChoiceVariantIntentionAction> from class com.intellij.codeInsight.daemon.impl.quickfix.ExtendSealedClassFix",
+          "leftSideLocation": {
+            "filePath": "java/java-impl/src/com/intellij/codeInsight/daemon/impl/quickfix/ExtendSealedClassFix.java",
+            "startLine": 46,
+            "endLine": 61,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "java/java-impl/src/com/intellij/codeInsight/daemon/impl/quickfix/ExtendSealedClassFix.java",
+            "startLine": 46,
+            "endLine": 61,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	List<LocalQuickFix> to List<@NotNull LocalQuickFix> in method public registerFixes(reference PsiReference, registrar List<? super IntentionAction>) : List<@NotNull LocalQuickFix> from class com.intellij.codeInsight.daemon.impl.quickfix.OrderEntryFix",
+          "leftSideLocation": {
+            "filePath": "java/java-impl/src/com/intellij/codeInsight/daemon/impl/quickfix/OrderEntryFix.java",
+            "startLine": 90,
+            "endLine": 211,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "java/java-impl/src/com/intellij/codeInsight/daemon/impl/quickfix/OrderEntryFix.java",
+            "startLine": 90,
+            "endLine": 211,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	List<LocalQuickFix> to List<@NotNull LocalQuickFix> in method public registerOrderEntryFixes(reference PsiReference, registrar List<? super IntentionAction>) : List<@NotNull LocalQuickFix> from class com.intellij.codeInsight.intention.impl.config.QuickFixFactoryImpl",
+          "leftSideLocation": {
+            "filePath": "java/java-impl/src/com/intellij/codeInsight/intention/impl/config/QuickFixFactoryImpl.java",
+            "startLine": 829,
+            "endLine": 833,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "java/java-impl/src/com/intellij/codeInsight/intention/impl/config/QuickFixFactoryImpl.java",
+            "startLine": 829,
+            "endLine": 832,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	List<? extends LocalQuickFix> to List<? extends @NotNull LocalQuickFix> in method private registerFixes() : List<? extends @NotNull LocalQuickFix> from class com.intellij.psi.impl.source.resolve.reference.impl.providers.JavaClassReference",
+          "leftSideLocation": {
+            "filePath": "java/java-impl/src/com/intellij/psi/impl/source/resolve/reference/impl/providers/JavaClassReference.java",
+            "startLine": 482,
+            "endLine": 513,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "java/java-impl/src/com/intellij/psi/impl/source/resolve/reference/impl/providers/JavaClassReference.java",
+            "startLine": 482,
+            "endLine": 513,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	List<V> to List<@NotNull V> in method public getVariants() : List<@NotNull V> from class com.intellij.codeInsight.intention.IntentionActionWithChoice",
+          "leftSideLocation": {
+            "filePath": "platform/analysis-api/src/com/intellij/codeInsight/intention/IntentionActionWithChoice.java",
+            "startLine": 29,
+            "endLine": 35,
+            "startColumn": 3,
+            "endColumn": 34
+          },
+          "rightSideLocation": {
+            "filePath": "platform/analysis-api/src/com/intellij/codeInsight/intention/IntentionActionWithChoice.java",
+            "startLine": 29,
+            "endLine": 35,
+            "startColumn": 3,
+            "endColumn": 43
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	List<? extends LocalQuickFix> to List<? extends @NotNull LocalQuickFix> in method public registerFixes(reference FileReference) : List<? extends @NotNull LocalQuickFix> from class com.intellij.psi.impl.source.resolve.reference.impl.providers.FileReferenceHelper",
+          "leftSideLocation": {
+            "filePath": "platform/analysis-impl/src/com/intellij/psi/impl/source/resolve/reference/impl/providers/FileReferenceHelper.java",
+            "startLine": 165,
+            "endLine": 168,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "platform/analysis-impl/src/com/intellij/psi/impl/source/resolve/reference/impl/providers/FileReferenceHelper.java",
+            "startLine": 165,
+            "endLine": 167,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	List<LocalQuickFix> to List<@NotNull LocalQuickFix> in method public wrapToQuickFixes(actions List<? extends IntentionAction>, file PsiFile) : List<@NotNull LocalQuickFix> from class com.intellij.codeInspection.IntentionWrapper",
+          "leftSideLocation": {
+            "filePath": "platform/lang-api/src/com/intellij/codeInspection/IntentionWrapper.java",
+            "startLine": 125,
+            "endLine": 133,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "platform/lang-api/src/com/intellij/codeInspection/IntentionWrapper.java",
+            "startLine": 126,
+            "endLine": 134,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	List<? extends LocalQuickFix> to List<? extends @NotNull LocalQuickFix> in method public registerQuickFix(reference FileReference) : List<? extends @NotNull LocalQuickFix> from class com.intellij.codeInsight.daemon.quickFix.FileReferenceQuickFixProvider",
+          "leftSideLocation": {
+            "filePath": "platform/lang-impl/src/com/intellij/codeInsight/daemon/quickFix/FileReferenceQuickFixProvider.java",
+            "startLine": 43,
+            "endLine": 86,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "platform/lang-impl/src/com/intellij/codeInsight/daemon/quickFix/FileReferenceQuickFixProvider.java",
+            "startLine": 43,
+            "endLine": 86,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	List<? extends LocalQuickFix> to List<? extends @NotNull LocalQuickFix> in method public registerFixes(reference FileReference) : List<? extends @NotNull LocalQuickFix> from class com.intellij.psi.impl.source.resolve.reference.impl.providers.PsiFileReferenceHelper",
+          "leftSideLocation": {
+            "filePath": "platform/lang-impl/src/com/intellij/psi/impl/source/resolve/reference/impl/providers/PsiFileReferenceHelper.java",
+            "startLine": 44,
+            "endLine": 48,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "platform/lang-impl/src/com/intellij/psi/impl/source/resolve/reference/impl/providers/PsiFileReferenceHelper.java",
+            "startLine": 44,
+            "endLine": 47,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/JetBrains/intellij-community.git",
+      "sha1": "174b023f6e170b818d8fa6c1eb2f4843cdd32b15",
+      "url": "https://github.com/JetBrains/intellij-community/commit/174b023f6e170b818d8fa6c1eb2f4843cdd32b15",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private synchronizedGetFor(configuration GraphicsConfiguration, key String, type Class<T>) : T extracted from private getFor(object Object, key String, type Class<T>) : T in class com.intellij.openapi.util.WindowStateServiceImpl",
+          "leftSideLocation": {
+            "filePath": "platform/platform-impl/src/com/intellij/openapi/util/WindowStateServiceImpl.java",
+            "startLine": 173,
+            "endLine": 185,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "platform/platform-impl/src/com/intellij/openapi/util/WindowStateServiceImpl.java",
+            "startLine": 191,
+            "endLine": 197,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private synchronizedGetFor(configuration GraphicsConfiguration, key String, type Class<T>) : T extracted from private getFor(object Object, key String, type Class<T>) : T in class com.intellij.openapi.util.WindowStateServiceImpl",
+          "leftSideLocation": {
+            "filePath": "platform/platform-impl/src/com/intellij/openapi/util/WindowStateServiceImpl.java",
+            "startLine": 173,
+            "endLine": 185,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "platform/platform-impl/src/com/intellij/openapi/util/WindowStateServiceImpl.java",
+            "startLine": 191,
+            "endLine": 197,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/JetBrains/intellij-community.git",
+      "sha1": "9f64f99739e89c7cb24874a6aef68cce2b63d43e",
+      "url": "https://github.com/JetBrains/intellij-community/commit/9f64f99739e89c7cb24874a6aef68cce2b63d43e",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public setConfigFileInfos(configFileItems List<ConfigFileItem>) : void renamed to public setConfigFileItems(configFileItems List<ConfigFileItem>) : void in class com.intellij.util.descriptors.impl.ConfigFileInfoSetImpl",
+          "leftSideLocation": {
+            "filePath": "java/idea-ui/src/com/intellij/util/descriptors/impl/ConfigFileInfoSetImpl.java",
+            "startLine": 106,
+            "endLine": 116,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "java/idea-ui/src/com/intellij/util/descriptors/impl/ConfigFileInfoSetImpl.java",
+            "startLine": 106,
+            "endLine": 116,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public setConfigFileInfos(configFileItems List<ConfigFileItem>) : void renamed to public setConfigFileItems(configFileItems List<ConfigFileItem>) : void in class com.intellij.util.descriptors.ConfigFileInfoSet",
+          "leftSideLocation": {
+            "filePath": "java/openapi/src/com/intellij/util/descriptors/ConfigFileInfoSet.java",
+            "startLine": 44,
+            "endLine": 44,
+            "startColumn": 3,
+            "endColumn": 65
+          },
+          "rightSideLocation": {
+            "filePath": "java/openapi/src/com/intellij/util/descriptors/ConfigFileInfoSet.java",
+            "startLine": 44,
+            "endLine": 44,
+            "startColumn": 3,
+            "endColumn": 74
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public setConfigFileInfos(configFileItems List<ConfigFileItem>) : void renamed to public setConfigFileItems(configFileItems List<ConfigFileItem>) : void in class com.intellij.util.descriptors.impl.ConfigFileInfoSetImpl",
+          "leftSideLocation": {
+            "filePath": "java/idea-ui/src/com/intellij/util/descriptors/impl/ConfigFileInfoSetImpl.java",
+            "startLine": 106,
+            "endLine": 116,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "java/idea-ui/src/com/intellij/util/descriptors/impl/ConfigFileInfoSetImpl.java",
+            "startLine": 106,
+            "endLine": 116,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public setConfigFileInfos(configFileItems List<ConfigFileItem>) : void renamed to public setConfigFileItems(configFileItems List<ConfigFileItem>) : void in class com.intellij.util.descriptors.ConfigFileInfoSet",
+          "leftSideLocation": {
+            "filePath": "java/openapi/src/com/intellij/util/descriptors/ConfigFileInfoSet.java",
+            "startLine": 44,
+            "endLine": 44,
+            "startColumn": 3,
+            "endColumn": 65
+          },
+          "rightSideLocation": {
+            "filePath": "java/openapi/src/com/intellij/util/descriptors/ConfigFileInfoSet.java",
+            "startLine": 44,
+            "endLine": 44,
+            "startColumn": 3,
+            "endColumn": 74
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/JetBrains/intellij-community.git",
+      "sha1": "0fe526a5fabfa5a410aebe13e3d34475ca6f7c9b",
+      "url": "https://github.com/JetBrains/intellij-community/commit/0fe526a5fabfa5a410aebe13e3d34475ca6f7c9b",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	public visitForeachStatementBase(statement PsiForeachStatementBase) : void extracted from public visitForeachPatternStatement(statement PsiForeachPatternStatement) : void in class com.intellij.psi.JavaElementVisitor",
+          "leftSideLocation": {
+            "filePath": "java/java-psi-api/src/com/intellij/psi/JavaElementVisitor.java",
+            "startLine": 160,
+            "endLine": 162,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "java/java-psi-api/src/com/intellij/psi/JavaElementVisitor.java",
+            "startLine": 166,
+            "endLine": 168,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	public visitForeachStatementBase(statement PsiForeachStatementBase) : void extracted from public visitForeachStatement(statement PsiForeachStatement) : void in class com.intellij.psi.JavaElementVisitor",
+          "leftSideLocation": {
+            "filePath": "java/java-psi-api/src/com/intellij/psi/JavaElementVisitor.java",
+            "startLine": 163,
+            "endLine": 165,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "java/java-psi-api/src/com/intellij/psi/JavaElementVisitor.java",
+            "startLine": 166,
+            "endLine": 168,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	public visitForeachStatementBase(statement PsiForeachStatementBase) : void extracted from public visitForeachPatternStatement(statement PsiForeachPatternStatement) : void in class com.intellij.psi.JavaElementVisitor",
+          "leftSideLocation": {
+            "filePath": "java/java-psi-api/src/com/intellij/psi/JavaElementVisitor.java",
+            "startLine": 160,
+            "endLine": 162,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "java/java-psi-api/src/com/intellij/psi/JavaElementVisitor.java",
+            "startLine": 166,
+            "endLine": 168,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	public visitForeachStatementBase(statement PsiForeachStatementBase) : void extracted from public visitForeachStatement(statement PsiForeachStatement) : void in class com.intellij.psi.JavaElementVisitor",
+          "leftSideLocation": {
+            "filePath": "java/java-psi-api/src/com/intellij/psi/JavaElementVisitor.java",
+            "startLine": 163,
+            "endLine": 165,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "java/java-psi-api/src/com/intellij/psi/JavaElementVisitor.java",
+            "startLine": 166,
+            "endLine": 168,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/JetBrains/intellij-community.git",
+      "sha1": "1ae8711fe9785b5b0862caccd6084652c8454625",
+      "url": "https://github.com/JetBrains/intellij-community/commit/1ae8711fe9785b5b0862caccd6084652c8454625",
+      "ourApproach": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	GenericAttributeValue to GenericAttributeValue<?> in method public getAttributeValue() : GenericAttributeValue<?> from class com.intellij.lang.ant.dom.AntDomFileReferenceSet",
+          "leftSideLocation": {
+            "filePath": "plugins/ant/src/com/intellij/lang/ant/dom/AntDomFileReferenceSet.java",
+            "startLine": 58,
+            "endLine": 60,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "plugins/ant/src/com/intellij/lang/ant/dom/AntDomFileReferenceSet.java",
+            "startLine": 44,
+            "endLine": 46,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	myValue : GenericAttributeValue to myValue : GenericAttributeValue<?> in class com.intellij.lang.ant.dom.AntDomFileReferenceSet",
+          "leftSideLocation": {
+            "filePath": "plugins/ant/src/com/intellij/lang/ant/dom/AntDomFileReferenceSet.java",
+            "startLine": 37,
+            "endLine": 37,
+            "startColumn": 39,
+            "endColumn": 46
+          },
+          "rightSideLocation": {
+            "filePath": "plugins/ant/src/com/intellij/lang/ant/dom/AntDomFileReferenceSet.java",
+            "startLine": 23,
+            "endLine": 23,
+            "startColumn": 42,
+            "endColumn": 49
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public restartConfigHighlightning(project Project, projects Collection<MavenProject>) : void renamed to public restartConfigHighlighting(projects Collection<MavenProject>) : void in class org.jetbrains.idea.maven.utils.MavenUtil",
+          "leftSideLocation": {
+            "filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/utils/MavenUtil.java",
+            "startLine": 1452,
+            "endLine": 1457,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/utils/MavenUtil.java",
+            "startLine": 1446,
+            "endLine": 1451,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	myValue : GenericAttributeValue to myValue : GenericAttributeValue<?> in class com.intellij.lang.ant.dom.AntDomFileReferenceSet",
+          "leftSideLocation": {
+            "filePath": "plugins/ant/src/com/intellij/lang/ant/dom/AntDomFileReferenceSet.java",
+            "startLine": 37,
+            "endLine": 37,
+            "startColumn": 39,
+            "endColumn": 46
+          },
+          "rightSideLocation": {
+            "filePath": "plugins/ant/src/com/intellij/lang/ant/dom/AntDomFileReferenceSet.java",
+            "startLine": 23,
+            "endLine": 23,
+            "startColumn": 42,
+            "endColumn": 49
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	GenericAttributeValue to GenericAttributeValue<?> in method public getAttributeValue() : GenericAttributeValue<?> from class com.intellij.lang.ant.dom.AntDomFileReferenceSet",
+          "leftSideLocation": {
+            "filePath": "plugins/ant/src/com/intellij/lang/ant/dom/AntDomFileReferenceSet.java",
+            "startLine": 58,
+            "endLine": 60,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "plugins/ant/src/com/intellij/lang/ant/dom/AntDomFileReferenceSet.java",
+            "startLine": 44,
+            "endLine": 46,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public restartConfigHighlightning(project Project, projects Collection<MavenProject>) : void renamed to public restartConfigHighlighting(projects Collection<MavenProject>) : void in class org.jetbrains.idea.maven.utils.MavenUtil",
+          "leftSideLocation": {
+            "filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/utils/MavenUtil.java",
+            "startLine": 1452,
+            "endLine": 1457,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/utils/MavenUtil.java",
+            "startLine": 1446,
+            "endLine": 1451,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/JetBrains/intellij-community.git",
+      "sha1": "5b7f69b69f574ac98ce2f4d4f3b27732f9f5c233",
+      "url": "https://github.com/JetBrains/intellij-community/commit/5b7f69b69f574ac98ce2f4d4f3b27732f9f5c233",
+      "ourApproach": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private updateExecutionPoint(file VirtualFile, navigate boolean) : void inlined to public XDebuggerManagerImpl(project Project, coroutineScope CoroutineScope) in class com.intellij.xdebugger.impl.XDebuggerManagerImpl",
+          "leftSideLocation": {
+            "filePath": "platform/xdebugger-impl/src/com/intellij/xdebugger/impl/XDebuggerManagerImpl.java",
+            "startLine": 214,
+            "endLine": 216,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "platform/xdebugger-impl/src/com/intellij/xdebugger/impl/XDebuggerManagerImpl.java",
+            "startLine": 98,
+            "endLine": 197,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private updateExecutionPoint(file VirtualFile, navigate boolean) : void inlined to public XDebuggerManagerImpl(project Project, coroutineScope CoroutineScope) in class com.intellij.xdebugger.impl.XDebuggerManagerImpl",
+          "leftSideLocation": {
+            "filePath": "platform/xdebugger-impl/src/com/intellij/xdebugger/impl/XDebuggerManagerImpl.java",
+            "startLine": 214,
+            "endLine": 216,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "platform/xdebugger-impl/src/com/intellij/xdebugger/impl/XDebuggerManagerImpl.java",
+            "startLine": 98,
+            "endLine": 197,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/JetBrains/intellij-community.git",
+      "sha1": "029029d68eda29a57221e9da5fd7ff93023d7e97",
+      "url": "https://github.com/JetBrains/intellij-community/commit/029029d68eda29a57221e9da5fd7ff93023d7e97",
+      "ourApproach": [],
+      "baseline": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	myMainExecutionPointHighlighter : ExecutionPointHighlighter to myExecutionPointManager : XDebuggerExecutionPointManager in class com.intellij.xdebugger.impl.XDebuggerManagerImpl",
+          "leftSideLocation": {
+            "filePath": "platform/xdebugger-impl/src/com/intellij/xdebugger/impl/XDebuggerManagerImpl.java",
+            "startLine": 91,
+            "endLine": 91,
+            "startColumn": 43,
+            "endColumn": 74
+          },
+          "rightSideLocation": {
+            "filePath": "platform/xdebugger-impl/src/com/intellij/xdebugger/impl/XDebuggerManagerImpl.java",
+            "startLine": 89,
+            "endLine": 89,
+            "startColumn": 48,
+            "endColumn": 71
+          },
+          "developerConfirmation": false
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	myMainExecutionPointHighlighter : ExecutionPointHighlighter to myExecutionPointManager : XDebuggerExecutionPointManager in class com.intellij.xdebugger.impl.XDebuggerManagerImpl",
+          "leftSideLocation": {
+            "filePath": "platform/xdebugger-impl/src/com/intellij/xdebugger/impl/XDebuggerManagerImpl.java",
+            "startLine": 91,
+            "endLine": 91,
+            "startColumn": 43,
+            "endColumn": 74
+          },
+          "rightSideLocation": {
+            "filePath": "platform/xdebugger-impl/src/com/intellij/xdebugger/impl/XDebuggerManagerImpl.java",
+            "startLine": 89,
+            "endLine": 89,
+            "startColumn": 48,
+            "endColumn": 71
+          },
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/JetBrains/intellij-community.git",
+      "sha1": "b93c505446016fa7060a1e63f4e34f1ac05f06bd",
+      "url": "https://github.com/JetBrains/intellij-community/commit/b93c505446016fa7060a1e63f4e34f1ac05f06bd",
+      "ourApproach": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	myTopFramePosition : XSourcePosition to myTopStackFrame : XStackFrame in class com.intellij.xdebugger.impl.XDebugSessionImpl",
+          "leftSideLocation": {
+            "filePath": "platform/xdebugger-impl/src/com/intellij/xdebugger/impl/XDebugSessionImpl.java",
+            "startLine": 82,
+            "endLine": 82,
+            "startColumn": 36,
+            "endColumn": 54
+          },
+          "rightSideLocation": {
+            "filePath": "platform/xdebugger-impl/src/com/intellij/xdebugger/impl/XDebugSessionImpl.java",
+            "startLine": 82,
+            "endLine": 82,
+            "startColumn": 32,
+            "endColumn": 47
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	myTopFramePosition : XSourcePosition to myTopStackFrame : XStackFrame in class com.intellij.xdebugger.impl.XDebugSessionImpl",
+          "leftSideLocation": {
+            "filePath": "platform/xdebugger-impl/src/com/intellij/xdebugger/impl/XDebugSessionImpl.java",
+            "startLine": 82,
+            "endLine": 82,
+            "startColumn": 36,
+            "endColumn": 54
+          },
+          "rightSideLocation": {
+            "filePath": "platform/xdebugger-impl/src/com/intellij/xdebugger/impl/XDebugSessionImpl.java",
+            "startLine": 82,
+            "endLine": 82,
+            "startColumn": 32,
+            "endColumn": 47
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	myTopFramePosition : XSourcePosition to myTopStackFrame : XStackFrame in class com.intellij.xdebugger.impl.XDebugSessionImpl",
+          "leftSideLocation": {
+            "filePath": "platform/xdebugger-impl/src/com/intellij/xdebugger/impl/XDebugSessionImpl.java",
+            "startLine": 82,
+            "endLine": 82,
+            "startColumn": 36,
+            "endColumn": 54
+          },
+          "rightSideLocation": {
+            "filePath": "platform/xdebugger-impl/src/com/intellij/xdebugger/impl/XDebugSessionImpl.java",
+            "startLine": 82,
+            "endLine": 82,
+            "startColumn": 32,
+            "endColumn": 47
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	myTopFramePosition : XSourcePosition to myTopStackFrame : XStackFrame in class com.intellij.xdebugger.impl.XDebugSessionImpl",
+          "leftSideLocation": {
+            "filePath": "platform/xdebugger-impl/src/com/intellij/xdebugger/impl/XDebugSessionImpl.java",
+            "startLine": 82,
+            "endLine": 82,
+            "startColumn": 36,
+            "endColumn": 54
+          },
+          "rightSideLocation": {
+            "filePath": "platform/xdebugger-impl/src/com/intellij/xdebugger/impl/XDebugSessionImpl.java",
+            "startLine": 82,
+            "endLine": 82,
+            "startColumn": 32,
+            "endColumn": 47
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/JetBrains/intellij-community.git",
+      "sha1": "11b4d078a52decca99f9b8dfcf355b18788009dc",
+      "url": "https://github.com/JetBrains/intellij-community/commit/11b4d078a52decca99f9b8dfcf355b18788009dc",
+      "ourApproach": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private fontForChar(c char, style int) : FontInfo inlined to protected getFontToDisplay(text char[], start int, end int, style TextStyle) : Font in class com.intellij.terminal.JBTerminalPanel",
+          "leftSideLocation": {
+            "filePath": "platform/execution-impl/src/com/intellij/terminal/JBTerminalPanel.java",
+            "startLine": 342,
+            "endLine": 344,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "platform/execution-impl/src/com/intellij/terminal/JBTerminalPanel.java",
+            "startLine": 328,
+            "endLine": 342,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private fontForChar(c char, style int) : FontInfo inlined to protected getFontToDisplay(text char[], start int, end int, style TextStyle) : Font in class com.intellij.terminal.JBTerminalPanel",
+          "leftSideLocation": {
+            "filePath": "platform/execution-impl/src/com/intellij/terminal/JBTerminalPanel.java",
+            "startLine": 342,
+            "endLine": 344,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "platform/execution-impl/src/com/intellij/terminal/JBTerminalPanel.java",
+            "startLine": 328,
+            "endLine": 342,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/JetBrains/intellij-community.git",
+      "sha1": "72b1ea9a4cea1af45f07cd59459303d8f83d7bba",
+      "url": "https://github.com/JetBrains/intellij-community/commit/72b1ea9a4cea1af45f07cd59459303d8f83d7bba",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private createLegacyPopup(dataContext DataContext, context SelectInContext, targetVector List<SelectInTarget>) : ListPopup extracted from private invoke(dataContext DataContext, context SelectInContext) : void in class com.intellij.ide.actions.SelectInAction",
+          "leftSideLocation": {
+            "filePath": "platform/lang-impl/src/com/intellij/ide/actions/SelectInAction.java",
+            "startLine": 50,
+            "endLine": 64,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "platform/lang-impl/src/com/intellij/ide/actions/SelectInAction.java",
+            "startLine": 63,
+            "endLine": 76,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private createActionPopup(dataContext DataContext, context SelectInContext, targetVector List<SelectInTarget>) : ListPopup extracted from private invoke(dataContext DataContext, context SelectInContext) : void in class com.intellij.ide.actions.SelectInAction",
+          "leftSideLocation": {
+            "filePath": "platform/lang-impl/src/com/intellij/ide/actions/SelectInAction.java",
+            "startLine": 50,
+            "endLine": 64,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "platform/lang-impl/src/com/intellij/ide/actions/SelectInAction.java",
+            "startLine": 78,
+            "endLine": 97,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private createLegacyPopup(dataContext DataContext, context SelectInContext, targetVector List<SelectInTarget>) : ListPopup extracted from private invoke(dataContext DataContext, context SelectInContext) : void in class com.intellij.ide.actions.SelectInAction",
+          "leftSideLocation": {
+            "filePath": "platform/lang-impl/src/com/intellij/ide/actions/SelectInAction.java",
+            "startLine": 50,
+            "endLine": 64,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "platform/lang-impl/src/com/intellij/ide/actions/SelectInAction.java",
+            "startLine": 63,
+            "endLine": 76,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private createActionPopup(dataContext DataContext, context SelectInContext, targetVector List<SelectInTarget>) : ListPopup extracted from private invoke(dataContext DataContext, context SelectInContext) : void in class com.intellij.ide.actions.SelectInAction",
+          "leftSideLocation": {
+            "filePath": "platform/lang-impl/src/com/intellij/ide/actions/SelectInAction.java",
+            "startLine": 50,
+            "endLine": 64,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "platform/lang-impl/src/com/intellij/ide/actions/SelectInAction.java",
+            "startLine": 78,
+            "endLine": 97,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/JetBrains/intellij-community.git",
+      "sha1": "97f24a7a33c8156ab725c112d1530d561ea07b31",
+      "url": "https://github.com/JetBrains/intellij-community/commit/97f24a7a33c8156ab725c112d1530d561ea07b31",
+      "ourApproach": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	JPanel to JComponent in method package getSinglePromotion(isEmptyState boolean) : JComponent from class com.intellij.openapi.wm.impl.welcomeScreen.WelcomeScreenComponentFactory",
+          "leftSideLocation": {
+            "filePath": "platform/platform-impl/src/com/intellij/openapi/wm/impl/welcomeScreen/WelcomeScreenComponentFactory.java",
+            "startLine": 374,
+            "endLine": 386,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "platform/platform-impl/src/com/intellij/openapi/wm/impl/welcomeScreen/WelcomeScreenComponentFactory.java",
+            "startLine": 375,
+            "endLine": 397,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	JPanel to JComponent in method package getSinglePromotion(isEmptyState boolean) : JComponent from class com.intellij.openapi.wm.impl.welcomeScreen.WelcomeScreenComponentFactory",
+          "leftSideLocation": {
+            "filePath": "platform/platform-impl/src/com/intellij/openapi/wm/impl/welcomeScreen/WelcomeScreenComponentFactory.java",
+            "startLine": 374,
+            "endLine": 386,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "platform/platform-impl/src/com/intellij/openapi/wm/impl/welcomeScreen/WelcomeScreenComponentFactory.java",
+            "startLine": 375,
+            "endLine": 397,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/JetBrains/intellij-community.git",
+      "sha1": "6f8ff1585af02cd6c40c1f2f62defef0c46a4313",
+      "url": "https://github.com/JetBrains/intellij-community/commit/6f8ff1585af02cd6c40c1f2f62defef0c46a4313",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	com.intellij.diagnostic.CoreAttachmentFactory from Class com.intellij.diagnostic.AttachmentFactory",
+          "leftSideLocation": {
+            "filePath": "platform/core-impl/src/com/intellij/diagnostic/AttachmentFactory.java",
+            "startLine": 21,
+            "endLine": 80,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "platform/core-impl/src/com/intellij/diagnostic/CoreAttachmentFactory.java",
+            "startLine": 13,
+            "endLine": 31,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	com.intellij.openapi.diagnostic.AttachmentFactory from Class com.intellij.diagnostic.AttachmentFactory",
+          "leftSideLocation": {
+            "filePath": "platform/core-impl/src/com/intellij/diagnostic/AttachmentFactory.java",
+            "startLine": 21,
+            "endLine": 80,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "platform/util/src/com/intellij/openapi/diagnostic/AttachmentFactory.java",
+            "startLine": 18,
+            "endLine": 58,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	com.intellij.diagnostic.CoreAttachmentFactory from class com.intellij.diagnostic.AttachmentFactory",
+          "leftSideLocation": {
+            "filePath": "platform/core-impl/src/com/intellij/diagnostic/AttachmentFactory.java",
+            "startLine": 21,
+            "endLine": 80,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "platform/core-impl/src/com/intellij/diagnostic/CoreAttachmentFactory.java",
+            "startLine": 13,
+            "endLine": 31,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	com.intellij.openapi.diagnostic.AttachmentFactory from class com.intellij.diagnostic.AttachmentFactory",
+          "leftSideLocation": {
+            "filePath": "platform/core-impl/src/com/intellij/diagnostic/AttachmentFactory.java",
+            "startLine": 21,
+            "endLine": 80,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "platform/util/src/com/intellij/openapi/diagnostic/AttachmentFactory.java",
+            "startLine": 18,
+            "endLine": 58,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/JetBrains/intellij-community.git",
+      "sha1": "74d1b45ef440cad976148cd6d7abf0daafb3cdb6",
+      "url": "https://github.com/JetBrains/intellij-community/commit/74d1b45ef440cad976148cd6d7abf0daafb3cdb6",
+      "ourApproach": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	com.intellij.java.codeInspection.CastCanBeReplacedWithVariableInspectionTest renamed to com.intellij.java.codeInspection.CastCanBeReplacedWithVariableFixTest",
+          "leftSideLocation": {
+            "filePath": "java/java-tests/testSrc/com/intellij/java/codeInspection/CastCanBeReplacedWithVariableInspectionTest.java",
+            "startLine": 11,
+            "endLine": 26,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "java/java-tests/testSrc/com/intellij/java/codeInspection/CastCanBeReplacedWithVariableFixTest.java",
+            "startLine": 11,
+            "endLine": 26,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private isAtRightLocation(expression PsiTypeCastExpression, expressionTextRange TextRange, occurrence PsiExpression) : boolean extracted from private findReplacement(method PsiMethod, castedVar PsiVariable, expression PsiTypeCastExpression) : PsiVariable in class com.intellij.codeInspection.CastCanBeReplacedWithVariableInspection",
+          "leftSideLocation": {
+            "filePath": "java/java-impl-inspections/src/com/intellij/codeInspection/CastCanBeReplacedWithVariableInspection.java",
+            "startLine": 65,
+            "endLine": 117,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "java/java-impl-inspections/src/com/intellij/codeInspection/CastCanBeReplacedWithVariableInspection.java",
+            "startLine": 154,
+            "endLine": 160,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	com.intellij.java.codeInspection.CastCanBeReplacedWithVariableInspectionTest renamed to com.intellij.java.codeInspection.CastCanBeReplacedWithVariableFixTest",
+          "leftSideLocation": {
+            "filePath": "java/java-tests/testSrc/com/intellij/java/codeInspection/CastCanBeReplacedWithVariableInspectionTest.java",
+            "startLine": 11,
+            "endLine": 26,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "java/java-tests/testSrc/com/intellij/java/codeInspection/CastCanBeReplacedWithVariableFixTest.java",
+            "startLine": 11,
+            "endLine": 26,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private isAtRightLocation(expression PsiTypeCastExpression, expressionTextRange TextRange, occurrence PsiExpression) : boolean extracted from private findReplacement(method PsiMethod, castedVar PsiVariable, expression PsiTypeCastExpression) : PsiVariable in class com.intellij.codeInspection.CastCanBeReplacedWithVariableInspection",
+          "leftSideLocation": {
+            "filePath": "java/java-impl-inspections/src/com/intellij/codeInspection/CastCanBeReplacedWithVariableInspection.java",
+            "startLine": 65,
+            "endLine": 117,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "java/java-impl-inspections/src/com/intellij/codeInspection/CastCanBeReplacedWithVariableInspection.java",
+            "startLine": 154,
+            "endLine": 160,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/JetBrains/intellij-community.git",
+      "sha1": "e6096466bfcddfa9043964c639d4f31406b40245",
+      "url": "https://github.com/JetBrains/intellij-community/commit/e6096466bfcddfa9043964c639d4f31406b40245",
+      "ourApproach": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.jetbrains.idea.maven.navigator.MavenProjectsNavigatorTest moved to org.jetbrains.idea.maven.navigator.structure.MavenProjectsNavigatorTest",
+          "leftSideLocation": {
+            "filePath": "plugins/maven/src/test/java/org/jetbrains/idea/maven/navigator/MavenProjectsNavigatorTest.java",
+            "startLine": 42,
+            "endLine": 520,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "plugins/maven/src/test/java/org/jetbrains/idea/maven/navigator/structure/MavenProjectsNavigatorTest.java",
+            "startLine": 30,
+            "endLine": 508,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	myTotalErrorLevel : ErrorLevel to myTotalErrorLevel : MavenProjectsStructure.ErrorLevel in class org.jetbrains.idea.maven.navigator.structure.MavenSimpleNode",
+          "leftSideLocation": {
+            "filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/navigator/MavenProjectsStructure.java",
+            "startLine": 363,
+            "endLine": 363,
+            "startColumn": 24,
+            "endColumn": 48
+          },
+          "rightSideLocation": {
+            "filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/navigator/structure/MavenSimpleNode.java",
+            "startLine": 35,
+            "endLine": 35,
+            "startColumn": 45,
+            "endColumn": 69
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.jetbrains.idea.maven.navigator.MavenProjectsStructure.BaseDependenciesNode moved to org.jetbrains.idea.maven.navigator.structure.BaseDependenciesNode",
+          "leftSideLocation": {
+            "filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/navigator/MavenProjectsStructure.java",
+            "startLine": 1241,
+            "endLine": 1325,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/navigator/structure/BaseDependenciesNode.java",
+            "startLine": 13,
+            "endLine": 97,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	myErrorLevel : ErrorLevel to myErrorLevel : MavenProjectsStructure.ErrorLevel in class org.jetbrains.idea.maven.navigator.structure.MavenSimpleNode",
+          "leftSideLocation": {
+            "filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/navigator/MavenProjectsStructure.java",
+            "startLine": 362,
+            "endLine": 362,
+            "startColumn": 24,
+            "endColumn": 54
+          },
+          "rightSideLocation": {
+            "filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/navigator/structure/MavenSimpleNode.java",
+            "startLine": 34,
+            "endLine": 34,
+            "startColumn": 45,
+            "endColumn": 98
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.jetbrains.idea.maven.navigator.MavenProjectsStructure moved to org.jetbrains.idea.maven.navigator.structure.MavenProjectsStructure",
+          "leftSideLocation": {
+            "filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/navigator/MavenProjectsStructure.java",
+            "startLine": 81,
+            "endLine": 1564,
+            "startColumn": 0,
+            "endColumn": 0
+          },
+          "rightSideLocation": {
+            "filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/navigator/structure/MavenProjectsStructure.java",
+            "startLine": 82,
+            "endLine": 1216,
+            "startColumn": 0,
+            "endColumn": 0
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	ErrorLevel to MavenProjectsStructure.ErrorLevel in method public getChildrenErrorLevel() : MavenProjectsStructure.ErrorLevel from class org.jetbrains.idea.maven.navigator.structure.MavenSimpleNode",
+          "leftSideLocation": {
+            "filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/navigator/MavenProjectsStructure.java",
+            "startLine": 450,
+            "endLine": 457,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/navigator/structure/MavenSimpleNode.java",
+            "startLine": 115,
+            "endLine": 122,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	ErrorLevel to MavenProjectsStructure.ErrorLevel in method private calcTotalErrorLevel() : MavenProjectsStructure.ErrorLevel from class org.jetbrains.idea.maven.navigator.structure.MavenSimpleNode",
+          "leftSideLocation": {
+            "filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/navigator/MavenProjectsStructure.java",
+            "startLine": 445,
+            "endLine": 448,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/navigator/structure/MavenSimpleNode.java",
+            "startLine": 110,
+            "endLine": 113,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	ErrorLevel to MavenProjectsStructure.ErrorLevel in method public getTotalErrorLevel() : MavenProjectsStructure.ErrorLevel from class org.jetbrains.idea.maven.navigator.structure.MavenSimpleNode",
+          "leftSideLocation": {
+            "filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/navigator/MavenProjectsStructure.java",
+            "startLine": 438,
+            "endLine": 443,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/navigator/structure/MavenSimpleNode.java",
+            "startLine": 103,
+            "endLine": 108,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.jetbrains.idea.maven.navigator.MavenProjectsStructure.DependenciesNode moved to org.jetbrains.idea.maven.navigator.structure.DependenciesNode",
+          "leftSideLocation": {
+            "filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/navigator/MavenProjectsStructure.java",
+            "startLine": 1327,
+            "endLine": 1341,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/navigator/structure/DependenciesNode.java",
+            "startLine": 10,
+            "endLine": 24,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.jetbrains.idea.maven.navigator.MavenProjectsStructure.DependencyNode moved to org.jetbrains.idea.maven.navigator.structure.DependencyNode",
+          "leftSideLocation": {
+            "filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/navigator/MavenProjectsStructure.java",
+            "startLine": 1343,
+            "endLine": 1428,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/navigator/structure/DependencyNode.java",
+            "startLine": 18,
+            "endLine": 111,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.jetbrains.idea.maven.navigator.MavenProjectsStructure.GroupNode moved to org.jetbrains.idea.maven.navigator.structure.GroupNode",
+          "leftSideLocation": {
+            "filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/navigator/MavenProjectsStructure.java",
+            "startLine": 526,
+            "endLine": 549,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/navigator/structure/GroupNode.java",
+            "startLine": 12,
+            "endLine": 37,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.jetbrains.idea.maven.navigator.MavenProjectsStructure.MavenSimpleNode moved to org.jetbrains.idea.maven.navigator.structure.MavenSimpleNode",
+          "leftSideLocation": {
+            "filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/navigator/MavenProjectsStructure.java",
+            "startLine": 360,
+            "endLine": 524,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/navigator/structure/MavenSimpleNode.java",
+            "startLine": 32,
+            "endLine": 199,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	DisplayKind to MavenProjectsStructure.DisplayKind in method public getDisplayKind() : MavenProjectsStructure.DisplayKind from class org.jetbrains.idea.maven.navigator.structure.MavenSimpleNode",
+          "leftSideLocation": {
+            "filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/navigator/MavenProjectsStructure.java",
+            "startLine": 396,
+            "endLine": 404,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/navigator/structure/MavenSimpleNode.java",
+            "startLine": 68,
+            "endLine": 70,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.jetbrains.idea.maven.navigator.MavenProjectsNavigatorPanel moved to org.jetbrains.idea.maven.navigator.structure.MavenProjectsNavigatorPanel",
+          "leftSideLocation": {
+            "filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/navigator/MavenProjectsNavigatorPanel.java",
+            "startLine": 41,
+            "endLine": 334,
+            "startColumn": 0,
+            "endColumn": 0
+          },
+          "rightSideLocation": {
+            "filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/navigator/structure/MavenProjectsNavigatorPanel.java",
+            "startLine": 41,
+            "endLine": 334,
+            "startColumn": 0,
+            "endColumn": 0
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.jetbrains.idea.maven.navigator.MavenProjectsNavigatorTest moved to org.jetbrains.idea.maven.navigator.structure.MavenProjectsNavigatorTest",
+          "leftSideLocation": {
+            "filePath": "plugins/maven/src/test/java/org/jetbrains/idea/maven/navigator/MavenProjectsNavigatorTest.java",
+            "startLine": 42,
+            "endLine": 520,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "plugins/maven/src/test/java/org/jetbrains/idea/maven/navigator/structure/MavenProjectsNavigatorTest.java",
+            "startLine": 30,
+            "endLine": 508,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.jetbrains.idea.maven.navigator.MavenProjectsNavigatorPanel moved to org.jetbrains.idea.maven.navigator.structure.MavenProjectsNavigatorPanel",
+          "leftSideLocation": {
+            "filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/navigator/MavenProjectsNavigatorPanel.java",
+            "startLine": 41,
+            "endLine": 334,
+            "startColumn": 0,
+            "endColumn": 0
+          },
+          "rightSideLocation": {
+            "filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/navigator/structure/MavenProjectsNavigatorPanel.java",
+            "startLine": 41,
+            "endLine": 334,
+            "startColumn": 0,
+            "endColumn": 0
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.jetbrains.idea.maven.navigator.MavenProjectsStructure.MavenSimpleNode moved to org.jetbrains.idea.maven.navigator.structure.MavenSimpleNode",
+          "leftSideLocation": {
+            "filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/navigator/MavenProjectsStructure.java",
+            "startLine": 360,
+            "endLine": 524,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/navigator/structure/MavenSimpleNode.java",
+            "startLine": 32,
+            "endLine": 199,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.jetbrains.idea.maven.navigator.MavenProjectsStructure.GroupNode moved to org.jetbrains.idea.maven.navigator.structure.GroupNode",
+          "leftSideLocation": {
+            "filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/navigator/MavenProjectsStructure.java",
+            "startLine": 526,
+            "endLine": 549,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/navigator/structure/GroupNode.java",
+            "startLine": 12,
+            "endLine": 37,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.jetbrains.idea.maven.navigator.MavenProjectsStructure.BaseDependenciesNode moved to org.jetbrains.idea.maven.navigator.structure.BaseDependenciesNode",
+          "leftSideLocation": {
+            "filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/navigator/MavenProjectsStructure.java",
+            "startLine": 1241,
+            "endLine": 1325,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/navigator/structure/BaseDependenciesNode.java",
+            "startLine": 13,
+            "endLine": 97,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.jetbrains.idea.maven.navigator.MavenProjectsStructure.DependenciesNode moved to org.jetbrains.idea.maven.navigator.structure.DependenciesNode",
+          "leftSideLocation": {
+            "filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/navigator/MavenProjectsStructure.java",
+            "startLine": 1327,
+            "endLine": 1341,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/navigator/structure/DependenciesNode.java",
+            "startLine": 10,
+            "endLine": 24,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.jetbrains.idea.maven.navigator.MavenProjectsStructure.DependencyNode moved to org.jetbrains.idea.maven.navigator.structure.DependencyNode",
+          "leftSideLocation": {
+            "filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/navigator/MavenProjectsStructure.java",
+            "startLine": 1343,
+            "endLine": 1428,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/navigator/structure/DependencyNode.java",
+            "startLine": 18,
+            "endLine": 111,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.jetbrains.idea.maven.navigator.MavenProjectsStructure moved to org.jetbrains.idea.maven.navigator.structure.MavenProjectsStructure",
+          "leftSideLocation": {
+            "filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/navigator/MavenProjectsStructure.java",
+            "startLine": 81,
+            "endLine": 1564,
+            "startColumn": 0,
+            "endColumn": 0
+          },
+          "rightSideLocation": {
+            "filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/navigator/structure/MavenProjectsStructure.java",
+            "startLine": 82,
+            "endLine": 1216,
+            "startColumn": 0,
+            "endColumn": 0
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	myErrorLevel : ErrorLevel to myErrorLevel : MavenProjectsStructure.ErrorLevel in class org.jetbrains.idea.maven.navigator.structure.MavenSimpleNode",
+          "leftSideLocation": {
+            "filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/navigator/MavenProjectsStructure.java",
+            "startLine": 362,
+            "endLine": 362,
+            "startColumn": 24,
+            "endColumn": 54
+          },
+          "rightSideLocation": {
+            "filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/navigator/structure/MavenSimpleNode.java",
+            "startLine": 34,
+            "endLine": 34,
+            "startColumn": 45,
+            "endColumn": 98
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	myTotalErrorLevel : ErrorLevel to myTotalErrorLevel : MavenProjectsStructure.ErrorLevel in class org.jetbrains.idea.maven.navigator.structure.MavenSimpleNode",
+          "leftSideLocation": {
+            "filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/navigator/MavenProjectsStructure.java",
+            "startLine": 363,
+            "endLine": 363,
+            "startColumn": 24,
+            "endColumn": 48
+          },
+          "rightSideLocation": {
+            "filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/navigator/structure/MavenSimpleNode.java",
+            "startLine": 35,
+            "endLine": 35,
+            "startColumn": 45,
+            "endColumn": 69
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	DisplayKind to MavenProjectsStructure.DisplayKind in method public getDisplayKind() : MavenProjectsStructure.DisplayKind from class org.jetbrains.idea.maven.navigator.structure.MavenSimpleNode",
+          "leftSideLocation": {
+            "filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/navigator/MavenProjectsStructure.java",
+            "startLine": 396,
+            "endLine": 404,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/navigator/structure/MavenSimpleNode.java",
+            "startLine": 68,
+            "endLine": 70,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	ErrorLevel to MavenProjectsStructure.ErrorLevel in method public getTotalErrorLevel() : MavenProjectsStructure.ErrorLevel from class org.jetbrains.idea.maven.navigator.structure.MavenSimpleNode",
+          "leftSideLocation": {
+            "filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/navigator/MavenProjectsStructure.java",
+            "startLine": 438,
+            "endLine": 443,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/navigator/structure/MavenSimpleNode.java",
+            "startLine": 103,
+            "endLine": 108,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	ErrorLevel to MavenProjectsStructure.ErrorLevel in method private calcTotalErrorLevel() : MavenProjectsStructure.ErrorLevel from class org.jetbrains.idea.maven.navigator.structure.MavenSimpleNode",
+          "leftSideLocation": {
+            "filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/navigator/MavenProjectsStructure.java",
+            "startLine": 445,
+            "endLine": 448,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/navigator/structure/MavenSimpleNode.java",
+            "startLine": 110,
+            "endLine": 113,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	ErrorLevel to MavenProjectsStructure.ErrorLevel in method public getChildrenErrorLevel() : MavenProjectsStructure.ErrorLevel from class org.jetbrains.idea.maven.navigator.structure.MavenSimpleNode",
+          "leftSideLocation": {
+            "filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/navigator/MavenProjectsStructure.java",
+            "startLine": 450,
+            "endLine": 457,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "plugins/maven/src/main/java/org/jetbrains/idea/maven/navigator/structure/MavenSimpleNode.java",
+            "startLine": 115,
+            "endLine": 122,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/JetBrains/intellij-community.git",
+      "sha1": "2b981e699e644e44484fb0f4c0e28c62c9f86eb5",
+      "url": "https://github.com/JetBrains/intellij-community/commit/2b981e699e644e44484fb0f4c0e28c62c9f86eb5",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private postProcessTheme(theme UITheme, parentTheme UITheme, provider ClassLoader, iconsMapper Function<? super String,String>) : UITheme extracted from public loadFromJson(stream InputStream, themeId String, provider ClassLoader, iconsMapper Function<? super String,String>) : UITheme in class com.intellij.ide.ui.UITheme",
+          "leftSideLocation": {
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/UITheme.java",
+            "startLine": 86,
+            "endLine": 93,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/UITheme.java",
+            "startLine": 115,
+            "endLine": 124,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private postProcessTheme(theme UITheme, parentTheme UITheme, provider ClassLoader, iconsMapper Function<? super String,String>) : UITheme extracted from public loadFromJson(data byte[], themeId String, provider ClassLoader, iconsMapper Function<? super String,String>) : UITheme in class com.intellij.ide.ui.UITheme",
+          "leftSideLocation": {
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/UITheme.java",
+            "startLine": 95,
+            "endLine": 102,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/UITheme.java",
+            "startLine": 115,
+            "endLine": 124,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private postProcessTheme(theme UITheme, parentTheme UITheme, provider ClassLoader, iconsMapper Function<? super String,String>) : UITheme extracted from public loadFromJson(parentTheme UITheme, data byte[], themeId String, provider ClassLoader, iconsMapper Function<? super String,String>) : UITheme in class com.intellij.ide.ui.UITheme",
+          "leftSideLocation": {
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/UITheme.java",
+            "startLine": 104,
+            "endLine": 115,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/UITheme.java",
+            "startLine": 115,
+            "endLine": 124,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private postProcessTheme(theme UITheme, parentTheme UITheme, provider ClassLoader, iconsMapper Function<? super String,String>) : UITheme extracted from public loadFromJson(stream InputStream, themeId String, provider ClassLoader, iconsMapper Function<? super String,String>) : UITheme in class com.intellij.ide.ui.UITheme",
+          "leftSideLocation": {
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/UITheme.java",
+            "startLine": 86,
+            "endLine": 93,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/UITheme.java",
+            "startLine": 115,
+            "endLine": 124,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private postProcessTheme(theme UITheme, parentTheme UITheme, provider ClassLoader, iconsMapper Function<? super String,String>) : UITheme extracted from public loadFromJson(data byte[], themeId String, provider ClassLoader, iconsMapper Function<? super String,String>) : UITheme in class com.intellij.ide.ui.UITheme",
+          "leftSideLocation": {
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/UITheme.java",
+            "startLine": 95,
+            "endLine": 102,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/UITheme.java",
+            "startLine": 115,
+            "endLine": 124,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private postProcessTheme(theme UITheme, parentTheme UITheme, provider ClassLoader, iconsMapper Function<? super String,String>) : UITheme extracted from public loadFromJson(parentTheme UITheme, data byte[], themeId String, provider ClassLoader, iconsMapper Function<? super String,String>) : UITheme in class com.intellij.ide.ui.UITheme",
+          "leftSideLocation": {
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/UITheme.java",
+            "startLine": 104,
+            "endLine": 115,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "platform/platform-impl/src/com/intellij/ide/ui/UITheme.java",
+            "startLine": 115,
+            "endLine": 124,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/JetBrains/intellij-community.git",
+      "sha1": "83b755eae89da18b3be74f396f1f96ff41c6348a",
+      "url": "https://github.com/JetBrains/intellij-community/commit/83b755eae89da18b3be74f396f1f96ff41c6348a",
+      "ourApproach": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.jetbrains.jps.incremental.storage.MurmurHashingService renamed to org.jetbrains.jps.incremental.storage.Xxh3HashingService",
+          "leftSideLocation": {
+            "filePath": "jps/jps-builders/src/org/jetbrains/jps/incremental/storage/MurmurHashingService.java",
+            "startLine": 15,
+            "endLine": 37,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "jps/jps-builders/src/org/jetbrains/jps/incremental/storage/Xxh3HashingService.java",
+            "startLine": 11,
+            "endLine": 29,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	byte @NotNull [] to long in method package getFileHash(file File) : long from class org.jetbrains.jps.incremental.storage.Xxh3HashingService",
+          "leftSideLocation": {
+            "filePath": "jps/jps-builders/src/org/jetbrains/jps/incremental/storage/MurmurHashingService.java",
+            "startLine": 25,
+            "endLine": 36,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "jps/jps-builders/src/org/jetbrains/jps/incremental/storage/Xxh3HashingService.java",
+            "startLine": 18,
+            "endLine": 24,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	hash : byte[] to hash : long in class org.jetbrains.jps.incremental.storage.FileStampStorage.HashStampPerTarget",
+          "leftSideLocation": {
+            "filePath": "jps/jps-builders/src/org/jetbrains/jps/incremental/storage/FileStampStorage.java",
+            "startLine": 168,
+            "endLine": 168,
+            "startColumn": 25,
+            "endColumn": 29
+          },
+          "rightSideLocation": {
+            "filePath": "jps/jps-builders/src/org/jetbrains/jps/incremental/storage/FileStampStorage.java",
+            "startLine": 170,
+            "endLine": 170,
+            "startColumn": 23,
+            "endColumn": 27
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	List<byte[]> to List<Long> in method private compilationOutputHash(rootFile File, target BuildTarget<?>) : List<Long> from class org.jetbrains.jps.incremental.storage.BuildTargetSourcesState",
+          "leftSideLocation": {
+            "filePath": "jps/jps-builders/src/org/jetbrains/jps/incremental/storage/BuildTargetSourcesState.java",
+            "startLine": 194,
+            "endLine": 229,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "jps/jps-builders/src/org/jetbrains/jps/incremental/storage/BuildTargetSourcesState.java",
+            "startLine": 192,
+            "endLine": 227,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	myCalculatedHashes : Map<String,byte[]> to myCalculatedHashes : Map<String,Long> in class org.jetbrains.jps.incremental.storage.BuildTargetSourcesState",
+          "leftSideLocation": {
+            "filePath": "jps/jps-builders/src/org/jetbrains/jps/incremental/storage/BuildTargetSourcesState.java",
+            "startLine": 73,
+            "endLine": 73,
+            "startColumn": 37,
+            "endColumn": 55
+          },
+          "rightSideLocation": {
+            "filePath": "jps/jps-builders/src/org/jetbrains/jps/incremental/storage/BuildTargetSourcesState.java",
+            "startLine": 72,
+            "endLine": 72,
+            "startColumn": 35,
+            "endColumn": 53
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	List<byte[]> to List<Long> in method private sourceRootHash(rootDescriptor BuildRootDescriptor, target BuildTarget<?>) : List<Long> from class org.jetbrains.jps.incremental.storage.BuildTargetSourcesState",
+          "leftSideLocation": {
+            "filePath": "jps/jps-builders/src/org/jetbrains/jps/incremental/storage/BuildTargetSourcesState.java",
+            "startLine": 231,
+            "endLine": 259,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "jps/jps-builders/src/org/jetbrains/jps/incremental/storage/BuildTargetSourcesState.java",
+            "startLine": 229,
+            "endLine": 257,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	byte @Nullable [] to Long in method public getStoredFileHash(file File, target BuildTarget<?>) : Long from class org.jetbrains.jps.incremental.storage.FileStampStorage",
+          "leftSideLocation": {
+            "filePath": "jps/jps-builders/src/org/jetbrains/jps/incremental/storage/FileStampStorage.java",
+            "startLine": 111,
+            "endLine": 119,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "jps/jps-builders/src/org/jetbrains/jps/incremental/storage/FileStampStorage.java",
+            "startLine": 109,
+            "endLine": 117,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	myBytes : byte[] to myHash : Long in class org.jetbrains.jps.incremental.storage.FileStampStorage.FileStamp",
+          "leftSideLocation": {
+            "filePath": "jps/jps-builders/src/org/jetbrains/jps/incremental/storage/FileStampStorage.java",
+            "startLine": 179,
+            "endLine": 179,
+            "startColumn": 26,
+            "endColumn": 33
+          },
+          "rightSideLocation": {
+            "filePath": "jps/jps-builders/src/org/jetbrains/jps/incremental/storage/FileStampStorage.java",
+            "startLine": 181,
+            "endLine": 181,
+            "startColumn": 24,
+            "endColumn": 30
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	myBytes : byte[] to myHash : Long in class org.jetbrains.jps.incremental.storage.FileStampStorage.FileStamp",
+          "leftSideLocation": {
+            "filePath": "jps/jps-builders/src/org/jetbrains/jps/incremental/storage/FileStampStorage.java",
+            "startLine": 179,
+            "endLine": 179,
+            "startColumn": 26,
+            "endColumn": 33
+          },
+          "rightSideLocation": {
+            "filePath": "jps/jps-builders/src/org/jetbrains/jps/incremental/storage/FileStampStorage.java",
+            "startLine": 181,
+            "endLine": 181,
+            "startColumn": 24,
+            "endColumn": 30
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	byte @NotNull [] to long in method private getOutputFileHash(file File, rootPath File) : long from class org.jetbrains.jps.incremental.storage.BuildTargetSourcesState",
+          "leftSideLocation": {
+            "filePath": "jps/jps-builders/src/org/jetbrains/jps/incremental/storage/BuildTargetSourcesState.java",
+            "startLine": 284,
+            "endLine": 288,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "jps/jps-builders/src/org/jetbrains/jps/incremental/storage/BuildTargetSourcesState.java",
+            "startLine": 284,
+            "endLine": 288,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	Optional<byte[]> to Optional<Long> in method private getFileHash(target BuildTarget<?>, file File, rootPath File) : Optional<Long> from class org.jetbrains.jps.incremental.storage.BuildTargetSourcesState",
+          "leftSideLocation": {
+            "filePath": "jps/jps-builders/src/org/jetbrains/jps/incremental/storage/BuildTargetSourcesState.java",
+            "startLine": 270,
+            "endLine": 282,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "jps/jps-builders/src/org/jetbrains/jps/incremental/storage/BuildTargetSourcesState.java",
+            "startLine": 270,
+            "endLine": 282,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	Optional<byte[]> to Optional<Long> in method private getBuildTargetHash(target BuildTarget<?>, context CompileContext) : Optional<Long> from class org.jetbrains.jps.incremental.storage.BuildTargetSourcesState",
+          "leftSideLocation": {
+            "filePath": "jps/jps-builders/src/org/jetbrains/jps/incremental/storage/BuildTargetSourcesState.java",
+            "startLine": 261,
+            "endLine": 268,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "jps/jps-builders/src/org/jetbrains/jps/incremental/storage/BuildTargetSourcesState.java",
+            "startLine": 259,
+            "endLine": 268,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	byte @NotNull [] to long in method package getStringHash(hashableString String) : long from class org.jetbrains.jps.incremental.storage.Xxh3HashingService",
+          "leftSideLocation": {
+            "filePath": "jps/jps-builders/src/org/jetbrains/jps/incremental/storage/MurmurHashingService.java",
+            "startLine": 19,
+            "endLine": 23,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "jps/jps-builders/src/org/jetbrains/jps/incremental/storage/Xxh3HashingService.java",
+            "startLine": 14,
+            "endLine": 16,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.jetbrains.jps.incremental.storage.MurmurHashingService renamed to org.jetbrains.jps.incremental.storage.Xxh3HashingService",
+          "leftSideLocation": {
+            "filePath": "jps/jps-builders/src/org/jetbrains/jps/incremental/storage/MurmurHashingService.java",
+            "startLine": 15,
+            "endLine": 37,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "jps/jps-builders/src/org/jetbrains/jps/incremental/storage/Xxh3HashingService.java",
+            "startLine": 11,
+            "endLine": 29,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	myCalculatedHashes : Map<String,byte[]> to myCalculatedHashes : Map<String,Long> in class org.jetbrains.jps.incremental.storage.BuildTargetSourcesState",
+          "leftSideLocation": {
+            "filePath": "jps/jps-builders/src/org/jetbrains/jps/incremental/storage/BuildTargetSourcesState.java",
+            "startLine": 73,
+            "endLine": 73,
+            "startColumn": 37,
+            "endColumn": 55
+          },
+          "rightSideLocation": {
+            "filePath": "jps/jps-builders/src/org/jetbrains/jps/incremental/storage/BuildTargetSourcesState.java",
+            "startLine": 72,
+            "endLine": 72,
+            "startColumn": 35,
+            "endColumn": 53
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	List<byte[]> to List<Long> in method private compilationOutputHash(rootFile File, target BuildTarget<?>) : List<Long> from class org.jetbrains.jps.incremental.storage.BuildTargetSourcesState",
+          "leftSideLocation": {
+            "filePath": "jps/jps-builders/src/org/jetbrains/jps/incremental/storage/BuildTargetSourcesState.java",
+            "startLine": 194,
+            "endLine": 229,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "jps/jps-builders/src/org/jetbrains/jps/incremental/storage/BuildTargetSourcesState.java",
+            "startLine": 192,
+            "endLine": 227,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	List<byte[]> to List<Long> in method private sourceRootHash(rootDescriptor BuildRootDescriptor, target BuildTarget<?>) : List<Long> from class org.jetbrains.jps.incremental.storage.BuildTargetSourcesState",
+          "leftSideLocation": {
+            "filePath": "jps/jps-builders/src/org/jetbrains/jps/incremental/storage/BuildTargetSourcesState.java",
+            "startLine": 231,
+            "endLine": 259,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "jps/jps-builders/src/org/jetbrains/jps/incremental/storage/BuildTargetSourcesState.java",
+            "startLine": 229,
+            "endLine": 257,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	Optional<byte[]> to Optional<Long> in method private getBuildTargetHash(target BuildTarget<?>, context CompileContext) : Optional<Long> from class org.jetbrains.jps.incremental.storage.BuildTargetSourcesState",
+          "leftSideLocation": {
+            "filePath": "jps/jps-builders/src/org/jetbrains/jps/incremental/storage/BuildTargetSourcesState.java",
+            "startLine": 261,
+            "endLine": 268,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "jps/jps-builders/src/org/jetbrains/jps/incremental/storage/BuildTargetSourcesState.java",
+            "startLine": 259,
+            "endLine": 268,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	Optional<byte[]> to Optional<Long> in method private getFileHash(target BuildTarget<?>, file File, rootPath File) : Optional<Long> from class org.jetbrains.jps.incremental.storage.BuildTargetSourcesState",
+          "leftSideLocation": {
+            "filePath": "jps/jps-builders/src/org/jetbrains/jps/incremental/storage/BuildTargetSourcesState.java",
+            "startLine": 270,
+            "endLine": 282,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "jps/jps-builders/src/org/jetbrains/jps/incremental/storage/BuildTargetSourcesState.java",
+            "startLine": 270,
+            "endLine": 282,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	byte[] to long in method private getOutputFileHash(file File, rootPath File) : long from class org.jetbrains.jps.incremental.storage.BuildTargetSourcesState",
+          "leftSideLocation": {
+            "filePath": "jps/jps-builders/src/org/jetbrains/jps/incremental/storage/BuildTargetSourcesState.java",
+            "startLine": 284,
+            "endLine": 288,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "jps/jps-builders/src/org/jetbrains/jps/incremental/storage/BuildTargetSourcesState.java",
+            "startLine": 284,
+            "endLine": 288,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	hash : byte[] to hash : long in class org.jetbrains.jps.incremental.storage.FileStampStorage.HashStampPerTarget",
+          "leftSideLocation": {
+            "filePath": "jps/jps-builders/src/org/jetbrains/jps/incremental/storage/FileStampStorage.java",
+            "startLine": 168,
+            "endLine": 168,
+            "startColumn": 25,
+            "endColumn": 29
+          },
+          "rightSideLocation": {
+            "filePath": "jps/jps-builders/src/org/jetbrains/jps/incremental/storage/FileStampStorage.java",
+            "startLine": 170,
+            "endLine": 170,
+            "startColumn": 23,
+            "endColumn": 27
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	myBytes : byte[] to myHash : Long in class org.jetbrains.jps.incremental.storage.FileStampStorage.FileStamp",
+          "leftSideLocation": {
+            "filePath": "jps/jps-builders/src/org/jetbrains/jps/incremental/storage/FileStampStorage.java",
+            "startLine": 179,
+            "endLine": 179,
+            "startColumn": 26,
+            "endColumn": 33
+          },
+          "rightSideLocation": {
+            "filePath": "jps/jps-builders/src/org/jetbrains/jps/incremental/storage/FileStampStorage.java",
+            "startLine": 181,
+            "endLine": 181,
+            "startColumn": 24,
+            "endColumn": 30
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	myBytes : byte[] to myHash : Long in class org.jetbrains.jps.incremental.storage.FileStampStorage.FileStamp",
+          "leftSideLocation": {
+            "filePath": "jps/jps-builders/src/org/jetbrains/jps/incremental/storage/FileStampStorage.java",
+            "startLine": 179,
+            "endLine": 179,
+            "startColumn": 26,
+            "endColumn": 33
+          },
+          "rightSideLocation": {
+            "filePath": "jps/jps-builders/src/org/jetbrains/jps/incremental/storage/FileStampStorage.java",
+            "startLine": 181,
+            "endLine": 181,
+            "startColumn": 24,
+            "endColumn": 30
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	byte[] to Long in method public getStoredFileHash(file File, target BuildTarget<?>) : Long from class org.jetbrains.jps.incremental.storage.FileStampStorage",
+          "leftSideLocation": {
+            "filePath": "jps/jps-builders/src/org/jetbrains/jps/incremental/storage/FileStampStorage.java",
+            "startLine": 111,
+            "endLine": 119,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "jps/jps-builders/src/org/jetbrains/jps/incremental/storage/FileStampStorage.java",
+            "startLine": 109,
+            "endLine": 117,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	byte[] to long in method package getStringHash(hashableString String) : long from class org.jetbrains.jps.incremental.storage.Xxh3HashingService",
+          "leftSideLocation": {
+            "filePath": "jps/jps-builders/src/org/jetbrains/jps/incremental/storage/MurmurHashingService.java",
+            "startLine": 19,
+            "endLine": 23,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "jps/jps-builders/src/org/jetbrains/jps/incremental/storage/Xxh3HashingService.java",
+            "startLine": 14,
+            "endLine": 16,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	byte[] to long in method package getFileHash(file File) : long from class org.jetbrains.jps.incremental.storage.Xxh3HashingService",
+          "leftSideLocation": {
+            "filePath": "jps/jps-builders/src/org/jetbrains/jps/incremental/storage/MurmurHashingService.java",
+            "startLine": 25,
+            "endLine": 36,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "jps/jps-builders/src/org/jetbrains/jps/incremental/storage/Xxh3HashingService.java",
+            "startLine": 18,
+            "endLine": 24,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/JetBrains/intellij-community.git",
+      "sha1": "25a0f56ccbbc4d9f0c2b719ebc98732ca6809a31",
+      "url": "https://github.com/JetBrains/intellij-community/commit/25a0f56ccbbc4d9f0c2b719ebc98732ca6809a31",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private getNewModuleWizard() : AbstractProjectWizard renamed to private createNewModuleWizard() : AbstractProjectWizard in class com.intellij.openapi.roots.ui.configuration.ModulesConfigurator",
+          "leftSideLocation": {
+            "filePath": "java/idea-ui/src/com/intellij/openapi/roots/ui/configuration/ModulesConfigurator.java",
+            "startLine": 475,
+            "endLine": 479,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "java/idea-ui/src/com/intellij/openapi/roots/ui/configuration/ModulesConfigurator.java",
+            "startLine": 479,
+            "endLine": 483,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private getProjectBuilder(wizard AbstractProjectWizard) : ProjectBuilder renamed to private runWizard(wizard AbstractProjectWizard) : ProjectBuilder in class com.intellij.openapi.roots.ui.configuration.ModulesConfigurator",
+          "leftSideLocation": {
+            "filePath": "java/idea-ui/src/com/intellij/openapi/roots/ui/configuration/ModulesConfigurator.java",
+            "startLine": 451,
+            "endLine": 468,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "java/idea-ui/src/com/intellij/openapi/roots/ui/configuration/ModulesConfigurator.java",
+            "startLine": 456,
+            "endLine": 472,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private getImportModuleWizard(dialogParent Component) : AbstractProjectWizard renamed to private createImportModuleWizard(dialogParent Component) : AbstractProjectWizard in class com.intellij.openapi.roots.ui.configuration.ModulesConfigurator",
+          "leftSideLocation": {
+            "filePath": "java/idea-ui/src/com/intellij/openapi/roots/ui/configuration/ModulesConfigurator.java",
+            "startLine": 470,
+            "endLine": 473,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "java/idea-ui/src/com/intellij/openapi/roots/ui/configuration/ModulesConfigurator.java",
+            "startLine": 474,
+            "endLine": 477,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private getProjectBuilder(wizard AbstractProjectWizard) : ProjectBuilder renamed to private runWizard(wizard AbstractProjectWizard) : ProjectBuilder in class com.intellij.openapi.roots.ui.configuration.ModulesConfigurator",
+          "leftSideLocation": {
+            "filePath": "java/idea-ui/src/com/intellij/openapi/roots/ui/configuration/ModulesConfigurator.java",
+            "startLine": 451,
+            "endLine": 468,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "java/idea-ui/src/com/intellij/openapi/roots/ui/configuration/ModulesConfigurator.java",
+            "startLine": 456,
+            "endLine": 472,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private getImportModuleWizard(dialogParent Component) : AbstractProjectWizard renamed to private createImportModuleWizard(dialogParent Component) : AbstractProjectWizard in class com.intellij.openapi.roots.ui.configuration.ModulesConfigurator",
+          "leftSideLocation": {
+            "filePath": "java/idea-ui/src/com/intellij/openapi/roots/ui/configuration/ModulesConfigurator.java",
+            "startLine": 470,
+            "endLine": 473,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "java/idea-ui/src/com/intellij/openapi/roots/ui/configuration/ModulesConfigurator.java",
+            "startLine": 474,
+            "endLine": 477,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private getNewModuleWizard() : AbstractProjectWizard renamed to private createNewModuleWizard() : AbstractProjectWizard in class com.intellij.openapi.roots.ui.configuration.ModulesConfigurator",
+          "leftSideLocation": {
+            "filePath": "java/idea-ui/src/com/intellij/openapi/roots/ui/configuration/ModulesConfigurator.java",
+            "startLine": 475,
+            "endLine": 479,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "java/idea-ui/src/com/intellij/openapi/roots/ui/configuration/ModulesConfigurator.java",
+            "startLine": 479,
+            "endLine": 483,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/JetBrains/intellij-community.git",
+      "sha1": "d49eb04d2f1aab9014c377a75a107a42607730f8",
+      "url": "https://github.com/JetBrains/intellij-community/commit/d49eb04d2f1aab9014c377a75a107a42607730f8",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.jetbrains.idea.devkit.inspections.DevKitDomInspectionUtil from Class org.jetbrains.idea.devkit.inspections.DevKitPluginXmlInspectionBase",
+          "leftSideLocation": {
+            "filePath": "plugins/devkit/devkit-core/src/inspections/DevKitPluginXmlInspectionBase.java",
+            "startLine": 21,
+            "endLine": 58,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "plugins/devkit/devkit-core/src/inspections/DevKitDomInspectionUtil.java",
+            "startLine": 14,
+            "endLine": 35,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.jetbrains.idea.devkit.inspections.DevKitDomInspectionUtil from class org.jetbrains.idea.devkit.inspections.DevKitPluginXmlInspectionBase",
+          "leftSideLocation": {
+            "filePath": "plugins/devkit/devkit-core/src/inspections/DevKitPluginXmlInspectionBase.java",
+            "startLine": 21,
+            "endLine": 58,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "plugins/devkit/devkit-core/src/inspections/DevKitDomInspectionUtil.java",
+            "startLine": 14,
+            "endLine": 35,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/JetBrains/intellij-community.git",
+      "sha1": "4e0396a548870210883f4811f32777c516f36177",
+      "url": "https://github.com/JetBrains/intellij-community/commit/4e0396a548870210883f4811f32777c516f36177",
+      "ourApproach": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	com.intellij.util.ui.accessibility.AccessibleAnnouncerImpl renamed to com.intellij.util.ui.accessibility.AccessibleAnnouncerUtil",
+          "leftSideLocation": {
+            "filePath": "platform/util/ui/src/com/intellij/util/ui/accessibility/AccessibleAnnouncerImpl.java",
+            "startLine": 10,
+            "endLine": 36,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "platform/util/ui/src/com/intellij/util/ui/accessibility/AccessibleAnnouncerUtil.java",
+            "startLine": 10,
+            "endLine": 30,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	com.intellij.util.ui.accessibility.AccessibleAnnouncerImpl renamed to com.intellij.util.ui.accessibility.AccessibleAnnouncerUtil",
+          "leftSideLocation": {
+            "filePath": "platform/util/ui/src/com/intellij/util/ui/accessibility/AccessibleAnnouncerImpl.java",
+            "startLine": 10,
+            "endLine": 36,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "platform/util/ui/src/com/intellij/util/ui/accessibility/AccessibleAnnouncerUtil.java",
+            "startLine": 10,
+            "endLine": 30,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ]
+    }
+  ]
+}

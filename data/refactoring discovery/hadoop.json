@@ -1,0 +1,2768 @@
+{
+  "results": [
+    {
+      "repository": "https://github.com/apache/hadoop.git",
+      "sha1": "0ae075a2af68e352aa3a75e9fbf7c777bd09e135",
+      "url": "https://github.com/apache/hadoop/commit/0ae075a2af68e352aa3a75e9fbf7c777bd09e135",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private getRecord(clazz Class<T>, znode String, child String) : T extracted from public get(clazz Class<T>) : QueryResult<T> in class org.apache.hadoop.hdfs.server.federation.store.driver.impl.StateStoreZooKeeperImpl",
+          "leftSideLocation": {
+            "filePath": "hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/java/org/apache/hadoop/hdfs/server/federation/store/driver/impl/StateStoreZooKeeperImpl.java",
+            "startLine": 131,
+            "endLine": 179,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/java/org/apache/hadoop/hdfs/server/federation/store/driver/impl/StateStoreZooKeeperImpl.java",
+            "startLine": 194,
+            "endLine": 230,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private getRecord(clazz Class<T>, znode String, child String) : T extracted from public get(clazz Class<T>) : QueryResult<T> in class org.apache.hadoop.hdfs.server.federation.store.driver.impl.StateStoreZooKeeperImpl",
+          "leftSideLocation": {
+            "filePath": "hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/java/org/apache/hadoop/hdfs/server/federation/store/driver/impl/StateStoreZooKeeperImpl.java",
+            "startLine": 131,
+            "endLine": 179,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-hdfs-project/hadoop-hdfs-rbf/src/main/java/org/apache/hadoop/hdfs/server/federation/store/driver/impl/StateStoreZooKeeperImpl.java",
+            "startLine": 194,
+            "endLine": 230,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/hadoop.git",
+      "sha1": "d81d98388c794b53152f4a80263694c1bf77adc0",
+      "url": "https://github.com/apache/hadoop/commit/d81d98388c794b53152f4a80263694c1bf77adc0",
+      "ourApproach": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	boolean to void in method package bestEffortSetAttribute(transformerFactory TransformerFactory, flag AtomicBoolean, name String, value Object) : void from class org.apache.hadoop.util.XMLUtils",
+          "leftSideLocation": {
+            "filePath": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/util/XMLUtils.java",
+            "startLine": 169,
+            "endLine": 188,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/util/XMLUtils.java",
+            "startLine": 188,
+            "endLine": 209,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private setOptionalSecureTransformerAttributes(transformerFactory TransformerFactory) : void extracted from public newSecureTransformerFactory() : TransformerFactory in class org.apache.hadoop.util.XMLUtils",
+          "leftSideLocation": {
+            "filePath": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/util/XMLUtils.java",
+            "startLine": 133,
+            "endLine": 149,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/util/XMLUtils.java",
+            "startLine": 173,
+            "endLine": 186,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private setOptionalSecureTransformerAttributes(transformerFactory TransformerFactory) : void extracted from public newSecureSAXTransformerFactory() : SAXTransformerFactory in class org.apache.hadoop.util.XMLUtils",
+          "leftSideLocation": {
+            "filePath": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/util/XMLUtils.java",
+            "startLine": 151,
+            "endLine": 167,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/util/XMLUtils.java",
+            "startLine": 173,
+            "endLine": 186,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private setOptionalSecureTransformerAttributes(transformerFactory TransformerFactory) : void extracted from public newSecureTransformerFactory() : TransformerFactory in class org.apache.hadoop.util.XMLUtils",
+          "leftSideLocation": {
+            "filePath": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/util/XMLUtils.java",
+            "startLine": 133,
+            "endLine": 149,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/util/XMLUtils.java",
+            "startLine": 173,
+            "endLine": 186,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private setOptionalSecureTransformerAttributes(transformerFactory TransformerFactory) : void extracted from public newSecureSAXTransformerFactory() : SAXTransformerFactory in class org.apache.hadoop.util.XMLUtils",
+          "leftSideLocation": {
+            "filePath": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/util/XMLUtils.java",
+            "startLine": 151,
+            "endLine": 167,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/util/XMLUtils.java",
+            "startLine": 173,
+            "endLine": 186,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	boolean to void in method package bestEffortSetAttribute(transformerFactory TransformerFactory, flag AtomicBoolean, name String, value Object) : void from class org.apache.hadoop.util.XMLUtils",
+          "leftSideLocation": {
+            "filePath": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/util/XMLUtils.java",
+            "startLine": 169,
+            "endLine": 188,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/util/XMLUtils.java",
+            "startLine": 188,
+            "endLine": 209,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/hadoop.git",
+      "sha1": "c5b42d59d2e0905cdb55db92a89939526eecdb90",
+      "url": "https://github.com/apache/hadoop/commit/c5b42d59d2e0905cdb55db92a89939526eecdb90",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package getBblocksMoved() : long renamed to package getBlocksMoved() : long in class org.apache.hadoop.hdfs.server.balancer.Dispatcher",
+          "leftSideLocation": {
+            "filePath": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/balancer/Dispatcher.java",
+            "startLine": 1130,
+            "endLine": 1132,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/balancer/Dispatcher.java",
+            "startLine": 1130,
+            "endLine": 1132,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package getBblocksMoved() : long renamed to package getBlocksMoved() : long in class org.apache.hadoop.hdfs.server.balancer.Dispatcher",
+          "leftSideLocation": {
+            "filePath": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/balancer/Dispatcher.java",
+            "startLine": 1130,
+            "endLine": 1132,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/balancer/Dispatcher.java",
+            "startLine": 1130,
+            "endLine": 1132,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/hadoop.git",
+      "sha1": "4af4997e1129d3b9bd7fde7ec8731d6e79093fd8",
+      "url": "https://github.com/apache/hadoop/commit/4af4997e1129d3b9bd7fde7ec8731d6e79093fd8",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public getNumSucceededCheckUserAccessToQueueRetrievedRetrieved() : long renamed to public getNumSucceededCheckUserAccessToQueueRetrieved() : long in class org.apache.hadoop.yarn.server.router.RouterMetrics",
+          "leftSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-router/src/main/java/org/apache/hadoop/yarn/server/router/RouterMetrics.java",
+            "startLine": 657,
+            "endLine": 660,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-router/src/main/java/org/apache/hadoop/yarn/server/router/RouterMetrics.java",
+            "startLine": 681,
+            "endLine": 684,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testCheckUserAccessToQueueRetrievedRetrieved() : void renamed to public testCheckUserAccessToQueueRetrieved() : void in class org.apache.hadoop.yarn.server.router.TestRouterMetrics",
+          "leftSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-router/src/test/java/org/apache/hadoop/yarn/server/router/TestRouterMetrics.java",
+            "startLine": 1512,
+            "endLine": 1525,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-router/src/test/java/org/apache/hadoop/yarn/server/router/TestRouterMetrics.java",
+            "startLine": 1532,
+            "endLine": 1545,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public getCheckUserAccessToQueueRetrieved() : void renamed to public getCheckUserAccessToQueueFailed() : void in class org.apache.hadoop.yarn.server.router.TestRouterMetrics.MockBadSubCluster",
+          "leftSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-router/src/test/java/org/apache/hadoop/yarn/server/router/TestRouterMetrics.java",
+            "startLine": 522,
+            "endLine": 525,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-router/src/test/java/org/apache/hadoop/yarn/server/router/TestRouterMetrics.java",
+            "startLine": 522,
+            "endLine": 525,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public getNumSucceededCheckUserAccessToQueueRetrievedRetrieved() : long renamed to public getNumSucceededCheckUserAccessToQueueRetrieved() : long in class org.apache.hadoop.yarn.server.router.RouterMetrics",
+          "leftSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-router/src/main/java/org/apache/hadoop/yarn/server/router/RouterMetrics.java",
+            "startLine": 657,
+            "endLine": 660,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-router/src/main/java/org/apache/hadoop/yarn/server/router/RouterMetrics.java",
+            "startLine": 681,
+            "endLine": 684,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public getCheckUserAccessToQueueRetrieved() : void renamed to public getCheckUserAccessToQueueFailed() : void in class org.apache.hadoop.yarn.server.router.TestRouterMetrics.MockBadSubCluster",
+          "leftSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-router/src/test/java/org/apache/hadoop/yarn/server/router/TestRouterMetrics.java",
+            "startLine": 522,
+            "endLine": 525,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-router/src/test/java/org/apache/hadoop/yarn/server/router/TestRouterMetrics.java",
+            "startLine": 522,
+            "endLine": 525,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testCheckUserAccessToQueueRetrievedRetrieved() : void renamed to public testCheckUserAccessToQueueRetrieved() : void in class org.apache.hadoop.yarn.server.router.TestRouterMetrics",
+          "leftSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-router/src/test/java/org/apache/hadoop/yarn/server/router/TestRouterMetrics.java",
+            "startLine": 1512,
+            "endLine": 1525,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-router/src/test/java/org/apache/hadoop/yarn/server/router/TestRouterMetrics.java",
+            "startLine": 1532,
+            "endLine": 1545,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/hadoop.git",
+      "sha1": "696d0420543d5932d88c7dd42108e575d5405585",
+      "url": "https://github.com/apache/hadoop/commit/696d0420543d5932d88c7dd42108e575d5405585",
+      "ourApproach": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	key : Writable to key : Object in class org.apache.hadoop.fs.shell.Display.TextRecordInputStream",
+          "leftSideLocation": {
+            "filePath": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/shell/Display.java",
+            "startLine": 220,
+            "endLine": 220,
+            "startColumn": 14,
+            "endColumn": 17
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/shell/Display.java",
+            "startLine": 219,
+            "endLine": 219,
+            "startColumn": 12,
+            "endColumn": 15
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	val : Writable to val : Object in class org.apache.hadoop.fs.shell.Display.TextRecordInputStream",
+          "leftSideLocation": {
+            "filePath": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/shell/Display.java",
+            "startLine": 221,
+            "endLine": 221,
+            "startColumn": 14,
+            "endColumn": 17
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/shell/Display.java",
+            "startLine": 220,
+            "endLine": 220,
+            "startColumn": 12,
+            "endColumn": 15
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private readUsingTextCommand(uri URI, conf Configuration) : String extracted from private readUsingTextCommand(fileName String, fileContents byte[]) : String in class org.apache.hadoop.fs.shell.TestTextCommand",
+          "leftSideLocation": {
+            "filePath": "hadoop-common-project/hadoop-common/src/test/java/org/apache/hadoop/fs/shell/TestTextCommand.java",
+            "startLine": 103,
+            "endLine": 121,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-common-project/hadoop-common/src/test/java/org/apache/hadoop/fs/shell/TestTextCommand.java",
+            "startLine": 111,
+            "endLine": 125,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	key : Writable to key : Object in class org.apache.hadoop.fs.shell.Display.TextRecordInputStream",
+          "leftSideLocation": {
+            "filePath": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/shell/Display.java",
+            "startLine": 220,
+            "endLine": 220,
+            "startColumn": 14,
+            "endColumn": 17
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/shell/Display.java",
+            "startLine": 219,
+            "endLine": 219,
+            "startColumn": 12,
+            "endColumn": 15
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	val : Writable to val : Object in class org.apache.hadoop.fs.shell.Display.TextRecordInputStream",
+          "leftSideLocation": {
+            "filePath": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/shell/Display.java",
+            "startLine": 221,
+            "endLine": 221,
+            "startColumn": 14,
+            "endColumn": 17
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/shell/Display.java",
+            "startLine": 220,
+            "endLine": 220,
+            "startColumn": 12,
+            "endColumn": 15
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private readUsingTextCommand(uri URI, conf Configuration) : String extracted from private readUsingTextCommand(fileName String, fileContents byte[]) : String in class org.apache.hadoop.fs.shell.TestTextCommand",
+          "leftSideLocation": {
+            "filePath": "hadoop-common-project/hadoop-common/src/test/java/org/apache/hadoop/fs/shell/TestTextCommand.java",
+            "startLine": 103,
+            "endLine": 121,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-common-project/hadoop-common/src/test/java/org/apache/hadoop/fs/shell/TestTextCommand.java",
+            "startLine": 111,
+            "endLine": 125,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/hadoop.git",
+      "sha1": "22c9f28f4d85a92d23024b03c9094edb8e56f369",
+      "url": "https://github.com/apache/hadoop/commit/22c9f28f4d85a92d23024b03c9094edb8e56f369",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private initializeSchedConf() : void extracted from public init(config Configuration) : void in class org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.conf.MutableCSConfigurationProvider",
+          "leftSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/capacity/conf/MutableCSConfigurationProvider.java",
+            "startLine": 79,
+            "endLine": 103,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/capacity/conf/MutableCSConfigurationProvider.java",
+            "startLine": 174,
+            "endLine": 183,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private initializeSchedConf() : void extracted from public formatConfigurationInStore(config Configuration) : void in class org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.conf.MutableCSConfigurationProvider",
+          "leftSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/capacity/conf/MutableCSConfigurationProvider.java",
+            "startLine": 173,
+            "endLine": 196,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/capacity/conf/MutableCSConfigurationProvider.java",
+            "startLine": 174,
+            "endLine": 183,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.conf.ConfigurationUpdateAssembler from Class org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.conf.MutableCSConfigurationProvider",
+          "leftSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/capacity/conf/MutableCSConfigurationProvider.java",
+            "startLine": 47,
+            "endLine": 379,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/capacity/conf/ConfigurationUpdateAssembler.java",
+            "startLine": 36,
+            "endLine": 181,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private initializeSchedConf() : void extracted from public init(config Configuration) : void in class org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.conf.MutableCSConfigurationProvider",
+          "leftSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/capacity/conf/MutableCSConfigurationProvider.java",
+            "startLine": 79,
+            "endLine": 103,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/capacity/conf/MutableCSConfigurationProvider.java",
+            "startLine": 174,
+            "endLine": 183,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private initializeSchedConf() : void extracted from public formatConfigurationInStore(config Configuration) : void in class org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.conf.MutableCSConfigurationProvider",
+          "leftSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/capacity/conf/MutableCSConfigurationProvider.java",
+            "startLine": 173,
+            "endLine": 196,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/capacity/conf/MutableCSConfigurationProvider.java",
+            "startLine": 174,
+            "endLine": 183,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.conf.ConfigurationUpdateAssembler from class org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.conf.MutableCSConfigurationProvider",
+          "leftSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/capacity/conf/MutableCSConfigurationProvider.java",
+            "startLine": 47,
+            "endLine": 379,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/capacity/conf/ConfigurationUpdateAssembler.java",
+            "startLine": 36,
+            "endLine": 181,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/hadoop.git",
+      "sha1": "5b52123c9d30a178d2c4bc5ed1100e655fcb58c4",
+      "url": "https://github.com/apache/hadoop/commit/5b52123c9d30a178d2c4bc5ed1100e655fcb58c4",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public incrContainerReportFailedRetrieved() : void renamed to public incrGetContainerReportFailedRetrieved() : void in class org.apache.hadoop.yarn.server.router.RouterMetrics",
+          "leftSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-router/src/main/java/org/apache/hadoop/yarn/server/router/RouterMetrics.java",
+            "startLine": 1066,
+            "endLine": 1068,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-router/src/main/java/org/apache/hadoop/yarn/server/router/RouterMetrics.java",
+            "startLine": 1255,
+            "endLine": 1257,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public incrContainerFailedRetrieved() : void renamed to public incrGetContainersFailedRetrieved() : void in class org.apache.hadoop.yarn.server.router.RouterMetrics",
+          "leftSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-router/src/main/java/org/apache/hadoop/yarn/server/router/RouterMetrics.java",
+            "startLine": 1070,
+            "endLine": 1072,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-router/src/main/java/org/apache/hadoop/yarn/server/router/RouterMetrics.java",
+            "startLine": 1259,
+            "endLine": 1261,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public getContainer(duration long) : void renamed to public getContainers(duration long) : void in class org.apache.hadoop.yarn.server.router.TestRouterMetrics.MockGoodSubCluster",
+          "leftSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-router/src/test/java/org/apache/hadoop/yarn/server/router/TestRouterMetrics.java",
+            "startLine": 567,
+            "endLine": 570,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-router/src/test/java/org/apache/hadoop/yarn/server/router/TestRouterMetrics.java",
+            "startLine": 602,
+            "endLine": 605,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testGetContainerFailed() : void renamed to public testGetContainersFailed() : void in class org.apache.hadoop.yarn.server.router.TestRouterMetrics",
+          "leftSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-router/src/test/java/org/apache/hadoop/yarn/server/router/TestRouterMetrics.java",
+            "startLine": 842,
+            "endLine": 847,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-router/src/test/java/org/apache/hadoop/yarn/server/router/TestRouterMetrics.java",
+            "startLine": 912,
+            "endLine": 917,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public getContainer() : void renamed to public getContainers() : void in class org.apache.hadoop.yarn.server.router.TestRouterMetrics.MockBadSubCluster",
+          "leftSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-router/src/test/java/org/apache/hadoop/yarn/server/router/TestRouterMetrics.java",
+            "startLine": 392,
+            "endLine": 395,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-router/src/test/java/org/apache/hadoop/yarn/server/router/TestRouterMetrics.java",
+            "startLine": 392,
+            "endLine": 395,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public incrContainerReportFailedRetrieved() : void renamed to public incrGetContainerReportFailedRetrieved() : void in class org.apache.hadoop.yarn.server.router.RouterMetrics",
+          "leftSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-router/src/main/java/org/apache/hadoop/yarn/server/router/RouterMetrics.java",
+            "startLine": 1066,
+            "endLine": 1068,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-router/src/main/java/org/apache/hadoop/yarn/server/router/RouterMetrics.java",
+            "startLine": 1255,
+            "endLine": 1257,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public incrContainerFailedRetrieved() : void renamed to public incrGetContainersFailedRetrieved() : void in class org.apache.hadoop.yarn.server.router.RouterMetrics",
+          "leftSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-router/src/main/java/org/apache/hadoop/yarn/server/router/RouterMetrics.java",
+            "startLine": 1070,
+            "endLine": 1072,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-router/src/main/java/org/apache/hadoop/yarn/server/router/RouterMetrics.java",
+            "startLine": 1259,
+            "endLine": 1261,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public getContainer() : void renamed to public getContainers() : void in class org.apache.hadoop.yarn.server.router.TestRouterMetrics.MockBadSubCluster",
+          "leftSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-router/src/test/java/org/apache/hadoop/yarn/server/router/TestRouterMetrics.java",
+            "startLine": 392,
+            "endLine": 395,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-router/src/test/java/org/apache/hadoop/yarn/server/router/TestRouterMetrics.java",
+            "startLine": 392,
+            "endLine": 395,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public getContainer(duration long) : void renamed to public getContainers(duration long) : void in class org.apache.hadoop.yarn.server.router.TestRouterMetrics.MockGoodSubCluster",
+          "leftSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-router/src/test/java/org/apache/hadoop/yarn/server/router/TestRouterMetrics.java",
+            "startLine": 567,
+            "endLine": 570,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-router/src/test/java/org/apache/hadoop/yarn/server/router/TestRouterMetrics.java",
+            "startLine": 602,
+            "endLine": 605,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testGetContainerFailed() : void renamed to public testGetContainersFailed() : void in class org.apache.hadoop.yarn.server.router.TestRouterMetrics",
+          "leftSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-router/src/test/java/org/apache/hadoop/yarn/server/router/TestRouterMetrics.java",
+            "startLine": 842,
+            "endLine": 847,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-router/src/test/java/org/apache/hadoop/yarn/server/router/TestRouterMetrics.java",
+            "startLine": 912,
+            "endLine": 917,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/hadoop.git",
+      "sha1": "1675a28e5a0b9258d08f5aa8c1a759d385be4429",
+      "url": "https://github.com/apache/hadoop/commit/1675a28e5a0b9258d08f5aa8c1a759d385be4429",
+      "ourApproach": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	seekTargetPos : long to nextReadPos : long in class org.apache.hadoop.fs.s3a.prefetch.S3ARemoteInputStream",
+          "leftSideLocation": {
+            "filePath": "hadoop-tools/hadoop-aws/src/main/java/org/apache/hadoop/fs/s3a/prefetch/S3ARemoteInputStream.java",
+            "startLine": 85,
+            "endLine": 85,
+            "startColumn": 16,
+            "endColumn": 29
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-tools/hadoop-aws/src/main/java/org/apache/hadoop/fs/s3a/prefetch/S3ARemoteInputStream.java",
+            "startLine": 89,
+            "endLine": 89,
+            "startColumn": 16,
+            "endColumn": 27
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	protected getSeekTargetPos() : long renamed to protected getNextReadPos() : long in class org.apache.hadoop.fs.s3a.prefetch.S3ARemoteInputStream",
+          "leftSideLocation": {
+            "filePath": "hadoop-tools/hadoop-aws/src/main/java/org/apache/hadoop/fs/s3a/prefetch/S3ARemoteInputStream.java",
+            "startLine": 370,
+            "endLine": 372,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-tools/hadoop-aws/src/main/java/org/apache/hadoop/fs/s3a/prefetch/S3ARemoteInputStream.java",
+            "startLine": 370,
+            "endLine": 372,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	protected getSeekTargetPos() : long renamed to protected getNextReadPos() : long in class org.apache.hadoop.fs.s3a.prefetch.S3ARemoteInputStream",
+          "leftSideLocation": {
+            "filePath": "hadoop-tools/hadoop-aws/src/main/java/org/apache/hadoop/fs/s3a/prefetch/S3ARemoteInputStream.java",
+            "startLine": 370,
+            "endLine": 372,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-tools/hadoop-aws/src/main/java/org/apache/hadoop/fs/s3a/prefetch/S3ARemoteInputStream.java",
+            "startLine": 370,
+            "endLine": 372,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	seekTargetPos : long to nextReadPos : long in class org.apache.hadoop.fs.s3a.prefetch.S3ARemoteInputStream",
+          "leftSideLocation": {
+            "filePath": "hadoop-tools/hadoop-aws/src/main/java/org/apache/hadoop/fs/s3a/prefetch/S3ARemoteInputStream.java",
+            "startLine": 85,
+            "endLine": 85,
+            "startColumn": 16,
+            "endColumn": 29
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-tools/hadoop-aws/src/main/java/org/apache/hadoop/fs/s3a/prefetch/S3ARemoteInputStream.java",
+            "startLine": 89,
+            "endLine": 89,
+            "startColumn": 16,
+            "endColumn": 27
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/hadoop.git",
+      "sha1": "213ea037589d8a69c34e1f98413ddbc06dfd42bf",
+      "url": "https://github.com/apache/hadoop/commit/213ea037589d8a69c34e1f98413ddbc06dfd42bf",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public retryOtherThanRemoteException(defaultPolicy RetryPolicy, exceptionToPolicyMap Map<Class<? extends Exception>,RetryPolicy>) : RetryPolicy renamed to public retryOtherThanRemoteAndSaslException(defaultPolicy RetryPolicy, exceptionToPolicyMap Map<Class<? extends Exception>,RetryPolicy>) : RetryPolicy in class org.apache.hadoop.io.retry.RetryPolicies",
+          "leftSideLocation": {
+            "filePath": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/io/retry/RetryPolicies.java",
+            "startLine": 183,
+            "endLine": 194,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/io/retry/RetryPolicies.java",
+            "startLine": 183,
+            "endLine": 199,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.hadoop.io.retry.RetryPolicies.OtherThanRemoteExceptionDependentRetry renamed to org.apache.hadoop.io.retry.RetryPolicies.OtherThanRemoteAndSaslExceptionDependentRetry",
+          "leftSideLocation": {
+            "filePath": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/io/retry/RetryPolicies.java",
+            "startLine": 592,
+            "endLine": 620,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/io/retry/RetryPolicies.java",
+            "startLine": 597,
+            "endLine": 623,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.hadoop.io.retry.RetryPolicies.OtherThanRemoteExceptionDependentRetry renamed to org.apache.hadoop.io.retry.RetryPolicies.OtherThanRemoteAndSaslExceptionDependentRetry",
+          "leftSideLocation": {
+            "filePath": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/io/retry/RetryPolicies.java",
+            "startLine": 592,
+            "endLine": 620,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/io/retry/RetryPolicies.java",
+            "startLine": 597,
+            "endLine": 623,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public retryOtherThanRemoteException(defaultPolicy RetryPolicy, exceptionToPolicyMap Map<Class<? extends Exception>,RetryPolicy>) : RetryPolicy renamed to public retryOtherThanRemoteAndSaslException(defaultPolicy RetryPolicy, exceptionToPolicyMap Map<Class<? extends Exception>,RetryPolicy>) : RetryPolicy in class org.apache.hadoop.io.retry.RetryPolicies",
+          "leftSideLocation": {
+            "filePath": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/io/retry/RetryPolicies.java",
+            "startLine": 183,
+            "endLine": 194,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/io/retry/RetryPolicies.java",
+            "startLine": 183,
+            "endLine": 199,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/hadoop.git",
+      "sha1": "e6ecc4f3e4433ae23fd745f6e0c641a019664253",
+      "url": "https://github.com/apache/hadoop/commit/e6ecc4f3e4433ae23fd745f6e0c641a019664253",
+      "ourApproach": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	task : LogDeletionTask to tasks : List<LogDeletionTask> in class org.apache.hadoop.yarn.logaggregation.AggregatedLogDeletionService",
+          "leftSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/main/java/org/apache/hadoop/yarn/logaggregation/AggregatedLogDeletionService.java",
+            "startLine": 60,
+            "endLine": 60,
+            "startColumn": 27,
+            "endColumn": 31
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/main/java/org/apache/hadoop/yarn/logaggregation/AggregatedLogDeletionService.java",
+            "startLine": 62,
+            "endLine": 62,
+            "startColumn": 33,
+            "endColumn": 38
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	task : LogDeletionTask to tasks : List<LogDeletionTask> in class org.apache.hadoop.yarn.logaggregation.AggregatedLogDeletionService",
+          "leftSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/main/java/org/apache/hadoop/yarn/logaggregation/AggregatedLogDeletionService.java",
+            "startLine": 60,
+            "endLine": 60,
+            "startColumn": 27,
+            "endColumn": 31
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/main/java/org/apache/hadoop/yarn/logaggregation/AggregatedLogDeletionService.java",
+            "startLine": 62,
+            "endLine": 62,
+            "startColumn": 33,
+            "endColumn": 38
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public setupAndRunDeletionService() : LogAggregationTestcase renamed to public startDeletionService() : LogAggregationTestcase in class org.apache.hadoop.yarn.logaggregation.testutils.LogAggregationTestcase",
+          "leftSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/test/java/org/apache/hadoop/yarn/logaggregation/testutils/LogAggregationTestcase.java",
+            "startLine": 244,
+            "endLine": 251,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/test/java/org/apache/hadoop/yarn/logaggregation/testutils/LogAggregationTestcase.java",
+            "startLine": 255,
+            "endLine": 259,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private scheduleLogDeletionTask() : void renamed to private scheduleLogDeletionTasks() : void in class org.apache.hadoop.yarn.logaggregation.AggregatedLogDeletionService",
+          "leftSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/main/java/org/apache/hadoop/yarn/logaggregation/AggregatedLogDeletionService.java",
+            "startLine": 258,
+            "endLine": 277,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/main/java/org/apache/hadoop/yarn/logaggregation/AggregatedLogDeletionService.java",
+            "startLine": 258,
+            "endLine": 280,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private scheduleLogDeletionTask() : void renamed to private scheduleLogDeletionTasks() : void in class org.apache.hadoop.yarn.logaggregation.AggregatedLogDeletionService",
+          "leftSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/main/java/org/apache/hadoop/yarn/logaggregation/AggregatedLogDeletionService.java",
+            "startLine": 258,
+            "endLine": 277,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/main/java/org/apache/hadoop/yarn/logaggregation/AggregatedLogDeletionService.java",
+            "startLine": 258,
+            "endLine": 280,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public setupAndRunDeletionService() : LogAggregationTestcase renamed to private setupDeletionService() : void in class org.apache.hadoop.yarn.logaggregation.testutils.LogAggregationTestcase",
+          "leftSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/test/java/org/apache/hadoop/yarn/logaggregation/testutils/LogAggregationTestcase.java",
+            "startLine": 244,
+            "endLine": 251,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/test/java/org/apache/hadoop/yarn/logaggregation/testutils/LogAggregationTestcase.java",
+            "startLine": 249,
+            "endLine": 253,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": false
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	LogAggregationTestcase to void in method private setupDeletionService() : void from class org.apache.hadoop.yarn.logaggregation.testutils.LogAggregationTestcase",
+          "leftSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/test/java/org/apache/hadoop/yarn/logaggregation/testutils/LogAggregationTestcase.java",
+            "startLine": 244,
+            "endLine": 251,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/test/java/org/apache/hadoop/yarn/logaggregation/testutils/LogAggregationTestcase.java",
+            "startLine": 249,
+            "endLine": 253,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/hadoop.git",
+      "sha1": "5d08ffa769d9dd2ac533e1e9d249788f70191555",
+      "url": "https://github.com/apache/hadoop/commit/5d08ffa769d9dd2ac533e1e9d249788f70191555",
+      "ourApproach": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.apache.hadoop.yarn.logaggregation.TestAggregatedLogDeletionService.AggregatedLogDeletionServiceForTest moved to org.apache.hadoop.yarn.logaggregation.testutils.AggregatedLogDeletionServiceForTest",
+          "leftSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/test/java/org/apache/hadoop/yarn/logaggregation/TestAggregatedLogDeletionService.java",
+            "startLine": 463,
+            "endLine": 499,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/test/java/org/apache/hadoop/yarn/logaggregation/testutils/AggregatedLogDeletionServiceForTest.java",
+            "startLine": 31,
+            "endLine": 67,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.apache.hadoop.yarn.logaggregation.TestAggregatedLogDeletionService.PathWithFileStatus moved to org.apache.hadoop.yarn.logaggregation.testutils.PathWithFileStatus",
+          "leftSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/test/java/org/apache/hadoop/yarn/logaggregation/TestAggregatedLogDeletionService.java",
+            "startLine": 447,
+            "endLine": 461,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/test/java/org/apache/hadoop/yarn/logaggregation/testutils/PathWithFileStatus.java",
+            "startLine": 24,
+            "endLine": 45,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.apache.hadoop.yarn.logaggregation.LogAggregationTestUtils from Class org.apache.hadoop.yarn.logaggregation.filecontroller.TestLogAggregationFileControllerFactory",
+          "leftSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/test/java/org/apache/hadoop/yarn/logaggregation/filecontroller/TestLogAggregationFileControllerFactory.java",
+            "startLine": 59,
+            "endLine": 306,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/test/java/org/apache/hadoop/yarn/logaggregation/LogAggregationTestUtils.java",
+            "startLine": 33,
+            "endLine": 68,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.apache.hadoop.yarn.logaggregation.testutils.FileStatusUtils from Class org.apache.hadoop.yarn.logaggregation.TestAggregatedLogDeletionService",
+          "leftSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/test/java/org/apache/hadoop/yarn/logaggregation/TestAggregatedLogDeletionService.java",
+            "startLine": 50,
+            "endLine": 500,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/test/java/org/apache/hadoop/yarn/logaggregation/testutils/FileStatusUtils.java",
+            "startLine": 26,
+            "endLine": 76,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	PathWithFileStatus to LogAggregationTestcaseBuilder in method public create(conf Configuration) : LogAggregationTestcaseBuilder from class org.apache.hadoop.yarn.logaggregation.testutils.LogAggregationTestcaseBuilder",
+          "leftSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/test/java/org/apache/hadoop/yarn/logaggregation/TestAggregatedLogDeletionService.java",
+            "startLine": 84,
+            "endLine": 89,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/test/java/org/apache/hadoop/yarn/logaggregation/testutils/LogAggregationTestcaseBuilder.java",
+            "startLine": 66,
+            "endLine": 68,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": false
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.apache.hadoop.yarn.logaggregation.testutils.LogAggregationTestcaseBuilder from Class org.apache.hadoop.yarn.logaggregation.TestAggregatedLogDeletionService",
+          "leftSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/test/java/org/apache/hadoop/yarn/logaggregation/TestAggregatedLogDeletionService.java",
+            "startLine": 50,
+            "endLine": 500,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/test/java/org/apache/hadoop/yarn/logaggregation/testutils/LogAggregationTestcaseBuilder.java",
+            "startLine": 38,
+            "endLine": 172,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.apache.hadoop.yarn.logaggregation.testutils.MockRMClientUtils from Class org.apache.hadoop.yarn.logaggregation.TestAggregatedLogDeletionService",
+          "leftSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/test/java/org/apache/hadoop/yarn/logaggregation/TestAggregatedLogDeletionService.java",
+            "startLine": 50,
+            "endLine": 500,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/test/java/org/apache/hadoop/yarn/logaggregation/testutils/MockRMClientUtils.java",
+            "startLine": 33,
+            "endLine": 72,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.apache.hadoop.yarn.logaggregation.TestAggregatedLogDeletionService.AggregatedLogDeletionServiceForTest moved to org.apache.hadoop.yarn.logaggregation.testutils.AggregatedLogDeletionServiceForTest",
+          "leftSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/test/java/org/apache/hadoop/yarn/logaggregation/TestAggregatedLogDeletionService.java",
+            "startLine": 463,
+            "endLine": 499,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/test/java/org/apache/hadoop/yarn/logaggregation/testutils/AggregatedLogDeletionServiceForTest.java",
+            "startLine": 31,
+            "endLine": 67,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.apache.hadoop.yarn.logaggregation.TestAggregatedLogDeletionService.PathWithFileStatus moved to org.apache.hadoop.yarn.logaggregation.testutils.PathWithFileStatus",
+          "leftSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/test/java/org/apache/hadoop/yarn/logaggregation/TestAggregatedLogDeletionService.java",
+            "startLine": 447,
+            "endLine": 461,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/test/java/org/apache/hadoop/yarn/logaggregation/testutils/PathWithFileStatus.java",
+            "startLine": 24,
+            "endLine": 45,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.apache.hadoop.yarn.logaggregation.testutils.FileStatusUtils from class org.apache.hadoop.yarn.logaggregation.TestAggregatedLogDeletionService",
+          "leftSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/test/java/org/apache/hadoop/yarn/logaggregation/TestAggregatedLogDeletionService.java",
+            "startLine": 50,
+            "endLine": 500,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/test/java/org/apache/hadoop/yarn/logaggregation/testutils/FileStatusUtils.java",
+            "startLine": 26,
+            "endLine": 76,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.apache.hadoop.yarn.logaggregation.testutils.MockRMClientUtils from class org.apache.hadoop.yarn.logaggregation.TestAggregatedLogDeletionService",
+          "leftSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/test/java/org/apache/hadoop/yarn/logaggregation/TestAggregatedLogDeletionService.java",
+            "startLine": 50,
+            "endLine": 500,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/test/java/org/apache/hadoop/yarn/logaggregation/testutils/MockRMClientUtils.java",
+            "startLine": 33,
+            "endLine": 72,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/hadoop.git",
+      "sha1": "c9a174a260577f6c0ff6ef1594eea1cb19d63012",
+      "url": "https://github.com/apache/hadoop/commit/c9a174a260577f6c0ff6ef1594eea1cb19d63012",
+      "ourApproach": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	boolean to void in method private validateAggregatedFileControllerName(name String) : void from class org.apache.hadoop.yarn.logaggregation.filecontroller.LogAggregationFileControllerFactory",
+          "leftSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/main/java/org/apache/hadoop/yarn/logaggregation/filecontroller/LogAggregationFileControllerFactory.java",
+            "startLine": 195,
+            "endLine": 200,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/main/java/org/apache/hadoop/yarn/logaggregation/filecontroller/LogAggregationFileControllerFactory.java",
+            "startLine": 174,
+            "endLine": 187,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private createFileControllerInstance(conf Configuration, fileController String, className DeterminedControllerClassName) : LogAggregationFileController extracted from public LogAggregationFileControllerFactory(conf Configuration) in class org.apache.hadoop.yarn.logaggregation.filecontroller.LogAggregationFileControllerFactory",
+          "leftSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/main/java/org/apache/hadoop/yarn/logaggregation/filecontroller/LogAggregationFileControllerFactory.java",
+            "startLine": 60,
+            "endLine": 140,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/main/java/org/apache/hadoop/yarn/logaggregation/filecontroller/LogAggregationFileControllerFactory.java",
+            "startLine": 82,
+            "endLine": 95,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private validateConflictingControllers(conf Configuration, controllerChecker Map<String,String>, fileController String) : void extracted from public LogAggregationFileControllerFactory(conf Configuration) in class org.apache.hadoop.yarn.logaggregation.filecontroller.LogAggregationFileControllerFactory",
+          "leftSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/main/java/org/apache/hadoop/yarn/logaggregation/filecontroller/LogAggregationFileControllerFactory.java",
+            "startLine": 60,
+            "endLine": 140,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/main/java/org/apache/hadoop/yarn/logaggregation/filecontroller/LogAggregationFileControllerFactory.java",
+            "startLine": 97,
+            "endLine": 121,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private createFileControllerInstance(conf Configuration, fileController String, className DeterminedControllerClassName) : LogAggregationFileController extracted from public LogAggregationFileControllerFactory(conf Configuration) in class org.apache.hadoop.yarn.logaggregation.filecontroller.LogAggregationFileControllerFactory",
+          "leftSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/main/java/org/apache/hadoop/yarn/logaggregation/filecontroller/LogAggregationFileControllerFactory.java",
+            "startLine": 60,
+            "endLine": 140,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/main/java/org/apache/hadoop/yarn/logaggregation/filecontroller/LogAggregationFileControllerFactory.java",
+            "startLine": 82,
+            "endLine": 95,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private validateConflictingControllers(conf Configuration, controllerChecker Map<String,String>, fileController String) : void extracted from public LogAggregationFileControllerFactory(conf Configuration) in class org.apache.hadoop.yarn.logaggregation.filecontroller.LogAggregationFileControllerFactory",
+          "leftSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/main/java/org/apache/hadoop/yarn/logaggregation/filecontroller/LogAggregationFileControllerFactory.java",
+            "startLine": 60,
+            "endLine": 140,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/main/java/org/apache/hadoop/yarn/logaggregation/filecontroller/LogAggregationFileControllerFactory.java",
+            "startLine": 97,
+            "endLine": 121,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	boolean to void in method private validateAggregatedFileControllerName(name String) : void from class org.apache.hadoop.yarn.logaggregation.filecontroller.LogAggregationFileControllerFactory",
+          "leftSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/main/java/org/apache/hadoop/yarn/logaggregation/filecontroller/LogAggregationFileControllerFactory.java",
+            "startLine": 195,
+            "endLine": 200,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/main/java/org/apache/hadoop/yarn/logaggregation/filecontroller/LogAggregationFileControllerFactory.java",
+            "startLine": 174,
+            "endLine": 187,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/hadoop.git",
+      "sha1": "ab8c36062047e5c4c76ab0399162af9765988690",
+      "url": "https://github.com/apache/hadoop/commit/ab8c36062047e5c4c76ab0399162af9765988690",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private isMetricsAvailable() : boolean extracted from private registerClusterResourceMetrics() : void in class org.apache.hadoop.yarn.sls.scheduler.SchedulerMetrics",
+          "leftSideLocation": {
+            "filePath": "hadoop-tools/hadoop-sls/src/main/java/org/apache/hadoop/yarn/sls/scheduler/SchedulerMetrics.java",
+            "startLine": 314,
+            "endLine": 363,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-tools/hadoop-sls/src/main/java/org/apache/hadoop/yarn/sls/scheduler/SchedulerMetrics.java",
+            "startLine": 365,
+            "endLine": 367,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.apache.hadoop.yarn.sls.NMRunner from Class org.apache.hadoop.yarn.sls.AMRunner",
+          "leftSideLocation": {
+            "filePath": "hadoop-tools/hadoop-sls/src/main/java/org/apache/hadoop/yarn/sls/AMRunner.java",
+            "startLine": 54,
+            "endLine": 298,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-tools/hadoop-sls/src/main/java/org/apache/hadoop/yarn/sls/NMRunner.java",
+            "startLine": 49,
+            "endLine": 238,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": false
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.apache.hadoop.yarn.sls.NMRunner from Class org.apache.hadoop.yarn.sls.SLSRunner",
+          "leftSideLocation": {
+            "filePath": "hadoop-tools/hadoop-sls/src/main/java/org/apache/hadoop/yarn/sls/SLSRunner.java",
+            "startLine": 95,
+            "endLine": 639,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-tools/hadoop-sls/src/main/java/org/apache/hadoop/yarn/sls/NMRunner.java",
+            "startLine": 49,
+            "endLine": 238,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private isMetricsAvailable() : boolean extracted from private registerClusterResourceMetrics() : void in class org.apache.hadoop.yarn.sls.scheduler.SchedulerMetrics",
+          "leftSideLocation": {
+            "filePath": "hadoop-tools/hadoop-sls/src/main/java/org/apache/hadoop/yarn/sls/scheduler/SchedulerMetrics.java",
+            "startLine": 314,
+            "endLine": 363,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-tools/hadoop-sls/src/main/java/org/apache/hadoop/yarn/sls/scheduler/SchedulerMetrics.java",
+            "startLine": 365,
+            "endLine": 367,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.apache.hadoop.yarn.sls.NMRunner from class org.apache.hadoop.yarn.sls.SLSRunner",
+          "leftSideLocation": {
+            "filePath": "hadoop-tools/hadoop-sls/src/main/java/org/apache/hadoop/yarn/sls/SLSRunner.java",
+            "startLine": 95,
+            "endLine": 639,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-tools/hadoop-sls/src/main/java/org/apache/hadoop/yarn/sls/NMRunner.java",
+            "startLine": 49,
+            "endLine": 238,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/hadoop.git",
+      "sha1": "ffa0eab48867ebbb84a3d015a941b0c08fe0b61a",
+      "url": "https://github.com/apache/hadoop/commit/ffa0eab48867ebbb84a3d015a941b0c08fe0b61a",
+      "ourApproach": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	jsonJob : Map<?,?> to jsonJob : Map<String,String> in class org.apache.hadoop.yarn.sls.AMDefinitionSLS.Builder",
+          "leftSideLocation": {
+            "filePath": "hadoop-tools/hadoop-sls/src/main/java/org/apache/hadoop/yarn/sls/AMDefinitionSLS.java",
+            "startLine": 88,
+            "endLine": 88,
+            "startColumn": 29,
+            "endColumn": 36
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-tools/hadoop-sls/src/main/java/org/apache/hadoop/yarn/sls/AMDefinitionSLS.java",
+            "startLine": 87,
+            "endLine": 87,
+            "startColumn": 39,
+            "endColumn": 46
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	scheduler : AbstractYarnScheduler to scheduler : AbstractYarnScheduler<?,?> in class org.apache.hadoop.yarn.sls.scheduler.SLSSchedulerCommons",
+          "leftSideLocation": {
+            "filePath": "hadoop-tools/hadoop-sls/src/main/java/org/apache/hadoop/yarn/sls/scheduler/SLSSchedulerCommons.java",
+            "startLine": 57,
+            "endLine": 57,
+            "startColumn": 33,
+            "endColumn": 42
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-tools/hadoop-sls/src/main/java/org/apache/hadoop/yarn/sls/scheduler/SLSSchedulerCommons.java",
+            "startLine": 57,
+            "endLine": 57,
+            "startColumn": 45,
+            "endColumn": 54
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	jsonJob : Map<?,?> to jsonJob : Map<String,String> in class org.apache.hadoop.yarn.sls.AMDefinitionSLS.Builder",
+          "leftSideLocation": {
+            "filePath": "hadoop-tools/hadoop-sls/src/main/java/org/apache/hadoop/yarn/sls/AMDefinitionSLS.java",
+            "startLine": 88,
+            "endLine": 88,
+            "startColumn": 29,
+            "endColumn": 36
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-tools/hadoop-sls/src/main/java/org/apache/hadoop/yarn/sls/AMDefinitionSLS.java",
+            "startLine": 87,
+            "endLine": 87,
+            "startColumn": 39,
+            "endColumn": 46
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	scheduler : AbstractYarnScheduler to scheduler : AbstractYarnScheduler<?,?> in class org.apache.hadoop.yarn.sls.scheduler.SLSSchedulerCommons",
+          "leftSideLocation": {
+            "filePath": "hadoop-tools/hadoop-sls/src/main/java/org/apache/hadoop/yarn/sls/scheduler/SLSSchedulerCommons.java",
+            "startLine": 57,
+            "endLine": 57,
+            "startColumn": 33,
+            "endColumn": 42
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-tools/hadoop-sls/src/main/java/org/apache/hadoop/yarn/sls/scheduler/SLSSchedulerCommons.java",
+            "startLine": 57,
+            "endLine": 57,
+            "startColumn": 45,
+            "endColumn": 54
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/hadoop.git",
+      "sha1": "526142447abdee02b86820d884b577b23b769663",
+      "url": "https://github.com/apache/hadoop/commit/526142447abdee02b86820d884b577b23b769663",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.apache.hadoop.yarn.sls.scheduler.SLSSchedulerCommons from Class org.apache.hadoop.yarn.sls.scheduler.SLSCapacityScheduler",
+          "leftSideLocation": {
+            "filePath": "hadoop-tools/hadoop-sls/src/main/java/org/apache/hadoop/yarn/sls/scheduler/SLSCapacityScheduler.java",
+            "startLine": 62,
+            "endLine": 400,
+            "startColumn": 0,
+            "endColumn": 0
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-tools/hadoop-sls/src/main/java/org/apache/hadoop/yarn/sls/scheduler/SLSSchedulerCommons.java",
+            "startLine": 54,
+            "endLine": 343,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.apache.hadoop.yarn.sls.scheduler.SLSSchedulerCommons from Class org.apache.hadoop.yarn.sls.scheduler.SLSFairScheduler",
+          "leftSideLocation": {
+            "filePath": "hadoop-tools/hadoop-sls/src/main/java/org/apache/hadoop/yarn/sls/scheduler/SLSFairScheduler.java",
+            "startLine": 57,
+            "endLine": 347,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-tools/hadoop-sls/src/main/java/org/apache/hadoop/yarn/sls/scheduler/SLSSchedulerCommons.java",
+            "startLine": 54,
+            "endLine": 343,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.apache.hadoop.yarn.sls.scheduler.SLSSchedulerCommons from class org.apache.hadoop.yarn.sls.scheduler.SLSCapacityScheduler",
+          "leftSideLocation": {
+            "filePath": "hadoop-tools/hadoop-sls/src/main/java/org/apache/hadoop/yarn/sls/scheduler/SLSCapacityScheduler.java",
+            "startLine": 62,
+            "endLine": 400,
+            "startColumn": 0,
+            "endColumn": 0
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-tools/hadoop-sls/src/main/java/org/apache/hadoop/yarn/sls/scheduler/SLSSchedulerCommons.java",
+            "startLine": 54,
+            "endLine": 343,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.apache.hadoop.yarn.sls.scheduler.SLSSchedulerCommons from class org.apache.hadoop.yarn.sls.scheduler.SLSFairScheduler",
+          "leftSideLocation": {
+            "filePath": "hadoop-tools/hadoop-sls/src/main/java/org/apache/hadoop/yarn/sls/scheduler/SLSFairScheduler.java",
+            "startLine": 57,
+            "endLine": 347,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-tools/hadoop-sls/src/main/java/org/apache/hadoop/yarn/sls/scheduler/SLSSchedulerCommons.java",
+            "startLine": 54,
+            "endLine": 343,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/hadoop.git",
+      "sha1": "708a0ce21bc1bd6164ff650e9104de70fe3f1dbb",
+      "url": "https://github.com/apache/hadoop/commit/708a0ce21bc1bd6164ff650e9104de70fe3f1dbb",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public listStatusIterator(path Path) : RemoteIterator<S3AFileStatus> renamed to public listFilesIterator(path Path, recursive boolean) : RemoteIterator<S3ALocatedFileStatus> in class org.apache.hadoop.fs.s3a.S3AFileSystem.GetContentSummaryCallbacksImpl",
+          "leftSideLocation": {
+            "filePath": "hadoop-tools/hadoop-aws/src/main/java/org/apache/hadoop/fs/s3a/S3AFileSystem.java",
+            "startLine": 3268,
+            "endLine": 3272,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-tools/hadoop-aws/src/main/java/org/apache/hadoop/fs/s3a/S3AFileSystem.java",
+            "startLine": 3268,
+            "endLine": 3272,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	RemoteIterator<S3AFileStatus> to RemoteIterator<S3ALocatedFileStatus> in method public listFilesIterator(path Path, recursive boolean) : RemoteIterator<S3ALocatedFileStatus> from class org.apache.hadoop.fs.s3a.S3AFileSystem.GetContentSummaryCallbacksImpl",
+          "leftSideLocation": {
+            "filePath": "hadoop-tools/hadoop-aws/src/main/java/org/apache/hadoop/fs/s3a/S3AFileSystem.java",
+            "startLine": 3268,
+            "endLine": 3272,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-tools/hadoop-aws/src/main/java/org/apache/hadoop/fs/s3a/S3AFileSystem.java",
+            "startLine": 3268,
+            "endLine": 3272,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public listStatusIterator(path Path) : RemoteIterator<S3AFileStatus> renamed to public listFilesIterator(path Path, recursive boolean) : RemoteIterator<S3ALocatedFileStatus> in class org.apache.hadoop.fs.s3a.impl.GetContentSummaryOperation.GetContentSummaryCallbacks",
+          "leftSideLocation": {
+            "filePath": "hadoop-tools/hadoop-aws/src/main/java/org/apache/hadoop/fs/s3a/impl/GetContentSummaryOperation.java",
+            "startLine": 198,
+            "endLine": 205,
+            "startColumn": 5,
+            "endColumn": 28
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-tools/hadoop-aws/src/main/java/org/apache/hadoop/fs/s3a/impl/GetContentSummaryOperation.java",
+            "startLine": 221,
+            "endLine": 230,
+            "startColumn": 5,
+            "endColumn": 28
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	RemoteIterator<S3AFileStatus> to RemoteIterator<S3ALocatedFileStatus> in method public listFilesIterator(path Path, recursive boolean) : RemoteIterator<S3ALocatedFileStatus> from class org.apache.hadoop.fs.s3a.impl.GetContentSummaryOperation.GetContentSummaryCallbacks",
+          "leftSideLocation": {
+            "filePath": "hadoop-tools/hadoop-aws/src/main/java/org/apache/hadoop/fs/s3a/impl/GetContentSummaryOperation.java",
+            "startLine": 198,
+            "endLine": 205,
+            "startColumn": 5,
+            "endColumn": 28
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-tools/hadoop-aws/src/main/java/org/apache/hadoop/fs/s3a/impl/GetContentSummaryOperation.java",
+            "startLine": 221,
+            "endLine": 230,
+            "startColumn": 5,
+            "endColumn": 28
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public listStatusIterator(path Path) : RemoteIterator<S3AFileStatus> renamed to public listFilesIterator(path Path, recursive boolean) : RemoteIterator<S3ALocatedFileStatus> in class org.apache.hadoop.fs.s3a.S3AFileSystem.GetContentSummaryCallbacksImpl",
+          "leftSideLocation": {
+            "filePath": "hadoop-tools/hadoop-aws/src/main/java/org/apache/hadoop/fs/s3a/S3AFileSystem.java",
+            "startLine": 3268,
+            "endLine": 3272,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-tools/hadoop-aws/src/main/java/org/apache/hadoop/fs/s3a/S3AFileSystem.java",
+            "startLine": 3268,
+            "endLine": 3272,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	RemoteIterator<S3AFileStatus> to RemoteIterator<S3ALocatedFileStatus> in method public listFilesIterator(path Path, recursive boolean) : RemoteIterator<S3ALocatedFileStatus> from class org.apache.hadoop.fs.s3a.S3AFileSystem.GetContentSummaryCallbacksImpl",
+          "leftSideLocation": {
+            "filePath": "hadoop-tools/hadoop-aws/src/main/java/org/apache/hadoop/fs/s3a/S3AFileSystem.java",
+            "startLine": 3268,
+            "endLine": 3272,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-tools/hadoop-aws/src/main/java/org/apache/hadoop/fs/s3a/S3AFileSystem.java",
+            "startLine": 3268,
+            "endLine": 3272,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public listStatusIterator(path Path) : RemoteIterator<S3AFileStatus> renamed to public listFilesIterator(path Path, recursive boolean) : RemoteIterator<S3ALocatedFileStatus> in class org.apache.hadoop.fs.s3a.impl.GetContentSummaryOperation.GetContentSummaryCallbacks",
+          "leftSideLocation": {
+            "filePath": "hadoop-tools/hadoop-aws/src/main/java/org/apache/hadoop/fs/s3a/impl/GetContentSummaryOperation.java",
+            "startLine": 198,
+            "endLine": 205,
+            "startColumn": 5,
+            "endColumn": 28
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-tools/hadoop-aws/src/main/java/org/apache/hadoop/fs/s3a/impl/GetContentSummaryOperation.java",
+            "startLine": 221,
+            "endLine": 230,
+            "startColumn": 5,
+            "endColumn": 28
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	RemoteIterator<S3AFileStatus> to RemoteIterator<S3ALocatedFileStatus> in method public listFilesIterator(path Path, recursive boolean) : RemoteIterator<S3ALocatedFileStatus> from class org.apache.hadoop.fs.s3a.impl.GetContentSummaryOperation.GetContentSummaryCallbacks",
+          "leftSideLocation": {
+            "filePath": "hadoop-tools/hadoop-aws/src/main/java/org/apache/hadoop/fs/s3a/impl/GetContentSummaryOperation.java",
+            "startLine": 198,
+            "endLine": 205,
+            "startColumn": 5,
+            "endColumn": 28
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-tools/hadoop-aws/src/main/java/org/apache/hadoop/fs/s3a/impl/GetContentSummaryOperation.java",
+            "startLine": 221,
+            "endLine": 230,
+            "startColumn": 5,
+            "endColumn": 28
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/hadoop.git",
+      "sha1": "8b8158f02df18424b2406fd66b34c1bdf3d7ab55",
+      "url": "https://github.com/apache/hadoop/commit/8b8158f02df18424b2406fd66b34c1bdf3d7ab55",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testTrashRootLocalizedTrash() : void renamed to public testTrashRootForceInsideMountPoint() : void in class org.apache.hadoop.fs.viewfs.ViewFileSystemBaseTest",
+          "leftSideLocation": {
+            "filePath": "hadoop-common-project/hadoop-common/src/test/java/org/apache/hadoop/fs/viewfs/ViewFileSystemBaseTest.java",
+            "startLine": 1107,
+            "endLine": 1160,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-common-project/hadoop-common/src/test/java/org/apache/hadoop/fs/viewfs/ViewFileSystemBaseTest.java",
+            "startLine": 1114,
+            "endLine": 1155,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	CONFIG_VIEWFS_MOUNT_POINT_LOCAL_TRASH_DEFAULT : boolean to CONFIG_VIEWFS_TRASH_FORCE_INSIDE_MOUNT_POINT_DEFAULT : boolean in class org.apache.hadoop.fs.viewfs.Constants",
+          "leftSideLocation": {
+            "filePath": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/viewfs/Constants.java",
+            "startLine": 140,
+            "endLine": 140,
+            "startColumn": 11,
+            "endColumn": 64
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/viewfs/Constants.java",
+            "startLine": 141,
+            "endLine": 141,
+            "startColumn": 11,
+            "endColumn": 71
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.hadoop.fs.viewfs.ViewFileSystemBaseTest.MockTrashRootFS renamed to org.apache.hadoop.fs.viewfs.ViewFileSystemBaseTest.DeepTrashRootMockFS",
+          "leftSideLocation": {
+            "filePath": "hadoop-common-project/hadoop-common/src/test/java/org/apache/hadoop/fs/viewfs/ViewFileSystemBaseTest.java",
+            "startLine": 1162,
+            "endLine": 1173,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-common-project/hadoop-common/src/test/java/org/apache/hadoop/fs/viewfs/ViewFileSystemBaseTest.java",
+            "startLine": 1157,
+            "endLine": 1168,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	CONFIG_VIEWFS_MOUNT_POINT_LOCAL_TRASH : String to CONFIG_VIEWFS_TRASH_FORCE_INSIDE_MOUNT_POINT : String in class org.apache.hadoop.fs.viewfs.Constants",
+          "leftSideLocation": {
+            "filePath": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/viewfs/Constants.java",
+            "startLine": 139,
+            "endLine": 139,
+            "startColumn": 10,
+            "endColumn": 85
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/viewfs/Constants.java",
+            "startLine": 139,
+            "endLine": 140,
+            "startColumn": 10,
+            "endColumn": 49
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	package getTrashRootInFallBackFS() : Path extracted from public testTrashRootLocalizedTrash() : void in class org.apache.hadoop.fs.viewfs.ViewFileSystemBaseTest",
+          "leftSideLocation": {
+            "filePath": "hadoop-common-project/hadoop-common/src/test/java/org/apache/hadoop/fs/viewfs/ViewFileSystemBaseTest.java",
+            "startLine": 1107,
+            "endLine": 1160,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-common-project/hadoop-common/src/test/java/org/apache/hadoop/fs/viewfs/ViewFileSystemBaseTest.java",
+            "startLine": 1109,
+            "endLine": 1112,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.hadoop.fs.viewfs.ViewFileSystemBaseTest.MockTrashRootFS renamed to org.apache.hadoop.fs.viewfs.ViewFileSystemBaseTest.DeepTrashRootMockFS",
+          "leftSideLocation": {
+            "filePath": "hadoop-common-project/hadoop-common/src/test/java/org/apache/hadoop/fs/viewfs/ViewFileSystemBaseTest.java",
+            "startLine": 1162,
+            "endLine": 1173,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-common-project/hadoop-common/src/test/java/org/apache/hadoop/fs/viewfs/ViewFileSystemBaseTest.java",
+            "startLine": 1157,
+            "endLine": 1168,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testTrashRootLocalizedTrash() : void renamed to public testTrashRootForceInsideMountPoint() : void in class org.apache.hadoop.fs.viewfs.ViewFileSystemBaseTest",
+          "leftSideLocation": {
+            "filePath": "hadoop-common-project/hadoop-common/src/test/java/org/apache/hadoop/fs/viewfs/ViewFileSystemBaseTest.java",
+            "startLine": 1107,
+            "endLine": 1160,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-common-project/hadoop-common/src/test/java/org/apache/hadoop/fs/viewfs/ViewFileSystemBaseTest.java",
+            "startLine": 1114,
+            "endLine": 1155,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	package getTrashRootInFallBackFS() : Path extracted from public testTrashRootLocalizedTrash() : void in class org.apache.hadoop.fs.viewfs.ViewFileSystemBaseTest",
+          "leftSideLocation": {
+            "filePath": "hadoop-common-project/hadoop-common/src/test/java/org/apache/hadoop/fs/viewfs/ViewFileSystemBaseTest.java",
+            "startLine": 1107,
+            "endLine": 1160,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-common-project/hadoop-common/src/test/java/org/apache/hadoop/fs/viewfs/ViewFileSystemBaseTest.java",
+            "startLine": 1109,
+            "endLine": 1112,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	CONFIG_VIEWFS_MOUNT_POINT_LOCAL_TRASH : String to CONFIG_VIEWFS_TRASH_FORCE_INSIDE_MOUNT_POINT : String in class org.apache.hadoop.fs.viewfs.Constants",
+          "leftSideLocation": {
+            "filePath": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/viewfs/Constants.java",
+            "startLine": 139,
+            "endLine": 139,
+            "startColumn": 10,
+            "endColumn": 85
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/viewfs/Constants.java",
+            "startLine": 139,
+            "endLine": 140,
+            "startColumn": 10,
+            "endColumn": 49
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/hadoop.git",
+      "sha1": "672e380c4f6ffcb0a6fee6d8263166e16b4323c2",
+      "url": "https://github.com/apache/hadoop/commit/672e380c4f6ffcb0a6fee6d8263166e16b4323c2",
+      "ourApproach": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	DeleteObjectsResult to void in method public removeKeys(keysToDelete List<DeleteObjectsRequest.KeyVersion>, deleteFakeDir boolean) : void from class org.apache.hadoop.fs.s3a.tools.MarkerToolOperations",
+          "leftSideLocation": {
+            "filePath": "hadoop-tools/hadoop-aws/src/main/java/org/apache/hadoop/fs/s3a/tools/MarkerToolOperations.java",
+            "startLine": 56,
+            "endLine": 78,
+            "startColumn": 3,
+            "endColumn": 26
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-tools/hadoop-aws/src/main/java/org/apache/hadoop/fs/s3a/tools/MarkerToolOperations.java",
+            "startLine": 55,
+            "endLine": 73,
+            "startColumn": 3,
+            "endColumn": 26
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	DeleteObjectsResult to void in method public removeKeys(keysToDelete List<DeleteObjectsRequest.KeyVersion>, deleteFakeDir boolean) : void from class org.apache.hadoop.fs.s3a.S3AFileSystem.OperationCallbacksImpl",
+          "leftSideLocation": {
+            "filePath": "hadoop-tools/hadoop-aws/src/main/java/org/apache/hadoop/fs/s3a/S3AFileSystem.java",
+            "startLine": 2028,
+            "endLine": 2037,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-tools/hadoop-aws/src/main/java/org/apache/hadoop/fs/s3a/S3AFileSystem.java",
+            "startLine": 2032,
+            "endLine": 2039,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	DeleteObjectsResult to void in method public removeKeys(keysToDelete List<DeleteObjectsRequest.KeyVersion>, deleteFakeDir boolean) : void from class org.apache.hadoop.fs.s3a.impl.OperationCallbacks",
+          "leftSideLocation": {
+            "filePath": "hadoop-tools/hadoop-aws/src/main/java/org/apache/hadoop/fs/s3a/impl/OperationCallbacks.java",
+            "startLine": 136,
+            "endLine": 158,
+            "startColumn": 3,
+            "endColumn": 19
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-tools/hadoop-aws/src/main/java/org/apache/hadoop/fs/s3a/impl/OperationCallbacks.java",
+            "startLine": 135,
+            "endLine": 152,
+            "startColumn": 3,
+            "endColumn": 19
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	DeleteObjectsResult to void in method public removeKeys(keysToDelete List<DeleteObjectsRequest.KeyVersion>, deleteFakeDir boolean) : void from class org.apache.hadoop.fs.s3a.test.MinimalOperationCallbacks",
+          "leftSideLocation": {
+            "filePath": "hadoop-tools/hadoop-aws/src/test/java/org/apache/hadoop/fs/s3a/test/MinimalOperationCallbacks.java",
+            "startLine": 101,
+            "endLine": 109,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-tools/hadoop-aws/src/test/java/org/apache/hadoop/fs/s3a/test/MinimalOperationCallbacks.java",
+            "startLine": 100,
+            "endLine": 106,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	DeleteObjectsResult to void in method public removeKeys(keysToDelete List<DeleteObjectsRequest.KeyVersion>, deleteFakeDir boolean) : void from class org.apache.hadoop.fs.s3a.tools.MarkerToolOperationsImpl",
+          "leftSideLocation": {
+            "filePath": "hadoop-tools/hadoop-aws/src/main/java/org/apache/hadoop/fs/s3a/tools/MarkerToolOperationsImpl.java",
+            "startLine": 57,
+            "endLine": 65,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-tools/hadoop-aws/src/main/java/org/apache/hadoop/fs/s3a/tools/MarkerToolOperationsImpl.java",
+            "startLine": 56,
+            "endLine": 63,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	DeleteObjectsResult to void in method private removeKeysS3(keysToDelete List<DeleteObjectsRequest.KeyVersion>, deleteFakeDir boolean) : void from class org.apache.hadoop.fs.s3a.S3AFileSystem",
+          "leftSideLocation": {
+            "filePath": "hadoop-tools/hadoop-aws/src/main/java/org/apache/hadoop/fs/s3a/S3AFileSystem.java",
+            "startLine": 2815,
+            "endLine": 2876,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-tools/hadoop-aws/src/main/java/org/apache/hadoop/fs/s3a/S3AFileSystem.java",
+            "startLine": 2817,
+            "endLine": 2884,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private removeKeys(keysToDelete List<DeleteObjectsRequest.KeyVersion>, deleteFakeDir boolean, quiet boolean) : DeleteObjectsResult inlined to public removeKeys(keysToDelete List<DeleteObjectsRequest.KeyVersion>, deleteFakeDir boolean) : void in class org.apache.hadoop.fs.s3a.S3AFileSystem",
+          "leftSideLocation": {
+            "filePath": "hadoop-tools/hadoop-aws/src/main/java/org/apache/hadoop/fs/s3a/S3AFileSystem.java",
+            "startLine": 2917,
+            "endLine": 2943,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-tools/hadoop-aws/src/main/java/org/apache/hadoop/fs/s3a/S3AFileSystem.java",
+            "startLine": 2899,
+            "endLine": 2925,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	DeleteObjectsResult to void in method public removeKeys(keysToDelete List<DeleteObjectsRequest.KeyVersion>, deleteFakeDir boolean) : void from class org.apache.hadoop.fs.s3a.S3AFileSystem.OperationCallbacksImpl",
+          "leftSideLocation": {
+            "filePath": "hadoop-tools/hadoop-aws/src/main/java/org/apache/hadoop/fs/s3a/S3AFileSystem.java",
+            "startLine": 2028,
+            "endLine": 2037,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-tools/hadoop-aws/src/main/java/org/apache/hadoop/fs/s3a/S3AFileSystem.java",
+            "startLine": 2032,
+            "endLine": 2039,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private removeKeys(keysToDelete List<DeleteObjectsRequest.KeyVersion>, deleteFakeDir boolean, quiet boolean) : DeleteObjectsResult inlined to public removeKeys(keysToDelete List<DeleteObjectsRequest.KeyVersion>, deleteFakeDir boolean) : void in class org.apache.hadoop.fs.s3a.S3AFileSystem",
+          "leftSideLocation": {
+            "filePath": "hadoop-tools/hadoop-aws/src/main/java/org/apache/hadoop/fs/s3a/S3AFileSystem.java",
+            "startLine": 2917,
+            "endLine": 2943,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-tools/hadoop-aws/src/main/java/org/apache/hadoop/fs/s3a/S3AFileSystem.java",
+            "startLine": 2899,
+            "endLine": 2925,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	DeleteObjectsResult to void in method private removeKeysS3(keysToDelete List<DeleteObjectsRequest.KeyVersion>, deleteFakeDir boolean) : void from class org.apache.hadoop.fs.s3a.S3AFileSystem",
+          "leftSideLocation": {
+            "filePath": "hadoop-tools/hadoop-aws/src/main/java/org/apache/hadoop/fs/s3a/S3AFileSystem.java",
+            "startLine": 2815,
+            "endLine": 2876,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-tools/hadoop-aws/src/main/java/org/apache/hadoop/fs/s3a/S3AFileSystem.java",
+            "startLine": 2817,
+            "endLine": 2884,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	DeleteObjectsResult to void in method public removeKeys(keysToDelete List<DeleteObjectsRequest.KeyVersion>, deleteFakeDir boolean) : void from class org.apache.hadoop.fs.s3a.tools.MarkerToolOperationsImpl",
+          "leftSideLocation": {
+            "filePath": "hadoop-tools/hadoop-aws/src/main/java/org/apache/hadoop/fs/s3a/tools/MarkerToolOperationsImpl.java",
+            "startLine": 57,
+            "endLine": 65,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-tools/hadoop-aws/src/main/java/org/apache/hadoop/fs/s3a/tools/MarkerToolOperationsImpl.java",
+            "startLine": 56,
+            "endLine": 63,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	DeleteObjectsResult to void in method public removeKeys(keysToDelete List<DeleteObjectsRequest.KeyVersion>, deleteFakeDir boolean) : void from class org.apache.hadoop.fs.s3a.impl.OperationCallbacks",
+          "leftSideLocation": {
+            "filePath": "hadoop-tools/hadoop-aws/src/main/java/org/apache/hadoop/fs/s3a/impl/OperationCallbacks.java",
+            "startLine": 136,
+            "endLine": 158,
+            "startColumn": 3,
+            "endColumn": 19
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-tools/hadoop-aws/src/main/java/org/apache/hadoop/fs/s3a/impl/OperationCallbacks.java",
+            "startLine": 135,
+            "endLine": 152,
+            "startColumn": 3,
+            "endColumn": 19
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	DeleteObjectsResult to void in method public removeKeys(keysToDelete List<DeleteObjectsRequest.KeyVersion>, deleteFakeDir boolean) : void from class org.apache.hadoop.fs.s3a.tools.MarkerToolOperations",
+          "leftSideLocation": {
+            "filePath": "hadoop-tools/hadoop-aws/src/main/java/org/apache/hadoop/fs/s3a/tools/MarkerToolOperations.java",
+            "startLine": 56,
+            "endLine": 78,
+            "startColumn": 3,
+            "endColumn": 26
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-tools/hadoop-aws/src/main/java/org/apache/hadoop/fs/s3a/tools/MarkerToolOperations.java",
+            "startLine": 55,
+            "endLine": 73,
+            "startColumn": 3,
+            "endColumn": 26
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	DeleteObjectsResult to void in method public removeKeys(keysToDelete List<DeleteObjectsRequest.KeyVersion>, deleteFakeDir boolean) : void from class org.apache.hadoop.fs.s3a.test.MinimalOperationCallbacks",
+          "leftSideLocation": {
+            "filePath": "hadoop-tools/hadoop-aws/src/test/java/org/apache/hadoop/fs/s3a/test/MinimalOperationCallbacks.java",
+            "startLine": 101,
+            "endLine": 109,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-tools/hadoop-aws/src/test/java/org/apache/hadoop/fs/s3a/test/MinimalOperationCallbacks.java",
+            "startLine": 100,
+            "endLine": 106,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/hadoop.git",
+      "sha1": "db36747e831f7045a3e1a0ca390c944981dd141a",
+      "url": "https://github.com/apache/hadoop/commit/db36747e831f7045a3e1a0ca390c944981dd141a",
+      "ourApproach": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	serverToComponent : HashMap<String,String> to serverToComponent : Map<String,String> in class org.apache.hadoop.http.HttpRequestLog",
+          "leftSideLocation": {
+            "filePath": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/http/HttpRequestLog.java",
+            "startLine": 40,
+            "endLine": 40,
+            "startColumn": 48,
+            "endColumn": 65
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/http/HttpRequestLog.java",
+            "startLine": 36,
+            "endLine": 36,
+            "startColumn": 44,
+            "endColumn": 61
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	serverToComponent : HashMap<String,String> to serverToComponent : Map<String,String> in class org.apache.hadoop.http.HttpRequestLog",
+          "leftSideLocation": {
+            "filePath": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/http/HttpRequestLog.java",
+            "startLine": 40,
+            "endLine": 40,
+            "startColumn": 48,
+            "endColumn": 65
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/http/HttpRequestLog.java",
+            "startLine": 36,
+            "endLine": 36,
+            "startColumn": 44,
+            "endColumn": 61
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/hadoop.git",
+      "sha1": "ffee92bbf1a69c4d5fc5e0f46486e26a38bf766c",
+      "url": "https://github.com/apache/hadoop/commit/ffee92bbf1a69c4d5fc5e0f46486e26a38bf766c",
+      "ourApproach": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	AtomicInteger to int in method public getQueueWaitTime() : int from class org.apache.hadoop.yarn.server.resourcemanager.scheduler.distributed.ClusterNode",
+          "leftSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/distributed/ClusterNode.java",
+            "startLine": 81,
+            "endLine": 83,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/distributed/ClusterNode.java",
+            "startLine": 197,
+            "endLine": 204,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	AtomicInteger to int in method public getQueueLength() : int from class org.apache.hadoop.yarn.server.resourcemanager.scheduler.distributed.ClusterNode",
+          "leftSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/distributed/ClusterNode.java",
+            "startLine": 77,
+            "endLine": 79,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/distributed/ClusterNode.java",
+            "startLine": 188,
+            "endLine": 195,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	queueWaitTime : AtomicInteger to queueWaitTime : int in class org.apache.hadoop.yarn.server.resourcemanager.scheduler.distributed.ClusterNode",
+          "leftSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/distributed/ClusterNode.java",
+            "startLine": 31,
+            "endLine": 31,
+            "startColumn": 31,
+            "endColumn": 68
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/distributed/ClusterNode.java",
+            "startLine": 94,
+            "endLine": 94,
+            "startColumn": 15,
+            "endColumn": 33
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	queueLength : AtomicInteger to queueLength : int in class org.apache.hadoop.yarn.server.resourcemanager.scheduler.distributed.ClusterNode",
+          "leftSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/distributed/ClusterNode.java",
+            "startLine": 30,
+            "endLine": 30,
+            "startColumn": 31,
+            "endColumn": 65
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/distributed/ClusterNode.java",
+            "startLine": 93,
+            "endLine": 93,
+            "startColumn": 15,
+            "endColumn": 30
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private ratio(a Resource, b Resource, isDominantShare boolean) : float extracted from public ratio(a Resource, b Resource) : float in class org.apache.hadoop.yarn.util.resource.DominantResourceCalculator",
+          "leftSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/main/java/org/apache/hadoop/yarn/util/resource/DominantResourceCalculator.java",
+            "startLine": 405,
+            "endLine": 417,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/main/java/org/apache/hadoop/yarn/util/resource/DominantResourceCalculator.java",
+            "startLine": 410,
+            "endLine": 435,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	ClusterNode to Properties in method package setQueueLength(qLength int) : Properties from class org.apache.hadoop.yarn.server.resourcemanager.scheduler.distributed.ClusterNode.Properties",
+          "leftSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/distributed/ClusterNode.java",
+            "startLine": 43,
+            "endLine": 46,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/distributed/ClusterNode.java",
+            "startLine": 51,
+            "endLine": 54,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	ClusterNode to Properties in method package setQueueWaitTime(wTime int) : Properties from class org.apache.hadoop.yarn.server.resourcemanager.scheduler.distributed.ClusterNode.Properties",
+          "leftSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/distributed/ClusterNode.java",
+            "startLine": 48,
+            "endLine": 51,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/distributed/ClusterNode.java",
+            "startLine": 56,
+            "endLine": 59,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	ClusterNode to Properties in method package setNodeLabels(labelsToAdd Collection<String>) : Properties from class org.apache.hadoop.yarn.server.resourcemanager.scheduler.distributed.ClusterNode.Properties",
+          "leftSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/distributed/ClusterNode.java",
+            "startLine": 63,
+            "endLine": 67,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/distributed/ClusterNode.java",
+            "startLine": 72,
+            "endLine": 76,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	ClusterNode to Properties in method package updateTimestamp() : Properties from class org.apache.hadoop.yarn.server.resourcemanager.scheduler.distributed.ClusterNode.Properties",
+          "leftSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/distributed/ClusterNode.java",
+            "startLine": 53,
+            "endLine": 56,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/distributed/ClusterNode.java",
+            "startLine": 61,
+            "endLine": 64,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.apache.hadoop.yarn.server.resourcemanager.scheduler.distributed.ClusterNode.Properties from Class org.apache.hadoop.yarn.server.resourcemanager.scheduler.distributed.ClusterNode",
+          "leftSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/distributed/ClusterNode.java",
+            "startLine": 26,
+            "endLine": 93,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/distributed/ClusterNode.java",
+            "startLine": 34,
+            "endLine": 91,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private createRMNode(host String, port int, rack String, waitTime int, queueLength int, queueCapacity int, state NodeState, allocatedResource Resource, nodeResource Resource) : RMNode extracted from private createRMNode(host String, port int, rack String, waitTime int, queueLength int, queueCapacity int, state NodeState) : RMNode in class org.apache.hadoop.yarn.server.resourcemanager.scheduler.distributed.TestNodeQueueLoadMonitor",
+          "leftSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/test/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/distributed/TestNodeQueueLoadMonitor.java",
+            "startLine": 378,
+            "endLine": 396,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/test/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/distributed/TestNodeQueueLoadMonitor.java",
+            "startLine": 862,
+            "endLine": 888,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private ratio(a Resource, b Resource, isDominantShare boolean) : float extracted from public ratio(a Resource, b Resource) : float in class org.apache.hadoop.yarn.util.resource.DominantResourceCalculator",
+          "leftSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/main/java/org/apache/hadoop/yarn/util/resource/DominantResourceCalculator.java",
+            "startLine": 405,
+            "endLine": 417,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-common/src/main/java/org/apache/hadoop/yarn/util/resource/DominantResourceCalculator.java",
+            "startLine": 410,
+            "endLine": 435,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	queueLength : AtomicInteger to queueLength : int in class org.apache.hadoop.yarn.server.resourcemanager.scheduler.distributed.ClusterNode",
+          "leftSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/distributed/ClusterNode.java",
+            "startLine": 30,
+            "endLine": 30,
+            "startColumn": 31,
+            "endColumn": 65
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/distributed/ClusterNode.java",
+            "startLine": 93,
+            "endLine": 93,
+            "startColumn": 15,
+            "endColumn": 30
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	queueWaitTime : AtomicInteger to queueWaitTime : int in class org.apache.hadoop.yarn.server.resourcemanager.scheduler.distributed.ClusterNode",
+          "leftSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/distributed/ClusterNode.java",
+            "startLine": 31,
+            "endLine": 31,
+            "startColumn": 31,
+            "endColumn": 68
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/distributed/ClusterNode.java",
+            "startLine": 94,
+            "endLine": 94,
+            "startColumn": 15,
+            "endColumn": 33
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	public updateTimestamp() : ClusterNode inlined to public ClusterNode(nodeId NodeId) in class org.apache.hadoop.yarn.server.resourcemanager.scheduler.distributed.ClusterNode",
+          "leftSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/distributed/ClusterNode.java",
+            "startLine": 53,
+            "endLine": 56,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/distributed/ClusterNode.java",
+            "startLine": 104,
+            "endLine": 111,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": false
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	AtomicInteger to int in method public getQueueLength() : int from class org.apache.hadoop.yarn.server.resourcemanager.scheduler.distributed.ClusterNode",
+          "leftSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/distributed/ClusterNode.java",
+            "startLine": 77,
+            "endLine": 79,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/distributed/ClusterNode.java",
+            "startLine": 188,
+            "endLine": 195,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	AtomicInteger to int in method public getQueueWaitTime() : int from class org.apache.hadoop.yarn.server.resourcemanager.scheduler.distributed.ClusterNode",
+          "leftSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/distributed/ClusterNode.java",
+            "startLine": 81,
+            "endLine": 83,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/distributed/ClusterNode.java",
+            "startLine": 197,
+            "endLine": 204,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private createRMNode(host String, port int, rack String, waitTime int, queueLength int, queueCapacity int, state NodeState, allocatedResource Resource, nodeResource Resource) : RMNode extracted from private createRMNode(host String, port int, rack String, waitTime int, queueLength int, queueCapacity int, state NodeState) : RMNode in class org.apache.hadoop.yarn.server.resourcemanager.scheduler.distributed.TestNodeQueueLoadMonitor",
+          "leftSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/test/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/distributed/TestNodeQueueLoadMonitor.java",
+            "startLine": 378,
+            "endLine": 396,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/test/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/distributed/TestNodeQueueLoadMonitor.java",
+            "startLine": 862,
+            "endLine": 888,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.apache.hadoop.yarn.server.resourcemanager.scheduler.distributed.ClusterNode.Properties from class org.apache.hadoop.yarn.server.resourcemanager.scheduler.distributed.ClusterNode",
+          "leftSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/distributed/ClusterNode.java",
+            "startLine": 26,
+            "endLine": 93,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/distributed/ClusterNode.java",
+            "startLine": 34,
+            "endLine": 91,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	ClusterNode to Properties in method package setNodeLabels(labelsToAdd Collection<String>) : Properties from class org.apache.hadoop.yarn.server.resourcemanager.scheduler.distributed.ClusterNode.Properties",
+          "leftSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/distributed/ClusterNode.java",
+            "startLine": 63,
+            "endLine": 67,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "hadoop-yarn-project/hadoop-yarn/hadoop-yarn-server/hadoop-yarn-server-resourcemanager/src/main/java/org/apache/hadoop/yarn/server/resourcemanager/scheduler/distributed/ClusterNode.java",
+            "startLine": 72,
+            "endLine": 76,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    }
+  ]
+}

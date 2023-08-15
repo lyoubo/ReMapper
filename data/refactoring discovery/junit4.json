@@ -1,0 +1,3908 @@
+{
+  "results": [
+    {
+      "repository": "https://github.com/junit-team/junit4.git",
+      "sha1": "527f3a3d0d71ad6dc66ede6f68f6fc316904ed2a",
+      "url": "https://github.com/junit-team/junit4/commit/527f3a3d0d71ad6dc66ede6f68f6fc316904ed2a",
+      "ourApproach": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.junit.internal.runners.statements.FailOnTimeoutTest.InfiniteLoop renamed to org.junit.internal.runners.statements.FailOnTimeoutTest.RunForASecond",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/internal/runners/statements/FailOnTimeoutTest.java",
+            "startLine": 265,
+            "endLine": 275,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/internal/runners/statements/FailOnTimeoutTest.java",
+            "startLine": 265,
+            "endLine": 276,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.junit.internal.runners.statements.FailOnTimeoutTest.InfiniteLoop renamed to org.junit.internal.runners.statements.FailOnTimeoutTest.RunForASecond",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/internal/runners/statements/FailOnTimeoutTest.java",
+            "startLine": 265,
+            "endLine": 275,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/internal/runners/statements/FailOnTimeoutTest.java",
+            "startLine": 265,
+            "endLine": 276,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/junit-team/junit4.git",
+      "sha1": "d9861ecdb6e487f6c352437ee823879aca3b81d4",
+      "url": "https://github.com/junit-team/junit4/commit/d9861ecdb6e487f6c352437ee823879aca3b81d4",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package handlePossibleShadowedMember(members List<T>) : T renamed to package handlePossibleBridgeMethod(members List<T>) : T in class org.junit.runners.model.FrameworkMember",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/runners/model/FrameworkMember.java",
+            "startLine": 15,
+            "endLine": 40,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/runners/model/FrameworkMember.java",
+            "startLine": 15,
+            "endLine": 34,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public fieldsOnSubclassesDoNotShadowSuperclasses() : void renamed to public fieldsOnSubclassesShadowSuperclasses() : void in class org.junit.runners.model.TestClassTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/runners/model/TestClassTest.java",
+            "startLine": 48,
+            "endLine": 52,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/runners/model/TestClassTest.java",
+            "startLine": 48,
+            "endLine": 52,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testFieldsNeverTreatedAsShadowed() : void renamed to public testFieldsShadowFieldsFromParent() : void in class org.junit.tests.running.methods.AnnotationTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/running/methods/AnnotationTest.java",
+            "startLine": 636,
+            "endLine": 644,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/running/methods/AnnotationTest.java",
+            "startLine": 636,
+            "endLine": 644,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private self() : T inlined to package handlePossibleBridgeMethod(members List<T>) : T in class org.junit.runners.model.FrameworkMember",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/runners/model/FrameworkMember.java",
+            "startLine": 42,
+            "endLine": 45,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/runners/model/FrameworkMember.java",
+            "startLine": 15,
+            "endLine": 34,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package handlePossibleShadowedMember(members List<T>) : T renamed to package handlePossibleBridgeMethod(members List<T>) : T in class org.junit.runners.model.FrameworkMember",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/runners/model/FrameworkMember.java",
+            "startLine": 15,
+            "endLine": 40,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/runners/model/FrameworkMember.java",
+            "startLine": 15,
+            "endLine": 34,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private self() : T inlined to package handlePossibleBridgeMethod(members List<T>) : T in class org.junit.runners.model.FrameworkMember",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/runners/model/FrameworkMember.java",
+            "startLine": 42,
+            "endLine": 45,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/runners/model/FrameworkMember.java",
+            "startLine": 15,
+            "endLine": 34,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public fieldsOnSubclassesDoNotShadowSuperclasses() : void renamed to public fieldsOnSubclassesShadowSuperclasses() : void in class org.junit.runners.model.TestClassTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/runners/model/TestClassTest.java",
+            "startLine": 48,
+            "endLine": 52,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/runners/model/TestClassTest.java",
+            "startLine": 48,
+            "endLine": 52,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testFieldsNeverTreatedAsShadowed() : void renamed to public testFieldsShadowFieldsFromParent() : void in class org.junit.tests.running.methods.AnnotationTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/running/methods/AnnotationTest.java",
+            "startLine": 636,
+            "endLine": 644,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/running/methods/AnnotationTest.java",
+            "startLine": 636,
+            "endLine": 644,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/junit-team/junit4.git",
+      "sha1": "7c2ac2b03e4f09b3906ed6573cd5232177f2e5c5",
+      "url": "https://github.com/junit-team/junit4/commit/7c2ac2b03e4f09b3906ed6573cd5232177f2e5c5",
+      "ourApproach": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.junit.tests.running.classes.ParentRunnerFilteringTest.ExampleSuiteWithUnmodifyableChildList renamed to org.junit.tests.running.classes.ParentRunnerFilteringTest.ExampleSuiteWithUnmodifiableChildList",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/running/classes/ParentRunnerFilteringTest.java",
+            "startLine": 112,
+            "endLine": 115,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/running/classes/ParentRunnerFilteringTest.java",
+            "startLine": 112,
+            "endLine": 115,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.junit.tests.running.classes.ParentRunnerFilteringTest.SuiteWithUnmodifyableChildList renamed to org.junit.tests.running.classes.ParentRunnerFilteringTest.SuiteWithUnmodifiableChildList",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/running/classes/ParentRunnerFilteringTest.java",
+            "startLine": 98,
+            "endLine": 110,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/running/classes/ParentRunnerFilteringTest.java",
+            "startLine": 98,
+            "endLine": 110,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testSuiteFilteringWithUnmodifyableChildList() : void renamed to public testSuiteFilteringWithUnmodifiableChildList() : void in class org.junit.tests.running.classes.ParentRunnerFilteringTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/running/classes/ParentRunnerFilteringTest.java",
+            "startLine": 117,
+            "endLine": 128,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/running/classes/ParentRunnerFilteringTest.java",
+            "startLine": 117,
+            "endLine": 128,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.junit.tests.running.classes.ParentRunnerFilteringTest.SuiteWithUnmodifyableChildList renamed to org.junit.tests.running.classes.ParentRunnerFilteringTest.SuiteWithUnmodifiableChildList",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/running/classes/ParentRunnerFilteringTest.java",
+            "startLine": 98,
+            "endLine": 110,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/running/classes/ParentRunnerFilteringTest.java",
+            "startLine": 98,
+            "endLine": 110,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.junit.tests.running.classes.ParentRunnerFilteringTest.ExampleSuiteWithUnmodifyableChildList renamed to org.junit.tests.running.classes.ParentRunnerFilteringTest.ExampleSuiteWithUnmodifiableChildList",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/running/classes/ParentRunnerFilteringTest.java",
+            "startLine": 112,
+            "endLine": 115,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/running/classes/ParentRunnerFilteringTest.java",
+            "startLine": 112,
+            "endLine": 115,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testSuiteFilteringWithUnmodifyableChildList() : void renamed to public testSuiteFilteringWithUnmodifiableChildList() : void in class org.junit.tests.running.classes.ParentRunnerFilteringTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/running/classes/ParentRunnerFilteringTest.java",
+            "startLine": 117,
+            "endLine": 128,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/running/classes/ParentRunnerFilteringTest.java",
+            "startLine": 117,
+            "endLine": 128,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/junit-team/junit4.git",
+      "sha1": "347eb809e653d8fb601b9751f7b7971341e1f5ec",
+      "url": "https://github.com/junit-team/junit4/commit/347eb809e653d8fb601b9751f7b7971341e1f5ec",
+      "ourApproach": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.junit.rules.VerifierRuleTest.UsesErrorCollector moved to org.junit.rules.ErrorCollectorTest.UsesErrorCollector",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/rules/VerifierRuleTest.java",
+            "startLine": 21,
+            "endLine": 29,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/rules/ErrorCollectorTest.java",
+            "startLine": 21,
+            "endLine": 29,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.junit.rules.VerifierRuleTest.PassesAssumptionViolatedExceptionToErrorCollector moved to org.junit.rules.ErrorCollectorTest.PassesAssumptionViolatedExceptionToErrorCollector",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/rules/VerifierRuleTest.java",
+            "startLine": 36,
+            "endLine": 44,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/rules/ErrorCollectorTest.java",
+            "startLine": 36,
+            "endLine": 44,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.junit.rules.VerifierRuleTest.UsesErrorCollectorTwice moved to org.junit.rules.ErrorCollectorTest.UsesErrorCollectorTwice",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/rules/VerifierRuleTest.java",
+            "startLine": 52,
+            "endLine": 61,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/rules/ErrorCollectorTest.java",
+            "startLine": 52,
+            "endLine": 61,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.junit.rules.VerifierRuleTest.UsesErrorCollectorCheckThat moved to org.junit.rules.ErrorCollectorTest.UsesErrorCollectorCheckThat",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/rules/VerifierRuleTest.java",
+            "startLine": 70,
+            "endLine": 81,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/rules/ErrorCollectorTest.java",
+            "startLine": 70,
+            "endLine": 81,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.junit.rules.VerifierRuleTest.UsesErrorCollectorCheckSucceeds moved to org.junit.rules.ErrorCollectorTest.UsesErrorCollectorCheckSucceeds",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/rules/VerifierRuleTest.java",
+            "startLine": 94,
+            "endLine": 117,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/rules/ErrorCollectorTest.java",
+            "startLine": 94,
+            "endLine": 117,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.junit.rules.VerifierRuleTest.UsesErrorCollectorCheckSucceedsWithAssumptionViolatedException moved to org.junit.rules.ErrorCollectorTest.UsesErrorCollectorCheckSucceedsWithAssumptionViolatedException",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/rules/VerifierRuleTest.java",
+            "startLine": 126,
+            "endLine": 138,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/rules/ErrorCollectorTest.java",
+            "startLine": 126,
+            "endLine": 138,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.junit.rules.VerifierRuleTest.UsesErrorCollectorCheckSucceedsPasses moved to org.junit.rules.ErrorCollectorTest.UsesErrorCollectorCheckSucceedsPasses",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/rules/VerifierRuleTest.java",
+            "startLine": 147,
+            "endLine": 159,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/rules/ErrorCollectorTest.java",
+            "startLine": 147,
+            "endLine": 159,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.junit.rules.VerifierRuleTest.UsesErrorCollectorCheckThrowsMatchingClass moved to org.junit.rules.ErrorCollectorTest.UsesErrorCollectorCheckThrowsMatchingClass",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/rules/VerifierRuleTest.java",
+            "startLine": 167,
+            "endLine": 179,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/rules/ErrorCollectorTest.java",
+            "startLine": 167,
+            "endLine": 179,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.junit.rules.VerifierRuleTest.UsesErrorCollectorCheckThrowsClassMismatch moved to org.junit.rules.ErrorCollectorTest.UsesErrorCollectorCheckThrowsClassMismatch",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/rules/VerifierRuleTest.java",
+            "startLine": 187,
+            "endLine": 199,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/rules/ErrorCollectorTest.java",
+            "startLine": 187,
+            "endLine": 199,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.junit.rules.VerifierRuleTest.UsesErrorCollectorCheckThrowsNothingThrown moved to org.junit.rules.ErrorCollectorTest.UsesErrorCollectorCheckThrowsNothingThrown",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/rules/VerifierRuleTest.java",
+            "startLine": 208,
+            "endLine": 219,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/rules/ErrorCollectorTest.java",
+            "startLine": 208,
+            "endLine": 219,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.junit.rules.ErrorCollectorTest from Class org.junit.rules.VerifierRuleTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/rules/VerifierRuleTest.java",
+            "startLine": 20,
+            "endLine": 250,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/rules/ErrorCollectorTest.java",
+            "startLine": 20,
+            "endLine": 226,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.junit.rules.VerifierRuleTest.UsesErrorCollector moved to org.junit.rules.ErrorCollectorTest.UsesErrorCollector",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/rules/VerifierRuleTest.java",
+            "startLine": 21,
+            "endLine": 29,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/rules/ErrorCollectorTest.java",
+            "startLine": 21,
+            "endLine": 29,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.junit.rules.VerifierRuleTest.PassesAssumptionViolatedExceptionToErrorCollector moved to org.junit.rules.ErrorCollectorTest.PassesAssumptionViolatedExceptionToErrorCollector",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/rules/VerifierRuleTest.java",
+            "startLine": 36,
+            "endLine": 44,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/rules/ErrorCollectorTest.java",
+            "startLine": 36,
+            "endLine": 44,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.junit.rules.VerifierRuleTest.UsesErrorCollectorTwice moved to org.junit.rules.ErrorCollectorTest.UsesErrorCollectorTwice",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/rules/VerifierRuleTest.java",
+            "startLine": 52,
+            "endLine": 61,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/rules/ErrorCollectorTest.java",
+            "startLine": 52,
+            "endLine": 61,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.junit.rules.VerifierRuleTest.UsesErrorCollectorCheckThat moved to org.junit.rules.ErrorCollectorTest.UsesErrorCollectorCheckThat",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/rules/VerifierRuleTest.java",
+            "startLine": 70,
+            "endLine": 81,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/rules/ErrorCollectorTest.java",
+            "startLine": 70,
+            "endLine": 81,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.junit.rules.VerifierRuleTest.UsesErrorCollectorCheckSucceeds moved to org.junit.rules.ErrorCollectorTest.UsesErrorCollectorCheckSucceeds",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/rules/VerifierRuleTest.java",
+            "startLine": 94,
+            "endLine": 117,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/rules/ErrorCollectorTest.java",
+            "startLine": 94,
+            "endLine": 117,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.junit.rules.VerifierRuleTest.UsesErrorCollectorCheckSucceedsWithAssumptionViolatedException moved to org.junit.rules.ErrorCollectorTest.UsesErrorCollectorCheckSucceedsWithAssumptionViolatedException",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/rules/VerifierRuleTest.java",
+            "startLine": 126,
+            "endLine": 138,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/rules/ErrorCollectorTest.java",
+            "startLine": 126,
+            "endLine": 138,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.junit.rules.VerifierRuleTest.UsesErrorCollectorCheckSucceedsPasses moved to org.junit.rules.ErrorCollectorTest.UsesErrorCollectorCheckSucceedsPasses",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/rules/VerifierRuleTest.java",
+            "startLine": 147,
+            "endLine": 159,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/rules/ErrorCollectorTest.java",
+            "startLine": 147,
+            "endLine": 159,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.junit.rules.VerifierRuleTest.UsesErrorCollectorCheckThrowsMatchingClass moved to org.junit.rules.ErrorCollectorTest.UsesErrorCollectorCheckThrowsMatchingClass",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/rules/VerifierRuleTest.java",
+            "startLine": 167,
+            "endLine": 179,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/rules/ErrorCollectorTest.java",
+            "startLine": 167,
+            "endLine": 179,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.junit.rules.VerifierRuleTest.UsesErrorCollectorCheckThrowsClassMismatch moved to org.junit.rules.ErrorCollectorTest.UsesErrorCollectorCheckThrowsClassMismatch",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/rules/VerifierRuleTest.java",
+            "startLine": 187,
+            "endLine": 199,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/rules/ErrorCollectorTest.java",
+            "startLine": 187,
+            "endLine": 199,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.junit.rules.VerifierRuleTest.UsesErrorCollectorCheckThrowsNothingThrown moved to org.junit.rules.ErrorCollectorTest.UsesErrorCollectorCheckThrowsNothingThrown",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/rules/VerifierRuleTest.java",
+            "startLine": 208,
+            "endLine": 219,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/rules/ErrorCollectorTest.java",
+            "startLine": 208,
+            "endLine": 219,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.junit.rules.ErrorCollectorTest from class org.junit.rules.VerifierRuleTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/rules/VerifierRuleTest.java",
+            "startLine": 20,
+            "endLine": 250,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/rules/ErrorCollectorTest.java",
+            "startLine": 20,
+            "endLine": 226,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/junit-team/junit4.git",
+      "sha1": "bb48ff9a5440f4062abdbd2296a377b6c4e057f0",
+      "url": "https://github.com/junit-team/junit4/commit/bb48ff9a5440f4062abdbd2296a377b6c4e057f0",
+      "ourApproach": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	wasRun : boolean to ruleWasEvaluated : boolean in class org.junit.rules.MethodRulesTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/rules/MethodRulesTest.java",
+            "startLine": 24,
+            "endLine": 24,
+            "startColumn": 28,
+            "endColumn": 34
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/rules/MethodRulesTest.java",
+            "startLine": 23,
+            "endLine": 23,
+            "startColumn": 28,
+            "endColumn": 44
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public nonPublicSuiteClassWithBeforeClassFailsWithoutRunningTests() : void renamed to public nonPublicSuiteClassWithBeforeClassPasses() : void in class org.junit.tests.running.classes.SuiteTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/running/classes/SuiteTest.java",
+            "startLine": 90,
+            "endLine": 93,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/running/classes/SuiteTest.java",
+            "startLine": 90,
+            "endLine": 93,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	wasRun : boolean to ruleWasEvaluated : boolean in class org.junit.rules.MethodRulesTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/rules/MethodRulesTest.java",
+            "startLine": 24,
+            "endLine": 24,
+            "startColumn": 28,
+            "endColumn": 34
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/rules/MethodRulesTest.java",
+            "startLine": 23,
+            "endLine": 23,
+            "startColumn": 28,
+            "endColumn": 44
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public nonPublicSuiteClassWithBeforeClassFailsWithoutRunningTests() : void renamed to public nonPublicSuiteClassWithBeforeClassPasses() : void in class org.junit.tests.running.classes.SuiteTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/running/classes/SuiteTest.java",
+            "startLine": 90,
+            "endLine": 93,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/running/classes/SuiteTest.java",
+            "startLine": 90,
+            "endLine": 93,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/junit-team/junit4.git",
+      "sha1": "f15ee64ef898f26775b90e4baf19251a76e5b1e0",
+      "url": "https://github.com/junit-team/junit4/commit/f15ee64ef898f26775b90e4baf19251a76e5b1e0",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public newFolderWithGivenPathThrowsIllegalArgumentExceptionIfFolderExists() : void renamed to public newFolderWithGivenPathThrowsIOExceptionIfFolderExists() : void in class org.junit.rules.TemporaryFolderUsageTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/rules/TemporaryFolderUsageTest.java",
+            "startLine": 133,
+            "endLine": 142,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/rules/TemporaryFolderUsageTest.java",
+            "startLine": 133,
+            "endLine": 142,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public newFolderWithGivenFolderThrowsIllegalArgumentExceptionIfFileExists() : void renamed to public newFolderWithGivenFolderThrowsIOExceptionIfFileExists() : void in class org.junit.rules.TemporaryFolderUsageTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/rules/TemporaryFolderUsageTest.java",
+            "startLine": 86,
+            "endLine": 95,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/rules/TemporaryFolderUsageTest.java",
+            "startLine": 86,
+            "endLine": 95,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public newFileWithGivenFilenameThrowsIllegalArgumentExceptionIfFileExists() : void renamed to public newFileWithGivenFilenameThrowsIOExceptionIfFileExists() : void in class org.junit.rules.TemporaryFolderUsageTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/rules/TemporaryFolderUsageTest.java",
+            "startLine": 55,
+            "endLine": 63,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/rules/TemporaryFolderUsageTest.java",
+            "startLine": 55,
+            "endLine": 63,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public newFolderWithGivenFolderThrowsIllegalArgumentExceptionIfFolderExists() : void renamed to public newFolderWithGivenFolderThrowsIOExceptionIfFolderExists() : void in class org.junit.rules.TemporaryFolderUsageTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/rules/TemporaryFolderUsageTest.java",
+            "startLine": 76,
+            "endLine": 84,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/rules/TemporaryFolderUsageTest.java",
+            "startLine": 76,
+            "endLine": 84,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public newFileWithGivenFilenameThrowsIllegalArgumentExceptionIfFileExists() : void renamed to public newFileWithGivenFilenameThrowsIOExceptionIfFileExists() : void in class org.junit.rules.TemporaryFolderUsageTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/rules/TemporaryFolderUsageTest.java",
+            "startLine": 55,
+            "endLine": 63,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/rules/TemporaryFolderUsageTest.java",
+            "startLine": 55,
+            "endLine": 63,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public newFolderWithGivenFolderThrowsIllegalArgumentExceptionIfFolderExists() : void renamed to public newFolderWithGivenFolderThrowsIOExceptionIfFolderExists() : void in class org.junit.rules.TemporaryFolderUsageTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/rules/TemporaryFolderUsageTest.java",
+            "startLine": 76,
+            "endLine": 84,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/rules/TemporaryFolderUsageTest.java",
+            "startLine": 76,
+            "endLine": 84,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public newFolderWithGivenFolderThrowsIllegalArgumentExceptionIfFileExists() : void renamed to public newFolderWithGivenFolderThrowsIOExceptionIfFileExists() : void in class org.junit.rules.TemporaryFolderUsageTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/rules/TemporaryFolderUsageTest.java",
+            "startLine": 86,
+            "endLine": 95,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/rules/TemporaryFolderUsageTest.java",
+            "startLine": 86,
+            "endLine": 95,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public newFolderWithGivenPathThrowsIllegalArgumentExceptionIfFolderExists() : void renamed to public newFolderWithGivenPathThrowsIOExceptionIfFolderExists() : void in class org.junit.rules.TemporaryFolderUsageTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/rules/TemporaryFolderUsageTest.java",
+            "startLine": 133,
+            "endLine": 142,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/rules/TemporaryFolderUsageTest.java",
+            "startLine": 133,
+            "endLine": 142,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/junit-team/junit4.git",
+      "sha1": "c4c8ebd03380350ef4e02a2744ecb5f04f8a30e1",
+      "url": "https://github.com/junit-team/junit4/commit/c4c8ebd03380350ef4e02a2744ecb5f04f8a30e1",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.junit.tests.experimental.AssumptionTest.TestClassWithAssumptionFailure from Class org.junit.tests.experimental.AssumptionTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/experimental/AssumptionTest.java",
+            "startLine": 30,
+            "endLine": 268,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/experimental/AssumptionTest.java",
+            "startLine": 191,
+            "endLine": 197,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.junit.tests.experimental.AssumptionTest.TestClassWithAssumptionFailure from class org.junit.tests.experimental.AssumptionTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/experimental/AssumptionTest.java",
+            "startLine": 30,
+            "endLine": 268,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/experimental/AssumptionTest.java",
+            "startLine": 191,
+            "endLine": 197,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/junit-team/junit4.git",
+      "sha1": "1db00d5a965951ea3667480a96467b43a80823c1",
+      "url": "https://github.com/junit-team/junit4/commit/1db00d5a965951ea3667480a96467b43a80823c1",
+      "ourApproach": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	void to ExpectedException in method public expectCause(expectedCause Matcher<? extends Throwable>) : ExpectedException from class org.junit.rules.ExpectedException",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/rules/ExpectedException.java",
+            "startLine": 220,
+            "endLine": 235,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/rules/ExpectedException.java",
+            "startLine": 224,
+            "endLine": 240,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	void to ExpectedException in method public expectMessage(matcher Matcher<String>) : ExpectedException from class org.junit.rules.ExpectedException",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/rules/ExpectedException.java",
+            "startLine": 204,
+            "endLine": 218,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/rules/ExpectedException.java",
+            "startLine": 207,
+            "endLine": 222,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	void to ExpectedException in method public expect(type Class<? extends Throwable>) : ExpectedException from class org.junit.rules.ExpectedException",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/rules/ExpectedException.java",
+            "startLine": 178,
+            "endLine": 189,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/rules/ExpectedException.java",
+            "startLine": 179,
+            "endLine": 191,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	void to ExpectedException in method public expect(matcher Matcher<?>) : ExpectedException from class org.junit.rules.ExpectedException",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/rules/ExpectedException.java",
+            "startLine": 161,
+            "endLine": 176,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/rules/ExpectedException.java",
+            "startLine": 161,
+            "endLine": 177,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	void to ExpectedException in method public expectMessage(substring String) : ExpectedException from class org.junit.rules.ExpectedException",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/rules/ExpectedException.java",
+            "startLine": 191,
+            "endLine": 202,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/rules/ExpectedException.java",
+            "startLine": 193,
+            "endLine": 205,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	void to ExpectedException in method public expect(matcher Matcher<?>) : ExpectedException from class org.junit.rules.ExpectedException",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/rules/ExpectedException.java",
+            "startLine": 161,
+            "endLine": 176,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/rules/ExpectedException.java",
+            "startLine": 161,
+            "endLine": 177,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	void to ExpectedException in method public expect(type Class<? extends Throwable>) : ExpectedException from class org.junit.rules.ExpectedException",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/rules/ExpectedException.java",
+            "startLine": 178,
+            "endLine": 189,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/rules/ExpectedException.java",
+            "startLine": 179,
+            "endLine": 191,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	void to ExpectedException in method public expectMessage(substring String) : ExpectedException from class org.junit.rules.ExpectedException",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/rules/ExpectedException.java",
+            "startLine": 191,
+            "endLine": 202,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/rules/ExpectedException.java",
+            "startLine": 193,
+            "endLine": 205,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	void to ExpectedException in method public expectMessage(matcher Matcher<String>) : ExpectedException from class org.junit.rules.ExpectedException",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/rules/ExpectedException.java",
+            "startLine": 204,
+            "endLine": 218,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/rules/ExpectedException.java",
+            "startLine": 207,
+            "endLine": 222,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	void to ExpectedException in method public expectCause(expectedCause Matcher<? extends Throwable>) : ExpectedException from class org.junit.rules.ExpectedException",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/rules/ExpectedException.java",
+            "startLine": 220,
+            "endLine": 235,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/rules/ExpectedException.java",
+            "startLine": 224,
+            "endLine": 240,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/junit-team/junit4.git",
+      "sha1": "97654ff38f976733fa4c6ae9b28e3fe10328183f",
+      "url": "https://github.com/junit-team/junit4/commit/97654ff38f976733fa4c6ae9b28e3fe10328183f",
+      "ourApproach": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.junit.tests.running.classes.ParameterizedTestTest.FibonacciTestWithArray renamed to org.junit.tests.running.classes.ParameterizedTestTest.AdditionTestWithArray",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/running/classes/ParameterizedTestTest.java",
+            "startLine": 360,
+            "endLine": 385,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/running/classes/ParameterizedTestTest.java",
+            "startLine": 358,
+            "endLine": 379,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	Collection<Object[]> to Iterable<Object[]> in method public data() : Iterable<Object[]> from class org.junit.tests.running.classes.ParameterizedTestTest.AdditionTestWithAnnotatedFields",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/running/classes/ParameterizedTestTest.java",
+            "startLine": 137,
+            "endLine": 141,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/running/classes/ParameterizedTestTest.java",
+            "startLine": 136,
+            "endLine": 140,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.junit.tests.running.classes.ParameterizedTestTest.FibonacciWithParameterizedFieldTest renamed to org.junit.tests.running.classes.ParameterizedTestTest.AdditionTestWithAnnotatedFields",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/running/classes/ParameterizedTestTest.java",
+            "startLine": 135,
+            "endLine": 157,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/running/classes/ParameterizedTestTest.java",
+            "startLine": 134,
+            "endLine": 155,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.junit.tests.running.classes.ParameterizedTestTest.FibonacciTest renamed to org.junit.tests.running.classes.ParameterizedTestTest.AdditionTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/running/classes/ParameterizedTestTest.java",
+            "startLine": 35,
+            "endLine": 60,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/running/classes/ParameterizedTestTest.java",
+            "startLine": 35,
+            "endLine": 59,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.junit.tests.running.classes.ParameterizedTestTest.FibonacciTest renamed to org.junit.tests.running.classes.ParameterizedTestTest.AdditionTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/running/classes/ParameterizedTestTest.java",
+            "startLine": 35,
+            "endLine": 60,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/running/classes/ParameterizedTestTest.java",
+            "startLine": 35,
+            "endLine": 59,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.junit.tests.running.classes.ParameterizedTestTest.FibonacciWithParameterizedFieldTest renamed to org.junit.tests.running.classes.ParameterizedTestTest.AdditionTestWithAnnotatedFields",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/running/classes/ParameterizedTestTest.java",
+            "startLine": 135,
+            "endLine": 157,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/running/classes/ParameterizedTestTest.java",
+            "startLine": 134,
+            "endLine": 155,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.junit.tests.running.classes.ParameterizedTestTest.FibonacciTestWithArray renamed to org.junit.tests.running.classes.ParameterizedTestTest.AdditionTestWithArray",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/running/classes/ParameterizedTestTest.java",
+            "startLine": 360,
+            "endLine": 385,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/running/classes/ParameterizedTestTest.java",
+            "startLine": 358,
+            "endLine": 379,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	fInput : int to sum : int in class org.junit.tests.running.classes.ParameterizedTestTest.AdditionTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/running/classes/ParameterizedTestTest.java",
+            "startLine": 43,
+            "endLine": 43,
+            "startColumn": 27,
+            "endColumn": 33
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/running/classes/ParameterizedTestTest.java",
+            "startLine": 47,
+            "endLine": 47,
+            "startColumn": 21,
+            "endColumn": 24
+          },
+          "developerConfirmation": false
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	fExpected : int to secondSummand : int in class org.junit.tests.running.classes.ParameterizedTestTest.AdditionTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/running/classes/ParameterizedTestTest.java",
+            "startLine": 45,
+            "endLine": 45,
+            "startColumn": 27,
+            "endColumn": 36
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/running/classes/ParameterizedTestTest.java",
+            "startLine": 45,
+            "endLine": 45,
+            "startColumn": 21,
+            "endColumn": 34
+          },
+          "developerConfirmation": false
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	Collection<Object[]> to Iterable<Object[]> in method public data() : Iterable<Object[]> from class org.junit.tests.running.classes.ParameterizedTestTest.AdditionTestWithAnnotatedFields",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/running/classes/ParameterizedTestTest.java",
+            "startLine": 137,
+            "endLine": 141,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/running/classes/ParameterizedTestTest.java",
+            "startLine": 136,
+            "endLine": 140,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/junit-team/junit4.git",
+      "sha1": "495a9a93e4a1157e707a01467e7cc3f600c88d19",
+      "url": "https://github.com/junit-team/junit4/commit/495a9a93e4a1157e707a01467e7cc3f600c88d19",
+      "ourApproach": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	ParametersRunnerFactory to List<Runner> in method package createRunnersForClass(klass Class<?>) : List<Runner> from class org.junit.runners.Parameterized.RunnersFactory",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/runners/Parameterized.java",
+            "startLine": 251,
+            "endLine": 262,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/runners/Parameterized.java",
+            "startLine": 244,
+            "endLine": 247,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": false
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.junit.runners.Parameterized.RunnersFactory from Class org.junit.runners.Parameterized",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/runners/Parameterized.java",
+            "startLine": 21,
+            "endLine": 349,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/runners/Parameterized.java",
+            "startLine": 239,
+            "endLine": 354,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.junit.runners.Parameterized.RunnersFactory from class org.junit.runners.Parameterized",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/runners/Parameterized.java",
+            "startLine": 21,
+            "endLine": 349,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/runners/Parameterized.java",
+            "startLine": 239,
+            "endLine": 354,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/junit-team/junit4.git",
+      "sha1": "86b9346e4c8fa263810dbd55a2775081194b1d6f",
+      "url": "https://github.com/junit-team/junit4/commit/86b9346e4c8fa263810dbd55a2775081194b1d6f",
+      "ourApproach": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	expected : String to fExpected : String in class org.junit.ComparisonFailure",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/ComparisonFailure.java",
+            "startLine": 21,
+            "endLine": 21,
+            "startColumn": 20,
+            "endColumn": 28
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/ComparisonFailure.java",
+            "startLine": 26,
+            "endLine": 26,
+            "startColumn": 20,
+            "endColumn": 29
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	actual : String to fActual : String in class org.junit.ComparisonFailure",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/ComparisonFailure.java",
+            "startLine": 22,
+            "endLine": 22,
+            "startColumn": 20,
+            "endColumn": 26
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/ComparisonFailure.java",
+            "startLine": 27,
+            "endLine": 27,
+            "startColumn": 20,
+            "endColumn": 27
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	durations : Map<String,Long> to fDurations : Map<String,Long> in class org.junit.experimental.max.MaxHistory",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/experimental/max/MaxHistory.java",
+            "startLine": 64,
+            "endLine": 64,
+            "startColumn": 37,
+            "endColumn": 76
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/experimental/max/MaxHistory.java",
+            "startLine": 69,
+            "endLine": 69,
+            "startColumn": 37,
+            "endColumn": 77
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	failureTimestamps : Map<String,Long> to fFailureTimestamps : Map<String,Long> in class org.junit.experimental.max.MaxHistory",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/experimental/max/MaxHistory.java",
+            "startLine": 66,
+            "endLine": 66,
+            "startColumn": 37,
+            "endColumn": 84
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/experimental/max/MaxHistory.java",
+            "startLine": 70,
+            "endLine": 70,
+            "startColumn": 37,
+            "endColumn": 85
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	historyStore : File to fHistoryStore : File in class org.junit.experimental.max.MaxHistory",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/experimental/max/MaxHistory.java",
+            "startLine": 68,
+            "endLine": 68,
+            "startColumn": 24,
+            "endColumn": 36
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/experimental/max/MaxHistory.java",
+            "startLine": 71,
+            "endLine": 71,
+            "startColumn": 24,
+            "endColumn": 37
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	indices : List<Integer> to fIndices : List<Integer> in class org.junit.internal.ArrayComparisonFailure",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/internal/ArrayComparisonFailure.java",
+            "startLine": 17,
+            "endLine": 17,
+            "startColumn": 33,
+            "endColumn": 67
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/internal/ArrayComparisonFailure.java",
+            "startLine": 22,
+            "endLine": 22,
+            "startColumn": 33,
+            "endColumn": 68
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	message : String to fMessage : String in class org.junit.internal.ArrayComparisonFailure",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/internal/ArrayComparisonFailure.java",
+            "startLine": 18,
+            "endLine": 18,
+            "startColumn": 26,
+            "endColumn": 33
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/internal/ArrayComparisonFailure.java",
+            "startLine": 23,
+            "endLine": 23,
+            "startColumn": 26,
+            "endColumn": 34
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	matcher : Matcher<?> to fMatcher : Matcher<?> in class org.junit.internal.AssumptionViolatedException",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/internal/AssumptionViolatedException.java",
+            "startLine": 26,
+            "endLine": 26,
+            "startColumn": 30,
+            "endColumn": 37
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/internal/AssumptionViolatedException.java",
+            "startLine": 29,
+            "endLine": 29,
+            "startColumn": 30,
+            "endColumn": 38
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	assumption : String to fAssumption : String in class org.junit.internal.AssumptionViolatedException",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/internal/AssumptionViolatedException.java",
+            "startLine": 21,
+            "endLine": 21,
+            "startColumn": 26,
+            "endColumn": 36
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/internal/AssumptionViolatedException.java",
+            "startLine": 26,
+            "endLine": 26,
+            "startColumn": 26,
+            "endColumn": 37
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	value : Object to fValue : Object in class org.junit.internal.AssumptionViolatedException",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/internal/AssumptionViolatedException.java",
+            "startLine": 24,
+            "endLine": 24,
+            "startColumn": 26,
+            "endColumn": 31
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/internal/AssumptionViolatedException.java",
+            "startLine": 28,
+            "endLine": 28,
+            "startColumn": 26,
+            "endColumn": 32
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	valueMatcher : boolean to fValueMatcher : boolean in class org.junit.internal.AssumptionViolatedException",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/internal/AssumptionViolatedException.java",
+            "startLine": 23,
+            "endLine": 23,
+            "startColumn": 27,
+            "endColumn": 39
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/internal/AssumptionViolatedException.java",
+            "startLine": 27,
+            "endLine": 27,
+            "startColumn": 27,
+            "endColumn": 40
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	errors : List<Throwable> to fErrors : List<Throwable> in class org.junit.internal.runners.InitializationError",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/internal/runners/InitializationError.java",
+            "startLine": 14,
+            "endLine": 14,
+            "startColumn": 35,
+            "endColumn": 41
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/internal/runners/InitializationError.java",
+            "startLine": 20,
+            "endLine": 20,
+            "startColumn": 35,
+            "endColumn": 42
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	children : Collection<Description> to fChildren : Collection<Description> in class org.junit.runner.Description",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/runner/Description.java",
+            "startLine": 139,
+            "endLine": 139,
+            "startColumn": 43,
+            "endColumn": 94
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/runner/Description.java",
+            "startLine": 144,
+            "endLine": 144,
+            "startColumn": 43,
+            "endColumn": 95
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	annotations : Annotation[] to fAnnotations : Annotation[] in class org.junit.runner.Description",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/runner/Description.java",
+            "startLine": 142,
+            "endLine": 142,
+            "startColumn": 32,
+            "endColumn": 43
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/runner/Description.java",
+            "startLine": 147,
+            "endLine": 147,
+            "startColumn": 32,
+            "endColumn": 44
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	testClass : Class<?> to fTestClass : Class<?> in class org.junit.runner.Description",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/runner/Description.java",
+            "startLine": 143,
+            "endLine": 143,
+            "startColumn": 48,
+            "endColumn": 57
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/runner/Description.java",
+            "startLine": 148,
+            "endLine": 148,
+            "startColumn": 48,
+            "endColumn": 58
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	displayName : String to fDisplayName : String in class org.junit.runner.Description",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/runner/Description.java",
+            "startLine": 140,
+            "endLine": 140,
+            "startColumn": 26,
+            "endColumn": 37
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/runner/Description.java",
+            "startLine": 145,
+            "endLine": 145,
+            "startColumn": 26,
+            "endColumn": 38
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	uniqueId : Serializable to fUniqueId : Serializable in class org.junit.runner.Description",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/runner/Description.java",
+            "startLine": 141,
+            "endLine": 141,
+            "startColumn": 32,
+            "endColumn": 40
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/runner/Description.java",
+            "startLine": 146,
+            "endLine": 146,
+            "startColumn": 32,
+            "endColumn": 41
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	description : Description to fDescription : Description in class org.junit.runner.notification.Failure",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/runner/notification/Failure.java",
+            "startLine": 20,
+            "endLine": 20,
+            "startColumn": 31,
+            "endColumn": 42
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/runner/notification/Failure.java",
+            "startLine": 26,
+            "endLine": 26,
+            "startColumn": 31,
+            "endColumn": 43
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	thrownException : Throwable to fThrownException : Throwable in class org.junit.runner.notification.Failure",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/runner/notification/Failure.java",
+            "startLine": 21,
+            "endLine": 21,
+            "startColumn": 29,
+            "endColumn": 44
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/runner/notification/Failure.java",
+            "startLine": 27,
+            "endLine": 27,
+            "startColumn": 29,
+            "endColumn": 45
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	errors : List<Throwable> to fErrors : List<Throwable> in class org.junit.runners.model.InitializationError",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/runners/model/InitializationError.java",
+            "startLine": 13,
+            "endLine": 13,
+            "startColumn": 35,
+            "endColumn": 41
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/runners/model/InitializationError.java",
+            "startLine": 19,
+            "endLine": 19,
+            "startColumn": 35,
+            "endColumn": 42
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	errors : List<Throwable> to fErrors : List<Throwable> in class org.junit.runners.model.MultipleFailureException",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/runners/model/MultipleFailureException.java",
+            "startLine": 17,
+            "endLine": 17,
+            "startColumn": 35,
+            "endColumn": 41
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/runners/model/MultipleFailureException.java",
+            "startLine": 22,
+            "endLine": 22,
+            "startColumn": 35,
+            "endColumn": 42
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	expected : String to fExpected : String in class org.junit.ComparisonFailure",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/ComparisonFailure.java",
+            "startLine": 21,
+            "endLine": 21,
+            "startColumn": 20,
+            "endColumn": 28
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/ComparisonFailure.java",
+            "startLine": 26,
+            "endLine": 26,
+            "startColumn": 20,
+            "endColumn": 29
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	actual : String to fActual : String in class org.junit.ComparisonFailure",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/ComparisonFailure.java",
+            "startLine": 22,
+            "endLine": 22,
+            "startColumn": 20,
+            "endColumn": 26
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/ComparisonFailure.java",
+            "startLine": 27,
+            "endLine": 27,
+            "startColumn": 20,
+            "endColumn": 27
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	historyStore : File to fHistoryStore : File in class org.junit.experimental.max.MaxHistory",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/experimental/max/MaxHistory.java",
+            "startLine": 68,
+            "endLine": 68,
+            "startColumn": 24,
+            "endColumn": 36
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/experimental/max/MaxHistory.java",
+            "startLine": 71,
+            "endLine": 71,
+            "startColumn": 24,
+            "endColumn": 37
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	failureTimestamps : Map<String,Long> to fFailureTimestamps : Map<String,Long> in class org.junit.experimental.max.MaxHistory",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/experimental/max/MaxHistory.java",
+            "startLine": 66,
+            "endLine": 66,
+            "startColumn": 37,
+            "endColumn": 84
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/experimental/max/MaxHistory.java",
+            "startLine": 70,
+            "endLine": 70,
+            "startColumn": 37,
+            "endColumn": 85
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	durations : Map<String,Long> to fDurations : Map<String,Long> in class org.junit.experimental.max.MaxHistory",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/experimental/max/MaxHistory.java",
+            "startLine": 64,
+            "endLine": 64,
+            "startColumn": 37,
+            "endColumn": 76
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/experimental/max/MaxHistory.java",
+            "startLine": 69,
+            "endLine": 69,
+            "startColumn": 37,
+            "endColumn": 77
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	message : String to fMessage : String in class org.junit.internal.ArrayComparisonFailure",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/internal/ArrayComparisonFailure.java",
+            "startLine": 18,
+            "endLine": 18,
+            "startColumn": 26,
+            "endColumn": 33
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/internal/ArrayComparisonFailure.java",
+            "startLine": 23,
+            "endLine": 23,
+            "startColumn": 26,
+            "endColumn": 34
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	indices : List<Integer> to fIndices : List<Integer> in class org.junit.internal.ArrayComparisonFailure",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/internal/ArrayComparisonFailure.java",
+            "startLine": 17,
+            "endLine": 17,
+            "startColumn": 33,
+            "endColumn": 67
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/internal/ArrayComparisonFailure.java",
+            "startLine": 22,
+            "endLine": 22,
+            "startColumn": 33,
+            "endColumn": 68
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	assumption : String to fAssumption : String in class org.junit.internal.AssumptionViolatedException",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/internal/AssumptionViolatedException.java",
+            "startLine": 21,
+            "endLine": 21,
+            "startColumn": 26,
+            "endColumn": 36
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/internal/AssumptionViolatedException.java",
+            "startLine": 26,
+            "endLine": 26,
+            "startColumn": 26,
+            "endColumn": 37
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	value : Object to fValue : Object in class org.junit.internal.AssumptionViolatedException",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/internal/AssumptionViolatedException.java",
+            "startLine": 24,
+            "endLine": 24,
+            "startColumn": 26,
+            "endColumn": 31
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/internal/AssumptionViolatedException.java",
+            "startLine": 28,
+            "endLine": 28,
+            "startColumn": 26,
+            "endColumn": 32
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	matcher : Matcher<?> to fMatcher : Matcher<?> in class org.junit.internal.AssumptionViolatedException",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/internal/AssumptionViolatedException.java",
+            "startLine": 26,
+            "endLine": 26,
+            "startColumn": 30,
+            "endColumn": 37
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/internal/AssumptionViolatedException.java",
+            "startLine": 29,
+            "endLine": 29,
+            "startColumn": 30,
+            "endColumn": 38
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	valueMatcher : boolean to fValueMatcher : boolean in class org.junit.internal.AssumptionViolatedException",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/internal/AssumptionViolatedException.java",
+            "startLine": 23,
+            "endLine": 23,
+            "startColumn": 27,
+            "endColumn": 39
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/internal/AssumptionViolatedException.java",
+            "startLine": 27,
+            "endLine": 27,
+            "startColumn": 27,
+            "endColumn": 40
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	errors : List<Throwable> to fErrors : List<Throwable> in class org.junit.internal.runners.InitializationError",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/internal/runners/InitializationError.java",
+            "startLine": 14,
+            "endLine": 14,
+            "startColumn": 35,
+            "endColumn": 41
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/internal/runners/InitializationError.java",
+            "startLine": 20,
+            "endLine": 20,
+            "startColumn": 35,
+            "endColumn": 42
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	children : Collection<Description> to fChildren : Collection<Description> in class org.junit.runner.Description",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/runner/Description.java",
+            "startLine": 139,
+            "endLine": 139,
+            "startColumn": 43,
+            "endColumn": 94
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/runner/Description.java",
+            "startLine": 144,
+            "endLine": 144,
+            "startColumn": 43,
+            "endColumn": 95
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	uniqueId : Serializable to fUniqueId : Serializable in class org.junit.runner.Description",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/runner/Description.java",
+            "startLine": 141,
+            "endLine": 141,
+            "startColumn": 32,
+            "endColumn": 40
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/runner/Description.java",
+            "startLine": 146,
+            "endLine": 146,
+            "startColumn": 32,
+            "endColumn": 41
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	testClass : Class<?> to fTestClass : Class<?> in class org.junit.runner.Description",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/runner/Description.java",
+            "startLine": 143,
+            "endLine": 143,
+            "startColumn": 48,
+            "endColumn": 57
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/runner/Description.java",
+            "startLine": 148,
+            "endLine": 148,
+            "startColumn": 48,
+            "endColumn": 58
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	displayName : String to fDisplayName : String in class org.junit.runner.Description",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/runner/Description.java",
+            "startLine": 140,
+            "endLine": 140,
+            "startColumn": 26,
+            "endColumn": 37
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/runner/Description.java",
+            "startLine": 145,
+            "endLine": 145,
+            "startColumn": 26,
+            "endColumn": 38
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	annotations : Annotation[] to fAnnotations : Annotation[] in class org.junit.runner.Description",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/runner/Description.java",
+            "startLine": 142,
+            "endLine": 142,
+            "startColumn": 32,
+            "endColumn": 43
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/runner/Description.java",
+            "startLine": 147,
+            "endLine": 147,
+            "startColumn": 32,
+            "endColumn": 44
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	thrownException : Throwable to fThrownException : Throwable in class org.junit.runner.notification.Failure",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/runner/notification/Failure.java",
+            "startLine": 21,
+            "endLine": 21,
+            "startColumn": 29,
+            "endColumn": 44
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/runner/notification/Failure.java",
+            "startLine": 27,
+            "endLine": 27,
+            "startColumn": 29,
+            "endColumn": 45
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	description : Description to fDescription : Description in class org.junit.runner.notification.Failure",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/runner/notification/Failure.java",
+            "startLine": 20,
+            "endLine": 20,
+            "startColumn": 31,
+            "endColumn": 42
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/runner/notification/Failure.java",
+            "startLine": 26,
+            "endLine": 26,
+            "startColumn": 31,
+            "endColumn": 43
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	errors : List<Throwable> to fErrors : List<Throwable> in class org.junit.runners.model.InitializationError",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/runners/model/InitializationError.java",
+            "startLine": 13,
+            "endLine": 13,
+            "startColumn": 35,
+            "endColumn": 41
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/runners/model/InitializationError.java",
+            "startLine": 19,
+            "endLine": 19,
+            "startColumn": 35,
+            "endColumn": 42
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	errors : List<Throwable> to fErrors : List<Throwable> in class org.junit.runners.model.MultipleFailureException",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/runners/model/MultipleFailureException.java",
+            "startLine": 17,
+            "endLine": 17,
+            "startColumn": 35,
+            "endColumn": 41
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/runners/model/MultipleFailureException.java",
+            "startLine": 22,
+            "endLine": 22,
+            "startColumn": 35,
+            "endColumn": 42
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/junit-team/junit4.git",
+      "sha1": "7ae75535efbb7a95ac62cfa1d0ccb626cc23e8c7",
+      "url": "https://github.com/junit-team/junit4/commit/7ae75535efbb7a95ac62cfa1d0ccb626cc23e8c7",
+      "ourApproach": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.junit.tests.experimental.rules.StopwatchTest moved to org.junit.rules.StopwatchTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/experimental/rules/StopwatchTest.java",
+            "startLine": 20,
+            "endLine": 163,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/rules/StopwatchTest.java",
+            "startLine": 22,
+            "endLine": 174,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	fFinishedRecord : Record to finishedRecord : Record in class org.junit.rules.StopwatchTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/experimental/rules/StopwatchTest.java",
+            "startLine": 27,
+            "endLine": 27,
+            "startColumn": 27,
+            "endColumn": 42
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/rules/StopwatchTest.java",
+            "startLine": 29,
+            "endLine": 29,
+            "startColumn": 27,
+            "endColumn": 41
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	fRecord : Record to record : Record in class org.junit.rules.StopwatchTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/experimental/rules/StopwatchTest.java",
+            "startLine": 26,
+            "endLine": 26,
+            "startColumn": 27,
+            "endColumn": 34
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/rules/StopwatchTest.java",
+            "startLine": 28,
+            "endLine": 28,
+            "startColumn": 27,
+            "endColumn": 33
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.junit.rules.Stopwatch.InternalWatcher from Class org.junit.rules.Stopwatch",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/rules/Stopwatch.java",
+            "startLine": 8,
+            "endLine": 175,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/rules/Stopwatch.java",
+            "startLine": 143,
+            "endLine": 167,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.junit.rules.Stopwatch.Clock from Class org.junit.rules.Stopwatch",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/rules/Stopwatch.java",
+            "startLine": 8,
+            "endLine": 175,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/rules/Stopwatch.java",
+            "startLine": 169,
+            "endLine": 174,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.junit.tests.experimental.rules.StopwatchTest moved to org.junit.rules.StopwatchTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/experimental/rules/StopwatchTest.java",
+            "startLine": 20,
+            "endLine": 163,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/rules/StopwatchTest.java",
+            "startLine": 22,
+            "endLine": 174,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	fRecord : Record to record : Record in class org.junit.rules.StopwatchTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/experimental/rules/StopwatchTest.java",
+            "startLine": 26,
+            "endLine": 26,
+            "startColumn": 27,
+            "endColumn": 34
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/rules/StopwatchTest.java",
+            "startLine": 28,
+            "endLine": 28,
+            "startColumn": 27,
+            "endColumn": 33
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	fFinishedRecord : Record to finishedRecord : Record in class org.junit.rules.StopwatchTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/experimental/rules/StopwatchTest.java",
+            "startLine": 27,
+            "endLine": 27,
+            "startColumn": 27,
+            "endColumn": 42
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/rules/StopwatchTest.java",
+            "startLine": 29,
+            "endLine": 29,
+            "startColumn": 27,
+            "endColumn": 41
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	fDuration : long to duration : long in class org.junit.rules.StopwatchTest.Record",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/experimental/rules/StopwatchTest.java",
+            "startLine": 30,
+            "endLine": 30,
+            "startColumn": 20,
+            "endColumn": 29
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/rules/StopwatchTest.java",
+            "startLine": 33,
+            "endLine": 33,
+            "startColumn": 20,
+            "endColumn": 28
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	fStatus : TestStatus to status : TestStatus in class org.junit.rules.StopwatchTest.Record",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/experimental/rules/StopwatchTest.java",
+            "startLine": 32,
+            "endLine": 32,
+            "startColumn": 26,
+            "endColumn": 33
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/rules/StopwatchTest.java",
+            "startLine": 35,
+            "endLine": 35,
+            "startColumn": 26,
+            "endColumn": 32
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.junit.rules.Stopwatch.InternalWatcher from class org.junit.rules.Stopwatch",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/rules/Stopwatch.java",
+            "startLine": 8,
+            "endLine": 175,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/rules/Stopwatch.java",
+            "startLine": 143,
+            "endLine": 167,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/junit-team/junit4.git",
+      "sha1": "cfe6afadc81b72449c8b0cb96d51aa57f7a593b7",
+      "url": "https://github.com/junit-team/junit4/commit/cfe6afadc81b72449c8b0cb96d51aa57f7a593b7",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testComparisonErrorOverlapingMatches() : void renamed to public testComparisonErrorOverlappingMatches() : void in class junit.tests.framework.ComparisonCompactorTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/junit/tests/framework/ComparisonCompactorTest.java",
+            "startLine": 58,
+            "endLine": 61,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/junit/tests/framework/ComparisonCompactorTest.java",
+            "startLine": 58,
+            "endLine": 61,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testComparisonErrorOverlapingMatchesContext() : void renamed to public testComparisonErrorOverlappingMatchesContext() : void in class junit.tests.framework.ComparisonCompactorTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/junit/tests/framework/ComparisonCompactorTest.java",
+            "startLine": 63,
+            "endLine": 66,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/junit/tests/framework/ComparisonCompactorTest.java",
+            "startLine": 63,
+            "endLine": 66,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testComparisonErrorOverlapingMatches2() : void renamed to public testComparisonErrorOverlappingMatches2() : void in class junit.tests.framework.ComparisonCompactorTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/junit/tests/framework/ComparisonCompactorTest.java",
+            "startLine": 68,
+            "endLine": 71,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/junit/tests/framework/ComparisonCompactorTest.java",
+            "startLine": 68,
+            "endLine": 71,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testComparisonErrorOverlapingMatches2Context() : void renamed to public testComparisonErrorOverlappingMatches2Context() : void in class junit.tests.framework.ComparisonCompactorTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/junit/tests/framework/ComparisonCompactorTest.java",
+            "startLine": 73,
+            "endLine": 76,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/junit/tests/framework/ComparisonCompactorTest.java",
+            "startLine": 73,
+            "endLine": 76,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testComparisonErrorOverlapingMatches() : void renamed to public testComparisonErrorOverlappingMatches() : void in class junit.tests.framework.ComparisonCompactorTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/junit/tests/framework/ComparisonCompactorTest.java",
+            "startLine": 58,
+            "endLine": 61,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/junit/tests/framework/ComparisonCompactorTest.java",
+            "startLine": 58,
+            "endLine": 61,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testComparisonErrorOverlapingMatchesContext() : void renamed to public testComparisonErrorOverlappingMatchesContext() : void in class junit.tests.framework.ComparisonCompactorTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/junit/tests/framework/ComparisonCompactorTest.java",
+            "startLine": 63,
+            "endLine": 66,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/junit/tests/framework/ComparisonCompactorTest.java",
+            "startLine": 63,
+            "endLine": 66,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testComparisonErrorOverlapingMatches2() : void renamed to public testComparisonErrorOverlappingMatches2() : void in class junit.tests.framework.ComparisonCompactorTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/junit/tests/framework/ComparisonCompactorTest.java",
+            "startLine": 68,
+            "endLine": 71,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/junit/tests/framework/ComparisonCompactorTest.java",
+            "startLine": 68,
+            "endLine": 71,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testComparisonErrorOverlapingMatches2Context() : void renamed to public testComparisonErrorOverlappingMatches2Context() : void in class junit.tests.framework.ComparisonCompactorTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/junit/tests/framework/ComparisonCompactorTest.java",
+            "startLine": 73,
+            "endLine": 76,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/junit/tests/framework/ComparisonCompactorTest.java",
+            "startLine": 73,
+            "endLine": 76,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/junit-team/junit4.git",
+      "sha1": "9d3821f6411ad85a683b8d38e4d42411229f2eec",
+      "url": "https://github.com/junit-team/junit4/commit/9d3821f6411ad85a683b8d38e4d42411229f2eec",
+      "ourApproach": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.junit.tests.running.classes.ParentRunnerTest.AnnotationValidatorMethodTest moved to org.junit.validator.AnnotationsValidatorTest.AnnotationValidatorMethodTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/running/classes/ParentRunnerTest.java",
+            "startLine": 179,
+            "endLine": 184,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/validator/AnnotationsValidatorTest.java",
+            "startLine": 48,
+            "endLine": 53,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.junit.tests.running.classes.ParentRunnerTest.ExampleAnnotationValidator moved to org.junit.validator.AnnotationsValidatorTest.ExampleAnnotationValidator",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/running/classes/ParentRunnerTest.java",
+            "startLine": 152,
+            "endLine": 171,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/validator/AnnotationsValidatorTest.java",
+            "startLine": 19,
+            "endLine": 40,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	fieldThatShouldBeMatched : String to fieldC : String in class org.junit.tests.running.classes.TestClassTest.FieldAnnotated",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/running/classes/TestClassTest.java",
+            "startLine": 96,
+            "endLine": 96,
+            "startColumn": 20,
+            "endColumn": 58
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/running/classes/TestClassTest.java",
+            "startLine": 89,
+            "endLine": 89,
+            "startColumn": 23,
+            "endColumn": 42
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.junit.tests.running.classes.ParentRunnerTest.AnnotationValidatorClassTest moved to org.junit.validator.AnnotationsValidatorTest.AnnotationValidatorClassTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/running/classes/ParentRunnerTest.java",
+            "startLine": 195,
+            "endLine": 200,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/validator/AnnotationsValidatorTest.java",
+            "startLine": 64,
+            "endLine": 69,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public methodToBeMatched() : String renamed to public methodA() : String in class org.junit.tests.running.classes.TestClassTest.MethodsAnnotated",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/running/classes/TestClassTest.java",
+            "startLine": 111,
+            "endLine": 115,
+            "startColumn": 6,
+            "endColumn": 7
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/running/classes/TestClassTest.java",
+            "startLine": 122,
+            "endLine": 126,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.junit.tests.running.classes.ParentRunnerTest.AnnotationValidatorFieldTest moved to org.junit.validator.AnnotationsValidatorTest.AnnotationValidatorFieldTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/running/classes/ParentRunnerTest.java",
+            "startLine": 186,
+            "endLine": 193,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/validator/AnnotationsValidatorTest.java",
+            "startLine": 55,
+            "endLine": 62,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public methodOfWrongType() : int renamed to public methodC() : int in class org.junit.tests.running.classes.TestClassTest.MethodsAnnotated",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/running/classes/TestClassTest.java",
+            "startLine": 117,
+            "endLine": 121,
+            "startColumn": 6,
+            "endColumn": 7
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/running/classes/TestClassTest.java",
+            "startLine": 116,
+            "endLine": 120,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	fAnnotationTypeToValidatorMap : ConcurrentHashMap<ValidateWith,AnnotationValidator> to VALIDATORS_FOR_ANNOTATION_TYPES : ConcurrentHashMap<ValidateWith,AnnotationValidator> in class org.junit.validator.AnnotationValidatorFactory",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/validator/AnnotationValidatorFactory.java",
+            "startLine": 12,
+            "endLine": 13,
+            "startColumn": 73,
+            "endColumn": 71
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/validator/AnnotationValidatorFactory.java",
+            "startLine": 11,
+            "endLine": 12,
+            "startColumn": 79,
+            "endColumn": 71
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.junit.validator.AnnotationsValidatorTest from Class org.junit.tests.running.classes.ParentRunnerTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/running/classes/ParentRunnerTest.java",
+            "startLine": 36,
+            "endLine": 219,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/validator/AnnotationsValidatorTest.java",
+            "startLine": 18,
+            "endLine": 98,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.junit.tests.running.classes.ParentRunnerTest.ExampleAnnotationValidator moved to org.junit.validator.AnnotationsValidatorTest.ExampleAnnotationValidator",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/running/classes/ParentRunnerTest.java",
+            "startLine": 152,
+            "endLine": 171,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/validator/AnnotationsValidatorTest.java",
+            "startLine": 19,
+            "endLine": 40,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.junit.tests.running.classes.ParentRunnerTest.AnnotationValidatorMethodTest moved to org.junit.validator.AnnotationsValidatorTest.AnnotationValidatorMethodTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/running/classes/ParentRunnerTest.java",
+            "startLine": 179,
+            "endLine": 184,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/validator/AnnotationsValidatorTest.java",
+            "startLine": 48,
+            "endLine": 53,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.junit.tests.running.classes.ParentRunnerTest.AnnotationValidatorFieldTest moved to org.junit.validator.AnnotationsValidatorTest.AnnotationValidatorFieldTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/running/classes/ParentRunnerTest.java",
+            "startLine": 186,
+            "endLine": 193,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/validator/AnnotationsValidatorTest.java",
+            "startLine": 55,
+            "endLine": 62,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.junit.tests.running.classes.ParentRunnerTest.AnnotationValidatorClassTest moved to org.junit.validator.AnnotationsValidatorTest.AnnotationValidatorClassTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/running/classes/ParentRunnerTest.java",
+            "startLine": 195,
+            "endLine": 200,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/validator/AnnotationsValidatorTest.java",
+            "startLine": 64,
+            "endLine": 69,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public methodToBeMatched() : String renamed to public methodA() : String in class org.junit.tests.running.classes.TestClassTest.MethodsAnnotated",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/running/classes/TestClassTest.java",
+            "startLine": 111,
+            "endLine": 115,
+            "startColumn": 6,
+            "endColumn": 7
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/running/classes/TestClassTest.java",
+            "startLine": 122,
+            "endLine": 126,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public methodOfWrongType() : int renamed to public methodC() : int in class org.junit.tests.running.classes.TestClassTest.MethodsAnnotated",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/running/classes/TestClassTest.java",
+            "startLine": 117,
+            "endLine": 121,
+            "startColumn": 6,
+            "endColumn": 7
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/running/classes/TestClassTest.java",
+            "startLine": 116,
+            "endLine": 120,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public annotationToFields() : void renamed to public providesAnnotatedFieldsSortedByName() : void in class org.junit.tests.running.classes.TestClassTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/running/classes/TestClassTest.java",
+            "startLine": 157,
+            "endLine": 163,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/running/classes/TestClassTest.java",
+            "startLine": 98,
+            "endLine": 105,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public annotationToMethods() : void renamed to public providesAnnotatedMethodsSortedByName() : void in class org.junit.tests.running.classes.TestClassTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/running/classes/TestClassTest.java",
+            "startLine": 132,
+            "endLine": 138,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/running/classes/TestClassTest.java",
+            "startLine": 135,
+            "endLine": 143,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.junit.validator.AnnotationsValidatorTest from class org.junit.tests.running.classes.ParentRunnerTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/running/classes/ParentRunnerTest.java",
+            "startLine": 36,
+            "endLine": 219,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/validator/AnnotationsValidatorTest.java",
+            "startLine": 18,
+            "endLine": 98,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/junit-team/junit4.git",
+      "sha1": "26c25f3dbf524f4efd90e97f41c6df10345e78a9",
+      "url": "https://github.com/junit-team/junit4/commit/26c25f3dbf524f4efd90e97f41c6df10345e78a9",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public throwsTestFailedWithTimeoutException() : void renamed to public throwsTestTimedOutException() : void in class org.junit.tests.internal.runners.statements.FailOnTimeoutTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/internal/runners/statements/FailOnTimeoutTest.java",
+            "startLine": 36,
+            "endLine": 41,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/internal/runners/statements/FailOnTimeoutTest.java",
+            "startLine": 36,
+            "endLine": 41,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.junit.runners.model.TestFailedOnTimeoutException renamed to org.junit.runners.model.TestTimedOutException",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/runners/model/TestFailedOnTimeoutException.java",
+            "startLine": 5,
+            "endLine": 44,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/runners/model/TestTimedOutException.java",
+            "startLine": 5,
+            "endLine": 44,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.junit.runners.model.TestFailedOnTimeoutException renamed to org.junit.runners.model.TestTimedOutException",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/runners/model/TestFailedOnTimeoutException.java",
+            "startLine": 5,
+            "endLine": 44,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/runners/model/TestTimedOutException.java",
+            "startLine": 5,
+            "endLine": 44,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public throwsTestFailedWithTimeoutException() : void renamed to public throwsTestTimedOutException() : void in class org.junit.tests.internal.runners.statements.FailOnTimeoutTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/internal/runners/statements/FailOnTimeoutTest.java",
+            "startLine": 36,
+            "endLine": 41,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/internal/runners/statements/FailOnTimeoutTest.java",
+            "startLine": 36,
+            "endLine": 41,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/junit-team/junit4.git",
+      "sha1": "df88873d5013e400489550cf15e9b51dc438eb4b",
+      "url": "https://github.com/junit-team/junit4/commit/df88873d5013e400489550cf15e9b51dc438eb4b",
+      "ourApproach": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private createAnnotationValidator(validateWithAnnotation ValidateWith) : AnnotationValidator inlined to private invokeValidatorsOnClass(errors List<Throwable>) : void in class org.junit.runners.ParentRunner",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/runners/ParentRunner.java",
+            "startLine": 165,
+            "endLine": 171,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/runners/ParentRunner.java",
+            "startLine": 133,
+            "endLine": 144,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private createAnnotationValidator(validateWithAnnotation ValidateWith) : AnnotationValidator inlined to private invokeValidatorsOnMethods(errors List<Throwable>) : void in class org.junit.runners.ParentRunner",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/runners/ParentRunner.java",
+            "startLine": 165,
+            "endLine": 171,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/runners/ParentRunner.java",
+            "startLine": 146,
+            "endLine": 158,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private createAnnotationValidator(validateWithAnnotation ValidateWith) : AnnotationValidator inlined to private invokeValidatorsOnFields(errors List<Throwable>) : void in class org.junit.runners.ParentRunner",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/runners/ParentRunner.java",
+            "startLine": 165,
+            "endLine": 171,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/runners/ParentRunner.java",
+            "startLine": 160,
+            "endLine": 172,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private createAnnotationValidator(validateWithAnnotation ValidateWith) : AnnotationValidator inlined to private invokeValidatorsOnClass(errors List<Throwable>) : void in class org.junit.runners.ParentRunner",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/runners/ParentRunner.java",
+            "startLine": 165,
+            "endLine": 171,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/runners/ParentRunner.java",
+            "startLine": 133,
+            "endLine": 144,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private createAnnotationValidator(validateWithAnnotation ValidateWith) : AnnotationValidator inlined to private invokeValidatorsOnMethods(errors List<Throwable>) : void in class org.junit.runners.ParentRunner",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/runners/ParentRunner.java",
+            "startLine": 165,
+            "endLine": 171,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/runners/ParentRunner.java",
+            "startLine": 146,
+            "endLine": 158,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private createAnnotationValidator(validateWithAnnotation ValidateWith) : AnnotationValidator inlined to private invokeValidatorsOnFields(errors List<Throwable>) : void in class org.junit.runners.ParentRunner",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/runners/ParentRunner.java",
+            "startLine": 165,
+            "endLine": 171,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/runners/ParentRunner.java",
+            "startLine": 160,
+            "endLine": 172,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/junit-team/junit4.git",
+      "sha1": "1273a35689bdcb3304f6634cdc3889c61f9b1b1f",
+      "url": "https://github.com/junit-team/junit4/commit/1273a35689bdcb3304f6634cdc3889c61f9b1b1f",
+      "ourApproach": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	void to List<Throwable> in method public validateAnnotatedClass(type Class<?>) : List<Throwable> from class org.junit.experimental.validator.AnnotationValidator",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/experimental/validator/AnnotationValidator.java",
+            "startLine": 15,
+            "endLine": 23,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/experimental/validator/AnnotationValidator.java",
+            "startLine": 16,
+            "endLine": 24,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	void to List<Throwable> in method public validateAnnotatedField(field Field) : List<Throwable> from class org.junit.experimental.validator.AnnotationValidator",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/experimental/validator/AnnotationValidator.java",
+            "startLine": 25,
+            "endLine": 33,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/experimental/validator/AnnotationValidator.java",
+            "startLine": 26,
+            "endLine": 35,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	void to List<Throwable> in method public validateAnnotatedMethod(method Method) : List<Throwable> from class org.junit.experimental.validator.AnnotationValidator",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/experimental/validator/AnnotationValidator.java",
+            "startLine": 35,
+            "endLine": 43,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/experimental/validator/AnnotationValidator.java",
+            "startLine": 37,
+            "endLine": 45,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	fAnnotationTypeToValidatorMap : Map<ValidateWith,AnnotationValidator> to fAnnotationTypeToValidatorMap : ConcurrentHashMap<ValidateWith,AnnotationValidator> in class org.junit.experimental.validator.AnnotationValidatorFactory",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/experimental/validator/AnnotationValidatorFactory.java",
+            "startLine": 11,
+            "endLine": 12,
+            "startColumn": 59,
+            "endColumn": 71
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/experimental/validator/AnnotationValidatorFactory.java",
+            "startLine": 10,
+            "endLine": 11,
+            "startColumn": 73,
+            "endColumn": 71
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	void to List<Throwable> in method public validateAnnotatedClass(type Class<?>) : List<Throwable> from class org.junit.tests.running.classes.ParentRunnerTest.ExampleAnnotationValidator",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/running/classes/ParentRunnerTest.java",
+            "startLine": 156,
+            "endLine": 159,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/running/classes/ParentRunnerTest.java",
+            "startLine": 156,
+            "endLine": 159,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	void to List<Throwable> in method public validateAnnotatedField(field Field) : List<Throwable> from class org.junit.tests.running.classes.ParentRunnerTest.ExampleAnnotationValidator",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/running/classes/ParentRunnerTest.java",
+            "startLine": 161,
+            "endLine": 164,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/running/classes/ParentRunnerTest.java",
+            "startLine": 161,
+            "endLine": 164,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	void to List<Throwable> in method public validateAnnotatedMethod(method Method) : List<Throwable> from class org.junit.tests.running.classes.ParentRunnerTest.ExampleAnnotationValidator",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/running/classes/ParentRunnerTest.java",
+            "startLine": 166,
+            "endLine": 169,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/running/classes/ParentRunnerTest.java",
+            "startLine": 166,
+            "endLine": 169,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	void to List<Throwable> in method public validateAnnotatedMethod(method Method) : List<Throwable> from class org.junit.experimental.categories.CategoryValidator",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/experimental/validator/CategoryValidator.java",
+            "startLine": 26,
+            "endLine": 44,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/experimental/categories/CategoryValidator.java",
+            "startLine": 28,
+            "endLine": 48,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.junit.experimental.validator.CategoryValidator moved to org.junit.experimental.categories.CategoryValidator",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/experimental/validator/CategoryValidator.java",
+            "startLine": 15,
+            "endLine": 60,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/experimental/categories/CategoryValidator.java",
+            "startLine": 17,
+            "endLine": 64,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.junit.tests.experimental.validation.CategoryValidatorTest moved to org.junit.tests.experimental.categories.CategoryValidatorTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/experimental/validation/CategoryValidatorTest.java",
+            "startLine": 15,
+            "endLine": 87,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/experimental/categories/CategoryValidatorTest.java",
+            "startLine": 15,
+            "endLine": 85,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.junit.tests.experimental.validation.CategoryValidatorTest moved to org.junit.tests.experimental.categories.CategoryValidatorTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/experimental/validation/CategoryValidatorTest.java",
+            "startLine": 15,
+            "endLine": 87,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/experimental/categories/CategoryValidatorTest.java",
+            "startLine": 15,
+            "endLine": 85,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.junit.experimental.validator.CategoryValidator moved to org.junit.experimental.categories.CategoryValidator",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/experimental/validator/CategoryValidator.java",
+            "startLine": 15,
+            "endLine": 60,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/experimental/categories/CategoryValidator.java",
+            "startLine": 17,
+            "endLine": 64,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	void to List<Throwable> in method public validateAnnotatedClass(type Class<?>) : List<Throwable> from class org.junit.experimental.validator.AnnotationValidator",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/experimental/validator/AnnotationValidator.java",
+            "startLine": 15,
+            "endLine": 23,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/experimental/validator/AnnotationValidator.java",
+            "startLine": 16,
+            "endLine": 24,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	void to List<Throwable> in method public validateAnnotatedField(field Field) : List<Throwable> from class org.junit.experimental.validator.AnnotationValidator",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/experimental/validator/AnnotationValidator.java",
+            "startLine": 25,
+            "endLine": 33,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/experimental/validator/AnnotationValidator.java",
+            "startLine": 26,
+            "endLine": 35,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	void to List<Throwable> in method public validateAnnotatedMethod(method Method) : List<Throwable> from class org.junit.experimental.validator.AnnotationValidator",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/experimental/validator/AnnotationValidator.java",
+            "startLine": 35,
+            "endLine": 43,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/experimental/validator/AnnotationValidator.java",
+            "startLine": 37,
+            "endLine": 45,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	fAnnotationTypeToValidatorMap : Map<ValidateWith,AnnotationValidator> to fAnnotationTypeToValidatorMap : ConcurrentHashMap<ValidateWith,AnnotationValidator> in class org.junit.experimental.validator.AnnotationValidatorFactory",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/experimental/validator/AnnotationValidatorFactory.java",
+            "startLine": 11,
+            "endLine": 12,
+            "startColumn": 59,
+            "endColumn": 71
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/experimental/validator/AnnotationValidatorFactory.java",
+            "startLine": 10,
+            "endLine": 11,
+            "startColumn": 73,
+            "endColumn": 71
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	void to List<Throwable> in method public validateAnnotatedMethod(method Method) : List<Throwable> from class org.junit.experimental.categories.CategoryValidator",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/experimental/validator/CategoryValidator.java",
+            "startLine": 26,
+            "endLine": 44,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/experimental/categories/CategoryValidator.java",
+            "startLine": 28,
+            "endLine": 48,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/junit-team/junit4.git",
+      "sha1": "0ce71108da6f487d76c0f4dc46cde41e11dd3daa",
+      "url": "https://github.com/junit-team/junit4/commit/0ce71108da6f487d76c0f4dc46cde41e11dd3daa",
+      "ourApproach": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private setFilteredChildren(filteredChildren Collection<T>) : void inlined to public filter(filter Filter) : void in class org.junit.runners.ParentRunner",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/runners/ParentRunner.java",
+            "startLine": 376,
+            "endLine": 378,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/runners/ParentRunner.java",
+            "startLine": 327,
+            "endLine": 351,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private setFilteredChildren(filteredChildren Collection<T>) : void inlined to private getFilteredChildren() : Collection<T> in class org.junit.runners.ParentRunner",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/runners/ParentRunner.java",
+            "startLine": 376,
+            "endLine": 378,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/runners/ParentRunner.java",
+            "startLine": 376,
+            "endLine": 385,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private setFilteredChildren(filteredChildren Collection<T>) : void inlined to public filter(filter Filter) : void in class org.junit.runners.ParentRunner",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/runners/ParentRunner.java",
+            "startLine": 376,
+            "endLine": 378,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/runners/ParentRunner.java",
+            "startLine": 327,
+            "endLine": 351,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private setFilteredChildren(filteredChildren Collection<T>) : void inlined to public sort(sorter Sorter) : void in class org.junit.runners.ParentRunner",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/runners/ParentRunner.java",
+            "startLine": 376,
+            "endLine": 378,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/runners/ParentRunner.java",
+            "startLine": 353,
+            "endLine": 362,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private setFilteredChildren(filteredChildren Collection<T>) : void inlined to private getFilteredChildren() : Collection<T> in class org.junit.runners.ParentRunner",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/runners/ParentRunner.java",
+            "startLine": 376,
+            "endLine": 378,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/runners/ParentRunner.java",
+            "startLine": 376,
+            "endLine": 385,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/junit-team/junit4.git",
+      "sha1": "50e3d1bc87b4b16f0617b6212252363f499397ab",
+      "url": "https://github.com/junit-team/junit4/commit/50e3d1bc87b4b16f0617b6212252363f499397ab",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public allIntsOk(x int) : void renamed to public theory(x int) : void in class org.junit.tests.experimental.theories.runner.FailingDataPointMethods.HasFailingSingleDataPointMethod",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/experimental/theories/runner/WithDataPointMethod.java",
+            "startLine": 55,
+            "endLine": 57,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/experimental/theories/runner/FailingDataPointMethods.java",
+            "startLine": 26,
+            "endLine": 28,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public allIntsOk(x int) : void renamed to public theory(x int) : void in class org.junit.tests.experimental.theories.runner.FailingDataPointMethods.HasFailingDataPointArrayMethod",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/experimental/theories/runner/WithDataPointMethod.java",
+            "startLine": 75,
+            "endLine": 77,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/experimental/theories/runner/FailingDataPointMethods.java",
+            "startLine": 46,
+            "endLine": 48,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.junit.tests.experimental.theories.runner.WithDataPointMethod.HasFailingSingleDataPointMethod moved to org.junit.tests.experimental.theories.runner.FailingDataPointMethods.HasFailingSingleDataPointMethod",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/experimental/theories/runner/WithDataPointMethod.java",
+            "startLine": 45,
+            "endLine": 58,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/experimental/theories/runner/FailingDataPointMethods.java",
+            "startLine": 16,
+            "endLine": 29,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.junit.tests.experimental.theories.runner.WithDataPointMethod.HasFailingDataPointArrayMethod moved to org.junit.tests.experimental.theories.runner.FailingDataPointMethods.HasFailingDataPointArrayMethod",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/experimental/theories/runner/WithDataPointMethod.java",
+            "startLine": 65,
+            "endLine": 78,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/experimental/theories/runner/FailingDataPointMethods.java",
+            "startLine": 36,
+            "endLine": 49,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.junit.tests.experimental.theories.runner.FailingDataPointMethods from Class org.junit.tests.experimental.theories.runner.WithDataPointMethod",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/experimental/theories/runner/WithDataPointMethod.java",
+            "startLine": 27,
+            "endLine": 155,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/experimental/theories/runner/FailingDataPointMethods.java",
+            "startLine": 14,
+            "endLine": 136,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.junit.tests.experimental.theories.runner.WithDataPointMethod.HasFailingSingleDataPointMethod moved to org.junit.tests.experimental.theories.runner.FailingDataPointMethods.HasFailingSingleDataPointMethod",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/experimental/theories/runner/WithDataPointMethod.java",
+            "startLine": 45,
+            "endLine": 58,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/experimental/theories/runner/FailingDataPointMethods.java",
+            "startLine": 16,
+            "endLine": 29,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.junit.tests.experimental.theories.runner.WithDataPointMethod.HasFailingDataPointArrayMethod moved to org.junit.tests.experimental.theories.runner.FailingDataPointMethods.HasFailingDataPointArrayMethod",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/experimental/theories/runner/WithDataPointMethod.java",
+            "startLine": 65,
+            "endLine": 78,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/experimental/theories/runner/FailingDataPointMethods.java",
+            "startLine": 36,
+            "endLine": 49,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.junit.tests.experimental.theories.runner.FailingDataPointMethods from class org.junit.tests.experimental.theories.runner.WithDataPointMethod",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/experimental/theories/runner/WithDataPointMethod.java",
+            "startLine": 27,
+            "endLine": 155,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/junit/tests/experimental/theories/runner/FailingDataPointMethods.java",
+            "startLine": 14,
+            "endLine": 136,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/junit-team/junit4.git",
+      "sha1": "0030e51f286ed52ad4c2c44857c4a28525c83f93",
+      "url": "https://github.com/junit-team/junit4/commit/0030e51f286ed52ad4c2c44857c4a28525c83f93",
+      "ourApproach": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private getAnnotatedSupplier(unassigned ParameterSignature) : ParameterSupplier inlined to private getSupplier(unassigned ParameterSignature) : ParameterSupplier in class org.junit.experimental.theories.internal.Assignments",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/experimental/theories/internal/Assignments.java",
+            "startLine": 93,
+            "endLine": 102,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/experimental/theories/internal/Assignments.java",
+            "startLine": 83,
+            "endLine": 93,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private getAnnotatedSupplier(unassigned ParameterSignature) : ParameterSupplier inlined to private getSupplier(unassigned ParameterSignature) : ParameterSupplier in class org.junit.experimental.theories.internal.Assignments",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/junit/experimental/theories/internal/Assignments.java",
+            "startLine": 93,
+            "endLine": 102,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/junit/experimental/theories/internal/Assignments.java",
+            "startLine": 83,
+            "endLine": 93,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    }
+  ]
+}

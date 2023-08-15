@@ -1,0 +1,2748 @@
+{
+  "results": [
+    {
+      "repository": "https://github.com/apache/lucene-solr.git",
+      "sha1": "8969225bd2307ef46b9169d69b5446e361cd7740",
+      "url": "https://github.com/apache/lucene-solr/commit/8969225bd2307ef46b9169d69b5446e361cd7740",
+      "ourApproach": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.lucene.util.StressRamUsageEstimator renamed to org.apache.lucene.util.TestStressRamUsageEstimator",
+          "leftSideLocation": {
+            "filePath": "lucene/core/src/test/org/apache/lucene/util/StressRamUsageEstimator.java",
+            "startLine": 19,
+            "endLine": 99,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/core/src/test/org/apache/lucene/util/TestStressRamUsageEstimator.java",
+            "startLine": 19,
+            "endLine": 99,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.lucene.util.StressRamUsageEstimator renamed to org.apache.lucene.util.TestStressRamUsageEstimator",
+          "leftSideLocation": {
+            "filePath": "lucene/core/src/test/org/apache/lucene/util/StressRamUsageEstimator.java",
+            "startLine": 19,
+            "endLine": 99,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/core/src/test/org/apache/lucene/util/TestStressRamUsageEstimator.java",
+            "startLine": 19,
+            "endLine": 99,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/lucene-solr.git",
+      "sha1": "fe33a436a084a43b3fdceb7beea662730c535337",
+      "url": "https://github.com/apache/lucene-solr/commit/fe33a436a084a43b3fdceb7beea662730c535337",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private basicAuthCredentialsToAuthorizationString(user String, pass String) : String extracted from private setBasicAuthHeader(solrRequest SolrRequest, req Request) : void in class org.apache.solr.client.solrj.impl.Http2SolrClient",
+          "leftSideLocation": {
+            "filePath": "solr/solrj/src/java/org/apache/solr/client/solrj/impl/Http2SolrClient.java",
+            "startLine": 471,
+            "endLine": 477,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "solr/solrj/src/java/org/apache/solr/client/solrj/impl/Http2SolrClient.java",
+            "startLine": 489,
+            "endLine": 492,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	public setup(client Http2SolrClient, basicAuthUser String, basicAuthPass String) : void extracted from public setup(client Http2SolrClient) : void in class org.apache.solr.client.solrj.impl.PreemptiveBasicAuthClientBuilderFactory",
+          "leftSideLocation": {
+            "filePath": "solr/solrj/src/java/org/apache/solr/client/solrj/impl/PreemptiveBasicAuthClientBuilderFactory.java",
+            "startLine": 108,
+            "endLine": 121,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "solr/solrj/src/java/org/apache/solr/client/solrj/impl/PreemptiveBasicAuthClientBuilderFactory.java",
+            "startLine": 86,
+            "endLine": 96,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.apache.solr.client.solrj.impl.PreemptiveBasicAuthClientBuilderFactory.CredentialsResolver from Class org.apache.solr.client.solrj.impl.PreemptiveBasicAuthClientBuilderFactory",
+          "leftSideLocation": {
+            "filePath": "solr/solrj/src/java/org/apache/solr/client/solrj/impl/PreemptiveBasicAuthClientBuilderFactory.java",
+            "startLine": 41,
+            "endLine": 144,
+            "startColumn": 0,
+            "endColumn": 0
+          },
+          "rightSideLocation": {
+            "filePath": "solr/solrj/src/java/org/apache/solr/client/solrj/impl/PreemptiveBasicAuthClientBuilderFactory.java",
+            "startLine": 121,
+            "endLine": 155,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private basicAuthCredentialsToAuthorizationString(user String, pass String) : String extracted from private setBasicAuthHeader(solrRequest SolrRequest, req Request) : void in class org.apache.solr.client.solrj.impl.Http2SolrClient",
+          "leftSideLocation": {
+            "filePath": "solr/solrj/src/java/org/apache/solr/client/solrj/impl/Http2SolrClient.java",
+            "startLine": 471,
+            "endLine": 477,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "solr/solrj/src/java/org/apache/solr/client/solrj/impl/Http2SolrClient.java",
+            "startLine": 489,
+            "endLine": 492,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	public setup(client Http2SolrClient, basicAuthUser String, basicAuthPass String) : void extracted from public setup(client Http2SolrClient) : void in class org.apache.solr.client.solrj.impl.PreemptiveBasicAuthClientBuilderFactory",
+          "leftSideLocation": {
+            "filePath": "solr/solrj/src/java/org/apache/solr/client/solrj/impl/PreemptiveBasicAuthClientBuilderFactory.java",
+            "startLine": 108,
+            "endLine": 121,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "solr/solrj/src/java/org/apache/solr/client/solrj/impl/PreemptiveBasicAuthClientBuilderFactory.java",
+            "startLine": 86,
+            "endLine": 96,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.apache.solr.client.solrj.impl.PreemptiveBasicAuthClientBuilderFactory.CredentialsResolver from class org.apache.solr.client.solrj.impl.PreemptiveBasicAuthClientBuilderFactory",
+          "leftSideLocation": {
+            "filePath": "solr/solrj/src/java/org/apache/solr/client/solrj/impl/PreemptiveBasicAuthClientBuilderFactory.java",
+            "startLine": 41,
+            "endLine": 144,
+            "startColumn": 0,
+            "endColumn": 0
+          },
+          "rightSideLocation": {
+            "filePath": "solr/solrj/src/java/org/apache/solr/client/solrj/impl/PreemptiveBasicAuthClientBuilderFactory.java",
+            "startLine": 121,
+            "endLine": 155,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/lucene-solr.git",
+      "sha1": "99a4bbf3a0ab937cc66a9f256223f7b7bfaf9427",
+      "url": "https://github.com/apache/lucene-solr/commit/99a4bbf3a0ab937cc66a9f256223f7b7bfaf9427",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private ngram(n int, s1 String, s2 String, opt EnumSet<NGramOptions>) : int renamed to private anyMismatchNgram(n int, s1 String, s2 String, weighted boolean) : int in class org.apache.lucene.analysis.hunspell.GeneratingSuggester",
+          "leftSideLocation": {
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/GeneratingSuggester.java",
+            "startLine": 377,
+            "endLine": 418,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/GeneratingSuggester.java",
+            "startLine": 412,
+            "endLine": 414,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	package ngramScore(n int, s1 String, s2 String, weighted boolean) : int extracted from private ngram(n int, s1 String, s2 String, opt EnumSet<NGramOptions>) : int in class org.apache.lucene.analysis.hunspell.GeneratingSuggester",
+          "leftSideLocation": {
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/GeneratingSuggester.java",
+            "startLine": 377,
+            "endLine": 418,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/GeneratingSuggester.java",
+            "startLine": 376,
+            "endLine": 404,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private ngram(n int, s1 String, s2 String, opt EnumSet<NGramOptions>) : int renamed to package ngramScore(n int, s1 String, s2 String, weighted boolean) : int in class org.apache.lucene.analysis.hunspell.GeneratingSuggester",
+          "leftSideLocation": {
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/GeneratingSuggester.java",
+            "startLine": 377,
+            "endLine": 418,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/GeneratingSuggester.java",
+            "startLine": 376,
+            "endLine": 404,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/lucene-solr.git",
+      "sha1": "342ea856d38edccb9d845c64caf4af8d7a38d23d",
+      "url": "https://github.com/apache/lucene-solr/commit/342ea856d38edccb9d845c64caf4af8d7a38d23d",
+      "ourApproach": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	secondStageAffixFlags : char[] to secondStageSuffixFlags : char[] in class org.apache.lucene.analysis.hunspell.Dictionary",
+          "leftSideLocation": {
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Dictionary.java",
+            "startLine": 152,
+            "endLine": 152,
+            "startColumn": 18,
+            "endColumn": 39
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Dictionary.java",
+            "startLine": 152,
+            "endLine": 152,
+            "startColumn": 42,
+            "endColumn": 64
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package isSecondStageAffix(flag char) : boolean renamed to package isSecondStageSuffix(flag char) : boolean in class org.apache.lucene.analysis.hunspell.Dictionary",
+          "leftSideLocation": {
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Dictionary.java",
+            "startLine": 1627,
+            "endLine": 1629,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Dictionary.java",
+            "startLine": 1633,
+            "endLine": 1635,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package isSecondStageAffix(flag char) : boolean renamed to package isSecondStageSuffix(flag char) : boolean in class org.apache.lucene.analysis.hunspell.Dictionary",
+          "leftSideLocation": {
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Dictionary.java",
+            "startLine": 1627,
+            "endLine": 1629,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Dictionary.java",
+            "startLine": 1633,
+            "endLine": 1635,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	secondStageAffixFlags : char[] to secondStageSuffixFlags : char[] in class org.apache.lucene.analysis.hunspell.Dictionary",
+          "leftSideLocation": {
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Dictionary.java",
+            "startLine": 152,
+            "endLine": 152,
+            "startColumn": 18,
+            "endColumn": 39
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Dictionary.java",
+            "startLine": 152,
+            "endLine": 152,
+            "startColumn": 42,
+            "endColumn": 64
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/lucene-solr.git",
+      "sha1": "3ddc3c04a5d42165fb54b1542a3c0c5e187be5e3",
+      "url": "https://github.com/apache/lucene-solr/commit/3ddc3c04a5d42165fb54b1542a3c0c5e187be5e3",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private checkPerformance(code String, wordCount int) : void renamed to private checkAnalysisPerformance(code String, wordCount int) : void in class org.apache.lucene.analysis.hunspell.TestPerformance",
+          "leftSideLocation": {
+            "filePath": "lucene/analysis/common/src/test/org/apache/lucene/analysis/hunspell/TestPerformance.java",
+            "startLine": 70,
+            "endLine": 95,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/analysis/common/src/test/org/apache/lucene/analysis/hunspell/TestPerformance.java",
+            "startLine": 94,
+            "endLine": 116,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private loadDictionary(code String) : Dictionary extracted from private checkPerformance(code String, wordCount int) : void in class org.apache.lucene.analysis.hunspell.TestPerformance",
+          "leftSideLocation": {
+            "filePath": "lucene/analysis/common/src/test/org/apache/lucene/analysis/hunspell/TestPerformance.java",
+            "startLine": 70,
+            "endLine": 95,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/analysis/common/src/test/org/apache/lucene/analysis/hunspell/TestPerformance.java",
+            "startLine": 87,
+            "endLine": 92,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private checkPerformance(code String, wordCount int) : void renamed to private checkAnalysisPerformance(code String, wordCount int) : void in class org.apache.lucene.analysis.hunspell.TestPerformance",
+          "leftSideLocation": {
+            "filePath": "lucene/analysis/common/src/test/org/apache/lucene/analysis/hunspell/TestPerformance.java",
+            "startLine": 70,
+            "endLine": 95,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/analysis/common/src/test/org/apache/lucene/analysis/hunspell/TestPerformance.java",
+            "startLine": 94,
+            "endLine": 116,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private loadDictionary(code String) : Dictionary extracted from private checkPerformance(code String, wordCount int) : void in class org.apache.lucene.analysis.hunspell.TestPerformance",
+          "leftSideLocation": {
+            "filePath": "lucene/analysis/common/src/test/org/apache/lucene/analysis/hunspell/TestPerformance.java",
+            "startLine": 70,
+            "endLine": 95,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/analysis/common/src/test/org/apache/lucene/analysis/hunspell/TestPerformance.java",
+            "startLine": 87,
+            "endLine": 92,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/lucene-solr.git",
+      "sha1": "58e3b7a8542fa8d94a77215fdf13d575a5657546",
+      "url": "https://github.com/apache/lucene-solr/commit/58e3b7a8542fa8d94a77215fdf13d575a5657546",
+      "ourApproach": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	void to int in method private writeNormalizedWordEntry(reuse StringBuilder, writer ByteSequencesWriter, line String) : int from class org.apache.lucene.analysis.hunspell.Dictionary",
+          "leftSideLocation": {
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Dictionary.java",
+            "startLine": 1056,
+            "endLine": 1082,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Dictionary.java",
+            "startLine": 1065,
+            "endLine": 1094,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	IndexOutput to int in method private mergeDictionaries(dictionaries List<InputStream>, decoder CharsetDecoder, output IndexOutput) : int from class org.apache.lucene.analysis.hunspell.Dictionary",
+          "leftSideLocation": {
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Dictionary.java",
+            "startLine": 1018,
+            "endLine": 1054,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Dictionary.java",
+            "startLine": 1030,
+            "endLine": 1063,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	public stringHashCode(chars char[], offset int, length int) : int extracted from public hashCode() : int in class org.apache.lucene.util.CharsRef",
+          "leftSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/util/CharsRef.java",
+            "startLine": 75,
+            "endLine": 84,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/util/CharsRef.java",
+            "startLine": 80,
+            "endLine": 91,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	void to int in method private writeNormalizedWordEntry(reuse StringBuilder, writer ByteSequencesWriter, line String) : int from class org.apache.lucene.analysis.hunspell.Dictionary",
+          "leftSideLocation": {
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Dictionary.java",
+            "startLine": 1056,
+            "endLine": 1082,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Dictionary.java",
+            "startLine": 1065,
+            "endLine": 1094,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	IndexOutput to int in method private mergeDictionaries(dictionaries List<InputStream>, decoder CharsetDecoder, output IndexOutput) : int from class org.apache.lucene.analysis.hunspell.Dictionary",
+          "leftSideLocation": {
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Dictionary.java",
+            "startLine": 1018,
+            "endLine": 1054,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Dictionary.java",
+            "startLine": 1030,
+            "endLine": 1063,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	public stringHashCode(chars char[], offset int, length int) : int extracted from public hashCode() : int in class org.apache.lucene.util.CharsRef",
+          "leftSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/util/CharsRef.java",
+            "startLine": 75,
+            "endLine": 84,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/util/CharsRef.java",
+            "startLine": 80,
+            "endLine": 91,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/lucene-solr.git",
+      "sha1": "ef920388e62464c7fee2397f8310f080de61a43a",
+      "url": "https://github.com/apache/lucene-solr/commit/ef920388e62464c7fee2397f8310f080de61a43a",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private stemHasFlags(stem CharsRef, flags char[]) : boolean renamed to private hasAllFlags(root Root<?>, flags char[]) : boolean in class org.apache.lucene.analysis.hunspell.CheckCompoundPattern",
+          "leftSideLocation": {
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/CheckCompoundPattern.java",
+            "startLine": 87,
+            "endLine": 90,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/CheckCompoundPattern.java",
+            "startLine": 85,
+            "endLine": 92,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	stem : CharsRef to root : Root<CharsRef> in class org.apache.lucene.analysis.hunspell.Hunspell.CompoundPart",
+          "leftSideLocation": {
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Hunspell.java",
+            "startLine": 277,
+            "endLine": 277,
+            "startColumn": 26,
+            "endColumn": 30
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Hunspell.java",
+            "startLine": 270,
+            "endLine": 270,
+            "startColumn": 26,
+            "endColumn": 30
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	stem : CharsRef to root : Root<CharsRef> in class org.apache.lucene.analysis.hunspell.Hunspell.CompoundPart",
+          "leftSideLocation": {
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Hunspell.java",
+            "startLine": 277,
+            "endLine": 277,
+            "startColumn": 26,
+            "endColumn": 30
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Hunspell.java",
+            "startLine": 270,
+            "endLine": 270,
+            "startColumn": 26,
+            "endColumn": 30
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private hasAllFlags(flags char[], forms IntsRef) : boolean inlined to private hasAllFlags(root Root<?>, flags char[]) : boolean in class org.apache.lucene.analysis.hunspell.CheckCompoundPattern",
+          "leftSideLocation": {
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/CheckCompoundPattern.java",
+            "startLine": 92,
+            "endLine": 99,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/CheckCompoundPattern.java",
+            "startLine": 85,
+            "endLine": 92,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	stem : CharsRef to root : Root<CharsRef> in class org.apache.lucene.analysis.hunspell.Hunspell.CompoundPart",
+          "leftSideLocation": {
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Hunspell.java",
+            "startLine": 277,
+            "endLine": 277,
+            "startColumn": 26,
+            "endColumn": 30
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Hunspell.java",
+            "startLine": 270,
+            "endLine": 270,
+            "startColumn": 26,
+            "endColumn": 30
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	stem : CharsRef to root : Root<CharsRef> in class org.apache.lucene.analysis.hunspell.Hunspell.CompoundPart",
+          "leftSideLocation": {
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Hunspell.java",
+            "startLine": 277,
+            "endLine": 277,
+            "startColumn": 26,
+            "endColumn": 30
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Hunspell.java",
+            "startLine": 270,
+            "endLine": 270,
+            "startColumn": 26,
+            "endColumn": 30
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private hasForceUCaseProblem(root Root<?>, originalCase WordCase) : boolean extracted from private checkCompoundsAfter(originalCase WordCase, prev CompoundPart) : boolean in class org.apache.lucene.analysis.hunspell.Hunspell",
+          "leftSideLocation": {
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Hunspell.java",
+            "startLine": 224,
+            "endLine": 241,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Hunspell.java",
+            "startLine": 243,
+            "endLine": 246,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/lucene-solr.git",
+      "sha1": "e6d9eaaf000bb00e52a776e298b3c7e9f37a4cd5",
+      "url": "https://github.com/apache/lucene-solr/commit/e6d9eaaf000bb00e52a776e298b3c7e9f37a4cd5",
+      "ourApproach": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.apache.solr.response.XSLTResponseWriter moved to org.apache.solr.scripting.xslt.XSLTResponseWriter",
+          "leftSideLocation": {
+            "filePath": "solr/core/src/java/org/apache/solr/response/XSLTResponseWriter.java",
+            "startLine": 43,
+            "endLine": 137,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "solr/contrib/scripting/src/java/org/apache/solr/scripting/xslt/XSLTResponseWriter.java",
+            "startLine": 40,
+            "endLine": 112,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.apache.solr.util.xslt.TransformerProvider moved to org.apache.solr.scripting.xslt.TransformerProvider",
+          "leftSideLocation": {
+            "filePath": "solr/core/src/java/org/apache/solr/util/xslt/TransformerProvider.java",
+            "startLine": 40,
+            "endLine": 126,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "solr/contrib/scripting/src/java/org/apache/solr/scripting/xslt/TransformerProvider.java",
+            "startLine": 41,
+            "endLine": 148,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.apache.solr.scripting.xslt.XSLTConstants from Class org.apache.solr.response.XSLTResponseWriter",
+          "leftSideLocation": {
+            "filePath": "solr/core/src/java/org/apache/solr/response/XSLTResponseWriter.java",
+            "startLine": 43,
+            "endLine": 137,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "solr/contrib/scripting/src/java/org/apache/solr/scripting/xslt/XSLTConstants.java",
+            "startLine": 20,
+            "endLine": 26,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.apache.solr.scripting.xslt.XSLTOutputWriterTest from Class org.apache.solr.OutputWriterTest",
+          "leftSideLocation": {
+            "filePath": "solr/core/src/test/org/apache/solr/OutputWriterTest.java",
+            "startLine": 31,
+            "endLine": 125,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "solr/contrib/scripting/src/test/org/apache/solr/scripting/xslt/XSLTOutputWriterTest.java",
+            "startLine": 23,
+            "endLine": 53,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.apache.solr.response.XSLTResponseWriter moved to org.apache.solr.scripting.xslt.XSLTResponseWriter",
+          "leftSideLocation": {
+            "filePath": "solr/core/src/java/org/apache/solr/response/XSLTResponseWriter.java",
+            "startLine": 43,
+            "endLine": 137,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "solr/contrib/scripting/src/java/org/apache/solr/scripting/xslt/XSLTResponseWriter.java",
+            "startLine": 40,
+            "endLine": 112,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.apache.solr.util.xslt.TransformerProvider moved to org.apache.solr.scripting.xslt.TransformerProvider",
+          "leftSideLocation": {
+            "filePath": "solr/core/src/java/org/apache/solr/util/xslt/TransformerProvider.java",
+            "startLine": 40,
+            "endLine": 126,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "solr/contrib/scripting/src/java/org/apache/solr/scripting/xslt/TransformerProvider.java",
+            "startLine": 41,
+            "endLine": 148,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.apache.solr.scripting.xslt.XSLTConstants from class org.apache.solr.handler.loader.XMLLoader",
+          "leftSideLocation": {
+            "filePath": "solr/core/src/java/org/apache/solr/handler/loader/XMLLoader.java",
+            "startLine": 76,
+            "endLine": 535,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "solr/contrib/scripting/src/java/org/apache/solr/scripting/xslt/XSLTConstants.java",
+            "startLine": 20,
+            "endLine": 26,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": false
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.apache.solr.scripting.xslt.XSLTOutputWriterTest from class org.apache.solr.OutputWriterTest",
+          "leftSideLocation": {
+            "filePath": "solr/core/src/test/org/apache/solr/OutputWriterTest.java",
+            "startLine": 31,
+            "endLine": 125,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "solr/contrib/scripting/src/test/org/apache/solr/scripting/xslt/XSLTOutputWriterTest.java",
+            "startLine": 23,
+            "endLine": 53,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.apache.solr.scripting.xslt.XSLTConstants from class org.apache.solr.response.XSLTResponseWriter",
+          "leftSideLocation": {
+            "filePath": "solr/core/src/java/org/apache/solr/response/XSLTResponseWriter.java",
+            "startLine": 43,
+            "endLine": 137,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "solr/contrib/scripting/src/java/org/apache/solr/scripting/xslt/XSLTConstants.java",
+            "startLine": 20,
+            "endLine": 26,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/lucene-solr.git",
+      "sha1": "02ea7a11392834857f944f35ace65896c951703f",
+      "url": "https://github.com/apache/lucene-solr/commit/02ea7a11392834857f944f35ace65896c951703f",
+      "ourApproach": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	speller : SpellChecker to speller : Hunspell in class org.apache.lucene.analysis.hunspell.GeneratingSuggester",
+          "leftSideLocation": {
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/GeneratingSuggester.java",
+            "startLine": 46,
+            "endLine": 46,
+            "startColumn": 30,
+            "endColumn": 37
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/GeneratingSuggester.java",
+            "startLine": 46,
+            "endLine": 46,
+            "startColumn": 26,
+            "endColumn": 33
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	speller : SpellChecker to speller : Hunspell in class org.apache.lucene.analysis.hunspell.ModifyingSuggester",
+          "leftSideLocation": {
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/ModifyingSuggester.java",
+            "startLine": 31,
+            "endLine": 31,
+            "startColumn": 30,
+            "endColumn": 37
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/ModifyingSuggester.java",
+            "startLine": 31,
+            "endLine": 31,
+            "startColumn": 26,
+            "endColumn": 33
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.lucene.analysis.hunspell.SpellChecker renamed to org.apache.lucene.analysis.hunspell.Hunspell",
+          "leftSideLocation": {
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/SpellChecker.java",
+            "startLine": 36,
+            "endLine": 535,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Hunspell.java",
+            "startLine": 36,
+            "endLine": 545,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.lucene.analysis.hunspell.SpellCheckerTest renamed to org.apache.lucene.analysis.hunspell.TestSpellChecking",
+          "leftSideLocation": {
+            "filePath": "lucene/analysis/common/src/test/org/apache/lucene/analysis/hunspell/SpellCheckerTest.java",
+            "startLine": 29,
+            "endLine": 260,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/analysis/common/src/test/org/apache/lucene/analysis/hunspell/TestSpellChecking.java",
+            "startLine": 29,
+            "endLine": 260,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.lucene.analysis.hunspell.SpellChecker renamed to org.apache.lucene.analysis.hunspell.Hunspell",
+          "leftSideLocation": {
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/SpellChecker.java",
+            "startLine": 36,
+            "endLine": 535,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Hunspell.java",
+            "startLine": 36,
+            "endLine": 545,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.lucene.analysis.hunspell.SpellCheckerTest renamed to org.apache.lucene.analysis.hunspell.TestSpellChecking",
+          "leftSideLocation": {
+            "filePath": "lucene/analysis/common/src/test/org/apache/lucene/analysis/hunspell/SpellCheckerTest.java",
+            "startLine": 29,
+            "endLine": 260,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/analysis/common/src/test/org/apache/lucene/analysis/hunspell/TestSpellChecking.java",
+            "startLine": 29,
+            "endLine": 260,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	speller : SpellChecker to speller : Hunspell in class org.apache.lucene.analysis.hunspell.GeneratingSuggester",
+          "leftSideLocation": {
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/GeneratingSuggester.java",
+            "startLine": 46,
+            "endLine": 46,
+            "startColumn": 30,
+            "endColumn": 37
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/GeneratingSuggester.java",
+            "startLine": 46,
+            "endLine": 46,
+            "startColumn": 26,
+            "endColumn": 33
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	speller : SpellChecker to speller : Hunspell in class org.apache.lucene.analysis.hunspell.ModifyingSuggester",
+          "leftSideLocation": {
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/ModifyingSuggester.java",
+            "startLine": 31,
+            "endLine": 31,
+            "startColumn": 30,
+            "endColumn": 37
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/ModifyingSuggester.java",
+            "startLine": 31,
+            "endLine": 31,
+            "startColumn": 26,
+            "endColumn": 33
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/lucene-solr.git",
+      "sha1": "29ea0043efedd4a614ebefb938436464581e1edb",
+      "url": "https://github.com/apache/lucene-solr/commit/29ea0043efedd4a614ebefb938436464581e1edb",
+      "ourApproach": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	protected getDocValuesTypes() : DocValuesType[] inlined to private randomFieldType(r Random) : IndexableFieldType in class org.apache.lucene.index.BaseFieldInfoFormatTestCase",
+          "leftSideLocation": {
+            "filePath": "lucene/test-framework/src/java/org/apache/lucene/index/BaseFieldInfoFormatTestCase.java",
+            "startLine": 314,
+            "endLine": 323,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/test-framework/src/java/org/apache/lucene/index/BaseFieldInfoFormatTestCase.java",
+            "startLine": 305,
+            "endLine": 345,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/apache/lucene-solr.git",
+      "sha1": "650f16ad5d8e7ae22904facd54fe46667c0670b9",
+      "url": "https://github.com/apache/lucene-solr/commit/650f16ad5d8e7ae22904facd54fe46667c0670b9",
+      "ourApproach": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	endChars : char[] to endChars : String in class org.apache.lucene.analysis.hunspell.CheckCompoundPattern",
+          "leftSideLocation": {
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/CheckCompoundPattern.java",
+            "startLine": 24,
+            "endLine": 24,
+            "startColumn": 24,
+            "endColumn": 32
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/CheckCompoundPattern.java",
+            "startLine": 24,
+            "endLine": 24,
+            "startColumn": 24,
+            "endColumn": 32
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	beginChars : char[] to beginChars : String in class org.apache.lucene.analysis.hunspell.CheckCompoundPattern",
+          "leftSideLocation": {
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/CheckCompoundPattern.java",
+            "startLine": 25,
+            "endLine": 25,
+            "startColumn": 24,
+            "endColumn": 34
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/CheckCompoundPattern.java",
+            "startLine": 25,
+            "endLine": 25,
+            "startColumn": 24,
+            "endColumn": 34
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	replacement : char[] to replacement : String in class org.apache.lucene.analysis.hunspell.CheckCompoundPattern",
+          "leftSideLocation": {
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/CheckCompoundPattern.java",
+            "startLine": 26,
+            "endLine": 26,
+            "startColumn": 24,
+            "endColumn": 35
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/CheckCompoundPattern.java",
+            "startLine": 26,
+            "endLine": 26,
+            "startColumn": 24,
+            "endColumn": 35
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	endChars : char[] to endChars : String in class org.apache.lucene.analysis.hunspell.CheckCompoundPattern",
+          "leftSideLocation": {
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/CheckCompoundPattern.java",
+            "startLine": 24,
+            "endLine": 24,
+            "startColumn": 24,
+            "endColumn": 32
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/CheckCompoundPattern.java",
+            "startLine": 24,
+            "endLine": 24,
+            "startColumn": 24,
+            "endColumn": 32
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	beginChars : char[] to beginChars : String in class org.apache.lucene.analysis.hunspell.CheckCompoundPattern",
+          "leftSideLocation": {
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/CheckCompoundPattern.java",
+            "startLine": 25,
+            "endLine": 25,
+            "startColumn": 24,
+            "endColumn": 34
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/CheckCompoundPattern.java",
+            "startLine": 25,
+            "endLine": 25,
+            "startColumn": 24,
+            "endColumn": 34
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	replacement : char[] to replacement : String in class org.apache.lucene.analysis.hunspell.CheckCompoundPattern",
+          "leftSideLocation": {
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/CheckCompoundPattern.java",
+            "startLine": 26,
+            "endLine": 26,
+            "startColumn": 24,
+            "endColumn": 35
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/CheckCompoundPattern.java",
+            "startLine": 26,
+            "endLine": 26,
+            "startColumn": 24,
+            "endColumn": 35
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/lucene-solr.git",
+      "sha1": "0d4769e174aad3eede7e7b281d14682bab483468",
+      "url": "https://github.com/apache/lucene-solr/commit/0d4769e174aad3eede7e7b281d14682bab483468",
+      "ourApproach": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	Object to T in method public execute() : T from class org.apache.solr.common.cloud.ZkOperation",
+          "leftSideLocation": {
+            "filePath": "solr/solrj/src/java/org/apache/solr/common/cloud/ZkOperation.java",
+            "startLine": 26,
+            "endLine": 32,
+            "startColumn": 5,
+            "endColumn": 67
+          },
+          "rightSideLocation": {
+            "filePath": "solr/solrj/src/java/org/apache/solr/common/cloud/ZkOperation.java",
+            "startLine": 26,
+            "endLine": 32,
+            "startColumn": 5,
+            "endColumn": 62
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private collectionCmd(message ZkNodeProps, params ModifiableSolrParams, results NamedList<Object>, stateMatcher Replica.State, asyncId String) : List<Replica> inlined to private reloadCollection(clusterState ClusterState, message ZkNodeProps, results NamedList) : void in class org.apache.solr.cloud.api.collections.OverseerCollectionMessageHandler",
+          "leftSideLocation": {
+            "filePath": "solr/core/src/java/org/apache/solr/cloud/api/collections/OverseerCollectionMessageHandler.java",
+            "startLine": 701,
+            "endLine": 704,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "solr/core/src/java/org/apache/solr/cloud/api/collections/OverseerCollectionMessageHandler.java",
+            "startLine": 294,
+            "endLine": 301,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private collectionCmd(message ZkNodeProps, params ModifiableSolrParams, results NamedList<Object>, stateMatcher Replica.State, asyncId String) : List<Replica> inlined to private reloadCollection(clusterState ClusterState, message ZkNodeProps, results NamedList) : void in class org.apache.solr.cloud.api.collections.OverseerCollectionMessageHandler",
+          "leftSideLocation": {
+            "filePath": "solr/core/src/java/org/apache/solr/cloud/api/collections/OverseerCollectionMessageHandler.java",
+            "startLine": 701,
+            "endLine": 704,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "solr/core/src/java/org/apache/solr/cloud/api/collections/OverseerCollectionMessageHandler.java",
+            "startLine": 294,
+            "endLine": 301,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	Object to T in method public execute() : T from class org.apache.solr.common.cloud.ZkOperation",
+          "leftSideLocation": {
+            "filePath": "solr/solrj/src/java/org/apache/solr/common/cloud/ZkOperation.java",
+            "startLine": 26,
+            "endLine": 32,
+            "startColumn": 5,
+            "endColumn": 67
+          },
+          "rightSideLocation": {
+            "filePath": "solr/solrj/src/java/org/apache/solr/common/cloud/ZkOperation.java",
+            "startLine": 26,
+            "endLine": 32,
+            "startColumn": 5,
+            "endColumn": 62
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/lucene-solr.git",
+      "sha1": "c1ae6dc07c9a988533cbe7176bdeb49e2fca1d9c",
+      "url": "https://github.com/apache/lucene-solr/commit/c1ae6dc07c9a988533cbe7176bdeb49e2fca1d9c",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	package readCommit(directory Directory, segmentFileName String, minSupportedMajorVersion int) : SegmentInfos extracted from public readCommit(directory Directory, segmentFileName String) : SegmentInfos in class org.apache.lucene.index.SegmentInfos",
+          "leftSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/index/SegmentInfos.java",
+            "startLine": 277,
+            "endLine": 299,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/index/SegmentInfos.java",
+            "startLine": 291,
+            "endLine": 305,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	package readCommit(directory Directory, input ChecksumIndexInput, generation long, minSupportedMajorVersion int) : SegmentInfos extracted from public readCommit(directory Directory, input ChecksumIndexInput, generation long) : SegmentInfos in class org.apache.lucene.index.SegmentInfos",
+          "leftSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/index/SegmentInfos.java",
+            "startLine": 301,
+            "endLine": 360,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/index/SegmentInfos.java",
+            "startLine": 313,
+            "endLine": 376,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	package readLatestCommit(directory Directory, minSupportedMajorVersion int) : SegmentInfos extracted from public readLatestCommit(directory Directory) : SegmentInfos in class org.apache.lucene.index.SegmentInfos",
+          "leftSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/index/SegmentInfos.java",
+            "startLine": 509,
+            "endLine": 517,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/index/SegmentInfos.java",
+            "startLine": 530,
+            "endLine": 538,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	package open(directory Directory, minSupportedMajorVersion int, commit IndexCommit) : DirectoryReader extracted from package open(directory Directory, commit IndexCommit) : DirectoryReader in class org.apache.lucene.index.StandardDirectoryReader",
+          "leftSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/index/StandardDirectoryReader.java",
+            "startLine": 60,
+            "endLine": 89,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/index/StandardDirectoryReader.java",
+            "startLine": 66,
+            "endLine": 104,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	package readCommit(directory Directory, segmentFileName String, minSupportedMajorVersion int) : SegmentInfos extracted from public readCommit(directory Directory, segmentFileName String) : SegmentInfos in class org.apache.lucene.index.SegmentInfos",
+          "leftSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/index/SegmentInfos.java",
+            "startLine": 277,
+            "endLine": 299,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/index/SegmentInfos.java",
+            "startLine": 291,
+            "endLine": 305,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	package readCommit(directory Directory, input ChecksumIndexInput, generation long, minSupportedMajorVersion int) : SegmentInfos extracted from public readCommit(directory Directory, input ChecksumIndexInput, generation long) : SegmentInfos in class org.apache.lucene.index.SegmentInfos",
+          "leftSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/index/SegmentInfos.java",
+            "startLine": 301,
+            "endLine": 360,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/index/SegmentInfos.java",
+            "startLine": 313,
+            "endLine": 376,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	package readLatestCommit(directory Directory, minSupportedMajorVersion int) : SegmentInfos extracted from public readLatestCommit(directory Directory) : SegmentInfos in class org.apache.lucene.index.SegmentInfos",
+          "leftSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/index/SegmentInfos.java",
+            "startLine": 509,
+            "endLine": 517,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/index/SegmentInfos.java",
+            "startLine": 530,
+            "endLine": 538,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	package open(directory Directory, minSupportedMajorVersion int, commit IndexCommit) : DirectoryReader extracted from package open(directory Directory, commit IndexCommit) : DirectoryReader in class org.apache.lucene.index.StandardDirectoryReader",
+          "leftSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/index/StandardDirectoryReader.java",
+            "startLine": 60,
+            "endLine": 89,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/index/StandardDirectoryReader.java",
+            "startLine": 66,
+            "endLine": 104,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/lucene-solr.git",
+      "sha1": "ca040402d9470969d7f8fe81c5bf4125e9344cde",
+      "url": "https://github.com/apache/lucene-solr/commit/ca040402d9470969d7f8fe81c5bf4125e9344cde",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.apache.solr.ltr.interleaving.TestLTRQParserInterleaving from Class org.apache.solr.ltr.TestLTRQParserPlugin",
+          "leftSideLocation": {
+            "filePath": "solr/contrib/ltr/src/test/org/apache/solr/ltr/TestLTRQParserPlugin.java",
+            "startLine": 24,
+            "endLine": 168,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "solr/contrib/ltr/src/test/org/apache/solr/ltr/interleaving/TestLTRQParserInterleaving.java",
+            "startLine": 30,
+            "endLine": 206,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.apache.solr.ltr.interleaving.TestLTRQParserInterleaving from class org.apache.solr.ltr.TestLTRQParserPlugin",
+          "leftSideLocation": {
+            "filePath": "solr/contrib/ltr/src/test/org/apache/solr/ltr/TestLTRQParserPlugin.java",
+            "startLine": 24,
+            "endLine": 168,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "solr/contrib/ltr/src/test/org/apache/solr/ltr/interleaving/TestLTRQParserInterleaving.java",
+            "startLine": 30,
+            "endLine": 206,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/lucene-solr.git",
+      "sha1": "8be0cea5442c2edab260d0598b920ba832506f80",
+      "url": "https://github.com/apache/lucene-solr/commit/8be0cea5442c2edab260d0598b920ba832506f80",
+      "ourApproach": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	RandomAccess to RandomAccessVectorValues in method public randomAccess() : RandomAccessVectorValues from class org.apache.lucene.codecs.VectorWriter.VectorValuesMerger",
+          "leftSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/codecs/VectorWriter.java",
+            "startLine": 200,
+            "endLine": 203,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/codecs/VectorWriter.java",
+            "startLine": 202,
+            "endLine": 205,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	RandomAccess to RandomAccessVectorValues in method public randomAccess() : RandomAccessVectorValues from class org.apache.lucene.index.VectorValuesWriter.BufferedVectorValues",
+          "leftSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/index/VectorValuesWriter.java",
+            "startLine": 251,
+            "endLine": 254,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/index/VectorValuesWriter.java",
+            "startLine": 253,
+            "endLine": 256,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	RandomAccess to RandomAccessVectorValues in method public randomAccess() : RandomAccessVectorValues from class org.apache.lucene.index.VectorValuesWriter.SortingVectorValues",
+          "leftSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/index/VectorValuesWriter.java",
+            "startLine": 184,
+            "endLine": 219,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/index/VectorValuesWriter.java",
+            "startLine": 190,
+            "endLine": 221,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	raSubs : List<RandomAccess> to raSubs : List<RandomAccessVectorValues> in class org.apache.lucene.codecs.VectorWriter.VectorValuesMerger.MergerRandomAccess",
+          "leftSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/codecs/VectorWriter.java",
+            "startLine": 232,
+            "endLine": 232,
+            "startColumn": 40,
+            "endColumn": 46
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/codecs/VectorWriter.java",
+            "startLine": 239,
+            "endLine": 239,
+            "startColumn": 52,
+            "endColumn": 58
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	RandomAccess to RandomAccessVectorValues in method public randomAccess() : RandomAccessVectorValues from class org.apache.lucene.codecs.lucene90.Lucene90VectorReader.OffHeapVectorValues",
+          "leftSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/codecs/lucene90/Lucene90VectorReader.java",
+            "startLine": 279,
+            "endLine": 282,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/codecs/lucene90/Lucene90VectorReader.java",
+            "startLine": 286,
+            "endLine": 289,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	randomAccess : VectorValues.RandomAccess to randomAccess : RandomAccessVectorValues in class org.apache.lucene.index.VectorValuesWriter.SortingVectorValues",
+          "leftSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/index/VectorValuesWriter.java",
+            "startLine": 104,
+            "endLine": 104,
+            "startColumn": 45,
+            "endColumn": 57
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/index/VectorValuesWriter.java",
+            "startLine": 104,
+            "endLine": 104,
+            "startColumn": 44,
+            "endColumn": 56
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	SearchStrategy to VectorValues.SearchStrategy in method public searchStrategy() : VectorValues.SearchStrategy from class org.apache.lucene.index.RandomAccessVectorValues",
+          "leftSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/index/VectorValues.java",
+            "startLine": 101,
+            "endLine": 104,
+            "startColumn": 5,
+            "endColumn": 37
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/index/RandomAccessVectorValues.java",
+            "startLine": 41,
+            "endLine": 44,
+            "startColumn": 3,
+            "endColumn": 48
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	RandomAccess to RandomAccessVectorValues in method public randomAccess() : RandomAccessVectorValues from class org.apache.lucene.codecs.simpletext.SimpleTextVectorReader.SimpleTextVectorValues",
+          "leftSideLocation": {
+            "filePath": "lucene/codecs/src/java/org/apache/lucene/codecs/simpletext/SimpleTextVectorReader.java",
+            "startLine": 207,
+            "endLine": 210,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/codecs/src/java/org/apache/lucene/codecs/simpletext/SimpleTextVectorReader.java",
+            "startLine": 209,
+            "endLine": 212,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	RandomAccess to RandomAccessVectorValues in method public randomAccess() : RandomAccessVectorValues from class org.apache.lucene.codecs.simpletext.SimpleTextVectorReader.SimpleTextVectorValues",
+          "leftSideLocation": {
+            "filePath": "lucene/codecs/src/java/org/apache/lucene/codecs/simpletext/SimpleTextVectorReader.java",
+            "startLine": 207,
+            "endLine": 210,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/codecs/src/java/org/apache/lucene/codecs/simpletext/SimpleTextVectorReader.java",
+            "startLine": 209,
+            "endLine": 212,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	raSubs : List<RandomAccess> to raSubs : List<RandomAccessVectorValues> in class org.apache.lucene.codecs.VectorWriter.VectorValuesMerger.MergerRandomAccess",
+          "leftSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/codecs/VectorWriter.java",
+            "startLine": 232,
+            "endLine": 232,
+            "startColumn": 40,
+            "endColumn": 46
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/codecs/VectorWriter.java",
+            "startLine": 239,
+            "endLine": 239,
+            "startColumn": 52,
+            "endColumn": 58
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	RandomAccess to RandomAccessVectorValues in method public randomAccess() : RandomAccessVectorValues from class org.apache.lucene.codecs.VectorWriter.VectorValuesMerger",
+          "leftSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/codecs/VectorWriter.java",
+            "startLine": 200,
+            "endLine": 203,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/codecs/VectorWriter.java",
+            "startLine": 202,
+            "endLine": 205,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	RandomAccess to RandomAccessVectorValues in method public randomAccess() : RandomAccessVectorValues from class org.apache.lucene.codecs.lucene90.Lucene90VectorReader.OffHeapVectorValues",
+          "leftSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/codecs/lucene90/Lucene90VectorReader.java",
+            "startLine": 279,
+            "endLine": 282,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/codecs/lucene90/Lucene90VectorReader.java",
+            "startLine": 286,
+            "endLine": 289,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	randomAccess : VectorValues.RandomAccess to randomAccess : RandomAccessVectorValues in class org.apache.lucene.index.VectorValuesWriter.SortingVectorValues",
+          "leftSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/index/VectorValuesWriter.java",
+            "startLine": 104,
+            "endLine": 104,
+            "startColumn": 45,
+            "endColumn": 57
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/index/VectorValuesWriter.java",
+            "startLine": 104,
+            "endLine": 104,
+            "startColumn": 44,
+            "endColumn": 56
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	RandomAccess to RandomAccessVectorValues in method public randomAccess() : RandomAccessVectorValues from class org.apache.lucene.index.VectorValuesWriter.SortingVectorValues",
+          "leftSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/index/VectorValuesWriter.java",
+            "startLine": 184,
+            "endLine": 219,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/index/VectorValuesWriter.java",
+            "startLine": 190,
+            "endLine": 221,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	RandomAccess to RandomAccessVectorValues in method public randomAccess() : RandomAccessVectorValues from class org.apache.lucene.index.VectorValuesWriter.BufferedVectorValues",
+          "leftSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/index/VectorValuesWriter.java",
+            "startLine": 251,
+            "endLine": 254,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/index/VectorValuesWriter.java",
+            "startLine": 253,
+            "endLine": 256,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	SearchStrategy to VectorValues.SearchStrategy in method public searchStrategy() : VectorValues.SearchStrategy from class org.apache.lucene.index.RandomAccessVectorValues",
+          "leftSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/index/VectorValues.java",
+            "startLine": 101,
+            "endLine": 104,
+            "startColumn": 5,
+            "endColumn": 37
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/index/RandomAccessVectorValues.java",
+            "startLine": 41,
+            "endLine": 44,
+            "startColumn": 3,
+            "endColumn": 48
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/lucene-solr.git",
+      "sha1": "ab83b3b7c3786ce39718edc585c70dc12462add9",
+      "url": "https://github.com/apache/lucene-solr/commit/ab83b3b7c3786ce39718edc585c70dc12462add9",
+      "ourApproach": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.apache.solr.util.DOMUtil moved to org.apache.solr.common.util.DOMUtil",
+          "leftSideLocation": {
+            "filePath": "solr/core/src/java/org/apache/solr/util/DOMUtil.java",
+            "startLine": 35,
+            "endLine": 418,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "solr/solrj/src/java/org/apache/solr/common/util/DOMUtil.java",
+            "startLine": 33,
+            "endLine": 416,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.apache.solr.util.PropertiesUtil moved to org.apache.solr.common.util.PropertiesUtil",
+          "leftSideLocation": {
+            "filePath": "solr/core/src/java/org/apache/solr/util/PropertiesUtil.java",
+            "startLine": 26,
+            "endLine": 151,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "solr/solrj/src/java/org/apache/solr/common/util/PropertiesUtil.java",
+            "startLine": 26,
+            "endLine": 151,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.apache.solr.util.DOMUtilTest moved to org.apache.solr.common.util.DOMUtilTest",
+          "leftSideLocation": {
+            "filePath": "solr/core/src/test/org/apache/solr/util/DOMUtilTest.java",
+            "startLine": 22,
+            "endLine": 57,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "solr/solrj/src/test/org/apache/solr/common/util/DOMUtilTest.java",
+            "startLine": 21,
+            "endLine": 56,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.apache.solr.util.DOMUtil moved to org.apache.solr.common.util.DOMUtil",
+          "leftSideLocation": {
+            "filePath": "solr/core/src/java/org/apache/solr/util/DOMUtil.java",
+            "startLine": 35,
+            "endLine": 418,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "solr/solrj/src/java/org/apache/solr/common/util/DOMUtil.java",
+            "startLine": 33,
+            "endLine": 416,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.apache.solr.util.PropertiesUtil moved to org.apache.solr.common.util.PropertiesUtil",
+          "leftSideLocation": {
+            "filePath": "solr/core/src/java/org/apache/solr/util/PropertiesUtil.java",
+            "startLine": 26,
+            "endLine": 151,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "solr/solrj/src/java/org/apache/solr/common/util/PropertiesUtil.java",
+            "startLine": 26,
+            "endLine": 151,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.apache.solr.util.DOMUtilTest moved to org.apache.solr.common.util.DOMUtilTest",
+          "leftSideLocation": {
+            "filePath": "solr/core/src/test/org/apache/solr/util/DOMUtilTest.java",
+            "startLine": 22,
+            "endLine": 57,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "solr/solrj/src/test/org/apache/solr/common/util/DOMUtilTest.java",
+            "startLine": 21,
+            "endLine": 56,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/lucene-solr.git",
+      "sha1": "3dcb19f88670b954e0956d0764853effedd923ef",
+      "url": "https://github.com/apache/lucene-solr/commit/3dcb19f88670b954e0956d0764853effedd923ef",
+      "ourApproach": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private getQuerySting() : String inlined to private remoteQuery(coreUrl String, resp HttpServletResponse) : void in class org.apache.solr.servlet.HttpSolrCall",
+          "leftSideLocation": {
+            "filePath": "solr/core/src/java/org/apache/solr/servlet/HttpSolrCall.java",
+            "startLine": 669,
+            "endLine": 674,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "solr/core/src/java/org/apache/solr/servlet/HttpSolrCall.java",
+            "startLine": 670,
+            "endLine": 753,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private getQuerySting() : String inlined to private remoteQuery(coreUrl String, resp HttpServletResponse) : void in class org.apache.solr.servlet.HttpSolrCall",
+          "leftSideLocation": {
+            "filePath": "solr/core/src/java/org/apache/solr/servlet/HttpSolrCall.java",
+            "startLine": 669,
+            "endLine": 674,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "solr/core/src/java/org/apache/solr/servlet/HttpSolrCall.java",
+            "startLine": 670,
+            "endLine": 753,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/lucene-solr.git",
+      "sha1": "fa756b1c316f1d775fcd4cdcb46e482b31c02fbd",
+      "url": "https://github.com/apache/lucene-solr/commit/fa756b1c316f1d775fcd4cdcb46e482b31c02fbd",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	public parseValueSourceList(flags int) : List<ValueSource> extracted from public parseValueSourceList() : List<ValueSource> in class org.apache.solr.search.FunctionQParser",
+          "leftSideLocation": {
+            "filePath": "solr/core/src/java/org/apache/solr/search/FunctionQParser.java",
+            "startLine": 235,
+            "endLine": 247,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "solr/core/src/java/org/apache/solr/search/FunctionQParser.java",
+            "startLine": 245,
+            "endLine": 259,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private findSpatialStrategyMultiValueSource(mv1 MultiValueSource, mv2 MultiValueSource) : SpatialStrategyMultiValueSource extracted from public parse(fp FunctionQParser) : ValueSource in class org.apache.solr.search.function.distance.GeoDistValueSourceParser",
+          "leftSideLocation": {
+            "filePath": "solr/core/src/java/org/apache/solr/search/function/distance/GeoDistValueSourceParser.java",
+            "startLine": 49,
+            "endLine": 159,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "solr/core/src/java/org/apache/solr/search/function/distance/GeoDistValueSourceParser.java",
+            "startLine": 165,
+            "endLine": 173,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private getMultiValueSource(fp FunctionQParser, sfield String) : MultiValueSource extracted from private parseSfield(fp FunctionQParser) : MultiValueSource in class org.apache.solr.search.function.distance.GeoDistValueSourceParser",
+          "leftSideLocation": {
+            "filePath": "solr/core/src/java/org/apache/solr/search/function/distance/GeoDistValueSourceParser.java",
+            "startLine": 190,
+            "endLine": 205,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "solr/core/src/java/org/apache/solr/search/function/distance/GeoDistValueSourceParser.java",
+            "startLine": 210,
+            "endLine": 223,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	public parseValueSourceList(flags int) : List<ValueSource> extracted from public parseValueSourceList() : List<ValueSource> in class org.apache.solr.search.FunctionQParser",
+          "leftSideLocation": {
+            "filePath": "solr/core/src/java/org/apache/solr/search/FunctionQParser.java",
+            "startLine": 235,
+            "endLine": 247,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "solr/core/src/java/org/apache/solr/search/FunctionQParser.java",
+            "startLine": 245,
+            "endLine": 259,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private findSpatialStrategyMultiValueSource(mv1 MultiValueSource, mv2 MultiValueSource) : SpatialStrategyMultiValueSource extracted from public parse(fp FunctionQParser) : ValueSource in class org.apache.solr.search.function.distance.GeoDistValueSourceParser",
+          "leftSideLocation": {
+            "filePath": "solr/core/src/java/org/apache/solr/search/function/distance/GeoDistValueSourceParser.java",
+            "startLine": 49,
+            "endLine": 159,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "solr/core/src/java/org/apache/solr/search/function/distance/GeoDistValueSourceParser.java",
+            "startLine": 165,
+            "endLine": 173,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private getMultiValueSource(fp FunctionQParser, sfield String) : MultiValueSource extracted from private parseSfield(fp FunctionQParser) : MultiValueSource in class org.apache.solr.search.function.distance.GeoDistValueSourceParser",
+          "leftSideLocation": {
+            "filePath": "solr/core/src/java/org/apache/solr/search/function/distance/GeoDistValueSourceParser.java",
+            "startLine": 190,
+            "endLine": 205,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "solr/core/src/java/org/apache/solr/search/function/distance/GeoDistValueSourceParser.java",
+            "startLine": 210,
+            "endLine": 223,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/lucene-solr.git",
+      "sha1": "99220677fe409bab5c4206dc31f186d0c4335280",
+      "url": "https://github.com/apache/lucene-solr/commit/99220677fe409bab5c4206dc31f186d0c4335280",
+      "ourApproach": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.apache.lucene.search.FieldComparator.NumericComparator moved to org.apache.lucene.search.comparators.NumericComparator",
+          "leftSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/search/FieldComparator.java",
+            "startLine": 140,
+            "endLine": 162,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/search/comparators/NumericComparator.java",
+            "startLine": 34,
+            "endLine": 253,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.apache.lucene.search.FieldComparator.DoubleComparator moved to org.apache.lucene.search.comparators.DoubleComparator",
+          "leftSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/search/FieldComparator.java",
+            "startLine": 164,
+            "endLine": 222,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/search/comparators/DoubleComparator.java",
+            "startLine": 26,
+            "endLine": 117,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.apache.lucene.search.FieldComparator.FloatComparator moved to org.apache.lucene.search.comparators.FloatComparator",
+          "leftSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/search/FieldComparator.java",
+            "startLine": 224,
+            "endLine": 282,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/search/comparators/FloatComparator.java",
+            "startLine": 26,
+            "endLine": 117,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.apache.lucene.search.FieldComparator.DocComparator moved to org.apache.lucene.search.comparators.DocComparator",
+          "leftSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/search/FieldComparator.java",
+            "startLine": 489,
+            "endLine": 550,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/search/comparators/DocComparator.java",
+            "startLine": 28,
+            "endLine": 185,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.apache.lucene.search.FieldComparator.IntComparator moved to org.apache.lucene.search.comparators.IntComparator",
+          "leftSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/search/FieldComparator.java",
+            "startLine": 284,
+            "endLine": 344,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/search/comparators/IntComparator.java",
+            "startLine": 26,
+            "endLine": 119,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.apache.lucene.search.FieldComparator.LongComparator moved to org.apache.lucene.search.comparators.LongComparator",
+          "leftSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/search/FieldComparator.java",
+            "startLine": 346,
+            "endLine": 404,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/search/comparators/LongComparator.java",
+            "startLine": 26,
+            "endLine": 119,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.apache.lucene.search.comparators.DocComparator.DocLeafComparator from Class org.apache.lucene.search.FieldComparator.DocComparator",
+          "leftSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/search/FieldComparator.java",
+            "startLine": 489,
+            "endLine": 550,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/search/comparators/DocComparator.java",
+            "startLine": 74,
+            "endLine": 184,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.apache.lucene.search.comparators.DoubleComparator.DoubleLeafComparator from Class org.apache.lucene.search.FieldComparator.DoubleComparator",
+          "leftSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/search/FieldComparator.java",
+            "startLine": 164,
+            "endLine": 222,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/search/comparators/DoubleComparator.java",
+            "startLine": 61,
+            "endLine": 115,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.apache.lucene.search.comparators.FloatComparator.FloatLeafComparator from Class org.apache.lucene.search.FieldComparator.FloatComparator",
+          "leftSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/search/FieldComparator.java",
+            "startLine": 224,
+            "endLine": 282,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/search/comparators/FloatComparator.java",
+            "startLine": 61,
+            "endLine": 115,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.apache.lucene.search.comparators.IntComparator.IntLeafComparator from Class org.apache.lucene.search.FieldComparator.IntComparator",
+          "leftSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/search/FieldComparator.java",
+            "startLine": 284,
+            "endLine": 344,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/search/comparators/IntComparator.java",
+            "startLine": 61,
+            "endLine": 117,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.apache.lucene.search.comparators.LongComparator.LongLeafComparator from Class org.apache.lucene.search.FieldComparator.LongComparator",
+          "leftSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/search/FieldComparator.java",
+            "startLine": 346,
+            "endLine": 404,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/search/comparators/LongComparator.java",
+            "startLine": 61,
+            "endLine": 117,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.apache.lucene.search.comparators.NumericComparator.NumericLeafComparator from Class org.apache.lucene.search.FieldComparator.NumericComparator",
+          "leftSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/search/FieldComparator.java",
+            "startLine": 140,
+            "endLine": 162,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/search/comparators/NumericComparator.java",
+            "startLine": 68,
+            "endLine": 252,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.apache.lucene.search.FieldComparator.DocComparator moved to org.apache.lucene.search.comparators.DocComparator",
+          "leftSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/search/FieldComparator.java",
+            "startLine": 489,
+            "endLine": 550,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/search/comparators/DocComparator.java",
+            "startLine": 28,
+            "endLine": 185,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.apache.lucene.search.FieldComparator.DoubleComparator moved to org.apache.lucene.search.comparators.DoubleComparator",
+          "leftSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/search/FieldComparator.java",
+            "startLine": 164,
+            "endLine": 222,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/search/comparators/DoubleComparator.java",
+            "startLine": 26,
+            "endLine": 117,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.apache.lucene.search.FieldComparator.FloatComparator moved to org.apache.lucene.search.comparators.FloatComparator",
+          "leftSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/search/FieldComparator.java",
+            "startLine": 224,
+            "endLine": 282,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/search/comparators/FloatComparator.java",
+            "startLine": 26,
+            "endLine": 117,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.apache.lucene.search.FieldComparator.IntComparator moved to org.apache.lucene.search.comparators.IntComparator",
+          "leftSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/search/FieldComparator.java",
+            "startLine": 284,
+            "endLine": 344,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/search/comparators/IntComparator.java",
+            "startLine": 26,
+            "endLine": 119,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.apache.lucene.search.FieldComparator.LongComparator moved to org.apache.lucene.search.comparators.LongComparator",
+          "leftSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/search/FieldComparator.java",
+            "startLine": 346,
+            "endLine": 404,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/search/comparators/LongComparator.java",
+            "startLine": 26,
+            "endLine": 119,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public setCanUpdateIterator() : void renamed to public setHitsThresholdReached() : void in class org.apache.lucene.search.comparators.NumericComparator.NumericLeafComparator",
+          "leftSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/search/FilteringNumericLeafComparator.java",
+            "startLine": 99,
+            "endLine": 103,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/search/comparators/NumericComparator.java",
+            "startLine": 126,
+            "endLine": 130,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.apache.lucene.search.comparators.DoubleComparator.DoubleLeafComparator from class org.apache.lucene.search.FieldComparator.DocComparator",
+          "leftSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/search/FieldComparator.java",
+            "startLine": 489,
+            "endLine": 550,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/search/comparators/DoubleComparator.java",
+            "startLine": 61,
+            "endLine": 115,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": false
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.apache.lucene.search.comparators.DoubleComparator.DoubleLeafComparator from class org.apache.lucene.search.FieldComparator.DoubleComparator",
+          "leftSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/search/FieldComparator.java",
+            "startLine": 164,
+            "endLine": 222,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/search/comparators/DoubleComparator.java",
+            "startLine": 61,
+            "endLine": 115,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.apache.lucene.search.comparators.DoubleComparator.DoubleLeafComparator from class org.apache.lucene.search.FieldComparator.FloatComparator",
+          "leftSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/search/FieldComparator.java",
+            "startLine": 224,
+            "endLine": 282,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/search/comparators/DoubleComparator.java",
+            "startLine": 61,
+            "endLine": 115,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": false
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.apache.lucene.search.comparators.DoubleComparator.DoubleLeafComparator from class org.apache.lucene.search.FieldComparator.IntComparator",
+          "leftSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/search/FieldComparator.java",
+            "startLine": 284,
+            "endLine": 344,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/search/comparators/DoubleComparator.java",
+            "startLine": 61,
+            "endLine": 115,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": false
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.apache.lucene.search.comparators.DoubleComparator.DoubleLeafComparator from class org.apache.lucene.search.FieldComparator.LongComparator",
+          "leftSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/search/FieldComparator.java",
+            "startLine": 346,
+            "endLine": 404,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/search/comparators/DoubleComparator.java",
+            "startLine": 61,
+            "endLine": 115,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": false
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.apache.lucene.search.comparators.FloatComparator.FloatLeafComparator from class org.apache.lucene.search.FieldComparator.FloatComparator",
+          "leftSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/search/FieldComparator.java",
+            "startLine": 224,
+            "endLine": 282,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/search/comparators/FloatComparator.java",
+            "startLine": 61,
+            "endLine": 115,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.apache.lucene.search.comparators.IntComparator.IntLeafComparator from class org.apache.lucene.search.FieldComparator.IntComparator",
+          "leftSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/search/FieldComparator.java",
+            "startLine": 284,
+            "endLine": 344,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/search/comparators/IntComparator.java",
+            "startLine": 61,
+            "endLine": 117,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.apache.lucene.search.comparators.LongComparator.LongLeafComparator from class org.apache.lucene.search.FieldComparator.LongComparator",
+          "leftSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/search/FieldComparator.java",
+            "startLine": 346,
+            "endLine": 404,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/search/comparators/LongComparator.java",
+            "startLine": 61,
+            "endLine": 117,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.apache.lucene.search.comparators.NumericComparator from class org.apache.lucene.search.FilteringNumericLeafComparator",
+          "leftSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/search/FilteringNumericLeafComparator.java",
+            "startLine": 30,
+            "endLine": 336,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/search/comparators/NumericComparator.java",
+            "startLine": 34,
+            "endLine": 253,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/lucene-solr.git",
+      "sha1": "27aa5c5f59e8cb03316efa504f0351decd41d61c",
+      "url": "https://github.com/apache/lucene-solr/commit/27aa5c5f59e8cb03316efa504f0351decd41d61c",
+      "ourApproach": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	BEST_COMPRESSION_MODE : DeflateWithPresetDict to BEST_COMPRESSION_MODE : CompressionMode in class org.apache.lucene.codecs.lucene87.Lucene87StoredFieldsFormat",
+          "leftSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/codecs/lucene87/Lucene87StoredFieldsFormat.java",
+            "startLine": 182,
+            "endLine": 182,
+            "startColumn": 45,
+            "endColumn": 159
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/codecs/lucene87/Lucene87StoredFieldsFormat.java",
+            "startLine": 172,
+            "endLine": 172,
+            "startColumn": 39,
+            "endColumn": 168
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.apache.lucene.codecs.lucene87.Lucene87StoredFieldsFormat.DeflateWithPresetDictDecompressor moved to org.apache.lucene.codecs.lucene87.DeflateWithPresetDictCompressionMode.DeflateWithPresetDictDecompressor",
+          "leftSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/codecs/lucene87/Lucene87StoredFieldsFormat.java",
+            "startLine": 220,
+            "endLine": 306,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/codecs/lucene87/DeflateWithPresetDictCompressionMode.java",
+            "startLine": 68,
+            "endLine": 154,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.apache.lucene.codecs.lucene87.Lucene87StoredFieldsFormat.DeflateWithPresetDictCompressor moved to org.apache.lucene.codecs.lucene87.DeflateWithPresetDictCompressionMode.DeflateWithPresetDictCompressor",
+          "leftSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/codecs/lucene87/Lucene87StoredFieldsFormat.java",
+            "startLine": 308,
+            "endLine": 378,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/codecs/lucene87/DeflateWithPresetDictCompressionMode.java",
+            "startLine": 156,
+            "endLine": 226,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	public compressWithDictionary(bytes byte[], dictOff int, dictLen int, len int, out DataOutput, ht HashTable) : void extracted from public compress(bytes byte[], off int, len int, out DataOutput, ht HashTable) : void in class org.apache.lucene.util.compress.LZ4",
+          "leftSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/util/compress/LZ4.java",
+            "startLine": 391,
+            "endLine": 450,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/util/compress/LZ4.java",
+            "startLine": 421,
+            "endLine": 488,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.apache.lucene.codecs.lucene87.Lucene87StoredFieldsFormat.DeflateWithPresetDictDecompressor moved to org.apache.lucene.codecs.lucene87.DeflateWithPresetDictCompressionMode.DeflateWithPresetDictDecompressor",
+          "leftSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/codecs/lucene87/Lucene87StoredFieldsFormat.java",
+            "startLine": 220,
+            "endLine": 306,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/codecs/lucene87/DeflateWithPresetDictCompressionMode.java",
+            "startLine": 68,
+            "endLine": 154,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.apache.lucene.codecs.lucene87.Lucene87StoredFieldsFormat.DeflateWithPresetDictCompressor moved to org.apache.lucene.codecs.lucene87.DeflateWithPresetDictCompressionMode.DeflateWithPresetDictCompressor",
+          "leftSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/codecs/lucene87/Lucene87StoredFieldsFormat.java",
+            "startLine": 308,
+            "endLine": 378,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/codecs/lucene87/DeflateWithPresetDictCompressionMode.java",
+            "startLine": 156,
+            "endLine": 226,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	BEST_COMPRESSION_MODE : DeflateWithPresetDict to BEST_COMPRESSION_MODE : CompressionMode in class org.apache.lucene.codecs.lucene87.Lucene87StoredFieldsFormat",
+          "leftSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/codecs/lucene87/Lucene87StoredFieldsFormat.java",
+            "startLine": 182,
+            "endLine": 182,
+            "startColumn": 45,
+            "endColumn": 159
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/codecs/lucene87/Lucene87StoredFieldsFormat.java",
+            "startLine": 172,
+            "endLine": 172,
+            "startColumn": 39,
+            "endColumn": 168
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	public compressWithDictionary(bytes byte[], dictOff int, dictLen int, len int, out DataOutput, ht HashTable) : void extracted from public compress(bytes byte[], off int, len int, out DataOutput, ht HashTable) : void in class org.apache.lucene.util.compress.LZ4",
+          "leftSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/util/compress/LZ4.java",
+            "startLine": 391,
+            "endLine": 450,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "lucene/core/src/java/org/apache/lucene/util/compress/LZ4.java",
+            "startLine": 421,
+            "endLine": 488,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ]
+    }
+  ]
+}

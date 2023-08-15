@@ -1,0 +1,2190 @@
+{
+  "results": [
+    {
+      "repository": "https://github.com/pmd/pmd.git",
+      "sha1": "e65fddff82fac723e14d307c8fddacf37e03127d",
+      "url": "https://github.com/pmd/pmd/commit/e65fddff82fac723e14d307c8fddacf37e03127d",
+      "matchedEntities": [
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.internal.util.FileCollectionUtil",
+            "type": "Class",
+            "name": "FileCollectionUtil",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/internal/util/FileCollectionUtil.java",
+            "startLine": 32,
+            "endLine": 180,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.internal.util.FileCollectionUtil",
+            "type": "Class",
+            "name": "FileCollectionUtil",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/internal/util/FileCollectionUtil.java",
+            "startLine": 32,
+            "endLine": 180,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.internal.util.FileCollectionUtil",
+            "type": "Method",
+            "name": "addRoot",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/internal/util/FileCollectionUtil.java",
+            "startLine": 136,
+            "endLine": 151,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.internal.util.FileCollectionUtil",
+            "type": "Method",
+            "name": "addRoot",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/internal/util/FileCollectionUtil.java",
+            "startLine": 136,
+            "endLine": 151,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.lang.document.FileCollector",
+            "type": "Class",
+            "name": "FileCollector",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/lang/document/FileCollector.java",
+            "startLine": 42,
+            "endLine": 513,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.lang.document.FileCollector",
+            "type": "Class",
+            "name": "FileCollector",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/lang/document/FileCollector.java",
+            "startLine": 43,
+            "endLine": 542,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.lang.document.FileCollector",
+            "type": "Method",
+            "name": "addZipFile",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/lang/document/FileCollector.java",
+            "startLine": 364,
+            "endLine": 404,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.lang.document.FileCollector",
+            "type": "Method",
+            "name": "addZipFile",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/lang/document/FileCollector.java",
+            "startLine": 365,
+            "endLine": 387,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/pmd/pmd.git",
+      "sha1": "9d0bf66ee1f551735f272e13df94e7a67f9bede7",
+      "url": "https://github.com/pmd/pmd/commit/9d0bf66ee1f551735f272e13df94e7a67f9bede7",
+      "matchedEntities": [
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.lang.document.FileCollector",
+            "type": "Class",
+            "name": "FileCollector",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/lang/document/FileCollector.java",
+            "startLine": 40,
+            "endLine": 390,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.lang.document.FileCollector",
+            "type": "Class",
+            "name": "FileCollector",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/lang/document/FileCollector.java",
+            "startLine": 40,
+            "endLine": 390,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.lang.document.FileCollector",
+            "type": "Method",
+            "name": "addZipFile",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/lang/document/FileCollector.java",
+            "startLine": 307,
+            "endLine": 326,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.lang.document.FileCollector",
+            "type": "Method",
+            "name": "addZipFile",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/lang/document/FileCollector.java",
+            "startLine": 307,
+            "endLine": 326,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.lang.document.NioTextFile",
+            "type": "Class",
+            "name": "NioTextFile",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/lang/document/NioTextFile.java",
+            "startLine": 23,
+            "endLine": 101,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.lang.document.NioTextFile",
+            "type": "Class",
+            "name": "NioTextFile",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/lang/document/NioTextFile.java",
+            "startLine": 23,
+            "endLine": 101,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.lang.document.NioTextFile",
+            "type": "Method",
+            "name": "toDataSourceCompat",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/lang/document/NioTextFile.java",
+            "startLine": 75,
+            "endLine": 78,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.lang.document.NioTextFile",
+            "type": "Method",
+            "name": "toDataSourceCompat",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/lang/document/NioTextFile.java",
+            "startLine": 75,
+            "endLine": 78,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.util.datasource.FileDataSource",
+            "type": "Class",
+            "name": "FileDataSource",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/util/datasource/FileDataSource.java",
+            "startLine": 17,
+            "endLine": 101,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.util.datasource.FileDataSource",
+            "type": "Class",
+            "name": "FileDataSource",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/util/datasource/FileDataSource.java",
+            "startLine": 11,
+            "endLine": 23,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.util.datasource.FileDataSource",
+            "type": "Method",
+            "name": "FileDataSource",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/util/datasource/FileDataSource.java",
+            "startLine": 23,
+            "endLine": 29,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.util.datasource.FileDataSource",
+            "type": "Method",
+            "name": "FileDataSource",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/util/datasource/FileDataSource.java",
+            "startLine": 16,
+            "endLine": 22,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.cli.CoreCliTest",
+            "type": "Class",
+            "name": "CoreCliTest",
+            "filePath": "pmd-core/src/test/java/net/sourceforge/pmd/cli/CoreCliTest.java",
+            "startLine": 42,
+            "endLine": 287,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.cli.CoreCliTest",
+            "type": "Class",
+            "name": "CoreCliTest",
+            "filePath": "pmd-core/src/test/java/net/sourceforge/pmd/cli/CoreCliTest.java",
+            "startLine": 45,
+            "endLine": 306,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/pmd/pmd.git",
+      "sha1": "5ad37f67579e2ed2ed02e6ca68a8f28cd9d5aafa",
+      "url": "https://github.com/pmd/pmd/commit/5ad37f67579e2ed2ed02e6ca68a8f28cd9d5aafa",
+      "matchedEntities": [
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.lang.vf.ApexClassPropertyTypes",
+            "type": "Class",
+            "name": "ApexClassPropertyTypes",
+            "filePath": "pmd-visualforce/src/main/java/net/sourceforge/pmd/lang/vf/ApexClassPropertyTypes.java",
+            "startLine": 28,
+            "endLine": 98,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.lang.vf.ApexClassPropertyTypes",
+            "type": "Class",
+            "name": "ApexClassPropertyTypes",
+            "filePath": "pmd-visualforce/src/main/java/net/sourceforge/pmd/lang/vf/ApexClassPropertyTypes.java",
+            "startLine": 26,
+            "endLine": 96,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.lang.vf.ApexClassPropertyTypes",
+            "type": "Method",
+            "name": "findDataType",
+            "filePath": "pmd-visualforce/src/main/java/net/sourceforge/pmd/lang/vf/ApexClassPropertyTypes.java",
+            "startLine": 36,
+            "endLine": 70,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.lang.vf.ApexClassPropertyTypes",
+            "type": "Method",
+            "name": "findDataType",
+            "filePath": "pmd-visualforce/src/main/java/net/sourceforge/pmd/lang/vf/ApexClassPropertyTypes.java",
+            "startLine": 34,
+            "endLine": 68,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.lang.vf.ApexClassPropertyTypesVisitor",
+            "type": "Class",
+            "name": "ApexClassPropertyTypesVisitor",
+            "filePath": "pmd-visualforce/src/main/java/net/sourceforge/pmd/lang/vf/ApexClassPropertyTypesVisitor.java",
+            "startLine": 23,
+            "endLine": 91,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.lang.vf.ApexClassPropertyTypesVisitor",
+            "type": "Class",
+            "name": "ApexClassPropertyTypesVisitor",
+            "filePath": "pmd-visualforce/src/main/java/net/sourceforge/pmd/lang/vf/ApexClassPropertyTypesVisitor.java",
+            "startLine": 20,
+            "endLine": 87,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.lang.vf.ApexClassPropertyTypesVisitor",
+            "type": "Method",
+            "name": "visit",
+            "filePath": "pmd-visualforce/src/main/java/net/sourceforge/pmd/lang/vf/ApexClassPropertyTypesVisitor.java",
+            "startLine": 52,
+            "endLine": 80,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.lang.vf.ApexClassPropertyTypesVisitor",
+            "type": "Method",
+            "name": "visit",
+            "filePath": "pmd-visualforce/src/main/java/net/sourceforge/pmd/lang/vf/ApexClassPropertyTypesVisitor.java",
+            "startLine": 49,
+            "endLine": 76,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.lang.vf.ApexClassPropertyTypesVisitor",
+            "type": "Method",
+            "name": "getVariables",
+            "filePath": "pmd-visualforce/src/main/java/net/sourceforge/pmd/lang/vf/ApexClassPropertyTypesVisitor.java",
+            "startLine": 48,
+            "endLine": 50,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.lang.vf.ApexClassPropertyTypesVisitor",
+            "type": "Method",
+            "name": "getVariables",
+            "filePath": "pmd-visualforce/src/main/java/net/sourceforge/pmd/lang/vf/ApexClassPropertyTypesVisitor.java",
+            "startLine": 45,
+            "endLine": 47,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.lang.vf.ApexClassPropertyTypesVisitorTest",
+            "type": "Class",
+            "name": "ApexClassPropertyTypesVisitorTest",
+            "filePath": "pmd-visualforce/src/test/java/net/sourceforge/pmd/lang/vf/ApexClassPropertyTypesVisitorTest.java",
+            "startLine": 33,
+            "endLine": 66,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.lang.vf.ApexClassPropertyTypesVisitorTest",
+            "type": "Class",
+            "name": "ApexClassPropertyTypesVisitorTest",
+            "filePath": "pmd-visualforce/src/test/java/net/sourceforge/pmd/lang/vf/ApexClassPropertyTypesVisitorTest.java",
+            "startLine": 32,
+            "endLine": 65,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.lang.vf.ApexClassPropertyTypesVisitorTest",
+            "type": "Method",
+            "name": "testApexClassIsProperlyParsed",
+            "filePath": "pmd-visualforce/src/test/java/net/sourceforge/pmd/lang/vf/ApexClassPropertyTypesVisitorTest.java",
+            "startLine": 34,
+            "endLine": 65,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.lang.vf.ApexClassPropertyTypesVisitorTest",
+            "type": "Method",
+            "name": "testApexClassIsProperlyParsed",
+            "filePath": "pmd-visualforce/src/test/java/net/sourceforge/pmd/lang/vf/ApexClassPropertyTypesVisitorTest.java",
+            "startLine": 33,
+            "endLine": 64,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.lang.vf.DataTypeTest",
+            "type": "Class",
+            "name": "DataTypeTest",
+            "filePath": "pmd-visualforce/src/test/java/net/sourceforge/pmd/lang/vf/DataTypeTest.java",
+            "startLine": 15,
+            "endLine": 38,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.lang.vf.DataTypeTest",
+            "type": "Class",
+            "name": "DataTypeTest",
+            "filePath": "pmd-visualforce/src/test/java/net/sourceforge/pmd/lang/vf/DataTypeTest.java",
+            "startLine": 13,
+            "endLine": 39,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/pmd/pmd.git",
+      "sha1": "d3e68d795b07d0cbc94e38ac85e708f7d5fef107",
+      "url": "https://github.com/pmd/pmd/commit/d3e68d795b07d0cbc94e38ac85e708f7d5fef107",
+      "matchedEntities": [
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.PMDConfiguration",
+            "type": "Class",
+            "name": "PMDConfiguration",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/PMDConfiguration.java",
+            "startLine": 33,
+            "endLine": 943,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.PMDConfiguration",
+            "type": "Class",
+            "name": "PMDConfiguration",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/PMDConfiguration.java",
+            "startLine": 34,
+            "endLine": 981,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.PmdAnalysis",
+            "type": "Class",
+            "name": "PmdAnalysis",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/PmdAnalysis.java",
+            "startLine": 37,
+            "endLine": 329,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.PmdAnalysis",
+            "type": "Class",
+            "name": "PmdAnalysis",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/PmdAnalysis.java",
+            "startLine": 38,
+            "endLine": 334,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.PmdAnalysis",
+            "type": "Method",
+            "name": "PmdAnalysis",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/PmdAnalysis.java",
+            "startLine": 77,
+            "endLine": 91,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.PmdAnalysis",
+            "type": "Method",
+            "name": "PmdAnalysis",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/PmdAnalysis.java",
+            "startLine": 78,
+            "endLine": 96,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.ant.PMDTask",
+            "type": "Class",
+            "name": "PMDTask",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/ant/PMDTask.java",
+            "startLine": 20,
+            "endLine": 267,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.ant.PMDTask",
+            "type": "Class",
+            "name": "PMDTask",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/ant/PMDTask.java",
+            "startLine": 22,
+            "endLine": 285,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.ant.internal.PMDTaskImpl",
+            "type": "Class",
+            "name": "PMDTaskImpl",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/ant/internal/PMDTaskImpl.java",
+            "startLine": 36,
+            "endLine": 243,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.ant.internal.PMDTaskImpl",
+            "type": "Class",
+            "name": "PMDTaskImpl",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/ant/internal/PMDTaskImpl.java",
+            "startLine": 35,
+            "endLine": 243,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.ant.internal.PMDTaskImpl",
+            "type": "Method",
+            "name": "PMDTaskImpl",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/ant/internal/PMDTaskImpl.java",
+            "startLine": 49,
+            "endLine": 86,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.ant.internal.PMDTaskImpl",
+            "type": "Method",
+            "name": "PMDTaskImpl",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/ant/internal/PMDTaskImpl.java",
+            "startLine": 48,
+            "endLine": 88,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.ant.internal.PMDTaskImpl",
+            "type": "Method",
+            "name": "doTask",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/ant/internal/PMDTaskImpl.java",
+            "startLine": 88,
+            "endLine": 147,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.ant.internal.PMDTaskImpl",
+            "type": "Method",
+            "name": "doTask",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/ant/internal/PMDTaskImpl.java",
+            "startLine": 90,
+            "endLine": 147,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "",
+            "type": "Method",
+            "name": "startFileAnalysis",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/ant/internal/PMDTaskImpl.java",
+            "startLine": 164,
+            "endLine": 168,
+            "startColumn": 13,
+            "endColumn": 14
+          },
+          "rightSideLocation": {
+            "container": "",
+            "type": "Method",
+            "name": "startFileAnalysis",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/ant/internal/PMDTaskImpl.java",
+            "startLine": 164,
+            "endLine": 168,
+            "startColumn": 13,
+            "endColumn": 14
+          },
+          "developerConfirmation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.ant.internal.PMDTaskImpl",
+            "type": "Method",
+            "name": "getLogRenderer",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/ant/internal/PMDTaskImpl.java",
+            "startLine": 157,
+            "endLine": 190,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.ant.internal.PMDTaskImpl",
+            "type": "Method",
+            "name": "getLogRenderer",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/ant/internal/PMDTaskImpl.java",
+            "startLine": 157,
+            "endLine": 190,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.cli.PMDParameters",
+            "type": "Class",
+            "name": "PMDParameters",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/cli/PMDParameters.java",
+            "startLine": 27,
+            "endLine": 434,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.cli.PMDParameters",
+            "type": "Class",
+            "name": "PMDParameters",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/cli/PMDParameters.java",
+            "startLine": 28,
+            "endLine": 446,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.cli.PMDParameters",
+            "type": "Method",
+            "name": "toConfiguration",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/cli/PMDParameters.java",
+            "startLine": 222,
+            "endLine": 289,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.cli.PMDParameters",
+            "type": "Method",
+            "name": "toConfiguration",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/cli/PMDParameters.java",
+            "startLine": 231,
+            "endLine": 301,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.cli.PmdParametersParseResult",
+            "type": "Class",
+            "name": "PmdParametersParseResult",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/cli/PmdParametersParseResult.java",
+            "startLine": 19,
+            "endLine": 178,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.cli.PmdParametersParseResult",
+            "type": "Class",
+            "name": "PmdParametersParseResult",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/cli/PmdParametersParseResult.java",
+            "startLine": 19,
+            "endLine": 180,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.internal.util.FileCollectionUtil",
+            "type": "Class",
+            "name": "FileCollectionUtil",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/internal/util/FileCollectionUtil.java",
+            "startLine": 32,
+            "endLine": 173,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.internal.util.FileCollectionUtil",
+            "type": "Class",
+            "name": "FileCollectionUtil",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/internal/util/FileCollectionUtil.java",
+            "startLine": 33,
+            "endLine": 189,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.internal.util.FileCollectionUtil",
+            "type": "Method",
+            "name": "collectFiles",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/internal/util/FileCollectionUtil.java",
+            "startLine": 49,
+            "endLine": 53,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.internal.util.FileCollectionUtil",
+            "type": "Method",
+            "name": "collectFiles",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/internal/util/FileCollectionUtil.java",
+            "startLine": 50,
+            "endLine": 55,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.internal.util.FileCollectionUtil",
+            "type": "Method",
+            "name": "collectFiles",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/internal/util/FileCollectionUtil.java",
+            "startLine": 55,
+            "endLine": 62,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.internal.util.FileCollectionUtil",
+            "type": "Method",
+            "name": "collectFiles",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/internal/util/FileCollectionUtil.java",
+            "startLine": 57,
+            "endLine": 65,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.internal.util.FileCollectionUtil",
+            "type": "Method",
+            "name": "collectFiles",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/internal/util/FileCollectionUtil.java",
+            "startLine": 64,
+            "endLine": 90,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.internal.util.FileCollectionUtil",
+            "type": "Method",
+            "name": "collectFiles",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/internal/util/FileCollectionUtil.java",
+            "startLine": 67,
+            "endLine": 107,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.internal.util.FileCollectionUtil",
+            "type": "Method",
+            "name": "collectFileList",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/internal/util/FileCollectionUtil.java",
+            "startLine": 104,
+            "endLine": 119,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.internal.util.FileCollectionUtil",
+            "type": "Method",
+            "name": "collectFileList",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/internal/util/FileCollectionUtil.java",
+            "startLine": 121,
+            "endLine": 136,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.internal.util.FileCollectionUtil",
+            "type": "Method",
+            "name": "collectFiles",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/internal/util/FileCollectionUtil.java",
+            "startLine": 93,
+            "endLine": 102,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.internal.util.FileCollectionUtil",
+            "type": "Method",
+            "name": "collectFiles",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/internal/util/FileCollectionUtil.java",
+            "startLine": 110,
+            "endLine": 119,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.internal.util.FileCollectionUtil",
+            "type": "Method",
+            "name": "addRoot",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/internal/util/FileCollectionUtil.java",
+            "startLine": 121,
+            "endLine": 144,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.internal.util.FileCollectionUtil",
+            "type": "Method",
+            "name": "addRoot",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/internal/util/FileCollectionUtil.java",
+            "startLine": 138,
+            "endLine": 160,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.lang.document.FileCollector",
+            "type": "Class",
+            "name": "FileCollector",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/lang/document/FileCollector.java",
+            "startLine": 40,
+            "endLine": 390,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.lang.document.FileCollector",
+            "type": "Class",
+            "name": "FileCollector",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/lang/document/FileCollector.java",
+            "startLine": 40,
+            "endLine": 442,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.lang.document.FileCollector",
+            "type": "Method",
+            "name": "getDisplayName",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/lang/document/FileCollector.java",
+            "startLine": 241,
+            "endLine": 243,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.lang.document.FileCollector",
+            "type": "Method",
+            "name": "getDisplayName",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/lang/document/FileCollector.java",
+            "startLine": 243,
+            "endLine": 249,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.lang.document.FileCollector",
+            "type": "Method",
+            "name": "relativizeWith",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/lang/document/FileCollector.java",
+            "startLine": 340,
+            "endLine": 353,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.lang.document.FileCollector",
+            "type": "Method",
+            "name": "relativizeWith",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/lang/document/FileCollector.java",
+            "startLine": 374,
+            "endLine": 390,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.lang.document.FileCollector",
+            "type": "Method",
+            "name": "getDisplayName",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/lang/document/FileCollector.java",
+            "startLine": 245,
+            "endLine": 261,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.lang.document.FileCollector",
+            "type": "Method",
+            "name": "getDisplayName",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/lang/document/FileCollector.java",
+            "startLine": 269,
+            "endLine": 290,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.lang.document.NioTextFile",
+            "type": "Class",
+            "name": "NioTextFile",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/lang/document/NioTextFile.java",
+            "startLine": 23,
+            "endLine": 101,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.lang.document.NioTextFile",
+            "type": "Class",
+            "name": "NioTextFile",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/lang/document/NioTextFile.java",
+            "startLine": 23,
+            "endLine": 102,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.lang.document.NioTextFile",
+            "type": "Method",
+            "name": "NioTextFile",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/lang/document/NioTextFile.java",
+            "startLine": 35,
+            "endLine": 45,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.lang.document.NioTextFile",
+            "type": "Method",
+            "name": "NioTextFile",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/lang/document/NioTextFile.java",
+            "startLine": 35,
+            "endLine": 46,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.lang.document.NioTextFile",
+            "type": "Method",
+            "name": "toDataSourceCompat",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/lang/document/NioTextFile.java",
+            "startLine": 75,
+            "endLine": 78,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.lang.document.NioTextFile",
+            "type": "Method",
+            "name": "toDataSourceCompat",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/lang/document/NioTextFile.java",
+            "startLine": 76,
+            "endLine": 79,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.util.datasource.FileDataSource",
+            "type": "Class",
+            "name": "FileDataSource",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/util/datasource/FileDataSource.java",
+            "startLine": 17,
+            "endLine": 101,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.util.datasource.FileDataSource",
+            "type": "Class",
+            "name": "FileDataSource",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/util/datasource/FileDataSource.java",
+            "startLine": 17,
+            "endLine": 113,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.util.datasource.FileDataSource",
+            "type": "Method",
+            "name": "FileDataSource",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/util/datasource/FileDataSource.java",
+            "startLine": 23,
+            "endLine": 29,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.util.datasource.FileDataSource",
+            "type": "Method",
+            "name": "FileDataSource",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/util/datasource/FileDataSource.java",
+            "startLine": 24,
+            "endLine": 30,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.util.datasource.FileDataSource",
+            "type": "Method",
+            "name": "glomName",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/util/datasource/FileDataSource.java",
+            "startLine": 41,
+            "endLine": 58,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.util.datasource.FileDataSource",
+            "type": "Method",
+            "name": "glomName",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/util/datasource/FileDataSource.java",
+            "startLine": 50,
+            "endLine": 70,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.ant.PMDTaskTest",
+            "type": "Class",
+            "name": "PMDTaskTest",
+            "filePath": "pmd-core/src/test/java/net/sourceforge/pmd/ant/PMDTaskTest.java",
+            "startLine": 23,
+            "endLine": 108,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.ant.PMDTaskTest",
+            "type": "Class",
+            "name": "PMDTaskTest",
+            "filePath": "pmd-core/src/test/java/net/sourceforge/pmd/ant/PMDTaskTest.java",
+            "startLine": 25,
+            "endLine": 122,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.ant.PMDTaskTest",
+            "type": "Method",
+            "name": "testWithShortFilenames",
+            "filePath": "pmd-core/src/test/java/net/sourceforge/pmd/ant/PMDTaskTest.java",
+            "startLine": 73,
+            "endLine": 83,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.ant.PMDTaskTest",
+            "type": "Method",
+            "name": "testWithShortFilenames",
+            "filePath": "pmd-core/src/test/java/net/sourceforge/pmd/ant/PMDTaskTest.java",
+            "startLine": 75,
+            "endLine": 85,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.lang.document.FileCollectorTest",
+            "type": "Class",
+            "name": "FileCollectorTest",
+            "filePath": "pmd-core/src/test/java/net/sourceforge/pmd/lang/document/FileCollectorTest.java",
+            "startLine": 31,
+            "endLine": 143,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.lang.document.FileCollectorTest",
+            "type": "Class",
+            "name": "FileCollectorTest",
+            "filePath": "pmd-core/src/test/java/net/sourceforge/pmd/lang/document/FileCollectorTest.java",
+            "startLine": 31,
+            "endLine": 143,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.lang.document.FileCollectorTest",
+            "type": "Method",
+            "name": "testRelativize",
+            "filePath": "pmd-core/src/test/java/net/sourceforge/pmd/lang/document/FileCollectorTest.java",
+            "startLine": 102,
+            "endLine": 106,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.lang.document.FileCollectorTest",
+            "type": "Method",
+            "name": "testRelativize",
+            "filePath": "pmd-core/src/test/java/net/sourceforge/pmd/lang/document/FileCollectorTest.java",
+            "startLine": 102,
+            "endLine": 106,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/pmd/pmd.git",
+      "sha1": "3ba63285ac7d4a4a4a2ddd610df44551a798d1df",
+      "url": "https://github.com/pmd/pmd/commit/3ba63285ac7d4a4a4a2ddd610df44551a798d1df",
+      "matchedEntities": [
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.lang.java.rule.codestyle.CommentDefaultAccessModifierRule",
+            "type": "Class",
+            "name": "CommentDefaultAccessModifierRule",
+            "filePath": "pmd-java/src/main/java/net/sourceforge/pmd/lang/java/rule/codestyle/CommentDefaultAccessModifierRule.java",
+            "startLine": 32,
+            "endLine": 168,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.lang.java.rule.codestyle.CommentDefaultAccessModifierRule",
+            "type": "Class",
+            "name": "CommentDefaultAccessModifierRule",
+            "filePath": "pmd-java/src/main/java/net/sourceforge/pmd/lang/java/rule/codestyle/CommentDefaultAccessModifierRule.java",
+            "startLine": 31,
+            "endLine": 176,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.lang.java.rule.codestyle.CommentDefaultAccessModifierRule",
+            "type": "Method",
+            "name": "defaultSuppressionAnnotations",
+            "filePath": "pmd-java/src/main/java/net/sourceforge/pmd/lang/java/rule/codestyle/CommentDefaultAccessModifierRule.java",
+            "startLine": 56,
+            "endLine": 62,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.lang.java.rule.codestyle.CommentDefaultAccessModifierRule",
+            "type": "Method",
+            "name": "defaultSuppressionAnnotations",
+            "filePath": "pmd-java/src/main/java/net/sourceforge/pmd/lang/java/rule/codestyle/CommentDefaultAccessModifierRule.java",
+            "startLine": 55,
+            "endLine": 70,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.lang.java.rule.codestyle.CommentDefaultAccessModifierRule",
+            "type": "Method",
+            "name": "visit",
+            "filePath": "pmd-java/src/main/java/net/sourceforge/pmd/lang/java/rule/codestyle/CommentDefaultAccessModifierRule.java",
+            "startLine": 81,
+            "endLine": 88,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.lang.java.rule.codestyle.CommentDefaultAccessModifierRule",
+            "type": "Method",
+            "name": "visit",
+            "filePath": "pmd-java/src/main/java/net/sourceforge/pmd/lang/java/rule/codestyle/CommentDefaultAccessModifierRule.java",
+            "startLine": 89,
+            "endLine": 96,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.lang.java.rule.codestyle.MethodNamingConventionsRule",
+            "type": "Class",
+            "name": "MethodNamingConventionsRule",
+            "filePath": "pmd-java/src/main/java/net/sourceforge/pmd/lang/java/rule/codestyle/MethodNamingConventionsRule.java",
+            "startLine": 24,
+            "endLine": 128,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.lang.java.rule.codestyle.MethodNamingConventionsRule",
+            "type": "Class",
+            "name": "MethodNamingConventionsRule",
+            "filePath": "pmd-java/src/main/java/net/sourceforge/pmd/lang/java/rule/codestyle/MethodNamingConventionsRule.java",
+            "startLine": 23,
+            "endLine": 131,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.lang.java.rule.codestyle.MethodNamingConventionsRule",
+            "type": "Method",
+            "name": "visit",
+            "filePath": "pmd-java/src/main/java/net/sourceforge/pmd/lang/java/rule/codestyle/MethodNamingConventionsRule.java",
+            "startLine": 73,
+            "endLine": 99,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.lang.java.rule.codestyle.MethodNamingConventionsRule",
+            "type": "Method",
+            "name": "visit",
+            "filePath": "pmd-java/src/main/java/net/sourceforge/pmd/lang/java/rule/codestyle/MethodNamingConventionsRule.java",
+            "startLine": 76,
+            "endLine": 102,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/pmd/pmd.git",
+      "sha1": "5840afe39a1bec770d09de97d9687fd011a25f52",
+      "url": "https://github.com/pmd/pmd/commit/5840afe39a1bec770d09de97d9687fd011a25f52",
+      "matchedEntities": [
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.lang.java.rule.errorprone.ConstructorCallsOverridableMethodRule",
+            "type": "Class",
+            "name": "ConstructorCallsOverridableMethodRule",
+            "filePath": "pmd-java/src/main/java/net/sourceforge/pmd/lang/java/rule/errorprone/ConstructorCallsOverridableMethodRule.java",
+            "startLine": 45,
+            "endLine": 1101,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.lang.java.rule.errorprone.ConstructorCallsOverridableMethodRule",
+            "type": "Class",
+            "name": "ConstructorCallsOverridableMethodRule",
+            "filePath": "pmd-java/src/main/java/net/sourceforge/pmd/lang/java/rule/errorprone/ConstructorCallsOverridableMethodRule.java",
+            "startLine": 47,
+            "endLine": 1116,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.lang.java.rule.errorprone.ConstructorCallsOverridableMethodRule",
+            "type": "Method",
+            "name": "visitClassDec",
+            "filePath": "pmd-java/src/main/java/net/sourceforge/pmd/lang/java/rule/errorprone/ConstructorCallsOverridableMethodRule.java",
+            "startLine": 664,
+            "endLine": 724,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.lang.java.rule.errorprone.ConstructorCallsOverridableMethodRule",
+            "type": "Method",
+            "name": "visitClassDec",
+            "filePath": "pmd-java/src/main/java/net/sourceforge/pmd/lang/java/rule/errorprone/ConstructorCallsOverridableMethodRule.java",
+            "startLine": 672,
+            "endLine": 739,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.lang.java.rule.errorprone.ConstructorCallsOverridableMethodRule",
+            "type": "Method",
+            "name": "evaluateDangerOfMethods",
+            "filePath": "pmd-java/src/main/java/net/sourceforge/pmd/lang/java/rule/errorprone/ConstructorCallsOverridableMethodRule.java",
+            "startLine": 726,
+            "endLine": 766,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.lang.java.rule.errorprone.ConstructorCallsOverridableMethodRule",
+            "type": "Method",
+            "name": "evaluateDangerOfMethods",
+            "filePath": "pmd-java/src/main/java/net/sourceforge/pmd/lang/java/rule/errorprone/ConstructorCallsOverridableMethodRule.java",
+            "startLine": 741,
+            "endLine": 782,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.lang.java.rule.errorprone.ConstructorCallsOverridableMethodRule",
+            "type": "Method",
+            "name": "visit",
+            "filePath": "pmd-java/src/main/java/net/sourceforge/pmd/lang/java/rule/errorprone/ConstructorCallsOverridableMethodRule.java",
+            "startLine": 936,
+            "endLine": 956,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.lang.java.rule.errorprone.ConstructorCallsOverridableMethodRule",
+            "type": "Method",
+            "name": "visit",
+            "filePath": "pmd-java/src/main/java/net/sourceforge/pmd/lang/java/rule/errorprone/ConstructorCallsOverridableMethodRule.java",
+            "startLine": 952,
+            "endLine": 971,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.lang.java.rule.errorprone.ConstructorCallsOverridableMethodRule.MethodHolder",
+            "type": "Class",
+            "name": "MethodHolder",
+            "filePath": "pmd-java/src/main/java/net/sourceforge/pmd/lang/java/rule/errorprone/ConstructorCallsOverridableMethodRule.java",
+            "startLine": 501,
+            "endLine": 529,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.lang.java.rule.errorprone.ConstructorCallsOverridableMethodRule.MethodHolder",
+            "type": "Class",
+            "name": "MethodHolder",
+            "filePath": "pmd-java/src/main/java/net/sourceforge/pmd/lang/java/rule/errorprone/ConstructorCallsOverridableMethodRule.java",
+            "startLine": 503,
+            "endLine": 537,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/pmd/pmd.git",
+      "sha1": "5f0cb7d757cab81c33a15b487122a7d610a04835",
+      "url": "https://github.com/pmd/pmd/commit/5f0cb7d757cab81c33a15b487122a7d610a04835",
+      "matchedEntities": [
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.lang.java.rule.errorprone.ConstructorCallsOverridableMethodRule",
+            "type": "Class",
+            "name": "ConstructorCallsOverridableMethodRule",
+            "filePath": "pmd-java/src/main/java/net/sourceforge/pmd/lang/java/rule/errorprone/ConstructorCallsOverridableMethodRule.java",
+            "startLine": 43,
+            "endLine": 1103,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.lang.java.rule.errorprone.ConstructorCallsOverridableMethodRule",
+            "type": "Class",
+            "name": "ConstructorCallsOverridableMethodRule",
+            "filePath": "pmd-java/src/main/java/net/sourceforge/pmd/lang/java/rule/errorprone/ConstructorCallsOverridableMethodRule.java",
+            "startLine": 42,
+            "endLine": 1089,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.lang.java.rule.errorprone.ConstructorCallsOverridableMethodRule.MethodInvocation",
+            "type": "Method",
+            "name": "getMethod",
+            "filePath": "pmd-java/src/main/java/net/sourceforge/pmd/lang/java/rule/errorprone/ConstructorCallsOverridableMethodRule.java",
+            "startLine": 224,
+            "endLine": 425,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.lang.java.rule.errorprone.ConstructorCallsOverridableMethodRule.MethodInvocation",
+            "type": "Method",
+            "name": "getMethod",
+            "filePath": "pmd-java/src/main/java/net/sourceforge/pmd/lang/java/rule/errorprone/ConstructorCallsOverridableMethodRule.java",
+            "startLine": 232,
+            "endLine": 433,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.lang.java.rule.errorprone.ConstructorCallsOverridableMethodRule",
+            "type": "Method",
+            "name": "visitClassDec",
+            "filePath": "pmd-java/src/main/java/net/sourceforge/pmd/lang/java/rule/errorprone/ConstructorCallsOverridableMethodRule.java",
+            "startLine": 644,
+            "endLine": 710,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.lang.java.rule.errorprone.ConstructorCallsOverridableMethodRule",
+            "type": "Method",
+            "name": "visitClassDec",
+            "filePath": "pmd-java/src/main/java/net/sourceforge/pmd/lang/java/rule/errorprone/ConstructorCallsOverridableMethodRule.java",
+            "startLine": 658,
+            "endLine": 718,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.lang.java.rule.errorprone.ConstructorCallsOverridableMethodRule",
+            "type": "Method",
+            "name": "evaluateDangerOfMethods",
+            "filePath": "pmd-java/src/main/java/net/sourceforge/pmd/lang/java/rule/errorprone/ConstructorCallsOverridableMethodRule.java",
+            "startLine": 712,
+            "endLine": 758,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.lang.java.rule.errorprone.ConstructorCallsOverridableMethodRule",
+            "type": "Method",
+            "name": "evaluateDangerOfMethods",
+            "filePath": "pmd-java/src/main/java/net/sourceforge/pmd/lang/java/rule/errorprone/ConstructorCallsOverridableMethodRule.java",
+            "startLine": 720,
+            "endLine": 760,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.lang.java.rule.errorprone.ConstructorCallsOverridableMethodRule",
+            "type": "Method",
+            "name": "evaluateDangerOfConstructors1",
+            "filePath": "pmd-java/src/main/java/net/sourceforge/pmd/lang/java/rule/errorprone/ConstructorCallsOverridableMethodRule.java",
+            "startLine": 760,
+            "endLine": 807,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.lang.java.rule.errorprone.ConstructorCallsOverridableMethodRule",
+            "type": "Method",
+            "name": "evaluateDangerOfConstructors1",
+            "filePath": "pmd-java/src/main/java/net/sourceforge/pmd/lang/java/rule/errorprone/ConstructorCallsOverridableMethodRule.java",
+            "startLine": 762,
+            "endLine": 803,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.lang.java.rule.errorprone.ConstructorCallsOverridableMethodRule",
+            "type": "Method",
+            "name": "evaluateDangerOfConstructors2",
+            "filePath": "pmd-java/src/main/java/net/sourceforge/pmd/lang/java/rule/errorprone/ConstructorCallsOverridableMethodRule.java",
+            "startLine": 809,
+            "endLine": 849,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.lang.java.rule.errorprone.ConstructorCallsOverridableMethodRule",
+            "type": "Method",
+            "name": "evaluateDangerOfConstructors2",
+            "filePath": "pmd-java/src/main/java/net/sourceforge/pmd/lang/java/rule/errorprone/ConstructorCallsOverridableMethodRule.java",
+            "startLine": 805,
+            "endLine": 840,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.lang.java.rule.errorprone.ConstructorCallsOverridableMethodRule.MethodInvocation",
+            "type": "Method",
+            "name": "MethodInvocation",
+            "filePath": "pmd-java/src/main/java/net/sourceforge/pmd/lang/java/rule/errorprone/ConstructorCallsOverridableMethodRule.java",
+            "startLine": 185,
+            "endLine": 194,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.lang.java.rule.errorprone.ConstructorCallsOverridableMethodRule.MethodInvocation",
+            "type": "Method",
+            "name": "MethodInvocation",
+            "filePath": "pmd-java/src/main/java/net/sourceforge/pmd/lang/java/rule/errorprone/ConstructorCallsOverridableMethodRule.java",
+            "startLine": 184,
+            "endLine": 193,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.lang.java.rule.errorprone.ConstructorCallsOverridableMethodRule.MethodInvocation",
+            "type": "Method",
+            "name": "getArgumentTypes",
+            "filePath": "pmd-java/src/main/java/net/sourceforge/pmd/lang/java/rule/errorprone/ConstructorCallsOverridableMethodRule.java",
+            "startLine": 208,
+            "endLine": 210,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.lang.java.rule.errorprone.ConstructorCallsOverridableMethodRule.MethodInvocation",
+            "type": "Method",
+            "name": "getArgumentTypes",
+            "filePath": "pmd-java/src/main/java/net/sourceforge/pmd/lang/java/rule/errorprone/ConstructorCallsOverridableMethodRule.java",
+            "startLine": 207,
+            "endLine": 209,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.lang.java.rule.errorprone.ConstructorCallsOverridableMethodRule.ConstructorInvocation",
+            "type": "Method",
+            "name": "getArgumentTypes",
+            "filePath": "pmd-java/src/main/java/net/sourceforge/pmd/lang/java/rule/errorprone/ConstructorCallsOverridableMethodRule.java",
+            "startLine": 472,
+            "endLine": 474,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.lang.java.rule.errorprone.ConstructorCallsOverridableMethodRule.ConstructorInvocation",
+            "type": "Method",
+            "name": "getArgumentTypes",
+            "filePath": "pmd-java/src/main/java/net/sourceforge/pmd/lang/java/rule/errorprone/ConstructorCallsOverridableMethodRule.java",
+            "startLine": 480,
+            "endLine": 482,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.lang.java.rule.errorprone.ConstructorCallsOverridableMethodRule",
+            "type": "Method",
+            "name": "getMethodDeclaratorParameterTypes",
+            "filePath": "pmd-java/src/main/java/net/sourceforge/pmd/lang/java/rule/errorprone/ConstructorCallsOverridableMethodRule.java",
+            "startLine": 1039,
+            "endLine": 1060,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.lang.java.rule.errorprone.ConstructorCallsOverridableMethodRule",
+            "type": "Method",
+            "name": "getMethodDeclaratorParameterTypes",
+            "filePath": "pmd-java/src/main/java/net/sourceforge/pmd/lang/java/rule/errorprone/ConstructorCallsOverridableMethodRule.java",
+            "startLine": 1030,
+            "endLine": 1051,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.lang.java.rule.errorprone.ConstructorCallsOverridableMethodRule",
+            "type": "Method",
+            "name": "getArgumentTypes",
+            "filePath": "pmd-java/src/main/java/net/sourceforge/pmd/lang/java/rule/errorprone/ConstructorCallsOverridableMethodRule.java",
+            "startLine": 1062,
+            "endLine": 1102,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.lang.java.rule.errorprone.ConstructorCallsOverridableMethodRule",
+            "type": "Method",
+            "name": "getArgumentTypes",
+            "filePath": "pmd-java/src/main/java/net/sourceforge/pmd/lang/java/rule/errorprone/ConstructorCallsOverridableMethodRule.java",
+            "startLine": 1053,
+            "endLine": 1069,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.lang.java.rule.errorprone.ConstructorCallsOverridableMethodRule.MethodInvocation",
+            "type": "Class",
+            "name": "MethodInvocation",
+            "filePath": "pmd-java/src/main/java/net/sourceforge/pmd/lang/java/rule/errorprone/ConstructorCallsOverridableMethodRule.java",
+            "startLine": 176,
+            "endLine": 445,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.lang.java.rule.errorprone.ConstructorCallsOverridableMethodRule.MethodInvocation",
+            "type": "Class",
+            "name": "MethodInvocation",
+            "filePath": "pmd-java/src/main/java/net/sourceforge/pmd/lang/java/rule/errorprone/ConstructorCallsOverridableMethodRule.java",
+            "startLine": 175,
+            "endLine": 453,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.lang.java.rule.errorprone.ConstructorCallsOverridableMethodRule.ConstructorInvocation",
+            "type": "Class",
+            "name": "ConstructorInvocation",
+            "filePath": "pmd-java/src/main/java/net/sourceforge/pmd/lang/java/rule/errorprone/ConstructorCallsOverridableMethodRule.java",
+            "startLine": 447,
+            "endLine": 479,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.lang.java.rule.errorprone.ConstructorCallsOverridableMethodRule.ConstructorInvocation",
+            "type": "Class",
+            "name": "ConstructorInvocation",
+            "filePath": "pmd-java/src/main/java/net/sourceforge/pmd/lang/java/rule/errorprone/ConstructorCallsOverridableMethodRule.java",
+            "startLine": 455,
+            "endLine": 493,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/pmd/pmd.git",
+      "sha1": "efd0c9ed13c5124b724a01219e8a32fb9bf8653e",
+      "url": "https://github.com/pmd/pmd/commit/efd0c9ed13c5124b724a01219e8a32fb9bf8653e",
+      "matchedEntities": [
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.lang.java.rule.design.ImmutableFieldRule",
+            "type": "Class",
+            "name": "ImmutableFieldRule",
+            "filePath": "pmd-java/src/main/java/net/sourceforge/pmd/lang/java/rule/design/ImmutableFieldRule.java",
+            "startLine": 32,
+            "endLine": 162,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.lang.java.rule.design.ImmutableFieldRule",
+            "type": "Class",
+            "name": "ImmutableFieldRule",
+            "filePath": "pmd-java/src/main/java/net/sourceforge/pmd/lang/java/rule/design/ImmutableFieldRule.java",
+            "startLine": 33,
+            "endLine": 142,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.lang.java.rule.design.ImmutableFieldRule",
+            "type": "Method",
+            "name": "visit",
+            "filePath": "pmd-java/src/main/java/net/sourceforge/pmd/lang/java/rule/design/ImmutableFieldRule.java",
+            "startLine": 59,
+            "endLine": 89,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.lang.java.rule.design.ImmutableFieldRule",
+            "type": "Method",
+            "name": "visit",
+            "filePath": "pmd-java/src/main/java/net/sourceforge/pmd/lang/java/rule/design/ImmutableFieldRule.java",
+            "startLine": 51,
+            "endLine": 74,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/pmd/pmd.git",
+      "sha1": "051951e852f4f7753ffc51f0f3cc005b0ba9a2da",
+      "url": "https://github.com/pmd/pmd/commit/051951e852f4f7753ffc51f0f3cc005b0ba9a2da",
+      "matchedEntities": [
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.lang.java.rule.errorprone.AvoidFieldNameMatchingMethodNameRule",
+            "type": "Class",
+            "name": "AvoidFieldNameMatchingMethodNameRule",
+            "filePath": "pmd-java/src/main/java/net/sourceforge/pmd/lang/java/rule/errorprone/AvoidFieldNameMatchingMethodNameRule.java",
+            "startLine": 23,
+            "endLine": 66,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.lang.java.rule.errorprone.AvoidFieldNameMatchingMethodNameRule",
+            "type": "Class",
+            "name": "AvoidFieldNameMatchingMethodNameRule",
+            "filePath": "pmd-java/src/main/java/net/sourceforge/pmd/lang/java/rule/errorprone/AvoidFieldNameMatchingMethodNameRule.java",
+            "startLine": 22,
+            "endLine": 68,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.lang.java.rule.errorprone.AvoidFieldNameMatchingMethodNameRule",
+            "type": "Method",
+            "name": "visit",
+            "filePath": "pmd-java/src/main/java/net/sourceforge/pmd/lang/java/rule/errorprone/AvoidFieldNameMatchingMethodNameRule.java",
+            "startLine": 33,
+            "endLine": 36,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.lang.java.rule.errorprone.AvoidFieldNameMatchingMethodNameRule",
+            "type": "Method",
+            "name": "visit",
+            "filePath": "pmd-java/src/main/java/net/sourceforge/pmd/lang/java/rule/errorprone/AvoidFieldNameMatchingMethodNameRule.java",
+            "startLine": 32,
+            "endLine": 36,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.lang.java.rule.errorprone.AvoidFieldNameMatchingMethodNameRule",
+            "type": "Method",
+            "name": "visit",
+            "filePath": "pmd-java/src/main/java/net/sourceforge/pmd/lang/java/rule/errorprone/AvoidFieldNameMatchingMethodNameRule.java",
+            "startLine": 38,
+            "endLine": 65,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.lang.java.rule.errorprone.AvoidFieldNameMatchingMethodNameRule",
+            "type": "Method",
+            "name": "visit",
+            "filePath": "pmd-java/src/main/java/net/sourceforge/pmd/lang/java/rule/errorprone/AvoidFieldNameMatchingMethodNameRule.java",
+            "startLine": 38,
+            "endLine": 42,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/pmd/pmd.git",
+      "sha1": "686e878caf2ccf67e998697cd06193c0fd640083",
+      "url": "https://github.com/pmd/pmd/commit/686e878caf2ccf67e998697cd06193c0fd640083",
+      "matchedEntities": [
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.PMDConfiguration",
+            "type": "Class",
+            "name": "PMDConfiguration",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/PMDConfiguration.java",
+            "startLine": 29,
+            "endLine": 769,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.PMDConfiguration",
+            "type": "Class",
+            "name": "PMDConfiguration",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/PMDConfiguration.java",
+            "startLine": 30,
+            "endLine": 805,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.PMDConfiguration",
+            "type": "Method",
+            "name": "getInputPaths",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/PMDConfiguration.java",
+            "startLine": 419,
+            "endLine": 426,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.PMDConfiguration",
+            "type": "Method",
+            "name": "getInputPaths",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/PMDConfiguration.java",
+            "startLine": 420,
+            "endLine": 430,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.PMDConfiguration",
+            "type": "Method",
+            "name": "setInputPaths",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/PMDConfiguration.java",
+            "startLine": 428,
+            "endLine": 436,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.PMDConfiguration",
+            "type": "Method",
+            "name": "setInputPaths",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/PMDConfiguration.java",
+            "startLine": 441,
+            "endLine": 454,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.PMDConfiguration",
+            "type": "Method",
+            "name": "createRenderer",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/PMDConfiguration.java",
+            "startLine": 516,
+            "endLine": 535,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.PMDConfiguration",
+            "type": "Method",
+            "name": "createRenderer",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/PMDConfiguration.java",
+            "startLine": 552,
+            "endLine": 571,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.cli.PMDParameters",
+            "type": "Class",
+            "name": "PMDParameters",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/cli/PMDParameters.java",
+            "startLine": 24,
+            "endLine": 371,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.cli.PMDParameters",
+            "type": "Class",
+            "name": "PMDParameters",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/cli/PMDParameters.java",
+            "startLine": 26,
+            "endLine": 380,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.cli.PMDParameters",
+            "type": "Method",
+            "name": "toConfiguration",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/cli/PMDParameters.java",
+            "startLine": 187,
+            "endLine": 240,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.cli.PMDParameters",
+            "type": "Method",
+            "name": "toConfiguration",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/cli/PMDParameters.java",
+            "startLine": 190,
+            "endLine": 239,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.cli.PMDParameters",
+            "type": "Method",
+            "name": "getRulesets",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/cli/PMDParameters.java",
+            "startLine": 332,
+            "endLine": 334,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.cli.PMDParameters",
+            "type": "Method",
+            "name": "getRulesets",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/cli/PMDParameters.java",
+            "startLine": 331,
+            "endLine": 334,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.cli.PMDParameters",
+            "type": "Method",
+            "name": "getSourceDir",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/cli/PMDParameters.java",
+            "startLine": 336,
+            "endLine": 338,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.cli.PMDParameters",
+            "type": "Method",
+            "name": "getSourceDir",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/cli/PMDParameters.java",
+            "startLine": 344,
+            "endLine": 347,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.cli.PmdParametersParseResult",
+            "type": "Class",
+            "name": "PmdParametersParseResult",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/cli/PmdParametersParseResult.java",
+            "startLine": 19,
+            "endLine": 155,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.cli.PmdParametersParseResult",
+            "type": "Class",
+            "name": "PmdParametersParseResult",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/cli/PmdParametersParseResult.java",
+            "startLine": 19,
+            "endLine": 168,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.cli.PmdParametersParseResult",
+            "type": "Method",
+            "name": "extractParameters",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/cli/PmdParametersParseResult.java",
+            "startLine": 90,
+            "endLine": 113,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.cli.PmdParametersParseResult",
+            "type": "Method",
+            "name": "extractParameters",
+            "filePath": "pmd-core/src/main/java/net/sourceforge/pmd/cli/PmdParametersParseResult.java",
+            "startLine": 90,
+            "endLine": 113,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.cli.CoreCliTest",
+            "type": "Class",
+            "name": "CoreCliTest",
+            "filePath": "pmd-core/src/test/java/net/sourceforge/pmd/cli/CoreCliTest.java",
+            "startLine": 37,
+            "endLine": 257,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.cli.CoreCliTest",
+            "type": "Class",
+            "name": "CoreCliTest",
+            "filePath": "pmd-core/src/test/java/net/sourceforge/pmd/cli/CoreCliTest.java",
+            "startLine": 37,
+            "endLine": 278,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "net.sourceforge.pmd.cli.CoreCliTest",
+            "type": "Method",
+            "name": "setup",
+            "filePath": "pmd-core/src/test/java/net/sourceforge/pmd/cli/CoreCliTest.java",
+            "startLine": 58,
+            "endLine": 69,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "net.sourceforge.pmd.cli.CoreCliTest",
+            "type": "Method",
+            "name": "setup",
+            "filePath": "pmd-core/src/test/java/net/sourceforge/pmd/cli/CoreCliTest.java",
+            "startLine": 60,
+            "endLine": 73,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    }
+  ]
+}

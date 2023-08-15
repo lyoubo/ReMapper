@@ -1,0 +1,3698 @@
+{
+  "results": [
+    {
+      "repository": "https://github.com/mockito/mockito.git",
+      "sha1": "064fe9028993a11ccf0ae12b5975b96baffcf305",
+      "url": "https://github.com/mockito/mockito/commit/064fe9028993a11ccf0ae12b5975b96baffcf305",
+      "ourApproach": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	matcher : Matcher to matcher : Matcher<T> in class org.mockito.internal.hamcrest.HamcrestArgumentMatcher",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/hamcrest/HamcrestArgumentMatcher.java",
+            "startLine": 14,
+            "endLine": 14,
+            "startColumn": 27,
+            "endColumn": 34
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/hamcrest/HamcrestArgumentMatcher.java",
+            "startLine": 15,
+            "endLine": 15,
+            "startColumn": 30,
+            "endColumn": 37
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private lastMatcher() : ArgumentMatcher<?> renamed to private lastMatcherType() : Class<?> in class org.mockito.internal.invocation.MatcherApplicationStrategy",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/invocation/MatcherApplicationStrategy.java",
+            "startLine": 126,
+            "endLine": 128,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/invocation/MatcherApplicationStrategy.java",
+            "startLine": 92,
+            "endLine": 94,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	ArgumentMatcher<?> to Class<?> in method private lastMatcherType() : Class<?> from class org.mockito.internal.invocation.MatcherApplicationStrategy",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/invocation/MatcherApplicationStrategy.java",
+            "startLine": 126,
+            "endLine": 128,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/invocation/MatcherApplicationStrategy.java",
+            "startLine": 92,
+            "endLine": 94,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public shouldAllowanyWithMixedVarargs() : void renamed to public shouldAllowAnyWithMixedVarargs() : void in class org.mockito.internal.invocation.MatcherApplicationStrategyTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/invocation/MatcherApplicationStrategyTest.java",
+            "startLine": 153,
+            "endLine": 166,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/invocation/MatcherApplicationStrategyTest.java",
+            "startLine": 151,
+            "endLine": 164,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public should_capture_vararg() : void renamed to public should_capture_single_vararg_with_single_captor() : void in class org.mockitousage.matchers.CapturingArgumentsTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/mockitousage/matchers/CapturingArgumentsTest.java",
+            "startLine": 268,
+            "endLine": 279,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/mockitousage/matchers/CapturingArgumentsTest.java",
+            "startLine": 308,
+            "endLine": 319,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public should_capture_all_vararg() : void renamed to public should_capture_multiple_invocations_with_captor() : void in class org.mockitousage.matchers.CapturingArgumentsTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/mockitousage/matchers/CapturingArgumentsTest.java",
+            "startLine": 281,
+            "endLine": 295,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/mockitousage/matchers/CapturingArgumentsTest.java",
+            "startLine": 413,
+            "endLine": 428,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private reportMatcher(matcher HamcrestArgumentMatcher<T>) : void extracted from private reportMatcher(matcher Matcher<T>) : void in class org.mockito.hamcrest.MockitoHamcrest",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/hamcrest/MockitoHamcrest.java",
+            "startLine": 177,
+            "endLine": 181,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/hamcrest/MockitoHamcrest.java",
+            "startLine": 223,
+            "endLine": 225,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	matcher : Matcher to matcher : Matcher<T> in class org.mockito.internal.hamcrest.HamcrestArgumentMatcher",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/hamcrest/HamcrestArgumentMatcher.java",
+            "startLine": 14,
+            "endLine": 14,
+            "startColumn": 27,
+            "endColumn": 34
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/hamcrest/HamcrestArgumentMatcher.java",
+            "startLine": 15,
+            "endLine": 15,
+            "startColumn": 30,
+            "endColumn": 37
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private lastMatcher() : ArgumentMatcher<?> renamed to private lastMatcherType() : Class<?> in class org.mockito.internal.invocation.MatcherApplicationStrategy",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/invocation/MatcherApplicationStrategy.java",
+            "startLine": 126,
+            "endLine": 128,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/invocation/MatcherApplicationStrategy.java",
+            "startLine": 92,
+            "endLine": 94,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	ArgumentMatcher<?> to Class<?> in method private lastMatcherType() : Class<?> from class org.mockito.internal.invocation.MatcherApplicationStrategy",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/invocation/MatcherApplicationStrategy.java",
+            "startLine": 126,
+            "endLine": 128,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/invocation/MatcherApplicationStrategy.java",
+            "startLine": 92,
+            "endLine": 94,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public shouldAllowanyWithMixedVarargs() : void renamed to public shouldAllowAnyWithMixedVarargs() : void in class org.mockito.internal.invocation.MatcherApplicationStrategyTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/invocation/MatcherApplicationStrategyTest.java",
+            "startLine": 153,
+            "endLine": 166,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/invocation/MatcherApplicationStrategyTest.java",
+            "startLine": 151,
+            "endLine": 164,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public should_capture_vararg() : void renamed to public should_capture_multiple_vararg_with_array_captor() : void in class org.mockitousage.matchers.CapturingArgumentsTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/mockitousage/matchers/CapturingArgumentsTest.java",
+            "startLine": 268,
+            "endLine": 279,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/mockitousage/matchers/CapturingArgumentsTest.java",
+            "startLine": 387,
+            "endLine": 398,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public should_capture_all_vararg() : void renamed to public should_capture_multiple_invocations_with_captor() : void in class org.mockitousage.matchers.CapturingArgumentsTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/mockitousage/matchers/CapturingArgumentsTest.java",
+            "startLine": 281,
+            "endLine": 295,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/mockitousage/matchers/CapturingArgumentsTest.java",
+            "startLine": 413,
+            "endLine": 428,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/mockito/mockito.git",
+      "sha1": "8f4af189a9f98190c1ead3aff630e05cda721a89",
+      "url": "https://github.com/mockito/mockito/commit/8f4af189a9f98190c1ead3aff630e05cda721a89",
+      "ourApproach": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	matchers : List<ArgumentMatcher<?>> to matchers : List<? extends ArgumentMatcher<?>> in class org.mockito.internal.invocation.MatcherApplicationStrategy",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/invocation/MatcherApplicationStrategy.java",
+            "startLine": 23,
+            "endLine": 23,
+            "startColumn": 44,
+            "endColumn": 52
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/invocation/MatcherApplicationStrategy.java",
+            "startLine": 19,
+            "endLine": 19,
+            "startColumn": 54,
+            "endColumn": 62
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	matchers : List to matchers : List<? extends ArgumentMatcher<?>> in class org.mockito.internal.invocation.MatcherApplicationStrategyTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/invocation/MatcherApplicationStrategyTest.java",
+            "startLine": 38,
+            "endLine": 38,
+            "startColumn": 18,
+            "endColumn": 26
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/invocation/MatcherApplicationStrategyTest.java",
+            "startLine": 38,
+            "endLine": 38,
+            "startColumn": 48,
+            "endColumn": 56
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	List<ArgumentMatcher<?>> to List<? extends ArgumentMatcher<?>> in method private appendLastMatcherNTimes(timesToAppendLastMatcher int) : List<? extends ArgumentMatcher<?>> from class org.mockito.internal.invocation.MatcherApplicationStrategy",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/invocation/MatcherApplicationStrategy.java",
+            "startLine": 118,
+            "endLine": 127,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/invocation/MatcherApplicationStrategy.java",
+            "startLine": 102,
+            "endLine": 111,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private argsMatch(arguments Object[], matchers List<? extends ArgumentMatcher<?>>, action ArgumentMatcherAction) : boolean extracted from public forEachMatcherAndArgument(action ArgumentMatcherAction) : boolean in class org.mockito.internal.invocation.MatcherApplicationStrategy",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/invocation/MatcherApplicationStrategy.java",
+            "startLine": 60,
+            "endLine": 91,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/invocation/MatcherApplicationStrategy.java",
+            "startLine": 79,
+            "endLine": 92,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	matchers : List<ArgumentMatcher<?>> to matchers : List<? extends ArgumentMatcher<?>> in class org.mockito.internal.invocation.MatcherApplicationStrategy",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/invocation/MatcherApplicationStrategy.java",
+            "startLine": 23,
+            "endLine": 23,
+            "startColumn": 44,
+            "endColumn": 52
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/invocation/MatcherApplicationStrategy.java",
+            "startLine": 19,
+            "endLine": 19,
+            "startColumn": 54,
+            "endColumn": 62
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private argsMatch(arguments Object[], matchers List<? extends ArgumentMatcher<?>>, action ArgumentMatcherAction) : boolean extracted from public forEachMatcherAndArgument(action ArgumentMatcherAction) : boolean in class org.mockito.internal.invocation.MatcherApplicationStrategy",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/invocation/MatcherApplicationStrategy.java",
+            "startLine": 60,
+            "endLine": 91,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/invocation/MatcherApplicationStrategy.java",
+            "startLine": 79,
+            "endLine": 92,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	List<ArgumentMatcher<?>> to List<? extends ArgumentMatcher<?>> in method private appendLastMatcherNTimes(timesToAppendLastMatcher int) : List<? extends ArgumentMatcher<?>> from class org.mockito.internal.invocation.MatcherApplicationStrategy",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/invocation/MatcherApplicationStrategy.java",
+            "startLine": 118,
+            "endLine": 127,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/invocation/MatcherApplicationStrategy.java",
+            "startLine": 102,
+            "endLine": 111,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	matchers : List to matchers : List<? extends ArgumentMatcher<?>> in class org.mockito.internal.invocation.MatcherApplicationStrategyTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/invocation/MatcherApplicationStrategyTest.java",
+            "startLine": 38,
+            "endLine": 38,
+            "startColumn": 18,
+            "endColumn": 26
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/invocation/MatcherApplicationStrategyTest.java",
+            "startLine": 38,
+            "endLine": 38,
+            "startColumn": 48,
+            "endColumn": 56
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/mockito/mockito.git",
+      "sha1": "ff98622a8f4bbe96ef5405434b5d788fcd118bb4",
+      "url": "https://github.com/mockito/mockito/commit/ff98622a8f4bbe96ef5405434b5d788fcd118bb4",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.mockitousage.strictness.StrictnessMockAnnotationTest.StrictStubsTest from Class org.mockitousage.strictness.StrictnessMockAnnotationTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/mockitousage/strictness/StrictnessMockAnnotationTest.java",
+            "startLine": 19,
+            "endLine": 43,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/mockitousage/strictness/StrictnessMockAnnotationTest.java",
+            "startLine": 24,
+            "endLine": 47,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.mockitousage.strictness.StrictnessMockAnnotationTest.StrictStubsTest from class org.mockitousage.strictness.StrictnessMockAnnotationTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/mockitousage/strictness/StrictnessMockAnnotationTest.java",
+            "startLine": 19,
+            "endLine": 43,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/mockitousage/strictness/StrictnessMockAnnotationTest.java",
+            "startLine": 24,
+            "endLine": 47,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/mockito/mockito.git",
+      "sha1": "70cf2d2f48506fca24f16963e9c3d2223898ae5a",
+      "url": "https://github.com/mockito/mockito/commit/70cf2d2f48506fca24f16963e9c3d2223898ae5a",
+      "ourApproach": [],
+      "baseline": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	lenient : boolean to strictness : Strictness in class org.mockito.internal.creation.settings.CreationSettings",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/creation/settings/CreationSettings.java",
+            "startLine": 47,
+            "endLine": 47,
+            "startColumn": 23,
+            "endColumn": 30
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/creation/settings/CreationSettings.java",
+            "startLine": 48,
+            "endLine": 48,
+            "startColumn": 26,
+            "endColumn": 62
+          },
+          "developerConfirmation": false
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	lenient : boolean to strictness : Strictness in class org.mockito.internal.creation.settings.CreationSettings",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/creation/settings/CreationSettings.java",
+            "startLine": 47,
+            "endLine": 47,
+            "startColumn": 23,
+            "endColumn": 30
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/creation/settings/CreationSettings.java",
+            "startLine": 48,
+            "endLine": 48,
+            "startColumn": 26,
+            "endColumn": 62
+          },
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/mockito/mockito.git",
+      "sha1": "44ba00f38c443b5d3125ce0f26acb76b8d50fe8e",
+      "url": "https://github.com/mockito/mockito/commit/44ba00f38c443b5d3125ce0f26acb76b8d50fe8e",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testStaticMockWithMoMoreInteractions() : void renamed to public testStaticMockWithNoMoreInteractions() : void in class org.mockitoinline.StaticMockTest",
+          "leftSideLocation": {
+            "filePath": "subprojects/inline/src/test/java/org/mockitoinline/StaticMockTest.java",
+            "startLine": 65,
+            "endLine": 73,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "subprojects/inline/src/test/java/org/mockitoinline/StaticMockTest.java",
+            "startLine": 68,
+            "endLine": 76,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testStaticMockWithMoInteractionsFailed() : void renamed to public testStaticMockWithNoInteractionsFailed() : void in class org.mockitoinline.StaticMockTest",
+          "leftSideLocation": {
+            "filePath": "subprojects/inline/src/test/java/org/mockitoinline/StaticMockTest.java",
+            "startLine": 56,
+            "endLine": 63,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "subprojects/inline/src/test/java/org/mockitoinline/StaticMockTest.java",
+            "startLine": 59,
+            "endLine": 66,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testStaticMockWithMoMoreInteractionsFailed() : void renamed to public testStaticMockWithNoMoreInteractionsFailed() : void in class org.mockitoinline.StaticMockTest",
+          "leftSideLocation": {
+            "filePath": "subprojects/inline/src/test/java/org/mockitoinline/StaticMockTest.java",
+            "startLine": 75,
+            "endLine": 82,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "subprojects/inline/src/test/java/org/mockitoinline/StaticMockTest.java",
+            "startLine": 78,
+            "endLine": 85,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testStaticMockWithMoInteractions() : void renamed to public testStaticMockWithNoInteractions() : void in class org.mockitoinline.StaticMockTest",
+          "leftSideLocation": {
+            "filePath": "subprojects/inline/src/test/java/org/mockitoinline/StaticMockTest.java",
+            "startLine": 48,
+            "endLine": 54,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "subprojects/inline/src/test/java/org/mockitoinline/StaticMockTest.java",
+            "startLine": 51,
+            "endLine": 57,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testStaticMockWithMoInteractions() : void renamed to public testStaticMockWithNoInteractions() : void in class org.mockitoinline.StaticMockTest",
+          "leftSideLocation": {
+            "filePath": "subprojects/inline/src/test/java/org/mockitoinline/StaticMockTest.java",
+            "startLine": 48,
+            "endLine": 54,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "subprojects/inline/src/test/java/org/mockitoinline/StaticMockTest.java",
+            "startLine": 51,
+            "endLine": 57,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testStaticMockWithMoInteractionsFailed() : void renamed to public testStaticMockWithNoInteractionsFailed() : void in class org.mockitoinline.StaticMockTest",
+          "leftSideLocation": {
+            "filePath": "subprojects/inline/src/test/java/org/mockitoinline/StaticMockTest.java",
+            "startLine": 56,
+            "endLine": 63,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "subprojects/inline/src/test/java/org/mockitoinline/StaticMockTest.java",
+            "startLine": 59,
+            "endLine": 66,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testStaticMockWithMoMoreInteractions() : void renamed to public testStaticMockWithNoMoreInteractions() : void in class org.mockitoinline.StaticMockTest",
+          "leftSideLocation": {
+            "filePath": "subprojects/inline/src/test/java/org/mockitoinline/StaticMockTest.java",
+            "startLine": 65,
+            "endLine": 73,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "subprojects/inline/src/test/java/org/mockitoinline/StaticMockTest.java",
+            "startLine": 68,
+            "endLine": 76,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testStaticMockWithMoMoreInteractionsFailed() : void renamed to public testStaticMockWithNoMoreInteractionsFailed() : void in class org.mockitoinline.StaticMockTest",
+          "leftSideLocation": {
+            "filePath": "subprojects/inline/src/test/java/org/mockitoinline/StaticMockTest.java",
+            "startLine": 75,
+            "endLine": 82,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "subprojects/inline/src/test/java/org/mockitoinline/StaticMockTest.java",
+            "startLine": 78,
+            "endLine": 85,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/mockito/mockito.git",
+      "sha1": "ff55022c57efaa16c80d32234825aae502c75dad",
+      "url": "https://github.com/mockito/mockito/commit/ff55022c57efaa16c80d32234825aae502c75dad",
+      "ourApproach": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest.FinalSpy moved to org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest.FinalSpy",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/creation/bytebuddy/InlineByteBuddyMockMakerTest.java",
+            "startLine": 484,
+            "endLine": 516,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/creation/bytebuddy/InlineDelegateByteBuddyMockMakerTest.java",
+            "startLine": 484,
+            "endLine": 516,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest.EnumClass moved to org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest.EnumClass",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/creation/bytebuddy/InlineByteBuddyMockMakerTest.java",
+            "startLine": 529,
+            "endLine": 535,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/creation/bytebuddy/InlineDelegateByteBuddyMockMakerTest.java",
+            "startLine": 529,
+            "endLine": 535,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest.ExceptionThrowingClass moved to org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest.ExceptionThrowingClass",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/creation/bytebuddy/InlineByteBuddyMockMakerTest.java",
+            "startLine": 584,
+            "endLine": 605,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/creation/bytebuddy/InlineDelegateByteBuddyMockMakerTest.java",
+            "startLine": 584,
+            "endLine": 605,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker.InlineConstructionMockContext moved to org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.InlineConstructionMockContext",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/InlineByteBuddyMockMaker.java",
+            "startLine": 794,
+            "endLine": 867,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/InlineDelegateByteBuddyMockMaker.java",
+            "startLine": 806,
+            "endLine": 879,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest.PackagePrivateSuperClass moved to org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest.PackagePrivateSuperClass",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/creation/bytebuddy/InlineByteBuddyMockMakerTest.java",
+            "startLine": 558,
+            "endLine": 565,
+            "startColumn": 25,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/creation/bytebuddy/InlineDelegateByteBuddyMockMakerTest.java",
+            "startLine": 558,
+            "endLine": 565,
+            "startColumn": 25,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest.SampleInterface moved to org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest.SampleInterface",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/creation/bytebuddy/InlineByteBuddyMockMakerTest.java",
+            "startLine": 553,
+            "endLine": 556,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/creation/bytebuddy/InlineDelegateByteBuddyMockMakerTest.java",
+            "startLine": 553,
+            "endLine": 556,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	delegate : ClassCreatingMockMaker to delegate : SubclassByteBuddyMockMaker in class org.mockito.internal.creation.bytebuddy.ByteBuddyMockMakerTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/creation/bytebuddy/ByteBuddyMockMakerTest.java",
+            "startLine": 20,
+            "endLine": 20,
+            "startColumn": 42,
+            "endColumn": 50
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/creation/bytebuddy/ByteBuddyMockMakerTest.java",
+            "startLine": 17,
+            "endLine": 17,
+            "startColumn": 46,
+            "endColumn": 54
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest.GenericSubClass moved to org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest.GenericSubClass",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/creation/bytebuddy/InlineByteBuddyMockMakerTest.java",
+            "startLine": 582,
+            "endLine": 582,
+            "startColumn": 5,
+            "endColumn": 72
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/creation/bytebuddy/InlineDelegateByteBuddyMockMakerTest.java",
+            "startLine": 582,
+            "endLine": 582,
+            "startColumn": 5,
+            "endColumn": 72
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest.NonPackagePrivateSubClass moved to org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest.NonPackagePrivateSubClass",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/creation/bytebuddy/InlineByteBuddyMockMakerTest.java",
+            "startLine": 567,
+            "endLine": 573,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/creation/bytebuddy/InlineDelegateByteBuddyMockMakerTest.java",
+            "startLine": 567,
+            "endLine": 573,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest.FinalMethod moved to org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest.FinalMethod",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/creation/bytebuddy/InlineByteBuddyMockMakerTest.java",
+            "startLine": 546,
+            "endLine": 551,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/creation/bytebuddy/InlineDelegateByteBuddyMockMakerTest.java",
+            "startLine": 546,
+            "endLine": 551,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	defaultByteBuddyMockMaker : ClassCreatingMockMaker to subclassByteBuddyMockMaker : SubclassByteBuddyMockMaker in class org.mockito.internal.creation.bytebuddy.ByteBuddyMockMaker",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/ByteBuddyMockMaker.java",
+            "startLine": 25,
+            "endLine": 25,
+            "startColumn": 36,
+            "endColumn": 96
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/ByteBuddyMockMaker.java",
+            "startLine": 26,
+            "endLine": 26,
+            "startColumn": 46,
+            "endColumn": 72
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	defaultByteBuddyMockMaker : ClassCreatingMockMaker to subclassByteBuddyMockMaker : SubclassByteBuddyMockMaker in class org.mockito.internal.creation.bytebuddy.ByteBuddyMockMaker",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/ByteBuddyMockMaker.java",
+            "startLine": 25,
+            "endLine": 25,
+            "startColumn": 36,
+            "endColumn": 96
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/ByteBuddyMockMaker.java",
+            "startLine": 26,
+            "endLine": 26,
+            "startColumn": 46,
+            "endColumn": 72
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest.NonConstructableClass moved to org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest.NonConstructableClass",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/creation/bytebuddy/InlineByteBuddyMockMakerTest.java",
+            "startLine": 518,
+            "endLine": 527,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/creation/bytebuddy/InlineDelegateByteBuddyMockMakerTest.java",
+            "startLine": 518,
+            "endLine": 527,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker.InlineStaticMockControl moved to org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.InlineStaticMockControl",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/InlineByteBuddyMockMaker.java",
+            "startLine": 650,
+            "endLine": 704,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/InlineDelegateByteBuddyMockMaker.java",
+            "startLine": 662,
+            "endLine": 716,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest.FinalMethodAbstractType moved to org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest.FinalMethodAbstractType",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/creation/bytebuddy/InlineByteBuddyMockMakerTest.java",
+            "startLine": 537,
+            "endLine": 544,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/creation/bytebuddy/InlineDelegateByteBuddyMockMakerTest.java",
+            "startLine": 537,
+            "endLine": 544,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker.InlineConstructionMockControl moved to org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.InlineConstructionMockControl",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/InlineByteBuddyMockMaker.java",
+            "startLine": 706,
+            "endLine": 792,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/InlineDelegateByteBuddyMockMaker.java",
+            "startLine": 718,
+            "endLine": 804,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest.FinalClass moved to org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest.FinalClass",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/creation/bytebuddy/InlineByteBuddyMockMakerTest.java",
+            "startLine": 477,
+            "endLine": 482,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/creation/bytebuddy/InlineDelegateByteBuddyMockMakerTest.java",
+            "startLine": 477,
+            "endLine": 482,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest.GenericClass moved to org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest.GenericClass",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/creation/bytebuddy/InlineByteBuddyMockMakerTest.java",
+            "startLine": 575,
+            "endLine": 580,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/creation/bytebuddy/InlineDelegateByteBuddyMockMakerTest.java",
+            "startLine": 575,
+            "endLine": 580,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private delegate() : MemberAccessor extracted from public ModuleMemberAccessor() in class org.mockito.internal.util.reflection.ModuleMemberAccessor",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/util/reflection/ModuleMemberAccessor.java",
+            "startLine": 19,
+            "endLine": 25,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/util/reflection/ModuleMemberAccessor.java",
+            "startLine": 31,
+            "endLine": 37,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker from Class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/InlineByteBuddyMockMaker.java",
+            "startLine": 45,
+            "endLine": 868,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/InlineDelegateByteBuddyMockMaker.java",
+            "startLine": 45,
+            "endLine": 880,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest from Class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/creation/bytebuddy/InlineByteBuddyMockMakerTest.java",
+            "startLine": 45,
+            "endLine": 606,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/creation/bytebuddy/InlineDelegateByteBuddyMockMakerTest.java",
+            "startLine": 45,
+            "endLine": 606,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker.InlineStaticMockControl moved to org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.InlineStaticMockControl",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/InlineByteBuddyMockMaker.java",
+            "startLine": 650,
+            "endLine": 704,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/InlineDelegateByteBuddyMockMaker.java",
+            "startLine": 662,
+            "endLine": 716,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker.InlineConstructionMockControl moved to org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.InlineConstructionMockControl",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/InlineByteBuddyMockMaker.java",
+            "startLine": 706,
+            "endLine": 792,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/InlineDelegateByteBuddyMockMaker.java",
+            "startLine": 718,
+            "endLine": 804,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker.InlineConstructionMockContext moved to org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker.InlineConstructionMockContext",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/InlineByteBuddyMockMaker.java",
+            "startLine": 794,
+            "endLine": 867,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/InlineDelegateByteBuddyMockMaker.java",
+            "startLine": 806,
+            "endLine": 879,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest.FinalClass moved to org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest.FinalClass",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/creation/bytebuddy/InlineByteBuddyMockMakerTest.java",
+            "startLine": 477,
+            "endLine": 482,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/creation/bytebuddy/InlineDelegateByteBuddyMockMakerTest.java",
+            "startLine": 477,
+            "endLine": 482,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest.FinalSpy moved to org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest.FinalSpy",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/creation/bytebuddy/InlineByteBuddyMockMakerTest.java",
+            "startLine": 484,
+            "endLine": 516,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/creation/bytebuddy/InlineDelegateByteBuddyMockMakerTest.java",
+            "startLine": 484,
+            "endLine": 516,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest.NonConstructableClass moved to org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest.NonConstructableClass",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/creation/bytebuddy/InlineByteBuddyMockMakerTest.java",
+            "startLine": 518,
+            "endLine": 527,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/creation/bytebuddy/InlineDelegateByteBuddyMockMakerTest.java",
+            "startLine": 518,
+            "endLine": 527,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest.EnumClass moved to org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest.EnumClass",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/creation/bytebuddy/InlineByteBuddyMockMakerTest.java",
+            "startLine": 529,
+            "endLine": 535,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/creation/bytebuddy/InlineDelegateByteBuddyMockMakerTest.java",
+            "startLine": 529,
+            "endLine": 535,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest.FinalMethodAbstractType moved to org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest.FinalMethodAbstractType",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/creation/bytebuddy/InlineByteBuddyMockMakerTest.java",
+            "startLine": 537,
+            "endLine": 544,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/creation/bytebuddy/InlineDelegateByteBuddyMockMakerTest.java",
+            "startLine": 537,
+            "endLine": 544,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest.FinalMethod moved to org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest.FinalMethod",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/creation/bytebuddy/InlineByteBuddyMockMakerTest.java",
+            "startLine": 546,
+            "endLine": 551,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/creation/bytebuddy/InlineDelegateByteBuddyMockMakerTest.java",
+            "startLine": 546,
+            "endLine": 551,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest.SampleInterface moved to org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest.SampleInterface",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/creation/bytebuddy/InlineByteBuddyMockMakerTest.java",
+            "startLine": 553,
+            "endLine": 556,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/creation/bytebuddy/InlineDelegateByteBuddyMockMakerTest.java",
+            "startLine": 553,
+            "endLine": 556,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest.PackagePrivateSuperClass moved to org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest.PackagePrivateSuperClass",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/creation/bytebuddy/InlineByteBuddyMockMakerTest.java",
+            "startLine": 558,
+            "endLine": 565,
+            "startColumn": 25,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/creation/bytebuddy/InlineDelegateByteBuddyMockMakerTest.java",
+            "startLine": 558,
+            "endLine": 565,
+            "startColumn": 25,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest.NonPackagePrivateSubClass moved to org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest.NonPackagePrivateSubClass",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/creation/bytebuddy/InlineByteBuddyMockMakerTest.java",
+            "startLine": 567,
+            "endLine": 573,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/creation/bytebuddy/InlineDelegateByteBuddyMockMakerTest.java",
+            "startLine": 567,
+            "endLine": 573,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest.GenericClass moved to org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest.GenericClass",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/creation/bytebuddy/InlineByteBuddyMockMakerTest.java",
+            "startLine": 575,
+            "endLine": 580,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/creation/bytebuddy/InlineDelegateByteBuddyMockMakerTest.java",
+            "startLine": 575,
+            "endLine": 580,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest.GenericSubClass moved to org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest.GenericSubClass",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/creation/bytebuddy/InlineByteBuddyMockMakerTest.java",
+            "startLine": 582,
+            "endLine": 582,
+            "startColumn": 5,
+            "endColumn": 72
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/creation/bytebuddy/InlineDelegateByteBuddyMockMakerTest.java",
+            "startLine": 582,
+            "endLine": 582,
+            "startColumn": 5,
+            "endColumn": 72
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest.ExceptionThrowingClass moved to org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest.ExceptionThrowingClass",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/creation/bytebuddy/InlineByteBuddyMockMakerTest.java",
+            "startLine": 584,
+            "endLine": 605,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/creation/bytebuddy/InlineDelegateByteBuddyMockMakerTest.java",
+            "startLine": 584,
+            "endLine": 605,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	defaultByteBuddyMockMaker : ClassCreatingMockMaker to subclassByteBuddyMockMaker : SubclassByteBuddyMockMaker in class org.mockito.internal.creation.bytebuddy.ByteBuddyMockMaker",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/ByteBuddyMockMaker.java",
+            "startLine": 25,
+            "endLine": 25,
+            "startColumn": 36,
+            "endColumn": 96
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/ByteBuddyMockMaker.java",
+            "startLine": 26,
+            "endLine": 26,
+            "startColumn": 46,
+            "endColumn": 72
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	defaultByteBuddyMockMaker : ClassCreatingMockMaker to subclassByteBuddyMockMaker : SubclassByteBuddyMockMaker in class org.mockito.internal.creation.bytebuddy.ByteBuddyMockMaker",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/ByteBuddyMockMaker.java",
+            "startLine": 25,
+            "endLine": 25,
+            "startColumn": 36,
+            "endColumn": 96
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/ByteBuddyMockMaker.java",
+            "startLine": 26,
+            "endLine": 26,
+            "startColumn": 46,
+            "endColumn": 72
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private delegate() : MemberAccessor extracted from public ModuleMemberAccessor() in class org.mockito.internal.util.reflection.ModuleMemberAccessor",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/util/reflection/ModuleMemberAccessor.java",
+            "startLine": 19,
+            "endLine": 25,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/util/reflection/ModuleMemberAccessor.java",
+            "startLine": 31,
+            "endLine": 37,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	delegate : ClassCreatingMockMaker to delegate : SubclassByteBuddyMockMaker in class org.mockito.internal.creation.bytebuddy.ByteBuddyMockMakerTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/creation/bytebuddy/ByteBuddyMockMakerTest.java",
+            "startLine": 20,
+            "endLine": 20,
+            "startColumn": 42,
+            "endColumn": 50
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/creation/bytebuddy/ByteBuddyMockMakerTest.java",
+            "startLine": 17,
+            "endLine": 17,
+            "startColumn": 46,
+            "endColumn": 54
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMaker from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/InlineByteBuddyMockMaker.java",
+            "startLine": 45,
+            "endLine": 868,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/InlineDelegateByteBuddyMockMaker.java",
+            "startLine": 45,
+            "endLine": 880,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.mockito.internal.creation.bytebuddy.InlineDelegateByteBuddyMockMakerTest from class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMakerTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/creation/bytebuddy/InlineByteBuddyMockMakerTest.java",
+            "startLine": 45,
+            "endLine": 606,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/creation/bytebuddy/InlineDelegateByteBuddyMockMakerTest.java",
+            "startLine": 45,
+            "endLine": 606,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/mockito/mockito.git",
+      "sha1": "ff6d1c85e7e0d9ddaee7bc2d2773c16ed504f709",
+      "url": "https://github.com/mockito/mockito/commit/ff6d1c85e7e0d9ddaee7bc2d2773c16ed504f709",
+      "ourApproach": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.mockito.internal.creation.bytebuddy.AbstractByteBuddyMockMakerTest.DummyMockHandler moved to org.mockito.internal.creation.AbstractMockMakerTest.DummyMockHandler",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/creation/bytebuddy/AbstractByteBuddyMockMakerTest.java",
+            "startLine": 206,
+            "endLine": 220,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/creation/AbstractMockMakerTest.java",
+            "startLine": 87,
+            "endLine": 101,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.mockito.internal.creation.bytebuddy.AbstractByteBuddyMockMakerTest.DummyMockHandler moved to org.mockito.internal.creation.AbstractMockMakerTest.DummyMockHandler",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/creation/bytebuddy/AbstractByteBuddyMockMakerTest.java",
+            "startLine": 206,
+            "endLine": 220,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/creation/AbstractMockMakerTest.java",
+            "startLine": 87,
+            "endLine": 101,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/mockito/mockito.git",
+      "sha1": "80374488162380d006b8ae6da915d940cbf68c7c",
+      "url": "https://github.com/mockito/mockito/commit/80374488162380d006b8ae6da915d940cbf68c7c",
+      "ourApproach": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	MockCreationSettings<T> to MockCreationSettings<T2> in method public build(typeToMock Class<T2>) : MockCreationSettings<T2> from class org.mockito.internal.creation.MockSettingsImpl",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/creation/MockSettingsImpl.java",
+            "startLine": 230,
+            "endLine": 233,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/creation/MockSettingsImpl.java",
+            "startLine": 230,
+            "endLine": 233,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	mocks : Map<Object,MockCreationSettings> to mocks : IdentityHashMap in class org.mockito.internal.junit.UniversalTestListener",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/junit/UniversalTestListener.java",
+            "startLine": 27,
+            "endLine": 28,
+            "startColumn": 47,
+            "endColumn": 64
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/junit/UniversalTestListener.java",
+            "startLine": 25,
+            "endLine": 25,
+            "startColumn": 29,
+            "endColumn": 88
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	wrappedVerification : WrapperType to wrappedVerification : WrapperT in class org.mockito.internal.verification.VerificationWrapper",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/verification/VerificationWrapper.java",
+            "startLine": 13,
+            "endLine": 13,
+            "startColumn": 33,
+            "endColumn": 52
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/verification/VerificationWrapper.java",
+            "startLine": 13,
+            "endLine": 13,
+            "startColumn": 30,
+            "endColumn": 49
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	MockCreationSettings<T> to MockCreationSettings<T2> in method public buildStatic(classToMock Class<T2>) : MockCreationSettings<T2> from class org.mockito.internal.creation.MockSettingsImpl",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/creation/MockSettingsImpl.java",
+            "startLine": 235,
+            "endLine": 238,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/creation/MockSettingsImpl.java",
+            "startLine": 235,
+            "endLine": 238,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public toString() : String renamed to public getMessage() : String in class org.mockito.exceptions.verification.ArgumentsAreDifferent",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/exceptions/verification/ArgumentsAreDifferent.java",
+            "startLine": 32,
+            "endLine": 35,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/exceptions/verification/ArgumentsAreDifferent.java",
+            "startLine": 32,
+            "endLine": 35,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public toString() : String renamed to public getMessage() : String in class org.mockito.exceptions.verification.ArgumentsAreDifferent",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/exceptions/verification/ArgumentsAreDifferent.java",
+            "startLine": 32,
+            "endLine": 35,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/exceptions/verification/ArgumentsAreDifferent.java",
+            "startLine": 32,
+            "endLine": 35,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	MockCreationSettings<T> to MockCreationSettings<T2> in method public build(typeToMock Class<T2>) : MockCreationSettings<T2> from class org.mockito.internal.creation.MockSettingsImpl",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/creation/MockSettingsImpl.java",
+            "startLine": 230,
+            "endLine": 233,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/creation/MockSettingsImpl.java",
+            "startLine": 230,
+            "endLine": 233,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	MockCreationSettings<T> to MockCreationSettings<T2> in method public buildStatic(classToMock Class<T2>) : MockCreationSettings<T2> from class org.mockito.internal.creation.MockSettingsImpl",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/creation/MockSettingsImpl.java",
+            "startLine": 235,
+            "endLine": 238,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/creation/MockSettingsImpl.java",
+            "startLine": 235,
+            "endLine": 238,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	mocks : Map<Object,MockCreationSettings> to mocks : IdentityHashMap in class org.mockito.internal.junit.UniversalTestListener",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/junit/UniversalTestListener.java",
+            "startLine": 27,
+            "endLine": 28,
+            "startColumn": 47,
+            "endColumn": 64
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/junit/UniversalTestListener.java",
+            "startLine": 25,
+            "endLine": 25,
+            "startColumn": 29,
+            "endColumn": 88
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	wrappedVerification : WrapperType to wrappedVerification : WrapperT in class org.mockito.internal.verification.VerificationWrapper",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/verification/VerificationWrapper.java",
+            "startLine": 13,
+            "endLine": 13,
+            "startColumn": 33,
+            "endColumn": 52
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/verification/VerificationWrapper.java",
+            "startLine": 13,
+            "endLine": 13,
+            "startColumn": 30,
+            "endColumn": 49
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/mockito/mockito.git",
+      "sha1": "7b940bcead5240bd030bbe7acbb51c10be0a452b",
+      "url": "https://github.com/mockito/mockito/commit/7b940bcead5240bd030bbe7acbb51c10be0a452b",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	public verify(verification Verification, mode VerificationMode) : void extracted from public verify(verification Verification) : void in class org.mockito.MockedStatic",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/MockedStatic.java",
+            "startLine": 34,
+            "endLine": 39,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/MockedStatic.java",
+            "startLine": 48,
+            "endLine": 51,
+            "startColumn": 5,
+            "endColumn": 67
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	public verify(verification Verification, mode VerificationMode) : void extracted from public verify(mode VerificationMode, verification Verification) : void in class org.mockito.internal.MockedStaticImpl",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/MockedStaticImpl.java",
+            "startLine": 62,
+            "endLine": 97,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/MockedStaticImpl.java",
+            "startLine": 67,
+            "endLine": 102,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	public verify(verification Verification, mode VerificationMode) : void extracted from public verify(mode VerificationMode, verification Verification) : void in class org.mockito.internal.MockedStaticImpl",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/MockedStaticImpl.java",
+            "startLine": 62,
+            "endLine": 97,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/MockedStaticImpl.java",
+            "startLine": 67,
+            "endLine": 102,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/mockito/mockito.git",
+      "sha1": "214d66fa84af85026be9791456fccc06af2f6b61",
+      "url": "https://github.com/mockito/mockito/commit/214d66fa84af85026be9791456fccc06af2f6b61",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public decamelizeMatcher(className String) : String renamed to public decamelizeMatcherName(className String) : String in class org.mockito.internal.util.StringUtil",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/util/StringUtil.java",
+            "startLine": 63,
+            "endLine": 75,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/util/StringUtil.java",
+            "startLine": 63,
+            "endLine": 75,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public decamelizes_matcher() : void renamed to public decamelizes_matcher_name() : void in class org.mockito.internal.util.StringUtilTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/util/StringUtilTest.java",
+            "startLine": 17,
+            "endLine": 27,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/util/StringUtilTest.java",
+            "startLine": 17,
+            "endLine": 28,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public decamelizeMatcher(className String) : String renamed to public decamelizeMatcherName(className String) : String in class org.mockito.internal.util.StringUtil",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/util/StringUtil.java",
+            "startLine": 63,
+            "endLine": 75,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/util/StringUtil.java",
+            "startLine": 63,
+            "endLine": 75,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public decamelizes_matcher() : void renamed to public decamelizes_matcher_name() : void in class org.mockito.internal.util.StringUtilTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/util/StringUtilTest.java",
+            "startLine": 17,
+            "endLine": 27,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/util/StringUtilTest.java",
+            "startLine": 17,
+            "endLine": 28,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/mockito/mockito.git",
+      "sha1": "3d1405f1c431888b2641a003868ba5b9300aa611",
+      "url": "https://github.com/mockito/mockito/commit/3d1405f1c431888b2641a003868ba5b9300aa611",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	public newInstance(constructor Constructor<?>, onConstruction OnConstruction, arguments Object...) : Object extracted from public newInstance(constructor Constructor<?>, arguments Object...) : Object in class org.mockito.internal.util.reflection.InstrumentationMemberAccessor",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/util/reflection/InstrumentationMemberAccessor.java",
+            "startLine": 147,
+            "endLine": 183,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/util/reflection/InstrumentationMemberAccessor.java",
+            "startLine": 154,
+            "endLine": 202,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	public newInstance(constructor Constructor<?>, onConstruction OnConstruction, arguments Object...) : Object extracted from public newInstance(constructor Constructor<?>, arguments Object...) : Object in class org.mockito.internal.util.reflection.ReflectionMemberAccessor",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/util/reflection/ReflectionMemberAccessor.java",
+            "startLine": 14,
+            "endLine": 31,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/util/reflection/ReflectionMemberAccessor.java",
+            "startLine": 20,
+            "endLine": 38,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	public newInstance(constructor Constructor<?>, onConstruction OnConstruction, arguments Object...) : Object extracted from public newInstance(constructor Constructor<?>, arguments Object...) : Object in class org.mockito.internal.util.reflection.InstrumentationMemberAccessor",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/util/reflection/InstrumentationMemberAccessor.java",
+            "startLine": 147,
+            "endLine": 183,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/util/reflection/InstrumentationMemberAccessor.java",
+            "startLine": 154,
+            "endLine": 202,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	public newInstance(constructor Constructor<?>, onConstruction OnConstruction, arguments Object...) : Object extracted from public newInstance(constructor Constructor<?>, arguments Object...) : Object in class org.mockito.internal.util.reflection.ReflectionMemberAccessor",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/util/reflection/ReflectionMemberAccessor.java",
+            "startLine": 14,
+            "endLine": 31,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/util/reflection/ReflectionMemberAccessor.java",
+            "startLine": 20,
+            "endLine": 38,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/mockito/mockito.git",
+      "sha1": "24c0e45d1ca7a11baef3b161ed7d615f68ffe5fb",
+      "url": "https://github.com/mockito/mockito/commit/24c0e45d1ca7a11baef3b161ed7d615f68ffe5fb",
+      "ourApproach": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	void to boolean in method private reflectionAppend(lhs Object, rhs Object, clazz Class<?>, builder EqualsBuilder, useTransients boolean, excludeFields String[]) : boolean from class org.mockito.internal.matchers.apachecommons.EqualsBuilder",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/matchers/apachecommons/EqualsBuilder.java",
+            "startLine": 273,
+            "endLine": 312,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/matchers/apachecommons/EqualsBuilder.java",
+            "startLine": 271,
+            "endLine": 314,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	fieldCopier : FieldCopier to accessor : MemberAccessor in class org.mockito.internal.util.reflection.LenientCopyTool",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/util/reflection/LenientCopyTool.java",
+            "startLine": 13,
+            "endLine": 13,
+            "startColumn": 17,
+            "endColumn": 48
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/util/reflection/LenientCopyTool.java",
+            "startLine": 15,
+            "endLine": 15,
+            "startColumn": 20,
+            "endColumn": 58
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	fieldCopier : FieldCopier to accessor : MemberAccessor in class org.mockito.internal.util.reflection.LenientCopyTool",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/util/reflection/LenientCopyTool.java",
+            "startLine": 13,
+            "endLine": 13,
+            "startColumn": 17,
+            "endColumn": 48
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/util/reflection/LenientCopyTool.java",
+            "startLine": 15,
+            "endLine": 15,
+            "startColumn": 20,
+            "endColumn": 58
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.mockito.moduletest.ModuleUtil from Class org.mockito.moduletest.ModuleHandlingTest",
+          "leftSideLocation": {
+            "filePath": "subprojects/module-test/src/test/java/org/mockito/moduletest/ModuleHandlingTest.java",
+            "startLine": 53,
+            "endLine": 417,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "subprojects/module-test/src/test/java/org/mockito/moduletest/ModuleUtil.java",
+            "startLine": 30,
+            "endLine": 147,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	void to boolean in method private reflectionAppend(lhs Object, rhs Object, clazz Class<?>, builder EqualsBuilder, useTransients boolean, excludeFields String[]) : boolean from class org.mockito.internal.matchers.apachecommons.EqualsBuilder",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/matchers/apachecommons/EqualsBuilder.java",
+            "startLine": 273,
+            "endLine": 312,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/matchers/apachecommons/EqualsBuilder.java",
+            "startLine": 271,
+            "endLine": 314,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	fieldCopier : FieldCopier to accessor : MemberAccessor in class org.mockito.internal.util.reflection.LenientCopyTool",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/util/reflection/LenientCopyTool.java",
+            "startLine": 13,
+            "endLine": 13,
+            "startColumn": 17,
+            "endColumn": 48
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/util/reflection/LenientCopyTool.java",
+            "startLine": 15,
+            "endLine": 15,
+            "startColumn": 20,
+            "endColumn": 58
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	fieldCopier : FieldCopier to accessor : MemberAccessor in class org.mockito.internal.util.reflection.LenientCopyTool",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/util/reflection/LenientCopyTool.java",
+            "startLine": 13,
+            "endLine": 13,
+            "startColumn": 17,
+            "endColumn": 48
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/util/reflection/LenientCopyTool.java",
+            "startLine": 15,
+            "endLine": 15,
+            "startColumn": 20,
+            "endColumn": 58
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.mockito.moduletest.ModuleUtil from class org.mockito.moduletest.ModuleHandlingTest",
+          "leftSideLocation": {
+            "filePath": "subprojects/module-test/src/test/java/org/mockito/moduletest/ModuleHandlingTest.java",
+            "startLine": 53,
+            "endLine": 417,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "subprojects/module-test/src/test/java/org/mockito/moduletest/ModuleUtil.java",
+            "startLine": 30,
+            "endLine": 147,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/mockito/mockito.git",
+      "sha1": "12ce7ea57a721f146a2b7c8f69d45b8b7f349531",
+      "url": "https://github.com/mockito/mockito/commit/12ce7ea57a721f146a2b7c8f69d45b8b7f349531",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package inferStaticMock(type Type, name String) : Class<?> renamed to package inferParameterizedType(type Type, name String, sort String) : Class<?> in class org.mockito.internal.configuration.MockAnnotationProcessor",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/configuration/MockAnnotationProcessor.java",
+            "startLine": 61,
+            "endLine": 81,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/configuration/MockAnnotationProcessor.java",
+            "startLine": 70,
+            "endLine": 90,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	isMockConstruction : BooleanSupplier to isMockConstruction : Predicate<Class<?>> in class org.mockito.internal.creation.bytebuddy.MockMethodAdvice",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/MockMethodAdvice.java",
+            "startLine": 62,
+            "endLine": 62,
+            "startColumn": 35,
+            "endColumn": 53
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/MockMethodAdvice.java",
+            "startLine": 63,
+            "endLine": 63,
+            "startColumn": 39,
+            "endColumn": 57
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	mockConstruction : ThreadLocal<Boolean> to mockitoConstruction : ThreadLocal<Boolean> in class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/InlineByteBuddyMockMaker.java",
+            "startLine": 194,
+            "endLine": 194,
+            "startColumn": 40,
+            "endColumn": 95
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/InlineByteBuddyMockMaker.java",
+            "startLine": 200,
+            "endLine": 200,
+            "startColumn": 40,
+            "endColumn": 98
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package inferStaticMock(type Type, name String) : Class<?> renamed to package inferParameterizedType(type Type, name String, sort String) : Class<?> in class org.mockito.internal.configuration.MockAnnotationProcessor",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/configuration/MockAnnotationProcessor.java",
+            "startLine": 61,
+            "endLine": 81,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/configuration/MockAnnotationProcessor.java",
+            "startLine": 70,
+            "endLine": 90,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	mockConstruction : ThreadLocal<Boolean> to mockitoConstruction : ThreadLocal<Boolean> in class org.mockito.internal.creation.bytebuddy.InlineByteBuddyMockMaker",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/InlineByteBuddyMockMaker.java",
+            "startLine": 194,
+            "endLine": 194,
+            "startColumn": 40,
+            "endColumn": 95
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/InlineByteBuddyMockMaker.java",
+            "startLine": 200,
+            "endLine": 200,
+            "startColumn": 40,
+            "endColumn": 98
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	isMockConstruction : BooleanSupplier to isMockConstruction : Predicate<Class<?>> in class org.mockito.internal.creation.bytebuddy.MockMethodAdvice",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/MockMethodAdvice.java",
+            "startLine": 62,
+            "endLine": 62,
+            "startColumn": 35,
+            "endColumn": 53
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/creation/bytebuddy/MockMethodAdvice.java",
+            "startLine": 63,
+            "endLine": 63,
+            "startColumn": 39,
+            "endColumn": 57
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/mockito/mockito.git",
+      "sha1": "39e5d84e5b0fc10a2884748dfa008bbb26d5d03d",
+      "url": "https://github.com/mockito/mockito/commit/39e5d84e5b0fc10a2884748dfa008bbb26d5d03d",
+      "ourApproach": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	strictness : Strictness to sessionStore : JUnitSessionStore in class org.mockito.internal.junit.JUnitRule",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/junit/JUnitRule.java",
+            "startLine": 23,
+            "endLine": 23,
+            "startColumn": 24,
+            "endColumn": 34
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/junit/JUnitRule.java",
+            "startLine": 16,
+            "endLine": 16,
+            "startColumn": 37,
+            "endColumn": 49
+          },
+          "developerConfirmation": false
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	strictness : Strictness to sessionStore : JUnitSessionStore in class org.mockito.internal.junit.JUnitRule",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/junit/JUnitRule.java",
+            "startLine": 23,
+            "endLine": 23,
+            "startColumn": 24,
+            "endColumn": 34
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/junit/JUnitRule.java",
+            "startLine": 16,
+            "endLine": 16,
+            "startColumn": 37,
+            "endColumn": 49
+          },
+          "developerConfirmation": false
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.mockito.internal.junit.JUnitSessionStore from Class org.mockito.internal.junit.JUnitRule",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/junit/JUnitRule.java",
+            "startLine": 17,
+            "endLine": 79,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/junit/JUnitSessionStore.java",
+            "startLine": 15,
+            "endLine": 67,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.mockito.internal.junit.JUnitSessionStore from class org.mockito.internal.junit.JUnitRule",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/junit/JUnitRule.java",
+            "startLine": 17,
+            "endLine": 79,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/junit/JUnitSessionStore.java",
+            "startLine": 15,
+            "endLine": 67,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/mockito/mockito.git",
+      "sha1": "1ce2078a562a4486fe4a5917a9b91aa8ef4216c2",
+      "url": "https://github.com/mockito/mockito/commit/1ce2078a562a4486fe4a5917a9b91aa8ef4216c2",
+      "ourApproach": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	startTime : Instant to startTime : long in class org.mockito.internal.util.Timer",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/util/Timer.java",
+            "startLine": 15,
+            "endLine": 15,
+            "startColumn": 21,
+            "endColumn": 37
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/util/Timer.java",
+            "startLine": 12,
+            "endLine": 12,
+            "startColumn": 18,
+            "endColumn": 32
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public getPollingPeriod() : Duration renamed to public getPollingPeriodMillis() : long in class org.mockito.internal.verification.VerificationOverTimeImpl",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/verification/VerificationOverTimeImpl.java",
+            "startLine": 129,
+            "endLine": 131,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/verification/VerificationOverTimeImpl.java",
+            "startLine": 127,
+            "endLine": 129,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	Duration to long in method public getPollingPeriodMillis() : long from class org.mockito.internal.verification.VerificationOverTimeImpl",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/verification/VerificationOverTimeImpl.java",
+            "startLine": 129,
+            "endLine": 131,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/verification/VerificationOverTimeImpl.java",
+            "startLine": 127,
+            "endLine": 129,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	Duration to long in method public duration() : long from class org.mockito.internal.util.Timer",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/util/Timer.java",
+            "startLine": 44,
+            "endLine": 46,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/util/Timer.java",
+            "startLine": 40,
+            "endLine": 42,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	pollingPeriod : Duration to pollingPeriodMillis : long in class org.mockito.internal.verification.VerificationOverTimeImpl",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/verification/VerificationOverTimeImpl.java",
+            "startLine": 21,
+            "endLine": 21,
+            "startColumn": 28,
+            "endColumn": 41
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/verification/VerificationOverTimeImpl.java",
+            "startLine": 19,
+            "endLine": 19,
+            "startColumn": 24,
+            "endColumn": 43
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	pollingPeriod : Duration to pollingPeriodMillis : long in class org.mockito.internal.verification.VerificationOverTimeImpl",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/verification/VerificationOverTimeImpl.java",
+            "startLine": 21,
+            "endLine": 21,
+            "startColumn": 28,
+            "endColumn": 41
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/verification/VerificationOverTimeImpl.java",
+            "startLine": 19,
+            "endLine": 19,
+            "startColumn": 24,
+            "endColumn": 43
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	duration : Duration to durationMillis : long in class org.mockito.internal.util.Timer",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/util/Timer.java",
+            "startLine": 14,
+            "endLine": 14,
+            "startColumn": 28,
+            "endColumn": 36
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/util/Timer.java",
+            "startLine": 11,
+            "endLine": 11,
+            "startColumn": 24,
+            "endColumn": 38
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	duration : Duration to durationMillis : long in class org.mockito.internal.util.Timer",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/util/Timer.java",
+            "startLine": 14,
+            "endLine": 14,
+            "startColumn": 28,
+            "endColumn": 36
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/util/Timer.java",
+            "startLine": 11,
+            "endLine": 11,
+            "startColumn": 24,
+            "endColumn": 38
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	public timeout(timeout Duration) : VerificationWithTimeout inlined to public timeout(millis long) : VerificationWithTimeout in class org.mockito.Mockito",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/Mockito.java",
+            "startLine": 2859,
+            "endLine": 2890,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/Mockito.java",
+            "startLine": 2822,
+            "endLine": 2853,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	public after(delay Duration) : VerificationAfterDelay inlined to public after(millis long) : VerificationAfterDelay in class org.mockito.Mockito",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/Mockito.java",
+            "startLine": 2950,
+            "endLine": 3004,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/Mockito.java",
+            "startLine": 2855,
+            "endLine": 2909,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	public timeout(timeout Duration) : VerificationWithTimeout inlined to public timeout(millis long) : VerificationWithTimeout in class org.mockito.Mockito",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/Mockito.java",
+            "startLine": 2859,
+            "endLine": 2890,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/Mockito.java",
+            "startLine": 2822,
+            "endLine": 2853,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	public after(delay Duration) : VerificationAfterDelay inlined to public after(millis long) : VerificationAfterDelay in class org.mockito.Mockito",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/Mockito.java",
+            "startLine": 2950,
+            "endLine": 3004,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/Mockito.java",
+            "startLine": 2855,
+            "endLine": 2909,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	startTime : Instant to startTime : long in class org.mockito.internal.util.Timer",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/util/Timer.java",
+            "startLine": 15,
+            "endLine": 15,
+            "startColumn": 21,
+            "endColumn": 37
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/util/Timer.java",
+            "startLine": 12,
+            "endLine": 12,
+            "startColumn": 18,
+            "endColumn": 32
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	Duration to long in method public duration() : long from class org.mockito.internal.util.Timer",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/util/Timer.java",
+            "startLine": 44,
+            "endLine": 46,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/util/Timer.java",
+            "startLine": 40,
+            "endLine": 42,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	duration : Duration to durationMillis : long in class org.mockito.internal.util.Timer",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/util/Timer.java",
+            "startLine": 14,
+            "endLine": 14,
+            "startColumn": 28,
+            "endColumn": 36
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/util/Timer.java",
+            "startLine": 11,
+            "endLine": 11,
+            "startColumn": 24,
+            "endColumn": 38
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	duration : Duration to durationMillis : long in class org.mockito.internal.util.Timer",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/util/Timer.java",
+            "startLine": 14,
+            "endLine": 14,
+            "startColumn": 28,
+            "endColumn": 36
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/util/Timer.java",
+            "startLine": 11,
+            "endLine": 11,
+            "startColumn": 24,
+            "endColumn": 38
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	pollingPeriod : Duration to pollingPeriodMillis : long in class org.mockito.internal.verification.VerificationOverTimeImpl",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/verification/VerificationOverTimeImpl.java",
+            "startLine": 21,
+            "endLine": 21,
+            "startColumn": 28,
+            "endColumn": 41
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/verification/VerificationOverTimeImpl.java",
+            "startLine": 19,
+            "endLine": 19,
+            "startColumn": 24,
+            "endColumn": 43
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	pollingPeriod : Duration to pollingPeriodMillis : long in class org.mockito.internal.verification.VerificationOverTimeImpl",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/verification/VerificationOverTimeImpl.java",
+            "startLine": 21,
+            "endLine": 21,
+            "startColumn": 28,
+            "endColumn": 41
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/verification/VerificationOverTimeImpl.java",
+            "startLine": 19,
+            "endLine": 19,
+            "startColumn": 24,
+            "endColumn": 43
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/mockito/mockito.git",
+      "sha1": "d64cbd38edaca135a1bc835cd74fc943e0897535",
+      "url": "https://github.com/mockito/mockito/commit/d64cbd38edaca135a1bc835cd74fc943e0897535",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private verifyTestFinishedSuccessfully() : void extracted from public does_not_fail_when_tests_succeeds() : void in class org.mockito.internal.runners.DefaultInternalRunnerTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/runners/DefaultInternalRunnerTest.java",
+            "startLine": 32,
+            "endLine": 40,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/runners/DefaultInternalRunnerTest.java",
+            "startLine": 68,
+            "endLine": 72,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private verifyTestFinishedSuccessfully() : void extracted from public does_not_fail_second_test_when_first_test_fail() : void in class org.mockito.internal.runners.DefaultInternalRunnerTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/runners/DefaultInternalRunnerTest.java",
+            "startLine": 42,
+            "endLine": 59,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/runners/DefaultInternalRunnerTest.java",
+            "startLine": 68,
+            "endLine": 72,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private verifyTestFinishedSuccessfully() : void extracted from public does_not_fail_when_tests_succeeds() : void in class org.mockito.internal.runners.DefaultInternalRunnerTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/runners/DefaultInternalRunnerTest.java",
+            "startLine": 32,
+            "endLine": 40,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/runners/DefaultInternalRunnerTest.java",
+            "startLine": 68,
+            "endLine": 72,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private verifyTestFinishedSuccessfully() : void extracted from public does_not_fail_second_test_when_first_test_fail() : void in class org.mockito.internal.runners.DefaultInternalRunnerTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/runners/DefaultInternalRunnerTest.java",
+            "startLine": 42,
+            "endLine": 59,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/runners/DefaultInternalRunnerTest.java",
+            "startLine": 68,
+            "endLine": 72,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/mockito/mockito.git",
+      "sha1": "53e8a93141e1f8c41d6b6d4fd72c20488826269a",
+      "url": "https://github.com/mockito/mockito/commit/53e8a93141e1f8c41d6b6d4fd72c20488826269a",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private createTooLittleInvocationsMessage(discrepancy org.mockito.internal.reporting.Discrepancy, wanted DescribedInvocation, locations List<Location>) : String renamed to private createTooFewInvocationsMessage(discrepancy org.mockito.internal.reporting.Discrepancy, wanted DescribedInvocation, locations List<Location>) : String in class org.mockito.internal.exceptions.Reporter",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/exceptions/Reporter.java",
+            "startLine": 422,
+            "endLine": 432,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/exceptions/Reporter.java",
+            "startLine": 422,
+            "endLine": 432,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public tooLittleActualInvocationsInOrder(discrepancy org.mockito.internal.reporting.Discrepancy, wanted DescribedInvocation, locations List<Location>) : MockitoAssertionError renamed to public tooFewActualInvocationsInOrder(discrepancy org.mockito.internal.reporting.Discrepancy, wanted DescribedInvocation, locations List<Location>) : MockitoAssertionError in class org.mockito.internal.exceptions.Reporter",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/exceptions/Reporter.java",
+            "startLine": 440,
+            "endLine": 446,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/exceptions/Reporter.java",
+            "startLine": 440,
+            "endLine": 446,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public tooLittleActualInvocations(discrepancy org.mockito.internal.reporting.Discrepancy, wanted DescribedInvocation, allLocations List<Location>) : MockitoAssertionError renamed to public tooFewActualInvocations(discrepancy org.mockito.internal.reporting.Discrepancy, wanted DescribedInvocation, allLocations List<Location>) : MockitoAssertionError in class org.mockito.internal.exceptions.Reporter",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/exceptions/Reporter.java",
+            "startLine": 434,
+            "endLine": 438,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/exceptions/Reporter.java",
+            "startLine": 434,
+            "endLine": 438,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public shouldReportTooLittleInvocationsInOrder() : void renamed to public shouldReportTooFewInvocationsInOrder() : void in class org.mockito.internal.verification.checkers.AtLeastXNumberOfInvocationsCheckerTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/verification/checkers/AtLeastXNumberOfInvocationsCheckerTest.java",
+            "startLine": 41,
+            "endLine": 57,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/verification/checkers/AtLeastXNumberOfInvocationsCheckerTest.java",
+            "startLine": 41,
+            "endLine": 57,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public shouldReportTooLittleInvocations() : void renamed to public shouldReportTooFewInvocations() : void in class org.mockito.internal.verification.checkers.AtLeastXNumberOfInvocationsCheckerTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/verification/checkers/AtLeastXNumberOfInvocationsCheckerTest.java",
+            "startLine": 72,
+            "endLine": 85,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/verification/checkers/AtLeastXNumberOfInvocationsCheckerTest.java",
+            "startLine": 72,
+            "endLine": 85,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public shouldReportTooLittleActual() : void renamed to public shouldReportTooFewActual() : void in class org.mockito.internal.verification.checkers.NumberOfInvocationsCheckerTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/verification/checkers/NumberOfInvocationsCheckerTest.java",
+            "startLine": 47,
+            "endLine": 58,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/verification/checkers/NumberOfInvocationsCheckerTest.java",
+            "startLine": 47,
+            "endLine": 58,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public shouldReportTooLittleInvocations() : void renamed to public shouldReportTooFewInvocations() : void in class org.mockito.internal.verification.checkers.NumberOfInvocationsInOrderCheckerTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/verification/checkers/NumberOfInvocationsInOrderCheckerTest.java",
+            "startLine": 63,
+            "endLine": 77,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/verification/checkers/NumberOfInvocationsInOrderCheckerTest.java",
+            "startLine": 63,
+            "endLine": 77,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public shouldReportTooLittleActual() : void renamed to public shouldReportTooFewActual() : void in class org.mockito.internal.verification.checkers.NumberOfInvocationsInOrderCheckerTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/verification/checkers/NumberOfInvocationsInOrderCheckerTest.java",
+            "startLine": 91,
+            "endLine": 102,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/verification/checkers/NumberOfInvocationsInOrderCheckerTest.java",
+            "startLine": 91,
+            "endLine": 102,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public shouldSayTooLittleInvocationsInOrder() : void renamed to public shouldSayTooFewInvocationsInOrder() : void in class org.mockitousage.stacktrace.ModellingDescriptiveMessagesTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/mockitousage/stacktrace/ModellingDescriptiveMessagesTest.java",
+            "startLine": 83,
+            "endLine": 92,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/mockitousage/stacktrace/ModellingDescriptiveMessagesTest.java",
+            "startLine": 83,
+            "endLine": 92,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public shouldSayTooLittleInvocationsInAtLeastModeInOrder() : void renamed to public shouldSayTooFewInvocationsInAtLeastModeInOrder() : void in class org.mockitousage.stacktrace.ModellingDescriptiveMessagesTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/mockitousage/stacktrace/ModellingDescriptiveMessagesTest.java",
+            "startLine": 110,
+            "endLine": 116,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/mockitousage/stacktrace/ModellingDescriptiveMessagesTest.java",
+            "startLine": 110,
+            "endLine": 116,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public shouldSayTooLittleInvocations() : void renamed to public shouldSayTooFewInvocations() : void in class org.mockitousage.stacktrace.ModellingDescriptiveMessagesTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/mockitousage/stacktrace/ModellingDescriptiveMessagesTest.java",
+            "startLine": 61,
+            "endLine": 65,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/mockitousage/stacktrace/ModellingDescriptiveMessagesTest.java",
+            "startLine": 61,
+            "endLine": 65,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public shouldSayTooLittleInvocationsInAtLeastMode() : void renamed to public shouldSayTooFewInvocationsInAtLeastMode() : void in class org.mockitousage.stacktrace.ModellingDescriptiveMessagesTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/mockitousage/stacktrace/ModellingDescriptiveMessagesTest.java",
+            "startLine": 118,
+            "endLine": 123,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/mockitousage/stacktrace/ModellingDescriptiveMessagesTest.java",
+            "startLine": 118,
+            "endLine": 123,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public shouldPointToThirdChunkWhenTooLittleActualInvocations() : void renamed to public shouldPointToThirdChunkWhenTooFewActualInvocations() : void in class org.mockitousage.stacktrace.PointingStackTraceToActualInvocationChunkInOrderTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/mockitousage/stacktrace/PointingStackTraceToActualInvocationChunkInOrderTest.java",
+            "startLine": 81,
+            "endLine": 93,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/mockitousage/stacktrace/PointingStackTraceToActualInvocationChunkInOrderTest.java",
+            "startLine": 81,
+            "endLine": 93,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public shouldPointToFourthMethodBecauseOfTooLittleActualInvocations() : void renamed to public shouldPointToFourthMethodBecauseOfTooFewActualInvocations() : void in class org.mockitousage.stacktrace.PointingStackTraceToActualInvocationInOrderTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/mockitousage/stacktrace/PointingStackTraceToActualInvocationInOrderTest.java",
+            "startLine": 113,
+            "endLine": 125,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/mockitousage/stacktrace/PointingStackTraceToActualInvocationInOrderTest.java",
+            "startLine": 113,
+            "endLine": 125,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public shouldPrintTooLittleInvocations() : void renamed to public shouldPrintTooFewInvocations() : void in class org.mockitousage.verification.DescriptiveMessagesOnVerificationInOrderErrorsTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/mockitousage/verification/DescriptiveMessagesOnVerificationInOrderErrorsTest.java",
+            "startLine": 165,
+            "endLine": 196,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/mockitousage/verification/DescriptiveMessagesOnVerificationInOrderErrorsTest.java",
+            "startLine": 165,
+            "endLine": 196,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public shouldDetectTooLittleActualInvocations() : void renamed to public shouldDetectTooFewActualInvocations() : void in class org.mockitousage.verification.ExactNumberOfTimesVerificationTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/mockitousage/verification/ExactNumberOfTimesVerificationTest.java",
+            "startLine": 30,
+            "endLine": 44,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/mockitousage/verification/ExactNumberOfTimesVerificationTest.java",
+            "startLine": 30,
+            "endLine": 44,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public shouldThrowTooLittleInvocationsForMockTwo() : void renamed to public shouldThrowTooFewInvocationsForMockTwo() : void in class org.mockitousage.verification.SelectedMocksInOrderVerificationTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/mockitousage/verification/SelectedMocksInOrderVerificationTest.java",
+            "startLine": 140,
+            "endLine": 148,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/mockitousage/verification/SelectedMocksInOrderVerificationTest.java",
+            "startLine": 140,
+            "endLine": 148,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private createTooLittleInvocationsMessage(discrepancy Discrepancy, wanted DescribedInvocation, locations List<Location>) : String renamed to private createTooFewInvocationsMessage(discrepancy Discrepancy, wanted DescribedInvocation, locations List<Location>) : String in class org.mockito.internal.exceptions.Reporter",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/exceptions/Reporter.java",
+            "startLine": 422,
+            "endLine": 432,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/exceptions/Reporter.java",
+            "startLine": 422,
+            "endLine": 432,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public tooLittleActualInvocations(discrepancy Discrepancy, wanted DescribedInvocation, allLocations List<Location>) : MockitoAssertionError renamed to public tooFewActualInvocations(discrepancy Discrepancy, wanted DescribedInvocation, allLocations List<Location>) : MockitoAssertionError in class org.mockito.internal.exceptions.Reporter",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/exceptions/Reporter.java",
+            "startLine": 434,
+            "endLine": 438,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/exceptions/Reporter.java",
+            "startLine": 434,
+            "endLine": 438,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public tooLittleActualInvocationsInOrder(discrepancy Discrepancy, wanted DescribedInvocation, locations List<Location>) : MockitoAssertionError renamed to public tooFewActualInvocationsInOrder(discrepancy Discrepancy, wanted DescribedInvocation, locations List<Location>) : MockitoAssertionError in class org.mockito.internal.exceptions.Reporter",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/exceptions/Reporter.java",
+            "startLine": 440,
+            "endLine": 446,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/exceptions/Reporter.java",
+            "startLine": 440,
+            "endLine": 446,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public shouldReportTooLittleInvocationsInOrder() : void renamed to public shouldReportTooFewInvocationsInOrder() : void in class org.mockito.internal.verification.checkers.AtLeastXNumberOfInvocationsCheckerTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/verification/checkers/AtLeastXNumberOfInvocationsCheckerTest.java",
+            "startLine": 41,
+            "endLine": 57,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/verification/checkers/AtLeastXNumberOfInvocationsCheckerTest.java",
+            "startLine": 41,
+            "endLine": 57,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public shouldReportTooLittleInvocations() : void renamed to public shouldReportTooFewInvocations() : void in class org.mockito.internal.verification.checkers.AtLeastXNumberOfInvocationsCheckerTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/verification/checkers/AtLeastXNumberOfInvocationsCheckerTest.java",
+            "startLine": 72,
+            "endLine": 85,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/verification/checkers/AtLeastXNumberOfInvocationsCheckerTest.java",
+            "startLine": 72,
+            "endLine": 85,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public shouldReportTooLittleActual() : void renamed to public shouldReportTooFewActual() : void in class org.mockito.internal.verification.checkers.NumberOfInvocationsCheckerTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/verification/checkers/NumberOfInvocationsCheckerTest.java",
+            "startLine": 47,
+            "endLine": 58,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/verification/checkers/NumberOfInvocationsCheckerTest.java",
+            "startLine": 47,
+            "endLine": 58,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public shouldReportTooLittleInvocations() : void renamed to public shouldReportTooFewInvocations() : void in class org.mockito.internal.verification.checkers.NumberOfInvocationsInOrderCheckerTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/verification/checkers/NumberOfInvocationsInOrderCheckerTest.java",
+            "startLine": 63,
+            "endLine": 77,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/verification/checkers/NumberOfInvocationsInOrderCheckerTest.java",
+            "startLine": 63,
+            "endLine": 77,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public shouldReportTooLittleActual() : void renamed to public shouldReportTooFewActual() : void in class org.mockito.internal.verification.checkers.NumberOfInvocationsInOrderCheckerTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/verification/checkers/NumberOfInvocationsInOrderCheckerTest.java",
+            "startLine": 91,
+            "endLine": 102,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/mockito/internal/verification/checkers/NumberOfInvocationsInOrderCheckerTest.java",
+            "startLine": 91,
+            "endLine": 102,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public shouldSayTooLittleInvocations() : void renamed to public shouldSayTooFewInvocations() : void in class org.mockitousage.stacktrace.ModellingDescriptiveMessagesTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/mockitousage/stacktrace/ModellingDescriptiveMessagesTest.java",
+            "startLine": 61,
+            "endLine": 65,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/mockitousage/stacktrace/ModellingDescriptiveMessagesTest.java",
+            "startLine": 61,
+            "endLine": 65,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public shouldSayTooLittleInvocationsInOrder() : void renamed to public shouldSayTooFewInvocationsInOrder() : void in class org.mockitousage.stacktrace.ModellingDescriptiveMessagesTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/mockitousage/stacktrace/ModellingDescriptiveMessagesTest.java",
+            "startLine": 83,
+            "endLine": 92,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/mockitousage/stacktrace/ModellingDescriptiveMessagesTest.java",
+            "startLine": 83,
+            "endLine": 92,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public shouldSayTooLittleInvocationsInAtLeastModeInOrder() : void renamed to public shouldSayTooFewInvocationsInAtLeastModeInOrder() : void in class org.mockitousage.stacktrace.ModellingDescriptiveMessagesTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/mockitousage/stacktrace/ModellingDescriptiveMessagesTest.java",
+            "startLine": 110,
+            "endLine": 116,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/mockitousage/stacktrace/ModellingDescriptiveMessagesTest.java",
+            "startLine": 110,
+            "endLine": 116,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public shouldSayTooLittleInvocationsInAtLeastMode() : void renamed to public shouldSayTooFewInvocationsInAtLeastMode() : void in class org.mockitousage.stacktrace.ModellingDescriptiveMessagesTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/mockitousage/stacktrace/ModellingDescriptiveMessagesTest.java",
+            "startLine": 118,
+            "endLine": 123,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/mockitousage/stacktrace/ModellingDescriptiveMessagesTest.java",
+            "startLine": 118,
+            "endLine": 123,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public shouldPointToThirdChunkWhenTooLittleActualInvocations() : void renamed to public shouldPointToThirdChunkWhenTooFewActualInvocations() : void in class org.mockitousage.stacktrace.PointingStackTraceToActualInvocationChunkInOrderTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/mockitousage/stacktrace/PointingStackTraceToActualInvocationChunkInOrderTest.java",
+            "startLine": 81,
+            "endLine": 93,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/mockitousage/stacktrace/PointingStackTraceToActualInvocationChunkInOrderTest.java",
+            "startLine": 81,
+            "endLine": 93,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public shouldPointToFourthMethodBecauseOfTooLittleActualInvocations() : void renamed to public shouldPointToFourthMethodBecauseOfTooFewActualInvocations() : void in class org.mockitousage.stacktrace.PointingStackTraceToActualInvocationInOrderTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/mockitousage/stacktrace/PointingStackTraceToActualInvocationInOrderTest.java",
+            "startLine": 113,
+            "endLine": 125,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/mockitousage/stacktrace/PointingStackTraceToActualInvocationInOrderTest.java",
+            "startLine": 113,
+            "endLine": 125,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public shouldPrintTooLittleInvocations() : void renamed to public shouldPrintTooFewInvocations() : void in class org.mockitousage.verification.DescriptiveMessagesOnVerificationInOrderErrorsTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/mockitousage/verification/DescriptiveMessagesOnVerificationInOrderErrorsTest.java",
+            "startLine": 165,
+            "endLine": 196,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/mockitousage/verification/DescriptiveMessagesOnVerificationInOrderErrorsTest.java",
+            "startLine": 165,
+            "endLine": 196,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public shouldDetectTooLittleActualInvocations() : void renamed to public shouldDetectTooFewActualInvocations() : void in class org.mockitousage.verification.ExactNumberOfTimesVerificationTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/mockitousage/verification/ExactNumberOfTimesVerificationTest.java",
+            "startLine": 30,
+            "endLine": 44,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/mockitousage/verification/ExactNumberOfTimesVerificationTest.java",
+            "startLine": 30,
+            "endLine": 44,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public shouldThrowTooLittleInvocationsForMockTwo() : void renamed to public shouldThrowTooFewInvocationsForMockTwo() : void in class org.mockitousage.verification.SelectedMocksInOrderVerificationTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/mockitousage/verification/SelectedMocksInOrderVerificationTest.java",
+            "startLine": 140,
+            "endLine": 148,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/mockitousage/verification/SelectedMocksInOrderVerificationTest.java",
+            "startLine": 140,
+            "endLine": 148,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/mockito/mockito.git",
+      "sha1": "61655a491643f042a85203c1ea9433f717799d93",
+      "url": "https://github.com/mockito/mockito/commit/61655a491643f042a85203c1ea9433f717799d93",
+      "ourApproach": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.concurrentmockito.ThreadVerifiesContinuoslyInteractingMockTest renamed to org.concurrentmockito.ThreadVerifiesContinuouslyInteractingMockTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/concurrentmockito/ThreadVerifiesContinuoslyInteractingMockTest.java",
+            "startLine": 17,
+            "endLine": 53,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/concurrentmockito/ThreadVerifiesContinuouslyInteractingMockTest.java",
+            "startLine": 17,
+            "endLine": 53,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.concurrentmockito.ThreadVerifiesContinuoslyInteractingMockTest renamed to org.concurrentmockito.ThreadVerifiesContinuouslyInteractingMockTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/concurrentmockito/ThreadVerifiesContinuoslyInteractingMockTest.java",
+            "startLine": 17,
+            "endLine": 53,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/concurrentmockito/ThreadVerifiesContinuouslyInteractingMockTest.java",
+            "startLine": 17,
+            "endLine": 53,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/mockito/mockito.git",
+      "sha1": "808bae82f1401ce7dfbb23a9c861ac2462920437",
+      "url": "https://github.com/mockito/mockito/commit/808bae82f1401ce7dfbb23a9c861ac2462920437",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public clearMock(mock Object) : void renamed to public clearInlineMock(mock Object) : void in class org.mockito.MockitoFramework",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/MockitoFramework.java",
+            "startLine": 107,
+            "endLine": 116,
+            "startColumn": 5,
+            "endColumn": 33
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/MockitoFramework.java",
+            "startLine": 117,
+            "endLine": 127,
+            "startColumn": 5,
+            "endColumn": 39
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public clearAllMocks() : void renamed to public clearInlineMocks() : void in class org.mockito.MockitoFramework",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/MockitoFramework.java",
+            "startLine": 96,
+            "endLine": 105,
+            "startColumn": 5,
+            "endColumn": 26
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/MockitoFramework.java",
+            "startLine": 96,
+            "endLine": 115,
+            "startColumn": 5,
+            "endColumn": 29
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public clearMock(mock Object) : void renamed to public clearInlineMock(mock Object) : void in class org.mockito.internal.framework.DefaultMockitoFramework",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/framework/DefaultMockitoFramework.java",
+            "startLine": 56,
+            "endLine": 62,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/framework/DefaultMockitoFramework.java",
+            "startLine": 56,
+            "endLine": 62,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public clearAllMocks() : void renamed to public clearInlineMocks() : void in class org.mockito.internal.framework.DefaultMockitoFramework",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/framework/DefaultMockitoFramework.java",
+            "startLine": 48,
+            "endLine": 54,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/framework/DefaultMockitoFramework.java",
+            "startLine": 48,
+            "endLine": 54,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public clearAllMocks() : void renamed to public clearInlineMocks() : void in class org.mockito.internal.framework.DefaultMockitoFramework",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/framework/DefaultMockitoFramework.java",
+            "startLine": 48,
+            "endLine": 54,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/framework/DefaultMockitoFramework.java",
+            "startLine": 48,
+            "endLine": 54,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public clearMock(mock Object) : void renamed to public clearInlineMock(mock Object) : void in class org.mockito.internal.framework.DefaultMockitoFramework",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/framework/DefaultMockitoFramework.java",
+            "startLine": 56,
+            "endLine": 62,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/framework/DefaultMockitoFramework.java",
+            "startLine": 56,
+            "endLine": 62,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public clearAllMocks() : void renamed to public clearInlineMocks() : void in class org.mockito.MockitoFramework",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/MockitoFramework.java",
+            "startLine": 96,
+            "endLine": 105,
+            "startColumn": 5,
+            "endColumn": 26
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/MockitoFramework.java",
+            "startLine": 96,
+            "endLine": 115,
+            "startColumn": 5,
+            "endColumn": 29
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public clearMock(mock Object) : void renamed to public clearInlineMock(mock Object) : void in class org.mockito.MockitoFramework",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/MockitoFramework.java",
+            "startLine": 107,
+            "endLine": 116,
+            "startColumn": 5,
+            "endColumn": 33
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/MockitoFramework.java",
+            "startLine": 117,
+            "endLine": 127,
+            "startColumn": 5,
+            "endColumn": 39
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/mockito/mockito.git",
+      "sha1": "4a99af3fc920fa2dd8379da7f9a24dd61a7ee39e",
+      "url": "https://github.com/mockito/mockito/commit/4a99af3fc920fa2dd8379da7f9a24dd61a7ee39e",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.mockito.internal.stubbing.defaultanswers.RetrieveGenericsForDefaultAnswers from Class org.mockito.internal.stubbing.defaultanswers.ReturnsSmartNulls",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/stubbing/defaultanswers/ReturnsSmartNulls.java",
+            "startLine": 25,
+            "endLine": 173,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/stubbing/defaultanswers/RetrieveGenericsForDefaultAnswers.java",
+            "startLine": 16,
+            "endLine": 126,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	package returnValueFor(clazz Class<?>) : Object inlined to public answer(invocation InvocationOnMock) : Object in class org.mockito.internal.stubbing.defaultanswers.ReturnsMocks",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/stubbing/defaultanswers/ReturnsMocks.java",
+            "startLine": 29,
+            "endLine": 35,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/stubbing/defaultanswers/ReturnsMocks.java",
+            "startLine": 20,
+            "endLine": 44,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": false
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.mockito.internal.stubbing.defaultanswers.RetrieveGenericsForDefaultAnswers from class org.mockito.internal.stubbing.defaultanswers.ReturnsSmartNulls",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/stubbing/defaultanswers/ReturnsSmartNulls.java",
+            "startLine": 25,
+            "endLine": 173,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/mockito/internal/stubbing/defaultanswers/RetrieveGenericsForDefaultAnswers.java",
+            "startLine": 16,
+            "endLine": 126,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ]
+    }
+  ]
+}

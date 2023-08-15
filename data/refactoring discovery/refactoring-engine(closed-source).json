@@ -1,0 +1,2933 @@
+{
+  "results": [
+    {
+      "repository": "***.git",
+      "sha1": "4a46a502c60ef8683c79bfaaab2fc73e432bfee0",
+      "url": "***/commit/4a46a502c60ef8683c79bfaaab2fc73e432bfee0",
+      "ourApproach": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	setOfSourceClass : HashMap<String,List<ExpressionLocationEntity>> to setOfSourceClass : HashMap<String,HashSet<ExpressionLocationEntity>> in class candidate.FeatureEnvyCandidate",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 29,
+            "endLine": 29,
+            "startColumn": 61,
+            "endColumn": 77
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 27,
+            "endLine": 27,
+            "startColumn": 64,
+            "endColumn": 80
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	invocationLocations : HashMap<String,HashMap<String,List<ExpressionLocationEntity>>> to invocationLocations : HashMap<String,HashMap<String,HashSet<ExpressionLocationEntity>>> in class metrics.MethodEntitySet",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 28,
+            "endLine": 28,
+            "startColumn": 78,
+            "endColumn": 97
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 27,
+            "endLine": 27,
+            "startColumn": 81,
+            "endColumn": 100
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	invocationLocations : HashMap<String,HashMap<String,List<ExpressionLocationEntity>>> to invocationLocations : HashMap<String,HashMap<String,HashSet<ExpressionLocationEntity>>> in class metrics.MethodEntityVisitor",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 106,
+            "endLine": 106,
+            "startColumn": 78,
+            "endColumn": 97
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 98,
+            "endLine": 98,
+            "startColumn": 81,
+            "endColumn": 100
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	methodCallList : ArrayList<String> to methodEntityList : ArrayList<String> in class metrics.MethodEntityVisitor",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 99,
+            "endLine": 99,
+            "startColumn": 31,
+            "endColumn": 45
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 91,
+            "endLine": 91,
+            "startColumn": 31,
+            "endColumn": 47
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	HashMap<String,HashMap<String,List<ExpressionLocationEntity>>> to HashMap<String,HashMap<String,HashSet<ExpressionLocationEntity>>> in method public getInvocationLocations() : HashMap<String,HashMap<String,HashSet<ExpressionLocationEntity>>> from class metrics.MethodEntityVisitor",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 115,
+            "endLine": 117,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 106,
+            "endLine": 108,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	HashMap<String,List<ExpressionLocationEntity>> to HashMap<String,HashSet<ExpressionLocationEntity>> in method public getSetOfSourceClass() : HashMap<String,HashSet<ExpressionLocationEntity>> from class candidate.FeatureEnvyCandidate",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 293,
+            "endLine": 295,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 287,
+            "endLine": 289,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	HashMap<String,HashMap<String,List<ExpressionLocationEntity>>> to HashMap<String,HashMap<String,HashSet<ExpressionLocationEntity>>> in method public getSetOfTargetClasses() : HashMap<String,HashMap<String,HashSet<ExpressionLocationEntity>>> from class candidate.FeatureEnvyCandidate",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 297,
+            "endLine": 299,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 291,
+            "endLine": 293,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	invocationLocations : HashMap<String,HashMap<String,List<ExpressionLocationEntity>>> to invocationLocations : HashMap<String,HashMap<String,HashSet<ExpressionLocationEntity>>> in class candidate.FeatureEnvyCandidate",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 28,
+            "endLine": 28,
+            "startColumn": 78,
+            "endColumn": 97
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 26,
+            "endLine": 26,
+            "startColumn": 81,
+            "endColumn": 100
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	classBindingToPath : HashMap<String,String> to classToDeclaration : HashMap<String,TypeDeclaration> in class metrics.MethodEntitySet",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 32,
+            "endLine": 32,
+            "startColumn": 37,
+            "endColumn": 55
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 31,
+            "endLine": 31,
+            "startColumn": 46,
+            "endColumn": 64
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	classBindingToPath : HashMap<String,String> to classToDeclaration : HashMap<String,TypeDeclaration> in class metrics.MethodEntitySet",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 32,
+            "endLine": 32,
+            "startColumn": 37,
+            "endColumn": 55
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 31,
+            "endLine": 31,
+            "startColumn": 46,
+            "endColumn": 64
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	classBindingToPath : HashMap<String,String> to classToDeclaration : HashMap<String,TypeDeclaration> in class parser.FeatureEnvyParser",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/parser/FeatureEnvyParser.java",
+            "startLine": 26,
+            "endLine": 26,
+            "startColumn": 37,
+            "endColumn": 55
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/parser/FeatureEnvyParser.java",
+            "startLine": 27,
+            "endLine": 27,
+            "startColumn": 46,
+            "endColumn": 64
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	classBindingToPath : HashMap<String,String> to classToDeclaration : HashMap<String,TypeDeclaration> in class parser.FeatureEnvyParser",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/parser/FeatureEnvyParser.java",
+            "startLine": 26,
+            "endLine": 26,
+            "startColumn": 37,
+            "endColumn": 55
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/parser/FeatureEnvyParser.java",
+            "startLine": 27,
+            "endLine": 27,
+            "startColumn": 46,
+            "endColumn": 64
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	methodCallList : ArrayList<String> to methodEntityList : ArrayList<String> in class metrics.MethodEntitySet",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 20,
+            "endLine": 20,
+            "startColumn": 31,
+            "endColumn": 45
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 19,
+            "endLine": 19,
+            "startColumn": 31,
+            "endColumn": 47
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public getClassToMethodDeclaration() : HashMap<String,HashSet<MethodDeclaration>> renamed to public getClassToDeclaration() : HashMap<String,TypeDeclaration> in class visitor.ClassVisitor",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/visitor/ClassVisitor.java",
+            "startLine": 31,
+            "endLine": 33,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/visitor/ClassVisitor.java",
+            "startLine": 41,
+            "endLine": 43,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	HashMap<String,HashSet<MethodDeclaration>> to HashMap<String,TypeDeclaration> in method public getClassToDeclaration() : HashMap<String,TypeDeclaration> from class visitor.ClassVisitor",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/visitor/ClassVisitor.java",
+            "startLine": 31,
+            "endLine": 33,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/visitor/ClassVisitor.java",
+            "startLine": 41,
+            "endLine": 43,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	methodCallList : ArrayList<String> to methodEntityList : ArrayList<String> in class candidate.FeatureEnvyCandidate",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 22,
+            "endLine": 22,
+            "startColumn": 31,
+            "endColumn": 45
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 20,
+            "endLine": 20,
+            "startColumn": 31,
+            "endColumn": 47
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	setOfTargetClasses : HashMap<String,HashMap<String,List<ExpressionLocationEntity>>> to setOfTargetClasses : HashMap<String,HashMap<String,HashSet<ExpressionLocationEntity>>> in class candidate.FeatureEnvyCandidate",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 30,
+            "endLine": 30,
+            "startColumn": 78,
+            "endColumn": 96
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 28,
+            "endLine": 28,
+            "startColumn": 81,
+            "endColumn": 99
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public getMethodCallList() : ArrayList<String> renamed to public getMethodEntityList() : ArrayList<String> in class metrics.MethodEntityVisitor",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 438,
+            "endLine": 440,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 429,
+            "endLine": 431,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	classBindingToPath : HashMap<String,String> to classToDeclaration : HashMap<String,TypeDeclaration> in class metrics.MethodEntityVisitor",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 112,
+            "endLine": 112,
+            "startColumn": 37,
+            "endColumn": 55
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 104,
+            "endLine": 104,
+            "startColumn": 46,
+            "endColumn": 64
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	classBindingToPath : HashMap<String,String> to classToDeclaration : HashMap<String,TypeDeclaration> in class metrics.MethodEntityVisitor",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 112,
+            "endLine": 112,
+            "startColumn": 37,
+            "endColumn": 55
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 104,
+            "endLine": 104,
+            "startColumn": 46,
+            "endColumn": 64
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	classToMethodDeclaration : HashMap<String,HashSet<MethodDeclaration>> to classToDeclaration : HashMap<String,TypeDeclaration> in class visitor.ClassVisitor",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/visitor/ClassVisitor.java",
+            "startLine": 9,
+            "endLine": 9,
+            "startColumn": 49,
+            "endColumn": 73
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/visitor/ClassVisitor.java",
+            "startLine": 9,
+            "endLine": 9,
+            "startColumn": 38,
+            "endColumn": 56
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	classToMethodDeclaration : HashMap<String,HashSet<MethodDeclaration>> to classToDeclaration : HashMap<String,TypeDeclaration> in class visitor.ClassVisitor",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/visitor/ClassVisitor.java",
+            "startLine": 9,
+            "endLine": 9,
+            "startColumn": 49,
+            "endColumn": 73
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/visitor/ClassVisitor.java",
+            "startLine": 9,
+            "endLine": 9,
+            "startColumn": 38,
+            "endColumn": 56
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public getInvocationLocations() : HashMap<String,HashMap<String,List<ExpressionLocationEntity>>> renamed to public getInvocationSet() : HashMap<String,HashSet<String>> in class candidate.FeatureEnvyCandidate",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 289,
+            "endLine": 291,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 283,
+            "endLine": 285,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": false
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	invocationLocations : HashMap<String,HashMap<String,List<ExpressionLocationEntity>>> to invocationLocations : HashMap<String,HashMap<String,HashSet<ExpressionLocationEntity>>> in class candidate.FeatureEnvyCandidate",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 28,
+            "endLine": 28,
+            "startColumn": 78,
+            "endColumn": 97
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 26,
+            "endLine": 26,
+            "startColumn": 81,
+            "endColumn": 100
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	setOfSourceClass : HashMap<String,List<ExpressionLocationEntity>> to setOfSourceClass : HashMap<String,HashSet<ExpressionLocationEntity>> in class candidate.FeatureEnvyCandidate",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 29,
+            "endLine": 29,
+            "startColumn": 61,
+            "endColumn": 77
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 27,
+            "endLine": 27,
+            "startColumn": 64,
+            "endColumn": 80
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	setOfTargetClasses : HashMap<String,HashMap<String,List<ExpressionLocationEntity>>> to setOfTargetClasses : HashMap<String,HashMap<String,HashSet<ExpressionLocationEntity>>> in class candidate.FeatureEnvyCandidate",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 30,
+            "endLine": 30,
+            "startColumn": 78,
+            "endColumn": 96
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 28,
+            "endLine": 28,
+            "startColumn": 81,
+            "endColumn": 99
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	HashMap<String,List<ExpressionLocationEntity>> to HashMap<String,HashSet<ExpressionLocationEntity>> in method public getSetOfSourceClass() : HashMap<String,HashSet<ExpressionLocationEntity>> from class candidate.FeatureEnvyCandidate",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 293,
+            "endLine": 295,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 287,
+            "endLine": 289,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	HashMap<String,HashMap<String,List<ExpressionLocationEntity>>> to HashMap<String,HashMap<String,HashSet<ExpressionLocationEntity>>> in method public getSetOfTargetClasses() : HashMap<String,HashMap<String,HashSet<ExpressionLocationEntity>>> from class candidate.FeatureEnvyCandidate",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 297,
+            "endLine": 299,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 291,
+            "endLine": 293,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	HashMap<String,HashMap<String,List<ExpressionLocationEntity>>> to HashMap<String,HashSet<String>> in method public getInvocationSet() : HashMap<String,HashSet<String>> from class candidate.FeatureEnvyCandidate",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 289,
+            "endLine": 291,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 283,
+            "endLine": 285,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": false
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	methodCallList : ArrayList<String> to methodEntityList : ArrayList<String> in class candidate.FeatureEnvyCandidate",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 22,
+            "endLine": 22,
+            "startColumn": 31,
+            "endColumn": 45
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 20,
+            "endLine": 20,
+            "startColumn": 31,
+            "endColumn": 47
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	invocationLocations : HashMap<String,HashMap<String,List<ExpressionLocationEntity>>> to invocationLocations : HashMap<String,HashMap<String,HashSet<ExpressionLocationEntity>>> in class metrics.MethodEntitySet",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 28,
+            "endLine": 28,
+            "startColumn": 78,
+            "endColumn": 97
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 27,
+            "endLine": 27,
+            "startColumn": 81,
+            "endColumn": 100
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	methodCallList : ArrayList<String> to methodEntityList : ArrayList<String> in class metrics.MethodEntitySet",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 20,
+            "endLine": 20,
+            "startColumn": 31,
+            "endColumn": 45
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 19,
+            "endLine": 19,
+            "startColumn": 31,
+            "endColumn": 47
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public getMethodCallList() : ArrayList<String> renamed to public getMethodEntityList() : ArrayList<String> in class metrics.MethodEntityVisitor",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 438,
+            "endLine": 440,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 429,
+            "endLine": 431,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	invocationLocations : HashMap<String,HashMap<String,List<ExpressionLocationEntity>>> to invocationLocations : HashMap<String,HashMap<String,HashSet<ExpressionLocationEntity>>> in class metrics.MethodEntityVisitor",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 106,
+            "endLine": 106,
+            "startColumn": 78,
+            "endColumn": 97
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 98,
+            "endLine": 98,
+            "startColumn": 81,
+            "endColumn": 100
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	HashMap<String,HashMap<String,List<ExpressionLocationEntity>>> to HashMap<String,HashMap<String,HashSet<ExpressionLocationEntity>>> in method public getInvocationLocations() : HashMap<String,HashMap<String,HashSet<ExpressionLocationEntity>>> from class metrics.MethodEntityVisitor",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 115,
+            "endLine": 117,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 106,
+            "endLine": 108,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	methodCallList : ArrayList<String> to methodEntityList : ArrayList<String> in class metrics.MethodEntityVisitor",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 99,
+            "endLine": 99,
+            "startColumn": 31,
+            "endColumn": 45
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 91,
+            "endLine": 91,
+            "startColumn": 31,
+            "endColumn": 47
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public getClassToMethodDeclaration() : HashMap<String,HashSet<MethodDeclaration>> renamed to public getClassToDeclaration() : HashMap<String,TypeDeclaration> in class parser.FeatureEnvyParser",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/parser/FeatureEnvyParser.java",
+            "startLine": 98,
+            "endLine": 100,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/parser/FeatureEnvyParser.java",
+            "startLine": 91,
+            "endLine": 93,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": false
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	HashMap<String,HashSet<MethodDeclaration>> to HashMap<String,TypeDeclaration> in method public getClassToDeclaration() : HashMap<String,TypeDeclaration> from class parser.FeatureEnvyParser",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/parser/FeatureEnvyParser.java",
+            "startLine": 98,
+            "endLine": 100,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/parser/FeatureEnvyParser.java",
+            "startLine": 91,
+            "endLine": 93,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": false
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public getClassToMethodDeclaration() : HashMap<String,HashSet<MethodDeclaration>> renamed to public getClassToDeclaration() : HashMap<String,TypeDeclaration> in class visitor.ClassVisitor",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/visitor/ClassVisitor.java",
+            "startLine": 31,
+            "endLine": 33,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/visitor/ClassVisitor.java",
+            "startLine": 41,
+            "endLine": 43,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	HashMap<String,HashSet<MethodDeclaration>> to HashMap<String,TypeDeclaration> in method public getClassToDeclaration() : HashMap<String,TypeDeclaration> from class visitor.ClassVisitor",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/visitor/ClassVisitor.java",
+            "startLine": 31,
+            "endLine": 33,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/visitor/ClassVisitor.java",
+            "startLine": 41,
+            "endLine": 43,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	classToMethodDeclaration : HashMap<String,HashSet<MethodDeclaration>> to classToDeclaration : HashMap<String,TypeDeclaration> in class visitor.ClassVisitor",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/visitor/ClassVisitor.java",
+            "startLine": 9,
+            "endLine": 9,
+            "startColumn": 49,
+            "endColumn": 73
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/visitor/ClassVisitor.java",
+            "startLine": 9,
+            "endLine": 9,
+            "startColumn": 38,
+            "endColumn": 56
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	classToMethodDeclaration : HashMap<String,HashSet<MethodDeclaration>> to classToDeclaration : HashMap<String,TypeDeclaration> in class visitor.ClassVisitor",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/visitor/ClassVisitor.java",
+            "startLine": 9,
+            "endLine": 9,
+            "startColumn": 49,
+            "endColumn": 73
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/visitor/ClassVisitor.java",
+            "startLine": 9,
+            "endLine": 9,
+            "startColumn": 38,
+            "endColumn": 56
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "***.git",
+      "sha1": "e7c003482d42ad32f5fbade89f01bfe68cae8235",
+      "url": "***/commit/e7c003482d42ad32f5fbade89f01bfe68cae8235",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public isStaticClass(typeDeclaration TypeDeclaration) : boolean renamed to public getStaticRadio(typeDeclaration TypeDeclaration) : double in class utils.ClassJudge",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/utils/ClassJudge.java",
+            "startLine": 39,
+            "endLine": 55,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/utils/ClassJudge.java",
+            "startLine": 38,
+            "endLine": 52,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	boolean to double in method public getStaticRadio(typeDeclaration TypeDeclaration) : double from class utils.ClassJudge",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/utils/ClassJudge.java",
+            "startLine": 39,
+            "endLine": 55,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/utils/ClassJudge.java",
+            "startLine": 38,
+            "endLine": 52,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public isStaticClass(typeDeclaration TypeDeclaration) : boolean renamed to public getStaticRadio(typeDeclaration TypeDeclaration) : double in class utils.ClassJudge",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/utils/ClassJudge.java",
+            "startLine": 39,
+            "endLine": 55,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/utils/ClassJudge.java",
+            "startLine": 38,
+            "endLine": 52,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	boolean to double in method public getStaticRadio(typeDeclaration TypeDeclaration) : double from class utils.ClassJudge",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/utils/ClassJudge.java",
+            "startLine": 39,
+            "endLine": 55,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/utils/ClassJudge.java",
+            "startLine": 38,
+            "endLine": 52,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "***.git",
+      "sha1": "02e04659012da6abe2099203c247f7808fc38a58",
+      "url": "***/commit/02e04659012da6abe2099203c247f7808fc38a58",
+      "ourApproach": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	boolean to void in method public CalcNoUsedVariables(m int, n int, variables VariableDeclaration[]) : void from class detector.GodClassRefactorSolution",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 536,
+            "endLine": 546,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 536,
+            "endLine": 545,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	boolean to void in method public CalcNoUsedVariables(m int, n int, variables VariableDeclaration[]) : void from class detector.GodClassRefactorSolution",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 536,
+            "endLine": 546,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 536,
+            "endLine": 545,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "***.git",
+      "sha1": "2538c9f8bd8415890d1dd1ec4c9012291747e177",
+      "url": "***/commit/2538c9f8bd8415890d1dd1ec4c9012291747e177",
+      "ourApproach": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	totalCoupingMap : HashMap<String,ArrayList<String>> to methodInvocationEntityMap : HashMap<String,Set<String>> in class detector.GodClassRefactorSolution",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 361,
+            "endLine": 361,
+            "startColumn": 47,
+            "endColumn": 80
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 411,
+            "endLine": 411,
+            "startColumn": 34,
+            "endColumn": 77
+          },
+          "developerConfirmation": false
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	totalCoupingMap : HashMap<String,ArrayList<String>> to methodInvocationEntityMap : HashMap<String,Set<String>> in class detector.GodClassRefactorSolution",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 361,
+            "endLine": 361,
+            "startColumn": 47,
+            "endColumn": 80
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 411,
+            "endLine": 411,
+            "startColumn": 34,
+            "endColumn": 77
+          },
+          "developerConfirmation": false
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	totalCoupingMap : HashMap<String,ArrayList<String>> to totalCoupingMap : HashMap<String,ArrayList<ArrayList<String>>> in class detector.GodClassRefactorSolution",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 361,
+            "endLine": 361,
+            "startColumn": 47,
+            "endColumn": 80
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 409,
+            "endLine": 409,
+            "startColumn": 58,
+            "endColumn": 91
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "***.git",
+      "sha1": "476262a34dd2377bf7b7ff61a23870c82d02f797",
+      "url": "***/commit/476262a34dd2377bf7b7ff61a23870c82d02f797",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private calculateGetterSetterBinding(methods MethodDeclaration[], variables VariableDeclaration[], clusters Map<Integer,ArrayList<Integer>>, distance ArrayList<ArrayList<Double>>) : void renamed to private calculateGetterSetterIsBinding(methods MethodDeclaration[], variables VariableDeclaration[], clusters Map<Integer,ArrayList<Integer>>, distance ArrayList<ArrayList<Double>>) : void in class detector.GodClassRefactorSolution",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 947,
+            "endLine": 991,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 972,
+            "endLine": 1046,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private calculateGetterSetterBinding(methods MethodDeclaration[], variables VariableDeclaration[], clusters Map<Integer,ArrayList<Integer>>, distance ArrayList<ArrayList<Double>>) : void renamed to private calculateGetterSetterIsBinding(methods MethodDeclaration[], variables VariableDeclaration[], clusters Map<Integer,ArrayList<Integer>>, distance ArrayList<ArrayList<Double>>) : void in class detector.GodClassRefactorSolution",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 947,
+            "endLine": 991,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 972,
+            "endLine": 1046,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "***.git",
+      "sha1": "c647eb24c82a9ad4e9b46a789f791281e132a5ac",
+      "url": "***/commit/c647eb24c82a9ad4e9b46a789f791281e132a5ac",
+      "ourApproach": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	variableVisitedTime : int[] to variableInvokingTime : int[] in class detector.GodClassRefactorSolution",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 335,
+            "endLine": 335,
+            "startColumn": 19,
+            "endColumn": 38
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 335,
+            "endLine": 335,
+            "startColumn": 19,
+            "endColumn": 39
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	variableVisitedTime : int[] to variableInvokingTime : int[] in class detector.GodClassRefactorSolution",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 335,
+            "endLine": 335,
+            "startColumn": 19,
+            "endColumn": 38
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 335,
+            "endLine": 335,
+            "startColumn": 19,
+            "endColumn": 39
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "***.git",
+      "sha1": "ce39eb66b07a087c922f5bf16b4503ccf2e6ed19",
+      "url": "***/commit/ce39eb66b07a087c922f5bf16b4503ccf2e6ed19",
+      "ourApproach": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	JSONArray to JSONObject in method public getFeatureEnvyList() : JSONObject from class detector.FeatureEnvyDetector",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/detector/FeatureEnvyDetector.java",
+            "startLine": 221,
+            "endLine": 229,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/detector/FeatureEnvyDetector.java",
+            "startLine": 221,
+            "endLine": 230,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	JSONArray to JSONObject in method public getFeatureEnvyList() : JSONObject from class detector.FeatureEnvyDetector",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/detector/FeatureEnvyDetector.java",
+            "startLine": 221,
+            "endLine": 229,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/detector/FeatureEnvyDetector.java",
+            "startLine": 221,
+            "endLine": 230,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "***.git",
+      "sha1": "62667c1e580775eeb1f331ce8b16559189b9f73e",
+      "url": "***/commit/62667c1e580775eeb1f331ce8b16559189b9f73e",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	bit.se.codesmell.controller.TrainingController from Class bit.se.codesmell.controller.PredictionController",
+          "leftSideLocation": {
+            "filePath": "Server/src/main/java/bit/se/codesmell/controller/PredictionController.java",
+            "startLine": 11,
+            "endLine": 105,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "Server/src/main/java/bit/se/codesmell/controller/TrainingController.java",
+            "startLine": 13,
+            "endLine": 66,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	bit.se.codesmell.controller.TrainingController from class bit.se.codesmell.controller.PredictionController",
+          "leftSideLocation": {
+            "filePath": "Server/src/main/java/bit/se/codesmell/controller/PredictionController.java",
+            "startLine": 11,
+            "endLine": 105,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "Server/src/main/java/bit/se/codesmell/controller/TrainingController.java",
+            "startLine": 13,
+            "endLine": 66,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "***.git",
+      "sha1": "718a09712b1d4c6a6167ceaee0148d49fe8d3e1a",
+      "url": "***/commit/718a09712b1d4c6a6167ceaee0148d49fe8d3e1a",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private bindingBeforeClustering(cluster_i int, cluster_j int, clusters Map<Integer,ArrayList<Integer>>, distance ArrayList<ArrayList<Double>>) : void extracted from private calculateGetterSetterBinding(methods MethodDeclaration[], variables VariableDeclaration[], clusters Map<Integer,ArrayList<Integer>>, distance ArrayList<ArrayList<Double>>) : void in class detector.GodClassRefactorSolution",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 784,
+            "endLine": 842,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 825,
+            "endLine": 839,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private bindingBeforeClustering(cluster_i int, cluster_j int, clusters Map<Integer,ArrayList<Integer>>, distance ArrayList<ArrayList<Double>>) : void extracted from private calculateGetterSetterBinding(methods MethodDeclaration[], variables VariableDeclaration[], clusters Map<Integer,ArrayList<Integer>>, distance ArrayList<ArrayList<Double>>) : void in class detector.GodClassRefactorSolution",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 784,
+            "endLine": 842,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 825,
+            "endLine": 839,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "***.git",
+      "sha1": "7836fcd0c97f4ee357c6df74ac74b13985ee4af9",
+      "url": "***/commit/7836fcd0c97f4ee357c6df74ac74b13985ee4af9",
+      "ourApproach": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	sourcepathEntries : String[] to sourcesEntries : String[] in class utils.MethodGetSetJudge",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/utils/MethodGetSetJudge.java",
+            "startLine": 21,
+            "endLine": 21,
+            "startColumn": 21,
+            "endColumn": 38
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/utils/MethodGetSetJudge.java",
+            "startLine": 20,
+            "endLine": 20,
+            "startColumn": 21,
+            "endColumn": 35
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	getSetMap : Map<String,Set<String>> to getSetMap : HashMap<String,HashSet<String>> in class utils.MethodGetSetJudge",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/utils/MethodGetSetJudge.java",
+            "startLine": 24,
+            "endLine": 24,
+            "startColumn": 37,
+            "endColumn": 64
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/utils/MethodGetSetJudge.java",
+            "startLine": 23,
+            "endLine": 23,
+            "startColumn": 45,
+            "endColumn": 72
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	Set<String> to HashSet<String> in method public readNewJavaFileFromBinding(typeBinding ITypeBinding) : HashSet<String> from class utils.MethodGetSetJudge",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/utils/MethodGetSetJudge.java",
+            "startLine": 51,
+            "endLine": 76,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/utils/MethodGetSetJudge.java",
+            "startLine": 68,
+            "endLine": 92,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	getSetMap : Map<String,Set<String>> to getSetMap : HashMap<String,HashSet<String>> in class utils.MethodGetSetJudge",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/utils/MethodGetSetJudge.java",
+            "startLine": 24,
+            "endLine": 24,
+            "startColumn": 37,
+            "endColumn": 64
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/utils/MethodGetSetJudge.java",
+            "startLine": 23,
+            "endLine": 23,
+            "startColumn": 45,
+            "endColumn": 72
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	Set<String> to HashSet<String> in method public readNewJavaFileFromBinding(typeBinding ITypeBinding) : HashSet<String> from class utils.MethodGetSetJudge",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/utils/MethodGetSetJudge.java",
+            "startLine": 51,
+            "endLine": 76,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/utils/MethodGetSetJudge.java",
+            "startLine": 68,
+            "endLine": 92,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	sourcepathEntries : String[] to sourcesEntries : String[] in class utils.MethodGetSetJudge",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/utils/MethodGetSetJudge.java",
+            "startLine": 21,
+            "endLine": 21,
+            "startColumn": 21,
+            "endColumn": 38
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/utils/MethodGetSetJudge.java",
+            "startLine": 20,
+            "endLine": 20,
+            "startColumn": 21,
+            "endColumn": 35
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "***.git",
+      "sha1": "def6a12a271619fe5933bdfdd7b20445b49f1d79",
+      "url": "***/commit/def6a12a271619fe5933bdfdd7b20445b49f1d79",
+      "ourApproach": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	List<JSONObject> to JSONArray in method public calculateFixSolution(targetQualifiedNames List<String>, godClassInfo JSONObject) : JSONArray from class detector.GodClassDetector",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 164,
+            "endLine": 179,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 164,
+            "endLine": 179,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	List<JSONObject> to JSONArray in method public calculateFixSolution(targetQualifiedNames List<String>, godClassInfo JSONObject) : JSONArray from class detector.GodClassDetector",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 164,
+            "endLine": 179,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 164,
+            "endLine": 179,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "***.git",
+      "sha1": "3059b67b6844d6479c39f84b828b13bd6fac2363",
+      "url": "***/commit/3059b67b6844d6479c39f84b828b13bd6fac2363",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private calculateDistance(sim double[][]) : ArrayList<ArrayList<Double>> extracted from private calClustering(sim double[][]) : ArrayList<ArrayList<Integer>> in class detector.GodClassRefactorSolution",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 673,
+            "endLine": 745,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 653,
+            "endLine": 668,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": false
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private calculateDistance(sim double[][]) : ArrayList<ArrayList<Double>> extracted from private calClustering(sim double[][]) : ArrayList<ArrayList<Integer>> in class detector.GodClassRefactorSolution",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 673,
+            "endLine": 745,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 653,
+            "endLine": 668,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": false
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private findMin(distance ArrayList<ArrayList<Double>>, clusters Map<Integer,ArrayList<Integer>>, clustersLOC Map<Integer,Integer>) : ArrayList<Integer> extracted from private calClustering(sim double[][]) : ArrayList<ArrayList<Integer>> in class detector.GodClassRefactorSolution",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 673,
+            "endLine": 745,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 670,
+            "endLine": 700,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": false
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private getClusterLOC(nodes ArrayList<Integer>, methods MethodDeclaration[], variables VariableDeclaration[], clustersLOC Map<Integer,Integer>) : int extracted from private calClustering(sim double[][]) : ArrayList<ArrayList<Integer>> in class detector.GodClassRefactorSolution",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 673,
+            "endLine": 745,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 702,
+            "endLine": 714,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": false
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private updateDistance(index int, distance ArrayList<ArrayList<Double>>, clusters ArrayList<Integer>) : void extracted from private calClustering(sim double[][]) : ArrayList<ArrayList<Integer>> in class detector.GodClassRefactorSolution",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 673,
+            "endLine": 745,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 735,
+            "endLine": 754,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": false
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private findRoot(f int[], x int) : int inlined to private calClustering(sim double[][], methods MethodDeclaration[], variables VariableDeclaration[]) : ArrayList<ArrayList<Integer>> in class detector.GodClassRefactorSolution",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 668,
+            "endLine": 671,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 756,
+            "endLine": 806,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "***.git",
+      "sha1": "5cd1c49119b5519c33e2571442e7e43d4e4e2bc8",
+      "url": "***/commit/5cd1c49119b5519c33e2571442e7e43d4e4e2bc8",
+      "ourApproach": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	JSONArray to JSONObject in method public getGodClassList() : JSONObject from class detector.GodClassDetector",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 175,
+            "endLine": 188,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 187,
+            "endLine": 206,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	JSONArray to JSONObject in method public getGodClassList() : JSONObject from class detector.GodClassDetector",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 175,
+            "endLine": 188,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 187,
+            "endLine": 206,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "***.git",
+      "sha1": "dea95a58eea1eae1159215d38a62cad51330b99c",
+      "url": "***/commit/dea95a58eea1eae1159215d38a62cad51330b99c",
+      "ourApproach": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	getSetMap : Map<String,Set<String>> to GetterSetterMap : Map<String,Set<String>> in class utils.MethodGetSetJudge",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/utils/MethodGetSetJudge.java",
+            "startLine": 24,
+            "endLine": 24,
+            "startColumn": 44,
+            "endColumn": 71
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/utils/MethodGetSetJudge.java",
+            "startLine": 24,
+            "endLine": 24,
+            "startColumn": 44,
+            "endColumn": 77
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	getSetMap : Map<String,Set<String>> to GetterSetterMap : Map<String,Set<String>> in class utils.MethodGetSetJudge",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/utils/MethodGetSetJudge.java",
+            "startLine": 24,
+            "endLine": 24,
+            "startColumn": 44,
+            "endColumn": 71
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/utils/MethodGetSetJudge.java",
+            "startLine": 24,
+            "endLine": 24,
+            "startColumn": 44,
+            "endColumn": 77
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "***.git",
+      "sha1": "f3775d28a161f058a5ce12de577a635ec9bbcc5d",
+      "url": "***/commit/f3775d28a161f058a5ce12de577a635ec9bbcc5d",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	utils.MethodGetSetJudge from Class utils.MethodJudge",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/utils/MethodJudge.java",
+            "startLine": 18,
+            "endLine": 362,
+            "startColumn": 0,
+            "endColumn": 0
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/utils/MethodGetSetJudge.java",
+            "startLine": 15,
+            "endLine": 150,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	utils.MethodGetSetJudge from class utils.MethodJudge",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/utils/MethodJudge.java",
+            "startLine": 18,
+            "endLine": 362,
+            "startColumn": 0,
+            "endColumn": 0
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/utils/MethodGetSetJudge.java",
+            "startLine": 15,
+            "endLine": 150,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "***.git",
+      "sha1": "25eba033aac61aff5c2e380ce7c130d3e5525e41",
+      "url": "***/commit/25eba033aac61aff5c2e380ce7c130d3e5525e41",
+      "ourApproach": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	HashMap<ITypeBinding,List<Expression>> to HashSet<ITypeBinding> in method public getTargetClass() : HashSet<ITypeBinding> from class visitor.EntityVisitor",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/visitor/EntityVisitor.java",
+            "startLine": 22,
+            "endLine": 24,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/visitor/EntityVisitor.java",
+            "startLine": 19,
+            "endLine": 21,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	HashMap<ITypeBinding,List<Expression>> to HashSet<ITypeBinding> in method private parseTargetCandidate() : HashSet<ITypeBinding> from class candidate.FeatureEnvyCandidate",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 174,
+            "endLine": 185,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 164,
+            "endLine": 175,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	targetClass : HashMap<ITypeBinding,List<Expression>> to targetClass : HashSet<ITypeBinding> in class visitor.EntityVisitor",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/visitor/EntityVisitor.java",
+            "startLine": 15,
+            "endLine": 15,
+            "startColumn": 53,
+            "endColumn": 64
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/visitor/EntityVisitor.java",
+            "startLine": 12,
+            "endLine": 12,
+            "startColumn": 35,
+            "endColumn": 46
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	HashMap<ITypeBinding,List<Expression>> to HashSet<ITypeBinding> in method private parseTargetCandidate() : HashSet<ITypeBinding> from class candidate.FeatureEnvyCandidate",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 174,
+            "endLine": 185,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 164,
+            "endLine": 175,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	targetClass : HashMap<ITypeBinding,List<Expression>> to targetClass : HashSet<ITypeBinding> in class visitor.EntityVisitor",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/visitor/EntityVisitor.java",
+            "startLine": 15,
+            "endLine": 15,
+            "startColumn": 53,
+            "endColumn": 64
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/visitor/EntityVisitor.java",
+            "startLine": 12,
+            "endLine": 12,
+            "startColumn": 35,
+            "endColumn": 46
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	HashMap<ITypeBinding,List<Expression>> to HashSet<ITypeBinding> in method public getTargetClass() : HashSet<ITypeBinding> from class visitor.EntityVisitor",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/visitor/EntityVisitor.java",
+            "startLine": 22,
+            "endLine": 24,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/visitor/EntityVisitor.java",
+            "startLine": 19,
+            "endLine": 21,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "***.git",
+      "sha1": "4193e8d632b9c9b30cd6a1baf6c08d2467ac167c",
+      "url": "***/commit/4193e8d632b9c9b30cd6a1baf6c08d2467ac167c",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public getNewTargetClass() : HashMap<ITypeBinding,HashSet<IBinding>> renamed to public getTargetClass() : HashMap<ITypeBinding,List<Expression>> in class visitor.EntityVisitor",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/visitor/EntityVisitor.java",
+            "startLine": 28,
+            "endLine": 30,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/visitor/EntityVisitor.java",
+            "startLine": 22,
+            "endLine": 24,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	HashMap<ITypeBinding,HashSet<IBinding>> to HashMap<ITypeBinding,List<Expression>> in method public getTargetClass() : HashMap<ITypeBinding,List<Expression>> from class visitor.EntityVisitor",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/visitor/EntityVisitor.java",
+            "startLine": 28,
+            "endLine": 30,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/visitor/EntityVisitor.java",
+            "startLine": 22,
+            "endLine": 24,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	HashMap<ITypeBinding,HashSet<IBinding>> to HashMap<ITypeBinding,List<Expression>> in method private parseTargetCandidate() : HashMap<ITypeBinding,List<Expression>> from class candidate.FeatureEnvyCandidate",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 135,
+            "endLine": 146,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 151,
+            "endLine": 162,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	invocationTargetBinding : List<HashSet<IBinding>> to invocationTargetExpression : List<List<Expression>> in class candidate.FeatureEnvyCandidate",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 18,
+            "endLine": 18,
+            "startColumn": 37,
+            "endColumn": 60
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 17,
+            "endLine": 17,
+            "startColumn": 36,
+            "endColumn": 62
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	invocationTargetBinding : List<HashSet<IBinding>> to invocationTargetExpression : List<List<Expression>> in class candidate.FeatureEnvyCandidate",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 18,
+            "endLine": 18,
+            "startColumn": 37,
+            "endColumn": 60
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 17,
+            "endLine": 17,
+            "startColumn": 36,
+            "endColumn": 62
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public getInvocationTargetBinding() : List<HashSet<IBinding>> renamed to public getInvocationTargetExpression() : List<List<Expression>> in class candidate.FeatureEnvyCandidate",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 20,
+            "endLine": 22,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 22,
+            "endLine": 24,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	List<HashSet<IBinding>> to List<List<Expression>> in method public getInvocationTargetExpression() : List<List<Expression>> from class candidate.FeatureEnvyCandidate",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 20,
+            "endLine": 22,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 22,
+            "endLine": 24,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	newTargetClass : HashMap<ITypeBinding,HashSet<IBinding>> to targetClass : HashMap<ITypeBinding,List<Expression>> in class visitor.EntityVisitor",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/visitor/EntityVisitor.java",
+            "startLine": 16,
+            "endLine": 16,
+            "startColumn": 54,
+            "endColumn": 68
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/visitor/EntityVisitor.java",
+            "startLine": 15,
+            "endLine": 15,
+            "startColumn": 53,
+            "endColumn": 64
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	newTargetClass : HashMap<ITypeBinding,HashSet<IBinding>> to targetClass : HashMap<ITypeBinding,List<Expression>> in class visitor.EntityVisitor",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/visitor/EntityVisitor.java",
+            "startLine": 16,
+            "endLine": 16,
+            "startColumn": 54,
+            "endColumn": 68
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/visitor/EntityVisitor.java",
+            "startLine": 15,
+            "endLine": 15,
+            "startColumn": 53,
+            "endColumn": 64
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public getInvocationTargetBinding() : List<HashSet<IBinding>> renamed to public getInvocationTargetExpression() : List<List<Expression>> in class candidate.FeatureEnvyCandidate",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 20,
+            "endLine": 22,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 22,
+            "endLine": 24,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	HashMap<ITypeBinding,HashSet<IBinding>> to HashMap<ITypeBinding,List<Expression>> in method private parseTargetCandidate() : HashMap<ITypeBinding,List<Expression>> from class candidate.FeatureEnvyCandidate",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 135,
+            "endLine": 146,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 151,
+            "endLine": 162,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	List<HashSet<IBinding>> to List<List<Expression>> in method public getInvocationTargetExpression() : List<List<Expression>> from class candidate.FeatureEnvyCandidate",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 20,
+            "endLine": 22,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 22,
+            "endLine": 24,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	invocationTargetBinding : List<HashSet<IBinding>> to invocationTargetExpression : List<List<Expression>> in class candidate.FeatureEnvyCandidate",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 18,
+            "endLine": 18,
+            "startColumn": 37,
+            "endColumn": 60
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 17,
+            "endLine": 17,
+            "startColumn": 36,
+            "endColumn": 62
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	invocationTargetBinding : List<HashSet<IBinding>> to invocationTargetExpression : List<List<Expression>> in class candidate.FeatureEnvyCandidate",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 18,
+            "endLine": 18,
+            "startColumn": 37,
+            "endColumn": 60
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 17,
+            "endLine": 17,
+            "startColumn": 36,
+            "endColumn": 62
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public getTargetClasses() : HashSet<ITypeBinding> renamed to public getTargetClass() : HashMap<ITypeBinding,List<Expression>> in class visitor.EntityVisitor",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/visitor/EntityVisitor.java",
+            "startLine": 24,
+            "endLine": 26,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/visitor/EntityVisitor.java",
+            "startLine": 22,
+            "endLine": 24,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": false
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	HashSet<ITypeBinding> to HashMap<ITypeBinding,List<Expression>> in method public getTargetClass() : HashMap<ITypeBinding,List<Expression>> from class visitor.EntityVisitor",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/visitor/EntityVisitor.java",
+            "startLine": 24,
+            "endLine": 26,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/visitor/EntityVisitor.java",
+            "startLine": 22,
+            "endLine": 24,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": false
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	newTargetClass : HashMap<ITypeBinding,HashSet<IBinding>> to targetClass : HashMap<ITypeBinding,List<Expression>> in class visitor.EntityVisitor",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/visitor/EntityVisitor.java",
+            "startLine": 16,
+            "endLine": 16,
+            "startColumn": 54,
+            "endColumn": 68
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/visitor/EntityVisitor.java",
+            "startLine": 15,
+            "endLine": 15,
+            "startColumn": 53,
+            "endColumn": 64
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	newTargetClass : HashMap<ITypeBinding,HashSet<IBinding>> to targetClass : HashMap<ITypeBinding,List<Expression>> in class visitor.EntityVisitor",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/visitor/EntityVisitor.java",
+            "startLine": 16,
+            "endLine": 16,
+            "startColumn": 54,
+            "endColumn": 68
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/visitor/EntityVisitor.java",
+            "startLine": 15,
+            "endLine": 15,
+            "startColumn": 53,
+            "endColumn": 64
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "***.git",
+      "sha1": "6d5d01323ada8b53280e14d848e203a3dda7c6b6",
+      "url": "***/commit/6d5d01323ada8b53280e14d848e203a3dda7c6b6",
+      "ourApproach": [],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private getSuperClasses(method MethodDeclaration) : ArrayList<ITypeBinding> extracted from public isOverride(method MethodDeclaration) : boolean in class utils.MethodJudge",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/utils/MethodJudge.java",
+            "startLine": 92,
+            "endLine": 128,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/utils/MethodJudge.java",
+            "startLine": 275,
+            "endLine": 289,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "***.git",
+      "sha1": "fdd1f071667f7fb6a5152ee74142fc5ba166efca",
+      "url": "***/commit/fdd1f071667f7fb6a5152ee74142fc5ba166efca",
+      "ourApproach": [],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private getSuperClasses(method MethodDeclaration) : ArrayList<ITypeBinding> extracted from public isOverride(method MethodDeclaration) : boolean in class utils.MethodJudge",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/utils/MethodJudge.java",
+            "startLine": 86,
+            "endLine": 122,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/utils/MethodJudge.java",
+            "startLine": 269,
+            "endLine": 283,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "***.git",
+      "sha1": "019a8ff3c76540b19183f5654659534c7ddd366e",
+      "url": "***/commit/019a8ff3c76540b19183f5654659534c7ddd366e",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public isStatus() : boolean renamed to public getStatus() : boolean in class visitor.FeatureEnvyGenericReferenceVisitor",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/visitor/FeatureEnvyGenericReferenceVisitor.java",
+            "startLine": 52,
+            "endLine": 54,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/visitor/FeatureEnvyGenericReferenceVisitor.java",
+            "startLine": 52,
+            "endLine": 54,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public isStatus() : boolean renamed to public getStatus() : boolean in class visitor.FeatureEnvyGenericReferenceVisitor",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/visitor/FeatureEnvyGenericReferenceVisitor.java",
+            "startLine": 52,
+            "endLine": 54,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/visitor/FeatureEnvyGenericReferenceVisitor.java",
+            "startLine": 52,
+            "endLine": 54,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "***.git",
+      "sha1": "671eb189c316656a25bdef4a17e3b46f1a495820",
+      "url": "***/commit/671eb189c316656a25bdef4a17e3b46f1a495820",
+      "ourApproach": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	HashSet<ITypeBinding> to HashMap<ITypeBinding,HashSet<IBinding>> in method private parseTargetCandidate() : HashMap<ITypeBinding,HashSet<IBinding>> from class candidate.FeatureEnvyCandidate",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 131,
+            "endLine": 142,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 141,
+            "endLine": 152,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	HashSet<ITypeBinding> to HashMap<ITypeBinding,HashSet<IBinding>> in method private parseTargetCandidate() : HashMap<ITypeBinding,HashSet<IBinding>> from class candidate.FeatureEnvyCandidate",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 131,
+            "endLine": 142,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 141,
+            "endLine": 152,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "***.git",
+      "sha1": "3492bc9e24c04b1a2615ac17776b2d6f07881357",
+      "url": "***/commit/3492bc9e24c04b1a2615ac17776b2d6f07881357",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public isNotNull(method MethodDeclaration) : boolean renamed to public getPossibleTarget(method MethodDeclaration) : List<IVariableBinding> in class utils.MethodJudge",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/utils/MethodJudge.java",
+            "startLine": 23,
+            "endLine": 25,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/utils/MethodJudge.java",
+            "startLine": 127,
+            "endLine": 129,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": false
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	boolean to List<IVariableBinding> in method public getPossibleTarget(method MethodDeclaration) : List<IVariableBinding> from class utils.MethodJudge",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/utils/MethodJudge.java",
+            "startLine": 23,
+            "endLine": 25,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/utils/MethodJudge.java",
+            "startLine": 127,
+            "endLine": 129,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": false
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public isNotEnclosing(method MethodDeclaration) : boolean renamed to public judge(method MethodDeclaration, cu CompilationUnit) : boolean in class utils.MethodJudge",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/utils/MethodJudge.java",
+            "startLine": 74,
+            "endLine": 80,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/utils/MethodJudge.java",
+            "startLine": 23,
+            "endLine": 42,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": false
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public isNotContractor(method MethodDeclaration) : boolean renamed to public isConstructor(method MethodDeclaration) : boolean in class utils.MethodJudge",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/utils/MethodJudge.java",
+            "startLine": 40,
+            "endLine": 42,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/utils/MethodJudge.java",
+            "startLine": 56,
+            "endLine": 58,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public isNotSupper(method MethodDeclaration) : boolean renamed to public isContainsSupper(method MethodDeclaration) : boolean in class utils.MethodJudge",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/utils/MethodJudge.java",
+            "startLine": 44,
+            "endLine": 50,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/utils/MethodJudge.java",
+            "startLine": 69,
+            "endLine": 75,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public isNotOverride(method MethodDeclaration) : boolean renamed to public isOverride(method MethodDeclaration) : boolean in class utils.MethodJudge",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/utils/MethodJudge.java",
+            "startLine": 52,
+            "endLine": 72,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/utils/MethodJudge.java",
+            "startLine": 85,
+            "endLine": 109,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public isNotNull(method MethodDeclaration) : boolean renamed to public isNull(method MethodDeclaration) : boolean in class utils.MethodJudge",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/utils/MethodJudge.java",
+            "startLine": 23,
+            "endLine": 25,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/utils/MethodJudge.java",
+            "startLine": 44,
+            "endLine": 46,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public isNotContractor(method MethodDeclaration) : boolean renamed to public isConstructor(method MethodDeclaration) : boolean in class utils.MethodJudge",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/utils/MethodJudge.java",
+            "startLine": 40,
+            "endLine": 42,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/utils/MethodJudge.java",
+            "startLine": 56,
+            "endLine": 58,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public isNotSupper(method MethodDeclaration) : boolean renamed to public isContainsSupper(method MethodDeclaration) : boolean in class utils.MethodJudge",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/utils/MethodJudge.java",
+            "startLine": 44,
+            "endLine": 50,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/utils/MethodJudge.java",
+            "startLine": 69,
+            "endLine": 75,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public isNotOverride(method MethodDeclaration) : boolean renamed to public isOverride(method MethodDeclaration) : boolean in class utils.MethodJudge",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/utils/MethodJudge.java",
+            "startLine": 52,
+            "endLine": 72,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/utils/MethodJudge.java",
+            "startLine": 85,
+            "endLine": 109,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public isNotEnclosing(method MethodDeclaration) : boolean renamed to public isEnclosing(method MethodDeclaration) : boolean in class utils.MethodJudge",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/utils/MethodJudge.java",
+            "startLine": 74,
+            "endLine": 80,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/utils/MethodJudge.java",
+            "startLine": 77,
+            "endLine": 83,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public getPositionTarget(method MethodDeclaration) : void renamed to public getPossibleTarget(method MethodDeclaration) : List<IVariableBinding> in class utils.MethodJudge",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/utils/MethodJudge.java",
+            "startLine": 82,
+            "endLine": 84,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/utils/MethodJudge.java",
+            "startLine": 127,
+            "endLine": 129,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	void to List<IVariableBinding> in method public getPossibleTarget(method MethodDeclaration) : List<IVariableBinding> from class utils.MethodJudge",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/utils/MethodJudge.java",
+            "startLine": 82,
+            "endLine": 84,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/utils/MethodJudge.java",
+            "startLine": 127,
+            "endLine": 129,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "***.git",
+      "sha1": "7c69c9e7dcb9fc9368bc253254b2943915611d0f",
+      "url": "***/commit/7c69c9e7dcb9fc9368bc253254b2943915611d0f",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public configParser() : int renamed to public parserConfigFile() : int in class bit.se.codesmell.config.Config",
+          "leftSideLocation": {
+            "filePath": "Server/src/main/java/bit/se/codesmell/config/Config.java",
+            "startLine": 77,
+            "endLine": 133,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "Server/src/main/java/bit/se/codesmell/config/Config.java",
+            "startLine": 76,
+            "endLine": 139,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public configParser() : int renamed to public parserConfigFile() : int in class bit.se.codesmell.config.Config",
+          "leftSideLocation": {
+            "filePath": "Server/src/main/java/bit/se/codesmell/config/Config.java",
+            "startLine": 77,
+            "endLine": 133,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "Server/src/main/java/bit/se/codesmell/config/Config.java",
+            "startLine": 76,
+            "endLine": 139,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "***.git",
+      "sha1": "3a87b21d69b4f7830a4e8e821412df641d63c246",
+      "url": "***/commit/3a87b21d69b4f7830a4e8e821412df641d63c246",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public MatrixtoVector(simMatrix double[][]) : double[] renamed to public MatrixToVector() : double[] in class detector.GodClassRefactorSolution",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 543,
+            "endLine": 552,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 541,
+            "endLine": 549,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public MatrixtoVector(simMatrix double[][]) : double[] renamed to public MatrixToVector() : double[] in class detector.GodClassRefactorSolution",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 543,
+            "endLine": 552,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 541,
+            "endLine": 549,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "***.git",
+      "sha1": "12a0938969e99ce2dfde1e1a7c35e57d11bdf7ff",
+      "url": "***/commit/12a0938969e99ce2dfde1e1a7c35e57d11bdf7ff",
+      "ourApproach": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	void to int in method public configParser() : int from class bit.se.codesmell.config.Config",
+          "leftSideLocation": {
+            "filePath": "Server/src/main/java/bit/se/codesmell/config/Config.java",
+            "startLine": 80,
+            "endLine": 119,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "Server/src/main/java/bit/se/codesmell/config/Config.java",
+            "startLine": 80,
+            "endLine": 127,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	void to int in method public configParser() : int from class bit.se.codesmell.config.Config",
+          "leftSideLocation": {
+            "filePath": "Server/src/main/java/bit/se/codesmell/config/Config.java",
+            "startLine": 80,
+            "endLine": 119,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "Server/src/main/java/bit/se/codesmell/config/Config.java",
+            "startLine": 80,
+            "endLine": 127,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "***.git",
+      "sha1": "1ff0071ef06910ce3cbb13798c486c80739e8284",
+      "url": "***/commit/1ff0071ef06910ce3cbb13798c486c80739e8284",
+      "ourApproach": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	candidate : GodClassCandidate to candidate : JSONObject in class detector.GodClassRefactorSolution",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 142,
+            "endLine": 142,
+            "startColumn": 31,
+            "endColumn": 40
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 181,
+            "endLine": 181,
+            "startColumn": 24,
+            "endColumn": 33
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	GodClass : ArrayList<GodClassCandidate> to GodClassList : ArrayList<GodClassCandidate> in class detector.GodClassDetector",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 18,
+            "endLine": 18,
+            "startColumn": 42,
+            "endColumn": 50
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 21,
+            "endLine": 21,
+            "startColumn": 42,
+            "endColumn": 54
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	candidate : GodClassCandidate to candidate : JSONObject in class detector.GodClassRefactorSolution",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 142,
+            "endLine": 142,
+            "startColumn": 31,
+            "endColumn": 40
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 181,
+            "endLine": 181,
+            "startColumn": 24,
+            "endColumn": 33
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "***.git",
+      "sha1": "98c52fff5a1be10f1b1ea4d3b52a8553b2ceb1f3",
+      "url": "***/commit/98c52fff5a1be10f1b1ea4d3b52a8553b2ceb1f3",
+      "ourApproach": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	bit.se.codesmell.utils.Config moved to bit.se.codesmell.config.Config",
+          "leftSideLocation": {
+            "filePath": "Server/src/main/java/bit/se/codesmell/utils/Config.java",
+            "startLine": 4,
+            "endLine": 61,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "Server/src/main/java/bit/se/codesmell/config/Config.java",
+            "startLine": 13,
+            "endLine": 142,
+            "startColumn": 0,
+            "endColumn": 0
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	bit.se.codesmell.threadspool.ModelThreadPools from Class bit.se.codesmell.controller.PredictionController",
+          "leftSideLocation": {
+            "filePath": "Server/src/main/java/bit/se/codesmell/controller/PredictionController.java",
+            "startLine": 11,
+            "endLine": 97,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "Server/src/main/java/bit/se/codesmell/threadspool/ModelThreadPools.java",
+            "startLine": 10,
+            "endLine": 84,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	bit.se.codesmell.utils.Config moved to bit.se.codesmell.config.Config",
+          "leftSideLocation": {
+            "filePath": "Server/src/main/java/bit/se/codesmell/utils/Config.java",
+            "startLine": 4,
+            "endLine": 61,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "Server/src/main/java/bit/se/codesmell/config/Config.java",
+            "startLine": 13,
+            "endLine": 142,
+            "startColumn": 0,
+            "endColumn": 0
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	bit.se.codesmell.threadspool.ModelThreadPools from class bit.se.codesmell.controller.PredictionController",
+          "leftSideLocation": {
+            "filePath": "Server/src/main/java/bit/se/codesmell/controller/PredictionController.java",
+            "startLine": 11,
+            "endLine": 97,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "Server/src/main/java/bit/se/codesmell/threadspool/ModelThreadPools.java",
+            "startLine": 10,
+            "endLine": 84,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "***.git",
+      "sha1": "0d3428bce00ed43ccff82b17ac5df109461d2056",
+      "url": "***/commit/0d3428bce00ed43ccff82b17ac5df109461d2056",
+      "ourApproach": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	targetPaths : String[] to targetPaths : Path[] in class detector.AbstractDetector",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/detector/AbstractDetector.java",
+            "startLine": 15,
+            "endLine": 15,
+            "startColumn": 24,
+            "endColumn": 35
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/detector/AbstractDetector.java",
+            "startLine": 15,
+            "endLine": 15,
+            "startColumn": 22,
+            "endColumn": 33
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	targetPaths : String[] to targetPaths : Path[] in class parser.ProjectsParser",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/parser/ProjectsParser.java",
+            "startLine": 26,
+            "endLine": 26,
+            "startColumn": 22,
+            "endColumn": 33
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/parser/ProjectsParser.java",
+            "startLine": 26,
+            "endLine": 26,
+            "startColumn": 20,
+            "endColumn": 31
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	targetPaths : String[] to targetPaths : Path[] in class detector.AbstractDetector",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/detector/AbstractDetector.java",
+            "startLine": 15,
+            "endLine": 15,
+            "startColumn": 24,
+            "endColumn": 35
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/detector/AbstractDetector.java",
+            "startLine": 15,
+            "endLine": 15,
+            "startColumn": 22,
+            "endColumn": 33
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	targetPaths : String[] to targetPaths : Path[] in class parser.ProjectsParser",
+          "leftSideLocation": {
+            "filePath": "Client/src/main/java/parser/ProjectsParser.java",
+            "startLine": 26,
+            "endLine": 26,
+            "startColumn": 22,
+            "endColumn": 33
+          },
+          "rightSideLocation": {
+            "filePath": "Client/src/main/java/parser/ProjectsParser.java",
+            "startLine": 26,
+            "endLine": 26,
+            "startColumn": 20,
+            "endColumn": 31
+          },
+          "developerConfirmation": true
+        }
+      ]
+    }
+  ]
+}

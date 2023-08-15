@@ -1,0 +1,5097 @@
+{
+  "results": [
+    {
+      "repository": "https://github.com/apache/commons-lang.git",
+      "sha1": "d839a82521d17e2f4c81764cf6f508130c1ba0c6",
+      "url": "https://github.com/apache/commons-lang/commit/d839a82521d17e2f4c81764cf6f508130c1ba0c6",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.CharRange",
+            "type": "Method",
+            "name": "contains",
+            "filePath": "src/main/java/org/apache/commons/lang3/CharRange.java",
+            "startLine": 183,
+            "endLine": 203,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.CharRange",
+            "type": "Method",
+            "name": "contains",
+            "filePath": "src/main/java/org/apache/commons/lang3/CharRange.java",
+            "startLine": 184,
+            "endLine": 204,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.CharRange",
+            "type": "Class",
+            "name": "CharRange",
+            "filePath": "src/main/java/org/apache/commons/lang3/CharRange.java",
+            "startLine": 23,
+            "endLine": 364,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.CharRange",
+            "type": "Class",
+            "name": "CharRange",
+            "filePath": "src/main/java/org/apache/commons/lang3/CharRange.java",
+            "startLine": 24,
+            "endLine": 365,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.ClassPathUtils",
+            "type": "Method",
+            "name": "toFullyQualifiedName",
+            "filePath": "src/main/java/org/apache/commons/lang3/ClassPathUtils.java",
+            "startLine": 55,
+            "endLine": 75,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.ClassPathUtils",
+            "type": "Method",
+            "name": "toFullyQualifiedName",
+            "filePath": "src/main/java/org/apache/commons/lang3/ClassPathUtils.java",
+            "startLine": 55,
+            "endLine": 75,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.ClassPathUtils",
+            "type": "Method",
+            "name": "toFullyQualifiedName",
+            "filePath": "src/main/java/org/apache/commons/lang3/ClassPathUtils.java",
+            "startLine": 77,
+            "endLine": 97,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.ClassPathUtils",
+            "type": "Method",
+            "name": "toFullyQualifiedName",
+            "filePath": "src/main/java/org/apache/commons/lang3/ClassPathUtils.java",
+            "startLine": 77,
+            "endLine": 97,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.ClassPathUtils",
+            "type": "Method",
+            "name": "toFullyQualifiedPath",
+            "filePath": "src/main/java/org/apache/commons/lang3/ClassPathUtils.java",
+            "startLine": 99,
+            "endLine": 119,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.ClassPathUtils",
+            "type": "Method",
+            "name": "toFullyQualifiedPath",
+            "filePath": "src/main/java/org/apache/commons/lang3/ClassPathUtils.java",
+            "startLine": 99,
+            "endLine": 119,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.ClassPathUtils",
+            "type": "Method",
+            "name": "toFullyQualifiedPath",
+            "filePath": "src/main/java/org/apache/commons/lang3/ClassPathUtils.java",
+            "startLine": 121,
+            "endLine": 141,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.ClassPathUtils",
+            "type": "Method",
+            "name": "toFullyQualifiedPath",
+            "filePath": "src/main/java/org/apache/commons/lang3/ClassPathUtils.java",
+            "startLine": 121,
+            "endLine": 141,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.ClassPathUtils",
+            "type": "Class",
+            "name": "ClassPathUtils",
+            "filePath": "src/main/java/org/apache/commons/lang3/ClassPathUtils.java",
+            "startLine": 21,
+            "endLine": 154,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.ClassPathUtils",
+            "type": "Class",
+            "name": "ClassPathUtils",
+            "filePath": "src/main/java/org/apache/commons/lang3/ClassPathUtils.java",
+            "startLine": 21,
+            "endLine": 154,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.ClassUtils",
+            "type": "Method",
+            "name": "toCanonicalName",
+            "filePath": "src/main/java/org/apache/commons/lang3/ClassUtils.java",
+            "startLine": 1496,
+            "endLine": 1521,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.ClassUtils",
+            "type": "Method",
+            "name": "toCanonicalName",
+            "filePath": "src/main/java/org/apache/commons/lang3/ClassUtils.java",
+            "startLine": 1496,
+            "endLine": 1521,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.ClassUtils",
+            "type": "Class",
+            "name": "ClassUtils",
+            "filePath": "src/main/java/org/apache/commons/lang3/ClassUtils.java",
+            "startLine": 37,
+            "endLine": 1628,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.ClassUtils",
+            "type": "Class",
+            "name": "ClassUtils",
+            "filePath": "src/main/java/org/apache/commons/lang3/ClassUtils.java",
+            "startLine": 37,
+            "endLine": 1628,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.EnumUtils",
+            "type": "Method",
+            "name": "asEnum",
+            "filePath": "src/main/java/org/apache/commons/lang3/EnumUtils.java",
+            "startLine": 44,
+            "endLine": 57,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.EnumUtils",
+            "type": "Method",
+            "name": "asEnum",
+            "filePath": "src/main/java/org/apache/commons/lang3/EnumUtils.java",
+            "startLine": 44,
+            "endLine": 57,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.EnumUtils",
+            "type": "Method",
+            "name": "generateBitVector",
+            "filePath": "src/main/java/org/apache/commons/lang3/EnumUtils.java",
+            "startLine": 99,
+            "endLine": 126,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.EnumUtils",
+            "type": "Method",
+            "name": "generateBitVector",
+            "filePath": "src/main/java/org/apache/commons/lang3/EnumUtils.java",
+            "startLine": 99,
+            "endLine": 126,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.EnumUtils",
+            "type": "Method",
+            "name": "generateBitVectors",
+            "filePath": "src/main/java/org/apache/commons/lang3/EnumUtils.java",
+            "startLine": 158,
+            "endLine": 185,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.EnumUtils",
+            "type": "Method",
+            "name": "generateBitVectors",
+            "filePath": "src/main/java/org/apache/commons/lang3/EnumUtils.java",
+            "startLine": 158,
+            "endLine": 185,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.EnumUtils",
+            "type": "Class",
+            "name": "EnumUtils",
+            "filePath": "src/main/java/org/apache/commons/lang3/EnumUtils.java",
+            "startLine": 30,
+            "endLine": 428,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.EnumUtils",
+            "type": "Class",
+            "name": "EnumUtils",
+            "filePath": "src/main/java/org/apache/commons/lang3/EnumUtils.java",
+            "startLine": 30,
+            "endLine": 428,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.Range",
+            "type": "Method",
+            "name": "elementCompareTo",
+            "filePath": "src/main/java/org/apache/commons/lang3/Range.java",
+            "startLine": 268,
+            "endLine": 288,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.Range",
+            "type": "Method",
+            "name": "elementCompareTo",
+            "filePath": "src/main/java/org/apache/commons/lang3/Range.java",
+            "startLine": 268,
+            "endLine": 288,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.Range",
+            "type": "Method",
+            "name": "fit",
+            "filePath": "src/main/java/org/apache/commons/lang3/Range.java",
+            "startLine": 314,
+            "endLine": 344,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.Range",
+            "type": "Method",
+            "name": "fit",
+            "filePath": "src/main/java/org/apache/commons/lang3/Range.java",
+            "startLine": 314,
+            "endLine": 344,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.Range",
+            "type": "Class",
+            "name": "Range",
+            "filePath": "src/main/java/org/apache/commons/lang3/Range.java",
+            "startLine": 23,
+            "endLine": 562,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.Range",
+            "type": "Class",
+            "name": "Range",
+            "filePath": "src/main/java/org/apache/commons/lang3/Range.java",
+            "startLine": 23,
+            "endLine": 562,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.SerializationUtils",
+            "type": "Method",
+            "name": "deserialize",
+            "filePath": "src/main/java/org/apache/commons/lang3/SerializationUtils.java",
+            "startLine": 155,
+            "endLine": 174,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.SerializationUtils",
+            "type": "Method",
+            "name": "deserialize",
+            "filePath": "src/main/java/org/apache/commons/lang3/SerializationUtils.java",
+            "startLine": 156,
+            "endLine": 175,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.SerializationUtils",
+            "type": "Method",
+            "name": "deserialize",
+            "filePath": "src/main/java/org/apache/commons/lang3/SerializationUtils.java",
+            "startLine": 176,
+            "endLine": 212,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.SerializationUtils",
+            "type": "Method",
+            "name": "deserialize",
+            "filePath": "src/main/java/org/apache/commons/lang3/SerializationUtils.java",
+            "startLine": 177,
+            "endLine": 213,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.SerializationUtils",
+            "type": "Method",
+            "name": "serialize",
+            "filePath": "src/main/java/org/apache/commons/lang3/SerializationUtils.java",
+            "startLine": 244,
+            "endLine": 267,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.SerializationUtils",
+            "type": "Method",
+            "name": "serialize",
+            "filePath": "src/main/java/org/apache/commons/lang3/SerializationUtils.java",
+            "startLine": 245,
+            "endLine": 268,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.SerializationUtils",
+            "type": "Class",
+            "name": "SerializationUtils",
+            "filePath": "src/main/java/org/apache/commons/lang3/SerializationUtils.java",
+            "startLine": 31,
+            "endLine": 280,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.SerializationUtils",
+            "type": "Class",
+            "name": "SerializationUtils",
+            "filePath": "src/main/java/org/apache/commons/lang3/SerializationUtils.java",
+            "startLine": 32,
+            "endLine": 281,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.ThreadUtils.NamePredicate",
+            "type": "Method",
+            "name": "NamePredicate",
+            "filePath": "src/main/java/org/apache/commons/lang3/ThreadUtils.java",
+            "startLine": 78,
+            "endLine": 87,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.ThreadUtils.NamePredicate",
+            "type": "Method",
+            "name": "NamePredicate",
+            "filePath": "src/main/java/org/apache/commons/lang3/ThreadUtils.java",
+            "startLine": 78,
+            "endLine": 87,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.ThreadUtils.NamePredicate",
+            "type": "Class",
+            "name": "NamePredicate",
+            "filePath": "src/main/java/org/apache/commons/lang3/ThreadUtils.java",
+            "startLine": 65,
+            "endLine": 98,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.ThreadUtils.NamePredicate",
+            "type": "Class",
+            "name": "NamePredicate",
+            "filePath": "src/main/java/org/apache/commons/lang3/ThreadUtils.java",
+            "startLine": 65,
+            "endLine": 98,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.ThreadUtils",
+            "type": "Method",
+            "name": "findThreadById",
+            "filePath": "src/main/java/org/apache/commons/lang3/ThreadUtils.java",
+            "startLine": 200,
+            "endLine": 222,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.ThreadUtils",
+            "type": "Method",
+            "name": "findThreadById",
+            "filePath": "src/main/java/org/apache/commons/lang3/ThreadUtils.java",
+            "startLine": 200,
+            "endLine": 222,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.ThreadUtils",
+            "type": "Method",
+            "name": "findThreadById",
+            "filePath": "src/main/java/org/apache/commons/lang3/ThreadUtils.java",
+            "startLine": 224,
+            "endLine": 246,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.ThreadUtils",
+            "type": "Method",
+            "name": "findThreadById",
+            "filePath": "src/main/java/org/apache/commons/lang3/ThreadUtils.java",
+            "startLine": 224,
+            "endLine": 246,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.ThreadUtils",
+            "type": "Method",
+            "name": "findThreadGroups",
+            "filePath": "src/main/java/org/apache/commons/lang3/ThreadUtils.java",
+            "startLine": 264,
+            "endLine": 288,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.ThreadUtils",
+            "type": "Method",
+            "name": "findThreadGroups",
+            "filePath": "src/main/java/org/apache/commons/lang3/ThreadUtils.java",
+            "startLine": 264,
+            "endLine": 288,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.ThreadUtils",
+            "type": "Method",
+            "name": "findThreads",
+            "filePath": "src/main/java/org/apache/commons/lang3/ThreadUtils.java",
+            "startLine": 357,
+            "endLine": 380,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.ThreadUtils",
+            "type": "Method",
+            "name": "findThreads",
+            "filePath": "src/main/java/org/apache/commons/lang3/ThreadUtils.java",
+            "startLine": 357,
+            "endLine": 380,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.ThreadUtils",
+            "type": "Method",
+            "name": "findThreadsByName",
+            "filePath": "src/main/java/org/apache/commons/lang3/ThreadUtils.java",
+            "startLine": 433,
+            "endLine": 452,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.ThreadUtils",
+            "type": "Method",
+            "name": "findThreadsByName",
+            "filePath": "src/main/java/org/apache/commons/lang3/ThreadUtils.java",
+            "startLine": 433,
+            "endLine": 452,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.ThreadUtils",
+            "type": "Class",
+            "name": "ThreadUtils",
+            "filePath": "src/main/java/org/apache/commons/lang3/ThreadUtils.java",
+            "startLine": 30,
+            "endLine": 582,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.ThreadUtils",
+            "type": "Class",
+            "name": "ThreadUtils",
+            "filePath": "src/main/java/org/apache/commons/lang3/ThreadUtils.java",
+            "startLine": 30,
+            "endLine": 582,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.builder.DiffBuilder",
+            "type": "Method",
+            "name": "DiffBuilder",
+            "filePath": "src/main/java/org/apache/commons/lang3/builder/DiffBuilder.java",
+            "startLine": 76,
+            "endLine": 115,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.builder.DiffBuilder",
+            "type": "Method",
+            "name": "DiffBuilder",
+            "filePath": "src/main/java/org/apache/commons/lang3/builder/DiffBuilder.java",
+            "startLine": 75,
+            "endLine": 114,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.builder.DiffBuilder",
+            "type": "Method",
+            "name": "append",
+            "filePath": "src/main/java/org/apache/commons/lang3/builder/DiffBuilder.java",
+            "startLine": 874,
+            "endLine": 915,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.builder.DiffBuilder",
+            "type": "Method",
+            "name": "append",
+            "filePath": "src/main/java/org/apache/commons/lang3/builder/DiffBuilder.java",
+            "startLine": 873,
+            "endLine": 914,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.builder.DiffBuilder",
+            "type": "Method",
+            "name": "validateFieldNameNotNull",
+            "filePath": "src/main/java/org/apache/commons/lang3/builder/DiffBuilder.java",
+            "startLine": 929,
+            "endLine": 931,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.builder.DiffBuilder",
+            "type": "Method",
+            "name": "validateFieldNameNotNull",
+            "filePath": "src/main/java/org/apache/commons/lang3/builder/DiffBuilder.java",
+            "startLine": 928,
+            "endLine": 930,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.builder.DiffBuilder",
+            "type": "Class",
+            "name": "DiffBuilder",
+            "filePath": "src/main/java/org/apache/commons/lang3/builder/DiffBuilder.java",
+            "startLine": 28,
+            "endLine": 933,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.builder.DiffBuilder",
+            "type": "Class",
+            "name": "DiffBuilder",
+            "filePath": "src/main/java/org/apache/commons/lang3/builder/DiffBuilder.java",
+            "startLine": 27,
+            "endLine": 932,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.builder.DiffResult",
+            "type": "Method",
+            "name": "DiffResult",
+            "filePath": "src/main/java/org/apache/commons/lang3/builder/DiffResult.java",
+            "startLine": 54,
+            "endLine": 85,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.builder.DiffResult",
+            "type": "Method",
+            "name": "DiffResult",
+            "filePath": "src/main/java/org/apache/commons/lang3/builder/DiffResult.java",
+            "startLine": 53,
+            "endLine": 84,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.builder.DiffResult",
+            "type": "Class",
+            "name": "DiffResult",
+            "filePath": "src/main/java/org/apache/commons/lang3/builder/DiffResult.java",
+            "startLine": 25,
+            "endLine": 203,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.builder.DiffResult",
+            "type": "Class",
+            "name": "DiffResult",
+            "filePath": "src/main/java/org/apache/commons/lang3/builder/DiffResult.java",
+            "startLine": 24,
+            "endLine": 202,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.builder.HashCodeBuilder",
+            "type": "Method",
+            "name": "reflectionHashCode",
+            "filePath": "src/main/java/org/apache/commons/lang3/builder/HashCodeBuilder.java",
+            "startLine": 295,
+            "endLine": 354,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.builder.HashCodeBuilder",
+            "type": "Method",
+            "name": "reflectionHashCode",
+            "filePath": "src/main/java/org/apache/commons/lang3/builder/HashCodeBuilder.java",
+            "startLine": 296,
+            "endLine": 355,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.builder.HashCodeBuilder",
+            "type": "Class",
+            "name": "HashCodeBuilder",
+            "filePath": "src/main/java/org/apache/commons/lang3/builder/HashCodeBuilder.java",
+            "startLine": 33,
+            "endLine": 935,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.builder.HashCodeBuilder",
+            "type": "Class",
+            "name": "HashCodeBuilder",
+            "filePath": "src/main/java/org/apache/commons/lang3/builder/HashCodeBuilder.java",
+            "startLine": 34,
+            "endLine": 936,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.builder.ReflectionToStringBuilder",
+            "type": "Method",
+            "name": "ReflectionToStringBuilder",
+            "filePath": "src/main/java/org/apache/commons/lang3/builder/ReflectionToStringBuilder.java",
+            "startLine": 485,
+            "endLine": 499,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.builder.ReflectionToStringBuilder",
+            "type": "Method",
+            "name": "ReflectionToStringBuilder",
+            "filePath": "src/main/java/org/apache/commons/lang3/builder/ReflectionToStringBuilder.java",
+            "startLine": 480,
+            "endLine": 494,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.builder.ReflectionToStringBuilder",
+            "type": "Method",
+            "name": "ReflectionToStringBuilder",
+            "filePath": "src/main/java/org/apache/commons/lang3/builder/ReflectionToStringBuilder.java",
+            "startLine": 501,
+            "endLine": 517,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.builder.ReflectionToStringBuilder",
+            "type": "Method",
+            "name": "ReflectionToStringBuilder",
+            "filePath": "src/main/java/org/apache/commons/lang3/builder/ReflectionToStringBuilder.java",
+            "startLine": 496,
+            "endLine": 512,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.builder.ReflectionToStringBuilder",
+            "type": "Method",
+            "name": "ReflectionToStringBuilder",
+            "filePath": "src/main/java/org/apache/commons/lang3/builder/ReflectionToStringBuilder.java",
+            "startLine": 519,
+            "endLine": 541,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.builder.ReflectionToStringBuilder",
+            "type": "Method",
+            "name": "ReflectionToStringBuilder",
+            "filePath": "src/main/java/org/apache/commons/lang3/builder/ReflectionToStringBuilder.java",
+            "startLine": 514,
+            "endLine": 536,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.builder.ReflectionToStringBuilder",
+            "type": "Method",
+            "name": "ReflectionToStringBuilder",
+            "filePath": "src/main/java/org/apache/commons/lang3/builder/ReflectionToStringBuilder.java",
+            "startLine": 543,
+            "endLine": 569,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.builder.ReflectionToStringBuilder",
+            "type": "Method",
+            "name": "ReflectionToStringBuilder",
+            "filePath": "src/main/java/org/apache/commons/lang3/builder/ReflectionToStringBuilder.java",
+            "startLine": 538,
+            "endLine": 564,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.builder.ReflectionToStringBuilder",
+            "type": "Method",
+            "name": "ReflectionToStringBuilder",
+            "filePath": "src/main/java/org/apache/commons/lang3/builder/ReflectionToStringBuilder.java",
+            "startLine": 571,
+            "endLine": 601,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.builder.ReflectionToStringBuilder",
+            "type": "Method",
+            "name": "ReflectionToStringBuilder",
+            "filePath": "src/main/java/org/apache/commons/lang3/builder/ReflectionToStringBuilder.java",
+            "startLine": 566,
+            "endLine": 596,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.builder.ReflectionToStringBuilder",
+            "type": "Class",
+            "name": "ReflectionToStringBuilder",
+            "filePath": "src/main/java/org/apache/commons/lang3/builder/ReflectionToStringBuilder.java",
+            "startLine": 34,
+            "endLine": 882,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.builder.ReflectionToStringBuilder",
+            "type": "Class",
+            "name": "ReflectionToStringBuilder",
+            "filePath": "src/main/java/org/apache/commons/lang3/builder/ReflectionToStringBuilder.java",
+            "startLine": 33,
+            "endLine": 877,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.builder.ToStringBuilder",
+            "type": "Method",
+            "name": "setDefaultStyle",
+            "filePath": "src/main/java/org/apache/commons/lang3/builder/ToStringBuilder.java",
+            "startLine": 118,
+            "endLine": 135,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.builder.ToStringBuilder",
+            "type": "Method",
+            "name": "setDefaultStyle",
+            "filePath": "src/main/java/org/apache/commons/lang3/builder/ToStringBuilder.java",
+            "startLine": 119,
+            "endLine": 136,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.builder.ToStringBuilder",
+            "type": "Class",
+            "name": "ToStringBuilder",
+            "filePath": "src/main/java/org/apache/commons/lang3/builder/ToStringBuilder.java",
+            "startLine": 22,
+            "endLine": 1032,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.builder.ToStringBuilder",
+            "type": "Class",
+            "name": "ToStringBuilder",
+            "filePath": "src/main/java/org/apache/commons/lang3/builder/ToStringBuilder.java",
+            "startLine": 23,
+            "endLine": 1033,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.concurrent.BasicThreadFactory.Builder",
+            "type": "Method",
+            "name": "wrappedFactory",
+            "filePath": "src/main/java/org/apache/commons/lang3/concurrent/BasicThreadFactory.java",
+            "startLine": 272,
+            "endLine": 287,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.concurrent.BasicThreadFactory.Builder",
+            "type": "Method",
+            "name": "wrappedFactory",
+            "filePath": "src/main/java/org/apache/commons/lang3/concurrent/BasicThreadFactory.java",
+            "startLine": 271,
+            "endLine": 286,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.concurrent.BasicThreadFactory.Builder",
+            "type": "Method",
+            "name": "namingPattern",
+            "filePath": "src/main/java/org/apache/commons/lang3/concurrent/BasicThreadFactory.java",
+            "startLine": 289,
+            "endLine": 302,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.concurrent.BasicThreadFactory.Builder",
+            "type": "Method",
+            "name": "namingPattern",
+            "filePath": "src/main/java/org/apache/commons/lang3/concurrent/BasicThreadFactory.java",
+            "startLine": 288,
+            "endLine": 301,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.concurrent.BasicThreadFactory.Builder",
+            "type": "Method",
+            "name": "uncaughtExceptionHandler",
+            "filePath": "src/main/java/org/apache/commons/lang3/concurrent/BasicThreadFactory.java",
+            "startLine": 329,
+            "endLine": 344,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.concurrent.BasicThreadFactory.Builder",
+            "type": "Method",
+            "name": "uncaughtExceptionHandler",
+            "filePath": "src/main/java/org/apache/commons/lang3/concurrent/BasicThreadFactory.java",
+            "startLine": 328,
+            "endLine": 343,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.concurrent.BasicThreadFactory.Builder",
+            "type": "Class",
+            "name": "Builder",
+            "filePath": "src/main/java/org/apache/commons/lang3/concurrent/BasicThreadFactory.java",
+            "startLine": 241,
+            "endLine": 373,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.concurrent.BasicThreadFactory.Builder",
+            "type": "Class",
+            "name": "Builder",
+            "filePath": "src/main/java/org/apache/commons/lang3/concurrent/BasicThreadFactory.java",
+            "startLine": 240,
+            "endLine": 372,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.concurrent.BasicThreadFactory",
+            "type": "Class",
+            "name": "BasicThreadFactory",
+            "filePath": "src/main/java/org/apache/commons/lang3/concurrent/BasicThreadFactory.java",
+            "startLine": 27,
+            "endLine": 374,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.concurrent.BasicThreadFactory",
+            "type": "Class",
+            "name": "BasicThreadFactory",
+            "filePath": "src/main/java/org/apache/commons/lang3/concurrent/BasicThreadFactory.java",
+            "startLine": 26,
+            "endLine": 373,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.concurrent.CallableBackgroundInitializer",
+            "type": "Method",
+            "name": "checkCallable",
+            "filePath": "src/main/java/org/apache/commons/lang3/concurrent/CallableBackgroundInitializer.java",
+            "startLine": 113,
+            "endLine": 122,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.concurrent.CallableBackgroundInitializer",
+            "type": "Method",
+            "name": "checkCallable",
+            "filePath": "src/main/java/org/apache/commons/lang3/concurrent/CallableBackgroundInitializer.java",
+            "startLine": 112,
+            "endLine": 121,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.concurrent.CallableBackgroundInitializer",
+            "type": "Class",
+            "name": "CallableBackgroundInitializer",
+            "filePath": "src/main/java/org/apache/commons/lang3/concurrent/CallableBackgroundInitializer.java",
+            "startLine": 24,
+            "endLine": 123,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.concurrent.CallableBackgroundInitializer",
+            "type": "Class",
+            "name": "CallableBackgroundInitializer",
+            "filePath": "src/main/java/org/apache/commons/lang3/concurrent/CallableBackgroundInitializer.java",
+            "startLine": 23,
+            "endLine": 122,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.concurrent.MultiBackgroundInitializer",
+            "type": "Method",
+            "name": "addInitializer",
+            "filePath": "src/main/java/org/apache/commons/lang3/concurrent/MultiBackgroundInitializer.java",
+            "startLine": 121,
+            "endLine": 144,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.concurrent.MultiBackgroundInitializer",
+            "type": "Method",
+            "name": "addInitializer",
+            "filePath": "src/main/java/org/apache/commons/lang3/concurrent/MultiBackgroundInitializer.java",
+            "startLine": 120,
+            "endLine": 143,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.concurrent.MultiBackgroundInitializer",
+            "type": "Class",
+            "name": "MultiBackgroundInitializer",
+            "filePath": "src/main/java/org/apache/commons/lang3/concurrent/MultiBackgroundInitializer.java",
+            "startLine": 28,
+            "endLine": 338,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.concurrent.MultiBackgroundInitializer",
+            "type": "Class",
+            "name": "MultiBackgroundInitializer",
+            "filePath": "src/main/java/org/apache/commons/lang3/concurrent/MultiBackgroundInitializer.java",
+            "startLine": 27,
+            "endLine": 337,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.event.EventListenerSupport",
+            "type": "Method",
+            "name": "EventListenerSupport",
+            "filePath": "src/main/java/org/apache/commons/lang3/event/EventListenerSupport.java",
+            "startLine": 128,
+            "endLine": 148,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.event.EventListenerSupport",
+            "type": "Method",
+            "name": "EventListenerSupport",
+            "filePath": "src/main/java/org/apache/commons/lang3/event/EventListenerSupport.java",
+            "startLine": 129,
+            "endLine": 149,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.event.EventListenerSupport",
+            "type": "Method",
+            "name": "addListener",
+            "filePath": "src/main/java/org/apache/commons/lang3/event/EventListenerSupport.java",
+            "startLine": 185,
+            "endLine": 201,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.event.EventListenerSupport",
+            "type": "Method",
+            "name": "addListener",
+            "filePath": "src/main/java/org/apache/commons/lang3/event/EventListenerSupport.java",
+            "startLine": 186,
+            "endLine": 202,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.event.EventListenerSupport",
+            "type": "Method",
+            "name": "removeListener",
+            "filePath": "src/main/java/org/apache/commons/lang3/event/EventListenerSupport.java",
+            "startLine": 212,
+            "endLine": 223,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.event.EventListenerSupport",
+            "type": "Method",
+            "name": "removeListener",
+            "filePath": "src/main/java/org/apache/commons/lang3/event/EventListenerSupport.java",
+            "startLine": 213,
+            "endLine": 224,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.event.EventListenerSupport",
+            "type": "Class",
+            "name": "EventListenerSupport",
+            "filePath": "src/main/java/org/apache/commons/lang3/event/EventListenerSupport.java",
+            "startLine": 36,
+            "endLine": 333,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.event.EventListenerSupport",
+            "type": "Class",
+            "name": "EventListenerSupport",
+            "filePath": "src/main/java/org/apache/commons/lang3/event/EventListenerSupport.java",
+            "startLine": 37,
+            "endLine": 334,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.math.Fraction",
+            "type": "Method",
+            "name": "getFraction",
+            "filePath": "src/main/java/org/apache/commons/lang3/math/Fraction.java",
+            "startLine": 295,
+            "endLine": 344,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.math.Fraction",
+            "type": "Method",
+            "name": "getFraction",
+            "filePath": "src/main/java/org/apache/commons/lang3/math/Fraction.java",
+            "startLine": 294,
+            "endLine": 343,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.math.Fraction",
+            "type": "Method",
+            "name": "addSub",
+            "filePath": "src/main/java/org/apache/commons/lang3/math/Fraction.java",
+            "startLine": 710,
+            "endLine": 756,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.math.Fraction",
+            "type": "Method",
+            "name": "addSub",
+            "filePath": "src/main/java/org/apache/commons/lang3/math/Fraction.java",
+            "startLine": 709,
+            "endLine": 755,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.math.Fraction",
+            "type": "Method",
+            "name": "multiplyBy",
+            "filePath": "src/main/java/org/apache/commons/lang3/math/Fraction.java",
+            "startLine": 758,
+            "endLine": 779,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.math.Fraction",
+            "type": "Method",
+            "name": "multiplyBy",
+            "filePath": "src/main/java/org/apache/commons/lang3/math/Fraction.java",
+            "startLine": 757,
+            "endLine": 778,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.math.Fraction",
+            "type": "Method",
+            "name": "divideBy",
+            "filePath": "src/main/java/org/apache/commons/lang3/math/Fraction.java",
+            "startLine": 781,
+            "endLine": 797,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.math.Fraction",
+            "type": "Method",
+            "name": "divideBy",
+            "filePath": "src/main/java/org/apache/commons/lang3/math/Fraction.java",
+            "startLine": 780,
+            "endLine": 796,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.math.Fraction",
+            "type": "Class",
+            "name": "Fraction",
+            "filePath": "src/main/java/org/apache/commons/lang3/math/Fraction.java",
+            "startLine": 23,
+            "endLine": 909,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.math.Fraction",
+            "type": "Class",
+            "name": "Fraction",
+            "filePath": "src/main/java/org/apache/commons/lang3/math/Fraction.java",
+            "startLine": 22,
+            "endLine": 908,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.math.IEEE754rUtils",
+            "type": "Method",
+            "name": "min",
+            "filePath": "src/main/java/org/apache/commons/lang3/math/IEEE754rUtils.java",
+            "startLine": 30,
+            "endLine": 50,
+            "startColumn": 6,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.math.IEEE754rUtils",
+            "type": "Method",
+            "name": "min",
+            "filePath": "src/main/java/org/apache/commons/lang3/math/IEEE754rUtils.java",
+            "startLine": 32,
+            "endLine": 52,
+            "startColumn": 6,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.math.IEEE754rUtils",
+            "type": "Method",
+            "name": "min",
+            "filePath": "src/main/java/org/apache/commons/lang3/math/IEEE754rUtils.java",
+            "startLine": 52,
+            "endLine": 72,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.math.IEEE754rUtils",
+            "type": "Method",
+            "name": "min",
+            "filePath": "src/main/java/org/apache/commons/lang3/math/IEEE754rUtils.java",
+            "startLine": 54,
+            "endLine": 74,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.math.IEEE754rUtils",
+            "type": "Method",
+            "name": "max",
+            "filePath": "src/main/java/org/apache/commons/lang3/math/IEEE754rUtils.java",
+            "startLine": 140,
+            "endLine": 160,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.math.IEEE754rUtils",
+            "type": "Method",
+            "name": "max",
+            "filePath": "src/main/java/org/apache/commons/lang3/math/IEEE754rUtils.java",
+            "startLine": 142,
+            "endLine": 162,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.math.IEEE754rUtils",
+            "type": "Method",
+            "name": "max",
+            "filePath": "src/main/java/org/apache/commons/lang3/math/IEEE754rUtils.java",
+            "startLine": 162,
+            "endLine": 182,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.math.IEEE754rUtils",
+            "type": "Method",
+            "name": "max",
+            "filePath": "src/main/java/org/apache/commons/lang3/math/IEEE754rUtils.java",
+            "startLine": 164,
+            "endLine": 184,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.math.IEEE754rUtils",
+            "type": "Class",
+            "name": "IEEE754rUtils",
+            "filePath": "src/main/java/org/apache/commons/lang3/math/IEEE754rUtils.java",
+            "startLine": 21,
+            "endLine": 250,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.math.IEEE754rUtils",
+            "type": "Class",
+            "name": "IEEE754rUtils",
+            "filePath": "src/main/java/org/apache/commons/lang3/math/IEEE754rUtils.java",
+            "startLine": 23,
+            "endLine": 252,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.math.NumberUtils",
+            "type": "Method",
+            "name": "validateArray",
+            "filePath": "src/main/java/org/apache/commons/lang3/math/NumberUtils.java",
+            "startLine": 1333,
+            "endLine": 1343,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.math.NumberUtils",
+            "type": "Method",
+            "name": "validateArray",
+            "filePath": "src/main/java/org/apache/commons/lang3/math/NumberUtils.java",
+            "startLine": 1334,
+            "endLine": 1344,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.math.NumberUtils",
+            "type": "Class",
+            "name": "NumberUtils",
+            "filePath": "src/main/java/org/apache/commons/lang3/math/NumberUtils.java",
+            "startLine": 27,
+            "endLine": 1849,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.math.NumberUtils",
+            "type": "Class",
+            "name": "NumberUtils",
+            "filePath": "src/main/java/org/apache/commons/lang3/math/NumberUtils.java",
+            "startLine": 28,
+            "endLine": 1850,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.ConstructorUtils",
+            "type": "Method",
+            "name": "getAccessibleConstructor",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/ConstructorUtils.java",
+            "startLine": 181,
+            "endLine": 203,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.ConstructorUtils",
+            "type": "Method",
+            "name": "getAccessibleConstructor",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/ConstructorUtils.java",
+            "startLine": 181,
+            "endLine": 203,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.ConstructorUtils",
+            "type": "Method",
+            "name": "getAccessibleConstructor",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/ConstructorUtils.java",
+            "startLine": 205,
+            "endLine": 220,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.ConstructorUtils",
+            "type": "Method",
+            "name": "getAccessibleConstructor",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/ConstructorUtils.java",
+            "startLine": 205,
+            "endLine": 220,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.ConstructorUtils",
+            "type": "Method",
+            "name": "getMatchingAccessibleConstructor",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/ConstructorUtils.java",
+            "startLine": 222,
+            "endLine": 275,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.ConstructorUtils",
+            "type": "Method",
+            "name": "getMatchingAccessibleConstructor",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/ConstructorUtils.java",
+            "startLine": 222,
+            "endLine": 275,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.ConstructorUtils",
+            "type": "Class",
+            "name": "ConstructorUtils",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/ConstructorUtils.java",
+            "startLine": 26,
+            "endLine": 295,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.ConstructorUtils",
+            "type": "Class",
+            "name": "ConstructorUtils",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/ConstructorUtils.java",
+            "startLine": 26,
+            "endLine": 295,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.FieldUtils",
+            "type": "Method",
+            "name": "getField",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/FieldUtils.java",
+            "startLine": 69,
+            "endLine": 135,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.FieldUtils",
+            "type": "Method",
+            "name": "getField",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/FieldUtils.java",
+            "startLine": 70,
+            "endLine": 136,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.FieldUtils",
+            "type": "Method",
+            "name": "getDeclaredField",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/FieldUtils.java",
+            "startLine": 152,
+            "endLine": 185,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.FieldUtils",
+            "type": "Method",
+            "name": "getDeclaredField",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/FieldUtils.java",
+            "startLine": 153,
+            "endLine": 186,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.FieldUtils",
+            "type": "Method",
+            "name": "getAllFieldsList",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/FieldUtils.java",
+            "startLine": 201,
+            "endLine": 221,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.FieldUtils",
+            "type": "Method",
+            "name": "getAllFieldsList",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/FieldUtils.java",
+            "startLine": 202,
+            "endLine": 222,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.FieldUtils",
+            "type": "Method",
+            "name": "getFieldsListWithAnnotation",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/FieldUtils.java",
+            "startLine": 238,
+            "endLine": 252,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.FieldUtils",
+            "type": "Method",
+            "name": "getFieldsListWithAnnotation",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/FieldUtils.java",
+            "startLine": 239,
+            "endLine": 253,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.FieldUtils",
+            "type": "Method",
+            "name": "readStaticField",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/FieldUtils.java",
+            "startLine": 269,
+            "endLine": 287,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.FieldUtils",
+            "type": "Method",
+            "name": "readStaticField",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/FieldUtils.java",
+            "startLine": 270,
+            "endLine": 288,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.FieldUtils",
+            "type": "Method",
+            "name": "readField",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/FieldUtils.java",
+            "startLine": 393,
+            "endLine": 417,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.FieldUtils",
+            "type": "Method",
+            "name": "readField",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/FieldUtils.java",
+            "startLine": 394,
+            "endLine": 418,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.FieldUtils",
+            "type": "Method",
+            "name": "readField",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/FieldUtils.java",
+            "startLine": 436,
+            "endLine": 460,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.FieldUtils",
+            "type": "Method",
+            "name": "readField",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/FieldUtils.java",
+            "startLine": 437,
+            "endLine": 461,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.FieldUtils",
+            "type": "Method",
+            "name": "readDeclaredField",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/FieldUtils.java",
+            "startLine": 479,
+            "endLine": 503,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.FieldUtils",
+            "type": "Method",
+            "name": "readDeclaredField",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/FieldUtils.java",
+            "startLine": 480,
+            "endLine": 504,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.FieldUtils",
+            "type": "Method",
+            "name": "writeStaticField",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/FieldUtils.java",
+            "startLine": 521,
+            "endLine": 542,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.FieldUtils",
+            "type": "Method",
+            "name": "writeStaticField",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/FieldUtils.java",
+            "startLine": 522,
+            "endLine": 543,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.FieldUtils",
+            "type": "Method",
+            "name": "writeField",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/FieldUtils.java",
+            "startLine": 652,
+            "endLine": 679,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.FieldUtils",
+            "type": "Method",
+            "name": "writeField",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/FieldUtils.java",
+            "startLine": 653,
+            "endLine": 680,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.FieldUtils",
+            "type": "Method",
+            "name": "removeFinalModifier",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/FieldUtils.java",
+            "startLine": 694,
+            "endLine": 739,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.FieldUtils",
+            "type": "Method",
+            "name": "removeFinalModifier",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/FieldUtils.java",
+            "startLine": 695,
+            "endLine": 740,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.FieldUtils",
+            "type": "Method",
+            "name": "writeField",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/FieldUtils.java",
+            "startLine": 760,
+            "endLine": 787,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.FieldUtils",
+            "type": "Method",
+            "name": "writeField",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/FieldUtils.java",
+            "startLine": 761,
+            "endLine": 788,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.FieldUtils",
+            "type": "Method",
+            "name": "writeDeclaredField",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/FieldUtils.java",
+            "startLine": 808,
+            "endLine": 835,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.FieldUtils",
+            "type": "Method",
+            "name": "writeDeclaredField",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/FieldUtils.java",
+            "startLine": 809,
+            "endLine": 836,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.FieldUtils",
+            "type": "Class",
+            "name": "FieldUtils",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/FieldUtils.java",
+            "startLine": 34,
+            "endLine": 836,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.FieldUtils",
+            "type": "Class",
+            "name": "FieldUtils",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/FieldUtils.java",
+            "startLine": 35,
+            "endLine": 837,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.TypeUtils",
+            "type": "Method",
+            "name": "determineTypeArguments",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java",
+            "startLine": 388,
+            "endLine": 452,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.TypeUtils",
+            "type": "Method",
+            "name": "determineTypeArguments",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java",
+            "startLine": 388,
+            "endLine": 452,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.TypeUtils",
+            "type": "Method",
+            "name": "genericArrayType",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java",
+            "startLine": 577,
+            "endLine": 587,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.TypeUtils",
+            "type": "Method",
+            "name": "genericArrayType",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java",
+            "startLine": 577,
+            "endLine": 587,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.TypeUtils",
+            "type": "Method",
+            "name": "getImplicitBounds",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java",
+            "startLine": 665,
+            "endLine": 679,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.TypeUtils",
+            "type": "Method",
+            "name": "getImplicitBounds",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java",
+            "startLine": 665,
+            "endLine": 679,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.TypeUtils",
+            "type": "Method",
+            "name": "getImplicitLowerBounds",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java",
+            "startLine": 681,
+            "endLine": 695,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.TypeUtils",
+            "type": "Method",
+            "name": "getImplicitLowerBounds",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java",
+            "startLine": 681,
+            "endLine": 695,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.TypeUtils",
+            "type": "Method",
+            "name": "getImplicitUpperBounds",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java",
+            "startLine": 697,
+            "endLine": 712,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.TypeUtils",
+            "type": "Method",
+            "name": "getImplicitUpperBounds",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java",
+            "startLine": 697,
+            "endLine": 712,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.TypeUtils",
+            "type": "Method",
+            "name": "normalizeUpperBounds",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java",
+            "startLine": 1489,
+            "endLine": 1538,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.TypeUtils",
+            "type": "Method",
+            "name": "normalizeUpperBounds",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java",
+            "startLine": 1489,
+            "endLine": 1538,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.TypeUtils",
+            "type": "Method",
+            "name": "parameterize",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java",
+            "startLine": 1540,
+            "endLine": 1554,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.TypeUtils",
+            "type": "Method",
+            "name": "parameterize",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java",
+            "startLine": 1540,
+            "endLine": 1554,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.TypeUtils",
+            "type": "Method",
+            "name": "parameterizeWithOwner",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java",
+            "startLine": 1603,
+            "endLine": 1618,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.TypeUtils",
+            "type": "Method",
+            "name": "parameterizeWithOwner",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java",
+            "startLine": 1603,
+            "endLine": 1618,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.TypeUtils",
+            "type": "Method",
+            "name": "parameterizeWithOwner",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java",
+            "startLine": 1620,
+            "endLine": 1650,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.TypeUtils",
+            "type": "Method",
+            "name": "parameterizeWithOwner",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java",
+            "startLine": 1620,
+            "endLine": 1650,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.TypeUtils",
+            "type": "Method",
+            "name": "toLongString",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java",
+            "startLine": 1673,
+            "endLine": 1700,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.TypeUtils",
+            "type": "Method",
+            "name": "toLongString",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java",
+            "startLine": 1673,
+            "endLine": 1700,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.TypeUtils",
+            "type": "Method",
+            "name": "typesSatisfyVariables",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java",
+            "startLine": 1733,
+            "endLine": 1762,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.TypeUtils",
+            "type": "Method",
+            "name": "typesSatisfyVariables",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java",
+            "startLine": 1733,
+            "endLine": 1762,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.TypeUtils",
+            "type": "Class",
+            "name": "TypeUtils",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java",
+            "startLine": 43,
+            "endLine": 1932,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.TypeUtils",
+            "type": "Class",
+            "name": "TypeUtils",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java",
+            "startLine": 43,
+            "endLine": 1932,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.time.FormatCache",
+            "type": "Method",
+            "name": "getInstance",
+            "filePath": "src/main/java/org/apache/commons/lang3/time/FormatCache.java",
+            "startLine": 60,
+            "endLine": 78,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.time.FormatCache",
+            "type": "Method",
+            "name": "getInstance",
+            "filePath": "src/main/java/org/apache/commons/lang3/time/FormatCache.java",
+            "startLine": 60,
+            "endLine": 78,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.time.FormatCache",
+            "type": "Class",
+            "name": "FormatCache",
+            "filePath": "src/main/java/org/apache/commons/lang3/time/FormatCache.java",
+            "startLine": 31,
+            "endLine": 243,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.time.FormatCache",
+            "type": "Class",
+            "name": "FormatCache",
+            "filePath": "src/main/java/org/apache/commons/lang3/time/FormatCache.java",
+            "startLine": 31,
+            "endLine": 243,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [],
+      "baseline": [
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.ClassUtils",
+            "type": "Initializer",
+            "name": "static block",
+            "filePath": "src/main/java/org/apache/commons/lang3/ClassUtils.java",
+            "startLine": 146,
+            "endLine": 159,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.ClassUtils",
+            "type": "Initializer",
+            "name": "static block",
+            "filePath": "src/main/java/org/apache/commons/lang3/ClassUtils.java",
+            "startLine": 94,
+            "endLine": 104,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/commons-lang.git",
+      "sha1": "11b1bc19ab360afce8a48167002bfcb747faeb68",
+      "url": "https://github.com/apache/commons-lang/commit/11b1bc19ab360afce8a48167002bfcb747faeb68",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.ThreadUtils.AlwaysTruePredicate",
+            "type": "Class",
+            "name": "AlwaysTruePredicate",
+            "filePath": "src/main/java/org/apache/commons/lang3/ThreadUtils.java",
+            "startLine": 41,
+            "endLine": 58,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.ThreadUtils.AlwaysTruePredicate",
+            "type": "Class",
+            "name": "AlwaysTruePredicate",
+            "filePath": "src/main/java/org/apache/commons/lang3/ThreadUtils.java",
+            "startLine": 44,
+            "endLine": 64,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.ThreadUtils.NamePredicate",
+            "type": "Class",
+            "name": "NamePredicate",
+            "filePath": "src/main/java/org/apache/commons/lang3/ThreadUtils.java",
+            "startLine": 60,
+            "endLine": 87,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.ThreadUtils.NamePredicate",
+            "type": "Class",
+            "name": "NamePredicate",
+            "filePath": "src/main/java/org/apache/commons/lang3/ThreadUtils.java",
+            "startLine": 66,
+            "endLine": 99,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.ThreadUtils.ThreadGroupPredicate",
+            "type": "Interface",
+            "name": "ThreadGroupPredicate",
+            "filePath": "src/main/java/org/apache/commons/lang3/ThreadUtils.java",
+            "startLine": 89,
+            "endLine": 102,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.ThreadUtils.ThreadGroupPredicate",
+            "type": "Interface",
+            "name": "ThreadGroupPredicate",
+            "filePath": "src/main/java/org/apache/commons/lang3/ThreadUtils.java",
+            "startLine": 101,
+            "endLine": 117,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.ThreadUtils.ThreadIdPredicate",
+            "type": "Class",
+            "name": "ThreadIdPredicate",
+            "filePath": "src/main/java/org/apache/commons/lang3/ThreadUtils.java",
+            "startLine": 104,
+            "endLine": 128,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.ThreadUtils.ThreadIdPredicate",
+            "type": "Class",
+            "name": "ThreadIdPredicate",
+            "filePath": "src/main/java/org/apache/commons/lang3/ThreadUtils.java",
+            "startLine": 119,
+            "endLine": 146,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.ThreadUtils.ThreadPredicate",
+            "type": "Interface",
+            "name": "ThreadPredicate",
+            "filePath": "src/main/java/org/apache/commons/lang3/ThreadUtils.java",
+            "startLine": 130,
+            "endLine": 143,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.ThreadUtils.ThreadPredicate",
+            "type": "Interface",
+            "name": "ThreadPredicate",
+            "filePath": "src/main/java/org/apache/commons/lang3/ThreadUtils.java",
+            "startLine": 148,
+            "endLine": 164,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.ThreadUtils",
+            "type": "Field",
+            "name": "ALWAYS_TRUE_PREDICATE",
+            "filePath": "src/main/java/org/apache/commons/lang3/ThreadUtils.java",
+            "startLine": 148,
+            "endLine": 148,
+            "startColumn": 45,
+            "endColumn": 94
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.ThreadUtils",
+            "type": "Field",
+            "name": "ALWAYS_TRUE_PREDICATE",
+            "filePath": "src/main/java/org/apache/commons/lang3/ThreadUtils.java",
+            "startLine": 172,
+            "endLine": 172,
+            "startColumn": 45,
+            "endColumn": 94
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.ThreadUtils",
+            "type": "Method",
+            "name": "findThreadById",
+            "filePath": "src/main/java/org/apache/commons/lang3/ThreadUtils.java",
+            "startLine": 150,
+            "endLine": 165,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.ThreadUtils",
+            "type": "Method",
+            "name": "findThreadById",
+            "filePath": "src/main/java/org/apache/commons/lang3/ThreadUtils.java",
+            "startLine": 181,
+            "endLine": 199,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.ThreadUtils",
+            "type": "Method",
+            "name": "findThreadGroups",
+            "filePath": "src/main/java/org/apache/commons/lang3/ThreadUtils.java",
+            "startLine": 215,
+            "endLine": 245,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.ThreadUtils",
+            "type": "Method",
+            "name": "findThreadGroups",
+            "filePath": "src/main/java/org/apache/commons/lang3/ThreadUtils.java",
+            "startLine": 291,
+            "endLine": 306,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.ThreadUtils",
+            "type": "Method",
+            "name": "findThreadGroups",
+            "filePath": "src/main/java/org/apache/commons/lang3/ThreadUtils.java",
+            "startLine": 247,
+            "endLine": 260,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.ThreadUtils",
+            "type": "Method",
+            "name": "findThreadGroups",
+            "filePath": "src/main/java/org/apache/commons/lang3/ThreadUtils.java",
+            "startLine": 308,
+            "endLine": 323,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.ThreadUtils",
+            "type": "Method",
+            "name": "findThreadGroupsByName",
+            "filePath": "src/main/java/org/apache/commons/lang3/ThreadUtils.java",
+            "startLine": 262,
+            "endLine": 276,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.ThreadUtils",
+            "type": "Method",
+            "name": "findThreadGroupsByName",
+            "filePath": "src/main/java/org/apache/commons/lang3/ThreadUtils.java",
+            "startLine": 325,
+            "endLine": 339,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.ThreadUtils",
+            "type": "Method",
+            "name": "findThreads",
+            "filePath": "src/main/java/org/apache/commons/lang3/ThreadUtils.java",
+            "startLine": 278,
+            "endLine": 308,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.ThreadUtils",
+            "type": "Method",
+            "name": "findThreads",
+            "filePath": "src/main/java/org/apache/commons/lang3/ThreadUtils.java",
+            "startLine": 383,
+            "endLine": 398,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.ThreadUtils",
+            "type": "Method",
+            "name": "findThreads",
+            "filePath": "src/main/java/org/apache/commons/lang3/ThreadUtils.java",
+            "startLine": 310,
+            "endLine": 324,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.ThreadUtils",
+            "type": "Method",
+            "name": "findThreads",
+            "filePath": "src/main/java/org/apache/commons/lang3/ThreadUtils.java",
+            "startLine": 400,
+            "endLine": 416,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.ThreadUtils",
+            "type": "Method",
+            "name": "findThreadsByName",
+            "filePath": "src/main/java/org/apache/commons/lang3/ThreadUtils.java",
+            "startLine": 326,
+            "endLine": 340,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.ThreadUtils",
+            "type": "Method",
+            "name": "findThreadsByName",
+            "filePath": "src/main/java/org/apache/commons/lang3/ThreadUtils.java",
+            "startLine": 418,
+            "endLine": 432,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.ThreadUtils",
+            "type": "Method",
+            "name": "findThreadsByName",
+            "filePath": "src/main/java/org/apache/commons/lang3/ThreadUtils.java",
+            "startLine": 342,
+            "endLine": 370,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.ThreadUtils",
+            "type": "Method",
+            "name": "findThreadsByName",
+            "filePath": "src/main/java/org/apache/commons/lang3/ThreadUtils.java",
+            "startLine": 434,
+            "endLine": 453,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.ThreadUtils",
+            "type": "Method",
+            "name": "findThreadsByName",
+            "filePath": "src/main/java/org/apache/commons/lang3/ThreadUtils.java",
+            "startLine": 372,
+            "endLine": 388,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.ThreadUtils",
+            "type": "Method",
+            "name": "findThreadsByName",
+            "filePath": "src/main/java/org/apache/commons/lang3/ThreadUtils.java",
+            "startLine": 455,
+            "endLine": 471,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.ThreadUtils",
+            "type": "Method",
+            "name": "getAllThreadGroups",
+            "filePath": "src/main/java/org/apache/commons/lang3/ThreadUtils.java",
+            "startLine": 390,
+            "endLine": 402,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.ThreadUtils",
+            "type": "Method",
+            "name": "getAllThreadGroups",
+            "filePath": "src/main/java/org/apache/commons/lang3/ThreadUtils.java",
+            "startLine": 473,
+            "endLine": 485,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.ThreadUtils",
+            "type": "Method",
+            "name": "getAllThreads",
+            "filePath": "src/main/java/org/apache/commons/lang3/ThreadUtils.java",
+            "startLine": 404,
+            "endLine": 416,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.ThreadUtils",
+            "type": "Method",
+            "name": "getAllThreads",
+            "filePath": "src/main/java/org/apache/commons/lang3/ThreadUtils.java",
+            "startLine": 487,
+            "endLine": 499,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.ThreadUtils",
+            "type": "Class",
+            "name": "ThreadUtils",
+            "filePath": "src/main/java/org/apache/commons/lang3/ThreadUtils.java",
+            "startLine": 27,
+            "endLine": 489,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.ThreadUtils",
+            "type": "Class",
+            "name": "ThreadUtils",
+            "filePath": "src/main/java/org/apache/commons/lang3/ThreadUtils.java",
+            "startLine": 30,
+            "endLine": 584,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.ThreadUtilsTest",
+            "type": "Method",
+            "name": "testThreadsNullPredicate",
+            "filePath": "src/test/java/org/apache/commons/lang3/ThreadUtilsTest.java",
+            "startLine": 362,
+            "endLine": 365,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.ThreadUtilsTest",
+            "type": "Method",
+            "name": "testThreadsNullPredicate",
+            "filePath": "src/test/java/org/apache/commons/lang3/ThreadUtilsTest.java",
+            "startLine": 368,
+            "endLine": 373,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.ThreadUtilsTest",
+            "type": "Class",
+            "name": "ThreadUtilsTest",
+            "filePath": "src/test/java/org/apache/commons/lang3/ThreadUtilsTest.java",
+            "startLine": 39,
+            "endLine": 383,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.ThreadUtilsTest",
+            "type": "Class",
+            "name": "ThreadUtilsTest",
+            "filePath": "src/test/java/org/apache/commons/lang3/ThreadUtilsTest.java",
+            "startLine": 42,
+            "endLine": 391,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.ThreadUtilsTest",
+            "type": "Method",
+            "name": "testThreadgroupsNullParent",
+            "filePath": "src/test/java/org/apache/commons/lang3/ThreadUtilsTest.java",
+            "startLine": 277,
+            "endLine": 280,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.ThreadUtilsTest",
+            "type": "Method",
+            "name": "testThreadGroupsNullParent",
+            "filePath": "src/test/java/org/apache/commons/lang3/ThreadUtilsTest.java",
+            "startLine": 280,
+            "endLine": 284,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [],
+      "baseline": [
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.ThreadUtilsTest",
+            "type": "Method",
+            "name": "testThreadgroupsNullPredicate",
+            "filePath": "src/test/java/org/apache/commons/lang3/ThreadUtilsTest.java",
+            "startLine": 282,
+            "endLine": 285,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.ThreadUtilsTest",
+            "type": "Method",
+            "name": "testThreadGroupsNullPredicate",
+            "filePath": "src/test/java/org/apache/commons/lang3/ThreadUtilsTest.java",
+            "startLine": 286,
+            "endLine": 291,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/commons-lang.git",
+      "sha1": "152b1777fddc5127e77f9b14637d6abae18eaf05",
+      "url": "https://github.com/apache/commons-lang/commit/152b1777fddc5127e77f9b14637d6abae18eaf05",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.stream.Streams",
+            "type": "Method",
+            "name": "failableStream",
+            "filePath": "src/main/java/org/apache/commons/lang3/stream/Streams.java",
+            "startLine": 492,
+            "endLine": 534,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.stream.Streams",
+            "type": "Method",
+            "name": "failableStream",
+            "filePath": "src/main/java/org/apache/commons/lang3/stream/Streams.java",
+            "startLine": 492,
+            "endLine": 534,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.stream.Streams",
+            "type": "Method",
+            "name": "filter",
+            "filePath": "src/main/java/org/apache/commons/lang3/stream/Streams.java",
+            "startLine": 580,
+            "endLine": 582,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.stream.Streams",
+            "type": "Method",
+            "name": "filter",
+            "filePath": "src/main/java/org/apache/commons/lang3/stream/Streams.java",
+            "startLine": 580,
+            "endLine": 582,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.stream.Streams",
+            "type": "Method",
+            "name": "instancesOf",
+            "filePath": "src/main/java/org/apache/commons/lang3/stream/Streams.java",
+            "startLine": 584,
+            "endLine": 601,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.stream.Streams",
+            "type": "Method",
+            "name": "instancesOf",
+            "filePath": "src/main/java/org/apache/commons/lang3/stream/Streams.java",
+            "startLine": 584,
+            "endLine": 601,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.stream.Streams",
+            "type": "Class",
+            "name": "Streams",
+            "filePath": "src/main/java/org/apache/commons/lang3/stream/Streams.java",
+            "startLine": 45,
+            "endLine": 757,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.stream.Streams",
+            "type": "Class",
+            "name": "Streams",
+            "filePath": "src/main/java/org/apache/commons/lang3/stream/Streams.java",
+            "startLine": 45,
+            "endLine": 757,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.stream.StreamsTest",
+            "type": "Class",
+            "name": "StreamsTest",
+            "filePath": "src/test/java/org/apache/commons/lang3/stream/StreamsTest.java",
+            "startLine": 48,
+            "endLine": 249,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.stream.StreamsTest",
+            "type": "Class",
+            "name": "StreamsTest",
+            "filePath": "src/test/java/org/apache/commons/lang3/stream/StreamsTest.java",
+            "startLine": 48,
+            "endLine": 249,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.stream.Streams",
+            "type": "Method",
+            "name": "toStream",
+            "filePath": "src/main/java/org/apache/commons/lang3/stream/Streams.java",
+            "startLine": 746,
+            "endLine": 756,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.stream.Streams",
+            "type": "Method",
+            "name": "of",
+            "filePath": "src/main/java/org/apache/commons/lang3/stream/Streams.java",
+            "startLine": 620,
+            "endLine": 630,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.stream.StreamsTest",
+            "type": "Method",
+            "name": "testToStreamNull",
+            "filePath": "src/test/java/org/apache/commons/lang3/stream/StreamsTest.java",
+            "startLine": 243,
+            "endLine": 247,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.stream.StreamsTest",
+            "type": "Method",
+            "name": "testOfCollectionNull",
+            "filePath": "src/test/java/org/apache/commons/lang3/stream/StreamsTest.java",
+            "startLine": 171,
+            "endLine": 175,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.stream.StreamsTest",
+            "type": "Method",
+            "name": "testToStreamNotNull",
+            "filePath": "src/test/java/org/apache/commons/lang3/stream/StreamsTest.java",
+            "startLine": 238,
+            "endLine": 241,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.stream.StreamsTest",
+            "type": "Method",
+            "name": "testOfCollectionNotNull",
+            "filePath": "src/test/java/org/apache/commons/lang3/stream/StreamsTest.java",
+            "startLine": 166,
+            "endLine": 169,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/apache/commons-lang.git",
+      "sha1": "2c16052f94e9e551bb68a8529b7f0c4e336237b0",
+      "url": "https://github.com/apache/commons-lang/commit/2c16052f94e9e551bb68a8529b7f0c4e336237b0",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.CharSet",
+            "type": "Method",
+            "name": "contains",
+            "filePath": "src/main/java/org/apache/commons/lang3/CharSet.java",
+            "startLine": 226,
+            "endLine": 242,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.CharSet",
+            "type": "Method",
+            "name": "contains",
+            "filePath": "src/main/java/org/apache/commons/lang3/CharSet.java",
+            "startLine": 226,
+            "endLine": 237,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.CharSet",
+            "type": "Class",
+            "name": "CharSet",
+            "filePath": "src/main/java/org/apache/commons/lang3/CharSet.java",
+            "startLine": 26,
+            "endLine": 289,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.CharSet",
+            "type": "Class",
+            "name": "CharSet",
+            "filePath": "src/main/java/org/apache/commons/lang3/CharSet.java",
+            "startLine": 26,
+            "endLine": 284,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.ClassUtils",
+            "type": "Method",
+            "name": "convertClassNamesToClasses",
+            "filePath": "src/main/java/org/apache/commons/lang3/ClassUtils.java",
+            "startLine": 195,
+            "endLine": 222,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.ClassUtils",
+            "type": "Method",
+            "name": "convertClassNamesToClasses",
+            "filePath": "src/main/java/org/apache/commons/lang3/ClassUtils.java",
+            "startLine": 189,
+            "endLine": 216,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.ClassUtils",
+            "type": "Class",
+            "name": "ClassUtils",
+            "filePath": "src/main/java/org/apache/commons/lang3/ClassUtils.java",
+            "startLine": 36,
+            "endLine": 1733,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.ClassUtils",
+            "type": "Class",
+            "name": "ClassUtils",
+            "filePath": "src/main/java/org/apache/commons/lang3/ClassUtils.java",
+            "startLine": 36,
+            "endLine": 1727,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.EnumUtils",
+            "type": "Method",
+            "name": "generateBitVectors",
+            "filePath": "src/main/java/org/apache/commons/lang3/EnumUtils.java",
+            "startLine": 158,
+            "endLine": 188,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.EnumUtils",
+            "type": "Method",
+            "name": "generateBitVectors",
+            "filePath": "src/main/java/org/apache/commons/lang3/EnumUtils.java",
+            "startLine": 158,
+            "endLine": 185,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.EnumUtils",
+            "type": "Class",
+            "name": "EnumUtils",
+            "filePath": "src/main/java/org/apache/commons/lang3/EnumUtils.java",
+            "startLine": 30,
+            "endLine": 440,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.EnumUtils",
+            "type": "Class",
+            "name": "EnumUtils",
+            "filePath": "src/main/java/org/apache/commons/lang3/EnumUtils.java",
+            "startLine": 30,
+            "endLine": 437,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.ThreadUtils",
+            "type": "Method",
+            "name": "findThreadsByName",
+            "filePath": "src/main/java/org/apache/commons/lang3/ThreadUtils.java",
+            "startLine": 342,
+            "endLine": 372,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.ThreadUtils",
+            "type": "Method",
+            "name": "findThreadsByName",
+            "filePath": "src/main/java/org/apache/commons/lang3/ThreadUtils.java",
+            "startLine": 342,
+            "endLine": 370,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.ThreadUtils",
+            "type": "Class",
+            "name": "ThreadUtils",
+            "filePath": "src/main/java/org/apache/commons/lang3/ThreadUtils.java",
+            "startLine": 27,
+            "endLine": 491,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.ThreadUtils",
+            "type": "Class",
+            "name": "ThreadUtils",
+            "filePath": "src/main/java/org/apache/commons/lang3/ThreadUtils.java",
+            "startLine": 27,
+            "endLine": 489,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.FieldUtils",
+            "type": "Method",
+            "name": "getFieldsListWithAnnotation",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/FieldUtils.java",
+            "startLine": 237,
+            "endLine": 258,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.FieldUtils",
+            "type": "Method",
+            "name": "getFieldsListWithAnnotation",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/FieldUtils.java",
+            "startLine": 238,
+            "endLine": 252,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.FieldUtils",
+            "type": "Class",
+            "name": "FieldUtils",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/FieldUtils.java",
+            "startLine": 33,
+            "endLine": 842,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.FieldUtils",
+            "type": "Class",
+            "name": "FieldUtils",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/FieldUtils.java",
+            "startLine": 34,
+            "endLine": 836,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.MethodUtils",
+            "type": "Method",
+            "name": "getMethodsListWithAnnotation",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/MethodUtils.java",
+            "startLine": 904,
+            "endLine": 932,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.MethodUtils",
+            "type": "Method",
+            "name": "getMethodsListWithAnnotation",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/MethodUtils.java",
+            "startLine": 904,
+            "endLine": 932,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.MethodUtils",
+            "type": "Class",
+            "name": "MethodUtils",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/MethodUtils.java",
+            "startLine": 45,
+            "endLine": 1019,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.MethodUtils",
+            "type": "Class",
+            "name": "MethodUtils",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/MethodUtils.java",
+            "startLine": 45,
+            "endLine": 1019,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.text.ExtendedMessageFormat",
+            "type": "Method",
+            "name": "containsElements",
+            "filePath": "src/main/java/org/apache/commons/lang3/text/ExtendedMessageFormat.java",
+            "startLine": 517,
+            "endLine": 532,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.text.ExtendedMessageFormat",
+            "type": "Method",
+            "name": "containsElements",
+            "filePath": "src/main/java/org/apache/commons/lang3/text/ExtendedMessageFormat.java",
+            "startLine": 517,
+            "endLine": 527,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.text.ExtendedMessageFormat",
+            "type": "Class",
+            "name": "ExtendedMessageFormat",
+            "filePath": "src/main/java/org/apache/commons/lang3/text/ExtendedMessageFormat.java",
+            "startLine": 32,
+            "endLine": 533,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.text.ExtendedMessageFormat",
+            "type": "Class",
+            "name": "ExtendedMessageFormat",
+            "filePath": "src/main/java/org/apache/commons/lang3/text/ExtendedMessageFormat.java",
+            "startLine": 32,
+            "endLine": 528,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.text.StrBuilder",
+            "type": "Method",
+            "name": "appendAll",
+            "filePath": "src/main/java/org/apache/commons/lang3/text/StrBuilder.java",
+            "startLine": 1214,
+            "endLine": 1230,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.text.StrBuilder",
+            "type": "Method",
+            "name": "appendAll",
+            "filePath": "src/main/java/org/apache/commons/lang3/text/StrBuilder.java",
+            "startLine": 1214,
+            "endLine": 1228,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.text.StrBuilder",
+            "type": "Method",
+            "name": "appendAll",
+            "filePath": "src/main/java/org/apache/commons/lang3/text/StrBuilder.java",
+            "startLine": 1232,
+            "endLine": 1248,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.text.StrBuilder",
+            "type": "Method",
+            "name": "appendAll",
+            "filePath": "src/main/java/org/apache/commons/lang3/text/StrBuilder.java",
+            "startLine": 1230,
+            "endLine": 1244,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.text.StrBuilder",
+            "type": "Class",
+            "name": "StrBuilder",
+            "filePath": "src/main/java/org/apache/commons/lang3/text/StrBuilder.java",
+            "startLine": 33,
+            "endLine": 3117,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.text.StrBuilder",
+            "type": "Class",
+            "name": "StrBuilder",
+            "filePath": "src/main/java/org/apache/commons/lang3/text/StrBuilder.java",
+            "startLine": 33,
+            "endLine": 3113,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.time.FastDateParser",
+            "type": "Method",
+            "name": "appendDisplayNames",
+            "filePath": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "startLine": 480,
+            "endLine": 504,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.time.FastDateParser",
+            "type": "Method",
+            "name": "appendDisplayNames",
+            "filePath": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "startLine": 480,
+            "endLine": 502,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.time.FastDateParser.TimeZoneStrategy",
+            "type": "Method",
+            "name": "TimeZoneStrategy",
+            "filePath": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "startLine": 907,
+            "endLine": 961,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.time.FastDateParser.TimeZoneStrategy",
+            "type": "Method",
+            "name": "TimeZoneStrategy",
+            "filePath": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "startLine": 905,
+            "endLine": 957,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.time.FastDateParser.TimeZoneStrategy",
+            "type": "Class",
+            "name": "TimeZoneStrategy",
+            "filePath": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "startLine": 882,
+            "endLine": 993,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.time.FastDateParser.TimeZoneStrategy",
+            "type": "Class",
+            "name": "TimeZoneStrategy",
+            "filePath": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "startLine": 880,
+            "endLine": 989,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.time.FastDateParser",
+            "type": "Class",
+            "name": "FastDateParser",
+            "filePath": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "startLine": 45,
+            "endLine": 1078,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.time.FastDateParser",
+            "type": "Class",
+            "name": "FastDateParser",
+            "filePath": "src/main/java/org/apache/commons/lang3/time/FastDateParser.java",
+            "startLine": 45,
+            "endLine": 1074,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.ClassUtils",
+            "type": "Initializer",
+            "name": "static block",
+            "filePath": "src/main/java/org/apache/commons/lang3/ClassUtils.java",
+            "startLine": 129,
+            "endLine": 137,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.ClassUtils",
+            "type": "Initializer",
+            "name": "static block",
+            "filePath": "src/main/java/org/apache/commons/lang3/ClassUtils.java",
+            "startLine": 129,
+            "endLine": 135,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.ClassUtils",
+            "type": "Initializer",
+            "name": "static block",
+            "filePath": "src/main/java/org/apache/commons/lang3/ClassUtils.java",
+            "startLine": 149,
+            "endLine": 166,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.ClassUtils",
+            "type": "Initializer",
+            "name": "static block",
+            "filePath": "src/main/java/org/apache/commons/lang3/ClassUtils.java",
+            "startLine": 95,
+            "endLine": 105,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.ClassUtils",
+            "type": "Initializer",
+            "name": "static block",
+            "filePath": "src/main/java/org/apache/commons/lang3/ClassUtils.java",
+            "startLine": 149,
+            "endLine": 166,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.ClassUtils",
+            "type": "Initializer",
+            "name": "static block",
+            "filePath": "src/main/java/org/apache/commons/lang3/ClassUtils.java",
+            "startLine": 147,
+            "endLine": 160,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/commons-lang.git",
+      "sha1": "3e66c1de179abff1c43efa9fba9fde20edf5ce63",
+      "url": "https://github.com/apache/commons-lang/commit/3e66c1de179abff1c43efa9fba9fde20edf5ce63",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.function.FailableFunctionsTest",
+            "type": "Class",
+            "name": "FailableFunctionsTest",
+            "filePath": "src/test/java/org/apache/commons/lang3/function/FailableFunctionsTest.java",
+            "startLine": 42,
+            "endLine": 2566,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.function.FailableFunctionsTest",
+            "type": "Class",
+            "name": "FailableFunctionsTest",
+            "filePath": "src/test/java/org/apache/commons/lang3/function/FailableFunctionsTest.java",
+            "startLine": 42,
+            "endLine": 2670,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.function.FailableIntToDoubleFunctionTest",
+            "type": "Method",
+            "name": "testNop",
+            "filePath": "src/test/java/org/apache/commons/lang3/function/FailableIntToDoubleFunctionTest.java",
+            "startLine": 28,
+            "endLine": 32,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.function.FailableFunctionsTest",
+            "type": "Method",
+            "name": "testFailableIntToDoubleFunctionNop",
+            "filePath": "src/test/java/org/apache/commons/lang3/function/FailableFunctionsTest.java",
+            "startLine": 2576,
+            "endLine": 2579,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.function.FailableIntToLongFunctionTest",
+            "type": "Method",
+            "name": "testNop",
+            "filePath": "src/test/java/org/apache/commons/lang3/function/FailableIntToLongFunctionTest.java",
+            "startLine": 28,
+            "endLine": 32,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.function.FailableFunctionsTest",
+            "type": "Method",
+            "name": "testFailableIntToLongFunctionNop",
+            "filePath": "src/test/java/org/apache/commons/lang3/function/FailableFunctionsTest.java",
+            "startLine": 2581,
+            "endLine": 2584,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.function.FailableLongToDoubleFunctionTest",
+            "type": "Method",
+            "name": "testNop",
+            "filePath": "src/test/java/org/apache/commons/lang3/function/FailableLongToDoubleFunctionTest.java",
+            "startLine": 28,
+            "endLine": 32,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.function.FailableFunctionsTest",
+            "type": "Method",
+            "name": "testFailableLongToDoubleFunctionNop",
+            "filePath": "src/test/java/org/apache/commons/lang3/function/FailableFunctionsTest.java",
+            "startLine": 2586,
+            "endLine": 2589,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.function.FailableLongToIntFunctionTest",
+            "type": "Method",
+            "name": "testNop",
+            "filePath": "src/test/java/org/apache/commons/lang3/function/FailableLongToIntFunctionTest.java",
+            "startLine": 28,
+            "endLine": 32,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.function.FailableFunctionsTest",
+            "type": "Method",
+            "name": "testFailableLongToIntFunctionNop",
+            "filePath": "src/test/java/org/apache/commons/lang3/function/FailableFunctionsTest.java",
+            "startLine": 2591,
+            "endLine": 2594,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.function.FailableDoubleFunctionTest",
+            "type": "Method",
+            "name": "testNop",
+            "filePath": "src/test/java/org/apache/commons/lang3/function/FailableDoubleFunctionTest.java",
+            "startLine": 28,
+            "endLine": 32,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.function.FailableFunctionsTest",
+            "type": "Method",
+            "name": "testFailableDoubleFunctionNop",
+            "filePath": "src/test/java/org/apache/commons/lang3/function/FailableFunctionsTest.java",
+            "startLine": 2631,
+            "endLine": 2634,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.function.FailableIntFunctionTest",
+            "type": "Method",
+            "name": "testNop",
+            "filePath": "src/test/java/org/apache/commons/lang3/function/FailableIntFunctionTest.java",
+            "startLine": 28,
+            "endLine": 32,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.function.FailableFunctionsTest",
+            "type": "Method",
+            "name": "testFailableIntFunctionNop",
+            "filePath": "src/test/java/org/apache/commons/lang3/function/FailableFunctionsTest.java",
+            "startLine": 2636,
+            "endLine": 2639,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.function.FailableLongFunctionTest",
+            "type": "Method",
+            "name": "testNop",
+            "filePath": "src/test/java/org/apache/commons/lang3/function/FailableLongFunctionTest.java",
+            "startLine": 28,
+            "endLine": 32,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.function.FailableFunctionsTest",
+            "type": "Method",
+            "name": "testFailableLongFunctionNop",
+            "filePath": "src/test/java/org/apache/commons/lang3/function/FailableFunctionsTest.java",
+            "startLine": 2641,
+            "endLine": 2644,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.function.FailableToLongFunctionTest",
+            "type": "Method",
+            "name": "testNop",
+            "filePath": "src/test/java/org/apache/commons/lang3/function/FailableToLongFunctionTest.java",
+            "startLine": 28,
+            "endLine": 32,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.function.FailableFunctionsTest",
+            "type": "Method",
+            "name": "testFailableToLongFunctionNop",
+            "filePath": "src/test/java/org/apache/commons/lang3/function/FailableFunctionsTest.java",
+            "startLine": 2606,
+            "endLine": 2609,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.function.FailableDoubleToIntFunctionTest",
+            "type": "Method",
+            "name": "testNop",
+            "filePath": "src/test/java/org/apache/commons/lang3/function/FailableDoubleToIntFunctionTest.java",
+            "startLine": 28,
+            "endLine": 32,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.function.FailableFunctionsTest",
+            "type": "Method",
+            "name": "testFailableDoubleToIntFunctionNop",
+            "filePath": "src/test/java/org/apache/commons/lang3/function/FailableFunctionsTest.java",
+            "startLine": 2566,
+            "endLine": 2569,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.function.FailableDoubleToLongFunctionTest",
+            "type": "Method",
+            "name": "testNop",
+            "filePath": "src/test/java/org/apache/commons/lang3/function/FailableDoubleToLongFunctionTest.java",
+            "startLine": 28,
+            "endLine": 32,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.function.FailableFunctionsTest",
+            "type": "Method",
+            "name": "testFailableDoubleToLongFunctionNop",
+            "filePath": "src/test/java/org/apache/commons/lang3/function/FailableFunctionsTest.java",
+            "startLine": 2571,
+            "endLine": 2574,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.function.FailableToDoubleFunctionTest",
+            "type": "Method",
+            "name": "testNop",
+            "filePath": "src/test/java/org/apache/commons/lang3/function/FailableToDoubleFunctionTest.java",
+            "startLine": 28,
+            "endLine": 32,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.function.FailableFunctionsTest",
+            "type": "Method",
+            "name": "testFailableToDoubleFunctionNop",
+            "filePath": "src/test/java/org/apache/commons/lang3/function/FailableFunctionsTest.java",
+            "startLine": 2616,
+            "endLine": 2619,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.function.FailableToIntFunctionTest",
+            "type": "Method",
+            "name": "testNop",
+            "filePath": "src/test/java/org/apache/commons/lang3/function/FailableToIntFunctionTest.java",
+            "startLine": 28,
+            "endLine": 32,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.function.FailableFunctionsTest",
+            "type": "Method",
+            "name": "testFailableToIntFunctionNop",
+            "filePath": "src/test/java/org/apache/commons/lang3/function/FailableFunctionsTest.java",
+            "startLine": 2596,
+            "endLine": 2599,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/apache/commons-lang.git",
+      "sha1": "25e91c4242283d118ba978d4f38cd18e10c890dc",
+      "url": "https://github.com/apache/commons-lang/commit/25e91c4242283d118ba978d4f38cd18e10c890dc",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.time.CalendarUtils",
+            "type": "Method",
+            "name": "CalendarUtils",
+            "filePath": "src/main/java/org/apache/commons/lang3/time/CalendarUtils.java",
+            "startLine": 37,
+            "endLine": 44,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.time.CalendarUtils",
+            "type": "Method",
+            "name": "CalendarUtils",
+            "filePath": "src/main/java/org/apache/commons/lang3/time/CalendarUtils.java",
+            "startLine": 52,
+            "endLine": 59,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.time.CalendarUtils",
+            "type": "Class",
+            "name": "CalendarUtils",
+            "filePath": "src/main/java/org/apache/commons/lang3/time/CalendarUtils.java",
+            "startLine": 23,
+            "endLine": 72,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.time.CalendarUtils",
+            "type": "Class",
+            "name": "CalendarUtils",
+            "filePath": "src/main/java/org/apache/commons/lang3/time/CalendarUtils.java",
+            "startLine": 25,
+            "endLine": 134,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.time.DateUtils",
+            "type": "Class",
+            "name": "DateUtils",
+            "filePath": "src/main/java/org/apache/commons/lang3/time/DateUtils.java",
+            "startLine": 33,
+            "endLine": 1871,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.time.DateUtils",
+            "type": "Class",
+            "name": "DateUtils",
+            "filePath": "src/main/java/org/apache/commons/lang3/time/DateUtils.java",
+            "startLine": 32,
+            "endLine": 1834,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.time.FastDatePrinter",
+            "type": "Method",
+            "name": "parsePattern",
+            "filePath": "src/main/java/org/apache/commons/lang3/time/FastDatePrinter.java",
+            "startLine": 177,
+            "endLine": 327,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.time.FastDatePrinter",
+            "type": "Method",
+            "name": "parsePattern",
+            "filePath": "src/main/java/org/apache/commons/lang3/time/FastDatePrinter.java",
+            "startLine": 177,
+            "endLine": 327,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.time.FastDatePrinter",
+            "type": "Class",
+            "name": "FastDatePrinter",
+            "filePath": "src/main/java/org/apache/commons/lang3/time/FastDatePrinter.java",
+            "startLine": 37,
+            "endLine": 1575,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.time.FastDatePrinter",
+            "type": "Class",
+            "name": "FastDatePrinter",
+            "filePath": "src/main/java/org/apache/commons/lang3/time/FastDatePrinter.java",
+            "startLine": 37,
+            "endLine": 1575,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.time.CalendarUtilsTest",
+            "type": "Class",
+            "name": "CalendarUtilsTest",
+            "filePath": "src/test/java/org/apache/commons/lang3/time/CalendarUtilsTest.java",
+            "startLine": 26,
+            "endLine": 43,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.time.CalendarUtilsTest",
+            "type": "Class",
+            "name": "CalendarUtilsTest",
+            "filePath": "src/test/java/org/apache/commons/lang3/time/CalendarUtilsTest.java",
+            "startLine": 27,
+            "endLine": 81,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.time.DateUtilsTest",
+            "type": "Class",
+            "name": "DateUtilsTest",
+            "filePath": "src/test/java/org/apache/commons/lang3/time/DateUtilsTest.java",
+            "startLine": 44,
+            "endLine": 1733,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.time.DateUtilsTest",
+            "type": "Class",
+            "name": "DateUtilsTest",
+            "filePath": "src/test/java/org/apache/commons/lang3/time/DateUtilsTest.java",
+            "startLine": 44,
+            "endLine": 1698,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.time.DateUtils",
+            "type": "Method",
+            "name": "getMonthNames",
+            "filePath": "src/main/java/org/apache/commons/lang3/time/DateUtils.java",
+            "startLine": 1853,
+            "endLine": 1869,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.time.CalendarUtils",
+            "type": "Method",
+            "name": "getMonthDisplayNames",
+            "filePath": "src/main/java/org/apache/commons/lang3/time/CalendarUtils.java",
+            "startLine": 89,
+            "endLine": 108,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.time.DateUtilsTest",
+            "type": "Method",
+            "name": "testGetStandaloneLongMonthNames",
+            "filePath": "src/test/java/org/apache/commons/lang3/time/DateUtilsTest.java",
+            "startLine": 1698,
+            "endLine": 1714,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.time.CalendarUtilsTest",
+            "type": "Method",
+            "name": "testGetStandaloneLongMonthNames",
+            "filePath": "src/test/java/org/apache/commons/lang3/time/CalendarUtilsTest.java",
+            "startLine": 39,
+            "endLine": 55,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.time.DateUtilsTest",
+            "type": "Method",
+            "name": "testGetStandaloneShortMonthNames",
+            "filePath": "src/test/java/org/apache/commons/lang3/time/DateUtilsTest.java",
+            "startLine": 1716,
+            "endLine": 1732,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.time.CalendarUtilsTest",
+            "type": "Method",
+            "name": "testGetStandaloneShortMonthNames",
+            "filePath": "src/test/java/org/apache/commons/lang3/time/CalendarUtilsTest.java",
+            "startLine": 57,
+            "endLine": 73,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.time.DateUtils",
+            "type": "Method",
+            "name": "getStandaloneShortMonths",
+            "filePath": "src/main/java/org/apache/commons/lang3/time/DateUtils.java",
+            "startLine": 1844,
+            "endLine": 1851,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.time.CalendarUtils",
+            "type": "Method",
+            "name": "getStandaloneShortMonthNames",
+            "filePath": "src/main/java/org/apache/commons/lang3/time/CalendarUtils.java",
+            "startLine": 118,
+            "endLine": 124,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.time.DateUtils",
+            "type": "Method",
+            "name": "getStandaloneLongMonths",
+            "filePath": "src/main/java/org/apache/commons/lang3/time/DateUtils.java",
+            "startLine": 1835,
+            "endLine": 1842,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.time.CalendarUtils",
+            "type": "Method",
+            "name": "getStandaloneLongMonthNames",
+            "filePath": "src/main/java/org/apache/commons/lang3/time/CalendarUtils.java",
+            "startLine": 110,
+            "endLine": 116,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/apache/commons-lang.git",
+      "sha1": "dc146cae667976aebbcd283af0d63431e2338692",
+      "url": "https://github.com/apache/commons-lang/commit/dc146cae667976aebbcd283af0d63431e2338692",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.StringUtilsTest",
+            "type": "Initializer",
+            "name": "static block",
+            "filePath": "src/test/java/org/apache/commons/lang3/StringUtilsTest.java",
+            "startLine": 63,
+            "endLine": 87,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.StringUtilsTest",
+            "type": "Initializer",
+            "name": "static block",
+            "filePath": "src/test/java/org/apache/commons/lang3/StringUtilsTest.java",
+            "startLine": 65,
+            "endLine": 89,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.StringUtilsTest",
+            "type": "Class",
+            "name": "StringUtilsTest",
+            "filePath": "src/test/java/org/apache/commons/lang3/StringUtilsTest.java",
+            "startLine": 50,
+            "endLine": 3378,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.StringUtilsTest",
+            "type": "Class",
+            "name": "StringUtilsTest",
+            "filePath": "src/test/java/org/apache/commons/lang3/StringUtilsTest.java",
+            "startLine": 52,
+            "endLine": 3396,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.StringUtilsTest",
+            "type": "Method",
+            "name": "testJoinWith",
+            "filePath": "src/test/java/org/apache/commons/lang3/StringUtilsTest.java",
+            "startLine": 1374,
+            "endLine": 1385,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.StringUtilsTest",
+            "type": "Method",
+            "name": "testJoinWith",
+            "filePath": "src/test/java/org/apache/commons/lang3/StringUtilsTest.java",
+            "startLine": 1391,
+            "endLine": 1403,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.StringUtilsTest",
+            "type": "Method",
+            "name": "testJoin_ArrayString",
+            "filePath": "src/test/java/org/apache/commons/lang3/StringUtilsTest.java",
+            "startLine": 1231,
+            "endLine": 1253,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.StringUtilsTest",
+            "type": "Method",
+            "name": "testJoin_ArrayString_EmptyDelimiter",
+            "filePath": "src/test/java/org/apache/commons/lang3/StringUtilsTest.java",
+            "startLine": 1233,
+            "endLine": 1245,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.StringUtilsTest",
+            "type": "Method",
+            "name": "testJoin_ArrayString",
+            "filePath": "src/test/java/org/apache/commons/lang3/StringUtilsTest.java",
+            "startLine": 1231,
+            "endLine": 1253,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.StringUtilsTest",
+            "type": "Method",
+            "name": "testJoin_ArrayString_NonEmptyDelimiter",
+            "filePath": "src/test/java/org/apache/commons/lang3/StringUtilsTest.java",
+            "startLine": 1247,
+            "endLine": 1261,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/commons-lang.git",
+      "sha1": "38533393ba9922cd2c98fb7fafcd4f9b108f978c",
+      "url": "https://github.com/apache/commons-lang/commit/38533393ba9922cd2c98fb7fafcd4f9b108f978c",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.FieldUtils",
+            "type": "Method",
+            "name": "getField",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/FieldUtils.java",
+            "startLine": 70,
+            "endLine": 136,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.FieldUtils",
+            "type": "Method",
+            "name": "getField",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/FieldUtils.java",
+            "startLine": 70,
+            "endLine": 136,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.FieldUtils",
+            "type": "Class",
+            "name": "FieldUtils",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/FieldUtils.java",
+            "startLine": 33,
+            "endLine": 844,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.FieldUtils",
+            "type": "Class",
+            "name": "FieldUtils",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/FieldUtils.java",
+            "startLine": 33,
+            "endLine": 844,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.MemberUtils",
+            "type": "Method",
+            "name": "setAccessibleWorkaround",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/MemberUtils.java",
+            "startLine": 42,
+            "endLine": 69,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.MemberUtils",
+            "type": "Method",
+            "name": "setAccessibleWorkaround",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/MemberUtils.java",
+            "startLine": 42,
+            "endLine": 69,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.MemberUtils",
+            "type": "Method",
+            "name": "isAccessible",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/MemberUtils.java",
+            "startLine": 89,
+            "endLine": 96,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.MemberUtils",
+            "type": "Method",
+            "name": "isAccessible",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/MemberUtils.java",
+            "startLine": 98,
+            "endLine": 105,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.MemberUtils",
+            "type": "Class",
+            "name": "MemberUtils",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/MemberUtils.java",
+            "startLine": 27,
+            "endLine": 329,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.MemberUtils",
+            "type": "Class",
+            "name": "MemberUtils",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/MemberUtils.java",
+            "startLine": 27,
+            "endLine": 338,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [],
+      "baseline": [
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.MemberUtils",
+            "type": "Method",
+            "name": "setAccessibleWorkaround",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/MemberUtils.java",
+            "startLine": 42,
+            "endLine": 69,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.reflect.MemberUtils",
+            "type": "Method",
+            "name": "isPublic",
+            "filePath": "src/main/java/org/apache/commons/lang3/reflect/MemberUtils.java",
+            "startLine": 80,
+            "endLine": 87,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/commons-lang.git",
+      "sha1": "34a85e74360f32dcfd7938e3a3c606a4869ca7e7",
+      "url": "https://github.com/apache/commons-lang/commit/34a85e74360f32dcfd7938e3a3c606a4869ca7e7",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.concurrent.UncheckedFutureImpl",
+            "type": "Method",
+            "name": "UncheckedFutureImpl",
+            "filePath": "src/main/java/org/apache/commons/lang3/concurrent/UncheckedFutureImpl.java",
+            "startLine": 38,
+            "endLine": 40,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.concurrent.UncheckedFutureImpl",
+            "type": "Method",
+            "name": "UncheckedFutureImpl",
+            "filePath": "src/main/java/org/apache/commons/lang3/concurrent/UncheckedFutureImpl.java",
+            "startLine": 35,
+            "endLine": 37,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.concurrent.UncheckedFutureImpl",
+            "type": "Method",
+            "name": "get",
+            "filePath": "src/main/java/org/apache/commons/lang3/concurrent/UncheckedFutureImpl.java",
+            "startLine": 47,
+            "endLine": 56,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.concurrent.UncheckedFutureImpl",
+            "type": "Method",
+            "name": "get",
+            "filePath": "src/main/java/org/apache/commons/lang3/concurrent/UncheckedFutureImpl.java",
+            "startLine": 39,
+            "endLine": 48,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.concurrent.UncheckedFutureImpl",
+            "type": "Method",
+            "name": "get",
+            "filePath": "src/main/java/org/apache/commons/lang3/concurrent/UncheckedFutureImpl.java",
+            "startLine": 58,
+            "endLine": 69,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.concurrent.UncheckedFutureImpl",
+            "type": "Method",
+            "name": "get",
+            "filePath": "src/main/java/org/apache/commons/lang3/concurrent/UncheckedFutureImpl.java",
+            "startLine": 50,
+            "endLine": 61,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.concurrent.UncheckedFutureImpl",
+            "type": "Class",
+            "name": "UncheckedFutureImpl",
+            "filePath": "src/main/java/org/apache/commons/lang3/concurrent/UncheckedFutureImpl.java",
+            "startLine": 28,
+            "endLine": 81,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.concurrent.UncheckedFutureImpl",
+            "type": "Class",
+            "name": "UncheckedFutureImpl",
+            "filePath": "src/main/java/org/apache/commons/lang3/concurrent/UncheckedFutureImpl.java",
+            "startLine": 27,
+            "endLine": 63,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.builder.ReflectionToStringBuilderConcurrencyTest",
+            "type": "Method",
+            "name": "testConcurrency",
+            "filePath": "src/test/java/org/apache/commons/lang3/builder/ReflectionToStringBuilderConcurrencyTest.java",
+            "startLine": 83,
+            "endLine": 119,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.builder.ReflectionToStringBuilderConcurrencyTest",
+            "type": "Method",
+            "name": "testConcurrency",
+            "filePath": "src/test/java/org/apache/commons/lang3/builder/ReflectionToStringBuilderConcurrencyTest.java",
+            "startLine": 84,
+            "endLine": 118,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.builder.ReflectionToStringBuilderConcurrencyTest",
+            "type": "Class",
+            "name": "ReflectionToStringBuilderConcurrencyTest",
+            "filePath": "src/test/java/org/apache/commons/lang3/builder/ReflectionToStringBuilderConcurrencyTest.java",
+            "startLine": 38,
+            "endLine": 120,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.builder.ReflectionToStringBuilderConcurrencyTest",
+            "type": "Class",
+            "name": "ReflectionToStringBuilderConcurrencyTest",
+            "filePath": "src/test/java/org/apache/commons/lang3/builder/ReflectionToStringBuilderConcurrencyTest.java",
+            "startLine": 39,
+            "endLine": 119,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.builder.ToStringStyleConcurrencyTest",
+            "type": "Method",
+            "name": "testConcurrency",
+            "filePath": "src/test/java/org/apache/commons/lang3/builder/ToStringStyleConcurrencyTest.java",
+            "startLine": 84,
+            "endLine": 111,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.builder.ToStringStyleConcurrencyTest",
+            "type": "Method",
+            "name": "testConcurrency",
+            "filePath": "src/test/java/org/apache/commons/lang3/builder/ToStringStyleConcurrencyTest.java",
+            "startLine": 85,
+            "endLine": 110,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.builder.ToStringStyleConcurrencyTest",
+            "type": "Class",
+            "name": "ToStringStyleConcurrencyTest",
+            "filePath": "src/test/java/org/apache/commons/lang3/builder/ToStringStyleConcurrencyTest.java",
+            "startLine": 34,
+            "endLine": 112,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.builder.ToStringStyleConcurrencyTest",
+            "type": "Class",
+            "name": "ToStringStyleConcurrencyTest",
+            "filePath": "src/test/java/org/apache/commons/lang3/builder/ToStringStyleConcurrencyTest.java",
+            "startLine": 35,
+            "endLine": 111,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.concurrent.UncheckedFutureTest.TestFuture",
+            "type": "Method",
+            "name": "TestFuture",
+            "filePath": "src/test/java/org/apache/commons/lang3/concurrent/UncheckedFutureTest.java",
+            "startLine": 44,
+            "endLine": 47,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.concurrent.UncheckedFutureTest.TestFuture",
+            "type": "Method",
+            "name": "TestFuture",
+            "filePath": "src/test/java/org/apache/commons/lang3/concurrent/UncheckedFutureTest.java",
+            "startLine": 43,
+            "endLine": 46,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.concurrent.UncheckedFutureTest.TestFuture",
+            "type": "Method",
+            "name": "TestFuture",
+            "filePath": "src/test/java/org/apache/commons/lang3/concurrent/UncheckedFutureTest.java",
+            "startLine": 49,
+            "endLine": 52,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.concurrent.UncheckedFutureTest.TestFuture",
+            "type": "Method",
+            "name": "TestFuture",
+            "filePath": "src/test/java/org/apache/commons/lang3/concurrent/UncheckedFutureTest.java",
+            "startLine": 48,
+            "endLine": 51,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.concurrent.UncheckedFutureTest.TestFuture",
+            "type": "Method",
+            "name": "get",
+            "filePath": "src/test/java/org/apache/commons/lang3/concurrent/UncheckedFutureTest.java",
+            "startLine": 66,
+            "endLine": 70,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.concurrent.UncheckedFutureTest.TestFuture",
+            "type": "Method",
+            "name": "get",
+            "filePath": "src/test/java/org/apache/commons/lang3/concurrent/UncheckedFutureTest.java",
+            "startLine": 60,
+            "endLine": 64,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.concurrent.UncheckedFutureTest.TestFuture",
+            "type": "Method",
+            "name": "get",
+            "filePath": "src/test/java/org/apache/commons/lang3/concurrent/UncheckedFutureTest.java",
+            "startLine": 72,
+            "endLine": 76,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.concurrent.UncheckedFutureTest.TestFuture",
+            "type": "Method",
+            "name": "get",
+            "filePath": "src/test/java/org/apache/commons/lang3/concurrent/UncheckedFutureTest.java",
+            "startLine": 66,
+            "endLine": 70,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.concurrent.UncheckedFutureTest.TestFuture",
+            "type": "Class",
+            "name": "TestFuture",
+            "filePath": "src/test/java/org/apache/commons/lang3/concurrent/UncheckedFutureTest.java",
+            "startLine": 39,
+            "endLine": 88,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.concurrent.UncheckedFutureTest.TestFuture",
+            "type": "Class",
+            "name": "TestFuture",
+            "filePath": "src/test/java/org/apache/commons/lang3/concurrent/UncheckedFutureTest.java",
+            "startLine": 39,
+            "endLine": 72,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.concurrent.UncheckedFutureTest",
+            "type": "Class",
+            "name": "UncheckedFutureTest",
+            "filePath": "src/test/java/org/apache/commons/lang3/concurrent/UncheckedFutureTest.java",
+            "startLine": 34,
+            "endLine": 132,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.concurrent.UncheckedFutureTest",
+            "type": "Class",
+            "name": "UncheckedFutureTest",
+            "filePath": "src/test/java/org/apache/commons/lang3/concurrent/UncheckedFutureTest.java",
+            "startLine": 34,
+            "endLine": 116,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.concurrent.UncheckedFutureTest.TestFuture",
+            "type": "Method",
+            "name": "checkExecutionException",
+            "filePath": "src/test/java/org/apache/commons/lang3/concurrent/UncheckedFutureTest.java",
+            "startLine": 59,
+            "endLine": 64,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.concurrent.UncheckedFutureTest.TestFuture",
+            "type": "Method",
+            "name": "checkException",
+            "filePath": "src/test/java/org/apache/commons/lang3/concurrent/UncheckedFutureTest.java",
+            "startLine": 53,
+            "endLine": 58,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.concurrent.UncheckedFutureImpl",
+            "type": "Field",
+            "name": "future",
+            "filePath": "src/main/java/org/apache/commons/lang3/concurrent/UncheckedFutureImpl.java",
+            "startLine": 36,
+            "endLine": 36,
+            "startColumn": 29,
+            "endColumn": 35
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.concurrent.AbstractFutureProxy",
+            "type": "Field",
+            "name": "future",
+            "filePath": "src/main/java/org/apache/commons/lang3/concurrent/AbstractFutureProxy.java",
+            "startLine": 33,
+            "endLine": 33,
+            "startColumn": 29,
+            "endColumn": 35
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.concurrent.UncheckedFutureImpl",
+            "type": "Method",
+            "name": "cancel",
+            "filePath": "src/main/java/org/apache/commons/lang3/concurrent/UncheckedFutureImpl.java",
+            "startLine": 42,
+            "endLine": 45,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.concurrent.AbstractFutureProxy",
+            "type": "Method",
+            "name": "cancel",
+            "filePath": "src/main/java/org/apache/commons/lang3/concurrent/AbstractFutureProxy.java",
+            "startLine": 44,
+            "endLine": 47,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.concurrent.UncheckedFutureImpl",
+            "type": "Method",
+            "name": "isCancelled",
+            "filePath": "src/main/java/org/apache/commons/lang3/concurrent/UncheckedFutureImpl.java",
+            "startLine": 71,
+            "endLine": 74,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.concurrent.AbstractFutureProxy",
+            "type": "Method",
+            "name": "isCancelled",
+            "filePath": "src/main/java/org/apache/commons/lang3/concurrent/AbstractFutureProxy.java",
+            "startLine": 68,
+            "endLine": 71,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.concurrent.UncheckedFutureImpl",
+            "type": "Method",
+            "name": "isDone",
+            "filePath": "src/main/java/org/apache/commons/lang3/concurrent/UncheckedFutureImpl.java",
+            "startLine": 76,
+            "endLine": 79,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.concurrent.AbstractFutureProxy",
+            "type": "Method",
+            "name": "isDone",
+            "filePath": "src/main/java/org/apache/commons/lang3/concurrent/AbstractFutureProxy.java",
+            "startLine": 73,
+            "endLine": 76,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [],
+      "baseline": [
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.concurrent.UncheckedFutureTest.TestFuture",
+            "type": "Method",
+            "name": "cancel",
+            "filePath": "src/test/java/org/apache/commons/lang3/concurrent/UncheckedFutureTest.java",
+            "startLine": 54,
+            "endLine": 57,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.concurrent.AbstractFutureProxy",
+            "type": "Method",
+            "name": "cancel",
+            "filePath": "src/main/java/org/apache/commons/lang3/concurrent/AbstractFutureProxy.java",
+            "startLine": 44,
+            "endLine": 47,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.concurrent.UncheckedFutureTest.TestFuture",
+            "type": "Method",
+            "name": "isCancelled",
+            "filePath": "src/test/java/org/apache/commons/lang3/concurrent/UncheckedFutureTest.java",
+            "startLine": 78,
+            "endLine": 81,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.concurrent.AbstractFutureProxy",
+            "type": "Method",
+            "name": "isCancelled",
+            "filePath": "src/main/java/org/apache/commons/lang3/concurrent/AbstractFutureProxy.java",
+            "startLine": 68,
+            "endLine": 71,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.concurrent.UncheckedFutureTest.TestFuture",
+            "type": "Method",
+            "name": "isDone",
+            "filePath": "src/test/java/org/apache/commons/lang3/concurrent/UncheckedFutureTest.java",
+            "startLine": 83,
+            "endLine": 86,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.concurrent.AbstractFutureProxy",
+            "type": "Method",
+            "name": "isDone",
+            "filePath": "src/main/java/org/apache/commons/lang3/concurrent/AbstractFutureProxy.java",
+            "startLine": 73,
+            "endLine": 76,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/commons-lang.git",
+      "sha1": "fe60dcfd42ed90f26acaeb09a4818b7b966fbe7b",
+      "url": "https://github.com/apache/commons-lang/commit/fe60dcfd42ed90f26acaeb09a4818b7b966fbe7b",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.StringUtils",
+            "type": "Method",
+            "name": "defaultString",
+            "filePath": "src/main/java/org/apache/commons/lang3/StringUtils.java",
+            "startLine": 1548,
+            "endLine": 1566,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.StringUtils",
+            "type": "Method",
+            "name": "defaultString",
+            "filePath": "src/main/java/org/apache/commons/lang3/StringUtils.java",
+            "startLine": 1548,
+            "endLine": 1566,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.StringUtils",
+            "type": "Class",
+            "name": "StringUtils",
+            "filePath": "src/main/java/org/apache/commons/lang3/StringUtils.java",
+            "startLine": 37,
+            "endLine": 9649,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.StringUtils",
+            "type": "Class",
+            "name": "StringUtils",
+            "filePath": "src/main/java/org/apache/commons/lang3/StringUtils.java",
+            "startLine": 37,
+            "endLine": 9651,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "container": "org.apache.commons.lang3.StringUtils",
+            "type": "Method",
+            "name": "defaultString",
+            "filePath": "src/main/java/org/apache/commons/lang3/StringUtils.java",
+            "startLine": 1568,
+            "endLine": 1587,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.commons.lang3.StringUtils",
+            "type": "Method",
+            "name": "defaultString",
+            "filePath": "src/main/java/org/apache/commons/lang3/StringUtils.java",
+            "startLine": 1568,
+            "endLine": 1589,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": []
+    }
+  ]
+}

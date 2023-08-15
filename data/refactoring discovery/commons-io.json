@@ -1,0 +1,4497 @@
+{
+  "results": [
+    {
+      "repository": "https://github.com/apache/commons-io.git",
+      "sha1": "b894d66cf07f8ab76f048779b8dcb91f7511f0ce",
+      "url": "https://github.com/apache/commons-io/commit/b894d66cf07f8ab76f048779b8dcb91f7511f0ce",
+      "ourApproach": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	temporaryFolder : File to temporaryFolder : Path in class org.apache.commons.io.FilenameUtilsTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FilenameUtilsTest.java",
+            "startLine": 50,
+            "endLine": 50,
+            "startColumn": 17,
+            "endColumn": 32
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FilenameUtilsTest.java",
+            "startLine": 52,
+            "endLine": 52,
+            "startColumn": 17,
+            "endColumn": 32
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	testFile1 : File to testFile1 : Path in class org.apache.commons.io.FilenameUtilsTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FilenameUtilsTest.java",
+            "startLine": 52,
+            "endLine": 52,
+            "startColumn": 18,
+            "endColumn": 27
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FilenameUtilsTest.java",
+            "startLine": 54,
+            "endLine": 54,
+            "startColumn": 18,
+            "endColumn": 27
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	testFile2 : File to testFile2 : Path in class org.apache.commons.io.FilenameUtilsTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FilenameUtilsTest.java",
+            "startLine": 53,
+            "endLine": 53,
+            "startColumn": 18,
+            "endColumn": 27
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FilenameUtilsTest.java",
+            "startLine": 55,
+            "endLine": 55,
+            "startColumn": 18,
+            "endColumn": 27
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	inputFile : File to inputFile : Path in class org.apache.commons.io.input.AbstractInputStreamTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/input/AbstractInputStreamTest.java",
+            "startLine": 44,
+            "endLine": 44,
+            "startColumn": 20,
+            "endColumn": 29
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/input/AbstractInputStreamTest.java",
+            "startLine": 43,
+            "endLine": 43,
+            "startColumn": 20,
+            "endColumn": 29
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	temporaryFolder : File to temporaryFolder : Path in class org.apache.commons.io.FilenameUtilsTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FilenameUtilsTest.java",
+            "startLine": 50,
+            "endLine": 50,
+            "startColumn": 17,
+            "endColumn": 32
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FilenameUtilsTest.java",
+            "startLine": 52,
+            "endLine": 52,
+            "startColumn": 17,
+            "endColumn": 32
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	testFile1 : File to testFile1 : Path in class org.apache.commons.io.FilenameUtilsTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FilenameUtilsTest.java",
+            "startLine": 52,
+            "endLine": 52,
+            "startColumn": 18,
+            "endColumn": 27
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FilenameUtilsTest.java",
+            "startLine": 54,
+            "endLine": 54,
+            "startColumn": 18,
+            "endColumn": 27
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	testFile2 : File to testFile2 : Path in class org.apache.commons.io.FilenameUtilsTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FilenameUtilsTest.java",
+            "startLine": 53,
+            "endLine": 53,
+            "startColumn": 18,
+            "endColumn": 27
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FilenameUtilsTest.java",
+            "startLine": 55,
+            "endLine": 55,
+            "startColumn": 18,
+            "endColumn": 27
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	inputFile : File to inputFile : Path in class org.apache.commons.io.input.AbstractInputStreamTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/input/AbstractInputStreamTest.java",
+            "startLine": 44,
+            "endLine": 44,
+            "startColumn": 20,
+            "endColumn": 29
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/input/AbstractInputStreamTest.java",
+            "startLine": 43,
+            "endLine": 43,
+            "startColumn": 20,
+            "endColumn": 29
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/commons-io.git",
+      "sha1": "a8c3027f993f5a9c9a82681a56fa6c1b1df4bcf3",
+      "url": "https://github.com/apache/commons-io/commit/a8c3027f993f5a9c9a82681a56fa6c1b1df4bcf3",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.apache.commons.io.ThreadUtils from Class org.apache.commons.io.ThreadMonitor",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/ThreadMonitor.java",
+            "startLine": 22,
+            "endLine": 132,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/ThreadUtils.java",
+            "startLine": 22,
+            "endLine": 53,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.apache.commons.io.ThreadUtils from class org.apache.commons.io.ThreadMonitor",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/ThreadMonitor.java",
+            "startLine": 22,
+            "endLine": 132,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/ThreadUtils.java",
+            "startLine": 22,
+            "endLine": 53,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/commons-io.git",
+      "sha1": "4ea91d20dfa730bf2ce2120f7bdfbe0384d0c29a",
+      "url": "https://github.com/apache/commons-io/commit/4ea91d20dfa730bf2ce2120f7bdfbe0384d0c29a",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package compareAndSetThrows(ref AtomicReference<T>, expected T, update T) : T renamed to package compareAndSetThrowsIO(ref AtomicReference<T>, expected T, update T) : T in class org.apache.commons.io.function.TestUtils",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/function/TestUtils.java",
+            "startLine": 29,
+            "endLine": 34,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/function/TestUtils.java",
+            "startLine": 29,
+            "endLine": 34,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package compareAndSetThrows(ref AtomicReference<T>, update T) : T renamed to package compareAndSetThrowsIO(ref AtomicReference<T>, update T) : T in class org.apache.commons.io.function.TestUtils",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/function/TestUtils.java",
+            "startLine": 25,
+            "endLine": 27,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/function/TestUtils.java",
+            "startLine": 25,
+            "endLine": 27,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	package throwIOException(message String) : T extracted from private throwIOException() : T in class org.apache.commons.io.function.TestConstants",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/function/TestConstants.java",
+            "startLine": 65,
+            "endLine": 67,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/function/TestConstants.java",
+            "startLine": 69,
+            "endLine": 71,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	package throwIOException(message String) : T extracted from private throwIOException() : T in class org.apache.commons.io.function.TestConstants",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/function/TestConstants.java",
+            "startLine": 65,
+            "endLine": 67,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/function/TestConstants.java",
+            "startLine": 69,
+            "endLine": 71,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package compareAndSetThrows(ref AtomicReference<T>, update T) : T renamed to package compareAndSetThrowsIO(ref AtomicReference<T>, update T) : T in class org.apache.commons.io.function.TestUtils",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/function/TestUtils.java",
+            "startLine": 25,
+            "endLine": 27,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/function/TestUtils.java",
+            "startLine": 25,
+            "endLine": 27,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package compareAndSetThrows(ref AtomicReference<T>, expected T, update T) : T renamed to package compareAndSetThrowsIO(ref AtomicReference<T>, expected T, update T) : T in class org.apache.commons.io.function.TestUtils",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/function/TestUtils.java",
+            "startLine": 29,
+            "endLine": 34,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/function/TestUtils.java",
+            "startLine": 29,
+            "endLine": 34,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/commons-io.git",
+      "sha1": "153a91c1271f4a07d56230670253e94c5ed94683",
+      "url": "https://github.com/apache/commons-io/commit/153a91c1271f4a07d56230670253e94c5ed94683",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private size(causeList List<? extends Throwable>) : int extracted from private isEmpty(causeList List<? extends Throwable>) : boolean in class org.apache.commons.io.IOExceptionList",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/IOExceptionList.java",
+            "startLine": 53,
+            "endLine": 55,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/IOExceptionList.java",
+            "startLine": 57,
+            "endLine": 59,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private size(causeList List<? extends Throwable>) : int extracted from private toMessage(causeList List<? extends Throwable>) : String in class org.apache.commons.io.IOExceptionList",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/IOExceptionList.java",
+            "startLine": 57,
+            "endLine": 59,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/IOExceptionList.java",
+            "startLine": 57,
+            "endLine": 59,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private size(causeList List<? extends Throwable>) : int extracted from private isEmpty(causeList List<? extends Throwable>) : boolean in class org.apache.commons.io.IOExceptionList",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/IOExceptionList.java",
+            "startLine": 53,
+            "endLine": 55,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/IOExceptionList.java",
+            "startLine": 57,
+            "endLine": 59,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/commons-io.git",
+      "sha1": "83ac402ffefbee8adf33843e81c4cd5bda35b410",
+      "url": "https://github.com/apache/commons-io/commit/83ac402ffefbee8adf33843e81c4cd5bda35b410",
+      "ourApproach": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.apache.commons.io.Uncheck moved to org.apache.commons.io.function.Uncheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/Uncheck.java",
+            "startLine": 34,
+            "endLine": 244,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/function/Uncheck.java",
+            "startLine": 23,
+            "endLine": 233,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.apache.commons.io.Uncheck moved to org.apache.commons.io.function.Uncheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/Uncheck.java",
+            "startLine": 34,
+            "endLine": 244,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/function/Uncheck.java",
+            "startLine": 23,
+            "endLine": 233,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/commons-io.git",
+      "sha1": "7b003afc65109c26da0f31e24d03841556ebc6d0",
+      "url": "https://github.com/apache/commons-io/commit/7b003afc65109c26da0f31e24d03841556ebc6d0",
+      "ourApproach": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.DemuxTest renamed to org.apache.commons.io.DemuxInputStreamTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/DemuxTest.java",
+            "startLine": 35,
+            "endLine": 198,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/DemuxInputStreamTest.java",
+            "startLine": 35,
+            "endLine": 198,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.DemuxTest renamed to org.apache.commons.io.DemuxInputStreamTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/DemuxTest.java",
+            "startLine": 35,
+            "endLine": 198,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/DemuxInputStreamTest.java",
+            "startLine": 35,
+            "endLine": 198,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/commons-io.git",
+      "sha1": "b375ca51cb40db2f4254c8c6e4a9f7cfab468da2",
+      "url": "https://github.com/apache/commons-io/commit/b375ca51cb40db2f4254c8c6e4a9f7cfab468da2",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private toCopyOption(copyOptions CopyOption...) : CopyOption[] extracted from public CopyDirectoryVisitor(pathCounter PathCounters, sourceDirectory Path, targetDirectory Path, copyOptions CopyOption...) in class org.apache.commons.io.file.CopyDirectoryVisitor",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/file/CopyDirectoryVisitor.java",
+            "startLine": 43,
+            "endLine": 56,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/file/CopyDirectoryVisitor.java",
+            "startLine": 39,
+            "endLine": 41,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private toCopyOption(copyOptions CopyOption...) : CopyOption[] extracted from public CopyDirectoryVisitor(pathCounter PathCounters, fileFilter PathFilter, dirFilter PathFilter, sourceDirectory Path, targetDirectory Path, copyOptions CopyOption...) in class org.apache.commons.io.file.CopyDirectoryVisitor",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/file/CopyDirectoryVisitor.java",
+            "startLine": 58,
+            "endLine": 75,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/file/CopyDirectoryVisitor.java",
+            "startLine": 39,
+            "endLine": 41,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private toCopyOption(copyOptions CopyOption...) : CopyOption[] extracted from public CopyDirectoryVisitor(pathCounter PathCounters, sourceDirectory Path, targetDirectory Path, copyOptions CopyOption...) in class org.apache.commons.io.file.CopyDirectoryVisitor",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/file/CopyDirectoryVisitor.java",
+            "startLine": 43,
+            "endLine": 56,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/file/CopyDirectoryVisitor.java",
+            "startLine": 39,
+            "endLine": 41,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private toCopyOption(copyOptions CopyOption...) : CopyOption[] extracted from public CopyDirectoryVisitor(pathCounter PathCounters, fileFilter PathFilter, dirFilter PathFilter, sourceDirectory Path, targetDirectory Path, copyOptions CopyOption...) in class org.apache.commons.io.file.CopyDirectoryVisitor",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/file/CopyDirectoryVisitor.java",
+            "startLine": 58,
+            "endLine": 75,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/file/CopyDirectoryVisitor.java",
+            "startLine": 39,
+            "endLine": 41,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/commons-io.git",
+      "sha1": "daa26885ffec2671fc6211f633d912d3174bef19",
+      "url": "https://github.com/apache/commons-io/commit/daa26885ffec2671fc6211f633d912d3174bef19",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private emptyArray() : Comparator<File>[] extracted from public CompositeFileComparator(delegates Comparator<File>...) in class org.apache.commons.io.comparator.CompositeFileComparator",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/comparator/CompositeFileComparator.java",
+            "startLine": 50,
+            "endLine": 62,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/comparator/CompositeFileComparator.java",
+            "startLine": 79,
+            "endLine": 82,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private emptyArray() : Comparator<File>[] extracted from public CompositeFileComparator(delegates Iterable<Comparator<File>>) in class org.apache.commons.io.comparator.CompositeFileComparator",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/comparator/CompositeFileComparator.java",
+            "startLine": 64,
+            "endLine": 76,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/comparator/CompositeFileComparator.java",
+            "startLine": 79,
+            "endLine": 82,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private emptyArray() : Comparator<File>[] extracted from public CompositeFileComparator(delegates Comparator<File>...) in class org.apache.commons.io.comparator.CompositeFileComparator",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/comparator/CompositeFileComparator.java",
+            "startLine": 50,
+            "endLine": 62,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/comparator/CompositeFileComparator.java",
+            "startLine": 79,
+            "endLine": 82,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private emptyArray() : Comparator<File>[] extracted from public CompositeFileComparator(delegates Iterable<Comparator<File>>) in class org.apache.commons.io.comparator.CompositeFileComparator",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/comparator/CompositeFileComparator.java",
+            "startLine": 64,
+            "endLine": 76,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/comparator/CompositeFileComparator.java",
+            "startLine": 79,
+            "endLine": 82,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/commons-io.git",
+      "sha1": "63771b3f142c2ac42aca8b864d3df03aa2a46b94",
+      "url": "https://github.com/apache/commons-io/commit/63771b3f142c2ac42aca8b864d3df03aa2a46b94",
+      "ourApproach": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	void to FilterCollectionWriter in method private forAllWriters(action IOConsumer<Writer>) : FilterCollectionWriter from class org.apache.commons.io.output.FilterCollectionWriter",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/output/FilterCollectionWriter.java",
+            "startLine": 119,
+            "endLine": 121,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/output/FilterCollectionWriter.java",
+            "startLine": 107,
+            "endLine": 110,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	void to FilterCollectionWriter in method private forAllWriters(action IOConsumer<Writer>) : FilterCollectionWriter from class org.apache.commons.io.output.FilterCollectionWriter",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/output/FilterCollectionWriter.java",
+            "startLine": 119,
+            "endLine": 121,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/output/FilterCollectionWriter.java",
+            "startLine": 107,
+            "endLine": 110,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/commons-io.git",
+      "sha1": "c8dcd5e9c64b0cbd98b4028e0529d7af2ac81a83",
+      "url": "https://github.com/apache/commons-io/commit/c8dcd5e9c64b0cbd98b4028e0529d7af2ac81a83",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private getNanosOfMiili(duration Duration) : int renamed to private getNanosOfMilli(duration Duration) : int in class org.apache.commons.io.ThreadMonitor",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/ThreadMonitor.java",
+            "startLine": 44,
+            "endLine": 46,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/ThreadMonitor.java",
+            "startLine": 44,
+            "endLine": 46,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	iofilesFilter : IOFileFilter to ioFilesFilter : IOFileFilter in class org.apache.commons.io.DirectoryWalkerTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/DirectoryWalkerTest.java",
+            "startLine": 252,
+            "endLine": 252,
+            "startColumn": 39,
+            "endColumn": 84
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/DirectoryWalkerTest.java",
+            "startLine": 252,
+            "endLine": 252,
+            "startColumn": 39,
+            "endColumn": 80
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	iofilesFilter : IOFileFilter to ioFilesFilter : IOFileFilter in class org.apache.commons.io.DirectoryWalkerTestCaseJava4",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/DirectoryWalkerTestCaseJava4.java",
+            "startLine": 250,
+            "endLine": 250,
+            "startColumn": 39,
+            "endColumn": 80
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/DirectoryWalkerTestCaseJava4.java",
+            "startLine": 250,
+            "endLine": 250,
+            "startColumn": 39,
+            "endColumn": 80
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public resetThrowsExceptionWhenUnderylingDoesNotSupport() : void renamed to public resetThrowsExceptionWhenUnderlyingDoesNotSupport() : void in class org.apache.commons.io.input.MarkShieldInputStreamTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/input/MarkShieldInputStreamTest.java",
+            "startLine": 99,
+            "endLine": 106,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/input/MarkShieldInputStreamTest.java",
+            "startLine": 99,
+            "endLine": 106,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public resetThrowsExceptionWhenUnderylingSupports() : void renamed to public resetThrowsExceptionWhenUnderlyingSupports() : void in class org.apache.commons.io.input.MarkShieldInputStreamTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/input/MarkShieldInputStreamTest.java",
+            "startLine": 108,
+            "endLine": 115,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/input/MarkShieldInputStreamTest.java",
+            "startLine": 108,
+            "endLine": 115,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testStrinConstructorStringCharset() : void renamed to public testStringConstructorStringCharset() : void in class org.apache.commons.io.input.StringInputStreamTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/input/StringInputStreamTest.java",
+            "startLine": 41,
+            "endLine": 46,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/input/StringInputStreamTest.java",
+            "startLine": 41,
+            "endLine": 46,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testStrinConstructorString() : void renamed to public testStringConstructorString() : void in class org.apache.commons.io.input.StringInputStreamTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/input/StringInputStreamTest.java",
+            "startLine": 34,
+            "endLine": 39,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/input/StringInputStreamTest.java",
+            "startLine": 34,
+            "endLine": 39,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public linuxLinefeeds() : void renamed to public linuxLineFeeds() : void in class org.apache.commons.io.input.WindowsLineEndingInputStreamTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/input/WindowsLineEndingInputStreamTest.java",
+            "startLine": 32,
+            "endLine": 36,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/input/WindowsLineEndingInputStreamTest.java",
+            "startLine": 32,
+            "endLine": 36,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public negative_chunksize_not_permitted() : void renamed to public negative_chunkSize_not_permitted() : void in class org.apache.commons.io.output.ChunkedOutputStreamTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/output/ChunkedOutputStreamTest.java",
+            "startLine": 42,
+            "endLine": 45,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/output/ChunkedOutputStreamTest.java",
+            "startLine": 42,
+            "endLine": 45,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public negative_chunksize_not_permitted() : void renamed to public negative_chunkSize_not_permitted() : void in class org.apache.commons.io.output.ChunkedWriterTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/output/ChunkedWriterTest.java",
+            "startLine": 40,
+            "endLine": 44,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/output/ChunkedWriterTest.java",
+            "startLine": 40,
+            "endLine": 44,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private getNanosOfMiili(duration Duration) : int renamed to private getNanosOfMilli(duration Duration) : int in class org.apache.commons.io.ThreadMonitor",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/ThreadMonitor.java",
+            "startLine": 44,
+            "endLine": 46,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/ThreadMonitor.java",
+            "startLine": 44,
+            "endLine": 46,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	iofilesFilter : IOFileFilter to ioFilesFilter : IOFileFilter in class org.apache.commons.io.DirectoryWalkerTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/DirectoryWalkerTest.java",
+            "startLine": 252,
+            "endLine": 252,
+            "startColumn": 39,
+            "endColumn": 84
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/DirectoryWalkerTest.java",
+            "startLine": 252,
+            "endLine": 252,
+            "startColumn": 39,
+            "endColumn": 80
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	iofilesFilter : IOFileFilter to ioFilesFilter : IOFileFilter in class org.apache.commons.io.DirectoryWalkerTestCaseJava4",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/DirectoryWalkerTestCaseJava4.java",
+            "startLine": 250,
+            "endLine": 250,
+            "startColumn": 39,
+            "endColumn": 80
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/DirectoryWalkerTestCaseJava4.java",
+            "startLine": 250,
+            "endLine": 250,
+            "startColumn": 39,
+            "endColumn": 80
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public resetThrowsExceptionWhenUnderylingDoesNotSupport() : void renamed to public resetThrowsExceptionWhenUnderlyingDoesNotSupport() : void in class org.apache.commons.io.input.MarkShieldInputStreamTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/input/MarkShieldInputStreamTest.java",
+            "startLine": 99,
+            "endLine": 106,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/input/MarkShieldInputStreamTest.java",
+            "startLine": 99,
+            "endLine": 106,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public resetThrowsExceptionWhenUnderylingSupports() : void renamed to public resetThrowsExceptionWhenUnderlyingSupports() : void in class org.apache.commons.io.input.MarkShieldInputStreamTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/input/MarkShieldInputStreamTest.java",
+            "startLine": 108,
+            "endLine": 115,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/input/MarkShieldInputStreamTest.java",
+            "startLine": 108,
+            "endLine": 115,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testStrinConstructorString() : void renamed to public testStringConstructorString() : void in class org.apache.commons.io.input.StringInputStreamTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/input/StringInputStreamTest.java",
+            "startLine": 34,
+            "endLine": 39,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/input/StringInputStreamTest.java",
+            "startLine": 34,
+            "endLine": 39,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testStrinConstructorStringCharset() : void renamed to public testStringConstructorStringCharset() : void in class org.apache.commons.io.input.StringInputStreamTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/input/StringInputStreamTest.java",
+            "startLine": 41,
+            "endLine": 46,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/input/StringInputStreamTest.java",
+            "startLine": 41,
+            "endLine": 46,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public linuxLinefeeds() : void renamed to public linuxLineFeeds() : void in class org.apache.commons.io.input.WindowsLineEndingInputStreamTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/input/WindowsLineEndingInputStreamTest.java",
+            "startLine": 32,
+            "endLine": 36,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/input/WindowsLineEndingInputStreamTest.java",
+            "startLine": 32,
+            "endLine": 36,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public negative_chunksize_not_permitted() : void renamed to public negative_chunkSize_not_permitted() : void in class org.apache.commons.io.output.ChunkedOutputStreamTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/output/ChunkedOutputStreamTest.java",
+            "startLine": 42,
+            "endLine": 45,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/output/ChunkedOutputStreamTest.java",
+            "startLine": 42,
+            "endLine": 45,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public negative_chunksize_not_permitted() : void renamed to public negative_chunkSize_not_permitted() : void in class org.apache.commons.io.output.ChunkedWriterTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/output/ChunkedWriterTest.java",
+            "startLine": 40,
+            "endLine": 44,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/output/ChunkedWriterTest.java",
+            "startLine": 40,
+            "endLine": 44,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/commons-io.git",
+      "sha1": "6cf14df952b17b26dc7c86f2b6f38138998d88eb",
+      "url": "https://github.com/apache/commons-io/commit/6cf14df952b17b26dc7c86f2b6f38138998d88eb",
+      "ourApproach": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	lastModified : FileTime to lastModified : SerializableFileTime in class org.apache.commons.io.monitor.FileEntry",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/monitor/FileEntry.java",
+            "startLine": 62,
+            "endLine": 62,
+            "startColumn": 22,
+            "endColumn": 52
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/monitor/FileEntry.java",
+            "startLine": 62,
+            "endLine": 62,
+            "startColumn": 34,
+            "endColumn": 75
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	package setLastModified(lastModified SerializableFileTime) : void extracted from public setLastModified(lastModified FileTime) : void in class org.apache.commons.io.monitor.FileEntry",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/monitor/FileEntry.java",
+            "startLine": 262,
+            "endLine": 270,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/monitor/FileEntry.java",
+            "startLine": 272,
+            "endLine": 274,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	lastModified : FileTime to lastModified : SerializableFileTime in class org.apache.commons.io.monitor.FileEntry",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/monitor/FileEntry.java",
+            "startLine": 62,
+            "endLine": 62,
+            "startColumn": 22,
+            "endColumn": 52
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/monitor/FileEntry.java",
+            "startLine": 62,
+            "endLine": 62,
+            "startColumn": 34,
+            "endColumn": 75
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	package setLastModified(lastModified SerializableFileTime) : void extracted from public refresh(file File) : boolean in class org.apache.commons.io.monitor.FileEntry",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/monitor/FileEntry.java",
+            "startLine": 195,
+            "endLine": 232,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/monitor/FileEntry.java",
+            "startLine": 272,
+            "endLine": 274,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	package setLastModified(lastModified SerializableFileTime) : void extracted from public setLastModified(lastModified FileTime) : void in class org.apache.commons.io.monitor.FileEntry",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/monitor/FileEntry.java",
+            "startLine": 262,
+            "endLine": 270,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/monitor/FileEntry.java",
+            "startLine": 272,
+            "endLine": 274,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	package setLastModified(lastModified SerializableFileTime) : void extracted from public setLastModified(lastModified long) : void in class org.apache.commons.io.monitor.FileEntry",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/monitor/FileEntry.java",
+            "startLine": 272,
+            "endLine": 280,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/monitor/FileEntry.java",
+            "startLine": 272,
+            "endLine": 274,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/commons-io.git",
+      "sha1": "9a2571827af7fc47565a716fada2807d20d4524d",
+      "url": "https://github.com/apache/commons-io/commit/9a2571827af7fc47565a716fada2807d20d4524d",
+      "ourApproach": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	xmlPrologWriter : StringWriter to prologWriter : StringWriter in class org.apache.commons.io.output.XmlStreamWriter",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/output/XmlStreamWriter.java",
+            "startLine": 48,
+            "endLine": 48,
+            "startColumn": 26,
+            "endColumn": 73
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/output/XmlStreamWriter.java",
+            "startLine": 52,
+            "endLine": 52,
+            "startColumn": 26,
+            "endColumn": 70
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	encoding : String to charset : Charset in class org.apache.commons.io.output.XmlStreamWriter",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/output/XmlStreamWriter.java",
+            "startLine": 52,
+            "endLine": 52,
+            "startColumn": 20,
+            "endColumn": 28
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/output/XmlStreamWriter.java",
+            "startLine": 56,
+            "endLine": 56,
+            "startColumn": 21,
+            "endColumn": 28
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	encoding : String to charset : Charset in class org.apache.commons.io.output.XmlStreamWriter",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/output/XmlStreamWriter.java",
+            "startLine": 52,
+            "endLine": 52,
+            "startColumn": 20,
+            "endColumn": 28
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/output/XmlStreamWriter.java",
+            "startLine": 56,
+            "endLine": 56,
+            "startColumn": 21,
+            "endColumn": 28
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	defaultEncoding : String to defaultCharset : Charset in class org.apache.commons.io.output.XmlStreamWriter",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/output/XmlStreamWriter.java",
+            "startLine": 46,
+            "endLine": 46,
+            "startColumn": 26,
+            "endColumn": 41
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/output/XmlStreamWriter.java",
+            "startLine": 50,
+            "endLine": 50,
+            "startColumn": 27,
+            "endColumn": 41
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	defaultEncoding : String to defaultCharset : Charset in class org.apache.commons.io.output.XmlStreamWriter",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/output/XmlStreamWriter.java",
+            "startLine": 46,
+            "endLine": 46,
+            "startColumn": 26,
+            "endColumn": 41
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/output/XmlStreamWriter.java",
+            "startLine": 50,
+            "endLine": 50,
+            "startColumn": 27,
+            "endColumn": 41
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	encoding : String to charset : Charset in class org.apache.commons.io.output.XmlStreamWriter",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/output/XmlStreamWriter.java",
+            "startLine": 52,
+            "endLine": 52,
+            "startColumn": 20,
+            "endColumn": 28
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/output/XmlStreamWriter.java",
+            "startLine": 56,
+            "endLine": 56,
+            "startColumn": 21,
+            "endColumn": 28
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	encoding : String to charset : Charset in class org.apache.commons.io.output.XmlStreamWriter",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/output/XmlStreamWriter.java",
+            "startLine": 52,
+            "endLine": 52,
+            "startColumn": 20,
+            "endColumn": 28
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/output/XmlStreamWriter.java",
+            "startLine": 56,
+            "endLine": 56,
+            "startColumn": 21,
+            "endColumn": 28
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	defaultEncoding : String to defaultCharset : Charset in class org.apache.commons.io.output.XmlStreamWriter",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/output/XmlStreamWriter.java",
+            "startLine": 46,
+            "endLine": 46,
+            "startColumn": 26,
+            "endColumn": 41
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/output/XmlStreamWriter.java",
+            "startLine": 50,
+            "endLine": 50,
+            "startColumn": 27,
+            "endColumn": 41
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	defaultEncoding : String to defaultCharset : Charset in class org.apache.commons.io.output.XmlStreamWriter",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/output/XmlStreamWriter.java",
+            "startLine": 46,
+            "endLine": 46,
+            "startColumn": 26,
+            "endColumn": 41
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/output/XmlStreamWriter.java",
+            "startLine": 50,
+            "endLine": 50,
+            "startColumn": 27,
+            "endColumn": 41
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	xmlPrologWriter : StringWriter to prologWriter : StringWriter in class org.apache.commons.io.output.XmlStreamWriter",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/output/XmlStreamWriter.java",
+            "startLine": 48,
+            "endLine": 48,
+            "startColumn": 26,
+            "endColumn": 73
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/output/XmlStreamWriter.java",
+            "startLine": 52,
+            "endLine": 52,
+            "startColumn": 26,
+            "endColumn": 70
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/commons-io.git",
+      "sha1": "4848ddde2f1e11bd83efa2ec624e1624a7191c4e",
+      "url": "https://github.com/apache/commons-io/commit/4848ddde2f1e11bd83efa2ec624e1624a7191c4e",
+      "ourApproach": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	FOLLOW_LINKS : LinkOption to NULL_LINK_OPTION : LinkOption in class org.apache.commons.io.file.PathUtils",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/file/PathUtils.java",
+            "startLine": 185,
+            "endLine": 185,
+            "startColumn": 36,
+            "endColumn": 55
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/file/PathUtils.java",
+            "startLine": 186,
+            "endLine": 186,
+            "startColumn": 29,
+            "endColumn": 52
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testWriteStringToFile1() : void renamed to public testWriteStringToFileWithCharset() : void in class org.apache.commons.io.FileUtilsTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileUtilsTest.java",
+            "startLine": 3048,
+            "endLine": 3054,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileUtilsTest.java",
+            "startLine": 3086,
+            "endLine": 3092,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testWriteStringToFile2() : void renamed to public testWriteStringToFileWithNullStringCharset() : void in class org.apache.commons.io.FileUtilsTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileUtilsTest.java",
+            "startLine": 3056,
+            "endLine": 3062,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileUtilsTest.java",
+            "startLine": 3127,
+            "endLine": 3133,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testWriteStringToFile3() : void renamed to public testWriteStringToFileWithNullCharset() : void in class org.apache.commons.io.FileUtilsTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileUtilsTest.java",
+            "startLine": 3064,
+            "endLine": 3070,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileUtilsTest.java",
+            "startLine": 3119,
+            "endLine": 3125,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testWriteStringToFile4() : void renamed to public testWriteStringToFileIntoNonExistentSubdir() : void in class org.apache.commons.io.FileUtilsTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileUtilsTest.java",
+            "startLine": 3072,
+            "endLine": 3078,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileUtilsTest.java",
+            "startLine": 3067,
+            "endLine": 3073,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	package newOutputStream(path Path, linkOptions LinkOption[], openOptions OpenOption...) : OutputStream extracted from public newOutputStream(path Path, append boolean) : OutputStream in class org.apache.commons.io.file.PathUtils",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/file/PathUtils.java",
+            "startLine": 1078,
+            "endLine": 1098,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/file/PathUtils.java",
+            "startLine": 1095,
+            "endLine": 1105,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testWriteStringToFile1() : void renamed to public testWriteStringToFileWithCharset() : void in class org.apache.commons.io.FileUtilsTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileUtilsTest.java",
+            "startLine": 3048,
+            "endLine": 3054,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileUtilsTest.java",
+            "startLine": 3086,
+            "endLine": 3092,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testWriteStringToFile2() : void renamed to public testWriteStringToFileWithNullStringCharset() : void in class org.apache.commons.io.FileUtilsTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileUtilsTest.java",
+            "startLine": 3056,
+            "endLine": 3062,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileUtilsTest.java",
+            "startLine": 3127,
+            "endLine": 3133,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testWriteStringToFile3() : void renamed to public testWriteStringToFileWithNullCharset() : void in class org.apache.commons.io.FileUtilsTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileUtilsTest.java",
+            "startLine": 3064,
+            "endLine": 3070,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileUtilsTest.java",
+            "startLine": 3119,
+            "endLine": 3125,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testWriteStringToFile4() : void renamed to public testWriteStringToFileIntoNonExistentSubdir() : void in class org.apache.commons.io.FileUtilsTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileUtilsTest.java",
+            "startLine": 3072,
+            "endLine": 3078,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileUtilsTest.java",
+            "startLine": 3067,
+            "endLine": 3073,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	FOLLOW_LINKS : LinkOption to NULL_LINK_OPTION : LinkOption in class org.apache.commons.io.file.PathUtils",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/file/PathUtils.java",
+            "startLine": 185,
+            "endLine": 185,
+            "startColumn": 36,
+            "endColumn": 55
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/file/PathUtils.java",
+            "startLine": 186,
+            "endLine": 186,
+            "startColumn": 29,
+            "endColumn": 52
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/commons-io.git",
+      "sha1": "b6a22186d8246d973c6dc9b7fd2aaa84f34cccbf",
+      "url": "https://github.com/apache/commons-io/commit/b6a22186d8246d973c6dc9b7fd2aaa84f34cccbf",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testNormalize_with_nullbytes() : void renamed to public testNormalize_with_null_character() : void in class org.apache.commons.io.FilenameUtilsTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FilenameUtilsTest.java",
+            "startLine": 957,
+            "endLine": 970,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FilenameUtilsTest.java",
+            "startLine": 957,
+            "endLine": 970,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testGetBaseName_with_nullByte() : void renamed to public testGetBaseName_with_null_character() : void in class org.apache.commons.io.FilenameUtilsTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FilenameUtilsTest.java",
+            "startLine": 231,
+            "endLine": 238,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FilenameUtilsTest.java",
+            "startLine": 231,
+            "endLine": 238,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testGetPathNoEndSeparator_with_null_byte() : void renamed to public testGetPathNoEndSeparator_with_null_character() : void in class org.apache.commons.io.FilenameUtilsTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FilenameUtilsTest.java",
+            "startLine": 463,
+            "endLine": 470,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FilenameUtilsTest.java",
+            "startLine": 463,
+            "endLine": 470,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testGetPrefix_with_nullbyte() : void renamed to public testGetPrefix_with_null_character() : void in class org.apache.commons.io.FilenameUtilsTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FilenameUtilsTest.java",
+            "startLine": 517,
+            "endLine": 524,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FilenameUtilsTest.java",
+            "startLine": 517,
+            "endLine": 524,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testGetPath_with_nullbyte() : void renamed to public testGetPath_with_null_character() : void in class org.apache.commons.io.FilenameUtilsTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FilenameUtilsTest.java",
+            "startLine": 421,
+            "endLine": 424,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FilenameUtilsTest.java",
+            "startLine": 421,
+            "endLine": 424,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testGetBaseName_with_nullByte() : void renamed to public testGetBaseName_with_null_character() : void in class org.apache.commons.io.FilenameUtilsTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FilenameUtilsTest.java",
+            "startLine": 231,
+            "endLine": 238,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FilenameUtilsTest.java",
+            "startLine": 231,
+            "endLine": 238,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testGetPath_with_nullbyte() : void renamed to public testGetPath_with_null_character() : void in class org.apache.commons.io.FilenameUtilsTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FilenameUtilsTest.java",
+            "startLine": 421,
+            "endLine": 424,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FilenameUtilsTest.java",
+            "startLine": 421,
+            "endLine": 424,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testGetPathNoEndSeparator_with_null_byte() : void renamed to public testGetPathNoEndSeparator_with_null_character() : void in class org.apache.commons.io.FilenameUtilsTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FilenameUtilsTest.java",
+            "startLine": 463,
+            "endLine": 470,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FilenameUtilsTest.java",
+            "startLine": 463,
+            "endLine": 470,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testGetPrefix_with_nullbyte() : void renamed to public testGetPrefix_with_null_character() : void in class org.apache.commons.io.FilenameUtilsTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FilenameUtilsTest.java",
+            "startLine": 517,
+            "endLine": 524,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FilenameUtilsTest.java",
+            "startLine": 517,
+            "endLine": 524,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testNormalize_with_nullbytes() : void renamed to public testNormalize_with_null_character() : void in class org.apache.commons.io.FilenameUtilsTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FilenameUtilsTest.java",
+            "startLine": 957,
+            "endLine": 970,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FilenameUtilsTest.java",
+            "startLine": 957,
+            "endLine": 970,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/commons-io.git",
+      "sha1": "975ccfcfb5b09450218dba2b08c8d150af11c202",
+      "url": "https://github.com/apache/commons-io/commit/975ccfcfb5b09450218dba2b08c8d150af11c202",
+      "ourApproach": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	boolean to void in method private setPosixReadOnlyFile(path Path, readOnly boolean, linkOptions LinkOption...) : void from class org.apache.commons.io.file.PathUtils",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/file/PathUtils.java",
+            "startLine": 1338,
+            "endLine": 1369,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/file/PathUtils.java",
+            "startLine": 1328,
+            "endLine": 1353,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	boolean to void in method private setPosixReadOnlyFile(path Path, readOnly boolean, linkOptions LinkOption...) : void from class org.apache.commons.io.file.PathUtils",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/file/PathUtils.java",
+            "startLine": 1338,
+            "endLine": 1369,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/file/PathUtils.java",
+            "startLine": 1328,
+            "endLine": 1353,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/commons-io.git",
+      "sha1": "d3b043a2ce926509fe4ed04160db7a73339a2964",
+      "url": "https://github.com/apache/commons-io/commit/d3b043a2ce926509fe4ed04160db7a73339a2964",
+      "ourApproach": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	List<Exception> to List<IOException> in method private add(causeList List<IOException>, i int, e IOException) : List<IOException> from class org.apache.commons.io.output.FilterCollectionWriter",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/output/FilterCollectionWriter.java",
+            "startLine": 76,
+            "endLine": 90,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/output/FilterCollectionWriter.java",
+            "startLine": 76,
+            "endLine": 90,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private isEmpty(causeList List<? extends Throwable>) : boolean extracted from public IOExceptionList(message String, causeList List<? extends Throwable>) in class org.apache.commons.io.IOExceptionList",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/IOExceptionList.java",
+            "startLine": 51,
+            "endLine": 61,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/IOExceptionList.java",
+            "startLine": 52,
+            "endLine": 54,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	List<Exception> to List<IOException> in method private add(causeList List<IOException>, i int, e IOException) : List<IOException> from class org.apache.commons.io.output.FilterCollectionWriter",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/output/FilterCollectionWriter.java",
+            "startLine": 76,
+            "endLine": 90,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/output/FilterCollectionWriter.java",
+            "startLine": 76,
+            "endLine": 90,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/commons-io.git",
+      "sha1": "c5dbd227697de296b2d9963a15328cf111dbe1d7",
+      "url": "https://github.com/apache/commons-io/commit/c5dbd227697de296b2d9963a15328cf111dbe1d7",
+      "ourApproach": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.ByteOrderMarkTestCase renamed to org.apache.commons.io.ByteOrderMarkTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/ByteOrderMarkTest.java",
+            "startLine": 31,
+            "endLine": 148,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/ByteOrderMarkTest.java",
+            "startLine": 31,
+            "endLine": 148,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.CharsetsTestCase renamed to org.apache.commons.io.CharsetsTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/CharsetsTest.java",
+            "startLine": 28,
+            "endLine": 86,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/CharsetsTest.java",
+            "startLine": 28,
+            "endLine": 86,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.DemuxTestCase renamed to org.apache.commons.io.DemuxTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/DemuxTest.java",
+            "startLine": 35,
+            "endLine": 206,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/DemuxTest.java",
+            "startLine": 35,
+            "endLine": 206,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.DirectoryWalkerTestCase renamed to org.apache.commons.io.DirectoryWalkerTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/DirectoryWalkerTest.java",
+            "startLine": 36,
+            "endLine": 568,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/DirectoryWalkerTest.java",
+            "startLine": 36,
+            "endLine": 568,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.FileCleanerTestCase renamed to org.apache.commons.io.FileCleanerTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileCleanerTest.java",
+            "startLine": 19,
+            "endLine": 30,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileCleanerTest.java",
+            "startLine": 19,
+            "endLine": 30,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.FileCleaningTrackerTestCase renamed to org.apache.commons.io.FileCleaningTrackerTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileCleaningTrackerTest.java",
+            "startLine": 41,
+            "endLine": 349,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileCleaningTrackerTest.java",
+            "startLine": 41,
+            "endLine": 349,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.FileDeleteStrategyTestCase renamed to org.apache.commons.io.FileDeleteStrategyTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileDeleteStrategyTest.java",
+            "startLine": 32,
+            "endLine": 155,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileDeleteStrategyTest.java",
+            "startLine": 32,
+            "endLine": 155,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.FileSystemTestCase renamed to org.apache.commons.io.FileSystemTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileSystemTest.java",
+            "startLine": 27,
+            "endLine": 116,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileSystemTest.java",
+            "startLine": 27,
+            "endLine": 116,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.FileSystemUtilsTestCase renamed to org.apache.commons.io.FileSystemUtilsTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileSystemUtilsTest.java",
+            "startLine": 36,
+            "endLine": 623,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileSystemUtilsTest.java",
+            "startLine": 36,
+            "endLine": 623,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.FileUtilsCleanDirectoryTestCase renamed to org.apache.commons.io.FileUtilsCleanDirectoryTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileUtilsCleanDirectoryTest.java",
+            "startLine": 35,
+            "endLine": 143,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileUtilsCleanDirectoryTest.java",
+            "startLine": 35,
+            "endLine": 143,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.FileUtilsCleanSymlinksTestCase renamed to org.apache.commons.io.FileUtilsCleanSymlinksTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileUtilsCleanSymlinksTest.java",
+            "startLine": 30,
+            "endLine": 262,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileUtilsCleanSymlinksTest.java",
+            "startLine": 30,
+            "endLine": 262,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.FileUtilsCopyDirectoryToDirectoryTestCase renamed to org.apache.commons.io.FileUtilsCopyDirectoryToDirectoryTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileUtilsCopyDirectoryToDirectoryTest.java",
+            "startLine": 33,
+            "endLine": 119,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileUtilsCopyDirectoryToDirectoryTest.java",
+            "startLine": 33,
+            "endLine": 119,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.FileUtilsCopyToFileTestCase renamed to org.apache.commons.io.FileUtilsCopyToFileTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileUtilsCopyToFileTest.java",
+            "startLine": 29,
+            "endLine": 100,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileUtilsCopyToFileTest.java",
+            "startLine": 29,
+            "endLine": 100,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.FileUtilsDeleteDirectoryBaseTestCase renamed to org.apache.commons.io.FileUtilsDeleteDirectoryBaseTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileUtilsDeleteDirectoryBaseTest.java",
+            "startLine": 29,
+            "endLine": 252,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileUtilsDeleteDirectoryBaseTest.java",
+            "startLine": 29,
+            "endLine": 252,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.FileUtilsDeleteDirectoryLinuxTestCase renamed to org.apache.commons.io.FileUtilsDeleteDirectoryLinuxTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileUtilsDeleteDirectoryLinuxTest.java",
+            "startLine": 33,
+            "endLine": 120,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileUtilsDeleteDirectoryLinuxTest.java",
+            "startLine": 33,
+            "endLine": 120,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.FileUtilsDeleteDirectoryWindowsTestCase renamed to org.apache.commons.io.FileUtilsDeleteDirectoryWindowsTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileUtilsDeleteDirectoryWindowsTest.java",
+            "startLine": 28,
+            "endLine": 58,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileUtilsDeleteDirectoryWindowsTest.java",
+            "startLine": 28,
+            "endLine": 58,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.FileUtilsDirectoryContainsTestCase renamed to org.apache.commons.io.FileUtilsDirectoryContainsTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileUtilsDirectoryContainsTest.java",
+            "startLine": 30,
+            "endLine": 187,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileUtilsDirectoryContainsTest.java",
+            "startLine": 30,
+            "endLine": 187,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.FileUtilsFileNewerTestCase renamed to org.apache.commons.io.FileUtilsFileNewerTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileUtilsFileNewerTest.java",
+            "startLine": 35,
+            "endLine": 171,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileUtilsFileNewerTest.java",
+            "startLine": 35,
+            "endLine": 171,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.FileUtilsListFilesTestCase renamed to org.apache.commons.io.FileUtilsListFilesTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileUtilsListFilesTest.java",
+            "startLine": 35,
+            "endLine": 193,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileUtilsListFilesTest.java",
+            "startLine": 35,
+            "endLine": 193,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.FileUtilsTestCase renamed to org.apache.commons.io.FileUtilsTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileUtilsTest.java",
+            "startLine": 79,
+            "endLine": 3137,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileUtilsTest.java",
+            "startLine": 79,
+            "endLine": 3137,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.FileUtilsWaitForTestCase renamed to org.apache.commons.io.FileUtilsWaitForTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileUtilsWaitForTest.java",
+            "startLine": 26,
+            "endLine": 61,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileUtilsWaitForTest.java",
+            "startLine": 26,
+            "endLine": 61,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.FilenameUtilsTestCase renamed to org.apache.commons.io.FilenameUtilsTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FilenameUtilsTest.java",
+            "startLine": 40,
+            "endLine": 1204,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FilenameUtilsTest.java",
+            "startLine": 40,
+            "endLine": 1204,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.FilenameUtilsWildcardTestCase renamed to org.apache.commons.io.FilenameUtilsWildcardTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FilenameUtilsWildcardTest.java",
+            "startLine": 29,
+            "endLine": 245,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FilenameUtilsWildcardTest.java",
+            "startLine": 29,
+            "endLine": 245,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.IOCaseTestCase renamed to org.apache.commons.io.IOCaseTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/IOCaseTest.java",
+            "startLine": 33,
+            "endLine": 355,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/IOCaseTest.java",
+            "startLine": 33,
+            "endLine": 355,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.IOExceptionListTestCase renamed to org.apache.commons.io.IOExceptionListTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/IOExceptionListTest.java",
+            "startLine": 32,
+            "endLine": 94,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/IOExceptionListTest.java",
+            "startLine": 32,
+            "endLine": 94,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.IOExceptionWithCauseTestCase renamed to org.apache.commons.io.IOExceptionWithCauseTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/IOExceptionWithCauseTest.java",
+            "startLine": 27,
+            "endLine": 59,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/IOExceptionWithCauseTest.java",
+            "startLine": 27,
+            "endLine": 59,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.IOIndexedExceptionTestCase renamed to org.apache.commons.io.IOIndexedExceptionTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/IOIndexedExceptionTest.java",
+            "startLine": 28,
+            "endLine": 51,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/IOIndexedExceptionTest.java",
+            "startLine": 28,
+            "endLine": 51,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.IOUtilsCopyTestCase renamed to org.apache.commons.io.IOUtilsCopyTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/IOUtilsCopyTest.java",
+            "startLine": 47,
+            "endLine": 466,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/IOUtilsCopyTest.java",
+            "startLine": 47,
+            "endLine": 466,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.IOUtilsTestCase renamed to org.apache.commons.io.IOUtilsTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/IOUtilsTest.java",
+            "startLine": 77,
+            "endLine": 1722,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/IOUtilsTest.java",
+            "startLine": 77,
+            "endLine": 1722,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.IOUtilsWriteTestCase renamed to org.apache.commons.io.IOUtilsWriteTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/IOUtilsWriteTest.java",
+            "startLine": 35,
+            "endLine": 768,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/IOUtilsWriteTest.java",
+            "startLine": 35,
+            "endLine": 768,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.LineIteratorTestCase renamed to org.apache.commons.io.LineIteratorTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/LineIteratorTest.java",
+            "startLine": 40,
+            "endLine": 354,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/LineIteratorTest.java",
+            "startLine": 40,
+            "endLine": 354,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.ThreadMonitorTestCase renamed to org.apache.commons.io.ThreadMonitorTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/ThreadMonitorTest.java",
+            "startLine": 28,
+            "endLine": 90,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/ThreadMonitorTest.java",
+            "startLine": 28,
+            "endLine": 90,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.comparator.ComparatorAbstractTestCase renamed to org.apache.commons.io.comparator.ComparatorAbstractTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/comparator/ComparatorAbstractTest.java",
+            "startLine": 33,
+            "endLine": 133,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/comparator/ComparatorAbstractTest.java",
+            "startLine": 33,
+            "endLine": 133,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.filefilter.AndFileFilterTestCase renamed to org.apache.commons.io.filefilter.AndFileFilterTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/filefilter/AndFileFilterTest.java",
+            "startLine": 28,
+            "endLine": 315,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/filefilter/AndFileFilterTest.java",
+            "startLine": 28,
+            "endLine": 315,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.filefilter.ConditionalFileFilterAbstractTestCase renamed to org.apache.commons.io.filefilter.ConditionalFileFilterAbstractTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/filefilter/ConditionalFileFilterAbstractTest.java",
+            "startLine": 30,
+            "endLine": 184,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/filefilter/ConditionalFileFilterAbstractTest.java",
+            "startLine": 30,
+            "endLine": 184,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.filefilter.FileFilterTestCase renamed to org.apache.commons.io.filefilter.FileFilterTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/filefilter/FileFilterTest.java",
+            "startLine": 54,
+            "endLine": 1596,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/filefilter/FileFilterTest.java",
+            "startLine": 54,
+            "endLine": 1596,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.filefilter.IOFileFilterAbstractTestCase renamed to org.apache.commons.io.filefilter.IOFileFilterAbstractTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/filefilter/IOFileFilterAbstractTest.java",
+            "startLine": 23,
+            "endLine": 146,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/filefilter/IOFileFilterAbstractTest.java",
+            "startLine": 23,
+            "endLine": 146,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.filefilter.OrFileFilterTestCase renamed to org.apache.commons.io.filefilter.OrFileFilterTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/filefilter/OrFileFilterTest.java",
+            "startLine": 24,
+            "endLine": 297,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/filefilter/OrFileFilterTest.java",
+            "startLine": 24,
+            "endLine": 297,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.filefilter.RegexFileFilterTestCase renamed to org.apache.commons.io.filefilter.RegexFileFilterTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/filefilter/RegexFileFilterTest.java",
+            "startLine": 31,
+            "endLine": 158,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/filefilter/RegexFileFilterTest.java",
+            "startLine": 31,
+            "endLine": 158,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.monitor.AbstractMonitorTestCase renamed to org.apache.commons.io.monitor.AbstractMonitorTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/monitor/AbstractMonitorTest.java",
+            "startLine": 35,
+            "endLine": 152,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/monitor/AbstractMonitorTest.java",
+            "startLine": 35,
+            "endLine": 152,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.monitor.FileAlterationMonitorTestCase renamed to org.apache.commons.io.monitor.FileAlterationMonitorTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/monitor/FileAlterationMonitorTest.java",
+            "startLine": 35,
+            "endLine": 238,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/monitor/FileAlterationMonitorTest.java",
+            "startLine": 35,
+            "endLine": 238,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.monitor.FileAlterationObserverTestCase renamed to org.apache.commons.io.monitor.FileAlterationObserverTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/monitor/FileAlterationObserverTest.java",
+            "startLine": 33,
+            "endLine": 384,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/monitor/FileAlterationObserverTest.java",
+            "startLine": 33,
+            "endLine": 384,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.output.ByteArrayOutputStreamTestCase renamed to org.apache.commons.io.output.ByteArrayOutputStreamTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/output/ByteArrayOutputStreamTest.java",
+            "startLine": 38,
+            "endLine": 384,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/output/ByteArrayOutputStreamTest.java",
+            "startLine": 38,
+            "endLine": 384,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.ByteOrderMarkTestCase renamed to org.apache.commons.io.ByteOrderMarkTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/ByteOrderMarkTest.java",
+            "startLine": 31,
+            "endLine": 148,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/ByteOrderMarkTest.java",
+            "startLine": 31,
+            "endLine": 148,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.CharsetsTestCase renamed to org.apache.commons.io.CharsetsTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/CharsetsTest.java",
+            "startLine": 28,
+            "endLine": 86,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/CharsetsTest.java",
+            "startLine": 28,
+            "endLine": 86,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.DemuxTestCase renamed to org.apache.commons.io.DemuxTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/DemuxTest.java",
+            "startLine": 35,
+            "endLine": 206,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/DemuxTest.java",
+            "startLine": 35,
+            "endLine": 206,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.DirectoryWalkerTestCase renamed to org.apache.commons.io.DirectoryWalkerTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/DirectoryWalkerTest.java",
+            "startLine": 36,
+            "endLine": 568,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/DirectoryWalkerTest.java",
+            "startLine": 36,
+            "endLine": 568,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.FileCleanerTestCase renamed to org.apache.commons.io.FileCleanerTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileCleanerTest.java",
+            "startLine": 19,
+            "endLine": 30,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileCleanerTest.java",
+            "startLine": 19,
+            "endLine": 30,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.FileCleaningTrackerTestCase renamed to org.apache.commons.io.FileCleaningTrackerTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileCleaningTrackerTest.java",
+            "startLine": 41,
+            "endLine": 349,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileCleaningTrackerTest.java",
+            "startLine": 41,
+            "endLine": 349,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.FileDeleteStrategyTestCase renamed to org.apache.commons.io.FileDeleteStrategyTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileDeleteStrategyTest.java",
+            "startLine": 32,
+            "endLine": 155,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileDeleteStrategyTest.java",
+            "startLine": 32,
+            "endLine": 155,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.FileSystemTestCase renamed to org.apache.commons.io.FileSystemTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileSystemTest.java",
+            "startLine": 27,
+            "endLine": 116,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileSystemTest.java",
+            "startLine": 27,
+            "endLine": 116,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.FileSystemUtilsTestCase renamed to org.apache.commons.io.FileSystemUtilsTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileSystemUtilsTest.java",
+            "startLine": 36,
+            "endLine": 623,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileSystemUtilsTest.java",
+            "startLine": 36,
+            "endLine": 623,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.FileUtilsCleanDirectoryTestCase renamed to org.apache.commons.io.FileUtilsCleanDirectoryTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileUtilsCleanDirectoryTest.java",
+            "startLine": 35,
+            "endLine": 143,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileUtilsCleanDirectoryTest.java",
+            "startLine": 35,
+            "endLine": 143,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.FileUtilsCleanSymlinksTestCase renamed to org.apache.commons.io.FileUtilsCleanSymlinksTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileUtilsCleanSymlinksTest.java",
+            "startLine": 30,
+            "endLine": 262,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileUtilsCleanSymlinksTest.java",
+            "startLine": 30,
+            "endLine": 262,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.FileUtilsCopyDirectoryToDirectoryTestCase renamed to org.apache.commons.io.FileUtilsCopyDirectoryToDirectoryTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileUtilsCopyDirectoryToDirectoryTest.java",
+            "startLine": 33,
+            "endLine": 119,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileUtilsCopyDirectoryToDirectoryTest.java",
+            "startLine": 33,
+            "endLine": 119,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.FileUtilsCopyToFileTestCase renamed to org.apache.commons.io.FileUtilsCopyToFileTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileUtilsCopyToFileTest.java",
+            "startLine": 29,
+            "endLine": 100,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileUtilsCopyToFileTest.java",
+            "startLine": 29,
+            "endLine": 100,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.FileUtilsDeleteDirectoryBaseTestCase renamed to org.apache.commons.io.FileUtilsDeleteDirectoryBaseTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileUtilsDeleteDirectoryBaseTest.java",
+            "startLine": 29,
+            "endLine": 252,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileUtilsDeleteDirectoryBaseTest.java",
+            "startLine": 29,
+            "endLine": 252,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.FileUtilsDeleteDirectoryLinuxTestCase renamed to org.apache.commons.io.FileUtilsDeleteDirectoryLinuxTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileUtilsDeleteDirectoryLinuxTest.java",
+            "startLine": 33,
+            "endLine": 120,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileUtilsDeleteDirectoryLinuxTest.java",
+            "startLine": 33,
+            "endLine": 120,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.FileUtilsDeleteDirectoryWindowsTestCase renamed to org.apache.commons.io.FileUtilsDeleteDirectoryWindowsTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileUtilsDeleteDirectoryWindowsTest.java",
+            "startLine": 28,
+            "endLine": 58,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileUtilsDeleteDirectoryWindowsTest.java",
+            "startLine": 28,
+            "endLine": 58,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.FileUtilsDirectoryContainsTestCase renamed to org.apache.commons.io.FileUtilsDirectoryContainsTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileUtilsDirectoryContainsTest.java",
+            "startLine": 30,
+            "endLine": 187,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileUtilsDirectoryContainsTest.java",
+            "startLine": 30,
+            "endLine": 187,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.FileUtilsFileNewerTestCase renamed to org.apache.commons.io.FileUtilsFileNewerTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileUtilsFileNewerTest.java",
+            "startLine": 35,
+            "endLine": 171,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileUtilsFileNewerTest.java",
+            "startLine": 35,
+            "endLine": 171,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.FileUtilsTestCase renamed to org.apache.commons.io.FileUtilsTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileUtilsTest.java",
+            "startLine": 79,
+            "endLine": 3137,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileUtilsTest.java",
+            "startLine": 79,
+            "endLine": 3137,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.FileUtilsWaitForTestCase renamed to org.apache.commons.io.FileUtilsWaitForTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileUtilsWaitForTest.java",
+            "startLine": 26,
+            "endLine": 61,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileUtilsWaitForTest.java",
+            "startLine": 26,
+            "endLine": 61,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.FilenameUtilsTestCase renamed to org.apache.commons.io.FilenameUtilsTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FilenameUtilsTest.java",
+            "startLine": 40,
+            "endLine": 1204,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FilenameUtilsTest.java",
+            "startLine": 40,
+            "endLine": 1204,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.FilenameUtilsWildcardTestCase renamed to org.apache.commons.io.FilenameUtilsWildcardTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FilenameUtilsWildcardTest.java",
+            "startLine": 29,
+            "endLine": 245,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FilenameUtilsWildcardTest.java",
+            "startLine": 29,
+            "endLine": 245,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.IOCaseTestCase renamed to org.apache.commons.io.IOCaseTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/IOCaseTest.java",
+            "startLine": 33,
+            "endLine": 355,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/IOCaseTest.java",
+            "startLine": 33,
+            "endLine": 355,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.IOExceptionListTestCase renamed to org.apache.commons.io.IOExceptionListTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/IOExceptionListTest.java",
+            "startLine": 32,
+            "endLine": 94,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/IOExceptionListTest.java",
+            "startLine": 32,
+            "endLine": 94,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.IOExceptionWithCauseTestCase renamed to org.apache.commons.io.IOExceptionWithCauseTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/IOExceptionWithCauseTest.java",
+            "startLine": 27,
+            "endLine": 59,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/IOExceptionWithCauseTest.java",
+            "startLine": 27,
+            "endLine": 59,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.IOIndexedExceptionTestCase renamed to org.apache.commons.io.IOIndexedExceptionTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/IOIndexedExceptionTest.java",
+            "startLine": 28,
+            "endLine": 51,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/IOIndexedExceptionTest.java",
+            "startLine": 28,
+            "endLine": 51,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.IOUtilsCopyTestCase renamed to org.apache.commons.io.IOUtilsCopyTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/IOUtilsCopyTest.java",
+            "startLine": 47,
+            "endLine": 466,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/IOUtilsCopyTest.java",
+            "startLine": 47,
+            "endLine": 466,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.IOUtilsTestCase renamed to org.apache.commons.io.IOUtilsTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/IOUtilsTest.java",
+            "startLine": 77,
+            "endLine": 1722,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/IOUtilsTest.java",
+            "startLine": 77,
+            "endLine": 1722,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.IOUtilsWriteTestCase renamed to org.apache.commons.io.IOUtilsWriteTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/IOUtilsWriteTest.java",
+            "startLine": 35,
+            "endLine": 768,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/IOUtilsWriteTest.java",
+            "startLine": 35,
+            "endLine": 768,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.LineIteratorTestCase renamed to org.apache.commons.io.LineIteratorTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/LineIteratorTest.java",
+            "startLine": 40,
+            "endLine": 354,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/LineIteratorTest.java",
+            "startLine": 40,
+            "endLine": 354,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.ThreadMonitorTestCase renamed to org.apache.commons.io.ThreadMonitorTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/ThreadMonitorTest.java",
+            "startLine": 28,
+            "endLine": 90,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/ThreadMonitorTest.java",
+            "startLine": 28,
+            "endLine": 90,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.comparator.ComparatorAbstractTestCase renamed to org.apache.commons.io.comparator.ComparatorAbstractTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/comparator/ComparatorAbstractTest.java",
+            "startLine": 33,
+            "endLine": 133,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/comparator/ComparatorAbstractTest.java",
+            "startLine": 33,
+            "endLine": 133,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.filefilter.AndFileFilterTestCase renamed to org.apache.commons.io.filefilter.AndFileFilterTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/filefilter/AndFileFilterTest.java",
+            "startLine": 28,
+            "endLine": 315,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/filefilter/AndFileFilterTest.java",
+            "startLine": 28,
+            "endLine": 315,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.filefilter.ConditionalFileFilterAbstractTestCase renamed to org.apache.commons.io.filefilter.ConditionalFileFilterAbstractTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/filefilter/ConditionalFileFilterAbstractTest.java",
+            "startLine": 30,
+            "endLine": 184,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/filefilter/ConditionalFileFilterAbstractTest.java",
+            "startLine": 30,
+            "endLine": 184,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.filefilter.FileFilterTestCase renamed to org.apache.commons.io.filefilter.FileFilterTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/filefilter/FileFilterTest.java",
+            "startLine": 54,
+            "endLine": 1596,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/filefilter/FileFilterTest.java",
+            "startLine": 54,
+            "endLine": 1596,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.filefilter.IOFileFilterAbstractTestCase renamed to org.apache.commons.io.filefilter.IOFileFilterAbstractTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/filefilter/IOFileFilterAbstractTest.java",
+            "startLine": 23,
+            "endLine": 146,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/filefilter/IOFileFilterAbstractTest.java",
+            "startLine": 23,
+            "endLine": 146,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.filefilter.OrFileFilterTestCase renamed to org.apache.commons.io.filefilter.OrFileFilterTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/filefilter/OrFileFilterTest.java",
+            "startLine": 24,
+            "endLine": 297,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/filefilter/OrFileFilterTest.java",
+            "startLine": 24,
+            "endLine": 297,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.filefilter.RegexFileFilterTestCase renamed to org.apache.commons.io.filefilter.RegexFileFilterTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/filefilter/RegexFileFilterTest.java",
+            "startLine": 31,
+            "endLine": 158,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/filefilter/RegexFileFilterTest.java",
+            "startLine": 31,
+            "endLine": 158,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.monitor.AbstractMonitorTestCase renamed to org.apache.commons.io.monitor.AbstractMonitorTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/monitor/AbstractMonitorTest.java",
+            "startLine": 35,
+            "endLine": 152,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/monitor/AbstractMonitorTest.java",
+            "startLine": 35,
+            "endLine": 152,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.monitor.FileAlterationMonitorTestCase renamed to org.apache.commons.io.monitor.FileAlterationMonitorTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/monitor/FileAlterationMonitorTest.java",
+            "startLine": 35,
+            "endLine": 238,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/monitor/FileAlterationMonitorTest.java",
+            "startLine": 35,
+            "endLine": 238,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.monitor.FileAlterationObserverTestCase renamed to org.apache.commons.io.monitor.FileAlterationObserverTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/monitor/FileAlterationObserverTest.java",
+            "startLine": 33,
+            "endLine": 384,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/monitor/FileAlterationObserverTest.java",
+            "startLine": 33,
+            "endLine": 384,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.output.ByteArrayOutputStreamTestCase renamed to org.apache.commons.io.output.ByteArrayOutputStreamTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/output/ByteArrayOutputStreamTest.java",
+            "startLine": 38,
+            "endLine": 384,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/output/ByteArrayOutputStreamTest.java",
+            "startLine": 38,
+            "endLine": 384,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.io.FileUtilsListFilesTestCase renamed to org.apache.commons.io.FileUtilsListFilesTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileUtilsListFilesTest.java",
+            "startLine": 35,
+            "endLine": 193,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/io/FileUtilsListFilesTest.java",
+            "startLine": 35,
+            "endLine": 193,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/commons-io.git",
+      "sha1": "18a24066db1c1e9f71299e9ab5e6b1b193f77720",
+      "url": "https://github.com/apache/commons-io/commit/18a24066db1c1e9f71299e9ab5e6b1b193f77720",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private getNanosOfMiili(duration Duration) : int extracted from private sleep(duration Duration) : void in class org.apache.commons.io.ThreadMonitor",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/ThreadMonitor.java",
+            "startLine": 117,
+            "endLine": 135,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/ThreadMonitor.java",
+            "startLine": 136,
+            "endLine": 138,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private getNanosOfMiili(duration Duration) : int extracted from private sleep(duration Duration) : void in class org.apache.commons.io.ThreadMonitor",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/ThreadMonitor.java",
+            "startLine": 117,
+            "endLine": 135,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/ThreadMonitor.java",
+            "startLine": 136,
+            "endLine": 138,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/commons-io.git",
+      "sha1": "8e265178364e412cd00721b4c164c25381001d7c",
+      "url": "https://github.com/apache/commons-io/commit/8e265178364e412cd00721b4c164c25381001d7c",
+      "ourApproach": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	cutoffMillis : long to cutoffInstant : Instant in class org.apache.commons.io.filefilter.AgeFileFilter",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/filefilter/AgeFileFilter.java",
+            "startLine": 83,
+            "endLine": 83,
+            "startColumn": 24,
+            "endColumn": 36
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/filefilter/AgeFileFilter.java",
+            "startLine": 84,
+            "endLine": 84,
+            "startColumn": 27,
+            "endColumn": 40
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	cutoffMillis : long to cutoffInstant : Instant in class org.apache.commons.io.filefilter.AgeFileFilter",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/filefilter/AgeFileFilter.java",
+            "startLine": 83,
+            "endLine": 83,
+            "startColumn": 24,
+            "endColumn": 36
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/filefilter/AgeFileFilter.java",
+            "startLine": 84,
+            "endLine": 84,
+            "startColumn": 27,
+            "endColumn": 40
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	public isNewer(file Path, fileTime FileTime, options LinkOption...) : boolean extracted from public isNewer(file Path, timeMillis long, options LinkOption...) : boolean in class org.apache.commons.io.file.PathUtils",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/file/PathUtils.java",
+            "startLine": 765,
+            "endLine": 783,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/file/PathUtils.java",
+            "startLine": 767,
+            "endLine": 785,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	public isNewer(file Path, fileTime FileTime, options LinkOption...) : boolean extracted from public isNewer(file Path, timeMillis long, options LinkOption...) : boolean in class org.apache.commons.io.file.PathUtils",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/file/PathUtils.java",
+            "startLine": 765,
+            "endLine": 783,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/file/PathUtils.java",
+            "startLine": 767,
+            "endLine": 785,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	cutoffMillis : long to cutoffInstant : Instant in class org.apache.commons.io.filefilter.AgeFileFilter",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/filefilter/AgeFileFilter.java",
+            "startLine": 83,
+            "endLine": 83,
+            "startColumn": 24,
+            "endColumn": 36
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/filefilter/AgeFileFilter.java",
+            "startLine": 84,
+            "endLine": 84,
+            "startColumn": 27,
+            "endColumn": 40
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	cutoffMillis : long to cutoffInstant : Instant in class org.apache.commons.io.filefilter.AgeFileFilter",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/filefilter/AgeFileFilter.java",
+            "startLine": 83,
+            "endLine": 83,
+            "startColumn": 24,
+            "endColumn": 36
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/filefilter/AgeFileFilter.java",
+            "startLine": 84,
+            "endLine": 84,
+            "startColumn": 27,
+            "endColumn": 40
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/commons-io.git",
+      "sha1": "d269f164b3e24a92cc33d759d8bcf3eedb37f576",
+      "url": "https://github.com/apache/commons-io/commit/d269f164b3e24a92cc33d759d8bcf3eedb37f576",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private uncheck(e IOException) : UncheckedIOException extracted from public close() : void in class org.apache.commons.io.input.UncheckedBufferedReader",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/input/UncheckedBufferedReader.java",
+            "startLine": 68,
+            "endLine": 78,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/input/UncheckedBufferedReader.java",
+            "startLine": 188,
+            "endLine": 190,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private uncheck(e IOException) : UncheckedIOException extracted from public mark(readAheadLimit int) : void in class org.apache.commons.io.input.UncheckedBufferedReader",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/input/UncheckedBufferedReader.java",
+            "startLine": 80,
+            "endLine": 90,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/input/UncheckedBufferedReader.java",
+            "startLine": 188,
+            "endLine": 190,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private uncheck(e IOException) : UncheckedIOException extracted from public read() : int in class org.apache.commons.io.input.UncheckedBufferedReader",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/input/UncheckedBufferedReader.java",
+            "startLine": 92,
+            "endLine": 102,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/input/UncheckedBufferedReader.java",
+            "startLine": 188,
+            "endLine": 190,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private uncheck(e IOException) : UncheckedIOException extracted from public read(cbuf char[]) : int in class org.apache.commons.io.input.UncheckedBufferedReader",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/input/UncheckedBufferedReader.java",
+            "startLine": 104,
+            "endLine": 114,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/input/UncheckedBufferedReader.java",
+            "startLine": 188,
+            "endLine": 190,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private uncheck(e IOException) : UncheckedIOException extracted from public read(cbuf char[], off int, len int) : int in class org.apache.commons.io.input.UncheckedBufferedReader",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/input/UncheckedBufferedReader.java",
+            "startLine": 116,
+            "endLine": 126,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/input/UncheckedBufferedReader.java",
+            "startLine": 188,
+            "endLine": 190,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private uncheck(e IOException) : UncheckedIOException extracted from public read(target CharBuffer) : int in class org.apache.commons.io.input.UncheckedBufferedReader",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/input/UncheckedBufferedReader.java",
+            "startLine": 128,
+            "endLine": 138,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/input/UncheckedBufferedReader.java",
+            "startLine": 188,
+            "endLine": 190,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private uncheck(e IOException) : UncheckedIOException extracted from public readLine() : String in class org.apache.commons.io.input.UncheckedBufferedReader",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/input/UncheckedBufferedReader.java",
+            "startLine": 140,
+            "endLine": 150,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/input/UncheckedBufferedReader.java",
+            "startLine": 188,
+            "endLine": 190,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private uncheck(e IOException) : UncheckedIOException extracted from public ready() : boolean in class org.apache.commons.io.input.UncheckedBufferedReader",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/input/UncheckedBufferedReader.java",
+            "startLine": 152,
+            "endLine": 162,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/input/UncheckedBufferedReader.java",
+            "startLine": 188,
+            "endLine": 190,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private uncheck(e IOException) : UncheckedIOException extracted from public reset() : void in class org.apache.commons.io.input.UncheckedBufferedReader",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/input/UncheckedBufferedReader.java",
+            "startLine": 164,
+            "endLine": 174,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/input/UncheckedBufferedReader.java",
+            "startLine": 188,
+            "endLine": 190,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private uncheck(e IOException) : UncheckedIOException extracted from public skip(n long) : long in class org.apache.commons.io.input.UncheckedBufferedReader",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/input/UncheckedBufferedReader.java",
+            "startLine": 176,
+            "endLine": 186,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/input/UncheckedBufferedReader.java",
+            "startLine": 188,
+            "endLine": 190,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private uncheck(e IOException) : UncheckedIOException extracted from public close() : void in class org.apache.commons.io.input.UncheckedFilterReader",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/input/UncheckedFilterReader.java",
+            "startLine": 57,
+            "endLine": 67,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/input/UncheckedFilterReader.java",
+            "startLine": 165,
+            "endLine": 167,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private uncheck(e IOException) : UncheckedIOException extracted from public mark(readAheadLimit int) : void in class org.apache.commons.io.input.UncheckedFilterReader",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/input/UncheckedFilterReader.java",
+            "startLine": 69,
+            "endLine": 79,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/input/UncheckedFilterReader.java",
+            "startLine": 165,
+            "endLine": 167,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private uncheck(e IOException) : UncheckedIOException extracted from public read() : int in class org.apache.commons.io.input.UncheckedFilterReader",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/input/UncheckedFilterReader.java",
+            "startLine": 81,
+            "endLine": 91,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/input/UncheckedFilterReader.java",
+            "startLine": 165,
+            "endLine": 167,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private uncheck(e IOException) : UncheckedIOException extracted from public read(cbuf char[]) : int in class org.apache.commons.io.input.UncheckedFilterReader",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/input/UncheckedFilterReader.java",
+            "startLine": 93,
+            "endLine": 103,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/input/UncheckedFilterReader.java",
+            "startLine": 165,
+            "endLine": 167,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private uncheck(e IOException) : UncheckedIOException extracted from public read(cbuf char[], off int, len int) : int in class org.apache.commons.io.input.UncheckedFilterReader",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/input/UncheckedFilterReader.java",
+            "startLine": 105,
+            "endLine": 115,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/input/UncheckedFilterReader.java",
+            "startLine": 165,
+            "endLine": 167,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private uncheck(e IOException) : UncheckedIOException extracted from public read(target CharBuffer) : int in class org.apache.commons.io.input.UncheckedFilterReader",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/input/UncheckedFilterReader.java",
+            "startLine": 117,
+            "endLine": 127,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/input/UncheckedFilterReader.java",
+            "startLine": 165,
+            "endLine": 167,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private uncheck(e IOException) : UncheckedIOException extracted from public ready() : boolean in class org.apache.commons.io.input.UncheckedFilterReader",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/input/UncheckedFilterReader.java",
+            "startLine": 129,
+            "endLine": 139,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/input/UncheckedFilterReader.java",
+            "startLine": 165,
+            "endLine": 167,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private uncheck(e IOException) : UncheckedIOException extracted from public reset() : void in class org.apache.commons.io.input.UncheckedFilterReader",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/input/UncheckedFilterReader.java",
+            "startLine": 141,
+            "endLine": 151,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/input/UncheckedFilterReader.java",
+            "startLine": 165,
+            "endLine": 167,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private uncheck(e IOException) : UncheckedIOException extracted from public skip(n long) : long in class org.apache.commons.io.input.UncheckedFilterReader",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/input/UncheckedFilterReader.java",
+            "startLine": 153,
+            "endLine": 163,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/input/UncheckedFilterReader.java",
+            "startLine": 165,
+            "endLine": 167,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private uncheck(e IOException) : UncheckedIOException extracted from public close() : void in class org.apache.commons.io.input.UncheckedBufferedReader",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/input/UncheckedBufferedReader.java",
+            "startLine": 68,
+            "endLine": 78,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/input/UncheckedBufferedReader.java",
+            "startLine": 188,
+            "endLine": 190,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private uncheck(e IOException) : UncheckedIOException extracted from public mark(readAheadLimit int) : void in class org.apache.commons.io.input.UncheckedBufferedReader",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/input/UncheckedBufferedReader.java",
+            "startLine": 80,
+            "endLine": 90,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/input/UncheckedBufferedReader.java",
+            "startLine": 188,
+            "endLine": 190,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private uncheck(e IOException) : UncheckedIOException extracted from public read() : int in class org.apache.commons.io.input.UncheckedBufferedReader",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/input/UncheckedBufferedReader.java",
+            "startLine": 92,
+            "endLine": 102,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/input/UncheckedBufferedReader.java",
+            "startLine": 188,
+            "endLine": 190,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private uncheck(e IOException) : UncheckedIOException extracted from public read(cbuf char[]) : int in class org.apache.commons.io.input.UncheckedBufferedReader",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/input/UncheckedBufferedReader.java",
+            "startLine": 104,
+            "endLine": 114,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/input/UncheckedBufferedReader.java",
+            "startLine": 188,
+            "endLine": 190,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private uncheck(e IOException) : UncheckedIOException extracted from public read(cbuf char[], off int, len int) : int in class org.apache.commons.io.input.UncheckedBufferedReader",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/input/UncheckedBufferedReader.java",
+            "startLine": 116,
+            "endLine": 126,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/input/UncheckedBufferedReader.java",
+            "startLine": 188,
+            "endLine": 190,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private uncheck(e IOException) : UncheckedIOException extracted from public read(target CharBuffer) : int in class org.apache.commons.io.input.UncheckedBufferedReader",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/input/UncheckedBufferedReader.java",
+            "startLine": 128,
+            "endLine": 138,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/input/UncheckedBufferedReader.java",
+            "startLine": 188,
+            "endLine": 190,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private uncheck(e IOException) : UncheckedIOException extracted from public readLine() : String in class org.apache.commons.io.input.UncheckedBufferedReader",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/input/UncheckedBufferedReader.java",
+            "startLine": 140,
+            "endLine": 150,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/input/UncheckedBufferedReader.java",
+            "startLine": 188,
+            "endLine": 190,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private uncheck(e IOException) : UncheckedIOException extracted from public ready() : boolean in class org.apache.commons.io.input.UncheckedBufferedReader",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/input/UncheckedBufferedReader.java",
+            "startLine": 152,
+            "endLine": 162,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/input/UncheckedBufferedReader.java",
+            "startLine": 188,
+            "endLine": 190,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private uncheck(e IOException) : UncheckedIOException extracted from public reset() : void in class org.apache.commons.io.input.UncheckedBufferedReader",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/input/UncheckedBufferedReader.java",
+            "startLine": 164,
+            "endLine": 174,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/input/UncheckedBufferedReader.java",
+            "startLine": 188,
+            "endLine": 190,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private uncheck(e IOException) : UncheckedIOException extracted from public skip(n long) : long in class org.apache.commons.io.input.UncheckedBufferedReader",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/input/UncheckedBufferedReader.java",
+            "startLine": 176,
+            "endLine": 186,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/input/UncheckedBufferedReader.java",
+            "startLine": 188,
+            "endLine": 190,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private uncheck(e IOException) : UncheckedIOException extracted from public close() : void in class org.apache.commons.io.input.UncheckedFilterReader",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/input/UncheckedFilterReader.java",
+            "startLine": 57,
+            "endLine": 67,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/input/UncheckedFilterReader.java",
+            "startLine": 165,
+            "endLine": 167,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private uncheck(e IOException) : UncheckedIOException extracted from public mark(readAheadLimit int) : void in class org.apache.commons.io.input.UncheckedFilterReader",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/input/UncheckedFilterReader.java",
+            "startLine": 69,
+            "endLine": 79,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/input/UncheckedFilterReader.java",
+            "startLine": 165,
+            "endLine": 167,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private uncheck(e IOException) : UncheckedIOException extracted from public read() : int in class org.apache.commons.io.input.UncheckedFilterReader",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/input/UncheckedFilterReader.java",
+            "startLine": 81,
+            "endLine": 91,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/input/UncheckedFilterReader.java",
+            "startLine": 165,
+            "endLine": 167,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private uncheck(e IOException) : UncheckedIOException extracted from public read(cbuf char[]) : int in class org.apache.commons.io.input.UncheckedFilterReader",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/input/UncheckedFilterReader.java",
+            "startLine": 93,
+            "endLine": 103,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/input/UncheckedFilterReader.java",
+            "startLine": 165,
+            "endLine": 167,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private uncheck(e IOException) : UncheckedIOException extracted from public read(cbuf char[], off int, len int) : int in class org.apache.commons.io.input.UncheckedFilterReader",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/input/UncheckedFilterReader.java",
+            "startLine": 105,
+            "endLine": 115,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/input/UncheckedFilterReader.java",
+            "startLine": 165,
+            "endLine": 167,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private uncheck(e IOException) : UncheckedIOException extracted from public read(target CharBuffer) : int in class org.apache.commons.io.input.UncheckedFilterReader",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/input/UncheckedFilterReader.java",
+            "startLine": 117,
+            "endLine": 127,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/input/UncheckedFilterReader.java",
+            "startLine": 165,
+            "endLine": 167,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private uncheck(e IOException) : UncheckedIOException extracted from public ready() : boolean in class org.apache.commons.io.input.UncheckedFilterReader",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/input/UncheckedFilterReader.java",
+            "startLine": 129,
+            "endLine": 139,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/input/UncheckedFilterReader.java",
+            "startLine": 165,
+            "endLine": 167,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private uncheck(e IOException) : UncheckedIOException extracted from public reset() : void in class org.apache.commons.io.input.UncheckedFilterReader",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/input/UncheckedFilterReader.java",
+            "startLine": 141,
+            "endLine": 151,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/input/UncheckedFilterReader.java",
+            "startLine": 165,
+            "endLine": 167,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private uncheck(e IOException) : UncheckedIOException extracted from public skip(n long) : long in class org.apache.commons.io.input.UncheckedFilterReader",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/input/UncheckedFilterReader.java",
+            "startLine": 153,
+            "endLine": 163,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/io/input/UncheckedFilterReader.java",
+            "startLine": 165,
+            "endLine": 167,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    }
+  ]
+}

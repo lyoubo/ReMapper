@@ -1,0 +1,1437 @@
+{
+  "results": [
+    {
+      "repository": "https://github.com/square/okhttp.git",
+      "sha1": "34bb12533b56eacd7b03c13b87dede4204d48629",
+      "url": "https://github.com/square/okhttp/commit/34bb12533b56eacd7b03c13b87dede4204d48629",
+      "ourApproach": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	MockDuplexResponseBody to MockStreamHandler in method private enqueueResponseWithBody(builder MockResponse.Builder, body MockStreamHandler) : MockStreamHandler from class okhttp3.DuplexTest",
+          "leftSideLocation": {
+            "filePath": "okhttp/src/jvmTest/java/okhttp3/DuplexTest.java",
+            "startLine": 693,
+            "endLine": 698,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "okhttp/src/jvmTest/java/okhttp3/DuplexTest.java",
+            "startLine": 692,
+            "endLine": 697,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	MockDuplexResponseBody to MockStreamHandler in method private enqueueResponseWithBody(builder MockResponse.Builder, body MockStreamHandler) : MockStreamHandler from class okhttp3.DuplexTest",
+          "leftSideLocation": {
+            "filePath": "okhttp/src/jvmTest/java/okhttp3/DuplexTest.java",
+            "startLine": 693,
+            "endLine": 698,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "okhttp/src/jvmTest/java/okhttp3/DuplexTest.java",
+            "startLine": 692,
+            "endLine": 697,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/square/okhttp.git",
+      "sha1": "c30d3ce7b7859e0048749e4cc07201268a0fd474",
+      "url": "https://github.com/square/okhttp/commit/c30d3ce7b7859e0048749e4cc07201268a0fd474",
+      "ourApproach": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private writeChunk(sink BufferedSink) : void inlined to public writeTo(sink BufferedSink) : void in class okhttp3.EventListenerTest.NonCompletingRequestBody",
+          "leftSideLocation": {
+            "filePath": "okhttp/src/jvmTest/java/okhttp3/EventListenerTest.java",
+            "startLine": 1130,
+            "endLine": 1133,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "okhttp/src/jvmTest/java/okhttp3/EventListenerTest.java",
+            "startLine": 1116,
+            "endLine": 1125,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private writeChunk(sink BufferedSink) : void inlined to public writeTo(sink BufferedSink) : void in class okhttp3.EventListenerTest.NonCompletingRequestBody",
+          "leftSideLocation": {
+            "filePath": "okhttp/src/jvmTest/java/okhttp3/EventListenerTest.java",
+            "startLine": 1130,
+            "endLine": 1133,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "okhttp/src/jvmTest/java/okhttp3/EventListenerTest.java",
+            "startLine": 1116,
+            "endLine": 1125,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/square/okhttp.git",
+      "sha1": "fc14f6fd2a97ccaa8aeb449a0bfc1b4e92978a40",
+      "url": "https://github.com/square/okhttp/commit/fc14f6fd2a97ccaa8aeb449a0bfc1b4e92978a40",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testLocalhostIpv6() : void renamed to public testHostname() : void in class mockwebserver3.RecordedRequestTest",
+          "leftSideLocation": {
+            "filePath": "mockwebserver/src/test/java/mockwebserver3/RecordedRequestTest.java",
+            "startLine": 101,
+            "endLine": 109,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "mockwebserver/src/test/java/mockwebserver3/RecordedRequestTest.java",
+            "startLine": 101,
+            "endLine": 110,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public ipv6HostHasSquareBraces() : void renamed to public ipv6HostHasSquareBracesHttp2() : void in class okhttp3.CallTest",
+          "leftSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/CallTest.java",
+            "startLine": 3536,
+            "endLine": 3567,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/CallTest.java",
+            "startLine": 3566,
+            "endLine": 3592,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": false
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private configureClientAndServerProxies(http2 boolean) : void extracted from public ipv6HostHasSquareBraces() : void in class okhttp3.CallTest",
+          "leftSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/CallTest.java",
+            "startLine": 3536,
+            "endLine": 3567,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/CallTest.java",
+            "startLine": 3706,
+            "endLine": 3721,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": false
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testLocalhostIpv6() : void renamed to public testHostname() : void in class mockwebserver3.RecordedRequestTest",
+          "leftSideLocation": {
+            "filePath": "mockwebserver/src/test/java/mockwebserver3/RecordedRequestTest.java",
+            "startLine": 101,
+            "endLine": 109,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "mockwebserver/src/test/java/mockwebserver3/RecordedRequestTest.java",
+            "startLine": 101,
+            "endLine": 110,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/square/okhttp.git",
+      "sha1": "6e8aa12dd6ffa66c3cf4afc2d68a503059ea88f6",
+      "url": "https://github.com/square/okhttp/commit/6e8aa12dd6ffa66c3cf4afc2d68a503059ea88f6",
+      "ourApproach": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	fileSystem : InMemoryFileSystem to fileSystem : FakeFileSystem in class okhttp3.CacheTest",
+          "leftSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/CacheTest.java",
+            "startLine": 67,
+            "endLine": 67,
+            "startColumn": 48,
+            "endColumn": 85
+          },
+          "rightSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/CacheTest.java",
+            "startLine": 68,
+            "endLine": 68,
+            "startColumn": 25,
+            "endColumn": 58
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	fileSystem : InMemoryFileSystem to fileSystem : FakeFileSystem in class okhttp3.CallTest",
+          "leftSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/CallTest.java",
+            "startLine": 107,
+            "endLine": 107,
+            "startColumn": 47,
+            "endColumn": 84
+          },
+          "rightSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/CallTest.java",
+            "startLine": 108,
+            "endLine": 108,
+            "startColumn": 24,
+            "endColumn": 57
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	fileSystem : InMemoryFileSystem to fileSystem : FakeFileSystem in class okhttp3.CacheTest",
+          "leftSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/CacheTest.java",
+            "startLine": 67,
+            "endLine": 67,
+            "startColumn": 48,
+            "endColumn": 85
+          },
+          "rightSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/CacheTest.java",
+            "startLine": 68,
+            "endLine": 68,
+            "startColumn": 25,
+            "endColumn": 58
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	fileSystem : InMemoryFileSystem to fileSystem : FakeFileSystem in class okhttp3.CallTest",
+          "leftSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/CallTest.java",
+            "startLine": 107,
+            "endLine": 107,
+            "startColumn": 47,
+            "endColumn": 84
+          },
+          "rightSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/CallTest.java",
+            "startLine": 108,
+            "endLine": 108,
+            "startColumn": 24,
+            "endColumn": 57
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/square/okhttp.git",
+      "sha1": "6ed5ec1c8c9fec5c5231a29c5d621429566af248",
+      "url": "https://github.com/square/okhttp/commit/6ed5ec1c8c9fec5c5231a29c5d621429566af248",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private sendRequest(client OkHttpClient, url String) : void extracted from public getFailsWithoutAdditionalCert() : void in class okhttp.regression.LetsEncryptTest",
+          "leftSideLocation": {
+            "filePath": "regression-test/src/androidTest/java/okhttp/regression/LetsEncryptTest.java",
+            "startLine": 41,
+            "endLine": 59,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "regression-test/src/androidTest/java/okhttp/regression/LetsEncryptTest.java",
+            "startLine": 130,
+            "endLine": 138,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private sendRequest(client OkHttpClient, url String) : void extracted from public getFailsWithoutAdditionalCert() : void in class okhttp.regression.LetsEncryptTest",
+          "leftSideLocation": {
+            "filePath": "regression-test/src/androidTest/java/okhttp/regression/LetsEncryptTest.java",
+            "startLine": 41,
+            "endLine": 59,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "regression-test/src/androidTest/java/okhttp/regression/LetsEncryptTest.java",
+            "startLine": 130,
+            "endLine": 138,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/square/okhttp.git",
+      "sha1": "4036fa55b72faaad3a14f806094184ade157917d",
+      "url": "https://github.com/square/okhttp/commit/4036fa55b72faaad3a14f806094184ade157917d",
+      "ourApproach": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	Collection<Story[]> to List<Object> in method protected createStories(interopTests String[]) : List<Object> from class okhttp3.internal.http2.HpackDecodeTestBase",
+          "leftSideLocation": {
+            "filePath": "okhttp-hpacktests/src/test/java/okhttp3/internal/http2/HpackDecodeTestBase.java",
+            "startLine": 36,
+            "endLine": 53,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "okhttp-hpacktests/src/test/java/okhttp3/internal/http2/HpackDecodeTestBase.java",
+            "startLine": 36,
+            "endLine": 53,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	Collection<Story[]> to List<Object> in method protected createStories(interopTests String[]) : List<Object> from class okhttp3.internal.http2.HpackDecodeTestBase",
+          "leftSideLocation": {
+            "filePath": "okhttp-hpacktests/src/test/java/okhttp3/internal/http2/HpackDecodeTestBase.java",
+            "startLine": 36,
+            "endLine": 53,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "okhttp-hpacktests/src/test/java/okhttp3/internal/http2/HpackDecodeTestBase.java",
+            "startLine": 36,
+            "endLine": 53,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/square/okhttp.git",
+      "sha1": "59ae0c138d6468aac5d92781b19cddc26e04e862",
+      "url": "https://github.com/square/okhttp/commit/59ae0c138d6468aac5d92781b19cddc26e04e862",
+      "ourApproach": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	tempDir : TemporaryFolder to tempDir : File in class okhttp3.internal.cache2.RelayTest",
+          "leftSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/internal/cache2/RelayTest.java",
+            "startLine": 41,
+            "endLine": 41,
+            "startColumn": 38,
+            "endColumn": 69
+          },
+          "rightSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/internal/cache2/RelayTest.java",
+            "startLine": 40,
+            "endLine": 40,
+            "startColumn": 17,
+            "endColumn": 24
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	tempDir : TemporaryFolder to tempDir : File in class okhttp3.internal.cache2.FileOperatorTest",
+          "leftSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/internal/cache2/FileOperatorTest.java",
+            "startLine": 37,
+            "endLine": 37,
+            "startColumn": 38,
+            "endColumn": 69
+          },
+          "rightSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/internal/cache2/FileOperatorTest.java",
+            "startLine": 36,
+            "endLine": 36,
+            "startColumn": 24,
+            "endColumn": 31
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	noDataLeftBehind : TestRule to noDataLeftBehind : AfterEachCallback in class okhttp3.internal.ws.WebSocketWriterTest",
+          "leftSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/internal/ws/WebSocketWriterTest.java",
+            "startLine": 45,
+            "endLine": 52,
+            "startColumn": 31,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/internal/ws/WebSocketWriterTest.java",
+            "startLine": 44,
+            "endLine": 49,
+            "startColumn": 53,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public checkPlatforms() : void renamed to public setUp() : void in class okhttp3.mockwebserver.MockWebServerTest",
+          "leftSideLocation": {
+            "filePath": "mockwebserver-deprecated/src/test/java/okhttp3/mockwebserver/MockWebServerTest.java",
+            "startLine": 71,
+            "endLine": 73,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "mockwebserver-deprecated/src/test/java/okhttp3/mockwebserver/MockWebServerTest.java",
+            "startLine": 71,
+            "endLine": 74,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	tempDir : TemporaryFolder to tempDir : File in class okhttp3.internal.cache2.FileOperatorTest",
+          "leftSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/internal/cache2/FileOperatorTest.java",
+            "startLine": 37,
+            "endLine": 37,
+            "startColumn": 38,
+            "endColumn": 69
+          },
+          "rightSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/internal/cache2/FileOperatorTest.java",
+            "startLine": 36,
+            "endLine": 36,
+            "startColumn": 24,
+            "endColumn": 31
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	tempDir : TemporaryFolder to tempDir : File in class okhttp3.internal.cache2.RelayTest",
+          "leftSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/internal/cache2/RelayTest.java",
+            "startLine": 41,
+            "endLine": 41,
+            "startColumn": 38,
+            "endColumn": 69
+          },
+          "rightSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/internal/cache2/RelayTest.java",
+            "startLine": 40,
+            "endLine": 40,
+            "startColumn": 17,
+            "endColumn": 24
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	noDataLeftBehind : TestRule to noDataLeftBehind : AfterEachCallback in class okhttp3.internal.ws.WebSocketWriterTest",
+          "leftSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/internal/ws/WebSocketWriterTest.java",
+            "startLine": 45,
+            "endLine": 52,
+            "startColumn": 31,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/internal/ws/WebSocketWriterTest.java",
+            "startLine": 44,
+            "endLine": 49,
+            "startColumn": 53,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/square/okhttp.git",
+      "sha1": "963c76864344d0d55ba7421f474c130a958a9649",
+      "url": "https://github.com/square/okhttp/commit/963c76864344d0d55ba7421f474c130a958a9649",
+      "ourApproach": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	tempDir : TemporaryFolder to tempDir : File in class okhttp3.URLConnectionTest",
+          "leftSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/URLConnectionTest.java",
+            "startLine": 115,
+            "endLine": 115,
+            "startColumn": 38,
+            "endColumn": 69
+          },
+          "rightSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/URLConnectionTest.java",
+            "startLine": 116,
+            "endLine": 116,
+            "startColumn": 17,
+            "endColumn": 24
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	tempDir : TemporaryFolder to tempDir : File in class okhttp3.internal.http2.HttpOverHttp2Test",
+          "leftSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/internal/http2/HttpOverHttp2Test.java",
+            "startLine": 121,
+            "endLine": 121,
+            "startColumn": 38,
+            "endColumn": 69
+          },
+          "rightSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/internal/http2/HttpOverHttp2Test.java",
+            "startLine": 111,
+            "endLine": 111,
+            "startColumn": 24,
+            "endColumn": 31
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	tempDir : TemporaryFolder to tempDir : File in class okhttp3.URLConnectionTest",
+          "leftSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/URLConnectionTest.java",
+            "startLine": 115,
+            "endLine": 115,
+            "startColumn": 38,
+            "endColumn": 69
+          },
+          "rightSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/URLConnectionTest.java",
+            "startLine": 116,
+            "endLine": 116,
+            "startColumn": 17,
+            "endColumn": 24
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	tempDir : TemporaryFolder to tempDir : File in class okhttp3.internal.http2.HttpOverHttp2Test",
+          "leftSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/internal/http2/HttpOverHttp2Test.java",
+            "startLine": 121,
+            "endLine": 121,
+            "startColumn": 38,
+            "endColumn": 69
+          },
+          "rightSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/internal/http2/HttpOverHttp2Test.java",
+            "startLine": 111,
+            "endLine": 111,
+            "startColumn": 24,
+            "endColumn": 31
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/square/okhttp.git",
+      "sha1": "f8065acac28a0b86f3bdbd854ac87af0789416d0",
+      "url": "https://github.com/square/okhttp/commit/f8065acac28a0b86f3bdbd854ac87af0789416d0",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	public beforeEach(context ExtensionContext) : void extracted from public apply(base Statement, description Description) : Statement in class okhttp3.TestLogHandler",
+          "leftSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/TestLogHandler.java",
+            "startLine": 43,
+            "endLine": 57,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/TestLogHandler.java",
+            "startLine": 60,
+            "endLine": 64,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	public afterEach(context ExtensionContext) : void extracted from public apply(base Statement, description Description) : Statement in class okhttp3.TestLogHandler",
+          "leftSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/TestLogHandler.java",
+            "startLine": 43,
+            "endLine": 57,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/TestLogHandler.java",
+            "startLine": 66,
+            "endLine": 69,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	public beforeEach(context ExtensionContext) : void extracted from public apply(base Statement, description Description) : Statement in class okhttp3.TestLogHandler",
+          "leftSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/TestLogHandler.java",
+            "startLine": 43,
+            "endLine": 57,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/TestLogHandler.java",
+            "startLine": 60,
+            "endLine": 64,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	public afterEach(context ExtensionContext) : void extracted from public apply(base Statement, description Description) : Statement in class okhttp3.TestLogHandler",
+          "leftSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/TestLogHandler.java",
+            "startLine": 43,
+            "endLine": 57,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/TestLogHandler.java",
+            "startLine": 66,
+            "endLine": 69,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/square/okhttp.git",
+      "sha1": "9ee33446f83932a2bb001e5ef2156a3d5de5838d",
+      "url": "https://github.com/square/okhttp/commit/9ee33446f83932a2bb001e5ef2156a3d5de5838d",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public checkPlatforms() : void renamed to public setUp() : void in class mockwebserver3.MockWebServerTest",
+          "leftSideLocation": {
+            "filePath": "mockwebserver/src/test/java/mockwebserver3/MockWebServerTest.java",
+            "startLine": 71,
+            "endLine": 73,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "mockwebserver/src/test/java/mockwebserver3/MockWebServerTest.java",
+            "startLine": 72,
+            "endLine": 75,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public checkPlatforms() : void renamed to public setUp() : void in class mockwebserver3.MockWebServerTest",
+          "leftSideLocation": {
+            "filePath": "mockwebserver/src/test/java/mockwebserver3/MockWebServerTest.java",
+            "startLine": 71,
+            "endLine": 73,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "mockwebserver/src/test/java/mockwebserver3/MockWebServerTest.java",
+            "startLine": 72,
+            "endLine": 75,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/square/okhttp.git",
+      "sha1": "334eb0072512155e57a809b2fa18861c0d68ec9f",
+      "url": "https://github.com/square/okhttp/commit/334eb0072512155e57a809b2fa18861c0d68ec9f",
+      "ourApproach": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	okhttp3.internal.sse.Event moved to okhttp3.sse.internal.Event",
+          "leftSideLocation": {
+            "filePath": "okhttp-sse/src/test/java/okhttp3/internal/sse/Event.java",
+            "startLine": 21,
+            "endLine": 52,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "okhttp-sse/src/test/java/okhttp3/sse/internal/Event.java",
+            "startLine": 21,
+            "endLine": 52,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	okhttp3.internal.sse.EventSourceHttpTest moved to okhttp3.sse.internal.EventSourceHttpTest",
+          "leftSideLocation": {
+            "filePath": "okhttp-sse/src/test/java/okhttp3/internal/sse/EventSourceHttpTest.java",
+            "startLine": 34,
+            "endLine": 157,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "okhttp-sse/src/test/java/okhttp3/sse/internal/EventSourceHttpTest.java",
+            "startLine": 34,
+            "endLine": 157,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	okhttp3.internal.sse.EventSourceRecorder moved to okhttp3.sse.internal.EventSourceRecorder",
+          "leftSideLocation": {
+            "filePath": "okhttp-sse/src/test/java/okhttp3/internal/sse/EventSourceRecorder.java",
+            "startLine": 30,
+            "endLine": 148,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "okhttp-sse/src/test/java/okhttp3/sse/internal/EventSourceRecorder.java",
+            "startLine": 30,
+            "endLine": 148,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	okhttp3.internal.sse.ServerSentEventIteratorTest moved to okhttp3.sse.internal.ServerSentEventIteratorTest",
+          "leftSideLocation": {
+            "filePath": "okhttp-sse/src/test/java/okhttp3/internal/sse/ServerSentEventIteratorTest.java",
+            "startLine": 28,
+            "endLine": 226,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "okhttp-sse/src/test/java/okhttp3/sse/internal/ServerSentEventIteratorTest.java",
+            "startLine": 28,
+            "endLine": 226,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	okhttp3.internal.sse.Event moved to okhttp3.sse.internal.Event",
+          "leftSideLocation": {
+            "filePath": "okhttp-sse/src/test/java/okhttp3/internal/sse/Event.java",
+            "startLine": 21,
+            "endLine": 52,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "okhttp-sse/src/test/java/okhttp3/sse/internal/Event.java",
+            "startLine": 21,
+            "endLine": 52,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	okhttp3.internal.sse.EventSourceHttpTest moved to okhttp3.sse.internal.EventSourceHttpTest",
+          "leftSideLocation": {
+            "filePath": "okhttp-sse/src/test/java/okhttp3/internal/sse/EventSourceHttpTest.java",
+            "startLine": 34,
+            "endLine": 157,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "okhttp-sse/src/test/java/okhttp3/sse/internal/EventSourceHttpTest.java",
+            "startLine": 34,
+            "endLine": 157,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	okhttp3.internal.sse.EventSourceRecorder moved to okhttp3.sse.internal.EventSourceRecorder",
+          "leftSideLocation": {
+            "filePath": "okhttp-sse/src/test/java/okhttp3/internal/sse/EventSourceRecorder.java",
+            "startLine": 30,
+            "endLine": 148,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "okhttp-sse/src/test/java/okhttp3/sse/internal/EventSourceRecorder.java",
+            "startLine": 30,
+            "endLine": 148,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	okhttp3.internal.sse.ServerSentEventIteratorTest moved to okhttp3.sse.internal.ServerSentEventIteratorTest",
+          "leftSideLocation": {
+            "filePath": "okhttp-sse/src/test/java/okhttp3/internal/sse/ServerSentEventIteratorTest.java",
+            "startLine": 28,
+            "endLine": 226,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "okhttp-sse/src/test/java/okhttp3/sse/internal/ServerSentEventIteratorTest.java",
+            "startLine": 28,
+            "endLine": 226,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/square/okhttp.git",
+      "sha1": "5f67bd1e5b28179ddd11da500d61ae2d8ec8b8f2",
+      "url": "https://github.com/square/okhttp/commit/5f67bd1e5b28179ddd11da500d61ae2d8ec8b8f2",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private newEventSource(accept String) : EventSource extracted from private newEventSource() : EventSource in class okhttp3.internal.sse.EventSourceHttpTest",
+          "leftSideLocation": {
+            "filePath": "okhttp-sse/src/test/java/okhttp3/internal/sse/EventSourceHttpTest.java",
+            "startLine": 111,
+            "endLine": 117,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "okhttp-sse/src/test/java/okhttp3/internal/sse/EventSourceHttpTest.java",
+            "startLine": 144,
+            "endLine": 156,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private newEventSource(accept String) : EventSource extracted from private newEventSource() : EventSource in class okhttp3.internal.sse.EventSourceHttpTest",
+          "leftSideLocation": {
+            "filePath": "okhttp-sse/src/test/java/okhttp3/internal/sse/EventSourceHttpTest.java",
+            "startLine": 111,
+            "endLine": 117,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "okhttp-sse/src/test/java/okhttp3/internal/sse/EventSourceHttpTest.java",
+            "startLine": 144,
+            "endLine": 156,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/square/okhttp.git",
+      "sha1": "b17d8f1c39ce25e968d66b9d3d65d60a1a6683d6",
+      "url": "https://github.com/square/okhttp/commit/b17d8f1c39ce25e968d66b9d3d65d60a1a6683d6",
+      "ourApproach": [],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private successfulExtensions(extensionsHeader String) : void extracted from public compressedMessages() : void in class okhttp3.internal.ws.WebSocketHttpTest",
+          "leftSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/internal/ws/WebSocketHttpTest.java",
+            "startLine": 783,
+            "endLine": 808,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/internal/ws/WebSocketHttpTest.java",
+            "startLine": 825,
+            "endLine": 869,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/square/okhttp.git",
+      "sha1": "8703126227aba76b252f3108de760187f1982be1",
+      "url": "https://github.com/square/okhttp/commit/8703126227aba76b252f3108de760187f1982be1",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public reservedFlagsAreUnsupported() : void renamed to public reservedFlags2and3AreUnsupported() : void in class okhttp3.internal.ws.WebSocketReaderTest",
+          "leftSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/internal/ws/WebSocketReaderTest.java",
+            "startLine": 54,
+            "endLine": 78,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/internal/ws/WebSocketReaderTest.java",
+            "startLine": 90,
+            "endLine": 106,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	public initWebSocket(random Random, pingIntervalMillis int, responseHeaders Headers) : void extracted from public initWebSocket(random Random, pingIntervalMillis int) : void in class okhttp3.internal.ws.RealWebSocketTest.TestStreams",
+          "leftSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/internal/ws/RealWebSocketTest.java",
+            "startLine": 374,
+            "endLine": 385,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/internal/ws/RealWebSocketTest.java",
+            "startLine": 422,
+            "endLine": 435,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	public initWebSocket(random Random, pingIntervalMillis int, responseHeaders Headers) : void extracted from public initWebSocket(random Random, pingIntervalMillis int) : void in class okhttp3.internal.ws.RealWebSocketTest.TestStreams",
+          "leftSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/internal/ws/RealWebSocketTest.java",
+            "startLine": 374,
+            "endLine": 385,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/internal/ws/RealWebSocketTest.java",
+            "startLine": 422,
+            "endLine": 435,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public reservedFlagsAreUnsupported() : void renamed to public reservedFlags2and3AreUnsupported() : void in class okhttp3.internal.ws.WebSocketReaderTest",
+          "leftSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/internal/ws/WebSocketReaderTest.java",
+            "startLine": 54,
+            "endLine": 78,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/internal/ws/WebSocketReaderTest.java",
+            "startLine": 90,
+            "endLine": 106,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/square/okhttp.git",
+      "sha1": "134ac982291a8d679e9cd2721a903fdeb1e1fb5b",
+      "url": "https://github.com/square/okhttp/commit/134ac982291a8d679e9cd2721a903fdeb1e1fb5b",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private recoverFromOneHttp2ErrorRequiresNewConnection(errorCode ErrorCode) : void extracted from public recoverFromOneInternalErrorRequiresNewConnection() : void in class okhttp3.internal.http2.HttpOverHttp2Test",
+          "leftSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/internal/http2/HttpOverHttp2Test.java",
+            "startLine": 883,
+            "endLine": 904,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/internal/http2/HttpOverHttp2Test.java",
+            "startLine": 891,
+            "endLine": 912,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private recoverFromOneHttp2ErrorRequiresNewConnection(errorCode ErrorCode) : void extracted from public recoverFromOneInternalErrorRequiresNewConnection() : void in class okhttp3.internal.http2.HttpOverHttp2Test",
+          "leftSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/internal/http2/HttpOverHttp2Test.java",
+            "startLine": 883,
+            "endLine": 904,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/internal/http2/HttpOverHttp2Test.java",
+            "startLine": 891,
+            "endLine": 912,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/square/okhttp.git",
+      "sha1": "b2168ceb7381153aee352e582aa4131ad35f15a7",
+      "url": "https://github.com/square/okhttp/commit/b2168ceb7381153aee352e582aa4131ad35f15a7",
+      "ourApproach": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	X509TrustManager to KeyAndTrustManagers in method private trustManagerForCertificates(in InputStream) : KeyAndTrustManagers from class okhttp3.recipes.CustomTrust",
+          "leftSideLocation": {
+            "filePath": "samples/guide/src/main/java/okhttp3/recipes/CustomTrust.java",
+            "startLine": 155,
+            "endLine": 205,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "samples/guide/src/main/java/okhttp3/recipes/CustomTrust.java",
+            "startLine": 196,
+            "endLine": 243,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	X509TrustManager to KeyAndTrustManagers in method private trustManagerForCertificates(in InputStream) : KeyAndTrustManagers from class okhttp3.recipes.CustomTrust",
+          "leftSideLocation": {
+            "filePath": "samples/guide/src/main/java/okhttp3/recipes/CustomTrust.java",
+            "startLine": 155,
+            "endLine": 205,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "samples/guide/src/main/java/okhttp3/recipes/CustomTrust.java",
+            "startLine": 196,
+            "endLine": 243,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/square/okhttp.git",
+      "sha1": "283418b2bc079108cbe3599f06a4ebfa7211e319",
+      "url": "https://github.com/square/okhttp/commit/283418b2bc079108cbe3599f06a4ebfa7211e319",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public skipForUri(codePoints int...) : UrlComponentEncodingTester renamed to public escapeForUri(codePoints int...) : UrlComponentEncodingTester in class okhttp3.UrlComponentEncodingTester",
+          "leftSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/UrlComponentEncodingTester.java",
+            "startLine": 200,
+            "endLine": 207,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/UrlComponentEncodingTester.java",
+            "startLine": 112,
+            "endLine": 119,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public identityForNonAscii() : UrlComponentEncodingTester renamed to public nonAscii(encoding Encoding) : UrlComponentEncodingTester in class okhttp3.UrlComponentEncodingTester",
+          "leftSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/UrlComponentEncodingTester.java",
+            "startLine": 193,
+            "endLine": 198,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/UrlComponentEncodingTester.java",
+            "startLine": 105,
+            "endLine": 110,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public identityForNonAscii() : UrlComponentEncodingTester renamed to public nonAscii(encoding Encoding) : UrlComponentEncodingTester in class okhttp3.UrlComponentEncodingTester",
+          "leftSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/UrlComponentEncodingTester.java",
+            "startLine": 193,
+            "endLine": 198,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/UrlComponentEncodingTester.java",
+            "startLine": 105,
+            "endLine": 110,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public skipForUri(codePoints int...) : UrlComponentEncodingTester renamed to public escapeForUri(codePoints int...) : UrlComponentEncodingTester in class okhttp3.UrlComponentEncodingTester",
+          "leftSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/UrlComponentEncodingTester.java",
+            "startLine": 200,
+            "endLine": 207,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/UrlComponentEncodingTester.java",
+            "startLine": 112,
+            "endLine": 119,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/square/okhttp.git",
+      "sha1": "584e8503a84d508bde58b49137ed920281b3d9bf",
+      "url": "https://github.com/square/okhttp/commit/584e8503a84d508bde58b49137ed920281b3d9bf",
+      "ourApproach": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	logHandler : TestLogHandler to testLogHandler : TestLogHandler in class okhttp3.CallTest",
+          "leftSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/CallTest.java",
+            "startLine": 120,
+            "endLine": 120,
+            "startColumn": 26,
+            "endColumn": 59
+          },
+          "rightSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/CallTest.java",
+            "startLine": 109,
+            "endLine": 109,
+            "startColumn": 37,
+            "endColumn": 92
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	http2Handler : TestLogHandler to testLogHandler : TestLogHandler in class okhttp3.internal.http2.HttpOverHttp2Test",
+          "leftSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/internal/http2/HttpOverHttp2Test.java",
+            "startLine": 124,
+            "endLine": 124,
+            "startColumn": 26,
+            "endColumn": 61
+          },
+          "rightSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/internal/http2/HttpOverHttp2Test.java",
+            "startLine": 120,
+            "endLine": 120,
+            "startColumn": 37,
+            "endColumn": 85
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	logHandler : TestLogHandler to testLogHandler : TestLogHandler in class okhttp3.CallTest",
+          "leftSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/CallTest.java",
+            "startLine": 120,
+            "endLine": 120,
+            "startColumn": 26,
+            "endColumn": 59
+          },
+          "rightSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/CallTest.java",
+            "startLine": 109,
+            "endLine": 109,
+            "startColumn": 37,
+            "endColumn": 92
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	http2Handler : TestLogHandler to testLogHandler : TestLogHandler in class okhttp3.internal.http2.HttpOverHttp2Test",
+          "leftSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/internal/http2/HttpOverHttp2Test.java",
+            "startLine": 124,
+            "endLine": 124,
+            "startColumn": 26,
+            "endColumn": 61
+          },
+          "rightSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/internal/http2/HttpOverHttp2Test.java",
+            "startLine": 120,
+            "endLine": 120,
+            "startColumn": 37,
+            "endColumn": 85
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/square/okhttp.git",
+      "sha1": "b5efb41a636154cb8bbc7c5ea3c8244090692d28",
+      "url": "https://github.com/square/okhttp/commit/b5efb41a636154cb8bbc7c5ea3c8244090692d28",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public unexpectedPingIsNotReturned() : void renamed to public unexpectedPongIsNotReturned() : void in class okhttp3.internal.http2.Http2ConnectionTest",
+          "leftSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/internal/http2/Http2ConnectionTest.java",
+            "startLine": 846,
+            "endLine": 865,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/internal/http2/Http2ConnectionTest.java",
+            "startLine": 846,
+            "endLine": 865,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public unexpectedPingIsNotReturned() : void renamed to public unexpectedPongIsNotReturned() : void in class okhttp3.internal.http2.Http2ConnectionTest",
+          "leftSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/internal/http2/Http2ConnectionTest.java",
+            "startLine": 846,
+            "endLine": 865,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/internal/http2/Http2ConnectionTest.java",
+            "startLine": 846,
+            "endLine": 865,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/square/okhttp.git",
+      "sha1": "7624d99eafcd3dd847f36335d4c99560c55ab6bd",
+      "url": "https://github.com/square/okhttp/commit/7624d99eafcd3dd847f36335d4c99560c55ab6bd",
+      "ourApproach": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	executor : TestExecutor to taskRunner : TaskRunner in class okhttp3.internal.cache.DiskLruCacheTest",
+          "leftSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/internal/cache/DiskLruCacheTest.java",
+            "startLine": 57,
+            "endLine": 57,
+            "startColumn": 30,
+            "endColumn": 59
+          },
+          "rightSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/internal/cache/DiskLruCacheTest.java",
+            "startLine": 59,
+            "endLine": 59,
+            "startColumn": 28,
+            "endColumn": 66
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	executor : TestExecutor to taskRunner : TaskRunner in class okhttp3.internal.cache.DiskLruCacheTest",
+          "leftSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/internal/cache/DiskLruCacheTest.java",
+            "startLine": 57,
+            "endLine": 57,
+            "startColumn": 30,
+            "endColumn": 59
+          },
+          "rightSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/internal/cache/DiskLruCacheTest.java",
+            "startLine": 59,
+            "endLine": 59,
+            "startColumn": 28,
+            "endColumn": 66
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	executor : TestExecutor to taskRunner : TaskRunner in class okhttp3.internal.cache.DiskLruCacheTest",
+          "leftSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/internal/cache/DiskLruCacheTest.java",
+            "startLine": 57,
+            "endLine": 57,
+            "startColumn": 30,
+            "endColumn": 59
+          },
+          "rightSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/internal/cache/DiskLruCacheTest.java",
+            "startLine": 59,
+            "endLine": 59,
+            "startColumn": 28,
+            "endColumn": 66
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	executor : TestExecutor to taskRunner : TaskRunner in class okhttp3.internal.cache.DiskLruCacheTest",
+          "leftSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/internal/cache/DiskLruCacheTest.java",
+            "startLine": 57,
+            "endLine": 57,
+            "startColumn": 30,
+            "endColumn": 59
+          },
+          "rightSideLocation": {
+            "filePath": "okhttp/src/test/java/okhttp3/internal/cache/DiskLruCacheTest.java",
+            "startLine": 59,
+            "endLine": 59,
+            "startColumn": 28,
+            "endColumn": 66
+          },
+          "developerConfirmation": true
+        }
+      ]
+    }
+  ]
+}

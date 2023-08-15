@@ -1,0 +1,3832 @@
+{
+  "results": [
+    {
+      "repository": "https://github.com/apache/flink.git",
+      "sha1": "5a4e0ea31aef51dfc50b9c401c91c7b869a154c4",
+      "url": "https://github.com/apache/flink/commit/5a4e0ea31aef51dfc50b9c401c91c7b869a154c4",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	public createCustomParallelismDecider(parallelismFunction Function<JobVertexID,Integer>) : VertexParallelismAndInputInfosDecider extracted from public createCustomParallelismDecider(expectParallelism int) : VertexParallelismAndInputInfosDecider in class org.apache.flink.runtime.scheduler.DefaultSchedulerBuilder",
+          "leftSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/scheduler/DefaultSchedulerBuilder.java",
+            "startLine": 391,
+            "endLine": 402,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/scheduler/DefaultSchedulerBuilder.java",
+            "startLine": 403,
+            "endLine": 417,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private createConfiguration() : Configuration extracted from private executeJob(isFineGrained Boolean) : void in class org.apache.flink.test.scheduling.AdaptiveBatchSchedulerITCase",
+          "leftSideLocation": {
+            "filePath": "flink-tests/src/test/java/org/apache/flink/test/scheduling/AdaptiveBatchSchedulerITCase.java",
+            "startLine": 101,
+            "endLine": 158,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "flink-tests/src/test/java/org/apache/flink/test/scheduling/AdaptiveBatchSchedulerITCase.java",
+            "startLine": 167,
+            "endLine": 180,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	public createCustomParallelismDecider(parallelismFunction Function<JobVertexID,Integer>) : VertexParallelismAndInputInfosDecider extracted from public createCustomParallelismDecider(expectParallelism int) : VertexParallelismAndInputInfosDecider in class org.apache.flink.runtime.scheduler.DefaultSchedulerBuilder",
+          "leftSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/scheduler/DefaultSchedulerBuilder.java",
+            "startLine": 391,
+            "endLine": 402,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/scheduler/DefaultSchedulerBuilder.java",
+            "startLine": 403,
+            "endLine": 417,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private createConfiguration() : Configuration extracted from private executeJob(isFineGrained Boolean) : void in class org.apache.flink.test.scheduling.AdaptiveBatchSchedulerITCase",
+          "leftSideLocation": {
+            "filePath": "flink-tests/src/test/java/org/apache/flink/test/scheduling/AdaptiveBatchSchedulerITCase.java",
+            "startLine": 101,
+            "endLine": 158,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "flink-tests/src/test/java/org/apache/flink/test/scheduling/AdaptiveBatchSchedulerITCase.java",
+            "startLine": 167,
+            "endLine": 180,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/flink.git",
+      "sha1": "e69e6514d0b901eb03f1a8bfc499680d076248c9",
+      "url": "https://github.com/apache/flink/commit/e69e6514d0b901eb03f1a8bfc499680d076248c9",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package testTableConstraintsValidated() : void renamed to package testUniqueTableConstraint() : void in class org.apache.flink.sql.parser.FlinkSqlParserImplTest",
+          "leftSideLocation": {
+            "filePath": "flink-table/flink-sql-parser/src/test/java/org/apache/flink/sql/parser/FlinkSqlParserImplTest.java",
+            "startLine": 880,
+            "endLine": 911,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "flink-table/flink-sql-parser/src/test/java/org/apache/flink/sql/parser/FlinkSqlParserImplTest.java",
+            "startLine": 1078,
+            "endLine": 1110,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package testTableConstraintsValidated() : void renamed to package testUniqueTableConstraint() : void in class org.apache.flink.sql.parser.FlinkSqlParserImplTest",
+          "leftSideLocation": {
+            "filePath": "flink-table/flink-sql-parser/src/test/java/org/apache/flink/sql/parser/FlinkSqlParserImplTest.java",
+            "startLine": 880,
+            "endLine": 911,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "flink-table/flink-sql-parser/src/test/java/org/apache/flink/sql/parser/FlinkSqlParserImplTest.java",
+            "startLine": 1078,
+            "endLine": 1110,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/flink.git",
+      "sha1": "615fde6667a9a57be8cf308b1118171f8c812f13",
+      "url": "https://github.com/apache/flink/commit/615fde6667a9a57be8cf308b1118171f8c812f13",
+      "ourApproach": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.apache.flink.table.client.gateway.local.DefaultContextUtils moved to org.apache.flink.table.client.gateway.DefaultContextUtils",
+          "leftSideLocation": {
+            "filePath": "flink-table/flink-sql-client/src/main/java/org/apache/flink/table/client/gateway/local/DefaultContextUtils.java",
+            "startLine": 36,
+            "endLine": 103,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "flink-table/flink-sql-client/src/main/java/org/apache/flink/table/client/gateway/DefaultContextUtils.java",
+            "startLine": 36,
+            "endLine": 103,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.apache.flink.table.client.gateway.local.SingleSessionManager moved to org.apache.flink.table.client.gateway.SingleSessionManager",
+          "leftSideLocation": {
+            "filePath": "flink-table/flink-sql-client/src/main/java/org/apache/flink/table/client/gateway/local/SingleSessionManager.java",
+            "startLine": 47,
+            "endLine": 186,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "flink-table/flink-sql-client/src/main/java/org/apache/flink/table/client/gateway/SingleSessionManager.java",
+            "startLine": 47,
+            "endLine": 186,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.apache.flink.table.client.gateway.local.result.ChangelogCollectResult moved to org.apache.flink.table.client.gateway.result.ChangelogCollectResult",
+          "leftSideLocation": {
+            "filePath": "flink-table/flink-sql-client/src/main/java/org/apache/flink/table/client/gateway/local/result/ChangelogCollectResult.java",
+            "startLine": 29,
+            "endLine": 86,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "flink-table/flink-sql-client/src/main/java/org/apache/flink/table/client/gateway/result/ChangelogCollectResult.java",
+            "startLine": 29,
+            "endLine": 86,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.apache.flink.table.client.gateway.local.result.ChangelogResult moved to org.apache.flink.table.client.gateway.result.ChangelogResult",
+          "leftSideLocation": {
+            "filePath": "flink-table/flink-sql-client/src/main/java/org/apache/flink/table/client/gateway/local/result/ChangelogResult.java",
+            "startLine": 26,
+            "endLine": 31,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "flink-table/flink-sql-client/src/main/java/org/apache/flink/table/client/gateway/result/ChangelogResult.java",
+            "startLine": 26,
+            "endLine": 31,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.apache.flink.table.client.gateway.local.result.CollectResultBase moved to org.apache.flink.table.client.gateway.result.CollectResultBase",
+          "leftSideLocation": {
+            "filePath": "flink-table/flink-sql-client/src/main/java/org/apache/flink/table/client/gateway/local/result/CollectResultBase.java",
+            "startLine": 30,
+            "endLine": 93,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "flink-table/flink-sql-client/src/main/java/org/apache/flink/table/client/gateway/result/CollectResultBase.java",
+            "startLine": 30,
+            "endLine": 93,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.apache.flink.table.client.gateway.local.result.DynamicResult moved to org.apache.flink.table.client.gateway.result.DynamicResult",
+          "leftSideLocation": {
+            "filePath": "flink-table/flink-sql-client/src/main/java/org/apache/flink/table/client/gateway/local/result/DynamicResult.java",
+            "startLine": 21,
+            "endLine": 30,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "flink-table/flink-sql-client/src/main/java/org/apache/flink/table/client/gateway/result/DynamicResult.java",
+            "startLine": 21,
+            "endLine": 30,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.apache.flink.table.client.gateway.local.result.MaterializedCollectBatchResult moved to org.apache.flink.table.client.gateway.result.MaterializedCollectBatchResult",
+          "leftSideLocation": {
+            "filePath": "flink-table/flink-sql-client/src/main/java/org/apache/flink/table/client/gateway/local/result/MaterializedCollectBatchResult.java",
+            "startLine": 25,
+            "endLine": 59,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "flink-table/flink-sql-client/src/main/java/org/apache/flink/table/client/gateway/result/MaterializedCollectBatchResult.java",
+            "startLine": 25,
+            "endLine": 59,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.apache.flink.table.client.gateway.local.result.MaterializedCollectResultBase moved to org.apache.flink.table.client.gateway.result.MaterializedCollectResultBase",
+          "leftSideLocation": {
+            "filePath": "flink-table/flink-sql-client/src/main/java/org/apache/flink/table/client/gateway/local/result/MaterializedCollectResultBase.java",
+            "startLine": 30,
+            "endLine": 157,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "flink-table/flink-sql-client/src/main/java/org/apache/flink/table/client/gateway/result/MaterializedCollectResultBase.java",
+            "startLine": 30,
+            "endLine": 157,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.apache.flink.table.client.gateway.local.result.MaterializedCollectStreamResult moved to org.apache.flink.table.client.gateway.result.MaterializedCollectStreamResult",
+          "leftSideLocation": {
+            "filePath": "flink-table/flink-sql-client/src/main/java/org/apache/flink/table/client/gateway/local/result/MaterializedCollectStreamResult.java",
+            "startLine": 29,
+            "endLine": 127,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "flink-table/flink-sql-client/src/main/java/org/apache/flink/table/client/gateway/result/MaterializedCollectStreamResult.java",
+            "startLine": 29,
+            "endLine": 127,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.apache.flink.table.client.gateway.local.result.MaterializedResult moved to org.apache.flink.table.client.gateway.result.MaterializedResult",
+          "leftSideLocation": {
+            "filePath": "flink-table/flink-sql-client/src/main/java/org/apache/flink/table/client/gateway/local/result/MaterializedResult.java",
+            "startLine": 26,
+            "endLine": 37,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "flink-table/flink-sql-client/src/main/java/org/apache/flink/table/client/gateway/result/MaterializedResult.java",
+            "startLine": 26,
+            "endLine": 37,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.apache.flink.table.client.gateway.local.ExecutorImplITCase moved to org.apache.flink.table.client.gateway.ExecutorImplITCase",
+          "leftSideLocation": {
+            "filePath": "flink-table/flink-sql-client/src/test/java/org/apache/flink/table/client/gateway/local/ExecutorImplITCase.java",
+            "startLine": 123,
+            "endLine": 892,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "flink-table/flink-sql-client/src/test/java/org/apache/flink/table/client/gateway/ExecutorImplITCase.java",
+            "startLine": 116,
+            "endLine": 885,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.apache.flink.table.client.gateway.local.result.BaseMaterializedResultTest moved to org.apache.flink.table.client.gateway.result.BaseMaterializedResultTest",
+          "leftSideLocation": {
+            "filePath": "flink-table/flink-sql-client/src/test/java/org/apache/flink/table/client/gateway/local/result/BaseMaterializedResultTest.java",
+            "startLine": 36,
+            "endLine": 53,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "flink-table/flink-sql-client/src/test/java/org/apache/flink/table/client/gateway/result/BaseMaterializedResultTest.java",
+            "startLine": 36,
+            "endLine": 53,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.apache.flink.table.client.gateway.local.result.ChangelogCollectResultTest moved to org.apache.flink.table.client.gateway.result.ChangelogCollectResultTest",
+          "leftSideLocation": {
+            "filePath": "flink-table/flink-sql-client/src/test/java/org/apache/flink/table/client/gateway/local/result/ChangelogCollectResultTest.java",
+            "startLine": 40,
+            "endLine": 81,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "flink-table/flink-sql-client/src/test/java/org/apache/flink/table/client/gateway/result/ChangelogCollectResultTest.java",
+            "startLine": 40,
+            "endLine": 81,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.apache.flink.table.client.gateway.local.result.MaterializedCollectBatchResultTest moved to org.apache.flink.table.client.gateway.result.MaterializedCollectBatchResultTest",
+          "leftSideLocation": {
+            "filePath": "flink-table/flink-sql-client/src/test/java/org/apache/flink/table/client/gateway/local/result/MaterializedCollectBatchResultTest.java",
+            "startLine": 41,
+            "endLine": 211,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "flink-table/flink-sql-client/src/test/java/org/apache/flink/table/client/gateway/result/MaterializedCollectBatchResultTest.java",
+            "startLine": 41,
+            "endLine": 211,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.apache.flink.table.client.gateway.local.result.MaterializedCollectStreamResultTest moved to org.apache.flink.table.client.gateway.result.MaterializedCollectStreamResultTest",
+          "leftSideLocation": {
+            "filePath": "flink-table/flink-sql-client/src/test/java/org/apache/flink/table/client/gateway/local/result/MaterializedCollectStreamResultTest.java",
+            "startLine": 42,
+            "endLine": 226,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "flink-table/flink-sql-client/src/test/java/org/apache/flink/table/client/gateway/result/MaterializedCollectStreamResultTest.java",
+            "startLine": 42,
+            "endLine": 226,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.apache.flink.table.client.gateway.local.SingleSessionManager moved to org.apache.flink.table.client.gateway.SingleSessionManager",
+          "leftSideLocation": {
+            "filePath": "flink-table/flink-sql-client/src/main/java/org/apache/flink/table/client/gateway/local/SingleSessionManager.java",
+            "startLine": 47,
+            "endLine": 186,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "flink-table/flink-sql-client/src/main/java/org/apache/flink/table/client/gateway/SingleSessionManager.java",
+            "startLine": 47,
+            "endLine": 186,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.apache.flink.table.client.gateway.local.result.ChangelogCollectResult moved to org.apache.flink.table.client.gateway.result.ChangelogCollectResult",
+          "leftSideLocation": {
+            "filePath": "flink-table/flink-sql-client/src/main/java/org/apache/flink/table/client/gateway/local/result/ChangelogCollectResult.java",
+            "startLine": 29,
+            "endLine": 86,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "flink-table/flink-sql-client/src/main/java/org/apache/flink/table/client/gateway/result/ChangelogCollectResult.java",
+            "startLine": 29,
+            "endLine": 86,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.apache.flink.table.client.gateway.local.result.ChangelogResult moved to org.apache.flink.table.client.gateway.result.ChangelogResult",
+          "leftSideLocation": {
+            "filePath": "flink-table/flink-sql-client/src/main/java/org/apache/flink/table/client/gateway/local/result/ChangelogResult.java",
+            "startLine": 26,
+            "endLine": 31,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "flink-table/flink-sql-client/src/main/java/org/apache/flink/table/client/gateway/result/ChangelogResult.java",
+            "startLine": 26,
+            "endLine": 31,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.apache.flink.table.client.gateway.local.result.CollectResultBase moved to org.apache.flink.table.client.gateway.result.CollectResultBase",
+          "leftSideLocation": {
+            "filePath": "flink-table/flink-sql-client/src/main/java/org/apache/flink/table/client/gateway/local/result/CollectResultBase.java",
+            "startLine": 30,
+            "endLine": 93,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "flink-table/flink-sql-client/src/main/java/org/apache/flink/table/client/gateway/result/CollectResultBase.java",
+            "startLine": 30,
+            "endLine": 93,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.apache.flink.table.client.gateway.local.result.DynamicResult moved to org.apache.flink.table.client.gateway.result.DynamicResult",
+          "leftSideLocation": {
+            "filePath": "flink-table/flink-sql-client/src/main/java/org/apache/flink/table/client/gateway/local/result/DynamicResult.java",
+            "startLine": 21,
+            "endLine": 30,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "flink-table/flink-sql-client/src/main/java/org/apache/flink/table/client/gateway/result/DynamicResult.java",
+            "startLine": 21,
+            "endLine": 30,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.apache.flink.table.client.gateway.local.result.MaterializedCollectBatchResult moved to org.apache.flink.table.client.gateway.result.MaterializedCollectBatchResult",
+          "leftSideLocation": {
+            "filePath": "flink-table/flink-sql-client/src/main/java/org/apache/flink/table/client/gateway/local/result/MaterializedCollectBatchResult.java",
+            "startLine": 25,
+            "endLine": 59,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "flink-table/flink-sql-client/src/main/java/org/apache/flink/table/client/gateway/result/MaterializedCollectBatchResult.java",
+            "startLine": 25,
+            "endLine": 59,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.apache.flink.table.client.gateway.local.result.MaterializedCollectResultBase moved to org.apache.flink.table.client.gateway.result.MaterializedCollectResultBase",
+          "leftSideLocation": {
+            "filePath": "flink-table/flink-sql-client/src/main/java/org/apache/flink/table/client/gateway/local/result/MaterializedCollectResultBase.java",
+            "startLine": 30,
+            "endLine": 157,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "flink-table/flink-sql-client/src/main/java/org/apache/flink/table/client/gateway/result/MaterializedCollectResultBase.java",
+            "startLine": 30,
+            "endLine": 157,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.apache.flink.table.client.gateway.local.result.MaterializedCollectStreamResult moved to org.apache.flink.table.client.gateway.result.MaterializedCollectStreamResult",
+          "leftSideLocation": {
+            "filePath": "flink-table/flink-sql-client/src/main/java/org/apache/flink/table/client/gateway/local/result/MaterializedCollectStreamResult.java",
+            "startLine": 29,
+            "endLine": 127,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "flink-table/flink-sql-client/src/main/java/org/apache/flink/table/client/gateway/result/MaterializedCollectStreamResult.java",
+            "startLine": 29,
+            "endLine": 127,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.apache.flink.table.client.gateway.local.result.MaterializedResult moved to org.apache.flink.table.client.gateway.result.MaterializedResult",
+          "leftSideLocation": {
+            "filePath": "flink-table/flink-sql-client/src/main/java/org/apache/flink/table/client/gateway/local/result/MaterializedResult.java",
+            "startLine": 26,
+            "endLine": 37,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "flink-table/flink-sql-client/src/main/java/org/apache/flink/table/client/gateway/result/MaterializedResult.java",
+            "startLine": 26,
+            "endLine": 37,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.apache.flink.table.client.gateway.local.ExecutorImplITCase moved to org.apache.flink.table.client.gateway.ExecutorImplITCase",
+          "leftSideLocation": {
+            "filePath": "flink-table/flink-sql-client/src/test/java/org/apache/flink/table/client/gateway/local/ExecutorImplITCase.java",
+            "startLine": 123,
+            "endLine": 892,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "flink-table/flink-sql-client/src/test/java/org/apache/flink/table/client/gateway/ExecutorImplITCase.java",
+            "startLine": 116,
+            "endLine": 885,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.apache.flink.table.client.gateway.local.result.BaseMaterializedResultTest moved to org.apache.flink.table.client.gateway.result.BaseMaterializedResultTest",
+          "leftSideLocation": {
+            "filePath": "flink-table/flink-sql-client/src/test/java/org/apache/flink/table/client/gateway/local/result/BaseMaterializedResultTest.java",
+            "startLine": 36,
+            "endLine": 53,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "flink-table/flink-sql-client/src/test/java/org/apache/flink/table/client/gateway/result/BaseMaterializedResultTest.java",
+            "startLine": 36,
+            "endLine": 53,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.apache.flink.table.client.gateway.local.result.ChangelogCollectResultTest moved to org.apache.flink.table.client.gateway.result.ChangelogCollectResultTest",
+          "leftSideLocation": {
+            "filePath": "flink-table/flink-sql-client/src/test/java/org/apache/flink/table/client/gateway/local/result/ChangelogCollectResultTest.java",
+            "startLine": 40,
+            "endLine": 81,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "flink-table/flink-sql-client/src/test/java/org/apache/flink/table/client/gateway/result/ChangelogCollectResultTest.java",
+            "startLine": 40,
+            "endLine": 81,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.apache.flink.table.client.gateway.local.result.MaterializedCollectBatchResultTest moved to org.apache.flink.table.client.gateway.result.MaterializedCollectBatchResultTest",
+          "leftSideLocation": {
+            "filePath": "flink-table/flink-sql-client/src/test/java/org/apache/flink/table/client/gateway/local/result/MaterializedCollectBatchResultTest.java",
+            "startLine": 41,
+            "endLine": 211,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "flink-table/flink-sql-client/src/test/java/org/apache/flink/table/client/gateway/result/MaterializedCollectBatchResultTest.java",
+            "startLine": 41,
+            "endLine": 211,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.apache.flink.table.client.gateway.local.result.MaterializedCollectStreamResultTest moved to org.apache.flink.table.client.gateway.result.MaterializedCollectStreamResultTest",
+          "leftSideLocation": {
+            "filePath": "flink-table/flink-sql-client/src/test/java/org/apache/flink/table/client/gateway/local/result/MaterializedCollectStreamResultTest.java",
+            "startLine": 42,
+            "endLine": 226,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "flink-table/flink-sql-client/src/test/java/org/apache/flink/table/client/gateway/result/MaterializedCollectStreamResultTest.java",
+            "startLine": 42,
+            "endLine": 226,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.apache.flink.table.client.gateway.local.DefaultContextUtils moved to org.apache.flink.table.client.gateway.DefaultContextUtils",
+          "leftSideLocation": {
+            "filePath": "flink-table/flink-sql-client/src/main/java/org/apache/flink/table/client/gateway/local/DefaultContextUtils.java",
+            "startLine": 36,
+            "endLine": 103,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "flink-table/flink-sql-client/src/main/java/org/apache/flink/table/client/gateway/DefaultContextUtils.java",
+            "startLine": 36,
+            "endLine": 103,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/flink.git",
+      "sha1": "cf358d7d55ca48b9d25e5217006898e3070a85ad",
+      "url": "https://github.com/apache/flink/commit/cf358d7d55ca48b9d25e5217006898e3070a85ad",
+      "ourApproach": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.apache.flink.connector.file.table.batch.compact.CompactFileUtils moved to org.apache.flink.connector.file.table.utils.CompactFileUtils",
+          "leftSideLocation": {
+            "filePath": "flink-connectors/flink-connector-files/src/main/java/org/apache/flink/connector/file/table/batch/compact/CompactFileUtils.java",
+            "startLine": 38,
+            "endLine": 121,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "flink-connectors/flink-connector-files/src/main/java/org/apache/flink/connector/file/table/utils/CompactFileUtils.java",
+            "startLine": 42,
+            "endLine": 161,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	configuredParallelism : Integer to configuredSinkParallelism : Integer in class org.apache.flink.connectors.hive.HiveTableSink",
+          "leftSideLocation": {
+            "filePath": "flink-connectors/flink-connector-hive/src/main/java/org/apache/flink/connectors/hive/HiveTableSink.java",
+            "startLine": 137,
+            "endLine": 137,
+            "startColumn": 37,
+            "endColumn": 58
+          },
+          "rightSideLocation": {
+            "filePath": "flink-connectors/flink-connector-hive/src/main/java/org/apache/flink/connectors/hive/HiveTableSink.java",
+            "startLine": 141,
+            "endLine": 141,
+            "startColumn": 37,
+            "endColumn": 62
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	DataStreamSink<Row> to DataStreamSink<?> in method private createBatchSink(dataStream DataStream<RowData>, converter DataStructureConverter, recordWriterFactory HiveWriterFactory, metaStoreFactory TableMetaStoreFactory, fileConfigBuilder OutputFileConfig.OutputFileConfigBuilder, stagingParentDir String, sd StorageDescriptor, tableProps Properties, isToLocal boolean, overwrite boolean, sinkParallelism int) : DataStreamSink<?> from class org.apache.flink.connectors.hive.HiveTableSink",
+          "leftSideLocation": {
+            "filePath": "flink-connectors/flink-connector-hive/src/main/java/org/apache/flink/connectors/hive/HiveTableSink.java",
+            "startLine": 354,
+            "endLine": 397,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "flink-connectors/flink-connector-hive/src/main/java/org/apache/flink/connectors/hive/HiveTableSink.java",
+            "startLine": 361,
+            "endLine": 411,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private getBucketsBuilder(path org.apache.flink.core.fs.Path, recordWriterFactory HiveWriterFactory, sd StorageDescriptor, fileNaming OutputFileConfig, conf org.apache.flink.configuration.Configuration) : BucketsBuilder<RowData,String,? extends BucketsBuilder<RowData,?,?>> extracted from private createStreamSink(providerContext ProviderContext, dataStream DataStream<RowData>, sd StorageDescriptor, tableProps Properties, recordWriterFactory HiveWriterFactory, fileNamingBuilder OutputFileConfig.OutputFileConfigBuilder, parallelism int) : DataStreamSink<?> in class org.apache.flink.connectors.hive.HiveTableSink",
+          "leftSideLocation": {
+            "filePath": "flink-connectors/flink-connector-hive/src/main/java/org/apache/flink/connectors/hive/HiveTableSink.java",
+            "startLine": 399,
+            "endLine": 515,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "flink-connectors/flink-connector-hive/src/main/java/org/apache/flink/connectors/hive/HiveTableSink.java",
+            "startLine": 499,
+            "endLine": 548,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private createBatchNoCompactSink(dataStream DataStream<RowData>, converter DataStructureConverter, recordWriterFactory HiveWriterFactory, metaStoreFactory TableMetaStoreFactory, fileNaming OutputFileConfig, stagingParentDir String, isToLocal boolean, sinkParallelism int) : DataStreamSink<Row> extracted from private createBatchSink(dataStream DataStream<RowData>, converter DataStructureConverter, recordWriterFactory HiveWriterFactory, metaStoreFactory TableMetaStoreFactory, fileNaming OutputFileConfig, stagingParentDir String, isToLocal boolean, parallelism int) : DataStreamSink<Row> in class org.apache.flink.connectors.hive.HiveTableSink",
+          "leftSideLocation": {
+            "filePath": "flink-connectors/flink-connector-hive/src/main/java/org/apache/flink/connectors/hive/HiveTableSink.java",
+            "startLine": 354,
+            "endLine": 397,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "flink-connectors/flink-connector-hive/src/main/java/org/apache/flink/connectors/hive/HiveTableSink.java",
+            "startLine": 550,
+            "endLine": 590,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.apache.flink.connector.file.table.batch.compact.CompactFileUtils moved to org.apache.flink.connector.file.table.utils.CompactFileUtils",
+          "leftSideLocation": {
+            "filePath": "flink-connectors/flink-connector-files/src/main/java/org/apache/flink/connector/file/table/batch/compact/CompactFileUtils.java",
+            "startLine": 38,
+            "endLine": 121,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "flink-connectors/flink-connector-files/src/main/java/org/apache/flink/connector/file/table/utils/CompactFileUtils.java",
+            "startLine": 42,
+            "endLine": 161,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private getBucketsBuilder(path Path, recordWriterFactory HiveWriterFactory, sd StorageDescriptor, fileNaming OutputFileConfig, conf Configuration) : BucketsBuilder<RowData,String,? extends BucketsBuilder<RowData,?,?>> extracted from private createStreamSink(providerContext ProviderContext, dataStream DataStream<RowData>, sd StorageDescriptor, tableProps Properties, recordWriterFactory HiveWriterFactory, fileNamingBuilder OutputFileConfig.OutputFileConfigBuilder, parallelism int) : DataStreamSink<?> in class org.apache.flink.connectors.hive.HiveTableSink",
+          "leftSideLocation": {
+            "filePath": "flink-connectors/flink-connector-hive/src/main/java/org/apache/flink/connectors/hive/HiveTableSink.java",
+            "startLine": 399,
+            "endLine": 515,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "flink-connectors/flink-connector-hive/src/main/java/org/apache/flink/connectors/hive/HiveTableSink.java",
+            "startLine": 499,
+            "endLine": 548,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private createBatchNoCompactSink(dataStream DataStream<RowData>, converter DataStructureConverter, recordWriterFactory HiveWriterFactory, metaStoreFactory TableMetaStoreFactory, fileNaming OutputFileConfig, stagingParentDir String, isToLocal boolean, sinkParallelism int) : DataStreamSink<Row> extracted from private createBatchSink(dataStream DataStream<RowData>, converter DataStructureConverter, recordWriterFactory HiveWriterFactory, metaStoreFactory TableMetaStoreFactory, fileNaming OutputFileConfig, stagingParentDir String, isToLocal boolean, parallelism int) : DataStreamSink<Row> in class org.apache.flink.connectors.hive.HiveTableSink",
+          "leftSideLocation": {
+            "filePath": "flink-connectors/flink-connector-hive/src/main/java/org/apache/flink/connectors/hive/HiveTableSink.java",
+            "startLine": 354,
+            "endLine": 397,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "flink-connectors/flink-connector-hive/src/main/java/org/apache/flink/connectors/hive/HiveTableSink.java",
+            "startLine": 550,
+            "endLine": 590,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	DataStreamSink<Row> to DataStreamSink<?> in method private createBatchSink(dataStream DataStream<RowData>, converter DataStructureConverter, recordWriterFactory HiveWriterFactory, metaStoreFactory TableMetaStoreFactory, fileConfigBuilder OutputFileConfig.OutputFileConfigBuilder, stagingParentDir String, sd StorageDescriptor, tableProps Properties, isToLocal boolean, overwrite boolean, sinkParallelism int) : DataStreamSink<?> from class org.apache.flink.connectors.hive.HiveTableSink",
+          "leftSideLocation": {
+            "filePath": "flink-connectors/flink-connector-hive/src/main/java/org/apache/flink/connectors/hive/HiveTableSink.java",
+            "startLine": 354,
+            "endLine": 397,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "flink-connectors/flink-connector-hive/src/main/java/org/apache/flink/connectors/hive/HiveTableSink.java",
+            "startLine": 361,
+            "endLine": 411,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	configuredParallelism : Integer to configuredSinkParallelism : Integer in class org.apache.flink.connectors.hive.HiveTableSink",
+          "leftSideLocation": {
+            "filePath": "flink-connectors/flink-connector-hive/src/main/java/org/apache/flink/connectors/hive/HiveTableSink.java",
+            "startLine": 137,
+            "endLine": 137,
+            "startColumn": 37,
+            "endColumn": 58
+          },
+          "rightSideLocation": {
+            "filePath": "flink-connectors/flink-connector-hive/src/main/java/org/apache/flink/connectors/hive/HiveTableSink.java",
+            "startLine": 141,
+            "endLine": 141,
+            "startColumn": 37,
+            "endColumn": 62
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/flink.git",
+      "sha1": "5afc301bc6445bd5bbd9cb521dc20a808a67694e",
+      "url": "https://github.com/apache/flink/commit/5afc301bc6445bd5bbd9cb521dc20a808a67694e",
+      "ourApproach": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.flink.table.planner.factories.TestUpdateDeleteTableFactory.TestSink renamed to org.apache.flink.table.planner.factories.TestUpdateDeleteTableFactory.SupportsRowLevelUpdateSink",
+          "leftSideLocation": {
+            "filePath": "flink-table/flink-table-planner/src/test/java/org/apache/flink/table/planner/factories/TestUpdateDeleteTableFactory.java",
+            "startLine": 283,
+            "endLine": 305,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "flink-table/flink-table-planner/src/test/java/org/apache/flink/table/planner/factories/TestUpdateDeleteTableFactory.java",
+            "startLine": 322,
+            "endLine": 440,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.flink.table.planner.factories.TestUpdateDeleteTableFactory.SupportsRowLevelDeleteSink renamed to org.apache.flink.table.planner.factories.TestUpdateDeleteTableFactory.SupportsRowLevelModificationSink",
+          "leftSideLocation": {
+            "filePath": "flink-table/flink-table-planner/src/test/java/org/apache/flink/table/planner/factories/TestUpdateDeleteTableFactory.java",
+            "startLine": 307,
+            "endLine": 420,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "flink-table/flink-table-planner/src/test/java/org/apache/flink/table/planner/factories/TestUpdateDeleteTableFactory.java",
+            "startLine": 442,
+            "endLine": 580,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.flink.table.planner.operations.SqlToOperationConverterTest renamed to org.apache.flink.table.planner.operations.SqlDdlToOperationConverterTest",
+          "leftSideLocation": {
+            "filePath": "flink-table/flink-table-planner/src/test/java/org/apache/flink/table/planner/operations/SqlToOperationConverterTest.java",
+            "startLine": 145,
+            "endLine": 2989,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "flink-table/flink-table-planner/src/test/java/org/apache/flink/table/planner/operations/SqlDdlToOperationConverterTest.java",
+            "startLine": 91,
+            "endLine": 2344,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.apache.flink.table.planner.operations.SqlDmlToOperationConverterTest from Class org.apache.flink.table.planner.operations.SqlToOperationConverterTest",
+          "leftSideLocation": {
+            "filePath": "flink-table/flink-table-planner/src/test/java/org/apache/flink/table/planner/operations/SqlToOperationConverterTest.java",
+            "startLine": 145,
+            "endLine": 2989,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "flink-table/flink-table-planner/src/test/java/org/apache/flink/table/planner/operations/SqlDmlToOperationConverterTest.java",
+            "startLine": 55,
+            "endLine": 334,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.apache.flink.table.planner.operations.SqlOtherOperationConverterTest from Class org.apache.flink.table.planner.operations.SqlToOperationConverterTest",
+          "leftSideLocation": {
+            "filePath": "flink-table/flink-table-planner/src/test/java/org/apache/flink/table/planner/operations/SqlToOperationConverterTest.java",
+            "startLine": 145,
+            "endLine": 2989,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "flink-table/flink-table-planner/src/test/java/org/apache/flink/table/planner/operations/SqlOtherOperationConverterTest.java",
+            "startLine": 54,
+            "endLine": 324,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.flink.table.planner.factories.TestUpdateDeleteTableFactory.SupportsRowLevelDeleteSink renamed to org.apache.flink.table.planner.factories.TestUpdateDeleteTableFactory.SupportsRowLevelModificationSink",
+          "leftSideLocation": {
+            "filePath": "flink-table/flink-table-planner/src/test/java/org/apache/flink/table/planner/factories/TestUpdateDeleteTableFactory.java",
+            "startLine": 307,
+            "endLine": 420,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "flink-table/flink-table-planner/src/test/java/org/apache/flink/table/planner/factories/TestUpdateDeleteTableFactory.java",
+            "startLine": 442,
+            "endLine": 580,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.flink.table.planner.operations.SqlToOperationConverterTest renamed to org.apache.flink.table.planner.operations.SqlDdlToOperationConverterTest",
+          "leftSideLocation": {
+            "filePath": "flink-table/flink-table-planner/src/test/java/org/apache/flink/table/planner/operations/SqlToOperationConverterTest.java",
+            "startLine": 145,
+            "endLine": 2989,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "flink-table/flink-table-planner/src/test/java/org/apache/flink/table/planner/operations/SqlDdlToOperationConverterTest.java",
+            "startLine": 91,
+            "endLine": 2344,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.apache.flink.table.planner.operations.SqlDmlToOperationConverterTest from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest",
+          "leftSideLocation": {
+            "filePath": "flink-table/flink-table-planner/src/test/java/org/apache/flink/table/planner/operations/SqlToOperationConverterTest.java",
+            "startLine": 145,
+            "endLine": 2989,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "flink-table/flink-table-planner/src/test/java/org/apache/flink/table/planner/operations/SqlDmlToOperationConverterTest.java",
+            "startLine": 55,
+            "endLine": 334,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.apache.flink.table.planner.operations.SqlOtherOperationConverterTest from class org.apache.flink.table.planner.operations.SqlToOperationConverterTest",
+          "leftSideLocation": {
+            "filePath": "flink-table/flink-table-planner/src/test/java/org/apache/flink/table/planner/operations/SqlToOperationConverterTest.java",
+            "startLine": 145,
+            "endLine": 2989,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "flink-table/flink-table-planner/src/test/java/org/apache/flink/table/planner/operations/SqlOtherOperationConverterTest.java",
+            "startLine": 54,
+            "endLine": 324,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/flink.git",
+      "sha1": "95df4e726f3862d3be69a7cf753acd7890bb905d",
+      "url": "https://github.com/apache/flink/commit/95df4e726f3862d3be69a7cf753acd7890bb905d",
+      "ourApproach": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	clientMode : ClientMode to clientMode : SQLJobClientMode in class org.apache.flink.test.util.SQLJobSubmission.SQLJobSubmissionBuilder",
+          "leftSideLocation": {
+            "filePath": "flink-test-utils-parent/flink-test-utils/src/main/java/org/apache/flink/test/util/SQLJobSubmission.java",
+            "startLine": 66,
+            "endLine": 66,
+            "startColumn": 28,
+            "endColumn": 62
+          },
+          "rightSideLocation": {
+            "filePath": "flink-test-utils-parent/flink-test-utils/src/main/java/org/apache/flink/test/util/SQLJobSubmission.java",
+            "startLine": 66,
+            "endLine": 66,
+            "startColumn": 34,
+            "endColumn": 86
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	clientMode : ClientMode to clientMode : SQLJobClientMode in class org.apache.flink.test.util.SQLJobSubmission",
+          "leftSideLocation": {
+            "filePath": "flink-test-utils-parent/flink-test-utils/src/main/java/org/apache/flink/test/util/SQLJobSubmission.java",
+            "startLine": 32,
+            "endLine": 32,
+            "startColumn": 30,
+            "endColumn": 40
+          },
+          "rightSideLocation": {
+            "filePath": "flink-test-utils-parent/flink-test-utils/src/main/java/org/apache/flink/test/util/SQLJobSubmission.java",
+            "startLine": 32,
+            "endLine": 32,
+            "startColumn": 36,
+            "endColumn": 46
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	ClientMode to SQLJobClientMode in method public getClientMode() : SQLJobClientMode from class org.apache.flink.test.util.SQLJobSubmission",
+          "leftSideLocation": {
+            "filePath": "flink-test-utils-parent/flink-test-utils/src/main/java/org/apache/flink/test/util/SQLJobSubmission.java",
+            "startLine": 48,
+            "endLine": 50,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "flink-test-utils-parent/flink-test-utils/src/main/java/org/apache/flink/test/util/SQLJobSubmission.java",
+            "startLine": 48,
+            "endLine": 50,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	port : String to port : int in class org.apache.flink.tests.util.flink.FlinkDistribution.TestSqlGatewayRestClient",
+          "leftSideLocation": {
+            "filePath": "flink-end-to-end-tests/flink-end-to-end-tests-common/src/main/java/org/apache/flink/tests/util/flink/FlinkDistribution.java",
+            "startLine": 463,
+            "endLine": 463,
+            "startColumn": 30,
+            "endColumn": 34
+          },
+          "rightSideLocation": {
+            "filePath": "flink-end-to-end-tests/flink-end-to-end-tests-common/src/main/java/org/apache/flink/tests/util/flink/FlinkDistribution.java",
+            "startLine": 471,
+            "endLine": 471,
+            "startColumn": 27,
+            "endColumn": 31
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private submitSQLJobWithSQLClient(job SQLJobSubmission, commands List<String>, timeout Duration) : void extracted from public submitSQLJob(job SQLJobSubmission, timeout Duration) : void in class org.apache.flink.tests.util.flink.FlinkDistribution",
+          "leftSideLocation": {
+            "filePath": "flink-end-to-end-tests/flink-end-to-end-tests-common/src/main/java/org/apache/flink/tests/util/flink/FlinkDistribution.java",
+            "startLine": 263,
+            "endLine": 328,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "flink-end-to-end-tests/flink-end-to-end-tests-common/src/main/java/org/apache/flink/tests/util/flink/FlinkDistribution.java",
+            "startLine": 324,
+            "endLine": 336,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	port : String to port : int in class org.apache.flink.tests.util.flink.FlinkDistribution.TestSqlGatewayRestClient",
+          "leftSideLocation": {
+            "filePath": "flink-end-to-end-tests/flink-end-to-end-tests-common/src/main/java/org/apache/flink/tests/util/flink/FlinkDistribution.java",
+            "startLine": 463,
+            "endLine": 463,
+            "startColumn": 30,
+            "endColumn": 34
+          },
+          "rightSideLocation": {
+            "filePath": "flink-end-to-end-tests/flink-end-to-end-tests-common/src/main/java/org/apache/flink/tests/util/flink/FlinkDistribution.java",
+            "startLine": 471,
+            "endLine": 471,
+            "startColumn": 27,
+            "endColumn": 31
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private submitSQLJobWithSQLClient(job SQLJobSubmission, commands List<String>, timeout Duration) : void extracted from public submitSQLJob(job SQLJobSubmission, timeout Duration) : void in class org.apache.flink.tests.util.flink.FlinkDistribution",
+          "leftSideLocation": {
+            "filePath": "flink-end-to-end-tests/flink-end-to-end-tests-common/src/main/java/org/apache/flink/tests/util/flink/FlinkDistribution.java",
+            "startLine": 263,
+            "endLine": 328,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "flink-end-to-end-tests/flink-end-to-end-tests-common/src/main/java/org/apache/flink/tests/util/flink/FlinkDistribution.java",
+            "startLine": 324,
+            "endLine": 336,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testHiveserver2ExecuteStatement() : void renamed to public testHiveServer2ExecuteStatement() : void in class org.apache.flink.table.gateway.SqlGatewayE2ECase",
+          "leftSideLocation": {
+            "filePath": "flink-end-to-end-tests/flink-sql-gateway-test/src/test/java/org/apache/flink/table/gateway/SqlGatewayE2ECase.java",
+            "startLine": 102,
+            "endLine": 105,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "flink-end-to-end-tests/flink-sql-gateway-test/src/test/java/org/apache/flink/table/gateway/SqlGatewayE2ECase.java",
+            "startLine": 105,
+            "endLine": 111,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": false
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	clientMode : ClientMode to clientMode : SQLJobClientMode in class org.apache.flink.test.util.SQLJobSubmission.SQLJobSubmissionBuilder",
+          "leftSideLocation": {
+            "filePath": "flink-test-utils-parent/flink-test-utils/src/main/java/org/apache/flink/test/util/SQLJobSubmission.java",
+            "startLine": 66,
+            "endLine": 66,
+            "startColumn": 28,
+            "endColumn": 62
+          },
+          "rightSideLocation": {
+            "filePath": "flink-test-utils-parent/flink-test-utils/src/main/java/org/apache/flink/test/util/SQLJobSubmission.java",
+            "startLine": 66,
+            "endLine": 66,
+            "startColumn": 34,
+            "endColumn": 86
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	clientMode : ClientMode to clientMode : SQLJobClientMode in class org.apache.flink.test.util.SQLJobSubmission",
+          "leftSideLocation": {
+            "filePath": "flink-test-utils-parent/flink-test-utils/src/main/java/org/apache/flink/test/util/SQLJobSubmission.java",
+            "startLine": 32,
+            "endLine": 32,
+            "startColumn": 30,
+            "endColumn": 40
+          },
+          "rightSideLocation": {
+            "filePath": "flink-test-utils-parent/flink-test-utils/src/main/java/org/apache/flink/test/util/SQLJobSubmission.java",
+            "startLine": 32,
+            "endLine": 32,
+            "startColumn": 36,
+            "endColumn": 46
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	ClientMode to SQLJobClientMode in method public getClientMode() : SQLJobClientMode from class org.apache.flink.test.util.SQLJobSubmission",
+          "leftSideLocation": {
+            "filePath": "flink-test-utils-parent/flink-test-utils/src/main/java/org/apache/flink/test/util/SQLJobSubmission.java",
+            "startLine": 48,
+            "endLine": 50,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "flink-test-utils-parent/flink-test-utils/src/main/java/org/apache/flink/test/util/SQLJobSubmission.java",
+            "startLine": 48,
+            "endLine": 50,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/flink.git",
+      "sha1": "83d8e29f6d11354eafcfd5428535a65efffc3a80",
+      "url": "https://github.com/apache/flink/commit/83d8e29f6d11354eafcfd5428535a65efffc3a80",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.apache.flink.runtime.taskmanager.TaskTest.TriggerLatchInvokable from Class org.apache.flink.runtime.taskmanager.TaskTest",
+          "leftSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/taskmanager/TaskTest.java",
+            "startLine": 96,
+            "endLine": 1567,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/taskmanager/TaskTest.java",
+            "startLine": 1594,
+            "endLine": 1620,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.apache.flink.runtime.taskmanager.TaskTest.AwaitLatchInvokable from class org.apache.flink.runtime.taskmanager.TaskTest",
+          "leftSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/taskmanager/TaskTest.java",
+            "startLine": 96,
+            "endLine": 1567,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/taskmanager/TaskTest.java",
+            "startLine": 1581,
+            "endLine": 1592,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.apache.flink.runtime.taskmanager.TaskTest.TriggerLatchInvokable from class org.apache.flink.runtime.taskmanager.TaskTest",
+          "leftSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/taskmanager/TaskTest.java",
+            "startLine": 96,
+            "endLine": 1567,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/taskmanager/TaskTest.java",
+            "startLine": 1594,
+            "endLine": 1620,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/flink.git",
+      "sha1": "8a1f66ca827163b32387e0043f4362921f6c11a9",
+      "url": "https://github.com/apache/flink/commit/8a1f66ca827163b32387e0043f4362921f6c11a9",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private getBuiltInNativeAggFunction(name String) : Optional<FunctionDefinition> extracted from public getFunctionDefinition(name String) : Optional<FunctionDefinition> in class org.apache.flink.table.module.hive.HiveModule",
+          "leftSideLocation": {
+            "filePath": "flink-connectors/flink-connector-hive/src/main/java/org/apache/flink/table/module/hive/HiveModule.java",
+            "startLine": 137,
+            "endLine": 190,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "flink-connectors/flink-connector-hive/src/main/java/org/apache/flink/table/module/hive/HiveModule.java",
+            "startLine": 204,
+            "endLine": 217,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.apache.flink.connectors.hive.HiveDialectQueryPlanTest from Class org.apache.flink.connectors.hive.HiveDialectAggITCase",
+          "leftSideLocation": {
+            "filePath": "flink-connectors/flink-connector-hive/src/test/java/org/apache/flink/connectors/hive/HiveDialectAggITCase.java",
+            "startLine": 45,
+            "endLine": 207,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "flink-connectors/flink-connector-hive/src/test/java/org/apache/flink/connectors/hive/HiveDialectQueryPlanTest.java",
+            "startLine": 38,
+            "endLine": 121,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private getBuiltInNativeAggFunction(name String) : Optional<FunctionDefinition> extracted from public getFunctionDefinition(name String) : Optional<FunctionDefinition> in class org.apache.flink.table.module.hive.HiveModule",
+          "leftSideLocation": {
+            "filePath": "flink-connectors/flink-connector-hive/src/main/java/org/apache/flink/table/module/hive/HiveModule.java",
+            "startLine": 137,
+            "endLine": 190,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "flink-connectors/flink-connector-hive/src/main/java/org/apache/flink/table/module/hive/HiveModule.java",
+            "startLine": 204,
+            "endLine": 217,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.apache.flink.connectors.hive.HiveDialectQueryPlanTest from class org.apache.flink.connectors.hive.HiveDialectAggITCase",
+          "leftSideLocation": {
+            "filePath": "flink-connectors/flink-connector-hive/src/test/java/org/apache/flink/connectors/hive/HiveDialectAggITCase.java",
+            "startLine": 45,
+            "endLine": 207,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "flink-connectors/flink-connector-hive/src/test/java/org/apache/flink/connectors/hive/HiveDialectQueryPlanTest.java",
+            "startLine": 38,
+            "endLine": 121,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/flink.git",
+      "sha1": "d9f9b55f82dfbc1676572cc36b718a99001497f8",
+      "url": "https://github.com/apache/flink/commit/d9f9b55f82dfbc1676572cc36b718a99001497f8",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testDPPFactorWithDimSideJoinKeyChanged() : void renamed to public testDPPWithDimSideJoinKeyChanged() : void in class org.apache.flink.table.planner.plan.optimize.program.DynamicPartitionPruningProgramTest",
+          "leftSideLocation": {
+            "filePath": "flink-table/flink-table-planner/src/test/java/org/apache/flink/table/planner/plan/rules/physical/batch/DynamicPartitionPruningRuleTest.java",
+            "startLine": 545,
+            "endLine": 568,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "flink-table/flink-table-planner/src/test/java/org/apache/flink/table/planner/plan/optimize/program/DynamicPartitionPruningProgramTest.java",
+            "startLine": 707,
+            "endLine": 730,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testDPPFactorToReorderTableWithStats() : void renamed to public testDPPWithJoinReorderTableWithStats() : void in class org.apache.flink.table.planner.plan.optimize.program.DynamicPartitionPruningProgramTest",
+          "leftSideLocation": {
+            "filePath": "flink-table/flink-table-planner/src/test/java/org/apache/flink/table/planner/plan/rules/physical/batch/DynamicPartitionPruningRuleTest.java",
+            "startLine": 467,
+            "endLine": 518,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "flink-table/flink-table-planner/src/test/java/org/apache/flink/table/planner/plan/optimize/program/DynamicPartitionPruningProgramTest.java",
+            "startLine": 629,
+            "endLine": 680,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testDPPFactorWithFactSideJoinKeyChanged() : void renamed to public testDPPWithFactSideJoinKeyChanged() : void in class org.apache.flink.table.planner.plan.optimize.program.DynamicPartitionPruningProgramTest",
+          "leftSideLocation": {
+            "filePath": "flink-table/flink-table-planner/src/test/java/org/apache/flink/table/planner/plan/rules/physical/batch/DynamicPartitionPruningRuleTest.java",
+            "startLine": 520,
+            "endLine": 543,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "flink-table/flink-table-planner/src/test/java/org/apache/flink/table/planner/plan/optimize/program/DynamicPartitionPruningProgramTest.java",
+            "startLine": 682,
+            "endLine": 705,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testDPPFactorToReorderTableWithoutStats() : void renamed to public testDPPWithJoinReorderTableWithoutStats() : void in class org.apache.flink.table.planner.plan.optimize.program.DynamicPartitionPruningProgramTest",
+          "leftSideLocation": {
+            "filePath": "flink-table/flink-table-planner/src/test/java/org/apache/flink/table/planner/plan/rules/physical/batch/DynamicPartitionPruningRuleTest.java",
+            "startLine": 439,
+            "endLine": 465,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "flink-table/flink-table-planner/src/test/java/org/apache/flink/table/planner/plan/optimize/program/DynamicPartitionPruningProgramTest.java",
+            "startLine": 603,
+            "endLine": 627,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testDPPFactorWithJoinKeysNotIncludePartitionKeys() : void renamed to public testDPPWithJoinKeysNotIncludePartitionKeys() : void in class org.apache.flink.table.planner.plan.optimize.program.DynamicPartitionPruningProgramTest",
+          "leftSideLocation": {
+            "filePath": "flink-table/flink-table-planner/src/test/java/org/apache/flink/table/planner/plan/rules/physical/batch/DynamicPartitionPruningRuleTest.java",
+            "startLine": 570,
+            "endLine": 595,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "flink-table/flink-table-planner/src/test/java/org/apache/flink/table/planner/plan/optimize/program/DynamicPartitionPruningProgramTest.java",
+            "startLine": 732,
+            "endLine": 757,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.apache.flink.table.planner.utils.DynamicPartitionPruningUtils.DppDimSideChecker from Class org.apache.flink.table.planner.utils.DynamicPartitionPruningUtils",
+          "leftSideLocation": {
+            "filePath": "flink-table/flink-table-planner/src/main/java/org/apache/flink/table/planner/utils/DynamicPartitionPruningUtils.java",
+            "startLine": 59,
+            "endLine": 377,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "flink-table/flink-table-planner/src/main/java/org/apache/flink/table/planner/utils/DynamicPartitionPruningUtils.java",
+            "startLine": 113,
+            "endLine": 245,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.apache.flink.table.planner.utils.DynamicPartitionPruningUtils.DppFactSideChecker from Class org.apache.flink.table.planner.utils.DynamicPartitionPruningUtils",
+          "leftSideLocation": {
+            "filePath": "flink-table/flink-table-planner/src/main/java/org/apache/flink/table/planner/utils/DynamicPartitionPruningUtils.java",
+            "startLine": 59,
+            "endLine": 377,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "flink-table/flink-table-planner/src/main/java/org/apache/flink/table/planner/utils/DynamicPartitionPruningUtils.java",
+            "startLine": 247,
+            "endLine": 537,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testDPPFactorToReorderTableWithoutStats() : void renamed to public testDPPWithJoinReorderTableWithoutStats() : void in class org.apache.flink.table.planner.plan.optimize.program.DynamicPartitionPruningProgramTest",
+          "leftSideLocation": {
+            "filePath": "flink-table/flink-table-planner/src/test/java/org/apache/flink/table/planner/plan/rules/physical/batch/DynamicPartitionPruningRuleTest.java",
+            "startLine": 439,
+            "endLine": 465,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "flink-table/flink-table-planner/src/test/java/org/apache/flink/table/planner/plan/optimize/program/DynamicPartitionPruningProgramTest.java",
+            "startLine": 603,
+            "endLine": 627,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testDPPFactorToReorderTableWithStats() : void renamed to public testDPPWithJoinReorderTableWithStats() : void in class org.apache.flink.table.planner.plan.optimize.program.DynamicPartitionPruningProgramTest",
+          "leftSideLocation": {
+            "filePath": "flink-table/flink-table-planner/src/test/java/org/apache/flink/table/planner/plan/rules/physical/batch/DynamicPartitionPruningRuleTest.java",
+            "startLine": 467,
+            "endLine": 518,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "flink-table/flink-table-planner/src/test/java/org/apache/flink/table/planner/plan/optimize/program/DynamicPartitionPruningProgramTest.java",
+            "startLine": 629,
+            "endLine": 680,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testDPPFactorWithFactSideJoinKeyChanged() : void renamed to public testDPPWithFactSideJoinKeyChanged() : void in class org.apache.flink.table.planner.plan.optimize.program.DynamicPartitionPruningProgramTest",
+          "leftSideLocation": {
+            "filePath": "flink-table/flink-table-planner/src/test/java/org/apache/flink/table/planner/plan/rules/physical/batch/DynamicPartitionPruningRuleTest.java",
+            "startLine": 520,
+            "endLine": 543,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "flink-table/flink-table-planner/src/test/java/org/apache/flink/table/planner/plan/optimize/program/DynamicPartitionPruningProgramTest.java",
+            "startLine": 682,
+            "endLine": 705,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testDPPFactorWithDimSideJoinKeyChanged() : void renamed to public testDPPWithDimSideJoinKeyChanged() : void in class org.apache.flink.table.planner.plan.optimize.program.DynamicPartitionPruningProgramTest",
+          "leftSideLocation": {
+            "filePath": "flink-table/flink-table-planner/src/test/java/org/apache/flink/table/planner/plan/rules/physical/batch/DynamicPartitionPruningRuleTest.java",
+            "startLine": 545,
+            "endLine": 568,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "flink-table/flink-table-planner/src/test/java/org/apache/flink/table/planner/plan/optimize/program/DynamicPartitionPruningProgramTest.java",
+            "startLine": 707,
+            "endLine": 730,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testDPPFactorWithJoinKeysNotIncludePartitionKeys() : void renamed to public testDPPWithJoinKeysNotIncludePartitionKeys() : void in class org.apache.flink.table.planner.plan.optimize.program.DynamicPartitionPruningProgramTest",
+          "leftSideLocation": {
+            "filePath": "flink-table/flink-table-planner/src/test/java/org/apache/flink/table/planner/plan/rules/physical/batch/DynamicPartitionPruningRuleTest.java",
+            "startLine": 570,
+            "endLine": 595,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "flink-table/flink-table-planner/src/test/java/org/apache/flink/table/planner/plan/optimize/program/DynamicPartitionPruningProgramTest.java",
+            "startLine": 732,
+            "endLine": 757,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.apache.flink.table.planner.utils.DynamicPartitionPruningUtils.DppDimSideChecker from class org.apache.flink.table.planner.utils.DynamicPartitionPruningUtils",
+          "leftSideLocation": {
+            "filePath": "flink-table/flink-table-planner/src/main/java/org/apache/flink/table/planner/utils/DynamicPartitionPruningUtils.java",
+            "startLine": 59,
+            "endLine": 377,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "flink-table/flink-table-planner/src/main/java/org/apache/flink/table/planner/utils/DynamicPartitionPruningUtils.java",
+            "startLine": 113,
+            "endLine": 245,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.apache.flink.table.planner.utils.DynamicPartitionPruningUtils.DppFactSideChecker from class org.apache.flink.table.planner.utils.DynamicPartitionPruningUtils",
+          "leftSideLocation": {
+            "filePath": "flink-table/flink-table-planner/src/main/java/org/apache/flink/table/planner/utils/DynamicPartitionPruningUtils.java",
+            "startLine": 59,
+            "endLine": 377,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "flink-table/flink-table-planner/src/main/java/org/apache/flink/table/planner/utils/DynamicPartitionPruningUtils.java",
+            "startLine": 247,
+            "endLine": 537,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	void to RelNode in method private convertDppFactSide(rel RelNode, joinKeys ImmutableIntList, dimSide RelNode, dimSideJoinKey ImmutableIntList) : RelNode from class org.apache.flink.table.planner.utils.DynamicPartitionPruningUtils.DppFactSideChecker",
+          "leftSideLocation": {
+            "filePath": "flink-table/flink-table-planner/src/main/java/org/apache/flink/table/planner/utils/DynamicPartitionPruningUtils.java",
+            "startLine": 135,
+            "endLine": 210,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "flink-table/flink-table-planner/src/main/java/org/apache/flink/table/planner/utils/DynamicPartitionPruningUtils.java",
+            "startLine": 273,
+            "endLine": 435,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/flink.git",
+      "sha1": "d5b8ad7672cd981cdbc757549ed2ab1fcf007500",
+      "url": "https://github.com/apache/flink/commit/d5b8ad7672cd981cdbc757549ed2ab1fcf007500",
+      "ourApproach": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	CatalogBaseTable to ResolvedCatalogBaseTable<?> in method private getCatalogBaseTable(tableIdentifier ObjectIdentifier, ifExists boolean) : ResolvedCatalogBaseTable<?> from class org.apache.flink.table.planner.delegation.hive.parse.HiveParserDDLSemanticAnalyzer",
+          "leftSideLocation": {
+            "filePath": "flink-connectors/flink-connector-hive/src/main/java/org/apache/flink/table/planner/delegation/hive/parse/HiveParserDDLSemanticAnalyzer.java",
+            "startLine": 2184,
+            "endLine": 2202,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "flink-connectors/flink-connector-hive/src/main/java/org/apache/flink/table/planner/delegation/hive/parse/HiveParserDDLSemanticAnalyzer.java",
+            "startLine": 2207,
+            "endLine": 2225,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	CatalogBaseTable to ResolvedCatalogBaseTable<?> in method private getAlteredTable(tableName String, expectView boolean) : ResolvedCatalogBaseTable<?> from class org.apache.flink.table.planner.delegation.hive.parse.HiveParserDDLSemanticAnalyzer",
+          "leftSideLocation": {
+            "filePath": "flink-connectors/flink-connector-hive/src/main/java/org/apache/flink/table/planner/delegation/hive/parse/HiveParserDDLSemanticAnalyzer.java",
+            "startLine": 2149,
+            "endLine": 2162,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "flink-connectors/flink-connector-hive/src/main/java/org/apache/flink/table/planner/delegation/hive/parse/HiveParserDDLSemanticAnalyzer.java",
+            "startLine": 2172,
+            "endLine": 2185,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	CatalogBaseTable to ResolvedCatalogBaseTable<?> in method private getCatalogBaseTable(tableIdentifier ObjectIdentifier) : ResolvedCatalogBaseTable<?> from class org.apache.flink.table.planner.delegation.hive.parse.HiveParserDDLSemanticAnalyzer",
+          "leftSideLocation": {
+            "filePath": "flink-connectors/flink-connector-hive/src/main/java/org/apache/flink/table/planner/delegation/hive/parse/HiveParserDDLSemanticAnalyzer.java",
+            "startLine": 2180,
+            "endLine": 2182,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "flink-connectors/flink-connector-hive/src/main/java/org/apache/flink/table/planner/delegation/hive/parse/HiveParserDDLSemanticAnalyzer.java",
+            "startLine": 2203,
+            "endLine": 2205,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public getOriginColumnIdentifier() : SqlIdentifier renamed to public getOldColumnIdentifier() : SqlIdentifier in class org.apache.flink.sql.parser.ddl.SqlAlterTableRenameColumn",
+          "leftSideLocation": {
+            "filePath": "flink-table/flink-sql-parser/src/main/java/org/apache/flink/sql/parser/ddl/SqlAlterTableRenameColumn.java",
+            "startLine": 53,
+            "endLine": 55,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "flink-table/flink-sql-parser/src/main/java/org/apache/flink/sql/parser/ddl/SqlAlterTableRenameColumn.java",
+            "startLine": 53,
+            "endLine": 55,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	changeBuilders : List<Function<ResolvedSchema,TableChange>> to changeBuilders : List<Function<ResolvedSchema,List<TableChange>>> in class org.apache.flink.table.planner.operations.AlterSchemaConverter.SchemaConverter",
+          "leftSideLocation": {
+            "filePath": "flink-table/flink-table-planner/src/main/java/org/apache/flink/table/planner/operations/AlterSchemaConverter.java",
+            "startLine": 292,
+            "endLine": 292,
+            "startColumn": 53,
+            "endColumn": 87
+          },
+          "rightSideLocation": {
+            "filePath": "flink-table/flink-table-planner/src/main/java/org/apache/flink/table/planner/operations/AlterSchemaConverter.java",
+            "startLine": 299,
+            "endLine": 299,
+            "startColumn": 59,
+            "endColumn": 93
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private buildNewColumnFromOriginColumn(builder Schema.Builder, originColumn Schema.UnresolvedColumn, columnName String) : void renamed to private buildNewColumnFromOldColumn(builder Schema.Builder, oldColumn Schema.UnresolvedColumn, columnName String) : void in class org.apache.flink.table.planner.operations.AlterSchemaConverter",
+          "leftSideLocation": {
+            "filePath": "flink-table/flink-table-planner/src/main/java/org/apache/flink/table/planner/operations/AlterSchemaConverter.java",
+            "startLine": 835,
+            "endLine": 853,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "flink-table/flink-table-planner/src/main/java/org/apache/flink/table/planner/operations/AlterSchemaConverter.java",
+            "startLine": 877,
+            "endLine": 894,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	TableColumn to TableColumn.PhysicalColumn in method private toTableColumn(tableColumn SqlTableColumn, sqlValidator SqlValidator) : TableColumn.PhysicalColumn from class org.apache.flink.table.planner.utils.OperationConverterUtils",
+          "leftSideLocation": {
+            "filePath": "flink-table/flink-table-planner/src/main/java/org/apache/flink/table/planner/utils/OperationConverterUtils.java",
+            "startLine": 209,
+            "endLine": 222,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "flink-table/flink-table-planner/src/main/java/org/apache/flink/table/planner/utils/OperationConverterUtils.java",
+            "startLine": 272,
+            "endLine": 285,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	public getComment(column SqlTableColumn) : String extracted from public convertAddReplaceColumns(tableIdentifier ObjectIdentifier, addReplaceColumns SqlAddReplaceColumns, catalogTable CatalogTable, sqlValidator SqlValidator) : Operation in class org.apache.flink.table.planner.utils.OperationConverterUtils",
+          "leftSideLocation": {
+            "filePath": "flink-table/flink-table-planner/src/main/java/org/apache/flink/table/planner/utils/OperationConverterUtils.java",
+            "startLine": 64,
+            "endLine": 139,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "flink-table/flink-table-planner/src/main/java/org/apache/flink/table/planner/utils/OperationConverterUtils.java",
+            "startLine": 265,
+            "endLine": 270,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	CatalogBaseTable to ResolvedCatalogBaseTable<?> in method private getAlteredTable(tableName String, expectView boolean) : ResolvedCatalogBaseTable<?> from class org.apache.flink.table.planner.delegation.hive.parse.HiveParserDDLSemanticAnalyzer",
+          "leftSideLocation": {
+            "filePath": "flink-connectors/flink-connector-hive/src/main/java/org/apache/flink/table/planner/delegation/hive/parse/HiveParserDDLSemanticAnalyzer.java",
+            "startLine": 2149,
+            "endLine": 2162,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "flink-connectors/flink-connector-hive/src/main/java/org/apache/flink/table/planner/delegation/hive/parse/HiveParserDDLSemanticAnalyzer.java",
+            "startLine": 2172,
+            "endLine": 2185,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	CatalogBaseTable to ResolvedCatalogBaseTable<?> in method private getCatalogBaseTable(tableIdentifier ObjectIdentifier) : ResolvedCatalogBaseTable<?> from class org.apache.flink.table.planner.delegation.hive.parse.HiveParserDDLSemanticAnalyzer",
+          "leftSideLocation": {
+            "filePath": "flink-connectors/flink-connector-hive/src/main/java/org/apache/flink/table/planner/delegation/hive/parse/HiveParserDDLSemanticAnalyzer.java",
+            "startLine": 2180,
+            "endLine": 2182,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "flink-connectors/flink-connector-hive/src/main/java/org/apache/flink/table/planner/delegation/hive/parse/HiveParserDDLSemanticAnalyzer.java",
+            "startLine": 2203,
+            "endLine": 2205,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	CatalogBaseTable to ResolvedCatalogBaseTable<?> in method private getCatalogBaseTable(tableIdentifier ObjectIdentifier, ifExists boolean) : ResolvedCatalogBaseTable<?> from class org.apache.flink.table.planner.delegation.hive.parse.HiveParserDDLSemanticAnalyzer",
+          "leftSideLocation": {
+            "filePath": "flink-connectors/flink-connector-hive/src/main/java/org/apache/flink/table/planner/delegation/hive/parse/HiveParserDDLSemanticAnalyzer.java",
+            "startLine": 2184,
+            "endLine": 2202,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "flink-connectors/flink-connector-hive/src/main/java/org/apache/flink/table/planner/delegation/hive/parse/HiveParserDDLSemanticAnalyzer.java",
+            "startLine": 2207,
+            "endLine": 2225,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public getOriginColumnIdentifier() : SqlIdentifier renamed to public getOldColumnIdentifier() : SqlIdentifier in class org.apache.flink.sql.parser.ddl.SqlAlterTableRenameColumn",
+          "leftSideLocation": {
+            "filePath": "flink-table/flink-sql-parser/src/main/java/org/apache/flink/sql/parser/ddl/SqlAlterTableRenameColumn.java",
+            "startLine": 53,
+            "endLine": 55,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "flink-table/flink-sql-parser/src/main/java/org/apache/flink/sql/parser/ddl/SqlAlterTableRenameColumn.java",
+            "startLine": 53,
+            "endLine": 55,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	changeBuilders : List<Function<ResolvedSchema,TableChange>> to changeBuilders : List<Function<ResolvedSchema,List<TableChange>>> in class org.apache.flink.table.planner.operations.AlterSchemaConverter.SchemaConverter",
+          "leftSideLocation": {
+            "filePath": "flink-table/flink-table-planner/src/main/java/org/apache/flink/table/planner/operations/AlterSchemaConverter.java",
+            "startLine": 292,
+            "endLine": 292,
+            "startColumn": 53,
+            "endColumn": 87
+          },
+          "rightSideLocation": {
+            "filePath": "flink-table/flink-table-planner/src/main/java/org/apache/flink/table/planner/operations/AlterSchemaConverter.java",
+            "startLine": 299,
+            "endLine": 299,
+            "startColumn": 59,
+            "endColumn": 93
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private buildNewColumnFromOriginColumn(builder Schema.Builder, originColumn Schema.UnresolvedColumn, columnName String) : void renamed to private buildNewColumnFromOldColumn(builder Schema.Builder, oldColumn Schema.UnresolvedColumn, columnName String) : void in class org.apache.flink.table.planner.operations.AlterSchemaConverter",
+          "leftSideLocation": {
+            "filePath": "flink-table/flink-table-planner/src/main/java/org/apache/flink/table/planner/operations/AlterSchemaConverter.java",
+            "startLine": 835,
+            "endLine": 853,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "flink-table/flink-table-planner/src/main/java/org/apache/flink/table/planner/operations/AlterSchemaConverter.java",
+            "startLine": 877,
+            "endLine": 894,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	public getComment(column SqlTableColumn) : String extracted from public convertAddReplaceColumns(tableIdentifier ObjectIdentifier, addReplaceColumns SqlAddReplaceColumns, catalogTable CatalogTable, sqlValidator SqlValidator) : Operation in class org.apache.flink.table.planner.utils.OperationConverterUtils",
+          "leftSideLocation": {
+            "filePath": "flink-table/flink-table-planner/src/main/java/org/apache/flink/table/planner/utils/OperationConverterUtils.java",
+            "startLine": 64,
+            "endLine": 139,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "flink-table/flink-table-planner/src/main/java/org/apache/flink/table/planner/utils/OperationConverterUtils.java",
+            "startLine": 265,
+            "endLine": 270,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	TableColumn to TableColumn.PhysicalColumn in method private toTableColumn(tableColumn SqlTableColumn, sqlValidator SqlValidator) : TableColumn.PhysicalColumn from class org.apache.flink.table.planner.utils.OperationConverterUtils",
+          "leftSideLocation": {
+            "filePath": "flink-table/flink-table-planner/src/main/java/org/apache/flink/table/planner/utils/OperationConverterUtils.java",
+            "startLine": 209,
+            "endLine": 222,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "flink-table/flink-table-planner/src/main/java/org/apache/flink/table/planner/utils/OperationConverterUtils.java",
+            "startLine": 272,
+            "endLine": 285,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/flink.git",
+      "sha1": "0a9bfeafd570f2e534f4d7f63d26853f734dc3c2",
+      "url": "https://github.com/apache/flink/commit/0a9bfeafd570f2e534f4d7f63d26853f734dc3c2",
+      "ourApproach": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	pendingWorkerCounter : PendingWorkerCounter to pendingWorkerCounter : WorkerCounter in class org.apache.flink.runtime.resourcemanager.active.ActiveResourceManager",
+          "leftSideLocation": {
+            "filePath": "flink-runtime/src/main/java/org/apache/flink/runtime/resourcemanager/active/ActiveResourceManager.java",
+            "startLine": 90,
+            "endLine": 90,
+            "startColumn": 40,
+            "endColumn": 60
+          },
+          "rightSideLocation": {
+            "filePath": "flink-runtime/src/main/java/org/apache/flink/runtime/resourcemanager/active/ActiveResourceManager.java",
+            "startLine": 90,
+            "endLine": 90,
+            "startColumn": 33,
+            "endColumn": 53
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	pendingWorkerNums : Map<WorkerResourceSpec,Integer> to workerNums : Map<WorkerResourceSpec,Integer> in class org.apache.flink.runtime.resourcemanager.active.WorkerCounter",
+          "leftSideLocation": {
+            "filePath": "flink-runtime/src/main/java/org/apache/flink/runtime/resourcemanager/active/PendingWorkerCounter.java",
+            "startLine": 29,
+            "endLine": 29,
+            "startColumn": 52,
+            "endColumn": 69
+          },
+          "rightSideLocation": {
+            "filePath": "flink-runtime/src/main/java/org/apache/flink/runtime/resourcemanager/active/WorkerCounter.java",
+            "startLine": 29,
+            "endLine": 29,
+            "startColumn": 52,
+            "endColumn": 62
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.flink.runtime.resourcemanager.active.PendingWorkerCounter renamed to org.apache.flink.runtime.resourcemanager.active.WorkerCounter",
+          "leftSideLocation": {
+            "filePath": "flink-runtime/src/main/java/org/apache/flink/runtime/resourcemanager/active/PendingWorkerCounter.java",
+            "startLine": 27,
+            "endLine": 62,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "flink-runtime/src/main/java/org/apache/flink/runtime/resourcemanager/active/WorkerCounter.java",
+            "startLine": 27,
+            "endLine": 62,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testPendingWorkerCounterIncreaseAndDecrease() : void renamed to public testWorkerCounterIncreaseAndDecrease() : void in class org.apache.flink.runtime.resourcemanager.active.WorkerCounterTest",
+          "leftSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/resourcemanager/active/PendingWorkerCounterTest.java",
+            "startLine": 32,
+            "endLine": 66,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/resourcemanager/active/WorkerCounterTest.java",
+            "startLine": 32,
+            "endLine": 66,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testPendingWorkerCounterDecreaseOnZero() : void renamed to public testWorkerCounterDecreaseOnZero() : void in class org.apache.flink.runtime.resourcemanager.active.WorkerCounterTest",
+          "leftSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/resourcemanager/active/PendingWorkerCounterTest.java",
+            "startLine": 68,
+            "endLine": 73,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/resourcemanager/active/WorkerCounterTest.java",
+            "startLine": 68,
+            "endLine": 73,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.flink.runtime.resourcemanager.active.PendingWorkerCounterTest renamed to org.apache.flink.runtime.resourcemanager.active.WorkerCounterTest",
+          "leftSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/resourcemanager/active/PendingWorkerCounterTest.java",
+            "startLine": 29,
+            "endLine": 74,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/resourcemanager/active/WorkerCounterTest.java",
+            "startLine": 29,
+            "endLine": 74,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.flink.runtime.resourcemanager.active.PendingWorkerCounter renamed to org.apache.flink.runtime.resourcemanager.active.WorkerCounter",
+          "leftSideLocation": {
+            "filePath": "flink-runtime/src/main/java/org/apache/flink/runtime/resourcemanager/active/PendingWorkerCounter.java",
+            "startLine": 27,
+            "endLine": 62,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "flink-runtime/src/main/java/org/apache/flink/runtime/resourcemanager/active/WorkerCounter.java",
+            "startLine": 27,
+            "endLine": 62,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	pendingWorkerCounter : PendingWorkerCounter to pendingWorkerCounter : WorkerCounter in class org.apache.flink.runtime.resourcemanager.active.ActiveResourceManager",
+          "leftSideLocation": {
+            "filePath": "flink-runtime/src/main/java/org/apache/flink/runtime/resourcemanager/active/ActiveResourceManager.java",
+            "startLine": 90,
+            "endLine": 90,
+            "startColumn": 40,
+            "endColumn": 60
+          },
+          "rightSideLocation": {
+            "filePath": "flink-runtime/src/main/java/org/apache/flink/runtime/resourcemanager/active/ActiveResourceManager.java",
+            "startLine": 90,
+            "endLine": 90,
+            "startColumn": 33,
+            "endColumn": 53
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	pendingWorkerNums : Map<WorkerResourceSpec,Integer> to workerNums : Map<WorkerResourceSpec,Integer> in class org.apache.flink.runtime.resourcemanager.active.WorkerCounter",
+          "leftSideLocation": {
+            "filePath": "flink-runtime/src/main/java/org/apache/flink/runtime/resourcemanager/active/PendingWorkerCounter.java",
+            "startLine": 29,
+            "endLine": 29,
+            "startColumn": 52,
+            "endColumn": 69
+          },
+          "rightSideLocation": {
+            "filePath": "flink-runtime/src/main/java/org/apache/flink/runtime/resourcemanager/active/WorkerCounter.java",
+            "startLine": 29,
+            "endLine": 29,
+            "startColumn": 52,
+            "endColumn": 62
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/flink.git",
+      "sha1": "f82be845f3f673264a13eaf29e11b19e00f37222",
+      "url": "https://github.com/apache/flink/commit/f82be845f3f673264a13eaf29e11b19e00f37222",
+      "ourApproach": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.apache.flink.runtime.metrics.groups.TaskIOMetricGroup.SizeGauge.SizeSupplier moved to org.apache.flink.runtime.metrics.groups.TaskIOMetricGroup.SizeSupplier",
+          "leftSideLocation": {
+            "filePath": "flink-runtime/src/main/java/org/apache/flink/runtime/metrics/groups/TaskIOMetricGroup.java",
+            "startLine": 278,
+            "endLine": 281,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "filePath": "flink-runtime/src/main/java/org/apache/flink/runtime/metrics/groups/TaskIOMetricGroup.java",
+            "startLine": 292,
+            "endLine": 296,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.apache.flink.runtime.metrics.groups.TaskIOMetricGroup.SizeGauge.SizeSupplier moved to org.apache.flink.runtime.metrics.groups.TaskIOMetricGroup.SizeSupplier",
+          "leftSideLocation": {
+            "filePath": "flink-runtime/src/main/java/org/apache/flink/runtime/metrics/groups/TaskIOMetricGroup.java",
+            "startLine": 278,
+            "endLine": 281,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "filePath": "flink-runtime/src/main/java/org/apache/flink/runtime/metrics/groups/TaskIOMetricGroup.java",
+            "startLine": 292,
+            "endLine": 296,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/flink.git",
+      "sha1": "35498b29836b0704ef092637d9728ce27f42d277",
+      "url": "https://github.com/apache/flink/commit/35498b29836b0704ef092637d9728ce27f42d277",
+      "ourApproach": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	EXECUTOR_RESOURCE : TestExecutorResource<ScheduledExecutorService> to EXECUTOR_EXTENSION : TestExecutorExtension<ScheduledExecutorService> in class org.apache.flink.runtime.executiongraph.DefaultExecutionGraphDeploymentTest",
+          "leftSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/executiongraph/DefaultExecutionGraphDeploymentTest.java",
+            "startLine": 101,
+            "endLine": 102,
+            "startColumn": 72,
+            "endColumn": 51
+          },
+          "rightSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/executiongraph/DefaultExecutionGraphDeploymentTest.java",
+            "startLine": 93,
+            "endLine": 94,
+            "startColumn": 66,
+            "endColumn": 52
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	EXECUTOR_RESOURCE : TestExecutorResource<ScheduledExecutorService> to EXECUTOR_EXTENSION : TestExecutorExtension<ScheduledExecutorService> in class org.apache.flink.runtime.executiongraph.DefaultExecutionGraphDeploymentTest",
+          "leftSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/executiongraph/DefaultExecutionGraphDeploymentTest.java",
+            "startLine": 101,
+            "endLine": 102,
+            "startColumn": 72,
+            "endColumn": 51
+          },
+          "rightSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/executiongraph/DefaultExecutionGraphDeploymentTest.java",
+            "startLine": 93,
+            "endLine": 94,
+            "startColumn": 66,
+            "endColumn": 52
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	tmpFolder : TemporaryFolder to tmpFolder : Path in class org.apache.flink.runtime.io.network.partition.SortMergeResultPartitionTest",
+          "leftSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/io/network/partition/SortMergeResultPartitionTest.java",
+            "startLine": 88,
+            "endLine": 88,
+            "startColumn": 40,
+            "endColumn": 73
+          },
+          "rightSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/io/network/partition/SortMergeResultPartitionTest.java",
+            "startLine": 86,
+            "endLine": 86,
+            "startColumn": 27,
+            "endColumn": 36
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	TEMPORARY_FOLDER : TemporaryFolder to temporaryFolder : Path in class org.apache.flink.runtime.executiongraph.DefaultExecutionGraphDeploymentWithBlobServerTest",
+          "leftSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/executiongraph/DefaultExecutionGraphDeploymentWithBlobServerTest.java",
+            "startLine": 54,
+            "endLine": 54,
+            "startColumn": 52,
+            "endColumn": 92
+          },
+          "rightSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/executiongraph/DefaultExecutionGraphDeploymentWithBlobServerTest.java",
+            "startLine": 53,
+            "endLine": 53,
+            "startColumn": 19,
+            "endColumn": 34
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	TEMPORARY_FOLDER : TemporaryFolder to temporaryFolder : Path in class org.apache.flink.runtime.executiongraph.DefaultExecutionGraphDeploymentWithBlobServerTest",
+          "leftSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/executiongraph/DefaultExecutionGraphDeploymentWithBlobServerTest.java",
+            "startLine": 54,
+            "endLine": 54,
+            "startColumn": 52,
+            "endColumn": 92
+          },
+          "rightSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/executiongraph/DefaultExecutionGraphDeploymentWithBlobServerTest.java",
+            "startLine": 53,
+            "endLine": 53,
+            "startColumn": 19,
+            "endColumn": 34
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	Object[] to Collection<Boolean> in method public parameters() : Collection<Boolean> from class org.apache.flink.runtime.io.network.partition.SortMergeResultPartitionTest",
+          "leftSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/io/network/partition/SortMergeResultPartitionTest.java",
+            "startLine": 109,
+            "endLine": 112,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/io/network/partition/SortMergeResultPartitionTest.java",
+            "startLine": 106,
+            "endLine": 109,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	EXECUTOR_RESOURCE : TestExecutorResource<ScheduledExecutorService> to EXECUTOR_EXTENSION : TestExecutorExtension<ScheduledExecutorService> in class org.apache.flink.runtime.executiongraph.DefaultExecutionGraphDeploymentTest",
+          "leftSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/executiongraph/DefaultExecutionGraphDeploymentTest.java",
+            "startLine": 101,
+            "endLine": 102,
+            "startColumn": 72,
+            "endColumn": 51
+          },
+          "rightSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/executiongraph/DefaultExecutionGraphDeploymentTest.java",
+            "startLine": 93,
+            "endLine": 94,
+            "startColumn": 66,
+            "endColumn": 52
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	EXECUTOR_RESOURCE : TestExecutorResource<ScheduledExecutorService> to EXECUTOR_EXTENSION : TestExecutorExtension<ScheduledExecutorService> in class org.apache.flink.runtime.executiongraph.DefaultExecutionGraphDeploymentTest",
+          "leftSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/executiongraph/DefaultExecutionGraphDeploymentTest.java",
+            "startLine": 101,
+            "endLine": 102,
+            "startColumn": 72,
+            "endColumn": 51
+          },
+          "rightSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/executiongraph/DefaultExecutionGraphDeploymentTest.java",
+            "startLine": 93,
+            "endLine": 94,
+            "startColumn": 66,
+            "endColumn": 52
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	tmpFolder : TemporaryFolder to tmpFolder : Path in class org.apache.flink.runtime.io.network.partition.SortMergeResultPartitionTest",
+          "leftSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/io/network/partition/SortMergeResultPartitionTest.java",
+            "startLine": 88,
+            "endLine": 88,
+            "startColumn": 40,
+            "endColumn": 73
+          },
+          "rightSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/io/network/partition/SortMergeResultPartitionTest.java",
+            "startLine": 86,
+            "endLine": 86,
+            "startColumn": 27,
+            "endColumn": 36
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	Object[] to Collection<Boolean> in method public parameters() : Collection<Boolean> from class org.apache.flink.runtime.io.network.partition.SortMergeResultPartitionTest",
+          "leftSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/io/network/partition/SortMergeResultPartitionTest.java",
+            "startLine": 109,
+            "endLine": 112,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/io/network/partition/SortMergeResultPartitionTest.java",
+            "startLine": 106,
+            "endLine": 109,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/flink.git",
+      "sha1": "ee4d5b8d65768776f070ccc0c28e3fe3da8e10c6",
+      "url": "https://github.com/apache/flink/commit/ee4d5b8d65768776f070ccc0c28e3fe3da8e10c6",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private initializeMiniCluster(configuration Configuration) : PerJobMiniClusterFactory extracted from private initializeMiniCluster() : PerJobMiniClusterFactory in class org.apache.flink.client.program.PerJobMiniClusterFactoryTest",
+          "leftSideLocation": {
+            "filePath": "flink-clients/src/test/java/org/apache/flink/client/program/PerJobMiniClusterFactoryTest.java",
+            "startLine": 155,
+            "endLine": 162,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "flink-clients/src/test/java/org/apache/flink/client/program/PerJobMiniClusterFactoryTest.java",
+            "startLine": 197,
+            "endLine": 204,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private initializeMiniCluster(configuration Configuration) : PerJobMiniClusterFactory extracted from private initializeMiniCluster() : PerJobMiniClusterFactory in class org.apache.flink.client.program.PerJobMiniClusterFactoryTest",
+          "leftSideLocation": {
+            "filePath": "flink-clients/src/test/java/org/apache/flink/client/program/PerJobMiniClusterFactoryTest.java",
+            "startLine": 155,
+            "endLine": 162,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "flink-clients/src/test/java/org/apache/flink/client/program/PerJobMiniClusterFactoryTest.java",
+            "startLine": 197,
+            "endLine": 204,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/flink.git",
+      "sha1": "b4bad50d77cb21abff697fc12f6586b67f6622ff",
+      "url": "https://github.com/apache/flink/commit/b4bad50d77cb21abff697fc12f6586b67f6622ff",
+      "ourApproach": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	Map<String,DelegationTokenProvider> to Map<String,HadoopDelegationTokenProvider> in method private loadProviders() : Map<String,HadoopDelegationTokenProvider> from class org.apache.flink.runtime.security.token.KerberosDelegationTokenManager",
+          "leftSideLocation": {
+            "filePath": "flink-runtime/src/main/java/org/apache/flink/runtime/security/token/KerberosDelegationTokenManager.java",
+            "startLine": 118,
+            "endLine": 152,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "flink-runtime/src/main/java/org/apache/flink/runtime/security/token/KerberosDelegationTokenManager.java",
+            "startLine": 116,
+            "endLine": 150,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	delegationTokenProviders : Map<String,DelegationTokenProvider> to delegationTokenProviders : Map<String,HadoopDelegationTokenProvider> in class org.apache.flink.runtime.security.token.KerberosDelegationTokenManager",
+          "leftSideLocation": {
+            "filePath": "flink-runtime/src/main/java/org/apache/flink/runtime/security/token/KerberosDelegationTokenManager.java",
+            "startLine": 75,
+            "endLine": 75,
+            "startColumn": 67,
+            "endColumn": 91
+          },
+          "rightSideLocation": {
+            "filePath": "flink-runtime/src/main/java/org/apache/flink/runtime/security/token/KerberosDelegationTokenManager.java",
+            "startLine": 74,
+            "endLine": 74,
+            "startColumn": 73,
+            "endColumn": 97
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.flink.runtime.security.token.DelegationTokenProvider renamed to org.apache.flink.runtime.security.token.HadoopDelegationTokenProvider",
+          "leftSideLocation": {
+            "filePath": "flink-runtime/src/main/java/org/apache/flink/runtime/security/token/DelegationTokenProvider.java",
+            "startLine": 28,
+            "endLine": 59,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "flink-runtime/src/main/java/org/apache/flink/runtime/security/token/HadoopDelegationTokenProvider.java",
+            "startLine": 29,
+            "endLine": 67,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.flink.runtime.security.token.ExceptionThrowingDelegationTokenProvider renamed to org.apache.flink.runtime.security.token.ExceptionThrowingHadoopDelegationTokenProvider",
+          "leftSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/security/token/ExceptionThrowingDelegationTokenProvider.java",
+            "startLine": 27,
+            "endLine": 66,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/security/token/ExceptionThrowingHadoopDelegationTokenProvider.java",
+            "startLine": 27,
+            "endLine": 68,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.flink.runtime.security.token.TestDelegationTokenProvider renamed to org.apache.flink.runtime.security.token.TestHadoopDelegationTokenProvider",
+          "leftSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/security/token/TestDelegationTokenProvider.java",
+            "startLine": 27,
+            "endLine": 47,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/security/token/TestHadoopDelegationTokenProvider.java",
+            "startLine": 27,
+            "endLine": 47,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.flink.runtime.security.token.DelegationTokenProvider renamed to org.apache.flink.runtime.security.token.HadoopDelegationTokenProvider",
+          "leftSideLocation": {
+            "filePath": "flink-runtime/src/main/java/org/apache/flink/runtime/security/token/DelegationTokenProvider.java",
+            "startLine": 28,
+            "endLine": 59,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "flink-runtime/src/main/java/org/apache/flink/runtime/security/token/HadoopDelegationTokenProvider.java",
+            "startLine": 29,
+            "endLine": 67,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.flink.runtime.security.token.ExceptionThrowingDelegationTokenProvider renamed to org.apache.flink.runtime.security.token.ExceptionThrowingHadoopDelegationTokenProvider",
+          "leftSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/security/token/ExceptionThrowingDelegationTokenProvider.java",
+            "startLine": 27,
+            "endLine": 66,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/security/token/ExceptionThrowingHadoopDelegationTokenProvider.java",
+            "startLine": 27,
+            "endLine": 68,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.flink.runtime.security.token.TestDelegationTokenProvider renamed to org.apache.flink.runtime.security.token.TestHadoopDelegationTokenProvider",
+          "leftSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/security/token/TestDelegationTokenProvider.java",
+            "startLine": 27,
+            "endLine": 47,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/security/token/TestHadoopDelegationTokenProvider.java",
+            "startLine": 27,
+            "endLine": 47,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	delegationTokenProviders : Map<String,DelegationTokenProvider> to delegationTokenProviders : Map<String,HadoopDelegationTokenProvider> in class org.apache.flink.runtime.security.token.KerberosDelegationTokenManager",
+          "leftSideLocation": {
+            "filePath": "flink-runtime/src/main/java/org/apache/flink/runtime/security/token/KerberosDelegationTokenManager.java",
+            "startLine": 75,
+            "endLine": 75,
+            "startColumn": 67,
+            "endColumn": 91
+          },
+          "rightSideLocation": {
+            "filePath": "flink-runtime/src/main/java/org/apache/flink/runtime/security/token/KerberosDelegationTokenManager.java",
+            "startLine": 74,
+            "endLine": 74,
+            "startColumn": 73,
+            "endColumn": 97
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	Map<String,DelegationTokenProvider> to Map<String,HadoopDelegationTokenProvider> in method private loadProviders() : Map<String,HadoopDelegationTokenProvider> from class org.apache.flink.runtime.security.token.KerberosDelegationTokenManager",
+          "leftSideLocation": {
+            "filePath": "flink-runtime/src/main/java/org/apache/flink/runtime/security/token/KerberosDelegationTokenManager.java",
+            "startLine": 118,
+            "endLine": 152,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "flink-runtime/src/main/java/org/apache/flink/runtime/security/token/KerberosDelegationTokenManager.java",
+            "startLine": 116,
+            "endLine": 150,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/flink.git",
+      "sha1": "1d28a978b6ba52850bdb320b661a61b584627f6a",
+      "url": "https://github.com/apache/flink/commit/1d28a978b6ba52850bdb320b661a61b584627f6a",
+      "ourApproach": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	Map<String,Set<Dependency>> to Map<String,DependencyTree> in method package parseDependencyTreeOutput(lines Stream<String>) : Map<String,DependencyTree> from class org.apache.flink.tools.ci.utils.dependency.DependencyParser",
+          "leftSideLocation": {
+            "filePath": "tools/ci/flink-ci-tools/src/main/java/org/apache/flink/tools/ci/utils/dependency/DependencyParser.java",
+            "startLine": 104,
+            "endLine": 110,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "tools/ci/flink-ci-tools/src/main/java/org/apache/flink/tools/ci/utils/dependency/DependencyParser.java",
+            "startLine": 106,
+            "endLine": 112,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	Map<String,Set<Dependency>> to Map<String,DependencyTree> in method public parseDependencyTreeOutput(buildOutput Path) : Map<String,DependencyTree> from class org.apache.flink.tools.ci.utils.dependency.DependencyParser",
+          "leftSideLocation": {
+            "filePath": "tools/ci/flink-ci-tools/src/main/java/org/apache/flink/tools/ci/utils/dependency/DependencyParser.java",
+            "startLine": 80,
+            "endLine": 87,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "tools/ci/flink-ci-tools/src/main/java/org/apache/flink/tools/ci/utils/dependency/DependencyParser.java",
+            "startLine": 82,
+            "endLine": 89,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	Set<Dependency> to DependencyTree in method private parseTreeDependencyBlock(block Iterator<String>) : DependencyTree from class org.apache.flink.tools.ci.utils.dependency.DependencyParser",
+          "leftSideLocation": {
+            "filePath": "tools/ci/flink-ci-tools/src/main/java/org/apache/flink/tools/ci/utils/dependency/DependencyParser.java",
+            "startLine": 144,
+            "endLine": 153,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "tools/ci/flink-ci-tools/src/main/java/org/apache/flink/tools/ci/utils/dependency/DependencyParser.java",
+            "startLine": 159,
+            "endLine": 203,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	Map<String,Set<Dependency>> to Map<String,D> in method private parseDependencyOutput(lines Stream<String>, executionLinePattern Pattern, blockParser Function<Iterator<String>,D>) : Map<String,D> from class org.apache.flink.tools.ci.utils.dependency.DependencyParser",
+          "leftSideLocation": {
+            "filePath": "tools/ci/flink-ci-tools/src/main/java/org/apache/flink/tools/ci/utils/dependency/DependencyParser.java",
+            "startLine": 112,
+            "endLine": 138,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "tools/ci/flink-ci-tools/src/main/java/org/apache/flink/tools/ci/utils/dependency/DependencyParser.java",
+            "startLine": 114,
+            "endLine": 140,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private parseDependencyBlock(block Iterator<String>, lineItemParser Function<String,Optional<Dependency>>) : Set<Dependency> inlined to private parseCopyDependencyBlock(block Iterator<String>) : Set<Dependency> in class org.apache.flink.tools.ci.utils.dependency.DependencyParser",
+          "leftSideLocation": {
+            "filePath": "tools/ci/flink-ci-tools/src/main/java/org/apache/flink/tools/ci/utils/dependency/DependencyParser.java",
+            "startLine": 155,
+            "endLine": 171,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "tools/ci/flink-ci-tools/src/main/java/org/apache/flink/tools/ci/utils/dependency/DependencyParser.java",
+            "startLine": 142,
+            "endLine": 157,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private parseDependencyBlock(block Iterator<String>, lineItemParser Function<String,Optional<Dependency>>) : Set<Dependency> inlined to private parseTreeDependencyBlock(block Iterator<String>) : DependencyTree in class org.apache.flink.tools.ci.utils.dependency.DependencyParser",
+          "leftSideLocation": {
+            "filePath": "tools/ci/flink-ci-tools/src/main/java/org/apache/flink/tools/ci/utils/dependency/DependencyParser.java",
+            "startLine": 155,
+            "endLine": 171,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "tools/ci/flink-ci-tools/src/main/java/org/apache/flink/tools/ci/utils/dependency/DependencyParser.java",
+            "startLine": 159,
+            "endLine": 203,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private parseDependencyBlock(block Iterator<String>, lineItemParser Function<String,Optional<Dependency>>) : Set<Dependency> inlined to private parseCopyDependencyBlock(block Iterator<String>) : Set<Dependency> in class org.apache.flink.tools.ci.utils.dependency.DependencyParser",
+          "leftSideLocation": {
+            "filePath": "tools/ci/flink-ci-tools/src/main/java/org/apache/flink/tools/ci/utils/dependency/DependencyParser.java",
+            "startLine": 155,
+            "endLine": 171,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "tools/ci/flink-ci-tools/src/main/java/org/apache/flink/tools/ci/utils/dependency/DependencyParser.java",
+            "startLine": 142,
+            "endLine": 157,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private parseDependencyBlock(block Iterator<String>, lineItemParser Function<String,Optional<Dependency>>) : Set<Dependency> inlined to private parseTreeDependencyBlock(block Iterator<String>) : DependencyTree in class org.apache.flink.tools.ci.utils.dependency.DependencyParser",
+          "leftSideLocation": {
+            "filePath": "tools/ci/flink-ci-tools/src/main/java/org/apache/flink/tools/ci/utils/dependency/DependencyParser.java",
+            "startLine": 155,
+            "endLine": 171,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "tools/ci/flink-ci-tools/src/main/java/org/apache/flink/tools/ci/utils/dependency/DependencyParser.java",
+            "startLine": 159,
+            "endLine": 203,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	Map<String,Set<Dependency>> to Map<String,DependencyTree> in method public parseDependencyTreeOutput(buildOutput Path) : Map<String,DependencyTree> from class org.apache.flink.tools.ci.utils.dependency.DependencyParser",
+          "leftSideLocation": {
+            "filePath": "tools/ci/flink-ci-tools/src/main/java/org/apache/flink/tools/ci/utils/dependency/DependencyParser.java",
+            "startLine": 80,
+            "endLine": 87,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "tools/ci/flink-ci-tools/src/main/java/org/apache/flink/tools/ci/utils/dependency/DependencyParser.java",
+            "startLine": 82,
+            "endLine": 89,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	Map<String,Set<Dependency>> to Map<String,DependencyTree> in method package parseDependencyTreeOutput(lines Stream<String>) : Map<String,DependencyTree> from class org.apache.flink.tools.ci.utils.dependency.DependencyParser",
+          "leftSideLocation": {
+            "filePath": "tools/ci/flink-ci-tools/src/main/java/org/apache/flink/tools/ci/utils/dependency/DependencyParser.java",
+            "startLine": 104,
+            "endLine": 110,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "tools/ci/flink-ci-tools/src/main/java/org/apache/flink/tools/ci/utils/dependency/DependencyParser.java",
+            "startLine": 106,
+            "endLine": 112,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	Set<Dependency> to DependencyTree in method private parseTreeDependencyBlock(block Iterator<String>) : DependencyTree from class org.apache.flink.tools.ci.utils.dependency.DependencyParser",
+          "leftSideLocation": {
+            "filePath": "tools/ci/flink-ci-tools/src/main/java/org/apache/flink/tools/ci/utils/dependency/DependencyParser.java",
+            "startLine": 144,
+            "endLine": 153,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "tools/ci/flink-ci-tools/src/main/java/org/apache/flink/tools/ci/utils/dependency/DependencyParser.java",
+            "startLine": 159,
+            "endLine": 203,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	Map<String,Set<Dependency>> to Map<String,D> in method private parseDependencyOutput(lines Stream<String>, executionLinePattern Pattern, blockParser Function<Iterator<String>,D>) : Map<String,D> from class org.apache.flink.tools.ci.utils.dependency.DependencyParser",
+          "leftSideLocation": {
+            "filePath": "tools/ci/flink-ci-tools/src/main/java/org/apache/flink/tools/ci/utils/dependency/DependencyParser.java",
+            "startLine": 112,
+            "endLine": 138,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "tools/ci/flink-ci-tools/src/main/java/org/apache/flink/tools/ci/utils/dependency/DependencyParser.java",
+            "startLine": 114,
+            "endLine": 140,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/flink.git",
+      "sha1": "69526c56a10b836e2ca28443398a8e5ea1411855",
+      "url": "https://github.com/apache/flink/commit/69526c56a10b836e2ca28443398a8e5ea1411855",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public ofConfigurationChange(configkey String, change MapDifference.ValueDifference<String>) : String renamed to public ofConfigurationChanged(configKey String, change MapDifference.ValueDifference<String>) : String in class org.apache.flink.runtime.dispatcher.ConfigurationNotAllowedMessage",
+          "leftSideLocation": {
+            "filePath": "flink-runtime/src/main/java/org/apache/flink/runtime/dispatcher/ConfigurationNotAllowedMessage.java",
+            "startLine": 43,
+            "endLine": 48,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "flink-runtime/src/main/java/org/apache/flink/runtime/dispatcher/ConfigurationNotAllowedMessage.java",
+            "startLine": 43,
+            "endLine": 48,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public ofConfigurationKeyAndValue(configkey String, configValue String) : String renamed to public ofConfigurationAdded(configKey String, configValue String) : String in class org.apache.flink.runtime.dispatcher.ConfigurationNotAllowedMessage",
+          "leftSideLocation": {
+            "filePath": "flink-runtime/src/main/java/org/apache/flink/runtime/dispatcher/ConfigurationNotAllowedMessage.java",
+            "startLine": 35,
+            "endLine": 37,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "flink-runtime/src/main/java/org/apache/flink/runtime/dispatcher/ConfigurationNotAllowedMessage.java",
+            "startLine": 35,
+            "endLine": 37,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public ofConfigurationKeyAndValue(configkey String, configValue String) : String renamed to public ofConfigurationAdded(configKey String, configValue String) : String in class org.apache.flink.runtime.dispatcher.ConfigurationNotAllowedMessage",
+          "leftSideLocation": {
+            "filePath": "flink-runtime/src/main/java/org/apache/flink/runtime/dispatcher/ConfigurationNotAllowedMessage.java",
+            "startLine": 35,
+            "endLine": 37,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "flink-runtime/src/main/java/org/apache/flink/runtime/dispatcher/ConfigurationNotAllowedMessage.java",
+            "startLine": 35,
+            "endLine": 37,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public ofConfigurationChange(configkey String, change MapDifference.ValueDifference<String>) : String renamed to public ofConfigurationChanged(configKey String, change MapDifference.ValueDifference<String>) : String in class org.apache.flink.runtime.dispatcher.ConfigurationNotAllowedMessage",
+          "leftSideLocation": {
+            "filePath": "flink-runtime/src/main/java/org/apache/flink/runtime/dispatcher/ConfigurationNotAllowedMessage.java",
+            "startLine": 43,
+            "endLine": 48,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "flink-runtime/src/main/java/org/apache/flink/runtime/dispatcher/ConfigurationNotAllowedMessage.java",
+            "startLine": 43,
+            "endLine": 48,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/flink.git",
+      "sha1": "a2b402d66de9ecde75881796a6d7ee09fc4d6963",
+      "url": "https://github.com/apache/flink/commit/a2b402d66de9ecde75881796a6d7ee09fc4d6963",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package testConsumeBuffer(compressionFactoryName String) : void renamed to package testCompressBufferAndConsume(compressionFactoryName String) : void in class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionMemoryDataManagerTest",
+          "leftSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/io/network/partition/hybrid/HsSubpartitionMemoryDataManagerTest.java",
+            "startLine": 213,
+            "endLine": 269,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/io/network/partition/hybrid/HsSubpartitionMemoryDataManagerTest.java",
+            "startLine": 126,
+            "endLine": 184,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	HsSubpartitionView to HsSubpartitionConsumer in method private createSubpartitionView() : HsSubpartitionConsumer from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionViewTest",
+          "leftSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/io/network/partition/hybrid/HsSubpartitionViewTest.java",
+            "startLine": 414,
+            "endLine": 416,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/io/network/partition/hybrid/HsSubpartitionViewTest.java",
+            "startLine": 422,
+            "endLine": 424,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.flink.runtime.io.network.partition.hybrid.TestingSubpartitionViewInternalOperation renamed to org.apache.flink.runtime.io.network.partition.hybrid.TestingSubpartitionConsumerInternalOperation",
+          "leftSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/io/network/partition/hybrid/TestingSubpartitionViewInternalOperation.java",
+            "startLine": 21,
+            "endLine": 46,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/io/network/partition/hybrid/TestingSubpartitionConsumerInternalOperation.java",
+            "startLine": 21,
+            "endLine": 46,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	subpartitionViewOperationsMap : Map<Integer,HsSubpartitionViewInternalOperations> to subpartitionViewOperationsMap : List<Map<HsConsumerId,HsSubpartitionConsumerInternalOperations>> in class org.apache.flink.runtime.io.network.partition.hybrid.HsMemoryDataManager",
+          "leftSideLocation": {
+            "filePath": "flink-runtime/src/main/java/org/apache/flink/runtime/io/network/partition/hybrid/HsMemoryDataManager.java",
+            "startLine": 75,
+            "endLine": 76,
+            "startColumn": 70,
+            "endColumn": 38
+          },
+          "rightSideLocation": {
+            "filePath": "flink-runtime/src/main/java/org/apache/flink/runtime/io/network/partition/hybrid/HsMemoryDataManager.java",
+            "startLine": 82,
+            "endLine": 82,
+            "startColumn": 13,
+            "endColumn": 42
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	subpartitionViewOperation : TestingSubpartitionViewInternalOperation to subpartitionViewOperation : TestingSubpartitionConsumerInternalOperation in class org.apache.flink.runtime.io.network.partition.hybrid.HsFileDataManagerTest",
+          "leftSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/io/network/partition/hybrid/HsFileDataManagerTest.java",
+            "startLine": 81,
+            "endLine": 81,
+            "startColumn": 54,
+            "endColumn": 79
+          },
+          "rightSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/io/network/partition/hybrid/HsFileDataManagerTest.java",
+            "startLine": 81,
+            "endLine": 81,
+            "startColumn": 58,
+            "endColumn": 83
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionViewInternalOperations renamed to org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionConsumerInternalOperations",
+          "leftSideLocation": {
+            "filePath": "flink-runtime/src/main/java/org/apache/flink/runtime/io/network/partition/hybrid/HsSubpartitionViewInternalOperations.java",
+            "startLine": 21,
+            "endLine": 39,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "flink-runtime/src/main/java/org/apache/flink/runtime/io/network/partition/hybrid/HsSubpartitionConsumerInternalOperations.java",
+            "startLine": 21,
+            "endLine": 39,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	subpartitionLock : Object to subpartitionLock : ReentrantReadWriteLock in class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionMemoryDataManager",
+          "leftSideLocation": {
+            "filePath": "flink-runtime/src/main/java/org/apache/flink/runtime/io/network/partition/hybrid/HsSubpartitionMemoryDataManager.java",
+            "startLine": 87,
+            "endLine": 87,
+            "startColumn": 26,
+            "endColumn": 57
+          },
+          "rightSideLocation": {
+            "filePath": "flink-runtime/src/main/java/org/apache/flink/runtime/io/network/partition/hybrid/HsSubpartitionMemoryDataManager.java",
+            "startLine": 85,
+            "endLine": 85,
+            "startColumn": 42,
+            "endColumn": 89
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	HsSubpartitionView to HsSubpartitionConsumer in method private createSubpartitionView(bufferAvailabilityListener BufferAvailabilityListener) : HsSubpartitionConsumer from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionViewTest",
+          "leftSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/io/network/partition/hybrid/HsSubpartitionViewTest.java",
+            "startLine": 418,
+            "endLine": 421,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/io/network/partition/hybrid/HsSubpartitionViewTest.java",
+            "startLine": 426,
+            "endLine": 429,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionView renamed to org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionConsumer",
+          "leftSideLocation": {
+            "filePath": "flink-runtime/src/main/java/org/apache/flink/runtime/io/network/partition/hybrid/HsSubpartitionView.java",
+            "startLine": 35,
+            "endLine": 290,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "flink-runtime/src/main/java/org/apache/flink/runtime/io/network/partition/hybrid/HsSubpartitionConsumer.java",
+            "startLine": 35,
+            "endLine": 294,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public registerSubpartitionView(subpartitionId int, viewOperations HsSubpartitionViewInternalOperations) : HsDataView renamed to public registerNewConsumer(subpartitionId int, consumerId HsConsumerId, viewOperations HsSubpartitionConsumerInternalOperations) : HsDataView in class org.apache.flink.runtime.io.network.partition.hybrid.HsMemoryDataManager",
+          "leftSideLocation": {
+            "filePath": "flink-runtime/src/main/java/org/apache/flink/runtime/io/network/partition/hybrid/HsMemoryDataManager.java",
+            "startLine": 158,
+            "endLine": 173,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "flink-runtime/src/main/java/org/apache/flink/runtime/io/network/partition/hybrid/HsMemoryDataManager.java",
+            "startLine": 166,
+            "endLine": 180,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	subpartitionOperation : TestingSubpartitionViewInternalOperation to subpartitionOperation : TestingSubpartitionConsumerInternalOperation in class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionFileReaderImplTest",
+          "leftSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/io/network/partition/hybrid/HsSubpartitionFileReaderImplTest.java",
+            "startLine": 78,
+            "endLine": 78,
+            "startColumn": 54,
+            "endColumn": 75
+          },
+          "rightSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/io/network/partition/hybrid/HsSubpartitionFileReaderImplTest.java",
+            "startLine": 78,
+            "endLine": 78,
+            "startColumn": 58,
+            "endColumn": 79
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	operations : HsSubpartitionViewInternalOperations to operations : HsSubpartitionConsumerInternalOperations in class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionFileReaderImpl",
+          "leftSideLocation": {
+            "filePath": "flink-runtime/src/main/java/org/apache/flink/runtime/io/network/partition/hybrid/HsSubpartitionFileReaderImpl.java",
+            "startLine": 60,
+            "endLine": 60,
+            "startColumn": 56,
+            "endColumn": 66
+          },
+          "rightSideLocation": {
+            "filePath": "flink-runtime/src/main/java/org/apache/flink/runtime/io/network/partition/hybrid/HsSubpartitionFileReaderImpl.java",
+            "startLine": 60,
+            "endLine": 60,
+            "startColumn": 60,
+            "endColumn": 70
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	DataType to Buffer.DataType in method private peekNextToConsumeDataTypeInternal(nextToConsumeIndex int) : Buffer.DataType from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionConsumerMemoryDataManager",
+          "leftSideLocation": {
+            "filePath": "flink-runtime/src/main/java/org/apache/flink/runtime/io/network/partition/hybrid/HsSubpartitionMemoryDataManager.java",
+            "startLine": 413,
+            "endLine": 418,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "flink-runtime/src/main/java/org/apache/flink/runtime/io/network/partition/hybrid/HsSubpartitionConsumerMemoryDataManager.java",
+            "startLine": 139,
+            "endLine": 144,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	Optional<BufferAndBacklog> to Optional<ResultSubpartition.BufferAndBacklog> in method public consumeBuffer(toConsumeIndex int) : Optional<ResultSubpartition.BufferAndBacklog> from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionConsumerMemoryDataManager",
+          "leftSideLocation": {
+            "filePath": "flink-runtime/src/main/java/org/apache/flink/runtime/io/network/partition/hybrid/HsSubpartitionMemoryDataManager.java",
+            "startLine": 126,
+            "endLine": 166,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "flink-runtime/src/main/java/org/apache/flink/runtime/io/network/partition/hybrid/HsSubpartitionConsumerMemoryDataManager.java",
+            "startLine": 82,
+            "endLine": 121,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	DataType to Buffer.DataType in method public peekNextToConsumeDataType(nextToConsumeIndex int) : Buffer.DataType from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionConsumerMemoryDataManager",
+          "leftSideLocation": {
+            "filePath": "flink-runtime/src/main/java/org/apache/flink/runtime/io/network/partition/hybrid/HsSubpartitionMemoryDataManager.java",
+            "startLine": 110,
+            "endLine": 124,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "flink-runtime/src/main/java/org/apache/flink/runtime/io/network/partition/hybrid/HsSubpartitionConsumerMemoryDataManager.java",
+            "startLine": 123,
+            "endLine": 137,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionConsumerMemoryDataManager from Class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionMemoryDataManager",
+          "leftSideLocation": {
+            "filePath": "flink-runtime/src/main/java/org/apache/flink/runtime/io/network/partition/hybrid/HsSubpartitionMemoryDataManager.java",
+            "startLine": 57,
+            "endLine": 538,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "flink-runtime/src/main/java/org/apache/flink/runtime/io/network/partition/hybrid/HsSubpartitionConsumerMemoryDataManager.java",
+            "startLine": 35,
+            "endLine": 185,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionConsumerMemoryDataManagerTest from Class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionMemoryDataManagerTest",
+          "leftSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/io/network/partition/hybrid/HsSubpartitionMemoryDataManagerTest.java",
+            "startLine": 62,
+            "endLine": 533,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/io/network/partition/hybrid/HsSubpartitionConsumerMemoryDataManagerTest.java",
+            "startLine": 35,
+            "endLine": 197,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionView renamed to org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionConsumer",
+          "leftSideLocation": {
+            "filePath": "flink-runtime/src/main/java/org/apache/flink/runtime/io/network/partition/hybrid/HsSubpartitionView.java",
+            "startLine": 35,
+            "endLine": 290,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "flink-runtime/src/main/java/org/apache/flink/runtime/io/network/partition/hybrid/HsSubpartitionConsumer.java",
+            "startLine": 35,
+            "endLine": 294,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionViewInternalOperations renamed to org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionConsumerInternalOperations",
+          "leftSideLocation": {
+            "filePath": "flink-runtime/src/main/java/org/apache/flink/runtime/io/network/partition/hybrid/HsSubpartitionViewInternalOperations.java",
+            "startLine": 21,
+            "endLine": 39,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "flink-runtime/src/main/java/org/apache/flink/runtime/io/network/partition/hybrid/HsSubpartitionConsumerInternalOperations.java",
+            "startLine": 21,
+            "endLine": 39,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.flink.runtime.io.network.partition.hybrid.TestingSubpartitionViewInternalOperation renamed to org.apache.flink.runtime.io.network.partition.hybrid.TestingSubpartitionConsumerInternalOperation",
+          "leftSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/io/network/partition/hybrid/TestingSubpartitionViewInternalOperation.java",
+            "startLine": 21,
+            "endLine": 46,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/io/network/partition/hybrid/TestingSubpartitionConsumerInternalOperation.java",
+            "startLine": 21,
+            "endLine": 46,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	subpartitionViewOperationsMap : Map<Integer,HsSubpartitionViewInternalOperations> to subpartitionViewOperationsMap : List<Map<HsConsumerId,HsSubpartitionConsumerInternalOperations>> in class org.apache.flink.runtime.io.network.partition.hybrid.HsMemoryDataManager",
+          "leftSideLocation": {
+            "filePath": "flink-runtime/src/main/java/org/apache/flink/runtime/io/network/partition/hybrid/HsMemoryDataManager.java",
+            "startLine": 75,
+            "endLine": 76,
+            "startColumn": 70,
+            "endColumn": 38
+          },
+          "rightSideLocation": {
+            "filePath": "flink-runtime/src/main/java/org/apache/flink/runtime/io/network/partition/hybrid/HsMemoryDataManager.java",
+            "startLine": 82,
+            "endLine": 82,
+            "startColumn": 13,
+            "endColumn": 42
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	operations : HsSubpartitionViewInternalOperations to operations : HsSubpartitionConsumerInternalOperations in class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionFileReaderImpl",
+          "leftSideLocation": {
+            "filePath": "flink-runtime/src/main/java/org/apache/flink/runtime/io/network/partition/hybrid/HsSubpartitionFileReaderImpl.java",
+            "startLine": 60,
+            "endLine": 60,
+            "startColumn": 56,
+            "endColumn": 66
+          },
+          "rightSideLocation": {
+            "filePath": "flink-runtime/src/main/java/org/apache/flink/runtime/io/network/partition/hybrid/HsSubpartitionFileReaderImpl.java",
+            "startLine": 60,
+            "endLine": 60,
+            "startColumn": 60,
+            "endColumn": 70
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	subpartitionLock : Object to subpartitionLock : ReentrantReadWriteLock in class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionMemoryDataManager",
+          "leftSideLocation": {
+            "filePath": "flink-runtime/src/main/java/org/apache/flink/runtime/io/network/partition/hybrid/HsSubpartitionMemoryDataManager.java",
+            "startLine": 87,
+            "endLine": 87,
+            "startColumn": 26,
+            "endColumn": 57
+          },
+          "rightSideLocation": {
+            "filePath": "flink-runtime/src/main/java/org/apache/flink/runtime/io/network/partition/hybrid/HsSubpartitionMemoryDataManager.java",
+            "startLine": 85,
+            "endLine": 85,
+            "startColumn": 42,
+            "endColumn": 89
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	subpartitionViewOperation : TestingSubpartitionViewInternalOperation to subpartitionViewOperation : TestingSubpartitionConsumerInternalOperation in class org.apache.flink.runtime.io.network.partition.hybrid.HsFileDataManagerTest",
+          "leftSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/io/network/partition/hybrid/HsFileDataManagerTest.java",
+            "startLine": 81,
+            "endLine": 81,
+            "startColumn": 54,
+            "endColumn": 79
+          },
+          "rightSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/io/network/partition/hybrid/HsFileDataManagerTest.java",
+            "startLine": 81,
+            "endLine": 81,
+            "startColumn": 58,
+            "endColumn": 83
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	subpartitionOperation : TestingSubpartitionViewInternalOperation to subpartitionOperation : TestingSubpartitionConsumerInternalOperation in class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionFileReaderImplTest",
+          "leftSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/io/network/partition/hybrid/HsSubpartitionFileReaderImplTest.java",
+            "startLine": 78,
+            "endLine": 78,
+            "startColumn": 54,
+            "endColumn": 75
+          },
+          "rightSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/io/network/partition/hybrid/HsSubpartitionFileReaderImplTest.java",
+            "startLine": 78,
+            "endLine": 78,
+            "startColumn": 58,
+            "endColumn": 79
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package testConsumeBuffer(compressionFactoryName String) : void renamed to package testCompressBufferAndConsume(compressionFactoryName String) : void in class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionMemoryDataManagerTest",
+          "leftSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/io/network/partition/hybrid/HsSubpartitionMemoryDataManagerTest.java",
+            "startLine": 213,
+            "endLine": 269,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/io/network/partition/hybrid/HsSubpartitionMemoryDataManagerTest.java",
+            "startLine": 126,
+            "endLine": 184,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	HsSubpartitionView to HsSubpartitionConsumer in method private createSubpartitionView() : HsSubpartitionConsumer from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionViewTest",
+          "leftSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/io/network/partition/hybrid/HsSubpartitionViewTest.java",
+            "startLine": 414,
+            "endLine": 416,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/io/network/partition/hybrid/HsSubpartitionViewTest.java",
+            "startLine": 422,
+            "endLine": 424,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	HsSubpartitionView to HsSubpartitionConsumer in method private createSubpartitionView(bufferAvailabilityListener BufferAvailabilityListener) : HsSubpartitionConsumer from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionViewTest",
+          "leftSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/io/network/partition/hybrid/HsSubpartitionViewTest.java",
+            "startLine": 418,
+            "endLine": 421,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/io/network/partition/hybrid/HsSubpartitionViewTest.java",
+            "startLine": 426,
+            "endLine": 429,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionConsumerMemoryDataManager from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionMemoryDataManager",
+          "leftSideLocation": {
+            "filePath": "flink-runtime/src/main/java/org/apache/flink/runtime/io/network/partition/hybrid/HsSubpartitionMemoryDataManager.java",
+            "startLine": 57,
+            "endLine": 538,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "flink-runtime/src/main/java/org/apache/flink/runtime/io/network/partition/hybrid/HsSubpartitionConsumerMemoryDataManager.java",
+            "startLine": 35,
+            "endLine": 185,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionConsumerMemoryDataManagerTest from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionMemoryDataManagerTest",
+          "leftSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/io/network/partition/hybrid/HsSubpartitionMemoryDataManagerTest.java",
+            "startLine": 62,
+            "endLine": 533,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/io/network/partition/hybrid/HsSubpartitionConsumerMemoryDataManagerTest.java",
+            "startLine": 35,
+            "endLine": 197,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	DataType to Buffer.DataType in method public peekNextToConsumeDataType(nextToConsumeIndex int) : Buffer.DataType from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionConsumerMemoryDataManager",
+          "leftSideLocation": {
+            "filePath": "flink-runtime/src/main/java/org/apache/flink/runtime/io/network/partition/hybrid/HsSubpartitionMemoryDataManager.java",
+            "startLine": 110,
+            "endLine": 124,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "flink-runtime/src/main/java/org/apache/flink/runtime/io/network/partition/hybrid/HsSubpartitionConsumerMemoryDataManager.java",
+            "startLine": 123,
+            "endLine": 137,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	Optional<BufferAndBacklog> to Optional<ResultSubpartition.BufferAndBacklog> in method public consumeBuffer(toConsumeIndex int) : Optional<ResultSubpartition.BufferAndBacklog> from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionConsumerMemoryDataManager",
+          "leftSideLocation": {
+            "filePath": "flink-runtime/src/main/java/org/apache/flink/runtime/io/network/partition/hybrid/HsSubpartitionMemoryDataManager.java",
+            "startLine": 126,
+            "endLine": 166,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "flink-runtime/src/main/java/org/apache/flink/runtime/io/network/partition/hybrid/HsSubpartitionConsumerMemoryDataManager.java",
+            "startLine": 82,
+            "endLine": 121,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	DataType to Buffer.DataType in method private peekNextToConsumeDataTypeInternal(nextToConsumeIndex int) : Buffer.DataType from class org.apache.flink.runtime.io.network.partition.hybrid.HsSubpartitionConsumerMemoryDataManager",
+          "leftSideLocation": {
+            "filePath": "flink-runtime/src/main/java/org/apache/flink/runtime/io/network/partition/hybrid/HsSubpartitionMemoryDataManager.java",
+            "startLine": 413,
+            "endLine": 418,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "flink-runtime/src/main/java/org/apache/flink/runtime/io/network/partition/hybrid/HsSubpartitionConsumerMemoryDataManager.java",
+            "startLine": 139,
+            "endLine": 144,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/flink.git",
+      "sha1": "b9e3dfe0ae78aaedf5cfa645c307cc3e52168db5",
+      "url": "https://github.com/apache/flink/commit/b9e3dfe0ae78aaedf5cfa645c307cc3e52168db5",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.apache.flink.runtime.rpc.RpcGatewayUtils from Class org.apache.flink.runtime.rpc.akka.AkkaInvocationHandler",
+          "leftSideLocation": {
+            "filePath": "flink-rpc/flink-rpc-akka/src/main/java/org/apache/flink/runtime/rpc/akka/AkkaInvocationHandler.java",
+            "startLine": 67,
+            "endLine": 471,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "flink-rpc/flink-rpc-core/src/main/java/org/apache/flink/runtime/rpc/RpcGatewayUtils.java",
+            "startLine": 28,
+            "endLine": 87,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.apache.flink.runtime.rpc.RpcGatewayUtils from class org.apache.flink.runtime.rpc.akka.AkkaInvocationHandler",
+          "leftSideLocation": {
+            "filePath": "flink-rpc/flink-rpc-akka/src/main/java/org/apache/flink/runtime/rpc/akka/AkkaInvocationHandler.java",
+            "startLine": 67,
+            "endLine": 471,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "flink-rpc/flink-rpc-core/src/main/java/org/apache/flink/runtime/rpc/RpcGatewayUtils.java",
+            "startLine": 28,
+            "endLine": 87,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/flink.git",
+      "sha1": "d3513d98953b0922e3dc753ef90806ed4e264926",
+      "url": "https://github.com/apache/flink/commit/d3513d98953b0922e3dc753ef90806ed4e264926",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private testGenerateEnrichedResourceProfile(resultPartitionType ResultPartitionType, group0MemorySize MemorySize, group1MemorySize MemorySize) : void extracted from public testGenerateEnrichedResourceProfile() : void in class org.apache.flink.runtime.scheduler.SsgNetworkMemoryCalculationUtilsTest",
+          "leftSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/scheduler/SsgNetworkMemoryCalculationUtilsTest.java",
+            "startLine": 71,
+            "endLine": 91,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/scheduler/SsgNetworkMemoryCalculationUtilsTest.java",
+            "startLine": 101,
+            "endLine": 119,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private createBatchGraph(slotSharingGroups List<SlotSharingGroup>, parallelisms List<Integer>) : JobGraph inlined to private createDynamicExecutionGraph(slotSharingGroups List<SlotSharingGroup>, defaultMaxParallelism int) : DefaultExecutionGraph in class org.apache.flink.runtime.scheduler.SsgNetworkMemoryCalculationUtilsTest",
+          "leftSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/scheduler/SsgNetworkMemoryCalculationUtilsTest.java",
+            "startLine": 242,
+            "endLine": 245,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/scheduler/SsgNetworkMemoryCalculationUtilsTest.java",
+            "startLine": 241,
+            "endLine": 258,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private createBatchGraph(slotSharingGroups List<SlotSharingGroup>, parallelisms List<Integer>) : JobGraph inlined to private createDynamicExecutionGraph(slotSharingGroups List<SlotSharingGroup>, defaultMaxParallelism int) : DefaultExecutionGraph in class org.apache.flink.runtime.scheduler.SsgNetworkMemoryCalculationUtilsTest",
+          "leftSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/scheduler/SsgNetworkMemoryCalculationUtilsTest.java",
+            "startLine": 242,
+            "endLine": 245,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/scheduler/SsgNetworkMemoryCalculationUtilsTest.java",
+            "startLine": 241,
+            "endLine": 258,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private testGenerateEnrichedResourceProfile(resultPartitionType ResultPartitionType, group0MemorySize MemorySize, group1MemorySize MemorySize) : void extracted from public testGenerateEnrichedResourceProfile() : void in class org.apache.flink.runtime.scheduler.SsgNetworkMemoryCalculationUtilsTest",
+          "leftSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/scheduler/SsgNetworkMemoryCalculationUtilsTest.java",
+            "startLine": 71,
+            "endLine": 91,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "flink-runtime/src/test/java/org/apache/flink/runtime/scheduler/SsgNetworkMemoryCalculationUtilsTest.java",
+            "startLine": 101,
+            "endLine": 119,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    }
+  ]
+}

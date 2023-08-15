@@ -1,0 +1,2483 @@
+{
+  "results": [
+    {
+      "repository": "https://github.com/junit-team/junit5.git",
+      "sha1": "33650724629c453992dd32ccff2203fb6ef8ed99",
+      "url": "https://github.com/junit-team/junit5/commit/33650724629c453992dd32ccff2203fb6ef8ed99",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private compositeTestExecutionListener() : EngineExecutionListener renamed to private compositeEngineExecutionListener() : EngineExecutionListener in class org.junit.platform.launcher.core.CompositeEngineExecutionListenerTests",
+          "leftSideLocation": {
+            "filePath": "platform-tests/src/test/java/org/junit/platform/launcher/core/CompositeEngineExecutionListenerTests.java",
+            "startLine": 104,
+            "endLine": 106,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "platform-tests/src/test/java/org/junit/platform/launcher/core/CompositeEngineExecutionListenerTests.java",
+            "startLine": 119,
+            "endLine": 121,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private getSampleMethodTestDescriptor() : TestDescriptor renamed to private anyTestDescriptor() : TestDescriptor in class org.junit.platform.launcher.core.CompositeEngineExecutionListenerTests",
+          "leftSideLocation": {
+            "filePath": "platform-tests/src/test/java/org/junit/platform/launcher/core/CompositeEngineExecutionListenerTests.java",
+            "startLine": 117,
+            "endLine": 119,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "platform-tests/src/test/java/org/junit/platform/launcher/core/CompositeEngineExecutionListenerTests.java",
+            "startLine": 142,
+            "endLine": 146,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private anyTestExecutionResult() : TestExecutionResult extracted from package shouldNotThrowExceptionButLogIfExecutionFinishedListenerMethodFails(logRecordListener LogRecordListener) : void in class org.junit.platform.launcher.core.CompositeEngineExecutionListenerTests",
+          "leftSideLocation": {
+            "filePath": "platform-tests/src/test/java/org/junit/platform/launcher/core/CompositeEngineExecutionListenerTests.java",
+            "startLine": 67,
+            "endLine": 75,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "platform-tests/src/test/java/org/junit/platform/launcher/core/CompositeEngineExecutionListenerTests.java",
+            "startLine": 132,
+            "endLine": 134,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private getDemoMethodTestDescriptor() : DemoMethodTestDescriptor inlined to private anyTestDescriptor() : TestDescriptor in class org.junit.platform.launcher.core.CompositeEngineExecutionListenerTests",
+          "leftSideLocation": {
+            "filePath": "platform-tests/src/test/java/org/junit/platform/launcher/core/CompositeEngineExecutionListenerTests.java",
+            "startLine": 127,
+            "endLine": 131,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "platform-tests/src/test/java/org/junit/platform/launcher/core/CompositeEngineExecutionListenerTests.java",
+            "startLine": 142,
+            "endLine": 146,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private compositeTestExecutionListener() : EngineExecutionListener renamed to private compositeEngineExecutionListener() : EngineExecutionListener in class org.junit.platform.launcher.core.CompositeEngineExecutionListenerTests",
+          "leftSideLocation": {
+            "filePath": "platform-tests/src/test/java/org/junit/platform/launcher/core/CompositeEngineExecutionListenerTests.java",
+            "startLine": 104,
+            "endLine": 106,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "platform-tests/src/test/java/org/junit/platform/launcher/core/CompositeEngineExecutionListenerTests.java",
+            "startLine": 119,
+            "endLine": 121,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private getDemoMethodTestDescriptor() : DemoMethodTestDescriptor renamed to private anyTestDescriptor() : TestDescriptor in class org.junit.platform.launcher.core.CompositeEngineExecutionListenerTests",
+          "leftSideLocation": {
+            "filePath": "platform-tests/src/test/java/org/junit/platform/launcher/core/CompositeEngineExecutionListenerTests.java",
+            "startLine": 127,
+            "endLine": 131,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "platform-tests/src/test/java/org/junit/platform/launcher/core/CompositeEngineExecutionListenerTests.java",
+            "startLine": 142,
+            "endLine": 146,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": false
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	DemoMethodTestDescriptor to TestDescriptor in method private anyTestDescriptor() : TestDescriptor from class org.junit.platform.launcher.core.CompositeEngineExecutionListenerTests",
+          "leftSideLocation": {
+            "filePath": "platform-tests/src/test/java/org/junit/platform/launcher/core/CompositeEngineExecutionListenerTests.java",
+            "startLine": 127,
+            "endLine": 131,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "platform-tests/src/test/java/org/junit/platform/launcher/core/CompositeEngineExecutionListenerTests.java",
+            "startLine": 142,
+            "endLine": 146,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/junit-team/junit5.git",
+      "sha1": "90a0ccf2087e3573f3629c216aaaceff5691780a",
+      "url": "https://github.com/junit-team/junit5/commit/90a0ccf2087e3573f3629c216aaaceff5691780a",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private getDemoMethodTestDescriptor() : DemoMethodTestDescriptor renamed to private anyTestDescriptor() : DemoMethodTestDescriptor in class org.junit.platform.launcher.core.CompositeTestExecutionListenerTests",
+          "leftSideLocation": {
+            "filePath": "platform-tests/src/test/java/org/junit/platform/launcher/core/CompositeTestExecutionListenerTests.java",
+            "startLine": 193,
+            "endLine": 197,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "platform-tests/src/test/java/org/junit/platform/launcher/core/CompositeTestExecutionListenerTests.java",
+            "startLine": 213,
+            "endLine": 217,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private getSampleMethodTestIdentifier() : TestIdentifier renamed to private anyTestIdentifier() : TestIdentifier in class org.junit.platform.launcher.core.CompositeTestExecutionListenerTests",
+          "leftSideLocation": {
+            "filePath": "platform-tests/src/test/java/org/junit/platform/launcher/core/CompositeTestExecutionListenerTests.java",
+            "startLine": 182,
+            "endLine": 185,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "platform-tests/src/test/java/org/junit/platform/launcher/core/CompositeTestExecutionListenerTests.java",
+            "startLine": 199,
+            "endLine": 201,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private anyTestPlan() : TestPlan extracted from package shouldNotThrowExceptionButLogIfTesPlanExecutionStartedListenerMethodFails(logRecordListener LogRecordListener) : void in class org.junit.platform.launcher.core.CompositeTestExecutionListenerTests",
+          "leftSideLocation": {
+            "filePath": "platform-tests/src/test/java/org/junit/platform/launcher/core/CompositeTestExecutionListenerTests.java",
+            "startLine": 90,
+            "endLine": 100,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "platform-tests/src/test/java/org/junit/platform/launcher/core/CompositeTestExecutionListenerTests.java",
+            "startLine": 209,
+            "endLine": 211,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private anyTestPlan() : TestPlan extracted from package shouldNotThrowExceptionButLogIfTesPlanExecutionFinishedListenerMethodFails(logRecordListener LogRecordListener) : void in class org.junit.platform.launcher.core.CompositeTestExecutionListenerTests",
+          "leftSideLocation": {
+            "filePath": "platform-tests/src/test/java/org/junit/platform/launcher/core/CompositeTestExecutionListenerTests.java",
+            "startLine": 102,
+            "endLine": 112,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "platform-tests/src/test/java/org/junit/platform/launcher/core/CompositeTestExecutionListenerTests.java",
+            "startLine": 209,
+            "endLine": 211,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private getDemoMethodTestDescriptor() : DemoMethodTestDescriptor renamed to private anyTestDescriptor() : DemoMethodTestDescriptor in class org.junit.platform.launcher.core.CompositeTestExecutionListenerTests",
+          "leftSideLocation": {
+            "filePath": "platform-tests/src/test/java/org/junit/platform/launcher/core/CompositeTestExecutionListenerTests.java",
+            "startLine": 193,
+            "endLine": 197,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "platform-tests/src/test/java/org/junit/platform/launcher/core/CompositeTestExecutionListenerTests.java",
+            "startLine": 213,
+            "endLine": 217,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private anyTestPlan() : TestPlan extracted from package shouldNotThrowExceptionButLogIfTesPlanExecutionStartedListenerMethodFails(logRecordListener LogRecordListener) : void in class org.junit.platform.launcher.core.CompositeTestExecutionListenerTests",
+          "leftSideLocation": {
+            "filePath": "platform-tests/src/test/java/org/junit/platform/launcher/core/CompositeTestExecutionListenerTests.java",
+            "startLine": 90,
+            "endLine": 100,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "platform-tests/src/test/java/org/junit/platform/launcher/core/CompositeTestExecutionListenerTests.java",
+            "startLine": 209,
+            "endLine": 211,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private anyTestPlan() : TestPlan extracted from package shouldNotThrowExceptionButLogIfTesPlanExecutionFinishedListenerMethodFails(logRecordListener LogRecordListener) : void in class org.junit.platform.launcher.core.CompositeTestExecutionListenerTests",
+          "leftSideLocation": {
+            "filePath": "platform-tests/src/test/java/org/junit/platform/launcher/core/CompositeTestExecutionListenerTests.java",
+            "startLine": 102,
+            "endLine": 112,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "platform-tests/src/test/java/org/junit/platform/launcher/core/CompositeTestExecutionListenerTests.java",
+            "startLine": 209,
+            "endLine": 211,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/junit-team/junit5.git",
+      "sha1": "16de26ffe8d2c01661c5dd7d1673e2510c0be8ba",
+      "url": "https://github.com/junit-team/junit5/commit/16de26ffe8d2c01661c5dd7d1673e2510c0be8ba",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	public streamFields(clazz Class<?>, predicate Predicate<Field>, traversalMode HierarchyTraversalMode) : Stream<Field> extracted from public findFields(clazz Class<?>, predicate Predicate<Field>, traversalMode HierarchyTraversalMode) : List<Field> in class org.junit.platform.commons.util.ReflectionUtils",
+          "leftSideLocation": {
+            "filePath": "junit-platform-commons/src/main/java/org/junit/platform/commons/util/ReflectionUtils.java",
+            "startLine": 1179,
+            "endLine": 1195,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "junit-platform-commons/src/main/java/org/junit/platform/commons/util/ReflectionUtils.java",
+            "startLine": 1246,
+            "endLine": 1258,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	public streamMethods(clazz Class<?>, predicate Predicate<Method>, traversalMode HierarchyTraversalMode) : Stream<Method> extracted from public findMethods(clazz Class<?>, predicate Predicate<Method>, traversalMode HierarchyTraversalMode) : List<Method> in class org.junit.platform.commons.util.ReflectionUtils",
+          "leftSideLocation": {
+            "filePath": "junit-platform-commons/src/main/java/org/junit/platform/commons/util/ReflectionUtils.java",
+            "startLine": 1408,
+            "endLine": 1425,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "junit-platform-commons/src/main/java/org/junit/platform/commons/util/ReflectionUtils.java",
+            "startLine": 1481,
+            "endLine": 1497,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	public streamFields(clazz Class<?>, predicate Predicate<Field>, traversalMode HierarchyTraversalMode) : Stream<Field> extracted from public findFields(clazz Class<?>, predicate Predicate<Field>, traversalMode HierarchyTraversalMode) : List<Field> in class org.junit.platform.commons.util.ReflectionUtils",
+          "leftSideLocation": {
+            "filePath": "junit-platform-commons/src/main/java/org/junit/platform/commons/util/ReflectionUtils.java",
+            "startLine": 1179,
+            "endLine": 1195,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "junit-platform-commons/src/main/java/org/junit/platform/commons/util/ReflectionUtils.java",
+            "startLine": 1246,
+            "endLine": 1258,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	public streamMethods(clazz Class<?>, predicate Predicate<Method>, traversalMode HierarchyTraversalMode) : Stream<Method> extracted from public findMethods(clazz Class<?>, predicate Predicate<Method>, traversalMode HierarchyTraversalMode) : List<Method> in class org.junit.platform.commons.util.ReflectionUtils",
+          "leftSideLocation": {
+            "filePath": "junit-platform-commons/src/main/java/org/junit/platform/commons/util/ReflectionUtils.java",
+            "startLine": 1408,
+            "endLine": 1425,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "junit-platform-commons/src/main/java/org/junit/platform/commons/util/ReflectionUtils.java",
+            "startLine": 1481,
+            "endLine": 1497,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/junit-team/junit5.git",
+      "sha1": "11f8f765da25ce848be14c0d7313ae33db8b72f8",
+      "url": "https://github.com/junit-team/junit5/commit/11f8f765da25ce848be14c0d7313ae33db8b72f8",
+      "ourApproach": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.junit.jupiter.api.AssertTimeout.ExecutionTimeoutException moved to org.junit.jupiter.api.AssertTimeoutPreemptively.ExecutionTimeoutException",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-api/src/main/java/org/junit/jupiter/api/AssertTimeout.java",
+            "startLine": 190,
+            "endLine": 197,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-api/src/main/java/org/junit/jupiter/api/AssertTimeoutPreemptively.java",
+            "startLine": 135,
+            "endLine": 142,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.junit.jupiter.api.AssertTimeout.TimeoutThreadFactory moved to org.junit.jupiter.api.AssertTimeoutPreemptively.TimeoutThreadFactory",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-api/src/main/java/org/junit/jupiter/api/AssertTimeout.java",
+            "startLine": 199,
+            "endLine": 210,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-api/src/main/java/org/junit/jupiter/api/AssertTimeoutPreemptively.java",
+            "startLine": 144,
+            "endLine": 155,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.junit.jupiter.api.AssertTimeoutPreemptively from Class org.junit.jupiter.api.AssertTimeout",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-api/src/main/java/org/junit/jupiter/api/AssertTimeout.java",
+            "startLine": 34,
+            "endLine": 211,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-api/src/main/java/org/junit/jupiter/api/AssertTimeoutPreemptively.java",
+            "startLine": 33,
+            "endLine": 156,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.junit.jupiter.api.AssertTimeoutPreemptivelyAssertionsTests from Class org.junit.jupiter.api.AssertTimeoutAssertionsTests",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/api/AssertTimeoutAssertionsTests.java",
+            "startLine": 36,
+            "endLine": 385,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/api/AssertTimeoutPreemptivelyAssertionsTests.java",
+            "startLine": 35,
+            "endLine": 255,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.junit.jupiter.api.AssertTimeout.ExecutionTimeoutException moved to org.junit.jupiter.api.AssertTimeoutPreemptively.ExecutionTimeoutException",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-api/src/main/java/org/junit/jupiter/api/AssertTimeout.java",
+            "startLine": 190,
+            "endLine": 197,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-api/src/main/java/org/junit/jupiter/api/AssertTimeoutPreemptively.java",
+            "startLine": 135,
+            "endLine": 142,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.junit.jupiter.api.AssertTimeout.TimeoutThreadFactory moved to org.junit.jupiter.api.AssertTimeoutPreemptively.TimeoutThreadFactory",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-api/src/main/java/org/junit/jupiter/api/AssertTimeout.java",
+            "startLine": 199,
+            "endLine": 210,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-api/src/main/java/org/junit/jupiter/api/AssertTimeoutPreemptively.java",
+            "startLine": 144,
+            "endLine": 155,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.junit.jupiter.api.AssertTimeoutPreemptively from class org.junit.jupiter.api.AssertTimeout",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-api/src/main/java/org/junit/jupiter/api/AssertTimeout.java",
+            "startLine": 34,
+            "endLine": 211,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-api/src/main/java/org/junit/jupiter/api/AssertTimeoutPreemptively.java",
+            "startLine": 33,
+            "endLine": 156,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.junit.jupiter.api.AssertTimeoutPreemptivelyAssertionsTests from class org.junit.jupiter.api.AssertTimeoutAssertionsTests",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/api/AssertTimeoutAssertionsTests.java",
+            "startLine": 36,
+            "endLine": 385,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/api/AssertTimeoutPreemptivelyAssertionsTests.java",
+            "startLine": 35,
+            "endLine": 255,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/junit-team/junit5.git",
+      "sha1": "ea17fa254363e69a12cc00bbc2cbaaea8c9714a9",
+      "url": "https://github.com/junit-team/junit5/commit/ea17fa254363e69a12cc00bbc2cbaaea8c9714a9",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package assertTimeoutPreemptivelyThrowingTimeoutException(timeout Duration, supplier ThrowingSupplier<T>, messageSupplier Supplier<String>) : T renamed to package assertTimeoutPreemptively(timeout Duration, supplier ThrowingSupplier<T>, messageSupplier Supplier<String>, failureFactory TimeoutFailureFactory<E>) : T in class org.junit.jupiter.api.AssertTimeout",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-api/src/main/java/org/junit/jupiter/api/AssertTimeout.java",
+            "startLine": 133,
+            "endLine": 136,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-api/src/main/java/org/junit/jupiter/api/AssertTimeout.java",
+            "startLine": 133,
+            "endLine": 137,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public assertTimeoutPreemptivelyThrowingTimeoutException(timeout Duration, supplier ThrowingSupplier<T>, messageSupplier Supplier<String>) : T renamed to public assertTimeoutPreemptively(timeout Duration, supplier ThrowingSupplier<T>, messageSupplier Supplier<String>, failureFactory TimeoutFailureFactory<E>) : T in class org.junit.jupiter.api.Assertions",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-api/src/main/java/org/junit/jupiter/api/Assertions.java",
+            "startLine": 3528,
+            "endLine": 3557,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-api/src/main/java/org/junit/jupiter/api/Assertions.java",
+            "startLine": 3528,
+            "endLine": 3558,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.junit.jupiter.api.AssertTimeout.TimeoutFailureFactory moved to org.junit.jupiter.api.Assertions.TimeoutFailureFactory",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-api/src/main/java/org/junit/jupiter/api/AssertTimeout.java",
+            "startLine": 217,
+            "endLine": 220,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-api/src/main/java/org/junit/jupiter/api/Assertions.java",
+            "startLine": 3609,
+            "endLine": 3613,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.junit.jupiter.api.AssertTimeout.TimeoutFailureFactory moved to org.junit.jupiter.api.Assertions.TimeoutFailureFactory",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-api/src/main/java/org/junit/jupiter/api/AssertTimeout.java",
+            "startLine": 217,
+            "endLine": 220,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-api/src/main/java/org/junit/jupiter/api/Assertions.java",
+            "startLine": 3609,
+            "endLine": 3613,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package assertTimeoutPreemptivelyThrowingTimeoutException(timeout Duration, supplier ThrowingSupplier<T>, messageSupplier Supplier<String>) : T renamed to package assertTimeoutPreemptively(timeout Duration, supplier ThrowingSupplier<T>, messageSupplier Supplier<String>, failureFactory TimeoutFailureFactory<E>) : T in class org.junit.jupiter.api.AssertTimeout",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-api/src/main/java/org/junit/jupiter/api/AssertTimeout.java",
+            "startLine": 133,
+            "endLine": 136,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-api/src/main/java/org/junit/jupiter/api/AssertTimeout.java",
+            "startLine": 133,
+            "endLine": 137,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public assertTimeoutPreemptivelyThrowingTimeoutException(timeout Duration, supplier ThrowingSupplier<T>, messageSupplier Supplier<String>) : T renamed to public assertTimeoutPreemptively(timeout Duration, supplier ThrowingSupplier<T>, messageSupplier Supplier<String>, failureFactory TimeoutFailureFactory<E>) : T in class org.junit.jupiter.api.Assertions",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-api/src/main/java/org/junit/jupiter/api/Assertions.java",
+            "startLine": 3528,
+            "endLine": 3557,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-api/src/main/java/org/junit/jupiter/api/Assertions.java",
+            "startLine": 3528,
+            "endLine": 3558,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/junit-team/junit5.git",
+      "sha1": "254bb5e20c4f4fed129dd1fd972d5a6c5a180353",
+      "url": "https://github.com/junit-team/junit5/commit/254bb5e20c4f4fed129dd1fd972d5a6c5a180353",
+      "ourApproach": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	MASKED_TIMEOUT_EXCEPTION : Throwing to TIMEOUT_EXCEPTION : Throwing in class org.junit.jupiter.api.AssertTimeout.PreemptiveTimeoutAssertionExecutor.Throwing",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-api/src/main/java/org/junit/jupiter/api/AssertTimeout.java",
+            "startLine": 205,
+            "endLine": 205,
+            "startColumn": 21,
+            "endColumn": 45
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-api/src/main/java/org/junit/jupiter/api/AssertTimeout.java",
+            "startLine": 204,
+            "endLine": 204,
+            "startColumn": 21,
+            "endColumn": 38
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private createFutureResolver(messageOrSupplier Object, thread Supplier<Thread>, throwing Throwing) : FutureResolverWithExceptionHandling renamed to private createTimeoutFailureFactory(messageOrSupplier Object, thread Supplier<Thread>, throwing Throwing) : TimeoutFailureFactory<?> in class org.junit.jupiter.api.AssertTimeout.PreemptiveTimeoutAssertionExecutor",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-api/src/main/java/org/junit/jupiter/api/AssertTimeout.java",
+            "startLine": 192,
+            "endLine": 202,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-api/src/main/java/org/junit/jupiter/api/AssertTimeout.java",
+            "startLine": 191,
+            "endLine": 201,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	FutureResolverWithExceptionHandling to TimeoutFailureFactory<?> in method private createTimeoutFailureFactory(messageOrSupplier Object, thread Supplier<Thread>, throwing Throwing) : TimeoutFailureFactory<?> from class org.junit.jupiter.api.AssertTimeout.PreemptiveTimeoutAssertionExecutor",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-api/src/main/java/org/junit/jupiter/api/AssertTimeout.java",
+            "startLine": 192,
+            "endLine": 202,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-api/src/main/java/org/junit/jupiter/api/AssertTimeout.java",
+            "startLine": 191,
+            "endLine": 201,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.junit.jupiter.api.AssertTimeout.FutureResolverWithExceptionHandling renamed to org.junit.jupiter.api.AssertTimeout.TimeoutFailureFactory",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-api/src/main/java/org/junit/jupiter/api/AssertTimeout.java",
+            "startLine": 231,
+            "endLine": 233,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-api/src/main/java/org/junit/jupiter/api/AssertTimeout.java",
+            "startLine": 230,
+            "endLine": 232,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public handleTimeoutAndThrow(ex TimeoutException, timeoutInMillis long) : void renamed to public handleTimeout(ex TimeoutException, timeoutInMillis long) : T in class org.junit.jupiter.api.AssertTimeout.TimeoutFailureFactory",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-api/src/main/java/org/junit/jupiter/api/AssertTimeout.java",
+            "startLine": 232,
+            "endLine": 232,
+            "startColumn": 3,
+            "endColumn": 73
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-api/src/main/java/org/junit/jupiter/api/AssertTimeout.java",
+            "startLine": 231,
+            "endLine": 231,
+            "startColumn": 3,
+            "endColumn": 62
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	void to T in method public handleTimeout(ex TimeoutException, timeoutInMillis long) : T from class org.junit.jupiter.api.AssertTimeout.TimeoutFailureFactory",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-api/src/main/java/org/junit/jupiter/api/AssertTimeout.java",
+            "startLine": 232,
+            "endLine": 232,
+            "startColumn": 3,
+            "endColumn": 73
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-api/src/main/java/org/junit/jupiter/api/AssertTimeout.java",
+            "startLine": 231,
+            "endLine": 231,
+            "startColumn": 3,
+            "endColumn": 62
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public handleTimeoutAndThrow(ex TimeoutException, timeoutInMillis long) : void renamed to public handleTimeout(ex TimeoutException, timeoutInMillis long) : AssertionFailedError in class org.junit.jupiter.api.AssertTimeout.AssertiveFutureResolver",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-api/src/main/java/org/junit/jupiter/api/AssertTimeout.java",
+            "startLine": 245,
+            "endLine": 259,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-api/src/main/java/org/junit/jupiter/api/AssertTimeout.java",
+            "startLine": 244,
+            "endLine": 258,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	void to AssertionFailedError in method public handleTimeout(ex TimeoutException, timeoutInMillis long) : AssertionFailedError from class org.junit.jupiter.api.AssertTimeout.AssertiveFutureResolver",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-api/src/main/java/org/junit/jupiter/api/AssertTimeout.java",
+            "startLine": 245,
+            "endLine": 259,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-api/src/main/java/org/junit/jupiter/api/AssertTimeout.java",
+            "startLine": 244,
+            "endLine": 258,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private createFutureResolver(messageOrSupplier Object, thread Supplier<Thread>, throwing Throwing) : FutureResolverWithExceptionHandling renamed to private createTimeoutFailureFactory(messageOrSupplier Object, thread Supplier<Thread>, throwing Throwing) : TimeoutFailureFactory<?> in class org.junit.jupiter.api.AssertTimeout.PreemptiveTimeoutAssertionExecutor",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-api/src/main/java/org/junit/jupiter/api/AssertTimeout.java",
+            "startLine": 192,
+            "endLine": 202,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-api/src/main/java/org/junit/jupiter/api/AssertTimeout.java",
+            "startLine": 191,
+            "endLine": 201,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	FutureResolverWithExceptionHandling to TimeoutFailureFactory<?> in method private createTimeoutFailureFactory(messageOrSupplier Object, thread Supplier<Thread>, throwing Throwing) : TimeoutFailureFactory<?> from class org.junit.jupiter.api.AssertTimeout.PreemptiveTimeoutAssertionExecutor",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-api/src/main/java/org/junit/jupiter/api/AssertTimeout.java",
+            "startLine": 192,
+            "endLine": 202,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-api/src/main/java/org/junit/jupiter/api/AssertTimeout.java",
+            "startLine": 191,
+            "endLine": 201,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public handleTimeoutAndThrow(ex TimeoutException, timeoutInMillis long) : void renamed to public handleTimeout(ex TimeoutException, timeoutInMillis long) : AssertionFailedError in class org.junit.jupiter.api.AssertTimeout.AssertiveFutureResolver",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-api/src/main/java/org/junit/jupiter/api/AssertTimeout.java",
+            "startLine": 245,
+            "endLine": 259,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-api/src/main/java/org/junit/jupiter/api/AssertTimeout.java",
+            "startLine": 244,
+            "endLine": 258,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	void to AssertionFailedError in method public handleTimeout(ex TimeoutException, timeoutInMillis long) : AssertionFailedError from class org.junit.jupiter.api.AssertTimeout.AssertiveFutureResolver",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-api/src/main/java/org/junit/jupiter/api/AssertTimeout.java",
+            "startLine": 245,
+            "endLine": 259,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-api/src/main/java/org/junit/jupiter/api/AssertTimeout.java",
+            "startLine": 244,
+            "endLine": 258,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	void to T in method public handleTimeout(ex TimeoutException, timeoutInMillis long) : T from class org.junit.jupiter.api.AssertTimeout.TimeoutFailureFactory",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-api/src/main/java/org/junit/jupiter/api/AssertTimeout.java",
+            "startLine": 232,
+            "endLine": 232,
+            "startColumn": 3,
+            "endColumn": 73
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-api/src/main/java/org/junit/jupiter/api/AssertTimeout.java",
+            "startLine": 231,
+            "endLine": 231,
+            "startColumn": 3,
+            "endColumn": 62
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.junit.jupiter.api.AssertTimeout.FutureResolverWithExceptionHandling renamed to org.junit.jupiter.api.AssertTimeout.TimeoutFailureFactory",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-api/src/main/java/org/junit/jupiter/api/AssertTimeout.java",
+            "startLine": 231,
+            "endLine": 233,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-api/src/main/java/org/junit/jupiter/api/AssertTimeout.java",
+            "startLine": 230,
+            "endLine": 232,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	MASKED_TIMEOUT_EXCEPTION : Throwing to TIMEOUT_EXCEPTION : Throwing in class org.junit.jupiter.api.AssertTimeout.PreemptiveTimeoutAssertionExecutor.Throwing",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-api/src/main/java/org/junit/jupiter/api/AssertTimeout.java",
+            "startLine": 205,
+            "endLine": 205,
+            "startColumn": 21,
+            "endColumn": 45
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-api/src/main/java/org/junit/jupiter/api/AssertTimeout.java",
+            "startLine": 204,
+            "endLine": 204,
+            "startColumn": 21,
+            "endColumn": 38
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/junit-team/junit5.git",
+      "sha1": "36550401836858a1e6987b06d4c15f3ed95c19d0",
+      "url": "https://github.com/junit-team/junit5/commit/36550401836858a1e6987b06d4c15f3ed95c19d0",
+      "ourApproach": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	threadReference : AtomicReference<Thread> to threadSupplier : Supplier<Thread> in class org.junit.jupiter.api.AssertTimeout.AssertiveFutureResolver",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-api/src/main/java/org/junit/jupiter/api/AssertTimeout.java",
+            "startLine": 237,
+            "endLine": 237,
+            "startColumn": 41,
+            "endColumn": 56
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-api/src/main/java/org/junit/jupiter/api/AssertTimeout.java",
+            "startLine": 237,
+            "endLine": 237,
+            "startColumn": 34,
+            "endColumn": 48
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	threadReference : AtomicReference<Thread> to threadSupplier : Supplier<Thread> in class org.junit.jupiter.api.AssertTimeout.AssertiveFutureResolver",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-api/src/main/java/org/junit/jupiter/api/AssertTimeout.java",
+            "startLine": 237,
+            "endLine": 237,
+            "startColumn": 41,
+            "endColumn": 56
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-api/src/main/java/org/junit/jupiter/api/AssertTimeout.java",
+            "startLine": 237,
+            "endLine": 237,
+            "startColumn": 34,
+            "endColumn": 48
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	threadReference : AtomicReference<Thread> to threadSupplier : Supplier<Thread> in class org.junit.jupiter.api.AssertTimeout.AssertiveFutureResolver",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-api/src/main/java/org/junit/jupiter/api/AssertTimeout.java",
+            "startLine": 237,
+            "endLine": 237,
+            "startColumn": 41,
+            "endColumn": 56
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-api/src/main/java/org/junit/jupiter/api/AssertTimeout.java",
+            "startLine": 237,
+            "endLine": 237,
+            "startColumn": 34,
+            "endColumn": 48
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	threadReference : AtomicReference<Thread> to threadSupplier : Supplier<Thread> in class org.junit.jupiter.api.AssertTimeout.AssertiveFutureResolver",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-api/src/main/java/org/junit/jupiter/api/AssertTimeout.java",
+            "startLine": 237,
+            "endLine": 237,
+            "startColumn": 41,
+            "endColumn": 56
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-api/src/main/java/org/junit/jupiter/api/AssertTimeout.java",
+            "startLine": 237,
+            "endLine": 237,
+            "startColumn": 34,
+            "endColumn": 48
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/junit-team/junit5.git",
+      "sha1": "e83cdf02b2301b90145ccbb4789924a2c737c8db",
+      "url": "https://github.com/junit-team/junit5/commit/e83cdf02b2301b90145ccbb4789924a2c737c8db",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private supportsCsvHeaders(csvSource CsvSource) : void extracted from package supportsCsvHeadersWhenUsingTextBlockAttribute() : void in class org.junit.jupiter.params.provider.CsvArgumentsProviderTests",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-params/src/test/java/org/junit/jupiter/params/provider/CsvArgumentsProviderTests.java",
+            "startLine": 335,
+            "endLine": 354,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-params/src/test/java/org/junit/jupiter/params/provider/CsvArgumentsProviderTests.java",
+            "startLine": 350,
+            "endLine": 362,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private supportsCsvHeaders(csvSource CsvSource) : void extracted from package supportsCsvHeadersWhenUsingValueAttribute() : void in class org.junit.jupiter.params.provider.CsvArgumentsProviderTests",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-params/src/test/java/org/junit/jupiter/params/provider/CsvArgumentsProviderTests.java",
+            "startLine": 356,
+            "endLine": 372,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-params/src/test/java/org/junit/jupiter/params/provider/CsvArgumentsProviderTests.java",
+            "startLine": 350,
+            "endLine": 362,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private supportsCsvHeaders(csvSource CsvSource) : void extracted from package supportsCsvHeadersWhenUsingTextBlockAttribute() : void in class org.junit.jupiter.params.provider.CsvArgumentsProviderTests",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-params/src/test/java/org/junit/jupiter/params/provider/CsvArgumentsProviderTests.java",
+            "startLine": 335,
+            "endLine": 354,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-params/src/test/java/org/junit/jupiter/params/provider/CsvArgumentsProviderTests.java",
+            "startLine": 350,
+            "endLine": 362,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private supportsCsvHeaders(csvSource CsvSource) : void extracted from package supportsCsvHeadersWhenUsingValueAttribute() : void in class org.junit.jupiter.params.provider.CsvArgumentsProviderTests",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-params/src/test/java/org/junit/jupiter/params/provider/CsvArgumentsProviderTests.java",
+            "startLine": 356,
+            "endLine": 372,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-params/src/test/java/org/junit/jupiter/params/provider/CsvArgumentsProviderTests.java",
+            "startLine": 350,
+            "endLine": 362,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/junit-team/junit5.git",
+      "sha1": "d1327f36b337c622f9efe32f6873730d92dcbe31",
+      "url": "https://github.com/junit-team/junit5/commit/d1327f36b337c622f9efe32f6873730d92dcbe31",
+      "ourApproach": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.junit.jupiter.engine.LifecycleMethodShadowingTests renamed to org.junit.jupiter.engine.LifecycleMethodSupersedingTests",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/LifecycleMethodShadowingTests.java",
+            "startLine": 30,
+            "endLine": 115,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/LifecycleMethodSupersedingTests.java",
+            "startLine": 30,
+            "endLine": 115,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.junit.jupiter.engine.LifecycleMethodShadowingTests renamed to org.junit.jupiter.engine.LifecycleMethodSupersedingTests",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/LifecycleMethodShadowingTests.java",
+            "startLine": 30,
+            "endLine": 115,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/LifecycleMethodSupersedingTests.java",
+            "startLine": 30,
+            "endLine": 115,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/junit-team/junit5.git",
+      "sha1": "856868d9f692aa96203e91691d9391758a00a7dc",
+      "url": "https://github.com/junit-team/junit5/commit/856868d9f692aa96203e91691d9391758a00a7dc",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private throwTestAbortedException(message String) : void renamed to private throwAssumptionFailed(message String) : void in class org.junit.jupiter.api.Assumptions",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-api/src/main/java/org/junit/jupiter/api/Assumptions.java",
+            "startLine": 256,
+            "endLine": 259,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-api/src/main/java/org/junit/jupiter/api/Assumptions.java",
+            "startLine": 311,
+            "endLine": 314,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private assertTestAbortedException(expectedMessage String, executable Executable) : void extracted from private assertAssumptionFailure(msg String, executable Executable) : void in class org.junit.jupiter.api.AssumptionsTests",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/api/AssumptionsTests.java",
+            "startLine": 200,
+            "endLine": 210,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/api/AssumptionsTests.java",
+            "startLine": 223,
+            "endLine": 232,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private throwTestAbortedException(message String) : void renamed to private throwAssumptionFailed(message String) : void in class org.junit.jupiter.api.Assumptions",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-api/src/main/java/org/junit/jupiter/api/Assumptions.java",
+            "startLine": 256,
+            "endLine": 259,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-api/src/main/java/org/junit/jupiter/api/Assumptions.java",
+            "startLine": 311,
+            "endLine": 314,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private assertTestAbortedException(expectedMessage String, executable Executable) : void extracted from private assertAssumptionFailure(msg String, executable Executable) : void in class org.junit.jupiter.api.AssumptionsTests",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/api/AssumptionsTests.java",
+            "startLine": 200,
+            "endLine": 210,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/api/AssumptionsTests.java",
+            "startLine": 223,
+            "endLine": 232,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/junit-team/junit5.git",
+      "sha1": "feeb5bcb6962c7ef997c04ecba474bb17f01480d",
+      "url": "https://github.com/junit-team/junit5/commit/feeb5bcb6962c7ef997c04ecba474bb17f01480d",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private getMethodByFullyQualifiedName(fullyQualifiedMethodName String) : Method renamed to private getFactoryMethodByFullyQualifiedName(fullyQualifiedMethodName String) : Method in class org.junit.jupiter.params.provider.MethodArgumentsProvider",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-params/src/main/java/org/junit/jupiter/params/provider/MethodArgumentsProvider.java",
+            "startLine": 64,
+            "endLine": 73,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-params/src/main/java/org/junit/jupiter/params/provider/MethodArgumentsProvider.java",
+            "startLine": 64,
+            "endLine": 73,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private getMethod(context ExtensionContext, factoryMethodName String) : Method renamed to private getFactoryMethod(context ExtensionContext, factoryMethodName String) : Method in class org.junit.jupiter.params.provider.MethodArgumentsProvider",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-params/src/main/java/org/junit/jupiter/params/provider/MethodArgumentsProvider.java",
+            "startLine": 53,
+            "endLine": 62,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-params/src/main/java/org/junit/jupiter/params/provider/MethodArgumentsProvider.java",
+            "startLine": 53,
+            "endLine": 62,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private getMethodByShortName(testClass Class<?>, methodName String) : Method renamed to private getFactoryMethodBySimpleName(testClass Class<?>, factoryMethodName String) : Method in class org.junit.jupiter.params.provider.MethodArgumentsProvider",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-params/src/main/java/org/junit/jupiter/params/provider/MethodArgumentsProvider.java",
+            "startLine": 75,
+            "endLine": 83,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-params/src/main/java/org/junit/jupiter/params/provider/MethodArgumentsProvider.java",
+            "startLine": 75,
+            "endLine": 84,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private getMethod(context ExtensionContext, factoryMethodName String) : Method renamed to private getFactoryMethod(context ExtensionContext, factoryMethodName String) : Method in class org.junit.jupiter.params.provider.MethodArgumentsProvider",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-params/src/main/java/org/junit/jupiter/params/provider/MethodArgumentsProvider.java",
+            "startLine": 53,
+            "endLine": 62,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-params/src/main/java/org/junit/jupiter/params/provider/MethodArgumentsProvider.java",
+            "startLine": 53,
+            "endLine": 62,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private getMethodByFullyQualifiedName(fullyQualifiedMethodName String) : Method renamed to private getFactoryMethodByFullyQualifiedName(fullyQualifiedMethodName String) : Method in class org.junit.jupiter.params.provider.MethodArgumentsProvider",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-params/src/main/java/org/junit/jupiter/params/provider/MethodArgumentsProvider.java",
+            "startLine": 64,
+            "endLine": 73,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-params/src/main/java/org/junit/jupiter/params/provider/MethodArgumentsProvider.java",
+            "startLine": 64,
+            "endLine": 73,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private getMethodByShortName(testClass Class<?>, methodName String) : Method renamed to private getFactoryMethodBySimpleName(testClass Class<?>, factoryMethodName String) : Method in class org.junit.jupiter.params.provider.MethodArgumentsProvider",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-params/src/main/java/org/junit/jupiter/params/provider/MethodArgumentsProvider.java",
+            "startLine": 75,
+            "endLine": 83,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-params/src/main/java/org/junit/jupiter/params/provider/MethodArgumentsProvider.java",
+            "startLine": 75,
+            "endLine": 84,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/junit-team/junit5.git",
+      "sha1": "af29093dd679efbafc2394b59f0fb4a5dcbd1804",
+      "url": "https://github.com/junit-team/junit5/commit/af29093dd679efbafc2394b59f0fb4a5dcbd1804",
+      "ourApproach": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private reportFinished(id String) : void inlined to public executionSkipped(testIdentifier TestIdentifier, reason String) : void in class org.junit.platform.reporting.open.xml.OpenTestReportGeneratingListener",
+          "leftSideLocation": {
+            "filePath": "junit-platform-reporting/src/main/java/org/junit/platform/reporting/open/xml/OpenTestReportGeneratingListener.java",
+            "startLine": 142,
+            "endLine": 144,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "junit-platform-reporting/src/main/java/org/junit/platform/reporting/open/xml/OpenTestReportGeneratingListener.java",
+            "startLine": 81,
+            "endLine": 92,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private reportFinished(id String) : void inlined to public executionFinished(testIdentifier TestIdentifier, testExecutionResult TestExecutionResult) : void in class org.junit.platform.reporting.open.xml.OpenTestReportGeneratingListener",
+          "leftSideLocation": {
+            "filePath": "junit-platform-reporting/src/main/java/org/junit/platform/reporting/open/xml/OpenTestReportGeneratingListener.java",
+            "startLine": 142,
+            "endLine": 144,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "junit-platform-reporting/src/main/java/org/junit/platform/reporting/open/xml/OpenTestReportGeneratingListener.java",
+            "startLine": 143,
+            "endLine": 153,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private reportFinished(id String) : void inlined to public executionSkipped(testIdentifier TestIdentifier, reason String) : void in class org.junit.platform.reporting.open.xml.OpenTestReportGeneratingListener",
+          "leftSideLocation": {
+            "filePath": "junit-platform-reporting/src/main/java/org/junit/platform/reporting/open/xml/OpenTestReportGeneratingListener.java",
+            "startLine": 142,
+            "endLine": 144,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "junit-platform-reporting/src/main/java/org/junit/platform/reporting/open/xml/OpenTestReportGeneratingListener.java",
+            "startLine": 81,
+            "endLine": 92,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private reportFinished(id String) : void inlined to public executionFinished(testIdentifier TestIdentifier, testExecutionResult TestExecutionResult) : void in class org.junit.platform.reporting.open.xml.OpenTestReportGeneratingListener",
+          "leftSideLocation": {
+            "filePath": "junit-platform-reporting/src/main/java/org/junit/platform/reporting/open/xml/OpenTestReportGeneratingListener.java",
+            "startLine": 142,
+            "endLine": 144,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "junit-platform-reporting/src/main/java/org/junit/platform/reporting/open/xml/OpenTestReportGeneratingListener.java",
+            "startLine": 143,
+            "endLine": 153,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/junit-team/junit5.git",
+      "sha1": "611ecefbfc5f637a65625e92cd79896e85eb4bac",
+      "url": "https://github.com/junit-team/junit5/commit/611ecefbfc5f637a65625e92cd79896e85eb4bac",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.junit.platform.launcher.core.TestEngineFormatter from Class org.junit.platform.testkit.engine.EngineTestKit",
+          "leftSideLocation": {
+            "filePath": "junit-platform-testkit/src/main/java/org/junit/platform/testkit/engine/EngineTestKit.java",
+            "startLine": 51,
+            "endLine": 483,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "junit-platform-launcher/src/main/java/org/junit/platform/launcher/core/TestEngineFormatter.java",
+            "startLine": 24,
+            "endLine": 49,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.junit.platform.launcher.core.DefaultLauncherEngineFilterTests from Class org.junit.platform.launcher.core.DefaultLauncherTests",
+          "leftSideLocation": {
+            "filePath": "platform-tests/src/test/java/org/junit/platform/launcher/core/DefaultLauncherTests.java",
+            "startLine": 68,
+            "endLine": 736,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "platform-tests/src/test/java/org/junit/platform/launcher/core/DefaultLauncherEngineFilterTests.java",
+            "startLine": 31,
+            "endLine": 194,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.junit.platform.launcher.core.DefaultLauncherEngineFilterTests from class org.junit.platform.launcher.core.DefaultLauncherTests",
+          "leftSideLocation": {
+            "filePath": "platform-tests/src/test/java/org/junit/platform/launcher/core/DefaultLauncherTests.java",
+            "startLine": 68,
+            "endLine": 736,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "platform-tests/src/test/java/org/junit/platform/launcher/core/DefaultLauncherEngineFilterTests.java",
+            "startLine": 31,
+            "endLine": 194,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/junit-team/junit5.git",
+      "sha1": "01353cddca2768d51f811ed464737a2087876e3e",
+      "url": "https://github.com/junit-team/junit5/commit/01353cddca2768d51f811ed464737a2087876e3e",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package onSuccessWithNoTestAbortedException() : void renamed to package onSuccessWithNoException() : void in class org.junit.jupiter.engine.extension.CloseablePathCleanupTests",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/CloseablePathCleanupTests.java",
+            "startLine": 90,
+            "endLine": 102,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/CloseablePathCleanupTests.java",
+            "startLine": 89,
+            "endLine": 101,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package onSuccessWithTestAbortedException() : void renamed to package onSuccessWithException() : void in class org.junit.jupiter.engine.extension.CloseablePathCleanupTests",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/CloseablePathCleanupTests.java",
+            "startLine": 76,
+            "endLine": 88,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/CloseablePathCleanupTests.java",
+            "startLine": 75,
+            "endLine": 87,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package testCleanupModeNeverParameter() : void renamed to package cleanupModeNeverParameter() : void in class org.junit.jupiter.engine.extension.TempDirectoryCleanupTests.TempDirParameterTests",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/TempDirectoryCleanupTests.java",
+            "startLine": 217,
+            "endLine": 229,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/TempDirectoryCleanupTests.java",
+            "startLine": 221,
+            "endLine": 234,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package testCleanupModeOnSuccessFailingParameter() : void renamed to package cleanupModeOnSuccessFailingParameter() : void in class org.junit.jupiter.engine.extension.TempDirectoryCleanupTests.TempDirParameterTests",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/TempDirectoryCleanupTests.java",
+            "startLine": 259,
+            "endLine": 271,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/TempDirectoryCleanupTests.java",
+            "startLine": 267,
+            "endLine": 281,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package testCleanupModeNeverField() : void renamed to package cleanupModeNeverField() : void in class org.junit.jupiter.engine.extension.TempDirectoryCleanupTests.TempDirFieldTests",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/TempDirectoryCleanupTests.java",
+            "startLine": 69,
+            "endLine": 81,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/TempDirectoryCleanupTests.java",
+            "startLine": 68,
+            "endLine": 81,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package testCleanupModeOnSuccessFailingField() : void renamed to package cleanupModeOnSuccessFailingField() : void in class org.junit.jupiter.engine.extension.TempDirectoryCleanupTests.TempDirFieldTests",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/TempDirectoryCleanupTests.java",
+            "startLine": 111,
+            "endLine": 123,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/TempDirectoryCleanupTests.java",
+            "startLine": 113,
+            "endLine": 126,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package testCleanupModeDefaultParameter() : void renamed to package cleanupModeDefaultParameter() : void in class org.junit.jupiter.engine.extension.TempDirectoryCleanupTests.TempDirParameterTests",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/TempDirectoryCleanupTests.java",
+            "startLine": 203,
+            "endLine": 215,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/TempDirectoryCleanupTests.java",
+            "startLine": 206,
+            "endLine": 219,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package testCleanupModeAlwaysParameter() : void renamed to package cleanupModeAlwaysParameter() : void in class org.junit.jupiter.engine.extension.TempDirectoryCleanupTests.TempDirParameterTests",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/TempDirectoryCleanupTests.java",
+            "startLine": 231,
+            "endLine": 243,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/TempDirectoryCleanupTests.java",
+            "startLine": 236,
+            "endLine": 249,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package testCleanupModeOnSuccessPassingParameter() : void renamed to package cleanupModeOnSuccessPassingParameter() : void in class org.junit.jupiter.engine.extension.TempDirectoryCleanupTests.TempDirParameterTests",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/TempDirectoryCleanupTests.java",
+            "startLine": 245,
+            "endLine": 257,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/TempDirectoryCleanupTests.java",
+            "startLine": 251,
+            "endLine": 265,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package testCleanupModeDefaultField() : void renamed to package cleanupModeDefaultField() : void in class org.junit.jupiter.engine.extension.TempDirectoryCleanupTests.TempDirFieldTests",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/TempDirectoryCleanupTests.java",
+            "startLine": 55,
+            "endLine": 67,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/TempDirectoryCleanupTests.java",
+            "startLine": 53,
+            "endLine": 66,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package testCleanupModeAlwaysField() : void renamed to package cleanupModeAlwaysField() : void in class org.junit.jupiter.engine.extension.TempDirectoryCleanupTests.TempDirFieldTests",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/TempDirectoryCleanupTests.java",
+            "startLine": 83,
+            "endLine": 95,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/TempDirectoryCleanupTests.java",
+            "startLine": 83,
+            "endLine": 96,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package testCleanupModeOnSuccessPassingField() : void renamed to package cleanupModeOnSuccessPassingField() : void in class org.junit.jupiter.engine.extension.TempDirectoryCleanupTests.TempDirFieldTests",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/TempDirectoryCleanupTests.java",
+            "startLine": 97,
+            "endLine": 109,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/TempDirectoryCleanupTests.java",
+            "startLine": 98,
+            "endLine": 111,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package onSuccessWithTestAbortedException() : void renamed to package onSuccessWithException() : void in class org.junit.jupiter.engine.extension.CloseablePathCleanupTests",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/CloseablePathCleanupTests.java",
+            "startLine": 76,
+            "endLine": 88,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/CloseablePathCleanupTests.java",
+            "startLine": 75,
+            "endLine": 87,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package onSuccessWithNoTestAbortedException() : void renamed to package onSuccessWithNoException() : void in class org.junit.jupiter.engine.extension.CloseablePathCleanupTests",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/CloseablePathCleanupTests.java",
+            "startLine": 90,
+            "endLine": 102,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/CloseablePathCleanupTests.java",
+            "startLine": 89,
+            "endLine": 101,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package testCleanupModeDefaultField() : void renamed to package cleanupModeDefaultField() : void in class org.junit.jupiter.engine.extension.TempDirectoryCleanupTests.TempDirFieldTests",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/TempDirectoryCleanupTests.java",
+            "startLine": 55,
+            "endLine": 67,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/TempDirectoryCleanupTests.java",
+            "startLine": 53,
+            "endLine": 66,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package testCleanupModeNeverField() : void renamed to package cleanupModeNeverField() : void in class org.junit.jupiter.engine.extension.TempDirectoryCleanupTests.TempDirFieldTests",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/TempDirectoryCleanupTests.java",
+            "startLine": 69,
+            "endLine": 81,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/TempDirectoryCleanupTests.java",
+            "startLine": 68,
+            "endLine": 81,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package testCleanupModeAlwaysField() : void renamed to package cleanupModeAlwaysField() : void in class org.junit.jupiter.engine.extension.TempDirectoryCleanupTests.TempDirFieldTests",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/TempDirectoryCleanupTests.java",
+            "startLine": 83,
+            "endLine": 95,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/TempDirectoryCleanupTests.java",
+            "startLine": 83,
+            "endLine": 96,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package testCleanupModeOnSuccessPassingField() : void renamed to package cleanupModeOnSuccessPassingField() : void in class org.junit.jupiter.engine.extension.TempDirectoryCleanupTests.TempDirFieldTests",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/TempDirectoryCleanupTests.java",
+            "startLine": 97,
+            "endLine": 109,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/TempDirectoryCleanupTests.java",
+            "startLine": 98,
+            "endLine": 111,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package testCleanupModeOnSuccessFailingField() : void renamed to package cleanupModeOnSuccessFailingField() : void in class org.junit.jupiter.engine.extension.TempDirectoryCleanupTests.TempDirFieldTests",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/TempDirectoryCleanupTests.java",
+            "startLine": 111,
+            "endLine": 123,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/TempDirectoryCleanupTests.java",
+            "startLine": 113,
+            "endLine": 126,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package testCleanupModeDefaultParameter() : void renamed to package cleanupModeDefaultParameter() : void in class org.junit.jupiter.engine.extension.TempDirectoryCleanupTests.TempDirParameterTests",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/TempDirectoryCleanupTests.java",
+            "startLine": 203,
+            "endLine": 215,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/TempDirectoryCleanupTests.java",
+            "startLine": 206,
+            "endLine": 219,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package testCleanupModeNeverParameter() : void renamed to package cleanupModeNeverParameter() : void in class org.junit.jupiter.engine.extension.TempDirectoryCleanupTests.TempDirParameterTests",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/TempDirectoryCleanupTests.java",
+            "startLine": 217,
+            "endLine": 229,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/TempDirectoryCleanupTests.java",
+            "startLine": 221,
+            "endLine": 234,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package testCleanupModeAlwaysParameter() : void renamed to package cleanupModeAlwaysParameter() : void in class org.junit.jupiter.engine.extension.TempDirectoryCleanupTests.TempDirParameterTests",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/TempDirectoryCleanupTests.java",
+            "startLine": 231,
+            "endLine": 243,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/TempDirectoryCleanupTests.java",
+            "startLine": 236,
+            "endLine": 249,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package testCleanupModeOnSuccessPassingParameter() : void renamed to package cleanupModeOnSuccessPassingParameter() : void in class org.junit.jupiter.engine.extension.TempDirectoryCleanupTests.TempDirParameterTests",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/TempDirectoryCleanupTests.java",
+            "startLine": 245,
+            "endLine": 257,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/TempDirectoryCleanupTests.java",
+            "startLine": 251,
+            "endLine": 265,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package testCleanupModeOnSuccessFailingParameter() : void renamed to package cleanupModeOnSuccessFailingParameter() : void in class org.junit.jupiter.engine.extension.TempDirectoryCleanupTests.TempDirParameterTests",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/TempDirectoryCleanupTests.java",
+            "startLine": 259,
+            "endLine": 271,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/TempDirectoryCleanupTests.java",
+            "startLine": 267,
+            "endLine": 281,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/junit-team/junit5.git",
+      "sha1": "1785e250f73fa88ddb53be4ed3e2df1fd36594f5",
+      "url": "https://github.com/junit-team/junit5/commit/1785e250f73fa88ddb53be4ed3e2df1fd36594f5",
+      "ourApproach": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.junit.jupiter.engine.extension.TestInstancePreConstructCallbackTests.InstancePreConstruct renamed to org.junit.jupiter.engine.extension.TestInstancePreConstructCallbackTests.InstancePreConstructTestCase",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/TestInstancePreConstructCallbackTests.java",
+            "startLine": 53,
+            "endLine": 88,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/TestInstancePreConstructCallbackTests.java",
+            "startLine": 186,
+            "endLine": 222,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.junit.jupiter.engine.extension.TestInstancePreConstructCallbackTests.FactoryPreConstruct renamed to org.junit.jupiter.engine.extension.TestInstancePreConstructCallbackTests.FactoryPreConstructTestCase",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/TestInstancePreConstructCallbackTests.java",
+            "startLine": 116,
+            "endLine": 157,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/TestInstancePreConstructCallbackTests.java",
+            "startLine": 224,
+            "endLine": 266,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.junit.jupiter.engine.extension.TestInstancePreConstructCallbackTests.PreConstructInNested renamed to org.junit.jupiter.engine.extension.TestInstancePreConstructCallbackTests.PreConstructInNestedTestCase",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/TestInstancePreConstructCallbackTests.java",
+            "startLine": 187,
+            "endLine": 259,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/TestInstancePreConstructCallbackTests.java",
+            "startLine": 268,
+            "endLine": 343,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.junit.jupiter.engine.extension.TestInstancePreConstructCallbackTests.CallSequenceRecordingTest renamed to org.junit.jupiter.engine.extension.TestInstancePreConstructCallbackTests.CallSequenceRecordingTestCase",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/TestInstancePreConstructCallbackTests.java",
+            "startLine": 47,
+            "endLine": 51,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/TestInstancePreConstructCallbackTests.java",
+            "startLine": 180,
+            "endLine": 184,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.junit.jupiter.engine.extension.TestInstancePreConstructCallbackTests.CallSequenceRecordingTest renamed to org.junit.jupiter.engine.extension.TestInstancePreConstructCallbackTests.CallSequenceRecordingTestCase",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/TestInstancePreConstructCallbackTests.java",
+            "startLine": 47,
+            "endLine": 51,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/TestInstancePreConstructCallbackTests.java",
+            "startLine": 180,
+            "endLine": 184,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.junit.jupiter.engine.extension.TestInstancePreConstructCallbackTests.InstancePreConstruct renamed to org.junit.jupiter.engine.extension.TestInstancePreConstructCallbackTests.InstancePreConstructTestCase",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/TestInstancePreConstructCallbackTests.java",
+            "startLine": 53,
+            "endLine": 88,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/TestInstancePreConstructCallbackTests.java",
+            "startLine": 186,
+            "endLine": 222,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.junit.jupiter.engine.extension.TestInstancePreConstructCallbackTests.FactoryPreConstruct renamed to org.junit.jupiter.engine.extension.TestInstancePreConstructCallbackTests.FactoryPreConstructTestCase",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/TestInstancePreConstructCallbackTests.java",
+            "startLine": 116,
+            "endLine": 157,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/TestInstancePreConstructCallbackTests.java",
+            "startLine": 224,
+            "endLine": 266,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.junit.jupiter.engine.extension.TestInstancePreConstructCallbackTests.PreConstructInNested renamed to org.junit.jupiter.engine.extension.TestInstancePreConstructCallbackTests.PreConstructInNestedTestCase",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/TestInstancePreConstructCallbackTests.java",
+            "startLine": 187,
+            "endLine": 259,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/TestInstancePreConstructCallbackTests.java",
+            "startLine": 268,
+            "endLine": 343,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/junit-team/junit5.git",
+      "sha1": "0a3851dee56430b17ebb2cf5a13725b7bd068183",
+      "url": "https://github.com/junit-team/junit5/commit/0a3851dee56430b17ebb2cf5a13725b7bd068183",
+      "ourApproach": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private assertValidFieldCandidate(field Field) : void inlined to private injectFields(context ExtensionContext, testInstance Object, testClass Class<?>, predicate Predicate<Field>) : void in class org.junit.jupiter.engine.extension.TempDirectory",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-engine/src/main/java/org/junit/jupiter/engine/extension/TempDirectory.java",
+            "startLine": 112,
+            "endLine": 117,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-engine/src/main/java/org/junit/jupiter/engine/extension/TempDirectory.java",
+            "startLine": 97,
+            "endLine": 109,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private assertValidFieldCandidate(field Field) : void inlined to private injectFields(context ExtensionContext, testInstance Object, testClass Class<?>, predicate Predicate<Field>) : void in class org.junit.jupiter.engine.extension.TempDirectory",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-engine/src/main/java/org/junit/jupiter/engine/extension/TempDirectory.java",
+            "startLine": 112,
+            "endLine": 117,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-engine/src/main/java/org/junit/jupiter/engine/extension/TempDirectory.java",
+            "startLine": 97,
+            "endLine": 109,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/junit-team/junit5.git",
+      "sha1": "a02182439933a2a639c5e828d73eb6533a9783f0",
+      "url": "https://github.com/junit-team/junit5/commit/a02182439933a2a639c5e828d73eb6533a9783f0",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.junit.jupiter.params.converter.TypedArgumentConverterTests.UnitTests from Class org.junit.jupiter.params.converter.TypedArgumentConverterTests",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-params/src/test/java/org/junit/jupiter/params/converter/TypedArgumentConverterTests.java",
+            "startLine": 22,
+            "endLine": 82,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-params/src/test/java/org/junit/jupiter/params/converter/TypedArgumentConverterTests.java",
+            "startLine": 42,
+            "endLine": 108,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.junit.jupiter.params.converter.TypedArgumentConverterTests.IntegrationTests from Class org.junit.jupiter.params.converter.TypedArgumentConverterTests",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-params/src/test/java/org/junit/jupiter/params/converter/TypedArgumentConverterTests.java",
+            "startLine": 22,
+            "endLine": 82,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-params/src/test/java/org/junit/jupiter/params/converter/TypedArgumentConverterTests.java",
+            "startLine": 110,
+            "endLine": 152,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.junit.jupiter.params.converter.TypedArgumentConverterTests.UnitTests from class org.junit.jupiter.params.converter.TypedArgumentConverterTests",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-params/src/test/java/org/junit/jupiter/params/converter/TypedArgumentConverterTests.java",
+            "startLine": 22,
+            "endLine": 82,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-params/src/test/java/org/junit/jupiter/params/converter/TypedArgumentConverterTests.java",
+            "startLine": 42,
+            "endLine": 108,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/junit-team/junit5.git",
+      "sha1": "a0dd37160c81167ac05376888debb64b00315dc9",
+      "url": "https://github.com/junit-team/junit5/commit/a0dd37160c81167ac05376888debb64b00315dc9",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.junit.platform.commons.util.ReflectionUtilsTests.IsObjectAssignableToClassTests from Class org.junit.platform.commons.util.ReflectionUtilsTests",
+          "leftSideLocation": {
+            "filePath": "platform-tests/src/test/java/org/junit/platform/commons/util/ReflectionUtilsTests.java",
+            "startLine": 68,
+            "endLine": 1785,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "platform-tests/src/test/java/org/junit/platform/commons/util/ReflectionUtilsTests.java",
+            "startLine": 350,
+            "endLine": 413,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.junit.platform.commons.util.ReflectionUtilsTests.IsClassAssignableToClassTests from class org.junit.platform.commons.util.ReflectionUtilsTests",
+          "leftSideLocation": {
+            "filePath": "platform-tests/src/test/java/org/junit/platform/commons/util/ReflectionUtilsTests.java",
+            "startLine": 68,
+            "endLine": 1785,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "platform-tests/src/test/java/org/junit/platform/commons/util/ReflectionUtilsTests.java",
+            "startLine": 283,
+            "endLine": 348,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.junit.platform.commons.util.ReflectionUtilsTests.IsObjectAssignableToClassTests from class org.junit.platform.commons.util.ReflectionUtilsTests",
+          "leftSideLocation": {
+            "filePath": "platform-tests/src/test/java/org/junit/platform/commons/util/ReflectionUtilsTests.java",
+            "startLine": 68,
+            "endLine": 1785,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "platform-tests/src/test/java/org/junit/platform/commons/util/ReflectionUtilsTests.java",
+            "startLine": 350,
+            "endLine": 413,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/junit-team/junit5.git",
+      "sha1": "d0017f6618d6bb6f07b38e8d9a315e80e5f917aa",
+      "url": "https://github.com/junit-team/junit5/commit/d0017f6618d6bb6f07b38e8d9a315e80e5f917aa",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	platform.tooling.support.ThirdPartyJars from Class platform.tooling.support.Helper",
+          "leftSideLocation": {
+            "filePath": "platform-tooling-support-tests/src/main/java/platform/tooling/support/Helper.java",
+            "startLine": 33,
+            "endLine": 172,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "platform-tooling-support-tests/src/main/java/platform/tooling/support/ThirdPartyJars.java",
+            "startLine": 20,
+            "endLine": 33,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	public version(moduleOrSystemProperty String, defaultVersion String) : String inlined to public version(module String) : String in class platform.tooling.support.Helper",
+          "leftSideLocation": {
+            "filePath": "platform-tooling-support-tests/src/main/java/platform/tooling/support/Helper.java",
+            "startLine": 57,
+            "endLine": 68,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "platform-tooling-support-tests/src/main/java/platform/tooling/support/Helper.java",
+            "startLine": 51,
+            "endLine": 62,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	public version(moduleOrSystemProperty String, defaultVersion String) : String inlined to public version(module String) : String in class platform.tooling.support.Helper",
+          "leftSideLocation": {
+            "filePath": "platform-tooling-support-tests/src/main/java/platform/tooling/support/Helper.java",
+            "startLine": 57,
+            "endLine": 68,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "platform-tooling-support-tests/src/main/java/platform/tooling/support/Helper.java",
+            "startLine": 51,
+            "endLine": 62,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/junit-team/junit5.git",
+      "sha1": "fe29e1d6caa623361f75e327cf472215533c4391",
+      "url": "https://github.com/junit-team/junit5/commit/fe29e1d6caa623361f75e327cf472215533c4391",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package mock(type Class<? super T>) : T renamed to package mockMethodDescriptor() : T in class org.junit.jupiter.engine.extension.OrderedMethodTests.MisbehavingByAdding",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/OrderedMethodTests.java",
+            "startLine": 704,
+            "endLine": 707,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/OrderedMethodTests.java",
+            "startLine": 704,
+            "endLine": 707,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private executeTestsInParallelWithRandomSeed(testClass Class<?>, seed String) : Events renamed to private executeRandomTestCaseInParallelWithRandomSeed(seed String) : Events in class org.junit.jupiter.engine.extension.OrderedMethodTests",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/OrderedMethodTests.java",
+            "startLine": 328,
+            "endLine": 342,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/OrderedMethodTests.java",
+            "startLine": 326,
+            "endLine": 341,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package mock(type Class<? super T>) : T renamed to package mockMethodDescriptor() : T in class org.junit.jupiter.engine.extension.OrderedMethodTests.MisbehavingByAdding",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/OrderedMethodTests.java",
+            "startLine": 704,
+            "endLine": 707,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/OrderedMethodTests.java",
+            "startLine": 704,
+            "endLine": 707,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private executeTestsInParallelWithRandomSeed(testClass Class<?>, seed String) : Events renamed to private executeRandomTestCaseInParallelWithRandomSeed(seed String) : Events in class org.junit.jupiter.engine.extension.OrderedMethodTests",
+          "leftSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/OrderedMethodTests.java",
+            "startLine": 328,
+            "endLine": 342,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "junit-jupiter-engine/src/test/java/org/junit/jupiter/engine/extension/OrderedMethodTests.java",
+            "startLine": 326,
+            "endLine": 341,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ]
+    }
+  ]
+}

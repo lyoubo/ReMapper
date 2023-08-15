@@ -1,0 +1,3740 @@
+{
+  "results": [
+    {
+      "repository": "https://github.com/javaparser/javaparser.git",
+      "sha1": "6aa8ce326340f7964fefdbd76658b066fca75487",
+      "url": "https://github.com/javaparser/javaparser/commit/6aa8ce326340f7964fefdbd76658b066fca75487",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.ast.expr.Expression",
+            "type": "Class",
+            "name": "Expression",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/ast/expr/Expression.java",
+            "startLine": 39,
+            "endLine": 861,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.ast.expr.Expression",
+            "type": "Class",
+            "name": "Expression",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/ast/expr/Expression.java",
+            "startLine": 41,
+            "endLine": 884,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.ast.nodeTypes.NodeWithArguments",
+            "type": "Interface",
+            "name": "NodeWithArguments",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/ast/nodeTypes/NodeWithArguments.java",
+            "startLine": 29,
+            "endLine": 58,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.ast.nodeTypes.NodeWithArguments",
+            "type": "Interface",
+            "name": "NodeWithArguments",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/ast/nodeTypes/NodeWithArguments.java",
+            "startLine": 31,
+            "endLine": 84,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.TypeExtractor",
+            "type": "Method",
+            "name": "visit",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/TypeExtractor.java",
+            "startLine": 461,
+            "endLine": 524,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.TypeExtractor",
+            "type": "Method",
+            "name": "visit",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/TypeExtractor.java",
+            "startLine": 458,
+            "endLine": 522,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.TypeExtractor",
+            "type": "Method",
+            "name": "visit",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/TypeExtractor.java",
+            "startLine": 591,
+            "endLine": 644,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.TypeExtractor",
+            "type": "Method",
+            "name": "visit",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/TypeExtractor.java",
+            "startLine": 589,
+            "endLine": 643,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.TypeExtractor",
+            "type": "Class",
+            "name": "TypeExtractor",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/TypeExtractor.java",
+            "startLine": 66,
+            "endLine": 672,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.TypeExtractor",
+            "type": "Class",
+            "name": "TypeExtractor",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/TypeExtractor.java",
+            "startLine": 68,
+            "endLine": 665,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.contexts.LambdaExprContext",
+            "type": "Method",
+            "name": "solveSymbolAsValue",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/contexts/LambdaExprContext.java",
+            "startLine": 70,
+            "endLine": 214,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.contexts.LambdaExprContext",
+            "type": "Method",
+            "name": "solveSymbolAsValue",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/contexts/LambdaExprContext.java",
+            "startLine": 63,
+            "endLine": 207,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.contexts.LambdaExprContext",
+            "type": "Class",
+            "name": "LambdaExprContext",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/contexts/LambdaExprContext.java",
+            "startLine": 55,
+            "endLine": 276,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.contexts.LambdaExprContext",
+            "type": "Class",
+            "name": "LambdaExprContext",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/contexts/LambdaExprContext.java",
+            "startLine": 54,
+            "endLine": 251,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.Issue3859Test",
+            "type": "Method",
+            "name": "test",
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/Issue3859Test.java",
+            "startLine": 19,
+            "endLine": 58,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.Issue3859Test",
+            "type": "Method",
+            "name": "test",
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/Issue3859Test.java",
+            "startLine": 16,
+            "endLine": 52,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.Issue3859Test",
+            "type": "Class",
+            "name": "Issue3859Test",
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/Issue3859Test.java",
+            "startLine": 17,
+            "endLine": 59,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.Issue3859Test",
+            "type": "Class",
+            "name": "Issue3859Test",
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/Issue3859Test.java",
+            "startLine": 14,
+            "endLine": 53,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.TypeExtractor",
+            "type": "Field",
+            "name": "IS_NOT_ENCLOSED_EXPR",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/TypeExtractor.java",
+            "startLine": 72,
+            "endLine": 72,
+            "startColumn": 42,
+            "endColumn": 98
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.ast.expr.Expression",
+            "type": "Field",
+            "name": "IS_NOT_ENCLOSED_EXPR",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/ast/expr/Expression.java",
+            "startLine": 52,
+            "endLine": 52,
+            "startColumn": 41,
+            "endColumn": 97
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.TypeExtractor",
+            "type": "Method",
+            "name": "getParamPos",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/TypeExtractor.java",
+            "startLine": 654,
+            "endLine": 667,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.TypeExtractor",
+            "type": "Method",
+            "name": "getParamPos",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/TypeExtractor.java",
+            "startLine": 653,
+            "endLine": 660,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.contexts.LambdaExprContext",
+            "type": "Field",
+            "name": "IS_NOT_ENCLOSED_EXPR",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/contexts/LambdaExprContext.java",
+            "startLine": 64,
+            "endLine": 64,
+            "startColumn": 42,
+            "endColumn": 98
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.ast.expr.Expression",
+            "type": "Field",
+            "name": "IS_NOT_ENCLOSED_EXPR",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/ast/expr/Expression.java",
+            "startLine": 52,
+            "endLine": 52,
+            "startColumn": 41,
+            "endColumn": 97
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/javaparser/javaparser.git",
+      "sha1": "e77eb892a65c457a0fdc2556f9f54c26be19f389",
+      "url": "https://github.com/javaparser/javaparser/commit/e77eb892a65c457a0fdc2556f9f54c26be19f389",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.printer.lexicalpreservation.LexicalPreservingPrinterTest",
+            "type": "Method",
+            "name": "findIndentationForAnnotationMemberDeclarationWithoutComment",
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/printer/lexicalpreservation/LexicalPreservingPrinterTest.java",
+            "startLine": 274,
+            "endLine": 281,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.printer.lexicalpreservation.LexicalPreservingPrinterTest",
+            "type": "Method",
+            "name": "findIndentationForAnnotationMemberDeclarationWithoutComment",
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/printer/lexicalpreservation/LexicalPreservingPrinterTest.java",
+            "startLine": 274,
+            "endLine": 281,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.printer.lexicalpreservation.LexicalPreservingPrinterTest",
+            "type": "Method",
+            "name": "findIndentationForAnnotationMemberDeclarationWithComment",
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/printer/lexicalpreservation/LexicalPreservingPrinterTest.java",
+            "startLine": 283,
+            "endLine": 290,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.printer.lexicalpreservation.LexicalPreservingPrinterTest",
+            "type": "Method",
+            "name": "findIndentationForAnnotationMemberDeclarationWithComment",
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/printer/lexicalpreservation/LexicalPreservingPrinterTest.java",
+            "startLine": 283,
+            "endLine": 290,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.printer.lexicalpreservation.LexicalPreservingPrinterTest",
+            "type": "Class",
+            "name": "LexicalPreservingPrinterTest",
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/printer/lexicalpreservation/LexicalPreservingPrinterTest.java",
+            "startLine": 54,
+            "endLine": 1757,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.printer.lexicalpreservation.LexicalPreservingPrinterTest",
+            "type": "Class",
+            "name": "LexicalPreservingPrinterTest",
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/printer/lexicalpreservation/LexicalPreservingPrinterTest.java",
+            "startLine": 54,
+            "endLine": 1757,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.printer.lexicalpreservation.Difference",
+            "type": "Method",
+            "name": "lastIndexOfEol",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/lexicalpreservation/Difference.java",
+            "startLine": 153,
+            "endLine": 164,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.printer.lexicalpreservation.Difference",
+            "type": "Method",
+            "name": "lastIndexOfEol",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/lexicalpreservation/Difference.java",
+            "startLine": 113,
+            "endLine": 119,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.printer.lexicalpreservation.Difference",
+            "type": "Class",
+            "name": "Difference",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/lexicalpreservation/Difference.java",
+            "startLine": 41,
+            "endLine": 1286,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.printer.lexicalpreservation.Difference",
+            "type": "Class",
+            "name": "Difference",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/lexicalpreservation/Difference.java",
+            "startLine": 45,
+            "endLine": 1306,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.printer.lexicalpreservation.LexicalPreservingPrinter",
+            "type": "Method",
+            "name": "interpret",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/lexicalpreservation/LexicalPreservingPrinter.java",
+            "startLine": 561,
+            "endLine": 617,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.printer.lexicalpreservation.LexicalPreservingPrinter",
+            "type": "Method",
+            "name": "interpret",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/lexicalpreservation/LexicalPreservingPrinter.java",
+            "startLine": 561,
+            "endLine": 617,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.printer.lexicalpreservation.LexicalPreservingPrinter",
+            "type": "Class",
+            "name": "LexicalPreservingPrinter",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/lexicalpreservation/LexicalPreservingPrinter.java",
+            "startLine": 60,
+            "endLine": 702,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.printer.lexicalpreservation.LexicalPreservingPrinter",
+            "type": "Class",
+            "name": "LexicalPreservingPrinter",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/lexicalpreservation/LexicalPreservingPrinter.java",
+            "startLine": 60,
+            "endLine": 702,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.printer.lexicalpreservation.Difference",
+            "type": "Method",
+            "name": "adjustIndentation",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/lexicalpreservation/Difference.java",
+            "startLine": 1248,
+            "endLine": 1266,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.printer.lexicalpreservation.Difference",
+            "type": "Method",
+            "name": "adjustIndentation",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/lexicalpreservation/Difference.java",
+            "startLine": 1268,
+            "endLine": 1286,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.printer.lexicalpreservation.Difference",
+            "type": "Field",
+            "name": "indentation",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/lexicalpreservation/Difference.java",
+            "startLine": 63,
+            "endLine": 63,
+            "startColumn": 42,
+            "endColumn": 53
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.printer.lexicalpreservation.Difference",
+            "type": "Field",
+            "name": "indentation",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/lexicalpreservation/Difference.java",
+            "startLine": 67,
+            "endLine": 67,
+            "startColumn": 37,
+            "endColumn": 48
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.printer.lexicalpreservation.LexicalPreservingPrinter",
+            "type": "Method",
+            "name": "findIndentation",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/lexicalpreservation/LexicalPreservingPrinter.java",
+            "startLine": 630,
+            "endLine": 648,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.printer.lexicalpreservation.LexicalPreservingPrinter",
+            "type": "Method",
+            "name": "findIndentation",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/lexicalpreservation/LexicalPreservingPrinter.java",
+            "startLine": 630,
+            "endLine": 648,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.printer.lexicalpreservation.Difference",
+            "type": "Method",
+            "name": "processIndentation",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/lexicalpreservation/Difference.java",
+            "startLine": 81,
+            "endLine": 99,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.printer.lexicalpreservation.Difference",
+            "type": "Method",
+            "name": "processIndentation",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/lexicalpreservation/Difference.java",
+            "startLine": 85,
+            "endLine": 93,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/javaparser/javaparser.git",
+      "sha1": "eaf1f0d06727b9262f3189c01e1f2951e4fc5bc4",
+      "url": "https://github.com/javaparser/javaparser/commit/eaf1f0d06727b9262f3189c01e1f2951e4fc5bc4",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.ast.type.PrimitiveType.Primitive",
+            "type": "Enum",
+            "name": "Primitive",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/ast/type/PrimitiveType.java",
+            "startLine": 88,
+            "endLine": 122,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.ast.type.PrimitiveType.Primitive",
+            "type": "Enum",
+            "name": "Primitive",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/ast/type/PrimitiveType.java",
+            "startLine": 88,
+            "endLine": 143,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.ast.type.PrimitiveType",
+            "type": "Class",
+            "name": "PrimitiveType",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/ast/type/PrimitiveType.java",
+            "startLine": 46,
+            "endLine": 249,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.ast.type.PrimitiveType",
+            "type": "Class",
+            "name": "PrimitiveType",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/ast/type/PrimitiveType.java",
+            "startLine": 46,
+            "endLine": 270,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.utils.TypeUtils",
+            "type": "Method",
+            "name": "getPrimitiveTypeDescriptor",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/utils/TypeUtils.java",
+            "startLine": 64,
+            "endLine": 78,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.utils.TypeUtils",
+            "type": "Method",
+            "name": "getPrimitiveTypeDescriptor",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/utils/TypeUtils.java",
+            "startLine": 62,
+            "endLine": 75,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.utils.TypeUtils",
+            "type": "Class",
+            "name": "TypeUtils",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/utils/TypeUtils.java",
+            "startLine": 31,
+            "endLine": 97,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.utils.TypeUtils",
+            "type": "Class",
+            "name": "TypeUtils",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/utils/TypeUtils.java",
+            "startLine": 29,
+            "endLine": 76,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.utils.TypeUtils",
+            "type": "Method",
+            "name": "getResolvedPrimitiveTypeDescriptor",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/utils/TypeUtils.java",
+            "startLine": 80,
+            "endLine": 88,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.ast.type.PrimitiveType.Primitive",
+            "type": "Method",
+            "name": "byBoxedTypeName",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/ast/type/PrimitiveType.java",
+            "startLine": 122,
+            "endLine": 124,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.utils.TypeUtils",
+            "type": "Method",
+            "name": "getPrimitive",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/utils/TypeUtils.java",
+            "startLine": 90,
+            "endLine": 96,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.ast.type.PrimitiveType.Primitive",
+            "type": "Method",
+            "name": "byTypeName",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/ast/type/PrimitiveType.java",
+            "startLine": 109,
+            "endLine": 116,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.utils.TypeUtils",
+            "type": "Method",
+            "name": "getResolvedPrimitiveTypeDescriptor",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/utils/TypeUtils.java",
+            "startLine": 80,
+            "endLine": 88,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.utils.TypeUtils",
+            "type": "Method",
+            "name": "getPrimitiveTypeDescriptor",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/utils/TypeUtils.java",
+            "startLine": 62,
+            "endLine": 75,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/javaparser/javaparser.git",
+      "sha1": "cbf8642717a810e8d49064f60ad055e8f9fb48b5",
+      "url": "https://github.com/javaparser/javaparser/commit/cbf8642717a810e8d49064f60ad055e8f9fb48b5",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.resolution.Solver",
+            "type": "Interface",
+            "name": "Solver",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/Solver.java",
+            "startLine": 14,
+            "endLine": 53,
+            "startColumn": 0,
+            "endColumn": 0
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.resolution.Solver",
+            "type": "Interface",
+            "name": "Solver",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/Solver.java",
+            "startLine": 14,
+            "endLine": 62,
+            "startColumn": 0,
+            "endColumn": 0
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.JavaParserFacade",
+            "type": "Method",
+            "name": "classToResolvedType",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/JavaParserFacade.java",
+            "startLine": 706,
+            "endLine": 729,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.JavaParserFacade",
+            "type": "Method",
+            "name": "classToResolvedType",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/JavaParserFacade.java",
+            "startLine": 707,
+            "endLine": 720,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.JavaParserFacade",
+            "type": "Class",
+            "name": "JavaParserFacade",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/JavaParserFacade.java",
+            "startLine": 64,
+            "endLine": 731,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.JavaParserFacade",
+            "type": "Class",
+            "name": "JavaParserFacade",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/JavaParserFacade.java",
+            "startLine": 65,
+            "endLine": 722,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.contexts.MethodCallExprContext",
+            "type": "Method",
+            "name": "solveMethodAsUsage",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/contexts/MethodCallExprContext.java",
+            "startLine": 454,
+            "endLine": 475,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.contexts.MethodCallExprContext",
+            "type": "Method",
+            "name": "solveMethodAsUsage",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/contexts/MethodCallExprContext.java",
+            "startLine": 451,
+            "endLine": 472,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.contexts.MethodCallExprContext",
+            "type": "Method",
+            "name": "solveMethodAsUsage",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/contexts/MethodCallExprContext.java",
+            "startLine": 477,
+            "endLine": 509,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.contexts.MethodCallExprContext",
+            "type": "Method",
+            "name": "solveMethodAsUsage",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/contexts/MethodCallExprContext.java",
+            "startLine": 474,
+            "endLine": 506,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.contexts.MethodCallExprContext",
+            "type": "Class",
+            "name": "MethodCallExprContext",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/contexts/MethodCallExprContext.java",
+            "startLine": 46,
+            "endLine": 530,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.contexts.MethodCallExprContext",
+            "type": "Class",
+            "name": "MethodCallExprContext",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/contexts/MethodCallExprContext.java",
+            "startLine": 43,
+            "endLine": 527,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.declarations.JavaParserTypeVariableDeclaration",
+            "type": "Method",
+            "name": "getAncestors",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/declarations/JavaParserTypeVariableDeclaration.java",
+            "startLine": 130,
+            "endLine": 154,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.declarations.JavaParserTypeVariableDeclaration",
+            "type": "Method",
+            "name": "getAncestors",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/declarations/JavaParserTypeVariableDeclaration.java",
+            "startLine": 130,
+            "endLine": 152,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.declarations.JavaParserTypeVariableDeclaration",
+            "type": "Class",
+            "name": "JavaParserTypeVariableDeclaration",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/declarations/JavaParserTypeVariableDeclaration.java",
+            "startLine": 49,
+            "endLine": 220,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.declarations.JavaParserTypeVariableDeclaration",
+            "type": "Class",
+            "name": "JavaParserTypeVariableDeclaration",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/declarations/JavaParserTypeVariableDeclaration.java",
+            "startLine": 49,
+            "endLine": 218,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.resolution.SymbolSolver",
+            "type": "Class",
+            "name": "SymbolSolver",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/resolution/SymbolSolver.java",
+            "startLine": 48,
+            "endLine": 166,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.resolution.SymbolSolver",
+            "type": "Class",
+            "name": "SymbolSolver",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/resolution/SymbolSolver.java",
+            "startLine": 53,
+            "endLine": 196,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.Issue343Test",
+            "type": "Method",
+            "name": "setup",
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/Issue343Test.java",
+            "startLine": 54,
+            "endLine": 58,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.Issue343Test",
+            "type": "Method",
+            "name": "setup",
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/Issue343Test.java",
+            "startLine": 56,
+            "endLine": 60,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.Issue343Test",
+            "type": "Method",
+            "name": "resolveStringLiteralOutsideAST",
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/Issue343Test.java",
+            "startLine": 60,
+            "endLine": 63,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.Issue343Test",
+            "type": "Method",
+            "name": "resolveStringLiteralOutsideAST",
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/Issue343Test.java",
+            "startLine": 62,
+            "endLine": 65,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.Issue343Test",
+            "type": "Method",
+            "name": "resolveIntegerLiteralOutsideAST",
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/Issue343Test.java",
+            "startLine": 65,
+            "endLine": 68,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.Issue343Test",
+            "type": "Method",
+            "name": "resolveIntegerLiteralOutsideAST",
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/Issue343Test.java",
+            "startLine": 67,
+            "endLine": 70,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.Issue343Test",
+            "type": "Method",
+            "name": "resolveMethodCallOnStringLiteralOutsideAST",
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/Issue343Test.java",
+            "startLine": 81,
+            "endLine": 84,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.Issue343Test",
+            "type": "Method",
+            "name": "resolveMethodCallOnStringLiteralOutsideAST",
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/Issue343Test.java",
+            "startLine": 83,
+            "endLine": 86,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.Issue343Test",
+            "type": "Class",
+            "name": "Issue343Test",
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/Issue343Test.java",
+            "startLine": 39,
+            "endLine": 90,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.Issue343Test",
+            "type": "Class",
+            "name": "Issue343Test",
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/Issue343Test.java",
+            "startLine": 41,
+            "endLine": 92,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.JavaParserFacadeTest",
+            "type": "Method",
+            "name": "classToResolvedType_givenPrimitiveShouldBeAReflectionPrimitiveDeclaration",
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/javaparsermodel/JavaParserFacadeTest.java",
+            "startLine": 35,
+            "endLine": 39,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.JavaParserFacadeTest",
+            "type": "Method",
+            "name": "classToResolvedType_givenPrimitiveShouldBeAReflectionPrimitiveDeclaration",
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/javaparsermodel/JavaParserFacadeTest.java",
+            "startLine": 37,
+            "endLine": 41,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.JavaParserFacadeTest",
+            "type": "Method",
+            "name": "classToResolvedType_givenClassShouldBeAReflectionClassDeclaration",
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/javaparsermodel/JavaParserFacadeTest.java",
+            "startLine": 41,
+            "endLine": 45,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.JavaParserFacadeTest",
+            "type": "Method",
+            "name": "classToResolvedType_givenClassShouldBeAReflectionClassDeclaration",
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/javaparsermodel/JavaParserFacadeTest.java",
+            "startLine": 43,
+            "endLine": 47,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.JavaParserFacadeTest",
+            "type": "Method",
+            "name": "classToResolvedType_givenClassShouldBeAReflectionInterfaceDeclaration",
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/javaparsermodel/JavaParserFacadeTest.java",
+            "startLine": 47,
+            "endLine": 51,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.JavaParserFacadeTest",
+            "type": "Method",
+            "name": "classToResolvedType_givenClassShouldBeAReflectionInterfaceDeclaration",
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/javaparsermodel/JavaParserFacadeTest.java",
+            "startLine": 49,
+            "endLine": 53,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.JavaParserFacadeTest",
+            "type": "Method",
+            "name": "classToResolvedType_givenEnumShouldBeAReflectionEnumDeclaration",
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/javaparsermodel/JavaParserFacadeTest.java",
+            "startLine": 53,
+            "endLine": 57,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.JavaParserFacadeTest",
+            "type": "Method",
+            "name": "classToResolvedType_givenEnumShouldBeAReflectionEnumDeclaration",
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/javaparsermodel/JavaParserFacadeTest.java",
+            "startLine": 55,
+            "endLine": 59,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.JavaParserFacadeTest",
+            "type": "Method",
+            "name": "classToResolvedType_givenAnnotationShouldBeAReflectionAnnotationDeclaration",
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/javaparsermodel/JavaParserFacadeTest.java",
+            "startLine": 59,
+            "endLine": 63,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.JavaParserFacadeTest",
+            "type": "Method",
+            "name": "classToResolvedType_givenAnnotationShouldBeAReflectionAnnotationDeclaration",
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/javaparsermodel/JavaParserFacadeTest.java",
+            "startLine": 61,
+            "endLine": 65,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.JavaParserFacadeTest",
+            "type": "Class",
+            "name": "JavaParserFacadeTest",
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/javaparsermodel/JavaParserFacadeTest.java",
+            "startLine": 31,
+            "endLine": 72,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.JavaParserFacadeTest",
+            "type": "Class",
+            "name": "JavaParserFacadeTest",
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/javaparsermodel/JavaParserFacadeTest.java",
+            "startLine": 33,
+            "endLine": 74,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.resolution.JavaParserFacadeResolutionTest",
+            "type": "Method",
+            "name": "classToResolvedTypeViaReflection",
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/JavaParserFacadeResolutionTest.java",
+            "startLine": 175,
+            "endLine": 185,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.resolution.JavaParserFacadeResolutionTest",
+            "type": "Method",
+            "name": "classToResolvedTypeViaReflection",
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/JavaParserFacadeResolutionTest.java",
+            "startLine": 177,
+            "endLine": 186,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.resolution.JavaParserFacadeResolutionTest",
+            "type": "Class",
+            "name": "JavaParserFacadeResolutionTest",
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/JavaParserFacadeResolutionTest.java",
+            "startLine": 57,
+            "endLine": 302,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.resolution.JavaParserFacadeResolutionTest",
+            "type": "Class",
+            "name": "JavaParserFacadeResolutionTest",
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/JavaParserFacadeResolutionTest.java",
+            "startLine": 59,
+            "endLine": 303,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.Issue343Test",
+            "type": "Field",
+            "name": "javaParserFacade",
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/Issue343Test.java",
+            "startLine": 48,
+            "endLine": 48,
+            "startColumn": 30,
+            "endColumn": 46
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.Issue343Test",
+            "type": "Field",
+            "name": "symbolSolver",
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/Issue343Test.java",
+            "startLine": 50,
+            "endLine": 50,
+            "startColumn": 20,
+            "endColumn": 32
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.JavaParserFacadeTest",
+            "type": "Field",
+            "name": "typeSolver",
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/javaparsermodel/JavaParserFacadeTest.java",
+            "startLine": 33,
+            "endLine": 33,
+            "startColumn": 30,
+            "endColumn": 69
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.JavaParserFacadeTest",
+            "type": "Field",
+            "name": "symbolSolver",
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/javaparsermodel/JavaParserFacadeTest.java",
+            "startLine": 35,
+            "endLine": 35,
+            "startColumn": 26,
+            "endColumn": 85
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/javaparser/javaparser.git",
+      "sha1": "d682aa22ca7b16ca6e0a9545237ece44f3ddd69e",
+      "url": "https://github.com/javaparser/javaparser/commit/d682aa22ca7b16ca6e0a9545237ece44f3ddd69e",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.declarations.common.MethodDeclarationCommonLogic",
+            "type": "Method",
+            "name": "resolveTypeVariables",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/declarations/common/MethodDeclarationCommonLogic.java",
+            "startLine": 52,
+            "endLine": 85,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.declarations.common.MethodDeclarationCommonLogic",
+            "type": "Method",
+            "name": "resolveTypeVariables",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/declarations/common/MethodDeclarationCommonLogic.java",
+            "startLine": 51,
+            "endLine": 84,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.declarations.common.MethodDeclarationCommonLogic",
+            "type": "Class",
+            "name": "MethodDeclarationCommonLogic",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/declarations/common/MethodDeclarationCommonLogic.java",
+            "startLine": 39,
+            "endLine": 112,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.declarations.common.MethodDeclarationCommonLogic",
+            "type": "Class",
+            "name": "MethodDeclarationCommonLogic",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/declarations/common/MethodDeclarationCommonLogic.java",
+            "startLine": 38,
+            "endLine": 111,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.TypeExtractor",
+            "type": "Method",
+            "name": "resolveLambda",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/TypeExtractor.java",
+            "startLine": 521,
+            "endLine": 584,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.TypeExtractor",
+            "type": "Method",
+            "name": "resolveLambda",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/TypeExtractor.java",
+            "startLine": 519,
+            "endLine": 582,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.TypeExtractor",
+            "type": "Method",
+            "name": "visit",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/TypeExtractor.java",
+            "startLine": 586,
+            "endLine": 636,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.TypeExtractor",
+            "type": "Method",
+            "name": "visit",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/TypeExtractor.java",
+            "startLine": 584,
+            "endLine": 634,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.TypeExtractor",
+            "type": "Class",
+            "name": "TypeExtractor",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/TypeExtractor.java",
+            "startLine": 66,
+            "endLine": 649,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.TypeExtractor",
+            "type": "Class",
+            "name": "TypeExtractor",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/TypeExtractor.java",
+            "startLine": 64,
+            "endLine": 647,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.contexts.LambdaExprContext",
+            "type": "Method",
+            "name": "solveSymbolAsValue",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/contexts/LambdaExprContext.java",
+            "startLine": 68,
+            "endLine": 212,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.contexts.LambdaExprContext",
+            "type": "Method",
+            "name": "solveSymbolAsValue",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/contexts/LambdaExprContext.java",
+            "startLine": 66,
+            "endLine": 210,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.contexts.LambdaExprContext",
+            "type": "Class",
+            "name": "LambdaExprContext",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/contexts/LambdaExprContext.java",
+            "startLine": 59,
+            "endLine": 271,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.contexts.LambdaExprContext",
+            "type": "Class",
+            "name": "LambdaExprContext",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/contexts/LambdaExprContext.java",
+            "startLine": 57,
+            "endLine": 269,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.contexts.MethodCallExprContext",
+            "type": "Method",
+            "name": "matchTypeParameters",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/contexts/MethodCallExprContext.java",
+            "startLine": 408,
+            "endLine": 451,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.contexts.MethodCallExprContext",
+            "type": "Method",
+            "name": "matchTypeParameters",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/contexts/MethodCallExprContext.java",
+            "startLine": 407,
+            "endLine": 452,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.contexts.MethodCallExprContext",
+            "type": "Class",
+            "name": "MethodCallExprContext",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/contexts/MethodCallExprContext.java",
+            "startLine": 47,
+            "endLine": 529,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.contexts.MethodCallExprContext",
+            "type": "Class",
+            "name": "MethodCallExprContext",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/contexts/MethodCallExprContext.java",
+            "startLine": 46,
+            "endLine": 530,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.contexts.MethodReferenceExprContext",
+            "type": "Method",
+            "name": "inferArgumentTypes",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/contexts/MethodReferenceExprContext.java",
+            "startLine": 102,
+            "endLine": 199,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.contexts.MethodReferenceExprContext",
+            "type": "Method",
+            "name": "inferArgumentTypes",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/contexts/MethodReferenceExprContext.java",
+            "startLine": 101,
+            "endLine": 198,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.contexts.MethodReferenceExprContext",
+            "type": "Class",
+            "name": "MethodReferenceExprContext",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/contexts/MethodReferenceExprContext.java",
+            "startLine": 49,
+            "endLine": 212,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.contexts.MethodReferenceExprContext",
+            "type": "Class",
+            "name": "MethodReferenceExprContext",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/contexts/MethodReferenceExprContext.java",
+            "startLine": 48,
+            "endLine": 211,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.logic.InferenceContext",
+            "type": "Method",
+            "name": "inferenceVariableTypeForTp",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/logic/InferenceContext.java",
+            "startLine": 51,
+            "endLine": 59,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.logic.InferenceContext",
+            "type": "Method",
+            "name": "inferenceVariableTypeForTp",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/logic/InferenceContext.java",
+            "startLine": 54,
+            "endLine": 62,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.logic.InferenceContext",
+            "type": "Method",
+            "name": "registerCorrespondance",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/logic/InferenceContext.java",
+            "startLine": 75,
+            "endLine": 187,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.logic.InferenceContext",
+            "type": "Method",
+            "name": "registerCorrespondance",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/logic/InferenceContext.java",
+            "startLine": 78,
+            "endLine": 192,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.logic.InferenceContext",
+            "type": "Class",
+            "name": "InferenceContext",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/logic/InferenceContext.java",
+            "startLine": 37,
+            "endLine": 237,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.logic.InferenceContext",
+            "type": "Class",
+            "name": "InferenceContext",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/logic/InferenceContext.java",
+            "startLine": 40,
+            "endLine": 242,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.logic.InferenceVariableType",
+            "type": "Method",
+            "name": "equivalentType",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/logic/InferenceVariableType.java",
+            "startLine": 119,
+            "endLine": 145,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.logic.InferenceVariableType",
+            "type": "Method",
+            "name": "equivalentType",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/logic/InferenceVariableType.java",
+            "startLine": 127,
+            "endLine": 153,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.logic.InferenceVariableType",
+            "type": "Class",
+            "name": "InferenceVariableType",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/logic/InferenceVariableType.java",
+            "startLine": 34,
+            "endLine": 169,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.logic.InferenceVariableType",
+            "type": "Class",
+            "name": "InferenceVariableType",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/logic/InferenceVariableType.java",
+            "startLine": 36,
+            "endLine": 177,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.reflectionmodel.ReflectionAnnotationDeclaration",
+            "type": "Method",
+            "name": "solveMethodAsUsage",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/reflectionmodel/ReflectionAnnotationDeclaration.java",
+            "startLine": 212,
+            "endLine": 245,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.reflectionmodel.ReflectionAnnotationDeclaration",
+            "type": "Method",
+            "name": "solveMethodAsUsage",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/reflectionmodel/ReflectionAnnotationDeclaration.java",
+            "startLine": 212,
+            "endLine": 245,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.reflectionmodel.ReflectionAnnotationDeclaration",
+            "type": "Class",
+            "name": "ReflectionAnnotationDeclaration",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/reflectionmodel/ReflectionAnnotationDeclaration.java",
+            "startLine": 54,
+            "endLine": 259,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.reflectionmodel.ReflectionAnnotationDeclaration",
+            "type": "Class",
+            "name": "ReflectionAnnotationDeclaration",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/reflectionmodel/ReflectionAnnotationDeclaration.java",
+            "startLine": 54,
+            "endLine": 259,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.reflectionmodel.ReflectionEnumDeclaration",
+            "type": "Method",
+            "name": "solveMethodAsUsage",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/reflectionmodel/ReflectionEnumDeclaration.java",
+            "startLine": 178,
+            "endLine": 208,
+            "startColumn": 3,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.reflectionmodel.ReflectionEnumDeclaration",
+            "type": "Method",
+            "name": "solveMethodAsUsage",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/reflectionmodel/ReflectionEnumDeclaration.java",
+            "startLine": 178,
+            "endLine": 208,
+            "startColumn": 3,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.reflectionmodel.ReflectionEnumDeclaration",
+            "type": "Class",
+            "name": "ReflectionEnumDeclaration",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/reflectionmodel/ReflectionEnumDeclaration.java",
+            "startLine": 44,
+            "endLine": 238,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.reflectionmodel.ReflectionEnumDeclaration",
+            "type": "Class",
+            "name": "ReflectionEnumDeclaration",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/reflectionmodel/ReflectionEnumDeclaration.java",
+            "startLine": 44,
+            "endLine": 238,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.reflectionmodel.ReflectionInterfaceDeclaration",
+            "type": "Method",
+            "name": "solveMethodAsUsage",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/reflectionmodel/ReflectionInterfaceDeclaration.java",
+            "startLine": 147,
+            "endLine": 177,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.reflectionmodel.ReflectionInterfaceDeclaration",
+            "type": "Method",
+            "name": "solveMethodAsUsage",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/reflectionmodel/ReflectionInterfaceDeclaration.java",
+            "startLine": 147,
+            "endLine": 177,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.reflectionmodel.ReflectionInterfaceDeclaration",
+            "type": "Class",
+            "name": "ReflectionInterfaceDeclaration",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/reflectionmodel/ReflectionInterfaceDeclaration.java",
+            "startLine": 48,
+            "endLine": 334,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.reflectionmodel.ReflectionInterfaceDeclaration",
+            "type": "Class",
+            "name": "ReflectionInterfaceDeclaration",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/reflectionmodel/ReflectionInterfaceDeclaration.java",
+            "startLine": 48,
+            "endLine": 334,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.logic.InferenceContextTest",
+            "type": "Method",
+            "name": "noVariablesArePlacedWhenNotNeeded",
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/logic/InferenceContextTest.java",
+            "startLine": 72,
+            "endLine": 76,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.logic.InferenceContextTest",
+            "type": "Method",
+            "name": "noVariablesArePlacedWhenNotNeeded",
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/logic/InferenceContextTest.java",
+            "startLine": 71,
+            "endLine": 75,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.logic.InferenceContextTest",
+            "type": "Method",
+            "name": "placingASingleVariableTopLevel",
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/logic/InferenceContextTest.java",
+            "startLine": 78,
+            "endLine": 82,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.logic.InferenceContextTest",
+            "type": "Method",
+            "name": "placingASingleVariableTopLevel",
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/logic/InferenceContextTest.java",
+            "startLine": 77,
+            "endLine": 81,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.logic.InferenceContextTest",
+            "type": "Method",
+            "name": "placingASingleVariableInside",
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/logic/InferenceContextTest.java",
+            "startLine": 84,
+            "endLine": 88,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.logic.InferenceContextTest",
+            "type": "Method",
+            "name": "placingASingleVariableInside",
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/logic/InferenceContextTest.java",
+            "startLine": 83,
+            "endLine": 87,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.logic.InferenceContextTest",
+            "type": "Class",
+            "name": "InferenceContextTest",
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/logic/InferenceContextTest.java",
+            "startLine": 44,
+            "endLine": 90,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.logic.InferenceContextTest",
+            "type": "Class",
+            "name": "InferenceContextTest",
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/logic/InferenceContextTest.java",
+            "startLine": 43,
+            "endLine": 89,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.logic.InferenceContext",
+            "type": "Method",
+            "name": "InferenceContext",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/logic/InferenceContext.java",
+            "startLine": 47,
+            "endLine": 49,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.logic.InferenceContext",
+            "type": "Method",
+            "name": "InferenceContext",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/logic/InferenceContext.java",
+            "startLine": 50,
+            "endLine": 52,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [],
+      "baseline": [
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.logic.InferenceContext",
+            "type": "Field",
+            "name": "objectProvider",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/logic/InferenceContext.java",
+            "startLine": 43,
+            "endLine": 43,
+            "startColumn": 28,
+            "endColumn": 42
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.logic.InferenceContext",
+            "type": "Field",
+            "name": "typeSolver",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/logic/InferenceContext.java",
+            "startLine": 46,
+            "endLine": 46,
+            "startColumn": 24,
+            "endColumn": 34
+          },
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/javaparser/javaparser.git",
+      "sha1": "8d34941dd94f24a53f61b96439ac1771549cd1f8",
+      "url": "https://github.com/javaparser/javaparser/commit/8d34941dd94f24a53f61b96439ac1771549cd1f8",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.resolution.types.ResolvedType",
+            "type": "Interface",
+            "name": "ResolvedType",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/types/ResolvedType.java",
+            "startLine": 30,
+            "endLine": 233,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.resolution.types.ResolvedType",
+            "type": "Interface",
+            "name": "ResolvedType",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/types/ResolvedType.java",
+            "startLine": 31,
+            "endLine": 241,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.resolution.types.ResolvedTypeVariable",
+            "type": "Class",
+            "name": "ResolvedTypeVariable",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/types/ResolvedTypeVariable.java",
+            "startLine": 28,
+            "endLine": 138,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.resolution.types.ResolvedTypeVariable",
+            "type": "Class",
+            "name": "ResolvedTypeVariable",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/types/ResolvedTypeVariable.java",
+            "startLine": 29,
+            "endLine": 147,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.resolution.types.ResolvedWildcard",
+            "type": "Class",
+            "name": "ResolvedWildcard",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/types/ResolvedWildcard.java",
+            "startLine": 28,
+            "endLine": 180,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.resolution.types.ResolvedWildcard",
+            "type": "Class",
+            "name": "ResolvedWildcard",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/types/ResolvedWildcard.java",
+            "startLine": 29,
+            "endLine": 197,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.JavaParserFacade",
+            "type": "Class",
+            "name": "JavaParserFacade",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/JavaParserFacade.java",
+            "startLine": 64,
+            "endLine": 749,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.JavaParserFacade",
+            "type": "Class",
+            "name": "JavaParserFacade",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/JavaParserFacade.java",
+            "startLine": 64,
+            "endLine": 731,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.TypeExtractor",
+            "type": "Method",
+            "name": "resolveLambda",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/TypeExtractor.java",
+            "startLine": 524,
+            "endLine": 587,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.TypeExtractor",
+            "type": "Method",
+            "name": "resolveLambda",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/TypeExtractor.java",
+            "startLine": 522,
+            "endLine": 585,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.TypeExtractor",
+            "type": "Method",
+            "name": "visit",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/TypeExtractor.java",
+            "startLine": 589,
+            "endLine": 639,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.TypeExtractor",
+            "type": "Method",
+            "name": "visit",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/TypeExtractor.java",
+            "startLine": 587,
+            "endLine": 637,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.TypeExtractor",
+            "type": "Class",
+            "name": "TypeExtractor",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/TypeExtractor.java",
+            "startLine": 69,
+            "endLine": 652,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.TypeExtractor",
+            "type": "Class",
+            "name": "TypeExtractor",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/TypeExtractor.java",
+            "startLine": 67,
+            "endLine": 650,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [],
+      "baseline": [
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.JavaParserFacade",
+            "type": "Method",
+            "name": "solveGenericTypes",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/JavaParserFacade.java",
+            "startLine": 103,
+            "endLine": 119,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.resolution.types.ResolvedWildcard",
+            "type": "Method",
+            "name": "solveGenericTypes",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/types/ResolvedWildcard.java",
+            "startLine": 185,
+            "endLine": 196,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/javaparser/javaparser.git",
+      "sha1": "86f41353d40bfd3ef0669b863926626b6c4949bf",
+      "url": "https://github.com/javaparser/javaparser/commit/86f41353d40bfd3ef0669b863926626b6c4949bf",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.core.resolution.Context",
+            "type": "Interface",
+            "name": "Context",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/core/resolution/Context.java",
+            "startLine": 40,
+            "endLine": 423,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.resolution.Context",
+            "type": "Interface",
+            "name": "Context",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/Context.java",
+            "startLine": 38,
+            "endLine": 421,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.core.resolution.Context",
+            "type": "Method",
+            "name": "getWrappedNode",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/core/resolution/Context.java",
+            "startLine": 48,
+            "endLine": 52,
+            "startColumn": 2,
+            "endColumn": 38
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.resolution.Context",
+            "type": "Method",
+            "name": "getWrappedNode",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/Context.java",
+            "startLine": 46,
+            "endLine": 50,
+            "startColumn": 2,
+            "endColumn": 38
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.core.resolution.Context",
+            "type": "Method",
+            "name": "getParent",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/core/resolution/Context.java",
+            "startLine": 54,
+            "endLine": 57,
+            "startColumn": 5,
+            "endColumn": 35
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.resolution.Context",
+            "type": "Method",
+            "name": "getParent",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/Context.java",
+            "startLine": 52,
+            "endLine": 55,
+            "startColumn": 5,
+            "endColumn": 35
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.core.resolution.Context",
+            "type": "Method",
+            "name": "solveGenericType",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/core/resolution/Context.java",
+            "startLine": 62,
+            "endLine": 73,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.resolution.Context",
+            "type": "Method",
+            "name": "solveGenericType",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/Context.java",
+            "startLine": 60,
+            "endLine": 71,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.core.resolution.Context",
+            "type": "Method",
+            "name": "solveGenericTypeInParentContext",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/core/resolution/Context.java",
+            "startLine": 75,
+            "endLine": 83,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.resolution.Context",
+            "type": "Method",
+            "name": "solveGenericTypeInParentContext",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/Context.java",
+            "startLine": 73,
+            "endLine": 81,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.core.resolution.Context",
+            "type": "Method",
+            "name": "solveType",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/core/resolution/Context.java",
+            "startLine": 85,
+            "endLine": 100,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.resolution.Context",
+            "type": "Method",
+            "name": "solveType",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/Context.java",
+            "startLine": 83,
+            "endLine": 98,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.core.resolution.Context",
+            "type": "Method",
+            "name": "solveType",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/core/resolution/Context.java",
+            "startLine": 102,
+            "endLine": 123,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.resolution.Context",
+            "type": "Method",
+            "name": "solveType",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/Context.java",
+            "startLine": 100,
+            "endLine": 121,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.core.resolution.Context",
+            "type": "Method",
+            "name": "solveTypeInParentContext",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/core/resolution/Context.java",
+            "startLine": 125,
+            "endLine": 139,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.resolution.Context",
+            "type": "Method",
+            "name": "solveTypeInParentContext",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/Context.java",
+            "startLine": 123,
+            "endLine": 137,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.core.resolution.Context",
+            "type": "Method",
+            "name": "solveTypeInParentContext",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/core/resolution/Context.java",
+            "startLine": 141,
+            "endLine": 157,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.resolution.Context",
+            "type": "Method",
+            "name": "solveTypeInParentContext",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/Context.java",
+            "startLine": 139,
+            "endLine": 155,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.core.resolution.Context",
+            "type": "Method",
+            "name": "solveSymbol",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/core/resolution/Context.java",
+            "startLine": 161,
+            "endLine": 169,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.resolution.Context",
+            "type": "Method",
+            "name": "solveSymbol",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/Context.java",
+            "startLine": 159,
+            "endLine": 167,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.core.resolution.Context",
+            "type": "Method",
+            "name": "solveSymbolInParentContext",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/core/resolution/Context.java",
+            "startLine": 171,
+            "endLine": 179,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.resolution.Context",
+            "type": "Method",
+            "name": "solveSymbolInParentContext",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/Context.java",
+            "startLine": 169,
+            "endLine": 177,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.core.resolution.Context",
+            "type": "Method",
+            "name": "solveSymbolAsValue",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/core/resolution/Context.java",
+            "startLine": 181,
+            "endLine": 193,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.resolution.Context",
+            "type": "Method",
+            "name": "solveSymbolAsValue",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/Context.java",
+            "startLine": 179,
+            "endLine": 191,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.core.resolution.Context",
+            "type": "Method",
+            "name": "solveSymbolAsValueInParentContext",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/core/resolution/Context.java",
+            "startLine": 195,
+            "endLine": 202,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.resolution.Context",
+            "type": "Method",
+            "name": "solveSymbolAsValueInParentContext",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/Context.java",
+            "startLine": 193,
+            "endLine": 200,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.core.resolution.Context",
+            "type": "Method",
+            "name": "fieldsExposedToChild",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/core/resolution/Context.java",
+            "startLine": 205,
+            "endLine": 211,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.resolution.Context",
+            "type": "Method",
+            "name": "fieldsExposedToChild",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/Context.java",
+            "startLine": 203,
+            "endLine": 209,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.core.resolution.Context",
+            "type": "Method",
+            "name": "localVariablesExposedToChild",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/core/resolution/Context.java",
+            "startLine": 213,
+            "endLine": 219,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.resolution.Context",
+            "type": "Method",
+            "name": "localVariablesExposedToChild",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/Context.java",
+            "startLine": 211,
+            "endLine": 217,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.core.resolution.Context",
+            "type": "Method",
+            "name": "parametersExposedToChild",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/core/resolution/Context.java",
+            "startLine": 221,
+            "endLine": 227,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.resolution.Context",
+            "type": "Method",
+            "name": "parametersExposedToChild",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/Context.java",
+            "startLine": 219,
+            "endLine": 225,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.core.resolution.Context",
+            "type": "Method",
+            "name": "patternExprsExposedToChild",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/core/resolution/Context.java",
+            "startLine": 229,
+            "endLine": 235,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.resolution.Context",
+            "type": "Method",
+            "name": "patternExprsExposedToChild",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/Context.java",
+            "startLine": 227,
+            "endLine": 233,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.core.resolution.Context",
+            "type": "Method",
+            "name": "patternExprsExposedFromChildren",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/core/resolution/Context.java",
+            "startLine": 237,
+            "endLine": 241,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.resolution.Context",
+            "type": "Method",
+            "name": "patternExprsExposedFromChildren",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/Context.java",
+            "startLine": 235,
+            "endLine": 239,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.core.resolution.Context",
+            "type": "Method",
+            "name": "negatedPatternExprsExposedFromChildren",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/core/resolution/Context.java",
+            "startLine": 243,
+            "endLine": 247,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.resolution.Context",
+            "type": "Method",
+            "name": "negatedPatternExprsExposedFromChildren",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/Context.java",
+            "startLine": 241,
+            "endLine": 245,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.core.resolution.Context",
+            "type": "Method",
+            "name": "localVariableDeclarationInScope",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/core/resolution/Context.java",
+            "startLine": 249,
+            "endLine": 297,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.resolution.Context",
+            "type": "Method",
+            "name": "localVariableDeclarationInScope",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/Context.java",
+            "startLine": 247,
+            "endLine": 295,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.core.resolution.Context",
+            "type": "Method",
+            "name": "parameterDeclarationInScope",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/core/resolution/Context.java",
+            "startLine": 299,
+            "endLine": 319,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.resolution.Context",
+            "type": "Method",
+            "name": "parameterDeclarationInScope",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/Context.java",
+            "startLine": 297,
+            "endLine": 317,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.core.resolution.Context",
+            "type": "Method",
+            "name": "patternExprInScope",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/core/resolution/Context.java",
+            "startLine": 322,
+            "endLine": 364,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.resolution.Context",
+            "type": "Method",
+            "name": "patternExprInScope",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/Context.java",
+            "startLine": 320,
+            "endLine": 362,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.core.resolution.Context",
+            "type": "Method",
+            "name": "fieldDeclarationInScope",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/core/resolution/Context.java",
+            "startLine": 366,
+            "endLine": 385,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.resolution.Context",
+            "type": "Method",
+            "name": "fieldDeclarationInScope",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/Context.java",
+            "startLine": 364,
+            "endLine": 383,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.core.resolution.Context",
+            "type": "Method",
+            "name": "solveConstructor",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/core/resolution/Context.java",
+            "startLine": 390,
+            "endLine": 395,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.resolution.Context",
+            "type": "Method",
+            "name": "solveConstructor",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/Context.java",
+            "startLine": 388,
+            "endLine": 393,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.core.resolution.Context",
+            "type": "Method",
+            "name": "solveMethod",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/core/resolution/Context.java",
+            "startLine": 399,
+            "endLine": 405,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.resolution.Context",
+            "type": "Method",
+            "name": "solveMethod",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/Context.java",
+            "startLine": 397,
+            "endLine": 403,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.core.resolution.Context",
+            "type": "Method",
+            "name": "solveMethodInParentContext",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/core/resolution/Context.java",
+            "startLine": 407,
+            "endLine": 415,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.resolution.Context",
+            "type": "Method",
+            "name": "solveMethodInParentContext",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/Context.java",
+            "startLine": 405,
+            "endLine": 413,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.core.resolution.Context",
+            "type": "Method",
+            "name": "solveMethodAsUsage",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/core/resolution/Context.java",
+            "startLine": 417,
+            "endLine": 421,
+            "startColumn": 5,
+            "endColumn": 94
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.resolution.Context",
+            "type": "Method",
+            "name": "solveMethodAsUsage",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/Context.java",
+            "startLine": 415,
+            "endLine": 419,
+            "startColumn": 5,
+            "endColumn": 94
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.ast.type.ArrayType",
+            "type": "Class",
+            "name": "ArrayType",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/ast/type/ArrayType.java",
+            "startLine": 47,
+            "endLine": 315,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.ast.type.ArrayType",
+            "type": "Class",
+            "name": "ArrayType",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/ast/type/ArrayType.java",
+            "startLine": 49,
+            "endLine": 322,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.ast.type.ClassOrInterfaceType",
+            "type": "Class",
+            "name": "ClassOrInterfaceType",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/ast/type/ClassOrInterfaceType.java",
+            "startLine": 48,
+            "endLine": 323,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.ast.type.ClassOrInterfaceType",
+            "type": "Class",
+            "name": "ClassOrInterfaceType",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/ast/type/ClassOrInterfaceType.java",
+            "startLine": 59,
+            "endLine": 360,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.ast.type.IntersectionType",
+            "type": "Class",
+            "name": "IntersectionType",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/ast/type/IntersectionType.java",
+            "startLine": 43,
+            "endLine": 186,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.ast.type.IntersectionType",
+            "type": "Class",
+            "name": "IntersectionType",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/ast/type/IntersectionType.java",
+            "startLine": 46,
+            "endLine": 194,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.ast.type.PrimitiveType",
+            "type": "Class",
+            "name": "PrimitiveType",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/ast/type/PrimitiveType.java",
+            "startLine": 43,
+            "endLine": 237,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.ast.type.PrimitiveType",
+            "type": "Class",
+            "name": "PrimitiveType",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/ast/type/PrimitiveType.java",
+            "startLine": 46,
+            "endLine": 245,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.ast.type.Type",
+            "type": "Class",
+            "name": "Type",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/ast/type/Type.java",
+            "startLine": 42,
+            "endLine": 372,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.ast.type.Type",
+            "type": "Class",
+            "name": "Type",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/ast/type/Type.java",
+            "startLine": 42,
+            "endLine": 372,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.ast.type.TypeParameter",
+            "type": "Class",
+            "name": "TypeParameter",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/ast/type/TypeParameter.java",
+            "startLine": 44,
+            "endLine": 243,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.ast.type.TypeParameter",
+            "type": "Class",
+            "name": "TypeParameter",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/ast/type/TypeParameter.java",
+            "startLine": 46,
+            "endLine": 250,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.ast.type.UnionType",
+            "type": "Class",
+            "name": "UnionType",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/ast/type/UnionType.java",
+            "startLine": 43,
+            "endLine": 195,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.ast.type.UnionType",
+            "type": "Class",
+            "name": "UnionType",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/ast/type/UnionType.java",
+            "startLine": 49,
+            "endLine": 209,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.ast.type.UnknownType",
+            "type": "Class",
+            "name": "UnknownType",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/ast/type/UnknownType.java",
+            "startLine": 39,
+            "endLine": 137,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.ast.type.UnknownType",
+            "type": "Class",
+            "name": "UnknownType",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/ast/type/UnknownType.java",
+            "startLine": 40,
+            "endLine": 151,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.ast.type.VarType",
+            "type": "Class",
+            "name": "VarType",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/ast/type/VarType.java",
+            "startLine": 38,
+            "endLine": 124,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.ast.type.VarType",
+            "type": "Class",
+            "name": "VarType",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/ast/type/VarType.java",
+            "startLine": 51,
+            "endLine": 193,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.ast.type.VoidType",
+            "type": "Class",
+            "name": "VoidType",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/ast/type/VoidType.java",
+            "startLine": 39,
+            "endLine": 129,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.ast.type.VoidType",
+            "type": "Class",
+            "name": "VoidType",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/ast/type/VoidType.java",
+            "startLine": 41,
+            "endLine": 136,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.ast.type.WildcardType",
+            "type": "Class",
+            "name": "WildcardType",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/ast/type/WildcardType.java",
+            "startLine": 41,
+            "endLine": 257,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.ast.type.WildcardType",
+            "type": "Class",
+            "name": "WildcardType",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/ast/type/WildcardType.java",
+            "startLine": 43,
+            "endLine": 281,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.JavaParserFacade",
+            "type": "Method",
+            "name": "convertToUsage",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/JavaParserFacade.java",
+            "startLine": 622,
+            "endLine": 653,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.JavaParserFacade",
+            "type": "Method",
+            "name": "convertToUsage",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/JavaParserFacade.java",
+            "startLine": 616,
+            "endLine": 629,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.JavaParserFacade",
+            "type": "Class",
+            "name": "JavaParserFacade",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/JavaParserFacade.java",
+            "startLine": 63,
+            "endLine": 904,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.JavaParserFacade",
+            "type": "Class",
+            "name": "JavaParserFacade",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/JavaParserFacade.java",
+            "startLine": 63,
+            "endLine": 760,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.TypeExtractor",
+            "type": "Method",
+            "name": "visit",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/TypeExtractor.java",
+            "startLine": 83,
+            "endLine": 91,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.TypeExtractor",
+            "type": "Method",
+            "name": "visit",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/TypeExtractor.java",
+            "startLine": 83,
+            "endLine": 91,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.TypeExtractor",
+            "type": "Method",
+            "name": "visit",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/TypeExtractor.java",
+            "startLine": 448,
+            "endLine": 454,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.TypeExtractor",
+            "type": "Method",
+            "name": "visit",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/TypeExtractor.java",
+            "startLine": 448,
+            "endLine": 454,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.TypeExtractor",
+            "type": "Class",
+            "name": "TypeExtractor",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/TypeExtractor.java",
+            "startLine": 67,
+            "endLine": 650,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.TypeExtractor",
+            "type": "Class",
+            "name": "TypeExtractor",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/TypeExtractor.java",
+            "startLine": 67,
+            "endLine": 650,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.contexts.LambdaExprContext",
+            "type": "Method",
+            "name": "solveSymbolAsValue",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/contexts/LambdaExprContext.java",
+            "startLine": 68,
+            "endLine": 212,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.contexts.LambdaExprContext",
+            "type": "Method",
+            "name": "solveSymbolAsValue",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/contexts/LambdaExprContext.java",
+            "startLine": 68,
+            "endLine": 212,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.contexts.LambdaExprContext",
+            "type": "Class",
+            "name": "LambdaExprContext",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/contexts/LambdaExprContext.java",
+            "startLine": 59,
+            "endLine": 271,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.contexts.LambdaExprContext",
+            "type": "Class",
+            "name": "LambdaExprContext",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/contexts/LambdaExprContext.java",
+            "startLine": 59,
+            "endLine": 271,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.contexts.MethodReferenceExprContext",
+            "type": "Method",
+            "name": "inferArgumentTypes",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/contexts/MethodReferenceExprContext.java",
+            "startLine": 102,
+            "endLine": 199,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.contexts.MethodReferenceExprContext",
+            "type": "Method",
+            "name": "inferArgumentTypes",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/contexts/MethodReferenceExprContext.java",
+            "startLine": 102,
+            "endLine": 199,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.contexts.MethodReferenceExprContext",
+            "type": "Class",
+            "name": "MethodReferenceExprContext",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/contexts/MethodReferenceExprContext.java",
+            "startLine": 49,
+            "endLine": 212,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.contexts.MethodReferenceExprContext",
+            "type": "Class",
+            "name": "MethodReferenceExprContext",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/contexts/MethodReferenceExprContext.java",
+            "startLine": 49,
+            "endLine": 212,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.JavaParserFacade",
+            "type": "Field",
+            "name": "JAVA_LANG_OBJECT",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/JavaParserFacade.java",
+            "startLine": 81,
+            "endLine": 81,
+            "startColumn": 33,
+            "endColumn": 83
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.ast.type.VarType",
+            "type": "Field",
+            "name": "JAVA_LANG_OBJECT",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/ast/type/VarType.java",
+            "startLine": 61,
+            "endLine": 61,
+            "startColumn": 30,
+            "endColumn": 80
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.JavaParserFacade",
+            "type": "Method",
+            "name": "convertVarTypeToUsage",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/JavaParserFacade.java",
+            "startLine": 751,
+            "endLine": 796,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.ast.type.VarType",
+            "type": "Method",
+            "name": "convertToUsage",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/ast/type/VarType.java",
+            "startLine": 140,
+            "endLine": 178,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [],
+      "baseline": [
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.JavaParserFacade",
+            "type": "Method",
+            "name": "convertClassOrInterfaceTypeToUsage",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/JavaParserFacade.java",
+            "startLine": 678,
+            "endLine": 702,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.ast.type.ClassOrInterfaceType",
+            "type": "Method",
+            "name": "convertToUsage",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/ast/type/ClassOrInterfaceType.java",
+            "startLine": 335,
+            "endLine": 359,
+            "startColumn": 5,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.JavaParserFacade",
+            "type": "Method",
+            "name": "convertWildcardTypeToUsage",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/JavaParserFacade.java",
+            "startLine": 704,
+            "endLine": 722,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.ast.type.WildcardType",
+            "type": "Method",
+            "name": "convertToUsage",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/ast/type/WildcardType.java",
+            "startLine": 260,
+            "endLine": 280,
+            "startColumn": 5,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.javaparsermodel.JavaParserFacade",
+            "type": "Method",
+            "name": "convertUnionTypeToUsage",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/JavaParserFacade.java",
+            "startLine": 736,
+            "endLine": 749,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.ast.type.UnionType",
+            "type": "Method",
+            "name": "convertToUsage",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/ast/type/UnionType.java",
+            "startLine": 202,
+            "endLine": 208,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/javaparser/javaparser.git",
+      "sha1": "4b464255672abdcdbd97b5d27b9b90ec9f902691",
+      "url": "https://github.com/javaparser/javaparser/commit/4b464255672abdcdbd97b5d27b9b90ec9f902691",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.resolution.types.ResolvedPrimitiveType",
+            "type": "Method",
+            "name": "getNumericPrimitiveTypes",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/types/ResolvedPrimitiveType.java",
+            "startLine": 69,
+            "endLine": 71,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.resolution.types.ResolvedPrimitiveType",
+            "type": "Method",
+            "name": "getNumericPrimitiveTypes",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/types/ResolvedPrimitiveType.java",
+            "startLine": 98,
+            "endLine": 100,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.resolution.types.ResolvedPrimitiveType",
+            "type": "Method",
+            "name": "isNumeric",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/types/ResolvedPrimitiveType.java",
+            "startLine": 130,
+            "endLine": 132,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.resolution.types.ResolvedPrimitiveType",
+            "type": "Method",
+            "name": "isNumeric",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/types/ResolvedPrimitiveType.java",
+            "startLine": 166,
+            "endLine": 168,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.resolution.types.ResolvedPrimitiveType",
+            "type": "Enum",
+            "name": "ResolvedPrimitiveType",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/types/ResolvedPrimitiveType.java",
+            "startLine": 27,
+            "endLine": 188,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.resolution.types.ResolvedPrimitiveType",
+            "type": "Enum",
+            "name": "ResolvedPrimitiveType",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/types/ResolvedPrimitiveType.java",
+            "startLine": 28,
+            "endLine": 224,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.model.typesystem.PrimitiveTypeTest",
+            "type": "Class",
+            "name": "PrimitiveTypeTest",
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/model/typesystem/PrimitiveTypeTest.java",
+            "startLine": 44,
+            "endLine": 338,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.model.typesystem.PrimitiveTypeTest",
+            "type": "Class",
+            "name": "PrimitiveTypeTest",
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/model/typesystem/PrimitiveTypeTest.java",
+            "startLine": 44,
+            "endLine": 350,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.resolution.model.typesystem.ReferenceTypeImpl",
+            "type": "Method",
+            "name": "isAssignableBy",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/model/typesystem/ReferenceTypeImpl.java",
+            "startLine": 87,
+            "endLine": 154,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.resolution.model.typesystem.ReferenceTypeImpl",
+            "type": "Method",
+            "name": "isAssignableBy",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/model/typesystem/ReferenceTypeImpl.java",
+            "startLine": 88,
+            "endLine": 154,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.resolution.model.typesystem.ReferenceTypeImpl",
+            "type": "Class",
+            "name": "ReferenceTypeImpl",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/model/typesystem/ReferenceTypeImpl.java",
+            "startLine": 47,
+            "endLine": 269,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.resolution.model.typesystem.ReferenceTypeImpl",
+            "type": "Class",
+            "name": "ReferenceTypeImpl",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/model/typesystem/ReferenceTypeImpl.java",
+            "startLine": 48,
+            "endLine": 269,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/javaparser/javaparser.git",
+      "sha1": "f944fdaaf35a7bb1b1f495a6365178bb20132afa",
+      "url": "https://github.com/javaparser/javaparser/commit/f944fdaaf35a7bb1b1f495a6365178bb20132afa",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.model.resolution.SymbolReference",
+            "type": "Method",
+            "name": "unsolved",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/model/resolution/SymbolReference.java",
+            "startLine": 61,
+            "endLine": 66,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.model.resolution.SymbolReference",
+            "type": "Method",
+            "name": "unsolved",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/model/resolution/SymbolReference.java",
+            "startLine": 55,
+            "endLine": 63,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.model.resolution.SymbolReference",
+            "type": "Class",
+            "name": "SymbolReference",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/model/resolution/SymbolReference.java",
+            "startLine": 29,
+            "endLine": 114,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.model.resolution.SymbolReference",
+            "type": "Class",
+            "name": "SymbolReference",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/model/resolution/SymbolReference.java",
+            "startLine": 29,
+            "endLine": 138,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.model.resolution.SymbolReference",
+            "type": "Method",
+            "name": "adapt",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/model/resolution/SymbolReference.java",
+            "startLine": 109,
+            "endLine": 113,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.symbolsolver.model.resolution.SymbolReference",
+            "type": "Method",
+            "name": "adapt",
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/model/resolution/SymbolReference.java",
+            "startLine": 65,
+            "endLine": 89,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/javaparser/javaparser.git",
+      "sha1": "a30a5e20678aab8034e093d75aec8cf7a6ea6c75",
+      "url": "https://github.com/javaparser/javaparser/commit/a30a5e20678aab8034e093d75aec8cf7a6ea6c75",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.printer.concretesyntaxmodel.CsmConditional.Condition",
+            "type": "Enum Constant",
+            "name": "IS_EMPTY",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/concretesyntaxmodel/CsmConditional.java",
+            "startLine": 62,
+            "endLine": 62,
+            "startColumn": 9,
+            "endColumn": 17
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.printer.concretesyntaxmodel.CsmConditional.Condition",
+            "type": "Enum Constant",
+            "name": "IS_EMPTY",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/concretesyntaxmodel/CsmConditional.java",
+            "startLine": 62,
+            "endLine": 68,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.printer.concretesyntaxmodel.CsmConditional.Condition",
+            "type": "Enum Constant",
+            "name": "IS_NOT_EMPTY",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/concretesyntaxmodel/CsmConditional.java",
+            "startLine": 63,
+            "endLine": 63,
+            "startColumn": 9,
+            "endColumn": 21
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.printer.concretesyntaxmodel.CsmConditional.Condition",
+            "type": "Enum Constant",
+            "name": "IS_NOT_EMPTY",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/concretesyntaxmodel/CsmConditional.java",
+            "startLine": 69,
+            "endLine": 75,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.printer.concretesyntaxmodel.CsmConditional.Condition",
+            "type": "Enum Constant",
+            "name": "IS_PRESENT",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/concretesyntaxmodel/CsmConditional.java",
+            "startLine": 64,
+            "endLine": 64,
+            "startColumn": 9,
+            "endColumn": 19
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.printer.concretesyntaxmodel.CsmConditional.Condition",
+            "type": "Enum Constant",
+            "name": "IS_PRESENT",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/concretesyntaxmodel/CsmConditional.java",
+            "startLine": 76,
+            "endLine": 81,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.printer.concretesyntaxmodel.CsmConditional.Condition",
+            "type": "Enum Constant",
+            "name": "FLAG",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/concretesyntaxmodel/CsmConditional.java",
+            "startLine": 65,
+            "endLine": 65,
+            "startColumn": 9,
+            "endColumn": 13
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.printer.concretesyntaxmodel.CsmConditional.Condition",
+            "type": "Enum Constant",
+            "name": "FLAG",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/concretesyntaxmodel/CsmConditional.java",
+            "startLine": 82,
+            "endLine": 87,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.printer.concretesyntaxmodel.CsmConditional.Condition",
+            "type": "Enum",
+            "name": "Condition",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/concretesyntaxmodel/CsmConditional.java",
+            "startLine": 61,
+            "endLine": 84,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.printer.concretesyntaxmodel.CsmConditional.Condition",
+            "type": "Enum",
+            "name": "Condition",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/concretesyntaxmodel/CsmConditional.java",
+            "startLine": 61,
+            "endLine": 91,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.printer.concretesyntaxmodel.CsmConditional",
+            "type": "Class",
+            "name": "CsmConditional",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/concretesyntaxmodel/CsmConditional.java",
+            "startLine": 32,
+            "endLine": 119,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.printer.concretesyntaxmodel.CsmConditional",
+            "type": "Class",
+            "name": "CsmConditional",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/concretesyntaxmodel/CsmConditional.java",
+            "startLine": 32,
+            "endLine": 126,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "container": "com.github.javaparser.printer.concretesyntaxmodel.CsmConditional.Condition",
+            "type": "Method",
+            "name": "evaluate",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/concretesyntaxmodel/CsmConditional.java",
+            "startLine": 67,
+            "endLine": 83,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "container": "com.github.javaparser.printer.concretesyntaxmodel.CsmConditional.Condition",
+            "type": "Method",
+            "name": "evaluate",
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/concretesyntaxmodel/CsmConditional.java",
+            "startLine": 89,
+            "endLine": 89,
+            "startColumn": 9,
+            "endColumn": 75
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": []
+    }
+  ]
+}

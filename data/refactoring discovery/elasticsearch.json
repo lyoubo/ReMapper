@@ -1,0 +1,2141 @@
+{
+  "results": [
+    {
+      "repository": "https://github.com/elastic/elasticsearch.git",
+      "sha1": "7cfd89dd6824bed5ab61075e69a7c49778036c9b",
+      "url": "https://github.com/elastic/elasticsearch/commit/7cfd89dd6824bed5ab61075e69a7c49778036c9b",
+      "ourApproach": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	DEFAULT_TIMEOUT : TimeValue to DEFAULT_TIMEOUT_FOR_API : TimeValue in class org.elasticsearch.xpack.core.ml.action.InferModelAction.Request",
+          "leftSideLocation": {
+            "filePath": "x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/ml/action/InferModelAction.java",
+            "startLine": 78,
+            "endLine": 78,
+            "startColumn": 39,
+            "endColumn": 87
+          },
+          "rightSideLocation": {
+            "filePath": "x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/ml/action/InferModelAction.java",
+            "startLine": 78,
+            "endLine": 78,
+            "startColumn": 39,
+            "endColumn": 95
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public forDocs(modelId String, docs List<Map<String,Object>>, update InferenceConfigUpdate, previouslyLicensed boolean) : Request renamed to public forIngestDocs(modelId String, docs List<Map<String,Object>>, update InferenceConfigUpdate, previouslyLicensed boolean) : Request in class org.elasticsearch.xpack.core.ml.action.InferModelAction.Request",
+          "leftSideLocation": {
+            "filePath": "x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/ml/action/InferModelAction.java",
+            "startLine": 90,
+            "endLine": 104,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "filePath": "x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/ml/action/InferModelAction.java",
+            "startLine": 91,
+            "endLine": 111,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	void to Request in method public setInferenceTimeout(inferenceTimeout TimeValue) : Request from class org.elasticsearch.xpack.core.ml.action.InferModelAction.Request",
+          "leftSideLocation": {
+            "filePath": "x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/ml/action/InferModelAction.java",
+            "startLine": 183,
+            "endLine": 185,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "filePath": "x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/ml/action/InferModelAction.java",
+            "startLine": 196,
+            "endLine": 199,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public forDocs(modelId String, docs List<Map<String,Object>>, update InferenceConfigUpdate, previouslyLicensed boolean) : Request renamed to public forIngestDocs(modelId String, docs List<Map<String,Object>>, update InferenceConfigUpdate, previouslyLicensed boolean) : Request in class org.elasticsearch.xpack.core.ml.action.InferModelAction.Request",
+          "leftSideLocation": {
+            "filePath": "x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/ml/action/InferModelAction.java",
+            "startLine": 90,
+            "endLine": 104,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "filePath": "x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/ml/action/InferModelAction.java",
+            "startLine": 91,
+            "endLine": 111,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	void to Request in method public setInferenceTimeout(inferenceTimeout TimeValue) : Request from class org.elasticsearch.xpack.core.ml.action.InferModelAction.Request",
+          "leftSideLocation": {
+            "filePath": "x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/ml/action/InferModelAction.java",
+            "startLine": 183,
+            "endLine": 185,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "filePath": "x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/ml/action/InferModelAction.java",
+            "startLine": 196,
+            "endLine": 199,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	DEFAULT_TIMEOUT : TimeValue to DEFAULT_TIMEOUT_FOR_API : TimeValue in class org.elasticsearch.xpack.core.ml.action.InferModelAction.Request",
+          "leftSideLocation": {
+            "filePath": "x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/ml/action/InferModelAction.java",
+            "startLine": 78,
+            "endLine": 78,
+            "startColumn": 39,
+            "endColumn": 87
+          },
+          "rightSideLocation": {
+            "filePath": "x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/ml/action/InferModelAction.java",
+            "startLine": 78,
+            "endLine": 78,
+            "startColumn": 39,
+            "endColumn": 95
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/elastic/elasticsearch.git",
+      "sha1": "7b98f79efd7fa5797716b86627433f5e5a862521",
+      "url": "https://github.com/elastic/elasticsearch/commit/7b98f79efd7fa5797716b86627433f5e5a862521",
+      "ourApproach": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.elasticsearch.index.analysis.KeywordAnalyzerProvider moved to org.elasticsearch.analysis.common.KeywordAnalyzerProvider",
+          "leftSideLocation": {
+            "filePath": "server/src/main/java/org/elasticsearch/index/analysis/KeywordAnalyzerProvider.java",
+            "startLine": 16,
+            "endLine": 29,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "modules/analysis-common/src/main/java/org/elasticsearch/analysis/common/KeywordAnalyzerProvider.java",
+            "startLine": 17,
+            "endLine": 30,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.elasticsearch.index.analysis.SimpleAnalyzerProvider moved to org.elasticsearch.analysis.common.SimpleAnalyzerProvider",
+          "leftSideLocation": {
+            "filePath": "server/src/main/java/org/elasticsearch/index/analysis/SimpleAnalyzerProvider.java",
+            "startLine": 16,
+            "endLine": 29,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "modules/analysis-common/src/main/java/org/elasticsearch/analysis/common/SimpleAnalyzerProvider.java",
+            "startLine": 17,
+            "endLine": 30,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.elasticsearch.index.analysis.StopAnalyzerProvider moved to org.elasticsearch.analysis.common.StopAnalyzerProvider",
+          "leftSideLocation": {
+            "filePath": "server/src/main/java/org/elasticsearch/index/analysis/StopAnalyzerProvider.java",
+            "startLine": 18,
+            "endLine": 32,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "modules/analysis-common/src/main/java/org/elasticsearch/analysis/common/StopAnalyzerProvider.java",
+            "startLine": 20,
+            "endLine": 34,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.elasticsearch.index.analysis.WhitespaceAnalyzerProvider moved to org.elasticsearch.analysis.common.WhitespaceAnalyzerProvider",
+          "leftSideLocation": {
+            "filePath": "server/src/main/java/org/elasticsearch/index/analysis/WhitespaceAnalyzerProvider.java",
+            "startLine": 16,
+            "endLine": 29,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "modules/analysis-common/src/main/java/org/elasticsearch/analysis/common/WhitespaceAnalyzerProvider.java",
+            "startLine": 17,
+            "endLine": 30,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.elasticsearch.index.analysis.StopAnalyzerTests moved to org.elasticsearch.analysis.common.StopAnalyzerTests",
+          "leftSideLocation": {
+            "filePath": "server/src/test/java/org/elasticsearch/index/analysis/StopAnalyzerTests.java",
+            "startLine": 21,
+            "endLine": 39,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "modules/analysis-common/src/test/java/org/elasticsearch/analysis/common/StopAnalyzerTests.java",
+            "startLine": 23,
+            "endLine": 41,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.elasticsearch.index.analysis.KeywordAnalyzerProvider moved to org.elasticsearch.analysis.common.KeywordAnalyzerProvider",
+          "leftSideLocation": {
+            "filePath": "server/src/main/java/org/elasticsearch/index/analysis/KeywordAnalyzerProvider.java",
+            "startLine": 16,
+            "endLine": 29,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "modules/analysis-common/src/main/java/org/elasticsearch/analysis/common/KeywordAnalyzerProvider.java",
+            "startLine": 17,
+            "endLine": 30,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.elasticsearch.index.analysis.SimpleAnalyzerProvider moved to org.elasticsearch.analysis.common.SimpleAnalyzerProvider",
+          "leftSideLocation": {
+            "filePath": "server/src/main/java/org/elasticsearch/index/analysis/SimpleAnalyzerProvider.java",
+            "startLine": 16,
+            "endLine": 29,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "modules/analysis-common/src/main/java/org/elasticsearch/analysis/common/SimpleAnalyzerProvider.java",
+            "startLine": 17,
+            "endLine": 30,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.elasticsearch.index.analysis.StopAnalyzerProvider moved to org.elasticsearch.analysis.common.StopAnalyzerProvider",
+          "leftSideLocation": {
+            "filePath": "server/src/main/java/org/elasticsearch/index/analysis/StopAnalyzerProvider.java",
+            "startLine": 18,
+            "endLine": 32,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "modules/analysis-common/src/main/java/org/elasticsearch/analysis/common/StopAnalyzerProvider.java",
+            "startLine": 20,
+            "endLine": 34,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.elasticsearch.index.analysis.WhitespaceAnalyzerProvider moved to org.elasticsearch.analysis.common.WhitespaceAnalyzerProvider",
+          "leftSideLocation": {
+            "filePath": "server/src/main/java/org/elasticsearch/index/analysis/WhitespaceAnalyzerProvider.java",
+            "startLine": 16,
+            "endLine": 29,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "modules/analysis-common/src/main/java/org/elasticsearch/analysis/common/WhitespaceAnalyzerProvider.java",
+            "startLine": 17,
+            "endLine": 30,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.elasticsearch.index.analysis.StopAnalyzerTests moved to org.elasticsearch.analysis.common.StopAnalyzerTests",
+          "leftSideLocation": {
+            "filePath": "server/src/test/java/org/elasticsearch/index/analysis/StopAnalyzerTests.java",
+            "startLine": 21,
+            "endLine": 39,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "modules/analysis-common/src/test/java/org/elasticsearch/analysis/common/StopAnalyzerTests.java",
+            "startLine": 23,
+            "endLine": 41,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/elastic/elasticsearch.git",
+      "sha1": "2b3c7e7451874446657c3cc26ffb666729a2678b",
+      "url": "https://github.com/elastic/elasticsearch/commit/2b3c7e7451874446657c3cc26ffb666729a2678b",
+      "ourApproach": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	package maybeRewriteForOlderVersion(olderVersion TransportVersion, remoteAccessRealmVersion TransportVersion) : Authentication inlined to public maybeRewriteForOlderVersion(olderVersion TransportVersion) : Authentication in class org.elasticsearch.xpack.core.security.authc.Authentication",
+          "leftSideLocation": {
+            "filePath": "x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/security/authc/Authentication.java",
+            "startLine": 211,
+            "endLine": 270,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/security/authc/Authentication.java",
+            "startLine": 203,
+            "endLine": 258,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	package maybeRewriteForOlderVersion(olderVersion TransportVersion, remoteAccessRealmVersion TransportVersion) : Authentication inlined to public maybeRewriteForOlderVersion(olderVersion TransportVersion) : Authentication in class org.elasticsearch.xpack.core.security.authc.Authentication",
+          "leftSideLocation": {
+            "filePath": "x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/security/authc/Authentication.java",
+            "startLine": 211,
+            "endLine": 270,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/security/authc/Authentication.java",
+            "startLine": 203,
+            "endLine": 258,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/elastic/elasticsearch.git",
+      "sha1": "8ec73d6a559d069e18eadc07db493694df196bd4",
+      "url": "https://github.com/elastic/elasticsearch/commit/8ec73d6a559d069e18eadc07db493694df196bd4",
+      "ourApproach": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.elasticsearch.blobcache.store.InMemoryNoOpCommitDirectoryTests moved to org.elasticsearch.xpack.searchablesnapshots.store.InMemoryNoOpCommitDirectoryTests",
+          "leftSideLocation": {
+            "filePath": "x-pack/plugin/blob-cache/src/test/java/org/elasticsearch/blobcache/store/InMemoryNoOpCommitDirectoryTests.java",
+            "startLine": 44,
+            "endLine": 258,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "x-pack/plugin/searchable-snapshots/src/test/java/org/elasticsearch/xpack/searchablesnapshots/store/InMemoryNoOpCommitDirectoryTests.java",
+            "startLine": 44,
+            "endLine": 258,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.elasticsearch.blobcache.store.InMemoryNoOpCommitDirectory moved to org.elasticsearch.xpack.searchablesnapshots.store.InMemoryNoOpCommitDirectory",
+          "leftSideLocation": {
+            "filePath": "x-pack/plugin/blob-cache/src/main/java/org/elasticsearch/blobcache/store/InMemoryNoOpCommitDirectory.java",
+            "startLine": 27,
+            "endLine": 147,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "x-pack/plugin/searchable-snapshots/src/main/java/org/elasticsearch/xpack/searchablesnapshots/store/InMemoryNoOpCommitDirectory.java",
+            "startLine": 27,
+            "endLine": 147,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.elasticsearch.blobcache.store.InMemoryNoOpCommitDirectory moved to org.elasticsearch.xpack.searchablesnapshots.store.InMemoryNoOpCommitDirectory",
+          "leftSideLocation": {
+            "filePath": "x-pack/plugin/blob-cache/src/main/java/org/elasticsearch/blobcache/store/InMemoryNoOpCommitDirectory.java",
+            "startLine": 27,
+            "endLine": 147,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "x-pack/plugin/searchable-snapshots/src/main/java/org/elasticsearch/xpack/searchablesnapshots/store/InMemoryNoOpCommitDirectory.java",
+            "startLine": 27,
+            "endLine": 147,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.elasticsearch.blobcache.store.InMemoryNoOpCommitDirectoryTests moved to org.elasticsearch.xpack.searchablesnapshots.store.InMemoryNoOpCommitDirectoryTests",
+          "leftSideLocation": {
+            "filePath": "x-pack/plugin/blob-cache/src/test/java/org/elasticsearch/blobcache/store/InMemoryNoOpCommitDirectoryTests.java",
+            "startLine": 44,
+            "endLine": 258,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "x-pack/plugin/searchable-snapshots/src/test/java/org/elasticsearch/xpack/searchablesnapshots/store/InMemoryNoOpCommitDirectoryTests.java",
+            "startLine": 44,
+            "endLine": 258,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/elastic/elasticsearch.git",
+      "sha1": "36b8083aaf1e408b67eb7b683ce465c3c133bfab",
+      "url": "https://github.com/elastic/elasticsearch/commit/36b8083aaf1e408b67eb7b683ce465c3c133bfab",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private performRequestAgainstFulfillingCluster(request Request) : Response extracted from private getRemoteAccessApiKeyAndStoreInSettings() : void in class org.elasticsearch.xpack.remotecluster.RemoteClusterSecurityRestIT",
+          "leftSideLocation": {
+            "filePath": "x-pack/plugin/security/qa/multi-cluster/src/test/java/org/elasticsearch/xpack/remotecluster/RemoteClusterSecurityRestIT.java",
+            "startLine": 204,
+            "endLine": 214,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "x-pack/plugin/security/qa/multi-cluster/src/javaRestTest/java/org/elasticsearch/xpack/remotecluster/RemoteClusterSecurityRestIT.java",
+            "startLine": 296,
+            "endLine": 299,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private performRequestAgainstFulfillingCluster(request Request) : Response extracted from private getRemoteAccessApiKeyAndStoreInSettings() : void in class org.elasticsearch.xpack.remotecluster.RemoteClusterSecurityRestIT",
+          "leftSideLocation": {
+            "filePath": "x-pack/plugin/security/qa/multi-cluster/src/test/java/org/elasticsearch/xpack/remotecluster/RemoteClusterSecurityRestIT.java",
+            "startLine": 204,
+            "endLine": 214,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "x-pack/plugin/security/qa/multi-cluster/src/javaRestTest/java/org/elasticsearch/xpack/remotecluster/RemoteClusterSecurityRestIT.java",
+            "startLine": 296,
+            "endLine": 299,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/elastic/elasticsearch.git",
+      "sha1": "9f4457cd73c081dc0f3f7066e7a2e15da7619130",
+      "url": "https://github.com/elastic/elasticsearch/commit/9f4457cd73c081dc0f3f7066e7a2e15da7619130",
+      "ourApproach": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	frameIds : String[] to frameIds : List<String> in class org.elasticsearch.xpack.profiler.StackTrace",
+          "leftSideLocation": {
+            "filePath": "x-pack/plugin/profiler/src/main/java/org/elasticsearch/xpack/profiler/StackTrace.java",
+            "startLine": 21,
+            "endLine": 21,
+            "startColumn": 14,
+            "endColumn": 22
+          },
+          "rightSideLocation": {
+            "filePath": "x-pack/plugin/profiler/src/main/java/org/elasticsearch/xpack/profiler/StackTrace.java",
+            "startLine": 24,
+            "endLine": 24,
+            "startColumn": 18,
+            "endColumn": 26
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	typeIds : int[] to typeIds : List<Integer> in class org.elasticsearch.xpack.profiler.StackTrace",
+          "leftSideLocation": {
+            "filePath": "x-pack/plugin/profiler/src/main/java/org/elasticsearch/xpack/profiler/StackTrace.java",
+            "startLine": 22,
+            "endLine": 22,
+            "startColumn": 11,
+            "endColumn": 18
+          },
+          "rightSideLocation": {
+            "filePath": "x-pack/plugin/profiler/src/main/java/org/elasticsearch/xpack/profiler/StackTrace.java",
+            "startLine": 25,
+            "endLine": 25,
+            "startColumn": 19,
+            "endColumn": 26
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	int[] to List<Integer> in method package runLengthDecodeBase64Url(input String, size int, capacity int) : List<Integer> from class org.elasticsearch.xpack.profiler.StackTrace",
+          "leftSideLocation": {
+            "filePath": "x-pack/plugin/profiler/src/main/java/org/elasticsearch/xpack/profiler/StackTrace.java",
+            "startLine": 45,
+            "endLine": 129,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "x-pack/plugin/profiler/src/main/java/org/elasticsearch/xpack/profiler/StackTrace.java",
+            "startLine": 48,
+            "endLine": 135,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	addressOrLines : int[] to addressOrLines : List<Integer> in class org.elasticsearch.xpack.profiler.StackTrace",
+          "leftSideLocation": {
+            "filePath": "x-pack/plugin/profiler/src/main/java/org/elasticsearch/xpack/profiler/StackTrace.java",
+            "startLine": 19,
+            "endLine": 19,
+            "startColumn": 11,
+            "endColumn": 25
+          },
+          "rightSideLocation": {
+            "filePath": "x-pack/plugin/profiler/src/main/java/org/elasticsearch/xpack/profiler/StackTrace.java",
+            "startLine": 22,
+            "endLine": 22,
+            "startColumn": 19,
+            "endColumn": 33
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	fileIds : String[] to fileIds : List<String> in class org.elasticsearch.xpack.profiler.StackTrace",
+          "leftSideLocation": {
+            "filePath": "x-pack/plugin/profiler/src/main/java/org/elasticsearch/xpack/profiler/StackTrace.java",
+            "startLine": 20,
+            "endLine": 20,
+            "startColumn": 14,
+            "endColumn": 21
+          },
+          "rightSideLocation": {
+            "filePath": "x-pack/plugin/profiler/src/main/java/org/elasticsearch/xpack/profiler/StackTrace.java",
+            "startLine": 23,
+            "endLine": 23,
+            "startColumn": 18,
+            "endColumn": 25
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	addressOrLines : int[] to addressOrLines : List<Integer> in class org.elasticsearch.xpack.profiler.StackTrace",
+          "leftSideLocation": {
+            "filePath": "x-pack/plugin/profiler/src/main/java/org/elasticsearch/xpack/profiler/StackTrace.java",
+            "startLine": 19,
+            "endLine": 19,
+            "startColumn": 11,
+            "endColumn": 25
+          },
+          "rightSideLocation": {
+            "filePath": "x-pack/plugin/profiler/src/main/java/org/elasticsearch/xpack/profiler/StackTrace.java",
+            "startLine": 22,
+            "endLine": 22,
+            "startColumn": 19,
+            "endColumn": 33
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	fileIds : String[] to fileIds : List<String> in class org.elasticsearch.xpack.profiler.StackTrace",
+          "leftSideLocation": {
+            "filePath": "x-pack/plugin/profiler/src/main/java/org/elasticsearch/xpack/profiler/StackTrace.java",
+            "startLine": 20,
+            "endLine": 20,
+            "startColumn": 14,
+            "endColumn": 21
+          },
+          "rightSideLocation": {
+            "filePath": "x-pack/plugin/profiler/src/main/java/org/elasticsearch/xpack/profiler/StackTrace.java",
+            "startLine": 23,
+            "endLine": 23,
+            "startColumn": 18,
+            "endColumn": 25
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	frameIds : String[] to frameIds : List<String> in class org.elasticsearch.xpack.profiler.StackTrace",
+          "leftSideLocation": {
+            "filePath": "x-pack/plugin/profiler/src/main/java/org/elasticsearch/xpack/profiler/StackTrace.java",
+            "startLine": 21,
+            "endLine": 21,
+            "startColumn": 14,
+            "endColumn": 22
+          },
+          "rightSideLocation": {
+            "filePath": "x-pack/plugin/profiler/src/main/java/org/elasticsearch/xpack/profiler/StackTrace.java",
+            "startLine": 24,
+            "endLine": 24,
+            "startColumn": 18,
+            "endColumn": 26
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	typeIds : int[] to typeIds : List<Integer> in class org.elasticsearch.xpack.profiler.StackTrace",
+          "leftSideLocation": {
+            "filePath": "x-pack/plugin/profiler/src/main/java/org/elasticsearch/xpack/profiler/StackTrace.java",
+            "startLine": 22,
+            "endLine": 22,
+            "startColumn": 11,
+            "endColumn": 18
+          },
+          "rightSideLocation": {
+            "filePath": "x-pack/plugin/profiler/src/main/java/org/elasticsearch/xpack/profiler/StackTrace.java",
+            "startLine": 25,
+            "endLine": 25,
+            "startColumn": 19,
+            "endColumn": 26
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	int[] to List<Integer> in method package runLengthDecodeBase64Url(input String, size int, capacity int) : List<Integer> from class org.elasticsearch.xpack.profiler.StackTrace",
+          "leftSideLocation": {
+            "filePath": "x-pack/plugin/profiler/src/main/java/org/elasticsearch/xpack/profiler/StackTrace.java",
+            "startLine": 45,
+            "endLine": 129,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "x-pack/plugin/profiler/src/main/java/org/elasticsearch/xpack/profiler/StackTrace.java",
+            "startLine": 48,
+            "endLine": 135,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/elastic/elasticsearch.git",
+      "sha1": "469c20a8afaa703b8c3c7d8180b985b968d0cb03",
+      "url": "https://github.com/elastic/elasticsearch/commit/469c20a8afaa703b8c3c7d8180b985b968d0cb03",
+      "ourApproach": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.elasticsearch.xpack.ml.integration.SemanticSearchIT renamed to org.elasticsearch.xpack.ml.integration.TextEmbeddingQueryIT",
+          "leftSideLocation": {
+            "filePath": "x-pack/plugin/ml/qa/native-multi-node-tests/src/javaRestTest/java/org/elasticsearch/xpack/ml/integration/SemanticSearchIT.java",
+            "startLine": 16,
+            "endLine": 139,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "x-pack/plugin/ml/qa/native-multi-node-tests/src/javaRestTest/java/org/elasticsearch/xpack/ml/integration/TextEmbeddingQueryIT.java",
+            "startLine": 26,
+            "endLine": 393,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.elasticsearch.search.vectors.AbstractQueryVectorBuilderTestCase moved to org.elasticsearch.test.AbstractQueryVectorBuilderTestCase",
+          "leftSideLocation": {
+            "filePath": "server/src/test/java/org/elasticsearch/search/vectors/AbstractQueryVectorBuilderTestCase.java",
+            "startLine": 36,
+            "endLine": 164,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "test/framework/src/main/java/org/elasticsearch/test/AbstractQueryVectorBuilderTestCase.java",
+            "startLine": 35,
+            "endLine": 171,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.elasticsearch.search.vectors.AbstractQueryVectorBuilderTestCase moved to org.elasticsearch.test.AbstractQueryVectorBuilderTestCase",
+          "leftSideLocation": {
+            "filePath": "server/src/test/java/org/elasticsearch/search/vectors/AbstractQueryVectorBuilderTestCase.java",
+            "startLine": 36,
+            "endLine": 164,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "test/framework/src/main/java/org/elasticsearch/test/AbstractQueryVectorBuilderTestCase.java",
+            "startLine": 35,
+            "endLine": 171,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.elasticsearch.xpack.ml.integration.SemanticSearchIT renamed to org.elasticsearch.xpack.ml.integration.TextEmbeddingQueryIT",
+          "leftSideLocation": {
+            "filePath": "x-pack/plugin/ml/qa/native-multi-node-tests/src/javaRestTest/java/org/elasticsearch/xpack/ml/integration/SemanticSearchIT.java",
+            "startLine": 16,
+            "endLine": 139,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "x-pack/plugin/ml/qa/native-multi-node-tests/src/javaRestTest/java/org/elasticsearch/xpack/ml/integration/TextEmbeddingQueryIT.java",
+            "startLine": 26,
+            "endLine": 393,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/elastic/elasticsearch.git",
+      "sha1": "e837ff7b3fc2c38f76e3f44bfa74087c02ba5080",
+      "url": "https://github.com/elastic/elasticsearch/commit/e837ff7b3fc2c38f76e3f44bfa74087c02ba5080",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.elasticsearch.common.util.concurrent.AbstractThrottledTaskRunner from Class org.elasticsearch.common.util.concurrent.PrioritizedThrottledTaskRunner",
+          "leftSideLocation": {
+            "filePath": "server/src/main/java/org/elasticsearch/common/util/concurrent/PrioritizedThrottledTaskRunner.java",
+            "startLine": 20,
+            "endLine": 141,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "server/src/main/java/org/elasticsearch/common/util/concurrent/AbstractThrottledTaskRunner.java",
+            "startLine": 22,
+            "endLine": 158,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.elasticsearch.common.util.concurrent.CyclicBarrierUtils from Class org.elasticsearch.common.util.concurrent.PrioritizedThrottledTaskRunnerTests",
+          "leftSideLocation": {
+            "filePath": "server/src/test/java/org/elasticsearch/common/util/concurrent/PrioritizedThrottledTaskRunnerTests.java",
+            "startLine": 28,
+            "endLine": 252,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "test/framework/src/main/java/org/elasticsearch/common/util/concurrent/CyclicBarrierUtils.java",
+            "startLine": 14,
+            "endLine": 30,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.elasticsearch.common.util.concurrent.AbstractThrottledTaskRunner from class org.elasticsearch.common.util.concurrent.PrioritizedThrottledTaskRunner",
+          "leftSideLocation": {
+            "filePath": "server/src/main/java/org/elasticsearch/common/util/concurrent/PrioritizedThrottledTaskRunner.java",
+            "startLine": 20,
+            "endLine": 141,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "server/src/main/java/org/elasticsearch/common/util/concurrent/AbstractThrottledTaskRunner.java",
+            "startLine": 22,
+            "endLine": 158,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/elastic/elasticsearch.git",
+      "sha1": "b0c380d784274900e3e19763e7f3dda54f828584",
+      "url": "https://github.com/elastic/elasticsearch/commit/b0c380d784274900e3e19763e7f3dda54f828584",
+      "ourApproach": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	ResponseFactory<Response,EmptyResult> to ResponseFactory<Response,ShardResult> in method protected getResponseFactory(request Request, clusterState ClusterState) : ResponseFactory<Response,ShardResult> from class org.elasticsearch.action.support.broadcast.node.TransportBroadcastByNodeActionTests.TestTransportBroadcastByNodeAction",
+          "leftSideLocation": {
+            "filePath": "server/src/test/java/org/elasticsearch/action/support/broadcast/node/TransportBroadcastByNodeActionTests.java",
+            "startLine": 137,
+            "endLine": 145,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "filePath": "server/src/test/java/org/elasticsearch/action/support/broadcast/node/TransportBroadcastByNodeActionTests.java",
+            "startLine": 150,
+            "endLine": 158,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	EmptyResult to ShardResult in method protected readShardResult(in StreamInput) : ShardResult from class org.elasticsearch.action.support.broadcast.node.TransportBroadcastByNodeActionTests.TestTransportBroadcastByNodeAction",
+          "leftSideLocation": {
+            "filePath": "server/src/test/java/org/elasticsearch/action/support/broadcast/node/TransportBroadcastByNodeActionTests.java",
+            "startLine": 132,
+            "endLine": 135,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "filePath": "server/src/test/java/org/elasticsearch/action/support/broadcast/node/TransportBroadcastByNodeActionTests.java",
+            "startLine": 145,
+            "endLine": 148,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private cancelledTask() : Task inlined to public testNoShardOperationsExecutedIfTaskCancelled() : void in class org.elasticsearch.action.support.broadcast.node.TransportBroadcastByNodeActionTests",
+          "leftSideLocation": {
+            "filePath": "server/src/test/java/org/elasticsearch/action/support/broadcast/node/TransportBroadcastByNodeActionTests.java",
+            "startLine": 549,
+            "endLine": 553,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "server/src/test/java/org/elasticsearch/action/support/broadcast/node/TransportBroadcastByNodeActionTests.java",
+            "startLine": 350,
+            "endLine": 371,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	EmptyResult to ShardResult in method protected readShardResult(in StreamInput) : ShardResult from class org.elasticsearch.action.support.broadcast.node.TransportBroadcastByNodeActionTests.TestTransportBroadcastByNodeAction",
+          "leftSideLocation": {
+            "filePath": "server/src/test/java/org/elasticsearch/action/support/broadcast/node/TransportBroadcastByNodeActionTests.java",
+            "startLine": 132,
+            "endLine": 135,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "filePath": "server/src/test/java/org/elasticsearch/action/support/broadcast/node/TransportBroadcastByNodeActionTests.java",
+            "startLine": 145,
+            "endLine": 148,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	ResponseFactory<Response,EmptyResult> to ResponseFactory<Response,ShardResult> in method protected getResponseFactory(request Request, clusterState ClusterState) : ResponseFactory<Response,ShardResult> from class org.elasticsearch.action.support.broadcast.node.TransportBroadcastByNodeActionTests.TestTransportBroadcastByNodeAction",
+          "leftSideLocation": {
+            "filePath": "server/src/test/java/org/elasticsearch/action/support/broadcast/node/TransportBroadcastByNodeActionTests.java",
+            "startLine": 137,
+            "endLine": 145,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "filePath": "server/src/test/java/org/elasticsearch/action/support/broadcast/node/TransportBroadcastByNodeActionTests.java",
+            "startLine": 150,
+            "endLine": 158,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private cancelledTask() : Task inlined to public testNoShardOperationsExecutedIfTaskCancelled() : void in class org.elasticsearch.action.support.broadcast.node.TransportBroadcastByNodeActionTests",
+          "leftSideLocation": {
+            "filePath": "server/src/test/java/org/elasticsearch/action/support/broadcast/node/TransportBroadcastByNodeActionTests.java",
+            "startLine": 549,
+            "endLine": 553,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "server/src/test/java/org/elasticsearch/action/support/broadcast/node/TransportBroadcastByNodeActionTests.java",
+            "startLine": 350,
+            "endLine": 371,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/elastic/elasticsearch.git",
+      "sha1": "13b71900a62849d8ed3ee20652aaf06a710f009c",
+      "url": "https://github.com/elastic/elasticsearch/commit/13b71900a62849d8ed3ee20652aaf06a710f009c",
+      "ourApproach": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	pollInterval : TimeValue to pollIntervalSupplier : Supplier<TimeValue> in class org.elasticsearch.ingest.geoip.GeoIpDownloader",
+          "leftSideLocation": {
+            "filePath": "modules/ingest-geoip/src/main/java/org/elasticsearch/ingest/geoip/GeoIpDownloader.java",
+            "startLine": 94,
+            "endLine": 94,
+            "startColumn": 32,
+            "endColumn": 44
+          },
+          "rightSideLocation": {
+            "filePath": "modules/ingest-geoip/src/main/java/org/elasticsearch/ingest/geoip/GeoIpDownloader.java",
+            "startLine": 88,
+            "endLine": 88,
+            "startColumn": 39,
+            "endColumn": 59
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	pollInterval : TimeValue to pollIntervalSupplier : Supplier<TimeValue> in class org.elasticsearch.ingest.geoip.GeoIpDownloader",
+          "leftSideLocation": {
+            "filePath": "modules/ingest-geoip/src/main/java/org/elasticsearch/ingest/geoip/GeoIpDownloader.java",
+            "startLine": 94,
+            "endLine": 94,
+            "startColumn": 32,
+            "endColumn": 44
+          },
+          "rightSideLocation": {
+            "filePath": "modules/ingest-geoip/src/main/java/org/elasticsearch/ingest/geoip/GeoIpDownloader.java",
+            "startLine": 88,
+            "endLine": 88,
+            "startColumn": 39,
+            "endColumn": 59
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private putPipeline() : void renamed to private putGeoIpPipeline(pipelineId String) : void in class org.elasticsearch.ingest.geoip.GeoIpDownloaderIT",
+          "leftSideLocation": {
+            "filePath": "modules/ingest-geoip/src/internalClusterTest/java/org/elasticsearch/ingest/geoip/GeoIpDownloaderIT.java",
+            "startLine": 441,
+            "endLine": 488,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "modules/ingest-geoip/src/internalClusterTest/java/org/elasticsearch/ingest/geoip/GeoIpDownloaderIT.java",
+            "startLine": 487,
+            "endLine": 540,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private putPipeline() : void renamed to private putGeoIpPipeline(pipelineId String) : void in class org.elasticsearch.ingest.geoip.GeoIpDownloaderIT",
+          "leftSideLocation": {
+            "filePath": "modules/ingest-geoip/src/internalClusterTest/java/org/elasticsearch/ingest/geoip/GeoIpDownloaderIT.java",
+            "startLine": 441,
+            "endLine": 488,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "modules/ingest-geoip/src/internalClusterTest/java/org/elasticsearch/ingest/geoip/GeoIpDownloaderIT.java",
+            "startLine": 487,
+            "endLine": 540,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/elastic/elasticsearch.git",
+      "sha1": "c87b7bc17ed6fe721aa12d54d04cf95b6f2a8b9f",
+      "url": "https://github.com/elastic/elasticsearch/commit/c87b7bc17ed6fe721aa12d54d04cf95b6f2a8b9f",
+      "ourApproach": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	Version to TransportVersion in method public getMinimalSupportedVersion() : TransportVersion from class org.elasticsearch.example.customsuggester.CustomSuggestionBuilder",
+          "leftSideLocation": {
+            "filePath": "plugins/examples/custom-suggester/src/main/java/org/elasticsearch/example/customsuggester/CustomSuggestionBuilder.java",
+            "startLine": 133,
+            "endLine": 136,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "plugins/examples/custom-suggester/src/main/java/org/elasticsearch/example/customsuggester/CustomSuggestionBuilder.java",
+            "startLine": 133,
+            "endLine": 136,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	Version to TransportVersion in method public getMinimalSupportedVersion() : TransportVersion from class org.elasticsearch.example.rescore.ExampleRescoreBuilder",
+          "leftSideLocation": {
+            "filePath": "plugins/examples/rescore/src/main/java/org/elasticsearch/example/rescore/ExampleRescoreBuilder.java",
+            "startLine": 219,
+            "endLine": 222,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "plugins/examples/rescore/src/main/java/org/elasticsearch/example/rescore/ExampleRescoreBuilder.java",
+            "startLine": 219,
+            "endLine": 222,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	Version to TransportVersion in method public getMinimalSupportedVersion() : TransportVersion from class org.elasticsearch.example.customsuggester.CustomSuggestionBuilder",
+          "leftSideLocation": {
+            "filePath": "plugins/examples/custom-suggester/src/main/java/org/elasticsearch/example/customsuggester/CustomSuggestionBuilder.java",
+            "startLine": 133,
+            "endLine": 136,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "plugins/examples/custom-suggester/src/main/java/org/elasticsearch/example/customsuggester/CustomSuggestionBuilder.java",
+            "startLine": 133,
+            "endLine": 136,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	Version to TransportVersion in method public getMinimalSupportedVersion() : TransportVersion from class org.elasticsearch.example.rescore.ExampleRescoreBuilder",
+          "leftSideLocation": {
+            "filePath": "plugins/examples/rescore/src/main/java/org/elasticsearch/example/rescore/ExampleRescoreBuilder.java",
+            "startLine": 219,
+            "endLine": 222,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "plugins/examples/rescore/src/main/java/org/elasticsearch/example/rescore/ExampleRescoreBuilder.java",
+            "startLine": 219,
+            "endLine": 222,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/elastic/elasticsearch.git",
+      "sha1": "14e709659844d1278714f274252517e5f615860f",
+      "url": "https://github.com/elastic/elasticsearch/commit/14e709659844d1278714f274252517e5f615860f",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private loader(path String, closed AtomicBoolean) : DatabaseReaderLazyLoader extracted from private loader(path String) : CheckedSupplier<DatabaseReaderLazyLoader,IOException> in class org.elasticsearch.ingest.geoip.GeoIpProcessorTests",
+          "leftSideLocation": {
+            "filePath": "modules/ingest-geoip/src/test/java/org/elasticsearch/ingest/geoip/GeoIpProcessorTests.java",
+            "startLine": 548,
+            "endLine": 576,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "modules/ingest-geoip/src/test/java/org/elasticsearch/ingest/geoip/GeoIpProcessorTests.java",
+            "startLine": 583,
+            "endLine": 617,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private loader(path String, closed AtomicBoolean) : DatabaseReaderLazyLoader extracted from private loader(path String) : CheckedSupplier<DatabaseReaderLazyLoader,IOException> in class org.elasticsearch.ingest.geoip.GeoIpProcessorTests",
+          "leftSideLocation": {
+            "filePath": "modules/ingest-geoip/src/test/java/org/elasticsearch/ingest/geoip/GeoIpProcessorTests.java",
+            "startLine": 548,
+            "endLine": 576,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "modules/ingest-geoip/src/test/java/org/elasticsearch/ingest/geoip/GeoIpProcessorTests.java",
+            "startLine": 583,
+            "endLine": 617,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/elastic/elasticsearch.git",
+      "sha1": "fa52364462cd459c80701ad031b16175f287c522",
+      "url": "https://github.com/elastic/elasticsearch/commit/fa52364462cd459c80701ad031b16175f287c522",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public getFrozenCacheFile(cacheKey KeyType, length long) : CacheFile renamed to public getCacheFile(cacheKey KeyType, length long) : CacheFile in class org.elasticsearch.blobcache.shared.CacheFile",
+          "leftSideLocation": {
+            "filePath": "x-pack/plugin/blob-cache/src/main/java/org/elasticsearch/blobcache/shared/SharedBlobCacheService.java",
+            "startLine": 885,
+            "endLine": 887,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "x-pack/plugin/blob-cache/src/main/java/org/elasticsearch/blobcache/shared/SharedBlobCacheService.java",
+            "startLine": 884,
+            "endLine": 886,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	currentTimeSupplier : LongSupplier to threadPool : ThreadPool in class org.elasticsearch.blobcache.shared.SharedBlobCacheService",
+          "leftSideLocation": {
+            "filePath": "x-pack/plugin/blob-cache/src/main/java/org/elasticsearch/blobcache/shared/SharedBlobCacheService.java",
+            "startLine": 233,
+            "endLine": 233,
+            "startColumn": 32,
+            "endColumn": 51
+          },
+          "rightSideLocation": {
+            "filePath": "x-pack/plugin/blob-cache/src/main/java/org/elasticsearch/blobcache/shared/SharedBlobCacheService.java",
+            "startLine": 232,
+            "endLine": 232,
+            "startColumn": 30,
+            "endColumn": 40
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	currentTimeSupplier : LongSupplier to threadPool : ThreadPool in class org.elasticsearch.blobcache.shared.SharedBlobCacheService",
+          "leftSideLocation": {
+            "filePath": "x-pack/plugin/blob-cache/src/main/java/org/elasticsearch/blobcache/shared/SharedBlobCacheService.java",
+            "startLine": 233,
+            "endLine": 233,
+            "startColumn": 32,
+            "endColumn": 51
+          },
+          "rightSideLocation": {
+            "filePath": "x-pack/plugin/blob-cache/src/main/java/org/elasticsearch/blobcache/shared/SharedBlobCacheService.java",
+            "startLine": 232,
+            "endLine": 232,
+            "startColumn": 30,
+            "endColumn": 40
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	currentTimeSupplier : LongSupplier to threadPool : ThreadPool in class org.elasticsearch.blobcache.shared.SharedBlobCacheService",
+          "leftSideLocation": {
+            "filePath": "x-pack/plugin/blob-cache/src/main/java/org/elasticsearch/blobcache/shared/SharedBlobCacheService.java",
+            "startLine": 233,
+            "endLine": 233,
+            "startColumn": 32,
+            "endColumn": 51
+          },
+          "rightSideLocation": {
+            "filePath": "x-pack/plugin/blob-cache/src/main/java/org/elasticsearch/blobcache/shared/SharedBlobCacheService.java",
+            "startLine": 232,
+            "endLine": 232,
+            "startColumn": 30,
+            "endColumn": 40
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	currentTimeSupplier : LongSupplier to threadPool : ThreadPool in class org.elasticsearch.blobcache.shared.SharedBlobCacheService",
+          "leftSideLocation": {
+            "filePath": "x-pack/plugin/blob-cache/src/main/java/org/elasticsearch/blobcache/shared/SharedBlobCacheService.java",
+            "startLine": 233,
+            "endLine": 233,
+            "startColumn": 32,
+            "endColumn": 51
+          },
+          "rightSideLocation": {
+            "filePath": "x-pack/plugin/blob-cache/src/main/java/org/elasticsearch/blobcache/shared/SharedBlobCacheService.java",
+            "startLine": 232,
+            "endLine": 232,
+            "startColumn": 30,
+            "endColumn": 40
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public getFrozenCacheFile(cacheKey KeyType, length long) : CacheFile renamed to public getCacheFile(cacheKey KeyType, length long) : CacheFile in class org.elasticsearch.blobcache.shared.CacheFile",
+          "leftSideLocation": {
+            "filePath": "x-pack/plugin/blob-cache/src/main/java/org/elasticsearch/blobcache/shared/SharedBlobCacheService.java",
+            "startLine": 885,
+            "endLine": 887,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "x-pack/plugin/blob-cache/src/main/java/org/elasticsearch/blobcache/shared/SharedBlobCacheService.java",
+            "startLine": 884,
+            "endLine": 886,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/elastic/elasticsearch.git",
+      "sha1": "a01aff6243674234aec4b3b34fac6e30dcfa6009",
+      "url": "https://github.com/elastic/elasticsearch/commit/a01aff6243674234aec4b3b34fac6e30dcfa6009",
+      "ourApproach": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	ActionListener<T> to ActionListener<Void> in method public acquire() : ActionListener<Void> from class org.elasticsearch.action.support.RefCountingListener",
+          "leftSideLocation": {
+            "filePath": "server/src/main/java/org/elasticsearch/action/support/RefCountingListener.java",
+            "startLine": 134,
+            "endLine": 171,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "server/src/main/java/org/elasticsearch/action/support/RefCountingListener.java",
+            "startLine": 135,
+            "endLine": 166,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private sortSnapshots(infos Stream<SnapshotInfo>, totalCount int, sortBy GetSnapshotsRequest.SortBy, after GetSnapshotsRequest.After, offset int, size int, order SortOrder) : SnapshotsInRepo extracted from private sortSnapshots(snapshotInfos List<SnapshotInfo>, sortBy GetSnapshotsRequest.SortBy, after GetSnapshotsRequest.After, offset int, size int, order SortOrder) : SnapshotsInRepo in class org.elasticsearch.action.admin.cluster.snapshots.get.TransportGetSnapshotsAction",
+          "leftSideLocation": {
+            "filePath": "server/src/main/java/org/elasticsearch/action/admin/cluster/snapshots/get/TransportGetSnapshotsAction.java",
+            "startLine": 579,
+            "endLine": 615,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "server/src/main/java/org/elasticsearch/action/admin/cluster/snapshots/get/TransportGetSnapshotsAction.java",
+            "startLine": 591,
+            "endLine": 626,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private addException(e Exception) : void extracted from public acquire() : ActionListener<T> in class org.elasticsearch.action.support.RefCountingListener",
+          "leftSideLocation": {
+            "filePath": "server/src/main/java/org/elasticsearch/action/support/RefCountingListener.java",
+            "startLine": 134,
+            "endLine": 171,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "server/src/main/java/org/elasticsearch/action/support/RefCountingListener.java",
+            "startLine": 213,
+            "endLine": 222,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private sortSnapshots(infos Stream<SnapshotInfo>, totalCount int, sortBy GetSnapshotsRequest.SortBy, after GetSnapshotsRequest.After, offset int, size int, order SortOrder) : SnapshotsInRepo extracted from private sortSnapshots(snapshotInfos List<SnapshotInfo>, sortBy GetSnapshotsRequest.SortBy, after GetSnapshotsRequest.After, offset int, size int, order SortOrder) : SnapshotsInRepo in class org.elasticsearch.action.admin.cluster.snapshots.get.TransportGetSnapshotsAction",
+          "leftSideLocation": {
+            "filePath": "server/src/main/java/org/elasticsearch/action/admin/cluster/snapshots/get/TransportGetSnapshotsAction.java",
+            "startLine": 579,
+            "endLine": 615,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "server/src/main/java/org/elasticsearch/action/admin/cluster/snapshots/get/TransportGetSnapshotsAction.java",
+            "startLine": 591,
+            "endLine": 626,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private addException(e Exception) : void extracted from public acquire() : ActionListener<T> in class org.elasticsearch.action.support.RefCountingListener",
+          "leftSideLocation": {
+            "filePath": "server/src/main/java/org/elasticsearch/action/support/RefCountingListener.java",
+            "startLine": 134,
+            "endLine": 171,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "server/src/main/java/org/elasticsearch/action/support/RefCountingListener.java",
+            "startLine": 213,
+            "endLine": 222,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	ActionListener<T> to ActionListener<Void> in method public acquire() : ActionListener<Void> from class org.elasticsearch.action.support.RefCountingListener",
+          "leftSideLocation": {
+            "filePath": "server/src/main/java/org/elasticsearch/action/support/RefCountingListener.java",
+            "startLine": 134,
+            "endLine": 171,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "server/src/main/java/org/elasticsearch/action/support/RefCountingListener.java",
+            "startLine": 135,
+            "endLine": 166,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/elastic/elasticsearch.git",
+      "sha1": "4224026fb21b5275d23caf9e3ddd225819c0e4d8",
+      "url": "https://github.com/elastic/elasticsearch/commit/4224026fb21b5275d23caf9e3ddd225819c0e4d8",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testLatLonVec3d() : void renamed to public testLatLonAzimuthRads() : void in class org.elasticsearch.h3.LatLngTests",
+          "leftSideLocation": {
+            "filePath": "libs/h3/src/test/java/org/elasticsearch/h3/LatLngTests.java",
+            "startLine": 31,
+            "endLine": 38,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "libs/h3/src/test/java/org/elasticsearch/h3/LatLngTests.java",
+            "startLine": 31,
+            "endLine": 39,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testLatLonVec3d() : void renamed to public testLatLonAzimuthRads() : void in class org.elasticsearch.h3.LatLngTests",
+          "leftSideLocation": {
+            "filePath": "libs/h3/src/test/java/org/elasticsearch/h3/LatLngTests.java",
+            "startLine": 31,
+            "endLine": 38,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "libs/h3/src/test/java/org/elasticsearch/h3/LatLngTests.java",
+            "startLine": 31,
+            "endLine": 39,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/elastic/elasticsearch.git",
+      "sha1": "c9e3bde0ec09064f1c3175c87bc50adf2c6e23cd",
+      "url": "https://github.com/elastic/elasticsearch/commit/c9e3bde0ec09064f1c3175c87bc50adf2c6e23cd",
+      "ourApproach": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	CacheFile to org.elasticsearch.blobcache.common.CacheFile in method public getCacheFile(cacheKey CacheKey, fileLength long) : org.elasticsearch.blobcache.common.CacheFile from class org.elasticsearch.xpack.searchablesnapshots.store.SearchableSnapshotDirectory",
+          "leftSideLocation": {
+            "filePath": "x-pack/plugin/searchable-snapshots/src/main/java/org/elasticsearch/xpack/searchablesnapshots/store/SearchableSnapshotDirectory.java",
+            "startLine": 368,
+            "endLine": 370,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "x-pack/plugin/searchable-snapshots/src/main/java/org/elasticsearch/xpack/searchablesnapshots/store/SearchableSnapshotDirectory.java",
+            "startLine": 367,
+            "endLine": 369,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	FrozenCacheFile to CacheFile in method public getFrozenCacheFile(cacheKey CacheKey, length long) : CacheFile from class org.elasticsearch.blobcache.shared.SharedBlobCacheService",
+          "leftSideLocation": {
+            "filePath": "x-pack/plugin/blob-cache/src/main/java/org/elasticsearch/blobcache/shared/SharedBlobCacheService.java",
+            "startLine": 893,
+            "endLine": 895,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "x-pack/plugin/blob-cache/src/main/java/org/elasticsearch/blobcache/shared/SharedBlobCacheService.java",
+            "startLine": 893,
+            "endLine": 895,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	frozenCacheFile : FrozenCacheFile to cacheFile : CacheFile in class org.elasticsearch.xpack.searchablesnapshots.store.input.FrozenIndexInput",
+          "leftSideLocation": {
+            "filePath": "x-pack/plugin/searchable-snapshots/src/main/java/org/elasticsearch/xpack/searchablesnapshots/store/input/FrozenIndexInput.java",
+            "startLine": 40,
+            "endLine": 40,
+            "startColumn": 35,
+            "endColumn": 50
+          },
+          "rightSideLocation": {
+            "filePath": "x-pack/plugin/searchable-snapshots/src/main/java/org/elasticsearch/xpack/searchablesnapshots/store/input/FrozenIndexInput.java",
+            "startLine": 39,
+            "endLine": 39,
+            "startColumn": 29,
+            "endColumn": 38
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	frozenCacheFile : FrozenCacheFile to cacheFile : CacheFile in class org.elasticsearch.xpack.searchablesnapshots.store.input.FrozenIndexInput",
+          "leftSideLocation": {
+            "filePath": "x-pack/plugin/searchable-snapshots/src/main/java/org/elasticsearch/xpack/searchablesnapshots/store/input/FrozenIndexInput.java",
+            "startLine": 40,
+            "endLine": 40,
+            "startColumn": 35,
+            "endColumn": 50
+          },
+          "rightSideLocation": {
+            "filePath": "x-pack/plugin/searchable-snapshots/src/main/java/org/elasticsearch/xpack/searchablesnapshots/store/input/FrozenIndexInput.java",
+            "startLine": 39,
+            "endLine": 39,
+            "startColumn": 29,
+            "endColumn": 38
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.elasticsearch.blobcache.shared.SharedBlobCacheService.FrozenCacheFile renamed to org.elasticsearch.blobcache.shared.SharedBlobCacheService.CacheFile",
+          "leftSideLocation": {
+            "filePath": "x-pack/plugin/blob-cache/src/main/java/org/elasticsearch/blobcache/shared/SharedBlobCacheService.java",
+            "startLine": 818,
+            "endLine": 891,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "x-pack/plugin/blob-cache/src/main/java/org/elasticsearch/blobcache/shared/SharedBlobCacheService.java",
+            "startLine": 818,
+            "endLine": 891,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	FrozenCacheFile to CacheFile in method public getFrozenCacheFile(fileName String, length long) : CacheFile from class org.elasticsearch.xpack.searchablesnapshots.store.SearchableSnapshotDirectory",
+          "leftSideLocation": {
+            "filePath": "x-pack/plugin/searchable-snapshots/src/main/java/org/elasticsearch/xpack/searchablesnapshots/store/SearchableSnapshotDirectory.java",
+            "startLine": 715,
+            "endLine": 717,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "x-pack/plugin/searchable-snapshots/src/main/java/org/elasticsearch/xpack/searchablesnapshots/store/SearchableSnapshotDirectory.java",
+            "startLine": 714,
+            "endLine": 716,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	StepListener<Integer> to int in method public populateAndRead(rangeToWrite ByteRange, rangeToRead ByteRange, reader RangeAvailableHandler, writer RangeMissingHandler, executor Executor) : int from class org.elasticsearch.blobcache.shared.SharedBlobCacheService.CacheFile",
+          "leftSideLocation": {
+            "filePath": "x-pack/plugin/blob-cache/src/main/java/org/elasticsearch/blobcache/shared/SharedBlobCacheService.java",
+            "startLine": 836,
+            "endLine": 885,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "filePath": "x-pack/plugin/blob-cache/src/main/java/org/elasticsearch/blobcache/shared/SharedBlobCacheService.java",
+            "startLine": 836,
+            "endLine": 885,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.elasticsearch.blobcache.shared.SharedBlobCacheService.FrozenCacheFile renamed to org.elasticsearch.blobcache.shared.SharedBlobCacheService.CacheFile",
+          "leftSideLocation": {
+            "filePath": "x-pack/plugin/blob-cache/src/main/java/org/elasticsearch/blobcache/shared/SharedBlobCacheService.java",
+            "startLine": 818,
+            "endLine": 891,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "x-pack/plugin/blob-cache/src/main/java/org/elasticsearch/blobcache/shared/SharedBlobCacheService.java",
+            "startLine": 818,
+            "endLine": 891,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	FrozenCacheFile to CacheFile in method public getFrozenCacheFile(cacheKey CacheKey, length long) : CacheFile from class org.elasticsearch.blobcache.shared.SharedBlobCacheService",
+          "leftSideLocation": {
+            "filePath": "x-pack/plugin/blob-cache/src/main/java/org/elasticsearch/blobcache/shared/SharedBlobCacheService.java",
+            "startLine": 893,
+            "endLine": 895,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "x-pack/plugin/blob-cache/src/main/java/org/elasticsearch/blobcache/shared/SharedBlobCacheService.java",
+            "startLine": 893,
+            "endLine": 895,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	CacheFile to org.elasticsearch.blobcache.common.CacheFile in method public getCacheFile(cacheKey CacheKey, fileLength long) : org.elasticsearch.blobcache.common.CacheFile from class org.elasticsearch.xpack.searchablesnapshots.store.SearchableSnapshotDirectory",
+          "leftSideLocation": {
+            "filePath": "x-pack/plugin/searchable-snapshots/src/main/java/org/elasticsearch/xpack/searchablesnapshots/store/SearchableSnapshotDirectory.java",
+            "startLine": 368,
+            "endLine": 370,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "x-pack/plugin/searchable-snapshots/src/main/java/org/elasticsearch/xpack/searchablesnapshots/store/SearchableSnapshotDirectory.java",
+            "startLine": 367,
+            "endLine": 369,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	FrozenCacheFile to CacheFile in method public getFrozenCacheFile(fileName String, length long) : CacheFile from class org.elasticsearch.xpack.searchablesnapshots.store.SearchableSnapshotDirectory",
+          "leftSideLocation": {
+            "filePath": "x-pack/plugin/searchable-snapshots/src/main/java/org/elasticsearch/xpack/searchablesnapshots/store/SearchableSnapshotDirectory.java",
+            "startLine": 715,
+            "endLine": 717,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "x-pack/plugin/searchable-snapshots/src/main/java/org/elasticsearch/xpack/searchablesnapshots/store/SearchableSnapshotDirectory.java",
+            "startLine": 714,
+            "endLine": 716,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	frozenCacheFile : FrozenCacheFile to cacheFile : CacheFile in class org.elasticsearch.xpack.searchablesnapshots.store.input.FrozenIndexInput",
+          "leftSideLocation": {
+            "filePath": "x-pack/plugin/searchable-snapshots/src/main/java/org/elasticsearch/xpack/searchablesnapshots/store/input/FrozenIndexInput.java",
+            "startLine": 40,
+            "endLine": 40,
+            "startColumn": 35,
+            "endColumn": 50
+          },
+          "rightSideLocation": {
+            "filePath": "x-pack/plugin/searchable-snapshots/src/main/java/org/elasticsearch/xpack/searchablesnapshots/store/input/FrozenIndexInput.java",
+            "startLine": 39,
+            "endLine": 39,
+            "startColumn": 29,
+            "endColumn": 38
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	frozenCacheFile : FrozenCacheFile to cacheFile : CacheFile in class org.elasticsearch.xpack.searchablesnapshots.store.input.FrozenIndexInput",
+          "leftSideLocation": {
+            "filePath": "x-pack/plugin/searchable-snapshots/src/main/java/org/elasticsearch/xpack/searchablesnapshots/store/input/FrozenIndexInput.java",
+            "startLine": 40,
+            "endLine": 40,
+            "startColumn": 35,
+            "endColumn": 50
+          },
+          "rightSideLocation": {
+            "filePath": "x-pack/plugin/searchable-snapshots/src/main/java/org/elasticsearch/xpack/searchablesnapshots/store/input/FrozenIndexInput.java",
+            "startLine": 39,
+            "endLine": 39,
+            "startColumn": 29,
+            "endColumn": 38
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	StepListener<Integer> to int in method public populateAndRead(rangeToWrite ByteRange, rangeToRead ByteRange, reader RangeAvailableHandler, writer RangeMissingHandler, executor Executor) : int from class org.elasticsearch.blobcache.shared.SharedBlobCacheService.CacheFile",
+          "leftSideLocation": {
+            "filePath": "x-pack/plugin/blob-cache/src/main/java/org/elasticsearch/blobcache/shared/SharedBlobCacheService.java",
+            "startLine": 836,
+            "endLine": 885,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "filePath": "x-pack/plugin/blob-cache/src/main/java/org/elasticsearch/blobcache/shared/SharedBlobCacheService.java",
+            "startLine": 836,
+            "endLine": 885,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/elastic/elasticsearch.git",
+      "sha1": "854bfa67b8d383940826d7d985348465f253afd1",
+      "url": "https://github.com/elastic/elasticsearch/commit/854bfa67b8d383940826d7d985348465f253afd1",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private numberOfCorners(minX double, maxX double, minY double, maxY double) : int renamed to private containsCorners(minX double, maxX double, minY double, maxY double) : ContainsCorners in class org.elasticsearch.xpack.spatial.common.H3CartesianGeometry.H3CartesianComponent",
+          "leftSideLocation": {
+            "filePath": "x-pack/plugin/spatial/src/main/java/org/elasticsearch/xpack/spatial/common/H3CartesianGeometry.java",
+            "startLine": 328,
+            "endLine": 349,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "filePath": "x-pack/plugin/spatial/src/main/java/org/elasticsearch/xpack/spatial/common/H3CartesianGeometry.java",
+            "startLine": 327,
+            "endLine": 348,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	int to ContainsCorners in method private containsCorners(minX double, maxX double, minY double, maxY double) : ContainsCorners from class org.elasticsearch.xpack.spatial.common.H3CartesianGeometry.H3CartesianComponent",
+          "leftSideLocation": {
+            "filePath": "x-pack/plugin/spatial/src/main/java/org/elasticsearch/xpack/spatial/common/H3CartesianGeometry.java",
+            "startLine": 328,
+            "endLine": 349,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "filePath": "x-pack/plugin/spatial/src/main/java/org/elasticsearch/xpack/spatial/common/H3CartesianGeometry.java",
+            "startLine": 327,
+            "endLine": 348,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private numberOfCorners(minX double, maxX double, minY double, maxY double) : int renamed to private containsCorners(minX double, maxX double, minY double, maxY double) : ContainsCorners in class org.elasticsearch.xpack.spatial.common.H3CartesianGeometry.H3CartesianComponent",
+          "leftSideLocation": {
+            "filePath": "x-pack/plugin/spatial/src/main/java/org/elasticsearch/xpack/spatial/common/H3CartesianGeometry.java",
+            "startLine": 328,
+            "endLine": 349,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "filePath": "x-pack/plugin/spatial/src/main/java/org/elasticsearch/xpack/spatial/common/H3CartesianGeometry.java",
+            "startLine": 327,
+            "endLine": 348,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	int to ContainsCorners in method private containsCorners(minX double, maxX double, minY double, maxY double) : ContainsCorners from class org.elasticsearch.xpack.spatial.common.H3CartesianGeometry.H3CartesianComponent",
+          "leftSideLocation": {
+            "filePath": "x-pack/plugin/spatial/src/main/java/org/elasticsearch/xpack/spatial/common/H3CartesianGeometry.java",
+            "startLine": 328,
+            "endLine": 349,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "filePath": "x-pack/plugin/spatial/src/main/java/org/elasticsearch/xpack/spatial/common/H3CartesianGeometry.java",
+            "startLine": 327,
+            "endLine": 348,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/elastic/elasticsearch.git",
+      "sha1": "52a622cdfd4ca8324859faff49839480e500c274",
+      "url": "https://github.com/elastic/elasticsearch/commit/52a622cdfd4ca8324859faff49839480e500c274",
+      "ourApproach": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.elasticsearch.search.aggregations.AggregatorTestCase.CrankyCircuitBreakerService moved to org.elasticsearch.indices.CrankyCircuitBreakerService",
+          "leftSideLocation": {
+            "filePath": "test/framework/src/main/java/org/elasticsearch/search/aggregations/AggregatorTestCase.java",
+            "startLine": 1435,
+            "endLine": 1505,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "test/framework/src/main/java/org/elasticsearch/indices/CrankyCircuitBreakerService.java",
+            "startLine": 18,
+            "endLine": 97,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.elasticsearch.search.aggregations.AggregatorTestCase.CrankyCircuitBreakerService moved to org.elasticsearch.indices.CrankyCircuitBreakerService",
+          "leftSideLocation": {
+            "filePath": "test/framework/src/main/java/org/elasticsearch/search/aggregations/AggregatorTestCase.java",
+            "startLine": 1435,
+            "endLine": 1505,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "test/framework/src/main/java/org/elasticsearch/indices/CrankyCircuitBreakerService.java",
+            "startLine": 18,
+            "endLine": 97,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/elastic/elasticsearch.git",
+      "sha1": "9478bd306a19a0a5bbbc5424fe80436a56b35725",
+      "url": "https://github.com/elastic/elasticsearch/commit/9478bd306a19a0a5bbbc5424fe80436a56b35725",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private safePoint() : GeoPoint extracted from public testLatLonVec3d() : void in class org.elasticsearch.h3.AzimuthTests",
+          "leftSideLocation": {
+            "filePath": "libs/h3/src/test/java/org/elasticsearch/h3/AzimuthTests.java",
+            "startLine": 28,
+            "endLine": 38,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "libs/h3/src/test/java/org/elasticsearch/h3/AzimuthTests.java",
+            "startLine": 37,
+            "endLine": 49,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private safePoint() : GeoPoint extracted from public testLatLonVec3d() : void in class org.elasticsearch.h3.AzimuthTests",
+          "leftSideLocation": {
+            "filePath": "libs/h3/src/test/java/org/elasticsearch/h3/AzimuthTests.java",
+            "startLine": 28,
+            "endLine": 38,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "libs/h3/src/test/java/org/elasticsearch/h3/AzimuthTests.java",
+            "startLine": 37,
+            "endLine": 49,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/elastic/elasticsearch.git",
+      "sha1": "751dc244f19c88074b01572b19f73a5a2dffca66",
+      "url": "https://github.com/elastic/elasticsearch/commit/751dc244f19c88074b01572b19f73a5a2dffca66",
+      "ourApproach": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	queryString : String to modelText : String in class org.elasticsearch.xpack.core.ml.action.SemanticSearchAction.Request.Builder",
+          "leftSideLocation": {
+            "filePath": "x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/ml/action/SemanticSearchAction.java",
+            "startLine": 328,
+            "endLine": 328,
+            "startColumn": 28,
+            "endColumn": 39
+          },
+          "rightSideLocation": {
+            "filePath": "x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/ml/action/SemanticSearchAction.java",
+            "startLine": 328,
+            "endLine": 328,
+            "startColumn": 28,
+            "endColumn": 37
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	queryString : String to modelText : String in class org.elasticsearch.xpack.core.ml.action.SemanticSearchAction.Request",
+          "leftSideLocation": {
+            "filePath": "x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/ml/action/SemanticSearchAction.java",
+            "startLine": 122,
+            "endLine": 122,
+            "startColumn": 30,
+            "endColumn": 41
+          },
+          "rightSideLocation": {
+            "filePath": "x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/ml/action/SemanticSearchAction.java",
+            "startLine": 122,
+            "endLine": 122,
+            "startColumn": 30,
+            "endColumn": 39
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	QUERY_STRING : ParseField to MODEL_TEXT : ParseField in class org.elasticsearch.xpack.core.ml.action.SemanticSearchAction.Request",
+          "leftSideLocation": {
+            "filePath": "x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/ml/action/SemanticSearchAction.java",
+            "startLine": 59,
+            "endLine": 59,
+            "startColumn": 40,
+            "endColumn": 85
+          },
+          "rightSideLocation": {
+            "filePath": "x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/ml/action/SemanticSearchAction.java",
+            "startLine": 59,
+            "endLine": 59,
+            "startColumn": 40,
+            "endColumn": 81
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public getQueryString() : String renamed to public getModelText() : String in class org.elasticsearch.xpack.core.ml.action.SemanticSearchAction.Request",
+          "leftSideLocation": {
+            "filePath": "x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/ml/action/SemanticSearchAction.java",
+            "startLine": 223,
+            "endLine": 225,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "filePath": "x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/ml/action/SemanticSearchAction.java",
+            "startLine": 223,
+            "endLine": 225,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package setQueryString(queryString String) : void renamed to package setModelText(modelText String) : void in class org.elasticsearch.xpack.core.ml.action.SemanticSearchAction.Request.Builder",
+          "leftSideLocation": {
+            "filePath": "x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/ml/action/SemanticSearchAction.java",
+            "startLine": 351,
+            "endLine": 353,
+            "startColumn": 13,
+            "endColumn": 14
+          },
+          "rightSideLocation": {
+            "filePath": "x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/ml/action/SemanticSearchAction.java",
+            "startLine": 351,
+            "endLine": 353,
+            "startColumn": 13,
+            "endColumn": 14
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package setQueryString(queryString String) : void renamed to package setModelText(modelText String) : void in class org.elasticsearch.xpack.core.ml.action.SemanticSearchAction.Request.Builder",
+          "leftSideLocation": {
+            "filePath": "x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/ml/action/SemanticSearchAction.java",
+            "startLine": 351,
+            "endLine": 353,
+            "startColumn": 13,
+            "endColumn": 14
+          },
+          "rightSideLocation": {
+            "filePath": "x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/ml/action/SemanticSearchAction.java",
+            "startLine": 351,
+            "endLine": 353,
+            "startColumn": 13,
+            "endColumn": 14
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	queryString : String to modelText : String in class org.elasticsearch.xpack.core.ml.action.SemanticSearchAction.Request.Builder",
+          "leftSideLocation": {
+            "filePath": "x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/ml/action/SemanticSearchAction.java",
+            "startLine": 328,
+            "endLine": 328,
+            "startColumn": 28,
+            "endColumn": 39
+          },
+          "rightSideLocation": {
+            "filePath": "x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/ml/action/SemanticSearchAction.java",
+            "startLine": 328,
+            "endLine": 328,
+            "startColumn": 28,
+            "endColumn": 37
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public getQueryString() : String renamed to public getModelText() : String in class org.elasticsearch.xpack.core.ml.action.SemanticSearchAction.Request",
+          "leftSideLocation": {
+            "filePath": "x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/ml/action/SemanticSearchAction.java",
+            "startLine": 223,
+            "endLine": 225,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "filePath": "x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/ml/action/SemanticSearchAction.java",
+            "startLine": 223,
+            "endLine": 225,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	QUERY_STRING : ParseField to MODEL_TEXT : ParseField in class org.elasticsearch.xpack.core.ml.action.SemanticSearchAction.Request",
+          "leftSideLocation": {
+            "filePath": "x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/ml/action/SemanticSearchAction.java",
+            "startLine": 59,
+            "endLine": 59,
+            "startColumn": 40,
+            "endColumn": 85
+          },
+          "rightSideLocation": {
+            "filePath": "x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/ml/action/SemanticSearchAction.java",
+            "startLine": 59,
+            "endLine": 59,
+            "startColumn": 40,
+            "endColumn": 81
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	queryString : String to modelText : String in class org.elasticsearch.xpack.core.ml.action.SemanticSearchAction.Request",
+          "leftSideLocation": {
+            "filePath": "x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/ml/action/SemanticSearchAction.java",
+            "startLine": 122,
+            "endLine": 122,
+            "startColumn": 30,
+            "endColumn": 41
+          },
+          "rightSideLocation": {
+            "filePath": "x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/ml/action/SemanticSearchAction.java",
+            "startLine": 122,
+            "endLine": 122,
+            "startColumn": 30,
+            "endColumn": 39
+          },
+          "developerConfirmation": true
+        }
+      ]
+    }
+  ]
+}

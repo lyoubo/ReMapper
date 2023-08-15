@@ -1,0 +1,2806 @@
+{
+  "results": [
+    {
+      "repository": "https://github.com/apache/commons-lang.git",
+      "sha1": "ba07b630b230d14aa76ad65e979e4b326d00ab32",
+      "url": "https://github.com/apache/commons-lang/commit/ba07b630b230d14aa76ad65e979e4b326d00ab32",
+      "ourApproach": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	defaultZone : TimeZone to DEFAULT_ZONE : TimeZone in class org.apache.commons.lang3.time.DateUtilsTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/lang3/time/DateUtilsTest.java",
+            "startLine": 146,
+            "endLine": 146,
+            "startColumn": 22,
+            "endColumn": 40
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/lang3/time/DateUtilsTest.java",
+            "startLine": 55,
+            "endLine": 55,
+            "startColumn": 29,
+            "endColumn": 41
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	defaultZone : TimeZone to DEFAULT_ZONE : TimeZone in class org.apache.commons.lang3.time.DateUtilsTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/lang3/time/DateUtilsTest.java",
+            "startLine": 146,
+            "endLine": 146,
+            "startColumn": 22,
+            "endColumn": 40
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/lang3/time/DateUtilsTest.java",
+            "startLine": 55,
+            "endLine": 55,
+            "startColumn": 29,
+            "endColumn": 41
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/commons-lang.git",
+      "sha1": "7f7d4b881d78dcb8d5a0149965f934df268919d7",
+      "url": "https://github.com/apache/commons-lang/commit/7f7d4b881d78dcb8d5a0149965f934df268919d7",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private getMessage(message String, values Object...) : String extracted from public isTrue(expression boolean, message String, values Object...) : void in class org.apache.commons.lang3.Validate",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/Validate.java",
+            "startLine": 135,
+            "endLine": 157,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/Validate.java",
+            "startLine": 1271,
+            "endLine": 1285,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private getMessage(message String, values Object...) : String extracted from public notNull(object T, message String, values Object...) : T in class org.apache.commons.lang3.Validate",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/Validate.java",
+            "startLine": 205,
+            "endLine": 221,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/Validate.java",
+            "startLine": 1271,
+            "endLine": 1285,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private getMessage(message String, values Object...) : String extracted from public notEmpty(array T[], message String, values Object...) : T[] in class org.apache.commons.lang3.Validate",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/Validate.java",
+            "startLine": 223,
+            "endLine": 245,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/Validate.java",
+            "startLine": 1271,
+            "endLine": 1285,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private getMessage(message String, values Object...) : String extracted from public notEmpty(collection T, message String, values Object...) : T in class org.apache.commons.lang3.Validate",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/Validate.java",
+            "startLine": 267,
+            "endLine": 289,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/Validate.java",
+            "startLine": 1271,
+            "endLine": 1285,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private getMessage(message String, values Object...) : String extracted from public notEmpty(map T, message String, values Object...) : T in class org.apache.commons.lang3.Validate",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/Validate.java",
+            "startLine": 311,
+            "endLine": 333,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/Validate.java",
+            "startLine": 1271,
+            "endLine": 1285,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private getMessage(message String, values Object...) : String extracted from public notEmpty(chars T, message String, values Object...) : T in class org.apache.commons.lang3.Validate",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/Validate.java",
+            "startLine": 355,
+            "endLine": 377,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/Validate.java",
+            "startLine": 1271,
+            "endLine": 1285,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private getMessage(message String, values Object...) : String extracted from public notBlank(chars T, message String, values Object...) : T in class org.apache.commons.lang3.Validate",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/Validate.java",
+            "startLine": 400,
+            "endLine": 425,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/Validate.java",
+            "startLine": 1271,
+            "endLine": 1285,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private getMessage(message String, values Object...) : String extracted from public noNullElements(array T[], message String, values Object...) : T[] in class org.apache.commons.lang3.Validate",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/Validate.java",
+            "startLine": 450,
+            "endLine": 482,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/Validate.java",
+            "startLine": 1271,
+            "endLine": 1285,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private getMessage(message String, values Object...) : String extracted from public noNullElements(iterable T, message String, values Object...) : T in class org.apache.commons.lang3.Validate",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/Validate.java",
+            "startLine": 509,
+            "endLine": 542,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/Validate.java",
+            "startLine": 1271,
+            "endLine": 1285,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private getMessage(message String, values Object...) : String extracted from public validIndex(array T[], index int, message String, values Object...) : T[] in class org.apache.commons.lang3.Validate",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/Validate.java",
+            "startLine": 569,
+            "endLine": 596,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/Validate.java",
+            "startLine": 1271,
+            "endLine": 1285,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private getMessage(message String, values Object...) : String extracted from public validIndex(collection T, index int, message String, values Object...) : T in class org.apache.commons.lang3.Validate",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/Validate.java",
+            "startLine": 625,
+            "endLine": 652,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/Validate.java",
+            "startLine": 1271,
+            "endLine": 1285,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private getMessage(message String, values Object...) : String extracted from public validIndex(chars T, index int, message String, values Object...) : T in class org.apache.commons.lang3.Validate",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/Validate.java",
+            "startLine": 678,
+            "endLine": 706,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/Validate.java",
+            "startLine": 1271,
+            "endLine": 1285,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private getMessage(message String, values Object...) : String extracted from public validState(expression boolean, message String, values Object...) : void in class org.apache.commons.lang3.Validate",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/Validate.java",
+            "startLine": 761,
+            "endLine": 781,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/Validate.java",
+            "startLine": 1271,
+            "endLine": 1285,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private getMessage(message String, values Object...) : String extracted from public matchesPattern(input CharSequence, pattern String, message String, values Object...) : void in class org.apache.commons.lang3.Validate",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/Validate.java",
+            "startLine": 805,
+            "endLine": 827,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/Validate.java",
+            "startLine": 1271,
+            "endLine": 1285,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private getMessage(message String, values Object...) : String extracted from public notNaN(value double, message String, values Object...) : void in class org.apache.commons.lang3.Validate",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/Validate.java",
+            "startLine": 848,
+            "endLine": 866,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/Validate.java",
+            "startLine": 1271,
+            "endLine": 1285,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private getMessage(message String, values Object...) : String extracted from public finite(value double, message String, values Object...) : void in class org.apache.commons.lang3.Validate",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/Validate.java",
+            "startLine": 886,
+            "endLine": 904,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/Validate.java",
+            "startLine": 1271,
+            "endLine": 1285,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private getMessage(message String, values Object...) : String extracted from public inclusiveBetween(start T, end T, value Comparable<T>, message String, values Object...) : void in class org.apache.commons.lang3.Validate",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/Validate.java",
+            "startLine": 928,
+            "endLine": 951,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/Validate.java",
+            "startLine": 1271,
+            "endLine": 1285,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private getMessage(message String, values Object...) : String extracted from public exclusiveBetween(start T, end T, value Comparable<T>, message String, values Object...) : void in class org.apache.commons.lang3.Validate",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/Validate.java",
+            "startLine": 1063,
+            "endLine": 1086,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/Validate.java",
+            "startLine": 1271,
+            "endLine": 1285,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private getMessage(message String, values Object...) : String extracted from public isInstanceOf(type Class<?>, obj Object, message String, values Object...) : void in class org.apache.commons.lang3.Validate",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/Validate.java",
+            "startLine": 1200,
+            "endLine": 1222,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/Validate.java",
+            "startLine": 1271,
+            "endLine": 1285,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private getMessage(message String, values Object...) : String extracted from public isAssignableFrom(superType Class<?>, type Class<?>, message String, values Object...) : void in class org.apache.commons.lang3.Validate",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/Validate.java",
+            "startLine": 1248,
+            "endLine": 1270,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/Validate.java",
+            "startLine": 1271,
+            "endLine": 1285,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private getMessage(message String, values Object...) : String extracted from public isTrue(expression boolean, message String, values Object...) : void in class org.apache.commons.lang3.Validate",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/Validate.java",
+            "startLine": 135,
+            "endLine": 157,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/Validate.java",
+            "startLine": 1271,
+            "endLine": 1285,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private getMessage(message String, values Object...) : String extracted from public notEmpty(array T[], message String, values Object...) : T[] in class org.apache.commons.lang3.Validate",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/Validate.java",
+            "startLine": 223,
+            "endLine": 245,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/Validate.java",
+            "startLine": 1271,
+            "endLine": 1285,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private getMessage(message String, values Object...) : String extracted from public notEmpty(collection T, message String, values Object...) : T in class org.apache.commons.lang3.Validate",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/Validate.java",
+            "startLine": 267,
+            "endLine": 289,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/Validate.java",
+            "startLine": 1271,
+            "endLine": 1285,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private getMessage(message String, values Object...) : String extracted from public notEmpty(map T, message String, values Object...) : T in class org.apache.commons.lang3.Validate",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/Validate.java",
+            "startLine": 311,
+            "endLine": 333,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/Validate.java",
+            "startLine": 1271,
+            "endLine": 1285,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private getMessage(message String, values Object...) : String extracted from public notEmpty(chars T, message String, values Object...) : T in class org.apache.commons.lang3.Validate",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/Validate.java",
+            "startLine": 355,
+            "endLine": 377,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/Validate.java",
+            "startLine": 1271,
+            "endLine": 1285,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private getMessage(message String, values Object...) : String extracted from public notBlank(chars T, message String, values Object...) : T in class org.apache.commons.lang3.Validate",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/Validate.java",
+            "startLine": 400,
+            "endLine": 425,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/Validate.java",
+            "startLine": 1271,
+            "endLine": 1285,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private getMessage(message String, values Object...) : String extracted from public validIndex(array T[], index int, message String, values Object...) : T[] in class org.apache.commons.lang3.Validate",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/Validate.java",
+            "startLine": 569,
+            "endLine": 596,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/Validate.java",
+            "startLine": 1271,
+            "endLine": 1285,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private getMessage(message String, values Object...) : String extracted from public validIndex(collection T, index int, message String, values Object...) : T in class org.apache.commons.lang3.Validate",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/Validate.java",
+            "startLine": 625,
+            "endLine": 652,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/Validate.java",
+            "startLine": 1271,
+            "endLine": 1285,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private getMessage(message String, values Object...) : String extracted from public validIndex(chars T, index int, message String, values Object...) : T in class org.apache.commons.lang3.Validate",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/Validate.java",
+            "startLine": 678,
+            "endLine": 706,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/Validate.java",
+            "startLine": 1271,
+            "endLine": 1285,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private getMessage(message String, values Object...) : String extracted from public validState(expression boolean, message String, values Object...) : void in class org.apache.commons.lang3.Validate",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/Validate.java",
+            "startLine": 761,
+            "endLine": 781,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/Validate.java",
+            "startLine": 1271,
+            "endLine": 1285,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private getMessage(message String, values Object...) : String extracted from public matchesPattern(input CharSequence, pattern String, message String, values Object...) : void in class org.apache.commons.lang3.Validate",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/Validate.java",
+            "startLine": 805,
+            "endLine": 827,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/Validate.java",
+            "startLine": 1271,
+            "endLine": 1285,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private getMessage(message String, values Object...) : String extracted from public notNaN(value double, message String, values Object...) : void in class org.apache.commons.lang3.Validate",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/Validate.java",
+            "startLine": 848,
+            "endLine": 866,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/Validate.java",
+            "startLine": 1271,
+            "endLine": 1285,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private getMessage(message String, values Object...) : String extracted from public finite(value double, message String, values Object...) : void in class org.apache.commons.lang3.Validate",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/Validate.java",
+            "startLine": 886,
+            "endLine": 904,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/Validate.java",
+            "startLine": 1271,
+            "endLine": 1285,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private getMessage(message String, values Object...) : String extracted from public inclusiveBetween(start T, end T, value Comparable<T>, message String, values Object...) : void in class org.apache.commons.lang3.Validate",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/Validate.java",
+            "startLine": 928,
+            "endLine": 951,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/Validate.java",
+            "startLine": 1271,
+            "endLine": 1285,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private getMessage(message String, values Object...) : String extracted from public exclusiveBetween(start T, end T, value Comparable<T>, message String, values Object...) : void in class org.apache.commons.lang3.Validate",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/Validate.java",
+            "startLine": 1063,
+            "endLine": 1086,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/Validate.java",
+            "startLine": 1271,
+            "endLine": 1285,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private getMessage(message String, values Object...) : String extracted from public isInstanceOf(type Class<?>, obj Object, message String, values Object...) : void in class org.apache.commons.lang3.Validate",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/Validate.java",
+            "startLine": 1200,
+            "endLine": 1222,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/Validate.java",
+            "startLine": 1271,
+            "endLine": 1285,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private getMessage(message String, values Object...) : String extracted from public isAssignableFrom(superType Class<?>, type Class<?>, message String, values Object...) : void in class org.apache.commons.lang3.Validate",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/Validate.java",
+            "startLine": 1248,
+            "endLine": 1270,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/Validate.java",
+            "startLine": 1271,
+            "endLine": 1285,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/commons-lang.git",
+      "sha1": "f8df864f4cde9d8c6a21ba04ecfe9abd286de71d",
+      "url": "https://github.com/apache/commons-lang/commit/f8df864f4cde9d8c6a21ba04ecfe9abd286de71d",
+      "ourApproach": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	MIN_SLEEP_MILLISECONDS : int to MIN_SLEEP : Duration in class org.apache.commons.lang3.time.StopWatchTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/lang3/time/StopWatchTest.java",
+            "startLine": 42,
+            "endLine": 42,
+            "startColumn": 30,
+            "endColumn": 57
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/lang3/time/StopWatchTest.java",
+            "startLine": 42,
+            "endLine": 42,
+            "startColumn": 35,
+            "endColumn": 68
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	MIN_SLEEP_MILLISECONDS : int to MIN_SLEEP : Duration in class org.apache.commons.lang3.time.StopWatchTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/lang3/time/StopWatchTest.java",
+            "startLine": 42,
+            "endLine": 42,
+            "startColumn": 30,
+            "endColumn": 57
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/lang3/time/StopWatchTest.java",
+            "startLine": 42,
+            "endLine": 42,
+            "startColumn": 35,
+            "endColumn": 68
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	MIN_SLEEP_MILLISECONDS : int to MIN_SLEEP : Duration in class org.apache.commons.lang3.time.StopWatchTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/lang3/time/StopWatchTest.java",
+            "startLine": 42,
+            "endLine": 42,
+            "startColumn": 30,
+            "endColumn": 57
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/lang3/time/StopWatchTest.java",
+            "startLine": 42,
+            "endLine": 42,
+            "startColumn": 35,
+            "endColumn": 68
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	MIN_SLEEP_MILLISECONDS : int to MIN_SLEEP : Duration in class org.apache.commons.lang3.time.StopWatchTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/lang3/time/StopWatchTest.java",
+            "startLine": 42,
+            "endLine": 42,
+            "startColumn": 30,
+            "endColumn": 57
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/lang3/time/StopWatchTest.java",
+            "startLine": 42,
+            "endLine": 42,
+            "startColumn": 35,
+            "endColumn": 68
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/commons-lang.git",
+      "sha1": "e92dafdc3b3d841ec95fe3df17722a5bdec3658a",
+      "url": "https://github.com/apache/commons-lang/commit/e92dafdc3b3d841ec95fe3df17722a5bdec3658a",
+      "ourApproach": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	PERIOD : long to PERIOD_MILLIS : long in class org.apache.commons.lang3.concurrent.TimedSemaphoreTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/lang3/concurrent/TimedSemaphoreTest.java",
+            "startLine": 41,
+            "endLine": 41,
+            "startColumn": 31,
+            "endColumn": 43
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/lang3/concurrent/TimedSemaphoreTest.java",
+            "startLine": 42,
+            "endLine": 42,
+            "startColumn": 31,
+            "endColumn": 50
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	PERIOD : long to PERIOD_MILLIS : long in class org.apache.commons.lang3.concurrent.TimedSemaphoreTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/lang3/concurrent/TimedSemaphoreTest.java",
+            "startLine": 41,
+            "endLine": 41,
+            "startColumn": 31,
+            "endColumn": 43
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/lang3/concurrent/TimedSemaphoreTest.java",
+            "startLine": 42,
+            "endLine": 42,
+            "startColumn": 31,
+            "endColumn": 50
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/commons-lang.git",
+      "sha1": "972bf05adea62b912984e1c06a990c815c0e901e",
+      "url": "https://github.com/apache/commons-lang/commit/972bf05adea62b912984e1c06a990c815c0e901e",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private instancesOf(clazz Class<? super E>, stream Stream<?>) : Stream<E> extracted from public instancesOf(clazz Class<? super E>, collection Collection<? super E>) : Stream<E> in class org.apache.commons.lang3.stream.Streams",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/stream/Streams.java",
+            "startLine": 539,
+            "endLine": 557,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/stream/Streams.java",
+            "startLine": 558,
+            "endLine": 561,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private instancesOf(clazz Class<? super E>, stream Stream<?>) : Stream<E> extracted from public instancesOf(clazz Class<? super E>, collection Collection<? super E>) : Stream<E> in class org.apache.commons.lang3.stream.Streams",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/stream/Streams.java",
+            "startLine": 539,
+            "endLine": 557,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/stream/Streams.java",
+            "startLine": 558,
+            "endLine": 561,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/commons-lang.git",
+      "sha1": "62d7aacb4f3eb318045496f115a7171f0bc2c6c1",
+      "url": "https://github.com/apache/commons-lang/commit/62d7aacb4f3eb318045496f115a7171f0bc2c6c1",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	public isArray(object Object) : boolean extracted from public isEmpty(object Object) : boolean in class org.apache.commons.lang3.ObjectUtils",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/ObjectUtils.java",
+            "startLine": 984,
+            "endLine": 1026,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/ObjectUtils.java",
+            "startLine": 983,
+            "endLine": 1007,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	public isArray(object Object) : boolean extracted from public isEmpty(object Object) : boolean in class org.apache.commons.lang3.ObjectUtils",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/ObjectUtils.java",
+            "startLine": 984,
+            "endLine": 1026,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/ObjectUtils.java",
+            "startLine": 983,
+            "endLine": 1007,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/commons-lang.git",
+      "sha1": "1311d6949a2b7487766ab3c5ba86c5b9ee84d42c",
+      "url": "https://github.com/apache/commons-lang/commit/1311d6949a2b7487766ab3c5ba86c5b9ee84d42c",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private isArrayEmpty(array Object) : boolean extracted from public isEmpty(array boolean[]) : boolean in class org.apache.commons.lang3.ArrayUtils",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 3173,
+            "endLine": 3182,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 3154,
+            "endLine": 3162,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private isArrayEmpty(array Object) : boolean extracted from public isEmpty(array byte[]) : boolean in class org.apache.commons.lang3.ArrayUtils",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 3184,
+            "endLine": 3193,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 3154,
+            "endLine": 3162,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private isArrayEmpty(array Object) : boolean extracted from public isEmpty(array char[]) : boolean in class org.apache.commons.lang3.ArrayUtils",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 3195,
+            "endLine": 3204,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 3154,
+            "endLine": 3162,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private isArrayEmpty(array Object) : boolean extracted from public isEmpty(array double[]) : boolean in class org.apache.commons.lang3.ArrayUtils",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 3206,
+            "endLine": 3215,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 3154,
+            "endLine": 3162,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private isArrayEmpty(array Object) : boolean extracted from public isEmpty(array float[]) : boolean in class org.apache.commons.lang3.ArrayUtils",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 3217,
+            "endLine": 3226,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 3154,
+            "endLine": 3162,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private isArrayEmpty(array Object) : boolean extracted from public isEmpty(array int[]) : boolean in class org.apache.commons.lang3.ArrayUtils",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 3228,
+            "endLine": 3237,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 3154,
+            "endLine": 3162,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private isArrayEmpty(array Object) : boolean extracted from public isEmpty(array long[]) : boolean in class org.apache.commons.lang3.ArrayUtils",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 3239,
+            "endLine": 3248,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 3154,
+            "endLine": 3162,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private isArrayEmpty(array Object) : boolean extracted from public isEmpty(array Object[]) : boolean in class org.apache.commons.lang3.ArrayUtils",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 3250,
+            "endLine": 3259,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 3154,
+            "endLine": 3162,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private isArrayEmpty(array Object) : boolean extracted from public isEmpty(array short[]) : boolean in class org.apache.commons.lang3.ArrayUtils",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 3261,
+            "endLine": 3270,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 3154,
+            "endLine": 3162,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private isArrayEmpty(array Object) : boolean extracted from public isEmpty(array Object[]) : boolean in class org.apache.commons.lang3.ArrayUtils",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 3250,
+            "endLine": 3259,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 3154,
+            "endLine": 3162,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/commons-lang.git",
+      "sha1": "3c0ac0e87c03ae63a782e48bb31878ec9f114c39",
+      "url": "https://github.com/apache/commons-lang/commit/3c0ac0e87c03ae63a782e48bb31878ec9f114c39",
+      "ourApproach": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.lang3.CharsetsTestCase renamed to org.apache.commons.lang3.CharsetsTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/lang3/CharsetsTest.java",
+            "startLine": 26,
+            "endLine": 51,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/lang3/CharsetsTest.java",
+            "startLine": 26,
+            "endLine": 51,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.lang3.CharsetsTestCase renamed to org.apache.commons.lang3.CharsetsTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/lang3/CharsetsTest.java",
+            "startLine": 26,
+            "endLine": 51,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/lang3/CharsetsTest.java",
+            "startLine": 26,
+            "endLine": 51,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/commons-lang.git",
+      "sha1": "5cd20a04a0d2fbd8f281196fbc797e8eec6cd6e0",
+      "url": "https://github.com/apache/commons-lang/commit/5cd20a04a0d2fbd8f281196fbc797e8eec6cd6e0",
+      "ourApproach": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	void to Calendar in method private modify(val Calendar, field int, modType ModifyType) : Calendar from class org.apache.commons.lang3.time.DateUtils",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/time/DateUtils.java",
+            "startLine": 917,
+            "endLine": 1063,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/time/DateUtils.java",
+            "startLine": 908,
+            "endLine": 1054,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	void to Calendar in method private modify(val Calendar, field int, modType ModifyType) : Calendar from class org.apache.commons.lang3.time.DateUtils",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/time/DateUtils.java",
+            "startLine": 917,
+            "endLine": 1063,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/time/DateUtils.java",
+            "startLine": 908,
+            "endLine": 1054,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/commons-lang.git",
+      "sha1": "cbe3523b1254dbfd157b03a5c69787017fd7288c",
+      "url": "https://github.com/apache/commons-lang/commit/cbe3523b1254dbfd157b03a5c69787017fd7288c",
+      "ourApproach": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	mRules : Rule[] to rules : Rule[] in class org.apache.commons.lang3.time.FastDatePrinter",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/time/FastDatePrinter.java",
+            "startLine": 136,
+            "endLine": 136,
+            "startColumn": 30,
+            "endColumn": 36
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/time/FastDatePrinter.java",
+            "startLine": 136,
+            "endLine": 136,
+            "startColumn": 30,
+            "endColumn": 35
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	mPattern : String to pattern : String in class org.apache.commons.lang3.time.FastDatePrinter",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/time/FastDatePrinter.java",
+            "startLine": 124,
+            "endLine": 124,
+            "startColumn": 26,
+            "endColumn": 34
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/time/FastDatePrinter.java",
+            "startLine": 124,
+            "endLine": 124,
+            "startColumn": 26,
+            "endColumn": 33
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	mTimeZone : TimeZone to timeZone : TimeZone in class org.apache.commons.lang3.time.FastDatePrinter",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/time/FastDatePrinter.java",
+            "startLine": 128,
+            "endLine": 128,
+            "startColumn": 28,
+            "endColumn": 37
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/time/FastDatePrinter.java",
+            "startLine": 128,
+            "endLine": 128,
+            "startColumn": 28,
+            "endColumn": 36
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	mLocale : Locale to locale : Locale in class org.apache.commons.lang3.time.FastDatePrinter",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/time/FastDatePrinter.java",
+            "startLine": 132,
+            "endLine": 132,
+            "startColumn": 26,
+            "endColumn": 33
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/time/FastDatePrinter.java",
+            "startLine": 132,
+            "endLine": 132,
+            "startColumn": 26,
+            "endColumn": 32
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	mMaxLengthEstimate : int to maxLengthEstimate : int in class org.apache.commons.lang3.time.FastDatePrinter",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/time/FastDatePrinter.java",
+            "startLine": 140,
+            "endLine": 140,
+            "startColumn": 27,
+            "endColumn": 45
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/time/FastDatePrinter.java",
+            "startLine": 140,
+            "endLine": 140,
+            "startColumn": 27,
+            "endColumn": 44
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	mPattern : String to pattern : String in class org.apache.commons.lang3.time.FastDatePrinter",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/time/FastDatePrinter.java",
+            "startLine": 124,
+            "endLine": 124,
+            "startColumn": 26,
+            "endColumn": 34
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/time/FastDatePrinter.java",
+            "startLine": 124,
+            "endLine": 124,
+            "startColumn": 26,
+            "endColumn": 33
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	mTimeZone : TimeZone to timeZone : TimeZone in class org.apache.commons.lang3.time.FastDatePrinter",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/time/FastDatePrinter.java",
+            "startLine": 128,
+            "endLine": 128,
+            "startColumn": 28,
+            "endColumn": 37
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/time/FastDatePrinter.java",
+            "startLine": 128,
+            "endLine": 128,
+            "startColumn": 28,
+            "endColumn": 36
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	mLocale : Locale to locale : Locale in class org.apache.commons.lang3.time.FastDatePrinter",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/time/FastDatePrinter.java",
+            "startLine": 132,
+            "endLine": 132,
+            "startColumn": 26,
+            "endColumn": 33
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/time/FastDatePrinter.java",
+            "startLine": 132,
+            "endLine": 132,
+            "startColumn": 26,
+            "endColumn": 32
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	mRules : Rule[] to rules : Rule[] in class org.apache.commons.lang3.time.FastDatePrinter",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/time/FastDatePrinter.java",
+            "startLine": 136,
+            "endLine": 136,
+            "startColumn": 30,
+            "endColumn": 36
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/time/FastDatePrinter.java",
+            "startLine": 136,
+            "endLine": 136,
+            "startColumn": 30,
+            "endColumn": 35
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	mMaxLengthEstimate : int to maxLengthEstimate : int in class org.apache.commons.lang3.time.FastDatePrinter",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/time/FastDatePrinter.java",
+            "startLine": 140,
+            "endLine": 140,
+            "startColumn": 27,
+            "endColumn": 45
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/time/FastDatePrinter.java",
+            "startLine": 140,
+            "endLine": 140,
+            "startColumn": 27,
+            "endColumn": 44
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/commons-lang.git",
+      "sha1": "389fb37c56d82473ae925d3c8cbb1d4c40819722",
+      "url": "https://github.com/apache/commons-lang/commit/389fb37c56d82473ae925d3c8cbb1d4c40819722",
+      "ourApproach": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.lang3.concurrent.MemoizerTest renamed to org.apache.commons.lang3.concurrent.MemoizerComputableTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/lang3/concurrent/MemoizerTest.java",
+            "startLine": 28,
+            "endLine": 106,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/lang3/concurrent/MemoizerComputableTest.java",
+            "startLine": 28,
+            "endLine": 106,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.apache.commons.lang3.concurrent.MemoizerTest renamed to org.apache.commons.lang3.concurrent.MemoizerComputableTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/lang3/concurrent/MemoizerTest.java",
+            "startLine": 28,
+            "endLine": 106,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/lang3/concurrent/MemoizerComputableTest.java",
+            "startLine": 28,
+            "endLine": 106,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/commons-lang.git",
+      "sha1": "8f48ed8adf7f7b35d3b24e2f2511969d6705ec39",
+      "url": "https://github.com/apache/commons-lang/commit/8f48ed8adf7f7b35d3b24e2f2511969d6705ec39",
+      "ourApproach": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	Stream<O> to Stream<T> in method public stream() : Stream<T> from class org.apache.commons.lang3.stream.Streams.FailableStream",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/stream/Streams.java",
+            "startLine": 439,
+            "endLine": 446,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/stream/Streams.java",
+            "startLine": 437,
+            "endLine": 444,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	Collector<O,?,O[]> to Collector<T,?,T[]> in method public toArray(pElementType Class<T>) : Collector<T,?,T[]> from class org.apache.commons.lang3.stream.Streams",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/stream/Streams.java",
+            "startLine": 559,
+            "endLine": 568,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/stream/Streams.java",
+            "startLine": 654,
+            "endLine": 663,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	Supplier<List<O>> to Supplier<List<E>> in method public supplier() : Supplier<List<E>> from class org.apache.commons.lang3.stream.Streams.ArrayCollector",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/stream/Streams.java",
+            "startLine": 113,
+            "endLine": 116,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/stream/Streams.java",
+            "startLine": 119,
+            "endLine": 122,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	BinaryOperator<List<O>> to BinaryOperator<List<E>> in method public combiner() : BinaryOperator<List<E>> from class org.apache.commons.lang3.stream.Streams.ArrayCollector",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/stream/Streams.java",
+            "startLine": 100,
+            "endLine": 106,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/stream/Streams.java",
+            "startLine": 106,
+            "endLine": 112,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	Function<List<O>,O[]> to Function<List<E>,E[]> in method public finisher() : Function<List<E>,E[]> from class org.apache.commons.lang3.stream.Streams.ArrayCollector",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/stream/Streams.java",
+            "startLine": 108,
+            "endLine": 111,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/stream/Streams.java",
+            "startLine": 114,
+            "endLine": 117,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	O to T in method public reduce(identity T, accumulator BinaryOperator<T>) : T from class org.apache.commons.lang3.stream.Streams.FailableStream",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/stream/Streams.java",
+            "startLine": 382,
+            "endLine": 437,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/stream/Streams.java",
+            "startLine": 380,
+            "endLine": 435,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	BiConsumer<List<O>,O> to BiConsumer<List<E>,E> in method public accumulator() : BiConsumer<List<E>,E> from class org.apache.commons.lang3.stream.Streams.ArrayCollector",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/stream/Streams.java",
+            "startLine": 90,
+            "endLine": 93,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/stream/Streams.java",
+            "startLine": 96,
+            "endLine": 99,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	elementType : Class<O> to elementType : Class<E> in class org.apache.commons.lang3.stream.Streams.ArrayCollector",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/stream/Streams.java",
+            "startLine": 79,
+            "endLine": 79,
+            "startColumn": 32,
+            "endColumn": 43
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/stream/Streams.java",
+            "startLine": 85,
+            "endLine": 85,
+            "startColumn": 32,
+            "endColumn": 43
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	FailableStream<O> to FailableStream<T> in method public filter(predicate FailablePredicate<T,?>) : FailableStream<T> from class org.apache.commons.lang3.stream.Streams.FailableStream",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/stream/Streams.java",
+            "startLine": 317,
+            "endLine": 332,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/stream/Streams.java",
+            "startLine": 316,
+            "endLine": 331,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	stream : Stream<O> to stream : Stream<T> in class org.apache.commons.lang3.stream.Streams.FailableStream",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/stream/Streams.java",
+            "startLine": 126,
+            "endLine": 126,
+            "startColumn": 27,
+            "endColumn": 33
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/stream/Streams.java",
+            "startLine": 132,
+            "endLine": 132,
+            "startColumn": 27,
+            "endColumn": 33
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	FailableStream<O> to FailableStream<T> in method public stream(stream Stream<T>) : FailableStream<T> from class org.apache.commons.lang3.stream.Streams",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/stream/Streams.java",
+            "startLine": 519,
+            "endLine": 557,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/stream/Streams.java",
+            "startLine": 609,
+            "endLine": 652,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	FailableStream<O> to FailableStream<E> in method public stream(collection Collection<E>) : FailableStream<E> from class org.apache.commons.lang3.stream.Streams",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/stream/Streams.java",
+            "startLine": 478,
+            "endLine": 517,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/stream/Streams.java",
+            "startLine": 476,
+            "endLine": 519,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	public failableStream(stream Collection<T>) : FailableStream<T> extracted from public stream(stream Collection<O>) : FailableStream<O> in class org.apache.commons.lang3.stream.Streams",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/stream/Streams.java",
+            "startLine": 478,
+            "endLine": 517,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/stream/Streams.java",
+            "startLine": 521,
+            "endLine": 563,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	public failableStream(stream Stream<T>) : FailableStream<T> extracted from public stream(stream Stream<O>) : FailableStream<O> in class org.apache.commons.lang3.stream.Streams",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/stream/Streams.java",
+            "startLine": 519,
+            "endLine": 557,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/stream/Streams.java",
+            "startLine": 565,
+            "endLine": 607,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	elementType : Class<O> to elementType : Class<E> in class org.apache.commons.lang3.stream.Streams.ArrayCollector",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/stream/Streams.java",
+            "startLine": 79,
+            "endLine": 79,
+            "startColumn": 32,
+            "endColumn": 43
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/stream/Streams.java",
+            "startLine": 85,
+            "endLine": 85,
+            "startColumn": 32,
+            "endColumn": 43
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	BiConsumer<List<O>,O> to BiConsumer<List<E>,E> in method public accumulator() : BiConsumer<List<E>,E> from class org.apache.commons.lang3.stream.Streams.ArrayCollector",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/stream/Streams.java",
+            "startLine": 90,
+            "endLine": 93,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/stream/Streams.java",
+            "startLine": 96,
+            "endLine": 99,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	BinaryOperator<List<O>> to BinaryOperator<List<E>> in method public combiner() : BinaryOperator<List<E>> from class org.apache.commons.lang3.stream.Streams.ArrayCollector",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/stream/Streams.java",
+            "startLine": 100,
+            "endLine": 106,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/stream/Streams.java",
+            "startLine": 106,
+            "endLine": 112,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	Function<List<O>,O[]> to Function<List<E>,E[]> in method public finisher() : Function<List<E>,E[]> from class org.apache.commons.lang3.stream.Streams.ArrayCollector",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/stream/Streams.java",
+            "startLine": 108,
+            "endLine": 111,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/stream/Streams.java",
+            "startLine": 114,
+            "endLine": 117,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	Supplier<List<O>> to Supplier<List<E>> in method public supplier() : Supplier<List<E>> from class org.apache.commons.lang3.stream.Streams.ArrayCollector",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/stream/Streams.java",
+            "startLine": 113,
+            "endLine": 116,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/stream/Streams.java",
+            "startLine": 119,
+            "endLine": 122,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	stream : Stream<O> to stream : Stream<T> in class org.apache.commons.lang3.stream.Streams.FailableStream",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/stream/Streams.java",
+            "startLine": 126,
+            "endLine": 126,
+            "startColumn": 27,
+            "endColumn": 33
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/stream/Streams.java",
+            "startLine": 132,
+            "endLine": 132,
+            "startColumn": 27,
+            "endColumn": 33
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	Stream<O> to Stream<T> in method public stream() : Stream<T> from class org.apache.commons.lang3.stream.Streams.FailableStream",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/stream/Streams.java",
+            "startLine": 439,
+            "endLine": 446,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/stream/Streams.java",
+            "startLine": 437,
+            "endLine": 444,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	FailableStream<O> to FailableStream<T> in method public filter(predicate FailablePredicate<T,?>) : FailableStream<T> from class org.apache.commons.lang3.stream.Streams.FailableStream",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/stream/Streams.java",
+            "startLine": 317,
+            "endLine": 332,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/stream/Streams.java",
+            "startLine": 316,
+            "endLine": 331,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	O to T in method public reduce(identity T, accumulator BinaryOperator<T>) : T from class org.apache.commons.lang3.stream.Streams.FailableStream",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/stream/Streams.java",
+            "startLine": 382,
+            "endLine": 437,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/stream/Streams.java",
+            "startLine": 380,
+            "endLine": 435,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public stream(stream Collection<O>) : FailableStream<O> renamed to public failableStream(stream Collection<T>) : FailableStream<T> in class org.apache.commons.lang3.stream.Streams",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/stream/Streams.java",
+            "startLine": 478,
+            "endLine": 517,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/stream/Streams.java",
+            "startLine": 521,
+            "endLine": 563,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": false
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public stream(stream Stream<O>) : FailableStream<O> renamed to public failableStream(stream Stream<T>) : FailableStream<T> in class org.apache.commons.lang3.stream.Streams",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/stream/Streams.java",
+            "startLine": 519,
+            "endLine": 557,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/stream/Streams.java",
+            "startLine": 565,
+            "endLine": 607,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": false
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	FailableStream<O> to FailableStream<T> in method public failableStream(stream Collection<T>) : FailableStream<T> from class org.apache.commons.lang3.stream.Streams",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/stream/Streams.java",
+            "startLine": 478,
+            "endLine": 517,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/stream/Streams.java",
+            "startLine": 521,
+            "endLine": 563,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": false
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	FailableStream<O> to FailableStream<T> in method public failableStream(stream Stream<T>) : FailableStream<T> from class org.apache.commons.lang3.stream.Streams",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/stream/Streams.java",
+            "startLine": 519,
+            "endLine": 557,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/stream/Streams.java",
+            "startLine": 565,
+            "endLine": 607,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": false
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	Collector<O,?,O[]> to Collector<T,?,T[]> in method public toArray(pElementType Class<T>) : Collector<T,?,T[]> from class org.apache.commons.lang3.stream.Streams",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/stream/Streams.java",
+            "startLine": 559,
+            "endLine": 568,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/stream/Streams.java",
+            "startLine": 654,
+            "endLine": 663,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/commons-lang.git",
+      "sha1": "ff415c8f8f213d40a19f8dc9ac037050ef497bf8",
+      "url": "https://github.com/apache/commons-lang/commit/ff415c8f8f213d40a19f8dc9ac037050ef497bf8",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private nullSafeStream(collection Collection<O>) : Stream<O> renamed to public toStream(collection Collection<E>) : Stream<E> in class org.apache.commons.lang3.stream.Streams",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/stream/Streams.java",
+            "startLine": 449,
+            "endLine": 451,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/stream/Streams.java",
+            "startLine": 570,
+            "endLine": 580,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	Stream<O> to Stream<E> in method public toStream(collection Collection<E>) : Stream<E> from class org.apache.commons.lang3.stream.Streams",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/stream/Streams.java",
+            "startLine": 449,
+            "endLine": 451,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/stream/Streams.java",
+            "startLine": 570,
+            "endLine": 580,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private nullSafeStream(collection Collection<O>) : Stream<O> renamed to public toStream(collection Collection<E>) : Stream<E> in class org.apache.commons.lang3.stream.Streams",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/stream/Streams.java",
+            "startLine": 449,
+            "endLine": 451,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/stream/Streams.java",
+            "startLine": 570,
+            "endLine": 580,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	Stream<O> to Stream<E> in method public toStream(collection Collection<E>) : Stream<E> from class org.apache.commons.lang3.stream.Streams",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/stream/Streams.java",
+            "startLine": 449,
+            "endLine": 451,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/stream/Streams.java",
+            "startLine": 570,
+            "endLine": 580,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/commons-lang.git",
+      "sha1": "e3e29d585a455693829deb9231440aeda38eacd4",
+      "url": "https://github.com/apache/commons-lang/commit/e3e29d585a455693829deb9231440aeda38eacd4",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testRemoveStart() : void renamed to public testRemoveStartString() : void in class org.apache.commons.lang3.StringUtilsTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/lang3/StringUtilsTest.java",
+            "startLine": 1796,
+            "endLine": 1813,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/lang3/StringUtilsTest.java",
+            "startLine": 1812,
+            "endLine": 1829,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testRemoveStart() : void renamed to public testRemoveStartString() : void in class org.apache.commons.lang3.StringUtilsTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/lang3/StringUtilsTest.java",
+            "startLine": 1796,
+            "endLine": 1813,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/lang3/StringUtilsTest.java",
+            "startLine": 1812,
+            "endLine": 1829,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/commons-lang.git",
+      "sha1": "8efbb7df05d879dec15433e87a51392810936da5",
+      "url": "https://github.com/apache/commons-lang/commit/8efbb7df05d879dec15433e87a51392810936da5",
+      "ourApproach": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	_mask : int to mask : int in class org.apache.commons.lang3.BitField",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/BitField.java",
+            "startLine": 75,
+            "endLine": 75,
+            "startColumn": 23,
+            "endColumn": 28
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/BitField.java",
+            "startLine": 75,
+            "endLine": 75,
+            "startColumn": 23,
+            "endColumn": 27
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	_shift_count : int to shiftCount : int in class org.apache.commons.lang3.BitField",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/BitField.java",
+            "startLine": 76,
+            "endLine": 76,
+            "startColumn": 23,
+            "endColumn": 35
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/BitField.java",
+            "startLine": 76,
+            "endLine": 76,
+            "startColumn": 23,
+            "endColumn": 33
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	_mask : int to mask : int in class org.apache.commons.lang3.BitField",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/BitField.java",
+            "startLine": 75,
+            "endLine": 75,
+            "startColumn": 23,
+            "endColumn": 28
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/BitField.java",
+            "startLine": 75,
+            "endLine": 75,
+            "startColumn": 23,
+            "endColumn": 27
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	_shift_count : int to shiftCount : int in class org.apache.commons.lang3.BitField",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/BitField.java",
+            "startLine": 76,
+            "endLine": 76,
+            "startColumn": 23,
+            "endColumn": 35
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/BitField.java",
+            "startLine": 76,
+            "endLine": 76,
+            "startColumn": 23,
+            "endColumn": 33
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/commons-lang.git",
+      "sha1": "8ae6a3925ab3bcfa0450b9aa92f4d00693b4c8d2",
+      "url": "https://github.com/apache/commons-lang/commit/8ae6a3925ab3bcfa0450b9aa92f4d00693b4c8d2",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	public newInstance(type Class<T>, length int) : T[] extracted from public addAll(array1 T[], array2 T...) : T[] in class org.apache.commons.lang3.ArrayUtils",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 1054,
+            "endLine": 1106,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 4217,
+            "endLine": 4229,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	public newInstance(type Class<T>, length int) : T[] extracted from public insert(index int, array T[], values T...) : T[] in class org.apache.commons.lang3.ArrayUtils",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 3075,
+            "endLine": 3128,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 4217,
+            "endLine": 4229,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	public newInstance(type Class<T>, length int) : T[] extracted from public subarray(array T[], startIndexInclusive int, endIndexExclusive int) : T[] in class org.apache.commons.lang3.ArrayUtils",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 8159,
+            "endLine": 8210,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 4217,
+            "endLine": 4229,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	public newInstance(type Class<T>, length int) : T[] extracted from public addAll(array1 T[], array2 T...) : T[] in class org.apache.commons.lang3.ArrayUtils",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 1054,
+            "endLine": 1106,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 4217,
+            "endLine": 4229,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	public newInstance(type Class<T>, length int) : T[] extracted from public insert(index int, array T[], values T...) : T[] in class org.apache.commons.lang3.ArrayUtils",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 3075,
+            "endLine": 3128,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 4217,
+            "endLine": 4229,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	public newInstance(type Class<T>, length int) : T[] extracted from public subarray(array T[], startIndexInclusive int, endIndexExclusive int) : T[] in class org.apache.commons.lang3.ArrayUtils",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 8159,
+            "endLine": 8210,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 4217,
+            "endLine": 4229,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/commons-lang.git",
+      "sha1": "d1e9e598c9bcbf91afa174fa9b6c2ef30bbc8157",
+      "url": "https://github.com/apache/commons-lang/commit/d1e9e598c9bcbf91afa174fa9b6c2ef30bbc8157",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testIS_JAVA() : void renamed to public test_IS_JAVA() : void in class org.apache.commons.lang3.SystemUtilsTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/lang3/SystemUtilsTest.java",
+            "startLine": 139,
+            "endLine": 297,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/lang3/SystemUtilsTest.java",
+            "startLine": 55,
+            "endLine": 213,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testIS_OS() : void renamed to public test_IS_OS() : void in class org.apache.commons.lang3.SystemUtilsTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/lang3/SystemUtilsTest.java",
+            "startLine": 299,
+            "endLine": 338,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/lang3/SystemUtilsTest.java",
+            "startLine": 215,
+            "endLine": 254,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testIS_zOS() : void renamed to public test_IS_zOS() : void in class org.apache.commons.lang3.SystemUtilsTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/lang3/SystemUtilsTest.java",
+            "startLine": 340,
+            "endLine": 349,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/lang3/SystemUtilsTest.java",
+            "startLine": 256,
+            "endLine": 265,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testIS_JAVA() : void renamed to public test_IS_JAVA() : void in class org.apache.commons.lang3.SystemUtilsTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/lang3/SystemUtilsTest.java",
+            "startLine": 139,
+            "endLine": 297,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/lang3/SystemUtilsTest.java",
+            "startLine": 55,
+            "endLine": 213,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testIS_OS() : void renamed to public test_IS_OS() : void in class org.apache.commons.lang3.SystemUtilsTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/lang3/SystemUtilsTest.java",
+            "startLine": 299,
+            "endLine": 338,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/lang3/SystemUtilsTest.java",
+            "startLine": 215,
+            "endLine": 254,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testIS_zOS() : void renamed to public test_IS_zOS() : void in class org.apache.commons.lang3.SystemUtilsTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/lang3/SystemUtilsTest.java",
+            "startLine": 340,
+            "endLine": 349,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/lang3/SystemUtilsTest.java",
+            "startLine": 256,
+            "endLine": 265,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/commons-lang.git",
+      "sha1": "a98a6a99d9415c116087b07f1d777dbe20b889da",
+      "url": "https://github.com/apache/commons-lang/commit/a98a6a99d9415c116087b07f1d777dbe20b889da",
+      "ourApproach": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	TOTAL_DELAY_MILLIS : long to TOTAL_DELAY : Duration in class org.apache.commons.lang3.concurrent.locks.LockingVisitorsTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/lang3/concurrent/locks/LockingVisitorsTest.java",
+            "startLine": 34,
+            "endLine": 34,
+            "startColumn": 31,
+            "endColumn": 84
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/lang3/concurrent/locks/LockingVisitorsTest.java",
+            "startLine": 38,
+            "endLine": 38,
+            "startColumn": 35,
+            "endColumn": 86
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	TOTAL_DELAY_MILLIS : long to TOTAL_DELAY : Duration in class org.apache.commons.lang3.concurrent.locks.LockingVisitorsTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/lang3/concurrent/locks/LockingVisitorsTest.java",
+            "startLine": 34,
+            "endLine": 34,
+            "startColumn": 31,
+            "endColumn": 84
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/lang3/concurrent/locks/LockingVisitorsTest.java",
+            "startLine": 38,
+            "endLine": 38,
+            "startColumn": 35,
+            "endColumn": 86
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	DELAY_MILLIS : long to DELAY : Duration in class org.apache.commons.lang3.concurrent.locks.LockingVisitorsTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/lang3/concurrent/locks/LockingVisitorsTest.java",
+            "startLine": 32,
+            "endLine": 32,
+            "startColumn": 31,
+            "endColumn": 50
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/lang3/concurrent/locks/LockingVisitorsTest.java",
+            "startLine": 36,
+            "endLine": 36,
+            "startColumn": 35,
+            "endColumn": 66
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	DELAY_MILLIS : long to DELAY : Duration in class org.apache.commons.lang3.concurrent.locks.LockingVisitorsTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/lang3/concurrent/locks/LockingVisitorsTest.java",
+            "startLine": 32,
+            "endLine": 32,
+            "startColumn": 31,
+            "endColumn": 50
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/lang3/concurrent/locks/LockingVisitorsTest.java",
+            "startLine": 36,
+            "endLine": 36,
+            "startColumn": 35,
+            "endColumn": 66
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	DELAY_MILLIS : long to DELAY : Duration in class org.apache.commons.lang3.concurrent.locks.LockingVisitorsTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/lang3/concurrent/locks/LockingVisitorsTest.java",
+            "startLine": 32,
+            "endLine": 32,
+            "startColumn": 31,
+            "endColumn": 50
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/lang3/concurrent/locks/LockingVisitorsTest.java",
+            "startLine": 36,
+            "endLine": 36,
+            "startColumn": 35,
+            "endColumn": 66
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	DELAY_MILLIS : long to DELAY : Duration in class org.apache.commons.lang3.concurrent.locks.LockingVisitorsTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/lang3/concurrent/locks/LockingVisitorsTest.java",
+            "startLine": 32,
+            "endLine": 32,
+            "startColumn": 31,
+            "endColumn": 50
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/lang3/concurrent/locks/LockingVisitorsTest.java",
+            "startLine": 36,
+            "endLine": 36,
+            "startColumn": 35,
+            "endColumn": 66
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/commons-lang.git",
+      "sha1": "dddd8c4e26f1d254c55749e4b44ae7c6cce5001d",
+      "url": "https://github.com/apache/commons-lang/commit/dddd8c4e26f1d254c55749e4b44ae7c6cce5001d",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	public isNotEmpty() : boolean extracted from public appendSeparator(separator char) : StrBuilder in class org.apache.commons.lang3.text.StrBuilder",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/text/StrBuilder.java",
+            "startLine": 1373,
+            "endLine": 1397,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/text/StrBuilder.java",
+            "startLine": 285,
+            "endLine": 296,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	public isNotEmpty() : boolean extracted from public appendSeparator(standard char, defaultIfEmpty char) : StrBuilder in class org.apache.commons.lang3.text.StrBuilder",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/text/StrBuilder.java",
+            "startLine": 1399,
+            "endLine": 1417,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/text/StrBuilder.java",
+            "startLine": 285,
+            "endLine": 296,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	public isNotEmpty() : boolean extracted from public appendSeparator(separator char) : StrBuilder in class org.apache.commons.lang3.text.StrBuilder",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/text/StrBuilder.java",
+            "startLine": 1373,
+            "endLine": 1397,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/text/StrBuilder.java",
+            "startLine": 285,
+            "endLine": 296,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	public isNotEmpty() : boolean extracted from public appendSeparator(standard char, defaultIfEmpty char) : StrBuilder in class org.apache.commons.lang3.text.StrBuilder",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/text/StrBuilder.java",
+            "startLine": 1399,
+            "endLine": 1417,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/text/StrBuilder.java",
+            "startLine": 285,
+            "endLine": 296,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/commons-lang.git",
+      "sha1": "b4456352bcbe3672afba526ea143fca7a53f7843",
+      "url": "https://github.com/apache/commons-lang/commit/b4456352bcbe3672afba526ea143fca7a53f7843",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.apache.commons.lang3.ArraySorter from Class org.apache.commons.lang3.ArrayUtils",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 37,
+            "endLine": 9687,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/ArraySorter.java",
+            "startLine": 22,
+            "endLine": 141,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.apache.commons.lang3.ArraySorterTest from Class org.apache.commons.lang3.ArrayUtilsTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/lang3/ArrayUtilsTest.java",
+            "startLine": 42,
+            "endLine": 6585,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/org/apache/commons/lang3/ArraySorterTest.java",
+            "startLine": 26,
+            "endLine": 100,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.apache.commons.lang3.ArraySorter from class org.apache.commons.lang3.ArrayUtils",
+          "leftSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+            "startLine": 37,
+            "endLine": 9687,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/org/apache/commons/lang3/ArraySorter.java",
+            "startLine": 22,
+            "endLine": 141,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ]
+    }
+  ]
+}

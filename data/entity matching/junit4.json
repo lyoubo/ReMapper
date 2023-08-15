@@ -1,0 +1,3028 @@
+{
+  "results": [
+    {
+      "repository": "https://github.com/junit-team/junit4.git",
+      "sha1": "2db63942882d91020b46d7333285e5c94f1d1e52",
+      "url": "https://github.com/junit-team/junit4/commit/2db63942882d91020b46d7333285e5c94f1d1e52",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "org.junit.internal.runners.statements.FailOnTimeoutTest",
+            "type": "Field",
+            "name": "lookingForStuckThread",
+            "filePath": "src/test/java/org/junit/internal/runners/statements/FailOnTimeoutTest.java",
+            "startLine": 42,
+            "endLine": 42,
+            "startColumn": 27,
+            "endColumn": 48
+          },
+          "rightSideLocation": {
+            "container": "org.junit.internal.runners.statements.FailOnTimeoutTest",
+            "type": "Field",
+            "name": "lookingForStuckThread",
+            "filePath": "src/test/java/org/junit/internal/runners/statements/FailOnTimeoutTest.java",
+            "startLine": 45,
+            "endLine": 45,
+            "startColumn": 20,
+            "endColumn": 41
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.internal.runners.statements.FailOnTimeoutTest",
+            "type": "Method",
+            "name": "getParameters",
+            "filePath": "src/test/java/org/junit/internal/runners/statements/FailOnTimeoutTest.java",
+            "startLine": 45,
+            "endLine": 48,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.junit.internal.runners.statements.FailOnTimeoutTest",
+            "type": "Method",
+            "name": "getParameters",
+            "filePath": "src/test/java/org/junit/internal/runners/statements/FailOnTimeoutTest.java",
+            "startLine": 39,
+            "endLine": 42,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.internal.runners.statements.FailOnTimeoutTest",
+            "type": "Method",
+            "name": "throwsTestTimedOutException",
+            "filePath": "src/test/java/org/junit/internal/runners/statements/FailOnTimeoutTest.java",
+            "startLine": 59,
+            "endLine": 64,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.junit.internal.runners.statements.FailOnTimeoutTest",
+            "type": "Method",
+            "name": "throwsTestTimedOutException",
+            "filePath": "src/test/java/org/junit/internal/runners/statements/FailOnTimeoutTest.java",
+            "startLine": 57,
+            "endLine": 62,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.internal.runners.statements.FailOnTimeoutTest",
+            "type": "Method",
+            "name": "throwExceptionWithNiceMessageOnTimeout",
+            "filePath": "src/test/java/org/junit/internal/runners/statements/FailOnTimeoutTest.java",
+            "startLine": 66,
+            "endLine": 72,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.junit.internal.runners.statements.FailOnTimeoutTest",
+            "type": "Method",
+            "name": "throwExceptionWithNiceMessageOnTimeout",
+            "filePath": "src/test/java/org/junit/internal/runners/statements/FailOnTimeoutTest.java",
+            "startLine": 64,
+            "endLine": 70,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.internal.runners.statements.FailOnTimeoutTest",
+            "type": "Method",
+            "name": "sendUpExceptionThrownByStatement",
+            "filePath": "src/test/java/org/junit/internal/runners/statements/FailOnTimeoutTest.java",
+            "startLine": 74,
+            "endLine": 81,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.junit.internal.runners.statements.FailOnTimeoutTest",
+            "type": "Method",
+            "name": "sendUpExceptionThrownByStatement",
+            "filePath": "src/test/java/org/junit/internal/runners/statements/FailOnTimeoutTest.java",
+            "startLine": 72,
+            "endLine": 79,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.internal.runners.statements.FailOnTimeoutTest",
+            "type": "Method",
+            "name": "throwExceptionIfTheSecondCallToEvaluateNeedsTooMuchTime",
+            "filePath": "src/test/java/org/junit/internal/runners/statements/FailOnTimeoutTest.java",
+            "startLine": 83,
+            "endLine": 90,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.junit.internal.runners.statements.FailOnTimeoutTest",
+            "type": "Method",
+            "name": "throwExceptionIfTheSecondCallToEvaluateNeedsTooMuchTime",
+            "filePath": "src/test/java/org/junit/internal/runners/statements/FailOnTimeoutTest.java",
+            "startLine": 81,
+            "endLine": 94,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.internal.runners.statements.FailOnTimeoutTest",
+            "type": "Method",
+            "name": "throwTimeoutExceptionOnSecondCallAlthoughFirstCallThrowsException",
+            "filePath": "src/test/java/org/junit/internal/runners/statements/FailOnTimeoutTest.java",
+            "startLine": 92,
+            "endLine": 103,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.junit.internal.runners.statements.FailOnTimeoutTest",
+            "type": "Method",
+            "name": "throwTimeoutExceptionOnSecondCallAlthoughFirstCallThrowsException",
+            "filePath": "src/test/java/org/junit/internal/runners/statements/FailOnTimeoutTest.java",
+            "startLine": 96,
+            "endLine": 111,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.internal.runners.statements.FailOnTimeoutTest",
+            "type": "Method",
+            "name": "throwsExceptionWithTimeoutValueAndTimeUnitSet",
+            "filePath": "src/test/java/org/junit/internal/runners/statements/FailOnTimeoutTest.java",
+            "startLine": 105,
+            "endLine": 112,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.junit.internal.runners.statements.FailOnTimeoutTest",
+            "type": "Method",
+            "name": "throwsExceptionWithTimeoutValueAndTimeUnitSet",
+            "filePath": "src/test/java/org/junit/internal/runners/statements/FailOnTimeoutTest.java",
+            "startLine": 113,
+            "endLine": 120,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.internal.runners.statements.FailOnTimeoutTest",
+            "type": "Method",
+            "name": "stopEndlessStatement",
+            "filePath": "src/test/java/org/junit/internal/runners/statements/FailOnTimeoutTest.java",
+            "startLine": 152,
+            "endLine": 165,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.junit.internal.runners.statements.FailOnTimeoutTest",
+            "type": "Method",
+            "name": "stopEndlessStatement",
+            "filePath": "src/test/java/org/junit/internal/runners/statements/FailOnTimeoutTest.java",
+            "startLine": 122,
+            "endLine": 135,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.internal.runners.statements.FailOnTimeoutTest",
+            "type": "Method",
+            "name": "stackTraceContainsRealCauseOfTimeout",
+            "filePath": "src/test/java/org/junit/internal/runners/statements/FailOnTimeoutTest.java",
+            "startLine": 179,
+            "endLine": 207,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.junit.internal.runners.statements.FailOnTimeoutTest",
+            "type": "Method",
+            "name": "stackTraceContainsRealCauseOfTimeout",
+            "filePath": "src/test/java/org/junit/internal/runners/statements/FailOnTimeoutTest.java",
+            "startLine": 137,
+            "endLine": 161,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.internal.runners.statements.FailOnTimeoutTest",
+            "type": "Method",
+            "name": "lookingForStuckThread_threadGroupNotLeaked",
+            "filePath": "src/test/java/org/junit/internal/runners/statements/FailOnTimeoutTest.java",
+            "startLine": 235,
+            "endLine": 257,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.junit.internal.runners.statements.FailOnTimeoutTest",
+            "type": "Method",
+            "name": "lookingForStuckThread_threadGroupNotLeaked",
+            "filePath": "src/test/java/org/junit/internal/runners/statements/FailOnTimeoutTest.java",
+            "startLine": 189,
+            "endLine": 214,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.internal.runners.statements.FailOnTimeoutTest",
+            "type": "Method",
+            "name": "notLookingForStuckThread_usesSameThreadGroup",
+            "filePath": "src/test/java/org/junit/internal/runners/statements/FailOnTimeoutTest.java",
+            "startLine": 259,
+            "endLine": 272,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.junit.internal.runners.statements.FailOnTimeoutTest",
+            "type": "Method",
+            "name": "notLookingForStuckThread_usesSameThreadGroup",
+            "filePath": "src/test/java/org/junit/internal/runners/statements/FailOnTimeoutTest.java",
+            "startLine": 216,
+            "endLine": 233,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.internal.runners.statements.FailOnTimeoutTest",
+            "type": "Class",
+            "name": "FailOnTimeoutTest",
+            "filePath": "src/test/java/org/junit/internal/runners/statements/FailOnTimeoutTest.java",
+            "startLine": 32,
+            "endLine": 273,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.junit.internal.runners.statements.FailOnTimeoutTest",
+            "type": "Class",
+            "name": "FailOnTimeoutTest",
+            "filePath": "src/test/java/org/junit/internal/runners/statements/FailOnTimeoutTest.java",
+            "startLine": 33,
+            "endLine": 276,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.internal.runners.statements.FailOnTimeoutTest.InfiniteLoopStatement",
+            "type": "Class",
+            "name": "InfiniteLoopStatement",
+            "filePath": "src/test/java/org/junit/internal/runners/statements/FailOnTimeoutTest.java",
+            "startLine": 167,
+            "endLine": 177,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.junit.internal.runners.statements.FailOnTimeoutTest.InfiniteLoop",
+            "type": "Class",
+            "name": "InfiniteLoop",
+            "filePath": "src/test/java/org/junit/internal/runners/statements/FailOnTimeoutTest.java",
+            "startLine": 265,
+            "endLine": 275,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.internal.runners.statements.FailOnTimeoutTest.InfiniteLoopStatement",
+            "type": "Method",
+            "name": "evaluate",
+            "filePath": "src/test/java/org/junit/internal/runners/statements/FailOnTimeoutTest.java",
+            "startLine": 170,
+            "endLine": 176,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "container": "org.junit.internal.runners.statements.FailOnTimeoutTest.InfiniteLoop",
+            "type": "Method",
+            "name": "evaluate",
+            "filePath": "src/test/java/org/junit/internal/runners/statements/FailOnTimeoutTest.java",
+            "startLine": 268,
+            "endLine": 274,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "container": "org.junit.internal.runners.statements.FailOnTimeoutTest",
+            "type": "Method",
+            "name": "evaluateWithWaitDuration",
+            "filePath": "src/test/java/org/junit/internal/runners/statements/FailOnTimeoutTest.java",
+            "startLine": 128,
+            "endLine": 136,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.junit.internal.runners.statements.FailOnTimeoutTest",
+            "type": "Method",
+            "name": "run",
+            "filePath": "src/test/java/org/junit/internal/runners/statements/FailOnTimeoutTest.java",
+            "startLine": 242,
+            "endLine": 248,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.internal.runners.statements.FailOnTimeoutTest.InfiniteLoopStatement",
+            "type": "Field",
+            "name": "COUNT",
+            "filePath": "src/test/java/org/junit/internal/runners/statements/FailOnTimeoutTest.java",
+            "startLine": 168,
+            "endLine": 168,
+            "startColumn": 28,
+            "endColumn": 37
+          },
+          "rightSideLocation": {
+            "container": "org.junit.internal.runners.statements.FailOnTimeoutTest.InfiniteLoop",
+            "type": "Field",
+            "name": "stillExecuting",
+            "filePath": "src/test/java/org/junit/internal/runners/statements/FailOnTimeoutTest.java",
+            "startLine": 266,
+            "endLine": 266,
+            "startColumn": 29,
+            "endColumn": 65
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "leftSideLocation": {
+            "container": "org.junit.internal.runners.statements.FailOnTimeoutTest.TestStatement",
+            "type": "Class",
+            "name": "TestStatement",
+            "filePath": "src/test/java/org/junit/internal/runners/statements/FailOnTimeoutTest.java",
+            "startLine": 138,
+            "endLine": 150,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.junit.internal.runners.statements.FailOnTimeoutTest.DelegateStatement",
+            "type": "Class",
+            "name": "DelegateStatement",
+            "filePath": "src/test/java/org/junit/internal/runners/statements/FailOnTimeoutTest.java",
+            "startLine": 250,
+            "endLine": 257,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.internal.runners.statements.FailOnTimeoutTest.TestStatement",
+            "type": "Method",
+            "name": "evaluate",
+            "filePath": "src/test/java/org/junit/internal/runners/statements/FailOnTimeoutTest.java",
+            "startLine": 143,
+            "endLine": 149,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "container": "org.junit.internal.runners.statements.FailOnTimeoutTest.DelegateStatement",
+            "type": "Method",
+            "name": "evaluate",
+            "filePath": "src/test/java/org/junit/internal/runners/statements/FailOnTimeoutTest.java",
+            "startLine": 253,
+            "endLine": 256,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.internal.runners.statements.FailOnTimeoutTest.TestStatement",
+            "type": "Field",
+            "name": "nextStatement",
+            "filePath": "src/test/java/org/junit/internal/runners/statements/FailOnTimeoutTest.java",
+            "startLine": 141,
+            "endLine": 141,
+            "startColumn": 19,
+            "endColumn": 32
+          },
+          "rightSideLocation": {
+            "container": "org.junit.internal.runners.statements.FailOnTimeoutTest.DelegateStatement",
+            "type": "Field",
+            "name": "delegate",
+            "filePath": "src/test/java/org/junit/internal/runners/statements/FailOnTimeoutTest.java",
+            "startLine": 251,
+            "endLine": 251,
+            "startColumn": 19,
+            "endColumn": 27
+          },
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/junit-team/junit4.git",
+      "sha1": "877750a0c8a5aff8d99e5164a1abed487d7f70cc",
+      "url": "https://github.com/junit-team/junit4/commit/877750a0c8a5aff8d99e5164a1abed487d7f70cc",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "org.junit.internal.Throwables",
+            "type": "Field",
+            "name": "TEST_FRAMEWORK_METHOD_NAME_PREFIXES",
+            "filePath": "src/main/java/org/junit/internal/Throwables.java",
+            "startLine": 230,
+            "endLine": 236,
+            "startColumn": 35,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.junit.internal.Throwables",
+            "type": "Field",
+            "name": "TEST_FRAMEWORK_METHOD_NAME_PREFIXES",
+            "filePath": "src/main/java/org/junit/internal/Throwables.java",
+            "startLine": 230,
+            "endLine": 239,
+            "startColumn": 35,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.internal.Throwables",
+            "type": "Class",
+            "name": "Throwables",
+            "filePath": "src/main/java/org/junit/internal/Throwables.java",
+            "startLine": 15,
+            "endLine": 270,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.junit.internal.Throwables",
+            "type": "Class",
+            "name": "Throwables",
+            "filePath": "src/main/java/org/junit/internal/Throwables.java",
+            "startLine": 15,
+            "endLine": 273,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.internal.StackTracesTest",
+            "type": "Method",
+            "name": "getTrimmedStackForJUnit4TestFailingInTestMethod",
+            "filePath": "src/test/java/org/junit/internal/StackTracesTest.java",
+            "startLine": 52,
+            "endLine": 65,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.junit.internal.StackTracesTest",
+            "type": "Method",
+            "name": "getTrimmedStackForJUnit4TestFailingInTestMethod",
+            "filePath": "src/test/java/org/junit/internal/StackTracesTest.java",
+            "startLine": 45,
+            "endLine": 58,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.internal.StackTracesTest",
+            "type": "Method",
+            "name": "getTrimmedStackForJUnit4TestFailingInTestMethodWithCause",
+            "filePath": "src/test/java/org/junit/internal/StackTracesTest.java",
+            "startLine": 67,
+            "endLine": 86,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.junit.internal.StackTracesTest",
+            "type": "Method",
+            "name": "getTrimmedStackForJUnit4TestFailingInTestMethodWithCause",
+            "filePath": "src/test/java/org/junit/internal/StackTracesTest.java",
+            "startLine": 60,
+            "endLine": 79,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.internal.StackTracesTest",
+            "type": "Method",
+            "name": "getTrimmedStackForJUnit4TestFailingInBeforeMethod",
+            "filePath": "src/test/java/org/junit/internal/StackTracesTest.java",
+            "startLine": 88,
+            "endLine": 101,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.junit.internal.StackTracesTest",
+            "type": "Method",
+            "name": "getTrimmedStackForJUnit4TestFailingInBeforeMethod",
+            "filePath": "src/test/java/org/junit/internal/StackTracesTest.java",
+            "startLine": 81,
+            "endLine": 94,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.internal.StackTracesTest",
+            "type": "Method",
+            "name": "getTrimmedStackForJUnit3TestFailingInTestMethod",
+            "filePath": "src/test/java/org/junit/internal/StackTracesTest.java",
+            "startLine": 103,
+            "endLine": 116,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.junit.internal.StackTracesTest",
+            "type": "Method",
+            "name": "getTrimmedStackForJUnit3TestFailingInTestMethod",
+            "filePath": "src/test/java/org/junit/internal/StackTracesTest.java",
+            "startLine": 96,
+            "endLine": 109,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.internal.StackTracesTest",
+            "type": "Method",
+            "name": "getTrimmedStackForJUnit3TestFailingInSetupMethod",
+            "filePath": "src/test/java/org/junit/internal/StackTracesTest.java",
+            "startLine": 118,
+            "endLine": 131,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.junit.internal.StackTracesTest",
+            "type": "Method",
+            "name": "getTrimmedStackForJUnit3TestFailingInSetupMethod",
+            "filePath": "src/test/java/org/junit/internal/StackTracesTest.java",
+            "startLine": 111,
+            "endLine": 124,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.internal.StackTracesTest",
+            "type": "Method",
+            "name": "getTrimmedStackForJUnit4TestFailingInTestRule",
+            "filePath": "src/test/java/org/junit/internal/StackTracesTest.java",
+            "startLine": 133,
+            "endLine": 146,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.junit.internal.StackTracesTest",
+            "type": "Method",
+            "name": "getTrimmedStackForJUnit4TestFailingInTestRule",
+            "filePath": "src/test/java/org/junit/internal/StackTracesTest.java",
+            "startLine": 126,
+            "endLine": 139,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.internal.StackTracesTest",
+            "type": "Method",
+            "name": "getTrimmedStackForJUnit4TestFailingInClassRule",
+            "filePath": "src/test/java/org/junit/internal/StackTracesTest.java",
+            "startLine": 148,
+            "endLine": 161,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.junit.internal.StackTracesTest",
+            "type": "Method",
+            "name": "getTrimmedStackForJUnit4TestFailingInClassRule",
+            "filePath": "src/test/java/org/junit/internal/StackTracesTest.java",
+            "startLine": 141,
+            "endLine": 154,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.internal.StackTracesTest",
+            "type": "Method",
+            "name": "getTrimmedStackForJUnit4TestFailingInMethodRule",
+            "filePath": "src/test/java/org/junit/internal/StackTracesTest.java",
+            "startLine": 163,
+            "endLine": 176,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.junit.internal.StackTracesTest",
+            "type": "Method",
+            "name": "getTrimmedStackForJUnit4TestFailingInMethodRule",
+            "filePath": "src/test/java/org/junit/internal/StackTracesTest.java",
+            "startLine": 156,
+            "endLine": 169,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.internal.StackTracesTest",
+            "type": "Method",
+            "name": "getTrimmedStackWithSuppressedExceptions",
+            "filePath": "src/test/java/org/junit/internal/StackTracesTest.java",
+            "startLine": 178,
+            "endLine": 193,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.junit.internal.StackTracesTest",
+            "type": "Method",
+            "name": "getTrimmedStackWithSuppressedExceptions",
+            "filePath": "src/test/java/org/junit/internal/StackTracesTest.java",
+            "startLine": 171,
+            "endLine": 186,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.internal.StackTracesTest",
+            "type": "Class",
+            "name": "StackTracesTest",
+            "filePath": "src/test/java/org/junit/internal/StackTracesTest.java",
+            "startLine": 37,
+            "endLine": 476,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.junit.internal.StackTracesTest",
+            "type": "Class",
+            "name": "StackTracesTest",
+            "filePath": "src/test/java/org/junit/internal/StackTracesTest.java",
+            "startLine": 30,
+            "endLine": 332,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.tests.SampleJUnit4Tests",
+            "type": "Class",
+            "name": "SampleJUnit4Tests",
+            "filePath": "src/test/java/org/junit/tests/SampleJUnit4Tests.java",
+            "startLine": 5,
+            "endLine": 48,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.junit.tests.SampleJUnit4Tests",
+            "type": "Class",
+            "name": "SampleJUnit4Tests",
+            "filePath": "src/test/java/org/junit/tests/SampleJUnit4Tests.java",
+            "startLine": 14,
+            "endLine": 136,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.internal.StackTracesTest.JUnit3TestWithOneThrowingTestMethod",
+            "type": "Method",
+            "name": "testAlwaysThrows",
+            "filePath": "src/test/java/org/junit/internal/StackTracesTest.java",
+            "startLine": 350,
+            "endLine": 352,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "container": "junit.tests.SampleJUnit3Tests.TestWithOneThrowingTestMethod",
+            "type": "Method",
+            "name": "testAlwaysThrows",
+            "filePath": "src/test/java/junit/tests/SampleJUnit3Tests.java",
+            "startLine": 12,
+            "endLine": 14,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.internal.StackTracesTest.TestWithThrowingBeforeMethod",
+            "type": "Method",
+            "name": "alwaysThrows",
+            "filePath": "src/test/java/org/junit/internal/StackTracesTest.java",
+            "startLine": 365,
+            "endLine": 368,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "container": "org.junit.tests.SampleJUnit4Tests.TestWithThrowingBeforeMethod",
+            "type": "Method",
+            "name": "alwaysThrows",
+            "filePath": "src/test/java/org/junit/tests/SampleJUnit4Tests.java",
+            "startLine": 37,
+            "endLine": 40,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.internal.StackTracesTest.JUnit3TestWithThrowingSetUpMethod",
+            "type": "Method",
+            "name": "setUp",
+            "filePath": "src/test/java/org/junit/internal/StackTracesTest.java",
+            "startLine": 377,
+            "endLine": 381,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "container": "junit.tests.SampleJUnit3Tests.TestWithThrowingSetUpMethod",
+            "type": "Method",
+            "name": "setUp",
+            "filePath": "src/test/java/junit/tests/SampleJUnit3Tests.java",
+            "startLine": 19,
+            "endLine": 23,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.internal.StackTracesTest.JUnit3TestWithThrowingSetUpMethod",
+            "type": "Method",
+            "name": "testAlwaysPasses",
+            "filePath": "src/test/java/org/junit/internal/StackTracesTest.java",
+            "startLine": 383,
+            "endLine": 384,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "container": "junit.tests.SampleJUnit3Tests.TestWithThrowingSetUpMethod",
+            "type": "Method",
+            "name": "testAlwaysPasses",
+            "filePath": "src/test/java/junit/tests/SampleJUnit3Tests.java",
+            "startLine": 25,
+            "endLine": 26,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.internal.StackTracesTest.FakeClassUnderTest",
+            "type": "Method",
+            "name": "throwsExceptionWithCause",
+            "filePath": "src/test/java/org/junit/internal/StackTracesTest.java",
+            "startLine": 437,
+            "endLine": 439,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "container": "junit.tests.SampleJUnit3Tests.FakeClassUnderTest",
+            "type": "Method",
+            "name": "throwsExceptionWithCause",
+            "filePath": "src/test/java/junit/tests/SampleJUnit3Tests.java",
+            "startLine": 31,
+            "endLine": 33,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.internal.StackTracesTest.FakeClassUnderTest",
+            "type": "Method",
+            "name": "throwsExceptionWithoutCause",
+            "filePath": "src/test/java/org/junit/internal/StackTracesTest.java",
+            "startLine": 441,
+            "endLine": 443,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "container": "junit.tests.SampleJUnit3Tests.FakeClassUnderTest",
+            "type": "Method",
+            "name": "throwsExceptionWithoutCause",
+            "filePath": "src/test/java/junit/tests/SampleJUnit3Tests.java",
+            "startLine": 35,
+            "endLine": 37,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.internal.StackTracesTest.FakeClassUnderTest",
+            "type": "Method",
+            "name": "doThrowExceptionWithCause",
+            "filePath": "src/test/java/org/junit/internal/StackTracesTest.java",
+            "startLine": 445,
+            "endLine": 451,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "container": "junit.tests.SampleJUnit3Tests.FakeClassUnderTest",
+            "type": "Method",
+            "name": "doThrowExceptionWithCause",
+            "filePath": "src/test/java/junit/tests/SampleJUnit3Tests.java",
+            "startLine": 39,
+            "endLine": 45,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.internal.StackTracesTest.FakeClassUnderTest",
+            "type": "Method",
+            "name": "doThrowExceptionWithoutCause",
+            "filePath": "src/test/java/org/junit/internal/StackTracesTest.java",
+            "startLine": 453,
+            "endLine": 455,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "container": "junit.tests.SampleJUnit3Tests.FakeClassUnderTest",
+            "type": "Method",
+            "name": "doThrowExceptionWithoutCause",
+            "filePath": "src/test/java/junit/tests/SampleJUnit3Tests.java",
+            "startLine": 47,
+            "endLine": 49,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.internal.StackTracesTest.TestWithSuppressedException",
+            "type": "Method",
+            "name": "initAddSuppressed",
+            "filePath": "src/test/java/org/junit/internal/StackTracesTest.java",
+            "startLine": 461,
+            "endLine": 467,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "container": "org.junit.tests.SampleJUnit4Tests.TestWithSuppressedException",
+            "type": "Method",
+            "name": "initAddSuppressed",
+            "filePath": "src/test/java/org/junit/tests/SampleJUnit4Tests.java",
+            "startLine": 98,
+            "endLine": 104,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.internal.StackTracesTest.TestWithSuppressedException",
+            "type": "Method",
+            "name": "alwaysThrows",
+            "filePath": "src/test/java/org/junit/internal/StackTracesTest.java",
+            "startLine": 469,
+            "endLine": 474,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "container": "org.junit.tests.SampleJUnit4Tests.TestWithSuppressedException",
+            "type": "Method",
+            "name": "alwaysThrows",
+            "filePath": "src/test/java/org/junit/tests/SampleJUnit4Tests.java",
+            "startLine": 106,
+            "endLine": 111,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.internal.StackTracesTest.JUnit3TestWithOneThrowingTestMethod",
+            "type": "Class",
+            "name": "JUnit3TestWithOneThrowingTestMethod",
+            "filePath": "src/test/java/org/junit/internal/StackTracesTest.java",
+            "startLine": 348,
+            "endLine": 353,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "junit.tests.SampleJUnit3Tests.TestWithOneThrowingTestMethod",
+            "type": "Class",
+            "name": "TestWithOneThrowingTestMethod",
+            "filePath": "src/test/java/junit/tests/SampleJUnit3Tests.java",
+            "startLine": 10,
+            "endLine": 15,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.internal.StackTracesTest.JUnit3TestWithThrowingSetUpMethod",
+            "type": "Class",
+            "name": "JUnit3TestWithThrowingSetUpMethod",
+            "filePath": "src/test/java/org/junit/internal/StackTracesTest.java",
+            "startLine": 375,
+            "endLine": 385,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "junit.tests.SampleJUnit3Tests.TestWithThrowingSetUpMethod",
+            "type": "Class",
+            "name": "TestWithThrowingSetUpMethod",
+            "filePath": "src/test/java/junit/tests/SampleJUnit3Tests.java",
+            "startLine": 17,
+            "endLine": 27,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.internal.StackTracesTest.FakeClassUnderTest",
+            "type": "Class",
+            "name": "FakeClassUnderTest",
+            "filePath": "src/test/java/org/junit/internal/StackTracesTest.java",
+            "startLine": 435,
+            "endLine": 456,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "junit.tests.SampleJUnit3Tests.FakeClassUnderTest",
+            "type": "Class",
+            "name": "FakeClassUnderTest",
+            "filePath": "src/test/java/junit/tests/SampleJUnit3Tests.java",
+            "startLine": 29,
+            "endLine": 50,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "container": "org.junit.internal.StackTracesTest.TestWithThrowingBeforeMethod",
+            "type": "Method",
+            "name": "alwaysPasses",
+            "filePath": "src/test/java/org/junit/internal/StackTracesTest.java",
+            "startLine": 370,
+            "endLine": 372,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "container": "org.junit.tests.SampleJUnit4Tests.TestWithThrowingBeforeMethod",
+            "type": "Method",
+            "name": "alwaysPasses",
+            "filePath": "src/test/java/org/junit/tests/SampleJUnit4Tests.java",
+            "startLine": 42,
+            "endLine": 44,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.internal.StackTracesTest.ThrowingTestRule",
+            "type": "Method",
+            "name": "apply",
+            "filePath": "src/test/java/org/junit/internal/StackTracesTest.java",
+            "startLine": 389,
+            "endLine": 393,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "container": "org.junit.tests.SampleJUnit4Tests.ThrowingTestRule",
+            "type": "Method",
+            "name": "apply",
+            "filePath": "src/test/java/org/junit/tests/SampleJUnit4Tests.java",
+            "startLine": 49,
+            "endLine": 53,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.internal.StackTracesTest.TestWithThrowingTestRule",
+            "type": "Field",
+            "name": "rule",
+            "filePath": "src/test/java/org/junit/internal/StackTracesTest.java",
+            "startLine": 399,
+            "endLine": 399,
+            "startColumn": 31,
+            "endColumn": 60
+          },
+          "rightSideLocation": {
+            "container": "org.junit.tests.SampleJUnit4Tests.TestWithThrowingTestRule",
+            "type": "Field",
+            "name": "rule",
+            "filePath": "src/test/java/org/junit/tests/SampleJUnit4Tests.java",
+            "startLine": 59,
+            "endLine": 59,
+            "startColumn": 31,
+            "endColumn": 60
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.internal.StackTracesTest.TestWithThrowingTestRule",
+            "type": "Method",
+            "name": "alwaysPasses",
+            "filePath": "src/test/java/org/junit/internal/StackTracesTest.java",
+            "startLine": 401,
+            "endLine": 403,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "container": "org.junit.tests.SampleJUnit4Tests.TestWithThrowingTestRule",
+            "type": "Method",
+            "name": "alwaysPasses",
+            "filePath": "src/test/java/org/junit/tests/SampleJUnit4Tests.java",
+            "startLine": 61,
+            "endLine": 63,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.internal.StackTracesTest.TestWithThrowingClassRule",
+            "type": "Field",
+            "name": "rule",
+            "filePath": "src/test/java/org/junit/internal/StackTracesTest.java",
+            "startLine": 409,
+            "endLine": 409,
+            "startColumn": 38,
+            "endColumn": 67
+          },
+          "rightSideLocation": {
+            "container": "org.junit.tests.SampleJUnit4Tests.TestWithThrowingClassRule",
+            "type": "Field",
+            "name": "rule",
+            "filePath": "src/test/java/org/junit/tests/SampleJUnit4Tests.java",
+            "startLine": 69,
+            "endLine": 69,
+            "startColumn": 38,
+            "endColumn": 67
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.internal.StackTracesTest.TestWithThrowingClassRule",
+            "type": "Method",
+            "name": "alwaysPasses",
+            "filePath": "src/test/java/org/junit/internal/StackTracesTest.java",
+            "startLine": 411,
+            "endLine": 413,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "container": "org.junit.tests.SampleJUnit4Tests.TestWithThrowingClassRule",
+            "type": "Method",
+            "name": "alwaysPasses",
+            "filePath": "src/test/java/org/junit/tests/SampleJUnit4Tests.java",
+            "startLine": 71,
+            "endLine": 73,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.internal.StackTracesTest.ThrowingMethodRule",
+            "type": "Method",
+            "name": "apply",
+            "filePath": "src/test/java/org/junit/internal/StackTracesTest.java",
+            "startLine": 418,
+            "endLine": 422,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "container": "org.junit.tests.SampleJUnit4Tests.ThrowingMethodRule",
+            "type": "Method",
+            "name": "apply",
+            "filePath": "src/test/java/org/junit/tests/SampleJUnit4Tests.java",
+            "startLine": 78,
+            "endLine": 82,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.internal.StackTracesTest.TestWithThrowingMethodRule",
+            "type": "Field",
+            "name": "rule",
+            "filePath": "src/test/java/org/junit/internal/StackTracesTest.java",
+            "startLine": 428,
+            "endLine": 428,
+            "startColumn": 41,
+            "endColumn": 72
+          },
+          "rightSideLocation": {
+            "container": "org.junit.tests.SampleJUnit4Tests.TestWithThrowingMethodRule",
+            "type": "Field",
+            "name": "rule",
+            "filePath": "src/test/java/org/junit/tests/SampleJUnit4Tests.java",
+            "startLine": 88,
+            "endLine": 88,
+            "startColumn": 41,
+            "endColumn": 72
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.internal.StackTracesTest.TestWithThrowingMethodRule",
+            "type": "Method",
+            "name": "alwaysPasses",
+            "filePath": "src/test/java/org/junit/internal/StackTracesTest.java",
+            "startLine": 430,
+            "endLine": 432,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "container": "org.junit.tests.SampleJUnit4Tests.TestWithThrowingMethodRule",
+            "type": "Method",
+            "name": "alwaysPasses",
+            "filePath": "src/test/java/org/junit/tests/SampleJUnit4Tests.java",
+            "startLine": 90,
+            "endLine": 92,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.internal.StackTracesTest.TestWithSuppressedException",
+            "type": "Field",
+            "name": "addSuppressed",
+            "filePath": "src/test/java/org/junit/internal/StackTracesTest.java",
+            "startLine": 459,
+            "endLine": 459,
+            "startColumn": 29,
+            "endColumn": 64
+          },
+          "rightSideLocation": {
+            "container": "org.junit.tests.SampleJUnit4Tests.TestWithSuppressedException",
+            "type": "Field",
+            "name": "addSuppressed",
+            "filePath": "src/test/java/org/junit/tests/SampleJUnit4Tests.java",
+            "startLine": 96,
+            "endLine": 96,
+            "startColumn": 36,
+            "endColumn": 71
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.internal.StackTracesTest.TestWithThrowingBeforeMethod",
+            "type": "Class",
+            "name": "TestWithThrowingBeforeMethod",
+            "filePath": "src/test/java/org/junit/internal/StackTracesTest.java",
+            "startLine": 363,
+            "endLine": 373,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.junit.tests.SampleJUnit4Tests.TestWithThrowingBeforeMethod",
+            "type": "Class",
+            "name": "TestWithThrowingBeforeMethod",
+            "filePath": "src/test/java/org/junit/tests/SampleJUnit4Tests.java",
+            "startLine": 35,
+            "endLine": 45,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.internal.StackTracesTest.ThrowingTestRule",
+            "type": "Class",
+            "name": "ThrowingTestRule",
+            "filePath": "src/test/java/org/junit/internal/StackTracesTest.java",
+            "startLine": 387,
+            "endLine": 394,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.junit.tests.SampleJUnit4Tests.ThrowingTestRule",
+            "type": "Class",
+            "name": "ThrowingTestRule",
+            "filePath": "src/test/java/org/junit/tests/SampleJUnit4Tests.java",
+            "startLine": 47,
+            "endLine": 54,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.internal.StackTracesTest.TestWithThrowingTestRule",
+            "type": "Class",
+            "name": "TestWithThrowingTestRule",
+            "filePath": "src/test/java/org/junit/internal/StackTracesTest.java",
+            "startLine": 396,
+            "endLine": 404,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.junit.tests.SampleJUnit4Tests.TestWithThrowingTestRule",
+            "type": "Class",
+            "name": "TestWithThrowingTestRule",
+            "filePath": "src/test/java/org/junit/tests/SampleJUnit4Tests.java",
+            "startLine": 56,
+            "endLine": 64,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.internal.StackTracesTest.TestWithThrowingClassRule",
+            "type": "Class",
+            "name": "TestWithThrowingClassRule",
+            "filePath": "src/test/java/org/junit/internal/StackTracesTest.java",
+            "startLine": 406,
+            "endLine": 414,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.junit.tests.SampleJUnit4Tests.TestWithThrowingClassRule",
+            "type": "Class",
+            "name": "TestWithThrowingClassRule",
+            "filePath": "src/test/java/org/junit/tests/SampleJUnit4Tests.java",
+            "startLine": 66,
+            "endLine": 74,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.internal.StackTracesTest.ThrowingMethodRule",
+            "type": "Class",
+            "name": "ThrowingMethodRule",
+            "filePath": "src/test/java/org/junit/internal/StackTracesTest.java",
+            "startLine": 416,
+            "endLine": 423,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.junit.tests.SampleJUnit4Tests.ThrowingMethodRule",
+            "type": "Class",
+            "name": "ThrowingMethodRule",
+            "filePath": "src/test/java/org/junit/tests/SampleJUnit4Tests.java",
+            "startLine": 76,
+            "endLine": 83,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.internal.StackTracesTest.TestWithThrowingMethodRule",
+            "type": "Class",
+            "name": "TestWithThrowingMethodRule",
+            "filePath": "src/test/java/org/junit/internal/StackTracesTest.java",
+            "startLine": 425,
+            "endLine": 433,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.junit.tests.SampleJUnit4Tests.TestWithThrowingMethodRule",
+            "type": "Class",
+            "name": "TestWithThrowingMethodRule",
+            "filePath": "src/test/java/org/junit/tests/SampleJUnit4Tests.java",
+            "startLine": 85,
+            "endLine": 93,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.internal.StackTracesTest.TestWithSuppressedException",
+            "type": "Class",
+            "name": "TestWithSuppressedException",
+            "filePath": "src/test/java/org/junit/internal/StackTracesTest.java",
+            "startLine": 458,
+            "endLine": 475,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.junit.tests.SampleJUnit4Tests.TestWithSuppressedException",
+            "type": "Class",
+            "name": "TestWithSuppressedException",
+            "filePath": "src/test/java/org/junit/tests/SampleJUnit4Tests.java",
+            "startLine": 95,
+            "endLine": 112,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/junit-team/junit4.git",
+      "sha1": "1254795902e56eb545e1fe696827924bc5e82b66",
+      "url": "https://github.com/junit-team/junit4/commit/1254795902e56eb545e1fe696827924bc5e82b66",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "org.junit.internal.runners.statements.FailOnTimeout",
+            "type": "Method",
+            "name": "evaluate",
+            "filePath": "src/main/java/org/junit/internal/runners/statements/FailOnTimeout.java",
+            "startLine": 119,
+            "endLine": 146,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.junit.internal.runners.statements.FailOnTimeout",
+            "type": "Method",
+            "name": "evaluate",
+            "filePath": "src/main/java/org/junit/internal/runners/statements/FailOnTimeout.java",
+            "startLine": 119,
+            "endLine": 139,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.internal.runners.statements.FailOnTimeout",
+            "type": "Class",
+            "name": "FailOnTimeout",
+            "filePath": "src/main/java/org/junit/internal/runners/statements/FailOnTimeout.java",
+            "startLine": 19,
+            "endLine": 301,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.junit.internal.runners.statements.FailOnTimeout",
+            "type": "Class",
+            "name": "FailOnTimeout",
+            "filePath": "src/main/java/org/junit/internal/runners/statements/FailOnTimeout.java",
+            "startLine": 19,
+            "endLine": 294,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.internal.runners.statements.FailOnTimeoutTest",
+            "type": "Method",
+            "name": "evaluateWithException",
+            "filePath": "src/test/java/org/junit/internal/runners/statements/FailOnTimeoutTest.java",
+            "startLine": 94,
+            "endLine": 102,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.junit.internal.runners.statements.FailOnTimeoutTest",
+            "type": "Method",
+            "name": "evaluateWithException",
+            "filePath": "src/test/java/org/junit/internal/runners/statements/FailOnTimeoutTest.java",
+            "startLine": 103,
+            "endLine": 105,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.internal.runners.statements.FailOnTimeoutTest",
+            "type": "Method",
+            "name": "evaluateWithWaitDuration",
+            "filePath": "src/test/java/org/junit/internal/runners/statements/FailOnTimeoutTest.java",
+            "startLine": 104,
+            "endLine": 112,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.junit.internal.runners.statements.FailOnTimeoutTest",
+            "type": "Method",
+            "name": "evaluateWithWaitDuration",
+            "filePath": "src/test/java/org/junit/internal/runners/statements/FailOnTimeoutTest.java",
+            "startLine": 107,
+            "endLine": 115,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.internal.runners.statements.FailOnTimeoutTest.TestStatement",
+            "type": "Method",
+            "name": "evaluate",
+            "filePath": "src/test/java/org/junit/internal/runners/statements/FailOnTimeoutTest.java",
+            "startLine": 119,
+            "endLine": 125,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "container": "org.junit.internal.runners.statements.FailOnTimeoutTest.TestStatement",
+            "type": "Method",
+            "name": "evaluate",
+            "filePath": "src/test/java/org/junit/internal/runners/statements/FailOnTimeoutTest.java",
+            "startLine": 122,
+            "endLine": 128,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.internal.runners.statements.FailOnTimeoutTest.TestStatement",
+            "type": "Class",
+            "name": "TestStatement",
+            "filePath": "src/test/java/org/junit/internal/runners/statements/FailOnTimeoutTest.java",
+            "startLine": 114,
+            "endLine": 126,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.junit.internal.runners.statements.FailOnTimeoutTest.TestStatement",
+            "type": "Class",
+            "name": "TestStatement",
+            "filePath": "src/test/java/org/junit/internal/runners/statements/FailOnTimeoutTest.java",
+            "startLine": 117,
+            "endLine": 129,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.internal.runners.statements.FailOnTimeoutTest",
+            "type": "Method",
+            "name": "threadGroupNotLeaked",
+            "filePath": "src/test/java/org/junit/internal/runners/statements/FailOnTimeoutTest.java",
+            "startLine": 211,
+            "endLine": 222,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.junit.internal.runners.statements.FailOnTimeoutTest",
+            "type": "Method",
+            "name": "threadGroupNotLeaked",
+            "filePath": "src/test/java/org/junit/internal/runners/statements/FailOnTimeoutTest.java",
+            "startLine": 214,
+            "endLine": 233,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.internal.runners.statements.FailOnTimeoutTest",
+            "type": "Class",
+            "name": "FailOnTimeoutTest",
+            "filePath": "src/test/java/org/junit/internal/runners/statements/FailOnTimeoutTest.java",
+            "startLine": 28,
+            "endLine": 229,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.junit.internal.runners.statements.FailOnTimeoutTest",
+            "type": "Class",
+            "name": "FailOnTimeoutTest",
+            "filePath": "src/test/java/org/junit/internal/runners/statements/FailOnTimeoutTest.java",
+            "startLine": 27,
+            "endLine": 234,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [],
+      "baseline": [
+        {
+          "leftSideLocation": {
+            "container": "org.junit.internal.runners.statements.FailOnTimeoutTest",
+            "type": "Method",
+            "name": "evaluateWithException",
+            "filePath": "src/test/java/org/junit/internal/runners/statements/FailOnTimeoutTest.java",
+            "startLine": 94,
+            "endLine": 102,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.junit.internal.runners.statements.FailOnTimeoutTest",
+            "type": "Method",
+            "name": "evaluateWithDelegate",
+            "filePath": "src/test/java/org/junit/internal/runners/statements/FailOnTimeoutTest.java",
+            "startLine": 93,
+            "endLine": 101,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.internal.runners.statements.FailOnTimeoutTest.TestStatement",
+            "type": "Field",
+            "name": "nextException",
+            "filePath": "src/test/java/org/junit/internal/runners/statements/FailOnTimeoutTest.java",
+            "startLine": 117,
+            "endLine": 117,
+            "startColumn": 19,
+            "endColumn": 32
+          },
+          "rightSideLocation": {
+            "container": "org.junit.internal.runners.statements.FailOnTimeoutTest.TestStatement",
+            "type": "Field",
+            "name": "nextStatement",
+            "filePath": "src/test/java/org/junit/internal/runners/statements/FailOnTimeoutTest.java",
+            "startLine": 120,
+            "endLine": 120,
+            "startColumn": 19,
+            "endColumn": 32
+          },
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/junit-team/junit4.git",
+      "sha1": "b51fa17fc6a750a17436f9f38c139a7b5228171f",
+      "url": "https://github.com/junit-team/junit4/commit/b51fa17fc6a750a17436f9f38c139a7b5228171f",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "org.junit.runner.AllRunnerTests",
+            "type": "Class",
+            "name": "AllRunnerTests",
+            "filePath": "src/test/java/org/junit/runner/AllRunnerTests.java",
+            "startLine": 8,
+            "endLine": 17,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.junit.runner.AllRunnerTests",
+            "type": "Class",
+            "name": "AllRunnerTests",
+            "filePath": "src/test/java/org/junit/runner/AllRunnerTests.java",
+            "startLine": 8,
+            "endLine": 18,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "container": "org.junit.runner.OrderWith",
+            "type": "Annotation Type",
+            "name": "OrderWith",
+            "filePath": "src/main/java/org/junit/runner/OrderWith.java",
+            "startLine": 11,
+            "endLine": 26,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.junit.runner.OrderWith",
+            "type": "Annotation Type",
+            "name": "OrderWith",
+            "filePath": "src/main/java/org/junit/runner/OrderWith.java",
+            "startLine": 12,
+            "endLine": 28,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/junit-team/junit4.git",
+      "sha1": "7065f378bdd67bb9e9e0a44044ed36f7006218bc",
+      "url": "https://github.com/junit-team/junit4/commit/7065f378bdd67bb9e9e0a44044ed36f7006218bc",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "org.junit.validator.AnnotationValidatorFactoryTest",
+            "type": "Method",
+            "name": "createAnnotationValidator",
+            "filePath": "src/test/java/org/junit/validator/AnnotationValidatorFactoryTest.java",
+            "startLine": 15,
+            "endLine": 20,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.junit.validator.AnnotationValidatorFactoryTest",
+            "type": "Method",
+            "name": "createAnnotationValidator",
+            "filePath": "src/test/java/org/junit/validator/AnnotationValidatorFactoryTest.java",
+            "startLine": 15,
+            "endLine": 20,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.validator.AnnotationValidatorFactoryTest",
+            "type": "Method",
+            "name": "exceptionWhenAnnotationValidatorCantBeCreated",
+            "filePath": "src/test/java/org/junit/validator/AnnotationValidatorFactoryTest.java",
+            "startLine": 29,
+            "endLine": 36,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.junit.validator.AnnotationValidatorFactoryTest",
+            "type": "Method",
+            "name": "exceptionWhenAnnotationValidatorCantBeCreated",
+            "filePath": "src/test/java/org/junit/validator/AnnotationValidatorFactoryTest.java",
+            "startLine": 29,
+            "endLine": 36,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.validator.AnnotationValidatorFactoryTest",
+            "type": "Class",
+            "name": "AnnotationValidatorFactoryTest",
+            "filePath": "src/test/java/org/junit/validator/AnnotationValidatorFactoryTest.java",
+            "startLine": 10,
+            "endLine": 47,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.junit.validator.AnnotationValidatorFactoryTest",
+            "type": "Class",
+            "name": "AnnotationValidatorFactoryTest",
+            "filePath": "src/test/java/org/junit/validator/AnnotationValidatorFactoryTest.java",
+            "startLine": 10,
+            "endLine": 47,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "container": "org.junit.validator.ValidateWith",
+            "type": "Annotation Type",
+            "name": "ValidateWith",
+            "filePath": "src/main/java/org/junit/validator/ValidateWith.java",
+            "startLine": 7,
+            "endLine": 19,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.junit.validator.ValidateWith",
+            "type": "Annotation Type",
+            "name": "ValidateWith",
+            "filePath": "src/main/java/org/junit/validator/ValidateWith.java",
+            "startLine": 9,
+            "endLine": 22,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/junit-team/junit4.git",
+      "sha1": "ed6813d3bbe2da4d67892f73e641fa80ab4d126e",
+      "url": "https://github.com/junit-team/junit4/commit/ed6813d3bbe2da4d67892f73e641fa80ab4d126e",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "org.junit.runners.model.FrameworkField",
+            "type": "Method",
+            "name": "isShadowedBy",
+            "filePath": "src/main/java/org/junit/runners/model/FrameworkField.java",
+            "startLine": 48,
+            "endLine": 51,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.junit.runners.model.FrameworkField",
+            "type": "Method",
+            "name": "isShadowedBy",
+            "filePath": "src/main/java/org/junit/runners/model/FrameworkField.java",
+            "startLine": 48,
+            "endLine": 51,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.runners.model.FrameworkField",
+            "type": "Class",
+            "name": "FrameworkField",
+            "filePath": "src/main/java/org/junit/runners/model/FrameworkField.java",
+            "startLine": 9,
+            "endLine": 100,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.junit.runners.model.FrameworkField",
+            "type": "Class",
+            "name": "FrameworkField",
+            "filePath": "src/main/java/org/junit/runners/model/FrameworkField.java",
+            "startLine": 9,
+            "endLine": 95,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.runners.model.FrameworkMember",
+            "type": "Class",
+            "name": "FrameworkMember",
+            "filePath": "src/main/java/org/junit/runners/model/FrameworkMember.java",
+            "startLine": 6,
+            "endLine": 46,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.junit.runners.model.FrameworkMember",
+            "type": "Class",
+            "name": "FrameworkMember",
+            "filePath": "src/main/java/org/junit/runners/model/FrameworkMember.java",
+            "startLine": 6,
+            "endLine": 70,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.runners.model.FrameworkMethod",
+            "type": "Method",
+            "name": "isShadowedBy",
+            "filePath": "src/main/java/org/junit/runners/model/FrameworkMethod.java",
+            "startLine": 166,
+            "endLine": 183,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.junit.runners.model.FrameworkMethod",
+            "type": "Method",
+            "name": "isShadowedBy",
+            "filePath": "src/main/java/org/junit/runners/model/FrameworkMethod.java",
+            "startLine": 144,
+            "endLine": 158,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.runners.model.FrameworkMethod",
+            "type": "Class",
+            "name": "FrameworkMethod",
+            "filePath": "src/main/java/org/junit/runners/model/FrameworkMethod.java",
+            "startLine": 11,
+            "endLine": 241,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.junit.runners.model.FrameworkMethod",
+            "type": "Class",
+            "name": "FrameworkMethod",
+            "filePath": "src/main/java/org/junit/runners/model/FrameworkMethod.java",
+            "startLine": 11,
+            "endLine": 216,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.runners.model.TestClass",
+            "type": "Method",
+            "name": "addToAnnotationLists",
+            "filePath": "src/main/java/org/junit/runners/model/TestClass.java",
+            "startLine": 82,
+            "endLine": 97,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.junit.runners.model.TestClass",
+            "type": "Method",
+            "name": "addToAnnotationLists",
+            "filePath": "src/main/java/org/junit/runners/model/TestClass.java",
+            "startLine": 82,
+            "endLine": 97,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.runners.model.TestClass",
+            "type": "Class",
+            "name": "TestClass",
+            "filePath": "src/main/java/org/junit/runners/model/TestClass.java",
+            "startLine": 26,
+            "endLine": 348,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.junit.runners.model.TestClass",
+            "type": "Class",
+            "name": "TestClass",
+            "filePath": "src/main/java/org/junit/runners/model/TestClass.java",
+            "startLine": 26,
+            "endLine": 348,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.tests.running.methods.AnnotationTest",
+            "type": "Class",
+            "name": "AnnotationTest",
+            "filePath": "src/test/java/org/junit/tests/running/methods/AnnotationTest.java",
+            "startLine": 29,
+            "endLine": 842,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.junit.tests.running.methods.AnnotationTest",
+            "type": "Class",
+            "name": "AnnotationTest",
+            "filePath": "src/test/java/org/junit/tests/running/methods/AnnotationTest.java",
+            "startLine": 29,
+            "endLine": 842,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.tests.running.methods.AnnotationTest",
+            "type": "Method",
+            "name": "testStaticMethodsNeverTreatedAsShadowed",
+            "filePath": "src/test/java/org/junit/tests/running/methods/AnnotationTest.java",
+            "startLine": 589,
+            "endLine": 597,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.junit.tests.running.methods.AnnotationTest",
+            "type": "Method",
+            "name": "testStaticMethodsCanBeTreatedAsShadowed",
+            "filePath": "src/test/java/org/junit/tests/running/methods/AnnotationTest.java",
+            "startLine": 589,
+            "endLine": 597,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.tests.running.methods.AnnotationTest",
+            "type": "Method",
+            "name": "testStaticFieldsNeverTreatedAsShadowed",
+            "filePath": "src/test/java/org/junit/tests/running/methods/AnnotationTest.java",
+            "startLine": 683,
+            "endLine": 691,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.junit.tests.running.methods.AnnotationTest",
+            "type": "Method",
+            "name": "testStaticFieldsCanBeTreatedAsShadowed",
+            "filePath": "src/test/java/org/junit/tests/running/methods/AnnotationTest.java",
+            "startLine": 683,
+            "endLine": 691,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "container": "org.junit.runners.model.FrameworkMember",
+            "type": "Method",
+            "name": "handlePossibleBridgeMethod",
+            "filePath": "src/main/java/org/junit/runners/model/FrameworkMember.java",
+            "startLine": 15,
+            "endLine": 21,
+            "startColumn": 5,
+            "endColumn": 60
+          },
+          "rightSideLocation": {
+            "container": "org.junit.runners.model.FrameworkMember",
+            "type": "Method",
+            "name": "handlePossibleShadowedMember",
+            "filePath": "src/main/java/org/junit/runners/model/FrameworkMember.java",
+            "startLine": 15,
+            "endLine": 40,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "leftSideLocation": {
+            "container": "org.junit.runners.model.FrameworkMethod",
+            "type": "Method",
+            "name": "handlePossibleBridgeMethod",
+            "filePath": "src/main/java/org/junit/runners/model/FrameworkMethod.java",
+            "startLine": 144,
+            "endLine": 164,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.junit.runners.model.FrameworkMember",
+            "type": "Method",
+            "name": "handlePossibleShadowedMember",
+            "filePath": "src/main/java/org/junit/runners/model/FrameworkMember.java",
+            "startLine": 15,
+            "endLine": 40,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.runners.model.FrameworkField",
+            "type": "Method",
+            "name": "handlePossibleBridgeMethod",
+            "filePath": "src/main/java/org/junit/runners/model/FrameworkField.java",
+            "startLine": 53,
+            "endLine": 56,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.junit.runners.model.FrameworkMember",
+            "type": "Method",
+            "name": "self",
+            "filePath": "src/main/java/org/junit/runners/model/FrameworkMember.java",
+            "startLine": 42,
+            "endLine": 45,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/junit-team/junit4.git",
+      "sha1": "627b85abfd9c1f6c69b14f9d33fb292868fe6826",
+      "url": "https://github.com/junit-team/junit4/commit/627b85abfd9c1f6c69b14f9d33fb292868fe6826",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "org.junit.Assert",
+            "type": "Class",
+            "name": "Assert",
+            "filePath": "src/main/java/org/junit/Assert.java",
+            "startLine": 10,
+            "endLine": 1025,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.junit.Assert",
+            "type": "Class",
+            "name": "Assert",
+            "filePath": "src/main/java/org/junit/Assert.java",
+            "startLine": 10,
+            "endLine": 1036,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.tests.assertion.AssertionTest",
+            "type": "Class",
+            "name": "AssertionTest",
+            "filePath": "src/test/java/org/junit/tests/assertion/AssertionTest.java",
+            "startLine": 26,
+            "endLine": 977,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.junit.tests.assertion.AssertionTest",
+            "type": "Class",
+            "name": "AssertionTest",
+            "filePath": "src/test/java/org/junit/tests/assertion/AssertionTest.java",
+            "startLine": 26,
+            "endLine": 1005,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.tests.assertion.AssertionTest",
+            "type": "Method",
+            "name": "expectThrowsUsesCanonicalNameWhenRequiredExceptionNotThrown",
+            "filePath": "src/test/java/org/junit/tests/assertion/AssertionTest.java",
+            "startLine": 946,
+            "endLine": 957,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.junit.tests.assertion.AssertionTest",
+            "type": "Method",
+            "name": "assertThrowsUsesCanonicalNameWhenRequiredExceptionNotThrown",
+            "filePath": "src/test/java/org/junit/tests/assertion/AssertionTest.java",
+            "startLine": 974,
+            "endLine": 985,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.tests.assertion.AssertionTest",
+            "type": "Method",
+            "name": "expectThrowsSuppliesACoherentErrorMessageUponTypeMismatch",
+            "filePath": "src/test/java/org/junit/tests/assertion/AssertionTest.java",
+            "startLine": 896,
+            "endLine": 909,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.junit.tests.assertion.AssertionTest",
+            "type": "Method",
+            "name": "assertThrowsSuppliesACoherentErrorMessageUponTypeMismatch",
+            "filePath": "src/test/java/org/junit/tests/assertion/AssertionTest.java",
+            "startLine": 909,
+            "endLine": 922,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.tests.assertion.AssertionTest",
+            "type": "Method",
+            "name": "expectThrowsUsesNameUponTypeMismatchWithAnonymousClass",
+            "filePath": "src/test/java/org/junit/tests/assertion/AssertionTest.java",
+            "startLine": 928,
+            "endLine": 944,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.junit.tests.assertion.AssertionTest",
+            "type": "Method",
+            "name": "assertThrowsUsesNameUponTypeMismatchWithAnonymousClass",
+            "filePath": "src/test/java/org/junit/tests/assertion/AssertionTest.java",
+            "startLine": 956,
+            "endLine": 972,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.tests.assertion.AssertionTest",
+            "type": "Method",
+            "name": "expectThrowsReturnsTheSameObjectThrown",
+            "filePath": "src/test/java/org/junit/tests/assertion/AssertionTest.java",
+            "startLine": 866,
+            "endLine": 873,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.junit.tests.assertion.AssertionTest",
+            "type": "Method",
+            "name": "assertThrowsReturnsTheSameObjectThrown",
+            "filePath": "src/test/java/org/junit/tests/assertion/AssertionTest.java",
+            "startLine": 879,
+            "endLine": 886,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.tests.assertion.AssertionTest",
+            "type": "Method",
+            "name": "expectThrowsIncludesAnInformativeDefaultMessage",
+            "filePath": "src/test/java/org/junit/tests/assertion/AssertionTest.java",
+            "startLine": 855,
+            "endLine": 864,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.junit.tests.assertion.AssertionTest",
+            "type": "Method",
+            "name": "assertThrowsIncludesAnInformativeDefaultMessage",
+            "filePath": "src/test/java/org/junit/tests/assertion/AssertionTest.java",
+            "startLine": 855,
+            "endLine": 864,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.tests.assertion.AssertionTest",
+            "type": "Method",
+            "name": "expectThrowsWrapsAndPropagatesUnexpectedExceptions",
+            "filePath": "src/test/java/org/junit/tests/assertion/AssertionTest.java",
+            "startLine": 882,
+            "endLine": 894,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.junit.tests.assertion.AssertionTest",
+            "type": "Method",
+            "name": "assertThrowsWrapsAndPropagatesUnexpectedExceptions",
+            "filePath": "src/test/java/org/junit/tests/assertion/AssertionTest.java",
+            "startLine": 895,
+            "endLine": 907,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.tests.assertion.AssertionTest",
+            "type": "Method",
+            "name": "expectThrowsUsesCanonicalNameUponTypeMismatch",
+            "filePath": "src/test/java/org/junit/tests/assertion/AssertionTest.java",
+            "startLine": 911,
+            "endLine": 926,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.junit.tests.assertion.AssertionTest",
+            "type": "Method",
+            "name": "assertThrowsUsesCanonicalNameUponTypeMismatch",
+            "filePath": "src/test/java/org/junit/tests/assertion/AssertionTest.java",
+            "startLine": 939,
+            "endLine": 954,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.tests.assertion.AssertionTest",
+            "type": "Method",
+            "name": "expectThrowsDetectsTypeMismatchesViaExplicitTypeHint",
+            "filePath": "src/test/java/org/junit/tests/assertion/AssertionTest.java",
+            "startLine": 875,
+            "endLine": 880,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.junit.tests.assertion.AssertionTest",
+            "type": "Method",
+            "name": "assertThrowsDetectsTypeMismatchesViaExplicitTypeHint",
+            "filePath": "src/test/java/org/junit/tests/assertion/AssertionTest.java",
+            "startLine": 888,
+            "endLine": 893,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.tests.assertion.AssertionTest",
+            "type": "Method",
+            "name": "expectThrowsRequiresAnExceptionToBeThrown",
+            "filePath": "src/test/java/org/junit/tests/assertion/AssertionTest.java",
+            "startLine": 850,
+            "endLine": 853,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.junit.tests.assertion.AssertionTest",
+            "type": "Method",
+            "name": "assertThrowsRequiresAnExceptionToBeThrown",
+            "filePath": "src/test/java/org/junit/tests/assertion/AssertionTest.java",
+            "startLine": 850,
+            "endLine": 853,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.Assert",
+            "type": "Method",
+            "name": "assertThrows",
+            "filePath": "src/main/java/org/junit/Assert.java",
+            "startLine": 969,
+            "endLine": 982,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.junit.Assert",
+            "type": "Method",
+            "name": "assertThrows",
+            "filePath": "src/main/java/org/junit/Assert.java",
+            "startLine": 986,
+            "endLine": 1031,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "container": "org.junit.Assert",
+            "type": "Method",
+            "name": "expectThrows",
+            "filePath": "src/main/java/org/junit/Assert.java",
+            "startLine": 984,
+            "endLine": 1024,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.junit.Assert",
+            "type": "Method",
+            "name": "assertThrows",
+            "filePath": "src/main/java/org/junit/Assert.java",
+            "startLine": 969,
+            "endLine": 984,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "leftSideLocation": {
+            "container": "org.junit.Assert",
+            "type": "Method",
+            "name": "expectThrows",
+            "filePath": "src/main/java/org/junit/Assert.java",
+            "startLine": 984,
+            "endLine": 1024,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.junit.Assert",
+            "type": "Method",
+            "name": "assertThrows",
+            "filePath": "src/main/java/org/junit/Assert.java",
+            "startLine": 986,
+            "endLine": 1031,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/junit-team/junit4.git",
+      "sha1": "1b4ac073bc2337eb766f379e74237aa1fc4a6e4f",
+      "url": "https://github.com/junit-team/junit4/commit/1b4ac073bc2337eb766f379e74237aa1fc4a6e4f",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "org.junit.rules.TestRuleTest.BeforesAndAftersAreEnclosedByRule",
+            "type": "Method",
+            "name": "before",
+            "filePath": "src/test/java/org/junit/rules/TestRuleTest.java",
+            "startLine": 538,
+            "endLine": 541,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "container": "org.junit.rules.TestRuleTest.BeforesAndAftersAreEnclosedByRule",
+            "type": "Method",
+            "name": "before",
+            "filePath": "src/test/java/org/junit/rules/TestRuleTest.java",
+            "startLine": 541,
+            "endLine": 544,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.rules.TestRuleTest.BeforesAndAftersAreEnclosedByRule",
+            "type": "Method",
+            "name": "after",
+            "filePath": "src/test/java/org/junit/rules/TestRuleTest.java",
+            "startLine": 565,
+            "endLine": 568,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "container": "org.junit.rules.TestRuleTest.BeforesAndAftersAreEnclosedByRule",
+            "type": "Method",
+            "name": "after",
+            "filePath": "src/test/java/org/junit/rules/TestRuleTest.java",
+            "startLine": 546,
+            "endLine": 549,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.rules.TestRuleTest.BeforesAndAftersAreEnclosedByRule",
+            "type": "Method",
+            "name": "succeeds",
+            "filePath": "src/test/java/org/junit/rules/TestRuleTest.java",
+            "startLine": 570,
+            "endLine": 573,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "container": "org.junit.rules.TestRuleTest.BeforesAndAftersAreEnclosedByRule",
+            "type": "Method",
+            "name": "succeeds",
+            "filePath": "src/test/java/org/junit/rules/TestRuleTest.java",
+            "startLine": 551,
+            "endLine": 554,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.rules.TestRuleTest.BeforesAndAftersAreEnclosedByRule",
+            "type": "Class",
+            "name": "BeforesAndAftersAreEnclosedByRule",
+            "filePath": "src/test/java/org/junit/rules/TestRuleTest.java",
+            "startLine": 535,
+            "endLine": 574,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.junit.rules.TestRuleTest.BeforesAndAftersAreEnclosedByRule",
+            "type": "Class",
+            "name": "BeforesAndAftersAreEnclosedByRule",
+            "filePath": "src/test/java/org/junit/rules/TestRuleTest.java",
+            "startLine": 535,
+            "endLine": 555,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.rules.TestRuleTest",
+            "type": "Method",
+            "name": "beforesAndAftersAreEnclosedByRule",
+            "filePath": "src/test/java/org/junit/rules/TestRuleTest.java",
+            "startLine": 576,
+            "endLine": 581,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.junit.rules.TestRuleTest",
+            "type": "Method",
+            "name": "beforesAndAftersAreEnclosedByRule",
+            "filePath": "src/test/java/org/junit/rules/TestRuleTest.java",
+            "startLine": 557,
+            "endLine": 563,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.rules.TestRuleTest",
+            "type": "Class",
+            "name": "TestRuleTest",
+            "filePath": "src/test/java/org/junit/rules/TestRuleTest.java",
+            "startLine": 28,
+            "endLine": 785,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.junit.rules.TestRuleTest",
+            "type": "Class",
+            "name": "TestRuleTest",
+            "filePath": "src/test/java/org/junit/rules/TestRuleTest.java",
+            "startLine": 28,
+            "endLine": 767,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "container": "org.junit.rules.TestRuleTest.BeforesAndAftersAreEnclosedByRule",
+            "type": "Field",
+            "name": "watchedLog",
+            "filePath": "src/test/java/org/junit/rules/TestRuleTest.java",
+            "startLine": 536,
+            "endLine": 536,
+            "startColumn": 31,
+            "endColumn": 41
+          },
+          "rightSideLocation": {
+            "container": "org.junit.rules.TestRuleTest.BeforesAndAftersAreEnclosedByRule",
+            "type": "Field",
+            "name": "log",
+            "filePath": "src/test/java/org/junit/rules/TestRuleTest.java",
+            "startLine": 536,
+            "endLine": 536,
+            "startColumn": 38,
+            "endColumn": 41
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/junit-team/junit4.git",
+      "sha1": "43cdf991a8c5808b07c657460815e7d8913ebb79",
+      "url": "https://github.com/junit-team/junit4/commit/43cdf991a8c5808b07c657460815e7d8913ebb79",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "org.junit.rules.TestRuleTest",
+            "type": "Class",
+            "name": "TestRuleTest",
+            "filePath": "src/test/java/org/junit/rules/TestRuleTest.java",
+            "startLine": 28,
+            "endLine": 785,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.junit.rules.TestRuleTest",
+            "type": "Class",
+            "name": "TestRuleTest",
+            "filePath": "src/test/java/org/junit/rules/TestRuleTest.java",
+            "startLine": 28,
+            "endLine": 785,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.rules.TestRuleTest.MethodBeforesAndAfters",
+            "type": "Field",
+            "name": "watchedLog",
+            "filePath": "src/test/java/org/junit/rules/TestRuleTest.java",
+            "startLine": 536,
+            "endLine": 536,
+            "startColumn": 31,
+            "endColumn": 41
+          },
+          "rightSideLocation": {
+            "container": "org.junit.rules.TestRuleTest.BeforesAndAftersAreEnclosedByRule",
+            "type": "Field",
+            "name": "watchedLog",
+            "filePath": "src/test/java/org/junit/rules/TestRuleTest.java",
+            "startLine": 536,
+            "endLine": 536,
+            "startColumn": 31,
+            "endColumn": 41
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.rules.TestRuleTest.MethodBeforesAndAfters",
+            "type": "Method",
+            "name": "before",
+            "filePath": "src/test/java/org/junit/rules/TestRuleTest.java",
+            "startLine": 538,
+            "endLine": 541,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "container": "org.junit.rules.TestRuleTest.BeforesAndAftersAreEnclosedByRule",
+            "type": "Method",
+            "name": "before",
+            "filePath": "src/test/java/org/junit/rules/TestRuleTest.java",
+            "startLine": 538,
+            "endLine": 541,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.rules.TestRuleTest.MethodBeforesAndAfters",
+            "type": "Field",
+            "name": "watchman",
+            "filePath": "src/test/java/org/junit/rules/TestRuleTest.java",
+            "startLine": 543,
+            "endLine": 558,
+            "startColumn": 26,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "container": "org.junit.rules.TestRuleTest.BeforesAndAftersAreEnclosedByRule",
+            "type": "Field",
+            "name": "watchman",
+            "filePath": "src/test/java/org/junit/rules/TestRuleTest.java",
+            "startLine": 543,
+            "endLine": 558,
+            "startColumn": 26,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.rules.TestRuleTest.MethodBeforesAndAfters",
+            "type": "Method",
+            "name": "getWatchman",
+            "filePath": "src/test/java/org/junit/rules/TestRuleTest.java",
+            "startLine": 560,
+            "endLine": 563,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "container": "org.junit.rules.TestRuleTest.BeforesAndAftersAreEnclosedByRule",
+            "type": "Method",
+            "name": "getWatchman",
+            "filePath": "src/test/java/org/junit/rules/TestRuleTest.java",
+            "startLine": 560,
+            "endLine": 563,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.rules.TestRuleTest.MethodBeforesAndAfters",
+            "type": "Method",
+            "name": "after",
+            "filePath": "src/test/java/org/junit/rules/TestRuleTest.java",
+            "startLine": 565,
+            "endLine": 568,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "container": "org.junit.rules.TestRuleTest.BeforesAndAftersAreEnclosedByRule",
+            "type": "Method",
+            "name": "after",
+            "filePath": "src/test/java/org/junit/rules/TestRuleTest.java",
+            "startLine": 565,
+            "endLine": 568,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.rules.TestRuleTest.MethodBeforesAndAfters",
+            "type": "Method",
+            "name": "succeeds",
+            "filePath": "src/test/java/org/junit/rules/TestRuleTest.java",
+            "startLine": 570,
+            "endLine": 573,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "container": "org.junit.rules.TestRuleTest.BeforesAndAftersAreEnclosedByRule",
+            "type": "Method",
+            "name": "succeeds",
+            "filePath": "src/test/java/org/junit/rules/TestRuleTest.java",
+            "startLine": 570,
+            "endLine": 573,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.rules.TestRuleTest.MethodBeforesAndAfters",
+            "type": "Class",
+            "name": "MethodBeforesAndAfters",
+            "filePath": "src/test/java/org/junit/rules/TestRuleTest.java",
+            "startLine": 535,
+            "endLine": 574,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.junit.rules.TestRuleTest.BeforesAndAftersAreEnclosedByRule",
+            "type": "Class",
+            "name": "BeforesAndAftersAreEnclosedByRule",
+            "filePath": "src/test/java/org/junit/rules/TestRuleTest.java",
+            "startLine": 535,
+            "endLine": 574,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [],
+      "baseline": [
+        {
+          "leftSideLocation": {
+            "container": "org.junit.rules.TestRuleTest",
+            "type": "Method",
+            "name": "methodBeforesAndAfters",
+            "filePath": "src/test/java/org/junit/rules/TestRuleTest.java",
+            "startLine": 576,
+            "endLine": 581,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.junit.rules.TestRuleTest",
+            "type": "Method",
+            "name": "beforesAndAftersAreEnclosedByRule",
+            "filePath": "src/test/java/org/junit/rules/TestRuleTest.java",
+            "startLine": 576,
+            "endLine": 581,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/junit-team/junit4.git",
+      "sha1": "f34c4435ebeea2dc4dd91b8242a2defdf14d7d5c",
+      "url": "https://github.com/junit-team/junit4/commit/f34c4435ebeea2dc4dd91b8242a2defdf14d7d5c",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "org.junit.runners.ParentRunner",
+            "type": "Method",
+            "name": "ParentRunner",
+            "filePath": "src/main/java/org/junit/runners/ParentRunner.java",
+            "startLine": 89,
+            "endLine": 97,
+            "startColumn": 4,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.junit.runners.ParentRunner",
+            "type": "Method",
+            "name": "ParentRunner",
+            "filePath": "src/main/java/org/junit/runners/ParentRunner.java",
+            "startLine": 90,
+            "endLine": 98,
+            "startColumn": 4,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.runners.ParentRunner",
+            "type": "Class",
+            "name": "ParentRunner",
+            "filePath": "src/main/java/org/junit/runners/ParentRunner.java",
+            "startLine": 47,
+            "endLine": 489,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.junit.runners.ParentRunner",
+            "type": "Class",
+            "name": "ParentRunner",
+            "filePath": "src/main/java/org/junit/runners/ParentRunner.java",
+            "startLine": 48,
+            "endLine": 490,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.runners.parameterized.TestWithParameters",
+            "type": "Class",
+            "name": "TestWithParameters",
+            "filePath": "src/main/java/org/junit/runners/parameterized/TestWithParameters.java",
+            "startLine": 10,
+            "endLine": 82,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.junit.runners.parameterized.TestWithParameters",
+            "type": "Class",
+            "name": "TestWithParameters",
+            "filePath": "src/main/java/org/junit/runners/parameterized/TestWithParameters.java",
+            "startLine": 11,
+            "endLine": 77,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.junit.internal.AllInternalTests",
+            "type": "Class",
+            "name": "AllInternalTests",
+            "filePath": "src/test/java/org/junit/internal/AllInternalTests.java",
+            "startLine": 13,
+            "endLine": 26,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.junit.internal.AllInternalTests",
+            "type": "Class",
+            "name": "AllInternalTests",
+            "filePath": "src/test/java/org/junit/internal/AllInternalTests.java",
+            "startLine": 13,
+            "endLine": 27,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "container": "org.junit.runners.parameterized.TestWithParameters",
+            "type": "Method",
+            "name": "notNull",
+            "filePath": "src/main/java/org/junit/runners/parameterized/TestWithParameters.java",
+            "startLine": 77,
+            "endLine": 81,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.junit.internal.Checks",
+            "type": "Method",
+            "name": "notNull",
+            "filePath": "src/main/java/org/junit/internal/Checks.java",
+            "startLine": 22,
+            "endLine": 36,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": []
+    }
+  ]
+}

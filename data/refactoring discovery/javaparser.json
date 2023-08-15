@@ -1,0 +1,3394 @@
+{
+  "results": [
+    {
+      "repository": "https://github.com/javaparser/javaparser.git",
+      "sha1": "135d3c2209be9c57c3254705066061786477328f",
+      "url": "https://github.com/javaparser/javaparser/commit/135d3c2209be9c57c3254705066061786477328f",
+      "ourApproach": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	OBJECT_METHODS_SIGNATURES : List<String> to OBJECT_PUBLIC_METHODS_SIGNATURES : List<String> in class com.github.javaparser.resolution.logic.FunctionalInterfaceLogic",
+          "leftSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/logic/FunctionalInterfaceLogic.java",
+            "startLine": 101,
+            "endLine": 103,
+            "startColumn": 33,
+            "endColumn": 42
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/logic/FunctionalInterfaceLogic.java",
+            "startLine": 102,
+            "endLine": 105,
+            "startColumn": 33,
+            "endColumn": 42
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private declaredOnObject(m MethodUsage) : boolean renamed to private isPublicMemberOfObject(m MethodUsage) : boolean in class com.github.javaparser.resolution.logic.FunctionalInterfaceLogic",
+          "leftSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/logic/FunctionalInterfaceLogic.java",
+            "startLine": 105,
+            "endLine": 107,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/logic/FunctionalInterfaceLogic.java",
+            "startLine": 107,
+            "endLine": 109,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private declaredOnObject(m MethodUsage) : boolean renamed to private isPublicMemberOfObject(m MethodUsage) : boolean in class com.github.javaparser.resolution.logic.FunctionalInterfaceLogic",
+          "leftSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/logic/FunctionalInterfaceLogic.java",
+            "startLine": 105,
+            "endLine": 107,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/logic/FunctionalInterfaceLogic.java",
+            "startLine": 107,
+            "endLine": 109,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	OBJECT_METHODS_SIGNATURES : List<String> to OBJECT_PUBLIC_METHODS_SIGNATURES : List<String> in class com.github.javaparser.resolution.logic.FunctionalInterfaceLogic",
+          "leftSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/logic/FunctionalInterfaceLogic.java",
+            "startLine": 101,
+            "endLine": 103,
+            "startColumn": 33,
+            "endColumn": 42
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/logic/FunctionalInterfaceLogic.java",
+            "startLine": 102,
+            "endLine": 105,
+            "startColumn": 33,
+            "endColumn": 42
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/javaparser/javaparser.git",
+      "sha1": "3e22ad6bf835e167a8492611e38e153749e3a490",
+      "url": "https://github.com/javaparser/javaparser/commit/3e22ad6bf835e167a8492611e38e153749e3a490",
+      "ourApproach": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	com.github.javaparser.resolution.promotion.BooleanConditionalExprHandler moved to com.github.javaparser.symbolsolver.resolution.promotion.BooleanConditionalExprHandler",
+          "leftSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/promotion/BooleanConditionalExprHandler.java",
+            "startLine": 31,
+            "endLine": 47,
+            "startColumn": 0,
+            "endColumn": 0
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/resolution/promotion/BooleanConditionalExprHandler.java",
+            "startLine": 32,
+            "endLine": 48,
+            "startColumn": 0,
+            "endColumn": 0
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	com.github.javaparser.resolution.promotion.ConditionalExprResolver moved to com.github.javaparser.symbolsolver.resolution.promotion.ConditionalExprResolver",
+          "leftSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/promotion/ConditionalExprResolver.java",
+            "startLine": 34,
+            "endLine": 50,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/resolution/promotion/ConditionalExprResolver.java",
+            "startLine": 37,
+            "endLine": 53,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	com.github.javaparser.resolution.promotion.NumericConditionalExprHandler moved to com.github.javaparser.symbolsolver.resolution.promotion.NumericConditionalExprHandler",
+          "leftSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/promotion/NumericConditionalExprHandler.java",
+            "startLine": 41,
+            "endLine": 169,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/resolution/promotion/NumericConditionalExprHandler.java",
+            "startLine": 42,
+            "endLine": 170,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	com.github.javaparser.resolution.promotion.ReferenceConditionalExprHandler moved to com.github.javaparser.symbolsolver.resolution.promotion.ReferenceConditionalExprHandler",
+          "leftSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/promotion/ReferenceConditionalExprHandler.java",
+            "startLine": 25,
+            "endLine": 45,
+            "startColumn": 0,
+            "endColumn": 0
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/resolution/promotion/ReferenceConditionalExprHandler.java",
+            "startLine": 30,
+            "endLine": 50,
+            "startColumn": 0,
+            "endColumn": 0
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	com.github.javaparser.resolution.promotion.BooleanConditionalExprHandler moved to com.github.javaparser.symbolsolver.resolution.promotion.BooleanConditionalExprHandler",
+          "leftSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/promotion/BooleanConditionalExprHandler.java",
+            "startLine": 31,
+            "endLine": 47,
+            "startColumn": 0,
+            "endColumn": 0
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/resolution/promotion/BooleanConditionalExprHandler.java",
+            "startLine": 32,
+            "endLine": 48,
+            "startColumn": 0,
+            "endColumn": 0
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	com.github.javaparser.resolution.promotion.ConditionalExprResolver moved to com.github.javaparser.symbolsolver.resolution.promotion.ConditionalExprResolver",
+          "leftSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/promotion/ConditionalExprResolver.java",
+            "startLine": 34,
+            "endLine": 50,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/resolution/promotion/ConditionalExprResolver.java",
+            "startLine": 37,
+            "endLine": 53,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	com.github.javaparser.resolution.promotion.NumericConditionalExprHandler moved to com.github.javaparser.symbolsolver.resolution.promotion.NumericConditionalExprHandler",
+          "leftSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/promotion/NumericConditionalExprHandler.java",
+            "startLine": 41,
+            "endLine": 169,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/resolution/promotion/NumericConditionalExprHandler.java",
+            "startLine": 42,
+            "endLine": 170,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	com.github.javaparser.resolution.promotion.ReferenceConditionalExprHandler moved to com.github.javaparser.symbolsolver.resolution.promotion.ReferenceConditionalExprHandler",
+          "leftSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/promotion/ReferenceConditionalExprHandler.java",
+            "startLine": 25,
+            "endLine": 45,
+            "startColumn": 0,
+            "endColumn": 0
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/resolution/promotion/ReferenceConditionalExprHandler.java",
+            "startLine": 30,
+            "endLine": 50,
+            "startColumn": 0,
+            "endColumn": 0
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/javaparser/javaparser.git",
+      "sha1": "ca3ca0cbd889d07977095289d24591f282157bd8",
+      "url": "https://github.com/javaparser/javaparser/commit/ca3ca0cbd889d07977095289d24591f282157bd8",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private considerIndentation(nodeText NodeText, nodeTextIndex int, numberOfCharactersToPreserve int) : int extracted from private considerEnforcingIndentation(nodeText NodeText, nodeTextIndex int) : int in class com.github.javaparser.printer.lexicalpreservation.Difference",
+          "leftSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/lexicalpreservation/Difference.java",
+            "startLine": 185,
+            "endLine": 214,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/lexicalpreservation/Difference.java",
+            "startLine": 208,
+            "endLine": 222,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private isEnforcingIndentationActivable(removedGroup RemovedGroup) : boolean extracted from private applyRemovedDiffElement(removedGroup RemovedGroup, removed Removed, originalElement TextElement, originalElementIsChild boolean, originalElementIsToken boolean) : void in class com.github.javaparser.printer.lexicalpreservation.Difference",
+          "leftSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/lexicalpreservation/Difference.java",
+            "startLine": 479,
+            "endLine": 554,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/lexicalpreservation/Difference.java",
+            "startLine": 224,
+            "endLine": 228,
+            "startColumn": 5,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private isRemovingIndentationActivable(removedGroup RemovedGroup) : boolean extracted from private applyRemovedDiffElement(removedGroup RemovedGroup, removed Removed, originalElement TextElement, originalElementIsChild boolean, originalElementIsToken boolean) : void in class com.github.javaparser.printer.lexicalpreservation.Difference",
+          "leftSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/lexicalpreservation/Difference.java",
+            "startLine": 479,
+            "endLine": 554,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/lexicalpreservation/Difference.java",
+            "startLine": 230,
+            "endLine": 234,
+            "startColumn": 5,
+            "endColumn": 3
+          },
+          "developerConfirmation": false
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private considerIndentation(nodeText NodeText, nodeTextIndex int, numberOfCharactersToPreserve int) : int extracted from private considerEnforcingIndentation(nodeText NodeText, nodeTextIndex int) : int in class com.github.javaparser.printer.lexicalpreservation.Difference",
+          "leftSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/lexicalpreservation/Difference.java",
+            "startLine": 185,
+            "endLine": 214,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/lexicalpreservation/Difference.java",
+            "startLine": 208,
+            "endLine": 222,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private isEnforcingIndentationActivable(removedGroup RemovedGroup) : boolean extracted from private applyRemovedDiffElement(removedGroup RemovedGroup, removed Removed, originalElement TextElement, originalElementIsChild boolean, originalElementIsToken boolean) : void in class com.github.javaparser.printer.lexicalpreservation.Difference",
+          "leftSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/lexicalpreservation/Difference.java",
+            "startLine": 479,
+            "endLine": 554,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/lexicalpreservation/Difference.java",
+            "startLine": 224,
+            "endLine": 228,
+            "startColumn": 5,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/javaparser/javaparser.git",
+      "sha1": "3daaa9d9f7c58640b8162d8fafb893b7d808be3f",
+      "url": "https://github.com/javaparser/javaparser/commit/3daaa9d9f7c58640b8162d8fafb893b7d808be3f",
+      "ourApproach": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	com.github.javaparser.symbolsolver.resolution.promotion.BooleanConditionalExprHandler moved to com.github.javaparser.resolution.promotion.BooleanConditionalExprHandler",
+          "leftSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/resolution/promotion/BooleanConditionalExprHandler.java",
+            "startLine": 11,
+            "endLine": 27,
+            "startColumn": 0,
+            "endColumn": 0
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/promotion/BooleanConditionalExprHandler.java",
+            "startLine": 11,
+            "endLine": 27,
+            "startColumn": 0,
+            "endColumn": 0
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	com.github.javaparser.symbolsolver.resolution.promotion.ConditionalExprHandler moved to com.github.javaparser.resolution.promotion.ConditionalExprHandler",
+          "leftSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/resolution/promotion/ConditionalExprHandler.java",
+            "startLine": 5,
+            "endLine": 7,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/promotion/ConditionalExprHandler.java",
+            "startLine": 5,
+            "endLine": 7,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	com.github.javaparser.symbolsolver.resolution.promotion.ConditionalExprResolver moved to com.github.javaparser.resolution.promotion.ConditionalExprResolver",
+          "leftSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/resolution/promotion/ConditionalExprResolver.java",
+            "startLine": 14,
+            "endLine": 30,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/promotion/ConditionalExprResolver.java",
+            "startLine": 14,
+            "endLine": 30,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	com.github.javaparser.symbolsolver.resolution.promotion.NumericConditionalExprHandler moved to com.github.javaparser.resolution.promotion.NumericConditionalExprHandler",
+          "leftSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/resolution/promotion/NumericConditionalExprHandler.java",
+            "startLine": 21,
+            "endLine": 149,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/promotion/NumericConditionalExprHandler.java",
+            "startLine": 21,
+            "endLine": 149,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	com.github.javaparser.symbolsolver.resolution.promotion.ReferenceConditionalExprHandler moved to com.github.javaparser.resolution.promotion.ReferenceConditionalExprHandler",
+          "leftSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/resolution/promotion/ReferenceConditionalExprHandler.java",
+            "startLine": 5,
+            "endLine": 25,
+            "startColumn": 0,
+            "endColumn": 0
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/promotion/ReferenceConditionalExprHandler.java",
+            "startLine": 5,
+            "endLine": 25,
+            "startColumn": 0,
+            "endColumn": 0
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	com.github.javaparser.symbolsolver.resolution.promotion.BooleanConditionalExprHandler moved to com.github.javaparser.resolution.promotion.BooleanConditionalExprHandler",
+          "leftSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/resolution/promotion/BooleanConditionalExprHandler.java",
+            "startLine": 11,
+            "endLine": 27,
+            "startColumn": 0,
+            "endColumn": 0
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/promotion/BooleanConditionalExprHandler.java",
+            "startLine": 11,
+            "endLine": 27,
+            "startColumn": 0,
+            "endColumn": 0
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	com.github.javaparser.symbolsolver.resolution.promotion.ConditionalExprHandler moved to com.github.javaparser.resolution.promotion.ConditionalExprHandler",
+          "leftSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/resolution/promotion/ConditionalExprHandler.java",
+            "startLine": 5,
+            "endLine": 7,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/promotion/ConditionalExprHandler.java",
+            "startLine": 5,
+            "endLine": 7,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	com.github.javaparser.symbolsolver.resolution.promotion.ConditionalExprResolver moved to com.github.javaparser.resolution.promotion.ConditionalExprResolver",
+          "leftSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/resolution/promotion/ConditionalExprResolver.java",
+            "startLine": 14,
+            "endLine": 30,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/promotion/ConditionalExprResolver.java",
+            "startLine": 14,
+            "endLine": 30,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	com.github.javaparser.symbolsolver.resolution.promotion.NumericConditionalExprHandler moved to com.github.javaparser.resolution.promotion.NumericConditionalExprHandler",
+          "leftSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/resolution/promotion/NumericConditionalExprHandler.java",
+            "startLine": 21,
+            "endLine": 149,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/promotion/NumericConditionalExprHandler.java",
+            "startLine": 21,
+            "endLine": 149,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	com.github.javaparser.symbolsolver.resolution.promotion.ReferenceConditionalExprHandler moved to com.github.javaparser.resolution.promotion.ReferenceConditionalExprHandler",
+          "leftSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/resolution/promotion/ReferenceConditionalExprHandler.java",
+            "startLine": 5,
+            "endLine": 25,
+            "startColumn": 0,
+            "endColumn": 0
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/promotion/ReferenceConditionalExprHandler.java",
+            "startLine": 5,
+            "endLine": 25,
+            "startColumn": 0,
+            "endColumn": 0
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/javaparser/javaparser.git",
+      "sha1": "d682aa22ca7b16ca6e0a9545237ece44f3ddd69e",
+      "url": "https://github.com/javaparser/javaparser/commit/d682aa22ca7b16ca6e0a9545237ece44f3ddd69e",
+      "ourApproach": [],
+      "baseline": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	objectProvider : ObjectProvider to typeSolver : TypeSolver in class com.github.javaparser.symbolsolver.logic.InferenceContext",
+          "leftSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/logic/InferenceContext.java",
+            "startLine": 43,
+            "endLine": 43,
+            "startColumn": 28,
+            "endColumn": 42
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/logic/InferenceContext.java",
+            "startLine": 46,
+            "endLine": 46,
+            "startColumn": 24,
+            "endColumn": 34
+          },
+          "developerConfirmation": false
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	objectProvider : ObjectProvider to typeSolver : TypeSolver in class com.github.javaparser.symbolsolver.logic.InferenceContext",
+          "leftSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/logic/InferenceContext.java",
+            "startLine": 43,
+            "endLine": 43,
+            "startColumn": 28,
+            "endColumn": 42
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/logic/InferenceContext.java",
+            "startLine": 46,
+            "endLine": 46,
+            "startColumn": 24,
+            "endColumn": 34
+          },
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/javaparser/javaparser.git",
+      "sha1": "b7375c946214c0301dd83d9fcd98b3a8ca991296",
+      "url": "https://github.com/javaparser/javaparser/commit/b7375c946214c0301dd83d9fcd98b3a8ca991296",
+      "ourApproach": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	cu : CompilationUnit to compilationUnit : CompilationUnit in class com.github.javaparser.remove.NodeRemovalTest",
+          "leftSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/remove/NodeRemovalTest.java",
+            "startLine": 42,
+            "endLine": 42,
+            "startColumn": 32,
+            "endColumn": 58
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/remove/NodeRemovalTest.java",
+            "startLine": 43,
+            "endLine": 43,
+            "startColumn": 32,
+            "endColumn": 71
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	cu : CompilationUnit to compilationUnit : CompilationUnit in class com.github.javaparser.remove.NodeRemovalTest",
+          "leftSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/remove/NodeRemovalTest.java",
+            "startLine": 42,
+            "endLine": 42,
+            "startColumn": 32,
+            "endColumn": 58
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/remove/NodeRemovalTest.java",
+            "startLine": 43,
+            "endLine": 43,
+            "startColumn": 32,
+            "endColumn": 71
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/javaparser/javaparser.git",
+      "sha1": "8e616cd8366d351950c4cfa4cc9bebf6687a8133",
+      "url": "https://github.com/javaparser/javaparser/commit/8e616cd8366d351950c4cfa4cc9bebf6687a8133",
+      "ourApproach": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	SymbolSolver to Solver in method public getSymbolSolver() : Solver from class com.github.javaparser.symbolsolver.javaparsermodel.JavaParserFacade",
+          "leftSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/JavaParserFacade.java",
+            "startLine": 139,
+            "endLine": 141,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/JavaParserFacade.java",
+            "startLine": 140,
+            "endLine": 142,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	symbolSolver : SymbolSolver to symbolSolver : Solver in class com.github.javaparser.symbolsolver.javaparsermodel.JavaParserFacade",
+          "leftSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/JavaParserFacade.java",
+            "startLine": 124,
+            "endLine": 124,
+            "startColumn": 32,
+            "endColumn": 44
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/JavaParserFacade.java",
+            "startLine": 125,
+            "endLine": 125,
+            "startColumn": 26,
+            "endColumn": 38
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	SymbolSolver to Solver in method protected createSolver() : Solver from class com.github.javaparser.symbolsolver.javaparsermodel.TypeExtractor",
+          "leftSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/TypeExtractor.java",
+            "startLine": 646,
+            "endLine": 648,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/TypeExtractor.java",
+            "startLine": 647,
+            "endLine": 649,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	symbolSolver : SymbolSolver to symbolSolver : Solver in class com.github.javaparser.symbolsolver.resolution.SymbolSolverTest",
+          "leftSideLocation": {
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/SymbolSolverTest.java",
+            "startLine": 47,
+            "endLine": 47,
+            "startColumn": 26,
+            "endColumn": 38
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/SymbolSolverTest.java",
+            "startLine": 48,
+            "endLine": 48,
+            "startColumn": 20,
+            "endColumn": 32
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	symbolSolver : SymbolSolver to symbolSolver : Solver in class com.github.javaparser.symbolsolver.resolution.SymbolSolverWithJavassistClassTest",
+          "leftSideLocation": {
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/SymbolSolverWithJavassistClassTest.java",
+            "startLine": 43,
+            "endLine": 43,
+            "startColumn": 26,
+            "endColumn": 38
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/SymbolSolverWithJavassistClassTest.java",
+            "startLine": 44,
+            "endLine": 44,
+            "startColumn": 20,
+            "endColumn": 32
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	symbolSolver : SymbolSolver to symbolSolver : Solver in class com.github.javaparser.symbolsolver.resolution.SymbolSolverWithJavassistEnumTest",
+          "leftSideLocation": {
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/SymbolSolverWithJavassistEnumTest.java",
+            "startLine": 43,
+            "endLine": 43,
+            "startColumn": 26,
+            "endColumn": 38
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/SymbolSolverWithJavassistEnumTest.java",
+            "startLine": 44,
+            "endLine": 44,
+            "startColumn": 20,
+            "endColumn": 32
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	symbolSolver : SymbolSolver to symbolSolver : Solver in class com.github.javaparser.symbolsolver.resolution.SymbolSolverWithJavassistInterfaceTest",
+          "leftSideLocation": {
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/SymbolSolverWithJavassistInterfaceTest.java",
+            "startLine": 43,
+            "endLine": 43,
+            "startColumn": 26,
+            "endColumn": 38
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/SymbolSolverWithJavassistInterfaceTest.java",
+            "startLine": 44,
+            "endLine": 44,
+            "startColumn": 20,
+            "endColumn": 32
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	symbolSolver : SymbolSolver to symbolSolver : Solver in class com.github.javaparser.symbolsolver.javaparsermodel.JavaParserFacade",
+          "leftSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/JavaParserFacade.java",
+            "startLine": 124,
+            "endLine": 124,
+            "startColumn": 32,
+            "endColumn": 44
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/JavaParserFacade.java",
+            "startLine": 125,
+            "endLine": 125,
+            "startColumn": 26,
+            "endColumn": 38
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	SymbolSolver to Solver in method public getSymbolSolver() : Solver from class com.github.javaparser.symbolsolver.javaparsermodel.JavaParserFacade",
+          "leftSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/JavaParserFacade.java",
+            "startLine": 139,
+            "endLine": 141,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/JavaParserFacade.java",
+            "startLine": 140,
+            "endLine": 142,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	SymbolSolver to Solver in method protected createSolver() : Solver from class com.github.javaparser.symbolsolver.javaparsermodel.TypeExtractor",
+          "leftSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/TypeExtractor.java",
+            "startLine": 646,
+            "endLine": 648,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/TypeExtractor.java",
+            "startLine": 647,
+            "endLine": 649,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	symbolSolver : SymbolSolver to symbolSolver : Solver in class com.github.javaparser.symbolsolver.resolution.SymbolSolverTest",
+          "leftSideLocation": {
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/SymbolSolverTest.java",
+            "startLine": 47,
+            "endLine": 47,
+            "startColumn": 26,
+            "endColumn": 38
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/SymbolSolverTest.java",
+            "startLine": 48,
+            "endLine": 48,
+            "startColumn": 20,
+            "endColumn": 32
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	symbolSolver : SymbolSolver to symbolSolver : Solver in class com.github.javaparser.symbolsolver.resolution.SymbolSolverWithJavassistClassTest",
+          "leftSideLocation": {
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/SymbolSolverWithJavassistClassTest.java",
+            "startLine": 43,
+            "endLine": 43,
+            "startColumn": 26,
+            "endColumn": 38
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/SymbolSolverWithJavassistClassTest.java",
+            "startLine": 44,
+            "endLine": 44,
+            "startColumn": 20,
+            "endColumn": 32
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	symbolSolver : SymbolSolver to symbolSolver : Solver in class com.github.javaparser.symbolsolver.resolution.SymbolSolverWithJavassistEnumTest",
+          "leftSideLocation": {
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/SymbolSolverWithJavassistEnumTest.java",
+            "startLine": 43,
+            "endLine": 43,
+            "startColumn": 26,
+            "endColumn": 38
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/SymbolSolverWithJavassistEnumTest.java",
+            "startLine": 44,
+            "endLine": 44,
+            "startColumn": 20,
+            "endColumn": 32
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	symbolSolver : SymbolSolver to symbolSolver : Solver in class com.github.javaparser.symbolsolver.resolution.SymbolSolverWithJavassistInterfaceTest",
+          "leftSideLocation": {
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/SymbolSolverWithJavassistInterfaceTest.java",
+            "startLine": 43,
+            "endLine": 43,
+            "startColumn": 26,
+            "endColumn": 38
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/SymbolSolverWithJavassistInterfaceTest.java",
+            "startLine": 44,
+            "endLine": 44,
+            "startColumn": 20,
+            "endColumn": 32
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/javaparser/javaparser.git",
+      "sha1": "9073420016c508b590f3cbfdc0b68bd5f101ec3c",
+      "url": "https://github.com/javaparser/javaparser/commit/9073420016c508b590f3cbfdc0b68bd5f101ec3c",
+      "ourApproach": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	com.github.javaparser.symbolsolver.model.typesystem.LazyType moved to com.github.javaparser.resolution.model.typesystem.LazyType",
+          "leftSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/model/typesystem/LazyType.java",
+            "startLine": 30,
+            "endLine": 140,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/model/typesystem/LazyType.java",
+            "startLine": 30,
+            "endLine": 140,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	com.github.javaparser.symbolsolver.model.typesystem.NullType moved to com.github.javaparser.resolution.model.typesystem.NullType",
+          "leftSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/model/typesystem/NullType.java",
+            "startLine": 26,
+            "endLine": 73,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/model/typesystem/NullType.java",
+            "startLine": 26,
+            "endLine": 73,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	com.github.javaparser.symbolsolver.model.typesystem.LazyType moved to com.github.javaparser.resolution.model.typesystem.LazyType",
+          "leftSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/model/typesystem/LazyType.java",
+            "startLine": 30,
+            "endLine": 140,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/model/typesystem/LazyType.java",
+            "startLine": 30,
+            "endLine": 140,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	com.github.javaparser.symbolsolver.model.typesystem.NullType moved to com.github.javaparser.resolution.model.typesystem.NullType",
+          "leftSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/model/typesystem/NullType.java",
+            "startLine": 26,
+            "endLine": 73,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/model/typesystem/NullType.java",
+            "startLine": 26,
+            "endLine": 73,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/javaparser/javaparser.git",
+      "sha1": "aee62b1f3a9b2cdee1951db04df21be6e63ca24f",
+      "url": "https://github.com/javaparser/javaparser/commit/aee62b1f3a9b2cdee1951db04df21be6e63ca24f",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private removeExtraCharacters(nodeText NodeText, nodeTextIndex int) : int extracted from private considerEnforcingIndentation(nodeText NodeText, nodeTextIndex int) : int in class com.github.javaparser.printer.lexicalpreservation.Difference",
+          "leftSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/lexicalpreservation/Difference.java",
+            "startLine": 137,
+            "endLine": 165,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/lexicalpreservation/Difference.java",
+            "startLine": 153,
+            "endLine": 169,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private hasOnlyWsBefore(nodeText NodeText, nodeTextIndex int) : boolean extracted from private considerEnforcingIndentation(nodeText NodeText, nodeTextIndex int) : int in class com.github.javaparser.printer.lexicalpreservation.Difference",
+          "leftSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/lexicalpreservation/Difference.java",
+            "startLine": 137,
+            "endLine": 165,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/lexicalpreservation/Difference.java",
+            "startLine": 171,
+            "endLine": 189,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private removeExtraCharacters(nodeText NodeText, nodeTextIndex int) : int extracted from private considerEnforcingIndentation(nodeText NodeText, nodeTextIndex int) : int in class com.github.javaparser.printer.lexicalpreservation.Difference",
+          "leftSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/lexicalpreservation/Difference.java",
+            "startLine": 137,
+            "endLine": 165,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/lexicalpreservation/Difference.java",
+            "startLine": 153,
+            "endLine": 169,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private hasOnlyWsBefore(nodeText NodeText, nodeTextIndex int) : boolean extracted from private considerEnforcingIndentation(nodeText NodeText, nodeTextIndex int) : int in class com.github.javaparser.printer.lexicalpreservation.Difference",
+          "leftSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/lexicalpreservation/Difference.java",
+            "startLine": 137,
+            "endLine": 165,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/lexicalpreservation/Difference.java",
+            "startLine": 171,
+            "endLine": 189,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/javaparser/javaparser.git",
+      "sha1": "97240408d5c48e602a5a277a0af8e98137d32800",
+      "url": "https://github.com/javaparser/javaparser/commit/97240408d5c48e602a5a277a0af8e98137d32800",
+      "ourApproach": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private createDefaultVisitor(configuration PrinterConfiguration) : Function<PrinterConfiguration,VoidVisitor<Void>> inlined to private createDefaultVisitor() : Function<PrinterConfiguration,VoidVisitor<Void>> in class com.github.javaparser.printer.DefaultPrettyPrinter",
+          "leftSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/DefaultPrettyPrinter.java",
+            "startLine": 48,
+            "endLine": 50,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/DefaultPrettyPrinter.java",
+            "startLine": 43,
+            "endLine": 45,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private createDefaultVisitor(configuration PrinterConfiguration) : Function<PrinterConfiguration,VoidVisitor<Void>> inlined to private createDefaultVisitor() : Function<PrinterConfiguration,VoidVisitor<Void>> in class com.github.javaparser.printer.DefaultPrettyPrinter",
+          "leftSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/DefaultPrettyPrinter.java",
+            "startLine": 48,
+            "endLine": 50,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/DefaultPrettyPrinter.java",
+            "startLine": 43,
+            "endLine": 45,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/javaparser/javaparser.git",
+      "sha1": "04d0cb226040a035e08d8be4677e74863d8f18de",
+      "url": "https://github.com/javaparser/javaparser/commit/04d0cb226040a035e08d8be4677e74863d8f18de",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package nullOperandInConditionalExpression() : void renamed to package test_null_operand_in_conditional_expression() : void in class com.github.javaparser.symbolsolver.resolution.ConditionalExprTest",
+          "leftSideLocation": {
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/ConditionalExprTest.java",
+            "startLine": 44,
+            "endLine": 52,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/ConditionalExprTest.java",
+            "startLine": 57,
+            "endLine": 65,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package booleanConditionalExpression() : void renamed to package test_boolean_conditional_expression() : void in class com.github.javaparser.symbolsolver.resolution.ConditionalExprTest",
+          "leftSideLocation": {
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/ConditionalExprTest.java",
+            "startLine": 54,
+            "endLine": 64,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/ConditionalExprTest.java",
+            "startLine": 67,
+            "endLine": 77,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package numericConditionalExpression() : void renamed to package test_numeric_conditional_expression() : void in class com.github.javaparser.symbolsolver.resolution.ConditionalExprTest",
+          "leftSideLocation": {
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/ConditionalExprTest.java",
+            "startLine": 66,
+            "endLine": 127,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/ConditionalExprTest.java",
+            "startLine": 79,
+            "endLine": 143,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package referenceConditionalExpression() : void renamed to package test_reference_conditional_expression() : void in class com.github.javaparser.symbolsolver.resolution.ConditionalExprTest",
+          "leftSideLocation": {
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/ConditionalExprTest.java",
+            "startLine": 129,
+            "endLine": 157,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/ConditionalExprTest.java",
+            "startLine": 148,
+            "endLine": 175,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package nullOperandInConditionalExpression() : void renamed to package test_null_operand_in_conditional_expression() : void in class com.github.javaparser.symbolsolver.resolution.ConditionalExprTest",
+          "leftSideLocation": {
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/ConditionalExprTest.java",
+            "startLine": 44,
+            "endLine": 52,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/ConditionalExprTest.java",
+            "startLine": 57,
+            "endLine": 65,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package booleanConditionalExpression() : void renamed to package test_boolean_conditional_expression() : void in class com.github.javaparser.symbolsolver.resolution.ConditionalExprTest",
+          "leftSideLocation": {
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/ConditionalExprTest.java",
+            "startLine": 54,
+            "endLine": 64,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/ConditionalExprTest.java",
+            "startLine": 67,
+            "endLine": 77,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package numericConditionalExpression() : void renamed to package test_numeric_conditional_expression() : void in class com.github.javaparser.symbolsolver.resolution.ConditionalExprTest",
+          "leftSideLocation": {
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/ConditionalExprTest.java",
+            "startLine": 66,
+            "endLine": 127,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/ConditionalExprTest.java",
+            "startLine": 79,
+            "endLine": 143,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package referenceConditionalExpression() : void renamed to package test_reference_conditional_expression() : void in class com.github.javaparser.symbolsolver.resolution.ConditionalExprTest",
+          "leftSideLocation": {
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/ConditionalExprTest.java",
+            "startLine": 129,
+            "endLine": 157,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/ConditionalExprTest.java",
+            "startLine": 148,
+            "endLine": 175,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/javaparser/javaparser.git",
+      "sha1": "3f01add3f56546240d08fb3201a9f1143ede54d9",
+      "url": "https://github.com/javaparser/javaparser/commit/3f01add3f56546240d08fb3201a9f1143ede54d9",
+      "ourApproach": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	com.github.javaparser.ast.validator.Java16ValidatorTest.Record.RecordAsIdentifierForbidden renamed to com.github.javaparser.ast.validator.Java16ValidatorTest.Record.RecordAsIdentifierSometimesForbidden",
+          "leftSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/ast/validator/Java16ValidatorTest.java",
+            "startLine": 59,
+            "endLine": 74,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/ast/validator/Java16ValidatorTest.java",
+            "startLine": 59,
+            "endLine": 81,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package recordUsedAsFieldName() : void renamed to package recordUsedAsFieldNameInClass() : void in class com.github.javaparser.ast.validator.Java16ValidatorTest.Record.RecordAsIdentifierSometimesForbidden",
+          "leftSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/ast/validator/Java16ValidatorTest.java",
+            "startLine": 68,
+            "endLine": 73,
+            "startColumn": 13,
+            "endColumn": 14
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/ast/validator/Java16ValidatorTest.java",
+            "startLine": 68,
+            "endLine": 73,
+            "startColumn": 13,
+            "endColumn": 14
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private usedAsClassOrInterfaceName(n Node) : boolean renamed to private validUsage(node Node) : boolean in class com.github.javaparser.ast.validator.ReservedKeywordValidatorRecord",
+          "leftSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/ast/validator/ReservedKeywordValidatorRecord.java",
+            "startLine": 60,
+            "endLine": 66,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/ast/validator/ReservedKeywordValidatorRecord.java",
+            "startLine": 61,
+            "endLine": 77,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	com.github.javaparser.ast.validator.Java16ValidatorTest.Record.RecordAsIdentifierForbidden renamed to com.github.javaparser.ast.validator.Java16ValidatorTest.Record.RecordAsIdentifierSometimesForbidden",
+          "leftSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/ast/validator/Java16ValidatorTest.java",
+            "startLine": 59,
+            "endLine": 74,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/ast/validator/Java16ValidatorTest.java",
+            "startLine": 59,
+            "endLine": 81,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private usedAsClassOrInterfaceName(n Node) : boolean renamed to private validUsage(node Node) : boolean in class com.github.javaparser.ast.validator.ReservedKeywordValidatorRecord",
+          "leftSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/ast/validator/ReservedKeywordValidatorRecord.java",
+            "startLine": 60,
+            "endLine": 66,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/ast/validator/ReservedKeywordValidatorRecord.java",
+            "startLine": 61,
+            "endLine": 77,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package recordUsedAsFieldName() : void renamed to package recordUsedAsFieldNameInClass() : void in class com.github.javaparser.ast.validator.Java16ValidatorTest.Record.RecordAsIdentifierSometimesForbidden",
+          "leftSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/ast/validator/Java16ValidatorTest.java",
+            "startLine": 68,
+            "endLine": 73,
+            "startColumn": 13,
+            "endColumn": 14
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/ast/validator/Java16ValidatorTest.java",
+            "startLine": 68,
+            "endLine": 73,
+            "startColumn": 13,
+            "endColumn": 14
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/javaparser/javaparser.git",
+      "sha1": "853048dfe3ae630cbf8e0ab487f0dee115e636ce",
+      "url": "https://github.com/javaparser/javaparser/commit/853048dfe3ae630cbf8e0ab487f0dee115e636ce",
+      "ourApproach": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	List<ResolvedReferenceTypeDeclaration> to Set<ResolvedReferenceTypeDeclaration> in method public internalTypes() : Set<ResolvedReferenceTypeDeclaration> from class com.github.javaparser.resolution.declarations.ResolvedTypeDeclaration",
+          "leftSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/declarations/ResolvedTypeDeclaration.java",
+            "startLine": 43,
+            "endLine": 48,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/declarations/ResolvedTypeDeclaration.java",
+            "startLine": 42,
+            "endLine": 47,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	List<ResolvedReferenceTypeDeclaration> to Set<ResolvedReferenceTypeDeclaration> in method public internalTypes() : Set<ResolvedReferenceTypeDeclaration> from class com.github.javaparser.symbolsolver.javaparsermodel.declarations.JavaParserAnonymousClassDeclaration",
+          "leftSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/declarations/JavaParserAnonymousClassDeclaration.java",
+            "startLine": 251,
+            "endLine": 258,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/declarations/JavaParserAnonymousClassDeclaration.java",
+            "startLine": 251,
+            "endLine": 258,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	List<ResolvedReferenceTypeDeclaration> to Set<ResolvedReferenceTypeDeclaration> in method public internalTypes() : Set<ResolvedReferenceTypeDeclaration> from class com.github.javaparser.symbolsolver.javaparsermodel.declarations.JavaParserClassDeclaration",
+          "leftSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/declarations/JavaParserClassDeclaration.java",
+            "startLine": 430,
+            "endLine": 439,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/declarations/JavaParserClassDeclaration.java",
+            "startLine": 430,
+            "endLine": 439,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	List<ResolvedReferenceTypeDeclaration> to Set<ResolvedReferenceTypeDeclaration> in method public internalTypes() : Set<ResolvedReferenceTypeDeclaration> from class com.github.javaparser.symbolsolver.javaparsermodel.declarations.JavaParserEnumDeclaration",
+          "leftSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/declarations/JavaParserEnumDeclaration.java",
+            "startLine": 562,
+            "endLine": 571,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/declarations/JavaParserEnumDeclaration.java",
+            "startLine": 562,
+            "endLine": 571,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	List<ResolvedReferenceTypeDeclaration> to Set<ResolvedReferenceTypeDeclaration> in method public internalTypes() : Set<ResolvedReferenceTypeDeclaration> from class com.github.javaparser.symbolsolver.javaparsermodel.declarations.JavaParserInterfaceDeclaration",
+          "leftSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/declarations/JavaParserInterfaceDeclaration.java",
+            "startLine": 357,
+            "endLine": 366,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/declarations/JavaParserInterfaceDeclaration.java",
+            "startLine": 357,
+            "endLine": 366,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	List<ResolvedReferenceTypeDeclaration> to Set<ResolvedReferenceTypeDeclaration> in method public internalTypes() : Set<ResolvedReferenceTypeDeclaration> from class com.github.javaparser.symbolsolver.javassistmodel.JavassistClassDeclaration",
+          "leftSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javassistmodel/JavassistClassDeclaration.java",
+            "startLine": 300,
+            "endLine": 311,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javassistmodel/JavassistClassDeclaration.java",
+            "startLine": 300,
+            "endLine": 311,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	List<ResolvedReferenceTypeDeclaration> to Set<ResolvedReferenceTypeDeclaration> in method public internalTypes() : Set<ResolvedReferenceTypeDeclaration> from class com.github.javaparser.symbolsolver.javassistmodel.JavassistEnumDeclaration",
+          "leftSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javassistmodel/JavassistEnumDeclaration.java",
+            "startLine": 159,
+            "endLine": 170,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javassistmodel/JavassistEnumDeclaration.java",
+            "startLine": 159,
+            "endLine": 170,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	List<ResolvedReferenceTypeDeclaration> to Set<ResolvedReferenceTypeDeclaration> in method public internalTypes() : Set<ResolvedReferenceTypeDeclaration> from class com.github.javaparser.symbolsolver.javassistmodel.JavassistInterfaceDeclaration",
+          "leftSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javassistmodel/JavassistInterfaceDeclaration.java",
+            "startLine": 209,
+            "endLine": 220,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javassistmodel/JavassistInterfaceDeclaration.java",
+            "startLine": 209,
+            "endLine": 220,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	List<ResolvedReferenceTypeDeclaration> to Set<ResolvedReferenceTypeDeclaration> in method public internalTypes() : Set<ResolvedReferenceTypeDeclaration> from class com.github.javaparser.symbolsolver.reflectionmodel.ReflectionAnnotationDeclaration",
+          "leftSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/reflectionmodel/ReflectionAnnotationDeclaration.java",
+            "startLine": 176,
+            "endLine": 181,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/reflectionmodel/ReflectionAnnotationDeclaration.java",
+            "startLine": 176,
+            "endLine": 181,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	List<ResolvedReferenceTypeDeclaration> to Set<ResolvedReferenceTypeDeclaration> in method public internalTypes() : Set<ResolvedReferenceTypeDeclaration> from class com.github.javaparser.symbolsolver.reflectionmodel.ReflectionClassDeclaration",
+          "leftSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/reflectionmodel/ReflectionClassDeclaration.java",
+            "startLine": 394,
+            "endLine": 399,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/reflectionmodel/ReflectionClassDeclaration.java",
+            "startLine": 394,
+            "endLine": 399,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	List<ResolvedReferenceTypeDeclaration> to Set<ResolvedReferenceTypeDeclaration> in method public internalTypes() : Set<ResolvedReferenceTypeDeclaration> from class com.github.javaparser.symbolsolver.reflectionmodel.ReflectionEnumDeclaration",
+          "leftSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/reflectionmodel/ReflectionEnumDeclaration.java",
+            "startLine": 216,
+            "endLine": 221,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/reflectionmodel/ReflectionEnumDeclaration.java",
+            "startLine": 216,
+            "endLine": 221,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	List<ResolvedReferenceTypeDeclaration> to Set<ResolvedReferenceTypeDeclaration> in method public internalTypes() : Set<ResolvedReferenceTypeDeclaration> from class com.github.javaparser.symbolsolver.reflectionmodel.ReflectionInterfaceDeclaration",
+          "leftSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/reflectionmodel/ReflectionInterfaceDeclaration.java",
+            "startLine": 296,
+            "endLine": 301,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/reflectionmodel/ReflectionInterfaceDeclaration.java",
+            "startLine": 296,
+            "endLine": 301,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	List<ResolvedReferenceTypeDeclaration> to Set<ResolvedReferenceTypeDeclaration> in method public internalTypes() : Set<ResolvedReferenceTypeDeclaration> from class com.github.javaparser.symbolsolver.resolution.DefaultPackageTest.MyClassDeclaration",
+          "leftSideLocation": {
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/DefaultPackageTest.java",
+            "startLine": 65,
+            "endLine": 68,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/DefaultPackageTest.java",
+            "startLine": 69,
+            "endLine": 72,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	List<ResolvedReferenceTypeDeclaration> to Set<ResolvedReferenceTypeDeclaration> in method public internalTypes() : Set<ResolvedReferenceTypeDeclaration> from class com.github.javaparser.resolution.declarations.ResolvedTypeDeclaration",
+          "leftSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/declarations/ResolvedTypeDeclaration.java",
+            "startLine": 43,
+            "endLine": 48,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/resolution/declarations/ResolvedTypeDeclaration.java",
+            "startLine": 42,
+            "endLine": 47,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	List<ResolvedReferenceTypeDeclaration> to Set<ResolvedReferenceTypeDeclaration> in method public internalTypes() : Set<ResolvedReferenceTypeDeclaration> from class com.github.javaparser.symbolsolver.javaparsermodel.declarations.JavaParserAnonymousClassDeclaration",
+          "leftSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/declarations/JavaParserAnonymousClassDeclaration.java",
+            "startLine": 251,
+            "endLine": 258,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/declarations/JavaParserAnonymousClassDeclaration.java",
+            "startLine": 251,
+            "endLine": 258,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	List<ResolvedReferenceTypeDeclaration> to Set<ResolvedReferenceTypeDeclaration> in method public internalTypes() : Set<ResolvedReferenceTypeDeclaration> from class com.github.javaparser.symbolsolver.javaparsermodel.declarations.JavaParserClassDeclaration",
+          "leftSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/declarations/JavaParserClassDeclaration.java",
+            "startLine": 430,
+            "endLine": 439,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/declarations/JavaParserClassDeclaration.java",
+            "startLine": 430,
+            "endLine": 439,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	List<ResolvedReferenceTypeDeclaration> to Set<ResolvedReferenceTypeDeclaration> in method public internalTypes() : Set<ResolvedReferenceTypeDeclaration> from class com.github.javaparser.symbolsolver.javaparsermodel.declarations.JavaParserEnumDeclaration",
+          "leftSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/declarations/JavaParserEnumDeclaration.java",
+            "startLine": 562,
+            "endLine": 571,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/declarations/JavaParserEnumDeclaration.java",
+            "startLine": 562,
+            "endLine": 571,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	List<ResolvedReferenceTypeDeclaration> to Set<ResolvedReferenceTypeDeclaration> in method public internalTypes() : Set<ResolvedReferenceTypeDeclaration> from class com.github.javaparser.symbolsolver.javaparsermodel.declarations.JavaParserInterfaceDeclaration",
+          "leftSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/declarations/JavaParserInterfaceDeclaration.java",
+            "startLine": 357,
+            "endLine": 366,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javaparsermodel/declarations/JavaParserInterfaceDeclaration.java",
+            "startLine": 357,
+            "endLine": 366,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	List<ResolvedReferenceTypeDeclaration> to Set<ResolvedReferenceTypeDeclaration> in method public internalTypes() : Set<ResolvedReferenceTypeDeclaration> from class com.github.javaparser.symbolsolver.javassistmodel.JavassistClassDeclaration",
+          "leftSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javassistmodel/JavassistClassDeclaration.java",
+            "startLine": 300,
+            "endLine": 311,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javassistmodel/JavassistClassDeclaration.java",
+            "startLine": 300,
+            "endLine": 311,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	List<ResolvedReferenceTypeDeclaration> to Set<ResolvedReferenceTypeDeclaration> in method public internalTypes() : Set<ResolvedReferenceTypeDeclaration> from class com.github.javaparser.symbolsolver.javassistmodel.JavassistEnumDeclaration",
+          "leftSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javassistmodel/JavassistEnumDeclaration.java",
+            "startLine": 159,
+            "endLine": 170,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javassistmodel/JavassistEnumDeclaration.java",
+            "startLine": 159,
+            "endLine": 170,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	List<ResolvedReferenceTypeDeclaration> to Set<ResolvedReferenceTypeDeclaration> in method public internalTypes() : Set<ResolvedReferenceTypeDeclaration> from class com.github.javaparser.symbolsolver.javassistmodel.JavassistInterfaceDeclaration",
+          "leftSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javassistmodel/JavassistInterfaceDeclaration.java",
+            "startLine": 209,
+            "endLine": 220,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javassistmodel/JavassistInterfaceDeclaration.java",
+            "startLine": 209,
+            "endLine": 220,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	List<ResolvedReferenceTypeDeclaration> to Set<ResolvedReferenceTypeDeclaration> in method public internalTypes() : Set<ResolvedReferenceTypeDeclaration> from class com.github.javaparser.symbolsolver.reflectionmodel.ReflectionAnnotationDeclaration",
+          "leftSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/reflectionmodel/ReflectionAnnotationDeclaration.java",
+            "startLine": 176,
+            "endLine": 181,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/reflectionmodel/ReflectionAnnotationDeclaration.java",
+            "startLine": 176,
+            "endLine": 181,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	List<ResolvedReferenceTypeDeclaration> to Set<ResolvedReferenceTypeDeclaration> in method public internalTypes() : Set<ResolvedReferenceTypeDeclaration> from class com.github.javaparser.symbolsolver.reflectionmodel.ReflectionClassDeclaration",
+          "leftSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/reflectionmodel/ReflectionClassDeclaration.java",
+            "startLine": 394,
+            "endLine": 399,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/reflectionmodel/ReflectionClassDeclaration.java",
+            "startLine": 394,
+            "endLine": 399,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	List<ResolvedReferenceTypeDeclaration> to Set<ResolvedReferenceTypeDeclaration> in method public internalTypes() : Set<ResolvedReferenceTypeDeclaration> from class com.github.javaparser.symbolsolver.reflectionmodel.ReflectionEnumDeclaration",
+          "leftSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/reflectionmodel/ReflectionEnumDeclaration.java",
+            "startLine": 216,
+            "endLine": 221,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/reflectionmodel/ReflectionEnumDeclaration.java",
+            "startLine": 216,
+            "endLine": 221,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	List<ResolvedReferenceTypeDeclaration> to Set<ResolvedReferenceTypeDeclaration> in method public internalTypes() : Set<ResolvedReferenceTypeDeclaration> from class com.github.javaparser.symbolsolver.reflectionmodel.ReflectionInterfaceDeclaration",
+          "leftSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/reflectionmodel/ReflectionInterfaceDeclaration.java",
+            "startLine": 296,
+            "endLine": 301,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/reflectionmodel/ReflectionInterfaceDeclaration.java",
+            "startLine": 296,
+            "endLine": 301,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	List<ResolvedReferenceTypeDeclaration> to Set<ResolvedReferenceTypeDeclaration> in method public internalTypes() : Set<ResolvedReferenceTypeDeclaration> from class com.github.javaparser.symbolsolver.resolution.DefaultPackageTest.MyClassDeclaration",
+          "leftSideLocation": {
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/DefaultPackageTest.java",
+            "startLine": 65,
+            "endLine": 68,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/DefaultPackageTest.java",
+            "startLine": 69,
+            "endLine": 72,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/javaparser/javaparser.git",
+      "sha1": "9e55bc54539d393e1948c8d4a89b1511ed379fad",
+      "url": "https://github.com/javaparser/javaparser/commit/9e55bc54539d393e1948c8d4a89b1511ed379fad",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package record_mustNotAllowNonStaticFields() : void renamed to package record_forbidNonStaticFields() : void in class com.github.javaparser.ast.body.RecordDeclarationTest",
+          "leftSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/ast/body/RecordDeclarationTest.java",
+            "startLine": 268,
+            "endLine": 272,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/ast/body/RecordDeclarationTest.java",
+            "startLine": 251,
+            "endLine": 255,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package record_mustAllowStaticFields() : void renamed to package record_permitStaticFields2() : void in class com.github.javaparser.ast.body.RecordDeclarationTest",
+          "leftSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/ast/body/RecordDeclarationTest.java",
+            "startLine": 274,
+            "endLine": 279,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/ast/body/RecordDeclarationTest.java",
+            "startLine": 264,
+            "endLine": 283,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	com.github.javaparser.ast.body.RecordDeclarationTest.LanguageLevels from Class com.github.javaparser.ast.body.RecordDeclarationTest",
+          "leftSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/ast/body/RecordDeclarationTest.java",
+            "startLine": 23,
+            "endLine": 695,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/ast/body/RecordDeclarationTest.java",
+            "startLine": 26,
+            "endLine": 59,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package record_mustNotAllowNonStaticFields() : void renamed to package record_forbidNonStaticFields() : void in class com.github.javaparser.ast.body.RecordDeclarationTest",
+          "leftSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/ast/body/RecordDeclarationTest.java",
+            "startLine": 268,
+            "endLine": 272,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/ast/body/RecordDeclarationTest.java",
+            "startLine": 251,
+            "endLine": 255,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package record_mustAllowStaticFields() : void renamed to package record_isImplicitlyFinalWithoutExplicit() : void in class com.github.javaparser.ast.body.RecordDeclarationTest",
+          "leftSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/ast/body/RecordDeclarationTest.java",
+            "startLine": 274,
+            "endLine": 279,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/ast/body/RecordDeclarationTest.java",
+            "startLine": 299,
+            "endLine": 311,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	com.github.javaparser.ast.body.RecordDeclarationTest.LanguageLevels from class com.github.javaparser.ast.body.RecordDeclarationTest",
+          "leftSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/ast/body/RecordDeclarationTest.java",
+            "startLine": 23,
+            "endLine": 695,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/ast/body/RecordDeclarationTest.java",
+            "startLine": 26,
+            "endLine": 59,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/javaparser/javaparser.git",
+      "sha1": "e6060a4498c454e22d7ed1bd1f2e814e34ef89b5",
+      "url": "https://github.com/javaparser/javaparser/commit/e6060a4498c454e22d7ed1bd1f2e814e34ef89b5",
+      "ourApproach": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private addPathToJar(jarInputStream InputStream) : void inlined to public JarTypeSolver(jarInputStream InputStream) in class com.github.javaparser.symbolsolver.resolution.typesolvers.JarTypeSolver",
+          "leftSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/resolution/typesolvers/JarTypeSolver.java",
+            "startLine": 153,
+            "endLine": 155,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/resolution/typesolvers/JarTypeSolver.java",
+            "startLine": 96,
+            "endLine": 107,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private addPathToJar(jarInputStream InputStream) : void inlined to public JarTypeSolver(jarInputStream InputStream) in class com.github.javaparser.symbolsolver.resolution.typesolvers.JarTypeSolver",
+          "leftSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/resolution/typesolvers/JarTypeSolver.java",
+            "startLine": 153,
+            "endLine": 155,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/resolution/typesolvers/JarTypeSolver.java",
+            "startLine": 96,
+            "endLine": 107,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/javaparser/javaparser.git",
+      "sha1": "6d3c852a7ac115d9149dd96a71dee3dfd4c5d91b",
+      "url": "https://github.com/javaparser/javaparser/commit/6d3c852a7ac115d9149dd96a71dee3dfd4c5d91b",
+      "ourApproach": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	com.github.javaparser.symbolsolver.Issue3088Test renamed to com.github.javaparser.symbolsolver.Issue3087Test",
+          "leftSideLocation": {
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/Issue3087Test.java",
+            "startLine": 14,
+            "endLine": 51,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/Issue3087Test.java",
+            "startLine": 14,
+            "endLine": 51,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	com.github.javaparser.symbolsolver.Issue3088Test renamed to com.github.javaparser.symbolsolver.Issue3087Test",
+          "leftSideLocation": {
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/Issue3087Test.java",
+            "startLine": 14,
+            "endLine": 51,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/Issue3087Test.java",
+            "startLine": 14,
+            "endLine": 51,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/javaparser/javaparser.git",
+      "sha1": "a73aba7b8cef7c52666d25169a3f6e495c65bcd2",
+      "url": "https://github.com/javaparser/javaparser/commit/a73aba7b8cef7c52666d25169a3f6e495c65bcd2",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private assertCompilationFails(s String) : void extracted from package record_cannotExtend() : void in class com.github.javaparser.ast.body.RecordDeclarationTest",
+          "leftSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/ast/body/RecordDeclarationTest.java",
+            "startLine": 95,
+            "endLine": 104,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/ast/body/RecordDeclarationTest.java",
+            "startLine": 307,
+            "endLine": 311,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private assertCompilationFails(s String) : void extracted from package record_cannotBeAbstract() : void in class com.github.javaparser.ast.body.RecordDeclarationTest",
+          "leftSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/ast/body/RecordDeclarationTest.java",
+            "startLine": 106,
+            "endLine": 115,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/ast/body/RecordDeclarationTest.java",
+            "startLine": 307,
+            "endLine": 311,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private assertCompilationFails(s String) : void extracted from package record_mustNotAllowNonStaticFields() : void in class com.github.javaparser.ast.body.RecordDeclarationTest",
+          "leftSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/ast/body/RecordDeclarationTest.java",
+            "startLine": 218,
+            "endLine": 224,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/ast/body/RecordDeclarationTest.java",
+            "startLine": 307,
+            "endLine": 311,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private assertCompilationFails(s String) : void extracted from package record_mustNotAllowMismatchedComponentAccessorReturnType() : void in class com.github.javaparser.ast.body.RecordDeclarationTest",
+          "leftSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/ast/body/RecordDeclarationTest.java",
+            "startLine": 235,
+            "endLine": 247,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/ast/body/RecordDeclarationTest.java",
+            "startLine": 307,
+            "endLine": 311,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private assertOneRecordDeclaration(cu CompilationUnit) : void extracted from package basicGrammarCompiles() : void in class com.github.javaparser.ast.body.RecordDeclarationTest",
+          "leftSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/ast/body/RecordDeclarationTest.java",
+            "startLine": 40,
+            "endLine": 48,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/ast/body/RecordDeclarationTest.java",
+            "startLine": 313,
+            "endLine": 316,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private assertOneRecordDeclaration(cu CompilationUnit) : void extracted from package basicGrammar() : void in class com.github.javaparser.ast.body.RecordDeclarationTest",
+          "leftSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/ast/body/RecordDeclarationTest.java",
+            "startLine": 50,
+            "endLine": 78,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/ast/body/RecordDeclarationTest.java",
+            "startLine": 313,
+            "endLine": 316,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private assertOneRecordDeclaration(cu CompilationUnit) : void extracted from package record_emptyMembers() : void in class com.github.javaparser.ast.body.RecordDeclarationTest",
+          "leftSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/ast/body/RecordDeclarationTest.java",
+            "startLine": 165,
+            "endLine": 174,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/ast/body/RecordDeclarationTest.java",
+            "startLine": 313,
+            "endLine": 316,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private assertOneRecordDeclaration(cu CompilationUnit) : void extracted from package record_permitStaticFields() : void in class com.github.javaparser.ast.body.RecordDeclarationTest",
+          "leftSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/ast/body/RecordDeclarationTest.java",
+            "startLine": 176,
+            "endLine": 196,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/ast/body/RecordDeclarationTest.java",
+            "startLine": 313,
+            "endLine": 316,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private assertOneRecordDeclaration(cu CompilationUnit) : void extracted from package record_permitMethods() : void in class com.github.javaparser.ast.body.RecordDeclarationTest",
+          "leftSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/ast/body/RecordDeclarationTest.java",
+            "startLine": 198,
+            "endLine": 216,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/ast/body/RecordDeclarationTest.java",
+            "startLine": 313,
+            "endLine": 316,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private assertOneRecordDeclaration(cu CompilationUnit) : void extracted from package record_mustAllowStaticFields() : void in class com.github.javaparser.ast.body.RecordDeclarationTest",
+          "leftSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/ast/body/RecordDeclarationTest.java",
+            "startLine": 226,
+            "endLine": 232,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/ast/body/RecordDeclarationTest.java",
+            "startLine": 313,
+            "endLine": 316,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private assertOneRecordDeclaration(cu CompilationUnit) : void extracted from package record_allowMethodsWithSameNameAsRecordComponentButNotAnAccessorMethod() : void in class com.github.javaparser.ast.body.RecordDeclarationTest",
+          "leftSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/ast/body/RecordDeclarationTest.java",
+            "startLine": 249,
+            "endLine": 260,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/ast/body/RecordDeclarationTest.java",
+            "startLine": 313,
+            "endLine": 316,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private assertOneRecordDeclaration(cu CompilationUnit) : void extracted from package record_allowMethodsWithSameNameAsRecordComponentButNotAnAccessorMethod2() : void in class com.github.javaparser.ast.body.RecordDeclarationTest",
+          "leftSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/ast/body/RecordDeclarationTest.java",
+            "startLine": 262,
+            "endLine": 273,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/ast/body/RecordDeclarationTest.java",
+            "startLine": 313,
+            "endLine": 316,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private assertOneRecordDeclaration(cu CompilationUnit) : void extracted from package record_allowComponentAccessorWithMatchingType() : void in class com.github.javaparser.ast.body.RecordDeclarationTest",
+          "leftSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/ast/body/RecordDeclarationTest.java",
+            "startLine": 276,
+            "endLine": 287,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/ast/body/RecordDeclarationTest.java",
+            "startLine": 313,
+            "endLine": 316,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private assertOneRecordDeclaration(cu CompilationUnit) : void extracted from package basicGrammarCompiles() : void in class com.github.javaparser.ast.body.RecordDeclarationTest",
+          "leftSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/ast/body/RecordDeclarationTest.java",
+            "startLine": 40,
+            "endLine": 48,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/ast/body/RecordDeclarationTest.java",
+            "startLine": 313,
+            "endLine": 316,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private assertOneRecordDeclaration(cu CompilationUnit) : void extracted from package basicGrammar() : void in class com.github.javaparser.ast.body.RecordDeclarationTest",
+          "leftSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/ast/body/RecordDeclarationTest.java",
+            "startLine": 50,
+            "endLine": 78,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/ast/body/RecordDeclarationTest.java",
+            "startLine": 313,
+            "endLine": 316,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private assertCompilationFails(s String) : void extracted from package record_cannotExtend() : void in class com.github.javaparser.ast.body.RecordDeclarationTest",
+          "leftSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/ast/body/RecordDeclarationTest.java",
+            "startLine": 95,
+            "endLine": 104,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/ast/body/RecordDeclarationTest.java",
+            "startLine": 307,
+            "endLine": 311,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private assertCompilationFails(s String) : void extracted from package record_cannotBeAbstract() : void in class com.github.javaparser.ast.body.RecordDeclarationTest",
+          "leftSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/ast/body/RecordDeclarationTest.java",
+            "startLine": 106,
+            "endLine": 115,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/ast/body/RecordDeclarationTest.java",
+            "startLine": 307,
+            "endLine": 311,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private assertOneRecordDeclaration(cu CompilationUnit) : void extracted from package record_permitStaticFields() : void in class com.github.javaparser.ast.body.RecordDeclarationTest",
+          "leftSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/ast/body/RecordDeclarationTest.java",
+            "startLine": 176,
+            "endLine": 196,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/ast/body/RecordDeclarationTest.java",
+            "startLine": 313,
+            "endLine": 316,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private assertOneRecordDeclaration(cu CompilationUnit) : void extracted from package record_permitMethods() : void in class com.github.javaparser.ast.body.RecordDeclarationTest",
+          "leftSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/ast/body/RecordDeclarationTest.java",
+            "startLine": 198,
+            "endLine": 216,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/ast/body/RecordDeclarationTest.java",
+            "startLine": 313,
+            "endLine": 316,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private assertCompilationFails(s String) : void extracted from package record_mustNotAllowNonStaticFields() : void in class com.github.javaparser.ast.body.RecordDeclarationTest",
+          "leftSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/ast/body/RecordDeclarationTest.java",
+            "startLine": 218,
+            "endLine": 224,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/ast/body/RecordDeclarationTest.java",
+            "startLine": 307,
+            "endLine": 311,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private assertOneRecordDeclaration(cu CompilationUnit) : void extracted from package record_mustAllowStaticFields() : void in class com.github.javaparser.ast.body.RecordDeclarationTest",
+          "leftSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/ast/body/RecordDeclarationTest.java",
+            "startLine": 226,
+            "endLine": 232,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/ast/body/RecordDeclarationTest.java",
+            "startLine": 313,
+            "endLine": 316,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private assertCompilationFails(s String) : void extracted from package record_mustNotAllowMismatchedComponentAccessorReturnType() : void in class com.github.javaparser.ast.body.RecordDeclarationTest",
+          "leftSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/ast/body/RecordDeclarationTest.java",
+            "startLine": 235,
+            "endLine": 247,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/ast/body/RecordDeclarationTest.java",
+            "startLine": 307,
+            "endLine": 311,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private assertOneRecordDeclaration(cu CompilationUnit) : void extracted from package record_allowMethodsWithSameNameAsRecordComponentButNotAnAccessorMethod() : void in class com.github.javaparser.ast.body.RecordDeclarationTest",
+          "leftSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/ast/body/RecordDeclarationTest.java",
+            "startLine": 249,
+            "endLine": 260,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/ast/body/RecordDeclarationTest.java",
+            "startLine": 313,
+            "endLine": 316,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private assertOneRecordDeclaration(cu CompilationUnit) : void extracted from package record_allowMethodsWithSameNameAsRecordComponentButNotAnAccessorMethod2() : void in class com.github.javaparser.ast.body.RecordDeclarationTest",
+          "leftSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/ast/body/RecordDeclarationTest.java",
+            "startLine": 262,
+            "endLine": 273,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/ast/body/RecordDeclarationTest.java",
+            "startLine": 313,
+            "endLine": 316,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private assertOneRecordDeclaration(cu CompilationUnit) : void extracted from package record_allowComponentAccessorWithMatchingType() : void in class com.github.javaparser.ast.body.RecordDeclarationTest",
+          "leftSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/ast/body/RecordDeclarationTest.java",
+            "startLine": 276,
+            "endLine": 287,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/ast/body/RecordDeclarationTest.java",
+            "startLine": 313,
+            "endLine": 316,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/javaparser/javaparser.git",
+      "sha1": "e405ceecdc4c3fe0c8b80688f4df4513df3ca50b",
+      "url": "https://github.com/javaparser/javaparser/commit/e405ceecdc4c3fe0c8b80688f4df4513df3ca50b",
+      "ourApproach": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	Set<ConfigurableOption> to Set<ConfigurationOption> in method public get() : Set<ConfigurationOption> from class com.github.javaparser.printer.configuration.PrinterConfiguration",
+          "leftSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/configuration/PrinterConfiguration.java",
+            "startLine": 35,
+            "endLine": 35,
+            "startColumn": 5,
+            "endColumn": 35
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/configuration/PrinterConfiguration.java",
+            "startLine": 35,
+            "endLine": 35,
+            "startColumn": 5,
+            "endColumn": 36
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	Set<ConfigurableOption> to Set<ConfigurationOption> in method public get() : Set<ConfigurationOption> from class com.github.javaparser.printer.configuration.PrettyPrinterConfiguration",
+          "leftSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/configuration/PrettyPrinterConfiguration.java",
+            "startLine": 291,
+            "endLine": 294,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/configuration/PrettyPrinterConfiguration.java",
+            "startLine": 291,
+            "endLine": 294,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	Optional<ConfigurableOption> to Optional<ConfigurationOption> in method public get(option ConfigurationOption) : Optional<ConfigurationOption> from class com.github.javaparser.printer.configuration.PrinterConfiguration",
+          "leftSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/configuration/PrinterConfiguration.java",
+            "startLine": 30,
+            "endLine": 30,
+            "startColumn": 5,
+            "endColumn": 65
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/configuration/PrinterConfiguration.java",
+            "startLine": 30,
+            "endLine": 30,
+            "startColumn": 5,
+            "endColumn": 67
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	defaultOptions : Set<ConfigurableOption> to defaultOptions : Set<ConfigurationOption> in class com.github.javaparser.printer.configuration.DefaultPrinterConfiguration",
+          "leftSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/configuration/DefaultPrinterConfiguration.java",
+            "startLine": 118,
+            "endLine": 126,
+            "startColumn": 37,
+            "endColumn": 15
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/configuration/DefaultPrinterConfiguration.java",
+            "startLine": 118,
+            "endLine": 126,
+            "startColumn": 38,
+            "endColumn": 15
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	Optional<ConfigurableOption> to Optional<ConfigurationOption> in method private getOption(config PrinterConfiguration, cOption ConfigOption) : Optional<ConfigurationOption> from class com.github.javaparser.printer.PrinterConfigurationTest",
+          "leftSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/printer/PrinterConfigurationTest.java",
+            "startLine": 21,
+            "endLine": 23,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/printer/PrinterConfigurationTest.java",
+            "startLine": 21,
+            "endLine": 23,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	Optional<ConfigurableOption> to Optional<ConfigurationOption> in method public get(option ConfigurationOption) : Optional<ConfigurationOption> from class com.github.javaparser.printer.configuration.PrettyPrinterConfiguration",
+          "leftSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/configuration/PrettyPrinterConfiguration.java",
+            "startLine": 286,
+            "endLine": 289,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/configuration/PrettyPrinterConfiguration.java",
+            "startLine": 286,
+            "endLine": 289,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	Optional<ConfigurableOption> to Optional<ConfigurationOption> in method private getOption(cOption ConfigOption) : Optional<ConfigurationOption> from class com.github.javaparser.printer.DefaultPrettyPrinterVisitor",
+          "leftSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/DefaultPrettyPrinterVisitor.java",
+            "startLine": 1948,
+            "endLine": 1950,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/DefaultPrettyPrinterVisitor.java",
+            "startLine": 1948,
+            "endLine": 1950,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	ConfigurableOption to ConfigurationOption in method public value(value Object) : ConfigurationOption from class com.github.javaparser.printer.configuration.ConfigurationOption",
+          "leftSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/configuration/ConfigurableOption.java",
+            "startLine": 8,
+            "endLine": 8,
+            "startColumn": 5,
+            "endColumn": 44
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/configuration/ConfigurationOption.java",
+            "startLine": 8,
+            "endLine": 8,
+            "startColumn": 5,
+            "endColumn": 45
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	com.github.javaparser.printer.configuration.ConfigurableOption renamed to com.github.javaparser.printer.configuration.ConfigurationOption",
+          "leftSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/configuration/ConfigurableOption.java",
+            "startLine": 3,
+            "endLine": 32,
+            "startColumn": 0,
+            "endColumn": 0
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/configuration/ConfigurationOption.java",
+            "startLine": 3,
+            "endLine": 32,
+            "startColumn": 0,
+            "endColumn": 0
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	Optional<ConfigurableOption> to Optional<ConfigurationOption> in method private getOption(config PrinterConfiguration, cOption ConfigOption) : Optional<ConfigurationOption> from class com.github.javaparser.printer.PrettyPrintVisitorTest",
+          "leftSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/printer/PrettyPrintVisitorTest.java",
+            "startLine": 56,
+            "endLine": 58,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/printer/PrettyPrintVisitorTest.java",
+            "startLine": 56,
+            "endLine": 58,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	Set<ConfigurableOption> to Set<ConfigurationOption> in method public get() : Set<ConfigurationOption> from class com.github.javaparser.printer.configuration.DefaultPrinterConfiguration",
+          "leftSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/configuration/DefaultPrinterConfiguration.java",
+            "startLine": 166,
+            "endLine": 172,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/configuration/DefaultPrinterConfiguration.java",
+            "startLine": 166,
+            "endLine": 172,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	ConfigurableOption to ConfigurationOption in method public value(value Object) : ConfigurationOption from class com.github.javaparser.printer.configuration.DefaultConfigurationOption",
+          "leftSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/configuration/ConfigurationOption.java",
+            "startLine": 55,
+            "endLine": 68,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/configuration/DefaultConfigurationOption.java",
+            "startLine": 55,
+            "endLine": 68,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	Optional<ConfigurableOption> to Optional<ConfigurationOption> in method public get(option ConfigurationOption) : Optional<ConfigurationOption> from class com.github.javaparser.printer.configuration.DefaultPrinterConfiguration",
+          "leftSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/configuration/DefaultPrinterConfiguration.java",
+            "startLine": 161,
+            "endLine": 164,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/configuration/DefaultPrinterConfiguration.java",
+            "startLine": 161,
+            "endLine": 164,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	com.github.javaparser.printer.configuration.ConfigurationOption renamed to com.github.javaparser.printer.configuration.DefaultConfigurationOption",
+          "leftSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/configuration/ConfigurationOption.java",
+            "startLine": 29,
+            "endLine": 115,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/configuration/DefaultConfigurationOption.java",
+            "startLine": 29,
+            "endLine": 115,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	Optional<ConfigurableOption> to Optional<ConfigurationOption> in method private getOption(config PrinterConfiguration, cOption ConfigOption) : Optional<ConfigurationOption> from class com.github.javaparser.printer.PrettyPrinterTest",
+          "leftSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/printer/PrettyPrinterTest.java",
+            "startLine": 74,
+            "endLine": 76,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/printer/PrettyPrinterTest.java",
+            "startLine": 74,
+            "endLine": 76,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	Optional<ConfigurableOption> to Optional<ConfigurationOption> in method private getOption(config PrinterConfiguration, cOption ConfigOption) : Optional<ConfigurationOption> from class com.github.javaparser.printer.PrettyPrintVisitorTest",
+          "leftSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/printer/PrettyPrintVisitorTest.java",
+            "startLine": 56,
+            "endLine": 58,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/printer/PrettyPrintVisitorTest.java",
+            "startLine": 56,
+            "endLine": 58,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	Optional<ConfigurableOption> to Optional<ConfigurationOption> in method private getOption(config PrinterConfiguration, cOption ConfigOption) : Optional<ConfigurationOption> from class com.github.javaparser.printer.PrettyPrinterTest",
+          "leftSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/printer/PrettyPrinterTest.java",
+            "startLine": 74,
+            "endLine": 76,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/printer/PrettyPrinterTest.java",
+            "startLine": 74,
+            "endLine": 76,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	Optional<ConfigurableOption> to Optional<ConfigurationOption> in method private getOption(config PrinterConfiguration, cOption ConfigOption) : Optional<ConfigurationOption> from class com.github.javaparser.printer.PrinterConfigurationTest",
+          "leftSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/printer/PrinterConfigurationTest.java",
+            "startLine": 21,
+            "endLine": 23,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/printer/PrinterConfigurationTest.java",
+            "startLine": 21,
+            "endLine": 23,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	Optional<ConfigurableOption> to Optional<ConfigurationOption> in method private getOption(cOption ConfigOption) : Optional<ConfigurationOption> from class com.github.javaparser.printer.DefaultPrettyPrinterVisitor",
+          "leftSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/DefaultPrettyPrinterVisitor.java",
+            "startLine": 1948,
+            "endLine": 1950,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/DefaultPrettyPrinterVisitor.java",
+            "startLine": 1948,
+            "endLine": 1950,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	defaultOptions : Set<ConfigurableOption> to defaultOptions : Set<ConfigurationOption> in class com.github.javaparser.printer.configuration.DefaultPrinterConfiguration",
+          "leftSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/configuration/DefaultPrinterConfiguration.java",
+            "startLine": 118,
+            "endLine": 126,
+            "startColumn": 37,
+            "endColumn": 15
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/configuration/DefaultPrinterConfiguration.java",
+            "startLine": 118,
+            "endLine": 126,
+            "startColumn": 38,
+            "endColumn": 15
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	Set<ConfigurableOption> to Set<ConfigurationOption> in method public get() : Set<ConfigurationOption> from class com.github.javaparser.printer.configuration.DefaultPrinterConfiguration",
+          "leftSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/configuration/DefaultPrinterConfiguration.java",
+            "startLine": 166,
+            "endLine": 172,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/configuration/DefaultPrinterConfiguration.java",
+            "startLine": 166,
+            "endLine": 172,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	Optional<ConfigurableOption> to Optional<ConfigurationOption> in method public get(option ConfigurationOption) : Optional<ConfigurationOption> from class com.github.javaparser.printer.configuration.DefaultPrinterConfiguration",
+          "leftSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/configuration/DefaultPrinterConfiguration.java",
+            "startLine": 161,
+            "endLine": 164,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/configuration/DefaultPrinterConfiguration.java",
+            "startLine": 161,
+            "endLine": 164,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	Set<ConfigurableOption> to Set<ConfigurationOption> in method public get() : Set<ConfigurationOption> from class com.github.javaparser.printer.configuration.PrettyPrinterConfiguration",
+          "leftSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/configuration/PrettyPrinterConfiguration.java",
+            "startLine": 291,
+            "endLine": 294,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/configuration/PrettyPrinterConfiguration.java",
+            "startLine": 291,
+            "endLine": 294,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	Optional<ConfigurableOption> to Optional<ConfigurationOption> in method public get(option ConfigurationOption) : Optional<ConfigurationOption> from class com.github.javaparser.printer.configuration.PrettyPrinterConfiguration",
+          "leftSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/configuration/PrettyPrinterConfiguration.java",
+            "startLine": 286,
+            "endLine": 289,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/configuration/PrettyPrinterConfiguration.java",
+            "startLine": 286,
+            "endLine": 289,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	Set<ConfigurableOption> to Set<ConfigurationOption> in method public get() : Set<ConfigurationOption> from class com.github.javaparser.printer.configuration.PrinterConfiguration",
+          "leftSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/configuration/PrinterConfiguration.java",
+            "startLine": 35,
+            "endLine": 35,
+            "startColumn": 5,
+            "endColumn": 35
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/configuration/PrinterConfiguration.java",
+            "startLine": 35,
+            "endLine": 35,
+            "startColumn": 5,
+            "endColumn": 36
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	ConfigurableOption to ConfigurationOption in method public value(value Object) : ConfigurationOption from class com.github.javaparser.printer.configuration.DefaultConfigurationOption",
+          "leftSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/configuration/ConfigurationOption.java",
+            "startLine": 55,
+            "endLine": 68,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/configuration/DefaultConfigurationOption.java",
+            "startLine": 55,
+            "endLine": 68,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	Optional<ConfigurableOption> to Optional<ConfigurationOption> in method public get(option ConfigurationOption) : Optional<ConfigurationOption> from class com.github.javaparser.printer.configuration.PrinterConfiguration",
+          "leftSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/configuration/PrinterConfiguration.java",
+            "startLine": 30,
+            "endLine": 30,
+            "startColumn": 5,
+            "endColumn": 65
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/configuration/PrinterConfiguration.java",
+            "startLine": 30,
+            "endLine": 30,
+            "startColumn": 5,
+            "endColumn": 67
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/javaparser/javaparser.git",
+      "sha1": "4da1e1ba016b9143cc81cb772249a51570a02c87",
+      "url": "https://github.com/javaparser/javaparser/commit/4da1e1ba016b9143cc81cb772249a51570a02c87",
+      "ourApproach": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	printer : PrintableSource to printer : SourcePrinter in class com.github.javaparser.printer.DefaultPrettyPrinterVisitor",
+          "leftSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/DefaultPrettyPrinterVisitor.java",
+            "startLine": 161,
+            "endLine": 161,
+            "startColumn": 37,
+            "endColumn": 44
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/DefaultPrettyPrinterVisitor.java",
+            "startLine": 161,
+            "endLine": 161,
+            "startColumn": 35,
+            "endColumn": 42
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	com.github.javaparser.printer.PrettyPrintableTest renamed to com.github.javaparser.printer.DefaultPrettyPrinterTest",
+          "leftSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/printer/PrettyPrintableTest.java",
+            "startLine": 55,
+            "endLine": 578,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/printer/DefaultPrettyPrinterTest.java",
+            "startLine": 55,
+            "endLine": 578,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	com.github.javaparser.printer.PrettyPrintableTest renamed to com.github.javaparser.printer.DefaultPrettyPrinterTest",
+          "leftSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/printer/PrettyPrintableTest.java",
+            "startLine": 55,
+            "endLine": 578,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core-testing/src/test/java/com/github/javaparser/printer/DefaultPrettyPrinterTest.java",
+            "startLine": 55,
+            "endLine": 578,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	printer : PrintableSource to printer : SourcePrinter in class com.github.javaparser.printer.DefaultPrettyPrinterVisitor",
+          "leftSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/DefaultPrettyPrinterVisitor.java",
+            "startLine": 161,
+            "endLine": 161,
+            "startColumn": 37,
+            "endColumn": 44
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/DefaultPrettyPrinterVisitor.java",
+            "startLine": 161,
+            "endLine": 161,
+            "startColumn": 35,
+            "endColumn": 42
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/javaparser/javaparser.git",
+      "sha1": "b08e66263903837d53a688b5d12a758c8cdf167e",
+      "url": "https://github.com/javaparser/javaparser/commit/b08e66263903837d53a688b5d12a758c8cdf167e",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public type(type IndentType) : Indentation renamed to public setType(type IndentType) : Indentation in class com.github.javaparser.printer.configuration.Indentation",
+          "leftSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/PrettyPrinterConfiguration.java",
+            "startLine": 58,
+            "endLine": 62,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/configuration/Indentation.java",
+            "startLine": 103,
+            "endLine": 107,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public size(size int) : Indentation renamed to public setSize(size int) : Indentation in class com.github.javaparser.printer.configuration.Indentation",
+          "leftSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/PrettyPrinterConfiguration.java",
+            "startLine": 53,
+            "endLine": 57,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/configuration/Indentation.java",
+            "startLine": 90,
+            "endLine": 94,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	com.github.javaparser.printer.PrettyPrinterConfiguration.Indentation moved to com.github.javaparser.printer.configuration.Indentation",
+          "leftSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/PrettyPrinterConfiguration.java",
+            "startLine": 39,
+            "endLine": 75,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/configuration/Indentation.java",
+            "startLine": 3,
+            "endLine": 129,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	com.github.javaparser.printer.PrettyPrinterConfiguration.IndentType moved to com.github.javaparser.printer.configuration.Indentation.IndentType",
+          "leftSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/PrettyPrinterConfiguration.java",
+            "startLine": 77,
+            "endLine": 121,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/configuration/Indentation.java",
+            "startLine": 5,
+            "endLine": 57,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	com.github.javaparser.printer.PrettyPrinterConfiguration.Indentation moved to com.github.javaparser.printer.configuration.Indentation",
+          "leftSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/PrettyPrinterConfiguration.java",
+            "startLine": 39,
+            "endLine": 75,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/configuration/Indentation.java",
+            "startLine": 3,
+            "endLine": 129,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	com.github.javaparser.printer.PrettyPrinterConfiguration.IndentType moved to com.github.javaparser.printer.configuration.Indentation.IndentType",
+          "leftSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/PrettyPrinterConfiguration.java",
+            "startLine": 77,
+            "endLine": 121,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/configuration/Indentation.java",
+            "startLine": 5,
+            "endLine": 57,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public size(size int) : Indentation renamed to public setSize(size int) : Indentation in class com.github.javaparser.printer.configuration.Indentation",
+          "leftSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/PrettyPrinterConfiguration.java",
+            "startLine": 53,
+            "endLine": 57,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/configuration/Indentation.java",
+            "startLine": 90,
+            "endLine": 94,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public type(type IndentType) : Indentation renamed to public setType(type IndentType) : Indentation in class com.github.javaparser.printer.configuration.Indentation",
+          "leftSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/PrettyPrinterConfiguration.java",
+            "startLine": 58,
+            "endLine": 62,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "filePath": "javaparser-core/src/main/java/com/github/javaparser/printer/configuration/Indentation.java",
+            "startLine": 103,
+            "endLine": 107,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    }
+  ]
+}

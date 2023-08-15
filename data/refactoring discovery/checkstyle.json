@@ -1,0 +1,3565 @@
+{
+  "results": [
+    {
+      "repository": "https://github.com/checkstyle/checkstyle.git",
+      "sha1": "fb99f4d79d60fe7aaceb37e8fd718316d154f14c",
+      "url": "https://github.com/checkstyle/checkstyle/commit/fb99f4d79d60fe7aaceb37e8fd718316d154f14c",
+      "ourApproach": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	com.puppycrawl.tools.checkstyle.internal.XdocsUrlTest.CheckTest renamed to com.puppycrawl.tools.checkstyle.internal.XdocsUrlTest.DummyHandler",
+          "leftSideLocation": {
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/internal/XdocsUrlTest.java",
+            "startLine": 150,
+            "endLine": 199,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/internal/XdocsUrlTest.java",
+            "startLine": 150,
+            "endLine": 199,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	com.puppycrawl.tools.checkstyle.internal.XdocsUrlTest.CheckTest renamed to com.puppycrawl.tools.checkstyle.internal.XdocsUrlTest.DummyHandler",
+          "leftSideLocation": {
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/internal/XdocsUrlTest.java",
+            "startLine": 150,
+            "endLine": 199,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/internal/XdocsUrlTest.java",
+            "startLine": 150,
+            "endLine": 199,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/checkstyle/checkstyle.git",
+      "sha1": "d6002cc762e3fef49f1e93fee672d4ded26fe420",
+      "url": "https://github.com/checkstyle/checkstyle/commit/d6002cc762e3fef49f1e93fee672d4ded26fe420",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private getDetailsForTryCatchFinally(ast DetailAST) : Details renamed to private getDetailsForTryCatch(ast DetailAST) : Details in class com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck.Details",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/blocks/RightCurlyCheck.java",
+            "startLine": 573,
+            "endLine": 608,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/blocks/RightCurlyCheck.java",
+            "startLine": 569,
+            "endLine": 604,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private getDetailsForIfElse(ast DetailAST) : Details renamed to private getDetailsForIf(ast DetailAST) : Details in class com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck.Details",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/blocks/RightCurlyCheck.java",
+            "startLine": 610,
+            "endLine": 636,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/blocks/RightCurlyCheck.java",
+            "startLine": 606,
+            "endLine": 632,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private getDetailsForLoops(ast DetailAST) : Details renamed to private getDetailsForDoLoops(ast DetailAST) : Details in class com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck.Details",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/blocks/RightCurlyCheck.java",
+            "startLine": 675,
+            "endLine": 705,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/blocks/RightCurlyCheck.java",
+            "startLine": 671,
+            "endLine": 685,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private getDetailsForTryCatchFinally(ast DetailAST) : Details renamed to private getDetailsForTryCatch(ast DetailAST) : Details in class com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck.Details",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/blocks/RightCurlyCheck.java",
+            "startLine": 573,
+            "endLine": 608,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/blocks/RightCurlyCheck.java",
+            "startLine": 569,
+            "endLine": 604,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private getDetailsForIfElse(ast DetailAST) : Details renamed to private getDetailsForIf(ast DetailAST) : Details in class com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck.Details",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/blocks/RightCurlyCheck.java",
+            "startLine": 610,
+            "endLine": 636,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/blocks/RightCurlyCheck.java",
+            "startLine": 606,
+            "endLine": 632,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private getDetailsForLoops(ast DetailAST) : Details renamed to private getDetailsForDoLoops(ast DetailAST) : Details in class com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck.Details",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/blocks/RightCurlyCheck.java",
+            "startLine": 675,
+            "endLine": 705,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/blocks/RightCurlyCheck.java",
+            "startLine": 671,
+            "endLine": 685,
+            "startColumn": 9,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/checkstyle/checkstyle.git",
+      "sha1": "405735c92cb8a4171232dc9090e3eb32c55309d5",
+      "url": "https://github.com/checkstyle/checkstyle/commit/405735c92cb8a4171232dc9090e3eb32c55309d5",
+      "ourApproach": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	allowedDirectoryAndChecks : Map<String,String> to ALLOWED_DIRECTORY_AND_CHECKS : Map<String,String> in class com.puppycrawl.tools.checkstyle.internal.XpathRegressionTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/internal/XpathRegressionTest.java",
+            "startLine": 142,
+            "endLine": 142,
+            "startColumn": 40,
+            "endColumn": 65
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/internal/XpathRegressionTest.java",
+            "startLine": 142,
+            "endLine": 143,
+            "startColumn": 46,
+            "endColumn": 39
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	internalModules : Set<String> to INTERNAL_MODULES : Set<String> in class com.puppycrawl.tools.checkstyle.internal.XpathRegressionTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/internal/XpathRegressionTest.java",
+            "startLine": 143,
+            "endLine": 143,
+            "startColumn": 32,
+            "endColumn": 47
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/internal/XpathRegressionTest.java",
+            "startLine": 145,
+            "endLine": 145,
+            "startColumn": 38,
+            "endColumn": 77
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	simpleCheckNames : Set<String> to SIMPLE_CHECK_NAMES : Set<String> in class com.puppycrawl.tools.checkstyle.internal.XpathRegressionTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/internal/XpathRegressionTest.java",
+            "startLine": 141,
+            "endLine": 141,
+            "startColumn": 32,
+            "endColumn": 48
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/internal/XpathRegressionTest.java",
+            "startLine": 141,
+            "endLine": 141,
+            "startColumn": 38,
+            "endColumn": 80
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public setUpBeforeClass() : void renamed to private getInternalModules() : Set<String> in class com.puppycrawl.tools.checkstyle.internal.XpathRegressionTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/internal/XpathRegressionTest.java",
+            "startLine": 148,
+            "endLine": 162,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/internal/XpathRegressionTest.java",
+            "startLine": 165,
+            "endLine": 172,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": false
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	void to Set<String> in method private getInternalModules() : Set<String> from class com.puppycrawl.tools.checkstyle.internal.XpathRegressionTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/internal/XpathRegressionTest.java",
+            "startLine": 148,
+            "endLine": 162,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/internal/XpathRegressionTest.java",
+            "startLine": 165,
+            "endLine": 172,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": false
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	simpleCheckNames : Set<String> to SIMPLE_CHECK_NAMES : Set<String> in class com.puppycrawl.tools.checkstyle.internal.XpathRegressionTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/internal/XpathRegressionTest.java",
+            "startLine": 141,
+            "endLine": 141,
+            "startColumn": 32,
+            "endColumn": 48
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/internal/XpathRegressionTest.java",
+            "startLine": 141,
+            "endLine": 141,
+            "startColumn": 38,
+            "endColumn": 80
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	allowedDirectoryAndChecks : Map<String,String> to ALLOWED_DIRECTORY_AND_CHECKS : Map<String,String> in class com.puppycrawl.tools.checkstyle.internal.XpathRegressionTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/internal/XpathRegressionTest.java",
+            "startLine": 142,
+            "endLine": 142,
+            "startColumn": 40,
+            "endColumn": 65
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/internal/XpathRegressionTest.java",
+            "startLine": 142,
+            "endLine": 143,
+            "startColumn": 46,
+            "endColumn": 39
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/checkstyle/checkstyle.git",
+      "sha1": "5e413ff0036dfb332340fc3fb85af57845906ded",
+      "url": "https://github.com/checkstyle/checkstyle/commit/5e413ff0036dfb332340fc3fb85af57845906ded",
+      "ourApproach": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	DetailAST to Object in method public getUnderlyingNode() : Object from class com.puppycrawl.tools.checkstyle.xpath.AttributeNode",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/xpath/AttributeNode.java",
+            "startLine": 176,
+            "endLine": 185,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/xpath/AttributeNode.java",
+            "startLine": 175,
+            "endLine": 184,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	DetailAST to Object in method public abstract getUnderlyingNode() : Object from class com.puppycrawl.tools.checkstyle.xpath.AbstractNode",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/xpath/AbstractNode.java",
+            "startLine": 67,
+            "endLine": 72,
+            "startColumn": 5,
+            "endColumn": 51
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/xpath/AbstractNode.java",
+            "startLine": 66,
+            "endLine": 71,
+            "startColumn": 5,
+            "endColumn": 48
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	DetailAST to Object in method public abstract getUnderlyingNode() : Object from class com.puppycrawl.tools.checkstyle.xpath.AbstractNode",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/xpath/AbstractNode.java",
+            "startLine": 67,
+            "endLine": 72,
+            "startColumn": 5,
+            "endColumn": 51
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/xpath/AbstractNode.java",
+            "startLine": 66,
+            "endLine": 71,
+            "startColumn": 5,
+            "endColumn": 48
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	DetailAST to Object in method public getUnderlyingNode() : Object from class com.puppycrawl.tools.checkstyle.xpath.AttributeNode",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/xpath/AttributeNode.java",
+            "startLine": 176,
+            "endLine": 185,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/xpath/AttributeNode.java",
+            "startLine": 175,
+            "endLine": 184,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public getAttributeValue(namespace String, localPart String) : String renamed to protected createAttributeNode() : AttributeNode in class com.puppycrawl.tools.checkstyle.xpath.ElementNode",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/xpath/ElementNode.java",
+            "startLine": 164,
+            "endLine": 184,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/xpath/ElementNode.java",
+            "startLine": 122,
+            "endLine": 135,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": false
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private getAttributeNode() : AttributeNode inlined to protected createAttributeNode() : AttributeNode in class com.puppycrawl.tools.checkstyle.xpath.ElementNode",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/xpath/ElementNode.java",
+            "startLine": 399,
+            "endLine": 417,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/xpath/ElementNode.java",
+            "startLine": 122,
+            "endLine": 135,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": false
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	String to AttributeNode in method protected createAttributeNode() : AttributeNode from class com.puppycrawl.tools.checkstyle.xpath.ElementNode",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/xpath/ElementNode.java",
+            "startLine": 164,
+            "endLine": 184,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/xpath/ElementNode.java",
+            "startLine": 122,
+            "endLine": 135,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/checkstyle/checkstyle.git",
+      "sha1": "f741ccecd32fb4d45946ade13ce3f858684cfdfd",
+      "url": "https://github.com/checkstyle/checkstyle/commit/f741ccecd32fb4d45946ade13ce3f858684cfdfd",
+      "ourApproach": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	public isValidCheckstyleClass(clazz Class<?>) : boolean inlined to public isCheckstyleModule(clazz Class<?>) : boolean in class com.puppycrawl.tools.checkstyle.utils.ModuleReflectionUtil",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/utils/ModuleReflectionUtil.java",
+            "startLine": 86,
+            "endLine": 98,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/utils/ModuleReflectionUtil.java",
+            "startLine": 67,
+            "endLine": 80,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	public isValidCheckstyleClass(clazz Class<?>) : boolean inlined to public isCheckstyleModule(clazz Class<?>) : boolean in class com.puppycrawl.tools.checkstyle.utils.ModuleReflectionUtil",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/utils/ModuleReflectionUtil.java",
+            "startLine": 86,
+            "endLine": 98,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/utils/ModuleReflectionUtil.java",
+            "startLine": 67,
+            "endLine": 80,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/checkstyle/checkstyle.git",
+      "sha1": "a8f065738de6c4ff917a2ee57521f6cf8718f2ba",
+      "url": "https://github.com/checkstyle/checkstyle/commit/a8f065738de6c4ff917a2ee57521f6cf8718f2ba",
+      "ourApproach": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	auditStartMessage : Violation to auditStartMessage : LocalizedMessage in class com.puppycrawl.tools.checkstyle.MainTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/MainTest.java",
+            "startLine": 189,
+            "endLine": 191,
+            "startColumn": 29,
+            "endColumn": 30
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/MainTest.java",
+            "startLine": 189,
+            "endLine": 191,
+            "startColumn": 36,
+            "endColumn": 42
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	auditFinishMessage : Violation to auditFinishMessage : LocalizedMessage in class com.puppycrawl.tools.checkstyle.MainTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/MainTest.java",
+            "startLine": 193,
+            "endLine": 195,
+            "startColumn": 29,
+            "endColumn": 30
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/MainTest.java",
+            "startLine": 193,
+            "endLine": 195,
+            "startColumn": 36,
+            "endColumn": 43
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private getCustomViolation() : String inlined to public getViolation() : String in class com.puppycrawl.tools.checkstyle.api.Violation",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/api/Violation.java",
+            "startLine": 442,
+            "endLine": 455,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/api/Violation.java",
+            "startLine": 428,
+            "endLine": 444,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private getCustomViolation() : String inlined to public getViolation() : String in class com.puppycrawl.tools.checkstyle.api.Violation",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/api/Violation.java",
+            "startLine": 442,
+            "endLine": 455,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/api/Violation.java",
+            "startLine": 428,
+            "endLine": 444,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	auditStartMessage : Violation to auditStartMessage : LocalizedMessage in class com.puppycrawl.tools.checkstyle.MainTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/MainTest.java",
+            "startLine": 189,
+            "endLine": 191,
+            "startColumn": 29,
+            "endColumn": 30
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/MainTest.java",
+            "startLine": 189,
+            "endLine": 191,
+            "startColumn": 36,
+            "endColumn": 42
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	auditFinishMessage : Violation to auditFinishMessage : LocalizedMessage in class com.puppycrawl.tools.checkstyle.MainTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/MainTest.java",
+            "startLine": 193,
+            "endLine": 195,
+            "startColumn": 29,
+            "endColumn": 30
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/MainTest.java",
+            "startLine": 193,
+            "endLine": 195,
+            "startColumn": 36,
+            "endColumn": 43
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/checkstyle/checkstyle.git",
+      "sha1": "3eca7e0e25a9500d86ea7c28df4917b77717ae36",
+      "url": "https://github.com/checkstyle/checkstyle/commit/3eca7e0e25a9500d86ea7c28df4917b77717ae36",
+      "ourApproach": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	com.puppycrawl.tools.checkstyle.DefaultLogger.LocalizedMessage moved to com.puppycrawl.tools.checkstyle.LocalizedMessage",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/DefaultLogger.java",
+            "startLine": 216,
+            "endLine": 304,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/LocalizedMessage.java",
+            "startLine": 36,
+            "endLine": 158,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	com.puppycrawl.tools.checkstyle.api.Violation.Utf8Control moved to com.puppycrawl.tools.checkstyle.LocalizedMessage.Utf8Control",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/api/Violation.java",
+            "startLine": 529,
+            "endLine": 559,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/LocalizedMessage.java",
+            "startLine": 126,
+            "endLine": 156,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	LOCALE : Locale to locale : Locale in class com.puppycrawl.tools.checkstyle.LocalizedMessage",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/DefaultLogger.java",
+            "startLine": 233,
+            "endLine": 233,
+            "startColumn": 37,
+            "endColumn": 65
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/LocalizedMessage.java",
+            "startLine": 49,
+            "endLine": 49,
+            "startColumn": 26,
+            "endColumn": 32
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	Method to String in method private getAuditFinishMessage() : String from class com.puppycrawl.tools.checkstyle.DefaultLoggerTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/DefaultLoggerTest.java",
+            "startLine": 388,
+            "endLine": 393,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/DefaultLoggerTest.java",
+            "startLine": 329,
+            "endLine": 332,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	Method to String in method private getAuditStartMessage() : String from class com.puppycrawl.tools.checkstyle.DefaultLoggerTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/DefaultLoggerTest.java",
+            "startLine": 381,
+            "endLine": 386,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/DefaultLoggerTest.java",
+            "startLine": 324,
+            "endLine": 327,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	args : String[] to args : Object[] in class com.puppycrawl.tools.checkstyle.LocalizedMessage",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/DefaultLogger.java",
+            "startLine": 243,
+            "endLine": 243,
+            "startColumn": 32,
+            "endColumn": 36
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/LocalizedMessage.java",
+            "startLine": 62,
+            "endLine": 62,
+            "startColumn": 28,
+            "endColumn": 32
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	com.puppycrawl.tools.checkstyle.api.ViolationTest.TestUrlsClassLoader moved to com.puppycrawl.tools.checkstyle.LocalizedMessageTest.TestUrlsClassLoader",
+          "leftSideLocation": {
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/api/ViolationTest.java",
+            "startLine": 448,
+            "endLine": 467,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/LocalizedMessageTest.java",
+            "startLine": 209,
+            "endLine": 228,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	Object to LocalizedMessage in method private getAuditStartMessageClass() : LocalizedMessage from class com.puppycrawl.tools.checkstyle.DefaultLoggerTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/DefaultLoggerTest.java",
+            "startLine": 371,
+            "endLine": 374,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/DefaultLoggerTest.java",
+            "startLine": 309,
+            "endLine": 312,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	Object to LocalizedMessage in method private getAuditFinishMessageClass() : LocalizedMessage from class com.puppycrawl.tools.checkstyle.DefaultLoggerTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/DefaultLoggerTest.java",
+            "startLine": 376,
+            "endLine": 379,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/DefaultLoggerTest.java",
+            "startLine": 314,
+            "endLine": 317,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	com.puppycrawl.tools.checkstyle.LocalizedMessageTest from Class com.puppycrawl.tools.checkstyle.api.ViolationTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/api/ViolationTest.java",
+            "startLine": 44,
+            "endLine": 469,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/LocalizedMessageTest.java",
+            "startLine": 37,
+            "endLine": 230,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	com.puppycrawl.tools.checkstyle.api.Violation.Utf8Control moved to com.puppycrawl.tools.checkstyle.LocalizedMessage.Utf8Control",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/api/Violation.java",
+            "startLine": 529,
+            "endLine": 559,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/LocalizedMessage.java",
+            "startLine": 126,
+            "endLine": 156,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	com.puppycrawl.tools.checkstyle.api.ViolationTest.TestUrlsClassLoader moved to com.puppycrawl.tools.checkstyle.LocalizedMessageTest.TestUrlsClassLoader",
+          "leftSideLocation": {
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/api/ViolationTest.java",
+            "startLine": 448,
+            "endLine": 467,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/LocalizedMessageTest.java",
+            "startLine": 209,
+            "endLine": 228,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	com.puppycrawl.tools.checkstyle.DefaultLogger.LocalizedMessage moved to com.puppycrawl.tools.checkstyle.LocalizedMessage",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/DefaultLogger.java",
+            "startLine": 216,
+            "endLine": 304,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/LocalizedMessage.java",
+            "startLine": 36,
+            "endLine": 158,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	Object to LocalizedMessage in method private getAuditStartMessageClass() : LocalizedMessage from class com.puppycrawl.tools.checkstyle.DefaultLoggerTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/DefaultLoggerTest.java",
+            "startLine": 371,
+            "endLine": 374,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/DefaultLoggerTest.java",
+            "startLine": 309,
+            "endLine": 312,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	Object to LocalizedMessage in method private getAuditFinishMessageClass() : LocalizedMessage from class com.puppycrawl.tools.checkstyle.DefaultLoggerTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/DefaultLoggerTest.java",
+            "startLine": 376,
+            "endLine": 379,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/DefaultLoggerTest.java",
+            "startLine": 314,
+            "endLine": 317,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	Method to String in method private getAuditStartMessage() : String from class com.puppycrawl.tools.checkstyle.DefaultLoggerTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/DefaultLoggerTest.java",
+            "startLine": 381,
+            "endLine": 386,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/DefaultLoggerTest.java",
+            "startLine": 324,
+            "endLine": 327,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	Method to String in method private getAuditFinishMessage() : String from class com.puppycrawl.tools.checkstyle.DefaultLoggerTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/DefaultLoggerTest.java",
+            "startLine": 388,
+            "endLine": 393,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/DefaultLoggerTest.java",
+            "startLine": 329,
+            "endLine": 332,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	args : String[] to args : Object[] in class com.puppycrawl.tools.checkstyle.LocalizedMessage",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/DefaultLogger.java",
+            "startLine": 243,
+            "endLine": 243,
+            "startColumn": 32,
+            "endColumn": 36
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/LocalizedMessage.java",
+            "startLine": 62,
+            "endLine": 62,
+            "startColumn": 28,
+            "endColumn": 32
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	com.puppycrawl.tools.checkstyle.LocalizedMessageTest from class com.puppycrawl.tools.checkstyle.api.ViolationTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/api/ViolationTest.java",
+            "startLine": 44,
+            "endLine": 469,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/LocalizedMessageTest.java",
+            "startLine": 37,
+            "endLine": 230,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/checkstyle/checkstyle.git",
+      "sha1": "1674de82125f5340171fe5900dce845d3f86f0d9",
+      "url": "https://github.com/checkstyle/checkstyle/commit/1674de82125f5340171fe5900dce845d3f86f0d9",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private getFirstCaseGroupOrSwitchRule(block DetailAST) : DetailAST renamed to private getVariableUsageExpressionsInsideSwitchBlock(block DetailAST, variable DetailAST) : List<DetailAST> in class com.puppycrawl.tools.checkstyle.checks.coding.VariableDeclarationUsageDistanceCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/VariableDeclarationUsageDistanceCheck.java",
+            "startLine": 837,
+            "endLine": 847,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/VariableDeclarationUsageDistanceCheck.java",
+            "startLine": 827,
+            "endLine": 854,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	DetailAST to List<DetailAST> in method private getVariableUsageExpressionsInsideSwitchBlock(block DetailAST, variable DetailAST) : List<DetailAST> from class com.puppycrawl.tools.checkstyle.checks.coding.VariableDeclarationUsageDistanceCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/VariableDeclarationUsageDistanceCheck.java",
+            "startLine": 837,
+            "endLine": 847,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/VariableDeclarationUsageDistanceCheck.java",
+            "startLine": 827,
+            "endLine": 854,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private getVariableUsageExpressionsInsideSwitchBlock(block DetailAST, variable DetailAST) : List<DetailAST> extracted from private getFirstNodeInsideSwitchBlock(block DetailAST, variable DetailAST) : DetailAST in class com.puppycrawl.tools.checkstyle.checks.coding.VariableDeclarationUsageDistanceCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/VariableDeclarationUsageDistanceCheck.java",
+            "startLine": 798,
+            "endLine": 835,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/VariableDeclarationUsageDistanceCheck.java",
+            "startLine": 827,
+            "endLine": 854,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/checkstyle/checkstyle.git",
+      "sha1": "503c53f29292c1411e52ea587789aef4466e3fa8",
+      "url": "https://github.com/checkstyle/checkstyle/commit/503c53f29292c1411e52ea587789aef4466e3fa8",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private collectMethodDeclarations(frameStack Deque<AbstractFrame>, ast DetailAST, frame AbstractFrame) : void extracted from private collectDeclarations(frameStack Deque<AbstractFrame>, ast DetailAST) : void in class com.puppycrawl.tools.checkstyle.checks.coding.RequireThisCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/RequireThisCheck.java",
+            "startLine": 548,
+            "endLine": 631,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/RequireThisCheck.java",
+            "startLine": 649,
+            "endLine": 667,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private collectMethodDeclarations(frameStack Deque<AbstractFrame>, ast DetailAST, frame AbstractFrame) : void extracted from private collectDeclarations(frameStack Deque<AbstractFrame>, ast DetailAST) : void in class com.puppycrawl.tools.checkstyle.checks.coding.RequireThisCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/RequireThisCheck.java",
+            "startLine": 548,
+            "endLine": 631,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/RequireThisCheck.java",
+            "startLine": 649,
+            "endLine": 667,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/checkstyle/checkstyle.git",
+      "sha1": "077ee041204a186ca08e51e115462d9b58e9b2dd",
+      "url": "https://github.com/checkstyle/checkstyle/commit/077ee041204a186ca08e51e115462d9b58e9b2dd",
+      "ourApproach": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private isMultilineStatement(ast DetailAST) : boolean inlined to private checkIfSemicolonIsInDifferentLineThanPrevious(ast DetailAST) : void in class com.puppycrawl.tools.checkstyle.checks.coding.OneStatementPerLineCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/OneStatementPerLineCheck.java",
+            "startLine": 343,
+            "endLine": 360,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/OneStatementPerLineCheck.java",
+            "startLine": 253,
+            "endLine": 277,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private isMultilineStatement(ast DetailAST) : boolean inlined to private checkIfSemicolonIsInDifferentLineThanPrevious(ast DetailAST) : void in class com.puppycrawl.tools.checkstyle.checks.coding.OneStatementPerLineCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/OneStatementPerLineCheck.java",
+            "startLine": 343,
+            "endLine": 360,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/OneStatementPerLineCheck.java",
+            "startLine": 253,
+            "endLine": 277,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/checkstyle/checkstyle.git",
+      "sha1": "a6dec5beda11fd54734e2c5ae655ca09448e48a0",
+      "url": "https://github.com/checkstyle/checkstyle/commit/a6dec5beda11fd54734e2c5ae655ca09448e48a0",
+      "ourApproach": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private isIfTokenWithAnElseFollowing(ast DetailAST) : boolean inlined to private shouldUpdateUninitializedVariables(ast DetailAST) : boolean in class com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/FinalLocalVariableCheck.java",
+            "startLine": 515,
+            "endLine": 524,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/FinalLocalVariableCheck.java",
+            "startLine": 503,
+            "endLine": 514,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private isIfTokenWithAnElseFollowing(ast DetailAST) : boolean inlined to private shouldUpdateUninitializedVariables(ast DetailAST) : boolean in class com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/FinalLocalVariableCheck.java",
+            "startLine": 515,
+            "endLine": 524,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/FinalLocalVariableCheck.java",
+            "startLine": 503,
+            "endLine": 514,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/checkstyle/checkstyle.git",
+      "sha1": "731169056d671d018846b0058d49203f5806777b",
+      "url": "https://github.com/checkstyle/checkstyle/commit/731169056d671d018846b0058d49203f5806777b",
+      "ourApproach": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	LINE_FEED : String to LINE_FEED : char in class com.puppycrawl.tools.checkstyle.checks.javadoc.utils.InlineTagUtil",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/javadoc/utils/InlineTagUtil.java",
+            "startLine": 52,
+            "endLine": 52,
+            "startColumn": 33,
+            "endColumn": 49
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/javadoc/utils/InlineTagUtil.java",
+            "startLine": 52,
+            "endLine": 52,
+            "startColumn": 31,
+            "endColumn": 47
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	CARRIAGE_RETURN : String to CARRIAGE_RETURN : char in class com.puppycrawl.tools.checkstyle.checks.javadoc.utils.InlineTagUtil",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/javadoc/utils/InlineTagUtil.java",
+            "startLine": 55,
+            "endLine": 55,
+            "startColumn": 33,
+            "endColumn": 55
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/javadoc/utils/InlineTagUtil.java",
+            "startLine": 55,
+            "endLine": 55,
+            "startColumn": 31,
+            "endColumn": 53
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	DOT : String to DOT : char in class com.puppycrawl.tools.checkstyle.checks.metrics.AbstractClassCouplingCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/metrics/AbstractClassCouplingCheck.java",
+            "startLine": 53,
+            "endLine": 53,
+            "startColumn": 33,
+            "endColumn": 42
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/metrics/AbstractClassCouplingCheck.java",
+            "startLine": 53,
+            "endLine": 53,
+            "startColumn": 31,
+            "endColumn": 40
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	LINE_FEED : String to LINE_FEED : char in class com.puppycrawl.tools.checkstyle.checks.javadoc.utils.InlineTagUtil",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/javadoc/utils/InlineTagUtil.java",
+            "startLine": 52,
+            "endLine": 52,
+            "startColumn": 33,
+            "endColumn": 49
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/javadoc/utils/InlineTagUtil.java",
+            "startLine": 52,
+            "endLine": 52,
+            "startColumn": 31,
+            "endColumn": 47
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	CARRIAGE_RETURN : String to CARRIAGE_RETURN : char in class com.puppycrawl.tools.checkstyle.checks.javadoc.utils.InlineTagUtil",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/javadoc/utils/InlineTagUtil.java",
+            "startLine": 55,
+            "endLine": 55,
+            "startColumn": 33,
+            "endColumn": 55
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/javadoc/utils/InlineTagUtil.java",
+            "startLine": 55,
+            "endLine": 55,
+            "startColumn": 31,
+            "endColumn": 53
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	DOT : String to DOT : char in class com.puppycrawl.tools.checkstyle.checks.metrics.AbstractClassCouplingCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/metrics/AbstractClassCouplingCheck.java",
+            "startLine": 53,
+            "endLine": 53,
+            "startColumn": 33,
+            "endColumn": 42
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/metrics/AbstractClassCouplingCheck.java",
+            "startLine": 53,
+            "endLine": 53,
+            "startColumn": 31,
+            "endColumn": 40
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/checkstyle/checkstyle.git",
+      "sha1": "981dc58240af170559c375f65e5b3f9558ecd496",
+      "url": "https://github.com/checkstyle/checkstyle/commit/981dc58240af170559c375f65e5b3f9558ecd496",
+      "ourApproach": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	public shouldCheckIdentWithMethodRefParent(identAst DetailAST) : boolean inlined to private visitIdentToken(identAst DetailAST, variablesStack Deque<VariableDesc>) : void in class com.puppycrawl.tools.checkstyle.checks.coding.UnusedLocalVariableCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/UnusedLocalVariableCheck.java",
+            "startLine": 731,
+            "endLine": 748,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/UnusedLocalVariableCheck.java",
+            "startLine": 359,
+            "endLine": 377,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	public shouldCheckIdentWithMethodRefParent(identAst DetailAST) : boolean inlined to private visitIdentToken(identAst DetailAST, variablesStack Deque<VariableDesc>) : void in class com.puppycrawl.tools.checkstyle.checks.coding.UnusedLocalVariableCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/UnusedLocalVariableCheck.java",
+            "startLine": 731,
+            "endLine": 748,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/UnusedLocalVariableCheck.java",
+            "startLine": 359,
+            "endLine": 377,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/checkstyle/checkstyle.git",
+      "sha1": "43ae5d651d5b3078d9c04a0539134e811f461f5c",
+      "url": "https://github.com/checkstyle/checkstyle/commit/43ae5d651d5b3078d9c04a0539134e811f461f5c",
+      "ourApproach": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	CLASS_MEMBER_TOKENS : List<Integer> to CLASS_MEMBER_TOKENS : BitSet in class com.puppycrawl.tools.checkstyle.checks.design.InnerTypeLastCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/design/InnerTypeLastCheck.java",
+            "startLine": 88,
+            "endLine": 95,
+            "startColumn": 40,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/design/InnerTypeLastCheck.java",
+            "startLine": 87,
+            "endLine": 94,
+            "startColumn": 33,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	skipAnnotations : List<String> to skipAnnotations : Set<String> in class com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/javadoc/MissingJavadocTypeCheck.java",
+            "startLine": 181,
+            "endLine": 181,
+            "startColumn": 26,
+            "endColumn": 82
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/javadoc/MissingJavadocTypeCheck.java",
+            "startLine": 179,
+            "endLine": 179,
+            "startColumn": 25,
+            "endColumn": 62
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	ignoreAnnotationCanonicalNames : List<String> to ignoreAnnotationCanonicalNames : Set<String> in class com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/design/VisibilityModifierCheck.java",
+            "startLine": 488,
+            "endLine": 489,
+            "startColumn": 26,
+            "endColumn": 52
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/design/VisibilityModifierCheck.java",
+            "startLine": 489,
+            "endLine": 489,
+            "startColumn": 25,
+            "endColumn": 84
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	List<String> to Set<String> in method private getClassShortNames(canonicalClassNames Set<String>) : Set<String> from class com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/design/VisibilityModifierCheck.java",
+            "startLine": 1016,
+            "endLine": 1031,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/design/VisibilityModifierCheck.java",
+            "startLine": 1009,
+            "endLine": 1019,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	ignoreAnnotationShortNames : List<String> to ignoreAnnotationShortNames : Set<String> in class com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/design/VisibilityModifierCheck.java",
+            "startLine": 477,
+            "endLine": 478,
+            "startColumn": 32,
+            "endColumn": 59
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/design/VisibilityModifierCheck.java",
+            "startLine": 478,
+            "endLine": 479,
+            "startColumn": 25,
+            "endColumn": 59
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	NODES_TO_WRAP : List<String> to NODES_TO_WRAP : Set<String> in class com.puppycrawl.tools.checkstyle.internal.XdocsMobileWrapperTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/internal/XdocsMobileWrapperTest.java",
+            "startLine": 41,
+            "endLine": 41,
+            "startColumn": 39,
+            "endColumn": 72
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/internal/XdocsMobileWrapperTest.java",
+            "startLine": 39,
+            "endLine": 44,
+            "startColumn": 38,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	allowedAnnotations : List<String> to allowedAnnotations : Set<String> in class com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/javadoc/JavadocTypeCheck.java",
+            "startLine": 274,
+            "endLine": 274,
+            "startColumn": 26,
+            "endColumn": 85
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/javadoc/JavadocTypeCheck.java",
+            "startLine": 273,
+            "endLine": 273,
+            "startColumn": 25,
+            "endColumn": 65
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	MUTATION_OPERATIONS : Set<Integer> to MUTATION_OPERATIONS : BitSet in class com.puppycrawl.tools.checkstyle.checks.coding.ModifiedControlVariableCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/ModifiedControlVariableCheck.java",
+            "startLine": 153,
+            "endLine": 160,
+            "startColumn": 39,
+            "endColumn": 39
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/ModifiedControlVariableCheck.java",
+            "startLine": 154,
+            "endLine": 159,
+            "startColumn": 33,
+            "endColumn": 31
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	COMPOUND_ASSIGN_TOKENS : Set<Integer> to COMPOUND_ASSIGN_TOKENS : BitSet in class com.puppycrawl.tools.checkstyle.checks.coding.RequireThisCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/RequireThisCheck.java",
+            "startLine": 293,
+            "endLine": 303,
+            "startColumn": 39,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/RequireThisCheck.java",
+            "startLine": 294,
+            "endLine": 304,
+            "startColumn": 33,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	acceptableTokens : int[] to acceptableTokens : BitSet in class com.puppycrawl.tools.checkstyle.checks.whitespace.ParenPadCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/whitespace/ParenPadCheck.java",
+            "startLine": 224,
+            "endLine": 224,
+            "startColumn": 25,
+            "endColumn": 41
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/whitespace/ParenPadCheck.java",
+            "startLine": 224,
+            "endLine": 224,
+            "startColumn": 26,
+            "endColumn": 42
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	TYPES_HASH_SET : Set<Integer> to TYPES_HASH_SET : BitSet in class com.puppycrawl.tools.checkstyle.checks.annotation.MissingDeprecatedCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/annotation/MissingDeprecatedCheck.java",
+            "startLine": 197,
+            "endLine": 200,
+            "startColumn": 39,
+            "endColumn": 57
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/annotation/MissingDeprecatedCheck.java",
+            "startLine": 195,
+            "endLine": 198,
+            "startColumn": 33,
+            "endColumn": 56
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	PROPERTIES_ALLOWED_GET_TYPES_FROM_METHOD : List<String> to PROPERTIES_ALLOWED_GET_TYPES_FROM_METHOD : Set<String> in class com.puppycrawl.tools.checkstyle.internal.XdocsPagesTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/internal/XdocsPagesTest.java",
+            "startLine": 137,
+            "endLine": 151,
+            "startColumn": 39,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/internal/XdocsPagesTest.java",
+            "startLine": 136,
+            "endLine": 150,
+            "startColumn": 38,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	DEFAULT_IMMUTABLE_TYPES : List<String> to DEFAULT_IMMUTABLE_TYPES : Set<String> in class com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/design/VisibilityModifierCheck.java",
+            "startLine": 416,
+            "endLine": 437,
+            "startColumn": 39,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/design/VisibilityModifierCheck.java",
+            "startLine": 417,
+            "endLine": 438,
+            "startColumn": 38,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	DEF_TOKEN_TYPES : int[] to DEF_TOKEN_TYPES : BitSet in class com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTagInfo",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/javadoc/JavadocTagInfo.java",
+            "startLine": 368,
+            "endLine": 377,
+            "startColumn": 32,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/javadoc/JavadocTagInfo.java",
+            "startLine": 369,
+            "endLine": 378,
+            "startColumn": 33,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	IGNORED_SUN_MODULES : List<String> to IGNORED_SUN_MODULES : Set<String> in class com.puppycrawl.tools.checkstyle.internal.XdocsPagesTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/internal/XdocsPagesTest.java",
+            "startLine": 158,
+            "endLine": 221,
+            "startColumn": 39,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/internal/XdocsPagesTest.java",
+            "startLine": 157,
+            "endLine": 220,
+            "startColumn": 38,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	LOOP_IDIOM_IGNORED_PARENTS : int[] to LOOP_IDIOM_IGNORED_PARENTS : BitSet in class com.puppycrawl.tools.checkstyle.checks.coding.InnerAssignmentCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/InnerAssignmentCheck.java",
+            "startLine": 190,
+            "endLine": 196,
+            "startColumn": 32,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/InnerAssignmentCheck.java",
+            "startLine": 192,
+            "endLine": 198,
+            "startColumn": 33,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	DEFAULT_IGNORE_ANNOTATIONS : List<String> to DEFAULT_IGNORE_ANNOTATIONS : Set<String> in class com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/design/VisibilityModifierCheck.java",
+            "startLine": 440,
+            "endLine": 444,
+            "startColumn": 39,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/design/VisibilityModifierCheck.java",
+            "startLine": 441,
+            "endLine": 445,
+            "startColumn": 38,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	ignoredTags : List<String> to ignoredTags : Set<String> in class com.puppycrawl.tools.checkstyle.checks.javadoc.SingleLineJavadocCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/javadoc/SingleLineJavadocCheck.java",
+            "startLine": 261,
+            "endLine": 261,
+            "startColumn": 26,
+            "endColumn": 57
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/javadoc/SingleLineJavadocCheck.java",
+            "startLine": 258,
+            "endLine": 258,
+            "startColumn": 25,
+            "endColumn": 47
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	target : List<Integer> to target : BitSet in class com.puppycrawl.tools.checkstyle.checks.javadoc.AtclauseOrderCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/javadoc/AtclauseOrderCheck.java",
+            "startLine": 176,
+            "endLine": 185,
+            "startColumn": 27,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/javadoc/AtclauseOrderCheck.java",
+            "startLine": 177,
+            "endLine": 186,
+            "startColumn": 20,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	ignoreLines : int[] to ignoreLines : BitSet in class com.puppycrawl.tools.checkstyle.checks.header.HeaderCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/header/HeaderCheck.java",
+            "startLine": 155,
+            "endLine": 155,
+            "startColumn": 19,
+            "endColumn": 48
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/header/HeaderCheck.java",
+            "startLine": 153,
+            "endLine": 153,
+            "startColumn": 20,
+            "endColumn": 46
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	TOKEN_TYPES_WITH_TEXT_ATTRIBUTE : Set<Integer> to TOKEN_TYPES_WITH_TEXT_ATTRIBUTE : BitSet in class com.puppycrawl.tools.checkstyle.utils.XpathUtil",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/utils/XpathUtil.java",
+            "startLine": 105,
+            "endLine": 109,
+            "startColumn": 39,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/utils/XpathUtil.java",
+            "startLine": 105,
+            "endLine": 109,
+            "startColumn": 33,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	PARENT_TOKEN_TYPES : int[] to PARENT_TOKEN_TYPES : BitSet in class com.puppycrawl.tools.checkstyle.checks.indentation.SlistHandler",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/indentation/SlistHandler.java",
+            "startLine": 37,
+            "endLine": 51,
+            "startColumn": 32,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/indentation/SlistHandler.java",
+            "startLine": 37,
+            "endLine": 51,
+            "startColumn": 33,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	multiLines : int[] to multiLines : BitSet in class com.puppycrawl.tools.checkstyle.checks.header.RegexpHeaderCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/header/RegexpHeaderCheck.java",
+            "startLine": 241,
+            "endLine": 241,
+            "startColumn": 19,
+            "endColumn": 47
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/header/RegexpHeaderCheck.java",
+            "startLine": 239,
+            "endLine": 239,
+            "startColumn": 20,
+            "endColumn": 45
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	constantWaiverParentToken : int[] to constantWaiverParentToken : BitSet in class com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/MagicNumberCheck.java",
+            "startLine": 297,
+            "endLine": 311,
+            "startColumn": 19,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/MagicNumberCheck.java",
+            "startLine": 298,
+            "endLine": 312,
+            "startColumn": 20,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	DEF_TOKEN_TYPES_DEPRECATED : int[] to DEF_TOKEN_TYPES_DEPRECATED : BitSet in class com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTagInfo",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/javadoc/JavadocTagInfo.java",
+            "startLine": 355,
+            "endLine": 365,
+            "startColumn": 32,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/javadoc/JavadocTagInfo.java",
+            "startLine": 356,
+            "endLine": 366,
+            "startColumn": 33,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	excludes : List<String> to excludes : Set<String> in class com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/imports/AvoidStarImportCheck.java",
+            "startLine": 197,
+            "endLine": 197,
+            "startColumn": 32,
+            "endColumn": 60
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/imports/AvoidStarImportCheck.java",
+            "startLine": 197,
+            "endLine": 197,
+            "startColumn": 31,
+            "endColumn": 57
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	allowedAnnotations : List<String> to allowedAnnotations : Set<String> in class com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/javadoc/MissingJavadocMethodCheck.java",
+            "startLine": 296,
+            "endLine": 296,
+            "startColumn": 26,
+            "endColumn": 84
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/javadoc/MissingJavadocMethodCheck.java",
+            "startLine": 294,
+            "endLine": 294,
+            "startColumn": 25,
+            "endColumn": 64
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	immutableClassShortNames : List<String> to immutableClassShortNames : Set<String> in class com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/design/VisibilityModifierCheck.java",
+            "startLine": 481,
+            "endLine": 482,
+            "startColumn": 32,
+            "endColumn": 52
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/design/VisibilityModifierCheck.java",
+            "startLine": 482,
+            "endLine": 483,
+            "startColumn": 25,
+            "endColumn": 52
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	primitiveDataTypes : Set<Integer> to primitiveDataTypes : BitSet in class com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/FinalParametersCheck.java",
+            "startLine": 152,
+            "endLine": 161,
+            "startColumn": 32,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/FinalParametersCheck.java",
+            "startLine": 152,
+            "endLine": 161,
+            "startColumn": 26,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	immutableClassCanonicalNames : List<String> to immutableClassCanonicalNames : Set<String> in class com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/design/VisibilityModifierCheck.java",
+            "startLine": 504,
+            "endLine": 504,
+            "startColumn": 26,
+            "endColumn": 97
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/design/VisibilityModifierCheck.java",
+            "startLine": 504,
+            "endLine": 504,
+            "startColumn": 25,
+            "endColumn": 79
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	VISIT_METHODS_NOT_OVERRIDDEN : List<String> to VISIT_METHODS_NOT_OVERRIDDEN : Set<String> in class com.puppycrawl.tools.checkstyle.JavaAstVisitorTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/JavaAstVisitorTest.java",
+            "startLine": 58,
+            "endLine": 89,
+            "startColumn": 39,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/JavaAstVisitorTest.java",
+            "startLine": 58,
+            "endLine": 89,
+            "startColumn": 38,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	LOOP_TYPES : int[] to LOOP_TYPES : BitSet in class com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/FinalLocalVariableCheck.java",
+            "startLine": 176,
+            "endLine": 180,
+            "startColumn": 32,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/FinalLocalVariableCheck.java",
+            "startLine": 176,
+            "endLine": 180,
+            "startColumn": 33,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	memberModifiers : List<Integer> to memberModifiers : BitSet in class com.puppycrawl.tools.checkstyle.checks.coding.IllegalTypeCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/IllegalTypeCheck.java",
+            "startLine": 388,
+            "endLine": 388,
+            "startColumn": 27,
+            "endColumn": 68
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/IllegalTypeCheck.java",
+            "startLine": 386,
+            "endLine": 386,
+            "startColumn": 20,
+            "endColumn": 50
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	allowedAnnotations : List<String> to allowedAnnotations : Set<String> in class com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/javadoc/JavadocMethodCheck.java",
+            "startLine": 390,
+            "endLine": 390,
+            "startColumn": 26,
+            "endColumn": 84
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/javadoc/JavadocMethodCheck.java",
+            "startLine": 388,
+            "endLine": 388,
+            "startColumn": 25,
+            "endColumn": 64
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	COMPARISON_TYPES : int[] to COMPARISON_TYPES : BitSet in class com.puppycrawl.tools.checkstyle.checks.coding.InnerAssignmentCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/InnerAssignmentCheck.java",
+            "startLine": 178,
+            "endLine": 185,
+            "startColumn": 32,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/InnerAssignmentCheck.java",
+            "startLine": 180,
+            "endLine": 187,
+            "startColumn": 33,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	OVERRIDE_ANNOTATIONS : List<String> to OVERRIDE_ANNOTATIONS : Set<String> in class com.puppycrawl.tools.checkstyle.utils.AnnotationUtil",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/utils/AnnotationUtil.java",
+            "startLine": 47,
+            "endLine": 47,
+            "startColumn": 39,
+            "endColumn": 92
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/utils/AnnotationUtil.java",
+            "startLine": 47,
+            "endLine": 47,
+            "startColumn": 38,
+            "endColumn": 90
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	ASSIGN_TOKENS : Set<Integer> to ASSIGN_TOKENS : BitSet in class com.puppycrawl.tools.checkstyle.checks.coding.RequireThisCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/RequireThisCheck.java",
+            "startLine": 280,
+            "endLine": 291,
+            "startColumn": 39,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/RequireThisCheck.java",
+            "startLine": 281,
+            "endLine": 292,
+            "startColumn": 33,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	UNDOCUMENTED_PROPERTIES : List<String> to UNDOCUMENTED_PROPERTIES : Set<String> in class com.puppycrawl.tools.checkstyle.internal.XdocsPagesTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/internal/XdocsPagesTest.java",
+            "startLine": 124,
+            "endLine": 135,
+            "startColumn": 39,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/internal/XdocsPagesTest.java",
+            "startLine": 123,
+            "endLine": 134,
+            "startColumn": 38,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	IGNORED_TYPES : List<Integer> to IGNORED_TYPES : BitSet in class com.puppycrawl.tools.checkstyle.checks.coding.AvoidDoubleBraceInitializationCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/AvoidDoubleBraceInitializationCheck.java",
+            "startLine": 119,
+            "endLine": 124,
+            "startColumn": 40,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/AvoidDoubleBraceInitializationCheck.java",
+            "startLine": 118,
+            "endLine": 123,
+            "startColumn": 33,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	ALLOWED_TYPES : Set<Integer> to ALLOWED_TYPES : BitSet in class com.puppycrawl.tools.checkstyle.checks.javadoc.SummaryJavadocCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/javadoc/SummaryJavadocCheck.java",
+            "startLine": 264,
+            "endLine": 267,
+            "startColumn": 39,
+            "endColumn": 44
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/javadoc/SummaryJavadocCheck.java",
+            "startLine": 265,
+            "endLine": 268,
+            "startColumn": 33,
+            "endColumn": 44
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	DECLARATION_TOKENS : Set<Integer> to DECLARATION_TOKENS : BitSet in class com.puppycrawl.tools.checkstyle.checks.coding.RequireThisCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/RequireThisCheck.java",
+            "startLine": 266,
+            "endLine": 278,
+            "startColumn": 39,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/RequireThisCheck.java",
+            "startLine": 267,
+            "endLine": 279,
+            "startColumn": 33,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	ASSIGN_OPERATOR_TYPES : int[] to ASSIGN_OPERATOR_TYPES : BitSet in class com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/FinalLocalVariableCheck.java",
+            "startLine": 154,
+            "endLine": 171,
+            "startColumn": 32,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/FinalLocalVariableCheck.java",
+            "startLine": 154,
+            "endLine": 171,
+            "startColumn": 33,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	primitiveDataTypes : Set<Integer> to primitiveDataTypes : BitSet in class com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/FinalParametersCheck.java",
+            "startLine": 152,
+            "endLine": 161,
+            "startColumn": 32,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/FinalParametersCheck.java",
+            "startLine": 152,
+            "endLine": 161,
+            "startColumn": 26,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	TYPES_HASH_SET : Set<Integer> to TYPES_HASH_SET : BitSet in class com.puppycrawl.tools.checkstyle.checks.annotation.MissingDeprecatedCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/annotation/MissingDeprecatedCheck.java",
+            "startLine": 197,
+            "endLine": 200,
+            "startColumn": 39,
+            "endColumn": 57
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/annotation/MissingDeprecatedCheck.java",
+            "startLine": 195,
+            "endLine": 198,
+            "startColumn": 33,
+            "endColumn": 56
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	IGNORED_TYPES : List<Integer> to IGNORED_TYPES : BitSet in class com.puppycrawl.tools.checkstyle.checks.coding.AvoidDoubleBraceInitializationCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/AvoidDoubleBraceInitializationCheck.java",
+            "startLine": 119,
+            "endLine": 124,
+            "startColumn": 40,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/AvoidDoubleBraceInitializationCheck.java",
+            "startLine": 118,
+            "endLine": 123,
+            "startColumn": 33,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	ASSIGN_OPERATOR_TYPES : int[] to ASSIGN_OPERATOR_TYPES : BitSet in class com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/FinalLocalVariableCheck.java",
+            "startLine": 154,
+            "endLine": 171,
+            "startColumn": 32,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/FinalLocalVariableCheck.java",
+            "startLine": 154,
+            "endLine": 171,
+            "startColumn": 33,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	LOOP_TYPES : int[] to LOOP_TYPES : BitSet in class com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/FinalLocalVariableCheck.java",
+            "startLine": 176,
+            "endLine": 180,
+            "startColumn": 32,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/FinalLocalVariableCheck.java",
+            "startLine": 176,
+            "endLine": 180,
+            "startColumn": 33,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	memberModifiers : List<Integer> to memberModifiers : BitSet in class com.puppycrawl.tools.checkstyle.checks.coding.IllegalTypeCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/IllegalTypeCheck.java",
+            "startLine": 388,
+            "endLine": 388,
+            "startColumn": 27,
+            "endColumn": 68
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/IllegalTypeCheck.java",
+            "startLine": 386,
+            "endLine": 386,
+            "startColumn": 20,
+            "endColumn": 50
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	COMPARISON_TYPES : int[] to COMPARISON_TYPES : BitSet in class com.puppycrawl.tools.checkstyle.checks.coding.InnerAssignmentCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/InnerAssignmentCheck.java",
+            "startLine": 178,
+            "endLine": 185,
+            "startColumn": 32,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/InnerAssignmentCheck.java",
+            "startLine": 180,
+            "endLine": 187,
+            "startColumn": 33,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	LOOP_IDIOM_IGNORED_PARENTS : int[] to LOOP_IDIOM_IGNORED_PARENTS : BitSet in class com.puppycrawl.tools.checkstyle.checks.coding.InnerAssignmentCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/InnerAssignmentCheck.java",
+            "startLine": 190,
+            "endLine": 196,
+            "startColumn": 32,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/InnerAssignmentCheck.java",
+            "startLine": 192,
+            "endLine": 198,
+            "startColumn": 33,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	constantWaiverParentToken : int[] to constantWaiverParentToken : BitSet in class com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/MagicNumberCheck.java",
+            "startLine": 297,
+            "endLine": 311,
+            "startColumn": 19,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/MagicNumberCheck.java",
+            "startLine": 298,
+            "endLine": 312,
+            "startColumn": 20,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	MUTATION_OPERATIONS : Set<Integer> to MUTATION_OPERATIONS : BitSet in class com.puppycrawl.tools.checkstyle.checks.coding.ModifiedControlVariableCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/ModifiedControlVariableCheck.java",
+            "startLine": 153,
+            "endLine": 160,
+            "startColumn": 39,
+            "endColumn": 39
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/ModifiedControlVariableCheck.java",
+            "startLine": 154,
+            "endLine": 159,
+            "startColumn": 33,
+            "endColumn": 31
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	DECLARATION_TOKENS : Set<Integer> to DECLARATION_TOKENS : BitSet in class com.puppycrawl.tools.checkstyle.checks.coding.RequireThisCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/RequireThisCheck.java",
+            "startLine": 266,
+            "endLine": 278,
+            "startColumn": 39,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/RequireThisCheck.java",
+            "startLine": 267,
+            "endLine": 279,
+            "startColumn": 33,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	ASSIGN_TOKENS : Set<Integer> to ASSIGN_TOKENS : BitSet in class com.puppycrawl.tools.checkstyle.checks.coding.RequireThisCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/RequireThisCheck.java",
+            "startLine": 280,
+            "endLine": 291,
+            "startColumn": 39,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/RequireThisCheck.java",
+            "startLine": 281,
+            "endLine": 292,
+            "startColumn": 33,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	COMPOUND_ASSIGN_TOKENS : Set<Integer> to COMPOUND_ASSIGN_TOKENS : BitSet in class com.puppycrawl.tools.checkstyle.checks.coding.RequireThisCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/RequireThisCheck.java",
+            "startLine": 293,
+            "endLine": 303,
+            "startColumn": 39,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/RequireThisCheck.java",
+            "startLine": 294,
+            "endLine": 304,
+            "startColumn": 33,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	CLASS_MEMBER_TOKENS : List<Integer> to CLASS_MEMBER_TOKENS : BitSet in class com.puppycrawl.tools.checkstyle.checks.design.InnerTypeLastCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/design/InnerTypeLastCheck.java",
+            "startLine": 88,
+            "endLine": 95,
+            "startColumn": 40,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/design/InnerTypeLastCheck.java",
+            "startLine": 87,
+            "endLine": 94,
+            "startColumn": 33,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	DEFAULT_IMMUTABLE_TYPES : List<String> to DEFAULT_IMMUTABLE_TYPES : Set<String> in class com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/design/VisibilityModifierCheck.java",
+            "startLine": 416,
+            "endLine": 437,
+            "startColumn": 39,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/design/VisibilityModifierCheck.java",
+            "startLine": 417,
+            "endLine": 438,
+            "startColumn": 38,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	DEFAULT_IGNORE_ANNOTATIONS : List<String> to DEFAULT_IGNORE_ANNOTATIONS : Set<String> in class com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/design/VisibilityModifierCheck.java",
+            "startLine": 440,
+            "endLine": 444,
+            "startColumn": 39,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/design/VisibilityModifierCheck.java",
+            "startLine": 441,
+            "endLine": 445,
+            "startColumn": 38,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	ignoreAnnotationShortNames : List<String> to ignoreAnnotationShortNames : Set<String> in class com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/design/VisibilityModifierCheck.java",
+            "startLine": 477,
+            "endLine": 478,
+            "startColumn": 32,
+            "endColumn": 59
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/design/VisibilityModifierCheck.java",
+            "startLine": 478,
+            "endLine": 479,
+            "startColumn": 25,
+            "endColumn": 59
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	immutableClassShortNames : List<String> to immutableClassShortNames : Set<String> in class com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/design/VisibilityModifierCheck.java",
+            "startLine": 481,
+            "endLine": 482,
+            "startColumn": 32,
+            "endColumn": 52
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/design/VisibilityModifierCheck.java",
+            "startLine": 482,
+            "endLine": 483,
+            "startColumn": 25,
+            "endColumn": 52
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	ignoreAnnotationCanonicalNames : List<String> to ignoreAnnotationCanonicalNames : Set<String> in class com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/design/VisibilityModifierCheck.java",
+            "startLine": 488,
+            "endLine": 489,
+            "startColumn": 26,
+            "endColumn": 52
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/design/VisibilityModifierCheck.java",
+            "startLine": 489,
+            "endLine": 489,
+            "startColumn": 25,
+            "endColumn": 84
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	immutableClassCanonicalNames : List<String> to immutableClassCanonicalNames : Set<String> in class com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/design/VisibilityModifierCheck.java",
+            "startLine": 504,
+            "endLine": 504,
+            "startColumn": 26,
+            "endColumn": 97
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/design/VisibilityModifierCheck.java",
+            "startLine": 504,
+            "endLine": 504,
+            "startColumn": 25,
+            "endColumn": 79
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	ignoreLines : int[] to ignoreLines : BitSet in class com.puppycrawl.tools.checkstyle.checks.header.HeaderCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/header/HeaderCheck.java",
+            "startLine": 155,
+            "endLine": 155,
+            "startColumn": 19,
+            "endColumn": 48
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/header/HeaderCheck.java",
+            "startLine": 153,
+            "endLine": 153,
+            "startColumn": 20,
+            "endColumn": 46
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	multiLines : int[] to multiLines : BitSet in class com.puppycrawl.tools.checkstyle.checks.header.RegexpHeaderCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/header/RegexpHeaderCheck.java",
+            "startLine": 241,
+            "endLine": 241,
+            "startColumn": 19,
+            "endColumn": 47
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/header/RegexpHeaderCheck.java",
+            "startLine": 239,
+            "endLine": 239,
+            "startColumn": 20,
+            "endColumn": 45
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	excludes : List<String> to excludes : Set<String> in class com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/imports/AvoidStarImportCheck.java",
+            "startLine": 197,
+            "endLine": 197,
+            "startColumn": 32,
+            "endColumn": 60
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/imports/AvoidStarImportCheck.java",
+            "startLine": 197,
+            "endLine": 197,
+            "startColumn": 31,
+            "endColumn": 57
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	PARENT_TOKEN_TYPES : int[] to PARENT_TOKEN_TYPES : BitSet in class com.puppycrawl.tools.checkstyle.checks.indentation.SlistHandler",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/indentation/SlistHandler.java",
+            "startLine": 37,
+            "endLine": 51,
+            "startColumn": 32,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/indentation/SlistHandler.java",
+            "startLine": 37,
+            "endLine": 51,
+            "startColumn": 33,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	target : List<Integer> to target : BitSet in class com.puppycrawl.tools.checkstyle.checks.javadoc.AtclauseOrderCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/javadoc/AtclauseOrderCheck.java",
+            "startLine": 176,
+            "endLine": 185,
+            "startColumn": 27,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/javadoc/AtclauseOrderCheck.java",
+            "startLine": 177,
+            "endLine": 186,
+            "startColumn": 20,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	allowedAnnotations : List<String> to allowedAnnotations : Set<String> in class com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/javadoc/JavadocMethodCheck.java",
+            "startLine": 390,
+            "endLine": 390,
+            "startColumn": 26,
+            "endColumn": 84
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/javadoc/JavadocMethodCheck.java",
+            "startLine": 388,
+            "endLine": 388,
+            "startColumn": 25,
+            "endColumn": 64
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	DEF_TOKEN_TYPES_DEPRECATED : int[] to DEF_TOKEN_TYPES_DEPRECATED : BitSet in class com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTagInfo",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/javadoc/JavadocTagInfo.java",
+            "startLine": 355,
+            "endLine": 365,
+            "startColumn": 32,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/javadoc/JavadocTagInfo.java",
+            "startLine": 356,
+            "endLine": 366,
+            "startColumn": 33,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	DEF_TOKEN_TYPES : int[] to DEF_TOKEN_TYPES : BitSet in class com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTagInfo",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/javadoc/JavadocTagInfo.java",
+            "startLine": 368,
+            "endLine": 377,
+            "startColumn": 32,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/javadoc/JavadocTagInfo.java",
+            "startLine": 369,
+            "endLine": 378,
+            "startColumn": 33,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	allowedAnnotations : List<String> to allowedAnnotations : Set<String> in class com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/javadoc/JavadocTypeCheck.java",
+            "startLine": 274,
+            "endLine": 274,
+            "startColumn": 26,
+            "endColumn": 85
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/javadoc/JavadocTypeCheck.java",
+            "startLine": 273,
+            "endLine": 273,
+            "startColumn": 25,
+            "endColumn": 65
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	allowedAnnotations : List<String> to allowedAnnotations : Set<String> in class com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocMethodCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/javadoc/MissingJavadocMethodCheck.java",
+            "startLine": 296,
+            "endLine": 296,
+            "startColumn": 26,
+            "endColumn": 84
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/javadoc/MissingJavadocMethodCheck.java",
+            "startLine": 294,
+            "endLine": 294,
+            "startColumn": 25,
+            "endColumn": 64
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	skipAnnotations : List<String> to skipAnnotations : Set<String> in class com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/javadoc/MissingJavadocTypeCheck.java",
+            "startLine": 181,
+            "endLine": 181,
+            "startColumn": 26,
+            "endColumn": 82
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/javadoc/MissingJavadocTypeCheck.java",
+            "startLine": 179,
+            "endLine": 179,
+            "startColumn": 25,
+            "endColumn": 62
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	ignoredTags : List<String> to ignoredTags : Set<String> in class com.puppycrawl.tools.checkstyle.checks.javadoc.SingleLineJavadocCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/javadoc/SingleLineJavadocCheck.java",
+            "startLine": 261,
+            "endLine": 261,
+            "startColumn": 26,
+            "endColumn": 57
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/javadoc/SingleLineJavadocCheck.java",
+            "startLine": 258,
+            "endLine": 258,
+            "startColumn": 25,
+            "endColumn": 47
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	ALLOWED_TYPES : Set<Integer> to ALLOWED_TYPES : BitSet in class com.puppycrawl.tools.checkstyle.checks.javadoc.SummaryJavadocCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/javadoc/SummaryJavadocCheck.java",
+            "startLine": 264,
+            "endLine": 267,
+            "startColumn": 39,
+            "endColumn": 44
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/javadoc/SummaryJavadocCheck.java",
+            "startLine": 265,
+            "endLine": 268,
+            "startColumn": 33,
+            "endColumn": 44
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	acceptableTokens : int[] to acceptableTokens : BitSet in class com.puppycrawl.tools.checkstyle.checks.whitespace.ParenPadCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/whitespace/ParenPadCheck.java",
+            "startLine": 224,
+            "endLine": 224,
+            "startColumn": 25,
+            "endColumn": 41
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/whitespace/ParenPadCheck.java",
+            "startLine": 224,
+            "endLine": 224,
+            "startColumn": 26,
+            "endColumn": 42
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	OVERRIDE_ANNOTATIONS : List<String> to OVERRIDE_ANNOTATIONS : Set<String> in class com.puppycrawl.tools.checkstyle.utils.AnnotationUtil",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/utils/AnnotationUtil.java",
+            "startLine": 47,
+            "endLine": 47,
+            "startColumn": 39,
+            "endColumn": 92
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/utils/AnnotationUtil.java",
+            "startLine": 47,
+            "endLine": 47,
+            "startColumn": 38,
+            "endColumn": 90
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	TOKEN_TYPES_WITH_TEXT_ATTRIBUTE : Set<Integer> to TOKEN_TYPES_WITH_TEXT_ATTRIBUTE : BitSet in class com.puppycrawl.tools.checkstyle.utils.XpathUtil",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/utils/XpathUtil.java",
+            "startLine": 105,
+            "endLine": 109,
+            "startColumn": 39,
+            "endColumn": 10
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/utils/XpathUtil.java",
+            "startLine": 105,
+            "endLine": 109,
+            "startColumn": 33,
+            "endColumn": 10
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	VISIT_METHODS_NOT_OVERRIDDEN : List<String> to VISIT_METHODS_NOT_OVERRIDDEN : Set<String> in class com.puppycrawl.tools.checkstyle.JavaAstVisitorTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/JavaAstVisitorTest.java",
+            "startLine": 58,
+            "endLine": 89,
+            "startColumn": 39,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/JavaAstVisitorTest.java",
+            "startLine": 58,
+            "endLine": 89,
+            "startColumn": 38,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	NODES_TO_WRAP : List<String> to NODES_TO_WRAP : Set<String> in class com.puppycrawl.tools.checkstyle.internal.XdocsMobileWrapperTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/internal/XdocsMobileWrapperTest.java",
+            "startLine": 41,
+            "endLine": 41,
+            "startColumn": 39,
+            "endColumn": 72
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/internal/XdocsMobileWrapperTest.java",
+            "startLine": 39,
+            "endLine": 44,
+            "startColumn": 38,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	UNDOCUMENTED_PROPERTIES : List<String> to UNDOCUMENTED_PROPERTIES : Set<String> in class com.puppycrawl.tools.checkstyle.internal.XdocsPagesTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/internal/XdocsPagesTest.java",
+            "startLine": 124,
+            "endLine": 135,
+            "startColumn": 39,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/internal/XdocsPagesTest.java",
+            "startLine": 123,
+            "endLine": 134,
+            "startColumn": 38,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	PROPERTIES_ALLOWED_GET_TYPES_FROM_METHOD : List<String> to PROPERTIES_ALLOWED_GET_TYPES_FROM_METHOD : Set<String> in class com.puppycrawl.tools.checkstyle.internal.XdocsPagesTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/internal/XdocsPagesTest.java",
+            "startLine": 137,
+            "endLine": 151,
+            "startColumn": 39,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/internal/XdocsPagesTest.java",
+            "startLine": 136,
+            "endLine": 150,
+            "startColumn": 38,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	IGNORED_SUN_MODULES : List<String> to IGNORED_SUN_MODULES : Set<String> in class com.puppycrawl.tools.checkstyle.internal.XdocsPagesTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/internal/XdocsPagesTest.java",
+            "startLine": 158,
+            "endLine": 221,
+            "startColumn": 39,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/internal/XdocsPagesTest.java",
+            "startLine": 157,
+            "endLine": 220,
+            "startColumn": 38,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/checkstyle/checkstyle.git",
+      "sha1": "6eee69e12779a9e6421596d12123bcad5fd232bc",
+      "url": "https://github.com/checkstyle/checkstyle/commit/6eee69e12779a9e6421596d12123bcad5fd232bc",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testUpperEll() : void renamed to public testUpperEllOne() : void in class org.checkstyle.suppressionxpathfilter.XpathRegressionUpperEllTest",
+          "leftSideLocation": {
+            "filePath": "src/it/java/org/checkstyle/suppressionxpathfilter/XpathRegressionUpperEllTest.java",
+            "startLine": 40,
+            "endLine": 65,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/it/java/org/checkstyle/suppressionxpathfilter/XpathRegressionUpperEllTest.java",
+            "startLine": 40,
+            "endLine": 65,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.checkstyle.suppressionxpathfilter.upperell.SuppressionXpathRegressionUpperEll renamed to org.checkstyle.suppressionxpathfilter.upperell.SuppressionXpathRegressionUpperEllFirst",
+          "leftSideLocation": {
+            "filePath": "src/it/resources/org/checkstyle/suppressionxpathfilter/upperell/SuppressionXpathRegressionUpperEll.java",
+            "startLine": 3,
+            "endLine": 6,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/it/resources/org/checkstyle/suppressionxpathfilter/upperell/SuppressionXpathRegressionUpperEllFirst.java",
+            "startLine": 3,
+            "endLine": 6,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.checkstyle.suppressionxpathfilter.upperell.SuppressionXpathRegressionUpperEll renamed to org.checkstyle.suppressionxpathfilter.upperell.SuppressionXpathRegressionUpperEllFirst",
+          "leftSideLocation": {
+            "filePath": "src/it/resources/org/checkstyle/suppressionxpathfilter/upperell/SuppressionXpathRegressionUpperEll.java",
+            "startLine": 3,
+            "endLine": 6,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "src/it/resources/org/checkstyle/suppressionxpathfilter/upperell/SuppressionXpathRegressionUpperEllFirst.java",
+            "startLine": 3,
+            "endLine": 6,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testUpperEll() : void renamed to public testUpperEllOne() : void in class org.checkstyle.suppressionxpathfilter.XpathRegressionUpperEllTest",
+          "leftSideLocation": {
+            "filePath": "src/it/java/org/checkstyle/suppressionxpathfilter/XpathRegressionUpperEllTest.java",
+            "startLine": 40,
+            "endLine": 65,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/it/java/org/checkstyle/suppressionxpathfilter/XpathRegressionUpperEllTest.java",
+            "startLine": 40,
+            "endLine": 65,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/checkstyle/checkstyle.git",
+      "sha1": "6591ef0423d2376486b09784ab33fd5974a7cb41",
+      "url": "https://github.com/checkstyle/checkstyle/commit/6591ef0423d2376486b09784ab33fd5974a7cb41",
+      "ourApproach": [],
+      "baseline": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private verifySuppressed(moduleConfig Configuration, fileName String, expectedViolations String[], suppressedViolations String...) : void inlined to public testInvalidInfluenceFormat() : void in class com.puppycrawl.tools.checkstyle.filters.SuppressWithNearbyCommentFilterTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/filters/SuppressWithNearbyCommentFilterTest.java",
+            "startLine": 387,
+            "endLine": 411,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/filters/SuppressWithNearbyCommentFilterTest.java",
+            "startLine": 378,
+            "endLine": 403,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": false
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private verifySuppressed(moduleConfig Configuration, fileName String, expectedViolations String[], suppressedViolations String...) : void inlined to public testInvalidCheckFormat() : void in class com.puppycrawl.tools.checkstyle.filters.SuppressWithNearbyCommentFilterTest",
+          "leftSideLocation": {
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/filters/SuppressWithNearbyCommentFilterTest.java",
+            "startLine": 387,
+            "endLine": 411,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/java/com/puppycrawl/tools/checkstyle/filters/SuppressWithNearbyCommentFilterTest.java",
+            "startLine": 438,
+            "endLine": 462,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/checkstyle/checkstyle.git",
+      "sha1": "5e618459068dbd6d64a8f3518e4fce38b26b5a6f",
+      "url": "https://github.com/checkstyle/checkstyle/commit/5e618459068dbd6d64a8f3518e4fce38b26b5a6f",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private createXmlReader(handler DefaultHandler) : XMLReader extracted from protected XmlLoader(publicIdToResourceNameMap Map<String,String>) in class com.puppycrawl.tools.checkstyle.XmlLoader",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/XmlLoader.java",
+            "startLine": 58,
+            "endLine": 75,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/XmlLoader.java",
+            "startLine": 112,
+            "endLine": 130,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private createMainFrame(args String...) : void extracted from public main(args String...) : void in class com.puppycrawl.tools.checkstyle.gui.Main",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/gui/Main.java",
+            "startLine": 38,
+            "endLine": 54,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/gui/Main.java",
+            "startLine": 49,
+            "endLine": 64,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private createXmlReader(handler DefaultHandler) : XMLReader extracted from protected XmlLoader(publicIdToResourceNameMap Map<String,String>) in class com.puppycrawl.tools.checkstyle.XmlLoader",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/XmlLoader.java",
+            "startLine": 58,
+            "endLine": 75,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/XmlLoader.java",
+            "startLine": 112,
+            "endLine": 130,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private createMainFrame(args String...) : void extracted from public main(args String...) : void in class com.puppycrawl.tools.checkstyle.gui.Main",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/gui/Main.java",
+            "startLine": 38,
+            "endLine": 54,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/gui/Main.java",
+            "startLine": 49,
+            "endLine": 64,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/checkstyle/checkstyle.git",
+      "sha1": "cc90b04b02f963571ae4697857db838ac27efb84",
+      "url": "https://github.com/checkstyle/checkstyle/commit/cc90b04b02f963571ae4697857db838ac27efb84",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private getInlineSummaryTag(javadoc DetailNode) : Optional<DetailNode> renamed to private getInlineTagNode(javadoc DetailNode) : Optional<DetailNode> in class com.puppycrawl.tools.checkstyle.checks.javadoc.SummaryJavadocCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/javadoc/SummaryJavadocCheck.java",
+            "startLine": 329,
+            "endLine": 346,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/javadoc/SummaryJavadocCheck.java",
+            "startLine": 346,
+            "endLine": 357,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private validateUntaggedSummary(ast DetailNode) : void extracted from public visitJavadocToken(ast DetailNode) : void in class com.puppycrawl.tools.checkstyle.checks.javadoc.SummaryJavadocCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/javadoc/SummaryJavadocCheck.java",
+            "startLine": 304,
+            "endLine": 327,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/javadoc/SummaryJavadocCheck.java",
+            "startLine": 323,
+            "endLine": 344,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private isInlineTagWithName(javadocInlineTag DetailNode, name String) : boolean extracted from private isSummaryTag(javadocInlineTag DetailNode) : boolean in class com.puppycrawl.tools.checkstyle.checks.javadoc.SummaryJavadocCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/javadoc/SummaryJavadocCheck.java",
+            "startLine": 388,
+            "endLine": 402,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/javadoc/SummaryJavadocCheck.java",
+            "startLine": 419,
+            "endLine": 435,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private validateUntaggedSummary(ast DetailNode) : void extracted from public visitJavadocToken(ast DetailNode) : void in class com.puppycrawl.tools.checkstyle.checks.javadoc.SummaryJavadocCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/javadoc/SummaryJavadocCheck.java",
+            "startLine": 304,
+            "endLine": 327,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/javadoc/SummaryJavadocCheck.java",
+            "startLine": 323,
+            "endLine": 344,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private getInlineTagNode(javadoc DetailNode) : Optional<DetailNode> extracted from public visitJavadocToken(ast DetailNode) : void in class com.puppycrawl.tools.checkstyle.checks.javadoc.SummaryJavadocCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/javadoc/SummaryJavadocCheck.java",
+            "startLine": 304,
+            "endLine": 327,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/javadoc/SummaryJavadocCheck.java",
+            "startLine": 346,
+            "endLine": 357,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": false
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private isInlineTagWithName(javadocInlineTag DetailNode, name String) : boolean extracted from private isSummaryTag(javadocInlineTag DetailNode) : boolean in class com.puppycrawl.tools.checkstyle.checks.javadoc.SummaryJavadocCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/javadoc/SummaryJavadocCheck.java",
+            "startLine": 388,
+            "endLine": 402,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/javadoc/SummaryJavadocCheck.java",
+            "startLine": 419,
+            "endLine": 435,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private getInlineSummaryTag(javadoc DetailNode) : Optional<DetailNode> inlined to public visitJavadocToken(ast DetailNode) : void in class com.puppycrawl.tools.checkstyle.checks.javadoc.SummaryJavadocCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/javadoc/SummaryJavadocCheck.java",
+            "startLine": 329,
+            "endLine": 346,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/javadoc/SummaryJavadocCheck.java",
+            "startLine": 309,
+            "endLine": 321,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/checkstyle/checkstyle.git",
+      "sha1": "dd7b912b5a96f9027bd2b2f9dd77d3515efc9a74",
+      "url": "https://github.com/checkstyle/checkstyle/commit/dd7b912b5a96f9027bd2b2f9dd77d3515efc9a74",
+      "ourApproach": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	com.puppycrawl.tools.checkstyle.checks.coding.unnecessaryparentheses.InputUnnecessaryParenthesesCheckSwitchExpression.MathOperation2 renamed to com.puppycrawl.tools.checkstyle.checks.coding.unnecessaryparentheses.InputUnnecessaryParenthesesCheckSwitchExpression.MathOp2",
+          "leftSideLocation": {
+            "filePath": "src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/coding/unnecessaryparentheses/InputUnnecessaryParenthesesCheckSwitchExpression.java",
+            "startLine": 65,
+            "endLine": 67,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/coding/unnecessaryparentheses/InputUnnecessaryParenthesesCheckSwitchExpression.java",
+            "startLine": 66,
+            "endLine": 69,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	MathOperation2 to MathOp2 in method package tooManyParens2(k int) : MathOp2 from class com.puppycrawl.tools.checkstyle.checks.coding.unnecessaryparentheses.InputUnnecessaryParenthesesCheckSwitchExpression",
+          "leftSideLocation": {
+            "filePath": "src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/coding/unnecessaryparentheses/InputUnnecessaryParenthesesCheckSwitchExpression.java",
+            "startLine": 43,
+            "endLine": 63,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/coding/unnecessaryparentheses/InputUnnecessaryParenthesesCheckSwitchExpression.java",
+            "startLine": 43,
+            "endLine": 64,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	com.puppycrawl.tools.checkstyle.checks.coding.unnecessaryparentheses.InputUnnecessaryParenthesesOperatorsAndCasts.TypeParameterized renamed to com.puppycrawl.tools.checkstyle.checks.coding.unnecessaryparentheses.InputUnnecessaryParenthesesOperatorsAndCasts.GenT",
+          "leftSideLocation": {
+            "filePath": "src/test/resources/com/puppycrawl/tools/checkstyle/checks/coding/unnecessaryparentheses/InputUnnecessaryParenthesesOperatorsAndCasts.java",
+            "startLine": 111,
+            "endLine": 111,
+            "startColumn": 5,
+            "endColumn": 41
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/resources/com/puppycrawl/tools/checkstyle/checks/coding/unnecessaryparentheses/InputUnnecessaryParenthesesOperatorsAndCasts.java",
+            "startLine": 111,
+            "endLine": 111,
+            "startColumn": 5,
+            "endColumn": 28
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	MathOperation2 to MathOp2 in method package tooManyParens(k int) : MathOp2 from class com.puppycrawl.tools.checkstyle.checks.coding.unnecessaryparentheses.InputUnnecessaryParenthesesCheckSwitchExpression",
+          "leftSideLocation": {
+            "filePath": "src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/coding/unnecessaryparentheses/InputUnnecessaryParenthesesCheckSwitchExpression.java",
+            "startLine": 18,
+            "endLine": 41,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/coding/unnecessaryparentheses/InputUnnecessaryParenthesesCheckSwitchExpression.java",
+            "startLine": 18,
+            "endLine": 41,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	com.puppycrawl.tools.checkstyle.checks.coding.unnecessaryparentheses.InputUnnecessaryParenthesesCheckSwitchExpression.MathOperation2 renamed to com.puppycrawl.tools.checkstyle.checks.coding.unnecessaryparentheses.InputUnnecessaryParenthesesCheckSwitchExpression.MathOp2",
+          "leftSideLocation": {
+            "filePath": "src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/coding/unnecessaryparentheses/InputUnnecessaryParenthesesCheckSwitchExpression.java",
+            "startLine": 65,
+            "endLine": 67,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/coding/unnecessaryparentheses/InputUnnecessaryParenthesesCheckSwitchExpression.java",
+            "startLine": 66,
+            "endLine": 69,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	com.puppycrawl.tools.checkstyle.checks.coding.unnecessaryparentheses.InputUnnecessaryParenthesesOperatorsAndCasts.TypeParameterized renamed to com.puppycrawl.tools.checkstyle.checks.coding.unnecessaryparentheses.InputUnnecessaryParenthesesOperatorsAndCasts.GenT",
+          "leftSideLocation": {
+            "filePath": "src/test/resources/com/puppycrawl/tools/checkstyle/checks/coding/unnecessaryparentheses/InputUnnecessaryParenthesesOperatorsAndCasts.java",
+            "startLine": 111,
+            "endLine": 111,
+            "startColumn": 5,
+            "endColumn": 41
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/resources/com/puppycrawl/tools/checkstyle/checks/coding/unnecessaryparentheses/InputUnnecessaryParenthesesOperatorsAndCasts.java",
+            "startLine": 111,
+            "endLine": 111,
+            "startColumn": 5,
+            "endColumn": 28
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	MathOperation2 to MathOp2 in method package tooManyParens(k int) : MathOp2 from class com.puppycrawl.tools.checkstyle.checks.coding.unnecessaryparentheses.InputUnnecessaryParenthesesCheckSwitchExpression",
+          "leftSideLocation": {
+            "filePath": "src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/coding/unnecessaryparentheses/InputUnnecessaryParenthesesCheckSwitchExpression.java",
+            "startLine": 18,
+            "endLine": 41,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/coding/unnecessaryparentheses/InputUnnecessaryParenthesesCheckSwitchExpression.java",
+            "startLine": 18,
+            "endLine": 41,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	MathOperation2 to MathOp2 in method package tooManyParens2(k int) : MathOp2 from class com.puppycrawl.tools.checkstyle.checks.coding.unnecessaryparentheses.InputUnnecessaryParenthesesCheckSwitchExpression",
+          "leftSideLocation": {
+            "filePath": "src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/coding/unnecessaryparentheses/InputUnnecessaryParenthesesCheckSwitchExpression.java",
+            "startLine": 43,
+            "endLine": 63,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/test/resources-noncompilable/com/puppycrawl/tools/checkstyle/checks/coding/unnecessaryparentheses/InputUnnecessaryParenthesesCheckSwitchExpression.java",
+            "startLine": 43,
+            "endLine": 64,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/checkstyle/checkstyle.git",
+      "sha1": "50a9a64b6d70aa722dcf754ad5d46e37784f5b05",
+      "url": "https://github.com/checkstyle/checkstyle/commit/50a9a64b6d70aa722dcf754ad5d46e37784f5b05",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private visitClass(ast DetailAST) : void extracted from public visitToken(ast DetailAST) : void in class com.puppycrawl.tools.checkstyle.checks.design.FinalClassCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/design/FinalClassCheck.java",
+            "startLine": 154,
+            "endLine": 199,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/design/FinalClassCheck.java",
+            "startLine": 185,
+            "endLine": 199,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private visitCtor(ast DetailAST) : void extracted from public visitToken(ast DetailAST) : void in class com.puppycrawl.tools.checkstyle.checks.design.FinalClassCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/design/FinalClassCheck.java",
+            "startLine": 154,
+            "endLine": 199,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/design/FinalClassCheck.java",
+            "startLine": 201,
+            "endLine": 217,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private visitClass(ast DetailAST) : void extracted from public visitToken(ast DetailAST) : void in class com.puppycrawl.tools.checkstyle.checks.design.FinalClassCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/design/FinalClassCheck.java",
+            "startLine": 154,
+            "endLine": 199,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/design/FinalClassCheck.java",
+            "startLine": 185,
+            "endLine": 199,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private visitCtor(ast DetailAST) : void extracted from public visitToken(ast DetailAST) : void in class com.puppycrawl.tools.checkstyle.checks.design.FinalClassCheck",
+          "leftSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/design/FinalClassCheck.java",
+            "startLine": 154,
+            "endLine": 199,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "filePath": "src/main/java/com/puppycrawl/tools/checkstyle/checks/design/FinalClassCheck.java",
+            "startLine": 201,
+            "endLine": 217,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    }
+  ]
+}

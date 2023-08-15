@@ -1,0 +1,2800 @@
+{
+  "results": [
+    {
+      "repository": "https://git.eclipse.org/r/jgit/jgit.git",
+      "sha1": "71af0d6a5c4417a9c9c6523d4aa811579d8c867f",
+      "url": "https://git.eclipse.org/c/jgit/jgit.git/commit/?id=71af0d6a5c4417a9c9c6523d4aa811579d8c867f",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.api.PushCommandTest",
+            "type": "Class",
+            "name": "PushCommandTest",
+            "filePath": "org.eclipse.jgit.test/tst/org/eclipse/jgit/api/PushCommandTest.java",
+            "startLine": 51,
+            "endLine": 1181,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.api.PushCommandTest",
+            "type": "Class",
+            "name": "PushCommandTest",
+            "filePath": "org.eclipse.jgit.test/tst/org/eclipse/jgit/api/PushCommandTest.java",
+            "startLine": 54,
+            "endLine": 1232,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.api.PushCommand",
+            "type": "Method",
+            "name": "call",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/PushCommand.java",
+            "startLine": 99,
+            "endLine": 184,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.api.PushCommand",
+            "type": "Method",
+            "name": "call",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/PushCommand.java",
+            "startLine": 104,
+            "endLine": 191,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.api.PushCommand",
+            "type": "Class",
+            "name": "PushCommand",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/PushCommand.java",
+            "startLine": 51,
+            "endLine": 662,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.api.PushCommand",
+            "type": "Class",
+            "name": "PushCommand",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/PushCommand.java",
+            "startLine": 52,
+            "endLine": 709,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.transport.Transport",
+            "type": "Method",
+            "name": "open",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/Transport.java",
+            "startLine": 495,
+            "endLine": 530,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.transport.Transport",
+            "type": "Method",
+            "name": "open",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/Transport.java",
+            "startLine": 495,
+            "endLine": 528,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.transport.Transport",
+            "type": "Method",
+            "name": "Transport",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/Transport.java",
+            "startLine": 797,
+            "endLine": 816,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.transport.Transport",
+            "type": "Method",
+            "name": "Transport",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/Transport.java",
+            "startLine": 797,
+            "endLine": 815,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.transport.Transport",
+            "type": "Method",
+            "name": "push",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/Transport.java",
+            "startLine": 1412,
+            "endLine": 1474,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.transport.Transport",
+            "type": "Method",
+            "name": "push",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/Transport.java",
+            "startLine": 1437,
+            "endLine": 1506,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.transport.Transport",
+            "type": "Class",
+            "name": "Transport",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/Transport.java",
+            "startLine": 57,
+            "endLine": 1658,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.transport.Transport",
+            "type": "Class",
+            "name": "Transport",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/Transport.java",
+            "startLine": 57,
+            "endLine": 1690,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.transport.Transport",
+            "type": "Field",
+            "name": "prePush",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/Transport.java",
+            "startLine": 786,
+            "endLine": 786,
+            "startColumn": 22,
+            "endColumn": 29
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.transport.Transport",
+            "type": "Field",
+            "name": "remoteName",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/Transport.java",
+            "startLine": 786,
+            "endLine": 786,
+            "startColumn": 17,
+            "endColumn": 27
+          },
+          "developerConfirmation": false
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://git.eclipse.org/r/jgit/jgit.git",
+      "sha1": "b58ea5c6c90533614600e7ca06fa779532c734bc",
+      "url": "https://git.eclipse.org/c/jgit/jgit.git/commit/?id=b58ea5c6c90533614600e7ca06fa779532c734bc",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.lib.ObjectReader",
+            "type": "Class",
+            "name": "ObjectReader",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/lib/ObjectReader.java",
+            "startLine": 35,
+            "endLine": 622,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.lib.ObjectReader",
+            "type": "Class",
+            "name": "ObjectReader",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/lib/ObjectReader.java",
+            "startLine": 35,
+            "endLine": 655,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.internal.storage.pack.PackWriter",
+            "type": "Method",
+            "name": "filterAndAddObject",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/storage/pack/PackWriter.java",
+            "startLine": 2244,
+            "endLine": 2259,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.internal.storage.pack.PackWriter",
+            "type": "Method",
+            "name": "filterAndAddObject",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/storage/pack/PackWriter.java",
+            "startLine": 2244,
+            "endLine": 2259,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.internal.storage.pack.PackWriter",
+            "type": "Class",
+            "name": "PackWriter",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/storage/pack/PackWriter.java",
+            "startLine": 99,
+            "endLine": 2560,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.internal.storage.pack.PackWriter",
+            "type": "Class",
+            "name": "PackWriter",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/storage/pack/PackWriter.java",
+            "startLine": 99,
+            "endLine": 2560,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://git.eclipse.org/r/jgit/jgit.git",
+      "sha1": "6ed4c074cadaa857400e24a23d80f76342732dfe",
+      "url": "https://git.eclipse.org/c/jgit/jgit.git/commit/?id=6ed4c074cadaa857400e24a23d80f76342732dfe",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.api.ApplyCommand",
+            "type": "Method",
+            "name": "applyBinary",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/ApplyCommand.java",
+            "startLine": 400,
+            "endLine": 485,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.api.ApplyCommand",
+            "type": "Method",
+            "name": "applyBinary",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/ApplyCommand.java",
+            "startLine": 399,
+            "endLine": 483,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.api.ApplyCommand",
+            "type": "Method",
+            "name": "applyText",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/ApplyCommand.java",
+            "startLine": 487,
+            "endLine": 642,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.api.ApplyCommand",
+            "type": "Method",
+            "name": "applyText",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/ApplyCommand.java",
+            "startLine": 485,
+            "endLine": 638,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.api.ApplyCommand",
+            "type": "Class",
+            "name": "ApplyCommand",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/ApplyCommand.java",
+            "startLine": 70,
+            "endLine": 733,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.api.ApplyCommand",
+            "type": "Class",
+            "name": "ApplyCommand",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/ApplyCommand.java",
+            "startLine": 69,
+            "endLine": 729,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.merge.ResolveMerger",
+            "type": "Method",
+            "name": "writeMergedFile",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/merge/ResolveMerger.java",
+            "startLine": 894,
+            "endLine": 920,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.merge.ResolveMerger",
+            "type": "Method",
+            "name": "writeMergedFile",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/merge/ResolveMerger.java",
+            "startLine": 893,
+            "endLine": 917,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.merge.ResolveMerger",
+            "type": "Class",
+            "name": "ResolveMerger",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/merge/ResolveMerger.java",
+            "startLine": 67,
+            "endLine": 1244,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.merge.ResolveMerger",
+            "type": "Class",
+            "name": "ResolveMerger",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/merge/ResolveMerger.java",
+            "startLine": 66,
+            "endLine": 1241,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.util.WorkTreeUpdater",
+            "type": "Method",
+            "name": "insertToIndex",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/util/WorkTreeUpdater.java",
+            "startLine": 630,
+            "endLine": 658,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.util.WorkTreeUpdater",
+            "type": "Method",
+            "name": "insertToIndex",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/util/WorkTreeUpdater.java",
+            "startLine": 555,
+            "endLine": 583,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.util.WorkTreeUpdater",
+            "type": "Class",
+            "name": "WorkTreeUpdater",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/util/WorkTreeUpdater.java",
+            "startLine": 59,
+            "endLine": 743,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.util.WorkTreeUpdater",
+            "type": "Class",
+            "name": "WorkTreeUpdater",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/util/WorkTreeUpdater.java",
+            "startLine": 55,
+            "endLine": 636,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.util.WorkTreeUpdater",
+            "type": "Method",
+            "name": "updateFileWithContent",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/util/WorkTreeUpdater.java",
+            "startLine": 599,
+            "endLine": 628,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.util.WorkTreeUpdater",
+            "type": "Method",
+            "name": "updateFileWithContent",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/util/WorkTreeUpdater.java",
+            "startLine": 524,
+            "endLine": 553,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.util.WorkTreeUpdater",
+            "type": "Method",
+            "name": "insertToIndex",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/util/WorkTreeUpdater.java",
+            "startLine": 660,
+            "endLine": 689,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.util.WorkTreeUpdater",
+            "type": "Method",
+            "name": "insertResult",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/util/WorkTreeUpdater.java",
+            "startLine": 615,
+            "endLine": 622,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": false
+        }
+      ],
+      "baseline": [
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.util.WorkTreeUpdater",
+            "type": "Method",
+            "name": "insertResult",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/util/WorkTreeUpdater.java",
+            "startLine": 722,
+            "endLine": 729,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.util.WorkTreeUpdater",
+            "type": "Method",
+            "name": "insertResult",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/util/WorkTreeUpdater.java",
+            "startLine": 615,
+            "endLine": 622,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://git.eclipse.org/r/jgit/jgit.git",
+      "sha1": "2778bb2cc9bf7bdfb2ed7b3a99dd931d6d3fbbfa",
+      "url": "https://git.eclipse.org/c/jgit/jgit.git/commit/?id=2778bb2cc9bf7bdfb2ed7b3a99dd931d6d3fbbfa",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.merge.ResolveMerger",
+            "type": "Method",
+            "name": "writeMergedFile",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/merge/ResolveMerger.java",
+            "startLine": 894,
+            "endLine": 920,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.merge.ResolveMerger",
+            "type": "Method",
+            "name": "writeMergedFile",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/merge/ResolveMerger.java",
+            "startLine": 894,
+            "endLine": 920,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.merge.ResolveMerger",
+            "type": "Class",
+            "name": "ResolveMerger",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/merge/ResolveMerger.java",
+            "startLine": 67,
+            "endLine": 1244,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.merge.ResolveMerger",
+            "type": "Class",
+            "name": "ResolveMerger",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/merge/ResolveMerger.java",
+            "startLine": 67,
+            "endLine": 1244,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.util.WorkTreeUpdater",
+            "type": "Class",
+            "name": "WorkTreeUpdater",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/util/WorkTreeUpdater.java",
+            "startLine": 61,
+            "endLine": 764,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.util.WorkTreeUpdater",
+            "type": "Class",
+            "name": "WorkTreeUpdater",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/util/WorkTreeUpdater.java",
+            "startLine": 59,
+            "endLine": 743,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.util.WorkTreeUpdater",
+            "type": "Method",
+            "name": "updateFileWithContent",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/util/WorkTreeUpdater.java",
+            "startLine": 601,
+            "endLine": 649,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.util.WorkTreeUpdater",
+            "type": "Method",
+            "name": "updateFileWithContent",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/util/WorkTreeUpdater.java",
+            "startLine": 599,
+            "endLine": 628,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://git.eclipse.org/r/jgit/jgit.git",
+      "sha1": "5747bba48b22a11beba8ebe0caf13a53d4ca96f2",
+      "url": "https://git.eclipse.org/c/jgit/jgit.git/commit/?id=5747bba48b22a11beba8ebe0caf13a53d4ca96f2",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.api.blame.BlameGeneratorTest",
+            "type": "Method",
+            "name": "testLinesAllDeletedShortenedWalk",
+            "filePath": "org.eclipse.jgit.test/tst/org/eclipse/jgit/api/blame/BlameGeneratorTest.java",
+            "startLine": 134,
+            "endLine": 165,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.api.blame.BlameGeneratorTest",
+            "type": "Method",
+            "name": "testLinesAllDeletedShortenedWalk",
+            "filePath": "org.eclipse.jgit.test/tst/org/eclipse/jgit/api/blame/BlameGeneratorTest.java",
+            "startLine": 410,
+            "endLine": 442,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.api.blame.BlameGeneratorTest",
+            "type": "Class",
+            "name": "BlameGeneratorTest",
+            "filePath": "org.eclipse.jgit.test/tst/org/eclipse/jgit/api/blame/BlameGeneratorTest.java",
+            "startLine": 24,
+            "endLine": 173,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.api.blame.BlameGeneratorTest",
+            "type": "Class",
+            "name": "BlameGeneratorTest",
+            "filePath": "org.eclipse.jgit.test/tst/org/eclipse/jgit/api/blame/BlameGeneratorTest.java",
+            "startLine": 29,
+            "endLine": 450,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.blame.BlameGenerator",
+            "type": "Method",
+            "name": "push",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/blame/BlameGenerator.java",
+            "startLine": 398,
+            "endLine": 441,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.blame.BlameGenerator",
+            "type": "Method",
+            "name": "push",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/blame/BlameGenerator.java",
+            "startLine": 428,
+            "endLine": 462,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.blame.BlameGenerator",
+            "type": "Class",
+            "name": "BlameGenerator",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/blame/BlameGenerator.java",
+            "startLine": 63,
+            "endLine": 1127,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.blame.BlameGenerator",
+            "type": "Class",
+            "name": "BlameGenerator",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/blame/BlameGenerator.java",
+            "startLine": 63,
+            "endLine": 1148,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.api.blame.BlameGeneratorTest",
+            "type": "Method",
+            "name": "testBoundLineDelete",
+            "filePath": "org.eclipse.jgit.test/tst/org/eclipse/jgit/api/blame/BlameGeneratorTest.java",
+            "startLine": 26,
+            "endLine": 64,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.api.blame.BlameGeneratorTest",
+            "type": "Method",
+            "name": "testSingleBlame",
+            "filePath": "org.eclipse.jgit.test/tst/org/eclipse/jgit/api/blame/BlameGeneratorTest.java",
+            "startLine": 36,
+            "endLine": 102,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.api.blame.BlameGeneratorTest",
+            "type": "Method",
+            "name": "testBoundLineDelete",
+            "filePath": "org.eclipse.jgit.test/tst/org/eclipse/jgit/api/blame/BlameGeneratorTest.java",
+            "startLine": 26,
+            "endLine": 64,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.api.blame.BlameGeneratorTest",
+            "type": "Method",
+            "name": "testMergeBlame",
+            "filePath": "org.eclipse.jgit.test/tst/org/eclipse/jgit/api/blame/BlameGeneratorTest.java",
+            "startLine": 176,
+            "endLine": 261,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.blame.BlameGenerator",
+            "type": "Method",
+            "name": "push",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/blame/BlameGenerator.java",
+            "startLine": 398,
+            "endLine": 441,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.blame.BlameGenerator",
+            "type": "Method",
+            "name": "push",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/blame/BlameGenerator.java",
+            "startLine": 399,
+            "endLine": 426,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://git.eclipse.org/r/jgit/jgit.git",
+      "sha1": "8542bf790e156c0e9c0ab43648ca7f9f97a69836",
+      "url": "https://git.eclipse.org/c/jgit/jgit.git/commit/?id=8542bf790e156c0e9c0ab43648ca7f9f97a69836",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.internal.storage.dfs.DfsObjDatabase",
+            "type": "Class",
+            "name": "DfsObjDatabase",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/storage/dfs/DfsObjDatabase.java",
+            "startLine": 36,
+            "endLine": 744,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.internal.storage.dfs.DfsObjDatabase",
+            "type": "Class",
+            "name": "DfsObjDatabase",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/storage/dfs/DfsObjDatabase.java",
+            "startLine": 35,
+            "endLine": 728,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.lib.ObjectDatabase",
+            "type": "Class",
+            "name": "ObjectDatabase",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/lib/ObjectDatabase.java",
+            "startLine": 19,
+            "endLine": 189,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.lib.ObjectDatabase",
+            "type": "Class",
+            "name": "ObjectDatabase",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/lib/ObjectDatabase.java",
+            "startLine": 20,
+            "endLine": 202,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.internal.storage.dfs.DfsObjDatabase",
+            "type": "Field",
+            "name": "shallowCommits",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/storage/dfs/DfsObjDatabase.java",
+            "startLine": 61,
+            "endLine": 61,
+            "startColumn": 37,
+            "endColumn": 76
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.lib.ObjectDatabase",
+            "type": "Field",
+            "name": "shallowCommits",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/lib/ObjectDatabase.java",
+            "startLine": 28,
+            "endLine": 28,
+            "startColumn": 37,
+            "endColumn": 76
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.lib.ObjectDatabase",
+            "type": "Method",
+            "name": "getShallowCommits",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/lib/ObjectDatabase.java",
+            "startLine": 75,
+            "endLine": 82,
+            "startColumn": 2,
+            "endColumn": 71
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.lib.ObjectDatabase",
+            "type": "Method",
+            "name": "getShallowCommits",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/lib/ObjectDatabase.java",
+            "startLine": 79,
+            "endLine": 88,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.lib.ObjectDatabase",
+            "type": "Method",
+            "name": "setShallowCommits",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/lib/ObjectDatabase.java",
+            "startLine": 84,
+            "endLine": 93,
+            "startColumn": 2,
+            "endColumn": 90
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.lib.ObjectDatabase",
+            "type": "Method",
+            "name": "setShallowCommits",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/lib/ObjectDatabase.java",
+            "startLine": 91,
+            "endLine": 106,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.internal.storage.dfs.DfsObjDatabase",
+            "type": "Method",
+            "name": "getShallowCommits",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/storage/dfs/DfsObjDatabase.java",
+            "startLine": 510,
+            "endLine": 513,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.lib.ObjectDatabase",
+            "type": "Method",
+            "name": "getShallowCommits",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/lib/ObjectDatabase.java",
+            "startLine": 79,
+            "endLine": 88,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.internal.storage.dfs.DfsObjDatabase",
+            "type": "Method",
+            "name": "setShallowCommits",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/storage/dfs/DfsObjDatabase.java",
+            "startLine": 515,
+            "endLine": 521,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.lib.ObjectDatabase",
+            "type": "Method",
+            "name": "setShallowCommits",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/lib/ObjectDatabase.java",
+            "startLine": 91,
+            "endLine": 106,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://git.eclipse.org/r/jgit/jgit.git",
+      "sha1": "59e8bec6e7705a89b5d0b9c6ac004b323ffa16b0",
+      "url": "https://git.eclipse.org/c/jgit/jgit.git/commit/?id=59e8bec6e7705a89b5d0b9c6ac004b323ffa16b0",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.api.blame.BlameGeneratorTest",
+            "type": "Method",
+            "name": "testLinesAllDeletedShortenedWalk",
+            "filePath": "org.eclipse.jgit.test/tst/org/eclipse/jgit/api/blame/BlameGeneratorTest.java",
+            "startLine": 134,
+            "endLine": 165,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.api.blame.BlameGeneratorTest",
+            "type": "Method",
+            "name": "testLinesAllDeletedShortenedWalk",
+            "filePath": "org.eclipse.jgit.test/tst/org/eclipse/jgit/api/blame/BlameGeneratorTest.java",
+            "startLine": 410,
+            "endLine": 442,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.api.blame.BlameGeneratorTest",
+            "type": "Class",
+            "name": "BlameGeneratorTest",
+            "filePath": "org.eclipse.jgit.test/tst/org/eclipse/jgit/api/blame/BlameGeneratorTest.java",
+            "startLine": 24,
+            "endLine": 173,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.api.blame.BlameGeneratorTest",
+            "type": "Class",
+            "name": "BlameGeneratorTest",
+            "filePath": "org.eclipse.jgit.test/tst/org/eclipse/jgit/api/blame/BlameGeneratorTest.java",
+            "startLine": 29,
+            "endLine": 450,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.blame.BlameGenerator",
+            "type": "Method",
+            "name": "push",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/blame/BlameGenerator.java",
+            "startLine": 398,
+            "endLine": 441,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.blame.BlameGenerator",
+            "type": "Method",
+            "name": "push",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/blame/BlameGenerator.java",
+            "startLine": 428,
+            "endLine": 462,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.blame.BlameGenerator",
+            "type": "Class",
+            "name": "BlameGenerator",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/blame/BlameGenerator.java",
+            "startLine": 63,
+            "endLine": 1127,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.blame.BlameGenerator",
+            "type": "Class",
+            "name": "BlameGenerator",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/blame/BlameGenerator.java",
+            "startLine": 63,
+            "endLine": 1148,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.api.blame.BlameGeneratorTest",
+            "type": "Method",
+            "name": "testBoundLineDelete",
+            "filePath": "org.eclipse.jgit.test/tst/org/eclipse/jgit/api/blame/BlameGeneratorTest.java",
+            "startLine": 26,
+            "endLine": 64,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.api.blame.BlameGeneratorTest",
+            "type": "Method",
+            "name": "testSingleBlame",
+            "filePath": "org.eclipse.jgit.test/tst/org/eclipse/jgit/api/blame/BlameGeneratorTest.java",
+            "startLine": 36,
+            "endLine": 102,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.api.blame.BlameGeneratorTest",
+            "type": "Method",
+            "name": "testBoundLineDelete",
+            "filePath": "org.eclipse.jgit.test/tst/org/eclipse/jgit/api/blame/BlameGeneratorTest.java",
+            "startLine": 26,
+            "endLine": 64,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.api.blame.BlameGeneratorTest",
+            "type": "Method",
+            "name": "testMergeBlame",
+            "filePath": "org.eclipse.jgit.test/tst/org/eclipse/jgit/api/blame/BlameGeneratorTest.java",
+            "startLine": 176,
+            "endLine": 261,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.blame.BlameGenerator",
+            "type": "Method",
+            "name": "push",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/blame/BlameGenerator.java",
+            "startLine": 398,
+            "endLine": 441,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.blame.BlameGenerator",
+            "type": "Method",
+            "name": "push",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/blame/BlameGenerator.java",
+            "startLine": 399,
+            "endLine": 426,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://git.eclipse.org/r/jgit/jgit.git",
+      "sha1": "207dd4c938830e84c9101d30edb7fe626e04bbe1",
+      "url": "https://git.eclipse.org/c/jgit/jgit.git/commit/?id=207dd4c938830e84c9101d30edb7fe626e04bbe1",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.http.test.HttpClientTests",
+            "type": "Class",
+            "name": "HttpClientTests",
+            "filePath": "org.eclipse.jgit.http.test/tst/org/eclipse/jgit/http/test/HttpClientTests.java",
+            "startLine": 60,
+            "endLine": 411,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.http.test.HttpClientTests",
+            "type": "Class",
+            "name": "HttpClientTests",
+            "filePath": "org.eclipse.jgit.http.test/tst/org/eclipse/jgit/http/test/HttpClientTests.java",
+            "startLine": 63,
+            "endLine": 520,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.api.CloneCommandTest",
+            "type": "Class",
+            "name": "CloneCommandTest",
+            "filePath": "org.eclipse.jgit.test/tst/org/eclipse/jgit/api/CloneCommandTest.java",
+            "startLine": 53,
+            "endLine": 908,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.api.CloneCommandTest",
+            "type": "Class",
+            "name": "CloneCommandTest",
+            "filePath": "org.eclipse.jgit.test/tst/org/eclipse/jgit/api/CloneCommandTest.java",
+            "startLine": 58,
+            "endLine": 1141,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.transport.ProtocolV0ParserTest",
+            "type": "Class",
+            "name": "ProtocolV0ParserTest",
+            "filePath": "org.eclipse.jgit.test/tst/org/eclipse/jgit/transport/ProtocolV0ParserTest.java",
+            "startLine": 29,
+            "endLine": 175,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.transport.ProtocolV0ParserTest",
+            "type": "Class",
+            "name": "ProtocolV0ParserTest",
+            "filePath": "org.eclipse.jgit.test/tst/org/eclipse/jgit/transport/ProtocolV0ParserTest.java",
+            "startLine": 30,
+            "endLine": 212,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.transport.ProtocolV2ParserTest",
+            "type": "Method",
+            "name": "testFetchWithShallow_deepen",
+            "filePath": "org.eclipse.jgit.test/tst/org/eclipse/jgit/transport/ProtocolV2ParserTest.java",
+            "startLine": 140,
+            "endLine": 159,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.transport.ProtocolV2ParserTest",
+            "type": "Method",
+            "name": "testFetchWithShallow_deepen",
+            "filePath": "org.eclipse.jgit.test/tst/org/eclipse/jgit/transport/ProtocolV2ParserTest.java",
+            "startLine": 140,
+            "endLine": 159,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.transport.ProtocolV2ParserTest",
+            "type": "Method",
+            "name": "testFetchWithShallow_deepenNot",
+            "filePath": "org.eclipse.jgit.test/tst/org/eclipse/jgit/transport/ProtocolV2ParserTest.java",
+            "startLine": 161,
+            "endLine": 176,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.transport.ProtocolV2ParserTest",
+            "type": "Method",
+            "name": "testFetchWithShallow_deepenNot",
+            "filePath": "org.eclipse.jgit.test/tst/org/eclipse/jgit/transport/ProtocolV2ParserTest.java",
+            "startLine": 161,
+            "endLine": 176,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.transport.ProtocolV2ParserTest",
+            "type": "Class",
+            "name": "ProtocolV2ParserTest",
+            "filePath": "org.eclipse.jgit.test/tst/org/eclipse/jgit/transport/ProtocolV2ParserTest.java",
+            "startLine": 37,
+            "endLine": 364,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.transport.ProtocolV2ParserTest",
+            "type": "Class",
+            "name": "ProtocolV2ParserTest",
+            "filePath": "org.eclipse.jgit.test/tst/org/eclipse/jgit/transport/ProtocolV2ParserTest.java",
+            "startLine": 37,
+            "endLine": 364,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.api.CloneCommand",
+            "type": "Method",
+            "name": "fetch",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/CloneCommand.java",
+            "startLine": 278,
+            "endLine": 312,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.api.CloneCommand",
+            "type": "Method",
+            "name": "fetch",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/CloneCommand.java",
+            "startLine": 287,
+            "endLine": 326,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.api.CloneCommand",
+            "type": "Class",
+            "name": "CloneCommand",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/CloneCommand.java",
+            "startLine": 50,
+            "endLine": 800,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.api.CloneCommand",
+            "type": "Class",
+            "name": "CloneCommand",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/CloneCommand.java",
+            "startLine": 53,
+            "endLine": 890,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.api.FetchCommand",
+            "type": "Method",
+            "name": "call",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/FetchCommand.java",
+            "startLine": 192,
+            "endLine": 235,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.api.FetchCommand",
+            "type": "Method",
+            "name": "call",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/FetchCommand.java",
+            "startLine": 201,
+            "endLine": 255,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.api.FetchCommand",
+            "type": "Class",
+            "name": "FetchCommand",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/FetchCommand.java",
+            "startLine": 46,
+            "endLine": 545,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.api.FetchCommand",
+            "type": "Class",
+            "name": "FetchCommand",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/api/FetchCommand.java",
+            "startLine": 49,
+            "endLine": 666,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.internal.JGitText",
+            "type": "Class",
+            "name": "JGitText",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/JGitText.java",
+            "startLine": 17,
+            "endLine": 869,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.internal.JGitText",
+            "type": "Class",
+            "name": "JGitText",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/JGitText.java",
+            "startLine": 17,
+            "endLine": 873,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.internal.storage.dfs.InMemoryRepository.MemObjDatabase",
+            "type": "Class",
+            "name": "MemObjDatabase",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/storage/dfs/InMemoryRepository.java",
+            "startLine": 97,
+            "endLine": 177,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.internal.storage.dfs.InMemoryRepository.MemObjDatabase",
+            "type": "Class",
+            "name": "MemObjDatabase",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/storage/dfs/InMemoryRepository.java",
+            "startLine": 109,
+            "endLine": 200,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.internal.storage.dfs.InMemoryRepository",
+            "type": "Class",
+            "name": "InMemoryRepository",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/storage/dfs/InMemoryRepository.java",
+            "startLine": 18,
+            "endLine": 310,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.internal.storage.dfs.InMemoryRepository",
+            "type": "Class",
+            "name": "InMemoryRepository",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/storage/dfs/InMemoryRepository.java",
+            "startLine": 30,
+            "endLine": 333,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.internal.storage.file.CachedObjectDirectory",
+            "type": "Method",
+            "name": "getShallowCommits",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/storage/file/CachedObjectDirectory.java",
+            "startLine": 119,
+            "endLine": 122,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.internal.storage.file.CachedObjectDirectory",
+            "type": "Method",
+            "name": "getShallowCommits",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/storage/file/CachedObjectDirectory.java",
+            "startLine": 119,
+            "endLine": 122,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.internal.storage.file.CachedObjectDirectory",
+            "type": "Class",
+            "name": "CachedObjectDirectory",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/storage/file/CachedObjectDirectory.java",
+            "startLine": 33,
+            "endLine": 279,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.internal.storage.file.CachedObjectDirectory",
+            "type": "Class",
+            "name": "CachedObjectDirectory",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/storage/file/CachedObjectDirectory.java",
+            "startLine": 33,
+            "endLine": 284,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.internal.storage.file.FileObjectDatabase",
+            "type": "Class",
+            "name": "FileObjectDatabase",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/storage/file/FileObjectDatabase.java",
+            "startLine": 29,
+            "endLine": 77,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.internal.storage.file.FileObjectDatabase",
+            "type": "Class",
+            "name": "FileObjectDatabase",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/storage/file/FileObjectDatabase.java",
+            "startLine": 29,
+            "endLine": 75,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.internal.storage.file.ObjectDirectory",
+            "type": "Method",
+            "name": "getShallowCommits",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/storage/file/ObjectDirectory.java",
+            "startLine": 562,
+            "endLine": 588,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.internal.storage.file.ObjectDirectory",
+            "type": "Method",
+            "name": "getShallowCommits",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/storage/file/ObjectDirectory.java",
+            "startLine": 563,
+            "endLine": 589,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.internal.storage.file.ObjectDirectory",
+            "type": "Class",
+            "name": "ObjectDirectory",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/storage/file/ObjectDirectory.java",
+            "startLine": 49,
+            "endLine": 748,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.internal.storage.file.ObjectDirectory",
+            "type": "Class",
+            "name": "ObjectDirectory",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/storage/file/ObjectDirectory.java",
+            "startLine": 50,
+            "endLine": 786,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.lib.Constants",
+            "type": "Class",
+            "name": "Constants",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/lib/Constants.java",
+            "startLine": 27,
+            "endLine": 753,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.lib.Constants",
+            "type": "Class",
+            "name": "Constants",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/lib/Constants.java",
+            "startLine": 27,
+            "endLine": 760,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.lib.ObjectDatabase",
+            "type": "Class",
+            "name": "ObjectDatabase",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/lib/ObjectDatabase.java",
+            "startLine": 18,
+            "endLine": 168,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.lib.ObjectDatabase",
+            "type": "Class",
+            "name": "ObjectDatabase",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/lib/ObjectDatabase.java",
+            "startLine": 19,
+            "endLine": 189,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.transport.BasePackFetchConnection",
+            "type": "Method",
+            "name": "BasePackFetchConnection",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/BasePackFetchConnection.java",
+            "startLine": 228,
+            "endLine": 269,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.transport.BasePackFetchConnection",
+            "type": "Method",
+            "name": "BasePackFetchConnection",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/BasePackFetchConnection.java",
+            "startLine": 237,
+            "endLine": 281,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.transport.BasePackFetchConnection",
+            "type": "Method",
+            "name": "doFetch",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/BasePackFetchConnection.java",
+            "startLine": 337,
+            "endLine": 403,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.transport.BasePackFetchConnection",
+            "type": "Method",
+            "name": "doFetch",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/BasePackFetchConnection.java",
+            "startLine": 349,
+            "endLine": 423,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.transport.BasePackFetchConnection",
+            "type": "Method",
+            "name": "doFetchV2",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/BasePackFetchConnection.java",
+            "startLine": 405,
+            "endLine": 469,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.transport.BasePackFetchConnection",
+            "type": "Method",
+            "name": "doFetchV2",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/BasePackFetchConnection.java",
+            "startLine": 425,
+            "endLine": 507,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.transport.BasePackFetchConnection",
+            "type": "Method",
+            "name": "sendWants",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/BasePackFetchConnection.java",
+            "startLine": 667,
+            "endLine": 705,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.transport.BasePackFetchConnection",
+            "type": "Method",
+            "name": "sendWants",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/BasePackFetchConnection.java",
+            "startLine": 705,
+            "endLine": 746,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.transport.BasePackFetchConnection",
+            "type": "Class",
+            "name": "BasePackFetchConnection",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/BasePackFetchConnection.java",
+            "startLine": 52,
+            "endLine": 1069,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.transport.BasePackFetchConnection",
+            "type": "Class",
+            "name": "BasePackFetchConnection",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/BasePackFetchConnection.java",
+            "startLine": 55,
+            "endLine": 1162,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.transport.FetchProcess",
+            "type": "Method",
+            "name": "askForIsComplete",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/FetchProcess.java",
+            "startLine": 387,
+            "endLine": 402,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.transport.FetchProcess",
+            "type": "Method",
+            "name": "askForIsComplete",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/FetchProcess.java",
+            "startLine": 387,
+            "endLine": 402,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.transport.FetchProcess",
+            "type": "Method",
+            "name": "want",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/FetchProcess.java",
+            "startLine": 509,
+            "endLine": 532,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.transport.FetchProcess",
+            "type": "Method",
+            "name": "want",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/FetchProcess.java",
+            "startLine": 509,
+            "endLine": 534,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.transport.FetchProcess",
+            "type": "Class",
+            "name": "FetchProcess",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/FetchProcess.java",
+            "startLine": 53,
+            "endLine": 614,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.transport.FetchProcess",
+            "type": "Class",
+            "name": "FetchProcess",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/FetchProcess.java",
+            "startLine": 53,
+            "endLine": 616,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.transport.FetchRequest",
+            "type": "Method",
+            "name": "FetchRequest",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/FetchRequest.java",
+            "startLine": 43,
+            "endLine": 78,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.transport.FetchRequest",
+            "type": "Method",
+            "name": "FetchRequest",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/FetchRequest.java",
+            "startLine": 43,
+            "endLine": 78,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.transport.FetchRequest",
+            "type": "Class",
+            "name": "FetchRequest",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/FetchRequest.java",
+            "startLine": 21,
+            "endLine": 163,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.transport.FetchRequest",
+            "type": "Class",
+            "name": "FetchRequest",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/FetchRequest.java",
+            "startLine": 21,
+            "endLine": 163,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.transport.FetchV0Request.Builder",
+            "type": "Method",
+            "name": "build",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/FetchV0Request.java",
+            "startLine": 111,
+            "endLine": 114,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.transport.FetchV0Request.Builder",
+            "type": "Method",
+            "name": "build",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/FetchV0Request.java",
+            "startLine": 161,
+            "endLine": 164,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.transport.FetchV0Request.Builder",
+            "type": "Class",
+            "name": "Builder",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/FetchV0Request.java",
+            "startLine": 36,
+            "endLine": 116,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.transport.FetchV0Request.Builder",
+            "type": "Class",
+            "name": "Builder",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/FetchV0Request.java",
+            "startLine": 38,
+            "endLine": 166,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.transport.FetchV0Request",
+            "type": "Class",
+            "name": "FetchV0Request",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/FetchV0Request.java",
+            "startLine": 23,
+            "endLine": 117,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.transport.FetchV0Request",
+            "type": "Class",
+            "name": "FetchV0Request",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/FetchV0Request.java",
+            "startLine": 24,
+            "endLine": 167,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.transport.FetchV2Request",
+            "type": "Method",
+            "name": "FetchV2Request",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/FetchV2Request.java",
+            "startLine": 49,
+            "endLine": 69,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.transport.FetchV2Request",
+            "type": "Method",
+            "name": "FetchV2Request",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/FetchV2Request.java",
+            "startLine": 49,
+            "endLine": 69,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.transport.FetchV2Request.Builder",
+            "type": "Method",
+            "name": "build",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/FetchV2Request.java",
+            "startLine": 348,
+            "endLine": 358,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.transport.FetchV2Request.Builder",
+            "type": "Method",
+            "name": "build",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/FetchV2Request.java",
+            "startLine": 348,
+            "endLine": 358,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.transport.FetchV2Request.Builder",
+            "type": "Class",
+            "name": "Builder",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/FetchV2Request.java",
+            "startLine": 133,
+            "endLine": 359,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.transport.FetchV2Request.Builder",
+            "type": "Class",
+            "name": "Builder",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/FetchV2Request.java",
+            "startLine": 133,
+            "endLine": 359,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.transport.FetchV2Request",
+            "type": "Class",
+            "name": "FetchV2Request",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/FetchV2Request.java",
+            "startLine": 24,
+            "endLine": 360,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.transport.FetchV2Request",
+            "type": "Class",
+            "name": "FetchV2Request",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/FetchV2Request.java",
+            "startLine": 24,
+            "endLine": 360,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.transport.GitProtocolConstants",
+            "type": "Class",
+            "name": "GitProtocolConstants",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/GitProtocolConstants.java",
+            "startLine": 15,
+            "endLine": 338,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.transport.GitProtocolConstants",
+            "type": "Class",
+            "name": "GitProtocolConstants",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/GitProtocolConstants.java",
+            "startLine": 15,
+            "endLine": 352,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.transport.ProtocolV0Parser",
+            "type": "Method",
+            "name": "recvWants",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/ProtocolV0Parser.java",
+            "startLine": 39,
+            "endLine": 123,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.transport.ProtocolV0Parser",
+            "type": "Method",
+            "name": "recvWants",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/ProtocolV0Parser.java",
+            "startLine": 39,
+            "endLine": 155,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.transport.ProtocolV0Parser",
+            "type": "Class",
+            "name": "ProtocolV0Parser",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/ProtocolV0Parser.java",
+            "startLine": 23,
+            "endLine": 125,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.transport.ProtocolV0Parser",
+            "type": "Class",
+            "name": "ProtocolV0Parser",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/ProtocolV0Parser.java",
+            "startLine": 23,
+            "endLine": 157,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.transport.ProtocolV2Parser",
+            "type": "Method",
+            "name": "parseFetchRequest",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/ProtocolV2Parser.java",
+            "startLine": 80,
+            "endLine": 199,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.transport.ProtocolV2Parser",
+            "type": "Method",
+            "name": "parseFetchRequest",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/ProtocolV2Parser.java",
+            "startLine": 80,
+            "endLine": 199,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.transport.ProtocolV2Parser",
+            "type": "Class",
+            "name": "ProtocolV2Parser",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/ProtocolV2Parser.java",
+            "startLine": 36,
+            "endLine": 286,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.transport.ProtocolV2Parser",
+            "type": "Class",
+            "name": "ProtocolV2Parser",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/ProtocolV2Parser.java",
+            "startLine": 36,
+            "endLine": 286,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.transport.Transport",
+            "type": "Class",
+            "name": "Transport",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/Transport.java",
+            "startLine": 56,
+            "endLine": 1574,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.transport.Transport",
+            "type": "Class",
+            "name": "Transport",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/Transport.java",
+            "startLine": 57,
+            "endLine": 1658,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.transport.UploadPack",
+            "type": "Method",
+            "name": "service",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/UploadPack.java",
+            "startLine": 1030,
+            "endLine": 1114,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.transport.UploadPack",
+            "type": "Method",
+            "name": "service",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/UploadPack.java",
+            "startLine": 1031,
+            "endLine": 1117,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.transport.UploadPack",
+            "type": "Method",
+            "name": "fetchV2",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/UploadPack.java",
+            "startLine": 1162,
+            "endLine": 1300,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.transport.UploadPack",
+            "type": "Method",
+            "name": "fetchV2",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/UploadPack.java",
+            "startLine": 1165,
+            "endLine": 1295,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.transport.UploadPack",
+            "type": "Class",
+            "name": "UploadPack",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/UploadPack.java",
+            "startLine": 106,
+            "endLine": 2545,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.transport.UploadPack",
+            "type": "Class",
+            "name": "UploadPack",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/UploadPack.java",
+            "startLine": 107,
+            "endLine": 2558,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.transport.FetchV0Request",
+            "type": "Method",
+            "name": "FetchV0Request",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/FetchV0Request.java",
+            "startLine": 28,
+            "endLine": 34,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.transport.FetchV0Request",
+            "type": "Method",
+            "name": "FetchV0Request",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/FetchV0Request.java",
+            "startLine": 29,
+            "endLine": 36,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.transport.FetchV2Request.Builder",
+            "type": "Method",
+            "name": "addDeepenNotRef",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/FetchV2Request.java",
+            "startLine": 247,
+            "endLine": 255,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.transport.FetchV2Request.Builder",
+            "type": "Method",
+            "name": "addDeepenNot",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/FetchV2Request.java",
+            "startLine": 247,
+            "endLine": 255,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.transport.FetchV2Request.Builder",
+            "type": "Method",
+            "name": "hasDeepenNotRefs",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/FetchV2Request.java",
+            "startLine": 239,
+            "endLine": 245,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.transport.FetchV2Request.Builder",
+            "type": "Method",
+            "name": "hasDeepenNots",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/FetchV2Request.java",
+            "startLine": 239,
+            "endLine": 245,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.transport.FetchV2Request.Builder",
+            "type": "Field",
+            "name": "deepenNotRefs",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/FetchV2Request.java",
+            "startLine": 143,
+            "endLine": 143,
+            "startColumn": 22,
+            "endColumn": 55
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.transport.FetchV2Request.Builder",
+            "type": "Field",
+            "name": "deepenNots",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/FetchV2Request.java",
+            "startLine": 143,
+            "endLine": 143,
+            "startColumn": 22,
+            "endColumn": 52
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.transport.BasePackFetchConnection",
+            "type": "Method",
+            "name": "negotiate",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/BasePackFetchConnection.java",
+            "startLine": 776,
+            "endLine": 943,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.transport.BasePackFetchConnection",
+            "type": "Method",
+            "name": "negotiate",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/BasePackFetchConnection.java",
+            "startLine": 817,
+            "endLine": 992,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.transport.FetchRequest",
+            "type": "Field",
+            "name": "deepenNotRefs",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/FetchRequest.java",
+            "startLine": 38,
+            "endLine": 38,
+            "startColumn": 21,
+            "endColumn": 34
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.transport.FetchRequest",
+            "type": "Field",
+            "name": "deepenNots",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/FetchRequest.java",
+            "startLine": 38,
+            "endLine": 38,
+            "startColumn": 21,
+            "endColumn": 31
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.transport.FetchRequest",
+            "type": "Method",
+            "name": "getDeepenNotRefs",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/FetchRequest.java",
+            "startLine": 147,
+            "endLine": 153,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.transport.FetchRequest",
+            "type": "Method",
+            "name": "getDeepenNots",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/FetchRequest.java",
+            "startLine": 147,
+            "endLine": 153,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.internal.storage.file.FileObjectDatabase",
+            "type": "Method",
+            "name": "getShallowCommits",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/storage/file/FileObjectDatabase.java",
+            "startLine": 53,
+            "endLine": 53,
+            "startColumn": 2,
+            "endColumn": 64
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.internal.storage.dfs.InMemoryRepository.MemObjDatabase",
+            "type": "Method",
+            "name": "getShallowCommits",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/storage/dfs/InMemoryRepository.java",
+            "startLine": 182,
+            "endLine": 185,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": false
+        }
+      ],
+      "baseline": [
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.transport.UploadPack",
+            "type": "Method",
+            "name": "fetchV2",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/UploadPack.java",
+            "startLine": 1162,
+            "endLine": 1300,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.transport.UploadPack",
+            "type": "Method",
+            "name": "parseDeepenNots",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/transport/UploadPack.java",
+            "startLine": 2474,
+            "endLine": 2490,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.internal.storage.file.FileObjectDatabase",
+            "type": "Method",
+            "name": "getShallowCommits",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/internal/storage/file/FileObjectDatabase.java",
+            "startLine": 53,
+            "endLine": 53,
+            "startColumn": 2,
+            "endColumn": 64
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.lib.ObjectDatabase",
+            "type": "Method",
+            "name": "getShallowCommits",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/lib/ObjectDatabase.java",
+            "startLine": 75,
+            "endLine": 82,
+            "startColumn": 2,
+            "endColumn": 71
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://git.eclipse.org/r/jgit/jgit.git",
+      "sha1": "559be665296e7587e3ff0425152b631c93b4b56d",
+      "url": "https://git.eclipse.org/c/jgit/jgit.git/commit/?id=559be665296e7587e3ff0425152b631c93b4b56d",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.junit.http.AccessEvent",
+            "type": "Field",
+            "name": "status",
+            "filePath": "org.eclipse.jgit.junit.http/src/org/eclipse/jgit/junit/http/AccessEvent.java",
+            "startLine": 33,
+            "endLine": 33,
+            "startColumn": 20,
+            "endColumn": 26
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.junit.http.AccessEvent",
+            "type": "Field",
+            "name": "status",
+            "filePath": "org.eclipse.jgit.junit.http/src/org/eclipse/jgit/junit/http/AccessEvent.java",
+            "startLine": 33,
+            "endLine": 33,
+            "startColumn": 14,
+            "endColumn": 20
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.junit.http.AccessEvent",
+            "type": "Field",
+            "name": "responseHeaders",
+            "filePath": "org.eclipse.jgit.junit.http/src/org/eclipse/jgit/junit/http/AccessEvent.java",
+            "startLine": 35,
+            "endLine": 35,
+            "startColumn": 36,
+            "endColumn": 51
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.junit.http.AccessEvent",
+            "type": "Field",
+            "name": "responseHeaders",
+            "filePath": "org.eclipse.jgit.junit.http/src/org/eclipse/jgit/junit/http/AccessEvent.java",
+            "startLine": 35,
+            "endLine": 35,
+            "startColumn": 30,
+            "endColumn": 45
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.junit.http.AccessEvent",
+            "type": "Method",
+            "name": "getResponseHeader",
+            "filePath": "org.eclipse.jgit.junit.http/src/org/eclipse/jgit/junit/http/AccessEvent.java",
+            "startLine": 136,
+            "endLine": 145,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.junit.http.AccessEvent",
+            "type": "Method",
+            "name": "getResponseHeader",
+            "filePath": "org.eclipse.jgit.junit.http/src/org/eclipse/jgit/junit/http/AccessEvent.java",
+            "startLine": 138,
+            "endLine": 147,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.junit.http.AccessEvent",
+            "type": "Class",
+            "name": "AccessEvent",
+            "filePath": "org.eclipse.jgit.junit.http/src/org/eclipse/jgit/junit/http/AccessEvent.java",
+            "startLine": 21,
+            "endLine": 174,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.junit.http.AccessEvent",
+            "type": "Class",
+            "name": "AccessEvent",
+            "filePath": "org.eclipse.jgit.junit.http/src/org/eclipse/jgit/junit/http/AccessEvent.java",
+            "startLine": 21,
+            "endLine": 176,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.junit.http.TestRequestLog",
+            "type": "Method",
+            "name": "handle",
+            "filePath": "org.eclipse.jgit.junit.http/src/org/eclipse/jgit/junit/http/TestRequestLog.java",
+            "startLine": 75,
+            "endLine": 98,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.junit.http.TestRequestLog",
+            "type": "Method",
+            "name": "handle",
+            "filePath": "org.eclipse.jgit.junit.http/src/org/eclipse/jgit/junit/http/TestRequestLog.java",
+            "startLine": 75,
+            "endLine": 108,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.junit.http.TestRequestLog",
+            "type": "Class",
+            "name": "TestRequestLog",
+            "filePath": "org.eclipse.jgit.junit.http/src/org/eclipse/jgit/junit/http/TestRequestLog.java",
+            "startLine": 27,
+            "endLine": 105,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.junit.http.TestRequestLog",
+            "type": "Class",
+            "name": "TestRequestLog",
+            "filePath": "org.eclipse.jgit.junit.http/src/org/eclipse/jgit/junit/http/TestRequestLog.java",
+            "startLine": 27,
+            "endLine": 109,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.junit.http.AccessEvent",
+            "type": "Method",
+            "name": "AccessEvent",
+            "filePath": "org.eclipse.jgit.junit.http/src/org/eclipse/jgit/junit/http/AccessEvent.java",
+            "startLine": 37,
+            "endLine": 45,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.junit.http.AccessEvent",
+            "type": "Method",
+            "name": "AccessEvent",
+            "filePath": "org.eclipse.jgit.junit.http/src/org/eclipse/jgit/junit/http/AccessEvent.java",
+            "startLine": 37,
+            "endLine": 42,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.junit.http.TestRequestLog",
+            "type": "Method",
+            "name": "log",
+            "filePath": "org.eclipse.jgit.junit.http/src/org/eclipse/jgit/junit/http/TestRequestLog.java",
+            "startLine": 100,
+            "endLine": 104,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.junit.http.AccessEvent",
+            "type": "Method",
+            "name": "setResponse",
+            "filePath": "org.eclipse.jgit.junit.http/src/org/eclipse/jgit/junit/http/AccessEvent.java",
+            "startLine": 44,
+            "endLine": 47,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": false
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://git.eclipse.org/r/jgit/jgit.git",
+      "sha1": "a1ce9063fbcafbc306f40f6d384d48726de09da4",
+      "url": "https://git.eclipse.org/c/jgit/jgit.git/commit/?id=a1ce9063fbcafbc306f40f6d384d48726de09da4",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.ignore.CGitIgnoreTest",
+            "type": "Class",
+            "name": "CGitIgnoreTest",
+            "filePath": "org.eclipse.jgit.test/tst/org/eclipse/jgit/ignore/CGitIgnoreTest.java",
+            "startLine": 39,
+            "endLine": 357,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.ignore.CGitIgnoreTest",
+            "type": "Class",
+            "name": "CGitIgnoreTest",
+            "filePath": "org.eclipse.jgit.test/tst/org/eclipse/jgit/ignore/CGitIgnoreTest.java",
+            "startLine": 41,
+            "endLine": 439,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.treewalk.WorkingTreeIterator.PerDirectoryIgnoreNode",
+            "type": "Method",
+            "name": "load",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/treewalk/WorkingTreeIterator.java",
+            "startLine": 1276,
+            "endLine": 1282,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.treewalk.WorkingTreeIterator.PerDirectoryIgnoreNode",
+            "type": "Method",
+            "name": "load",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/treewalk/WorkingTreeIterator.java",
+            "startLine": 1276,
+            "endLine": 1278,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.treewalk.WorkingTreeIterator.PerDirectoryIgnoreNode",
+            "type": "Class",
+            "name": "PerDirectoryIgnoreNode",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/treewalk/WorkingTreeIterator.java",
+            "startLine": 1264,
+            "endLine": 1283,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.treewalk.WorkingTreeIterator.PerDirectoryIgnoreNode",
+            "type": "Class",
+            "name": "PerDirectoryIgnoreNode",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/treewalk/WorkingTreeIterator.java",
+            "startLine": 1264,
+            "endLine": 1287,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.treewalk.WorkingTreeIterator.RootIgnoreNode",
+            "type": "Class",
+            "name": "RootIgnoreNode",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/treewalk/WorkingTreeIterator.java",
+            "startLine": 1285,
+            "endLine": 1328,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.treewalk.WorkingTreeIterator.RootIgnoreNode",
+            "type": "Class",
+            "name": "RootIgnoreNode",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/treewalk/WorkingTreeIterator.java",
+            "startLine": 1289,
+            "endLine": 1344,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.treewalk.WorkingTreeIterator",
+            "type": "Class",
+            "name": "WorkingTreeIterator",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/treewalk/WorkingTreeIterator.java",
+            "startLine": 76,
+            "endLine": 1580,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.treewalk.WorkingTreeIterator",
+            "type": "Class",
+            "name": "WorkingTreeIterator",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/treewalk/WorkingTreeIterator.java",
+            "startLine": 76,
+            "endLine": 1614,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.treewalk.WorkingTreeIterator.RootIgnoreNode",
+            "type": "Method",
+            "name": "load",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/treewalk/WorkingTreeIterator.java",
+            "startLine": 1294,
+            "endLine": 1318,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.treewalk.WorkingTreeIterator.RootIgnoreNode",
+            "type": "Method",
+            "name": "load",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/treewalk/WorkingTreeIterator.java",
+            "startLine": 1298,
+            "endLine": 1334,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [],
+      "baseline": [
+        {
+          "leftSideLocation": {
+            "container": "org.eclipse.jgit.treewalk.WorkingTreeIterator.PerDirectoryIgnoreNode",
+            "type": "Method",
+            "name": "load",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/treewalk/WorkingTreeIterator.java",
+            "startLine": 1276,
+            "endLine": 1282,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.eclipse.jgit.treewalk.WorkingTreeIterator.PerDirectoryIgnoreNode",
+            "type": "Method",
+            "name": "load",
+            "filePath": "org.eclipse.jgit/src/org/eclipse/jgit/treewalk/WorkingTreeIterator.java",
+            "startLine": 1280,
+            "endLine": 1286,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": false
+        }
+      ]
+    }
+  ]
+}

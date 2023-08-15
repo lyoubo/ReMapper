@@ -1,0 +1,3670 @@
+{
+  "results": [
+    {
+      "repository": "https://github.com/spring-projects/spring-boot.git",
+      "sha1": "c6536c54d834b41d847685a935338c04067ddc37",
+      "url": "https://github.com/spring-projects/spring-boot/commit/c6536c54d834b41d847685a935338c04067ddc37",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.gradle.tasks.bundling.BootZipCopyAction",
+            "type": "Field",
+            "name": "REACHABILITY_METADATA_PROPERTIES_LOCATION_PATTERN",
+            "filePath": "spring-boot-project/spring-boot-tools/spring-boot-gradle-plugin/src/main/java/org/springframework/boot/gradle/tasks/bundling/BootZipCopyAction.java",
+            "startLine": 81,
+            "endLine": 82,
+            "startColumn": 31,
+            "endColumn": 83
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.gradle.tasks.bundling.BootZipCopyAction",
+            "type": "Field",
+            "name": "REACHABILITY_METADATA_PROPERTIES_LOCATION_PATTERN",
+            "filePath": "spring-boot-project/spring-boot-tools/spring-boot-gradle-plugin/src/main/java/org/springframework/boot/gradle/tasks/bundling/BootZipCopyAction.java",
+            "startLine": 79,
+            "endLine": 81,
+            "startColumn": 31,
+            "endColumn": 18
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.gradle.tasks.bundling.BootZipCopyAction.Processor",
+            "type": "Method",
+            "name": "writeNativeImageArgFileIfNecessary",
+            "filePath": "spring-boot-project/spring-boot-tools/spring-boot-gradle-plugin/src/main/java/org/springframework/boot/gradle/tasks/bundling/BootZipCopyAction.java",
+            "startLine": 352,
+            "endLine": 384,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.gradle.tasks.bundling.BootZipCopyAction.Processor",
+            "type": "Method",
+            "name": "writeNativeImageArgFileIfNecessary",
+            "filePath": "spring-boot-project/spring-boot-tools/spring-boot-gradle-plugin/src/main/java/org/springframework/boot/gradle/tasks/bundling/BootZipCopyAction.java",
+            "startLine": 351,
+            "endLine": 374,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.gradle.tasks.bundling.BootZipCopyAction.Processor",
+            "type": "Class",
+            "name": "Processor",
+            "filePath": "spring-boot-project/spring-boot-tools/spring-boot-gradle-plugin/src/main/java/org/springframework/boot/gradle/tasks/bundling/BootZipCopyAction.java",
+            "startLine": 194,
+            "endLine": 449,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.gradle.tasks.bundling.BootZipCopyAction.Processor",
+            "type": "Class",
+            "name": "Processor",
+            "filePath": "spring-boot-project/spring-boot-tools/spring-boot-gradle-plugin/src/main/java/org/springframework/boot/gradle/tasks/bundling/BootZipCopyAction.java",
+            "startLine": 193,
+            "endLine": 439,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.gradle.tasks.bundling.BootZipCopyAction",
+            "type": "Class",
+            "name": "BootZipCopyAction",
+            "filePath": "spring-boot-project/spring-boot-tools/spring-boot-gradle-plugin/src/main/java/org/springframework/boot/gradle/tasks/bundling/BootZipCopyAction.java",
+            "startLine": 66,
+            "endLine": 552,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.gradle.tasks.bundling.BootZipCopyAction",
+            "type": "Class",
+            "name": "BootZipCopyAction",
+            "filePath": "spring-boot-project/spring-boot-tools/spring-boot-gradle-plugin/src/main/java/org/springframework/boot/gradle/tasks/bundling/BootZipCopyAction.java",
+            "startLine": 66,
+            "endLine": 542,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.gradle.tasks.bundling.BootJarTests",
+            "type": "Class",
+            "name": "BootJarTests",
+            "filePath": "spring-boot-project/spring-boot-tools/spring-boot-gradle-plugin/src/test/java/org/springframework/boot/gradle/tasks/bundling/BootJarTests.java",
+            "startLine": 34,
+            "endLine": 227,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.gradle.tasks.bundling.BootJarTests",
+            "type": "Class",
+            "name": "BootJarTests",
+            "filePath": "spring-boot-project/spring-boot-tools/spring-boot-gradle-plugin/src/test/java/org/springframework/boot/gradle/tasks/bundling/BootJarTests.java",
+            "startLine": 34,
+            "endLine": 234,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.loader.tools.Packager",
+            "type": "Method",
+            "name": "writeNativeImageArgFile",
+            "filePath": "spring-boot-project/spring-boot-tools/spring-boot-loader-tools/src/main/java/org/springframework/boot/loader/tools/Packager.java",
+            "startLine": 227,
+            "endLine": 257,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.loader.tools.Packager",
+            "type": "Method",
+            "name": "writeNativeImageArgFile",
+            "filePath": "spring-boot-project/spring-boot-tools/spring-boot-loader-tools/src/main/java/org/springframework/boot/loader/tools/Packager.java",
+            "startLine": 222,
+            "endLine": 245,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.loader.tools.Packager",
+            "type": "Class",
+            "name": "Packager",
+            "filePath": "spring-boot-project/spring-boot-tools/spring-boot-loader-tools/src/main/java/org/springframework/boot/loader/tools/Packager.java",
+            "startLine": 52,
+            "endLine": 585,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.loader.tools.Packager",
+            "type": "Class",
+            "name": "Packager",
+            "filePath": "spring-boot-project/spring-boot-tools/spring-boot-loader-tools/src/main/java/org/springframework/boot/loader/tools/Packager.java",
+            "startLine": 49,
+            "endLine": 573,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.gradle.tasks.bundling.BootZipCopyAction",
+            "type": "Field",
+            "name": "REACHABILITY_METADATA_PROPERTIES_LOCATION",
+            "filePath": "spring-boot-project/spring-boot-tools/spring-boot-gradle-plugin/src/main/java/org/springframework/boot/gradle/tasks/bundling/BootZipCopyAction.java",
+            "startLine": 79,
+            "endLine": 79,
+            "startColumn": 30,
+            "endColumn": 139
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.loader.tools.ReachabilityMetadataProperties",
+            "type": "Field",
+            "name": "REACHABILITY_METADATA_PROPERTIES_LOCATION_TEMPLATE",
+            "filePath": "spring-boot-project/spring-boot-tools/spring-boot-loader-tools/src/main/java/org/springframework/boot/loader/tools/ReachabilityMetadataProperties.java",
+            "startLine": 36,
+            "endLine": 36,
+            "startColumn": 29,
+            "endColumn": 147
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-boot.git",
+      "sha1": "2ceee789ce5ba271121704a90d87bba7610d10ab",
+      "url": "https://github.com/spring-projects/spring-boot/commit/2ceee789ce5ba271121704a90d87bba7610d10ab",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.tracing.zipkin.ZipkinConfigurations.RestTemplateSenderConfiguration",
+            "type": "Method",
+            "name": "restTemplateSender",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/tracing/zipkin/ZipkinConfigurations.java",
+            "startLine": 77,
+            "endLine": 85,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.tracing.zipkin.ZipkinConfigurations.RestTemplateSenderConfiguration",
+            "type": "Method",
+            "name": "restTemplateSender",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/tracing/zipkin/ZipkinConfigurations.java",
+            "startLine": 77,
+            "endLine": 85,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.tracing.zipkin.ZipkinConfigurations.RestTemplateSenderConfiguration",
+            "type": "Class",
+            "name": "RestTemplateSenderConfiguration",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/tracing/zipkin/ZipkinConfigurations.java",
+            "startLine": 72,
+            "endLine": 87,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.tracing.zipkin.ZipkinConfigurations.RestTemplateSenderConfiguration",
+            "type": "Class",
+            "name": "RestTemplateSenderConfiguration",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/tracing/zipkin/ZipkinConfigurations.java",
+            "startLine": 72,
+            "endLine": 98,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.tracing.zipkin.ZipkinConfigurations",
+            "type": "Class",
+            "name": "ZipkinConfigurations",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/tracing/zipkin/ZipkinConfigurations.java",
+            "startLine": 40,
+            "endLine": 143,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.tracing.zipkin.ZipkinConfigurations",
+            "type": "Class",
+            "name": "ZipkinConfigurations",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/tracing/zipkin/ZipkinConfigurations.java",
+            "startLine": 40,
+            "endLine": 154,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.tracing.zipkin.ZipkinRestTemplateBuilderCustomizer",
+            "type": "Interface",
+            "name": "ZipkinRestTemplateBuilderCustomizer",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/tracing/zipkin/ZipkinRestTemplateBuilderCustomizer.java",
+            "startLine": 21,
+            "endLine": 37,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.tracing.zipkin.ZipkinRestTemplateBuilderCustomizer",
+            "type": "Interface",
+            "name": "ZipkinRestTemplateBuilderCustomizer",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/tracing/zipkin/ZipkinRestTemplateBuilderCustomizer.java",
+            "startLine": 21,
+            "endLine": 38,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.tracing.zipkin.ZipkinConfigurationsSenderConfigurationTests.RestTemplateConfiguration",
+            "type": "Class",
+            "name": "RestTemplateConfiguration",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/tracing/zipkin/ZipkinConfigurationsSenderConfigurationTests.java",
+            "startLine": 142,
+            "endLine": 150,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.tracing.zipkin.ZipkinConfigurationsSenderConfigurationTests.RestTemplateConfiguration",
+            "type": "Class",
+            "name": "RestTemplateConfiguration",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/tracing/zipkin/ZipkinConfigurationsSenderConfigurationTests.java",
+            "startLine": 143,
+            "endLine": 151,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.tracing.zipkin.ZipkinConfigurationsSenderConfigurationTests",
+            "type": "Class",
+            "name": "ZipkinConfigurationsSenderConfigurationTests",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/tracing/zipkin/ZipkinConfigurationsSenderConfigurationTests.java",
+            "startLine": 38,
+            "endLine": 172,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.tracing.zipkin.ZipkinConfigurationsSenderConfigurationTests",
+            "type": "Class",
+            "name": "ZipkinConfigurationsSenderConfigurationTests",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/tracing/zipkin/ZipkinConfigurationsSenderConfigurationTests.java",
+            "startLine": 39,
+            "endLine": 182,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.tracing.zipkin.ZipkinRestTemplateBuilderCustomizer",
+            "type": "Method",
+            "name": "customize",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/tracing/zipkin/ZipkinRestTemplateBuilderCustomizer.java",
+            "startLine": 31,
+            "endLine": 35,
+            "startColumn": 2,
+            "endColumn": 58
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.tracing.zipkin.ZipkinConfigurationsSenderConfigurationTests.DummyZipkinRestTemplateBuilderCustomizer",
+            "type": "Method",
+            "name": "customize",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/tracing/zipkin/ZipkinConfigurationsSenderConfigurationTests.java",
+            "startLine": 175,
+            "endLine": 178,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": false
+        }
+      ],
+      "baseline": [
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.tracing.zipkin.ZipkinRestTemplateBuilderCustomizer",
+            "type": "Method",
+            "name": "customize",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/tracing/zipkin/ZipkinRestTemplateBuilderCustomizer.java",
+            "startLine": 31,
+            "endLine": 35,
+            "startColumn": 2,
+            "endColumn": 58
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.tracing.zipkin.ZipkinRestTemplateBuilderCustomizer",
+            "type": "Method",
+            "name": "customize",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/tracing/zipkin/ZipkinRestTemplateBuilderCustomizer.java",
+            "startLine": 31,
+            "endLine": 36,
+            "startColumn": 2,
+            "endColumn": 73
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-boot.git",
+      "sha1": "c93e248c46c2c4a7cef5596b23e54c715c52a204",
+      "url": "https://github.com/spring-projects/spring-boot/commit/c93e248c46c2c4a7cef5596b23e54c715c52a204",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontAutoConfiguration",
+            "type": "Method",
+            "name": "wavefrontApplicationTags",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/wavefront/WavefrontAutoConfiguration.java",
+            "startLine": 65,
+            "endLine": 76,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontAutoConfiguration",
+            "type": "Method",
+            "name": "wavefrontApplicationTags",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/wavefront/WavefrontAutoConfiguration.java",
+            "startLine": 66,
+            "endLine": 78,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontAutoConfiguration",
+            "type": "Class",
+            "name": "WavefrontAutoConfiguration",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/wavefront/WavefrontAutoConfiguration.java",
+            "startLine": 34,
+            "endLine": 82,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontAutoConfiguration",
+            "type": "Class",
+            "name": "WavefrontAutoConfiguration",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/wavefront/WavefrontAutoConfiguration.java",
+            "startLine": 35,
+            "endLine": 84,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontProperties",
+            "type": "Class",
+            "name": "WavefrontProperties",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/wavefront/WavefrontProperties.java",
+            "startLine": 29,
+            "endLine": 307,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontProperties",
+            "type": "Class",
+            "name": "WavefrontProperties",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/wavefront/WavefrontProperties.java",
+            "startLine": 29,
+            "endLine": 317,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.metrics.export.wavefront.WavefrontMetricsExportAutoConfigurationTests",
+            "type": "Method",
+            "name": "exportsApplicationTagsInWavefrontRegistryWhenInProperties",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/metrics/export/wavefront/WavefrontMetricsExportAutoConfigurationTests.java",
+            "startLine": 107,
+            "endLine": 121,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.metrics.export.wavefront.WavefrontMetricsExportAutoConfigurationTests",
+            "type": "Method",
+            "name": "exportsApplicationTagsInWavefrontRegistryWhenInProperties",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/metrics/export/wavefront/WavefrontMetricsExportAutoConfigurationTests.java",
+            "startLine": 107,
+            "endLine": 121,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.metrics.export.wavefront.WavefrontMetricsExportAutoConfigurationTests",
+            "type": "Class",
+            "name": "WavefrontMetricsExportAutoConfigurationTests",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/metrics/export/wavefront/WavefrontMetricsExportAutoConfigurationTests.java",
+            "startLine": 39,
+            "endLine": 197,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.metrics.export.wavefront.WavefrontMetricsExportAutoConfigurationTests",
+            "type": "Class",
+            "name": "WavefrontMetricsExportAutoConfigurationTests",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/metrics/export/wavefront/WavefrontMetricsExportAutoConfigurationTests.java",
+            "startLine": 39,
+            "endLine": 197,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.tracing.wavefront.WavefrontTracingAutoConfigurationTests",
+            "type": "Method",
+            "name": "shouldHonorConfigProperties",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/tracing/wavefront/WavefrontTracingAutoConfigurationTests.java",
+            "startLine": 138,
+            "endLine": 150,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.tracing.wavefront.WavefrontTracingAutoConfigurationTests",
+            "type": "Method",
+            "name": "shouldHonorConfigProperties",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/tracing/wavefront/WavefrontTracingAutoConfigurationTests.java",
+            "startLine": 138,
+            "endLine": 153,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.tracing.wavefront.WavefrontTracingAutoConfigurationTests",
+            "type": "Class",
+            "name": "WavefrontTracingAutoConfigurationTests",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/tracing/wavefront/WavefrontTracingAutoConfigurationTests.java",
+            "startLine": 39,
+            "endLine": 219,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.tracing.wavefront.WavefrontTracingAutoConfigurationTests",
+            "type": "Class",
+            "name": "WavefrontTracingAutoConfigurationTests",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/tracing/wavefront/WavefrontTracingAutoConfigurationTests.java",
+            "startLine": 39,
+            "endLine": 222,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontAutoConfigurationTests",
+            "type": "Method",
+            "name": "wavefrontApplicationTagsMapsProperties",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/wavefront/WavefrontAutoConfigurationTests.java",
+            "startLine": 51,
+            "endLine": 65,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontAutoConfigurationTests",
+            "type": "Method",
+            "name": "wavefrontApplicationTagsMapsProperties",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/wavefront/WavefrontAutoConfigurationTests.java",
+            "startLine": 51,
+            "endLine": 65,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontAutoConfigurationTests",
+            "type": "Class",
+            "name": "WavefrontAutoConfigurationTests",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/wavefront/WavefrontAutoConfigurationTests.java",
+            "startLine": 32,
+            "endLine": 96,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontAutoConfigurationTests",
+            "type": "Class",
+            "name": "WavefrontAutoConfigurationTests",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/wavefront/WavefrontAutoConfigurationTests.java",
+            "startLine": 32,
+            "endLine": 96,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontProperties",
+            "type": "Method",
+            "name": "getServiceName",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/wavefront/WavefrontProperties.java",
+            "startLine": 120,
+            "endLine": 122,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontProperties.Application",
+            "type": "Method",
+            "name": "getServiceName",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/wavefront/WavefrontProperties.java",
+            "startLine": 174,
+            "endLine": 176,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontProperties",
+            "type": "Method",
+            "name": "getClusterName",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/wavefront/WavefrontProperties.java",
+            "startLine": 136,
+            "endLine": 138,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontProperties.Application",
+            "type": "Method",
+            "name": "getClusterName",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/wavefront/WavefrontProperties.java",
+            "startLine": 190,
+            "endLine": 192,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontProperties",
+            "type": "Field",
+            "name": "serviceName",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/wavefront/WavefrontProperties.java",
+            "startLine": 66,
+            "endLine": 66,
+            "startColumn": 17,
+            "endColumn": 28
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontProperties.Application",
+            "type": "Field",
+            "name": "serviceName",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/wavefront/WavefrontProperties.java",
+            "startLine": 162,
+            "endLine": 162,
+            "startColumn": 18,
+            "endColumn": 29
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontProperties",
+            "type": "Field",
+            "name": "clusterName",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/wavefront/WavefrontProperties.java",
+            "startLine": 71,
+            "endLine": 71,
+            "startColumn": 17,
+            "endColumn": 28
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontProperties.Application",
+            "type": "Field",
+            "name": "clusterName",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/wavefront/WavefrontProperties.java",
+            "startLine": 167,
+            "endLine": 167,
+            "startColumn": 18,
+            "endColumn": 29
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontProperties",
+            "type": "Method",
+            "name": "setServiceName",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/wavefront/WavefrontProperties.java",
+            "startLine": 124,
+            "endLine": 126,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontProperties.Application",
+            "type": "Method",
+            "name": "setServiceName",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/wavefront/WavefrontProperties.java",
+            "startLine": 178,
+            "endLine": 180,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontProperties",
+            "type": "Field",
+            "name": "shardName",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/wavefront/WavefrontProperties.java",
+            "startLine": 76,
+            "endLine": 76,
+            "startColumn": 17,
+            "endColumn": 26
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontProperties.Application",
+            "type": "Field",
+            "name": "shardName",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/wavefront/WavefrontProperties.java",
+            "startLine": 172,
+            "endLine": 172,
+            "startColumn": 18,
+            "endColumn": 27
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontProperties",
+            "type": "Method",
+            "name": "setClusterName",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/wavefront/WavefrontProperties.java",
+            "startLine": 140,
+            "endLine": 142,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontProperties.Application",
+            "type": "Method",
+            "name": "setClusterName",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/wavefront/WavefrontProperties.java",
+            "startLine": 194,
+            "endLine": 196,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontProperties",
+            "type": "Method",
+            "name": "getShardName",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/wavefront/WavefrontProperties.java",
+            "startLine": 144,
+            "endLine": 146,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontProperties.Application",
+            "type": "Method",
+            "name": "getShardName",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/wavefront/WavefrontProperties.java",
+            "startLine": 198,
+            "endLine": 200,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontProperties",
+            "type": "Method",
+            "name": "setShardName",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/wavefront/WavefrontProperties.java",
+            "startLine": 148,
+            "endLine": 150,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontProperties.Application",
+            "type": "Method",
+            "name": "setShardName",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/wavefront/WavefrontProperties.java",
+            "startLine": 202,
+            "endLine": 204,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontProperties",
+            "type": "Field",
+            "name": "applicationName",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/wavefront/WavefrontProperties.java",
+            "startLine": 60,
+            "endLine": 60,
+            "startColumn": 17,
+            "endColumn": 32
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontProperties.Application",
+            "type": "Field",
+            "name": "name",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/wavefront/WavefrontProperties.java",
+            "startLine": 156,
+            "endLine": 156,
+            "startColumn": 18,
+            "endColumn": 22
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontProperties",
+            "type": "Method",
+            "name": "getApplicationName",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/wavefront/WavefrontProperties.java",
+            "startLine": 128,
+            "endLine": 130,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontProperties.Application",
+            "type": "Method",
+            "name": "getName",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/wavefront/WavefrontProperties.java",
+            "startLine": 182,
+            "endLine": 184,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-boot.git",
+      "sha1": "b9e57c73b54dbf7805c2edb3e1aef7c3bb0dcb2c",
+      "url": "https://github.com/spring-projects/spring-boot/commit/b9e57c73b54dbf7805c2edb3e1aef7c3bb0dcb2c",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.context.properties.bind.BindableRuntimeHintsRegistrar.Processor",
+            "type": "Method",
+            "name": "verifyParameterNamesAreAvailable",
+            "filePath": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/context/properties/bind/BindableRuntimeHintsRegistrar.java",
+            "startLine": 161,
+            "endLine": 166,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.context.properties.bind.BindableRuntimeHintsRegistrar.Processor",
+            "type": "Method",
+            "name": "verifyParameterNamesAreAvailable",
+            "filePath": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/context/properties/bind/BindableRuntimeHintsRegistrar.java",
+            "startLine": 173,
+            "endLine": 178,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.context.properties.bind.BindableRuntimeHintsRegistrar.Processor",
+            "type": "Class",
+            "name": "Processor",
+            "filePath": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/context/properties/bind/BindableRuntimeHintsRegistrar.java",
+            "startLine": 107,
+            "endLine": 291,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.context.properties.bind.BindableRuntimeHintsRegistrar.Processor",
+            "type": "Class",
+            "name": "Processor",
+            "filePath": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/context/properties/bind/BindableRuntimeHintsRegistrar.java",
+            "startLine": 110,
+            "endLine": 303,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.context.properties.bind.BindableRuntimeHintsRegistrar",
+            "type": "Class",
+            "name": "BindableRuntimeHintsRegistrar",
+            "filePath": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/context/properties/bind/BindableRuntimeHintsRegistrar.java",
+            "startLine": 44,
+            "endLine": 293,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.context.properties.bind.BindableRuntimeHintsRegistrar",
+            "type": "Class",
+            "name": "BindableRuntimeHintsRegistrar",
+            "filePath": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/context/properties/bind/BindableRuntimeHintsRegistrar.java",
+            "startLine": 47,
+            "endLine": 305,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.context.properties.bind.BindableRuntimeHintsRegistrar.Processor",
+            "type": "Field",
+            "name": "PARAMETER_NAME_DISCOVERER",
+            "filePath": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/context/properties/bind/BindableRuntimeHintsRegistrar.java",
+            "startLine": 112,
+            "endLine": 112,
+            "startColumn": 48,
+            "endColumn": 123
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.context.properties.bind.BindableRuntimeHintsRegistrar.Processor",
+            "type": "Field",
+            "name": "parameterNameDiscoverer",
+            "filePath": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/context/properties/bind/BindableRuntimeHintsRegistrar.java",
+            "startLine": 115,
+            "endLine": 115,
+            "startColumn": 48,
+            "endColumn": 71
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-boot.git",
+      "sha1": "a0f39d66feae7b03b5a6266cd37159672ca5fbdf",
+      "url": "https://github.com/spring-projects/spring-boot/commit/a0f39d66feae7b03b5a6266cd37159672ca5fbdf",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.metrics.export.wavefront.WavefrontMetricsExportAutoConfiguration",
+            "type": "Method",
+            "name": "asTag",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/metrics/export/wavefront/WavefrontMetricsExportAutoConfiguration.java",
+            "startLine": 86,
+            "endLine": 88,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.metrics.export.wavefront.WavefrontMetricsExportAutoConfiguration",
+            "type": "Method",
+            "name": "asTag",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/metrics/export/wavefront/WavefrontMetricsExportAutoConfiguration.java",
+            "startLine": 86,
+            "endLine": 88,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.metrics.export.wavefront.WavefrontMetricsExportAutoConfiguration",
+            "type": "Class",
+            "name": "WavefrontMetricsExportAutoConfiguration",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/metrics/export/wavefront/WavefrontMetricsExportAutoConfiguration.java",
+            "startLine": 45,
+            "endLine": 90,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.metrics.export.wavefront.WavefrontMetricsExportAutoConfiguration",
+            "type": "Class",
+            "name": "WavefrontMetricsExportAutoConfiguration",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/metrics/export/wavefront/WavefrontMetricsExportAutoConfiguration.java",
+            "startLine": 45,
+            "endLine": 90,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.tracing.wavefront.WavefrontTracingAutoConfiguration",
+            "type": "Class",
+            "name": "WavefrontTracingAutoConfiguration",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/tracing/wavefront/WavefrontTracingAutoConfiguration.java",
+            "startLine": 48,
+            "endLine": 162,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.tracing.wavefront.WavefrontTracingAutoConfiguration",
+            "type": "Class",
+            "name": "WavefrontTracingAutoConfiguration",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/tracing/wavefront/WavefrontTracingAutoConfiguration.java",
+            "startLine": 51,
+            "endLine": 163,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.metrics.export.wavefront.WavefrontMetricsExportAutoConfigurationTests",
+            "type": "Method",
+            "name": "exportsApplicationTagsInWavefrontRegistry",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/metrics/export/wavefront/WavefrontMetricsExportAutoConfigurationTests.java",
+            "startLine": 89,
+            "endLine": 105,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.metrics.export.wavefront.WavefrontMetricsExportAutoConfigurationTests",
+            "type": "Method",
+            "name": "exportsApplicationTagsInWavefrontRegistry",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/metrics/export/wavefront/WavefrontMetricsExportAutoConfigurationTests.java",
+            "startLine": 89,
+            "endLine": 104,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.metrics.export.wavefront.WavefrontMetricsExportAutoConfigurationTests",
+            "type": "Class",
+            "name": "WavefrontMetricsExportAutoConfigurationTests",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/metrics/export/wavefront/WavefrontMetricsExportAutoConfigurationTests.java",
+            "startLine": 38,
+            "endLine": 181,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.metrics.export.wavefront.WavefrontMetricsExportAutoConfigurationTests",
+            "type": "Class",
+            "name": "WavefrontMetricsExportAutoConfigurationTests",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/metrics/export/wavefront/WavefrontMetricsExportAutoConfigurationTests.java",
+            "startLine": 38,
+            "endLine": 180,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.metrics.export.wavefront.WavefrontMetricsExportAutoConfiguration",
+            "type": "Method",
+            "name": "applicationTagsCustomizer",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/metrics/export/wavefront/WavefrontMetricsExportAutoConfiguration.java",
+            "startLine": 78,
+            "endLine": 84,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.metrics.export.wavefront.WavefrontMetricsExportAutoConfiguration",
+            "type": "Method",
+            "name": "wavefrontApplicationTagsCustomizer",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/metrics/export/wavefront/WavefrontMetricsExportAutoConfiguration.java",
+            "startLine": 78,
+            "endLine": 84,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.tracing.wavefront.WavefrontTracingAutoConfiguration",
+            "type": "Field",
+            "name": "DEFAULT_WAVEFRONT_APPLICATION_NAME",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/tracing/wavefront/WavefrontTracingAutoConfiguration.java",
+            "startLine": 68,
+            "endLine": 68,
+            "startColumn": 30,
+            "endColumn": 88
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.tracing.wavefront.WavefrontTracingAutoConfiguration",
+            "type": "Field",
+            "name": "DEFAULT_APPLICATION_NAME",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/tracing/wavefront/WavefrontTracingAutoConfiguration.java",
+            "startLine": 71,
+            "endLine": 71,
+            "startColumn": 30,
+            "endColumn": 78
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.tracing.wavefront.WavefrontTracingAutoConfiguration",
+            "type": "Field",
+            "name": "DEFAULT_WAVEFRONT_SERVICE_NAME",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/tracing/wavefront/WavefrontTracingAutoConfiguration.java",
+            "startLine": 77,
+            "endLine": 77,
+            "startColumn": 30,
+            "endColumn": 80
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.tracing.wavefront.WavefrontTracingAutoConfiguration",
+            "type": "Field",
+            "name": "DEFAULT_SERVICE_NAME",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/tracing/wavefront/WavefrontTracingAutoConfiguration.java",
+            "startLine": 80,
+            "endLine": 80,
+            "startColumn": 30,
+            "endColumn": 70
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.tracing.wavefront.WavefrontTracingAutoConfiguration",
+            "type": "Method",
+            "name": "applicationTags",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/tracing/wavefront/WavefrontTracingAutoConfiguration.java",
+            "startLine": 79,
+            "endLine": 97,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.tracing.wavefront.WavefrontTracingAutoConfiguration",
+            "type": "Method",
+            "name": "wavefrontApplicationTags",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/tracing/wavefront/WavefrontTracingAutoConfiguration.java",
+            "startLine": 82,
+            "endLine": 94,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-boot.git",
+      "sha1": "2baac78175257d05cdef5bd23d3ed977759cc3e0",
+      "url": "https://github.com/spring-projects/spring-boot/commit/2baac78175257d05cdef5bd23d3ed977759cc3e0",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.web.client.ClientHttpRequestFactoriesRuntimeHints",
+            "type": "Method",
+            "name": "registerHints",
+            "filePath": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/web/client/ClientHttpRequestFactoriesRuntimeHints.java",
+            "startLine": 53,
+            "endLine": 62,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.web.client.ClientHttpRequestFactoriesRuntimeHints",
+            "type": "Method",
+            "name": "registerHints",
+            "filePath": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/web/client/ClientHttpRequestFactoriesRuntimeHints.java",
+            "startLine": 52,
+            "endLine": 66,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.web.client.ClientHttpRequestFactoriesRuntimeHints",
+            "type": "Class",
+            "name": "ClientHttpRequestFactoriesRuntimeHints",
+            "filePath": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/web/client/ClientHttpRequestFactoriesRuntimeHints.java",
+            "startLine": 38,
+            "endLine": 92,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.web.client.ClientHttpRequestFactoriesRuntimeHints",
+            "type": "Class",
+            "name": "ClientHttpRequestFactoriesRuntimeHints",
+            "filePath": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/web/client/ClientHttpRequestFactoriesRuntimeHints.java",
+            "startLine": 37,
+            "endLine": 89,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.web.client.ClientHttpRequestFactoriesRuntimeHintsTests",
+            "type": "Method",
+            "name": "shouldRegisterHints",
+            "filePath": "spring-boot-project/spring-boot/src/test/java/org/springframework/boot/web/client/ClientHttpRequestFactoriesRuntimeHintsTests.java",
+            "startLine": 39,
+            "endLine": 47,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.web.client.ClientHttpRequestFactoriesRuntimeHintsTests",
+            "type": "Method",
+            "name": "shouldRegisterHints",
+            "filePath": "spring-boot-project/spring-boot/src/test/java/org/springframework/boot/web/client/ClientHttpRequestFactoriesRuntimeHintsTests.java",
+            "startLine": 43,
+            "endLine": 52,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.web.client.ClientHttpRequestFactoriesRuntimeHintsTests",
+            "type": "Method",
+            "name": "shouldRegisterHttpComponentHints",
+            "filePath": "spring-boot-project/spring-boot/src/test/java/org/springframework/boot/web/client/ClientHttpRequestFactoriesRuntimeHintsTests.java",
+            "startLine": 49,
+            "endLine": 61,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.web.client.ClientHttpRequestFactoriesRuntimeHintsTests",
+            "type": "Method",
+            "name": "shouldRegisterHttpComponentHints",
+            "filePath": "spring-boot-project/spring-boot/src/test/java/org/springframework/boot/web/client/ClientHttpRequestFactoriesRuntimeHintsTests.java",
+            "startLine": 54,
+            "endLine": 68,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.web.client.ClientHttpRequestFactoriesRuntimeHintsTests",
+            "type": "Method",
+            "name": "shouldRegisterOkHttpHints",
+            "filePath": "spring-boot-project/spring-boot/src/test/java/org/springframework/boot/web/client/ClientHttpRequestFactoriesRuntimeHintsTests.java",
+            "startLine": 63,
+            "endLine": 74,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.web.client.ClientHttpRequestFactoriesRuntimeHintsTests",
+            "type": "Method",
+            "name": "shouldRegisterOkHttpHints",
+            "filePath": "spring-boot-project/spring-boot/src/test/java/org/springframework/boot/web/client/ClientHttpRequestFactoriesRuntimeHintsTests.java",
+            "startLine": 70,
+            "endLine": 80,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.web.client.ClientHttpRequestFactoriesRuntimeHintsTests",
+            "type": "Method",
+            "name": "shouldRegisterSimpleHttpHints",
+            "filePath": "spring-boot-project/spring-boot/src/test/java/org/springframework/boot/web/client/ClientHttpRequestFactoriesRuntimeHintsTests.java",
+            "startLine": 76,
+            "endLine": 89,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.web.client.ClientHttpRequestFactoriesRuntimeHintsTests",
+            "type": "Method",
+            "name": "shouldRegisterSimpleHttpHints",
+            "filePath": "spring-boot-project/spring-boot/src/test/java/org/springframework/boot/web/client/ClientHttpRequestFactoriesRuntimeHintsTests.java",
+            "startLine": 82,
+            "endLine": 94,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.web.client.ClientHttpRequestFactoriesRuntimeHintsTests",
+            "type": "Class",
+            "name": "ClientHttpRequestFactoriesRuntimeHintsTests",
+            "filePath": "spring-boot-project/spring-boot/src/test/java/org/springframework/boot/web/client/ClientHttpRequestFactoriesRuntimeHintsTests.java",
+            "startLine": 32,
+            "endLine": 91,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.web.client.ClientHttpRequestFactoriesRuntimeHintsTests",
+            "type": "Class",
+            "name": "ClientHttpRequestFactoriesRuntimeHintsTests",
+            "filePath": "spring-boot-project/spring-boot/src/test/java/org/springframework/boot/web/client/ClientHttpRequestFactoriesRuntimeHintsTests.java",
+            "startLine": 35,
+            "endLine": 102,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.web.client.ClientHttpRequestFactoriesRuntimeHints",
+            "type": "Method",
+            "name": "registerReflectionHints",
+            "filePath": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/web/client/ClientHttpRequestFactoriesRuntimeHints.java",
+            "startLine": 76,
+            "endLine": 84,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.web.client.ClientHttpRequestFactoriesRuntimeHints",
+            "type": "Method",
+            "name": "registerReflectionHints",
+            "filePath": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/web/client/ClientHttpRequestFactoriesRuntimeHints.java",
+            "startLine": 68,
+            "endLine": 73,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-boot.git",
+      "sha1": "fe72f307f4f3e94c79e253f223ba3d5d4ef1def3",
+      "url": "https://github.com/spring-projects/spring-boot/commit/fe72f307f4f3e94c79e253f223ba3d5d4ef1def3",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.endpoint.web.reactive.WebFluxEndpointManagementContextConfiguration.ServerCodecConfigurerEndpointObjectMapperBeanPostProcessor",
+            "type": "Method",
+            "name": "process",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/endpoint/web/reactive/WebFluxEndpointManagementContextConfiguration.java",
+            "startLine": 172,
+            "endLine": 180,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.endpoint.web.reactive.WebFluxEndpointManagementContextConfiguration.ServerCodecConfigurerEndpointObjectMapperBeanPostProcessor",
+            "type": "Method",
+            "name": "process",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/endpoint/web/reactive/WebFluxEndpointManagementContextConfiguration.java",
+            "startLine": 177,
+            "endLine": 185,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.endpoint.web.reactive.WebFluxEndpointManagementContextConfiguration.ServerCodecConfigurerEndpointObjectMapperBeanPostProcessor",
+            "type": "Class",
+            "name": "ServerCodecConfigurerEndpointObjectMapperBeanPostProcessor",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/endpoint/web/reactive/WebFluxEndpointManagementContextConfiguration.java",
+            "startLine": 141,
+            "endLine": 182,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.endpoint.web.reactive.WebFluxEndpointManagementContextConfiguration.ServerCodecConfigurerEndpointObjectMapperBeanPostProcessor",
+            "type": "Class",
+            "name": "ServerCodecConfigurerEndpointObjectMapperBeanPostProcessor",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/endpoint/web/reactive/WebFluxEndpointManagementContextConfiguration.java",
+            "startLine": 145,
+            "endLine": 187,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.endpoint.web.reactive.WebFluxEndpointManagementContextConfiguration",
+            "type": "Class",
+            "name": "WebFluxEndpointManagementContextConfiguration",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/endpoint/web/reactive/WebFluxEndpointManagementContextConfiguration.java",
+            "startLine": 72,
+            "endLine": 184,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.endpoint.web.reactive.WebFluxEndpointManagementContextConfiguration",
+            "type": "Class",
+            "name": "WebFluxEndpointManagementContextConfiguration",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/endpoint/web/reactive/WebFluxEndpointManagementContextConfiguration.java",
+            "startLine": 75,
+            "endLine": 189,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.metrics.MeterRegistryPostProcessor",
+            "type": "Method",
+            "name": "addToGlobalRegistryIfNecessary",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/metrics/MeterRegistryPostProcessor.java",
+            "startLine": 123,
+            "endLine": 127,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.metrics.MeterRegistryPostProcessor",
+            "type": "Method",
+            "name": "addToGlobalRegistryIfNecessary",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/metrics/MeterRegistryPostProcessor.java",
+            "startLine": 122,
+            "endLine": 126,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.metrics.MeterRegistryPostProcessor",
+            "type": "Class",
+            "name": "MeterRegistryPostProcessor",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/metrics/MeterRegistryPostProcessor.java",
+            "startLine": 36,
+            "endLine": 153,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.metrics.MeterRegistryPostProcessor",
+            "type": "Class",
+            "name": "MeterRegistryPostProcessor",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/metrics/MeterRegistryPostProcessor.java",
+            "startLine": 36,
+            "endLine": 152,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.metrics.MetricsAutoConfiguration",
+            "type": "Class",
+            "name": "MetricsAutoConfiguration",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/metrics/MetricsAutoConfiguration.java",
+            "startLine": 34,
+            "endLine": 66,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.metrics.MetricsAutoConfiguration",
+            "type": "Class",
+            "name": "MetricsAutoConfiguration",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/metrics/MetricsAutoConfiguration.java",
+            "startLine": 34,
+            "endLine": 67,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.metrics.MeterRegistryPostProcessorTests",
+            "type": "Method",
+            "name": "postProcessAndInitializeWhenCompositeAppliesCustomizer",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/metrics/MeterRegistryPostProcessorTests.java",
+            "startLine": 72,
+            "endLine": 81,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.metrics.MeterRegistryPostProcessorTests",
+            "type": "Method",
+            "name": "postProcessAndInitializeWhenCompositeAppliesCustomizer",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/metrics/MeterRegistryPostProcessorTests.java",
+            "startLine": 78,
+            "endLine": 87,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.metrics.MeterRegistryPostProcessorTests",
+            "type": "Method",
+            "name": "postProcessAndInitializeAppliesCustomizer",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/metrics/MeterRegistryPostProcessorTests.java",
+            "startLine": 83,
+            "endLine": 92,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.metrics.MeterRegistryPostProcessorTests",
+            "type": "Method",
+            "name": "postProcessAndInitializeAppliesCustomizer",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/metrics/MeterRegistryPostProcessorTests.java",
+            "startLine": 89,
+            "endLine": 98,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.metrics.MeterRegistryPostProcessorTests",
+            "type": "Method",
+            "name": "postProcessAndInitializeAppliesFilter",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/metrics/MeterRegistryPostProcessorTests.java",
+            "startLine": 94,
+            "endLine": 103,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.metrics.MeterRegistryPostProcessorTests",
+            "type": "Method",
+            "name": "postProcessAndInitializeAppliesFilter",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/metrics/MeterRegistryPostProcessorTests.java",
+            "startLine": 100,
+            "endLine": 109,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.metrics.MeterRegistryPostProcessorTests",
+            "type": "Method",
+            "name": "postProcessAndInitializeBindsTo",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/metrics/MeterRegistryPostProcessorTests.java",
+            "startLine": 105,
+            "endLine": 114,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.metrics.MeterRegistryPostProcessorTests",
+            "type": "Method",
+            "name": "postProcessAndInitializeBindsTo",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/metrics/MeterRegistryPostProcessorTests.java",
+            "startLine": 111,
+            "endLine": 120,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.metrics.MeterRegistryPostProcessorTests",
+            "type": "Method",
+            "name": "postProcessAndInitializeWhenCompositeBindsTo",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/metrics/MeterRegistryPostProcessorTests.java",
+            "startLine": 116,
+            "endLine": 125,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.metrics.MeterRegistryPostProcessorTests",
+            "type": "Method",
+            "name": "postProcessAndInitializeWhenCompositeBindsTo",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/metrics/MeterRegistryPostProcessorTests.java",
+            "startLine": 122,
+            "endLine": 131,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.metrics.MeterRegistryPostProcessorTests",
+            "type": "Method",
+            "name": "postProcessAndInitializeWhenCompositeExistsDoesNotBindTo",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/metrics/MeterRegistryPostProcessorTests.java",
+            "startLine": 127,
+            "endLine": 134,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.metrics.MeterRegistryPostProcessorTests",
+            "type": "Method",
+            "name": "postProcessAndInitializeWhenCompositeExistsDoesNotBindTo",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/metrics/MeterRegistryPostProcessorTests.java",
+            "startLine": 133,
+            "endLine": 141,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.metrics.MeterRegistryPostProcessorTests",
+            "type": "Method",
+            "name": "postProcessAndInitializeBeOrderedCustomizerThenFilterThenBindTo",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/metrics/MeterRegistryPostProcessorTests.java",
+            "startLine": 136,
+            "endLine": 150,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.metrics.MeterRegistryPostProcessorTests",
+            "type": "Method",
+            "name": "postProcessAndInitializeBeOrderedCustomizerThenFilterThenBindTo",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/metrics/MeterRegistryPostProcessorTests.java",
+            "startLine": 143,
+            "endLine": 157,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.metrics.MeterRegistryPostProcessorTests",
+            "type": "Method",
+            "name": "postProcessAndInitializeWhenUseGlobalRegistryTrueAddsToGlobalRegistry",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/metrics/MeterRegistryPostProcessorTests.java",
+            "startLine": 152,
+            "endLine": 165,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.metrics.MeterRegistryPostProcessorTests",
+            "type": "Method",
+            "name": "postProcessAndInitializeWhenUseGlobalRegistryTrueAddsToGlobalRegistry",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/metrics/MeterRegistryPostProcessorTests.java",
+            "startLine": 159,
+            "endLine": 173,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.metrics.MeterRegistryPostProcessorTests",
+            "type": "Method",
+            "name": "postProcessAndInitializeWhenUseGlobalRegistryFalseDoesNotAddToGlobalRegistry",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/metrics/MeterRegistryPostProcessorTests.java",
+            "startLine": 167,
+            "endLine": 175,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.metrics.MeterRegistryPostProcessorTests",
+            "type": "Method",
+            "name": "postProcessAndInitializeWhenUseGlobalRegistryFalseDoesNotAddToGlobalRegistry",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/metrics/MeterRegistryPostProcessorTests.java",
+            "startLine": 175,
+            "endLine": 183,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.metrics.MeterRegistryPostProcessorTests",
+            "type": "Method",
+            "name": "postProcessDoesNotBindToUntilSingletonsInitialized",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/metrics/MeterRegistryPostProcessorTests.java",
+            "startLine": 177,
+            "endLine": 188,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.metrics.MeterRegistryPostProcessorTests",
+            "type": "Method",
+            "name": "postProcessDoesNotBindToUntilSingletonsInitialized",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/metrics/MeterRegistryPostProcessorTests.java",
+            "startLine": 185,
+            "endLine": 196,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.metrics.MeterRegistryPostProcessorTests",
+            "type": "Class",
+            "name": "MeterRegistryPostProcessorTests",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/metrics/MeterRegistryPostProcessorTests.java",
+            "startLine": 42,
+            "endLine": 202,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.metrics.MeterRegistryPostProcessorTests",
+            "type": "Class",
+            "name": "MeterRegistryPostProcessorTests",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/metrics/MeterRegistryPostProcessorTests.java",
+            "startLine": 42,
+            "endLine": 217,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.endpoint.web.reactive.WebFluxEndpointManagementContextConfiguration.ServerCodecConfigurerEndpointObjectMapperBeanPostProcessor",
+            "type": "Field",
+            "name": "endpointObjectMapper",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/endpoint/web/reactive/WebFluxEndpointManagementContextConfiguration.java",
+            "startLine": 150,
+            "endLine": 150,
+            "startColumn": 38,
+            "endColumn": 58
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.endpoint.web.reactive.WebFluxEndpointManagementContextConfiguration.ServerCodecConfigurerEndpointObjectMapperBeanPostProcessor",
+            "type": "Field",
+            "name": "endpointObjectMapper",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/endpoint/web/reactive/WebFluxEndpointManagementContextConfiguration.java",
+            "startLine": 154,
+            "endLine": 154,
+            "startColumn": 48,
+            "endColumn": 68
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.metrics.MeterRegistryPostProcessor",
+            "type": "Method",
+            "name": "MeterRegistryPostProcessor",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/metrics/MeterRegistryPostProcessor.java",
+            "startLine": 59,
+            "endLine": 64,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.metrics.MeterRegistryPostProcessor",
+            "type": "Method",
+            "name": "MeterRegistryPostProcessor",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/metrics/MeterRegistryPostProcessor.java",
+            "startLine": 59,
+            "endLine": 63,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.metrics.MeterRegistryPostProcessor",
+            "type": "Method",
+            "name": "MeterRegistryPostProcessor",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/metrics/MeterRegistryPostProcessor.java",
+            "startLine": 70,
+            "endLine": 79,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.metrics.MeterRegistryPostProcessor",
+            "type": "Method",
+            "name": "MeterRegistryPostProcessor",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/metrics/MeterRegistryPostProcessor.java",
+            "startLine": 69,
+            "endLine": 78,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.metrics.MeterRegistryPostProcessor",
+            "type": "Field",
+            "name": "useGlobalRegistry",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/metrics/MeterRegistryPostProcessor.java",
+            "startLine": 47,
+            "endLine": 47,
+            "startColumn": 24,
+            "endColumn": 41
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.metrics.MeterRegistryPostProcessor",
+            "type": "Field",
+            "name": "properties",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/metrics/MeterRegistryPostProcessor.java",
+            "startLine": 47,
+            "endLine": 47,
+            "startColumn": 50,
+            "endColumn": 60
+          },
+          "developerConfirmation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.metrics.MetricsAutoConfiguration",
+            "type": "Method",
+            "name": "meterRegistryPostProcessor",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/metrics/MetricsAutoConfiguration.java",
+            "startLine": 52,
+            "endLine": 58,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.metrics.MetricsAutoConfiguration",
+            "type": "Method",
+            "name": "meterRegistryPostProcessor",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/metrics/MetricsAutoConfiguration.java",
+            "startLine": 52,
+            "endLine": 59,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.endpoint.web.reactive.WebFluxEndpointManagementContextConfiguration.ServerCodecConfigurerEndpointObjectMapperBeanPostProcessor",
+            "type": "Method",
+            "name": "ServerCodecConfigurerEndpointObjectMapperBeanPostProcessor",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/endpoint/web/reactive/WebFluxEndpointManagementContextConfiguration.java",
+            "startLine": 152,
+            "endLine": 154,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.endpoint.web.reactive.WebFluxEndpointManagementContextConfiguration.ServerCodecConfigurerEndpointObjectMapperBeanPostProcessor",
+            "type": "Method",
+            "name": "ServerCodecConfigurerEndpointObjectMapperBeanPostProcessor",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/endpoint/web/reactive/WebFluxEndpointManagementContextConfiguration.java",
+            "startLine": 156,
+            "endLine": 159,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.endpoint.web.reactive.WebFluxEndpointManagementContextConfiguration",
+            "type": "Method",
+            "name": "serverCodecConfigurerEndpointObjectMapperBeanPostProcessor",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/endpoint/web/reactive/WebFluxEndpointManagementContextConfiguration.java",
+            "startLine": 133,
+            "endLine": 139,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.endpoint.web.reactive.WebFluxEndpointManagementContextConfiguration",
+            "type": "Method",
+            "name": "serverCodecConfigurerEndpointObjectMapperBeanPostProcessor",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/endpoint/web/reactive/WebFluxEndpointManagementContextConfiguration.java",
+            "startLine": 136,
+            "endLine": 143,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-boot.git",
+      "sha1": "6e4bece9120c798716ece2e64f1bff8183974f4d",
+      "url": "https://github.com/spring-projects/spring-boot/commit/6e4bece9120c798716ece2e64f1bff8183974f4d",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.tracing.OpenTelemetryAutoConfiguration",
+            "type": "Method",
+            "name": "micrometerOtelTracer",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/tracing/OpenTelemetryAutoConfiguration.java",
+            "startLine": 137,
+            "endLine": 144,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.tracing.OpenTelemetryAutoConfiguration",
+            "type": "Method",
+            "name": "micrometerOtelTracer",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/tracing/OpenTelemetryAutoConfiguration.java",
+            "startLine": 137,
+            "endLine": 144,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.tracing.OpenTelemetryAutoConfiguration",
+            "type": "Class",
+            "name": "OpenTelemetryAutoConfiguration",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/tracing/OpenTelemetryAutoConfiguration.java",
+            "startLine": 69,
+            "endLine": 262,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.tracing.OpenTelemetryAutoConfiguration",
+            "type": "Class",
+            "name": "OpenTelemetryAutoConfiguration",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/tracing/OpenTelemetryAutoConfiguration.java",
+            "startLine": 69,
+            "endLine": 262,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.tracing.OpenTelemetryAutoConfigurationTests",
+            "type": "Method",
+            "name": "shouldBackOffOnCustomBeans",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/tracing/OpenTelemetryAutoConfigurationTests.java",
+            "startLine": 106,
+            "endLine": 136,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.tracing.OpenTelemetryAutoConfigurationTests",
+            "type": "Method",
+            "name": "shouldBackOffOnCustomBeans",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/tracing/OpenTelemetryAutoConfigurationTests.java",
+            "startLine": 106,
+            "endLine": 136,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.tracing.OpenTelemetryAutoConfigurationTests.CustomConfiguration",
+            "type": "Class",
+            "name": "CustomConfiguration",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/tracing/OpenTelemetryAutoConfigurationTests.java",
+            "startLine": 200,
+            "endLine": 278,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.tracing.OpenTelemetryAutoConfigurationTests.CustomConfiguration",
+            "type": "Class",
+            "name": "CustomConfiguration",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/tracing/OpenTelemetryAutoConfigurationTests.java",
+            "startLine": 200,
+            "endLine": 278,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.tracing.OpenTelemetryAutoConfigurationTests",
+            "type": "Class",
+            "name": "OpenTelemetryAutoConfigurationTests",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/tracing/OpenTelemetryAutoConfigurationTests.java",
+            "startLine": 52,
+            "endLine": 280,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.tracing.OpenTelemetryAutoConfigurationTests",
+            "type": "Class",
+            "name": "OpenTelemetryAutoConfigurationTests",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/tracing/OpenTelemetryAutoConfigurationTests.java",
+            "startLine": 52,
+            "endLine": 280,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [],
+      "baseline": [
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.tracing.OpenTelemetryAutoConfigurationTests.CustomConfiguration",
+            "type": "Method",
+            "name": "customOtelTracer",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/tracing/OpenTelemetryAutoConfigurationTests.java",
+            "startLine": 203,
+            "endLine": 206,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.tracing.OpenTelemetryAutoConfigurationTests.CustomConfiguration",
+            "type": "Method",
+            "name": "customMicrometerTracer",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/tracing/OpenTelemetryAutoConfigurationTests.java",
+            "startLine": 203,
+            "endLine": 206,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-boot.git",
+      "sha1": "0d5c13cb28e73be41ef80263d8648608d2266e54",
+      "url": "https://github.com/spring-projects/spring-boot/commit/0d5c13cb28e73be41ef80263d8648608d2266e54",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration",
+            "type": "Class",
+            "name": "JacksonAutoConfiguration",
+            "filePath": "spring-boot-project/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/jackson/JacksonAutoConfiguration.java",
+            "startLine": 62,
+            "endLine": 345,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration",
+            "type": "Class",
+            "name": "JacksonAutoConfiguration",
+            "filePath": "spring-boot-project/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/jackson/JacksonAutoConfiguration.java",
+            "startLine": 67,
+            "endLine": 383,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.autoconfigure.jackson.JacksonAutoConfigurationTests",
+            "type": "Class",
+            "name": "JacksonAutoConfigurationTests",
+            "filePath": "spring-boot-project/spring-boot-autoconfigure/src/test/java/org/springframework/boot/autoconfigure/jackson/JacksonAutoConfigurationTests.java",
+            "startLine": 74,
+            "endLine": 689,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.autoconfigure.jackson.JacksonAutoConfigurationTests",
+            "type": "Class",
+            "name": "JacksonAutoConfigurationTests",
+            "filePath": "spring-boot-project/spring-boot-autoconfigure/src/test/java/org/springframework/boot/autoconfigure/jackson/JacksonAutoConfigurationTests.java",
+            "startLine": 81,
+            "endLine": 713,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.autoconfigure.jackson.JacksonRuntimeHintsTests",
+            "type": "Method",
+            "name": "shouldRegisterFieldHintsFor",
+            "filePath": "spring-boot-project/spring-boot-autoconfigure/src/test/java/org/springframework/boot/autoconfigure/jackson/JacksonRuntimeHintsTests.java",
+            "startLine": 32,
+            "endLine": 39,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.autoconfigure.jackson.JacksonAutoConfigurationTests",
+            "type": "Method",
+            "name": "shouldRegisterPropertyNamingStrategyHints",
+            "filePath": "spring-boot-project/spring-boot-autoconfigure/src/test/java/org/springframework/boot/autoconfigure/jackson/JacksonAutoConfigurationTests.java",
+            "startLine": 475,
+            "endLine": 481,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.autoconfigure.jackson.JacksonRuntimeHints",
+            "type": "Method",
+            "name": "registerHints",
+            "filePath": "spring-boot-project/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/jackson/JacksonRuntimeHints.java",
+            "startLine": 34,
+            "endLine": 39,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration.JacksonAutoConfigurationRuntimeHints",
+            "type": "Method",
+            "name": "registerHints",
+            "filePath": "spring-boot-project/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/jackson/JacksonAutoConfiguration.java",
+            "startLine": 353,
+            "endLine": 358,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.autoconfigure.jackson.JacksonRuntimeHints",
+            "type": "Method",
+            "name": "registerHints",
+            "filePath": "spring-boot-project/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/jackson/JacksonRuntimeHints.java",
+            "startLine": 41,
+            "endLine": 52,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration.JacksonAutoConfigurationRuntimeHints",
+            "type": "Method",
+            "name": "registerPropertyNamingStrategyHints",
+            "filePath": "spring-boot-project/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/jackson/JacksonAutoConfiguration.java",
+            "startLine": 360,
+            "endLine": 369,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.autoconfigure.jackson.JacksonRuntimeHintsTests",
+            "type": "Method",
+            "name": "shouldRegisterHints",
+            "filePath": "spring-boot-project/spring-boot-autoconfigure/src/test/java/org/springframework/boot/autoconfigure/jackson/JacksonRuntimeHintsTests.java",
+            "startLine": 16,
+            "endLine": 22,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.autoconfigure.jackson.JacksonAutoConfigurationTests",
+            "type": "Method",
+            "name": "shouldRegisterPropertyNamingStrategyHints",
+            "filePath": "spring-boot-project/spring-boot-autoconfigure/src/test/java/org/springframework/boot/autoconfigure/jackson/JacksonAutoConfigurationTests.java",
+            "startLine": 467,
+            "endLine": 473,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.autoconfigure.jackson.JacksonRuntimeHints",
+            "type": "Class",
+            "name": "JacksonRuntimeHints",
+            "filePath": "spring-boot-project/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/jackson/JacksonRuntimeHints.java",
+            "startLine": 14,
+            "endLine": 54,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration.JacksonAutoConfigurationRuntimeHints",
+            "type": "Class",
+            "name": "JacksonAutoConfigurationRuntimeHints",
+            "filePath": "spring-boot-project/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/jackson/JacksonAutoConfiguration.java",
+            "startLine": 351,
+            "endLine": 381,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-boot.git",
+      "sha1": "b67c4272593d755ef294b9ee1a4f83bd6dfb9bfb",
+      "url": "https://github.com/spring-projects/spring-boot/commit/b67c4272593d755ef294b9ee1a4f83bd6dfb9bfb",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.metrics.web.jetty.JettyMetricsAutoConfigurationTests",
+            "type": "Class",
+            "name": "JettyMetricsAutoConfigurationTests",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/metrics/web/jetty/JettyMetricsAutoConfigurationTests.java",
+            "startLine": 46,
+            "endLine": 278,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.actuate.autoconfigure.metrics.web.jetty.JettyMetricsAutoConfigurationTests",
+            "type": "Class",
+            "name": "JettyMetricsAutoConfigurationTests",
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/metrics/web/jetty/JettyMetricsAutoConfigurationTests.java",
+            "startLine": 47,
+            "endLine": 280,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.autoconfigure.web.ServerPropertiesTests",
+            "type": "Method",
+            "name": "jettyThreadPoolPropertyDefaultsShouldMatchServerDefault",
+            "filePath": "spring-boot-project/spring-boot-autoconfigure/src/test/java/org/springframework/boot/autoconfigure/web/ServerPropertiesTests.java",
+            "startLine": 460,
+            "endLine": 472,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.autoconfigure.web.ServerPropertiesTests",
+            "type": "Method",
+            "name": "jettyThreadPoolPropertyDefaultsShouldMatchServerDefault",
+            "filePath": "spring-boot-project/spring-boot-autoconfigure/src/test/java/org/springframework/boot/autoconfigure/web/ServerPropertiesTests.java",
+            "startLine": 463,
+            "endLine": 476,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.autoconfigure.web.ServerPropertiesTests",
+            "type": "Method",
+            "name": "jettyMaxHttpFormPostSizeMatchesDefault",
+            "filePath": "spring-boot-project/spring-boot-autoconfigure/src/test/java/org/springframework/boot/autoconfigure/web/ServerPropertiesTests.java",
+            "startLine": 474,
+            "endLine": 528,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.autoconfigure.web.ServerPropertiesTests",
+            "type": "Method",
+            "name": "jettyMaxHttpFormPostSizeMatchesDefault",
+            "filePath": "spring-boot-project/spring-boot-autoconfigure/src/test/java/org/springframework/boot/autoconfigure/web/ServerPropertiesTests.java",
+            "startLine": 478,
+            "endLine": 533,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.autoconfigure.web.ServerPropertiesTests",
+            "type": "Class",
+            "name": "ServerPropertiesTests",
+            "filePath": "spring-boot-project/spring-boot-autoconfigure/src/test/java/org/springframework/boot/autoconfigure/web/ServerPropertiesTests.java",
+            "startLine": 71,
+            "endLine": 585,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.autoconfigure.web.ServerPropertiesTests",
+            "type": "Class",
+            "name": "ServerPropertiesTests",
+            "filePath": "spring-boot-project/spring-boot-autoconfigure/src/test/java/org/springframework/boot/autoconfigure/web/ServerPropertiesTests.java",
+            "startLine": 73,
+            "endLine": 590,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.autoconfigure.web.embedded.JettyWebServerFactoryCustomizerTests",
+            "type": "Class",
+            "name": "JettyWebServerFactoryCustomizerTests",
+            "filePath": "spring-boot-project/spring-boot-autoconfigure/src/test/java/org/springframework/boot/autoconfigure/web/embedded/JettyWebServerFactoryCustomizerTests.java",
+            "startLine": 59,
+            "endLine": 339,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.autoconfigure.web.embedded.JettyWebServerFactoryCustomizerTests",
+            "type": "Class",
+            "name": "JettyWebServerFactoryCustomizerTests",
+            "filePath": "spring-boot-project/spring-boot-autoconfigure/src/test/java/org/springframework/boot/autoconfigure/web/embedded/JettyWebServerFactoryCustomizerTests.java",
+            "startLine": 61,
+            "endLine": 343,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.autoconfigure.web.reactive.ReactiveWebServerFactoryAutoConfigurationTests",
+            "type": "Method",
+            "name": "jettyServerCustomizerBeanIsAddedToFactory",
+            "filePath": "spring-boot-project/spring-boot-autoconfigure/src/test/java/org/springframework/boot/autoconfigure/web/reactive/ReactiveWebServerFactoryAutoConfigurationTests.java",
+            "startLine": 217,
+            "endLine": 227,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.autoconfigure.web.reactive.ReactiveWebServerFactoryAutoConfigurationTests",
+            "type": "Method",
+            "name": "jettyServerCustomizerBeanIsAddedToFactory",
+            "filePath": "spring-boot-project/spring-boot-autoconfigure/src/test/java/org/springframework/boot/autoconfigure/web/reactive/ReactiveWebServerFactoryAutoConfigurationTests.java",
+            "startLine": 220,
+            "endLine": 231,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.autoconfigure.web.reactive.ReactiveWebServerFactoryAutoConfigurationTests",
+            "type": "Method",
+            "name": "jettyServerCustomizerRegisteredAsBeanAndViaFactoryIsOnlyCalledOnce",
+            "filePath": "spring-boot-project/spring-boot-autoconfigure/src/test/java/org/springframework/boot/autoconfigure/web/reactive/ReactiveWebServerFactoryAutoConfigurationTests.java",
+            "startLine": 229,
+            "endLine": 242,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.autoconfigure.web.reactive.ReactiveWebServerFactoryAutoConfigurationTests",
+            "type": "Method",
+            "name": "jettyServerCustomizerRegisteredAsBeanAndViaFactoryIsOnlyCalledOnce",
+            "filePath": "spring-boot-project/spring-boot-autoconfigure/src/test/java/org/springframework/boot/autoconfigure/web/reactive/ReactiveWebServerFactoryAutoConfigurationTests.java",
+            "startLine": 233,
+            "endLine": 247,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.autoconfigure.web.reactive.ReactiveWebServerFactoryAutoConfigurationTests",
+            "type": "Class",
+            "name": "ReactiveWebServerFactoryAutoConfigurationTests",
+            "filePath": "spring-boot-project/spring-boot-autoconfigure/src/test/java/org/springframework/boot/autoconfigure/web/reactive/ReactiveWebServerFactoryAutoConfigurationTests.java",
+            "startLine": 59,
+            "endLine": 550,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.autoconfigure.web.reactive.ReactiveWebServerFactoryAutoConfigurationTests",
+            "type": "Class",
+            "name": "ReactiveWebServerFactoryAutoConfigurationTests",
+            "filePath": "spring-boot-project/spring-boot-autoconfigure/src/test/java/org/springframework/boot/autoconfigure/web/reactive/ReactiveWebServerFactoryAutoConfigurationTests.java",
+            "startLine": 61,
+            "endLine": 555,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.autoconfigure.web.servlet.MultipartAutoConfigurationTests.WebServerWithNoMultipartJetty",
+            "type": "Class",
+            "name": "WebServerWithNoMultipartJetty",
+            "filePath": "spring-boot-project/spring-boot-autoconfigure/src/test/java/org/springframework/boot/autoconfigure/web/servlet/MultipartAutoConfigurationTests.java",
+            "startLine": 222,
+            "endLine": 235,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.autoconfigure.web.servlet.MultipartAutoConfigurationTests.WebServerWithNoMultipartJetty",
+            "type": "Class",
+            "name": "WebServerWithNoMultipartJetty",
+            "filePath": "spring-boot-project/spring-boot-autoconfigure/src/test/java/org/springframework/boot/autoconfigure/web/servlet/MultipartAutoConfigurationTests.java",
+            "startLine": 223,
+            "endLine": 237,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.autoconfigure.web.servlet.MultipartAutoConfigurationTests.WebServerWithEverythingJetty",
+            "type": "Class",
+            "name": "WebServerWithEverythingJetty",
+            "filePath": "spring-boot-project/spring-boot-autoconfigure/src/test/java/org/springframework/boot/autoconfigure/web/servlet/MultipartAutoConfigurationTests.java",
+            "startLine": 282,
+            "endLine": 300,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.autoconfigure.web.servlet.MultipartAutoConfigurationTests.WebServerWithEverythingJetty",
+            "type": "Class",
+            "name": "WebServerWithEverythingJetty",
+            "filePath": "spring-boot-project/spring-boot-autoconfigure/src/test/java/org/springframework/boot/autoconfigure/web/servlet/MultipartAutoConfigurationTests.java",
+            "startLine": 284,
+            "endLine": 303,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.autoconfigure.web.servlet.MultipartAutoConfigurationTests",
+            "type": "Class",
+            "name": "MultipartAutoConfigurationTests",
+            "filePath": "spring-boot-project/spring-boot-autoconfigure/src/test/java/org/springframework/boot/autoconfigure/web/servlet/MultipartAutoConfigurationTests.java",
+            "startLine": 58,
+            "endLine": 386,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.autoconfigure.web.servlet.MultipartAutoConfigurationTests",
+            "type": "Class",
+            "name": "MultipartAutoConfigurationTests",
+            "filePath": "spring-boot-project/spring-boot-autoconfigure/src/test/java/org/springframework/boot/autoconfigure/web/servlet/MultipartAutoConfigurationTests.java",
+            "startLine": 59,
+            "endLine": 389,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryAutoConfigurationTests",
+            "type": "Method",
+            "name": "jettyServerCustomizerBeanIsAddedToFactory",
+            "filePath": "spring-boot-project/spring-boot-autoconfigure/src/test/java/org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryAutoConfigurationTests.java",
+            "startLine": 153,
+            "endLine": 165,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryAutoConfigurationTests",
+            "type": "Method",
+            "name": "jettyServerCustomizerBeanIsAddedToFactory",
+            "filePath": "spring-boot-project/spring-boot-autoconfigure/src/test/java/org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryAutoConfigurationTests.java",
+            "startLine": 156,
+            "endLine": 169,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryAutoConfigurationTests",
+            "type": "Method",
+            "name": "jettyServerCustomizerRegisteredAsBeanAndViaFactoryIsOnlyCalledOnce",
+            "filePath": "spring-boot-project/spring-boot-autoconfigure/src/test/java/org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryAutoConfigurationTests.java",
+            "startLine": 167,
+            "endLine": 181,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryAutoConfigurationTests",
+            "type": "Method",
+            "name": "jettyServerCustomizerRegisteredAsBeanAndViaFactoryIsOnlyCalledOnce",
+            "filePath": "spring-boot-project/spring-boot-autoconfigure/src/test/java/org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryAutoConfigurationTests.java",
+            "startLine": 171,
+            "endLine": 186,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryAutoConfigurationTests",
+            "type": "Method",
+            "name": "relativeRedirectsShouldNotBeEnabledWhenNotUsingTomcatContainer",
+            "filePath": "spring-boot-project/spring-boot-autoconfigure/src/test/java/org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryAutoConfigurationTests.java",
+            "startLine": 409,
+            "endLine": 421,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryAutoConfigurationTests",
+            "type": "Method",
+            "name": "relativeRedirectsShouldNotBeEnabledWhenNotUsingTomcatContainer",
+            "filePath": "spring-boot-project/spring-boot-autoconfigure/src/test/java/org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryAutoConfigurationTests.java",
+            "startLine": 414,
+            "endLine": 426,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryAutoConfigurationTests",
+            "type": "Class",
+            "name": "ServletWebServerFactoryAutoConfigurationTests",
+            "filePath": "spring-boot-project/spring-boot-autoconfigure/src/test/java/org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryAutoConfigurationTests.java",
+            "startLine": 70,
+            "endLine": 725,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryAutoConfigurationTests",
+            "type": "Class",
+            "name": "ServletWebServerFactoryAutoConfigurationTests",
+            "filePath": "spring-boot-project/spring-boot-autoconfigure/src/test/java/org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryAutoConfigurationTests.java",
+            "startLine": 72,
+            "endLine": 730,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryCustomizerTests",
+            "type": "Method",
+            "name": "customizeSessionProperties",
+            "filePath": "spring-boot-project/spring-boot-autoconfigure/src/test/java/org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryCustomizerTests.java",
+            "startLine": 100,
+            "endLine": 125,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryCustomizerTests",
+            "type": "Method",
+            "name": "customizeSessionProperties",
+            "filePath": "spring-boot-project/spring-boot-autoconfigure/src/test/java/org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryCustomizerTests.java",
+            "startLine": 100,
+            "endLine": 126,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryCustomizerTests",
+            "type": "Class",
+            "name": "ServletWebServerFactoryCustomizerTests",
+            "filePath": "spring-boot-project/spring-boot-autoconfigure/src/test/java/org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryCustomizerTests.java",
+            "startLine": 44,
+            "endLine": 182,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryCustomizerTests",
+            "type": "Class",
+            "name": "ServletWebServerFactoryCustomizerTests",
+            "filePath": "spring-boot-project/spring-boot-autoconfigure/src/test/java/org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryCustomizerTests.java",
+            "startLine": 44,
+            "endLine": 183,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.autoconfigure.web.servlet.ServletWebServerServletContextListenerTests",
+            "type": "Method",
+            "name": "registeredServletContextListenerBeanIsCalled",
+            "filePath": "spring-boot-project/spring-boot-autoconfigure/src/test/java/org/springframework/boot/autoconfigure/web/servlet/ServletWebServerServletContextListenerTests.java",
+            "startLine": 50,
+            "endLine": 59,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.autoconfigure.web.servlet.ServletWebServerServletContextListenerTests",
+            "type": "Method",
+            "name": "registeredServletContextListenerBeanIsCalled",
+            "filePath": "spring-boot-project/spring-boot-autoconfigure/src/test/java/org/springframework/boot/autoconfigure/web/servlet/ServletWebServerServletContextListenerTests.java",
+            "startLine": 52,
+            "endLine": 62,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.autoconfigure.web.servlet.ServletWebServerServletContextListenerTests",
+            "type": "Method",
+            "name": "servletContextListenerBeanIsCalled",
+            "filePath": "spring-boot-project/spring-boot-autoconfigure/src/test/java/org/springframework/boot/autoconfigure/web/servlet/ServletWebServerServletContextListenerTests.java",
+            "startLine": 61,
+            "endLine": 70,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.autoconfigure.web.servlet.ServletWebServerServletContextListenerTests",
+            "type": "Method",
+            "name": "servletContextListenerBeanIsCalled",
+            "filePath": "spring-boot-project/spring-boot-autoconfigure/src/test/java/org/springframework/boot/autoconfigure/web/servlet/ServletWebServerServletContextListenerTests.java",
+            "startLine": 64,
+            "endLine": 74,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.autoconfigure.web.servlet.ServletWebServerServletContextListenerTests.JettyConfiguration",
+            "type": "Class",
+            "name": "JettyConfiguration",
+            "filePath": "spring-boot-project/spring-boot-autoconfigure/src/test/java/org/springframework/boot/autoconfigure/web/servlet/ServletWebServerServletContextListenerTests.java",
+            "startLine": 88,
+            "endLine": 96,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.autoconfigure.web.servlet.ServletWebServerServletContextListenerTests.JettyConfiguration",
+            "type": "Class",
+            "name": "JettyConfiguration",
+            "filePath": "spring-boot-project/spring-boot-autoconfigure/src/test/java/org/springframework/boot/autoconfigure/web/servlet/ServletWebServerServletContextListenerTests.java",
+            "startLine": 92,
+            "endLine": 101,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.autoconfigure.web.servlet.ServletWebServerServletContextListenerTests",
+            "type": "Class",
+            "name": "ServletWebServerServletContextListenerTests",
+            "filePath": "spring-boot-project/spring-boot-autoconfigure/src/test/java/org/springframework/boot/autoconfigure/web/servlet/ServletWebServerServletContextListenerTests.java",
+            "startLine": 42,
+            "endLine": 128,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.autoconfigure.web.servlet.ServletWebServerServletContextListenerTests",
+            "type": "Class",
+            "name": "ServletWebServerServletContextListenerTests",
+            "filePath": "spring-boot-project/spring-boot-autoconfigure/src/test/java/org/springframework/boot/autoconfigure/web/servlet/ServletWebServerServletContextListenerTests.java",
+            "startLine": 44,
+            "endLine": 133,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.autoconfigure.websocket.servlet.WebSocketServletAutoConfigurationTests",
+            "type": "Method",
+            "name": "serverContainerIsAvailableFromTheServletContext",
+            "filePath": "spring-boot-project/spring-boot-autoconfigure/src/test/java/org/springframework/boot/autoconfigure/websocket/servlet/WebSocketServletAutoConfigurationTests.java",
+            "startLine": 45,
+            "endLine": 54,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.autoconfigure.websocket.servlet.WebSocketServletAutoConfigurationTests",
+            "type": "Method",
+            "name": "serverContainerIsAvailableFromTheServletContext",
+            "filePath": "spring-boot-project/spring-boot-autoconfigure/src/test/java/org/springframework/boot/autoconfigure/websocket/servlet/WebSocketServletAutoConfigurationTests.java",
+            "startLine": 47,
+            "endLine": 57,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.autoconfigure.websocket.servlet.WebSocketServletAutoConfigurationTests.JettyConfiguration",
+            "type": "Class",
+            "name": "JettyConfiguration",
+            "filePath": "spring-boot-project/spring-boot-autoconfigure/src/test/java/org/springframework/boot/autoconfigure/websocket/servlet/WebSocketServletAutoConfigurationTests.java",
+            "startLine": 87,
+            "endLine": 97,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.autoconfigure.websocket.servlet.WebSocketServletAutoConfigurationTests.JettyConfiguration",
+            "type": "Class",
+            "name": "JettyConfiguration",
+            "filePath": "spring-boot-project/spring-boot-autoconfigure/src/test/java/org/springframework/boot/autoconfigure/websocket/servlet/WebSocketServletAutoConfigurationTests.java",
+            "startLine": 90,
+            "endLine": 101,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.autoconfigure.websocket.servlet.WebSocketServletAutoConfigurationTests",
+            "type": "Class",
+            "name": "WebSocketServletAutoConfigurationTests",
+            "filePath": "spring-boot-project/spring-boot-autoconfigure/src/test/java/org/springframework/boot/autoconfigure/websocket/servlet/WebSocketServletAutoConfigurationTests.java",
+            "startLine": 37,
+            "endLine": 99,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.autoconfigure.websocket.servlet.WebSocketServletAutoConfigurationTests",
+            "type": "Class",
+            "name": "WebSocketServletAutoConfigurationTests",
+            "filePath": "spring-boot-project/spring-boot-autoconfigure/src/test/java/org/springframework/boot/autoconfigure/websocket/servlet/WebSocketServletAutoConfigurationTests.java",
+            "startLine": 39,
+            "endLine": 103,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.maven.JarIntegrationTests",
+            "type": "Method",
+            "name": "whenJarIsRepackagedInPlaceOnlyRepackagedJarIsInstalled",
+            "filePath": "spring-boot-project/spring-boot-tools/spring-boot-maven-plugin/src/intTest/java/org/springframework/boot/maven/JarIntegrationTests.java",
+            "startLine": 51,
+            "endLine": 71,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.maven.JarIntegrationTests",
+            "type": "Method",
+            "name": "whenJarIsRepackagedInPlaceOnlyRepackagedJarIsInstalled",
+            "filePath": "spring-boot-project/spring-boot-tools/spring-boot-maven-plugin/src/intTest/java/org/springframework/boot/maven/JarIntegrationTests.java",
+            "startLine": 51,
+            "endLine": 71,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.maven.JarIntegrationTests",
+            "type": "Class",
+            "name": "JarIntegrationTests",
+            "filePath": "spring-boot-project/spring-boot-tools/spring-boot-maven-plugin/src/intTest/java/org/springframework/boot/maven/JarIntegrationTests.java",
+            "startLine": 36,
+            "endLine": 424,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.maven.JarIntegrationTests",
+            "type": "Class",
+            "name": "JarIntegrationTests",
+            "filePath": "spring-boot-project/spring-boot-tools/spring-boot-maven-plugin/src/intTest/java/org/springframework/boot/maven/JarIntegrationTests.java",
+            "startLine": 36,
+            "endLine": 424,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.maven.WarIntegrationTests",
+            "type": "Method",
+            "name": "warRepackaging",
+            "filePath": "spring-boot-project/spring-boot-tools/spring-boot-maven-plugin/src/intTest/java/org/springframework/boot/maven/WarIntegrationTests.java",
+            "startLine": 51,
+            "endLine": 64,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.maven.WarIntegrationTests",
+            "type": "Method",
+            "name": "warRepackaging",
+            "filePath": "spring-boot-project/spring-boot-tools/spring-boot-maven-plugin/src/intTest/java/org/springframework/boot/maven/WarIntegrationTests.java",
+            "startLine": 51,
+            "endLine": 64,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.maven.WarIntegrationTests",
+            "type": "Class",
+            "name": "WarIntegrationTests",
+            "filePath": "spring-boot-project/spring-boot-tools/spring-boot-maven-plugin/src/intTest/java/org/springframework/boot/maven/WarIntegrationTests.java",
+            "startLine": 37,
+            "endLine": 234,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.maven.WarIntegrationTests",
+            "type": "Class",
+            "name": "WarIntegrationTests",
+            "filePath": "spring-boot-project/spring-boot-tools/spring-boot-maven-plugin/src/intTest/java/org/springframework/boot/maven/WarIntegrationTests.java",
+            "startLine": 37,
+            "endLine": 234,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.web.embedded.jetty.JettyServletWebServerFactory.SuppliedSameSiteCookieHandlerWrapper.ResponseWrapper",
+            "type": "Method",
+            "name": "addCookie",
+            "filePath": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/web/embedded/jetty/JettyServletWebServerFactory.java",
+            "startLine": 695,
+            "endLine": 704,
+            "startColumn": 4,
+            "endColumn": 5
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.web.embedded.jetty.JettyServletWebServerFactory.SuppliedSameSiteCookieHandlerWrapper.ResponseWrapper",
+            "type": "Method",
+            "name": "addCookie",
+            "filePath": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/web/embedded/jetty/JettyServletWebServerFactory.java",
+            "startLine": 695,
+            "endLine": 705,
+            "startColumn": 4,
+            "endColumn": 5
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.web.embedded.jetty.JettyServletWebServerFactory.SuppliedSameSiteCookieHandlerWrapper.ResponseWrapper",
+            "type": "Class",
+            "name": "ResponseWrapper",
+            "filePath": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/web/embedded/jetty/JettyServletWebServerFactory.java",
+            "startLine": 689,
+            "endLine": 724,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.web.embedded.jetty.JettyServletWebServerFactory.SuppliedSameSiteCookieHandlerWrapper.ResponseWrapper",
+            "type": "Class",
+            "name": "ResponseWrapper",
+            "filePath": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/web/embedded/jetty/JettyServletWebServerFactory.java",
+            "startLine": 689,
+            "endLine": 725,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.web.embedded.jetty.JettyServletWebServerFactory.SuppliedSameSiteCookieHandlerWrapper",
+            "type": "Class",
+            "name": "SuppliedSameSiteCookieHandlerWrapper",
+            "filePath": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/web/embedded/jetty/JettyServletWebServerFactory.java",
+            "startLine": 670,
+            "endLine": 726,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.web.embedded.jetty.JettyServletWebServerFactory.SuppliedSameSiteCookieHandlerWrapper",
+            "type": "Class",
+            "name": "SuppliedSameSiteCookieHandlerWrapper",
+            "filePath": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/web/embedded/jetty/JettyServletWebServerFactory.java",
+            "startLine": 670,
+            "endLine": 727,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.web.embedded.jetty.JettyServletWebServerFactory",
+            "type": "Class",
+            "name": "JettyServletWebServerFactory",
+            "filePath": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/web/embedded/jetty/JettyServletWebServerFactory.java",
+            "startLine": 88,
+            "endLine": 728,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.web.embedded.jetty.JettyServletWebServerFactory",
+            "type": "Class",
+            "name": "JettyServletWebServerFactory",
+            "filePath": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/web/embedded/jetty/JettyServletWebServerFactory.java",
+            "startLine": 88,
+            "endLine": 729,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.web.embedded.tomcat.TldPatterns",
+            "type": "Initializer",
+            "name": "static block",
+            "filePath": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/web/embedded/tomcat/TldPatterns.java",
+            "startLine": 33,
+            "endLine": 122,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.web.embedded.tomcat.TldPatterns",
+            "type": "Initializer",
+            "name": "static block",
+            "filePath": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/web/embedded/tomcat/TldPatterns.java",
+            "startLine": 33,
+            "endLine": 123,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.web.embedded.tomcat.TldPatterns",
+            "type": "Class",
+            "name": "TldPatterns",
+            "filePath": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/web/embedded/tomcat/TldPatterns.java",
+            "startLine": 23,
+            "endLine": 199,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.web.embedded.tomcat.TldPatterns",
+            "type": "Class",
+            "name": "TldPatterns",
+            "filePath": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/web/embedded/tomcat/TldPatterns.java",
+            "startLine": 23,
+            "endLine": 200,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.web.embedded.undertow.UndertowServletWebServerFactory.SuppliedSameSiteCookieHandler",
+            "type": "Method",
+            "name": "asServletCookie",
+            "filePath": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/web/embedded/undertow/UndertowServletWebServerFactory.java",
+            "startLine": 642,
+            "endLine": 653,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.web.embedded.undertow.UndertowServletWebServerFactory.SuppliedSameSiteCookieHandler",
+            "type": "Method",
+            "name": "asServletCookie",
+            "filePath": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/web/embedded/undertow/UndertowServletWebServerFactory.java",
+            "startLine": 642,
+            "endLine": 654,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.web.embedded.undertow.UndertowServletWebServerFactory.SuppliedSameSiteCookieHandler",
+            "type": "Class",
+            "name": "SuppliedSameSiteCookieHandler",
+            "filePath": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/web/embedded/undertow/UndertowServletWebServerFactory.java",
+            "startLine": 612,
+            "endLine": 665,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.web.embedded.undertow.UndertowServletWebServerFactory.SuppliedSameSiteCookieHandler",
+            "type": "Class",
+            "name": "SuppliedSameSiteCookieHandler",
+            "filePath": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/web/embedded/undertow/UndertowServletWebServerFactory.java",
+            "startLine": 612,
+            "endLine": 666,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.web.embedded.undertow.UndertowServletWebServerFactory",
+            "type": "Class",
+            "name": "UndertowServletWebServerFactory",
+            "filePath": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/web/embedded/undertow/UndertowServletWebServerFactory.java",
+            "startLine": 76,
+            "endLine": 667,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.web.embedded.undertow.UndertowServletWebServerFactory",
+            "type": "Class",
+            "name": "UndertowServletWebServerFactory",
+            "filePath": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/web/embedded/undertow/UndertowServletWebServerFactory.java",
+            "startLine": 76,
+            "endLine": 668,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.web.servlet.server.AbstractServletWebServerFactory.SessionConfiguringInitializer",
+            "type": "Method",
+            "name": "configureSessionCookie",
+            "filePath": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/web/servlet/server/AbstractServletWebServerFactory.java",
+            "startLine": 338,
+            "endLine": 348,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.web.servlet.server.AbstractServletWebServerFactory.SessionConfiguringInitializer",
+            "type": "Method",
+            "name": "configureSessionCookie",
+            "filePath": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/web/servlet/server/AbstractServletWebServerFactory.java",
+            "startLine": 338,
+            "endLine": 349,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.web.servlet.server.AbstractServletWebServerFactory.SessionConfiguringInitializer",
+            "type": "Class",
+            "name": "SessionConfiguringInitializer",
+            "filePath": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/web/servlet/server/AbstractServletWebServerFactory.java",
+            "startLine": 318,
+            "endLine": 361,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.web.servlet.server.AbstractServletWebServerFactory.SessionConfiguringInitializer",
+            "type": "Class",
+            "name": "SessionConfiguringInitializer",
+            "filePath": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/web/servlet/server/AbstractServletWebServerFactory.java",
+            "startLine": 318,
+            "endLine": 362,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.web.servlet.server.AbstractServletWebServerFactory",
+            "type": "Class",
+            "name": "AbstractServletWebServerFactory",
+            "filePath": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/web/servlet/server/AbstractServletWebServerFactory.java",
+            "startLine": 47,
+            "endLine": 363,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.web.servlet.server.AbstractServletWebServerFactory",
+            "type": "Class",
+            "name": "AbstractServletWebServerFactory",
+            "filePath": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/web/servlet/server/AbstractServletWebServerFactory.java",
+            "startLine": 47,
+            "endLine": 364,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.web.servlet.server.Session.Cookie",
+            "type": "Method",
+            "name": "getComment",
+            "filePath": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/web/servlet/server/Session.java",
+            "startLine": 113,
+            "endLine": 119,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.web.servlet.server.Session.Cookie",
+            "type": "Method",
+            "name": "getComment",
+            "filePath": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/web/servlet/server/Session.java",
+            "startLine": 114,
+            "endLine": 123,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.web.servlet.server.Session.Cookie",
+            "type": "Method",
+            "name": "setComment",
+            "filePath": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/web/servlet/server/Session.java",
+            "startLine": 121,
+            "endLine": 123,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.web.servlet.server.Session.Cookie",
+            "type": "Method",
+            "name": "setComment",
+            "filePath": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/web/servlet/server/Session.java",
+            "startLine": 125,
+            "endLine": 128,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.web.servlet.server.Session.Cookie",
+            "type": "Class",
+            "name": "Cookie",
+            "filePath": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/web/servlet/server/Session.java",
+            "startLine": 103,
+            "endLine": 125,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.web.servlet.server.Session.Cookie",
+            "type": "Class",
+            "name": "Cookie",
+            "filePath": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/web/servlet/server/Session.java",
+            "startLine": 104,
+            "endLine": 130,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.web.servlet.server.Session",
+            "type": "Class",
+            "name": "Session",
+            "filePath": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/web/servlet/server/Session.java",
+            "startLine": 26,
+            "endLine": 150,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.web.servlet.server.Session",
+            "type": "Class",
+            "name": "Session",
+            "filePath": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/web/servlet/server/Session.java",
+            "startLine": 27,
+            "endLine": 155,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.web.embedded.jetty.JettyReactiveWebServerFactoryTests",
+            "type": "Class",
+            "name": "JettyReactiveWebServerFactoryTests",
+            "filePath": "spring-boot-project/spring-boot/src/test/java/org/springframework/boot/web/embedded/jetty/JettyReactiveWebServerFactoryTests.java",
+            "startLine": 44,
+            "endLine": 149,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.web.embedded.jetty.JettyReactiveWebServerFactoryTests",
+            "type": "Class",
+            "name": "JettyReactiveWebServerFactoryTests",
+            "filePath": "spring-boot-project/spring-boot/src/test/java/org/springframework/boot/web/embedded/jetty/JettyReactiveWebServerFactoryTests.java",
+            "startLine": 45,
+            "endLine": 151,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.web.embedded.jetty.JettyServletWebServerFactoryTests",
+            "type": "Class",
+            "name": "JettyServletWebServerFactoryTests",
+            "filePath": "spring-boot-project/spring-boot/src/test/java/org/springframework/boot/web/embedded/jetty/JettyServletWebServerFactoryTests.java",
+            "startLine": 81,
+            "endLine": 553,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.web.embedded.jetty.JettyServletWebServerFactoryTests",
+            "type": "Class",
+            "name": "JettyServletWebServerFactoryTests",
+            "filePath": "spring-boot-project/spring-boot/src/test/java/org/springframework/boot/web/embedded/jetty/JettyServletWebServerFactoryTests.java",
+            "startLine": 82,
+            "endLine": 554,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactoryTests",
+            "type": "Method",
+            "name": "sessionIdGeneratorIsConfiguredWithAttributesFromTheManager",
+            "filePath": "spring-boot-project/spring-boot/src/test/java/org/springframework/boot/web/embedded/tomcat/TomcatServletWebServerFactoryTests.java",
+            "startLine": 420,
+            "endLine": 436,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactoryTests",
+            "type": "Method",
+            "name": "sessionIdGeneratorIsConfiguredWithAttributesFromTheManager",
+            "filePath": "spring-boot-project/spring-boot/src/test/java/org/springframework/boot/web/embedded/tomcat/TomcatServletWebServerFactoryTests.java",
+            "startLine": 426,
+            "endLine": 443,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactoryTests",
+            "type": "Class",
+            "name": "TomcatServletWebServerFactoryTests",
+            "filePath": "spring-boot-project/spring-boot/src/test/java/org/springframework/boot/web/embedded/tomcat/TomcatServletWebServerFactoryTests.java",
+            "startLine": 103,
+            "endLine": 692,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactoryTests",
+            "type": "Class",
+            "name": "TomcatServletWebServerFactoryTests",
+            "filePath": "spring-boot-project/spring-boot/src/test/java/org/springframework/boot/web/embedded/tomcat/TomcatServletWebServerFactoryTests.java",
+            "startLine": 104,
+            "endLine": 699,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.web.servlet.ServletComponentScanIntegrationTests",
+            "type": "Method",
+            "name": "componentsAreRegistered",
+            "filePath": "spring-boot-project/spring-boot/src/test/java/org/springframework/boot/web/servlet/ServletComponentScanIntegrationTests.java",
+            "startLine": 72,
+            "endLine": 82,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.web.servlet.ServletComponentScanIntegrationTests",
+            "type": "Method",
+            "name": "componentsAreRegistered",
+            "filePath": "spring-boot-project/spring-boot/src/test/java/org/springframework/boot/web/servlet/ServletComponentScanIntegrationTests.java",
+            "startLine": 76,
+            "endLine": 87,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.web.servlet.ServletComponentScanIntegrationTests",
+            "type": "Method",
+            "name": "indexedComponentsAreRegistered",
+            "filePath": "spring-boot-project/spring-boot/src/test/java/org/springframework/boot/web/servlet/ServletComponentScanIntegrationTests.java",
+            "startLine": 84,
+            "endLine": 99,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.web.servlet.ServletComponentScanIntegrationTests",
+            "type": "Method",
+            "name": "indexedComponentsAreRegistered",
+            "filePath": "spring-boot-project/spring-boot/src/test/java/org/springframework/boot/web/servlet/ServletComponentScanIntegrationTests.java",
+            "startLine": 89,
+            "endLine": 105,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.web.servlet.ServletComponentScanIntegrationTests",
+            "type": "Method",
+            "name": "multipartConfigIsHonoured",
+            "filePath": "spring-boot-project/spring-boot/src/test/java/org/springframework/boot/web/servlet/ServletComponentScanIntegrationTests.java",
+            "startLine": 101,
+            "endLine": 118,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.web.servlet.ServletComponentScanIntegrationTests",
+            "type": "Method",
+            "name": "multipartConfigIsHonoured",
+            "filePath": "spring-boot-project/spring-boot/src/test/java/org/springframework/boot/web/servlet/ServletComponentScanIntegrationTests.java",
+            "startLine": 107,
+            "endLine": 125,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.web.servlet.ServletComponentScanIntegrationTests.JettyTestConfiguration",
+            "type": "Class",
+            "name": "JettyTestConfiguration",
+            "filePath": "spring-boot-project/spring-boot/src/test/java/org/springframework/boot/web/servlet/ServletComponentScanIntegrationTests.java",
+            "startLine": 154,
+            "endLine": 162,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.web.servlet.ServletComponentScanIntegrationTests.JettyTestConfiguration",
+            "type": "Class",
+            "name": "JettyTestConfiguration",
+            "filePath": "spring-boot-project/spring-boot/src/test/java/org/springframework/boot/web/servlet/ServletComponentScanIntegrationTests.java",
+            "startLine": 161,
+            "endLine": 170,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.web.servlet.ServletComponentScanIntegrationTests",
+            "type": "Class",
+            "name": "ServletComponentScanIntegrationTests",
+            "filePath": "spring-boot-project/spring-boot/src/test/java/org/springframework/boot/web/servlet/ServletComponentScanIntegrationTests.java",
+            "startLine": 53,
+            "endLine": 184,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.web.servlet.ServletComponentScanIntegrationTests",
+            "type": "Class",
+            "name": "ServletComponentScanIntegrationTests",
+            "filePath": "spring-boot-project/spring-boot/src/test/java/org/springframework/boot/web/servlet/ServletComponentScanIntegrationTests.java",
+            "startLine": 56,
+            "endLine": 192,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.web.servlet.context.ServletWebServerMvcIntegrationTests",
+            "type": "Method",
+            "name": "jetty",
+            "filePath": "spring-boot-project/spring-boot/src/test/java/org/springframework/boot/web/servlet/context/ServletWebServerMvcIntegrationTests.java",
+            "startLine": 74,
+            "endLine": 78,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.web.servlet.context.ServletWebServerMvcIntegrationTests",
+            "type": "Method",
+            "name": "jetty",
+            "filePath": "spring-boot-project/spring-boot/src/test/java/org/springframework/boot/web/servlet/context/ServletWebServerMvcIntegrationTests.java",
+            "startLine": 77,
+            "endLine": 82,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.web.servlet.context.ServletWebServerMvcIntegrationTests",
+            "type": "Method",
+            "name": "advancedConfig",
+            "filePath": "spring-boot-project/spring-boot/src/test/java/org/springframework/boot/web/servlet/context/ServletWebServerMvcIntegrationTests.java",
+            "startLine": 86,
+            "endLine": 90,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.web.servlet.context.ServletWebServerMvcIntegrationTests",
+            "type": "Method",
+            "name": "advancedConfig",
+            "filePath": "spring-boot-project/spring-boot/src/test/java/org/springframework/boot/web/servlet/context/ServletWebServerMvcIntegrationTests.java",
+            "startLine": 90,
+            "endLine": 95,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.web.servlet.context.ServletWebServerMvcIntegrationTests",
+            "type": "Class",
+            "name": "ServletWebServerMvcIntegrationTests",
+            "filePath": "spring-boot-project/spring-boot/src/test/java/org/springframework/boot/web/servlet/context/ServletWebServerMvcIntegrationTests.java",
+            "startLine": 47,
+            "endLine": 209,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.web.servlet.context.ServletWebServerMvcIntegrationTests",
+            "type": "Class",
+            "name": "ServletWebServerMvcIntegrationTests",
+            "filePath": "spring-boot-project/spring-boot/src/test/java/org/springframework/boot/web/servlet/context/ServletWebServerMvcIntegrationTests.java",
+            "startLine": 49,
+            "endLine": 214,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.web.servlet.server.AbstractServletWebServerFactoryTests",
+            "type": "Method",
+            "name": "sessionCookieConfiguration",
+            "filePath": "spring-boot-project/spring-boot/src/test/java/org/springframework/boot/web/servlet/server/AbstractServletWebServerFactoryTests.java",
+            "startLine": 794,
+            "endLine": 814,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.web.servlet.server.AbstractServletWebServerFactoryTests",
+            "type": "Method",
+            "name": "sessionCookieConfiguration",
+            "filePath": "spring-boot-project/spring-boot/src/test/java/org/springframework/boot/web/servlet/server/AbstractServletWebServerFactoryTests.java",
+            "startLine": 798,
+            "endLine": 821,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.web.servlet.server.AbstractServletWebServerFactoryTests",
+            "type": "Method",
+            "name": "sessionConfiguration",
+            "filePath": "spring-boot-project/spring-boot/src/test/java/org/springframework/boot/web/servlet/server/AbstractServletWebServerFactoryTests.java",
+            "startLine": 1064,
+            "endLine": 1088,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.web.servlet.server.AbstractServletWebServerFactoryTests",
+            "type": "Method",
+            "name": "sessionConfiguration",
+            "filePath": "spring-boot-project/spring-boot/src/test/java/org/springframework/boot/web/servlet/server/AbstractServletWebServerFactoryTests.java",
+            "startLine": 1071,
+            "endLine": 1098,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.web.servlet.server.AbstractServletWebServerFactoryTests",
+            "type": "Class",
+            "name": "AbstractServletWebServerFactoryTests",
+            "filePath": "spring-boot-project/spring-boot/src/test/java/org/springframework/boot/web/servlet/server/AbstractServletWebServerFactoryTests.java",
+            "startLine": 164,
+            "endLine": 1690,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.web.servlet.server.AbstractServletWebServerFactoryTests",
+            "type": "Class",
+            "name": "AbstractServletWebServerFactoryTests",
+            "filePath": "spring-boot-project/spring-boot/src/test/java/org/springframework/boot/web/servlet/server/AbstractServletWebServerFactoryTests.java",
+            "startLine": 164,
+            "endLine": 1700,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [],
+      "baseline": [
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.web.embedded.tomcat.TldPatterns",
+            "type": "Initializer",
+            "name": "static block",
+            "filePath": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/web/embedded/tomcat/TldPatterns.java",
+            "startLine": 170,
+            "endLine": 175,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.web.embedded.tomcat.TldPatterns",
+            "type": "Initializer",
+            "name": "static block",
+            "filePath": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/web/embedded/tomcat/TldPatterns.java",
+            "startLine": 191,
+            "endLine": 195,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.springframework.boot.web.embedded.tomcat.TldPatterns",
+            "type": "Initializer",
+            "name": "static block",
+            "filePath": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/web/embedded/tomcat/TldPatterns.java",
+            "startLine": 190,
+            "endLine": 194,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "container": "org.springframework.boot.web.embedded.tomcat.TldPatterns",
+            "type": "Initializer",
+            "name": "static block",
+            "filePath": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/web/embedded/tomcat/TldPatterns.java",
+            "startLine": 171,
+            "endLine": 176,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": false
+        }
+      ]
+    }
+  ]
+}

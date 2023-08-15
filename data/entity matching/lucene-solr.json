@@ -1,0 +1,4113 @@
+{
+  "results": [
+    {
+      "repository": "https://github.com/apache/lucene-solr.git",
+      "sha1": "f36a867bd07270421b8295f1698adf45c4905149",
+      "url": "https://github.com/apache/lucene-solr/commit/f36a867bd07270421b8295f1698adf45c4905149",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "org.apache.solr.schema.TestPointFields",
+            "type": "Method",
+            "name": "testIntPointFieldMultiValuedRangeFacet",
+            "filePath": "solr/core/src/test/org/apache/solr/schema/TestPointFields.java",
+            "startLine": 345,
+            "endLine": 417,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.solr.schema.TestPointFields",
+            "type": "Method",
+            "name": "testIntPointFieldMultiValuedRangeFacet",
+            "filePath": "solr/core/src/test/org/apache/solr/schema/TestPointFields.java",
+            "startLine": 345,
+            "endLine": 417,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.solr.schema.TestPointFields",
+            "type": "Class",
+            "name": "TestPointFields",
+            "filePath": "solr/core/src/test/org/apache/solr/schema/TestPointFields.java",
+            "startLine": 76,
+            "endLine": 3943,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.solr.schema.TestPointFields",
+            "type": "Class",
+            "name": "TestPointFields",
+            "filePath": "solr/core/src/test/org/apache/solr/schema/TestPointFields.java",
+            "startLine": 76,
+            "endLine": 3946,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "container": "org.apache.solr.schema.TestPointFields",
+            "type": "Method",
+            "name": "getRandomInts",
+            "filePath": "solr/core/src/test/org/apache/solr/schema/TestPointFields.java",
+            "startLine": 2218,
+            "endLine": 2220,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.solr.schema.TestPointFields",
+            "type": "Method",
+            "name": "getRandomInts",
+            "filePath": "solr/core/src/test/org/apache/solr/schema/TestPointFields.java",
+            "startLine": 2218,
+            "endLine": 2222,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.solr.schema.TestPointFields",
+            "type": "Method",
+            "name": "getRandomLongs",
+            "filePath": "solr/core/src/test/org/apache/solr/schema/TestPointFields.java",
+            "startLine": 2226,
+            "endLine": 2229,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.solr.schema.TestPointFields",
+            "type": "Method",
+            "name": "getRandomLongs",
+            "filePath": "solr/core/src/test/org/apache/solr/schema/TestPointFields.java",
+            "startLine": 2228,
+            "endLine": 2232,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "leftSideLocation": {
+            "container": "org.apache.solr.schema.TestPointFields",
+            "type": "Method",
+            "name": "getRandomInts",
+            "filePath": "solr/core/src/test/org/apache/solr/schema/TestPointFields.java",
+            "startLine": 2218,
+            "endLine": 2220,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.solr.schema.TestPointFields",
+            "type": "Method",
+            "name": "getRandomLongs",
+            "filePath": "solr/core/src/test/org/apache/solr/schema/TestPointFields.java",
+            "startLine": 2228,
+            "endLine": 2232,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/lucene-solr.git",
+      "sha1": "8b443420b878f236c78973ec546d1988ac6b7bdb",
+      "url": "https://github.com/apache/lucene-solr/commit/8b443420b878f236c78973ec546d1988ac6b7bdb",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "org.apache.solr.core.ConfigSetService",
+            "type": "Class",
+            "name": "ConfigSetService",
+            "filePath": "solr/core/src/java/org/apache/solr/core/ConfigSetService.java",
+            "startLine": 50,
+            "endLine": 270,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.solr.core.ConfigSetService",
+            "type": "Class",
+            "name": "ConfigSetService",
+            "filePath": "solr/core/src/java/org/apache/solr/core/ConfigSetService.java",
+            "startLine": 52,
+            "endLine": 288,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.solr.core.CoreContainer",
+            "type": "Method",
+            "name": "load",
+            "filePath": "solr/core/src/java/org/apache/solr/core/CoreContainer.java",
+            "startLine": 649,
+            "endLine": 931,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.solr.core.CoreContainer",
+            "type": "Method",
+            "name": "load",
+            "filePath": "solr/core/src/java/org/apache/solr/core/CoreContainer.java",
+            "startLine": 649,
+            "endLine": 931,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.solr.core.CoreContainer",
+            "type": "Class",
+            "name": "CoreContainer",
+            "filePath": "solr/core/src/java/org/apache/solr/core/CoreContainer.java",
+            "startLine": 159,
+            "endLine": 2227,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.solr.core.CoreContainer",
+            "type": "Class",
+            "name": "CoreContainer",
+            "filePath": "solr/core/src/java/org/apache/solr/core/CoreContainer.java",
+            "startLine": 159,
+            "endLine": 2231,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.solr.core.NodeConfig.NodeConfigBuilder",
+            "type": "Method",
+            "name": "build",
+            "filePath": "solr/core/src/java/org/apache/solr/core/NodeConfig.java",
+            "startLine": 510,
+            "endLine": 521,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.solr.core.NodeConfig.NodeConfigBuilder",
+            "type": "Method",
+            "name": "build",
+            "filePath": "solr/core/src/java/org/apache/solr/core/NodeConfig.java",
+            "startLine": 524,
+            "endLine": 535,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.solr.core.NodeConfig.NodeConfigBuilder",
+            "type": "Class",
+            "name": "NodeConfigBuilder",
+            "filePath": "solr/core/src/java/org/apache/solr/core/NodeConfig.java",
+            "startLine": 304,
+            "endLine": 527,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.solr.core.NodeConfig.NodeConfigBuilder",
+            "type": "Class",
+            "name": "NodeConfigBuilder",
+            "filePath": "solr/core/src/java/org/apache/solr/core/NodeConfig.java",
+            "startLine": 312,
+            "endLine": 541,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.solr.core.NodeConfig",
+            "type": "Class",
+            "name": "NodeConfig",
+            "filePath": "solr/core/src/java/org/apache/solr/core/NodeConfig.java",
+            "startLine": 32,
+            "endLine": 528,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.solr.core.NodeConfig",
+            "type": "Class",
+            "name": "NodeConfig",
+            "filePath": "solr/core/src/java/org/apache/solr/core/NodeConfig.java",
+            "startLine": 32,
+            "endLine": 542,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.solr.core.SolrXmlConfig",
+            "type": "Method",
+            "name": "fillSolrSection",
+            "filePath": "solr/core/src/java/org/apache/solr/core/SolrXmlConfig.java",
+            "startLine": 288,
+            "endLine": 350,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.solr.core.SolrXmlConfig",
+            "type": "Method",
+            "name": "fillSolrSection",
+            "filePath": "solr/core/src/java/org/apache/solr/core/SolrXmlConfig.java",
+            "startLine": 288,
+            "endLine": 353,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.solr.core.SolrXmlConfig",
+            "type": "Class",
+            "name": "SolrXmlConfig",
+            "filePath": "solr/core/src/java/org/apache/solr/core/SolrXmlConfig.java",
+            "startLine": 63,
+            "endLine": 672,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.solr.core.SolrXmlConfig",
+            "type": "Class",
+            "name": "SolrXmlConfig",
+            "filePath": "solr/core/src/java/org/apache/solr/core/SolrXmlConfig.java",
+            "startLine": 63,
+            "endLine": 675,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.solr.core.TestCoreContainer",
+            "type": "Class",
+            "name": "TestCoreContainer",
+            "filePath": "solr/core/src/test/org/apache/solr/core/TestCoreContainer.java",
+            "startLine": 57,
+            "endLine": 836,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.solr.core.TestCoreContainer",
+            "type": "Class",
+            "name": "TestCoreContainer",
+            "filePath": "solr/core/src/test/org/apache/solr/core/TestCoreContainer.java",
+            "startLine": 57,
+            "endLine": 873,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.solr.core.NodeConfig",
+            "type": "Method",
+            "name": "NodeConfig",
+            "filePath": "solr/core/src/java/org/apache/solr/core/NodeConfig.java",
+            "startLine": 92,
+            "endLine": 141,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.solr.core.NodeConfig",
+            "type": "Method",
+            "name": "NodeConfig",
+            "filePath": "solr/core/src/java/org/apache/solr/core/NodeConfig.java",
+            "startLine": 95,
+            "endLine": 145,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "container": "org.apache.solr.core.ConfigSetService",
+            "type": "Method",
+            "name": "createConfigSetService",
+            "filePath": "solr/core/src/java/org/apache/solr/core/ConfigSetService.java",
+            "startLine": 58,
+            "endLine": 64,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.solr.core.ConfigSetService",
+            "type": "Method",
+            "name": "createConfigSetService",
+            "filePath": "solr/core/src/java/org/apache/solr/core/ConfigSetService.java",
+            "startLine": 60,
+            "endLine": 82,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/apache/lucene-solr.git",
+      "sha1": "a5d84631196f9e70316726ee114adbc2b62dfe64",
+      "url": "https://github.com/apache/lucene-solr/commit/a5d84631196f9e70316726ee114adbc2b62dfe64",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.GeneratingSuggester",
+            "type": "Method",
+            "name": "findSimilarDictionaryEntries",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/GeneratingSuggester.java",
+            "startLine": 62,
+            "endLine": 96,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.GeneratingSuggester",
+            "type": "Method",
+            "name": "findSimilarDictionaryEntries",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/GeneratingSuggester.java",
+            "startLine": 64,
+            "endLine": 104,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.GeneratingSuggester",
+            "type": "Class",
+            "name": "GeneratingSuggester",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/GeneratingSuggester.java",
+            "startLine": 39,
+            "endLine": 488,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.GeneratingSuggester",
+            "type": "Class",
+            "name": "GeneratingSuggester",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/GeneratingSuggester.java",
+            "startLine": 40,
+            "endLine": 500,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.TestPerformance",
+            "type": "Method",
+            "name": "de_suggest",
+            "filePath": "lucene/analysis/common/src/test/org/apache/lucene/analysis/hunspell/TestPerformance.java",
+            "startLine": 73,
+            "endLine": 76,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.TestPerformance",
+            "type": "Method",
+            "name": "de_suggest",
+            "filePath": "lucene/analysis/common/src/test/org/apache/lucene/analysis/hunspell/TestPerformance.java",
+            "startLine": 73,
+            "endLine": 76,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.TestPerformance",
+            "type": "Class",
+            "name": "TestPerformance",
+            "filePath": "lucene/analysis/common/src/test/org/apache/lucene/analysis/hunspell/TestPerformance.java",
+            "startLine": 41,
+            "endLine": 240,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.TestPerformance",
+            "type": "Class",
+            "name": "TestPerformance",
+            "filePath": "lucene/analysis/common/src/test/org/apache/lucene/analysis/hunspell/TestPerformance.java",
+            "startLine": 41,
+            "endLine": 240,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.GeneratingSuggester",
+            "type": "Method",
+            "name": "processFST",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/GeneratingSuggester.java",
+            "startLine": 98,
+            "endLine": 110,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.GeneratingSuggester",
+            "type": "Method",
+            "name": "nextKey",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/GeneratingSuggester.java",
+            "startLine": 106,
+            "endLine": 122,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": false
+        }
+      ],
+      "baseline": [
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.GeneratingSuggester",
+            "type": "Method",
+            "name": "processFST",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/GeneratingSuggester.java",
+            "startLine": 98,
+            "endLine": 110,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.GeneratingSuggester",
+            "type": "Method",
+            "name": "findSimilarDictionaryEntries",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/GeneratingSuggester.java",
+            "startLine": 64,
+            "endLine": 104,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/lucene-solr.git",
+      "sha1": "34993c22ddbac702bfad321a04bbd753e9ade1c4",
+      "url": "https://github.com/apache/lucene-solr/commit/34993c22ddbac702bfad321a04bbd753e9ade1c4",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Dictionary",
+            "type": "Method",
+            "name": "lookup",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Dictionary.java",
+            "startLine": 293,
+            "endLine": 323,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Dictionary",
+            "type": "Method",
+            "name": "lookup",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Dictionary.java",
+            "startLine": 293,
+            "endLine": 311,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Dictionary",
+            "type": "Class",
+            "name": "Dictionary",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Dictionary.java",
+            "startLine": 69,
+            "endLine": 1684,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Dictionary",
+            "type": "Class",
+            "name": "Dictionary",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Dictionary.java",
+            "startLine": 69,
+            "endLine": 1684,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.GeneratingSuggester",
+            "type": "Method",
+            "name": "expandRoot",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/GeneratingSuggester.java",
+            "startLine": 169,
+            "endLine": 237,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.GeneratingSuggester",
+            "type": "Method",
+            "name": "expandRoot",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/GeneratingSuggester.java",
+            "startLine": 169,
+            "endLine": 225,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.GeneratingSuggester",
+            "type": "Class",
+            "name": "GeneratingSuggester",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/GeneratingSuggester.java",
+            "startLine": 38,
+            "endLine": 447,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.GeneratingSuggester",
+            "type": "Class",
+            "name": "GeneratingSuggester",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/GeneratingSuggester.java",
+            "startLine": 38,
+            "endLine": 465,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Stemmer",
+            "type": "Method",
+            "name": "doStem",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Stemmer.java",
+            "startLine": 240,
+            "endLine": 268,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Stemmer",
+            "type": "Method",
+            "name": "doStem",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Stemmer.java",
+            "startLine": 239,
+            "endLine": 263,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Stemmer",
+            "type": "Method",
+            "name": "stem",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Stemmer.java",
+            "startLine": 349,
+            "endLine": 484,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Stemmer",
+            "type": "Method",
+            "name": "stem",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Stemmer.java",
+            "startLine": 344,
+            "endLine": 472,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Stemmer",
+            "type": "Method",
+            "name": "applyAffix",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Stemmer.java",
+            "startLine": 589,
+            "endLine": 689,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Stemmer",
+            "type": "Method",
+            "name": "applyAffix",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Stemmer.java",
+            "startLine": 577,
+            "endLine": 676,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Stemmer",
+            "type": "Class",
+            "name": "Stemmer",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Stemmer.java",
+            "startLine": 31,
+            "endLine": 733,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Stemmer",
+            "type": "Class",
+            "name": "Stemmer",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Stemmer.java",
+            "startLine": 30,
+            "endLine": 720,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.TestPerformance",
+            "type": "Method",
+            "name": "fr_suggest",
+            "filePath": "lucene/analysis/common/src/test/org/apache/lucene/analysis/hunspell/TestPerformance.java",
+            "startLine": 83,
+            "endLine": 86,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.TestPerformance",
+            "type": "Method",
+            "name": "fr_suggest",
+            "filePath": "lucene/analysis/common/src/test/org/apache/lucene/analysis/hunspell/TestPerformance.java",
+            "startLine": 83,
+            "endLine": 86,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.TestPerformance",
+            "type": "Class",
+            "name": "TestPerformance",
+            "filePath": "lucene/analysis/common/src/test/org/apache/lucene/analysis/hunspell/TestPerformance.java",
+            "startLine": 41,
+            "endLine": 240,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.TestPerformance",
+            "type": "Class",
+            "name": "TestPerformance",
+            "filePath": "lucene/analysis/common/src/test/org/apache/lucene/analysis/hunspell/TestPerformance.java",
+            "startLine": 41,
+            "endLine": 240,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [],
+      "baseline": [
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Dictionary",
+            "type": "Method",
+            "name": "lookup",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Dictionary.java",
+            "startLine": 293,
+            "endLine": 323,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Dictionary",
+            "type": "Method",
+            "name": "nextArc",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Dictionary.java",
+            "startLine": 313,
+            "endLine": 323,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/lucene-solr.git",
+      "sha1": "42da2b45e6f38ecbb746e571692cc907b79ca426",
+      "url": "https://github.com/apache/lucene-solr/commit/42da2b45e6f38ecbb746e571692cc907b79ca426",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Hunspell",
+            "type": "Method",
+            "name": "Hunspell",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Hunspell.java",
+            "startLine": 56,
+            "endLine": 58,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Hunspell",
+            "type": "Method",
+            "name": "Hunspell",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Hunspell.java",
+            "startLine": 62,
+            "endLine": 64,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Hunspell",
+            "type": "Method",
+            "name": "suggest",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Hunspell.java",
+            "startLine": 507,
+            "endLine": 552,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Hunspell",
+            "type": "Method",
+            "name": "suggest",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Hunspell.java",
+            "startLine": 515,
+            "endLine": 522,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Hunspell",
+            "type": "Class",
+            "name": "Hunspell",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Hunspell.java",
+            "startLine": 36,
+            "endLine": 603,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Hunspell",
+            "type": "Class",
+            "name": "Hunspell",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Hunspell.java",
+            "startLine": 39,
+            "endLine": 667,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.ModifyingSuggester",
+            "type": "Field",
+            "name": "result",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/ModifyingSuggester.java",
+            "startLine": 29,
+            "endLine": 29,
+            "startColumn": 39,
+            "endColumn": 69
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.ModifyingSuggester",
+            "type": "Field",
+            "name": "result",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/ModifyingSuggester.java",
+            "startLine": 29,
+            "endLine": 29,
+            "startColumn": 39,
+            "endColumn": 45
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.ModifyingSuggester",
+            "type": "Class",
+            "name": "ModifyingSuggester",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/ModifyingSuggester.java",
+            "startLine": 26,
+            "endLine": 327,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.ModifyingSuggester",
+            "type": "Class",
+            "name": "ModifyingSuggester",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/ModifyingSuggester.java",
+            "startLine": 26,
+            "endLine": 327,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.TestPerformance",
+            "type": "Method",
+            "name": "fr_suggest",
+            "filePath": "lucene/analysis/common/src/test/org/apache/lucene/analysis/hunspell/TestPerformance.java",
+            "startLine": 82,
+            "endLine": 85,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.TestPerformance",
+            "type": "Method",
+            "name": "fr_suggest",
+            "filePath": "lucene/analysis/common/src/test/org/apache/lucene/analysis/hunspell/TestPerformance.java",
+            "startLine": 83,
+            "endLine": 86,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.TestPerformance",
+            "type": "Method",
+            "name": "checkAnalysisPerformance",
+            "filePath": "lucene/analysis/common/src/test/org/apache/lucene/analysis/hunspell/TestPerformance.java",
+            "startLine": 94,
+            "endLine": 116,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.TestPerformance",
+            "type": "Method",
+            "name": "checkAnalysisPerformance",
+            "filePath": "lucene/analysis/common/src/test/org/apache/lucene/analysis/hunspell/TestPerformance.java",
+            "startLine": 95,
+            "endLine": 117,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.TestPerformance",
+            "type": "Method",
+            "name": "checkSuggestionPerformance",
+            "filePath": "lucene/analysis/common/src/test/org/apache/lucene/analysis/hunspell/TestPerformance.java",
+            "startLine": 118,
+            "endLine": 135,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.TestPerformance",
+            "type": "Method",
+            "name": "checkSuggestionPerformance",
+            "filePath": "lucene/analysis/common/src/test/org/apache/lucene/analysis/hunspell/TestPerformance.java",
+            "startLine": 119,
+            "endLine": 136,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.TestPerformance",
+            "type": "Class",
+            "name": "TestPerformance",
+            "filePath": "lucene/analysis/common/src/test/org/apache/lucene/analysis/hunspell/TestPerformance.java",
+            "startLine": 40,
+            "endLine": 220,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.TestPerformance",
+            "type": "Class",
+            "name": "TestPerformance",
+            "filePath": "lucene/analysis/common/src/test/org/apache/lucene/analysis/hunspell/TestPerformance.java",
+            "startLine": 41,
+            "endLine": 240,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.TestSpellChecking",
+            "type": "Method",
+            "name": "checkSpellCheckerExpectations",
+            "filePath": "lucene/analysis/common/src/test/org/apache/lucene/analysis/hunspell/TestSpellChecking.java",
+            "startLine": 228,
+            "endLine": 267,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.TestSpellChecking",
+            "type": "Method",
+            "name": "checkSpellCheckerExpectations",
+            "filePath": "lucene/analysis/common/src/test/org/apache/lucene/analysis/hunspell/TestSpellChecking.java",
+            "startLine": 229,
+            "endLine": 268,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.TestSpellChecking",
+            "type": "Class",
+            "name": "TestSpellChecking",
+            "filePath": "lucene/analysis/common/src/test/org/apache/lucene/analysis/hunspell/TestSpellChecking.java",
+            "startLine": 29,
+            "endLine": 268,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.TestSpellChecking",
+            "type": "Class",
+            "name": "TestSpellChecking",
+            "filePath": "lucene/analysis/common/src/test/org/apache/lucene/analysis/hunspell/TestSpellChecking.java",
+            "startLine": 30,
+            "endLine": 269,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.TestStemmer",
+            "type": "Class",
+            "name": "TestStemmer",
+            "filePath": "lucene/analysis/common/src/test/org/apache/lucene/analysis/hunspell/TestStemmer.java",
+            "startLine": 25,
+            "endLine": 86,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.TestStemmer",
+            "type": "Class",
+            "name": "TestStemmer",
+            "filePath": "lucene/analysis/common/src/test/org/apache/lucene/analysis/hunspell/TestStemmer.java",
+            "startLine": 21,
+            "endLine": 75,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.ModifyingSuggester",
+            "type": "Method",
+            "name": "ModifyingSuggester",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/ModifyingSuggester.java",
+            "startLine": 34,
+            "endLine": 37,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.ModifyingSuggester",
+            "type": "Method",
+            "name": "ModifyingSuggester",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/ModifyingSuggester.java",
+            "startLine": 34,
+            "endLine": 38,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.TestStemmer",
+            "type": "Method",
+            "name": "testHunspellStemmingApi",
+            "filePath": "lucene/analysis/common/src/test/org/apache/lucene/analysis/hunspell/TestStemmer.java",
+            "startLine": 65,
+            "endLine": 70,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.TestHunspell",
+            "type": "Method",
+            "name": "testStemmingApi",
+            "filePath": "lucene/analysis/common/src/test/org/apache/lucene/analysis/hunspell/TestHunspell.java",
+            "startLine": 73,
+            "endLine": 79,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Hunspell",
+            "type": "Method",
+            "name": "Hunspell",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Hunspell.java",
+            "startLine": 60,
+            "endLine": 68,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Hunspell",
+            "type": "Method",
+            "name": "Hunspell",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Hunspell.java",
+            "startLine": 66,
+            "endLine": 76,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.HunspellTest",
+            "type": "Method",
+            "name": "testCheckCanceled",
+            "filePath": "lucene/analysis/common/src/test/org/apache/lucene/analysis/hunspell/HunspellTest.java",
+            "startLine": 27,
+            "endLine": 44,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.TestHunspell",
+            "type": "Method",
+            "name": "testCheckCanceled",
+            "filePath": "lucene/analysis/common/src/test/org/apache/lucene/analysis/hunspell/TestHunspell.java",
+            "startLine": 33,
+            "endLine": 50,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.ModifyingSuggester",
+            "type": "Method",
+            "name": "suggest",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/ModifyingSuggester.java",
+            "startLine": 39,
+            "endLine": 77,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.ModifyingSuggester",
+            "type": "Method",
+            "name": "suggest",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/ModifyingSuggester.java",
+            "startLine": 40,
+            "endLine": 77,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.HunspellTest",
+            "type": "Class",
+            "name": "HunspellTest",
+            "filePath": "lucene/analysis/common/src/test/org/apache/lucene/analysis/hunspell/HunspellTest.java",
+            "startLine": 26,
+            "endLine": 45,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.TestHunspell",
+            "type": "Class",
+            "name": "TestHunspell",
+            "filePath": "lucene/analysis/common/src/test/org/apache/lucene/analysis/hunspell/TestHunspell.java",
+            "startLine": 32,
+            "endLine": 80,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Hunspell",
+            "type": "Method",
+            "name": "suggest",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Hunspell.java",
+            "startLine": 507,
+            "endLine": 552,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Hunspell",
+            "type": "Method",
+            "name": "suggest",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Hunspell.java",
+            "startLine": 524,
+            "endLine": 555,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.TestPerformance",
+            "type": "Method",
+            "name": "checkSuggestionPerformance",
+            "filePath": "lucene/analysis/common/src/test/org/apache/lucene/analysis/hunspell/TestPerformance.java",
+            "startLine": 118,
+            "endLine": 135,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.TestPerformance",
+            "type": "Method",
+            "name": "hasQuickSuggestions",
+            "filePath": "lucene/analysis/common/src/test/org/apache/lucene/analysis/hunspell/TestPerformance.java",
+            "startLine": 138,
+            "endLine": 155,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/lucene-solr.git",
+      "sha1": "c51fee9c1a59030bda61b600cca8923410f1e090",
+      "url": "https://github.com/apache/lucene-solr/commit/c51fee9c1a59030bda61b600cca8923410f1e090",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.codecs.compressing.CompressingStoredFieldsReader.BlockState",
+            "type": "Method",
+            "name": "document",
+            "filePath": "lucene/core/src/java/org/apache/lucene/codecs/compressing/CompressingStoredFieldsReader.java",
+            "startLine": 585,
+            "endLine": 663,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.codecs.compressing.CompressingStoredFieldsReader.BlockState",
+            "type": "Method",
+            "name": "document",
+            "filePath": "lucene/core/src/java/org/apache/lucene/codecs/compressing/CompressingStoredFieldsReader.java",
+            "startLine": 585,
+            "endLine": 668,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.codecs.compressing.CompressingStoredFieldsReader.BlockState",
+            "type": "Class",
+            "name": "BlockState",
+            "filePath": "lucene/core/src/java/org/apache/lucene/codecs/compressing/CompressingStoredFieldsReader.java",
+            "startLine": 422,
+            "endLine": 664,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.codecs.compressing.CompressingStoredFieldsReader.BlockState",
+            "type": "Class",
+            "name": "BlockState",
+            "filePath": "lucene/core/src/java/org/apache/lucene/codecs/compressing/CompressingStoredFieldsReader.java",
+            "startLine": 422,
+            "endLine": 669,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.codecs.compressing.CompressingStoredFieldsReader",
+            "type": "Class",
+            "name": "CompressingStoredFieldsReader",
+            "filePath": "lucene/core/src/java/org/apache/lucene/codecs/compressing/CompressingStoredFieldsReader.java",
+            "startLine": 73,
+            "endLine": 792,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.codecs.compressing.CompressingStoredFieldsReader",
+            "type": "Class",
+            "name": "CompressingStoredFieldsReader",
+            "filePath": "lucene/core/src/java/org/apache/lucene/codecs/compressing/CompressingStoredFieldsReader.java",
+            "startLine": 73,
+            "endLine": 797,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.index.ByteSliceReader",
+            "type": "Class",
+            "name": "ByteSliceReader",
+            "filePath": "lucene/core/src/java/org/apache/lucene/index/ByteSliceReader.java",
+            "startLine": 29,
+            "endLine": 141,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.index.ByteSliceReader",
+            "type": "Class",
+            "name": "ByteSliceReader",
+            "filePath": "lucene/core/src/java/org/apache/lucene/index/ByteSliceReader.java",
+            "startLine": 29,
+            "endLine": 146,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.store.ByteBuffersDataInput",
+            "type": "Class",
+            "name": "ByteBuffersDataInput",
+            "filePath": "lucene/core/src/java/org/apache/lucene/store/ByteBuffersDataInput.java",
+            "startLine": 32,
+            "endLine": 379,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.store.ByteBuffersDataInput",
+            "type": "Class",
+            "name": "ByteBuffersDataInput",
+            "filePath": "lucene/core/src/java/org/apache/lucene/store/ByteBuffersDataInput.java",
+            "startLine": 33,
+            "endLine": 385,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.store.ChecksumIndexInput",
+            "type": "Method",
+            "name": "seek",
+            "filePath": "lucene/core/src/java/org/apache/lucene/store/ChecksumIndexInput.java",
+            "startLine": 38,
+            "endLine": 54,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.store.ChecksumIndexInput",
+            "type": "Method",
+            "name": "seek",
+            "filePath": "lucene/core/src/java/org/apache/lucene/store/ChecksumIndexInput.java",
+            "startLine": 38,
+            "endLine": 58,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.store.ChecksumIndexInput",
+            "type": "Class",
+            "name": "ChecksumIndexInput",
+            "filePath": "lucene/core/src/java/org/apache/lucene/store/ChecksumIndexInput.java",
+            "startLine": 21,
+            "endLine": 55,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.store.ChecksumIndexInput",
+            "type": "Class",
+            "name": "ChecksumIndexInput",
+            "filePath": "lucene/core/src/java/org/apache/lucene/store/ChecksumIndexInput.java",
+            "startLine": 21,
+            "endLine": 59,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.store.DataInput",
+            "type": "Class",
+            "name": "DataInput",
+            "filePath": "lucene/core/src/java/org/apache/lucene/store/DataInput.java",
+            "startLine": 31,
+            "endLine": 366,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.store.DataInput",
+            "type": "Class",
+            "name": "DataInput",
+            "filePath": "lucene/core/src/java/org/apache/lucene/store/DataInput.java",
+            "startLine": 31,
+            "endLine": 377,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.store.IndexInput",
+            "type": "Class",
+            "name": "IndexInput",
+            "filePath": "lucene/core/src/java/org/apache/lucene/store/IndexInput.java",
+            "startLine": 22,
+            "endLine": 165,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.store.IndexInput",
+            "type": "Class",
+            "name": "IndexInput",
+            "filePath": "lucene/core/src/java/org/apache/lucene/store/IndexInput.java",
+            "startLine": 22,
+            "endLine": 182,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.store.InputStreamDataInput",
+            "type": "Class",
+            "name": "InputStreamDataInput",
+            "filePath": "lucene/core/src/java/org/apache/lucene/store/InputStreamDataInput.java",
+            "startLine": 21,
+            "endLine": 53,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.store.InputStreamDataInput",
+            "type": "Class",
+            "name": "InputStreamDataInput",
+            "filePath": "lucene/core/src/java/org/apache/lucene/store/InputStreamDataInput.java",
+            "startLine": 21,
+            "endLine": 58,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.util.PagedBytes.PagedBytesDataInput",
+            "type": "Class",
+            "name": "PagedBytesDataInput",
+            "filePath": "lucene/core/src/java/org/apache/lucene/util/PagedBytes.java",
+            "startLine": 286,
+            "endLine": 352,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.util.PagedBytes.PagedBytesDataInput",
+            "type": "Class",
+            "name": "PagedBytesDataInput",
+            "filePath": "lucene/core/src/java/org/apache/lucene/util/PagedBytes.java",
+            "startLine": 286,
+            "endLine": 357,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.util.PagedBytes",
+            "type": "Class",
+            "name": "PagedBytes",
+            "filePath": "lucene/core/src/java/org/apache/lucene/util/PagedBytes.java",
+            "startLine": 24,
+            "endLine": 430,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.util.PagedBytes",
+            "type": "Class",
+            "name": "PagedBytes",
+            "filePath": "lucene/core/src/java/org/apache/lucene/util/PagedBytes.java",
+            "startLine": 24,
+            "endLine": 435,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.index.TestIndexInput",
+            "type": "Method",
+            "name": "testRawIndexInputRead",
+            "filePath": "lucene/core/src/test/org/apache/lucene/index/TestIndexInput.java",
+            "startLine": 267,
+            "endLine": 286,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.index.TestIndexInput",
+            "type": "Method",
+            "name": "testRawIndexInputRead",
+            "filePath": "lucene/core/src/test/org/apache/lucene/index/TestIndexInput.java",
+            "startLine": 302,
+            "endLine": 323,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.index.TestIndexInput",
+            "type": "Class",
+            "name": "TestIndexInput",
+            "filePath": "lucene/core/src/test/org/apache/lucene/index/TestIndexInput.java",
+            "startLine": 32,
+            "endLine": 294,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.index.TestIndexInput",
+            "type": "Class",
+            "name": "TestIndexInput",
+            "filePath": "lucene/core/src/test/org/apache/lucene/index/TestIndexInput.java",
+            "startLine": 32,
+            "endLine": 393,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.store.DataInput",
+            "type": "Method",
+            "name": "skipBytes",
+            "filePath": "lucene/core/src/java/org/apache/lucene/store/DataInput.java",
+            "startLine": 347,
+            "endLine": 365,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.store.DataInput",
+            "type": "Method",
+            "name": "skipBytes",
+            "filePath": "lucene/core/src/java/org/apache/lucene/store/DataInput.java",
+            "startLine": 371,
+            "endLine": 376,
+            "startColumn": 3,
+            "endColumn": 74
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.store.DataInput",
+            "type": "Method",
+            "name": "skipBytes",
+            "filePath": "lucene/core/src/java/org/apache/lucene/store/DataInput.java",
+            "startLine": 347,
+            "endLine": 365,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.store.DataInput",
+            "type": "Method",
+            "name": "skipBytesSlowly",
+            "filePath": "lucene/core/src/java/org/apache/lucene/store/DataInput.java",
+            "startLine": 347,
+            "endLine": 369,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/lucene-solr.git",
+      "sha1": "5e834b39eb23bdc4c2b6b80a782efb6ff9d397dd",
+      "url": "https://github.com/apache/lucene-solr/commit/5e834b39eb23bdc4c2b6b80a782efb6ff9d397dd",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Hunspell",
+            "type": "Method",
+            "name": "findStem",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Hunspell.java",
+            "startLine": 159,
+            "endLine": 177,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Hunspell",
+            "type": "Method",
+            "name": "findStem",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Hunspell.java",
+            "startLine": 159,
+            "endLine": 179,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Hunspell",
+            "type": "Class",
+            "name": "Hunspell",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Hunspell.java",
+            "startLine": 35,
+            "endLine": 573,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Hunspell",
+            "type": "Class",
+            "name": "Hunspell",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Hunspell.java",
+            "startLine": 35,
+            "endLine": 598,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Stemmer",
+            "type": "Method",
+            "name": "stem",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Stemmer.java",
+            "startLine": 78,
+            "endLine": 117,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Stemmer",
+            "type": "Method",
+            "name": "stem",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Stemmer.java",
+            "startLine": 78,
+            "endLine": 116,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Stemmer",
+            "type": "Class",
+            "name": "Stemmer",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Stemmer.java",
+            "startLine": 31,
+            "endLine": 790,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Stemmer",
+            "type": "Class",
+            "name": "Stemmer",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Stemmer.java",
+            "startLine": 31,
+            "endLine": 735,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.TestAllCaps",
+            "type": "Method",
+            "name": "testWrong",
+            "filePath": "lucene/analysis/common/src/test/org/apache/lucene/analysis/hunspell/TestAllCaps.java",
+            "startLine": 39,
+            "endLine": 43,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.TestAllCaps",
+            "type": "Method",
+            "name": "testWrong",
+            "filePath": "lucene/analysis/common/src/test/org/apache/lucene/analysis/hunspell/TestAllCaps.java",
+            "startLine": 39,
+            "endLine": 44,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.TestAllCaps",
+            "type": "Class",
+            "name": "TestAllCaps",
+            "filePath": "lucene/analysis/common/src/test/org/apache/lucene/analysis/hunspell/TestAllCaps.java",
+            "startLine": 21,
+            "endLine": 44,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.TestAllCaps",
+            "type": "Class",
+            "name": "TestAllCaps",
+            "filePath": "lucene/analysis/common/src/test/org/apache/lucene/analysis/hunspell/TestAllCaps.java",
+            "startLine": 21,
+            "endLine": 45,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.TestKeepCase",
+            "type": "Method",
+            "name": "testPossibilities",
+            "filePath": "lucene/analysis/common/src/test/org/apache/lucene/analysis/hunspell/TestKeepCase.java",
+            "startLine": 28,
+            "endLine": 49,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.TestKeepCase",
+            "type": "Method",
+            "name": "testPossibilities",
+            "filePath": "lucene/analysis/common/src/test/org/apache/lucene/analysis/hunspell/TestKeepCase.java",
+            "startLine": 28,
+            "endLine": 54,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.TestKeepCase",
+            "type": "Class",
+            "name": "TestKeepCase",
+            "filePath": "lucene/analysis/common/src/test/org/apache/lucene/analysis/hunspell/TestKeepCase.java",
+            "startLine": 21,
+            "endLine": 50,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.TestKeepCase",
+            "type": "Class",
+            "name": "TestKeepCase",
+            "filePath": "lucene/analysis/common/src/test/org/apache/lucene/analysis/hunspell/TestKeepCase.java",
+            "startLine": 21,
+            "endLine": 55,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Stemmer",
+            "type": "Method",
+            "name": "containsSharpS",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Stemmer.java",
+            "startLine": 312,
+            "endLine": 319,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Hunspell",
+            "type": "Method",
+            "name": "containsSharpS",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Hunspell.java",
+            "startLine": 195,
+            "endLine": 202,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Stemmer",
+            "type": "Method",
+            "name": "stem",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Stemmer.java",
+            "startLine": 400,
+            "endLine": 540,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Stemmer",
+            "type": "Method",
+            "name": "stem",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Stemmer.java",
+            "startLine": 356,
+            "endLine": 491,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Stemmer",
+            "type": "Method",
+            "name": "applyAffix",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Stemmer.java",
+            "startLine": 646,
+            "endLine": 760,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Stemmer",
+            "type": "Method",
+            "name": "applyAffix",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Stemmer.java",
+            "startLine": 597,
+            "endLine": 705,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Stemmer",
+            "type": "Method",
+            "name": "doStem",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Stemmer.java",
+            "startLine": 241,
+            "endLine": 295,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Stemmer",
+            "type": "Method",
+            "name": "doStem",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Stemmer.java",
+            "startLine": 240,
+            "endLine": 275,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [],
+      "baseline": [
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Stemmer",
+            "type": "Method",
+            "name": "acceptCase",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Stemmer.java",
+            "startLine": 297,
+            "endLine": 310,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Hunspell",
+            "type": "Method",
+            "name": "acceptCase",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Hunspell.java",
+            "startLine": 181,
+            "endLine": 193,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/lucene-solr.git",
+      "sha1": "ef920388e62464c7fee2397f8310f080de61a43a",
+      "url": "https://github.com/apache/lucene-solr/commit/ef920388e62464c7fee2397f8310f080de61a43a",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.CheckCompoundPattern",
+            "type": "Class",
+            "name": "CheckCompoundPattern",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/CheckCompoundPattern.java",
+            "startLine": 22,
+            "endLine": 129,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.CheckCompoundPattern",
+            "type": "Class",
+            "name": "CheckCompoundPattern",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/CheckCompoundPattern.java",
+            "startLine": 21,
+            "endLine": 122,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Hunspell",
+            "type": "Method",
+            "name": "checkCompoundsAfter",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Hunspell.java",
+            "startLine": 224,
+            "endLine": 241,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Hunspell",
+            "type": "Method",
+            "name": "checkCompoundsAfter",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Hunspell.java",
+            "startLine": 224,
+            "endLine": 241,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Hunspell.CompoundPart",
+            "type": "Method",
+            "name": "CompoundPart",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Hunspell.java",
+            "startLine": 280,
+            "endLine": 292,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Hunspell.CompoundPart",
+            "type": "Method",
+            "name": "CompoundPart",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Hunspell.java",
+            "startLine": 273,
+            "endLine": 285,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Hunspell.CompoundPart",
+            "type": "Method",
+            "name": "mayCompound",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Hunspell.java",
+            "startLine": 299,
+            "endLine": 320,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Hunspell.CompoundPart",
+            "type": "Method",
+            "name": "mayCompound",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Hunspell.java",
+            "startLine": 292,
+            "endLine": 313,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Hunspell.CompoundPart",
+            "type": "Class",
+            "name": "CompoundPart",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Hunspell.java",
+            "startLine": 274,
+            "endLine": 335,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Hunspell.CompoundPart",
+            "type": "Class",
+            "name": "CompoundPart",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Hunspell.java",
+            "startLine": 266,
+            "endLine": 328,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Hunspell",
+            "type": "Class",
+            "name": "Hunspell",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Hunspell.java",
+            "startLine": 36,
+            "endLine": 566,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Hunspell",
+            "type": "Class",
+            "name": "Hunspell",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Hunspell.java",
+            "startLine": 36,
+            "endLine": 559,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.CheckCompoundPattern",
+            "type": "Method",
+            "name": "prohibitsCompounding",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/CheckCompoundPattern.java",
+            "startLine": 54,
+            "endLine": 81,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.CheckCompoundPattern",
+            "type": "Method",
+            "name": "prohibitsCompounding",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/CheckCompoundPattern.java",
+            "startLine": 53,
+            "endLine": 79,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Hunspell.CompoundPart",
+            "type": "Field",
+            "name": "stem",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Hunspell.java",
+            "startLine": 277,
+            "endLine": 277,
+            "startColumn": 26,
+            "endColumn": 30
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Hunspell.CompoundPart",
+            "type": "Field",
+            "name": "root",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Hunspell.java",
+            "startLine": 270,
+            "endLine": 270,
+            "startColumn": 26,
+            "endColumn": 30
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.CheckCompoundPattern",
+            "type": "Method",
+            "name": "stemHasFlags",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/CheckCompoundPattern.java",
+            "startLine": 87,
+            "endLine": 90,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.CheckCompoundPattern",
+            "type": "Method",
+            "name": "hasAllFlags",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/CheckCompoundPattern.java",
+            "startLine": 85,
+            "endLine": 92,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Hunspell",
+            "type": "Method",
+            "name": "hasForceUCaseProblem",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Hunspell.java",
+            "startLine": 243,
+            "endLine": 250,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Hunspell",
+            "type": "Method",
+            "name": "hasForceUCaseProblem",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Hunspell.java",
+            "startLine": 243,
+            "endLine": 246,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.CheckCompoundPattern",
+            "type": "Method",
+            "name": "hasAllFlags",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/CheckCompoundPattern.java",
+            "startLine": 92,
+            "endLine": 99,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.CheckCompoundPattern",
+            "type": "Method",
+            "name": "hasAllFlags",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/CheckCompoundPattern.java",
+            "startLine": 85,
+            "endLine": 92,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/lucene-solr.git",
+      "sha1": "f1a1165ac8eacc5f52f216dff362a69b9629cbe5",
+      "url": "https://github.com/apache/lucene-solr/commit/f1a1165ac8eacc5f52f216dff362a69b9629cbe5",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Dictionary",
+            "type": "Method",
+            "name": "formStep",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Dictionary.java",
+            "startLine": 276,
+            "endLine": 278,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Dictionary",
+            "type": "Method",
+            "name": "formStep",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Dictionary.java",
+            "startLine": 272,
+            "endLine": 274,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Dictionary",
+            "type": "Method",
+            "name": "mergeDictionaries",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Dictionary.java",
+            "startLine": 1007,
+            "endLine": 1041,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Dictionary",
+            "type": "Method",
+            "name": "mergeDictionaries",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Dictionary.java",
+            "startLine": 1041,
+            "endLine": 1077,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Dictionary",
+            "type": "Method",
+            "name": "readSortedDictionaries",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Dictionary.java",
+            "startLine": 1155,
+            "endLine": 1225,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Dictionary",
+            "type": "Method",
+            "name": "readSortedDictionaries",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Dictionary.java",
+            "startLine": 1191,
+            "endLine": 1260,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Dictionary.EntryGrouper",
+            "type": "Method",
+            "name": "add",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Dictionary.java",
+            "startLine": 1290,
+            "endLine": 1305,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Dictionary.EntryGrouper",
+            "type": "Method",
+            "name": "add",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Dictionary.java",
+            "startLine": 1344,
+            "endLine": 1359,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Dictionary.EntryGrouper",
+            "type": "Method",
+            "name": "flushGroup",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Dictionary.java",
+            "startLine": 1307,
+            "endLine": 1335,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Dictionary.EntryGrouper",
+            "type": "Method",
+            "name": "flushGroup",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Dictionary.java",
+            "startLine": 1361,
+            "endLine": 1389,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Dictionary.EntryGrouper",
+            "type": "Class",
+            "name": "EntryGrouper",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Dictionary.java",
+            "startLine": 1277,
+            "endLine": 1336,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Dictionary.EntryGrouper",
+            "type": "Class",
+            "name": "EntryGrouper",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Dictionary.java",
+            "startLine": 1331,
+            "endLine": 1390,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Dictionary",
+            "type": "Method",
+            "name": "splitMorphData",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Dictionary.java",
+            "startLine": 1392,
+            "endLine": 1408,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Dictionary",
+            "type": "Method",
+            "name": "splitMorphData",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Dictionary.java",
+            "startLine": 1433,
+            "endLine": 1453,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Dictionary",
+            "type": "Class",
+            "name": "Dictionary",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Dictionary.java",
+            "startLine": 71,
+            "endLine": 1658,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Dictionary",
+            "type": "Class",
+            "name": "Dictionary",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Dictionary.java",
+            "startLine": 70,
+            "endLine": 1703,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Hunspell",
+            "type": "Method",
+            "name": "findStem",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Hunspell.java",
+            "startLine": 149,
+            "endLine": 166,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Hunspell",
+            "type": "Method",
+            "name": "findStem",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Hunspell.java",
+            "startLine": 149,
+            "endLine": 166,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Hunspell",
+            "type": "Class",
+            "name": "Hunspell",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Hunspell.java",
+            "startLine": 36,
+            "endLine": 545,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Hunspell",
+            "type": "Class",
+            "name": "Hunspell",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Hunspell.java",
+            "startLine": 36,
+            "endLine": 563,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Stemmer.RootProcessor",
+            "type": "Interface",
+            "name": "RootProcessor",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Stemmer.java",
+            "startLine": 341,
+            "endLine": 350,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Stemmer.RootProcessor",
+            "type": "Interface",
+            "name": "RootProcessor",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Stemmer.java",
+            "startLine": 341,
+            "endLine": 351,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Stemmer",
+            "type": "Method",
+            "name": "callProcessor",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Stemmer.java",
+            "startLine": 759,
+            "endLine": 763,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Stemmer",
+            "type": "Method",
+            "name": "callProcessor",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Stemmer.java",
+            "startLine": 764,
+            "endLine": 769,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Stemmer",
+            "type": "Class",
+            "name": "Stemmer",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Stemmer.java",
+            "startLine": 31,
+            "endLine": 786,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Stemmer",
+            "type": "Class",
+            "name": "Stemmer",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Stemmer.java",
+            "startLine": 31,
+            "endLine": 792,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.StemmerTestBase",
+            "type": "Method",
+            "name": "init",
+            "filePath": "lucene/analysis/common/src/test/org/apache/lucene/analysis/hunspell/StemmerTestBase.java",
+            "startLine": 44,
+            "endLine": 76,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.StemmerTestBase",
+            "type": "Method",
+            "name": "init",
+            "filePath": "lucene/analysis/common/src/test/org/apache/lucene/analysis/hunspell/StemmerTestBase.java",
+            "startLine": 44,
+            "endLine": 47,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.StemmerTestBase",
+            "type": "Method",
+            "name": "assertStemsTo",
+            "filePath": "lucene/analysis/common/src/test/org/apache/lucene/analysis/hunspell/StemmerTestBase.java",
+            "startLine": 78,
+            "endLine": 93,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.StemmerTestBase",
+            "type": "Method",
+            "name": "assertStemsTo",
+            "filePath": "lucene/analysis/common/src/test/org/apache/lucene/analysis/hunspell/StemmerTestBase.java",
+            "startLine": 81,
+            "endLine": 96,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.StemmerTestBase",
+            "type": "Class",
+            "name": "StemmerTestBase",
+            "filePath": "lucene/analysis/common/src/test/org/apache/lucene/analysis/hunspell/StemmerTestBase.java",
+            "startLine": 31,
+            "endLine": 94,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.StemmerTestBase",
+            "type": "Class",
+            "name": "StemmerTestBase",
+            "filePath": "lucene/analysis/common/src/test/org/apache/lucene/analysis/hunspell/StemmerTestBase.java",
+            "startLine": 31,
+            "endLine": 97,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.TestAllDictionaries",
+            "type": "Method",
+            "name": "memoryUsageSummary",
+            "filePath": "lucene/analysis/common/src/test/org/apache/lucene/analysis/hunspell/TestAllDictionaries.java",
+            "startLine": 200,
+            "endLine": 210,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.TestAllDictionaries",
+            "type": "Method",
+            "name": "memoryUsageSummary",
+            "filePath": "lucene/analysis/common/src/test/org/apache/lucene/analysis/hunspell/TestAllDictionaries.java",
+            "startLine": 200,
+            "endLine": 211,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.TestAllDictionaries",
+            "type": "Class",
+            "name": "TestAllDictionaries",
+            "filePath": "lucene/analysis/common/src/test/org/apache/lucene/analysis/hunspell/TestAllDictionaries.java",
+            "startLine": 54,
+            "endLine": 211,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.TestAllDictionaries",
+            "type": "Class",
+            "name": "TestAllDictionaries",
+            "filePath": "lucene/analysis/common/src/test/org/apache/lucene/analysis/hunspell/TestAllDictionaries.java",
+            "startLine": 54,
+            "endLine": 212,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.TestDictionary",
+            "type": "Class",
+            "name": "TestDictionary",
+            "filePath": "lucene/analysis/common/src/test/org/apache/lucene/analysis/hunspell/TestDictionary.java",
+            "startLine": 38,
+            "endLine": 250,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.TestDictionary",
+            "type": "Class",
+            "name": "TestDictionary",
+            "filePath": "lucene/analysis/common/src/test/org/apache/lucene/analysis/hunspell/TestDictionary.java",
+            "startLine": 42,
+            "endLine": 283,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.TestStemmer",
+            "type": "Class",
+            "name": "TestStemmer",
+            "filePath": "lucene/analysis/common/src/test/org/apache/lucene/analysis/hunspell/TestStemmer.java",
+            "startLine": 21,
+            "endLine": 75,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.TestStemmer",
+            "type": "Class",
+            "name": "TestStemmer",
+            "filePath": "lucene/analysis/common/src/test/org/apache/lucene/analysis/hunspell/TestStemmer.java",
+            "startLine": 25,
+            "endLine": 86,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Stemmer",
+            "type": "Method",
+            "name": "newStem",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Stemmer.java",
+            "startLine": 362,
+            "endLine": 385,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Stemmer",
+            "type": "Method",
+            "name": "newStem",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Stemmer.java",
+            "startLine": 365,
+            "endLine": 390,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Dictionary",
+            "type": "Field",
+            "name": "hasStemExceptions",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Dictionary.java",
+            "startLine": 147,
+            "endLine": 147,
+            "startColumn": 11,
+            "endColumn": 28
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Dictionary",
+            "type": "Field",
+            "name": "hasCustomMorphData",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Dictionary.java",
+            "startLine": 143,
+            "endLine": 143,
+            "startColumn": 11,
+            "endColumn": 29
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Dictionary.EntryGrouper",
+            "type": "Field",
+            "name": "stemExceptionIDs",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Dictionary.java",
+            "startLine": 1281,
+            "endLine": 1281,
+            "startColumn": 33,
+            "endColumn": 69
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Dictionary.EntryGrouper",
+            "type": "Field",
+            "name": "morphDataIDs",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Dictionary.java",
+            "startLine": 1335,
+            "endLine": 1335,
+            "startColumn": 33,
+            "endColumn": 65
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Dictionary",
+            "type": "Method",
+            "name": "addStemException",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Dictionary.java",
+            "startLine": 1227,
+            "endLine": 1231,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Dictionary",
+            "type": "Method",
+            "name": "addMorphFields",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Dictionary.java",
+            "startLine": 1275,
+            "endLine": 1285,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Stemmer.RootProcessor",
+            "type": "Method",
+            "name": "processRoot",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Stemmer.java",
+            "startLine": 342,
+            "endLine": 349,
+            "startColumn": 5,
+            "endColumn": 74
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Stemmer.RootProcessor",
+            "type": "Method",
+            "name": "processRoot",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Stemmer.java",
+            "startLine": 342,
+            "endLine": 350,
+            "startColumn": 5,
+            "endColumn": 69
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Stemmer",
+            "type": "Method",
+            "name": "stemException",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Stemmer.java",
+            "startLine": 352,
+            "endLine": 360,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Stemmer",
+            "type": "Method",
+            "name": "stemException",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Stemmer.java",
+            "startLine": 353,
+            "endLine": 363,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Dictionary",
+            "type": "Method",
+            "name": "hasStemException",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Dictionary.java",
+            "startLine": 1383,
+            "endLine": 1390,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Dictionary",
+            "type": "Method",
+            "name": "mergeDictionaries",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Dictionary.java",
+            "startLine": 1041,
+            "endLine": 1077,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Dictionary",
+            "type": "Method",
+            "name": "readSortedDictionaries",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Dictionary.java",
+            "startLine": 1155,
+            "endLine": 1225,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.lucene.analysis.hunspell.Dictionary",
+            "type": "Method",
+            "name": "readMorphFields",
+            "filePath": "lucene/analysis/common/src/java/org/apache/lucene/analysis/hunspell/Dictionary.java",
+            "startLine": 1262,
+            "endLine": 1273,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/apache/lucene-solr.git",
+      "sha1": "e6d9eaaf000bb00e52a776e298b3c7e9f37a4cd5",
+      "url": "https://github.com/apache/lucene-solr/commit/e6d9eaaf000bb00e52a776e298b3c7e9f37a4cd5",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "org.apache.solr.util.xslt.TransformerProvider",
+            "type": "Field",
+            "name": "lastFilename",
+            "filePath": "solr/core/src/java/org/apache/solr/util/xslt/TransformerProvider.java",
+            "startLine": 49,
+            "endLine": 49,
+            "startColumn": 18,
+            "endColumn": 30
+          },
+          "rightSideLocation": {
+            "container": "org.apache.solr.scripting.xslt.TransformerProvider",
+            "type": "Field",
+            "name": "lastFilename",
+            "filePath": "solr/contrib/scripting/src/java/org/apache/solr/scripting/xslt/TransformerProvider.java",
+            "startLine": 50,
+            "endLine": 50,
+            "startColumn": 18,
+            "endColumn": 30
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.solr.util.xslt.TransformerProvider",
+            "type": "Field",
+            "name": "lastTemplates",
+            "filePath": "solr/core/src/java/org/apache/solr/util/xslt/TransformerProvider.java",
+            "startLine": 50,
+            "endLine": 50,
+            "startColumn": 21,
+            "endColumn": 41
+          },
+          "rightSideLocation": {
+            "container": "org.apache.solr.scripting.xslt.TransformerProvider",
+            "type": "Field",
+            "name": "lastTemplates",
+            "filePath": "solr/contrib/scripting/src/java/org/apache/solr/scripting/xslt/TransformerProvider.java",
+            "startLine": 51,
+            "endLine": 51,
+            "startColumn": 21,
+            "endColumn": 41
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.solr.util.xslt.TransformerProvider",
+            "type": "Field",
+            "name": "cacheExpiresTimeout",
+            "filePath": "solr/core/src/java/org/apache/solr/util/xslt/TransformerProvider.java",
+            "startLine": 51,
+            "endLine": 51,
+            "startColumn": 19,
+            "endColumn": 38
+          },
+          "rightSideLocation": {
+            "container": "org.apache.solr.scripting.xslt.TransformerProvider",
+            "type": "Field",
+            "name": "cacheExpiresTimeout",
+            "filePath": "solr/contrib/scripting/src/java/org/apache/solr/scripting/xslt/TransformerProvider.java",
+            "startLine": 52,
+            "endLine": 52,
+            "startColumn": 19,
+            "endColumn": 38
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.solr.util.xslt.TransformerProvider",
+            "type": "Field",
+            "name": "log",
+            "filePath": "solr/core/src/java/org/apache/solr/util/xslt/TransformerProvider.java",
+            "startLine": 53,
+            "endLine": 53,
+            "startColumn": 31,
+            "endColumn": 98
+          },
+          "rightSideLocation": {
+            "container": "org.apache.solr.scripting.xslt.TransformerProvider",
+            "type": "Field",
+            "name": "log",
+            "filePath": "solr/contrib/scripting/src/java/org/apache/solr/scripting/xslt/TransformerProvider.java",
+            "startLine": 54,
+            "endLine": 54,
+            "startColumn": 31,
+            "endColumn": 98
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.solr.util.xslt.TransformerProvider",
+            "type": "Field",
+            "name": "xmllog",
+            "filePath": "solr/core/src/java/org/apache/solr/util/xslt/TransformerProvider.java",
+            "startLine": 54,
+            "endLine": 54,
+            "startColumn": 39,
+            "endColumn": 71
+          },
+          "rightSideLocation": {
+            "container": "org.apache.solr.scripting.xslt.TransformerProvider",
+            "type": "Field",
+            "name": "xmllog",
+            "filePath": "solr/contrib/scripting/src/java/org/apache/solr/scripting/xslt/TransformerProvider.java",
+            "startLine": 55,
+            "endLine": 55,
+            "startColumn": 39,
+            "endColumn": 71
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.solr.util.xslt.TransformerProvider",
+            "type": "Field",
+            "name": "instance",
+            "filePath": "solr/core/src/java/org/apache/solr/util/xslt/TransformerProvider.java",
+            "startLine": 56,
+            "endLine": 56,
+            "startColumn": 37,
+            "endColumn": 73
+          },
+          "rightSideLocation": {
+            "container": "org.apache.solr.scripting.xslt.TransformerProvider",
+            "type": "Field",
+            "name": "instance",
+            "filePath": "solr/contrib/scripting/src/java/org/apache/solr/scripting/xslt/TransformerProvider.java",
+            "startLine": 57,
+            "endLine": 57,
+            "startColumn": 37,
+            "endColumn": 73
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.solr.util.xslt.TransformerProvider",
+            "type": "Method",
+            "name": "TransformerProvider",
+            "filePath": "solr/core/src/java/org/apache/solr/util/xslt/TransformerProvider.java",
+            "startLine": 58,
+            "endLine": 65,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.solr.scripting.xslt.TransformerProvider",
+            "type": "Method",
+            "name": "TransformerProvider",
+            "filePath": "solr/contrib/scripting/src/java/org/apache/solr/scripting/xslt/TransformerProvider.java",
+            "startLine": 59,
+            "endLine": 66,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.solr.util.xslt.TransformerProvider",
+            "type": "Method",
+            "name": "getTransformer",
+            "filePath": "solr/core/src/java/org/apache/solr/util/xslt/TransformerProvider.java",
+            "startLine": 67,
+            "endLine": 92,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.solr.scripting.xslt.TransformerProvider",
+            "type": "Method",
+            "name": "getTransformer",
+            "filePath": "solr/contrib/scripting/src/java/org/apache/solr/scripting/xslt/TransformerProvider.java",
+            "startLine": 89,
+            "endLine": 114,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.solr.util.xslt.TransformerProvider",
+            "type": "Method",
+            "name": "getTemplates",
+            "filePath": "solr/core/src/java/org/apache/solr/util/xslt/TransformerProvider.java",
+            "startLine": 94,
+            "endLine": 125,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.solr.scripting.xslt.TransformerProvider",
+            "type": "Method",
+            "name": "getTemplates",
+            "filePath": "solr/contrib/scripting/src/java/org/apache/solr/scripting/xslt/TransformerProvider.java",
+            "startLine": 116,
+            "endLine": 147,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.solr.response.XSLTResponseWriter",
+            "type": "Field",
+            "name": "DEFAULT_CONTENT_TYPE",
+            "filePath": "solr/core/src/java/org/apache/solr/response/XSLTResponseWriter.java",
+            "startLine": 49,
+            "endLine": 49,
+            "startColumn": 30,
+            "endColumn": 70
+          },
+          "rightSideLocation": {
+            "container": "org.apache.solr.scripting.xslt.XSLTResponseWriter",
+            "type": "Field",
+            "name": "DEFAULT_CONTENT_TYPE",
+            "filePath": "solr/contrib/scripting/src/java/org/apache/solr/scripting/xslt/XSLTResponseWriter.java",
+            "startLine": 49,
+            "endLine": 49,
+            "startColumn": 30,
+            "endColumn": 70
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.solr.response.XSLTResponseWriter",
+            "type": "Field",
+            "name": "xsltCacheLifetimeSeconds",
+            "filePath": "solr/core/src/java/org/apache/solr/response/XSLTResponseWriter.java",
+            "startLine": 52,
+            "endLine": 52,
+            "startColumn": 19,
+            "endColumn": 50
+          },
+          "rightSideLocation": {
+            "container": "org.apache.solr.scripting.xslt.XSLTResponseWriter",
+            "type": "Field",
+            "name": "xsltCacheLifetimeSeconds",
+            "filePath": "solr/contrib/scripting/src/java/org/apache/solr/scripting/xslt/XSLTResponseWriter.java",
+            "startLine": 51,
+            "endLine": 51,
+            "startColumn": 19,
+            "endColumn": 50
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.solr.response.XSLTResponseWriter",
+            "type": "Method",
+            "name": "getContentType",
+            "filePath": "solr/core/src/java/org/apache/solr/response/XSLTResponseWriter.java",
+            "startLine": 67,
+            "endLine": 94,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.solr.scripting.xslt.XSLTResponseWriter",
+            "type": "Method",
+            "name": "getContentType",
+            "filePath": "solr/contrib/scripting/src/java/org/apache/solr/scripting/xslt/XSLTResponseWriter.java",
+            "startLine": 59,
+            "endLine": 86,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.solr.response.XSLTResponseWriter",
+            "type": "Method",
+            "name": "write",
+            "filePath": "solr/core/src/java/org/apache/solr/response/XSLTResponseWriter.java",
+            "startLine": 96,
+            "endLine": 113,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.solr.scripting.xslt.XSLTResponseWriter",
+            "type": "Method",
+            "name": "write",
+            "filePath": "solr/contrib/scripting/src/java/org/apache/solr/scripting/xslt/XSLTResponseWriter.java",
+            "startLine": 88,
+            "endLine": 105,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.solr.handler.XsltUpdateRequestHandlerTest",
+            "type": "Method",
+            "name": "setUp",
+            "filePath": "solr/core/src/test/org/apache/solr/handler/XsltUpdateRequestHandlerTest.java",
+            "startLine": 49,
+            "endLine": 55,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.solr.scripting.xslt.XSLTUpdateRequestHandlerTest",
+            "type": "Method",
+            "name": "setUp",
+            "filePath": "solr/contrib/scripting/src/test/org/apache/solr/scripting/xslt/XSLTUpdateRequestHandlerTest.java",
+            "startLine": 53,
+            "endLine": 59,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.solr.scripting.update.ScriptUpdateProcessorFactoryTest",
+            "type": "Method",
+            "name": "beforeClass",
+            "filePath": "solr/contrib/scripting/src/test/org/apache/solr/scripting/update/ScriptUpdateProcessorFactoryTest.java",
+            "startLine": 40,
+            "endLine": 44,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.solr.scripting.update.ScriptUpdateProcessorFactoryTest",
+            "type": "Method",
+            "name": "beforeClass",
+            "filePath": "solr/contrib/scripting/src/test/org/apache/solr/scripting/update/ScriptUpdateProcessorFactoryTest.java",
+            "startLine": 40,
+            "endLine": 44,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.solr.scripting.update.ScriptUpdateProcessorFactoryTest",
+            "type": "Class",
+            "name": "ScriptUpdateProcessorFactoryTest",
+            "filePath": "solr/contrib/scripting/src/test/org/apache/solr/scripting/update/ScriptUpdateProcessorFactoryTest.java",
+            "startLine": 33,
+            "endLine": 274,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.solr.scripting.update.ScriptUpdateProcessorFactoryTest",
+            "type": "Class",
+            "name": "ScriptUpdateProcessorFactoryTest",
+            "filePath": "solr/contrib/scripting/src/test/org/apache/solr/scripting/update/ScriptUpdateProcessorFactoryTest.java",
+            "startLine": 33,
+            "endLine": 274,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.solr.scripting.update.TestBadScriptingUpdateProcessorConfig",
+            "type": "Method",
+            "name": "testBogusScriptEngine",
+            "filePath": "solr/contrib/scripting/src/test/org/apache/solr/scripting/update/TestBadScriptingUpdateProcessorConfig.java",
+            "startLine": 27,
+            "endLine": 33,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.solr.scripting.update.TestBadScriptingUpdateProcessorConfig",
+            "type": "Method",
+            "name": "testBogusScriptEngine",
+            "filePath": "solr/contrib/scripting/src/test/org/apache/solr/scripting/update/TestBadScriptingUpdateProcessorConfig.java",
+            "startLine": 31,
+            "endLine": 37,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.solr.scripting.update.TestBadScriptingUpdateProcessorConfig",
+            "type": "Method",
+            "name": "testMissingScriptFile",
+            "filePath": "solr/contrib/scripting/src/test/org/apache/solr/scripting/update/TestBadScriptingUpdateProcessorConfig.java",
+            "startLine": 35,
+            "endLine": 40,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.solr.scripting.update.TestBadScriptingUpdateProcessorConfig",
+            "type": "Method",
+            "name": "testMissingScriptFile",
+            "filePath": "solr/contrib/scripting/src/test/org/apache/solr/scripting/update/TestBadScriptingUpdateProcessorConfig.java",
+            "startLine": 39,
+            "endLine": 44,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.solr.scripting.update.TestBadScriptingUpdateProcessorConfig",
+            "type": "Method",
+            "name": "testInvalidScriptFile",
+            "filePath": "solr/contrib/scripting/src/test/org/apache/solr/scripting/update/TestBadScriptingUpdateProcessorConfig.java",
+            "startLine": 42,
+            "endLine": 47,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.solr.scripting.update.TestBadScriptingUpdateProcessorConfig",
+            "type": "Method",
+            "name": "testInvalidScriptFile",
+            "filePath": "solr/contrib/scripting/src/test/org/apache/solr/scripting/update/TestBadScriptingUpdateProcessorConfig.java",
+            "startLine": 46,
+            "endLine": 51,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.solr.scripting.update.TestBadScriptingUpdateProcessorConfig",
+            "type": "Class",
+            "name": "TestBadScriptingUpdateProcessorConfig",
+            "filePath": "solr/contrib/scripting/src/test/org/apache/solr/scripting/update/TestBadScriptingUpdateProcessorConfig.java",
+            "startLine": 24,
+            "endLine": 49,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.solr.scripting.update.TestBadScriptingUpdateProcessorConfig",
+            "type": "Class",
+            "name": "TestBadScriptingUpdateProcessorConfig",
+            "filePath": "solr/contrib/scripting/src/test/org/apache/solr/scripting/update/TestBadScriptingUpdateProcessorConfig.java",
+            "startLine": 28,
+            "endLine": 99,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.solr.handler.UpdateRequestHandler",
+            "type": "Field",
+            "name": "loaders",
+            "filePath": "solr/core/src/java/org/apache/solr/handler/UpdateRequestHandler.java",
+            "startLine": 67,
+            "endLine": 67,
+            "startColumn": 35,
+            "endColumn": 49
+          },
+          "rightSideLocation": {
+            "container": "org.apache.solr.handler.UpdateRequestHandler",
+            "type": "Field",
+            "name": "loaders",
+            "filePath": "solr/core/src/java/org/apache/solr/handler/UpdateRequestHandler.java",
+            "startLine": 67,
+            "endLine": 67,
+            "startColumn": 45,
+            "endColumn": 59
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.solr.handler.UpdateRequestHandler",
+            "type": "Method",
+            "name": "getDescription",
+            "filePath": "solr/core/src/java/org/apache/solr/handler/UpdateRequestHandler.java",
+            "startLine": 169,
+            "endLine": 172,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.solr.handler.UpdateRequestHandler",
+            "type": "Method",
+            "name": "getDescription",
+            "filePath": "solr/core/src/java/org/apache/solr/handler/UpdateRequestHandler.java",
+            "startLine": 169,
+            "endLine": 172,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.solr.handler.UpdateRequestHandler",
+            "type": "Class",
+            "name": "UpdateRequestHandler",
+            "filePath": "solr/core/src/java/org/apache/solr/handler/UpdateRequestHandler.java",
+            "startLine": 46,
+            "endLine": 184,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.solr.handler.UpdateRequestHandler",
+            "type": "Class",
+            "name": "UpdateRequestHandler",
+            "filePath": "solr/core/src/java/org/apache/solr/handler/UpdateRequestHandler.java",
+            "startLine": 46,
+            "endLine": 184,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.solr.handler.loader.XMLLoader",
+            "type": "Field",
+            "name": "xmllog",
+            "filePath": "solr/core/src/java/org/apache/solr/handler/loader/XMLLoader.java",
+            "startLine": 79,
+            "endLine": 79,
+            "startColumn": 31,
+            "endColumn": 63
+          },
+          "rightSideLocation": {
+            "container": "org.apache.solr.handler.loader.XMLLoader",
+            "type": "Field",
+            "name": "xmllog",
+            "filePath": "solr/core/src/java/org/apache/solr/handler/loader/XMLLoader.java",
+            "startLine": 66,
+            "endLine": 66,
+            "startColumn": 41,
+            "endColumn": 73
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.solr.handler.loader.XMLLoader",
+            "type": "Field",
+            "name": "inputFactory",
+            "filePath": "solr/core/src/java/org/apache/solr/handler/loader/XMLLoader.java",
+            "startLine": 88,
+            "endLine": 88,
+            "startColumn": 19,
+            "endColumn": 31
+          },
+          "rightSideLocation": {
+            "container": "org.apache.solr.handler.loader.XMLLoader",
+            "type": "Field",
+            "name": "inputFactory",
+            "filePath": "solr/core/src/java/org/apache/solr/handler/loader/XMLLoader.java",
+            "startLine": 68,
+            "endLine": 68,
+            "startColumn": 29,
+            "endColumn": 41
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.solr.handler.loader.XMLLoader",
+            "type": "Field",
+            "name": "saxFactory",
+            "filePath": "solr/core/src/java/org/apache/solr/handler/loader/XMLLoader.java",
+            "startLine": 89,
+            "endLine": 89,
+            "startColumn": 20,
+            "endColumn": 30
+          },
+          "rightSideLocation": {
+            "container": "org.apache.solr.handler.loader.XMLLoader",
+            "type": "Field",
+            "name": "saxFactory",
+            "filePath": "solr/core/src/java/org/apache/solr/handler/loader/XMLLoader.java",
+            "startLine": 69,
+            "endLine": 69,
+            "startColumn": 30,
+            "endColumn": 40
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.solr.handler.loader.XMLLoader",
+            "type": "Method",
+            "name": "init",
+            "filePath": "solr/core/src/java/org/apache/solr/handler/loader/XMLLoader.java",
+            "startLine": 91,
+            "endLine": 122,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.solr.handler.loader.XMLLoader",
+            "type": "Method",
+            "name": "init",
+            "filePath": "solr/core/src/java/org/apache/solr/handler/loader/XMLLoader.java",
+            "startLine": 71,
+            "endLine": 97,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.solr.handler.loader.XMLLoader",
+            "type": "Method",
+            "name": "load",
+            "filePath": "solr/core/src/java/org/apache/solr/handler/loader/XMLLoader.java",
+            "startLine": 129,
+            "endLine": 198,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.solr.handler.loader.XMLLoader",
+            "type": "Method",
+            "name": "load",
+            "filePath": "solr/core/src/java/org/apache/solr/handler/loader/XMLLoader.java",
+            "startLine": 104,
+            "endLine": 134,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.solr.handler.loader.XMLLoader",
+            "type": "Method",
+            "name": "processUpdate",
+            "filePath": "solr/core/src/java/org/apache/solr/handler/loader/XMLLoader.java",
+            "startLine": 221,
+            "endLine": 299,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.solr.handler.loader.XMLLoader",
+            "type": "Method",
+            "name": "processUpdate",
+            "filePath": "solr/core/src/java/org/apache/solr/handler/loader/XMLLoader.java",
+            "startLine": 136,
+            "endLine": 214,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.solr.handler.loader.XMLLoader",
+            "type": "Class",
+            "name": "XMLLoader",
+            "filePath": "solr/core/src/java/org/apache/solr/handler/loader/XMLLoader.java",
+            "startLine": 76,
+            "endLine": 535,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.solr.handler.loader.XMLLoader",
+            "type": "Class",
+            "name": "XMLLoader",
+            "filePath": "solr/core/src/java/org/apache/solr/handler/loader/XMLLoader.java",
+            "startLine": 63,
+            "endLine": 450,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.solr.OutputWriterTest",
+            "type": "Class",
+            "name": "OutputWriterTest",
+            "filePath": "solr/core/src/test/org/apache/solr/OutputWriterTest.java",
+            "startLine": 31,
+            "endLine": 125,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.solr.OutputWriterTest",
+            "type": "Class",
+            "name": "OutputWriterTest",
+            "filePath": "solr/core/src/test/org/apache/solr/OutputWriterTest.java",
+            "startLine": 31,
+            "endLine": 107,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.solr.handler.TestReplicationHandler",
+            "type": "Method",
+            "name": "doTestIndexAndConfigReplication",
+            "filePath": "solr/core/src/test/org/apache/solr/handler/TestReplicationHandler.java",
+            "startLine": 542,
+            "endLine": 619,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.solr.handler.TestReplicationHandler",
+            "type": "Method",
+            "name": "doTestIndexAndConfigReplication",
+            "filePath": "solr/core/src/test/org/apache/solr/handler/TestReplicationHandler.java",
+            "startLine": 542,
+            "endLine": 619,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.solr.handler.TestReplicationHandler",
+            "type": "Class",
+            "name": "TestReplicationHandler",
+            "filePath": "solr/core/src/test/org/apache/solr/handler/TestReplicationHandler.java",
+            "startLine": 94,
+            "endLine": 1928,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.solr.handler.TestReplicationHandler",
+            "type": "Class",
+            "name": "TestReplicationHandler",
+            "filePath": "solr/core/src/test/org/apache/solr/handler/TestReplicationHandler.java",
+            "startLine": 94,
+            "endLine": 1928,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.solr.common.params.CommonParams",
+            "type": "Interface",
+            "name": "CommonParams",
+            "filePath": "solr/solrj/src/java/org/apache/solr/common/params/CommonParams.java",
+            "startLine": 23,
+            "endLine": 308,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.solr.common.params.CommonParams",
+            "type": "Interface",
+            "name": "CommonParams",
+            "filePath": "solr/solrj/src/java/org/apache/solr/common/params/CommonParams.java",
+            "startLine": 23,
+            "endLine": 305,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.solr.util.xslt.TransformerProvider",
+            "type": "Class",
+            "name": "TransformerProvider",
+            "filePath": "solr/core/src/java/org/apache/solr/util/xslt/TransformerProvider.java",
+            "startLine": 40,
+            "endLine": 126,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.solr.scripting.xslt.TransformerProvider",
+            "type": "Class",
+            "name": "TransformerProvider",
+            "filePath": "solr/contrib/scripting/src/java/org/apache/solr/scripting/xslt/TransformerProvider.java",
+            "startLine": 41,
+            "endLine": 148,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.solr.response.XSLTResponseWriter",
+            "type": "Class",
+            "name": "XSLTResponseWriter",
+            "filePath": "solr/core/src/java/org/apache/solr/response/XSLTResponseWriter.java",
+            "startLine": 43,
+            "endLine": 137,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.solr.scripting.xslt.XSLTResponseWriter",
+            "type": "Class",
+            "name": "XSLTResponseWriter",
+            "filePath": "solr/contrib/scripting/src/java/org/apache/solr/scripting/xslt/XSLTResponseWriter.java",
+            "startLine": 40,
+            "endLine": 112,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.solr.handler.XsltUpdateRequestHandlerTest",
+            "type": "Class",
+            "name": "XsltUpdateRequestHandlerTest",
+            "filePath": "solr/core/src/test/org/apache/solr/handler/XsltUpdateRequestHandlerTest.java",
+            "startLine": 42,
+            "endLine": 129,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "org.apache.solr.scripting.xslt.XSLTUpdateRequestHandlerTest",
+            "type": "Class",
+            "name": "XSLTUpdateRequestHandlerTest",
+            "filePath": "solr/contrib/scripting/src/test/org/apache/solr/scripting/xslt/XSLTUpdateRequestHandlerTest.java",
+            "startLine": 40,
+            "endLine": 134,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.solr.response.XSLTResponseWriter",
+            "type": "Field",
+            "name": "XSLT_CACHE_PARAM",
+            "filePath": "solr/core/src/java/org/apache/solr/response/XSLTResponseWriter.java",
+            "startLine": 54,
+            "endLine": 54,
+            "startColumn": 31,
+            "endColumn": 76
+          },
+          "rightSideLocation": {
+            "container": "org.apache.solr.scripting.xslt.XSLTConstants",
+            "type": "Field",
+            "name": "XSLT_CACHE_PARAM",
+            "filePath": "solr/contrib/scripting/src/java/org/apache/solr/scripting/xslt/XSLTConstants.java",
+            "startLine": 25,
+            "endLine": 25,
+            "startColumn": 23,
+            "endColumn": 68
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.solr.OutputWriterTest",
+            "type": "Method",
+            "name": "testTrivialXsltWriterInclude",
+            "filePath": "solr/core/src/test/org/apache/solr/OutputWriterTest.java",
+            "startLine": 83,
+            "endLine": 90,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.solr.scripting.xslt.XSLTOutputWriterTest",
+            "type": "Method",
+            "name": "testTrivialXsltWriterInclude",
+            "filePath": "solr/contrib/scripting/src/test/org/apache/solr/scripting/xslt/XSLTOutputWriterTest.java",
+            "startLine": 45,
+            "endLine": 51,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.solr.OutputWriterTest",
+            "type": "Method",
+            "name": "testTrivialXsltWriter",
+            "filePath": "solr/core/src/test/org/apache/solr/OutputWriterTest.java",
+            "startLine": 74,
+            "endLine": 81,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "org.apache.solr.scripting.xslt.XSLTOutputWriterTest",
+            "type": "Method",
+            "name": "testTrivialXsltWriter",
+            "filePath": "solr/contrib/scripting/src/test/org/apache/solr/scripting/xslt/XSLTOutputWriterTest.java",
+            "startLine": 37,
+            "endLine": 43,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.solr.response.XSLTResponseWriter",
+            "type": "Method",
+            "name": "init",
+            "filePath": "solr/core/src/java/org/apache/solr/response/XSLTResponseWriter.java",
+            "startLine": 59,
+            "endLine": 64,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.solr.scripting.xslt.XSLTResponseWriter",
+            "type": "Method",
+            "name": "init",
+            "filePath": "solr/contrib/scripting/src/java/org/apache/solr/scripting/xslt/XSLTResponseWriter.java",
+            "startLine": 53,
+            "endLine": 57,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.solr.handler.XsltUpdateRequestHandlerTest",
+            "type": "Method",
+            "name": "testUpdate",
+            "filePath": "solr/core/src/test/org/apache/solr/handler/XsltUpdateRequestHandlerTest.java",
+            "startLine": 57,
+            "endLine": 96,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.solr.scripting.xslt.XSLTUpdateRequestHandlerTest",
+            "type": "Method",
+            "name": "testUpdate",
+            "filePath": "solr/contrib/scripting/src/test/org/apache/solr/scripting/xslt/XSLTUpdateRequestHandlerTest.java",
+            "startLine": 61,
+            "endLine": 101,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.solr.handler.XsltUpdateRequestHandlerTest",
+            "type": "Method",
+            "name": "beforeTests",
+            "filePath": "solr/core/src/test/org/apache/solr/handler/XsltUpdateRequestHandlerTest.java",
+            "startLine": 44,
+            "endLine": 47,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.solr.scripting.xslt.XSLTUpdateRequestHandlerTest",
+            "type": "Method",
+            "name": "beforeTests",
+            "filePath": "solr/contrib/scripting/src/test/org/apache/solr/scripting/xslt/XSLTUpdateRequestHandlerTest.java",
+            "startLine": 48,
+            "endLine": 51,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.solr.handler.loader.XMLLoader",
+            "type": "Field",
+            "name": "xsltCacheLifetimeSeconds",
+            "filePath": "solr/core/src/java/org/apache/solr/handler/loader/XMLLoader.java",
+            "startLine": 87,
+            "endLine": 87,
+            "startColumn": 7,
+            "endColumn": 31
+          },
+          "rightSideLocation": {
+            "container": "org.apache.solr.scripting.xslt.XSLTUpdateRequestHandler.XsltXMLLoader",
+            "type": "Field",
+            "name": "xsltCacheLifetimeSeconds",
+            "filePath": "solr/contrib/scripting/src/java/org/apache/solr/scripting/xslt/XSLTUpdateRequestHandler.java",
+            "startLine": 67,
+            "endLine": 67,
+            "startColumn": 9,
+            "endColumn": 33
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.solr.handler.XsltUpdateRequestHandlerTest",
+            "type": "Method",
+            "name": "testEntities",
+            "filePath": "solr/core/src/test/org/apache/solr/handler/XsltUpdateRequestHandlerTest.java",
+            "startLine": 98,
+            "endLine": 128,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.solr.scripting.xslt.XSLTUpdateRequestHandlerTest",
+            "type": "Method",
+            "name": "testEntities",
+            "filePath": "solr/contrib/scripting/src/test/org/apache/solr/scripting/xslt/XSLTUpdateRequestHandlerTest.java",
+            "startLine": 103,
+            "endLine": 133,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.solr.response.XSLTResponseWriter",
+            "type": "Method",
+            "name": "getTransformer",
+            "filePath": "solr/core/src/java/org/apache/solr/response/XSLTResponseWriter.java",
+            "startLine": 115,
+            "endLine": 136,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.solr.scripting.xslt.XSLTResponseWriter",
+            "type": "Method",
+            "name": "getTransformer",
+            "filePath": "solr/contrib/scripting/src/java/org/apache/solr/scripting/xslt/XSLTResponseWriter.java",
+            "startLine": 107,
+            "endLine": 110,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.solr.response.XSLTResponseWriter",
+            "type": "Field",
+            "name": "XSLT_CACHE_DEFAULT",
+            "filePath": "solr/core/src/java/org/apache/solr/response/XSLTResponseWriter.java",
+            "startLine": 53,
+            "endLine": 53,
+            "startColumn": 27,
+            "endColumn": 50
+          },
+          "rightSideLocation": {
+            "container": "org.apache.solr.scripting.xslt.XSLTConstants",
+            "type": "Field",
+            "name": "XSLT_CACHE_DEFAULT",
+            "filePath": "solr/contrib/scripting/src/java/org/apache/solr/scripting/xslt/XSLTConstants.java",
+            "startLine": 24,
+            "endLine": 24,
+            "startColumn": 20,
+            "endColumn": 43
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "container": "org.apache.solr.response.XSLTResponseWriter",
+            "type": "Field",
+            "name": "CONTEXT_TRANSFORMER_KEY",
+            "filePath": "solr/core/src/java/org/apache/solr/response/XSLTResponseWriter.java",
+            "startLine": 50,
+            "endLine": 50,
+            "startColumn": 30,
+            "endColumn": 80
+          },
+          "rightSideLocation": {
+            "container": "org.apache.solr.scripting.xslt.XSLTConstants",
+            "type": "Field",
+            "name": "TR",
+            "filePath": "solr/contrib/scripting/src/java/org/apache/solr/scripting/xslt/XSLTConstants.java",
+            "startLine": 22,
+            "endLine": 22,
+            "startColumn": 23,
+            "endColumn": 32
+          },
+          "developerConfirmation": false
+        }
+      ],
+      "baseline": [
+        {
+          "leftSideLocation": {
+            "container": "org.apache.solr.handler.loader.XMLLoader",
+            "type": "Field",
+            "name": "CONTEXT_TRANSFORMER_KEY",
+            "filePath": "solr/core/src/java/org/apache/solr/handler/loader/XMLLoader.java",
+            "startLine": 81,
+            "endLine": 81,
+            "startColumn": 30,
+            "endColumn": 81
+          },
+          "rightSideLocation": {
+            "container": "org.apache.solr.scripting.xslt.XSLTConstants",
+            "type": "Field",
+            "name": "CONTEXT_TRANSFORMER_KEY",
+            "filePath": "solr/contrib/scripting/src/java/org/apache/solr/scripting/xslt/XSLTConstants.java",
+            "startLine": 23,
+            "endLine": 23,
+            "startColumn": 23,
+            "endColumn": 73
+          },
+          "developerConfirmation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.solr.response.XSLTResponseWriter",
+            "type": "Field",
+            "name": "CONTEXT_TRANSFORMER_KEY",
+            "filePath": "solr/core/src/java/org/apache/solr/response/XSLTResponseWriter.java",
+            "startLine": 50,
+            "endLine": 50,
+            "startColumn": 30,
+            "endColumn": 80
+          },
+          "rightSideLocation": {
+            "container": "org.apache.solr.scripting.xslt.XSLTConstants",
+            "type": "Field",
+            "name": "CONTEXT_TRANSFORMER_KEY",
+            "filePath": "solr/contrib/scripting/src/java/org/apache/solr/scripting/xslt/XSLTConstants.java",
+            "startLine": 23,
+            "endLine": 23,
+            "startColumn": 23,
+            "endColumn": 73
+          },
+          "developerConfirmation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.solr.handler.loader.XMLLoader",
+            "type": "Field",
+            "name": "XSLT_CACHE_DEFAULT",
+            "filePath": "solr/core/src/java/org/apache/solr/handler/loader/XMLLoader.java",
+            "startLine": 85,
+            "endLine": 85,
+            "startColumn": 27,
+            "endColumn": 50
+          },
+          "rightSideLocation": {
+            "container": "org.apache.solr.scripting.xslt.XSLTConstants",
+            "type": "Field",
+            "name": "XSLT_CACHE_DEFAULT",
+            "filePath": "solr/contrib/scripting/src/java/org/apache/solr/scripting/xslt/XSLTConstants.java",
+            "startLine": 24,
+            "endLine": 24,
+            "startColumn": 20,
+            "endColumn": 43
+          },
+          "developerConfirmation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.solr.handler.loader.XMLLoader",
+            "type": "Field",
+            "name": "XSLT_CACHE_PARAM",
+            "filePath": "solr/core/src/java/org/apache/solr/handler/loader/XMLLoader.java",
+            "startLine": 83,
+            "endLine": 83,
+            "startColumn": 31,
+            "endColumn": 76
+          },
+          "rightSideLocation": {
+            "container": "org.apache.solr.scripting.xslt.XSLTConstants",
+            "type": "Field",
+            "name": "XSLT_CACHE_PARAM",
+            "filePath": "solr/contrib/scripting/src/java/org/apache/solr/scripting/xslt/XSLTConstants.java",
+            "startLine": 25,
+            "endLine": 25,
+            "startColumn": 23,
+            "endColumn": 68
+          },
+          "developerConfirmation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "org.apache.solr.handler.loader.XMLLoader",
+            "type": "Method",
+            "name": "getTransformer",
+            "filePath": "solr/core/src/java/org/apache/solr/handler/loader/XMLLoader.java",
+            "startLine": 201,
+            "endLine": 218,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "container": "org.apache.solr.scripting.xslt.TransformerProvider",
+            "type": "Method",
+            "name": "getTransformer",
+            "filePath": "solr/contrib/scripting/src/java/org/apache/solr/scripting/xslt/TransformerProvider.java",
+            "startLine": 68,
+            "endLine": 87,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ]
+    }
+  ]
+}

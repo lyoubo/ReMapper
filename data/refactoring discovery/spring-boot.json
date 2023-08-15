@@ -1,0 +1,3394 @@
+{
+  "results": [
+    {
+      "repository": "https://github.com/spring-projects/spring-boot.git",
+      "sha1": "70d561a929caf0f01af29c5a45d9164bc6e3e090",
+      "url": "https://github.com/spring-projects/spring-boot/commit/70d561a929caf0f01af29c5a45d9164bc6e3e090",
+      "ourApproach": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.springframework.boot.autoconfigure.reactor.netty.ReactorNettyConfigurationProperties renamed to org.springframework.boot.autoconfigure.reactor.netty.ReactorNettyProperties",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/reactor/netty/ReactorNettyConfigurationProperties.java",
+            "startLine": 23,
+            "endLine": 45,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/reactor/netty/ReactorNettyProperties.java",
+            "startLine": 23,
+            "endLine": 45,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.springframework.boot.autoconfigure.reactor.netty.ReactorNettyConfigurationProperties renamed to org.springframework.boot.autoconfigure.reactor.netty.ReactorNettyProperties",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/reactor/netty/ReactorNettyConfigurationProperties.java",
+            "startLine": 23,
+            "endLine": 45,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/reactor/netty/ReactorNettyProperties.java",
+            "startLine": 23,
+            "endLine": 45,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-boot.git",
+      "sha1": "33aef7fe27107e74d2147257161b57890d04b55c",
+      "url": "https://github.com/spring-projects/spring-boot/commit/33aef7fe27107e74d2147257161b57890d04b55c",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private determineArtifactoryRepo(project Project) : String renamed to private determineReleaseType(project Project) : String in class org.springframework.boot.build.artifacts.ArtifactRelease",
+          "leftSideLocation": {
+            "filePath": "buildSrc/src/main/java/org/springframework/boot/build/artifactory/ArtifactoryRepository.java",
+            "startLine": 57,
+            "endLine": 68,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "buildSrc/src/main/java/org/springframework/boot/build/artifacts/ArtifactRelease.java",
+            "startLine": 61,
+            "endLine": 72,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package whenProjectVersionIsReleaseCandidateThenRepositoryIsMilestone() : void renamed to package whenProjectVersionIsReleaseCandidateThenTypeIsMilestone() : void in class org.springframework.boot.build.artifacts.ArtifactReleaseTests",
+          "leftSideLocation": {
+            "filePath": "buildSrc/src/test/java/org/springframework/boot/build/artifactory/ArtifactoryRepositoryTests.java",
+            "startLine": 39,
+            "endLine": 44,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "buildSrc/src/test/java/org/springframework/boot/build/artifacts/ArtifactReleaseTests.java",
+            "startLine": 47,
+            "endLine": 52,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package whenProjectVersionIsMilestoneThenRepositoryIsMilestone() : void renamed to package whenProjectVersionIsMilestoneThenTypeIsMilestone() : void in class org.springframework.boot.build.artifacts.ArtifactReleaseTests",
+          "leftSideLocation": {
+            "filePath": "buildSrc/src/test/java/org/springframework/boot/build/artifactory/ArtifactoryRepositoryTests.java",
+            "startLine": 32,
+            "endLine": 37,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "buildSrc/src/test/java/org/springframework/boot/build/artifacts/ArtifactReleaseTests.java",
+            "startLine": 40,
+            "endLine": 45,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	ArtifactoryRepository to ArtifactRelease in method public forProject(project Project) : ArtifactRelease from class org.springframework.boot.build.artifacts.ArtifactRelease",
+          "leftSideLocation": {
+            "filePath": "buildSrc/src/main/java/org/springframework/boot/build/artifactory/ArtifactoryRepository.java",
+            "startLine": 53,
+            "endLine": 55,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "buildSrc/src/main/java/org/springframework/boot/build/artifacts/ArtifactRelease.java",
+            "startLine": 57,
+            "endLine": 59,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package whenProjectVersionIsSnapshotThenRepositoryIsSnapshot() : void renamed to package whenProjectVersionIsSnapshotThenTypeIsSnapshot() : void in class org.springframework.boot.build.artifacts.ArtifactReleaseTests",
+          "leftSideLocation": {
+            "filePath": "buildSrc/src/test/java/org/springframework/boot/build/artifactory/ArtifactoryRepositoryTests.java",
+            "startLine": 53,
+            "endLine": 58,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "buildSrc/src/test/java/org/springframework/boot/build/artifacts/ArtifactReleaseTests.java",
+            "startLine": 33,
+            "endLine": 38,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package whenProjectVersionIsReleaseThenRepositoryIsRelease() : void renamed to package whenProjectVersionIsReleaseThenTypeIsRelease() : void in class org.springframework.boot.build.artifacts.ArtifactReleaseTests",
+          "leftSideLocation": {
+            "filePath": "buildSrc/src/test/java/org/springframework/boot/build/artifactory/ArtifactoryRepositoryTests.java",
+            "startLine": 46,
+            "endLine": 51,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "buildSrc/src/test/java/org/springframework/boot/build/artifacts/ArtifactReleaseTests.java",
+            "startLine": 54,
+            "endLine": 59,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public getName() : String renamed to public getType() : String in class org.springframework.boot.build.artifacts.ArtifactRelease",
+          "leftSideLocation": {
+            "filePath": "buildSrc/src/main/java/org/springframework/boot/build/artifactory/ArtifactoryRepository.java",
+            "startLine": 40,
+            "endLine": 42,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "buildSrc/src/main/java/org/springframework/boot/build/artifacts/ArtifactRelease.java",
+            "startLine": 45,
+            "endLine": 47,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": false
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private determineArtifactoryRepo(project Project) : String renamed to private determineReleaseType(project Project) : String in class org.springframework.boot.build.artifacts.ArtifactRelease",
+          "leftSideLocation": {
+            "filePath": "buildSrc/src/main/java/org/springframework/boot/build/artifactory/ArtifactoryRepository.java",
+            "startLine": 57,
+            "endLine": 68,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "buildSrc/src/main/java/org/springframework/boot/build/artifacts/ArtifactRelease.java",
+            "startLine": 61,
+            "endLine": 72,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	ArtifactoryRepository to ArtifactRelease in method public forProject(project Project) : ArtifactRelease from class org.springframework.boot.build.artifacts.ArtifactRelease",
+          "leftSideLocation": {
+            "filePath": "buildSrc/src/main/java/org/springframework/boot/build/artifactory/ArtifactoryRepository.java",
+            "startLine": 53,
+            "endLine": 55,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "buildSrc/src/main/java/org/springframework/boot/build/artifacts/ArtifactRelease.java",
+            "startLine": 57,
+            "endLine": 59,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	name : String to type : String in class org.springframework.boot.build.artifacts.ArtifactRelease",
+          "leftSideLocation": {
+            "filePath": "buildSrc/src/main/java/org/springframework/boot/build/artifactory/ArtifactoryRepository.java",
+            "startLine": 34,
+            "endLine": 34,
+            "startColumn": 23,
+            "endColumn": 27
+          },
+          "rightSideLocation": {
+            "filePath": "buildSrc/src/main/java/org/springframework/boot/build/artifacts/ArtifactRelease.java",
+            "startLine": 39,
+            "endLine": 39,
+            "startColumn": 23,
+            "endColumn": 27
+          },
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-boot.git",
+      "sha1": "5eeb429e44180b22bbe9af7f15c2cb70e291daca",
+      "url": "https://github.com/spring-projects/spring-boot/commit/5eeb429e44180b22bbe9af7f15c2cb70e291daca",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package parseWhe5ComponentsShouldReturnNumericQualifierDependencyVersion() : void renamed to package parseWhen5ComponentsShouldReturnNumericQualifierDependencyVersion() : void in class org.springframework.boot.build.bom.bomr.version.DependencyVersionTests",
+          "leftSideLocation": {
+            "filePath": "buildSrc/src/test/java/org/springframework/boot/build/bom/bomr/version/DependencyVersionTests.java",
+            "startLine": 46,
+            "endLine": 49,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "buildSrc/src/test/java/org/springframework/boot/build/bom/bomr/version/DependencyVersionTests.java",
+            "startLine": 46,
+            "endLine": 49,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package healthCheckWhenDownWithExceptionConfiguredDoesNotLogHealthCheckFailedMessage(output CapturedOutput) : void renamed to package healthCheckWhenDownWithExceptionConfiguredLogsHealthCheckFailedMessage(output CapturedOutput) : void in class org.springframework.boot.actuate.health.AbstractReactiveHealthIndicatorTests",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/health/AbstractReactiveHealthIndicatorTests.java",
+            "startLine": 64,
+            "endLine": 75,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/health/AbstractReactiveHealthIndicatorTests.java",
+            "startLine": 64,
+            "endLine": 75,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package healthCheckWhenDownWithExceptionThrownDoesNotLogHealthCheckFailedMessage(output CapturedOutput) : void renamed to package healthCheckWhenDownWithExceptionThrownLogsHealthCheckFailedMessage(output CapturedOutput) : void in class org.springframework.boot.actuate.health.AbstractReactiveHealthIndicatorTests",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/health/AbstractReactiveHealthIndicatorTests.java",
+            "startLine": 51,
+            "endLine": 62,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/health/AbstractReactiveHealthIndicatorTests.java",
+            "startLine": 51,
+            "endLine": 62,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package parseWhe5ComponentsShouldReturnNumericQualifierDependencyVersion() : void renamed to package parseWhen5ComponentsShouldReturnNumericQualifierDependencyVersion() : void in class org.springframework.boot.build.bom.bomr.version.DependencyVersionTests",
+          "leftSideLocation": {
+            "filePath": "buildSrc/src/test/java/org/springframework/boot/build/bom/bomr/version/DependencyVersionTests.java",
+            "startLine": 46,
+            "endLine": 49,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "buildSrc/src/test/java/org/springframework/boot/build/bom/bomr/version/DependencyVersionTests.java",
+            "startLine": 46,
+            "endLine": 49,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package healthCheckWhenDownWithExceptionThrownDoesNotLogHealthCheckFailedMessage(output CapturedOutput) : void renamed to package healthCheckWhenDownWithExceptionThrownLogsHealthCheckFailedMessage(output CapturedOutput) : void in class org.springframework.boot.actuate.health.AbstractReactiveHealthIndicatorTests",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/health/AbstractReactiveHealthIndicatorTests.java",
+            "startLine": 51,
+            "endLine": 62,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/health/AbstractReactiveHealthIndicatorTests.java",
+            "startLine": 51,
+            "endLine": 62,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package healthCheckWhenDownWithExceptionConfiguredDoesNotLogHealthCheckFailedMessage(output CapturedOutput) : void renamed to package healthCheckWhenDownWithExceptionConfiguredLogsHealthCheckFailedMessage(output CapturedOutput) : void in class org.springframework.boot.actuate.health.AbstractReactiveHealthIndicatorTests",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/health/AbstractReactiveHealthIndicatorTests.java",
+            "startLine": 64,
+            "endLine": 75,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/health/AbstractReactiveHealthIndicatorTests.java",
+            "startLine": 64,
+            "endLine": 75,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-boot.git",
+      "sha1": "0b6dade142f233ba4782af01ae3bb2039406766b",
+      "url": "https://github.com/spring-projects/spring-boot/commit/0b6dade142f233ba4782af01ae3bb2039406766b",
+      "ourApproach": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	CloseableHttpResponse to ClassicHttpResponse in method private execute(request HttpUriRequest, url URI, description String) : ClassicHttpResponse from class org.springframework.boot.cli.command.init.InitializrService",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-tools/spring-boot-cli/src/main/java/org/springframework/boot/cli/command/init/InitializrService.java",
+            "startLine": 180,
+            "endLine": 189,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-tools/spring-boot-cli/src/main/java/org/springframework/boot/cli/command/init/InitializrService.java",
+            "startLine": 183,
+            "endLine": 193,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	CloseableHttpResponse to ClassicHttpResponse in method private executeInitializrMetadataRetrieval(url String) : ClassicHttpResponse from class org.springframework.boot.cli.command.init.InitializrService",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-tools/spring-boot-cli/src/main/java/org/springframework/boot/cli/command/init/InitializrService.java",
+            "startLine": 169,
+            "endLine": 178,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-tools/spring-boot-cli/src/main/java/org/springframework/boot/cli/command/init/InitializrService.java",
+            "startLine": 172,
+            "endLine": 181,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	CloseableHttpClient to HttpClient in method protected getHttp() : HttpClient from class org.springframework.boot.cli.command.init.InitializrService",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-tools/spring-boot-cli/src/main/java/org/springframework/boot/cli/command/init/InitializrService.java",
+            "startLine": 74,
+            "endLine": 79,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-tools/spring-boot-cli/src/main/java/org/springframework/boot/cli/command/init/InitializrService.java",
+            "startLine": 76,
+            "endLine": 81,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	CloseableHttpResponse to ClassicHttpResponse in method private executeProjectGenerationRequest(url URI) : ClassicHttpResponse from class org.springframework.boot.cli.command.init.InitializrService",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-tools/spring-boot-cli/src/main/java/org/springframework/boot/cli/command/init/InitializrService.java",
+            "startLine": 160,
+            "endLine": 167,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-tools/spring-boot-cli/src/main/java/org/springframework/boot/cli/command/init/InitializrService.java",
+            "startLine": 163,
+            "endLine": 170,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	http : CloseableHttpClient to http : HttpClient in class org.springframework.boot.cli.command.init.InitializrService",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-tools/spring-boot-cli/src/main/java/org/springframework/boot/cli/command/init/InitializrService.java",
+            "startLine": 65,
+            "endLine": 65,
+            "startColumn": 30,
+            "endColumn": 34
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-tools/spring-boot-cli/src/main/java/org/springframework/boot/cli/command/init/InitializrService.java",
+            "startLine": 67,
+            "endLine": 67,
+            "startColumn": 21,
+            "endColumn": 25
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	http : CloseableHttpClient to http : HttpClient in class org.springframework.boot.cli.command.init.AbstractHttpClientMockTests",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-tools/spring-boot-cli/src/test/java/org/springframework/boot/cli/command/init/AbstractHttpClientMockTests.java",
+            "startLine": 50,
+            "endLine": 50,
+            "startColumn": 38,
+            "endColumn": 76
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-tools/spring-boot-cli/src/test/java/org/springframework/boot/cli/command/init/AbstractHttpClientMockTests.java",
+            "startLine": 51,
+            "endLine": 51,
+            "startColumn": 29,
+            "endColumn": 58
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	http : CloseableHttpClient to http : HttpClient in class org.springframework.boot.cli.command.init.InitializrService",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-tools/spring-boot-cli/src/main/java/org/springframework/boot/cli/command/init/InitializrService.java",
+            "startLine": 65,
+            "endLine": 65,
+            "startColumn": 30,
+            "endColumn": 34
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-tools/spring-boot-cli/src/main/java/org/springframework/boot/cli/command/init/InitializrService.java",
+            "startLine": 67,
+            "endLine": 67,
+            "startColumn": 21,
+            "endColumn": 25
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	CloseableHttpClient to HttpClient in method protected getHttp() : HttpClient from class org.springframework.boot.cli.command.init.InitializrService",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-tools/spring-boot-cli/src/main/java/org/springframework/boot/cli/command/init/InitializrService.java",
+            "startLine": 74,
+            "endLine": 79,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-tools/spring-boot-cli/src/main/java/org/springframework/boot/cli/command/init/InitializrService.java",
+            "startLine": 76,
+            "endLine": 81,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	CloseableHttpResponse to ClassicHttpResponse in method private executeProjectGenerationRequest(url URI) : ClassicHttpResponse from class org.springframework.boot.cli.command.init.InitializrService",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-tools/spring-boot-cli/src/main/java/org/springframework/boot/cli/command/init/InitializrService.java",
+            "startLine": 160,
+            "endLine": 167,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-tools/spring-boot-cli/src/main/java/org/springframework/boot/cli/command/init/InitializrService.java",
+            "startLine": 163,
+            "endLine": 170,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	CloseableHttpResponse to ClassicHttpResponse in method private executeInitializrMetadataRetrieval(url String) : ClassicHttpResponse from class org.springframework.boot.cli.command.init.InitializrService",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-tools/spring-boot-cli/src/main/java/org/springframework/boot/cli/command/init/InitializrService.java",
+            "startLine": 169,
+            "endLine": 178,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-tools/spring-boot-cli/src/main/java/org/springframework/boot/cli/command/init/InitializrService.java",
+            "startLine": 172,
+            "endLine": 181,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	CloseableHttpResponse to ClassicHttpResponse in method private execute(request HttpUriRequest, url URI, description String) : ClassicHttpResponse from class org.springframework.boot.cli.command.init.InitializrService",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-tools/spring-boot-cli/src/main/java/org/springframework/boot/cli/command/init/InitializrService.java",
+            "startLine": 180,
+            "endLine": 189,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-tools/spring-boot-cli/src/main/java/org/springframework/boot/cli/command/init/InitializrService.java",
+            "startLine": 183,
+            "endLine": 193,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	http : CloseableHttpClient to http : HttpClient in class org.springframework.boot.cli.command.init.AbstractHttpClientMockTests",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-tools/spring-boot-cli/src/test/java/org/springframework/boot/cli/command/init/AbstractHttpClientMockTests.java",
+            "startLine": 50,
+            "endLine": 50,
+            "startColumn": 38,
+            "endColumn": 76
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-tools/spring-boot-cli/src/test/java/org/springframework/boot/cli/command/init/AbstractHttpClientMockTests.java",
+            "startLine": 51,
+            "endLine": 51,
+            "startColumn": 29,
+            "endColumn": 58
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-boot.git",
+      "sha1": "2faede6245f657d8e7b87167dadbed1a9411c18b",
+      "url": "https://github.com/spring-projects/spring-boot/commit/2faede6245f657d8e7b87167dadbed1a9411c18b",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private getLoaderOptions() : LoaderOptions extracted from package fromArchiveFile(archiveFile File) : LayersIndex in class org.springframework.boot.image.paketo.LayersIndex",
+          "leftSideLocation": {
+            "filePath": "spring-boot-system-tests/spring-boot-image-tests/src/systemTest/java/org/springframework/boot/image/paketo/LayersIndex.java",
+            "startLine": 45,
+            "endLine": 56,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-system-tests/spring-boot-image-tests/src/systemTest/java/org/springframework/boot/image/paketo/LayersIndex.java",
+            "startLine": 54,
+            "endLine": 60,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private getLoaderOptions() : LoaderOptions extracted from package fromArchiveFile(archiveFile File) : LayersIndex in class org.springframework.boot.image.paketo.LayersIndex",
+          "leftSideLocation": {
+            "filePath": "spring-boot-system-tests/spring-boot-image-tests/src/systemTest/java/org/springframework/boot/image/paketo/LayersIndex.java",
+            "startLine": 45,
+            "endLine": 56,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-system-tests/spring-boot-image-tests/src/systemTest/java/org/springframework/boot/image/paketo/LayersIndex.java",
+            "startLine": 54,
+            "endLine": 60,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-boot.git",
+      "sha1": "d5e541226b2e9e42af67c1c6b43000abfb9e7ebf",
+      "url": "https://github.com/spring-projects/spring-boot/commit/d5e541226b2e9e42af67c1c6b43000abfb9e7ebf",
+      "ourApproach": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	NumericQualifierDependencyVersion to MultipleComponentsDependencyVersion in method package parse(input String) : MultipleComponentsDependencyVersion from class org.springframework.boot.build.bom.bomr.version.MultipleComponentsDependencyVersion",
+          "leftSideLocation": {
+            "filePath": "buildSrc/src/main/java/org/springframework/boot/build/bom/bomr/version/NumericQualifierDependencyVersion.java",
+            "startLine": 43,
+            "endLine": 54,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "buildSrc/src/main/java/org/springframework/boot/build/bom/bomr/version/MultipleComponentsDependencyVersion.java",
+            "startLine": 45,
+            "endLine": 56,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.springframework.boot.build.bom.bomr.version.NumericQualifierDependencyVersion renamed to org.springframework.boot.build.bom.bomr.version.MultipleComponentsDependencyVersion",
+          "leftSideLocation": {
+            "filePath": "buildSrc/src/main/java/org/springframework/boot/build/bom/bomr/version/NumericQualifierDependencyVersion.java",
+            "startLine": 23,
+            "endLine": 56,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "buildSrc/src/main/java/org/springframework/boot/build/bom/bomr/version/MultipleComponentsDependencyVersion.java",
+            "startLine": 23,
+            "endLine": 58,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	NumericQualifierDependencyVersion to MultipleComponentsDependencyVersion in method private version(version String) : MultipleComponentsDependencyVersion from class org.springframework.boot.build.bom.bomr.version.MultipleComponentsDependencyVersionTests",
+          "leftSideLocation": {
+            "filePath": "buildSrc/src/test/java/org/springframework/boot/build/bom/bomr/version/NumericQualifierDependencyVersionTests.java",
+            "startLine": 50,
+            "endLine": 52,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "buildSrc/src/test/java/org/springframework/boot/build/bom/bomr/version/MultipleComponentsDependencyVersionTests.java",
+            "startLine": 71,
+            "endLine": 73,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.springframework.boot.build.bom.bomr.version.NumericQualifierDependencyVersionTests renamed to org.springframework.boot.build.bom.bomr.version.MultipleComponentsDependencyVersionTests",
+          "leftSideLocation": {
+            "filePath": "buildSrc/src/test/java/org/springframework/boot/build/bom/bomr/version/NumericQualifierDependencyVersionTests.java",
+            "startLine": 23,
+            "endLine": 54,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "buildSrc/src/test/java/org/springframework/boot/build/bom/bomr/version/MultipleComponentsDependencyVersionTests.java",
+            "startLine": 23,
+            "endLine": 75,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.springframework.boot.build.bom.bomr.version.NumericQualifierDependencyVersion renamed to org.springframework.boot.build.bom.bomr.version.MultipleComponentsDependencyVersion",
+          "leftSideLocation": {
+            "filePath": "buildSrc/src/main/java/org/springframework/boot/build/bom/bomr/version/NumericQualifierDependencyVersion.java",
+            "startLine": 23,
+            "endLine": 56,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "buildSrc/src/main/java/org/springframework/boot/build/bom/bomr/version/MultipleComponentsDependencyVersion.java",
+            "startLine": 23,
+            "endLine": 58,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.springframework.boot.build.bom.bomr.version.NumericQualifierDependencyVersionTests renamed to org.springframework.boot.build.bom.bomr.version.MultipleComponentsDependencyVersionTests",
+          "leftSideLocation": {
+            "filePath": "buildSrc/src/test/java/org/springframework/boot/build/bom/bomr/version/NumericQualifierDependencyVersionTests.java",
+            "startLine": 23,
+            "endLine": 54,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "buildSrc/src/test/java/org/springframework/boot/build/bom/bomr/version/MultipleComponentsDependencyVersionTests.java",
+            "startLine": 23,
+            "endLine": 75,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	NumericQualifierDependencyVersion to MultipleComponentsDependencyVersion in method package parse(input String) : MultipleComponentsDependencyVersion from class org.springframework.boot.build.bom.bomr.version.MultipleComponentsDependencyVersion",
+          "leftSideLocation": {
+            "filePath": "buildSrc/src/main/java/org/springframework/boot/build/bom/bomr/version/NumericQualifierDependencyVersion.java",
+            "startLine": 43,
+            "endLine": 54,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "buildSrc/src/main/java/org/springframework/boot/build/bom/bomr/version/MultipleComponentsDependencyVersion.java",
+            "startLine": 45,
+            "endLine": 56,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	NumericQualifierDependencyVersion to MultipleComponentsDependencyVersion in method private version(version String) : MultipleComponentsDependencyVersion from class org.springframework.boot.build.bom.bomr.version.MultipleComponentsDependencyVersionTests",
+          "leftSideLocation": {
+            "filePath": "buildSrc/src/test/java/org/springframework/boot/build/bom/bomr/version/NumericQualifierDependencyVersionTests.java",
+            "startLine": 50,
+            "endLine": 52,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "buildSrc/src/test/java/org/springframework/boot/build/bom/bomr/version/MultipleComponentsDependencyVersionTests.java",
+            "startLine": 71,
+            "endLine": 73,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-boot.git",
+      "sha1": "d6f682da7e39c74ddb16140df1dcc2948f51a70e",
+      "url": "https://github.com/spring-projects/spring-boot/commit/d6f682da7e39c74ddb16140df1dcc2948f51a70e",
+      "ourApproach": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private isBetterGetter(getter Method) : boolean inlined to package addGetter(getter Method) : void in class org.springframework.boot.context.properties.bind.JavaBeanBinder.BeanProperty",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/context/properties/bind/JavaBeanBinder.java",
+            "startLine": 312,
+            "endLine": 314,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/context/properties/bind/JavaBeanBinder.java",
+            "startLine": 306,
+            "endLine": 310,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-boot.git",
+      "sha1": "6a0a61f1ce1e9e1114b6674474d48a67a55249ee",
+      "url": "https://github.com/spring-projects/spring-boot/commit/6a0a61f1ce1e9e1114b6674474d48a67a55249ee",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package toStringIncludedEndpointsClasses() : void renamed to package toStringWhenIncludedEndpointsClasses() : void in class org.springframework.boot.actuate.autoconfigure.security.servlet.EndpointRequestTests",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/security/servlet/EndpointRequestTests.java",
+            "startLine": 233,
+            "endLine": 238,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/security/servlet/EndpointRequestTests.java",
+            "startLine": 231,
+            "endLine": 235,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package toStringIncludedExcludedEndpoints() : void renamed to package toStringWhenIncludedExcludedEndpoints() : void in class org.springframework.boot.actuate.autoconfigure.security.servlet.EndpointRequestTests",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/security/servlet/EndpointRequestTests.java",
+            "startLine": 240,
+            "endLine": 245,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/security/servlet/EndpointRequestTests.java",
+            "startLine": 237,
+            "endLine": 241,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package toStringIncludedEndpoints() : void renamed to package toStringWhenIncludedEndpoints() : void in class org.springframework.boot.actuate.autoconfigure.security.servlet.EndpointRequestTests",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/security/servlet/EndpointRequestTests.java",
+            "startLine": 219,
+            "endLine": 224,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/security/servlet/EndpointRequestTests.java",
+            "startLine": 219,
+            "endLine": 223,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package toStringEmptyIncludedEndpoints() : void renamed to package toStringWhenEmptyIncludedEndpoints() : void in class org.springframework.boot.actuate.autoconfigure.security.servlet.EndpointRequestTests",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/security/servlet/EndpointRequestTests.java",
+            "startLine": 226,
+            "endLine": 231,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/security/servlet/EndpointRequestTests.java",
+            "startLine": 225,
+            "endLine": 229,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private toString(endpoints List<Object>, emptyValue String) : String extracted from public toString() : String in class org.springframework.boot.actuate.autoconfigure.security.servlet.EndpointRequest.EndpointRequestMatcher",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/security/servlet/EndpointRequest.java",
+            "startLine": 276,
+            "endLine": 292,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/security/servlet/EndpointRequest.java",
+            "startLine": 263,
+            "endLine": 266,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": false
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package toStringIncludedEndpoints() : void renamed to package toStringWhenIncludedEndpoints() : void in class org.springframework.boot.actuate.autoconfigure.security.servlet.EndpointRequestTests",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/security/servlet/EndpointRequestTests.java",
+            "startLine": 219,
+            "endLine": 224,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/security/servlet/EndpointRequestTests.java",
+            "startLine": 219,
+            "endLine": 223,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package toStringEmptyIncludedEndpoints() : void renamed to package toStringWhenEmptyIncludedEndpoints() : void in class org.springframework.boot.actuate.autoconfigure.security.servlet.EndpointRequestTests",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/security/servlet/EndpointRequestTests.java",
+            "startLine": 226,
+            "endLine": 231,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/security/servlet/EndpointRequestTests.java",
+            "startLine": 225,
+            "endLine": 229,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package toStringIncludedEndpointsClasses() : void renamed to package toStringWhenIncludedEndpointsClasses() : void in class org.springframework.boot.actuate.autoconfigure.security.servlet.EndpointRequestTests",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/security/servlet/EndpointRequestTests.java",
+            "startLine": 233,
+            "endLine": 238,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/security/servlet/EndpointRequestTests.java",
+            "startLine": 231,
+            "endLine": 235,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package toStringIncludedExcludedEndpoints() : void renamed to package toStringWhenIncludedExcludedEndpoints() : void in class org.springframework.boot.actuate.autoconfigure.security.servlet.EndpointRequestTests",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/security/servlet/EndpointRequestTests.java",
+            "startLine": 240,
+            "endLine": 245,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/security/servlet/EndpointRequestTests.java",
+            "startLine": 237,
+            "endLine": 241,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-boot.git",
+      "sha1": "50be8cbf9162384af6968edfe5274459464982ca",
+      "url": "https://github.com/spring-projects/spring-boot/commit/50be8cbf9162384af6968edfe5274459464982ca",
+      "ourApproach": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private mutateClientRequest(context ClientRequestObservationContext) : void inlined to public getLowCardinalityKeyValues(context ClientRequestObservationContext) : KeyValues in class org.springframework.boot.actuate.autoconfigure.observation.web.client.ClientObservationConventionAdapter",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/observation/web/client/ClientObservationConventionAdapter.java",
+            "startLine": 63,
+            "endLine": 69,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/observation/web/client/ClientObservationConventionAdapter.java",
+            "startLine": 56,
+            "endLine": 64,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private mutateClientRequest(context ClientRequestObservationContext) : void inlined to public getLowCardinalityKeyValues(context ClientRequestObservationContext) : KeyValues in class org.springframework.boot.actuate.autoconfigure.observation.web.client.ClientObservationConventionAdapter",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/observation/web/client/ClientObservationConventionAdapter.java",
+            "startLine": 63,
+            "endLine": 69,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/observation/web/client/ClientObservationConventionAdapter.java",
+            "startLine": 56,
+            "endLine": 64,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-boot.git",
+      "sha1": "716a839d545a26566ea16fb713ad24f594fbc8f6",
+      "url": "https://github.com/spring-projects/spring-boot/commit/716a839d545a26566ea16fb713ad24f594fbc8f6",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package configureSslWhenSslIsEnabledWithNoKeyStoreThrowsWebServerException() : void renamed to package configureSslWhenSslIsEnabledWithNoKeyStoreAndNotPkcs11ThrowsWebServerException() : void in class org.springframework.boot.web.embedded.jetty.SslServerCustomizerTests",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot/src/test/java/org/springframework/boot/web/embedded/jetty/SslServerCustomizerTests.java",
+            "startLine": 85,
+            "endLine": 95,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot/src/test/java/org/springframework/boot/web/embedded/jetty/SslServerCustomizerTests.java",
+            "startLine": 110,
+            "endLine": 123,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package getKeyManagerFactoryWhenSslIsEnabledWithNoKeyStoreThrowsWebServerException() : void renamed to package getKeyManagerFactoryWhenSslIsEnabledWithNoKeyStoreAndNotPkcs11ThrowsWebServerException() : void in class org.springframework.boot.web.embedded.netty.SslServerCustomizerTests",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot/src/test/java/org/springframework/boot/web/embedded/netty/SslServerCustomizerTests.java",
+            "startLine": 61,
+            "endLine": 67,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot/src/test/java/org/springframework/boot/web/embedded/netty/SslServerCustomizerTests.java",
+            "startLine": 88,
+            "endLine": 97,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package customizeWhenSslIsEnabledWithNoKeyStoreThrowsWebServerException() : void renamed to package customizeWhenSslIsEnabledWithNoKeyStoreAndNotPkcs11ThrowsWebServerException() : void in class org.springframework.boot.web.embedded.tomcat.SslConnectorCustomizerTests",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot/src/test/java/org/springframework/boot/web/embedded/tomcat/SslConnectorCustomizerTests.java",
+            "startLine": 179,
+            "endLine": 184,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot/src/test/java/org/springframework/boot/web/embedded/tomcat/SslConnectorCustomizerTests.java",
+            "startLine": 204,
+            "endLine": 212,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package getKeyManagersWhenSslIsEnabledWithNoKeyStoreThrowsWebServerException() : void renamed to package getKeyManagersWhenSslIsEnabledWithNoKeyStoreAndNotPkcs11ThrowsWebServerException() : void in class org.springframework.boot.web.embedded.undertow.SslBuilderCustomizerTests",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot/src/test/java/org/springframework/boot/web/embedded/undertow/SslBuilderCustomizerTests.java",
+            "startLine": 79,
+            "endLine": 86,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot/src/test/java/org/springframework/boot/web/embedded/undertow/SslBuilderCustomizerTests.java",
+            "startLine": 103,
+            "endLine": 113,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package configureSslWhenSslIsEnabledWithNoKeyStoreThrowsWebServerException() : void renamed to package configureSslWhenSslIsEnabledWithNoKeyStoreAndNotPkcs11ThrowsWebServerException() : void in class org.springframework.boot.web.embedded.jetty.SslServerCustomizerTests",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot/src/test/java/org/springframework/boot/web/embedded/jetty/SslServerCustomizerTests.java",
+            "startLine": 85,
+            "endLine": 95,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot/src/test/java/org/springframework/boot/web/embedded/jetty/SslServerCustomizerTests.java",
+            "startLine": 110,
+            "endLine": 123,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package getKeyManagerFactoryWhenSslIsEnabledWithNoKeyStoreThrowsWebServerException() : void renamed to package getKeyManagerFactoryWhenSslIsEnabledWithNoKeyStoreAndNotPkcs11ThrowsWebServerException() : void in class org.springframework.boot.web.embedded.netty.SslServerCustomizerTests",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot/src/test/java/org/springframework/boot/web/embedded/netty/SslServerCustomizerTests.java",
+            "startLine": 61,
+            "endLine": 67,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot/src/test/java/org/springframework/boot/web/embedded/netty/SslServerCustomizerTests.java",
+            "startLine": 88,
+            "endLine": 97,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package customizeWhenSslIsEnabledWithNoKeyStoreThrowsWebServerException() : void renamed to package customizeWhenSslIsEnabledWithNoKeyStoreAndNotPkcs11ThrowsWebServerException() : void in class org.springframework.boot.web.embedded.tomcat.SslConnectorCustomizerTests",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot/src/test/java/org/springframework/boot/web/embedded/tomcat/SslConnectorCustomizerTests.java",
+            "startLine": 179,
+            "endLine": 184,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot/src/test/java/org/springframework/boot/web/embedded/tomcat/SslConnectorCustomizerTests.java",
+            "startLine": 204,
+            "endLine": 212,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package getKeyManagersWhenSslIsEnabledWithNoKeyStoreThrowsWebServerException() : void renamed to package getKeyManagersWhenSslIsEnabledWithNoKeyStoreAndNotPkcs11ThrowsWebServerException() : void in class org.springframework.boot.web.embedded.undertow.SslBuilderCustomizerTests",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot/src/test/java/org/springframework/boot/web/embedded/undertow/SslBuilderCustomizerTests.java",
+            "startLine": 79,
+            "endLine": 86,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot/src/test/java/org/springframework/boot/web/embedded/undertow/SslBuilderCustomizerTests.java",
+            "startLine": 103,
+            "endLine": 113,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-boot.git",
+      "sha1": "07766c436cb89128eac5389d33f76329b758d8df",
+      "url": "https://github.com/spring-projects/spring-boot/commit/07766c436cb89128eac5389d33f76329b758d8df",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private createConvention(customConvention ClientRequestObservationConvention, name String, tagsProvider RestTemplateExchangeTagsProvider) : ClientRequestObservationConvention extracted from package observationRestTemplateCustomizer(observationRegistry ObservationRegistry, observationProperties ObservationProperties, metricsProperties MetricsProperties, optionalTagsProvider ObjectProvider<RestTemplateExchangeTagsProvider>) : ObservationRestTemplateCustomizer in class org.springframework.boot.actuate.autoconfigure.observation.web.client.RestTemplateObservationConfiguration",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/observation/web/client/RestTemplateObservationConfiguration.java",
+            "startLine": 46,
+            "endLine": 58,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/observation/web/client/RestTemplateObservationConfiguration.java",
+            "startLine": 64,
+            "endLine": 76,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private createConvention(customConvention ClientRequestObservationConvention, tagsProvider WebClientExchangeTagsProvider, name String) : ClientRequestObservationConvention extracted from package observationWebClientCustomizer(observationRegistry ObservationRegistry, observationProperties ObservationProperties, optionalTagsProvider ObjectProvider<WebClientExchangeTagsProvider>, metricsProperties MetricsProperties) : ObservationWebClientCustomizer in class org.springframework.boot.actuate.autoconfigure.observation.web.client.WebClientObservationConfiguration",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/observation/web/client/WebClientObservationConfiguration.java",
+            "startLine": 43,
+            "endLine": 55,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/observation/web/client/WebClientObservationConfiguration.java",
+            "startLine": 54,
+            "endLine": 66,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private createConvention(customConvention ServerRequestObservationConvention, name String, tagsProvider WebMvcTagsProvider, contributors List<WebMvcTagsContributor>) : ServerRequestObservationConvention extracted from public webMvcObservationFilter(registry ObservationRegistry, customTagsProvider ObjectProvider<WebMvcTagsProvider>, contributorsProvider ObjectProvider<WebMvcTagsContributor>) : FilterRegistrationBean<ServerHttpObservationFilter> in class org.springframework.boot.actuate.autoconfigure.observation.web.servlet.WebMvcObservationAutoConfiguration",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/observation/web/servlet/WebMvcObservationAutoConfiguration.java",
+            "startLine": 82,
+            "endLine": 99,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/observation/web/servlet/WebMvcObservationAutoConfiguration.java",
+            "startLine": 98,
+            "endLine": 110,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private observationName(observationProperties ObservationProperties, metricsProperties MetricsProperties) : String extracted from package observationRestTemplateCustomizer(observationRegistry ObservationRegistry, observationProperties ObservationProperties, metricsProperties MetricsProperties, optionalTagsProvider ObjectProvider<RestTemplateExchangeTagsProvider>) : ObservationRestTemplateCustomizer in class org.springframework.boot.actuate.autoconfigure.observation.web.client.RestTemplateObservationConfiguration",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/observation/web/client/RestTemplateObservationConfiguration.java",
+            "startLine": 46,
+            "endLine": 58,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/observation/web/client/RestTemplateObservationConfiguration.java",
+            "startLine": 57,
+            "endLine": 62,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private observationName(observationProperties ObservationProperties, metricsProperties MetricsProperties) : String extracted from package observationWebClientCustomizer(observationRegistry ObservationRegistry, observationProperties ObservationProperties, optionalTagsProvider ObjectProvider<WebClientExchangeTagsProvider>, metricsProperties MetricsProperties) : ObservationWebClientCustomizer in class org.springframework.boot.actuate.autoconfigure.observation.web.client.WebClientObservationConfiguration",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/observation/web/client/WebClientObservationConfiguration.java",
+            "startLine": 43,
+            "endLine": 55,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/observation/web/client/WebClientObservationConfiguration.java",
+            "startLine": 68,
+            "endLine": 73,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private observationName(observationProperties ObservationProperties, metricsProperties MetricsProperties) : String extracted from package observationRestTemplateCustomizer(observationRegistry ObservationRegistry, observationProperties ObservationProperties, metricsProperties MetricsProperties, optionalTagsProvider ObjectProvider<RestTemplateExchangeTagsProvider>) : ObservationRestTemplateCustomizer in class org.springframework.boot.actuate.autoconfigure.observation.web.client.RestTemplateObservationConfiguration",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/observation/web/client/RestTemplateObservationConfiguration.java",
+            "startLine": 46,
+            "endLine": 58,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/observation/web/client/RestTemplateObservationConfiguration.java",
+            "startLine": 57,
+            "endLine": 62,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private observationName(observationProperties ObservationProperties, metricsProperties MetricsProperties) : String extracted from package observationWebClientCustomizer(observationRegistry ObservationRegistry, observationProperties ObservationProperties, optionalTagsProvider ObjectProvider<WebClientExchangeTagsProvider>, metricsProperties MetricsProperties) : ObservationWebClientCustomizer in class org.springframework.boot.actuate.autoconfigure.observation.web.client.WebClientObservationConfiguration",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/observation/web/client/WebClientObservationConfiguration.java",
+            "startLine": 43,
+            "endLine": 55,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/observation/web/client/WebClientObservationConfiguration.java",
+            "startLine": 68,
+            "endLine": 73,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private createConvention(customConvention ServerRequestObservationConvention, name String, tagsProvider WebMvcTagsProvider, contributors List<WebMvcTagsContributor>) : ServerRequestObservationConvention extracted from public webMvcObservationFilter(registry ObservationRegistry, customTagsProvider ObjectProvider<WebMvcTagsProvider>, contributorsProvider ObjectProvider<WebMvcTagsContributor>) : FilterRegistrationBean<ServerHttpObservationFilter> in class org.springframework.boot.actuate.autoconfigure.observation.web.servlet.WebMvcObservationAutoConfiguration",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/observation/web/servlet/WebMvcObservationAutoConfiguration.java",
+            "startLine": 82,
+            "endLine": 99,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/observation/web/servlet/WebMvcObservationAutoConfiguration.java",
+            "startLine": 98,
+            "endLine": 110,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-boot.git",
+      "sha1": "5a88468c0938a046d3aa60ba06e26523dd1ce190",
+      "url": "https://github.com/spring-projects/spring-boot/commit/5a88468c0938a046d3aa60ba06e26523dd1ce190",
+      "ourApproach": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.springframework.boot.docs.nativeimage.advanced.nestedconfigurationproperties.MyProperties.Nested moved to org.springframework.boot.docs.nativeimage.advanced.nestedconfigurationproperties.Nested",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-docs/src/main/java/org/springframework/boot/docs/nativeimage/advanced/nestedconfigurationproperties/MyProperties.java",
+            "startLine": 44,
+            "endLine": 58,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-docs/src/main/java/org/springframework/boot/docs/nativeimage/advanced/nestedconfigurationproperties/MyProperties.java",
+            "startLine": 46,
+            "endLine": 60,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.springframework.boot.docs.nativeimage.advanced.nestedconfigurationproperties.MyProperties.Nested moved to org.springframework.boot.docs.nativeimage.advanced.nestedconfigurationproperties.Nested",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-docs/src/main/java/org/springframework/boot/docs/nativeimage/advanced/nestedconfigurationproperties/MyProperties.java",
+            "startLine": 44,
+            "endLine": 58,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-docs/src/main/java/org/springframework/boot/docs/nativeimage/advanced/nestedconfigurationproperties/MyProperties.java",
+            "startLine": 46,
+            "endLine": 60,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-boot.git",
+      "sha1": "fb5cdbd11c3dbf9ea137223247a7b5477cfee7b1",
+      "url": "https://github.com/spring-projects/spring-boot/commit/fb5cdbd11c3dbf9ea137223247a7b5477cfee7b1",
+      "ourApproach": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.springframework.boot.actuate.autoconfigure.tracing.wavefront.WavefrontTracingAutoConfiguration.WavefrontMicrometer.MeterRegistrySpanMetricsConfiguration moved to org.springframework.boot.actuate.autoconfigure.tracing.wavefront.WavefrontTracingAutoConfiguration.MeterRegistrySpanMetricsConfiguration",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/tracing/wavefront/WavefrontTracingAutoConfiguration.java",
+            "startLine": 113,
+            "endLine": 123,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/tracing/wavefront/WavefrontTracingAutoConfiguration.java",
+            "startLine": 71,
+            "endLine": 81,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.springframework.boot.actuate.autoconfigure.tracing.wavefront.WavefrontTracingAutoConfiguration.WavefrontMicrometer.NoopSpanMetricsConfiguration moved to org.springframework.boot.actuate.autoconfigure.tracing.wavefront.WavefrontTracingAutoConfiguration.NoopSpanMetricsConfiguration",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/tracing/wavefront/WavefrontTracingAutoConfiguration.java",
+            "startLine": 125,
+            "endLine": 135,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/tracing/wavefront/WavefrontTracingAutoConfiguration.java",
+            "startLine": 83,
+            "endLine": 93,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.springframework.boot.actuate.autoconfigure.tracing.wavefront.WavefrontTracingAutoConfiguration.WavefrontMicrometer.WavefrontBrave moved to org.springframework.boot.actuate.autoconfigure.tracing.wavefront.WavefrontTracingAutoConfiguration.WavefrontBrave",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/tracing/wavefront/WavefrontTracingAutoConfiguration.java",
+            "startLine": 137,
+            "endLine": 147,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/tracing/wavefront/WavefrontTracingAutoConfiguration.java",
+            "startLine": 95,
+            "endLine": 105,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.springframework.boot.actuate.autoconfigure.tracing.wavefront.WavefrontTracingAutoConfiguration.WavefrontMicrometer.WavefrontOpenTelemetry moved to org.springframework.boot.actuate.autoconfigure.tracing.wavefront.WavefrontTracingAutoConfiguration.WavefrontOpenTelemetry",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/tracing/wavefront/WavefrontTracingAutoConfiguration.java",
+            "startLine": 149,
+            "endLine": 159,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/tracing/wavefront/WavefrontTracingAutoConfiguration.java",
+            "startLine": 107,
+            "endLine": 117,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package exportsApplicationTagsInWavefrontRegistry() : void renamed to package exportsApplicationTagsInWavefrontRegistryWhenApplicationTagsBean() : void in class org.springframework.boot.actuate.autoconfigure.metrics.export.wavefront.WavefrontMetricsExportAutoConfigurationTests",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/metrics/export/wavefront/WavefrontMetricsExportAutoConfigurationTests.java",
+            "startLine": 89,
+            "endLine": 104,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/metrics/export/wavefront/WavefrontMetricsExportAutoConfigurationTests.java",
+            "startLine": 90,
+            "endLine": 105,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontAutoConfiguration from Class org.springframework.boot.actuate.autoconfigure.tracing.wavefront.WavefrontTracingAutoConfiguration",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/tracing/wavefront/WavefrontTracingAutoConfiguration.java",
+            "startLine": 51,
+            "endLine": 163,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/wavefront/WavefrontAutoConfiguration.java",
+            "startLine": 34,
+            "endLine": 82,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.springframework.boot.actuate.autoconfigure.tracing.wavefront.WavefrontTracingAutoConfiguration.WavefrontMicrometer.MeterRegistrySpanMetricsConfiguration moved to org.springframework.boot.actuate.autoconfigure.tracing.wavefront.WavefrontTracingAutoConfiguration.MeterRegistrySpanMetricsConfiguration",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/tracing/wavefront/WavefrontTracingAutoConfiguration.java",
+            "startLine": 113,
+            "endLine": 123,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/tracing/wavefront/WavefrontTracingAutoConfiguration.java",
+            "startLine": 71,
+            "endLine": 81,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.springframework.boot.actuate.autoconfigure.tracing.wavefront.WavefrontTracingAutoConfiguration.WavefrontMicrometer.NoopSpanMetricsConfiguration moved to org.springframework.boot.actuate.autoconfigure.tracing.wavefront.WavefrontTracingAutoConfiguration.NoopSpanMetricsConfiguration",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/tracing/wavefront/WavefrontTracingAutoConfiguration.java",
+            "startLine": 125,
+            "endLine": 135,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/tracing/wavefront/WavefrontTracingAutoConfiguration.java",
+            "startLine": 83,
+            "endLine": 93,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.springframework.boot.actuate.autoconfigure.tracing.wavefront.WavefrontTracingAutoConfiguration.WavefrontMicrometer.WavefrontBrave moved to org.springframework.boot.actuate.autoconfigure.tracing.wavefront.WavefrontTracingAutoConfiguration.WavefrontBrave",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/tracing/wavefront/WavefrontTracingAutoConfiguration.java",
+            "startLine": 137,
+            "endLine": 147,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/tracing/wavefront/WavefrontTracingAutoConfiguration.java",
+            "startLine": 95,
+            "endLine": 105,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.springframework.boot.actuate.autoconfigure.tracing.wavefront.WavefrontTracingAutoConfiguration.WavefrontMicrometer.WavefrontOpenTelemetry moved to org.springframework.boot.actuate.autoconfigure.tracing.wavefront.WavefrontTracingAutoConfiguration.WavefrontOpenTelemetry",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/tracing/wavefront/WavefrontTracingAutoConfiguration.java",
+            "startLine": 149,
+            "endLine": 159,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/tracing/wavefront/WavefrontTracingAutoConfiguration.java",
+            "startLine": 107,
+            "endLine": 117,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package exportsApplicationTagsInWavefrontRegistry() : void renamed to package exportsApplicationTagsInWavefrontRegistryWhenApplicationTagsBean() : void in class org.springframework.boot.actuate.autoconfigure.metrics.export.wavefront.WavefrontMetricsExportAutoConfigurationTests",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/metrics/export/wavefront/WavefrontMetricsExportAutoConfigurationTests.java",
+            "startLine": 89,
+            "endLine": 104,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/metrics/export/wavefront/WavefrontMetricsExportAutoConfigurationTests.java",
+            "startLine": 90,
+            "endLine": 105,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.springframework.boot.actuate.autoconfigure.wavefront.WavefrontAutoConfiguration from class org.springframework.boot.actuate.autoconfigure.tracing.wavefront.WavefrontTracingAutoConfiguration",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/tracing/wavefront/WavefrontTracingAutoConfiguration.java",
+            "startLine": 51,
+            "endLine": 163,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/wavefront/WavefrontAutoConfiguration.java",
+            "startLine": 34,
+            "endLine": 82,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-boot.git",
+      "sha1": "42bb4c06152040711733aa58a862395abbe8d43c",
+      "url": "https://github.com/spring-projects/spring-boot/commit/42bb4c06152040711733aa58a862395abbe8d43c",
+      "ourApproach": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	DEFAULT_APPLICATION_NAME : String to DEFAULT_WAVEFRONT_APPLICATION_NAME : String in class org.springframework.boot.actuate.autoconfigure.tracing.wavefront.WavefrontTracingAutoConfiguration",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/tracing/wavefront/WavefrontTracingAutoConfiguration.java",
+            "startLine": 64,
+            "endLine": 64,
+            "startColumn": 30,
+            "endColumn": 70
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/tracing/wavefront/WavefrontTracingAutoConfiguration.java",
+            "startLine": 68,
+            "endLine": 68,
+            "startColumn": 30,
+            "endColumn": 88
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package shouldHaveADefaultApplicationName() : void renamed to package shouldUseSpringApplicationNameForServiceName() : void in class org.springframework.boot.actuate.autoconfigure.tracing.wavefront.WavefrontTracingAutoConfigurationTests",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/tracing/wavefront/WavefrontTracingAutoConfigurationTests.java",
+            "startLine": 116,
+            "endLine": 122,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/tracing/wavefront/WavefrontTracingAutoConfigurationTests.java",
+            "startLine": 128,
+            "endLine": 136,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	DEFAULT_APPLICATION_NAME : String to DEFAULT_WAVEFRONT_SERVICE_NAME : String in class org.springframework.boot.actuate.autoconfigure.tracing.wavefront.WavefrontTracingAutoConfiguration",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/tracing/wavefront/WavefrontTracingAutoConfiguration.java",
+            "startLine": 64,
+            "endLine": 64,
+            "startColumn": 30,
+            "endColumn": 70
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/tracing/wavefront/WavefrontTracingAutoConfiguration.java",
+            "startLine": 77,
+            "endLine": 77,
+            "startColumn": 30,
+            "endColumn": 80
+          },
+          "developerConfirmation": false
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package shouldHaveADefaultApplicationName() : void renamed to package shouldUseSpringApplicationNameForServiceName() : void in class org.springframework.boot.actuate.autoconfigure.tracing.wavefront.WavefrontTracingAutoConfigurationTests",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/tracing/wavefront/WavefrontTracingAutoConfigurationTests.java",
+            "startLine": 116,
+            "endLine": 122,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/tracing/wavefront/WavefrontTracingAutoConfigurationTests.java",
+            "startLine": 128,
+            "endLine": 136,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-boot.git",
+      "sha1": "b5bdee24c2793464a61e31d0e486f025ad9d0fdf",
+      "url": "https://github.com/spring-projects/spring-boot/commit/b5bdee24c2793464a61e31d0e486f025ad9d0fdf",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private applyRollingPolicyProperties(resolver PropertyResolver) : void extracted from protected apply(logFile LogFile, resolver PropertyResolver) : void in class org.springframework.boot.logging.logback.LogbackLoggingSystemProperties",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/logging/logback/LogbackLoggingSystemProperties.java",
+            "startLine": 85,
+            "endLine": 98,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/logging/logback/LogbackLoggingSystemProperties.java",
+            "startLine": 102,
+            "endLine": 113,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private applyRollingPolicyProperties(resolver PropertyResolver) : void extracted from protected apply(logFile LogFile, resolver PropertyResolver) : void in class org.springframework.boot.logging.logback.LogbackLoggingSystemProperties",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/logging/logback/LogbackLoggingSystemProperties.java",
+            "startLine": 85,
+            "endLine": 98,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/logging/logback/LogbackLoggingSystemProperties.java",
+            "startLine": 102,
+            "endLine": 113,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-boot.git",
+      "sha1": "0acaa0e46050017e75056d51918d447271fc16c7",
+      "url": "https://github.com/spring-projects/spring-boot/commit/0acaa0e46050017e75056d51918d447271fc16c7",
+      "ourApproach": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	request : ClientRequest to requestBuilder : ClientRequest.Builder in class org.springframework.boot.actuate.autoconfigure.observation.web.client.ClientObservationConventionAdapterTests",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/observation/web/client/ClientObservationConventionAdapterTests.java",
+            "startLine": 48,
+            "endLine": 48,
+            "startColumn": 24,
+            "endColumn": 108
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/observation/web/client/ClientObservationConventionAdapterTests.java",
+            "startLine": 48,
+            "endLine": 48,
+            "startColumn": 32,
+            "endColumn": 115
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	request : ClientRequest to requestBuilder : ClientRequest.Builder in class org.springframework.boot.actuate.autoconfigure.observation.web.client.ClientObservationConventionAdapterTests",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/observation/web/client/ClientObservationConventionAdapterTests.java",
+            "startLine": 48,
+            "endLine": 48,
+            "startColumn": 24,
+            "endColumn": 108
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/observation/web/client/ClientObservationConventionAdapterTests.java",
+            "startLine": 48,
+            "endLine": 48,
+            "startColumn": 32,
+            "endColumn": 115
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	request : ClientRequest to requestBuilder : ClientRequest.Builder in class org.springframework.boot.actuate.autoconfigure.observation.web.client.ClientObservationConventionAdapterTests",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/observation/web/client/ClientObservationConventionAdapterTests.java",
+            "startLine": 48,
+            "endLine": 48,
+            "startColumn": 24,
+            "endColumn": 108
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/observation/web/client/ClientObservationConventionAdapterTests.java",
+            "startLine": 48,
+            "endLine": 48,
+            "startColumn": 32,
+            "endColumn": 115
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	request : ClientRequest to requestBuilder : ClientRequest.Builder in class org.springframework.boot.actuate.autoconfigure.observation.web.client.ClientObservationConventionAdapterTests",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/observation/web/client/ClientObservationConventionAdapterTests.java",
+            "startLine": 48,
+            "endLine": 48,
+            "startColumn": 24,
+            "endColumn": 108
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/test/java/org/springframework/boot/actuate/autoconfigure/observation/web/client/ClientObservationConventionAdapterTests.java",
+            "startLine": 48,
+            "endLine": 48,
+            "startColumn": 32,
+            "endColumn": 115
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-boot.git",
+      "sha1": "9856286a2dfcc76dd0f8328441b77df7e0f8ee54",
+      "url": "https://github.com/spring-projects/spring-boot/commit/9856286a2dfcc76dd0f8328441b77df7e0f8ee54",
+      "ourApproach": [
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	SourceHttpRequest to RecordableHttpRequest in method private createRequest(method String) : RecordableHttpRequest from class org.springframework.boot.actuate.web.exchanges.HttpExchangesEndpointTests",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/web/exchanges/HttpExchangesEndpointTests.java",
+            "startLine": 51,
+            "endLine": 55,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/web/exchanges/HttpExchangesEndpointTests.java",
+            "startLine": 51,
+            "endLine": 55,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.springframework.boot.actuate.web.exchanges.servlet.ServletSourceHttpRequestTests renamed to org.springframework.boot.actuate.web.exchanges.servlet.RecordableServletHttpRequestTests",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/web/exchanges/servlet/ServletSourceHttpRequestTests.java",
+            "startLine": 26,
+            "endLine": 68,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/web/exchanges/servlet/RecordableServletHttpRequestTests.java",
+            "startLine": 26,
+            "endLine": 68,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	SourceHttpResponse to RecordableHttpResponse in method private createResponse() : RecordableHttpResponse from class org.springframework.boot.actuate.web.exchanges.HttpExchangesEndpointTests",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/web/exchanges/HttpExchangesEndpointTests.java",
+            "startLine": 57,
+            "endLine": 59,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/web/exchanges/HttpExchangesEndpointTests.java",
+            "startLine": 57,
+            "endLine": 59,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.springframework.boot.actuate.web.exchanges.reactive.SourceServerHttpRequestTests renamed to org.springframework.boot.actuate.web.exchanges.reactive.RecordableServerHttpRequestTests",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/web/exchanges/reactive/SourceServerHttpRequestTests.java",
+            "startLine": 36,
+            "endLine": 94,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/web/exchanges/reactive/RecordableServerHttpRequestTests.java",
+            "startLine": 36,
+            "endLine": 94,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	SourceHttpRequest to RecordableHttpRequest in method private createRequest(headers Map<String,List<String>>) : RecordableHttpRequest from class org.springframework.boot.actuate.web.exchanges.HttpExchangeTests",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/web/exchanges/HttpExchangeTests.java",
+            "startLine": 300,
+            "endLine": 307,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/web/exchanges/HttpExchangeTests.java",
+            "startLine": 300,
+            "endLine": 307,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.springframework.boot.actuate.web.exchanges.reactive.SourceServerHttpRequest renamed to org.springframework.boot.actuate.web.exchanges.reactive.RecordableServerHttpRequest",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/main/java/org/springframework/boot/actuate/web/exchanges/reactive/SourceServerHttpRequest.java",
+            "startLine": 30,
+            "endLine": 78,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/main/java/org/springframework/boot/actuate/web/exchanges/reactive/RecordableServerHttpRequest.java",
+            "startLine": 29,
+            "endLine": 77,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.springframework.boot.actuate.web.exchanges.servlet.ServletSourceHttpRequest renamed to org.springframework.boot.actuate.web.exchanges.servlet.RecordableServletHttpRequest",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/main/java/org/springframework/boot/actuate/web/exchanges/servlet/ServletSourceHttpRequest.java",
+            "startLine": 34,
+            "endLine": 93,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/main/java/org/springframework/boot/actuate/web/exchanges/servlet/RecordableServletHttpRequest.java",
+            "startLine": 34,
+            "endLine": 94,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	SourceHttpRequest to RecordableHttpRequest in method private createRequest() : RecordableHttpRequest from class org.springframework.boot.actuate.web.exchanges.HttpExchangeTests",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/web/exchanges/HttpExchangeTests.java",
+            "startLine": 296,
+            "endLine": 298,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/web/exchanges/HttpExchangeTests.java",
+            "startLine": 296,
+            "endLine": 298,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.springframework.boot.actuate.web.exchanges.reactive.SourceServerHttpResponse renamed to org.springframework.boot.actuate.web.exchanges.reactive.RecordableServerHttpResponse",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/main/java/org/springframework/boot/actuate/web/exchanges/reactive/SourceServerHttpResponse.java",
+            "startLine": 27,
+            "endLine": 53,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/main/java/org/springframework/boot/actuate/web/exchanges/reactive/RecordableServerHttpResponse.java",
+            "startLine": 27,
+            "endLine": 54,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	sourceRequest : SourceHttpRequest to request : RecordableHttpRequest in class org.springframework.boot.actuate.web.exchanges.HttpExchange.Started",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/main/java/org/springframework/boot/actuate/web/exchanges/HttpExchange.java",
+            "startLine": 153,
+            "endLine": 153,
+            "startColumn": 35,
+            "endColumn": 48
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/main/java/org/springframework/boot/actuate/web/exchanges/HttpExchange.java",
+            "startLine": 153,
+            "endLine": 153,
+            "startColumn": 39,
+            "endColumn": 46
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	sourceRequest : SourceHttpRequest to request : RecordableHttpRequest in class org.springframework.boot.actuate.web.exchanges.HttpExchange.Started",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/main/java/org/springframework/boot/actuate/web/exchanges/HttpExchange.java",
+            "startLine": 153,
+            "endLine": 153,
+            "startColumn": 35,
+            "endColumn": 48
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/main/java/org/springframework/boot/actuate/web/exchanges/HttpExchange.java",
+            "startLine": 153,
+            "endLine": 153,
+            "startColumn": 39,
+            "endColumn": 46
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	SourceHttpResponse to RecordableHttpResponse in method private createResponse() : RecordableHttpResponse from class org.springframework.boot.actuate.web.exchanges.HttpExchangeTests",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/web/exchanges/HttpExchangeTests.java",
+            "startLine": 309,
+            "endLine": 311,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/web/exchanges/HttpExchangeTests.java",
+            "startLine": 309,
+            "endLine": 311,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.springframework.boot.actuate.web.exchanges.servlet.SourceServletHttpResponse renamed to org.springframework.boot.actuate.web.exchanges.servlet.RecordableServletHttpResponse",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/main/java/org/springframework/boot/actuate/web/exchanges/servlet/SourceServletHttpResponse.java",
+            "startLine": 28,
+            "endLine": 58,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/main/java/org/springframework/boot/actuate/web/exchanges/servlet/RecordableServletHttpResponse.java",
+            "startLine": 28,
+            "endLine": 59,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	SourceHttpResponse to RecordableHttpResponse in method private createResponse(headers Map<String,List<String>>) : RecordableHttpResponse from class org.springframework.boot.actuate.web.exchanges.HttpExchangeTests",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/web/exchanges/HttpExchangeTests.java",
+            "startLine": 313,
+            "endLine": 318,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/web/exchanges/HttpExchangeTests.java",
+            "startLine": 313,
+            "endLine": 318,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.springframework.boot.actuate.web.exchanges.SourceHttpResponse renamed to org.springframework.boot.actuate.web.exchanges.RecordableHttpResponse",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/main/java/org/springframework/boot/actuate/web/exchanges/SourceHttpResponse.java",
+            "startLine": 22,
+            "endLine": 43,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/main/java/org/springframework/boot/actuate/web/exchanges/RecordableHttpResponse.java",
+            "startLine": 22,
+            "endLine": 43,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.springframework.boot.actuate.web.exchanges.SourceHttpRequest renamed to org.springframework.boot.actuate.web.exchanges.RecordableHttpRequest",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/main/java/org/springframework/boot/actuate/web/exchanges/SourceHttpRequest.java",
+            "startLine": 23,
+            "endLine": 57,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/main/java/org/springframework/boot/actuate/web/exchanges/RecordableHttpRequest.java",
+            "startLine": 23,
+            "endLine": 57,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.springframework.boot.actuate.autoconfigure.web.exchanges.HttpExchangesProperties.Recording from Class org.springframework.boot.actuate.autoconfigure.web.exchanges.HttpExchangesProperties",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/web/exchanges/HttpExchangesProperties.java",
+            "startLine": 25,
+            "endLine": 53,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/web/exchanges/HttpExchangesProperties.java",
+            "startLine": 44,
+            "endLine": 66,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.springframework.boot.actuate.web.exchanges.SourceHttpRequest renamed to org.springframework.boot.actuate.web.exchanges.RecordableHttpRequest",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/main/java/org/springframework/boot/actuate/web/exchanges/SourceHttpRequest.java",
+            "startLine": 23,
+            "endLine": 57,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/main/java/org/springframework/boot/actuate/web/exchanges/RecordableHttpRequest.java",
+            "startLine": 23,
+            "endLine": 57,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.springframework.boot.actuate.web.exchanges.SourceHttpResponse renamed to org.springframework.boot.actuate.web.exchanges.RecordableHttpResponse",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/main/java/org/springframework/boot/actuate/web/exchanges/SourceHttpResponse.java",
+            "startLine": 22,
+            "endLine": 43,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/main/java/org/springframework/boot/actuate/web/exchanges/RecordableHttpResponse.java",
+            "startLine": 22,
+            "endLine": 43,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.springframework.boot.actuate.web.exchanges.reactive.SourceServerHttpRequest renamed to org.springframework.boot.actuate.web.exchanges.reactive.RecordableServerHttpRequest",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/main/java/org/springframework/boot/actuate/web/exchanges/reactive/SourceServerHttpRequest.java",
+            "startLine": 30,
+            "endLine": 78,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/main/java/org/springframework/boot/actuate/web/exchanges/reactive/RecordableServerHttpRequest.java",
+            "startLine": 29,
+            "endLine": 77,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.springframework.boot.actuate.web.exchanges.reactive.SourceServerHttpResponse renamed to org.springframework.boot.actuate.web.exchanges.reactive.RecordableServerHttpResponse",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/main/java/org/springframework/boot/actuate/web/exchanges/reactive/SourceServerHttpResponse.java",
+            "startLine": 27,
+            "endLine": 53,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/main/java/org/springframework/boot/actuate/web/exchanges/reactive/RecordableServerHttpResponse.java",
+            "startLine": 27,
+            "endLine": 54,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.springframework.boot.actuate.web.exchanges.servlet.ServletSourceHttpRequest renamed to org.springframework.boot.actuate.web.exchanges.servlet.RecordableServletHttpRequest",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/main/java/org/springframework/boot/actuate/web/exchanges/servlet/ServletSourceHttpRequest.java",
+            "startLine": 34,
+            "endLine": 93,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/main/java/org/springframework/boot/actuate/web/exchanges/servlet/RecordableServletHttpRequest.java",
+            "startLine": 34,
+            "endLine": 94,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.springframework.boot.actuate.web.exchanges.servlet.SourceServletHttpResponse renamed to org.springframework.boot.actuate.web.exchanges.servlet.RecordableServletHttpResponse",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/main/java/org/springframework/boot/actuate/web/exchanges/servlet/SourceServletHttpResponse.java",
+            "startLine": 28,
+            "endLine": 58,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/main/java/org/springframework/boot/actuate/web/exchanges/servlet/RecordableServletHttpResponse.java",
+            "startLine": 28,
+            "endLine": 59,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.springframework.boot.actuate.web.exchanges.reactive.SourceServerHttpRequestTests renamed to org.springframework.boot.actuate.web.exchanges.reactive.RecordableServerHttpRequestTests",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/web/exchanges/reactive/SourceServerHttpRequestTests.java",
+            "startLine": 36,
+            "endLine": 94,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/web/exchanges/reactive/RecordableServerHttpRequestTests.java",
+            "startLine": 36,
+            "endLine": 94,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.springframework.boot.actuate.web.exchanges.servlet.ServletSourceHttpRequestTests renamed to org.springframework.boot.actuate.web.exchanges.servlet.RecordableServletHttpRequestTests",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/web/exchanges/servlet/ServletSourceHttpRequestTests.java",
+            "startLine": 26,
+            "endLine": 68,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/web/exchanges/servlet/RecordableServletHttpRequestTests.java",
+            "startLine": 26,
+            "endLine": 68,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	sourceRequest : SourceHttpRequest to request : RecordableHttpRequest in class org.springframework.boot.actuate.web.exchanges.HttpExchange.Started",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/main/java/org/springframework/boot/actuate/web/exchanges/HttpExchange.java",
+            "startLine": 153,
+            "endLine": 153,
+            "startColumn": 35,
+            "endColumn": 48
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/main/java/org/springframework/boot/actuate/web/exchanges/HttpExchange.java",
+            "startLine": 153,
+            "endLine": 153,
+            "startColumn": 39,
+            "endColumn": 46
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	sourceRequest : SourceHttpRequest to request : RecordableHttpRequest in class org.springframework.boot.actuate.web.exchanges.HttpExchange.Started",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/main/java/org/springframework/boot/actuate/web/exchanges/HttpExchange.java",
+            "startLine": 153,
+            "endLine": 153,
+            "startColumn": 35,
+            "endColumn": 48
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/main/java/org/springframework/boot/actuate/web/exchanges/HttpExchange.java",
+            "startLine": 153,
+            "endLine": 153,
+            "startColumn": 39,
+            "endColumn": 46
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	SourceHttpRequest to RecordableHttpRequest in method private createRequest() : RecordableHttpRequest from class org.springframework.boot.actuate.web.exchanges.HttpExchangeTests",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/web/exchanges/HttpExchangeTests.java",
+            "startLine": 296,
+            "endLine": 298,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/web/exchanges/HttpExchangeTests.java",
+            "startLine": 296,
+            "endLine": 298,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	SourceHttpRequest to RecordableHttpRequest in method private createRequest(headers Map<String,List<String>>) : RecordableHttpRequest from class org.springframework.boot.actuate.web.exchanges.HttpExchangeTests",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/web/exchanges/HttpExchangeTests.java",
+            "startLine": 300,
+            "endLine": 307,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/web/exchanges/HttpExchangeTests.java",
+            "startLine": 300,
+            "endLine": 307,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	SourceHttpResponse to RecordableHttpResponse in method private createResponse() : RecordableHttpResponse from class org.springframework.boot.actuate.web.exchanges.HttpExchangeTests",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/web/exchanges/HttpExchangeTests.java",
+            "startLine": 309,
+            "endLine": 311,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/web/exchanges/HttpExchangeTests.java",
+            "startLine": 309,
+            "endLine": 311,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	SourceHttpResponse to RecordableHttpResponse in method private createResponse(headers Map<String,List<String>>) : RecordableHttpResponse from class org.springframework.boot.actuate.web.exchanges.HttpExchangeTests",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/web/exchanges/HttpExchangeTests.java",
+            "startLine": 313,
+            "endLine": 318,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/web/exchanges/HttpExchangeTests.java",
+            "startLine": 313,
+            "endLine": 318,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	SourceHttpRequest to RecordableHttpRequest in method private createRequest(method String) : RecordableHttpRequest from class org.springframework.boot.actuate.web.exchanges.HttpExchangesEndpointTests",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/web/exchanges/HttpExchangesEndpointTests.java",
+            "startLine": 51,
+            "endLine": 55,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/web/exchanges/HttpExchangesEndpointTests.java",
+            "startLine": 51,
+            "endLine": 55,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	SourceHttpResponse to RecordableHttpResponse in method private createResponse() : RecordableHttpResponse from class org.springframework.boot.actuate.web.exchanges.HttpExchangesEndpointTests",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/web/exchanges/HttpExchangesEndpointTests.java",
+            "startLine": 57,
+            "endLine": 59,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/web/exchanges/HttpExchangesEndpointTests.java",
+            "startLine": 57,
+            "endLine": 59,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.springframework.boot.actuate.autoconfigure.web.exchanges.HttpExchangesProperties.Recording from class org.springframework.boot.actuate.autoconfigure.web.exchanges.HttpExchangesProperties",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/web/exchanges/HttpExchangesProperties.java",
+            "startLine": 25,
+            "endLine": 53,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator-autoconfigure/src/main/java/org/springframework/boot/actuate/autoconfigure/web/exchanges/HttpExchangesProperties.java",
+            "startLine": 44,
+            "endLine": 66,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-boot.git",
+      "sha1": "29f7a596feae0051ced49da7b1622e390f7a42e7",
+      "url": "https://github.com/spring-projects/spring-boot/commit/29f7a596feae0051ced49da7b1622e390f7a42e7",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package traceForMonoErrorWithRuntimeExceptionHas500Status() : void renamed to package exchangeForMonoErrorWithRuntimeExceptionHas500Status() : void in class org.springframework.boot.actuate.web.exchanges.reactive.HttpExchangesWebFilterIntegrationTests",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/web/exchanges/reactive/HttpExchangesWebFilterIntegrationTests.java",
+            "startLine": 65,
+            "endLine": 74,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/web/exchanges/reactive/HttpExchangesWebFilterIntegrationTests.java",
+            "startLine": 65,
+            "endLine": 74,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package traceForThrownRuntimeExceptionHas500Status() : void renamed to package exchangeForThrownRuntimeExceptionHas500Status() : void in class org.springframework.boot.actuate.web.exchanges.reactive.HttpExchangesWebFilterIntegrationTests",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/web/exchanges/reactive/HttpExchangesWebFilterIntegrationTests.java",
+            "startLine": 76,
+            "endLine": 85,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/web/exchanges/reactive/HttpExchangesWebFilterIntegrationTests.java",
+            "startLine": 76,
+            "endLine": 85,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package traceForNotFoundResponseHas404Status() : void renamed to package exchangeForNotFoundResponseHas404Status() : void in class org.springframework.boot.actuate.web.exchanges.reactive.HttpExchangesWebFilterIntegrationTests",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/web/exchanges/reactive/HttpExchangesWebFilterIntegrationTests.java",
+            "startLine": 54,
+            "endLine": 63,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/web/exchanges/reactive/HttpExchangesWebFilterIntegrationTests.java",
+            "startLine": 54,
+            "endLine": 63,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package filterCapturesSessionIdWhenSessionIsUsed() : void renamed to package filterRecordsSessionIdWhenSessionIsUsed() : void in class org.springframework.boot.actuate.web.exchanges.reactive.HttpExchangesWebFilterTests",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/web/exchanges/reactive/HttpExchangesWebFilterTests.java",
+            "startLine": 58,
+            "endLine": 67,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/web/exchanges/reactive/HttpExchangesWebFilterTests.java",
+            "startLine": 58,
+            "endLine": 67,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package filterDoesNotCaptureIdOfUnusedSession() : void renamed to package filterDoesNotRecordIdOfUnusedSession() : void in class org.springframework.boot.actuate.web.exchanges.reactive.HttpExchangesWebFilterTests",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/web/exchanges/reactive/HttpExchangesWebFilterTests.java",
+            "startLine": 69,
+            "endLine": 76,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/web/exchanges/reactive/HttpExchangesWebFilterTests.java",
+            "startLine": 69,
+            "endLine": 76,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package filterTracesExchange() : void renamed to package filterRecordsExchange() : void in class org.springframework.boot.actuate.web.exchanges.reactive.HttpExchangesWebFilterTests",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/web/exchanges/reactive/HttpExchangesWebFilterTests.java",
+            "startLine": 51,
+            "endLine": 56,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/web/exchanges/reactive/HttpExchangesWebFilterTests.java",
+            "startLine": 51,
+            "endLine": 56,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package filterCapturesPrincipal() : void renamed to package filterRecordsPrincipal() : void in class org.springframework.boot.actuate.web.exchanges.reactive.HttpExchangesWebFilterTests",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/web/exchanges/reactive/HttpExchangesWebFilterTests.java",
+            "startLine": 78,
+            "endLine": 97,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/web/exchanges/reactive/HttpExchangesWebFilterTests.java",
+            "startLine": 78,
+            "endLine": 97,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package filterCapturesSessionId() : void renamed to package filterRecordsSessionId() : void in class org.springframework.boot.actuate.web.exchanges.servlet.HttpExchangesFilterTests",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/web/exchanges/servlet/HttpExchangesFilterTests.java",
+            "startLine": 64,
+            "endLine": 80,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/web/exchanges/servlet/HttpExchangesFilterTests.java",
+            "startLine": 64,
+            "endLine": 80,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package filterTracesExchange() : void renamed to package filterRecordsExchange() : void in class org.springframework.boot.actuate.web.exchanges.servlet.HttpExchangesFilterTests",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/web/exchanges/servlet/HttpExchangesFilterTests.java",
+            "startLine": 58,
+            "endLine": 62,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/web/exchanges/servlet/HttpExchangesFilterTests.java",
+            "startLine": 58,
+            "endLine": 62,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package filterCapturesPrincipal() : void renamed to package filterRecordsPrincipal() : void in class org.springframework.boot.actuate.web.exchanges.servlet.HttpExchangesFilterTests",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/web/exchanges/servlet/HttpExchangesFilterTests.java",
+            "startLine": 82,
+            "endLine": 94,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/web/exchanges/servlet/HttpExchangesFilterTests.java",
+            "startLine": 82,
+            "endLine": 94,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package traceForNotFoundResponseHas404Status() : void renamed to package exchangeForNotFoundResponseHas404Status() : void in class org.springframework.boot.actuate.web.exchanges.reactive.HttpExchangesWebFilterIntegrationTests",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/web/exchanges/reactive/HttpExchangesWebFilterIntegrationTests.java",
+            "startLine": 54,
+            "endLine": 63,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/web/exchanges/reactive/HttpExchangesWebFilterIntegrationTests.java",
+            "startLine": 54,
+            "endLine": 63,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package traceForMonoErrorWithRuntimeExceptionHas500Status() : void renamed to package exchangeForMonoErrorWithRuntimeExceptionHas500Status() : void in class org.springframework.boot.actuate.web.exchanges.reactive.HttpExchangesWebFilterIntegrationTests",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/web/exchanges/reactive/HttpExchangesWebFilterIntegrationTests.java",
+            "startLine": 65,
+            "endLine": 74,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/web/exchanges/reactive/HttpExchangesWebFilterIntegrationTests.java",
+            "startLine": 65,
+            "endLine": 74,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package traceForThrownRuntimeExceptionHas500Status() : void renamed to package exchangeForThrownRuntimeExceptionHas500Status() : void in class org.springframework.boot.actuate.web.exchanges.reactive.HttpExchangesWebFilterIntegrationTests",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/web/exchanges/reactive/HttpExchangesWebFilterIntegrationTests.java",
+            "startLine": 76,
+            "endLine": 85,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/web/exchanges/reactive/HttpExchangesWebFilterIntegrationTests.java",
+            "startLine": 76,
+            "endLine": 85,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package filterTracesExchange() : void renamed to package filterRecordsExchange() : void in class org.springframework.boot.actuate.web.exchanges.reactive.HttpExchangesWebFilterTests",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/web/exchanges/reactive/HttpExchangesWebFilterTests.java",
+            "startLine": 51,
+            "endLine": 56,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/web/exchanges/reactive/HttpExchangesWebFilterTests.java",
+            "startLine": 51,
+            "endLine": 56,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package filterCapturesSessionIdWhenSessionIsUsed() : void renamed to package filterRecordsSessionIdWhenSessionIsUsed() : void in class org.springframework.boot.actuate.web.exchanges.reactive.HttpExchangesWebFilterTests",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/web/exchanges/reactive/HttpExchangesWebFilterTests.java",
+            "startLine": 58,
+            "endLine": 67,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/web/exchanges/reactive/HttpExchangesWebFilterTests.java",
+            "startLine": 58,
+            "endLine": 67,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package filterDoesNotCaptureIdOfUnusedSession() : void renamed to package filterDoesNotRecordIdOfUnusedSession() : void in class org.springframework.boot.actuate.web.exchanges.reactive.HttpExchangesWebFilterTests",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/web/exchanges/reactive/HttpExchangesWebFilterTests.java",
+            "startLine": 69,
+            "endLine": 76,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/web/exchanges/reactive/HttpExchangesWebFilterTests.java",
+            "startLine": 69,
+            "endLine": 76,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package filterCapturesPrincipal() : void renamed to package filterRecordsPrincipal() : void in class org.springframework.boot.actuate.web.exchanges.reactive.HttpExchangesWebFilterTests",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/web/exchanges/reactive/HttpExchangesWebFilterTests.java",
+            "startLine": 78,
+            "endLine": 97,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/web/exchanges/reactive/HttpExchangesWebFilterTests.java",
+            "startLine": 78,
+            "endLine": 97,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package filterTracesExchange() : void renamed to package filterRecordsExchange() : void in class org.springframework.boot.actuate.web.exchanges.servlet.HttpExchangesFilterTests",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/web/exchanges/servlet/HttpExchangesFilterTests.java",
+            "startLine": 58,
+            "endLine": 62,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/web/exchanges/servlet/HttpExchangesFilterTests.java",
+            "startLine": 58,
+            "endLine": 62,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package filterCapturesSessionId() : void renamed to package filterRecordsSessionId() : void in class org.springframework.boot.actuate.web.exchanges.servlet.HttpExchangesFilterTests",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/web/exchanges/servlet/HttpExchangesFilterTests.java",
+            "startLine": 64,
+            "endLine": 80,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/web/exchanges/servlet/HttpExchangesFilterTests.java",
+            "startLine": 64,
+            "endLine": 80,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package filterCapturesPrincipal() : void renamed to package filterRecordsPrincipal() : void in class org.springframework.boot.actuate.web.exchanges.servlet.HttpExchangesFilterTests",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/web/exchanges/servlet/HttpExchangesFilterTests.java",
+            "startLine": 82,
+            "endLine": 94,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-actuator/src/test/java/org/springframework/boot/actuate/web/exchanges/servlet/HttpExchangesFilterTests.java",
+            "startLine": 82,
+            "endLine": 94,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-boot.git",
+      "sha1": "b9e176ce1a040941d0807e418174cebee7c6d2e0",
+      "url": "https://github.com/spring-projects/spring-boot/commit/b9e176ce1a040941d0807e418174cebee7c6d2e0",
+      "ourApproach": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	applicationContext : ApplicationContext to modules : Collection<Module> in class org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration.Jackson2ObjectMapperBuilderCustomizerConfiguration.StandardJackson2ObjectMapperBuilderCustomizer",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/jackson/JacksonAutoConfiguration.java",
+            "startLine": 181,
+            "endLine": 181,
+            "startColumn": 37,
+            "endColumn": 55
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/jackson/JacksonAutoConfiguration.java",
+            "startLine": 182,
+            "endLine": 182,
+            "startColumn": 37,
+            "endColumn": 44
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	applicationContext : ApplicationContext to modules : Collection<Module> in class org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration.Jackson2ObjectMapperBuilderCustomizerConfiguration.StandardJackson2ObjectMapperBuilderCustomizer",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/jackson/JacksonAutoConfiguration.java",
+            "startLine": 181,
+            "endLine": 181,
+            "startColumn": 37,
+            "endColumn": 55
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/jackson/JacksonAutoConfiguration.java",
+            "startLine": 182,
+            "endLine": 182,
+            "startColumn": 37,
+            "endColumn": 44
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	applicationContext : ApplicationContext to modules : Collection<Module> in class org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration.Jackson2ObjectMapperBuilderCustomizerConfiguration.StandardJackson2ObjectMapperBuilderCustomizer",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/jackson/JacksonAutoConfiguration.java",
+            "startLine": 181,
+            "endLine": 181,
+            "startColumn": 37,
+            "endColumn": 55
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/jackson/JacksonAutoConfiguration.java",
+            "startLine": 182,
+            "endLine": 182,
+            "startColumn": 37,
+            "endColumn": 44
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	applicationContext : ApplicationContext to modules : Collection<Module> in class org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration.Jackson2ObjectMapperBuilderCustomizerConfiguration.StandardJackson2ObjectMapperBuilderCustomizer",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/jackson/JacksonAutoConfiguration.java",
+            "startLine": 181,
+            "endLine": 181,
+            "startColumn": 37,
+            "endColumn": 55
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot-autoconfigure/src/main/java/org/springframework/boot/autoconfigure/jackson/JacksonAutoConfiguration.java",
+            "startLine": 182,
+            "endLine": 182,
+            "startColumn": 37,
+            "endColumn": 44
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-boot.git",
+      "sha1": "33e379c4a2a8f50f4d2490943537d0d1b6f831f6",
+      "url": "https://github.com/spring-projects/spring-boot/commit/33e379c4a2a8f50f4d2490943537d0d1b6f831f6",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package loadWhenMultiDocumentWithTrailingCharsLoadsSingleDoc() : void renamed to package loadWhenMultiDocumentWithPoundPrefixAndTrailingCharsLoadsSingleDoc() : void in class org.springframework.boot.env.OriginTrackedPropertiesLoaderTests",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot/src/test/java/org/springframework/boot/env/OriginTrackedPropertiesLoaderTests.java",
+            "startLine": 206,
+            "endLine": 211,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot/src/test/java/org/springframework/boot/env/OriginTrackedPropertiesLoaderTests.java",
+            "startLine": 227,
+            "endLine": 232,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package loadWhenMultiDocumentWithLeadingWhitespaceLoadsSingleDoc() : void renamed to package loadWhenMultiDocumentWithPoundPrefixAndLeadingWhitespaceLoadsSingleDoc() : void in class org.springframework.boot.env.OriginTrackedPropertiesLoaderTests",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot/src/test/java/org/springframework/boot/env/OriginTrackedPropertiesLoaderTests.java",
+            "startLine": 192,
+            "endLine": 197,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot/src/test/java/org/springframework/boot/env/OriginTrackedPropertiesLoaderTests.java",
+            "startLine": 199,
+            "endLine": 204,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package loadWhenMultiDocumentWithTrailingWhitespaceLoadsMultiDoc() : void renamed to package loadWhenMultiDocumentWithPoundPrefixAndTrailingWhitespaceLoadsMultiDoc() : void in class org.springframework.boot.env.OriginTrackedPropertiesLoaderTests",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot/src/test/java/org/springframework/boot/env/OriginTrackedPropertiesLoaderTests.java",
+            "startLine": 199,
+            "endLine": 204,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot/src/test/java/org/springframework/boot/env/OriginTrackedPropertiesLoaderTests.java",
+            "startLine": 213,
+            "endLine": 218,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package isPoundCharacter() : boolean renamed to package isCommentPrefixCharacter() : boolean in class org.springframework.boot.env.OriginTrackedPropertiesLoader.CharacterReader",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/env/OriginTrackedPropertiesLoader.java",
+            "startLine": 321,
+            "endLine": 323,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/env/OriginTrackedPropertiesLoader.java",
+            "startLine": 313,
+            "endLine": 315,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	lastLineComment : boolean to lastLineCommentPrefix : int in class org.springframework.boot.env.OriginTrackedPropertiesLoader.CharacterReader",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/env/OriginTrackedPropertiesLoader.java",
+            "startLine": 199,
+            "endLine": 199,
+            "startColumn": 19,
+            "endColumn": 34
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/env/OriginTrackedPropertiesLoader.java",
+            "startLine": 200,
+            "endLine": 200,
+            "startColumn": 15,
+            "endColumn": 36
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	lastLineComment : boolean to lastLineCommentPrefix : int in class org.springframework.boot.env.OriginTrackedPropertiesLoader.CharacterReader",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/env/OriginTrackedPropertiesLoader.java",
+            "startLine": 199,
+            "endLine": 199,
+            "startColumn": 19,
+            "endColumn": 34
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/env/OriginTrackedPropertiesLoader.java",
+            "startLine": 200,
+            "endLine": 200,
+            "startColumn": 15,
+            "endColumn": 36
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private setLastLineComment(lastLineComment boolean) : void renamed to private setLastLineCommentPrefix(lastLineCommentPrefix int) : void in class org.springframework.boot.env.OriginTrackedPropertiesLoader.CharacterReader",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/env/OriginTrackedPropertiesLoader.java",
+            "startLine": 244,
+            "endLine": 246,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/env/OriginTrackedPropertiesLoader.java",
+            "startLine": 236,
+            "endLine": 238,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private isLastLineComment() : boolean renamed to package isSameLastLineCommentPrefix() : boolean in class org.springframework.boot.env.OriginTrackedPropertiesLoader.CharacterReader",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/env/OriginTrackedPropertiesLoader.java",
+            "startLine": 248,
+            "endLine": 250,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/env/OriginTrackedPropertiesLoader.java",
+            "startLine": 309,
+            "endLine": 311,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package loadWhenMultiDocumentWithoutWhitespaceLoadsMultiDoc() : void renamed to package loadWhenMultiDocumentWithPoundPrefixAndWithoutWhitespaceLoadsMultiDoc() : void in class org.springframework.boot.env.OriginTrackedPropertiesLoaderTests",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot/src/test/java/org/springframework/boot/env/OriginTrackedPropertiesLoaderTests.java",
+            "startLine": 185,
+            "endLine": 190,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot/src/test/java/org/springframework/boot/env/OriginTrackedPropertiesLoaderTests.java",
+            "startLine": 185,
+            "endLine": 190,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	package read(wrappedLine boolean) : boolean inlined to package read() : boolean in class org.springframework.boot.env.OriginTrackedPropertiesLoader.CharacterReader",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/env/OriginTrackedPropertiesLoader.java",
+            "startLine": 215,
+            "endLine": 235,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/env/OriginTrackedPropertiesLoader.java",
+            "startLine": 212,
+            "endLine": 227,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private setLastLineComment(lastLineComment boolean) : void renamed to private setLastLineCommentPrefix(lastLineCommentPrefix int) : void in class org.springframework.boot.env.OriginTrackedPropertiesLoader.CharacterReader",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/env/OriginTrackedPropertiesLoader.java",
+            "startLine": 244,
+            "endLine": 246,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/env/OriginTrackedPropertiesLoader.java",
+            "startLine": 236,
+            "endLine": 238,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package isPoundCharacter() : boolean renamed to package isCommentPrefixCharacter() : boolean in class org.springframework.boot.env.OriginTrackedPropertiesLoader.CharacterReader",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/env/OriginTrackedPropertiesLoader.java",
+            "startLine": 321,
+            "endLine": 323,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/env/OriginTrackedPropertiesLoader.java",
+            "startLine": 313,
+            "endLine": 315,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	package read(wrappedLine boolean) : boolean inlined to package read() : boolean in class org.springframework.boot.env.OriginTrackedPropertiesLoader.CharacterReader",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/env/OriginTrackedPropertiesLoader.java",
+            "startLine": 215,
+            "endLine": 235,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/env/OriginTrackedPropertiesLoader.java",
+            "startLine": 212,
+            "endLine": 227,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	lastLineComment : boolean to lastLineCommentPrefix : int in class org.springframework.boot.env.OriginTrackedPropertiesLoader.CharacterReader",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/env/OriginTrackedPropertiesLoader.java",
+            "startLine": 199,
+            "endLine": 199,
+            "startColumn": 19,
+            "endColumn": 34
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/env/OriginTrackedPropertiesLoader.java",
+            "startLine": 200,
+            "endLine": 200,
+            "startColumn": 15,
+            "endColumn": 36
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	lastLineComment : boolean to lastLineCommentPrefix : int in class org.springframework.boot.env.OriginTrackedPropertiesLoader.CharacterReader",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/env/OriginTrackedPropertiesLoader.java",
+            "startLine": 199,
+            "endLine": 199,
+            "startColumn": 19,
+            "endColumn": 34
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot/src/main/java/org/springframework/boot/env/OriginTrackedPropertiesLoader.java",
+            "startLine": 200,
+            "endLine": 200,
+            "startColumn": 15,
+            "endColumn": 36
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package loadWhenMultiDocumentWithoutWhitespaceLoadsMultiDoc() : void renamed to package loadWhenMultiDocumentWithPoundPrefixAndWithoutWhitespaceLoadsMultiDoc() : void in class org.springframework.boot.env.OriginTrackedPropertiesLoaderTests",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot/src/test/java/org/springframework/boot/env/OriginTrackedPropertiesLoaderTests.java",
+            "startLine": 185,
+            "endLine": 190,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot/src/test/java/org/springframework/boot/env/OriginTrackedPropertiesLoaderTests.java",
+            "startLine": 185,
+            "endLine": 190,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package loadWhenMultiDocumentWithLeadingWhitespaceLoadsSingleDoc() : void renamed to package loadWhenMultiDocumentWithPoundPrefixAndLeadingWhitespaceLoadsSingleDoc() : void in class org.springframework.boot.env.OriginTrackedPropertiesLoaderTests",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot/src/test/java/org/springframework/boot/env/OriginTrackedPropertiesLoaderTests.java",
+            "startLine": 192,
+            "endLine": 197,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot/src/test/java/org/springframework/boot/env/OriginTrackedPropertiesLoaderTests.java",
+            "startLine": 199,
+            "endLine": 204,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package loadWhenMultiDocumentWithTrailingWhitespaceLoadsMultiDoc() : void renamed to package loadWhenMultiDocumentWithPoundPrefixAndTrailingWhitespaceLoadsMultiDoc() : void in class org.springframework.boot.env.OriginTrackedPropertiesLoaderTests",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot/src/test/java/org/springframework/boot/env/OriginTrackedPropertiesLoaderTests.java",
+            "startLine": 199,
+            "endLine": 204,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot/src/test/java/org/springframework/boot/env/OriginTrackedPropertiesLoaderTests.java",
+            "startLine": 213,
+            "endLine": 218,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package loadWhenMultiDocumentWithTrailingCharsLoadsSingleDoc() : void renamed to package loadWhenMultiDocumentWithPoundPrefixAndTrailingCharsLoadsSingleDoc() : void in class org.springframework.boot.env.OriginTrackedPropertiesLoaderTests",
+          "leftSideLocation": {
+            "filePath": "spring-boot-project/spring-boot/src/test/java/org/springframework/boot/env/OriginTrackedPropertiesLoaderTests.java",
+            "startLine": 206,
+            "endLine": 211,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-boot-project/spring-boot/src/test/java/org/springframework/boot/env/OriginTrackedPropertiesLoaderTests.java",
+            "startLine": 227,
+            "endLine": 232,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ]
+    }
+  ]
+}

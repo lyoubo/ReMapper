@@ -1,0 +1,5335 @@
+{
+  "results": [
+    {
+      "repository": "***.git",
+      "sha1": "4a46a502c60ef8683c79bfaaab2fc73e432bfee0",
+      "url": "***/commit/4a46a502c60ef8683c79bfaaab2fc73e432bfee0",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Class",
+            "name": "FeatureEnvyCandidate",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 17,
+            "endLine": 305,
+            "startColumn": 0,
+            "endColumn": 0
+          },
+          "rightSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Class",
+            "name": "FeatureEnvyCandidate",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 17,
+            "endLine": 298,
+            "startColumn": 0,
+            "endColumn": 0
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "detector.FeatureEnvyDetector",
+            "type": "Method",
+            "name": "detect",
+            "filePath": "Client/src/main/java/detector/FeatureEnvyDetector.java",
+            "startLine": 36,
+            "endLine": 114,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "detector.FeatureEnvyDetector",
+            "type": "Method",
+            "name": "detect",
+            "filePath": "Client/src/main/java/detector/FeatureEnvyDetector.java",
+            "startLine": 36,
+            "endLine": 112,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "detector.FeatureEnvyDetector",
+            "type": "Class",
+            "name": "FeatureEnvyDetector",
+            "filePath": "Client/src/main/java/detector/FeatureEnvyDetector.java",
+            "startLine": 19,
+            "endLine": 289,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "detector.FeatureEnvyDetector",
+            "type": "Class",
+            "name": "FeatureEnvyDetector",
+            "filePath": "Client/src/main/java/detector/FeatureEnvyDetector.java",
+            "startLine": 19,
+            "endLine": 287,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "metrics.MethodEntitySet",
+            "type": "Method",
+            "name": "MethodEntitySet",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 56,
+            "endLine": 69,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "metrics.MethodEntitySet",
+            "type": "Method",
+            "name": "MethodEntitySet",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 52,
+            "endLine": 64,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "metrics.MethodEntitySet",
+            "type": "Method",
+            "name": "calculate",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 71,
+            "endLine": 93,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "metrics.MethodEntitySet",
+            "type": "Method",
+            "name": "calculate",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 66,
+            "endLine": 86,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "metrics.MethodEntitySet",
+            "type": "Class",
+            "name": "MethodEntitySet",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 13,
+            "endLine": 94,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "metrics.MethodEntitySet",
+            "type": "Class",
+            "name": "MethodEntitySet",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 13,
+            "endLine": 87,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "metrics.MethodEntityVisitor",
+            "type": "Method",
+            "name": "visit",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 164,
+            "endLine": 206,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "metrics.MethodEntityVisitor",
+            "type": "Method",
+            "name": "visit",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 153,
+            "endLine": 194,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "metrics.MethodEntityVisitor",
+            "type": "Method",
+            "name": "visit",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 209,
+            "endLine": 253,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "metrics.MethodEntityVisitor",
+            "type": "Method",
+            "name": "visit",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 197,
+            "endLine": 242,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "metrics.MethodEntityVisitor",
+            "type": "Method",
+            "name": "visit",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 255,
+            "endLine": 306,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "metrics.MethodEntityVisitor",
+            "type": "Method",
+            "name": "visit",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 244,
+            "endLine": 296,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "metrics.MethodEntityVisitor",
+            "type": "Method",
+            "name": "visit",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 394,
+            "endLine": 435,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "metrics.MethodEntityVisitor",
+            "type": "Method",
+            "name": "visit",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 298,
+            "endLine": 341,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "metrics.MethodEntityVisitor",
+            "type": "Class",
+            "name": "MethodEntityVisitor",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 96,
+            "endLine": 469,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "metrics.MethodEntityVisitor",
+            "type": "Class",
+            "name": "MethodEntityVisitor",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 89,
+            "endLine": 456,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "parser.FeatureEnvyParser",
+            "type": "Method",
+            "name": "FeatureEnvyParser",
+            "filePath": "Client/src/main/java/parser/FeatureEnvyParser.java",
+            "startLine": 29,
+            "endLine": 40,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "parser.FeatureEnvyParser",
+            "type": "Method",
+            "name": "FeatureEnvyParser",
+            "filePath": "Client/src/main/java/parser/FeatureEnvyParser.java",
+            "startLine": 29,
+            "endLine": 40,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "parser.FeatureEnvyParser",
+            "type": "Method",
+            "name": "parse",
+            "filePath": "Client/src/main/java/parser/FeatureEnvyParser.java",
+            "startLine": 42,
+            "endLine": 67,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "parser.FeatureEnvyParser",
+            "type": "Method",
+            "name": "parse",
+            "filePath": "Client/src/main/java/parser/FeatureEnvyParser.java",
+            "startLine": 42,
+            "endLine": 67,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "parser.FeatureEnvyParser",
+            "type": "Method",
+            "name": "getBindingToPath",
+            "filePath": "Client/src/main/java/parser/FeatureEnvyParser.java",
+            "startLine": 69,
+            "endLine": 88,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "parser.FeatureEnvyParser",
+            "type": "Method",
+            "name": "getBindingToPath",
+            "filePath": "Client/src/main/java/parser/FeatureEnvyParser.java",
+            "startLine": 69,
+            "endLine": 85,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "parser.FeatureEnvyParser",
+            "type": "Class",
+            "name": "FeatureEnvyParser",
+            "filePath": "Client/src/main/java/parser/FeatureEnvyParser.java",
+            "startLine": 20,
+            "endLine": 103,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "parser.FeatureEnvyParser",
+            "type": "Class",
+            "name": "FeatureEnvyParser",
+            "filePath": "Client/src/main/java/parser/FeatureEnvyParser.java",
+            "startLine": 21,
+            "endLine": 94,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "utils.ExpressionLocationEntity",
+            "type": "Class",
+            "name": "ExpressionLocationEntity",
+            "filePath": "Client/src/main/java/utils/ExpressionLocationEntity.java",
+            "startLine": 6,
+            "endLine": 79,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "utils.ExpressionLocationEntity",
+            "type": "Class",
+            "name": "ExpressionLocationEntity",
+            "filePath": "Client/src/main/java/utils/ExpressionLocationEntity.java",
+            "startLine": 7,
+            "endLine": 93,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "utils.MethodGetSetJudge",
+            "type": "Class",
+            "name": "MethodGetSetJudge",
+            "filePath": "Client/src/main/java/utils/MethodGetSetJudge.java",
+            "startLine": 12,
+            "endLine": 142,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "utils.MethodGetSetJudge",
+            "type": "Class",
+            "name": "MethodGetSetJudge",
+            "filePath": "Client/src/main/java/utils/MethodGetSetJudge.java",
+            "startLine": 12,
+            "endLine": 148,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "visitor.ClassVisitor",
+            "type": "Method",
+            "name": "ClassVisitor",
+            "filePath": "Client/src/main/java/visitor/ClassVisitor.java",
+            "startLine": 11,
+            "endLine": 13,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "visitor.ClassVisitor",
+            "type": "Method",
+            "name": "ClassVisitor",
+            "filePath": "Client/src/main/java/visitor/ClassVisitor.java",
+            "startLine": 11,
+            "endLine": 13,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "visitor.ClassVisitor",
+            "type": "Class",
+            "name": "ClassVisitor",
+            "filePath": "Client/src/main/java/visitor/ClassVisitor.java",
+            "startLine": 8,
+            "endLine": 35,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "visitor.ClassVisitor",
+            "type": "Class",
+            "name": "ClassVisitor",
+            "filePath": "Client/src/main/java/visitor/ClassVisitor.java",
+            "startLine": 8,
+            "endLine": 44,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "visitor.ClassVisitor",
+            "type": "Method",
+            "name": "getClassToMethodDeclaration",
+            "filePath": "Client/src/main/java/visitor/ClassVisitor.java",
+            "startLine": 31,
+            "endLine": 33,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "visitor.ClassVisitor",
+            "type": "Method",
+            "name": "getClassToDeclaration",
+            "filePath": "Client/src/main/java/visitor/ClassVisitor.java",
+            "startLine": 41,
+            "endLine": 43,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "metrics.MethodEntityVisitor",
+            "type": "Method",
+            "name": "setInvocationLocations",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 119,
+            "endLine": 121,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "metrics.MethodEntityVisitor",
+            "type": "Method",
+            "name": "setInvocationLocations",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 110,
+            "endLine": 112,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Method",
+            "name": "setInvocationLocations",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 301,
+            "endLine": 303,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Method",
+            "name": "setInvocationLocations",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 295,
+            "endLine": 297,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Method",
+            "name": "getSetOfSourceClass",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 293,
+            "endLine": 295,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Method",
+            "name": "getSetOfSourceClass",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 287,
+            "endLine": 289,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Field",
+            "name": "setOfTargetClasses",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 30,
+            "endLine": 30,
+            "startColumn": 78,
+            "endColumn": 96
+          },
+          "rightSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Field",
+            "name": "setOfTargetClasses",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 28,
+            "endLine": 28,
+            "startColumn": 81,
+            "endColumn": 99
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Field",
+            "name": "setOfSourceClass",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 29,
+            "endLine": 29,
+            "startColumn": 61,
+            "endColumn": 77
+          },
+          "rightSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Field",
+            "name": "setOfSourceClass",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 27,
+            "endLine": 27,
+            "startColumn": 64,
+            "endColumn": 80
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "visitor.ClassVisitor",
+            "type": "Field",
+            "name": "classToMethodDeclaration",
+            "filePath": "Client/src/main/java/visitor/ClassVisitor.java",
+            "startLine": 9,
+            "endLine": 9,
+            "startColumn": 49,
+            "endColumn": 73
+          },
+          "rightSideLocation": {
+            "container": "visitor.ClassVisitor",
+            "type": "Field",
+            "name": "classToDeclaration",
+            "filePath": "Client/src/main/java/visitor/ClassVisitor.java",
+            "startLine": 9,
+            "endLine": 9,
+            "startColumn": 38,
+            "endColumn": 56
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "metrics.MethodEntityVisitor",
+            "type": "Method",
+            "name": "getInvocationLocations",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 115,
+            "endLine": 117,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "metrics.MethodEntityVisitor",
+            "type": "Method",
+            "name": "getInvocationLocations",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 106,
+            "endLine": 108,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Field",
+            "name": "methodCallList",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 22,
+            "endLine": 22,
+            "startColumn": 31,
+            "endColumn": 45
+          },
+          "rightSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Field",
+            "name": "methodEntityList",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 20,
+            "endLine": 20,
+            "startColumn": 31,
+            "endColumn": 47
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "metrics.MethodEntityVisitor",
+            "type": "Field",
+            "name": "methodCallList",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 99,
+            "endLine": 99,
+            "startColumn": 31,
+            "endColumn": 45
+          },
+          "rightSideLocation": {
+            "container": "metrics.MethodEntityVisitor",
+            "type": "Field",
+            "name": "methodEntityList",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 91,
+            "endLine": 91,
+            "startColumn": 31,
+            "endColumn": 47
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "utils.MethodGetSetJudge",
+            "type": "Method",
+            "name": "judgeGetAndSet",
+            "filePath": "Client/src/main/java/utils/MethodGetSetJudge.java",
+            "startLine": 22,
+            "endLine": 46,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "utils.MethodGetSetJudge",
+            "type": "Method",
+            "name": "judgeGetAndSet",
+            "filePath": "Client/src/main/java/utils/MethodGetSetJudge.java",
+            "startLine": 22,
+            "endLine": 52,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Field",
+            "name": "invocationLocations",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 28,
+            "endLine": 28,
+            "startColumn": 78,
+            "endColumn": 97
+          },
+          "rightSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Field",
+            "name": "invocationLocations",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 26,
+            "endLine": 26,
+            "startColumn": 81,
+            "endColumn": 100
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "metrics.MethodEntitySet",
+            "type": "Method",
+            "name": "MethodEntitySet",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 35,
+            "endLine": 54,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "metrics.MethodEntitySet",
+            "type": "Method",
+            "name": "MethodEntitySet",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 33,
+            "endLine": 50,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Method",
+            "name": "FeatureEnvyCandidate",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 34,
+            "endLine": 268,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Method",
+            "name": "FeatureEnvyCandidate",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 32,
+            "endLine": 262,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Method",
+            "name": "getSetOfTargetClasses",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 297,
+            "endLine": 299,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Method",
+            "name": "getSetOfTargetClasses",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 291,
+            "endLine": 293,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "metrics.MethodEntitySet",
+            "type": "Field",
+            "name": "methodCallList",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 20,
+            "endLine": 20,
+            "startColumn": 31,
+            "endColumn": 45
+          },
+          "rightSideLocation": {
+            "container": "metrics.MethodEntitySet",
+            "type": "Field",
+            "name": "methodEntityList",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 19,
+            "endLine": 19,
+            "startColumn": 31,
+            "endColumn": 47
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "metrics.MethodEntitySet",
+            "type": "Field",
+            "name": "invocationLocations",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 28,
+            "endLine": 28,
+            "startColumn": 78,
+            "endColumn": 97
+          },
+          "rightSideLocation": {
+            "container": "metrics.MethodEntitySet",
+            "type": "Field",
+            "name": "invocationLocations",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 27,
+            "endLine": 27,
+            "startColumn": 81,
+            "endColumn": 100
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "metrics.MethodEntityVisitor",
+            "type": "Field",
+            "name": "invocationLocations",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 106,
+            "endLine": 106,
+            "startColumn": 78,
+            "endColumn": 97
+          },
+          "rightSideLocation": {
+            "container": "metrics.MethodEntityVisitor",
+            "type": "Field",
+            "name": "invocationLocations",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 98,
+            "endLine": 98,
+            "startColumn": 81,
+            "endColumn": 100
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "metrics.MethodEntityVisitor",
+            "type": "Method",
+            "name": "getMethodCallList",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 438,
+            "endLine": 440,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "metrics.MethodEntityVisitor",
+            "type": "Method",
+            "name": "getMethodEntityList",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 429,
+            "endLine": 431,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "metrics.MethodEntityVisitor",
+            "type": "Method",
+            "name": "MethodEntityVisitor",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 123,
+            "endLine": 141,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "metrics.MethodEntityVisitor",
+            "type": "Method",
+            "name": "MethodEntityVisitor",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 114,
+            "endLine": 130,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "container": "parser.FeatureEnvyParser",
+            "type": "Method",
+            "name": "getClassBindingToPath",
+            "filePath": "Client/src/main/java/parser/FeatureEnvyParser.java",
+            "startLine": 94,
+            "endLine": 96,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Method",
+            "name": "getInvocationSet",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 283,
+            "endLine": 285,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "metrics.MethodEntityVisitor",
+            "type": "Field",
+            "name": "classBindingToPath",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 112,
+            "endLine": 112,
+            "startColumn": 37,
+            "endColumn": 55
+          },
+          "rightSideLocation": {
+            "container": "metrics.MethodEntityVisitor",
+            "type": "Field",
+            "name": "classToDeclaration",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 104,
+            "endLine": 104,
+            "startColumn": 46,
+            "endColumn": 64
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "parser.FeatureEnvyParser",
+            "type": "Field",
+            "name": "classBindingToPath",
+            "filePath": "Client/src/main/java/parser/FeatureEnvyParser.java",
+            "startLine": 26,
+            "endLine": 26,
+            "startColumn": 37,
+            "endColumn": 55
+          },
+          "rightSideLocation": {
+            "container": "parser.FeatureEnvyParser",
+            "type": "Field",
+            "name": "classToDeclaration",
+            "filePath": "Client/src/main/java/parser/FeatureEnvyParser.java",
+            "startLine": 27,
+            "endLine": 27,
+            "startColumn": 46,
+            "endColumn": 64
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "metrics.MethodEntitySet",
+            "type": "Field",
+            "name": "classBindingToPath",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 32,
+            "endLine": 32,
+            "startColumn": 37,
+            "endColumn": 55
+          },
+          "rightSideLocation": {
+            "container": "metrics.MethodEntitySet",
+            "type": "Field",
+            "name": "classToDeclaration",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 31,
+            "endLine": 31,
+            "startColumn": 46,
+            "endColumn": 64
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "visitor.ClassVisitor",
+            "type": "Method",
+            "name": "visit",
+            "filePath": "Client/src/main/java/visitor/ClassVisitor.java",
+            "startLine": 15,
+            "endLine": 28,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "visitor.ClassVisitor",
+            "type": "Method",
+            "name": "visit",
+            "filePath": "Client/src/main/java/visitor/ClassVisitor.java",
+            "startLine": 31,
+            "endLine": 39,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "leftSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Method",
+            "name": "getInvocationLocations",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 289,
+            "endLine": 291,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Method",
+            "name": "getInvocationSet",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 283,
+            "endLine": 285,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "parser.FeatureEnvyParser",
+            "type": "Method",
+            "name": "getClassToMethodDeclaration",
+            "filePath": "Client/src/main/java/parser/FeatureEnvyParser.java",
+            "startLine": 98,
+            "endLine": 100,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "parser.FeatureEnvyParser",
+            "type": "Method",
+            "name": "getClassToDeclaration",
+            "filePath": "Client/src/main/java/parser/FeatureEnvyParser.java",
+            "startLine": 91,
+            "endLine": 93,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "***.git",
+      "sha1": "2538c9f8bd8415890d1dd1ec4c9012291747e177",
+      "url": "***/commit/2538c9f8bd8415890d1dd1ec4c9012291747e177",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "detector.GodClassDetector",
+            "type": "Method",
+            "name": "calculateFixSolution",
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 77,
+            "endLine": 226,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "detector.GodClassDetector",
+            "type": "Method",
+            "name": "calculateFixSolution",
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 77,
+            "endLine": 274,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "detector.GodClassDetector",
+            "type": "Class",
+            "name": "GodClassDetector",
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 20,
+            "endLine": 336,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "detector.GodClassDetector",
+            "type": "Class",
+            "name": "GodClassDetector",
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 20,
+            "endLine": 384,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "detector.GodClassRefactorSolution",
+            "type": "Method",
+            "name": "calculateRefactorSolution",
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 482,
+            "endLine": 638,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "detector.GodClassRefactorSolution",
+            "type": "Method",
+            "name": "calculateRefactorSolution",
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 532,
+            "endLine": 664,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "detector.GodClassRefactorSolution",
+            "type": "Class",
+            "name": "GodClassRefactorSolution",
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 338,
+            "endLine": 1360,
+            "startColumn": 0,
+            "endColumn": 0
+          },
+          "rightSideLocation": {
+            "container": "detector.GodClassRefactorSolution",
+            "type": "Class",
+            "name": "GodClassRefactorSolution",
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 386,
+            "endLine": 1386,
+            "startColumn": 0,
+            "endColumn": 0
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "container": "detector.GodClassRefactorSolution",
+            "type": "Field",
+            "name": "totalCoupingMap",
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 361,
+            "endLine": 361,
+            "startColumn": 47,
+            "endColumn": 80
+          },
+          "rightSideLocation": {
+            "container": "detector.GodClassRefactorSolution",
+            "type": "Field",
+            "name": "methodInvocationEntityMap",
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 411,
+            "endLine": 411,
+            "startColumn": 34,
+            "endColumn": 77
+          },
+          "developerConfirmation": false
+        }
+      ],
+      "baseline": [
+        {
+          "leftSideLocation": {
+            "container": "detector.GodClassRefactorSolution",
+            "type": "Field",
+            "name": "totalCoupingMap",
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 361,
+            "endLine": 361,
+            "startColumn": 47,
+            "endColumn": 80
+          },
+          "rightSideLocation": {
+            "container": "detector.GodClassRefactorSolution",
+            "type": "Field",
+            "name": "totalCoupingMap",
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 409,
+            "endLine": 409,
+            "startColumn": 58,
+            "endColumn": 91
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "***.git",
+      "sha1": "5df95b7168180d76edb25b001f9734d7fd69400a",
+      "url": "***/commit/5df95b7168180d76edb25b001f9734d7fd69400a",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "detector.FeatureEnvyDetector",
+            "type": "Method",
+            "name": "postRetrainData",
+            "filePath": "Client/src/main/java/detector/FeatureEnvyDetector.java",
+            "startLine": 74,
+            "endLine": 107,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "detector.FeatureEnvyDetector",
+            "type": "Method",
+            "name": "postRetrainData",
+            "filePath": "Client/src/main/java/detector/FeatureEnvyDetector.java",
+            "startLine": 74,
+            "endLine": 106,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "detector.FeatureEnvyDetector",
+            "type": "Class",
+            "name": "FeatureEnvyDetector",
+            "filePath": "Client/src/main/java/detector/FeatureEnvyDetector.java",
+            "startLine": 18,
+            "endLine": 200,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "detector.FeatureEnvyDetector",
+            "type": "Class",
+            "name": "FeatureEnvyDetector",
+            "filePath": "Client/src/main/java/detector/FeatureEnvyDetector.java",
+            "startLine": 18,
+            "endLine": 230,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "detector.GodClassDetector",
+            "type": "Method",
+            "name": "postRetrainData",
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 176,
+            "endLine": 207,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "detector.GodClassDetector",
+            "type": "Method",
+            "name": "postRetrainData",
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 177,
+            "endLine": 217,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "detector.GodClassDetector",
+            "type": "Class",
+            "name": "GodClassDetector",
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 24,
+            "endLine": 272,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "detector.GodClassDetector",
+            "type": "Class",
+            "name": "GodClassDetector",
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 25,
+            "endLine": 282,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "detect.GodClassDetectorTest",
+            "type": "Method",
+            "name": "main",
+            "filePath": "Client/src/test/java/detect/GodClassDetectorTest.java",
+            "startLine": 15,
+            "endLine": 71,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "detect.GodClassDetectorTest",
+            "type": "Method",
+            "name": "main",
+            "filePath": "Client/src/test/java/detect/GodClassDetectorTest.java",
+            "startLine": 16,
+            "endLine": 74,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "detect.GodClassDetectorTest",
+            "type": "Class",
+            "name": "GodClassDetectorTest",
+            "filePath": "Client/src/test/java/detect/GodClassDetectorTest.java",
+            "startLine": 14,
+            "endLine": 72,
+            "startColumn": 0,
+            "endColumn": 0
+          },
+          "rightSideLocation": {
+            "container": "detect.GodClassDetectorTest",
+            "type": "Class",
+            "name": "GodClassDetectorTest",
+            "filePath": "Client/src/test/java/detect/GodClassDetectorTest.java",
+            "startLine": 15,
+            "endLine": 75,
+            "startColumn": 0,
+            "endColumn": 0
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "bit.se.codesmell.config.Config",
+            "type": "Method",
+            "name": "parserConfigFile",
+            "filePath": "Server/src/main/java/bit/se/codesmell/config/Config.java",
+            "startLine": 103,
+            "endLine": 181,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "bit.se.codesmell.config.Config",
+            "type": "Method",
+            "name": "parserConfigFile",
+            "filePath": "Server/src/main/java/bit/se/codesmell/config/Config.java",
+            "startLine": 103,
+            "endLine": 181,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "bit.se.codesmell.config.Config",
+            "type": "Method",
+            "name": "printParams",
+            "filePath": "Server/src/main/java/bit/se/codesmell/config/Config.java",
+            "startLine": 183,
+            "endLine": 212,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "bit.se.codesmell.config.Config",
+            "type": "Method",
+            "name": "printParams",
+            "filePath": "Server/src/main/java/bit/se/codesmell/config/Config.java",
+            "startLine": 183,
+            "endLine": 215,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "bit.se.codesmell.config.Config",
+            "type": "Class",
+            "name": "Config",
+            "filePath": "Server/src/main/java/bit/se/codesmell/config/Config.java",
+            "startLine": 10,
+            "endLine": 213,
+            "startColumn": 0,
+            "endColumn": 0
+          },
+          "rightSideLocation": {
+            "container": "bit.se.codesmell.config.Config",
+            "type": "Class",
+            "name": "Config",
+            "filePath": "Server/src/main/java/bit/se/codesmell/config/Config.java",
+            "startLine": 10,
+            "endLine": 216,
+            "startColumn": 0,
+            "endColumn": 0
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "bit.se.codesmell.controller.TrainingController",
+            "type": "Method",
+            "name": "retrainFE",
+            "filePath": "Server/src/main/java/bit/se/codesmell/controller/TrainingController.java",
+            "startLine": 20,
+            "endLine": 51,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "bit.se.codesmell.controller.TrainingController",
+            "type": "Method",
+            "name": "retrainFE",
+            "filePath": "Server/src/main/java/bit/se/codesmell/controller/TrainingController.java",
+            "startLine": 21,
+            "endLine": 116,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "bit.se.codesmell.controller.TrainingController",
+            "type": "Class",
+            "name": "TrainingController",
+            "filePath": "Server/src/main/java/bit/se/codesmell/controller/TrainingController.java",
+            "startLine": 13,
+            "endLine": 66,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "bit.se.codesmell.controller.TrainingController",
+            "type": "Class",
+            "name": "TrainingController",
+            "filePath": "Server/src/main/java/bit/se/codesmell/controller/TrainingController.java",
+            "startLine": 14,
+            "endLine": 222,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "container": "bit.se.codesmell.controller.TrainingController",
+            "type": "Method",
+            "name": "retrainGC",
+            "filePath": "Server/src/main/java/bit/se/codesmell/controller/TrainingController.java",
+            "startLine": 53,
+            "endLine": 65,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "bit.se.codesmell.controller.TrainingController",
+            "type": "Method",
+            "name": "retrainGC",
+            "filePath": "Server/src/main/java/bit/se/codesmell/controller/TrainingController.java",
+            "startLine": 118,
+            "endLine": 221,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "***.git",
+      "sha1": "62667c1e580775eeb1f331ce8b16559189b9f73e",
+      "url": "***/commit/62667c1e580775eeb1f331ce8b16559189b9f73e",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "detector.FeatureEnvyDetector",
+            "type": "Method",
+            "name": "postRetrainData",
+            "filePath": "Client/src/main/java/detector/FeatureEnvyDetector.java",
+            "startLine": 74,
+            "endLine": 106,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "detector.FeatureEnvyDetector",
+            "type": "Method",
+            "name": "postRetrainData",
+            "filePath": "Client/src/main/java/detector/FeatureEnvyDetector.java",
+            "startLine": 74,
+            "endLine": 107,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "detector.FeatureEnvyDetector",
+            "type": "Class",
+            "name": "FeatureEnvyDetector",
+            "filePath": "Client/src/main/java/detector/FeatureEnvyDetector.java",
+            "startLine": 18,
+            "endLine": 199,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "detector.FeatureEnvyDetector",
+            "type": "Class",
+            "name": "FeatureEnvyDetector",
+            "filePath": "Client/src/main/java/detector/FeatureEnvyDetector.java",
+            "startLine": 18,
+            "endLine": 200,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "utils.MethodGetSetJudge",
+            "type": "Method",
+            "name": "isGetMethod",
+            "filePath": "Client/src/main/java/utils/MethodGetSetJudge.java",
+            "startLine": 48,
+            "endLine": 75,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "utils.MethodGetSetJudge",
+            "type": "Method",
+            "name": "isGetMethod",
+            "filePath": "Client/src/main/java/utils/MethodGetSetJudge.java",
+            "startLine": 48,
+            "endLine": 68,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "utils.MethodGetSetJudge",
+            "type": "Class",
+            "name": "MethodGetSetJudge",
+            "filePath": "Client/src/main/java/utils/MethodGetSetJudge.java",
+            "startLine": 12,
+            "endLine": 131,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "utils.MethodGetSetJudge",
+            "type": "Class",
+            "name": "MethodGetSetJudge",
+            "filePath": "Client/src/main/java/utils/MethodGetSetJudge.java",
+            "startLine": 12,
+            "endLine": 124,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "detect.GodClassDetectorTest",
+            "type": "Method",
+            "name": "main",
+            "filePath": "Client/src/test/java/detect/GodClassDetectorTest.java",
+            "startLine": 15,
+            "endLine": 71,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "detect.GodClassDetectorTest",
+            "type": "Method",
+            "name": "main",
+            "filePath": "Client/src/test/java/detect/GodClassDetectorTest.java",
+            "startLine": 15,
+            "endLine": 71,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "detect.GodClassDetectorTest",
+            "type": "Class",
+            "name": "GodClassDetectorTest",
+            "filePath": "Client/src/test/java/detect/GodClassDetectorTest.java",
+            "startLine": 14,
+            "endLine": 72,
+            "startColumn": 0,
+            "endColumn": 0
+          },
+          "rightSideLocation": {
+            "container": "detect.GodClassDetectorTest",
+            "type": "Class",
+            "name": "GodClassDetectorTest",
+            "filePath": "Client/src/test/java/detect/GodClassDetectorTest.java",
+            "startLine": 14,
+            "endLine": 72,
+            "startColumn": 0,
+            "endColumn": 0
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "bit.se.codesmell.config.Config",
+            "type": "Method",
+            "name": "parserConfigFile",
+            "filePath": "Server/src/main/java/bit/se/codesmell/config/Config.java",
+            "startLine": 76,
+            "endLine": 145,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "bit.se.codesmell.config.Config",
+            "type": "Method",
+            "name": "parserConfigFile",
+            "filePath": "Server/src/main/java/bit/se/codesmell/config/Config.java",
+            "startLine": 103,
+            "endLine": 181,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "bit.se.codesmell.config.Config",
+            "type": "Class",
+            "name": "Config",
+            "filePath": "Server/src/main/java/bit/se/codesmell/config/Config.java",
+            "startLine": 10,
+            "endLine": 177,
+            "startColumn": 0,
+            "endColumn": 0
+          },
+          "rightSideLocation": {
+            "container": "bit.se.codesmell.config.Config",
+            "type": "Class",
+            "name": "Config",
+            "filePath": "Server/src/main/java/bit/se/codesmell/config/Config.java",
+            "startLine": 10,
+            "endLine": 213,
+            "startColumn": 0,
+            "endColumn": 0
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "bit.se.codesmell.controller.PredictionController",
+            "type": "Class",
+            "name": "PredictionController",
+            "filePath": "Server/src/main/java/bit/se/codesmell/controller/PredictionController.java",
+            "startLine": 11,
+            "endLine": 105,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "bit.se.codesmell.controller.PredictionController",
+            "type": "Class",
+            "name": "PredictionController",
+            "filePath": "Server/src/main/java/bit/se/codesmell/controller/PredictionController.java",
+            "startLine": 12,
+            "endLine": 79,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "bit.se.codesmell.controller.PredictionController",
+            "type": "Method",
+            "name": "retrainGC",
+            "filePath": "Server/src/main/java/bit/se/codesmell/controller/PredictionController.java",
+            "startLine": 92,
+            "endLine": 104,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "bit.se.codesmell.controller.TrainingController",
+            "type": "Method",
+            "name": "retrainGC",
+            "filePath": "Server/src/main/java/bit/se/codesmell/controller/TrainingController.java",
+            "startLine": 53,
+            "endLine": 65,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [],
+      "baseline": [
+        {
+          "leftSideLocation": {
+            "container": "bit.se.codesmell.controller.PredictionController",
+            "type": "Method",
+            "name": "retrainFE",
+            "filePath": "Server/src/main/java/bit/se/codesmell/controller/PredictionController.java",
+            "startLine": 78,
+            "endLine": 90,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "bit.se.codesmell.controller.TrainingController",
+            "type": "Method",
+            "name": "retrainFE",
+            "filePath": "Server/src/main/java/bit/se/codesmell/controller/TrainingController.java",
+            "startLine": 20,
+            "endLine": 51,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "***.git",
+      "sha1": "fd0fe9e31f1d227336538976f1edaac75bb95b19",
+      "url": "***/commit/fd0fe9e31f1d227336538976f1edaac75bb95b19",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "detector.FeatureEnvyDetector",
+            "type": "Method",
+            "name": "detect",
+            "filePath": "Client/src/main/java/detector/FeatureEnvyDetector.java",
+            "startLine": 29,
+            "endLine": 67,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "detector.FeatureEnvyDetector",
+            "type": "Method",
+            "name": "detect",
+            "filePath": "Client/src/main/java/detector/FeatureEnvyDetector.java",
+            "startLine": 31,
+            "endLine": 72,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "detector.FeatureEnvyDetector",
+            "type": "Class",
+            "name": "FeatureEnvyDetector",
+            "filePath": "Client/src/main/java/detector/FeatureEnvyDetector.java",
+            "startLine": 17,
+            "endLine": 193,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "detector.FeatureEnvyDetector",
+            "type": "Class",
+            "name": "FeatureEnvyDetector",
+            "filePath": "Client/src/main/java/detector/FeatureEnvyDetector.java",
+            "startLine": 18,
+            "endLine": 199,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "detector.GodClassDetector",
+            "type": "Method",
+            "name": "setServerURL",
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 261,
+            "endLine": 263,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "detector.GodClassDetector",
+            "type": "Method",
+            "name": "setServerURL",
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 263,
+            "endLine": 265,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "detector.GodClassDetector",
+            "type": "Class",
+            "name": "GodClassDetector",
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 24,
+            "endLine": 264,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "detector.GodClassDetector",
+            "type": "Class",
+            "name": "GodClassDetector",
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 24,
+            "endLine": 267,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "detect.GodClassDetectorTest",
+            "type": "Method",
+            "name": "main",
+            "filePath": "Client/src/test/java/detect/GodClassDetectorTest.java",
+            "startLine": 15,
+            "endLine": 71,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "detect.GodClassDetectorTest",
+            "type": "Method",
+            "name": "main",
+            "filePath": "Client/src/test/java/detect/GodClassDetectorTest.java",
+            "startLine": 15,
+            "endLine": 73,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "detect.GodClassDetectorTest",
+            "type": "Class",
+            "name": "GodClassDetectorTest",
+            "filePath": "Client/src/test/java/detect/GodClassDetectorTest.java",
+            "startLine": 14,
+            "endLine": 72,
+            "startColumn": 0,
+            "endColumn": 0
+          },
+          "rightSideLocation": {
+            "container": "detect.GodClassDetectorTest",
+            "type": "Class",
+            "name": "GodClassDetectorTest",
+            "filePath": "Client/src/test/java/detect/GodClassDetectorTest.java",
+            "startLine": 14,
+            "endLine": 74,
+            "startColumn": 0,
+            "endColumn": 0
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "bit.se.codesmell.controller.PredictionController",
+            "type": "Class",
+            "name": "PredictionController",
+            "filePath": "Server/src/main/java/bit/se/codesmell/controller/PredictionController.java",
+            "startLine": 11,
+            "endLine": 104,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "bit.se.codesmell.controller.PredictionController",
+            "type": "Class",
+            "name": "PredictionController",
+            "filePath": "Server/src/main/java/bit/se/codesmell/controller/PredictionController.java",
+            "startLine": 11,
+            "endLine": 105,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "bit.se.codesmell.controller.PredictionController",
+            "type": "Method",
+            "name": "retrainFE",
+            "filePath": "Server/src/main/java/bit/se/codesmell/controller/PredictionController.java",
+            "startLine": 78,
+            "endLine": 90,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "bit.se.codesmell.controller.PredictionController",
+            "type": "Method",
+            "name": "retrainFE",
+            "filePath": "Server/src/main/java/bit/se/codesmell/controller/PredictionController.java",
+            "startLine": 78,
+            "endLine": 90,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "bit.se.codesmell.controller.PredictionController",
+            "type": "Method",
+            "name": "retrainGC",
+            "filePath": "Server/src/main/java/bit/se/codesmell/controller/PredictionController.java",
+            "startLine": 92,
+            "endLine": 103,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "bit.se.codesmell.controller.PredictionController",
+            "type": "Method",
+            "name": "retrainGC",
+            "filePath": "Server/src/main/java/bit/se/codesmell/controller/PredictionController.java",
+            "startLine": 92,
+            "endLine": 104,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "container": "detector.GodClassDetector",
+            "type": "Method",
+            "name": "postRetrainData",
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 171,
+            "endLine": 200,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "detector.GodClassDetector",
+            "type": "Method",
+            "name": "postRetrainData",
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 171,
+            "endLine": 202,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "***.git",
+      "sha1": "b8f1e6a8c0c09e45ee524c8d109406f9e134b225",
+      "url": "***/commit/b8f1e6a8c0c09e45ee524c8d109406f9e134b225",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "detector.GodClassDetector",
+            "type": "Class",
+            "name": "GodClassDetector",
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 22,
+            "endLine": 239,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "detector.GodClassDetector",
+            "type": "Class",
+            "name": "GodClassDetector",
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 24,
+            "endLine": 260,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "container": "detector.GodClassDetector",
+            "type": "Method",
+            "name": "postRetrainData",
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 165,
+            "endLine": 175,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "detector.GodClassDetector",
+            "type": "Method",
+            "name": "postRetrainData",
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 168,
+            "endLine": 196,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "***.git",
+      "sha1": "7836fcd0c97f4ee357c6df74ac74b13985ee4af9",
+      "url": "***/commit/7836fcd0c97f4ee357c6df74ac74b13985ee4af9",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Method",
+            "name": "FeatureEnvyCandidate",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 30,
+            "endLine": 229,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Method",
+            "name": "FeatureEnvyCandidate",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 31,
+            "endLine": 234,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Method",
+            "name": "parseTargetCandidate",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 232,
+            "endLine": 243,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Method",
+            "name": "parseTargetCandidate",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 237,
+            "endLine": 248,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Class",
+            "name": "FeatureEnvyCandidate",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 13,
+            "endLine": 266,
+            "startColumn": 0,
+            "endColumn": 0
+          },
+          "rightSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Class",
+            "name": "FeatureEnvyCandidate",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 14,
+            "endLine": 271,
+            "startColumn": 0,
+            "endColumn": 0
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "metrics.MethodEntitySet",
+            "type": "Method",
+            "name": "calculate",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 64,
+            "endLine": 87,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "metrics.MethodEntitySet",
+            "type": "Method",
+            "name": "calculate",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 66,
+            "endLine": 89,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "metrics.MethodEntitySet",
+            "type": "Class",
+            "name": "MethodEntitySet",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 13,
+            "endLine": 88,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "metrics.MethodEntitySet",
+            "type": "Class",
+            "name": "MethodEntitySet",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 13,
+            "endLine": 90,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "metrics.MethodEntityVisitor",
+            "type": "Method",
+            "name": "visit",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 150,
+            "endLine": 191,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "metrics.MethodEntityVisitor",
+            "type": "Method",
+            "name": "visit",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 154,
+            "endLine": 195,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "metrics.MethodEntityVisitor",
+            "type": "Class",
+            "name": "MethodEntityVisitor",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 90,
+            "endLine": 425,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "metrics.MethodEntityVisitor",
+            "type": "Class",
+            "name": "MethodEntityVisitor",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 92,
+            "endLine": 429,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "parser.FeatureEnvyParser",
+            "type": "Method",
+            "name": "parse",
+            "filePath": "Client/src/main/java/parser/FeatureEnvyParser.java",
+            "startLine": 33,
+            "endLine": 57,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "parser.FeatureEnvyParser",
+            "type": "Method",
+            "name": "parse",
+            "filePath": "Client/src/main/java/parser/FeatureEnvyParser.java",
+            "startLine": 32,
+            "endLine": 58,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "parser.FeatureEnvyParser",
+            "type": "Class",
+            "name": "FeatureEnvyParser",
+            "filePath": "Client/src/main/java/parser/FeatureEnvyParser.java",
+            "startLine": 17,
+            "endLine": 63,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "parser.FeatureEnvyParser",
+            "type": "Class",
+            "name": "FeatureEnvyParser",
+            "filePath": "Client/src/main/java/parser/FeatureEnvyParser.java",
+            "startLine": 17,
+            "endLine": 64,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "utils.MethodGetSetJudge",
+            "type": "Method",
+            "name": "MethodGetSetJudge",
+            "filePath": "Client/src/main/java/utils/MethodGetSetJudge.java",
+            "startLine": 26,
+            "endLine": 30,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "utils.MethodGetSetJudge",
+            "type": "Method",
+            "name": "MethodGetSetJudge",
+            "filePath": "Client/src/main/java/utils/MethodGetSetJudge.java",
+            "startLine": 25,
+            "endLine": 29,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "utils.MethodGetSetJudge",
+            "type": "Method",
+            "name": "readNewJavaFileFromPath",
+            "filePath": "Client/src/main/java/utils/MethodGetSetJudge.java",
+            "startLine": 78,
+            "endLine": 88,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "utils.MethodGetSetJudge",
+            "type": "Method",
+            "name": "readNewJavaFileFromPath",
+            "filePath": "Client/src/main/java/utils/MethodGetSetJudge.java",
+            "startLine": 94,
+            "endLine": 104,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "utils.MethodGetSetJudge",
+            "type": "Class",
+            "name": "MethodGetSetJudge",
+            "filePath": "Client/src/main/java/utils/MethodGetSetJudge.java",
+            "startLine": 13,
+            "endLine": 158,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "utils.MethodGetSetJudge",
+            "type": "Class",
+            "name": "MethodGetSetJudge",
+            "filePath": "Client/src/main/java/utils/MethodGetSetJudge.java",
+            "startLine": 12,
+            "endLine": 177,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "detect.FeatureEnvyDetectorTest",
+            "type": "Method",
+            "name": "main",
+            "filePath": "Client/src/test/java/detect/FeatureEnvyDetectorTest.java",
+            "startLine": 17,
+            "endLine": 112,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "detect.FeatureEnvyDetectorTest",
+            "type": "Method",
+            "name": "main",
+            "filePath": "Client/src/test/java/detect/FeatureEnvyDetectorTest.java",
+            "startLine": 17,
+            "endLine": 112,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "detect.FeatureEnvyDetectorTest",
+            "type": "Class",
+            "name": "FeatureEnvyDetectorTest",
+            "filePath": "Client/src/test/java/detect/FeatureEnvyDetectorTest.java",
+            "startLine": 14,
+            "endLine": 130,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "detect.FeatureEnvyDetectorTest",
+            "type": "Class",
+            "name": "FeatureEnvyDetectorTest",
+            "filePath": "Client/src/test/java/detect/FeatureEnvyDetectorTest.java",
+            "startLine": 14,
+            "endLine": 130,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "metrics.MethodEntitySet",
+            "type": "Method",
+            "name": "MethodEntitySet",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 32,
+            "endLine": 47,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "metrics.MethodEntitySet",
+            "type": "Method",
+            "name": "MethodEntitySet",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 33,
+            "endLine": 49,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "metrics.MethodEntityVisitor",
+            "type": "Method",
+            "name": "MethodEntityVisitor",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 113,
+            "endLine": 126,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "metrics.MethodEntityVisitor",
+            "type": "Method",
+            "name": "MethodEntityVisitor",
+            "filePath": "Client/src/main/java/metrics/MethodEntitySet.java",
+            "startLine": 116,
+            "endLine": 130,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "utils.MethodGetSetJudge",
+            "type": "Field",
+            "name": "getSetMap",
+            "filePath": "Client/src/main/java/utils/MethodGetSetJudge.java",
+            "startLine": 24,
+            "endLine": 24,
+            "startColumn": 37,
+            "endColumn": 64
+          },
+          "rightSideLocation": {
+            "container": "utils.MethodGetSetJudge",
+            "type": "Field",
+            "name": "getSetMap",
+            "filePath": "Client/src/main/java/utils/MethodGetSetJudge.java",
+            "startLine": 23,
+            "endLine": 23,
+            "startColumn": 45,
+            "endColumn": 72
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "utils.MethodGetSetJudge",
+            "type": "Field",
+            "name": "sourcepathEntries",
+            "filePath": "Client/src/main/java/utils/MethodGetSetJudge.java",
+            "startLine": 21,
+            "endLine": 21,
+            "startColumn": 21,
+            "endColumn": 38
+          },
+          "rightSideLocation": {
+            "container": "utils.MethodGetSetJudge",
+            "type": "Field",
+            "name": "sourcesEntries",
+            "filePath": "Client/src/main/java/utils/MethodGetSetJudge.java",
+            "startLine": 20,
+            "endLine": 20,
+            "startColumn": 21,
+            "endColumn": 35
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "utils.MethodGetSetJudge",
+            "type": "Method",
+            "name": "readNewJavaFileFromBinding",
+            "filePath": "Client/src/main/java/utils/MethodGetSetJudge.java",
+            "startLine": 51,
+            "endLine": 76,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "utils.MethodGetSetJudge",
+            "type": "Method",
+            "name": "readNewJavaFileFromBinding",
+            "filePath": "Client/src/main/java/utils/MethodGetSetJudge.java",
+            "startLine": 68,
+            "endLine": 92,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "container": "utils.MethodGetSetJudge",
+            "type": "Method",
+            "name": "judgeGetAndSet",
+            "filePath": "Client/src/main/java/utils/MethodGetSetJudge.java",
+            "startLine": 32,
+            "endLine": 49,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "utils.MethodGetSetJudge",
+            "type": "Method",
+            "name": "judgeGetAndSet",
+            "filePath": "Client/src/main/java/utils/MethodGetSetJudge.java",
+            "startLine": 31,
+            "endLine": 66,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "***.git",
+      "sha1": "3059b67b6844d6479c39f84b828b13bd6fac2363",
+      "url": "***/commit/3059b67b6844d6479c39f84b828b13bd6fac2363",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "detector.GodClassRefactorSolution",
+            "type": "Method",
+            "name": "calculateRefactorSolution",
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 306,
+            "endLine": 401,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "detector.GodClassRefactorSolution",
+            "type": "Method",
+            "name": "calculateRefactorSolution",
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 308,
+            "endLine": 403,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "detector.GodClassRefactorSolution",
+            "type": "Class",
+            "name": "GodClassRefactorSolution",
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 207,
+            "endLine": 783,
+            "startColumn": 0,
+            "endColumn": 0
+          },
+          "rightSideLocation": {
+            "container": "detector.GodClassRefactorSolution",
+            "type": "Class",
+            "name": "GodClassRefactorSolution",
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 209,
+            "endLine": 940,
+            "startColumn": 0,
+            "endColumn": 0
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "utils.Utils",
+            "type": "Class",
+            "name": "Utils",
+            "filePath": "Client/src/main/java/utils/Utils.java",
+            "startLine": 15,
+            "endLine": 252,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "utils.Utils",
+            "type": "Class",
+            "name": "Utils",
+            "filePath": "Client/src/main/java/utils/Utils.java",
+            "startLine": 16,
+            "endLine": 274,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "detector.GodClassRefactorSolution",
+            "type": "Method",
+            "name": "calClustering",
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 673,
+            "endLine": 745,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "detector.GodClassRefactorSolution",
+            "type": "Method",
+            "name": "calClustering",
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 756,
+            "endLine": 806,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [],
+      "baseline": [
+        {
+          "leftSideLocation": {
+            "container": "detector.GodClassRefactorSolution",
+            "type": "Method",
+            "name": "calClustering",
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 673,
+            "endLine": 745,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "detector.GodClassRefactorSolution",
+            "type": "Method",
+            "name": "findMin",
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 670,
+            "endLine": 700,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "detector.GodClassRefactorSolution",
+            "type": "Method",
+            "name": "calClustering",
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 673,
+            "endLine": 745,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "detector.GodClassRefactorSolution",
+            "type": "Method",
+            "name": "getClusterLOC",
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 702,
+            "endLine": 714,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "detector.GodClassRefactorSolution",
+            "type": "Method",
+            "name": "calClustering",
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 673,
+            "endLine": 745,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "detector.GodClassRefactorSolution",
+            "type": "Method",
+            "name": "updateDistance",
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 735,
+            "endLine": 754,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "***.git",
+      "sha1": "1a5b9773258356e56250915b08d4af2a094aa222",
+      "url": "***/commit/1a5b9773258356e56250915b08d4af2a094aa222",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Class",
+            "name": "FeatureEnvyCandidate",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 11,
+            "endLine": 183,
+            "startColumn": 0,
+            "endColumn": 0
+          },
+          "rightSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Class",
+            "name": "FeatureEnvyCandidate",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 12,
+            "endLine": 203,
+            "startColumn": 0,
+            "endColumn": 0
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "detector.FeatureEnvyDetector",
+            "type": "Method",
+            "name": "FeatureEnvyDetector",
+            "filePath": "Client/src/main/java/detector/FeatureEnvyDetector.java",
+            "startLine": 21,
+            "endLine": 22,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "detector.FeatureEnvyDetector",
+            "type": "Method",
+            "name": "FeatureEnvyDetector",
+            "filePath": "Client/src/main/java/detector/FeatureEnvyDetector.java",
+            "startLine": 22,
+            "endLine": 24,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "detector.FeatureEnvyDetector",
+            "type": "Method",
+            "name": "detect",
+            "filePath": "Client/src/main/java/detector/FeatureEnvyDetector.java",
+            "startLine": 24,
+            "endLine": 55,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "detector.FeatureEnvyDetector",
+            "type": "Method",
+            "name": "detect",
+            "filePath": "Client/src/main/java/detector/FeatureEnvyDetector.java",
+            "startLine": 26,
+            "endLine": 58,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "detector.FeatureEnvyDetector",
+            "type": "Class",
+            "name": "FeatureEnvyDetector",
+            "filePath": "Client/src/main/java/detector/FeatureEnvyDetector.java",
+            "startLine": 15,
+            "endLine": 154,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "detector.FeatureEnvyDetector",
+            "type": "Class",
+            "name": "FeatureEnvyDetector",
+            "filePath": "Client/src/main/java/detector/FeatureEnvyDetector.java",
+            "startLine": 15,
+            "endLine": 165,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "parser.FeatureEnvyParser",
+            "type": "Method",
+            "name": "FeatureEnvyParser",
+            "filePath": "Client/src/main/java/parser/FeatureEnvyParser.java",
+            "startLine": 21,
+            "endLine": 25,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "parser.FeatureEnvyParser",
+            "type": "Method",
+            "name": "FeatureEnvyParser",
+            "filePath": "Client/src/main/java/parser/FeatureEnvyParser.java",
+            "startLine": 22,
+            "endLine": 27,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "parser.FeatureEnvyParser",
+            "type": "Method",
+            "name": "parse",
+            "filePath": "Client/src/main/java/parser/FeatureEnvyParser.java",
+            "startLine": 27,
+            "endLine": 46,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "parser.FeatureEnvyParser",
+            "type": "Method",
+            "name": "parse",
+            "filePath": "Client/src/main/java/parser/FeatureEnvyParser.java",
+            "startLine": 29,
+            "endLine": 48,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "parser.FeatureEnvyParser",
+            "type": "Class",
+            "name": "FeatureEnvyParser",
+            "filePath": "Client/src/main/java/parser/FeatureEnvyParser.java",
+            "startLine": 16,
+            "endLine": 52,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "parser.FeatureEnvyParser",
+            "type": "Class",
+            "name": "FeatureEnvyParser",
+            "filePath": "Client/src/main/java/parser/FeatureEnvyParser.java",
+            "startLine": 16,
+            "endLine": 62,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "detect.FeatureEnvyDetectorTest",
+            "type": "Method",
+            "name": "main",
+            "filePath": "Client/src/test/java/detect/FeatureEnvyDetectorTest.java",
+            "startLine": 15,
+            "endLine": 100,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "detect.FeatureEnvyDetectorTest",
+            "type": "Method",
+            "name": "main",
+            "filePath": "Client/src/test/java/detect/FeatureEnvyDetectorTest.java",
+            "startLine": 15,
+            "endLine": 101,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "detect.FeatureEnvyDetectorTest",
+            "type": "Class",
+            "name": "FeatureEnvyDetectorTest",
+            "filePath": "Client/src/test/java/detect/FeatureEnvyDetectorTest.java",
+            "startLine": 14,
+            "endLine": 118,
+            "startColumn": 0,
+            "endColumn": 0
+          },
+          "rightSideLocation": {
+            "container": "detect.FeatureEnvyDetectorTest",
+            "type": "Class",
+            "name": "FeatureEnvyDetectorTest",
+            "filePath": "Client/src/test/java/detect/FeatureEnvyDetectorTest.java",
+            "startLine": 14,
+            "endLine": 119,
+            "startColumn": 0,
+            "endColumn": 0
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Method",
+            "name": "FeatureEnvyCandidate",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 32,
+            "endLine": 162,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Method",
+            "name": "FeatureEnvyCandidate",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 27,
+            "endLine": 174,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": []
+    },
+    {
+      "repository": "***.git",
+      "sha1": "4193e8d632b9c9b30cd6a1baf6c08d2467ac167c",
+      "url": "***/commit/4193e8d632b9c9b30cd6a1baf6c08d2467ac167c",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Class",
+            "name": "FeatureEnvyCandidate",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 11,
+            "endLine": 153,
+            "startColumn": 0,
+            "endColumn": 0
+          },
+          "rightSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Class",
+            "name": "FeatureEnvyCandidate",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 10,
+            "endLine": 169,
+            "startColumn": 0,
+            "endColumn": 0
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "detector.FeatureEnvyDetector",
+            "type": "Method",
+            "name": "detect",
+            "filePath": "Client/src/main/java/detector/FeatureEnvyDetector.java",
+            "startLine": 25,
+            "endLine": 57,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "detector.FeatureEnvyDetector",
+            "type": "Method",
+            "name": "detect",
+            "filePath": "Client/src/main/java/detector/FeatureEnvyDetector.java",
+            "startLine": 23,
+            "endLine": 58,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "detector.FeatureEnvyDetector",
+            "type": "Class",
+            "name": "FeatureEnvyDetector",
+            "filePath": "Client/src/main/java/detector/FeatureEnvyDetector.java",
+            "startLine": 16,
+            "endLine": 141,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "detector.FeatureEnvyDetector",
+            "type": "Class",
+            "name": "FeatureEnvyDetector",
+            "filePath": "Client/src/main/java/detector/FeatureEnvyDetector.java",
+            "startLine": 14,
+            "endLine": 164,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "parser.FeatureEnvyParser",
+            "type": "Method",
+            "name": "parse",
+            "filePath": "Client/src/main/java/parser/FeatureEnvyParser.java",
+            "startLine": 27,
+            "endLine": 46,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "parser.FeatureEnvyParser",
+            "type": "Method",
+            "name": "parse",
+            "filePath": "Client/src/main/java/parser/FeatureEnvyParser.java",
+            "startLine": 27,
+            "endLine": 46,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "parser.FeatureEnvyParser",
+            "type": "Class",
+            "name": "FeatureEnvyParser",
+            "filePath": "Client/src/main/java/parser/FeatureEnvyParser.java",
+            "startLine": 16,
+            "endLine": 52,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "parser.FeatureEnvyParser",
+            "type": "Class",
+            "name": "FeatureEnvyParser",
+            "filePath": "Client/src/main/java/parser/FeatureEnvyParser.java",
+            "startLine": 16,
+            "endLine": 52,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "visitor.EntityVisitor",
+            "type": "Method",
+            "name": "EntityVisitor",
+            "filePath": "Client/src/main/java/visitor/EntityVisitor.java",
+            "startLine": 18,
+            "endLine": 22,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "visitor.EntityVisitor",
+            "type": "Method",
+            "name": "EntityVisitor",
+            "filePath": "Client/src/main/java/visitor/EntityVisitor.java",
+            "startLine": 17,
+            "endLine": 20,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "visitor.EntityVisitor",
+            "type": "Method",
+            "name": "visit",
+            "filePath": "Client/src/main/java/visitor/EntityVisitor.java",
+            "startLine": 32,
+            "endLine": 48,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "visitor.EntityVisitor",
+            "type": "Method",
+            "name": "visit",
+            "filePath": "Client/src/main/java/visitor/EntityVisitor.java",
+            "startLine": 26,
+            "endLine": 41,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "visitor.EntityVisitor",
+            "type": "Method",
+            "name": "visit",
+            "filePath": "Client/src/main/java/visitor/EntityVisitor.java",
+            "startLine": 50,
+            "endLine": 68,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "visitor.EntityVisitor",
+            "type": "Method",
+            "name": "visit",
+            "filePath": "Client/src/main/java/visitor/EntityVisitor.java",
+            "startLine": 43,
+            "endLine": 60,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "visitor.EntityVisitor",
+            "type": "Method",
+            "name": "visit",
+            "filePath": "Client/src/main/java/visitor/EntityVisitor.java",
+            "startLine": 70,
+            "endLine": 92,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "visitor.EntityVisitor",
+            "type": "Method",
+            "name": "visit",
+            "filePath": "Client/src/main/java/visitor/EntityVisitor.java",
+            "startLine": 62,
+            "endLine": 83,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "visitor.EntityVisitor",
+            "type": "Class",
+            "name": "EntityVisitor",
+            "filePath": "Client/src/main/java/visitor/EntityVisitor.java",
+            "startLine": 10,
+            "endLine": 94,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "visitor.EntityVisitor",
+            "type": "Class",
+            "name": "EntityVisitor",
+            "filePath": "Client/src/main/java/visitor/EntityVisitor.java",
+            "startLine": 10,
+            "endLine": 85,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Method",
+            "name": "parseTargetCandidate",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 135,
+            "endLine": 146,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Method",
+            "name": "parseTargetCandidate",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 151,
+            "endLine": 162,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "visitor.EntityVisitor",
+            "type": "Field",
+            "name": "newTargetClass",
+            "filePath": "Client/src/main/java/visitor/EntityVisitor.java",
+            "startLine": 16,
+            "endLine": 16,
+            "startColumn": 54,
+            "endColumn": 68
+          },
+          "rightSideLocation": {
+            "container": "visitor.EntityVisitor",
+            "type": "Field",
+            "name": "targetClass",
+            "filePath": "Client/src/main/java/visitor/EntityVisitor.java",
+            "startLine": 15,
+            "endLine": 15,
+            "startColumn": 53,
+            "endColumn": 64
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Field",
+            "name": "invocationTargetBinding",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 18,
+            "endLine": 18,
+            "startColumn": 37,
+            "endColumn": 60
+          },
+          "rightSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Field",
+            "name": "invocationTargetExpression",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 17,
+            "endLine": 17,
+            "startColumn": 36,
+            "endColumn": 62
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Method",
+            "name": "getInvocationTargetBinding",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 20,
+            "endLine": 22,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Method",
+            "name": "getInvocationTargetExpression",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 22,
+            "endLine": 24,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "detector.FeatureEnvyDetector",
+            "type": "Method",
+            "name": "formatResult",
+            "filePath": "Client/src/main/java/detector/FeatureEnvyDetector.java",
+            "startLine": 59,
+            "endLine": 120,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "detector.FeatureEnvyDetector",
+            "type": "Method",
+            "name": "formatResult",
+            "filePath": "Client/src/main/java/detector/FeatureEnvyDetector.java",
+            "startLine": 60,
+            "endLine": 143,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Method",
+            "name": "FeatureEnvyCandidate",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 24,
+            "endLine": 132,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Method",
+            "name": "FeatureEnvyCandidate",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 30,
+            "endLine": 148,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "container": "visitor.EntityVisitor",
+            "type": "Method",
+            "name": "getNewTargetClass",
+            "filePath": "Client/src/main/java/visitor/EntityVisitor.java",
+            "startLine": 28,
+            "endLine": 30,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "visitor.EntityVisitor",
+            "type": "Method",
+            "name": "getTargetClass",
+            "filePath": "Client/src/main/java/visitor/EntityVisitor.java",
+            "startLine": 22,
+            "endLine": 24,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "leftSideLocation": {
+            "container": "visitor.EntityVisitor",
+            "type": "Method",
+            "name": "getTargetClasses",
+            "filePath": "Client/src/main/java/visitor/EntityVisitor.java",
+            "startLine": 24,
+            "endLine": 26,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "visitor.EntityVisitor",
+            "type": "Method",
+            "name": "getTargetClass",
+            "filePath": "Client/src/main/java/visitor/EntityVisitor.java",
+            "startLine": 22,
+            "endLine": 24,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "***.git",
+      "sha1": "6d5d01323ada8b53280e14d848e203a3dda7c6b6",
+      "url": "***/commit/6d5d01323ada8b53280e14d848e203a3dda7c6b6",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Method",
+            "name": "FeatureEnvyCandidate",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 24,
+            "endLine": 138,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Method",
+            "name": "FeatureEnvyCandidate",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 24,
+            "endLine": 126,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Class",
+            "name": "FeatureEnvyCandidate",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 11,
+            "endLine": 183,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Class",
+            "name": "FeatureEnvyCandidate",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 11,
+            "endLine": 147,
+            "startColumn": 0,
+            "endColumn": 0
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "utils.MethodJudge",
+            "type": "Method",
+            "name": "judge",
+            "filePath": "Client/src/main/java/utils/MethodJudge.java",
+            "startLine": 26,
+            "endLine": 48,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "utils.MethodJudge",
+            "type": "Method",
+            "name": "judge",
+            "filePath": "Client/src/main/java/utils/MethodJudge.java",
+            "startLine": 26,
+            "endLine": 50,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "utils.MethodJudge",
+            "type": "Class",
+            "name": "MethodJudge",
+            "filePath": "Client/src/main/java/utils/MethodJudge.java",
+            "startLine": 17,
+            "endLine": 287,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "utils.MethodJudge",
+            "type": "Class",
+            "name": "MethodJudge",
+            "filePath": "Client/src/main/java/utils/MethodJudge.java",
+            "startLine": 17,
+            "endLine": 297,
+            "startColumn": 0,
+            "endColumn": 0
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "visitor.FeatureEnvySuperVisitor",
+            "type": "Class",
+            "name": "FeatureEnvySuperVisitor",
+            "filePath": "Client/src/main/java/visitor/FeatureEnvySuperVisitor.java",
+            "startLine": 6,
+            "endLine": 41,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "visitor.FeatureEnvySuperVisitor",
+            "type": "Class",
+            "name": "FeatureEnvySuperVisitor",
+            "filePath": "Client/src/main/java/visitor/FeatureEnvySuperVisitor.java",
+            "startLine": 9,
+            "endLine": 85,
+            "startColumn": 0,
+            "endColumn": 0
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "detect.FeatureEnvyDetectorTest",
+            "type": "Method",
+            "name": "main",
+            "filePath": "Client/src/test/java/detect/FeatureEnvyDetectorTest.java",
+            "startLine": 15,
+            "endLine": 102,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "detect.FeatureEnvyDetectorTest",
+            "type": "Method",
+            "name": "main",
+            "filePath": "Client/src/test/java/detect/FeatureEnvyDetectorTest.java",
+            "startLine": 15,
+            "endLine": 103,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "detect.FeatureEnvyDetectorTest",
+            "type": "Class",
+            "name": "FeatureEnvyDetectorTest",
+            "filePath": "Client/src/test/java/detect/FeatureEnvyDetectorTest.java",
+            "startLine": 14,
+            "endLine": 120,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "detect.FeatureEnvyDetectorTest",
+            "type": "Class",
+            "name": "FeatureEnvyDetectorTest",
+            "filePath": "Client/src/test/java/detect/FeatureEnvyDetectorTest.java",
+            "startLine": 14,
+            "endLine": 121,
+            "startColumn": 0,
+            "endColumn": 0
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "utils.MethodJudge",
+            "type": "Method",
+            "name": "isOverride",
+            "filePath": "Client/src/main/java/utils/MethodJudge.java",
+            "startLine": 92,
+            "endLine": 128,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "utils.MethodJudge",
+            "type": "Method",
+            "name": "isOverride",
+            "filePath": "Client/src/main/java/utils/MethodJudge.java",
+            "startLine": 94,
+            "endLine": 122,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "utils.MethodJudge",
+            "type": "Method",
+            "name": "isContainsSupper",
+            "filePath": "Client/src/main/java/utils/MethodJudge.java",
+            "startLine": 80,
+            "endLine": 84,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "utils.MethodJudge",
+            "type": "Method",
+            "name": "isContainsSupper",
+            "filePath": "Client/src/main/java/utils/MethodJudge.java",
+            "startLine": 82,
+            "endLine": 86,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "visitor.FeatureEnvySuperVisitor",
+            "type": "Method",
+            "name": "FeatureEnvySuperVisitor",
+            "filePath": "Client/src/main/java/visitor/FeatureEnvySuperVisitor.java",
+            "startLine": 21,
+            "endLine": 23,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "visitor.FeatureEnvySuperVisitor",
+            "type": "Method",
+            "name": "FeatureEnvySuperVisitor",
+            "filePath": "Client/src/main/java/visitor/FeatureEnvySuperVisitor.java",
+            "startLine": 24,
+            "endLine": 27,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [],
+      "baseline": [
+        {
+          "leftSideLocation": {
+            "container": "utils.MethodJudge",
+            "type": "Method",
+            "name": "isOverride",
+            "filePath": "Client/src/main/java/utils/MethodJudge.java",
+            "startLine": 92,
+            "endLine": 128,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "utils.MethodJudge",
+            "type": "Method",
+            "name": "getSuperClasses",
+            "filePath": "Client/src/main/java/utils/MethodJudge.java",
+            "startLine": 275,
+            "endLine": 289,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "***.git",
+      "sha1": "fdd1f071667f7fb6a5152ee74142fc5ba166efca",
+      "url": "***/commit/fdd1f071667f7fb6a5152ee74142fc5ba166efca",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Method",
+            "name": "FeatureEnvyCandidate",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 24,
+            "endLine": 138,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Method",
+            "name": "FeatureEnvyCandidate",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 24,
+            "endLine": 126,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Class",
+            "name": "FeatureEnvyCandidate",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 11,
+            "endLine": 183,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Class",
+            "name": "FeatureEnvyCandidate",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 11,
+            "endLine": 147,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "utils.MethodJudge",
+            "type": "Method",
+            "name": "judge",
+            "filePath": "Client/src/main/java/utils/MethodJudge.java",
+            "startLine": 24,
+            "endLine": 42,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "utils.MethodJudge",
+            "type": "Method",
+            "name": "judge",
+            "filePath": "Client/src/main/java/utils/MethodJudge.java",
+            "startLine": 24,
+            "endLine": 44,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "utils.MethodJudge",
+            "type": "Class",
+            "name": "MethodJudge",
+            "filePath": "Client/src/main/java/utils/MethodJudge.java",
+            "startLine": 15,
+            "endLine": 275,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "utils.MethodJudge",
+            "type": "Class",
+            "name": "MethodJudge",
+            "filePath": "Client/src/main/java/utils/MethodJudge.java",
+            "startLine": 15,
+            "endLine": 284,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "visitor.FeatureEnvySuperVisitor",
+            "type": "Class",
+            "name": "FeatureEnvySuperVisitor",
+            "filePath": "Client/src/main/java/visitor/FeatureEnvySuperVisitor.java",
+            "startLine": 6,
+            "endLine": 41,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "visitor.FeatureEnvySuperVisitor",
+            "type": "Class",
+            "name": "FeatureEnvySuperVisitor",
+            "filePath": "Client/src/main/java/visitor/FeatureEnvySuperVisitor.java",
+            "startLine": 9,
+            "endLine": 85,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "detect.FeatureEnvyDetectorTest",
+            "type": "Method",
+            "name": "main",
+            "filePath": "Client/src/test/java/detect/FeatureEnvyDetectorTest.java",
+            "startLine": 15,
+            "endLine": 102,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "detect.FeatureEnvyDetectorTest",
+            "type": "Method",
+            "name": "main",
+            "filePath": "Client/src/test/java/detect/FeatureEnvyDetectorTest.java",
+            "startLine": 15,
+            "endLine": 103,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "detect.FeatureEnvyDetectorTest",
+            "type": "Class",
+            "name": "FeatureEnvyDetectorTest",
+            "filePath": "Client/src/test/java/detect/FeatureEnvyDetectorTest.java",
+            "startLine": 14,
+            "endLine": 120,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "detect.FeatureEnvyDetectorTest",
+            "type": "Class",
+            "name": "FeatureEnvyDetectorTest",
+            "filePath": "Client/src/test/java/detect/FeatureEnvyDetectorTest.java",
+            "startLine": 14,
+            "endLine": 121,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "utils.MethodJudge",
+            "type": "Method",
+            "name": "isOverride",
+            "filePath": "Client/src/main/java/utils/MethodJudge.java",
+            "startLine": 86,
+            "endLine": 122,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "utils.MethodJudge",
+            "type": "Method",
+            "name": "isOverride",
+            "filePath": "Client/src/main/java/utils/MethodJudge.java",
+            "startLine": 88,
+            "endLine": 116,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "utils.MethodJudge",
+            "type": "Method",
+            "name": "isContainsSupper",
+            "filePath": "Client/src/main/java/utils/MethodJudge.java",
+            "startLine": 74,
+            "endLine": 78,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "utils.MethodJudge",
+            "type": "Method",
+            "name": "isContainsSupper",
+            "filePath": "Client/src/main/java/utils/MethodJudge.java",
+            "startLine": 76,
+            "endLine": 80,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "visitor.FeatureEnvySuperVisitor",
+            "type": "Method",
+            "name": "FeatureEnvySuperVisitor",
+            "filePath": "Client/src/main/java/visitor/FeatureEnvySuperVisitor.java",
+            "startLine": 21,
+            "endLine": 23,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "visitor.FeatureEnvySuperVisitor",
+            "type": "Method",
+            "name": "FeatureEnvySuperVisitor",
+            "filePath": "Client/src/main/java/visitor/FeatureEnvySuperVisitor.java",
+            "startLine": 24,
+            "endLine": 27,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [],
+      "baseline": [
+        {
+          "leftSideLocation": {
+            "container": "utils.MethodJudge",
+            "type": "Method",
+            "name": "isOverride",
+            "filePath": "Client/src/main/java/utils/MethodJudge.java",
+            "startLine": 86,
+            "endLine": 122,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "utils.MethodJudge",
+            "type": "Method",
+            "name": "getSuperClasses",
+            "filePath": "Client/src/main/java/utils/MethodJudge.java",
+            "startLine": 269,
+            "endLine": 283,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "***.git",
+      "sha1": "76746566f8f3dbbe962fbd0320f1094e175dcc98",
+      "url": "***/commit/76746566f8f3dbbe962fbd0320f1094e175dcc98",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Class",
+            "name": "FeatureEnvyCandidate",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 13,
+            "endLine": 173,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Class",
+            "name": "FeatureEnvyCandidate",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 13,
+            "endLine": 150,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "parser.FeatureEnvyParser",
+            "type": "Method",
+            "name": "FeatureEnvyParser",
+            "filePath": "Client/src/main/java/parser/FeatureEnvyParser.java",
+            "startLine": 20,
+            "endLine": 23,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "parser.FeatureEnvyParser",
+            "type": "Method",
+            "name": "FeatureEnvyParser",
+            "filePath": "Client/src/main/java/parser/FeatureEnvyParser.java",
+            "startLine": 21,
+            "endLine": 25,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "parser.FeatureEnvyParser",
+            "type": "Method",
+            "name": "parse",
+            "filePath": "Client/src/main/java/parser/FeatureEnvyParser.java",
+            "startLine": 25,
+            "endLine": 45,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "parser.FeatureEnvyParser",
+            "type": "Method",
+            "name": "parse",
+            "filePath": "Client/src/main/java/parser/FeatureEnvyParser.java",
+            "startLine": 27,
+            "endLine": 46,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "parser.FeatureEnvyParser",
+            "type": "Class",
+            "name": "FeatureEnvyParser",
+            "filePath": "Client/src/main/java/parser/FeatureEnvyParser.java",
+            "startLine": 16,
+            "endLine": 51,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "parser.FeatureEnvyParser",
+            "type": "Class",
+            "name": "FeatureEnvyParser",
+            "filePath": "Client/src/main/java/parser/FeatureEnvyParser.java",
+            "startLine": 16,
+            "endLine": 52,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "utils.MethodJudge",
+            "type": "Method",
+            "name": "isConstructor",
+            "filePath": "Client/src/main/java/utils/MethodJudge.java",
+            "startLine": 57,
+            "endLine": 59,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "utils.MethodJudge",
+            "type": "Method",
+            "name": "isConstructor",
+            "filePath": "Client/src/main/java/utils/MethodJudge.java",
+            "startLine": 57,
+            "endLine": 63,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "utils.MethodJudge",
+            "type": "Method",
+            "name": "isContainsSupper",
+            "filePath": "Client/src/main/java/utils/MethodJudge.java",
+            "startLine": 70,
+            "endLine": 76,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "utils.MethodJudge",
+            "type": "Method",
+            "name": "isContainsSupper",
+            "filePath": "Client/src/main/java/utils/MethodJudge.java",
+            "startLine": 74,
+            "endLine": 78,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "utils.MethodJudge",
+            "type": "Method",
+            "name": "isEnclosing",
+            "filePath": "Client/src/main/java/utils/MethodJudge.java",
+            "startLine": 78,
+            "endLine": 84,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "utils.MethodJudge",
+            "type": "Method",
+            "name": "isEnclosing",
+            "filePath": "Client/src/main/java/utils/MethodJudge.java",
+            "startLine": 80,
+            "endLine": 84,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "utils.MethodJudge",
+            "type": "Class",
+            "name": "MethodJudge",
+            "filePath": "Client/src/main/java/utils/MethodJudge.java",
+            "startLine": 15,
+            "endLine": 277,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "utils.MethodJudge",
+            "type": "Class",
+            "name": "MethodJudge",
+            "filePath": "Client/src/main/java/utils/MethodJudge.java",
+            "startLine": 15,
+            "endLine": 275,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "visitor.EntityVisitor",
+            "type": "Class",
+            "name": "EntityVisitor",
+            "filePath": "Client/src/main/java/visitor/EntityVisitor.java",
+            "startLine": 7,
+            "endLine": 61,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "visitor.EntityVisitor",
+            "type": "Class",
+            "name": "EntityVisitor",
+            "filePath": "Client/src/main/java/visitor/EntityVisitor.java",
+            "startLine": 7,
+            "endLine": 59,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "visitor.FeatureEnvyEnclosingVisitor",
+            "type": "Method",
+            "name": "FeatureEnvyEnclosingVisitor",
+            "filePath": "Client/src/main/java/visitor/FeatureEnvyEnclosingVisitor.java",
+            "startLine": 32,
+            "endLine": 40,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "visitor.FeatureEnvyEnclosingVisitor",
+            "type": "Method",
+            "name": "FeatureEnvyEnclosingVisitor",
+            "filePath": "Client/src/main/java/visitor/FeatureEnvyEnclosingVisitor.java",
+            "startLine": 28,
+            "endLine": 35,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "visitor.FeatureEnvyEnclosingVisitor",
+            "type": "Method",
+            "name": "visit",
+            "filePath": "Client/src/main/java/visitor/FeatureEnvyEnclosingVisitor.java",
+            "startLine": 42,
+            "endLine": 81,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "visitor.FeatureEnvyEnclosingVisitor",
+            "type": "Method",
+            "name": "visit",
+            "filePath": "Client/src/main/java/visitor/FeatureEnvyEnclosingVisitor.java",
+            "startLine": 37,
+            "endLine": 73,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "visitor.FeatureEnvyEnclosingVisitor",
+            "type": "Method",
+            "name": "visit",
+            "filePath": "Client/src/main/java/visitor/FeatureEnvyEnclosingVisitor.java",
+            "startLine": 83,
+            "endLine": 95,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "visitor.FeatureEnvyEnclosingVisitor",
+            "type": "Method",
+            "name": "visit",
+            "filePath": "Client/src/main/java/visitor/FeatureEnvyEnclosingVisitor.java",
+            "startLine": 75,
+            "endLine": 82,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "visitor.FeatureEnvyEnclosingVisitor",
+            "type": "Class",
+            "name": "FeatureEnvyEnclosingVisitor",
+            "filePath": "Client/src/main/java/visitor/FeatureEnvyEnclosingVisitor.java",
+            "startLine": 11,
+            "endLine": 96,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "visitor.FeatureEnvyEnclosingVisitor",
+            "type": "Class",
+            "name": "FeatureEnvyEnclosingVisitor",
+            "filePath": "Client/src/main/java/visitor/FeatureEnvyEnclosingVisitor.java",
+            "startLine": 11,
+            "endLine": 83,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "visitor.FeatureEnvySuperVisitor",
+            "type": "Method",
+            "name": "FeatureEnvySuperVisitor",
+            "filePath": "Client/src/main/java/visitor/FeatureEnvySuperVisitor.java",
+            "startLine": 25,
+            "endLine": 27,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "visitor.FeatureEnvySuperVisitor",
+            "type": "Method",
+            "name": "FeatureEnvySuperVisitor",
+            "filePath": "Client/src/main/java/visitor/FeatureEnvySuperVisitor.java",
+            "startLine": 21,
+            "endLine": 23,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "visitor.FeatureEnvySuperVisitor",
+            "type": "Method",
+            "name": "visit",
+            "filePath": "Client/src/main/java/visitor/FeatureEnvySuperVisitor.java",
+            "startLine": 41,
+            "endLine": 47,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "visitor.FeatureEnvySuperVisitor",
+            "type": "Method",
+            "name": "visit",
+            "filePath": "Client/src/main/java/visitor/FeatureEnvySuperVisitor.java",
+            "startLine": 25,
+            "endLine": 28,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "visitor.FeatureEnvySuperVisitor",
+            "type": "Method",
+            "name": "visit",
+            "filePath": "Client/src/main/java/visitor/FeatureEnvySuperVisitor.java",
+            "startLine": 49,
+            "endLine": 55,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "visitor.FeatureEnvySuperVisitor",
+            "type": "Method",
+            "name": "visit",
+            "filePath": "Client/src/main/java/visitor/FeatureEnvySuperVisitor.java",
+            "startLine": 30,
+            "endLine": 33,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "visitor.FeatureEnvySuperVisitor",
+            "type": "Class",
+            "name": "FeatureEnvySuperVisitor",
+            "filePath": "Client/src/main/java/visitor/FeatureEnvySuperVisitor.java",
+            "startLine": 6,
+            "endLine": 61,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "visitor.FeatureEnvySuperVisitor",
+            "type": "Class",
+            "name": "FeatureEnvySuperVisitor",
+            "filePath": "Client/src/main/java/visitor/FeatureEnvySuperVisitor.java",
+            "startLine": 6,
+            "endLine": 41,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "visitor.FeatureEnvyVisitor",
+            "type": "Method",
+            "name": "visit",
+            "filePath": "Client/src/main/java/visitor/FeatureEnvyVisitor.java",
+            "startLine": 21,
+            "endLine": 29,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "visitor.FeatureEnvyVisitor",
+            "type": "Method",
+            "name": "visit",
+            "filePath": "Client/src/main/java/visitor/FeatureEnvyVisitor.java",
+            "startLine": 17,
+            "endLine": 25,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "visitor.FeatureEnvyVisitor",
+            "type": "Class",
+            "name": "FeatureEnvyVisitor",
+            "filePath": "Client/src/main/java/visitor/FeatureEnvyVisitor.java",
+            "startLine": 10,
+            "endLine": 35,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "visitor.FeatureEnvyVisitor",
+            "type": "Class",
+            "name": "FeatureEnvyVisitor",
+            "filePath": "Client/src/main/java/visitor/FeatureEnvyVisitor.java",
+            "startLine": 7,
+            "endLine": 31,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "detect.FeatureEnvyDetectorTest",
+            "type": "Method",
+            "name": "main",
+            "filePath": "Client/src/test/java/detect/FeatureEnvyDetectorTest.java",
+            "startLine": 13,
+            "endLine": 100,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "detect.FeatureEnvyDetectorTest",
+            "type": "Method",
+            "name": "main",
+            "filePath": "Client/src/test/java/detect/FeatureEnvyDetectorTest.java",
+            "startLine": 13,
+            "endLine": 100,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "detect.FeatureEnvyDetectorTest",
+            "type": "Class",
+            "name": "FeatureEnvyDetectorTest",
+            "filePath": "Client/src/test/java/detect/FeatureEnvyDetectorTest.java",
+            "startLine": 12,
+            "endLine": 118,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "detect.FeatureEnvyDetectorTest",
+            "type": "Class",
+            "name": "FeatureEnvyDetectorTest",
+            "filePath": "Client/src/test/java/detect/FeatureEnvyDetectorTest.java",
+            "startLine": 12,
+            "endLine": 118,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Method",
+            "name": "FeatureEnvyCandidate",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 21,
+            "endLine": 128,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Method",
+            "name": "FeatureEnvyCandidate",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 22,
+            "endLine": 121,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "container": "visitor.FeatureEnvySuperVisitor",
+            "type": "Method",
+            "name": "visit",
+            "filePath": "Client/src/main/java/visitor/FeatureEnvySuperVisitor.java",
+            "startLine": 37,
+            "endLine": 39,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "visitor.FeatureEnvySuperVisitor",
+            "type": "Method",
+            "name": "visit",
+            "filePath": "Client/src/main/java/visitor/FeatureEnvySuperVisitor.java",
+            "startLine": 35,
+            "endLine": 38,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "leftSideLocation": {
+            "container": "visitor.FeatureEnvySuperVisitor",
+            "type": "Method",
+            "name": "visit",
+            "filePath": "Client/src/main/java/visitor/FeatureEnvySuperVisitor.java",
+            "startLine": 29,
+            "endLine": 31,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "visitor.FeatureEnvySuperVisitor",
+            "type": "Method",
+            "name": "visit",
+            "filePath": "Client/src/main/java/visitor/FeatureEnvySuperVisitor.java",
+            "startLine": 35,
+            "endLine": 38,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": false
+        }
+      ]
+    },
+    {
+      "repository": "***.git",
+      "sha1": "3492bc9e24c04b1a2615ac17776b2d6f07881357",
+      "url": "***/commit/3492bc9e24c04b1a2615ac17776b2d6f07881357",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "parser.FeatureEnvyParser",
+            "type": "Method",
+            "name": "parse",
+            "filePath": "Client/src/main/java/parser/FeatureEnvyParser.java",
+            "startLine": 24,
+            "endLine": 51,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "parser.FeatureEnvyParser",
+            "type": "Method",
+            "name": "parse",
+            "filePath": "Client/src/main/java/parser/FeatureEnvyParser.java",
+            "startLine": 24,
+            "endLine": 49,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "parser.FeatureEnvyParser",
+            "type": "Class",
+            "name": "FeatureEnvyParser",
+            "filePath": "Client/src/main/java/parser/FeatureEnvyParser.java",
+            "startLine": 15,
+            "endLine": 57,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "parser.FeatureEnvyParser",
+            "type": "Class",
+            "name": "FeatureEnvyParser",
+            "filePath": "Client/src/main/java/parser/FeatureEnvyParser.java",
+            "startLine": 15,
+            "endLine": 55,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "utils.MethodJudge",
+            "type": "Class",
+            "name": "MethodJudge",
+            "filePath": "Client/src/main/java/utils/MethodJudge.java",
+            "startLine": 14,
+            "endLine": 162,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "utils.MethodJudge",
+            "type": "Class",
+            "name": "MethodJudge",
+            "filePath": "Client/src/main/java/utils/MethodJudge.java",
+            "startLine": 14,
+            "endLine": 207,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "utils.MethodJudge",
+            "type": "Method",
+            "name": "isNotContractor",
+            "filePath": "Client/src/main/java/utils/MethodJudge.java",
+            "startLine": 40,
+            "endLine": 42,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "utils.MethodJudge",
+            "type": "Method",
+            "name": "isConstructor",
+            "filePath": "Client/src/main/java/utils/MethodJudge.java",
+            "startLine": 56,
+            "endLine": 58,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "utils.MethodJudge",
+            "type": "Method",
+            "name": "isNotSupper",
+            "filePath": "Client/src/main/java/utils/MethodJudge.java",
+            "startLine": 44,
+            "endLine": 50,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "utils.MethodJudge",
+            "type": "Method",
+            "name": "isContainsSupper",
+            "filePath": "Client/src/main/java/utils/MethodJudge.java",
+            "startLine": 69,
+            "endLine": 75,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "utils.MethodJudge",
+            "type": "Method",
+            "name": "isNotOverride",
+            "filePath": "Client/src/main/java/utils/MethodJudge.java",
+            "startLine": 52,
+            "endLine": 72,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "utils.MethodJudge",
+            "type": "Method",
+            "name": "isOverride",
+            "filePath": "Client/src/main/java/utils/MethodJudge.java",
+            "startLine": 85,
+            "endLine": 109,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "container": "utils.MethodJudge",
+            "type": "Method",
+            "name": "isNotEnclosing",
+            "filePath": "Client/src/main/java/utils/MethodJudge.java",
+            "startLine": 74,
+            "endLine": 80,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "utils.MethodJudge",
+            "type": "Method",
+            "name": "judge",
+            "filePath": "Client/src/main/java/utils/MethodJudge.java",
+            "startLine": 23,
+            "endLine": 42,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": false
+        },
+        {
+          "leftSideLocation": {
+            "container": "utils.MethodJudge",
+            "type": "Method",
+            "name": "isNotNull",
+            "filePath": "Client/src/main/java/utils/MethodJudge.java",
+            "startLine": 23,
+            "endLine": 25,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "utils.MethodJudge",
+            "type": "Method",
+            "name": "getPossibleTarget",
+            "filePath": "Client/src/main/java/utils/MethodJudge.java",
+            "startLine": 127,
+            "endLine": 129,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": false
+        }
+      ],
+      "baseline": [
+        {
+          "leftSideLocation": {
+            "container": "utils.MethodJudge",
+            "type": "Method",
+            "name": "isNotNull",
+            "filePath": "Client/src/main/java/utils/MethodJudge.java",
+            "startLine": 23,
+            "endLine": 25,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "utils.MethodJudge",
+            "type": "Method",
+            "name": "isNull",
+            "filePath": "Client/src/main/java/utils/MethodJudge.java",
+            "startLine": 44,
+            "endLine": 46,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "utils.MethodJudge",
+            "type": "Method",
+            "name": "isNotEnclosing",
+            "filePath": "Client/src/main/java/utils/MethodJudge.java",
+            "startLine": 74,
+            "endLine": 80,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "utils.MethodJudge",
+            "type": "Method",
+            "name": "isEnclosing",
+            "filePath": "Client/src/main/java/utils/MethodJudge.java",
+            "startLine": 77,
+            "endLine": 83,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "utils.MethodJudge",
+            "type": "Method",
+            "name": "getPositionTarget",
+            "filePath": "Client/src/main/java/utils/MethodJudge.java",
+            "startLine": 82,
+            "endLine": 84,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "utils.MethodJudge",
+            "type": "Method",
+            "name": "getPossibleTarget",
+            "filePath": "Client/src/main/java/utils/MethodJudge.java",
+            "startLine": 127,
+            "endLine": 129,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "***.git",
+      "sha1": "1ff0071ef06910ce3cbb13798c486c80739e8284",
+      "url": "***/commit/1ff0071ef06910ce3cbb13798c486c80739e8284",
+      "commonMatching": [
+        {
+          "leftSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Class",
+            "name": "FeatureEnvyCandidate",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 11,
+            "endLine": 137,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Class",
+            "name": "FeatureEnvyCandidate",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 11,
+            "endLine": 136,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "candidate.GodClassCandidate",
+            "type": "Method",
+            "name": "GodClassCandidate",
+            "filePath": "Client/src/main/java/candidate/GodClassCandidate.java",
+            "startLine": 16,
+            "endLine": 47,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "candidate.GodClassCandidate",
+            "type": "Method",
+            "name": "GodClassCandidate",
+            "filePath": "Client/src/main/java/candidate/GodClassCandidate.java",
+            "startLine": 17,
+            "endLine": 48,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "candidate.GodClassCandidate",
+            "type": "Class",
+            "name": "GodClassCandidate",
+            "filePath": "Client/src/main/java/candidate/GodClassCandidate.java",
+            "startLine": 9,
+            "endLine": 58,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "candidate.GodClassCandidate",
+            "type": "Class",
+            "name": "GodClassCandidate",
+            "filePath": "Client/src/main/java/candidate/GodClassCandidate.java",
+            "startLine": 10,
+            "endLine": 80,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "candidate.SmellCandidate",
+            "type": "Method",
+            "name": "SmellCandidate",
+            "filePath": "Client/src/main/java/candidate/SmellCandidate.java",
+            "startLine": 13,
+            "endLine": 16,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "candidate.SmellCandidate",
+            "type": "Method",
+            "name": "SmellCandidate",
+            "filePath": "Client/src/main/java/candidate/SmellCandidate.java",
+            "startLine": 14,
+            "endLine": 18,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "candidate.SmellCandidate",
+            "type": "Class",
+            "name": "SmellCandidate",
+            "filePath": "Client/src/main/java/candidate/SmellCandidate.java",
+            "startLine": 9,
+            "endLine": 34,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "candidate.SmellCandidate",
+            "type": "Class",
+            "name": "SmellCandidate",
+            "filePath": "Client/src/main/java/candidate/SmellCandidate.java",
+            "startLine": 9,
+            "endLine": 45,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "detector.GodClassDetector",
+            "type": "Method",
+            "name": "GodClassDetector",
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 20,
+            "endLine": 22,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "detector.GodClassDetector",
+            "type": "Method",
+            "name": "GodClassDetector",
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 23,
+            "endLine": 24,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "detector.GodClassDetector",
+            "type": "Method",
+            "name": "detect",
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 24,
+            "endLine": 57,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "detector.GodClassDetector",
+            "type": "Method",
+            "name": "detect",
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 26,
+            "endLine": 61,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "detector.GodClassDetector",
+            "type": "Class",
+            "name": "GodClassDetector",
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 14,
+            "endLine": 130,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "detector.GodClassDetector",
+            "type": "Class",
+            "name": "GodClassDetector",
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 17,
+            "endLine": 169,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "detector.GodClassRefactorSolution",
+            "type": "Method",
+            "name": "calculateRefactorSolution",
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 152,
+            "endLine": 191,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "detector.GodClassRefactorSolution",
+            "type": "Method",
+            "name": "calculateRefactorSolution",
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 191,
+            "endLine": 233,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "detector.GodClassRefactorSolution",
+            "type": "Class",
+            "name": "GodClassRefactorSolution",
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 132,
+            "endLine": 468,
+            "startColumn": 0,
+            "endColumn": 0
+          },
+          "rightSideLocation": {
+            "container": "detector.GodClassRefactorSolution",
+            "type": "Class",
+            "name": "GodClassRefactorSolution",
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 171,
+            "endLine": 541,
+            "startColumn": 0,
+            "endColumn": 0
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "parser.FeatureEnvyParser",
+            "type": "Method",
+            "name": "parse",
+            "filePath": "Client/src/main/java/parser/FeatureEnvyParser.java",
+            "startLine": 25,
+            "endLine": 43,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "parser.FeatureEnvyParser",
+            "type": "Method",
+            "name": "parse",
+            "filePath": "Client/src/main/java/parser/FeatureEnvyParser.java",
+            "startLine": 25,
+            "endLine": 43,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "parser.FeatureEnvyParser",
+            "type": "Class",
+            "name": "FeatureEnvyParser",
+            "filePath": "Client/src/main/java/parser/FeatureEnvyParser.java",
+            "startLine": 16,
+            "endLine": 49,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "parser.FeatureEnvyParser",
+            "type": "Class",
+            "name": "FeatureEnvyParser",
+            "filePath": "Client/src/main/java/parser/FeatureEnvyParser.java",
+            "startLine": 16,
+            "endLine": 49,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "parser.GodClassParser",
+            "type": "Method",
+            "name": "parse",
+            "filePath": "Client/src/main/java/parser/GodClassParser.java",
+            "startLine": 24,
+            "endLine": 38,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "parser.GodClassParser",
+            "type": "Method",
+            "name": "parse",
+            "filePath": "Client/src/main/java/parser/GodClassParser.java",
+            "startLine": 24,
+            "endLine": 43,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "parser.GodClassParser",
+            "type": "Class",
+            "name": "GodClassParser",
+            "filePath": "Client/src/main/java/parser/GodClassParser.java",
+            "startLine": 15,
+            "endLine": 44,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "parser.GodClassParser",
+            "type": "Class",
+            "name": "GodClassParser",
+            "filePath": "Client/src/main/java/parser/GodClassParser.java",
+            "startLine": 15,
+            "endLine": 49,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "parser.ProjectsParser",
+            "type": "Method",
+            "name": "parseSourceEntries",
+            "filePath": "Client/src/main/java/parser/ProjectsParser.java",
+            "startLine": 69,
+            "endLine": 92,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "parser.ProjectsParser",
+            "type": "Method",
+            "name": "parseSourceEntries",
+            "filePath": "Client/src/main/java/parser/ProjectsParser.java",
+            "startLine": 62,
+            "endLine": 85,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "parser.ProjectsParser",
+            "type": "Class",
+            "name": "ProjectsParser",
+            "filePath": "Client/src/main/java/parser/ProjectsParser.java",
+            "startLine": 20,
+            "endLine": 142,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "parser.ProjectsParser",
+            "type": "Class",
+            "name": "ProjectsParser",
+            "filePath": "Client/src/main/java/parser/ProjectsParser.java",
+            "startLine": 20,
+            "endLine": 135,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "utils.Utils",
+            "type": "Class",
+            "name": "Utils",
+            "filePath": "Client/src/main/java/utils/Utils.java",
+            "startLine": 16,
+            "endLine": 221,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "utils.Utils",
+            "type": "Class",
+            "name": "Utils",
+            "filePath": "Client/src/main/java/utils/Utils.java",
+            "startLine": 14,
+            "endLine": 225,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "detect.GodClassDetectorTest",
+            "type": "Method",
+            "name": "main",
+            "filePath": "Client/src/test/java/detect/GodClassDetectorTest.java",
+            "startLine": 9,
+            "endLine": 107,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "detect.GodClassDetectorTest",
+            "type": "Method",
+            "name": "main",
+            "filePath": "Client/src/test/java/detect/GodClassDetectorTest.java",
+            "startLine": 13,
+            "endLine": 62,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "detect.GodClassDetectorTest",
+            "type": "Class",
+            "name": "GodClassDetectorTest",
+            "filePath": "Client/src/test/java/detect/GodClassDetectorTest.java",
+            "startLine": 8,
+            "endLine": 108,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "container": "detect.GodClassDetectorTest",
+            "type": "Class",
+            "name": "GodClassDetectorTest",
+            "filePath": "Client/src/test/java/detect/GodClassDetectorTest.java",
+            "startLine": 12,
+            "endLine": 63,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "detector.GodClassRefactorSolution",
+            "type": "Field",
+            "name": "candidate",
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 142,
+            "endLine": 142,
+            "startColumn": 31,
+            "endColumn": 40
+          },
+          "rightSideLocation": {
+            "container": "detector.GodClassRefactorSolution",
+            "type": "Field",
+            "name": "candidate",
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 181,
+            "endLine": 181,
+            "startColumn": 24,
+            "endColumn": 33
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "candidate.GodClassCandidate",
+            "type": "Field",
+            "name": "valid",
+            "filePath": "Client/src/main/java/candidate/GodClassCandidate.java",
+            "startLine": 13,
+            "endLine": 13,
+            "startColumn": 21,
+            "endColumn": 26
+          },
+          "rightSideLocation": {
+            "container": "candidate.SmellCandidate",
+            "type": "Field",
+            "name": "valid",
+            "filePath": "Client/src/main/java/candidate/SmellCandidate.java",
+            "startLine": 12,
+            "endLine": 12,
+            "startColumn": 23,
+            "endColumn": 28
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "parser.ProjectsParser",
+            "type": "Method",
+            "name": "getCodeFromFile",
+            "filePath": "Client/src/main/java/parser/ProjectsParser.java",
+            "startLine": 61,
+            "endLine": 67,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "utils.Utils",
+            "type": "Method",
+            "name": "getCodeFromFile",
+            "filePath": "Client/src/main/java/utils/Utils.java",
+            "startLine": 105,
+            "endLine": 111,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "detector.GodClassRefactorSolution",
+            "type": "Method",
+            "name": "GodClassRefactorSolution",
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 147,
+            "endLine": 150,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "detector.GodClassRefactorSolution",
+            "type": "Method",
+            "name": "GodClassRefactorSolution",
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 186,
+            "endLine": 189,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        },
+        {
+          "leftSideLocation": {
+            "container": "detector.GodClassDetector",
+            "type": "Method",
+            "name": "calculateFixSolution",
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 59,
+            "endLine": 102,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "rightSideLocation": {
+            "container": "detector.GodClassDetector",
+            "type": "Method",
+            "name": "calculateFixSolution",
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 63,
+            "endLine": 113,
+            "startColumn": 5,
+            "endColumn": 6
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "ourApproach": [
+        {
+          "leftSideLocation": {
+            "container": "detector.GodClassDetector",
+            "type": "Field",
+            "name": "GodClass",
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 18,
+            "endLine": 18,
+            "startColumn": 42,
+            "endColumn": 50
+          },
+          "rightSideLocation": {
+            "container": "detector.GodClassDetector",
+            "type": "Field",
+            "name": "GodClassList",
+            "filePath": "Client/src/main/java/detector/GodClassDetector.java",
+            "startLine": 21,
+            "endLine": 21,
+            "startColumn": 42,
+            "endColumn": 54
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "leftSideLocation": {
+            "container": "candidate.FeatureEnvyCandidate",
+            "type": "Field",
+            "name": "valid",
+            "filePath": "Client/src/main/java/candidate/FeatureEnvyCandidate.java",
+            "startLine": 18,
+            "endLine": 18,
+            "startColumn": 21,
+            "endColumn": 26
+          },
+          "rightSideLocation": {
+            "container": "candidate.SmellCandidate",
+            "type": "Field",
+            "name": "valid",
+            "filePath": "Client/src/main/java/candidate/SmellCandidate.java",
+            "startLine": 12,
+            "endLine": 12,
+            "startColumn": 23,
+            "endColumn": 28
+          },
+          "developerConfirmation": true
+        }
+      ]
+    }
+  ]
+}

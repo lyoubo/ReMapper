@@ -1,0 +1,3242 @@
+{
+  "results": [
+    {
+      "repository": "https://github.com/spring-projects/spring-framework.git",
+      "sha1": "7584dfc79aab36828f1375925a4f058d54fe317f",
+      "url": "https://github.com/spring-projects/spring-framework/commit/7584dfc79aab36828f1375925a4f058d54fe317f",
+      "ourApproach": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	mappedFields : Map<String,PropertyDescriptor> to mappedProperties : Map<String,PropertyDescriptor> in class org.springframework.jdbc.core.BeanPropertyRowMapper",
+          "leftSideLocation": {
+            "filePath": "spring-jdbc/src/main/java/org/springframework/jdbc/core/BeanPropertyRowMapper.java",
+            "startLine": 112,
+            "endLine": 112,
+            "startColumn": 42,
+            "endColumn": 54
+          },
+          "rightSideLocation": {
+            "filePath": "spring-jdbc/src/main/java/org/springframework/jdbc/core/BeanPropertyRowMapper.java",
+            "startLine": 112,
+            "endLine": 112,
+            "startColumn": 42,
+            "endColumn": 58
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	mappedProperties : Set<String> to mappedPropertyNames : Set<String> in class org.springframework.jdbc.core.BeanPropertyRowMapper",
+          "leftSideLocation": {
+            "filePath": "spring-jdbc/src/main/java/org/springframework/jdbc/core/BeanPropertyRowMapper.java",
+            "startLine": 116,
+            "endLine": 116,
+            "startColumn": 22,
+            "endColumn": 38
+          },
+          "rightSideLocation": {
+            "filePath": "spring-jdbc/src/main/java/org/springframework/jdbc/core/BeanPropertyRowMapper.java",
+            "startLine": 116,
+            "endLine": 116,
+            "startColumn": 22,
+            "endColumn": 41
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	mappedProperties : Set<String> to mappedProperties : Map<String,PropertyDescriptor> in class org.springframework.jdbc.core.BeanPropertyRowMapper",
+          "leftSideLocation": {
+            "filePath": "spring-jdbc/src/main/java/org/springframework/jdbc/core/BeanPropertyRowMapper.java",
+            "startLine": 116,
+            "endLine": 116,
+            "startColumn": 22,
+            "endColumn": 38
+          },
+          "rightSideLocation": {
+            "filePath": "spring-jdbc/src/main/java/org/springframework/jdbc/core/BeanPropertyRowMapper.java",
+            "startLine": 112,
+            "endLine": 112,
+            "startColumn": 42,
+            "endColumn": 58
+          },
+          "developerConfirmation": false
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	mappedFields : Map<String,PropertyDescriptor> to mappedProperties : Map<String,PropertyDescriptor> in class org.springframework.jdbc.core.BeanPropertyRowMapper",
+          "leftSideLocation": {
+            "filePath": "spring-jdbc/src/main/java/org/springframework/jdbc/core/BeanPropertyRowMapper.java",
+            "startLine": 112,
+            "endLine": 112,
+            "startColumn": 42,
+            "endColumn": 54
+          },
+          "rightSideLocation": {
+            "filePath": "spring-jdbc/src/main/java/org/springframework/jdbc/core/BeanPropertyRowMapper.java",
+            "startLine": 112,
+            "endLine": 112,
+            "startColumn": 42,
+            "endColumn": 58
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	mappedProperties : Set<String> to mappedPropertyNames : Set<String> in class org.springframework.jdbc.core.BeanPropertyRowMapper",
+          "leftSideLocation": {
+            "filePath": "spring-jdbc/src/main/java/org/springframework/jdbc/core/BeanPropertyRowMapper.java",
+            "startLine": 116,
+            "endLine": 116,
+            "startColumn": 22,
+            "endColumn": 38
+          },
+          "rightSideLocation": {
+            "filePath": "spring-jdbc/src/main/java/org/springframework/jdbc/core/BeanPropertyRowMapper.java",
+            "startLine": 116,
+            "endLine": 116,
+            "startColumn": 22,
+            "endColumn": 41
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-framework.git",
+      "sha1": "84bc1dfa89e979232c4a36e9d75bb50b1d48453e",
+      "url": "https://github.com/spring-projects/spring-framework/commit/84bc1dfa89e979232c4a36e9d75bb50b1d48453e",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testStaticQueryWithDataClass() : void renamed to package staticQueryWithDataClass() : void in class org.springframework.jdbc.core.DataClassRowMapperTests",
+          "leftSideLocation": {
+            "filePath": "spring-jdbc/src/test/java/org/springframework/jdbc/core/DataClassRowMapperTests.java",
+            "startLine": 38,
+            "endLine": 48,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-jdbc/src/test/java/org/springframework/jdbc/core/DataClassRowMapperTests.java",
+            "startLine": 38,
+            "endLine": 48,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testStaticQueryWithDataRecord() : void renamed to package staticQueryWithDataRecord() : void in class org.springframework.jdbc.core.DataClassRowMapperTests",
+          "leftSideLocation": {
+            "filePath": "spring-jdbc/src/test/java/org/springframework/jdbc/core/DataClassRowMapperTests.java",
+            "startLine": 82,
+            "endLine": 92,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-jdbc/src/test/java/org/springframework/jdbc/core/DataClassRowMapperTests.java",
+            "startLine": 82,
+            "endLine": 92,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testStaticQueryWithDataClassAndGenerics() : void renamed to package staticQueryWithDataClassAndGenerics() : void in class org.springframework.jdbc.core.DataClassRowMapperTests",
+          "leftSideLocation": {
+            "filePath": "spring-jdbc/src/test/java/org/springframework/jdbc/core/DataClassRowMapperTests.java",
+            "startLine": 50,
+            "endLine": 64,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-jdbc/src/test/java/org/springframework/jdbc/core/DataClassRowMapperTests.java",
+            "startLine": 50,
+            "endLine": 64,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testStaticQueryWithDataClassAndSetters() : void renamed to package staticQueryWithDataClassAndSetters() : void in class org.springframework.jdbc.core.DataClassRowMapperTests",
+          "leftSideLocation": {
+            "filePath": "spring-jdbc/src/test/java/org/springframework/jdbc/core/DataClassRowMapperTests.java",
+            "startLine": 66,
+            "endLine": 80,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-jdbc/src/test/java/org/springframework/jdbc/core/DataClassRowMapperTests.java",
+            "startLine": 66,
+            "endLine": 80,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testStaticQueryWithDataClass() : void renamed to package staticQueryWithDataClass() : void in class org.springframework.jdbc.core.DataClassRowMapperTests",
+          "leftSideLocation": {
+            "filePath": "spring-jdbc/src/test/java/org/springframework/jdbc/core/DataClassRowMapperTests.java",
+            "startLine": 38,
+            "endLine": 48,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-jdbc/src/test/java/org/springframework/jdbc/core/DataClassRowMapperTests.java",
+            "startLine": 38,
+            "endLine": 48,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testStaticQueryWithDataClassAndGenerics() : void renamed to package staticQueryWithDataClassAndGenerics() : void in class org.springframework.jdbc.core.DataClassRowMapperTests",
+          "leftSideLocation": {
+            "filePath": "spring-jdbc/src/test/java/org/springframework/jdbc/core/DataClassRowMapperTests.java",
+            "startLine": 50,
+            "endLine": 64,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-jdbc/src/test/java/org/springframework/jdbc/core/DataClassRowMapperTests.java",
+            "startLine": 50,
+            "endLine": 64,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testStaticQueryWithDataClassAndSetters() : void renamed to package staticQueryWithDataClassAndSetters() : void in class org.springframework.jdbc.core.DataClassRowMapperTests",
+          "leftSideLocation": {
+            "filePath": "spring-jdbc/src/test/java/org/springframework/jdbc/core/DataClassRowMapperTests.java",
+            "startLine": 66,
+            "endLine": 80,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-jdbc/src/test/java/org/springframework/jdbc/core/DataClassRowMapperTests.java",
+            "startLine": 66,
+            "endLine": 80,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testStaticQueryWithDataRecord() : void renamed to package staticQueryWithDataRecord() : void in class org.springframework.jdbc.core.DataClassRowMapperTests",
+          "leftSideLocation": {
+            "filePath": "spring-jdbc/src/test/java/org/springframework/jdbc/core/DataClassRowMapperTests.java",
+            "startLine": 82,
+            "endLine": 92,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-jdbc/src/test/java/org/springframework/jdbc/core/DataClassRowMapperTests.java",
+            "startLine": 82,
+            "endLine": 92,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-framework.git",
+      "sha1": "2f20d6322b7a0fcbbaa80280849e7c31fc78d4a9",
+      "url": "https://github.com/spring-projects/spring-framework/commit/2f20d6322b7a0fcbbaa80280849e7c31fc78d4a9",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.springframework.context.aot.ApplicationContextAotGeneratorTests.ConfigurationClassCglibProxy from Class org.springframework.context.aot.ApplicationContextAotGeneratorTests",
+          "leftSideLocation": {
+            "filePath": "spring-context/src/test/java/org/springframework/context/aot/ApplicationContextAotGeneratorTests.java",
+            "startLine": 72,
+            "endLine": 356,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "spring-context/src/test/java/org/springframework/context/aot/ApplicationContextAotGeneratorTests.java",
+            "startLine": 291,
+            "endLine": 331,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private createFreshApplicationContext(initializer ApplicationContextInitializer<GenericApplicationContext>) : GenericApplicationContext extracted from private toFreshApplicationContext(initializer ApplicationContextInitializer<GenericApplicationContext>) : GenericApplicationContext in class org.springframework.context.aot.ApplicationContextAotGeneratorTests",
+          "leftSideLocation": {
+            "filePath": "spring-context/src/test/java/org/springframework/context/aot/ApplicationContextAotGeneratorTests.java",
+            "startLine": 322,
+            "endLine": 328,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-context/src/test/java/org/springframework/context/aot/ApplicationContextAotGeneratorTests.java",
+            "startLine": 365,
+            "endLine": 370,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	protected getPrefix() : String extracted from public prefix() : String in class org.springframework.context.testfixture.context.generator.annotation.CglibConfiguration",
+          "leftSideLocation": {
+            "filePath": "spring-context/src/testFixtures/java/org/springframework/context/testfixture/context/generator/annotation/CglibConfiguration.java",
+            "startLine": 29,
+            "endLine": 32,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-context/src/testFixtures/java/org/springframework/context/testfixture/context/generator/annotation/CglibConfiguration.java",
+            "startLine": 39,
+            "endLine": 41,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private createFreshApplicationContext(initializer ApplicationContextInitializer<GenericApplicationContext>) : GenericApplicationContext extracted from private toFreshApplicationContext(initializer ApplicationContextInitializer<GenericApplicationContext>) : GenericApplicationContext in class org.springframework.context.aot.ApplicationContextAotGeneratorTests",
+          "leftSideLocation": {
+            "filePath": "spring-context/src/test/java/org/springframework/context/aot/ApplicationContextAotGeneratorTests.java",
+            "startLine": 322,
+            "endLine": 328,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-context/src/test/java/org/springframework/context/aot/ApplicationContextAotGeneratorTests.java",
+            "startLine": 365,
+            "endLine": 370,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	protected getPrefix() : String extracted from public prefix() : String in class org.springframework.context.testfixture.context.generator.annotation.CglibConfiguration",
+          "leftSideLocation": {
+            "filePath": "spring-context/src/testFixtures/java/org/springframework/context/testfixture/context/generator/annotation/CglibConfiguration.java",
+            "startLine": 29,
+            "endLine": 32,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-context/src/testFixtures/java/org/springframework/context/testfixture/context/generator/annotation/CglibConfiguration.java",
+            "startLine": 39,
+            "endLine": 41,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.springframework.context.aot.ApplicationContextAotGeneratorTests.ConfigurationClassCglibProxy from class org.springframework.context.aot.ApplicationContextAotGeneratorTests",
+          "leftSideLocation": {
+            "filePath": "spring-context/src/test/java/org/springframework/context/aot/ApplicationContextAotGeneratorTests.java",
+            "startLine": 72,
+            "endLine": 356,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "spring-context/src/test/java/org/springframework/context/aot/ApplicationContextAotGeneratorTests.java",
+            "startLine": 291,
+            "endLine": 331,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-framework.git",
+      "sha1": "58fbf60d2d5d28d96c351eb539a52bceffac270a",
+      "url": "https://github.com/spring-projects/spring-framework/commit/58fbf60d2d5d28d96c351eb539a52bceffac270a",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private decodeFilename(filename String, charset Charset) : String renamed to private decodeRfc5987Filename(filename String, charset Charset) : String in class org.springframework.http.ContentDisposition",
+          "leftSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/ContentDisposition.java",
+            "startLine": 486,
+            "endLine": 522,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/ContentDisposition.java",
+            "startLine": 488,
+            "endLine": 524,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private encodeFilename(input String, charset Charset) : String renamed to private encodeRfc5987Filename(input String, charset Charset) : String in class org.springframework.http.ContentDisposition",
+          "leftSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/ContentDisposition.java",
+            "startLine": 598,
+            "endLine": 630,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/ContentDisposition.java",
+            "startLine": 636,
+            "endLine": 667,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private hexDigit(b int) : char extracted from private encodeFilename(input String, charset Charset) : String in class org.springframework.http.ContentDisposition",
+          "leftSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/ContentDisposition.java",
+            "startLine": 598,
+            "endLine": 630,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/ContentDisposition.java",
+            "startLine": 669,
+            "endLine": 671,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private decodeFilename(filename String, charset Charset) : String renamed to private decodeRfc5987Filename(filename String, charset Charset) : String in class org.springframework.http.ContentDisposition",
+          "leftSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/ContentDisposition.java",
+            "startLine": 486,
+            "endLine": 522,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/ContentDisposition.java",
+            "startLine": 488,
+            "endLine": 524,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-framework.git",
+      "sha1": "8df4f927fd5d584ae1c9306cb2cd47c2e5bf6d2c",
+      "url": "https://github.com/spring-projects/spring-framework/commit/8df4f927fd5d584ae1c9306cb2cd47c2e5bf6d2c",
+      "ourApproach": [],
+      "baseline": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.springframework.beans.factory.xml.ResourceEntityResolverTests.FallingBackEntityResolver renamed to org.springframework.beans.factory.xml.ResourceEntityResolverTests.ConfigurableFallbackEntityResolver",
+          "leftSideLocation": {
+            "filePath": "spring-beans/src/test/java/org/springframework/beans/factory/xml/ResourceEntityResolverTests.java",
+            "startLine": 112,
+            "endLine": 130,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-beans/src/test/java/org/springframework/beans/factory/xml/ResourceEntityResolverTests.java",
+            "startLine": 92,
+            "endLine": 124,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-framework.git",
+      "sha1": "0b08246760fc5aee5eb4d5fc25ce3a512d6bab16",
+      "url": "https://github.com/spring-projects/spring-framework/commit/0b08246760fc5aee5eb4d5fc25ce3a512d6bab16",
+      "ourApproach": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.springframework.core.annotation.RepeatableContainersTests.WithExplicitRepeatables renamed to org.springframework.core.annotation.RepeatableContainersTests.ExplicitRepeatablesTestCase",
+          "leftSideLocation": {
+            "filePath": "spring-core/src/test/java/org/springframework/core/annotation/RepeatableContainersTests.java",
+            "startLine": 268,
+            "endLine": 270,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-core/src/test/java/org/springframework/core/annotation/RepeatableContainersTests.java",
+            "startLine": 250,
+            "endLine": 252,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.springframework.core.annotation.RepeatableContainersTests.WithNonRepeatable renamed to org.springframework.core.annotation.RepeatableContainersTests.NonRepeatableTestCase",
+          "leftSideLocation": {
+            "filePath": "spring-core/src/test/java/org/springframework/core/annotation/RepeatableContainersTests.java",
+            "startLine": 255,
+            "endLine": 257,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-core/src/test/java/org/springframework/core/annotation/RepeatableContainersTests.java",
+            "startLine": 237,
+            "endLine": 239,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.springframework.core.annotation.RepeatableContainersTests.WithStandardRepeatables renamed to org.springframework.core.annotation.RepeatableContainersTests.StandardRepeatablesTestCase",
+          "leftSideLocation": {
+            "filePath": "spring-core/src/test/java/org/springframework/core/annotation/RepeatableContainersTests.java",
+            "startLine": 263,
+            "endLine": 266,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-core/src/test/java/org/springframework/core/annotation/RepeatableContainersTests.java",
+            "startLine": 245,
+            "endLine": 248,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.springframework.core.annotation.RepeatableContainersTests.WithSingleStandardRepeatable renamed to org.springframework.core.annotation.RepeatableContainersTests.SingleStandardRepeatableTestCase",
+          "leftSideLocation": {
+            "filePath": "spring-core/src/test/java/org/springframework/core/annotation/RepeatableContainersTests.java",
+            "startLine": 259,
+            "endLine": 261,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-core/src/test/java/org/springframework/core/annotation/RepeatableContainersTests.java",
+            "startLine": 241,
+            "endLine": 243,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.springframework.core.annotation.RepeatableContainersTests.StandardRepeatableContainersTests from Class org.springframework.core.annotation.RepeatableContainersTests",
+          "leftSideLocation": {
+            "filePath": "spring-core/src/test/java/org/springframework/core/annotation/RepeatableContainersTests.java",
+            "startLine": 30,
+            "endLine": 272,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "spring-core/src/test/java/org/springframework/core/annotation/RepeatableContainersTests.java",
+            "startLine": 40,
+            "endLine": 70,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.springframework.core.annotation.RepeatableContainersTests.ExplicitRepeatableContainerTests from Class org.springframework.core.annotation.RepeatableContainersTests",
+          "leftSideLocation": {
+            "filePath": "spring-core/src/test/java/org/springframework/core/annotation/RepeatableContainersTests.java",
+            "startLine": 30,
+            "endLine": 272,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "spring-core/src/test/java/org/springframework/core/annotation/RepeatableContainersTests.java",
+            "startLine": 72,
+            "endLine": 145,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.springframework.core.annotation.RepeatableContainersTests.StandardRepeatableContainersTests from class org.springframework.core.annotation.RepeatableContainersTests",
+          "leftSideLocation": {
+            "filePath": "spring-core/src/test/java/org/springframework/core/annotation/RepeatableContainersTests.java",
+            "startLine": 30,
+            "endLine": 272,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "spring-core/src/test/java/org/springframework/core/annotation/RepeatableContainersTests.java",
+            "startLine": 40,
+            "endLine": 70,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.springframework.core.annotation.RepeatableContainersTests.ExplicitRepeatableContainerTests from class org.springframework.core.annotation.RepeatableContainersTests",
+          "leftSideLocation": {
+            "filePath": "spring-core/src/test/java/org/springframework/core/annotation/RepeatableContainersTests.java",
+            "startLine": 30,
+            "endLine": 272,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "spring-core/src/test/java/org/springframework/core/annotation/RepeatableContainersTests.java",
+            "startLine": 72,
+            "endLine": 145,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-framework.git",
+      "sha1": "4c69892f39989ab26579e987d4c96ce01a0bea62",
+      "url": "https://github.com/spring-projects/spring-framework/commit/4c69892f39989ab26579e987d4c96ce01a0bea62",
+      "ourApproach": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	CONCURRENCY_FAILURE_CODES : Set<String> to PESSIMISTIC_LOCKING_FAILURE_CODES : Set<String> in class org.springframework.jdbc.support.SQLStateSQLExceptionTranslator",
+          "leftSideLocation": {
+            "filePath": "spring-jdbc/src/main/java/org/springframework/jdbc/support/SQLStateSQLExceptionTranslator.java",
+            "startLine": 80,
+            "endLine": 83,
+            "startColumn": 35,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "spring-jdbc/src/main/java/org/springframework/jdbc/support/SQLStateSQLExceptionTranslator.java",
+            "startLine": 82,
+            "endLine": 85,
+            "startColumn": 35,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testTranslateNullException() : void renamed to public translateNullException() : void in class org.springframework.jdbc.support.SQLStateSQLExceptionTranslatorTests",
+          "leftSideLocation": {
+            "filePath": "spring-jdbc/src/test/java/org/springframework/jdbc/support/SQLStateSQLExceptionTranslatorTests.java",
+            "startLine": 47,
+            "endLine": 51,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-jdbc/src/test/java/org/springframework/jdbc/support/SQLStateSQLExceptionTranslatorTests.java",
+            "startLine": 43,
+            "endLine": 47,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testTranslateBadSqlGrammar() : void renamed to public translateBadSqlGrammar() : void in class org.springframework.jdbc.support.SQLStateSQLExceptionTranslatorTests",
+          "leftSideLocation": {
+            "filePath": "spring-jdbc/src/test/java/org/springframework/jdbc/support/SQLStateSQLExceptionTranslatorTests.java",
+            "startLine": 53,
+            "endLine": 56,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-jdbc/src/test/java/org/springframework/jdbc/support/SQLStateSQLExceptionTranslatorTests.java",
+            "startLine": 49,
+            "endLine": 52,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testTranslateDataIntegrityViolation() : void renamed to public translateDataIntegrityViolation() : void in class org.springframework.jdbc.support.SQLStateSQLExceptionTranslatorTests",
+          "leftSideLocation": {
+            "filePath": "spring-jdbc/src/test/java/org/springframework/jdbc/support/SQLStateSQLExceptionTranslatorTests.java",
+            "startLine": 58,
+            "endLine": 61,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-jdbc/src/test/java/org/springframework/jdbc/support/SQLStateSQLExceptionTranslatorTests.java",
+            "startLine": 54,
+            "endLine": 57,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testTranslateDataAccessResourceFailure() : void renamed to public translateDataAccessResourceFailure() : void in class org.springframework.jdbc.support.SQLStateSQLExceptionTranslatorTests",
+          "leftSideLocation": {
+            "filePath": "spring-jdbc/src/test/java/org/springframework/jdbc/support/SQLStateSQLExceptionTranslatorTests.java",
+            "startLine": 63,
+            "endLine": 66,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-jdbc/src/test/java/org/springframework/jdbc/support/SQLStateSQLExceptionTranslatorTests.java",
+            "startLine": 64,
+            "endLine": 67,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testTranslateTransientDataAccessResourceFailure() : void renamed to public translateTransientDataAccessResourceFailure() : void in class org.springframework.jdbc.support.SQLStateSQLExceptionTranslatorTests",
+          "leftSideLocation": {
+            "filePath": "spring-jdbc/src/test/java/org/springframework/jdbc/support/SQLStateSQLExceptionTranslatorTests.java",
+            "startLine": 68,
+            "endLine": 71,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-jdbc/src/test/java/org/springframework/jdbc/support/SQLStateSQLExceptionTranslatorTests.java",
+            "startLine": 69,
+            "endLine": 72,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	CONCURRENCY_FAILURE_CODES : Set<String> to PESSIMISTIC_LOCKING_FAILURE_CODES : Set<String> in class org.springframework.jdbc.support.SQLStateSQLExceptionTranslator",
+          "leftSideLocation": {
+            "filePath": "spring-jdbc/src/main/java/org/springframework/jdbc/support/SQLStateSQLExceptionTranslator.java",
+            "startLine": 80,
+            "endLine": 83,
+            "startColumn": 35,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "spring-jdbc/src/main/java/org/springframework/jdbc/support/SQLStateSQLExceptionTranslator.java",
+            "startLine": 82,
+            "endLine": 85,
+            "startColumn": 35,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testTranslateNullException() : void renamed to public translateNullException() : void in class org.springframework.jdbc.support.SQLStateSQLExceptionTranslatorTests",
+          "leftSideLocation": {
+            "filePath": "spring-jdbc/src/test/java/org/springframework/jdbc/support/SQLStateSQLExceptionTranslatorTests.java",
+            "startLine": 47,
+            "endLine": 51,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-jdbc/src/test/java/org/springframework/jdbc/support/SQLStateSQLExceptionTranslatorTests.java",
+            "startLine": 43,
+            "endLine": 47,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testTranslateBadSqlGrammar() : void renamed to public translateBadSqlGrammar() : void in class org.springframework.jdbc.support.SQLStateSQLExceptionTranslatorTests",
+          "leftSideLocation": {
+            "filePath": "spring-jdbc/src/test/java/org/springframework/jdbc/support/SQLStateSQLExceptionTranslatorTests.java",
+            "startLine": 53,
+            "endLine": 56,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-jdbc/src/test/java/org/springframework/jdbc/support/SQLStateSQLExceptionTranslatorTests.java",
+            "startLine": 49,
+            "endLine": 52,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testTranslateDataIntegrityViolation() : void renamed to public translateDataIntegrityViolation() : void in class org.springframework.jdbc.support.SQLStateSQLExceptionTranslatorTests",
+          "leftSideLocation": {
+            "filePath": "spring-jdbc/src/test/java/org/springframework/jdbc/support/SQLStateSQLExceptionTranslatorTests.java",
+            "startLine": 58,
+            "endLine": 61,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-jdbc/src/test/java/org/springframework/jdbc/support/SQLStateSQLExceptionTranslatorTests.java",
+            "startLine": 54,
+            "endLine": 57,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testTranslateDataAccessResourceFailure() : void renamed to public translateDataAccessResourceFailure() : void in class org.springframework.jdbc.support.SQLStateSQLExceptionTranslatorTests",
+          "leftSideLocation": {
+            "filePath": "spring-jdbc/src/test/java/org/springframework/jdbc/support/SQLStateSQLExceptionTranslatorTests.java",
+            "startLine": 63,
+            "endLine": 66,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-jdbc/src/test/java/org/springframework/jdbc/support/SQLStateSQLExceptionTranslatorTests.java",
+            "startLine": 64,
+            "endLine": 67,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testTranslateTransientDataAccessResourceFailure() : void renamed to public translateTransientDataAccessResourceFailure() : void in class org.springframework.jdbc.support.SQLStateSQLExceptionTranslatorTests",
+          "leftSideLocation": {
+            "filePath": "spring-jdbc/src/test/java/org/springframework/jdbc/support/SQLStateSQLExceptionTranslatorTests.java",
+            "startLine": 68,
+            "endLine": 71,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-jdbc/src/test/java/org/springframework/jdbc/support/SQLStateSQLExceptionTranslatorTests.java",
+            "startLine": 69,
+            "endLine": 72,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public testTranslateConcurrencyFailure() : void renamed to public translatePessimisticLockingFailure() : void in class org.springframework.jdbc.support.SQLStateSQLExceptionTranslatorTests",
+          "leftSideLocation": {
+            "filePath": "spring-jdbc/src/test/java/org/springframework/jdbc/support/SQLStateSQLExceptionTranslatorTests.java",
+            "startLine": 73,
+            "endLine": 76,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-jdbc/src/test/java/org/springframework/jdbc/support/SQLStateSQLExceptionTranslatorTests.java",
+            "startLine": 74,
+            "endLine": 77,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-framework.git",
+      "sha1": "c79ae0c8422880586dbb52f0d18ca81f5e4ea4aa",
+      "url": "https://github.com/spring-projects/spring-framework/commit/c79ae0c8422880586dbb52f0d18ca81f5e4ea4aa",
+      "ourApproach": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	partWriters : List<HttpMessageWriter<?>> to partWritersSupplier : Supplier<List<HttpMessageWriter<?>>> in class org.springframework.http.codec.multipart.MultipartHttpMessageWriter",
+          "leftSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/codec/multipart/MultipartHttpMessageWriter.java",
+            "startLine": 82,
+            "endLine": 82,
+            "startColumn": 43,
+            "endColumn": 54
+          },
+          "rightSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/codec/multipart/MultipartHttpMessageWriter.java",
+            "startLine": 82,
+            "endLine": 82,
+            "startColumn": 53,
+            "endColumn": 72
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	partWriters : List<HttpMessageWriter<?>> to partWritersSupplier : Supplier<List<HttpMessageWriter<?>>> in class org.springframework.http.codec.multipart.MultipartHttpMessageWriter",
+          "leftSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/codec/multipart/MultipartHttpMessageWriter.java",
+            "startLine": 82,
+            "endLine": 82,
+            "startColumn": 43,
+            "endColumn": 54
+          },
+          "rightSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/codec/multipart/MultipartHttpMessageWriter.java",
+            "startLine": 82,
+            "endLine": 82,
+            "startColumn": 53,
+            "endColumn": 72
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	ClientCodecConfigurer.MultipartCodecs to CodecConfigurer.MultipartCodecs in method public encoder(encoder Encoder<?>) : CodecConfigurer.MultipartCodecs from class org.springframework.http.codec.support.BaseDefaultCodecs.DefaultMultipartCodecs",
+          "leftSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/codec/support/ClientDefaultCodecsImpl.java",
+            "startLine": 136,
+            "endLine": 141,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/codec/support/BaseDefaultCodecs.java",
+            "startLine": 851,
+            "endLine": 856,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	ClientCodecConfigurer.MultipartCodecs to CodecConfigurer.MultipartCodecs in method public writer(writer HttpMessageWriter<?>) : CodecConfigurer.MultipartCodecs from class org.springframework.http.codec.support.BaseDefaultCodecs.DefaultMultipartCodecs",
+          "leftSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/codec/support/ClientDefaultCodecsImpl.java",
+            "startLine": 143,
+            "endLine": 148,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/codec/support/BaseDefaultCodecs.java",
+            "startLine": 858,
+            "endLine": 863,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.springframework.http.codec.ClientCodecConfigurer.MultipartCodecs moved to org.springframework.http.codec.CodecConfigurer.MultipartCodecs",
+          "leftSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/codec/ClientCodecConfigurer.java",
+            "startLine": 106,
+            "endLine": 125,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/codec/CodecConfigurer.java",
+            "startLine": 411,
+            "endLine": 431,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.springframework.http.codec.support.ClientDefaultCodecsImpl.DefaultMultipartCodecs moved to org.springframework.http.codec.support.BaseDefaultCodecs.DefaultMultipartCodecs",
+          "leftSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/codec/support/ClientDefaultCodecsImpl.java",
+            "startLine": 120,
+            "endLine": 153,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/codec/support/BaseDefaultCodecs.java",
+            "startLine": 835,
+            "endLine": 868,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.springframework.http.codec.ClientCodecConfigurer.MultipartCodecs moved to org.springframework.http.codec.CodecConfigurer.MultipartCodecs",
+          "leftSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/codec/ClientCodecConfigurer.java",
+            "startLine": 106,
+            "endLine": 125,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/codec/CodecConfigurer.java",
+            "startLine": 411,
+            "endLine": 431,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.springframework.http.codec.support.ClientDefaultCodecsImpl.DefaultMultipartCodecs moved to org.springframework.http.codec.support.BaseDefaultCodecs.DefaultMultipartCodecs",
+          "leftSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/codec/support/ClientDefaultCodecsImpl.java",
+            "startLine": 120,
+            "endLine": 153,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/codec/support/BaseDefaultCodecs.java",
+            "startLine": 835,
+            "endLine": 868,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	ClientCodecConfigurer.MultipartCodecs to CodecConfigurer.MultipartCodecs in method public encoder(encoder Encoder<?>) : CodecConfigurer.MultipartCodecs from class org.springframework.http.codec.support.BaseDefaultCodecs.DefaultMultipartCodecs",
+          "leftSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/codec/support/ClientDefaultCodecsImpl.java",
+            "startLine": 136,
+            "endLine": 141,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/codec/support/BaseDefaultCodecs.java",
+            "startLine": 851,
+            "endLine": 856,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	ClientCodecConfigurer.MultipartCodecs to CodecConfigurer.MultipartCodecs in method public writer(writer HttpMessageWriter<?>) : CodecConfigurer.MultipartCodecs from class org.springframework.http.codec.support.BaseDefaultCodecs.DefaultMultipartCodecs",
+          "leftSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/codec/support/ClientDefaultCodecsImpl.java",
+            "startLine": 143,
+            "endLine": 148,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "rightSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/codec/support/BaseDefaultCodecs.java",
+            "startLine": 858,
+            "endLine": 863,
+            "startColumn": 3,
+            "endColumn": 4
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-framework.git",
+      "sha1": "8e5eb84da1fe18c68d4cfbd92cb467b409be3731",
+      "url": "https://github.com/spring-projects/spring-framework/commit/8e5eb84da1fe18c68d4cfbd92cb467b409be3731",
+      "ourApproach": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	asClassBasedProxy : Consumer<Builder> to asClassBasedProxy : Consumer<TypeHint.Builder> in class org.springframework.aot.hint.support.ClassHintUtils",
+          "leftSideLocation": {
+            "filePath": "spring-context/src/main/java/org/springframework/context/support/GenericApplicationContext.java",
+            "startLine": 114,
+            "endLine": 117,
+            "startColumn": 41,
+            "endColumn": 37
+          },
+          "rightSideLocation": {
+            "filePath": "spring-core/src/main/java/org/springframework/aot/hint/support/ClassHintUtils.java",
+            "startLine": 43,
+            "endLine": 46,
+            "startColumn": 50,
+            "endColumn": 37
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	asProxiedUserClass : Consumer<Builder> to asProxiedUserClass : Consumer<TypeHint.Builder> in class org.springframework.aot.hint.support.ClassHintUtils",
+          "leftSideLocation": {
+            "filePath": "spring-context/src/main/java/org/springframework/context/support/GenericApplicationContext.java",
+            "startLine": 119,
+            "endLine": 120,
+            "startColumn": 41,
+            "endColumn": 58
+          },
+          "rightSideLocation": {
+            "filePath": "spring-core/src/main/java/org/springframework/aot/hint/support/ClassHintUtils.java",
+            "startLine": 48,
+            "endLine": 49,
+            "startColumn": 50,
+            "endColumn": 58
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.springframework.aot.hint.support.ClassHintUtils from Class org.springframework.context.support.GenericApplicationContext",
+          "leftSideLocation": {
+            "filePath": "spring-context/src/main/java/org/springframework/context/support/GenericApplicationContext.java",
+            "startLine": 54,
+            "endLine": 628,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "spring-core/src/main/java/org/springframework/aot/hint/support/ClassHintUtils.java",
+            "startLine": 27,
+            "endLine": 76,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.springframework.aot.hint.support.ClassHintUtils from class org.springframework.context.support.GenericApplicationContext",
+          "leftSideLocation": {
+            "filePath": "spring-context/src/main/java/org/springframework/context/support/GenericApplicationContext.java",
+            "startLine": 54,
+            "endLine": 628,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "spring-core/src/main/java/org/springframework/aot/hint/support/ClassHintUtils.java",
+            "startLine": 27,
+            "endLine": 76,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-framework.git",
+      "sha1": "fe5bd6751f461532d6817610c47254e0400d25f9",
+      "url": "https://github.com/spring-projects/spring-framework/commit/fe5bd6751f461532d6817610c47254e0400d25f9",
+      "ourApproach": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	discoverer : LocalVariableTableParameterNameDiscoverer to discoverer : ParameterNameDiscoverer in class org.springframework.core.LocalVariableTableParameterNameDiscovererTests",
+          "leftSideLocation": {
+            "filePath": "spring-core/src/test/java/org/springframework/core/LocalVariableTableParameterNameDiscovererTests.java",
+            "startLine": 37,
+            "endLine": 37,
+            "startColumn": 58,
+            "endColumn": 118
+          },
+          "rightSideLocation": {
+            "filePath": "spring-core/src/test/java/org/springframework/core/LocalVariableTableParameterNameDiscovererTests.java",
+            "startLine": 38,
+            "endLine": 38,
+            "startColumn": 40,
+            "endColumn": 100
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package setUp() : void renamed to package setup() : void in class org.springframework.core.SpringCoreBlockHoundIntegrationTests",
+          "leftSideLocation": {
+            "filePath": "spring-core/src/test/java/org/springframework/core/SpringCoreBlockHoundIntegrationTests.java",
+            "startLine": 56,
+            "endLine": 62,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-core/src/test/java/org/springframework/core/SpringCoreBlockHoundIntegrationTests.java",
+            "startLine": 53,
+            "endLine": 59,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	discoverer : LocalVariableTableParameterNameDiscoverer to discoverer : ParameterNameDiscoverer in class org.springframework.core.LocalVariableTableParameterNameDiscovererTests",
+          "leftSideLocation": {
+            "filePath": "spring-core/src/test/java/org/springframework/core/LocalVariableTableParameterNameDiscovererTests.java",
+            "startLine": 37,
+            "endLine": 37,
+            "startColumn": 58,
+            "endColumn": 118
+          },
+          "rightSideLocation": {
+            "filePath": "spring-core/src/test/java/org/springframework/core/LocalVariableTableParameterNameDiscovererTests.java",
+            "startLine": 38,
+            "endLine": 38,
+            "startColumn": 40,
+            "endColumn": 100
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package setUp() : void renamed to package setup() : void in class org.springframework.core.SpringCoreBlockHoundIntegrationTests",
+          "leftSideLocation": {
+            "filePath": "spring-core/src/test/java/org/springframework/core/SpringCoreBlockHoundIntegrationTests.java",
+            "startLine": 56,
+            "endLine": 62,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-core/src/test/java/org/springframework/core/SpringCoreBlockHoundIntegrationTests.java",
+            "startLine": 53,
+            "endLine": 59,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-framework.git",
+      "sha1": "aaeb5eb0d211ebd1946bc61ee062ec7102f49d91",
+      "url": "https://github.com/spring-projects/spring-framework/commit/aaeb5eb0d211ebd1946bc61ee062ec7102f49d91",
+      "ourApproach": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	cleanedUrl : URL to cleanedUrl : String in class org.springframework.core.io.UrlResource",
+          "leftSideLocation": {
+            "filePath": "spring-core/src/main/java/org/springframework/core/io/UrlResource.java",
+            "startLine": 63,
+            "endLine": 63,
+            "startColumn": 23,
+            "endColumn": 33
+          },
+          "rightSideLocation": {
+            "filePath": "spring-core/src/main/java/org/springframework/core/io/UrlResource.java",
+            "startLine": 64,
+            "endLine": 64,
+            "startColumn": 26,
+            "endColumn": 36
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	URL to String in method private getCleanedUrl() : String from class org.springframework.core.io.UrlResource",
+          "leftSideLocation": {
+            "filePath": "spring-core/src/main/java/org/springframework/core/io/UrlResource.java",
+            "startLine": 206,
+            "endLine": 218,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-core/src/main/java/org/springframework/core/io/UrlResource.java",
+            "startLine": 187,
+            "endLine": 199,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	public toURL(location String) : URL extracted from public getURL(resourceLocation String) : URL in class org.springframework.util.ResourceUtils",
+          "leftSideLocation": {
+            "filePath": "spring-core/src/main/java/org/springframework/util/ResourceUtils.java",
+            "startLine": 120,
+            "endLine": 156,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-core/src/main/java/org/springframework/util/ResourceUtils.java",
+            "startLine": 384,
+            "endLine": 407,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	public toURL(location String) : URL extracted from public getFile(resourceLocation String) : File in class org.springframework.util.ResourceUtils",
+          "leftSideLocation": {
+            "filePath": "spring-core/src/main/java/org/springframework/util/ResourceUtils.java",
+            "startLine": 158,
+            "endLine": 190,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-core/src/main/java/org/springframework/util/ResourceUtils.java",
+            "startLine": 384,
+            "endLine": 407,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	public toURL(location String) : URL extracted from public extractJarFileURL(jarUrl URL) : URL in class org.springframework.util.ResourceUtils",
+          "leftSideLocation": {
+            "filePath": "spring-core/src/main/java/org/springframework/util/ResourceUtils.java",
+            "startLine": 301,
+            "endLine": 328,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-core/src/main/java/org/springframework/util/ResourceUtils.java",
+            "startLine": 384,
+            "endLine": 407,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	public toURL(location String) : URL extracted from public extractArchiveURL(jarUrl URL) : URL in class org.springframework.util.ResourceUtils",
+          "leftSideLocation": {
+            "filePath": "spring-core/src/main/java/org/springframework/util/ResourceUtils.java",
+            "startLine": 330,
+            "endLine": 359,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-core/src/main/java/org/springframework/util/ResourceUtils.java",
+            "startLine": 384,
+            "endLine": 407,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	cleanedUrl : URL to cleanedUrl : String in class org.springframework.core.io.UrlResource",
+          "leftSideLocation": {
+            "filePath": "spring-core/src/main/java/org/springframework/core/io/UrlResource.java",
+            "startLine": 63,
+            "endLine": 63,
+            "startColumn": 23,
+            "endColumn": 33
+          },
+          "rightSideLocation": {
+            "filePath": "spring-core/src/main/java/org/springframework/core/io/UrlResource.java",
+            "startLine": 64,
+            "endLine": 64,
+            "startColumn": 26,
+            "endColumn": 36
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	URL to String in method private getCleanedUrl() : String from class org.springframework.core.io.UrlResource",
+          "leftSideLocation": {
+            "filePath": "spring-core/src/main/java/org/springframework/core/io/UrlResource.java",
+            "startLine": 206,
+            "endLine": 218,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-core/src/main/java/org/springframework/core/io/UrlResource.java",
+            "startLine": 187,
+            "endLine": 199,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	public toURL(location String) : URL extracted from public isUrl(resourceLocation String) : boolean in class org.springframework.util.ResourceUtils",
+          "leftSideLocation": {
+            "filePath": "spring-core/src/main/java/org/springframework/util/ResourceUtils.java",
+            "startLine": 96,
+            "endLine": 118,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-core/src/main/java/org/springframework/util/ResourceUtils.java",
+            "startLine": 384,
+            "endLine": 407,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	public toURL(location String) : URL extracted from public getURL(resourceLocation String) : URL in class org.springframework.util.ResourceUtils",
+          "leftSideLocation": {
+            "filePath": "spring-core/src/main/java/org/springframework/util/ResourceUtils.java",
+            "startLine": 120,
+            "endLine": 156,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-core/src/main/java/org/springframework/util/ResourceUtils.java",
+            "startLine": 384,
+            "endLine": 407,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	public toURL(location String) : URL extracted from public getFile(resourceLocation String) : File in class org.springframework.util.ResourceUtils",
+          "leftSideLocation": {
+            "filePath": "spring-core/src/main/java/org/springframework/util/ResourceUtils.java",
+            "startLine": 158,
+            "endLine": 190,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-core/src/main/java/org/springframework/util/ResourceUtils.java",
+            "startLine": 384,
+            "endLine": 407,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	public toURL(location String) : URL extracted from public extractJarFileURL(jarUrl URL) : URL in class org.springframework.util.ResourceUtils",
+          "leftSideLocation": {
+            "filePath": "spring-core/src/main/java/org/springframework/util/ResourceUtils.java",
+            "startLine": 301,
+            "endLine": 328,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-core/src/main/java/org/springframework/util/ResourceUtils.java",
+            "startLine": 384,
+            "endLine": 407,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	public toURL(location String) : URL extracted from public extractArchiveURL(jarUrl URL) : URL in class org.springframework.util.ResourceUtils",
+          "leftSideLocation": {
+            "filePath": "spring-core/src/main/java/org/springframework/util/ResourceUtils.java",
+            "startLine": 330,
+            "endLine": 359,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-core/src/main/java/org/springframework/util/ResourceUtils.java",
+            "startLine": 384,
+            "endLine": 407,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-framework.git",
+      "sha1": "1ad7cc3702430da40c239ad85abad4eb18532ffc",
+      "url": "https://github.com/spring-projects/spring-framework/commit/1ad7cc3702430da40c239ad85abad4eb18532ffc",
+      "ourApproach": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.springframework.http.observation.DefaultServerRequestObservationConvention moved to org.springframework.http.server.observation.DefaultServerRequestObservationConvention",
+          "leftSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/observation/DefaultServerRequestObservationConvention.java",
+            "startLine": 28,
+            "endLine": 180,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/server/observation/DefaultServerRequestObservationConvention.java",
+            "startLine": 28,
+            "endLine": 180,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.springframework.http.observation.ServerRequestObservationContext moved to org.springframework.http.server.observation.ServerRequestObservationContext",
+          "leftSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/observation/ServerRequestObservationContext.java",
+            "startLine": 25,
+            "endLine": 53,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/server/observation/ServerRequestObservationContext.java",
+            "startLine": 25,
+            "endLine": 53,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.springframework.http.observation.ServerRequestObservationConvention moved to org.springframework.http.server.observation.ServerRequestObservationConvention",
+          "leftSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/observation/ServerRequestObservationConvention.java",
+            "startLine": 22,
+            "endLine": 35,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/server/observation/ServerRequestObservationConvention.java",
+            "startLine": 22,
+            "endLine": 35,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.springframework.http.observation.DefaultServerRequestObservationConventionTests moved to org.springframework.http.server.observation.DefaultServerRequestObservationConventionTests",
+          "leftSideLocation": {
+            "filePath": "spring-web/src/test/java/org/springframework/http/observation/DefaultServerRequestObservationConventionTests.java",
+            "startLine": 28,
+            "endLine": 127,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "spring-web/src/test/java/org/springframework/http/server/observation/DefaultServerRequestObservationConventionTests.java",
+            "startLine": 28,
+            "endLine": 127,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	HTTP_SERVLET_SERVER_EXCHANGES : ServerHttpObservationDocumentation to HTTP_SERVLET_SERVER_REQUESTS : ServerHttpObservationDocumentation in class org.springframework.http.server.observation.ServerHttpObservationDocumentation",
+          "leftSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/observation/ServerHttpObservationDocumentation.java",
+            "startLine": 35,
+            "endLine": 54,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/server/observation/ServerHttpObservationDocumentation.java",
+            "startLine": 35,
+            "endLine": 54,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.springframework.http.observation.ServerHttpObservationDocumentation moved to org.springframework.http.server.observation.ServerHttpObservationDocumentation",
+          "leftSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/observation/ServerHttpObservationDocumentation.java",
+            "startLine": 25,
+            "endLine": 126,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/server/observation/ServerHttpObservationDocumentation.java",
+            "startLine": 25,
+            "endLine": 126,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.springframework.http.observation.reactive.DefaultServerRequestObservationConvention moved to org.springframework.http.server.reactive.observation.DefaultServerRequestObservationConvention",
+          "leftSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/observation/reactive/DefaultServerRequestObservationConvention.java",
+            "startLine": 29,
+            "endLine": 186,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/server/reactive/observation/DefaultServerRequestObservationConvention.java",
+            "startLine": 28,
+            "endLine": 185,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	HTTP_REACTIVE_SERVER_EXCHANGES : ServerHttpObservationDocumentation to HTTP_REACTIVE_SERVER_REQUESTS : ServerHttpObservationDocumentation in class org.springframework.http.server.reactive.observation.ServerHttpObservationDocumentation",
+          "leftSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/observation/reactive/ServerHttpObservationDocumentation.java",
+            "startLine": 35,
+            "endLine": 54,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/server/reactive/observation/ServerHttpObservationDocumentation.java",
+            "startLine": 35,
+            "endLine": 54,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.springframework.http.observation.reactive.ServerHttpObservationDocumentation moved to org.springframework.http.server.reactive.observation.ServerHttpObservationDocumentation",
+          "leftSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/observation/reactive/ServerHttpObservationDocumentation.java",
+            "startLine": 25,
+            "endLine": 126,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/server/reactive/observation/ServerHttpObservationDocumentation.java",
+            "startLine": 25,
+            "endLine": 126,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	PathPattern to String in method public getPathPattern() : String from class org.springframework.http.server.reactive.observation.ServerRequestObservationContext",
+          "leftSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/observation/reactive/ServerRequestObservationContext.java",
+            "startLine": 59,
+            "endLine": 68,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/server/reactive/observation/ServerRequestObservationContext.java",
+            "startLine": 60,
+            "endLine": 69,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	pathPattern : PathPattern to pathPattern : String in class org.springframework.http.server.reactive.observation.ServerRequestObservationContext",
+          "leftSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/observation/reactive/ServerRequestObservationContext.java",
+            "startLine": 41,
+            "endLine": 41,
+            "startColumn": 22,
+            "endColumn": 33
+          },
+          "rightSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/server/reactive/observation/ServerRequestObservationContext.java",
+            "startLine": 42,
+            "endLine": 42,
+            "startColumn": 17,
+            "endColumn": 28
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.springframework.http.observation.reactive.ServerRequestObservationContext moved to org.springframework.http.server.reactive.observation.ServerRequestObservationContext",
+          "leftSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/observation/reactive/ServerRequestObservationContext.java",
+            "startLine": 27,
+            "endLine": 99,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/server/reactive/observation/ServerRequestObservationContext.java",
+            "startLine": 28,
+            "endLine": 100,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.springframework.http.observation.reactive.DefaultServerRequestObservationConventionTests moved to org.springframework.http.server.reactive.observation.DefaultServerRequestObservationConventionTests",
+          "leftSideLocation": {
+            "filePath": "spring-web/src/test/java/org/springframework/http/observation/reactive/DefaultServerRequestObservationConventionTests.java",
+            "startLine": 31,
+            "endLine": 167,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "spring-web/src/test/java/org/springframework/http/server/reactive/observation/DefaultServerRequestObservationConventionTests.java",
+            "startLine": 29,
+            "endLine": 160,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.springframework.http.observation.reactive.ServerRequestObservationConvention moved to org.springframework.http.server.reactive.observation.ServerRequestObservationConvention",
+          "leftSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/observation/reactive/ServerRequestObservationConvention.java",
+            "startLine": 22,
+            "endLine": 35,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/server/reactive/observation/ServerRequestObservationConvention.java",
+            "startLine": 22,
+            "endLine": 35,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.springframework.http.observation.DefaultServerRequestObservationConvention moved to org.springframework.http.server.observation.DefaultServerRequestObservationConvention",
+          "leftSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/observation/DefaultServerRequestObservationConvention.java",
+            "startLine": 28,
+            "endLine": 180,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/server/observation/DefaultServerRequestObservationConvention.java",
+            "startLine": 28,
+            "endLine": 180,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.springframework.http.observation.ServerHttpObservationDocumentation moved to org.springframework.http.server.observation.ServerHttpObservationDocumentation",
+          "leftSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/observation/ServerHttpObservationDocumentation.java",
+            "startLine": 25,
+            "endLine": 126,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/server/observation/ServerHttpObservationDocumentation.java",
+            "startLine": 25,
+            "endLine": 126,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.springframework.http.observation.ServerRequestObservationContext moved to org.springframework.http.server.observation.ServerRequestObservationContext",
+          "leftSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/observation/ServerRequestObservationContext.java",
+            "startLine": 25,
+            "endLine": 53,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/server/observation/ServerRequestObservationContext.java",
+            "startLine": 25,
+            "endLine": 53,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.springframework.http.observation.ServerRequestObservationConvention moved to org.springframework.http.server.observation.ServerRequestObservationConvention",
+          "leftSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/observation/ServerRequestObservationConvention.java",
+            "startLine": 22,
+            "endLine": 35,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/server/observation/ServerRequestObservationConvention.java",
+            "startLine": 22,
+            "endLine": 35,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.springframework.http.observation.DefaultServerRequestObservationConventionTests moved to org.springframework.http.server.observation.DefaultServerRequestObservationConventionTests",
+          "leftSideLocation": {
+            "filePath": "spring-web/src/test/java/org/springframework/http/observation/DefaultServerRequestObservationConventionTests.java",
+            "startLine": 28,
+            "endLine": 127,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "spring-web/src/test/java/org/springframework/http/server/observation/DefaultServerRequestObservationConventionTests.java",
+            "startLine": 28,
+            "endLine": 127,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.springframework.http.observation.reactive.DefaultServerRequestObservationConvention moved to org.springframework.http.server.reactive.observation.DefaultServerRequestObservationConvention",
+          "leftSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/observation/reactive/DefaultServerRequestObservationConvention.java",
+            "startLine": 29,
+            "endLine": 186,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/server/reactive/observation/DefaultServerRequestObservationConvention.java",
+            "startLine": 28,
+            "endLine": 185,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.springframework.http.observation.reactive.ServerHttpObservationDocumentation moved to org.springframework.http.server.reactive.observation.ServerHttpObservationDocumentation",
+          "leftSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/observation/reactive/ServerHttpObservationDocumentation.java",
+            "startLine": 25,
+            "endLine": 126,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/server/reactive/observation/ServerHttpObservationDocumentation.java",
+            "startLine": 25,
+            "endLine": 126,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.springframework.http.observation.reactive.ServerRequestObservationConvention moved to org.springframework.http.server.reactive.observation.ServerRequestObservationConvention",
+          "leftSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/observation/reactive/ServerRequestObservationConvention.java",
+            "startLine": 22,
+            "endLine": 35,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/server/reactive/observation/ServerRequestObservationConvention.java",
+            "startLine": 22,
+            "endLine": 35,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.springframework.http.observation.reactive.ServerRequestObservationContext moved to org.springframework.http.server.reactive.observation.ServerRequestObservationContext",
+          "leftSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/observation/reactive/ServerRequestObservationContext.java",
+            "startLine": 27,
+            "endLine": 99,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/server/reactive/observation/ServerRequestObservationContext.java",
+            "startLine": 28,
+            "endLine": 100,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "MOVE_CLASS",
+          "description": "Move Class	org.springframework.http.observation.reactive.DefaultServerRequestObservationConventionTests moved to org.springframework.http.server.reactive.observation.DefaultServerRequestObservationConventionTests",
+          "leftSideLocation": {
+            "filePath": "spring-web/src/test/java/org/springframework/http/observation/reactive/DefaultServerRequestObservationConventionTests.java",
+            "startLine": 31,
+            "endLine": 167,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "spring-web/src/test/java/org/springframework/http/server/reactive/observation/DefaultServerRequestObservationConventionTests.java",
+            "startLine": 29,
+            "endLine": 160,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_ATTRIBUTE_TYPE",
+          "description": "Change Attribute Type	pathPattern : PathPattern to pathPattern : String in class org.springframework.http.server.reactive.observation.ServerRequestObservationContext",
+          "leftSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/observation/reactive/ServerRequestObservationContext.java",
+            "startLine": 41,
+            "endLine": 41,
+            "startColumn": 22,
+            "endColumn": 33
+          },
+          "rightSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/server/reactive/observation/ServerRequestObservationContext.java",
+            "startLine": 42,
+            "endLine": 42,
+            "startColumn": 17,
+            "endColumn": 28
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	PathPattern to String in method public getPathPattern() : String from class org.springframework.http.server.reactive.observation.ServerRequestObservationContext",
+          "leftSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/observation/reactive/ServerRequestObservationContext.java",
+            "startLine": 59,
+            "endLine": 68,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/server/reactive/observation/ServerRequestObservationContext.java",
+            "startLine": 60,
+            "endLine": 69,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	HTTP_SERVLET_SERVER_EXCHANGES : ServerHttpObservationDocumentation to HTTP_SERVLET_SERVER_REQUESTS : ServerHttpObservationDocumentation in class org.springframework.http.server.observation.ServerHttpObservationDocumentation",
+          "leftSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/observation/ServerHttpObservationDocumentation.java",
+            "startLine": 35,
+            "endLine": 54,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/server/observation/ServerHttpObservationDocumentation.java",
+            "startLine": 35,
+            "endLine": 54,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	HTTP_REACTIVE_SERVER_EXCHANGES : ServerHttpObservationDocumentation to HTTP_REACTIVE_SERVER_REQUESTS : ServerHttpObservationDocumentation in class org.springframework.http.server.reactive.observation.ServerHttpObservationDocumentation",
+          "leftSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/observation/reactive/ServerHttpObservationDocumentation.java",
+            "startLine": 35,
+            "endLine": 54,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/server/reactive/observation/ServerHttpObservationDocumentation.java",
+            "startLine": 35,
+            "endLine": 54,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-framework.git",
+      "sha1": "a2ac764f9c171c55e51ddeb83a6e9229e5455aee",
+      "url": "https://github.com/spring-projects/spring-framework/commit/a2ac764f9c171c55e51ddeb83a6e9229e5455aee",
+      "ourApproach": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	tomcatPresent : boolean to tomcatWsPresent : boolean in class org.springframework.web.reactive.socket.server.support.HandshakeWebSocketService",
+          "leftSideLocation": {
+            "filePath": "spring-webflux/src/main/java/org/springframework/web/reactive/socket/server/support/HandshakeWebSocketService.java",
+            "startLine": 69,
+            "endLine": 69,
+            "startColumn": 31,
+            "endColumn": 44
+          },
+          "rightSideLocation": {
+            "filePath": "spring-webflux/src/main/java/org/springframework/web/reactive/socket/server/support/HandshakeWebSocketService.java",
+            "startLine": 75,
+            "endLine": 75,
+            "startColumn": 31,
+            "endColumn": 46
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	jettyPresent : boolean to jettyWsPresent : boolean in class org.springframework.web.reactive.socket.server.support.HandshakeWebSocketService",
+          "leftSideLocation": {
+            "filePath": "spring-webflux/src/main/java/org/springframework/web/reactive/socket/server/support/HandshakeWebSocketService.java",
+            "startLine": 71,
+            "endLine": 71,
+            "startColumn": 31,
+            "endColumn": 43
+          },
+          "rightSideLocation": {
+            "filePath": "spring-webflux/src/main/java/org/springframework/web/reactive/socket/server/support/HandshakeWebSocketService.java",
+            "startLine": 77,
+            "endLine": 77,
+            "startColumn": 31,
+            "endColumn": 45
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	undertowPresent : boolean to undertowWsPresent : boolean in class org.springframework.web.reactive.socket.server.support.HandshakeWebSocketService",
+          "leftSideLocation": {
+            "filePath": "spring-webflux/src/main/java/org/springframework/web/reactive/socket/server/support/HandshakeWebSocketService.java",
+            "startLine": 73,
+            "endLine": 73,
+            "startColumn": 31,
+            "endColumn": 46
+          },
+          "rightSideLocation": {
+            "filePath": "spring-webflux/src/main/java/org/springframework/web/reactive/socket/server/support/HandshakeWebSocketService.java",
+            "startLine": 79,
+            "endLine": 79,
+            "startColumn": 31,
+            "endColumn": 48
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	VERSIONS : String[] to SUPPORTED_VERSIONS : String[] in class org.springframework.web.socket.server.standard.UndertowRequestUpgradeStrategy",
+          "leftSideLocation": {
+            "filePath": "spring-websocket/src/main/java/org/springframework/web/socket/server/standard/UndertowRequestUpgradeStrategy.java",
+            "startLine": 48,
+            "endLine": 52,
+            "startColumn": 32,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-websocket/src/main/java/org/springframework/web/socket/server/standard/UndertowRequestUpgradeStrategy.java",
+            "startLine": 40,
+            "endLine": 40,
+            "startColumn": 32,
+            "endColumn": 82
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	protected upgradeHttpToWebSocket(request HttpServletRequest, response HttpServletResponse, endpointConfig ServerEndpointConfig, pathParams Map<String,String>) : void extracted from public upgrade(exchange ServerWebExchange, handler WebSocketHandler, subProtocol String, handshakeInfoFactory Supplier<HandshakeInfo>) : Mono<Void> in class org.springframework.web.reactive.socket.server.upgrade.StandardWebSocketUpgradeStrategy",
+          "leftSideLocation": {
+            "filePath": "spring-webflux/src/main/java/org/springframework/web/reactive/socket/server/upgrade/TomcatRequestUpgradeStrategy.java",
+            "startLine": 124,
+            "endLine": 158,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-webflux/src/main/java/org/springframework/web/reactive/socket/server/upgrade/TomcatRequestUpgradeStrategy.java",
+            "startLine": 38,
+            "endLine": 44,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	protected upgradeHttpToWebSocket(request HttpServletRequest, response HttpServletResponse, endpointConfig ServerEndpointConfig, pathParams Map<String,String>) : void extracted from public upgradeInternal(request ServerHttpRequest, response ServerHttpResponse, selectedProtocol String, selectedExtensions List<Extension>, endpoint Endpoint) : void in class org.springframework.web.socket.server.standard.StandardWebSocketUpgradeStrategy",
+          "leftSideLocation": {
+            "filePath": "spring-websocket/src/main/java/org/springframework/web/socket/server/standard/StandardWebSocketUpgradeStrategy.java",
+            "startLine": 52,
+            "endLine": 75,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-websocket/src/main/java/org/springframework/web/socket/server/standard/StandardWebSocketUpgradeStrategy.java",
+            "startLine": 86,
+            "endLine": 90,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	tomcatPresent : boolean to tomcatWsPresent : boolean in class org.springframework.web.reactive.socket.server.support.HandshakeWebSocketService",
+          "leftSideLocation": {
+            "filePath": "spring-webflux/src/main/java/org/springframework/web/reactive/socket/server/support/HandshakeWebSocketService.java",
+            "startLine": 69,
+            "endLine": 69,
+            "startColumn": 31,
+            "endColumn": 44
+          },
+          "rightSideLocation": {
+            "filePath": "spring-webflux/src/main/java/org/springframework/web/reactive/socket/server/support/HandshakeWebSocketService.java",
+            "startLine": 75,
+            "endLine": 75,
+            "startColumn": 31,
+            "endColumn": 46
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	jettyPresent : boolean to jettyWsPresent : boolean in class org.springframework.web.reactive.socket.server.support.HandshakeWebSocketService",
+          "leftSideLocation": {
+            "filePath": "spring-webflux/src/main/java/org/springframework/web/reactive/socket/server/support/HandshakeWebSocketService.java",
+            "startLine": 71,
+            "endLine": 71,
+            "startColumn": 31,
+            "endColumn": 43
+          },
+          "rightSideLocation": {
+            "filePath": "spring-webflux/src/main/java/org/springframework/web/reactive/socket/server/support/HandshakeWebSocketService.java",
+            "startLine": 77,
+            "endLine": 77,
+            "startColumn": 31,
+            "endColumn": 45
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	undertowPresent : boolean to undertowWsPresent : boolean in class org.springframework.web.reactive.socket.server.support.HandshakeWebSocketService",
+          "leftSideLocation": {
+            "filePath": "spring-webflux/src/main/java/org/springframework/web/reactive/socket/server/support/HandshakeWebSocketService.java",
+            "startLine": 73,
+            "endLine": 73,
+            "startColumn": 31,
+            "endColumn": 46
+          },
+          "rightSideLocation": {
+            "filePath": "spring-webflux/src/main/java/org/springframework/web/reactive/socket/server/support/HandshakeWebSocketService.java",
+            "startLine": 79,
+            "endLine": 79,
+            "startColumn": 31,
+            "endColumn": 48
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	protected upgradeHttpToWebSocket(request HttpServletRequest, response HttpServletResponse, endpointConfig ServerEndpointConfig, pathParams Map<String,String>) : void extracted from public upgradeInternal(request ServerHttpRequest, response ServerHttpResponse, selectedProtocol String, selectedExtensions List<Extension>, endpoint Endpoint) : void in class org.springframework.web.socket.server.standard.StandardWebSocketUpgradeStrategy",
+          "leftSideLocation": {
+            "filePath": "spring-websocket/src/main/java/org/springframework/web/socket/server/standard/StandardWebSocketUpgradeStrategy.java",
+            "startLine": 52,
+            "endLine": 75,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-websocket/src/main/java/org/springframework/web/socket/server/standard/StandardWebSocketUpgradeStrategy.java",
+            "startLine": 86,
+            "endLine": 90,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	protected upgradeHttpToWebSocket(request HttpServletRequest, response HttpServletResponse, endpointConfig ServerEndpointConfig, pathParams Map<String,String>) : void extracted from public upgrade(exchange ServerWebExchange, handler WebSocketHandler, subProtocol String, handshakeInfoFactory Supplier<HandshakeInfo>) : Mono<Void> in class org.springframework.web.reactive.socket.server.upgrade.StandardWebSocketUpgradeStrategy",
+          "leftSideLocation": {
+            "filePath": "spring-webflux/src/main/java/org/springframework/web/reactive/socket/server/upgrade/TomcatRequestUpgradeStrategy.java",
+            "startLine": 124,
+            "endLine": 158,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-webflux/src/main/java/org/springframework/web/reactive/socket/server/upgrade/StandardWebSocketUpgradeStrategy.java",
+            "startLine": 167,
+            "endLine": 171,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "CHANGE_RETURN_TYPE",
+          "description": "Change Return Type	WsServerContainer to ServerContainer in method protected getContainer(request HttpServletRequest) : ServerContainer from class org.springframework.web.reactive.socket.server.upgrade.StandardWebSocketUpgradeStrategy",
+          "leftSideLocation": {
+            "filePath": "spring-webflux/src/main/java/org/springframework/web/reactive/socket/server/upgrade/TomcatRequestUpgradeStrategy.java",
+            "startLine": 160,
+            "endLine": 169,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-webflux/src/main/java/org/springframework/web/reactive/socket/server/upgrade/StandardWebSocketUpgradeStrategy.java",
+            "startLine": 173,
+            "endLine": 182,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-framework.git",
+      "sha1": "6022065ad37eef45555a6bed782d5cac5c1f3240",
+      "url": "https://github.com/spring-projects/spring-framework/commit/6022065ad37eef45555a6bed782d5cac5c1f3240",
+      "ourApproach": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	HTTP_REQUEST : ClientHttpObservationDocumentation to HTTP_CLIENT_EXCHANGES : ClientHttpObservationDocumentation in class org.springframework.http.client.observation.ClientHttpObservationDocumentation",
+          "leftSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/client/observation/ClientHttpObservationDocumentation.java",
+            "startLine": 37,
+            "endLine": 56,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/client/observation/ClientHttpObservationDocumentation.java",
+            "startLine": 37,
+            "endLine": 56,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	HTTP_REQUESTS : ServerHttpObservationDocumentation to HTTP_SERVLET_SERVER_EXCHANGES : ServerHttpObservationDocumentation in class org.springframework.http.observation.ServerHttpObservationDocumentation",
+          "leftSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/observation/ServerHttpObservationDocumentation.java",
+            "startLine": 35,
+            "endLine": 54,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/observation/ServerHttpObservationDocumentation.java",
+            "startLine": 35,
+            "endLine": 54,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	HTTP_REQUESTS : ServerHttpObservationDocumentation to HTTP_REACTIVE_SERVER_EXCHANGES : ServerHttpObservationDocumentation in class org.springframework.http.observation.reactive.ServerHttpObservationDocumentation",
+          "leftSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/observation/reactive/ServerHttpObservationDocumentation.java",
+            "startLine": 35,
+            "endLine": 54,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/observation/reactive/ServerHttpObservationDocumentation.java",
+            "startLine": 35,
+            "endLine": 54,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	HTTP_REQUEST : ClientHttpObservationDocumentation to HTTP_REACTIVE_CLIENT_EXCHANGES : ClientHttpObservationDocumentation in class org.springframework.web.reactive.function.client.ClientHttpObservationDocumentation",
+          "leftSideLocation": {
+            "filePath": "spring-webflux/src/main/java/org/springframework/web/reactive/function/client/ClientHttpObservationDocumentation.java",
+            "startLine": 34,
+            "endLine": 53,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-webflux/src/main/java/org/springframework/web/reactive/function/client/ClientHttpObservationDocumentation.java",
+            "startLine": 34,
+            "endLine": 53,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	HTTP_REQUEST : ClientHttpObservationDocumentation to HTTP_CLIENT_EXCHANGES : ClientHttpObservationDocumentation in class org.springframework.http.client.observation.ClientHttpObservationDocumentation",
+          "leftSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/client/observation/ClientHttpObservationDocumentation.java",
+            "startLine": 37,
+            "endLine": 56,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/client/observation/ClientHttpObservationDocumentation.java",
+            "startLine": 37,
+            "endLine": 56,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	HTTP_REQUESTS : ServerHttpObservationDocumentation to HTTP_SERVLET_SERVER_EXCHANGES : ServerHttpObservationDocumentation in class org.springframework.http.observation.ServerHttpObservationDocumentation",
+          "leftSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/observation/ServerHttpObservationDocumentation.java",
+            "startLine": 35,
+            "endLine": 54,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/observation/ServerHttpObservationDocumentation.java",
+            "startLine": 35,
+            "endLine": 54,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	HTTP_REQUESTS : ServerHttpObservationDocumentation to HTTP_REACTIVE_SERVER_EXCHANGES : ServerHttpObservationDocumentation in class org.springframework.http.observation.reactive.ServerHttpObservationDocumentation",
+          "leftSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/observation/reactive/ServerHttpObservationDocumentation.java",
+            "startLine": 35,
+            "endLine": 54,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/observation/reactive/ServerHttpObservationDocumentation.java",
+            "startLine": 35,
+            "endLine": 54,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_ATTRIBUTE",
+          "description": "Rename Attribute	HTTP_REQUEST : ClientHttpObservationDocumentation to HTTP_REACTIVE_CLIENT_EXCHANGES : ClientHttpObservationDocumentation in class org.springframework.web.reactive.function.client.ClientHttpObservationDocumentation",
+          "leftSideLocation": {
+            "filePath": "spring-webflux/src/main/java/org/springframework/web/reactive/function/client/ClientHttpObservationDocumentation.java",
+            "startLine": 34,
+            "endLine": 53,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-webflux/src/main/java/org/springframework/web/reactive/function/client/ClientHttpObservationDocumentation.java",
+            "startLine": 34,
+            "endLine": 53,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-framework.git",
+      "sha1": "21414bc265454ea0b6a90ef5da63fef05cf0dacd",
+      "url": "https://github.com/spring-projects/spring-framework/commit/21414bc265454ea0b6a90ef5da63fef05cf0dacd",
+      "ourApproach": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.springframework.build.CompilerConventions renamed to org.springframework.build.JavaConventions",
+          "leftSideLocation": {
+            "filePath": "buildSrc/src/main/java/org/springframework/build/CompilerConventions.java",
+            "startLine": 29,
+            "endLine": 86,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "buildSrc/src/main/java/org/springframework/build/JavaConventions.java",
+            "startLine": 29,
+            "endLine": 86,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.springframework.build.CompilerConventions renamed to org.springframework.build.JavaConventions",
+          "leftSideLocation": {
+            "filePath": "buildSrc/src/main/java/org/springframework/build/CompilerConventions.java",
+            "startLine": 29,
+            "endLine": 86,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "buildSrc/src/main/java/org/springframework/build/JavaConventions.java",
+            "startLine": 29,
+            "endLine": 86,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-framework.git",
+      "sha1": "13c0c242b3cca2bfa55a1a68b3b8ed677d3310eb",
+      "url": "https://github.com/spring-projects/spring-framework/commit/13c0c242b3cca2bfa55a1a68b3b8ed677d3310eb",
+      "ourApproach": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	public close() : void inlined to public destroy() : void in class org.springframework.http.client.HttpComponentsClientHttpRequestFactory",
+          "leftSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/client/HttpComponentsClientHttpRequestFactory.java",
+            "startLine": 333,
+            "endLine": 339,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/client/HttpComponentsClientHttpRequestFactory.java",
+            "startLine": 323,
+            "endLine": 334,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	public close() : void inlined to public destroy() : void in class org.springframework.http.client.OkHttp3ClientHttpRequestFactory",
+          "leftSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/client/OkHttp3ClientHttpRequestFactory.java",
+            "startLine": 113,
+            "endLine": 124,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/client/OkHttp3ClientHttpRequestFactory.java",
+            "startLine": 108,
+            "endLine": 119,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	public close() : void inlined to public destroy() : void in class org.springframework.http.client.HttpComponentsClientHttpRequestFactory",
+          "leftSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/client/HttpComponentsClientHttpRequestFactory.java",
+            "startLine": 333,
+            "endLine": 339,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/client/HttpComponentsClientHttpRequestFactory.java",
+            "startLine": 323,
+            "endLine": 334,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	public close() : void inlined to public destroy() : void in class org.springframework.http.client.OkHttp3ClientHttpRequestFactory",
+          "leftSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/client/OkHttp3ClientHttpRequestFactory.java",
+            "startLine": 113,
+            "endLine": 124,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/client/OkHttp3ClientHttpRequestFactory.java",
+            "startLine": 108,
+            "endLine": 119,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-framework.git",
+      "sha1": "935265048a9d18843c0606c2e065116594fa4d6d",
+      "url": "https://github.com/spring-projects/spring-framework/commit/935265048a9d18843c0606c2e065116594fa4d6d",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.springframework.test.context.aot.MergedContextConfigurationRuntimeHints from Class org.springframework.test.context.aot.hint.StandardTestRuntimeHints",
+          "leftSideLocation": {
+            "filePath": "spring-test/src/main/java/org/springframework/test/context/aot/hint/StandardTestRuntimeHints.java",
+            "startLine": 37,
+            "endLine": 120,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "spring-test/src/main/java/org/springframework/test/context/aot/MergedContextConfigurationRuntimeHints.java",
+            "startLine": 31,
+            "endLine": 135,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private registerHintsForActiveProfilesResolvers(testClass Class<?>, runtimeHints RuntimeHints) : void inlined to public registerHints(runtimeHints RuntimeHints, testClass Class<?>, classLoader ClassLoader) : void in class org.springframework.test.context.aot.hint.StandardTestRuntimeHints",
+          "leftSideLocation": {
+            "filePath": "spring-test/src/main/java/org/springframework/test/context/aot/hint/StandardTestRuntimeHints.java",
+            "startLine": 83,
+            "endLine": 92,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-test/src/main/java/org/springframework/test/context/aot/hint/StandardTestRuntimeHints.java",
+            "startLine": 39,
+            "endLine": 49,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	private registerHintsForActiveProfilesResolvers(testClass Class<?>, runtimeHints RuntimeHints) : void renamed to public registerHints(runtimeHints RuntimeHints, testClass Class<?>, classLoader ClassLoader) : void in class org.springframework.test.context.aot.hint.StandardTestRuntimeHints",
+          "leftSideLocation": {
+            "filePath": "spring-test/src/main/java/org/springframework/test/context/aot/hint/StandardTestRuntimeHints.java",
+            "startLine": 83,
+            "endLine": 92,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-test/src/main/java/org/springframework/test/context/aot/hint/StandardTestRuntimeHints.java",
+            "startLine": 39,
+            "endLine": 49,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": false
+        },
+        {
+          "type": "EXTRACT_CLASS",
+          "description": "Extract Class	org.springframework.test.context.aot.MergedContextConfigurationRuntimeHints from class org.springframework.test.context.aot.hint.StandardTestRuntimeHints",
+          "leftSideLocation": {
+            "filePath": "spring-test/src/main/java/org/springframework/test/context/aot/hint/StandardTestRuntimeHints.java",
+            "startLine": 37,
+            "endLine": 120,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "spring-test/src/main/java/org/springframework/test/context/aot/MergedContextConfigurationRuntimeHints.java",
+            "startLine": 31,
+            "endLine": 135,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-framework.git",
+      "sha1": "a4210854fb5f5c857f3c62ca22c2a0f225e0a2d0",
+      "url": "https://github.com/spring-projects/spring-framework/commit/a4210854fb5f5c857f3c62ca22c2a0f225e0a2d0",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public handleHttpMediaTypeNotSupported() : void renamed to public httpMediaTypeNotSupported() : void in class org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandlerTests",
+          "leftSideLocation": {
+            "filePath": "spring-webmvc/src/test/java/org/springframework/web/servlet/mvc/method/annotation/ResponseEntityExceptionHandlerTests.java",
+            "startLine": 108,
+            "endLine": 115,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-webmvc/src/test/java/org/springframework/web/servlet/mvc/method/annotation/ResponseEntityExceptionHandlerTests.java",
+            "startLine": 112,
+            "endLine": 119,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private initMessage(contentType MediaType, bodyType ResolvableType) : String extracted from public UnsupportedMediaTypeStatusException(contentType MediaType, supportedTypes List<MediaType>, bodyType ResolvableType, method HttpMethod) in class org.springframework.web.server.UnsupportedMediaTypeStatusException",
+          "leftSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/web/server/UnsupportedMediaTypeStatusException.java",
+            "startLine": 88,
+            "endLine": 105,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/web/server/UnsupportedMediaTypeStatusException.java",
+            "startLine": 111,
+            "endLine": 114,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private paramsToStringList(paramConditions List<String[]>) : List<String> extracted from public UnsatisfiedServletRequestParameterException(paramConditions List<String[]>, actualParams Map<String,String[]>) in class org.springframework.web.bind.UnsatisfiedServletRequestParameterException",
+          "leftSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/web/bind/UnsatisfiedServletRequestParameterException.java",
+            "startLine": 53,
+            "endLine": 67,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/web/bind/UnsatisfiedServletRequestParameterException.java",
+            "startLine": 69,
+            "endLine": 74,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": false
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private initMessage(contentType MediaType, bodyType ResolvableType) : String extracted from public UnsupportedMediaTypeStatusException(contentType MediaType, supportedTypes List<MediaType>, bodyType ResolvableType, method HttpMethod) in class org.springframework.web.server.UnsupportedMediaTypeStatusException",
+          "leftSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/web/server/UnsupportedMediaTypeStatusException.java",
+            "startLine": 88,
+            "endLine": 105,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/web/server/UnsupportedMediaTypeStatusException.java",
+            "startLine": 111,
+            "endLine": 114,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	public handleHttpMediaTypeNotSupported() : void renamed to public httpMediaTypeNotSupported() : void in class org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandlerTests",
+          "leftSideLocation": {
+            "filePath": "spring-webmvc/src/test/java/org/springframework/web/servlet/mvc/method/annotation/ResponseEntityExceptionHandlerTests.java",
+            "startLine": 108,
+            "endLine": 115,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-webmvc/src/test/java/org/springframework/web/servlet/mvc/method/annotation/ResponseEntityExceptionHandlerTests.java",
+            "startLine": 112,
+            "endLine": 119,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-framework.git",
+      "sha1": "380795e5b8a553517e69725272e796dfa92dc97c",
+      "url": "https://github.com/spring-projects/spring-framework/commit/380795e5b8a553517e69725272e796dfa92dc97c",
+      "ourApproach": [
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package executeAddsSucessAsOutcome() : void renamed to package executeAddsSuccessAsOutcome() : void in class org.springframework.web.client.RestTemplateObservationTests",
+          "leftSideLocation": {
+            "filePath": "spring-web/src/test/java/org/springframework/web/client/RestTemplateObservationTests.java",
+            "startLine": 104,
+            "endLine": 113,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-web/src/test/java/org/springframework/web/client/RestTemplateObservationTests.java",
+            "startLine": 103,
+            "endLine": 112,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.springframework.web.reactive.function.client.DefaultClientObservationTests renamed to org.springframework.web.reactive.function.client.WebClientObservationTests",
+          "leftSideLocation": {
+            "filePath": "spring-webflux/src/test/java/org/springframework/web/reactive/function/client/DefaultClientObservationTests.java",
+            "startLine": 38,
+            "endLine": 105,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "spring-webflux/src/test/java/org/springframework/web/reactive/function/client/WebClientObservationTests.java",
+            "startLine": 38,
+            "endLine": 105,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private getStatusMessage(response ClientHttpResponse) : String inlined to protected status(context ClientHttpObservationContext) : KeyValue in class org.springframework.http.client.observation.DefaultClientHttpObservationConvention",
+          "leftSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/client/observation/DefaultClientHttpObservationConvention.java",
+            "startLine": 100,
+            "endLine": 110,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/client/observation/DefaultClientHttpObservationConvention.java",
+            "startLine": 101,
+            "endLine": 112,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private getStatusMessage(context ClientObservationContext) : String inlined to protected status(context ClientObservationContext) : KeyValue in class org.springframework.web.reactive.function.client.DefaultClientObservationConvention",
+          "leftSideLocation": {
+            "filePath": "spring-webflux/src/main/java/org/springframework/web/reactive/function/client/DefaultClientObservationConvention.java",
+            "startLine": 99,
+            "endLine": 107,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-webflux/src/main/java/org/springframework/web/reactive/function/client/DefaultClientObservationConvention.java",
+            "startLine": 103,
+            "endLine": 115,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "RENAME_CLASS",
+          "description": "Rename Class	org.springframework.web.reactive.function.client.DefaultClientObservationTests renamed to org.springframework.web.reactive.function.client.WebClientObservationTests",
+          "leftSideLocation": {
+            "filePath": "spring-webflux/src/test/java/org/springframework/web/reactive/function/client/DefaultClientObservationTests.java",
+            "startLine": 38,
+            "endLine": 105,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "rightSideLocation": {
+            "filePath": "spring-webflux/src/test/java/org/springframework/web/reactive/function/client/WebClientObservationTests.java",
+            "startLine": 38,
+            "endLine": 105,
+            "startColumn": 0,
+            "endColumn": 2
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private getStatusMessage(response ClientHttpResponse) : String inlined to protected status(context ClientHttpObservationContext) : KeyValue in class org.springframework.http.client.observation.DefaultClientHttpObservationConvention",
+          "leftSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/client/observation/DefaultClientHttpObservationConvention.java",
+            "startLine": 100,
+            "endLine": 110,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-web/src/main/java/org/springframework/http/client/observation/DefaultClientHttpObservationConvention.java",
+            "startLine": 101,
+            "endLine": 112,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "RENAME_METHOD",
+          "description": "Rename Method	package executeAddsSucessAsOutcome() : void renamed to package executeAddsSuccessAsOutcome() : void in class org.springframework.web.client.RestTemplateObservationTests",
+          "leftSideLocation": {
+            "filePath": "spring-web/src/test/java/org/springframework/web/client/RestTemplateObservationTests.java",
+            "startLine": 104,
+            "endLine": 113,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-web/src/test/java/org/springframework/web/client/RestTemplateObservationTests.java",
+            "startLine": 103,
+            "endLine": 112,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "INLINE_OPERATION",
+          "description": "Inline Method	private getStatusMessage(context ClientObservationContext) : String inlined to protected status(context ClientObservationContext) : KeyValue in class org.springframework.web.reactive.function.client.DefaultClientObservationConvention",
+          "leftSideLocation": {
+            "filePath": "spring-webflux/src/main/java/org/springframework/web/reactive/function/client/DefaultClientObservationConvention.java",
+            "startLine": 99,
+            "endLine": 107,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-webflux/src/main/java/org/springframework/web/reactive/function/client/DefaultClientObservationConvention.java",
+            "startLine": 103,
+            "endLine": 115,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/spring-projects/spring-framework.git",
+      "sha1": "38d91bafce7b5b9de23c2668b7ba8a772dfa2566",
+      "url": "https://github.com/spring-projects/spring-framework/commit/38d91bafce7b5b9de23c2668b7ba8a772dfa2566",
+      "ourApproach": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private apply() : TypeSpec.Builder extracted from package generateJavaFile() : JavaFile in class org.springframework.aot.generate.GeneratedClass",
+          "leftSideLocation": {
+            "filePath": "spring-core/src/main/java/org/springframework/aot/generate/GeneratedClass.java",
+            "startLine": 98,
+            "endLine": 102,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-core/src/main/java/org/springframework/aot/generate/GeneratedClass.java",
+            "startLine": 143,
+            "endLine": 149,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private createGeneratedClass(className ClassName) : GeneratedClass extracted from package getNameReturnsName() : void in class org.springframework.aot.generate.GeneratedClassTests",
+          "leftSideLocation": {
+            "filePath": "spring-core/src/test/java/org/springframework/aot/generate/GeneratedClassTests.java",
+            "startLine": 42,
+            "endLine": 47,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-core/src/test/java/org/springframework/aot/generate/GeneratedClassTests.java",
+            "startLine": 120,
+            "endLine": 122,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private createGeneratedClass(className ClassName) : GeneratedClass extracted from package reserveMethodNamesWhenNameUsedThrowsException() : void in class org.springframework.aot.generate.GeneratedClassTests",
+          "leftSideLocation": {
+            "filePath": "spring-core/src/test/java/org/springframework/aot/generate/GeneratedClassTests.java",
+            "startLine": 49,
+            "endLine": 56,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-core/src/test/java/org/springframework/aot/generate/GeneratedClassTests.java",
+            "startLine": 120,
+            "endLine": 122,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private createGeneratedClass(className ClassName) : GeneratedClass extracted from package reserveMethodNamesReservesNames() : void in class org.springframework.aot.generate.GeneratedClassTests",
+          "leftSideLocation": {
+            "filePath": "spring-core/src/test/java/org/springframework/aot/generate/GeneratedClassTests.java",
+            "startLine": 58,
+            "endLine": 65,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-core/src/test/java/org/springframework/aot/generate/GeneratedClassTests.java",
+            "startLine": 120,
+            "endLine": 122,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private createGeneratedClass(className ClassName) : GeneratedClass extracted from package generateMethodNameWhenAllEmptyPartsGeneratesSetName() : void in class org.springframework.aot.generate.GeneratedClassTests",
+          "leftSideLocation": {
+            "filePath": "spring-core/src/test/java/org/springframework/aot/generate/GeneratedClassTests.java",
+            "startLine": 67,
+            "endLine": 73,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-core/src/test/java/org/springframework/aot/generate/GeneratedClassTests.java",
+            "startLine": 120,
+            "endLine": 122,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private createGeneratedClass(className ClassName) : GeneratedClass extracted from package generateJavaFileIncludesGeneratedMethods() : void in class org.springframework.aot.generate.GeneratedClassTests",
+          "leftSideLocation": {
+            "filePath": "spring-core/src/test/java/org/springframework/aot/generate/GeneratedClassTests.java",
+            "startLine": 75,
+            "endLine": 81,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-core/src/test/java/org/springframework/aot/generate/GeneratedClassTests.java",
+            "startLine": 120,
+            "endLine": 122,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ],
+      "baseline": [
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private createInnerClass(generatedClass GeneratedClass, name String, target ClassName) : GeneratedClass extracted from package generateBeanDefinitionMethod(generationContext GenerationContext, beanRegistrationsCode BeanRegistrationsCode) : MethodReference in class org.springframework.beans.factory.aot.BeanDefinitionMethodGenerator",
+          "leftSideLocation": {
+            "filePath": "spring-beans/src/main/java/org/springframework/beans/factory/aot/BeanDefinitionMethodGenerator.java",
+            "startLine": 84,
+            "endLine": 118,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-beans/src/main/java/org/springframework/beans/factory/aot/BeanDefinitionMethodGenerator.java",
+            "startLine": 146,
+            "endLine": 152,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": false
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private lookupGeneratedClass(generationContext GenerationContext, target ClassName) : GeneratedClass extracted from package generateBeanDefinitionMethod(generationContext GenerationContext, beanRegistrationsCode BeanRegistrationsCode) : MethodReference in class org.springframework.beans.factory.aot.BeanDefinitionMethodGenerator",
+          "leftSideLocation": {
+            "filePath": "spring-beans/src/main/java/org/springframework/beans/factory/aot/BeanDefinitionMethodGenerator.java",
+            "startLine": 84,
+            "endLine": 118,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-beans/src/main/java/org/springframework/beans/factory/aot/BeanDefinitionMethodGenerator.java",
+            "startLine": 117,
+            "endLine": 144,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private apply() : TypeSpec.Builder extracted from package generateJavaFile() : JavaFile in class org.springframework.aot.generate.GeneratedClass",
+          "leftSideLocation": {
+            "filePath": "spring-core/src/main/java/org/springframework/aot/generate/GeneratedClass.java",
+            "startLine": 98,
+            "endLine": 102,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-core/src/main/java/org/springframework/aot/generate/GeneratedClass.java",
+            "startLine": 143,
+            "endLine": 149,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private createGeneratedClass(className ClassName) : GeneratedClass extracted from package getNameReturnsName() : void in class org.springframework.aot.generate.GeneratedClassTests",
+          "leftSideLocation": {
+            "filePath": "spring-core/src/test/java/org/springframework/aot/generate/GeneratedClassTests.java",
+            "startLine": 42,
+            "endLine": 47,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-core/src/test/java/org/springframework/aot/generate/GeneratedClassTests.java",
+            "startLine": 120,
+            "endLine": 122,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private createGeneratedClass(className ClassName) : GeneratedClass extracted from package reserveMethodNamesWhenNameUsedThrowsException() : void in class org.springframework.aot.generate.GeneratedClassTests",
+          "leftSideLocation": {
+            "filePath": "spring-core/src/test/java/org/springframework/aot/generate/GeneratedClassTests.java",
+            "startLine": 49,
+            "endLine": 56,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-core/src/test/java/org/springframework/aot/generate/GeneratedClassTests.java",
+            "startLine": 120,
+            "endLine": 122,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private createGeneratedClass(className ClassName) : GeneratedClass extracted from package reserveMethodNamesReservesNames() : void in class org.springframework.aot.generate.GeneratedClassTests",
+          "leftSideLocation": {
+            "filePath": "spring-core/src/test/java/org/springframework/aot/generate/GeneratedClassTests.java",
+            "startLine": 58,
+            "endLine": 65,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-core/src/test/java/org/springframework/aot/generate/GeneratedClassTests.java",
+            "startLine": 120,
+            "endLine": 122,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private createGeneratedClass(className ClassName) : GeneratedClass extracted from package generateMethodNameWhenAllEmptyPartsGeneratesSetName() : void in class org.springframework.aot.generate.GeneratedClassTests",
+          "leftSideLocation": {
+            "filePath": "spring-core/src/test/java/org/springframework/aot/generate/GeneratedClassTests.java",
+            "startLine": 67,
+            "endLine": 73,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-core/src/test/java/org/springframework/aot/generate/GeneratedClassTests.java",
+            "startLine": 120,
+            "endLine": 122,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        },
+        {
+          "type": "EXTRACT_OPERATION",
+          "description": "Extract Method	private createGeneratedClass(className ClassName) : GeneratedClass extracted from package generateJavaFileIncludesGeneratedMethods() : void in class org.springframework.aot.generate.GeneratedClassTests",
+          "leftSideLocation": {
+            "filePath": "spring-core/src/test/java/org/springframework/aot/generate/GeneratedClassTests.java",
+            "startLine": 75,
+            "endLine": 81,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "rightSideLocation": {
+            "filePath": "spring-core/src/test/java/org/springframework/aot/generate/GeneratedClassTests.java",
+            "startLine": 120,
+            "endLine": 122,
+            "startColumn": 2,
+            "endColumn": 3
+          },
+          "developerConfirmation": true
+        }
+      ]
+    }
+  ]
+}
