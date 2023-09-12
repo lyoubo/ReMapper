@@ -29,7 +29,29 @@ Currently, it supports the matching of the following code entities:
 
 **<ins>supported by ReMapper 1.1 and newer versions</ins>**
 
-10. Statements
+10. Assert Statements
+11. Blocks
+12. Break Statements
+13. Constructor Invocations
+14. Continue Statements
+15. Do Statements
+16. Empty Statements
+17. Enhanced For Statements
+18. Expression Statements
+19. For Statements
+20. If Statements
+21. Labeled Statements
+22. Return Statements
+23. Super Constructor Invocations
+24. Switch Cases
+25. Switch Statements
+26. Synchronized Statements
+27. Throw Statements
+28. Try Statements
+29. Type Declaration Statements
+30. Variable Declaration Statements
+31. While Statements
+32. Catch Clauses
 
 # Requirements
 
@@ -46,7 +68,7 @@ In the code snippet below we demonstrate how to print all matched code entities 
 ```java
 GitService gitService = new GitServiceImpl();
 try (Repository repo = gitService.openRepository("E:/refactoring-toy-example")) {
-  EntityMatcherService miner = new EntityMatcherServiceImpl();
+  EntityMatcherService matcher = new EntityMatcherServiceImpl();
   matcher.matchAtCommit(repo, "d4bce13a443cf12da40a77c16c1e591f4f985b47", new RefactoringHandler() {
     @Override
     public void handle(String commitId, MatchPair matchPair) {
