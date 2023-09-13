@@ -52,6 +52,10 @@ public class MatchPair {
         return unchangedEntities;
     }
 
+    public Set<Pair<EntityInfo, EntityInfo>> getUnchangedEntityInfos() {
+        return unchangedEntities.stream().map(pair -> Pair.of(pair.getLeft().getEntity(), pair.getRight().getEntity())).collect(Collectors.toCollection(LinkedHashSet::new));
+    }
+
     public void addUnchangedEntity(DeclarationNodeTree entityBefore, DeclarationNodeTree entityCurrent) {
         unchangedEntities.add(Pair.of(entityBefore, entityCurrent));
     }
@@ -65,15 +69,15 @@ public class MatchPair {
     }
 
     public Set<Pair<EntityInfo, EntityInfo>> getMatchedEntityInfos() {
-        return matchedEntities.stream().map(pair -> Pair.of(pair.getLeft().getEntity(), pair.getRight().getEntity())).collect(Collectors.toSet());
+        return matchedEntities.stream().map(pair -> Pair.of(pair.getLeft().getEntity(), pair.getRight().getEntity())).collect(Collectors.toCollection(LinkedHashSet::new));
     }
 
     public Set<DeclarationNodeTree> getMatchedEntitiesLeft() {
-        return matchedEntities.stream().map(Pair::getLeft).collect(Collectors.toSet());
+        return matchedEntities.stream().map(Pair::getLeft).collect(Collectors.toCollection(LinkedHashSet::new));
     }
 
     public Set<DeclarationNodeTree> getMatchedEntitiesRight() {
-        return matchedEntities.stream().map(Pair::getRight).collect(Collectors.toSet());
+        return matchedEntities.stream().map(Pair::getRight).collect(Collectors.toCollection(LinkedHashSet::new));
     }
 
     public void addMatchedEntity(DeclarationNodeTree entityBefore, DeclarationNodeTree entityCurrent) {
@@ -85,15 +89,15 @@ public class MatchPair {
     }
 
     public Set<Pair<EntityInfo, EntityInfo>> getCandidateEntityInfos() {
-        return candidateEntities.stream().map(pair -> Pair.of(pair.getLeft().getEntity(), pair.getRight().getEntity())).collect(Collectors.toSet());
+        return candidateEntities.stream().map(pair -> Pair.of(pair.getLeft().getEntity(), pair.getRight().getEntity())).collect(Collectors.toCollection(LinkedHashSet::new));
     }
 
     public Set<DeclarationNodeTree> getCandidateEntitiesLeft() {
-        return candidateEntities.stream().map(Pair::getLeft).collect(Collectors.toSet());
+        return candidateEntities.stream().map(Pair::getLeft).collect(Collectors.toCollection(LinkedHashSet::new));
     }
 
     public Set<DeclarationNodeTree> getCandidateEntitiesRight() {
-        return candidateEntities.stream().map(Pair::getRight).collect(Collectors.toSet());
+        return candidateEntities.stream().map(Pair::getRight).collect(Collectors.toCollection(LinkedHashSet::new));
     }
 
     public void addCandidateEntity(DeclarationNodeTree entityBefore, DeclarationNodeTree entityCurrent) {
@@ -108,6 +112,10 @@ public class MatchPair {
         return deletedEntities;
     }
 
+    public Set<EntityInfo> getDeletedEntityInfos() {
+        return deletedEntities.stream().map(DeclarationNodeTree::getEntity).collect(Collectors.toCollection(LinkedHashSet::new));
+    }
+
     public void addDeletedEntities(List<DeclarationNodeTree> deletedEntities) {
         this.deletedEntities.addAll(deletedEntities);
     }
@@ -119,6 +127,10 @@ public class MatchPair {
 
     public Set<DeclarationNodeTree> getAddedEntities() {
         return addedEntities;
+    }
+
+    public Set<EntityInfo> getAddedEntityInfos() {
+        return addedEntities.stream().map(DeclarationNodeTree::getEntity).collect(Collectors.toCollection(LinkedHashSet::new));
     }
 
     public void addAddedEntities(List<DeclarationNodeTree> addedEntities) {
@@ -155,6 +167,10 @@ public class MatchPair {
         return matchedStatements;
     }
 
+    public Set<Pair<StatementInfo, StatementInfo>> getMatchedStatementInfos() {
+        return matchedStatements.stream().map(pair -> Pair.of(pair.getLeft().getEntity(), pair.getRight().getEntity())).collect(Collectors.toCollection(LinkedHashSet::new));
+    }
+
     public void addMatchedStatement(StatementNodeTree statementBefore, StatementNodeTree statementCurrent) {
         matchedStatements.add(Pair.of(statementBefore, statementCurrent));
     }
@@ -171,6 +187,10 @@ public class MatchPair {
         return deletedStatements;
     }
 
+    public Set<StatementInfo> getDeletedStatementInfos() {
+        return deletedStatements.stream().map(StatementNodeTree::getEntity).collect(Collectors.toCollection(LinkedHashSet::new));
+    }
+
     public void addDeletedStatements(List<StatementNodeTree> deletedStatements) {
         this.deletedStatements.addAll(deletedStatements);
     }
@@ -181,6 +201,10 @@ public class MatchPair {
 
     public Set<StatementNodeTree> getAddedStatements() {
         return addedStatements;
+    }
+
+    public Set<StatementInfo> getAddedStatementInfos() {
+        return addedStatements.stream().map(StatementNodeTree::getEntity).collect(Collectors.toCollection(LinkedHashSet::new));
     }
 
     public void addAddedStatements(List<StatementNodeTree> addedStatements) {
