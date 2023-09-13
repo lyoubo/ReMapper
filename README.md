@@ -1,13 +1,14 @@
 Table of Contents
 =================
 
-   * [General info](#general-info)
-   * [Requirements](#requirements)
-   * [API usage guidelines](#api-usage-guidelines)
-   * [Location information](#location-information)
-   * [How to build and run](#how-to-build-and-run)
+* [General info](#general-info)
+* [Requirements](#requirements)
+* [API usage guidelines](#api-usage-guidelines)
+* [Location information](#location-information)
+* [How to build and run](#how-to-build-and-run)
      * [Command line](#command-line)
      * [IntelliJ IDEA](#intellij-idea)
+* [Data](#data)
 
 
 # General info
@@ -63,7 +64,7 @@ Apache Maven 3.8.1 or newer
 
 ReMapper can automatically match code entities between two successive versions of a git repository.
 
-In the code snippet below we demonstrate how to print all matched code entities performed at a specific commit in the toy project https://github.com/danilofes/refactoring-toy-example.git. The commit is identified by its SHA key, such as in the example below:
+In the code snippet below we demonstrate how to print all matched code entities at a specific commit in the toy project https://github.com/danilofes/refactoring-toy-example.git. The commit is identified by its SHA key, such as in the example below:
 
 ```java
 GitService gitService = new GitServiceImpl();
@@ -89,7 +90,66 @@ try (Repository repo = gitService.openRepository("E:/refactoring-toy-example")) 
 }
 ```
 
+You can use the following code snippet to print all removed, newly added, and intact (unchanged) entities at a specific commit.
+
+```java
+matcher.matchAtCommit(repo, "d4bce13a443cf12da40a77c16c1e591f4f985b47", new RefactoringHandler() {
+  @Override
+  public void handle(String commitId, MatchPair matchPair) {
+    
+    / ** print all removed entities */
+    for (EntityInfo entity : matchPair.getDeletedEntityInfos()) {
+      System.out.println("Removed entity --> " + entity);
+      System.out.println();
+    }
+    
+    / ** print all added entities */
+    for (EntityInfo entity : matchPair.getAddedEntityInfos()) {
+      System.out.println("Added entity --> " + entity);
+      System.out.println();
+    }
+    
+    / ** print all intact entities */  
+    for (Pair<EntityInfo, EntityInfo> pair : matchPair.getUnchangedEntityInfos()) {
+      System.out.println("Old entity --> " + pair.getLeft());
+      System.out.println("New entity --> " + pair.getRight());
+      System.out.println();
+    }
+  }
+});
+```
+
+You can use the following code snippet to print all matched, removed, and newly added statements at a specific commit.
+
+```java
+matcher.matchAtCommit(repo, "d4bce13a443cf12da40a77c16c1e591f4f985b47", new RefactoringHandler() {
+  @Override
+  public void handle(String commitId, MatchPair matchPair) {
+    
+    / ** print all matched statements */
+    for (Pair<StatementInfo, StatementInfo> pair : matchPair.getMatchedStatementInfos()) {
+      System.out.println("Old statement --> " + pair.getLeft());
+      System.out.println("New statement --> " + pair.getRight());
+      System.out.println();
+    }
+      
+    / ** print all removed statements */
+    for (StatementInfo statement : matchPair.getDeletedStatementInfos()) {
+      System.out.println("Removed statement --> " + statement);
+      System.out.println();
+    }
+    
+    / ** print all added statements */
+    for (StatementInfo statement : matchPair.getAddedStatementInfos()) {
+      System.out.println("Added statement --> " + statement);
+      System.out.println();
+    }
+  }
+});
+```
+
 # Location information
+
 Each code entity offers the `LocationInfo getLocation()` method to return a `LocationInfo` object including the following properties:
 
 ```java
@@ -575,3 +635,59 @@ In both cases, you will get the output in JSON format:
         }
       ]
     }
+
+# Data
+
+### 1. Entity Matching
+
+All results reported by the proposed approach and the baseline approach as well as the labels manually validated by the experienced developers, are available at the following links:
+
+* [entity matching](data/entity%20matching/)
+
+Each JSON file represents the results of running entity matching experiments of the proposed approach and the baseline approach separately in a project.
+
+##### &emsp;&emsp;JSON property descriptions
+
+&emsp;&emsp;<font size=2>**repository**: Git repository name</font>  
+&emsp;&emsp;<font size=2>**sha1**: Git commit ID</font>  
+&emsp;&emsp;<font size=2>**url**: patch corresponding to the commit</font>  
+&emsp;&emsp;<font size=2>**commonMatching**: common matched entity pairs reported by the evaluated approaches</font>  
+&emsp;&emsp;<font size=2>**ourApproach**: inconsistent entity pairs reported by the proposed approach against the baseline approach</font>  
+&emsp;&emsp;<font size=2>**baseline**: inconsistent entity pairs reported by the baseline approach against the proposed approach</font>  
+&emsp;&emsp;<font size=2>**leftSideLocation**: position of the entity in the old version</font>  
+&emsp;&emsp;<font size=2>**rightSideLocation**: position of the entity in the new version</font>  
+&emsp;&emsp;<font size=2>**container**: container in which entity belongs to</font>  
+&emsp;&emsp;<font size=2>**type**: type of entity</font>  
+&emsp;&emsp;<font size=2>**name**: name of entity</font>  
+&emsp;&emsp;<font size=2>**filePath**: file path in which the entity is declared</font>  
+&emsp;&emsp;<font size=2>**startLine**: start line of entity declaration</font>  
+&emsp;&emsp;<font size=2>**endLine**: end line of entity declaration</font>  
+&emsp;&emsp;<font size=2>**startColumn**: start column of entity declaration</font>  
+&emsp;&emsp;<font size=2>**endColumn**: end column of entity declaration</font>  
+&emsp;&emsp;<font size=2>**developerConfirmation**: label manually validated by the developers</font>
+
+### 2. Refactoring Discovery
+
+All results reported by the proposed approach and the baseline approach as well as the labels manually validated by the refactoring experts, are available at the following links:
+
+* [refactoring discovery](data/refactoring%20discovery/)
+
+Each JSON file represents the results of running refactoring discovery experiments of the proposed approach and the baseline approach separately in a project.
+
+##### &emsp;&emsp;JSON property descriptions
+
+&emsp;&emsp;<font size=2>**repository**: Git repository name</font>  
+&emsp;&emsp;<font size=2>**sha1**: Git commit ID</font>    
+&emsp;&emsp;<font size=2>**url**: patch corresponding to the commit</font>    
+&emsp;&emsp;<font size=2>**ourApproach**: refactoring operations reported by the proposed approach</font>    
+&emsp;&emsp;<font size=2>**baseline**: refactoring operations reported by the baseline approach</font>    
+&emsp;&emsp;<font size=2>**type**: type of refactoring</font>    
+&emsp;&emsp;<font size=2>**description**: description of refactoring</font>    
+&emsp;&emsp;<font size=2>**leftSideLocation**: position of the entity in the old version</font>    
+&emsp;&emsp;<font size=2>**rightSideLocation**: position of the entity in the new version</font>    
+&emsp;&emsp;<font size=2>**filePath**: file path in which the entity is declared</font>    
+&emsp;&emsp;<font size=2>**startLine**: start line of entity declaration</font>    
+&emsp;&emsp;<font size=2>**endLine**: end line of entity declaration</font>    
+&emsp;&emsp;<font size=2>**startColumn**: start column of entity declaration</font>    
+&emsp;&emsp;<font size=2>**endColumn**: end column of entity declaration</font>    
+&emsp;&emsp;<font size=2>**developerConfirmation**: label manually validated by the experts</font>
