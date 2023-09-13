@@ -107,7 +107,7 @@ public class EntityMatcherServiceImpl implements EntityMatcherService {
                                 }
                             }
                         }
-                        if (locations.size() > 0) {
+                        if (!locations.isEmpty()) {
                             MethodNode addedMethod = jdtService.parseMethodSNT(addedEntity.getFilePath(), addedMethodDeclaration);
                             addedEntity.setMethodNode(addedMethod);
                             addedMethod.setMethodEntity(addedEntity);
@@ -185,7 +185,7 @@ public class EntityMatcherServiceImpl implements EntityMatcherService {
                                 }
                             }
                         }
-                        if (locations.size() > 0) {
+                        if (!locations.isEmpty()) {
                             MethodNode deletedMethod = jdtService.parseMethodSNT(deletedEntity.getFilePath(), deletedMethodDeclaration);
                             deletedEntity.setMethodNode(deletedMethod);
                             deletedMethod.setMethodEntity(deletedEntity);
@@ -241,12 +241,12 @@ public class EntityMatcherServiceImpl implements EntityMatcherService {
                 smService.matchStatements(oldMethod, newMethod, matchPair);
             }
         }
-        deletedEntities.removeAll(inlinedEntities);
-        addedEntities.removeAll(extractedEntities);
+//        deletedEntities.removeAll(inlinedEntities);
+//        addedEntities.removeAll(extractedEntities);
         matchPair.setInlinedEntities(inlinedEntities);
         matchPair.setExtractedEntities(extractedEntities);
         for (DeclarationNodeTree deletedEntity : deletedEntities) {
-            if (deletedEntity.getType() == EntityType.METHOD) {
+            if (!inlinedEntities.contains(deletedEntity) && deletedEntity.getType() == EntityType.METHOD) {
                 String filePath = deletedEntity.getFilePath();
                 MethodDeclaration methodDeclaration = (MethodDeclaration) deletedEntity.getDeclaration();
                 MethodNode methodNode = jdtService.parseMethodSNT(filePath, methodDeclaration);
@@ -256,7 +256,7 @@ public class EntityMatcherServiceImpl implements EntityMatcherService {
             }
         }
         for (DeclarationNodeTree addedEntity : addedEntities) {
-            if (addedEntity.getType() == EntityType.METHOD) {
+            if (!extractedEntities.contains(addedEntity) && addedEntity.getType() == EntityType.METHOD) {
                 String filePath = addedEntity.getFilePath();
                 MethodDeclaration methodDeclaration = (MethodDeclaration) addedEntity.getDeclaration();
                 MethodNode methodNode = jdtService.parseMethodSNT(filePath, methodDeclaration);
