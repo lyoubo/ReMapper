@@ -1,16 +1,15 @@
 Table of Contents
 =================
 
-* [General info](#general-info)
-* [Requirements](#requirements)
-* [API usage guidelines](#api-usage-guidelines)
-* [Location information](#location-information)
-* [How to build and run](#how-to-build-and-run)
+   * [General info](#general-info)
+   * [Requirements](#requirements)
+   * [API usage guidelines](#api-usage-guidelines)
+   * [Location information](#location-information)
+   * [How to build and run](#how-to-build-and-run)
      * [Command line](#command-line)
      * [IntelliJ IDEA](#intellij-idea)
-* [How to add as a Maven dependency](#how-to-add-as-a-maven-dependency)
-
-* [Data](#data)
+   * [How to add as a Maven dependency](#how-to-add-as-a-maven-dependency)
+   * [Data](#data)
 
 
 # General info
