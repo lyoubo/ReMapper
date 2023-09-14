@@ -34,29 +34,6 @@ Currently, it supports the matching of the following code entities:
 
 10. Statements
 
-    10.1 Assert Statements  
-    10.2 Blocks  
-    10.3 Break Statements  
-    10.4 Constructor Invocations  
-    10.5 Continue Statements  
-    10.6 Do Statements  
-    10.7 Empty Statements  
-    10.8 Enhanced For Statements  
-    10.9 Expression Statements  
-    10.10 For Statements  
-    10.11 If Statements  
-    10.12 Labeled Statements  
-    10.13 Return Statements  
-    10.14 Super Constructor Invocations  
-    10.15 Switch Cases  
-    10.16 Switch Statements  
-    10.17 Synchronized Statements  
-    10.18 Throw Statements  
-    10.19 Try Statements  
-    10.20 Type Declaration Statements  
-    10.21 Variable Declaration Statements  
-    10.22 While Statements  
-    10.23 Catch Clauses
 
 # Requirements
 
