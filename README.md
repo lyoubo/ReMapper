@@ -8,6 +8,8 @@ Table of Contents
 * [How to build and run](#how-to-build-and-run)
      * [Command line](#command-line)
      * [IntelliJ IDEA](#intellij-idea)
+* [How to add as a Maven dependency](#how-to-add-as-a-maven-dependency)
+
 * [Data](#data)
 
 
@@ -30,29 +32,31 @@ Currently, it supports the matching of the following code entities:
 
 **<ins>supported by ReMapper 1.1 and newer versions</ins>**
 
-10. Assert Statements
-11. Blocks
-12. Break Statements
-13. Constructor Invocations
-14. Continue Statements
-15. Do Statements
-16. Empty Statements
-17. Enhanced For Statements
-18. Expression Statements
-19. For Statements
-20. If Statements
-21. Labeled Statements
-22. Return Statements
-23. Super Constructor Invocations
-24. Switch Cases
-25. Switch Statements
-26. Synchronized Statements
-27. Throw Statements
-28. Try Statements
-29. Type Declaration Statements
-30. Variable Declaration Statements
-31. While Statements
-32. Catch Clauses
+10. Statements
+
+    10.1 Assert Statements  
+    10.2 Blocks  
+    10.3 Break Statements  
+    10.4 Constructor Invocations  
+    10.5 Continue Statements  
+    10.6 Do Statements  
+    10.7 Empty Statements  
+    10.8 Enhanced For Statements  
+    10.9 Expression Statements  
+    10.10 For Statements  
+    10.11 If Statements  
+    10.12 Labeled Statements  
+    10.13 Return Statements  
+    10.14 Super Constructor Invocations  
+    10.15 Switch Cases  
+    10.16 Switch Statements  
+    10.17 Synchronized Statements  
+    10.18 Throw Statements  
+    10.19 Try Statements  
+    10.20 Type Declaration Statements  
+    10.21 Variable Declaration Statements  
+    10.22 While Statements  
+    10.23 Catch Clauses
 
 # Requirements
 
@@ -635,6 +639,18 @@ In both cases, you will get the output in JSON format:
         }
       ]
     }
+
+# How to add as a maven dependency
+
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.github.lyoubo/remapper/badge.svg)](https://maven-badges.herokuapp.com/maven-central/io.github.lyoubo/remapper)
+
+To add ReMapper as a maven dependency in your project, add the following snippet to your project's pom.xml:
+
+    <dependency>
+      <groupId>io.github.lyoubo</groupId>
+      <artifactId>remapper</artifactId>
+      <version>1.1.0</version>
+    </dependency>
 
 # Data
 
