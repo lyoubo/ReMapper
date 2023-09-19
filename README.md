@@ -638,25 +638,25 @@ All results reported by the proposed approach and the baseline approach as well 
 
 Each JSON file represents the results of running entity matching experiments of the proposed approach and the baseline approach separately in a project.
 
-#### &emsp;&emsp;JSON property descriptions
+#### &emsp;JSON property descriptions
 
-&emsp;&emsp;<font size=2>**repository**: Git repository name</font>  
-&emsp;&emsp;<font size=2>**sha1**: Git commit ID</font>  
-&emsp;&emsp;<font size=2>**url**: patch corresponding to the commit</font>  
-&emsp;&emsp;<font size=2>**commonMatching**: common matched entity pairs reported by the evaluated approaches</font>  
-&emsp;&emsp;<font size=2>**ourApproach**: inconsistent entity pairs reported by the proposed approach against the baseline approach</font>  
-&emsp;&emsp;<font size=2>**baseline**: inconsistent entity pairs reported by the baseline approach against the proposed approach</font>  
-&emsp;&emsp;<font size=2>**leftSideLocation**: position of the entity in the old version</font>  
-&emsp;&emsp;<font size=2>**rightSideLocation**: position of the entity in the new version</font>  
-&emsp;&emsp;<font size=2>**container**: container in which entity belongs to</font>  
-&emsp;&emsp;<font size=2>**type**: type of entity</font>  
-&emsp;&emsp;<font size=2>**name**: name of entity</font>  
-&emsp;&emsp;<font size=2>**filePath**: file path in which the entity is declared</font>  
-&emsp;&emsp;<font size=2>**startLine**: start line of entity declaration</font>  
-&emsp;&emsp;<font size=2>**endLine**: end line of entity declaration</font>  
-&emsp;&emsp;<font size=2>**startColumn**: start column of entity declaration</font>  
-&emsp;&emsp;<font size=2>**endColumn**: end column of entity declaration</font>  
-&emsp;&emsp;<font size=2>**developerConfirmation**: label manually validated by the developers</font>
+&emsp;<font size=2>**repository**: Git repository name</font>  
+&emsp;<font size=2>**sha1**: Git commit ID</font>  
+&emsp;<font size=2>**url**: patch corresponding to the commit</font>  
+&emsp;<font size=2>**commonMatching**: common matched entity pairs reported by the evaluated approaches</font>  
+&emsp;<font size=2>**ourApproach**: inconsistent entity pairs reported by the proposed approach against the baseline approach</font>  
+&emsp;<font size=2>**baseline**: inconsistent entity pairs reported by the baseline approach against the proposed approach</font>  
+&emsp;<font size=2>**leftSideLocation**: position of the entity in the old version</font>  
+&emsp;<font size=2>**rightSideLocation**: position of the entity in the new version</font>  
+&emsp;<font size=2>**container**: container in which entity belongs to</font>  
+&emsp;<font size=2>**type**: type of entity</font>  
+&emsp;<font size=2>**name**: name of entity</font>  
+&emsp;<font size=2>**filePath**: file path in which the entity is declared</font>  
+&emsp;<font size=2>**startLine**: start line of entity declaration</font>  
+&emsp;<font size=2>**endLine**: end line of entity declaration</font>  
+&emsp;<font size=2>**startColumn**: start column of entity declaration</font>  
+&emsp;<font size=2>**endColumn**: end column of entity declaration</font>  
+&emsp;<font size=2>**developerConfirmation**: label manually validated by the developers</font>
 
 ### 2. Refactoring Discovery
 
@@ -666,20 +666,20 @@ All results reported by the proposed approach and the baseline approach as well 
 
 Each JSON file represents the results of running refactoring discovery experiments of the proposed approach and the baseline approach separately in a project.
 
-#### &emsp;&emsp;JSON property descriptions
+#### &emsp;JSON property descriptions
 
-&emsp;&emsp;<font size=2>**repository**: Git repository name</font>  
-&emsp;&emsp;<font size=2>**sha1**: Git commit ID</font>    
-&emsp;&emsp;<font size=2>**url**: patch corresponding to the commit</font>    
-&emsp;&emsp;<font size=2>**ourApproach**: refactoring operations reported by the proposed approach</font>    
-&emsp;&emsp;<font size=2>**baseline**: refactoring operations reported by the baseline approach</font>    
-&emsp;&emsp;<font size=2>**type**: type of refactoring</font>    
-&emsp;&emsp;<font size=2>**description**: description of refactoring</font>    
-&emsp;&emsp;<font size=2>**leftSideLocation**: position of the entity in the old version</font>    
-&emsp;&emsp;<font size=2>**rightSideLocation**: position of the entity in the new version</font>    
-&emsp;&emsp;<font size=2>**filePath**: file path in which the entity is declared</font>    
-&emsp;&emsp;<font size=2>**startLine**: start line of entity declaration</font>    
-&emsp;&emsp;<font size=2>**endLine**: end line of entity declaration</font>    
-&emsp;&emsp;<font size=2>**startColumn**: start column of entity declaration</font>    
-&emsp;&emsp;<font size=2>**endColumn**: end column of entity declaration</font>    
-&emsp;&emsp;<font size=2>**developerConfirmation**: label manually validated by the experts</font>
+&emsp;<font size=2>**repository**: Git repository name</font>  
+&emsp;<font size=2>**sha1**: Git commit ID</font>    
+&emsp;<font size=2>**url**: patch corresponding to the commit</font>    
+&emsp;<font size=2>**ourApproach**: refactoring operations reported by the proposed approach</font>    
+&emsp;<font size=2>**baseline**: refactoring operations reported by the baseline approach</font>    
+&emsp;<font size=2>**type**: type of refactoring</font>    
+&emsp;<font size=2>**description**: description of refactoring</font>    
+&emsp;<font size=2>**leftSideLocation**: position of the entity in the old version</font>    
+&emsp;<font size=2>**rightSideLocation**: position of the entity in the new version</font>    
+&emsp;<font size=2>**filePath**: file path in which the entity is declared</font>    
+&emsp;<font size=2>**startLine**: start line of entity declaration</font>    
+&emsp;<font size=2>**endLine**: end line of entity declaration</font>    
+&emsp;<font size=2>**startColumn**: start column of entity declaration</font>    
+&emsp;<font size=2>**endColumn**: end column of entity declaration</font>    
+&emsp;<font size=2>**developerConfirmation**: label manually validated by the experts</font>
