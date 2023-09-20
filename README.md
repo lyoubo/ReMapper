@@ -33,7 +33,6 @@ Currently, it supports the matching of the following code entities:
 
 10. Statements
 
-
 # Requirements
 
 Java 11.0.17 or newer
