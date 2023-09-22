@@ -59,11 +59,11 @@ public class SoftwareEntityMatcherService {
         matchByDiceCoefficient(matchPair, modifiedFiles, renamedFiles, deletedFiles, addedFiles, fileDNTsBefore, fileDNTsCurrent);
 
         gitService.checkoutCurrent(repository, commitId);
-        String filePath = repository.getWorkTree().getPath();
-        populateCurrentDependencies(matchPair, filePath, modifiedFiles, renamedFiles, addedFiles);
+        String projectPath = repository.getWorkTree().getPath();
+        populateCurrentDependencies(matchPair, projectPath, modifiedFiles, renamedFiles, addedFiles);
         gitService.resetHard(repository);
         gitService.checkoutParent(repository, commitId);
-        populateBeforeDependencies(matchPair, filePath, modifiedFiles, renamedFiles, deletedFiles);
+        populateBeforeDependencies(matchPair, projectPath, modifiedFiles, renamedFiles, deletedFiles);
         gitService.resetHard(repository);
 
         fineMatching(matchPair);
