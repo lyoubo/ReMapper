@@ -49,7 +49,7 @@ In the code snippet below we demonstrate how to print all matched code entities 
 GitService gitService = new GitServiceImpl();
 try (Repository repo = gitService.openRepository("E:/refactoring-toy-example")) {
   EntityMatcherService matcher = new EntityMatcherServiceImpl();
-  matcher.matchAtCommit(repo, "d4bce13a443cf12da40a77c16c1e591f4f985b47", new RefactoringHandler() {
+  matcher.matchAtCommit(repo, "d4bce13a443cf12da40a77c16c1e591f4f985b47", new MatchingHandler() {
     @Override
     public void handle(String commitId, MatchPair matchPair) {
       System.out.println("Matched code entities at " + commitId);
@@ -72,7 +72,7 @@ try (Repository repo = gitService.openRepository("E:/refactoring-toy-example")) 
 You can use the following code snippet to print all removed, newly added, and intact (unchanged) entities at a specific commit.
 
 ```java
-matcher.matchAtCommit(repo, "d4bce13a443cf12da40a77c16c1e591f4f985b47", new RefactoringHandler() {
+matcher.matchAtCommit(repo, "d4bce13a443cf12da40a77c16c1e591f4f985b47", new MatchingHandler() {
   @Override
   public void handle(String commitId, MatchPair matchPair) {
     
@@ -101,7 +101,7 @@ matcher.matchAtCommit(repo, "d4bce13a443cf12da40a77c16c1e591f4f985b47", new Refa
 You can use the following code snippet to print all matched, removed, and newly added statements at a specific commit.
 
 ```java
-matcher.matchAtCommit(repo, "d4bce13a443cf12da40a77c16c1e591f4f985b47", new RefactoringHandler() {
+matcher.matchAtCommit(repo, "d4bce13a443cf12da40a77c16c1e591f4f985b47", new MatchingHandler() {
   @Override
   public void handle(String commitId, MatchPair matchPair) {
     
