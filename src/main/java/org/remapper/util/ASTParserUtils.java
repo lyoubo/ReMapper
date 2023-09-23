@@ -22,6 +22,8 @@ public class ASTParserUtils {
         Map<String, String> options = JavaCore.getOptions();
         JavaCore.setComplianceOptions(JavaCore.VERSION_11, options);
         parser.setCompilerOptions(options);
+        parser.setResolveBindings(false);
+        parser.setStatementsRecovery(true);
         return parser;
     }
 
@@ -31,6 +33,8 @@ public class ASTParserUtils {
         Map<String, String> options = JavaCore.getOptions();
         JavaCore.setComplianceOptions(JavaCore.VERSION_11, options);
         parser.setCompilerOptions(options);
+        parser.setResolveBindings(false);
+        parser.setStatementsRecovery(true);
         return parser;
     }
 
