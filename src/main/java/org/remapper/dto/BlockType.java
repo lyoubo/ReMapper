@@ -5,7 +5,7 @@ public enum BlockType {
     IF("If"),
     ELSE("Else"),
     TRY("Try"),
-    CATCH("Catch"),
+    CATCH("Catch Clause"),
     FINALLY("Finally"),
     FOR("For"),
     ENHANCED("Enhanced For"),

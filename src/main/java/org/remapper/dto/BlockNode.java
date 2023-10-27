@@ -25,14 +25,15 @@ public class BlockNode extends StatementNodeTree {
             String resource = resources.stream().map(Expression::toString).collect(Collectors.joining("; "));
             if (node == statement.getBody()) {
                 super.setBlockType(BlockType.TRY);
+                super.setBlockExpression(resource.equals("") ? "try" : "try(" + resource + ")");
             } else if (node == statement.getFinally()) {
                 super.setBlockType(BlockType.FINALLY);
+                super.setBlockExpression("finally");
             }
-            super.setBlockExpression(resource.equals("") ? "try" : "try(" + resource + ")");
         } else if (parent instanceof CatchClause) {
             CatchClause statement = (CatchClause) parent;
             super.setBlockType(BlockType.CATCH);
-            super.setBlockExpression("catch(" + statement.getException().toString() + ")");
+            super.setBlockExpression("catch(" + statement.getException().getName().getIdentifier() + ")");
         } else if (parent instanceof ForStatement) {
             ForStatement statement = (ForStatement) parent;
             List<Expression> initializers = statement.initializers();

@@ -165,7 +165,7 @@ public class EntityMatcherServiceImpl implements EntityMatcherService {
                         if (deletedEntity.getType() != EntityType.METHOD)
                             continue;
                         List<EntityInfo> dependencies = deletedEntity.getDependencies();
-                        if (dependencies.contains(oldEntity.getEntity()))
+                        if (!dependencies.contains(oldEntity.getEntity()))
                             continue;
                         MethodDeclaration deletedMethodDeclaration = (MethodDeclaration) deletedEntity.getDeclaration();
                         if (MethodUtils.isGetter(deletedMethodDeclaration) || MethodUtils.isSetter(deletedMethodDeclaration))
