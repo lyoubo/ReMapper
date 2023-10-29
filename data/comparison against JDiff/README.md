@@ -10,7 +10,7 @@ Our evaluation results are presented in Fig. 1. The horizontal axis presents the
 <b>Fig. 1.</b> Number of Mistakes per Project
 </div>
 
-From Fig. 1, we observe that compared against the pure entity matching algorithm JDiff, ReMapper substantially reduced the frequency of mistakes: The total number of mistakes (i.e., #MST) was reduced from 738 to 48, with a substantial reduction of 93.5%=(738-48)/738. On average, the number of false positives per project was reduced by 62.9%=(3.5-1.3)/3.5 and the number of false negatives per project was reduced by 96.8%=(31.7-1)/31.7. We performed a significance test to validate whether there is a statistically significant difference between the total number of mistakes caused by the two approaches. Our evaluation results (*p*-value=2.17E-5 and effect size of Cohen's *d*=1.52) confirmed that the reduction in #MST was statistically significant. 
+From Fig. 1, we observe that compared against the pure entity matching algorithm JDiff, ReMapper substantially reduced the frequency of mistakes: The total number of mistakes (i.e., #MST) was reduced from 772 to 64, with a substantial reduction of 91.7%=(772-64)/772. On average, the number of false positives per project was reduced by 62.9%=(3.5-1.3)/3.5 and the number of false negatives per project was reduced by 94.6%=(33.3-1.8)/33.3. We performed a significance test to validate whether there is a statistically significant difference between the total number of mistakes caused by the two approaches. Our evaluation results (*p*-value=1.51E-5 and effect size of Cohen's *d*=1.56) confirmed that the reduction in #MST was statistically significant. 
 
 We further investigated their performance on matching different categories of software entities, i.e., "classes", "interfaces", and "methods". The evaluation results are presented in Table 1. We observe from Table 1 that ReMapper outperforms JDiff on all of the involved entity types.
 
@@ -77,30 +77,30 @@ We further investigated their performance on matching different categories of so
         <td align="right">0</td>
         <td align="right">7.92%</td>
 	</tr>
-    <tr>
+    	<tr>
 	    <td rowspan="3">Method</td>
 	    <td>ReMapper</td>
-	    <td align="right">48</td>
+	    <td align="right">64</td>
         <td align="right">27</td>
-        <td align="right">21</td>
+        <td align="right">37</td>
         <td align="right">99.21%</td>
-        <td align="right">99.38%</td>
+        <td align="right">98.92%</td>
 	</tr>
 	<tr>
 	    <td>JDiff</td>
-	    <td align="right">653</td>
+	    <td align="right">687</td>
         <td align="right">73</td>
-        <td align="right">580</td>
+        <td align="right">614</td>
         <td align="right">97.47%</td>
-        <td align="right">82.92%</td>
+        <td align="right">82.99%</td>
 	</tr>
 	<tr>
 	    <td>^ Improvement</td>
-	    <td align="right">605</td>
+	    <td align="right">623</td>
         <td align="right">46</td>
-        <td align="right">559</td>
+        <td align="right">577</td>
         <td align="right">1.74%</td>
-        <td align="right">16.46%</td>
+        <td align="right">15.93%</td>
 	</tr>
 </table>
 </div>
