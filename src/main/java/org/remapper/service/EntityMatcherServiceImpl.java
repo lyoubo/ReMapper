@@ -117,7 +117,8 @@ public class EntityMatcherServiceImpl implements EntityMatcherService {
                                 StatementNodeTree parent = snt.getParent();
                                 List<StatementNodeTree> children = parent.getChildren();
                                 int i = children.indexOf(snt);
-                                matchPair.addAddedStatement(children.remove(i));
+                                matchPair.addAddedStatement(snt);
+                                snt.setMatched();
                                 children.addAll(i, addedMethod.getChildren().get(0).getChildren());
                                 int position = snt.getPosition();
                                 List<StatementNodeTree> allControls = newMethod.getAllControls();
@@ -195,7 +196,8 @@ public class EntityMatcherServiceImpl implements EntityMatcherService {
                                 StatementNodeTree parent = snt.getParent();
                                 List<StatementNodeTree> children = parent.getChildren();
                                 int i = children.indexOf(snt);
-                                matchPair.addDeletedStatement(children.remove(i));
+                                matchPair.addDeletedStatement(snt);
+                                snt.setMatched();
                                 children.addAll(i, deletedMethod.getChildren().get(0).getChildren());
                                 int position = snt.getPosition();
                                 List<StatementNodeTree> allControls = oldMethod.getAllControls();
