@@ -62,7 +62,7 @@ public class EntityMatcherServiceImpl implements EntityMatcherService {
         GitService gitService = new GitServiceImpl();
         JDTService jdtService = new JDTServiceImpl();
         SoftwareEntityMatcherService emService = new SoftwareEntityMatcherService();
-//        MethodStatementMatcherService smService = new MethodStatementMatcherService();
+        MethodStatementMatcherService smService = new MethodStatementMatcherService();
         String commitId = currentCommit.getId().getName();
         MatchPair matchPair = new MatchPair();
         emService.matchEntities(gitService, jdtService, repository, currentCommit, matchPair);
@@ -249,7 +249,7 @@ public class EntityMatcherServiceImpl implements EntityMatcherService {
                         }
                     }
                 }
-//                smService.matchStatements(oldMethod, newMethod, matchPair);
+                smService.matchStatements(oldMethod, newMethod, matchPair);
             }
         }
 //        deletedEntities.removeAll(inlinedEntities);
