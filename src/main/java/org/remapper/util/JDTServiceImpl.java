@@ -282,6 +282,7 @@ public class JDTServiceImpl implements JDTService {
             snt.setExpression(statement.toString());
             snt.setPosition(statement.getStartPosition());
             methodNode.addOperation(snt);
+            findSwitchCase(statement, initializedSNT, snt);
         } else if (statement instanceof Block) {
             snt = new BlockNode(cu, filePath, statement, initializedSNT);
             snt.setType(StatementType.BLOCK);
@@ -289,6 +290,7 @@ public class JDTServiceImpl implements JDTService {
             snt.setExpression("{");
             snt.setPosition(statement.getStartPosition());
             methodNode.addBlock(snt);
+            findSwitchCase(statement, initializedSNT, snt);
         } else if (statement instanceof BreakStatement) {
             snt = new OperationNode(cu, filePath, statement);
             snt.setType(StatementType.BREAK_STATEMENT);
@@ -296,20 +298,7 @@ public class JDTServiceImpl implements JDTService {
             snt.setExpression(statement.toString());
             snt.setPosition(statement.getStartPosition());
             methodNode.addOperation(snt);
-            if (statement.getParent() instanceof SwitchStatement) {
-                SwitchStatement switchStatement = (SwitchStatement) statement.getParent();
-                List<Statement> statements = switchStatement.statements();
-                for (int i = 0; i < statements.size(); i++) {
-                    Statement current = statements.get(i);
-                    if (statement == current && statements.get(i - 1) instanceof SwitchCase) {
-                        StatementNodeTree caseSNT = initializedSNT.get(statements.get(i - 1));
-                        if (caseSNT != null) {
-                            snt.setParent(caseSNT);
-                            caseSNT.addChild(snt);
-                        }
-                    }
-                }
-            }
+            findSwitchCase(statement, initializedSNT, snt);
         } else if (statement instanceof ConstructorInvocation) {
             snt = new OperationNode(cu, filePath, statement);
             snt.setType(StatementType.CONSTRUCTOR_INVOCATION);
@@ -317,6 +306,7 @@ public class JDTServiceImpl implements JDTService {
             snt.setExpression(statement.toString());
             snt.setPosition(statement.getStartPosition());
             methodNode.addOperation(snt);
+            findSwitchCase(statement, initializedSNT, snt);
         } else if (statement instanceof ContinueStatement) {
             snt = new OperationNode(cu, filePath, statement);
             snt.setType(StatementType.CONTINUE_STATEMENT);
@@ -324,6 +314,7 @@ public class JDTServiceImpl implements JDTService {
             snt.setExpression(statement.toString());
             snt.setPosition(statement.getStartPosition());
             methodNode.addOperation(snt);
+            findSwitchCase(statement, initializedSNT, snt);
         } else if (statement instanceof DoStatement) {
             snt = new ControlNode(cu, filePath, statement);
             snt.setType(StatementType.DO_STATEMENT);
@@ -331,6 +322,7 @@ public class JDTServiceImpl implements JDTService {
             snt.setExpression("do(" + ((DoStatement) statement).getExpression().toString() + ")");
             snt.setPosition(statement.getStartPosition());
             methodNode.addControl(snt);
+            findSwitchCase(statement, initializedSNT, snt);
         } else if (statement instanceof EmptyStatement) {
             snt = new OperationNode(cu, filePath, statement);
             snt.setType(StatementType.EMPTY_STATEMENT);
@@ -338,6 +330,7 @@ public class JDTServiceImpl implements JDTService {
             snt.setExpression(statement.toString());
             snt.setPosition(statement.getStartPosition());
             methodNode.addOperation(snt);
+            findSwitchCase(statement, initializedSNT, snt);
         } else if (statement instanceof EnhancedForStatement) {
             snt = new ControlNode(cu, filePath, statement);
             snt.setType(StatementType.ENHANCED_FOR_STATEMENT);
@@ -349,6 +342,7 @@ public class JDTServiceImpl implements JDTService {
             snt.setExpression("for(" + (Flags.isFinal(modifiers) ? "final " : "") + parameter.getName().getFullyQualifiedName() + ": " + expression.toString() + ")");
             snt.setPosition(statement.getStartPosition());
             methodNode.addControl(snt);
+            findSwitchCase(statement, initializedSNT, snt);
         } else if (statement instanceof ExpressionStatement) {
             snt = new OperationNode(cu, filePath, statement);
             snt.setType(StatementType.EXPRESSION_STATEMENT);
@@ -356,6 +350,7 @@ public class JDTServiceImpl implements JDTService {
             snt.setExpression(statement.toString());
             snt.setPosition(statement.getStartPosition());
             methodNode.addOperation(snt);
+            findSwitchCase(statement, initializedSNT, snt);
         } else if (statement instanceof ForStatement) {
             snt = new ControlNode(cu, filePath, statement);
             snt.setType(StatementType.FOR_STATEMENT);
@@ -369,6 +364,7 @@ public class JDTServiceImpl implements JDTService {
             snt.setExpression("for(" + initializer + "; " + (expression == null ? "" : expression.toString()) + "; " + updater + ")");
             snt.setPosition(statement.getStartPosition());
             methodNode.addControl(snt);
+            findSwitchCase(statement, initializedSNT, snt);
         } else if (statement instanceof IfStatement) {
             snt = new ControlNode(cu, filePath, statement);
             snt.setType(StatementType.IF_STATEMENT);
@@ -376,6 +372,7 @@ public class JDTServiceImpl implements JDTService {
             snt.setExpression("if(" + ((IfStatement) statement).getExpression().toString() + ")");
             snt.setPosition(statement.getStartPosition());
             methodNode.addControl(snt);
+            findSwitchCase(statement, initializedSNT, snt);
         } else if (statement instanceof LabeledStatement) {
             snt = new OperationNode(cu, filePath, statement);
             snt.setType(StatementType.LABELED_STATEMENT);
@@ -383,6 +380,7 @@ public class JDTServiceImpl implements JDTService {
             snt.setExpression(statement.toString());
             snt.setPosition(statement.getStartPosition());
             methodNode.addOperation(snt);
+            findSwitchCase(statement, initializedSNT, snt);
         } else if (statement instanceof ReturnStatement) {
             snt = new OperationNode(cu, filePath, statement);
             snt.setType(StatementType.RETURN_STATEMENT);
@@ -390,6 +388,7 @@ public class JDTServiceImpl implements JDTService {
             snt.setExpression(statement.toString());
             snt.setPosition(statement.getStartPosition());
             methodNode.addOperation(snt);
+            findSwitchCase(statement, initializedSNT, snt);
         } else if (statement instanceof SuperConstructorInvocation) {
             snt = new OperationNode(cu, filePath, statement);
             snt.setType(StatementType.SUPER_CONSTRUCTOR_INVOCATION);
@@ -397,6 +396,7 @@ public class JDTServiceImpl implements JDTService {
             snt.setExpression(statement.toString());
             snt.setPosition(statement.getStartPosition());
             methodNode.addOperation(snt);
+            findSwitchCase(statement, initializedSNT, snt);
         } else if (statement instanceof SwitchCase) {
             snt = new ControlNode(cu, filePath, statement);
             snt.setType(StatementType.SWITCH_CASE);
@@ -404,6 +404,7 @@ public class JDTServiceImpl implements JDTService {
             snt.setExpression(statement.toString());
             snt.setPosition(statement.getStartPosition());
             methodNode.addControl(snt);
+            findSwitchCase(statement, initializedSNT, snt);
         } else if (statement instanceof SwitchStatement) {
             snt = new ControlNode(cu, filePath, statement);
             snt.setType(StatementType.SWITCH_STATEMENT);
@@ -411,6 +412,7 @@ public class JDTServiceImpl implements JDTService {
             snt.setExpression("switch(" + ((SwitchStatement) statement).getExpression().toString() + ")");
             snt.setPosition(statement.getStartPosition());
             methodNode.addControl(snt);
+            findSwitchCase(statement, initializedSNT, snt);
         } else if (statement instanceof SynchronizedStatement) {
             snt = new OperationNode(cu, filePath, statement);
             snt.setType(StatementType.SYNCHRONIZED_STATEMENT);
@@ -418,6 +420,7 @@ public class JDTServiceImpl implements JDTService {
             snt.setExpression(statement.toString());
             snt.setPosition(statement.getStartPosition());
             methodNode.addOperation(snt);
+            findSwitchCase(statement, initializedSNT, snt);
         } else if (statement instanceof ThrowStatement) {
             snt = new OperationNode(cu, filePath, statement);
             snt.setType(StatementType.THROW_STATEMENT);
@@ -425,6 +428,7 @@ public class JDTServiceImpl implements JDTService {
             snt.setExpression(statement.toString());
             snt.setPosition(statement.getStartPosition());
             methodNode.addOperation(snt);
+            findSwitchCase(statement, initializedSNT, snt);
         } else if (statement instanceof TryStatement) {
             snt = new ControlNode(cu, filePath, statement);
             snt.setType(StatementType.TRY_STATEMENT);
@@ -434,6 +438,7 @@ public class JDTServiceImpl implements JDTService {
             snt.setExpression(resource.equals("") ? "try" : "try(" + resource + ")");
             snt.setPosition(statement.getStartPosition());
             methodNode.addControl(snt);
+            findSwitchCase(statement, initializedSNT, snt);
         } else if (statement instanceof TypeDeclarationStatement) {
             snt = new OperationNode(cu, filePath, statement);
             snt.setType(StatementType.TYPE_DECLARATION_STATEMENT);
@@ -441,6 +446,7 @@ public class JDTServiceImpl implements JDTService {
             snt.setExpression(statement.toString());
             snt.setPosition(statement.getStartPosition());
             methodNode.addOperation(snt);
+            findSwitchCase(statement, initializedSNT, snt);
         } else if (statement instanceof VariableDeclarationStatement) {
             snt = new OperationNode(cu, filePath, statement);
             snt.setType(StatementType.VARIABLE_DECLARATION_STATEMENT);
@@ -448,6 +454,7 @@ public class JDTServiceImpl implements JDTService {
             snt.setExpression(statement.toString());
             snt.setPosition(statement.getStartPosition());
             methodNode.addOperation(snt);
+            findSwitchCase(statement, initializedSNT, snt);
         } else if (statement instanceof WhileStatement) {
             snt = new ControlNode(cu, filePath, statement);
             snt.setType(StatementType.WHILE_STATEMENT);
@@ -455,6 +462,7 @@ public class JDTServiceImpl implements JDTService {
             snt.setExpression("while(" + ((WhileStatement) statement).getExpression().toString() + ")");
             snt.setPosition(statement.getStartPosition());
             methodNode.addControl(snt);
+            findSwitchCase(statement, initializedSNT, snt);
         } /*else if (statement instanceof CatchClause) {
             snt = new ControlNode(cu, statement);
             snt.setType(StatementType.CATCH_CLAUSE);
@@ -463,6 +471,32 @@ public class JDTServiceImpl implements JDTService {
             snt.setPosition(statement.getStartPosition());
         }*/
         return snt;
+    }
+
+    private void findSwitchCase(ASTNode statement, Map<ASTNode, StatementNodeTree> initializedSNT, StatementNodeTree snt) {
+        if (statement.getParent() instanceof SwitchStatement) {
+            SwitchStatement switchStatement = (SwitchStatement) statement.getParent();
+            List<Statement> statements = switchStatement.statements();
+            for (int i = 0; i < statements.size(); i++) {
+                Statement current = statements.get(i);
+                boolean exist = false;
+                if (statement == current) {
+                    for (int j = i - 1; j >= 0; j--) {
+                        if (statements.get(j) instanceof SwitchCase) {
+                            StatementNodeTree caseSNT = initializedSNT.get(statements.get(j));
+                            if (caseSNT != null) {
+                                snt.setParent(caseSNT);
+                                caseSNT.addChild(snt);
+                                exist = true;
+                                break;
+                            }
+                        }
+                    }
+                    if (exist)
+                        break;
+                }
+            }
+        }
     }
 
     @Override

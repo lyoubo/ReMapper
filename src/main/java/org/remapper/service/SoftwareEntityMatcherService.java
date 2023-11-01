@@ -366,7 +366,7 @@ public class SoftwareEntityMatcherService {
         }
     }
 
-    private void populateEntityDependencies(ProjectParser parser, Map<EntityInfo, List<EntityInfo>> dependencies) {
+    private void populateEntityDependencies(ProjectParser parser, Map<EntityInfo, List<EntityInfo>> dependencies, Map<String, List<ASTNode>> astNodes) {
         for (String filePath : parser.getRelatedJavaFiles()) {
             ASTParser astParser = ASTParserUtils.getASTParser(parser.getSourcepathEntries(), parser.getEncodings());
             try {
@@ -375,6 +375,7 @@ public class SoftwareEntityMatcherService {
                 CompilationUnit cu = (CompilationUnit) astParser.createAST(null);
                 NodeDeclarationVisitor visitor = new NodeDeclarationVisitor();
                 cu.accept(visitor);
+                astNodes.put(filePath, visitor.getASTNodes());
                 List<TypeDeclaration> typeDeclarations = visitor.getTypeDeclarations();
                 List<EnumDeclaration> enumDeclarations = visitor.getEnumDeclarations();
                 List<AnnotationTypeDeclaration> annotationTypeDeclarations = visitor.getAnnotationTypeDeclarations();
@@ -595,17 +596,113 @@ public class SoftwareEntityMatcherService {
         changedJavaFiles.addAll(addedFiles);
         changedJavaFiles.addAll(renamedFiles.values());
         Map<EntityInfo, List<EntityInfo>> dependencies = new HashMap<>();
+        Map<String, List<ASTNode>> nodeMap = new HashMap<>();
         parser.buildEntityDependencies(changedJavaFiles);
-        populateEntityDependencies(parser, dependencies);
-        for (DeclarationNodeTree dnt : matchPair.getMatchedEntitiesRight())
+        populateEntityDependencies(parser, dependencies, nodeMap);
+        for (DeclarationNodeTree dnt : matchPair.getMatchedEntitiesRight()) {
             entities.put(dnt.getEntity(), dnt);
-        for (DeclarationNodeTree dnt : matchPair.getCandidateEntitiesRight())
+            replaceASTNodeWithBinding(nodeMap, projectPath, dnt);
+        }
+        for (DeclarationNodeTree dnt : matchPair.getCandidateEntitiesRight()) {
             entities.put(dnt.getEntity(), dnt);
-        for (DeclarationNodeTree dnt : matchPair.getAddedEntities())
+            replaceASTNodeWithBinding(nodeMap, projectPath, dnt);
+        }
+        for (DeclarationNodeTree dnt : matchPair.getAddedEntities()) {
             entities.put(dnt.getEntity(), dnt);
+            replaceASTNodeWithBinding(nodeMap, projectPath, dnt);
+        }
         for (EntityInfo entity : entities.keySet()) {
             if (dependencies.containsKey(entity))
                 entities.get(entity).addDependencies(dependencies.get(entity));
+        }
+    }
+
+    private void replaceASTNodeWithBinding(Map<String, List<ASTNode>> nodeMap, String projectPath, DeclarationNodeTree dnt) {
+        List<ASTNode> astNodes = nodeMap.get(projectPath + "/" + dnt.getFilePath());
+        if (dnt.getType() == EntityType.METHOD) {
+            for (ASTNode node : astNodes) {
+                if (node instanceof MethodDeclaration) {
+                    MethodDeclaration declaration = (MethodDeclaration) node;
+                    LocationInfo location = new LocationInfo((CompilationUnit) declaration.getRoot(), dnt.getFilePath(), declaration);
+                    if (location.getStartLine() == dnt.getLocation().getStartLine() &&
+                            location.getEndLine() == dnt.getLocation().getEndLine() &&
+                            location.getStartColumn() == dnt.getLocation().getStartColumn() &&
+                            location.getEndColumn() == dnt.getLocation().getEndColumn())
+                        dnt.setDeclaration(declaration);
+                }
+            }
+        } else if (dnt.getType() == EntityType.FIELD) {
+            for (ASTNode node : astNodes) {
+                if (node instanceof FieldDeclaration) {
+                    FieldDeclaration declaration = (FieldDeclaration) node;
+                    LocationInfo location = new LocationInfo((CompilationUnit) declaration.getRoot(), dnt.getFilePath(), declaration);
+                    if (location.getStartLine() == dnt.getLocation().getStartLine() &&
+                            location.getEndLine() == dnt.getLocation().getEndLine() &&
+                            location.getStartColumn() == dnt.getLocation().getStartColumn() &&
+                            location.getEndColumn() == dnt.getLocation().getEndColumn())
+                        dnt.setDeclaration(declaration);
+                }
+            }
+        } else if (dnt.getType() == EntityType.ENUM_CONSTANT) {
+            for (ASTNode node : astNodes) {
+                if (node instanceof EnumConstantDeclaration) {
+                    EnumConstantDeclaration declaration = (EnumConstantDeclaration) node;
+                    LocationInfo location = new LocationInfo((CompilationUnit) declaration.getRoot(), dnt.getFilePath(), declaration);
+                    if (location.getStartLine() == dnt.getLocation().getStartLine() &&
+                            location.getEndLine() == dnt.getLocation().getEndLine() &&
+                            location.getStartColumn() == dnt.getLocation().getStartColumn() &&
+                            location.getEndColumn() == dnt.getLocation().getEndColumn())
+                        dnt.setDeclaration(declaration);
+                }
+            }
+        } else if (dnt.getType() == EntityType.CLASS || dnt.getType() == EntityType.INTERFACE || dnt.getType() == EntityType.ENUM) {
+            for (ASTNode node : astNodes) {
+                if (node instanceof TypeDeclaration) {
+                    TypeDeclaration declaration = (TypeDeclaration) node;
+                    LocationInfo location = new LocationInfo((CompilationUnit) declaration.getRoot(), dnt.getFilePath(), declaration);
+                    if (location.getStartLine() == dnt.getLocation().getStartLine() &&
+                            location.getEndLine() == dnt.getLocation().getEndLine() &&
+                            location.getStartColumn() == dnt.getLocation().getStartColumn() &&
+                            location.getEndColumn() == dnt.getLocation().getEndColumn())
+                        dnt.setDeclaration(declaration);
+                }
+            }
+        } else if (dnt.getType() == EntityType.ANNOTATION_TYPE) {
+            for (ASTNode node : astNodes) {
+                if (node instanceof AnnotationTypeDeclaration) {
+                    AnnotationTypeDeclaration declaration = (AnnotationTypeDeclaration) node;
+                    LocationInfo location = new LocationInfo((CompilationUnit) declaration.getRoot(), dnt.getFilePath(), declaration);
+                    if (location.getStartLine() == dnt.getLocation().getStartLine() &&
+                            location.getEndLine() == dnt.getLocation().getEndLine() &&
+                            location.getStartColumn() == dnt.getLocation().getStartColumn() &&
+                            location.getEndColumn() == dnt.getLocation().getEndColumn())
+                        dnt.setDeclaration(declaration);
+                }
+            }
+        } else if (dnt.getType() == EntityType.ANNOTATION_MEMBER) {
+            for (ASTNode node : astNodes) {
+                if (node instanceof AnnotationTypeMemberDeclaration) {
+                    AnnotationTypeMemberDeclaration declaration = (AnnotationTypeMemberDeclaration) node;
+                    LocationInfo location = new LocationInfo((CompilationUnit) declaration.getRoot(), dnt.getFilePath(), declaration);
+                    if (location.getStartLine() == dnt.getLocation().getStartLine() &&
+                            location.getEndLine() == dnt.getLocation().getEndLine() &&
+                            location.getStartColumn() == dnt.getLocation().getStartColumn() &&
+                            location.getEndColumn() == dnt.getLocation().getEndColumn())
+                        dnt.setDeclaration(declaration);
+                }
+            }
+        } else if (dnt.getType() == EntityType.INITIALIZER) {
+            for (ASTNode node : astNodes) {
+                if (node instanceof Initializer) {
+                    Initializer declaration = (Initializer) node;
+                    LocationInfo location = new LocationInfo((CompilationUnit) declaration.getRoot(), dnt.getFilePath(), declaration);
+                    if (location.getStartLine() == dnt.getLocation().getStartLine() &&
+                            location.getEndLine() == dnt.getLocation().getEndLine() &&
+                            location.getStartColumn() == dnt.getLocation().getStartColumn() &&
+                            location.getEndColumn() == dnt.getLocation().getEndColumn())
+                        dnt.setDeclaration(declaration);
+                }
+            }
         }
     }
 
@@ -618,14 +715,21 @@ public class SoftwareEntityMatcherService {
         changedJavaFiles.addAll(deletedFiles);
         changedJavaFiles.addAll(renamedFiles.keySet());
         Map<EntityInfo, List<EntityInfo>> dependencies = new HashMap<>();
+        Map<String, List<ASTNode>> nodeMap = new HashMap<>();
         parser.buildEntityDependencies(changedJavaFiles);
-        populateEntityDependencies(parser, dependencies);
-        for (DeclarationNodeTree dnt : matchPair.getMatchedEntitiesLeft())
+        populateEntityDependencies(parser, dependencies, nodeMap);
+        for (DeclarationNodeTree dnt : matchPair.getMatchedEntitiesLeft()) {
             entities.put(dnt.getEntity(), dnt);
-        for (DeclarationNodeTree dnt : matchPair.getCandidateEntitiesLeft())
+            replaceASTNodeWithBinding(nodeMap, projectPath, dnt);
+        }
+        for (DeclarationNodeTree dnt : matchPair.getCandidateEntitiesLeft()) {
             entities.put(dnt.getEntity(), dnt);
-        for (DeclarationNodeTree dnt : matchPair.getDeletedEntities())
+            replaceASTNodeWithBinding(nodeMap, projectPath, dnt);
+        }
+        for (DeclarationNodeTree dnt : matchPair.getDeletedEntities()) {
             entities.put(dnt.getEntity(), dnt);
+            replaceASTNodeWithBinding(nodeMap, projectPath, dnt);
+        }
         for (EntityInfo entity : entities.keySet()) {
             if (dependencies.containsKey(entity))
                 entities.get(entity).addDependencies(dependencies.get(entity));
@@ -633,7 +737,7 @@ public class SoftwareEntityMatcherService {
     }
 
     private void fineMatching(MatchPair matchPair) {
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 5; i++) {
             Set<Pair<DeclarationNodeTree, DeclarationNodeTree>> temp = new HashSet<>();
             Set<DeclarationNodeTree> beforeEntities = new HashSet<>();
             Set<DeclarationNodeTree> currentEntities = new HashSet<>();
@@ -644,9 +748,7 @@ public class SoftwareEntityMatcherService {
             currentEntities.addAll(matchPair.getAddedEntities());
             for (DeclarationNodeTree dntBefore : beforeEntities) {
                 for (DeclarationNodeTree dntCurrent : currentEntities) {
-                    if (dntBefore.getType() == dntCurrent.getType() ||
-                            ((dntBefore.getType() == EntityType.CLASS || dntBefore.getType() == EntityType.INTERFACE || dntBefore.getType() == EntityType.ENUM) &&
-                                    (dntCurrent.getType() == EntityType.CLASS || dntCurrent.getType() == EntityType.INTERFACE || dntCurrent.getType() == EntityType.ENUM))) {
+                    if (typeCompatible(dntBefore, dntCurrent)) {
                         double dice = DiceFunction.calculateSimilarity(matchPair, dntBefore, dntCurrent);
                         if (dice < DiceFunction.minDice)
                             continue;
@@ -680,6 +782,13 @@ public class SoftwareEntityMatcherService {
         }
         matchPair.getMatchedEntities().addAll(matchPair.getCandidateEntities());
         matchPair.getCandidateEntities().clear();
+    }
+
+
+    private boolean typeCompatible(DeclarationNodeTree dntBefore, DeclarationNodeTree dntCurrent) {
+        return dntBefore.getType() == dntCurrent.getType() ||
+                ((dntBefore.getType() == EntityType.CLASS || dntBefore.getType() == EntityType.INTERFACE || dntBefore.getType() == EntityType.ENUM) &&
+                        (dntCurrent.getType() == EntityType.CLASS || dntCurrent.getType() == EntityType.INTERFACE || dntCurrent.getType() == EntityType.ENUM));
     }
 
     private void additionalMatchByName(MatchPair matchPair) {

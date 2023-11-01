@@ -97,4 +97,53 @@ public class MethodUtils {
         }
         return false;
     }
+
+    public static boolean isStreamAPI(ASTNode statement) {
+        if (statement.toString().contains(" -> ") || statement.toString().contains("::")) {
+            List<Expression> list = new ArrayList<>();
+            statement.accept(new ASTVisitor() {
+                @Override
+                public boolean visit(MethodInvocation node) {
+                    if (streamAPIName(node.getName().getFullyQualifiedName()))
+                        list.add(node);
+                    return true;
+                }
+
+                @Override
+                public boolean visit(SuperMethodInvocation node) {
+                    if (streamAPIName(node.getName().getFullyQualifiedName()))
+                        list.add(node);
+                    return true;
+                }
+
+                @Override
+                public boolean visit(ExpressionMethodReference node) {
+                    if (streamAPIName(node.getName().getFullyQualifiedName()))
+                        list.add(node);
+                    return true;
+                }
+
+                @Override
+                public boolean visit(SuperMethodReference node) {
+                    if (streamAPIName(node.getName().getFullyQualifiedName()))
+                        list.add(node);
+                    return true;
+                }
+
+                @Override
+                public boolean visit(TypeMethodReference node) {
+                    if (streamAPIName(node.getName().getFullyQualifiedName()))
+                        list.add(node);
+                    return true;
+                }
+            });
+            if (list.size() > 0)
+                return true;
+        }
+        return false;
+    }
+
+    private static boolean streamAPIName(String name) {
+        return name.equals("stream") || name.equals("filter") || name.equals("forEach") || name.equals("collect") || name.equals("map") || name.equals("removeIf");
+    }
 }

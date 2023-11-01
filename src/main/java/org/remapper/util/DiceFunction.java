@@ -1,7 +1,6 @@
 package org.remapper.util;
 
 import info.debatty.java.stringsimilarity.NGram;
-import info.debatty.java.stringsimilarity.NormalizedLevenshtein;
 import org.apache.commons.lang3.tuple.Pair;
 import org.eclipse.jdt.core.dom.*;
 import org.remapper.dto.*;
@@ -276,7 +275,7 @@ public class DiceFunction {
         double type = 0.0;
         if (statement1 instanceof OperationNode && statement2 instanceof OperationNode) {
             descendants = calculateDiceSimilarity(statement1, statement2);
-            if (statement1.getType() == statement2.getType())
+            /*if (statement1.getType() == statement2.getType())
                 type += 1.0;
             else {
                 if ((statement1.getType() == StatementType.EXPRESSION_STATEMENT || statement1.getType() == StatementType.VARIABLE_DECLARATION_STATEMENT ||
@@ -284,11 +283,11 @@ public class DiceFunction {
                         (statement2.getType() == StatementType.EXPRESSION_STATEMENT || statement2.getType() == StatementType.VARIABLE_DECLARATION_STATEMENT ||
                                 statement2.getType() == StatementType.RETURN_STATEMENT))
                     type += 0.5;
-            }
+            }*/
         }
         if (statement1 instanceof BlockNode && statement2 instanceof BlockNode) {
             descendants = Math.max(calculateChildrenSimilarity(matchPair, statement1, statement2), calculateDescendantSimilarity(matchPair, statement1, statement2));
-            if (statement1.getBlockType() == statement2.getBlockType())
+            /*if (statement1.getBlockType() == statement2.getBlockType())
                 type += 0.5;
             else {
                 if (statement1.getBlockType() == BlockType.IF && statement2.getBlockType() == BlockType.ELSE)
@@ -301,11 +300,11 @@ public class DiceFunction {
                     type += 0.5;
             }
             NormalizedLevenshtein nl = new NormalizedLevenshtein();
-            type += 0.5 * (1 - nl.distance(statement1.getBlockExpression(), statement2.getBlockExpression()));
+            type += 0.5 * (1 - nl.distance(statement1.getBlockExpression(), statement2.getBlockExpression()));*/
         }
         if (statement1 instanceof ControlNode && statement2 instanceof ControlNode) {
             descendants = Math.max(calculateChildrenSimilarity(matchPair, statement1, statement2), calculateDescendantSimilarity(matchPair, statement1, statement2));
-            if (statement1.getType() == statement2.getType())
+            /*if (statement1.getType() == statement2.getType())
                 type += 0.5;
             else {
                 if ((statement1.getType() == StatementType.FOR_STATEMENT || statement1.getType() == StatementType.ENHANCED_FOR_STATEMENT ||
@@ -319,8 +318,11 @@ public class DiceFunction {
                     type += 0.5;
             }
             NormalizedLevenshtein nl = new NormalizedLevenshtein();
-            type += 0.5 * (1 - nl.distance(statement1.getExpression(), statement2.getExpression()));
+            type += 0.5 * (1 - nl.distance(statement1.getExpression(), statement2.getExpression()));*/
         }
-        return descendants + contexts + type;
+        if (contexts == 1.0 && descendants == 0.0 && statement1 instanceof OperationNode && statement2 instanceof  OperationNode)
+            return 0.99;
+        else
+            return descendants + contexts;
     }
 }

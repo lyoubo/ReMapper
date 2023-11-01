@@ -6,6 +6,7 @@ import org.eclipse.jdt.core.dom.VariableDeclarationFragment;
 import org.eclipse.jdt.core.dom.VariableDeclarationStatement;
 import org.remapper.dto.*;
 import org.remapper.util.DiceFunction;
+import org.remapper.util.MethodUtils;
 import org.remapper.util.StringUtils;
 
 import java.util.*;
@@ -30,7 +31,7 @@ public class MethodStatementMatcherService {
         /**
          * 1. n1.type = n2.type ^ node1.expression = node2.expression ^ n1.depth = n2.depth
          */
-        Map<StatementNodeTree, StatementNodeTree> temp1 = new HashMap<>();
+        Map<StatementNodeTree, StatementNodeTree> temp1 = new LinkedHashMap<>();
         for (StatementNodeTree node1 : allControlsBefore) {
             for (StatementNodeTree node2 : allControlsAfter) {
                 if (!node1.isMatched() && !node2.isMatched() && node1.getType() == node2.getType() &&
@@ -43,7 +44,7 @@ public class MethodStatementMatcherService {
         /**
          * 2. n1.type = n2.type ^ node1.expression = node2.expression
          */
-        Map<StatementNodeTree, StatementNodeTree> temp2 = new HashMap<>();
+        Map<StatementNodeTree, StatementNodeTree> temp2 = new LinkedHashMap<>();
         for (StatementNodeTree node1 : allControlsBefore) {
             for (StatementNodeTree node2 : allControlsAfter) {
                 if (!node1.isMatched() && !node2.isMatched() && node1.getType() == node2.getType() &&
@@ -82,11 +83,13 @@ public class MethodStatementMatcherService {
     private void controlMap2SetOfMatchedStatements(MatchPair matchPair, Map<StatementNodeTree, StatementNodeTree> temp) {
         for (StatementNodeTree control1 : temp.keySet()) {
             StatementNodeTree control2 = temp.get(control1);
-            matchPair.addMatchedStatement(control1, control2);
-            control1.setMatched();
-            control2.setMatched();
-            if (control1.hasChildren() && control2.hasChildren())
-                matchSubStatements(matchPair, control1.getChildren(), control2.getChildren());
+            if (!control1.isMatched() && !control2.isMatched()) {
+                matchPair.addMatchedStatement(control1, control2);
+                control1.setMatched();
+                control2.setMatched();
+                if (control1.hasChildren() && control2.hasChildren())
+                    matchSubStatements(matchPair, control1.getChildren(), control2.getChildren());
+            }
         }
     }
 
@@ -101,8 +104,8 @@ public class MethodStatementMatcherService {
                     if (node1.hasChildren() && node2.hasChildren()) {
                         matchSubStatements(matchPair, node1.getChildren(), node2.getChildren());
                     }
+                    break;
                 }
-                break;
             }
         }
     }
@@ -113,7 +116,7 @@ public class MethodStatementMatcherService {
         /**
          * 1. n1.text = n2.text ^ n1.depth = n2.depth
          */
-        Map<StatementNodeTree, StatementNodeTree> temp1 = new HashMap<>();
+        Map<StatementNodeTree, StatementNodeTree> temp1 = new LinkedHashMap<>();
         for (StatementNodeTree node1 : allBlocksBefore) {
             for (StatementNodeTree node2 : allBlocksAfter) {
                 if (!node1.isMatched() && !node2.isMatched() && StringUtils.equals(node1.getStatement().toString(), node2.getStatement().toString()) &&
@@ -122,11 +125,11 @@ public class MethodStatementMatcherService {
                 }
             }
         }
-        blockMap2SetOfMatchedStatements(matchPair, temp1);
+        sntMap2SetOfMatchedStatements(matchPair, temp1);
         /**
          * 2. n1.text = n2.text
          */
-        Map<StatementNodeTree, StatementNodeTree> temp2 = new HashMap<>();
+        Map<StatementNodeTree, StatementNodeTree> temp2 = new LinkedHashMap<>();
         for (StatementNodeTree node1 : allBlocksBefore) {
             for (StatementNodeTree node2 : allBlocksAfter) {
                 if (!node1.isMatched() && !node2.isMatched() && StringUtils.equals(node1.getStatement().toString(), node2.getStatement().toString())) {
@@ -134,7 +137,7 @@ public class MethodStatementMatcherService {
                 }
             }
         }
-        blockMap2SetOfMatchedStatements(matchPair, temp2);
+        sntMap2SetOfMatchedStatements(matchPair, temp2);
     }
 
     private void processBlockMap(Map<StatementNodeTree, StatementNodeTree> temp, StatementNodeTree node1, StatementNodeTree node2) {
@@ -160,20 +163,22 @@ public class MethodStatementMatcherService {
         if (node1.getBlockType() == node2.getBlockType())
             weight += 1.0;
         if (node1.getBlockType() == BlockType.IF && node2.getBlockType() == BlockType.ELSE)
-            weight += 0.0;
+            weight += 1.0;
         if (node1.getBlockType() == BlockType.ELSE && node2.getBlockType() == BlockType.IF)
             weight += 1.0;
         weight += (1 - nl.distance(node1.getBlockExpression(), node2.getBlockExpression()));
         return weight;
     }
 
-    private void blockMap2SetOfMatchedStatements(MatchPair matchPair, Map<StatementNodeTree, StatementNodeTree> temp) {
-        for (StatementNodeTree block1 : temp.keySet()) {
-            StatementNodeTree block2 = temp.get(block1);
-            matchPair.addMatchedStatement(block1, block2);
-            block1.setMatched();
-            block2.setMatched();
-            setChildrenMatched(matchPair, block1.getChildren(), block2.getChildren());
+    private void sntMap2SetOfMatchedStatements(MatchPair matchPair, Map<StatementNodeTree, StatementNodeTree> temp) {
+        for (StatementNodeTree snt1 : temp.keySet()) {
+            StatementNodeTree snt2 = temp.get(snt1);
+            if (!snt1.isMatched() && !snt2.isMatched()) {
+                matchPair.addMatchedStatement(snt1, snt2);
+                snt1.setMatched();
+                snt2.setMatched();
+                setChildrenMatched(matchPair, snt1.getChildren(), snt2.getChildren());
+            }
         }
     }
 
@@ -196,7 +201,7 @@ public class MethodStatementMatcherService {
         /**
          * 1. n1.text = n2.text ^ n1.depth = n2.depth
          */
-        Map<StatementNodeTree, StatementNodeTree> temp1 = new HashMap<>();
+        Map<StatementNodeTree, StatementNodeTree> temp1 = new LinkedHashMap<>();
         for (StatementNodeTree node1 : allStatementsBefore) {
             for (StatementNodeTree node2 : allStatementsAfter) {
                 if (!node1.isMatched() && !node2.isMatched() && StringUtils.equals(node1.getStatement().toString(), node2.getStatement().toString()) &&
@@ -205,11 +210,11 @@ public class MethodStatementMatcherService {
                 }
             }
         }
-        operationMap2SetOfMatchedStatements(matchPair, temp1);
+        sntMap2SetOfMatchedStatements(matchPair, temp1);
         /**
          * 2. n1.text = n2.text
          */
-        Map<StatementNodeTree, StatementNodeTree> temp2 = new HashMap<>();
+        Map<StatementNodeTree, StatementNodeTree> temp2 = new LinkedHashMap<>();
         for (StatementNodeTree node1 : allStatementsBefore) {
             for (StatementNodeTree node2 : allStatementsAfter) {
                 if (!node1.isMatched() && !node2.isMatched() && StringUtils.equals(node1.getStatement().toString(), node2.getStatement().toString())) {
@@ -217,7 +222,7 @@ public class MethodStatementMatcherService {
                 }
             }
         }
-        operationMap2SetOfMatchedStatements(matchPair, temp2);
+        sntMap2SetOfMatchedStatements(matchPair, temp2);
     }
 
     private void processOperationMap(MatchPair matchPair, Map<StatementNodeTree, StatementNodeTree> temp, StatementNodeTree node1, StatementNodeTree node2) {
@@ -239,7 +244,7 @@ public class MethodStatementMatcherService {
     private void iterativeMatching(MatchPair matchPair, MethodNode methodBefore, MethodNode methodAfter) {
         Set<Pair<StatementNodeTree, StatementNodeTree>> candidateStatements = matchByDiceCoefficient(matchPair, methodBefore, methodAfter);
         matchPair.setCandidateStatements(candidateStatements);
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 5; i++) {
             Set<Pair<StatementNodeTree, StatementNodeTree>> temp = matchByDiceCoefficient(matchPair, methodBefore, methodAfter);
             if (matchPair.getCandidateStatements().size() == temp.size() && matchPair.getCandidateStatements().equals(temp)) {
                 break;
@@ -259,13 +264,15 @@ public class MethodStatementMatcherService {
         List<StatementNodeTree> allOperationsBefore = methodBefore.getAllOperations();
         List<StatementNodeTree> allOperationsAfter = methodAfter.getAllOperations();
         /**
-         * 1. sim(n1.text, n2.text) +sim(n1.context, n2.context) + sim(n1.type, n2.type) > 1.0 ^ n1 instance operation
+         * 1. sim(n1.text, n2.text) +sim(n1.context, n2.context) > 1.0 ^ n1 instance operation
          */
         Map<StatementNodeTree, StatementNodeTree> temp1 = new HashMap<>();
         for (StatementNodeTree node1 : allOperationsBefore) {
             for (StatementNodeTree node2 : allOperationsAfter) {
                 if (!node1.isMatched() && !node2.isMatched()) {
-                    if (DiceFunction.calculateSimilarity(matchPair, node1, node2) <= DiceFunction.minSimilarity)
+                    if (!typeCompatible(node1, node2))
+                        continue;
+                    if (DiceFunction.calculateSimilarity(matchPair, node1, node2) < DiceFunction.minSimilarity)
                         continue;
                     if (node1.getType() == StatementType.VARIABLE_DECLARATION_STATEMENT && node2.getType() == StatementType.VARIABLE_DECLARATION_STATEMENT) {
                         VariableDeclarationStatement statement1 = (VariableDeclarationStatement) node1.getStatement();
@@ -276,9 +283,8 @@ public class MethodStatementMatcherService {
                                 statement1.getType().toString().equals(statement2.getType().toString()) ||
                                 fragment1.getName().getIdentifier().equals(fragment2.getName().getIdentifier())) {
                             processStatementMap(matchPair, temp1, node1, node2);
-                            continue;
-                        } else
-                            continue;
+                        }
+                        continue;
                     }
                     processStatementMap(matchPair, temp1, node1, node2);
                 }
@@ -289,7 +295,7 @@ public class MethodStatementMatcherService {
             temp.add(Pair.of(operation1, operation2));
         }
         /**
-         * 2. sim(n1.text, n2.text) +sim(n1.context, n2.context) + sim(n1.type, n2.type) > 1.0 ^ n1 instance block
+         * 2. sim(n1.text, n2.text) +sim(n1.context, n2.context) > 1.0 ^ n1 instance block
          */
         Map<StatementNodeTree, StatementNodeTree> temp2 = new HashMap<>();
         List<StatementNodeTree> allBlocksBefore = methodBefore.getAllBlocks();
@@ -297,7 +303,9 @@ public class MethodStatementMatcherService {
         for (StatementNodeTree node1 : allBlocksBefore) {
             for (StatementNodeTree node2 : allBlocksAfter) {
                 if (!node1.isMatched() && !node2.isMatched()) {
-                    if (DiceFunction.calculateSimilarity(matchPair, node1, node2) <= DiceFunction.minSimilarity)
+                    if (!typeCompatible(node1, node2))
+                        continue;
+                    if (DiceFunction.calculateSimilarity(matchPair, node1, node2) < DiceFunction.minSimilarity)
                         continue;
                     processStatementMap(matchPair, temp2, node1, node2);
                 }
@@ -308,7 +316,7 @@ public class MethodStatementMatcherService {
             temp.add(Pair.of(block1, block2));
         }
         /**
-         * 3. sim(n1.text, n2.text) +sim(n1.context, n2.context) + sim(n1.type, n2.type) > 1.0 ^ n1 instance control
+         * 3. sim(n1.text, n2.text) +sim(n1.context, n2.context) > 1.0 ^ n1 instance control
          */
         Map<StatementNodeTree, StatementNodeTree> temp3 = new HashMap<>();
         List<StatementNodeTree> allControlsBefore = methodBefore.getAllControls();
@@ -316,7 +324,9 @@ public class MethodStatementMatcherService {
         for (StatementNodeTree node1 : allControlsBefore) {
             for (StatementNodeTree node2 : allControlsAfter) {
                 if (!node1.isMatched() && !node2.isMatched()) {
-                    if (DiceFunction.calculateSimilarity(matchPair, node1, node2) <= DiceFunction.minSimilarity)
+                    if (!typeCompatible(node1, node2))
+                        continue;
+                    if (DiceFunction.calculateSimilarity(matchPair, node1, node2) < DiceFunction.minSimilarity)
                         continue;
                     processStatementMap(matchPair, temp3, node1, node2);
                 }
@@ -327,6 +337,20 @@ public class MethodStatementMatcherService {
             temp.add(Pair.of(control1, control2));
         }
         return temp;
+    }
+
+    private boolean typeCompatible(StatementNodeTree node1, StatementNodeTree node2) {
+        return node1.getType() == node2.getType() ||
+                ((node1.getType() == StatementType.VARIABLE_DECLARATION_STATEMENT || node1.getType() == StatementType.EXPRESSION_STATEMENT ||
+                        node1.getType() == StatementType.RETURN_STATEMENT) &&
+                        (node2.getType() == StatementType.VARIABLE_DECLARATION_STATEMENT || node2.getType() == StatementType.EXPRESSION_STATEMENT ||
+                                node2.getType() == StatementType.RETURN_STATEMENT)) ||
+                (node1.getBlockType() == BlockType.IF && node2.getBlockType() == BlockType.ELSE) ||
+                (node1.getBlockType() == BlockType.ELSE && node2.getBlockType() == BlockType.IF) ||
+                ((node1.getType() == StatementType.FOR_STATEMENT || node1.getType() == StatementType.ENHANCED_FOR_STATEMENT ||
+                        node1.getType() == StatementType.WHILE_STATEMENT || node1.getType() == StatementType.DO_STATEMENT) &&
+                        (node2.getType() == StatementType.FOR_STATEMENT || node2.getType() == StatementType.ENHANCED_FOR_STATEMENT ||
+                                node2.getType() == StatementType.WHILE_STATEMENT || node2.getType() == StatementType.DO_STATEMENT));
     }
 
     private void processStatementMap(MatchPair matchPair, Map<StatementNodeTree, StatementNodeTree> temp, StatementNodeTree node1, StatementNodeTree node2) {
@@ -343,15 +367,6 @@ public class MethodStatementMatcherService {
             }
         } else
             temp.put(node1, node2);
-    }
-
-    private void operationMap2SetOfMatchedStatements(MatchPair matchPair, Map<StatementNodeTree, StatementNodeTree> temp) {
-        for (StatementNodeTree statement1 : temp.keySet()) {
-            StatementNodeTree statement2 = temp.get(statement1);
-            matchPair.addMatchedStatement(statement1, statement2);
-            statement1.setMatched();
-            statement2.setMatched();
-        }
     }
 
     public <K, V> K getKeyByValue(Map<K, V> map, V value) {
@@ -423,6 +438,25 @@ public class MethodStatementMatcherService {
                     VariableDeclarationFragment addedFragment = (VariableDeclarationFragment) addedStatement.fragments().get(0);
                     if (deletedStatement.getType().toString().equals(addedStatement.getType().toString()) &&
                             deletedFragment.getName().getIdentifier().equals(addedFragment.getName().getIdentifier())) {
+                        newPairs.add(Pair.of(deleted, added));
+                        replacedDeleted.add(deleted);
+                        replacedAdded.add(added);
+                    }
+                }
+                if (deleted.getDepth() == 1 && added.getDepth() == 1 &&
+                        deleted.getParent().getChildren().size() == 1 && added.getParent().getChildren().size() == 1) {
+                    double sim = DiceFunction.calculateDiceSimilarity(deleted, added);
+                    if (sim >= 0.5) {
+                        newPairs.add(Pair.of(deleted, added));
+                        replacedDeleted.add(deleted);
+                        replacedAdded.add(added);
+                    }
+                }
+                if ((deleted.getType() == StatementType.FOR_STATEMENT || deleted.getType() == StatementType.ENHANCED_FOR_STATEMENT ||
+                        deleted.getType() == StatementType.WHILE_STATEMENT || deleted.getType() == StatementType.DO_STATEMENT) &&
+                        MethodUtils.isStreamAPI(added.getStatement())) {
+                    double sim = DiceFunction.calculateSimilarity(matchPair, deleted, added);
+                    if (sim >= DiceFunction.minSimilarity) {
                         newPairs.add(Pair.of(deleted, added));
                         replacedDeleted.add(deleted);
                         replacedAdded.add(added);

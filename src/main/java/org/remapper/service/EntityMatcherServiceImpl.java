@@ -1,14 +1,15 @@
 package org.remapper.service;
 
 import org.apache.commons.lang3.tuple.Pair;
+import org.eclipse.jdt.core.dom.ExpressionStatement;
 import org.eclipse.jdt.core.dom.MethodDeclaration;
+import org.eclipse.jdt.core.dom.MethodInvocation;
 import org.eclipse.jgit.errors.MissingObjectException;
 import org.eclipse.jgit.lib.Repository;
 import org.eclipse.jgit.revwalk.RevCommit;
 import org.eclipse.jgit.revwalk.RevWalk;
 import org.remapper.dto.*;
 import org.remapper.handler.MatchingHandler;
-import org.remapper.util.DiceFunction;
 import org.remapper.util.GitServiceImpl;
 import org.remapper.util.JDTServiceImpl;
 import org.remapper.util.MethodUtils;
@@ -61,7 +62,7 @@ public class EntityMatcherServiceImpl implements EntityMatcherService {
         GitService gitService = new GitServiceImpl();
         JDTService jdtService = new JDTServiceImpl();
         SoftwareEntityMatcherService emService = new SoftwareEntityMatcherService();
-        MethodStatementMatcherService smService = new MethodStatementMatcherService();
+//        MethodStatementMatcherService smService = new MethodStatementMatcherService();
         String commitId = currentCommit.getId().getName();
         MatchPair matchPair = new MatchPair();
         emService.matchEntities(gitService, jdtService, repository, currentCommit, matchPair);
@@ -92,9 +93,9 @@ public class EntityMatcherServiceImpl implements EntityMatcherService {
                         MethodDeclaration addedMethodDeclaration = (MethodDeclaration) addedEntity.getDeclaration();
                         if (MethodUtils.isGetter(addedMethodDeclaration) || MethodUtils.isSetter(addedMethodDeclaration))
                             continue;
-                        double dice = DiceFunction.calculateBodyDice((LeafNode) addedEntity, (LeafNode) oldEntity);
-                        if (dice < 0.5)
-                            continue;
+                        /*double dice = DiceFunction.calculateBodyDice((LeafNode) addedEntity, (LeafNode) oldEntity);
+                        if (dice < 0.2)
+                            continue;*/
                         List<StatementNodeTree> allOperations = newMethod.getAllOperations();
                         List<StatementNodeTree> locations = new ArrayList<>();
                         for (StatementNodeTree snt : allOperations) {
@@ -109,55 +110,59 @@ public class EntityMatcherServiceImpl implements EntityMatcherService {
                         }
                         if (!locations.isEmpty()) {
                             MethodNode addedMethod = jdtService.parseMethodSNT(addedEntity.getFilePath(), addedMethodDeclaration);
-                            addedEntity.setMethodNode(addedMethod);
-                            addedMethod.setMethodEntity(addedEntity);
-                            if (locations.size() > 1)
-                                addedMethod.setDuplicated();
-                            for (StatementNodeTree snt : locations) {
-                                StatementNodeTree parent = snt.getParent();
-                                List<StatementNodeTree> children = parent.getChildren();
-                                int i = children.indexOf(snt);
-                                matchPair.addAddedStatement(snt);
-                                snt.setMatched();
-                                children.addAll(i, addedMethod.getChildren().get(0).getChildren());
-                                int position = snt.getPosition();
-                                List<StatementNodeTree> allControls = newMethod.getAllControls();
-                                boolean inserted = false;
-                                for (int j = 0; j < allControls.size(); j++) {
-                                    StatementNodeTree control = allControls.get(j);
-                                    if (position < control.getPosition()) {
-                                        newMethod.addControls(j, addedMethod.getAllControls());
-                                        inserted = true;
-                                        break;
+                            if (!addedMethod.getChildren().isEmpty()) {
+                                addedEntity.setMethodNode(addedMethod);
+                                addedMethod.setMethodEntity(addedEntity);
+                                if (locations.size() > 1)
+                                    addedMethod.setDuplicated();
+                                for (StatementNodeTree snt : locations) {
+                                    StatementNodeTree parent = snt.getParent();
+                                    List<StatementNodeTree> children = parent.getChildren();
+                                    int i = children.indexOf(snt);
+                                    children.addAll(i, addedMethod.getChildren().get(0).getChildren());
+                                    if (snt.getType() == StatementType.EXPRESSION_STATEMENT && ((ExpressionStatement) snt.getStatement()).getExpression() instanceof MethodInvocation) {
+                                        snt.setMatched();
+                                        matchPair.addAddedStatement(snt);
                                     }
-                                }
-                                if (!inserted)
-                                    newMethod.addControls(-1, addedMethod.getAllControls());
-                                List<StatementNodeTree> allBlocks = newMethod.getAllBlocks();
-                                inserted = false;
-                                for (int j = 0; j < allBlocks.size(); j++) {
-                                    StatementNodeTree block = allBlocks.get(j);
-                                    if (position < block.getPosition()) {
-                                        newMethod.addBlocks(j, addedMethod.getAllBlocks());
-                                        inserted = true;
-                                        break;
+                                    int position = snt.getPosition();
+                                    List<StatementNodeTree> allControls = newMethod.getAllControls();
+                                    boolean inserted = false;
+                                    for (int j = 0; j < allControls.size(); j++) {
+                                        StatementNodeTree control = allControls.get(j);
+                                        if (position < control.getPosition()) {
+                                            newMethod.addControls(j, addedMethod.getAllControls());
+                                            inserted = true;
+                                            break;
+                                        }
                                     }
-                                }
-                                if (!inserted)
-                                    newMethod.addBlocks(-1, addedMethod.getAllBlocks());
-                                inserted = false;
-                                for (int j = 0; j < allOperations.size(); j++) {
-                                    StatementNodeTree operation = allOperations.get(j);
-                                    if (position < operation.getPosition()) {
-                                        newMethod.addOperations(j, addedMethod.getAllOperations());
-                                        inserted = true;
-                                        break;
+                                    if (!inserted)
+                                        newMethod.addControls(-1, addedMethod.getAllControls());
+                                    List<StatementNodeTree> allBlocks = newMethod.getAllBlocks();
+                                    inserted = false;
+                                    for (int j = 0; j < allBlocks.size(); j++) {
+                                        StatementNodeTree block = allBlocks.get(j);
+                                        if (position < block.getPosition()) {
+                                            newMethod.addBlocks(j, addedMethod.getAllBlocks());
+                                            inserted = true;
+                                            break;
+                                        }
                                     }
+                                    if (!inserted)
+                                        newMethod.addBlocks(-1, addedMethod.getAllBlocks());
+                                    inserted = false;
+                                    for (int j = 0; j < allOperations.size(); j++) {
+                                        StatementNodeTree operation = allOperations.get(j);
+                                        if (position < operation.getPosition()) {
+                                            newMethod.addOperations(j, addedMethod.getAllOperations());
+                                            inserted = true;
+                                            break;
+                                        }
+                                    }
+                                    if (!inserted)
+                                        newMethod.addOperations(-1, addedMethod.getAllOperations());
                                 }
-                                if (!inserted)
-                                    newMethod.addOperations(-1, addedMethod.getAllOperations());
+                                extractedEntities.add(addedEntity);
                             }
-                            extractedEntities.add(addedEntity);
                         }
                     }
                 }
@@ -171,9 +176,9 @@ public class EntityMatcherServiceImpl implements EntityMatcherService {
                         MethodDeclaration deletedMethodDeclaration = (MethodDeclaration) deletedEntity.getDeclaration();
                         if (MethodUtils.isGetter(deletedMethodDeclaration) || MethodUtils.isSetter(deletedMethodDeclaration))
                             continue;
-                        double dice = DiceFunction.calculateBodyDice((LeafNode) deletedEntity, (LeafNode) newEntity);
-                        if (dice < 0.5)
-                            continue;
+                        /*double dice = DiceFunction.calculateBodyDice((LeafNode) deletedEntity, (LeafNode) newEntity);
+                        if (dice < 0.2)
+                            continue;*/
                         List<StatementNodeTree> allOperations = oldMethod.getAllOperations();
                         List<StatementNodeTree> locations = new ArrayList<>();
                         for (StatementNodeTree snt : allOperations) {
@@ -188,59 +193,63 @@ public class EntityMatcherServiceImpl implements EntityMatcherService {
                         }
                         if (!locations.isEmpty()) {
                             MethodNode deletedMethod = jdtService.parseMethodSNT(deletedEntity.getFilePath(), deletedMethodDeclaration);
-                            deletedEntity.setMethodNode(deletedMethod);
-                            deletedMethod.setMethodEntity(deletedEntity);
-                            if (locations.size() > 1)
-                                deletedMethod.setDuplicated();
-                            for (StatementNodeTree snt : locations) {
-                                StatementNodeTree parent = snt.getParent();
-                                List<StatementNodeTree> children = parent.getChildren();
-                                int i = children.indexOf(snt);
-                                matchPair.addDeletedStatement(snt);
-                                snt.setMatched();
-                                children.addAll(i, deletedMethod.getChildren().get(0).getChildren());
-                                int position = snt.getPosition();
-                                List<StatementNodeTree> allControls = oldMethod.getAllControls();
-                                boolean inserted = false;
-                                for (int j = 0; j < allControls.size(); j++) {
-                                    StatementNodeTree control = allControls.get(j);
-                                    if (position < control.getPosition()) {
-                                        oldMethod.addControls(j, deletedMethod.getAllControls());
-                                        inserted = true;
-                                        break;
+                            if (!deletedMethod.getChildren().isEmpty()) {
+                                deletedEntity.setMethodNode(deletedMethod);
+                                deletedMethod.setMethodEntity(deletedEntity);
+                                if (locations.size() > 1)
+                                    deletedMethod.setDuplicated();
+                                for (StatementNodeTree snt : locations) {
+                                    StatementNodeTree parent = snt.getParent();
+                                    List<StatementNodeTree> children = parent.getChildren();
+                                    int i = children.indexOf(snt);
+                                    children.addAll(i, deletedMethod.getChildren().get(0).getChildren());
+                                    if (snt.getType() == StatementType.EXPRESSION_STATEMENT && ((ExpressionStatement) snt.getStatement()).getExpression() instanceof MethodInvocation) {
+                                        snt.setMatched();
+                                        matchPair.addDeletedStatement(snt);
                                     }
-                                }
-                                if (!inserted)
-                                    oldMethod.addControls(-1, deletedMethod.getAllControls());
-                                List<StatementNodeTree> allBlocks = oldMethod.getAllBlocks();
-                                inserted = false;
-                                for (int j = 0; j < allBlocks.size(); j++) {
-                                    StatementNodeTree block = allBlocks.get(j);
-                                    if (position < block.getPosition()) {
-                                        oldMethod.addBlocks(j, deletedMethod.getAllBlocks());
-                                        inserted = true;
-                                        break;
+                                    int position = snt.getPosition();
+                                    List<StatementNodeTree> allControls = oldMethod.getAllControls();
+                                    boolean inserted = false;
+                                    for (int j = 0; j < allControls.size(); j++) {
+                                        StatementNodeTree control = allControls.get(j);
+                                        if (position < control.getPosition()) {
+                                            oldMethod.addControls(j, deletedMethod.getAllControls());
+                                            inserted = true;
+                                            break;
+                                        }
                                     }
-                                }
-                                if (!inserted)
-                                    oldMethod.addBlocks(-1, deletedMethod.getAllBlocks());
-                                inserted = false;
-                                for (int j = 0; j < allOperations.size(); j++) {
-                                    StatementNodeTree operation = allOperations.get(j);
-                                    if (position < operation.getPosition()) {
-                                        oldMethod.addOperations(j, deletedMethod.getAllOperations());
-                                        inserted = true;
-                                        break;
+                                    if (!inserted)
+                                        oldMethod.addControls(-1, deletedMethod.getAllControls());
+                                    List<StatementNodeTree> allBlocks = oldMethod.getAllBlocks();
+                                    inserted = false;
+                                    for (int j = 0; j < allBlocks.size(); j++) {
+                                        StatementNodeTree block = allBlocks.get(j);
+                                        if (position < block.getPosition()) {
+                                            oldMethod.addBlocks(j, deletedMethod.getAllBlocks());
+                                            inserted = true;
+                                            break;
+                                        }
                                     }
+                                    if (!inserted)
+                                        oldMethod.addBlocks(-1, deletedMethod.getAllBlocks());
+                                    inserted = false;
+                                    for (int j = 0; j < allOperations.size(); j++) {
+                                        StatementNodeTree operation = allOperations.get(j);
+                                        if (position < operation.getPosition()) {
+                                            oldMethod.addOperations(j, deletedMethod.getAllOperations());
+                                            inserted = true;
+                                            break;
+                                        }
+                                    }
+                                    if (!inserted)
+                                        oldMethod.addOperations(-1, deletedMethod.getAllOperations());
                                 }
-                                if (!inserted)
-                                    oldMethod.addOperations(-1, deletedMethod.getAllOperations());
+                                inlinedEntities.add(deletedEntity);
                             }
-                            inlinedEntities.add(deletedEntity);
                         }
                     }
                 }
-                smService.matchStatements(oldMethod, newMethod, matchPair);
+//                smService.matchStatements(oldMethod, newMethod, matchPair);
             }
         }
 //        deletedEntities.removeAll(inlinedEntities);

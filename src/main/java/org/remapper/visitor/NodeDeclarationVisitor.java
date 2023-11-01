@@ -30,6 +30,20 @@ public class NodeDeclarationVisitor extends ASTVisitor {
         enumConstantDeclarations = new ArrayList<>();
     }
 
+    public List<ASTNode> getASTNodes() {
+        List<ASTNode> astNodes = new ArrayList<>();
+        astNodes.addAll(typeDeclarations);
+        astNodes.addAll(enumDeclarations);
+        astNodes.addAll(annotationTypeDeclarations);
+        astNodes.addAll(recordDeclarations);
+        astNodes.addAll(initializers);
+        astNodes.addAll(fieldDeclarations);
+        astNodes.addAll(methodDeclarations);
+        astNodes.addAll(annotationMemberDeclarations);
+        astNodes.addAll(enumConstantDeclarations);
+        return astNodes;
+    }
+
     public List<TypeDeclaration> getTypeDeclarations() {
         return typeDeclarations;
     }
