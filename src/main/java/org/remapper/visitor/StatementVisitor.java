@@ -92,7 +92,11 @@ public class StatementVisitor extends ASTVisitor {
     @Override
     public boolean visit(ReturnStatement node) {
         statements.add(node);
-        return false;
+        Expression expression = node.getExpression();
+        if (expression instanceof SwitchExpression)
+            return true;
+        else
+            return false;
     }
 
     @Override

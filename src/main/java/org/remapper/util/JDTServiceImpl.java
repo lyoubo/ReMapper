@@ -250,6 +250,7 @@ public class JDTServiceImpl implements JDTService {
                     parent = createSNT(cu, filePath, temp, methodNode, initializedSNT);
                     initializedSNT.put(temp, parent);
                 }
+
             } else {
                 parent = initializedSNT.get(statement.getParent());
                 if (parent == null) {
