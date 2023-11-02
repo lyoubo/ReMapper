@@ -92,6 +92,8 @@ public class MethodUtils {
             for (String newMethodLine : newMethodLines) {
                 if (Objects.equals(oldMethodLines[index], newMethodLine))
                     index++;
+                if (index == oldMethodLines.length)
+                    return true;
             }
             return index == oldMethodLines.length;
         }
