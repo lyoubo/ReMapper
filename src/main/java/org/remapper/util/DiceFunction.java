@@ -208,8 +208,8 @@ public class DiceFunction {
         if (expression1 != null && expression2 != null && StringUtils.equals(expression1.toString(), expression2.toString()))
             return 1.0;
         JDTService jdtService = new JDTServiceImpl();
-        List<ChildNode> list1 = jdtService.getDescendants(expression1 == null ? statement1.getStatement() : expression1);
-        List<ChildNode> list2 = jdtService.getDescendants(expression2 == null ? statement2.getStatement() : expression2);
+        List<ChildNode> list1 = jdtService.getDescendants(statement1.getStatement());
+        List<ChildNode> list2 = jdtService.getDescendants(statement2.getStatement());
         int intersection = 0;
         int union = list1.size() + list2.size();
         Set<Integer> matched = new HashSet<>();

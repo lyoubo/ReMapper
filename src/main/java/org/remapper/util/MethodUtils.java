@@ -44,7 +44,11 @@ public class MethodUtils {
                     }
                     String name = methodDeclaration.getName().getIdentifier();
                     Type returnType = methodDeclaration.getReturnType2();
-                    if ((name.startsWith("is") || name.startsWith("has")) && (parameters.size() == 0 || !parameterUsed) &&
+                    if ((name.startsWith("is")) && (parameters.size() == 0) &&
+                            returnType != null && returnType.toString().equals("boolean")) {
+                        return true;
+                    }
+                    if ((name.startsWith("has")) && (!parameterUsed) &&
                             returnType != null && returnType.toString().equals("boolean")) {
                         return true;
                     }

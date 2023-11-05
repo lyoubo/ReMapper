@@ -97,8 +97,19 @@ public class EntityMatcherServiceImpl implements EntityMatcherService {
                         if (dice < 0.2)
                             continue;*/
                         List<StatementNodeTree> allOperations = newMethod.getAllOperations();
+                        List<StatementNodeTree> allControls = newMethod.getAllControls();
                         List<StatementNodeTree> locations = new ArrayList<>();
                         for (StatementNodeTree snt : allOperations) {
+                            NodeUsageVisitor visitor = new NodeUsageVisitor();
+                            snt.getStatement().accept(visitor);
+                            for (EntityInfo entity : visitor.getEntityUsages()) {
+                                if (entity.equals(addedEntity.getEntity())) {
+                                    locations.add(snt);
+                                    break;
+                                }
+                            }
+                        }
+                        for (StatementNodeTree snt : allControls) {
                             NodeUsageVisitor visitor = new NodeUsageVisitor();
                             snt.getStatement().accept(visitor);
                             for (EntityInfo entity : visitor.getEntityUsages()) {
@@ -125,7 +136,6 @@ public class EntityMatcherServiceImpl implements EntityMatcherService {
                                         matchPair.addAddedStatement(snt);
                                     }
                                     int position = snt.getPosition();
-                                    List<StatementNodeTree> allControls = newMethod.getAllControls();
                                     boolean inserted = false;
                                     for (int j = 0; j < allControls.size(); j++) {
                                         StatementNodeTree control = allControls.get(j);
@@ -180,8 +190,19 @@ public class EntityMatcherServiceImpl implements EntityMatcherService {
                         if (dice < 0.2)
                             continue;*/
                         List<StatementNodeTree> allOperations = oldMethod.getAllOperations();
+                        List<StatementNodeTree> allControls = oldMethod.getAllControls();
                         List<StatementNodeTree> locations = new ArrayList<>();
                         for (StatementNodeTree snt : allOperations) {
+                            NodeUsageVisitor visitor = new NodeUsageVisitor();
+                            snt.getStatement().accept(visitor);
+                            for (EntityInfo entity : visitor.getEntityUsages()) {
+                                if (entity.equals(deletedEntity.getEntity())) {
+                                    locations.add(snt);
+                                    break;
+                                }
+                            }
+                        }
+                        for (StatementNodeTree snt : allControls) {
                             NodeUsageVisitor visitor = new NodeUsageVisitor();
                             snt.getStatement().accept(visitor);
                             for (EntityInfo entity : visitor.getEntityUsages()) {
@@ -208,7 +229,6 @@ public class EntityMatcherServiceImpl implements EntityMatcherService {
                                         matchPair.addDeletedStatement(snt);
                                     }
                                     int position = snt.getPosition();
-                                    List<StatementNodeTree> allControls = oldMethod.getAllControls();
                                     boolean inserted = false;
                                     for (int j = 0; j < allControls.size(); j++) {
                                         StatementNodeTree control = allControls.get(j);

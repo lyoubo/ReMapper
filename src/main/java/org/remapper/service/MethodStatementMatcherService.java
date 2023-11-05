@@ -13,7 +13,8 @@ import java.util.*;
 
 public class MethodStatementMatcherService {
 
-    public void matchStatements(MethodNode methodBefore, MethodNode methodAfter, MatchPair matchPair) {
+    public void matchStatements(MethodNode methodBefore, MethodNode methodAfter, MatchPair originalPair) {
+        MatchPair matchPair = new MatchPair();
         matchControls(matchPair, methodBefore, methodAfter);
         matchBlocks(matchPair, methodBefore, methodAfter);
         matchOperations(matchPair, methodBefore, methodAfter);
@@ -23,6 +24,19 @@ public class MethodStatementMatcherService {
         matchPair.addAddedStatements(methodAfter.getUnmatchedNodes());
 
         repairMatching(matchPair);
+
+        Set<Pair<StatementNodeTree, StatementNodeTree>> matchedStatements = matchPair.getMatchedStatements();
+        for (Pair<StatementNodeTree, StatementNodeTree> matchedStatement : matchedStatements) {
+            originalPair.addMatchedStatement(matchedStatement.getLeft(), matchedStatement.getRight());
+        }
+        Set<StatementNodeTree> deletedStatements = matchPair.getDeletedStatements();
+        for (StatementNodeTree deletedStatement : deletedStatements) {
+            originalPair.addDeletedStatement(deletedStatement);
+        }
+        Set<StatementNodeTree> addedStatements = matchPair.getAddedStatements();
+        for (StatementNodeTree addedStatement : addedStatements) {
+            originalPair.addAddedStatement(addedStatement);
+        }
     }
 
     private void matchControls(MatchPair matchPair, MethodNode methodBefore, MethodNode methodAfter) {
