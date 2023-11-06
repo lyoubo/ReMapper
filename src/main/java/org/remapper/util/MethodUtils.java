@@ -16,39 +16,27 @@ public class MethodUtils {
             if (statements.size() == 1) {
                 Statement statement = statements.get(0);
                 if (statement.toString().startsWith("return ")) {
-                    List<String> variables = new ArrayList<>();
-                    statement.accept(new ASTVisitor() {
-                        @Override
-                        public boolean visit(VariableDeclarationFragment node) {
-                            variables.add(node.getName().getIdentifier());
-                            return true;
-                        }
-                    });
-                    boolean parameterUsed = false;
-                    for (SingleVariableDeclaration parameter : parameters) {
-                        for (String variable : variables) {
-                            if (variable.equals(parameter.getName().getIdentifier())) {
-                                parameterUsed = true;
-                                break;
+                    ASTNode parent = methodDeclaration.getParent();
+                    if (parent instanceof TypeDeclaration) {
+                        TypeDeclaration typeDeclaration = (TypeDeclaration) parent;
+                        FieldDeclaration[] fields = typeDeclaration.getFields();
+                        for (FieldDeclaration fieldDeclaration : fields) {
+                            List<VariableDeclarationFragment> fragments = fieldDeclaration.fragments();
+                            for (VariableDeclarationFragment fragment : fragments) {
+                                if (statement.toString().equals("return " + fragment.getName().getIdentifier() + ";\n") && (parameters.size() == 0)) {
+                                    return true;
+                                }
+                                else if (statement.toString().equals("return " + fragment.getName().getIdentifier() + ".keySet()" + ";\n") && (parameters.size() == 0)) {
+                                    return true;
+                                } else if (statement.toString().equals("return " + fragment.getName().getIdentifier() + ".values()" + ";\n") && (parameters.size() == 0)) {
+                                    return true;
+                                }
                             }
-                        }
-                    }
-                    for (String variable : variables) {
-                        if (statement.toString().equals("return " + variable + ";\n") && (parameters.size() == 0 || !parameterUsed)) {
-                            return true;
-                        } else if (statement.toString().equals("return " + variable + ".keySet()" + ";\n") && (parameters.size() == 0 || !parameterUsed)) {
-                            return true;
-                        } else if (statement.toString().equals("return " + variable + ".values()" + ";\n") && (parameters.size() == 0 || !parameterUsed)) {
-                            return true;
                         }
                     }
                     String name = methodDeclaration.getName().getIdentifier();
                     Type returnType = methodDeclaration.getReturnType2();
-                    if ((name.startsWith("is")) && (parameters.size() == 0) &&
-                            returnType != null && returnType.toString().equals("boolean")) {
-                        return true;
-                    }
-                    if ((name.startsWith("has")) && (!parameterUsed) &&
+                    if ((name.startsWith("is") || name.startsWith("has")) && (parameters.size() == 0) &&
                             returnType != null && returnType.toString().equals("boolean")) {
                         return true;
                     }
@@ -68,17 +56,18 @@ public class MethodUtils {
             List<Statement> statements = body.statements();
             if (statements.size() == 1) {
                 Statement statement = statements.get(0);
-                List<String> variables = new ArrayList<>();
-                statement.accept(new ASTVisitor() {
-                    @Override
-                    public boolean visit(VariableDeclarationFragment node) {
-                        variables.add(node.getName().getIdentifier());
-                        return true;
-                    }
-                });
-                for (String variable : variables) {
-                    if (statement.toString().equals(variable + "=" + parameters.get(0).getName().getIdentifier() + ";\n")) {
-                        return true;
+                ASTNode parent = methodDeclaration.getParent();
+                if (parent instanceof TypeDeclaration) {
+                    TypeDeclaration typeDeclaration = (TypeDeclaration) parent;
+                    FieldDeclaration[] fields = typeDeclaration.getFields();
+                    for (FieldDeclaration fieldDeclaration : fields) {
+                        List<VariableDeclarationFragment> fragments = fieldDeclaration.fragments();
+                        for (VariableDeclarationFragment fragment : fragments) {
+                            if (statement.toString().equals(fragment.getName().getIdentifier() + "=" + parameters.get(0).getName().getIdentifier() + ";\n") ||
+                                    statement.toString().equals("this." + fragment.getName().getIdentifier() + "=" + parameters.get(0).getName().getIdentifier() + ";\n")) {
+                                return true;
+                            }
+                        }
                     }
                 }
             }

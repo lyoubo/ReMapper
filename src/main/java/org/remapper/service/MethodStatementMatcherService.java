@@ -286,7 +286,8 @@ public class MethodStatementMatcherService {
                 if (!node1.isMatched() && !node2.isMatched()) {
                     if (!typeCompatible(node1, node2))
                         continue;
-                    if (DiceFunction.calculateSimilarity(matchPair, node1, node2) < DiceFunction.minSimilarity)
+                    double sim = DiceFunction.calculateSimilarity(matchPair, node1, node2);
+                    if (sim < DiceFunction.minSimilarity)
                         continue;
                     if (node1.getType() == StatementType.VARIABLE_DECLARATION_STATEMENT && node2.getType() == StatementType.VARIABLE_DECLARATION_STATEMENT) {
                         VariableDeclarationStatement statement1 = (VariableDeclarationStatement) node1.getStatement();
@@ -441,6 +442,7 @@ public class MethodStatementMatcherService {
         deletedStatements.addAll(addedDeleted);
         addedStatements.removeAll(replacedAdded);
         addedStatements.addAll(addedAdded);
+        Map<StatementNodeTree, StatementNodeTree> temp = new HashMap<>();
         for (StatementNodeTree deleted : deletedStatements) {
             for (StatementNodeTree added : addedStatements) {
                 if (((deleted.getDepth() == 1 && added.getDepth() == 1) || matchedStatements.contains(Pair.of(deleted.getParent(), added.getParent()))) &&
@@ -460,7 +462,16 @@ public class MethodStatementMatcherService {
                 if (deleted.getDepth() == 1 && added.getDepth() == 1 &&
                         deleted.getParent().getChildren().size() == 1 && added.getParent().getChildren().size() == 1) {
                     double sim = DiceFunction.calculateDiceSimilarity(deleted, added);
-                    if (sim >= 0.5) {
+                    if (sim >= 0.3) {
+                        newPairs.add(Pair.of(deleted, added));
+                        replacedDeleted.add(deleted);
+                        replacedAdded.add(added);
+                    }
+                }
+                if (deleted.getDepth() == 1 && added.getDepth() == 1) {
+                    double txtSim = DiceFunction.calculateDiceSimilarity(deleted, added);
+                    double ctxSim = DiceFunction.calculateContextSimilarity(matchPair, deleted, added);
+                    if (ctxSim > 0 && txtSim >= 0.3) {
                         newPairs.add(Pair.of(deleted, added));
                         replacedDeleted.add(deleted);
                         replacedAdded.add(added);
@@ -476,7 +487,22 @@ public class MethodStatementMatcherService {
                         replacedAdded.add(added);
                     }
                 }
+                if ((deleted.getDepth() == 1 && added.getDepth() == 1) || (matchPair.getMatchedStatements().contains(Pair.of(deleted.getParent(), added.getParent())) ||
+                        matchPair.getCandidateStatements().contains(Pair.of(deleted.getParent(), added.getParent())))) {
+                    if (deleted.getParent().getChildren().size() <= 2 && added.getParent().getChildren().size() == deleted.getParent().getChildren().size()) {
+                        double sim = DiceFunction.calculateSimilarity(matchPair, deleted, added);
+                        if (sim >= 0.5) {
+                            processStatementMap(matchPair, temp, deleted, added);
+                        }
+                    }
+                }
             }
+        }
+        for (StatementNodeTree operation1 : temp.keySet()) {
+            StatementNodeTree operation2 = temp.get(operation1);
+            matchedStatements.add(Pair.of(operation1, operation2));
+            deletedStatements.remove(operation1);
+            addedStatements.remove(operation2);
         }
         matchedStatements.removeAll(oldPairs);
         matchedStatements.addAll(newPairs);
