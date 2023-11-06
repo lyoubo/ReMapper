@@ -416,6 +416,7 @@ public class MethodStatementMatcherService {
                     if (leftFragment.getName().getIdentifier().equals(addedFragment.getName().getIdentifier())) {
                         oldPairs.add(pair);
                         newPairs.add(Pair.of(left, added));
+                        added.setMatched();
                         replacedAdded.add(added);
                         addedAdded.add(right);
                     }
@@ -432,6 +433,7 @@ public class MethodStatementMatcherService {
                     if (deletedFragment.getName().getIdentifier().equals(rightFragment.getName().getIdentifier())) {
                         oldPairs.add(pair);
                         newPairs.add(Pair.of(deleted, right));
+                        deleted.setMatched();
                         replacedDeleted.add(deleted);
                         addedDeleted.add(left);
                     }
@@ -445,7 +447,7 @@ public class MethodStatementMatcherService {
         Map<StatementNodeTree, StatementNodeTree> temp = new HashMap<>();
         for (StatementNodeTree deleted : deletedStatements) {
             for (StatementNodeTree added : addedStatements) {
-                if (((deleted.getDepth() == 1 && added.getDepth() == 1) || matchedStatements.contains(Pair.of(deleted.getParent(), added.getParent()))) &&
+                if (!deleted.isMatched() && !added.isMatched() && ((deleted.getDepth() == 1 && added.getDepth() == 1) || matchedStatements.contains(Pair.of(deleted.getParent(), added.getParent()))) &&
                         deleted.getType() == StatementType.VARIABLE_DECLARATION_STATEMENT &&
                         added.getType() == StatementType.VARIABLE_DECLARATION_STATEMENT) {
                     VariableDeclarationStatement deletedStatement = (VariableDeclarationStatement) deleted.getStatement();
@@ -454,44 +456,36 @@ public class MethodStatementMatcherService {
                     VariableDeclarationFragment addedFragment = (VariableDeclarationFragment) addedStatement.fragments().get(0);
                     if (deletedStatement.getType().toString().equals(addedStatement.getType().toString()) &&
                             deletedFragment.getName().getIdentifier().equals(addedFragment.getName().getIdentifier())) {
-                        newPairs.add(Pair.of(deleted, added));
-                        replacedDeleted.add(deleted);
-                        replacedAdded.add(added);
+                        processStatementMap(matchPair, temp, deleted, added);
                     }
                 }
-                if (deleted.getDepth() == 1 && added.getDepth() == 1 &&
+                if (!deleted.isMatched() && !added.isMatched() && deleted.getDepth() == 1 && added.getDepth() == 1 &&
                         deleted.getParent().getChildren().size() == 1 && added.getParent().getChildren().size() == 1) {
                     double sim = DiceFunction.calculateDiceSimilarity(deleted, added);
                     if (sim >= 0.3) {
-                        newPairs.add(Pair.of(deleted, added));
-                        replacedDeleted.add(deleted);
-                        replacedAdded.add(added);
+                        processStatementMap(matchPair, temp, deleted, added);
                     }
                 }
-                if (deleted.getDepth() == 1 && added.getDepth() == 1) {
+                if (!deleted.isMatched() && !added.isMatched() && deleted.getDepth() == 1 && added.getDepth() == 1) {
                     double txtSim = DiceFunction.calculateDiceSimilarity(deleted, added);
                     double ctxSim = DiceFunction.calculateContextSimilarity(matchPair, deleted, added);
                     if (ctxSim > 0 && txtSim >= 0.3) {
-                        newPairs.add(Pair.of(deleted, added));
-                        replacedDeleted.add(deleted);
-                        replacedAdded.add(added);
+                        processStatementMap(matchPair, temp, deleted, added);
                     }
                 }
-                if ((deleted.getType() == StatementType.FOR_STATEMENT || deleted.getType() == StatementType.ENHANCED_FOR_STATEMENT ||
+                if (!deleted.isMatched() && !added.isMatched() && (deleted.getType() == StatementType.FOR_STATEMENT || deleted.getType() == StatementType.ENHANCED_FOR_STATEMENT ||
                         deleted.getType() == StatementType.WHILE_STATEMENT || deleted.getType() == StatementType.DO_STATEMENT) &&
                         MethodUtils.isStreamAPI(added.getStatement())) {
                     double sim = DiceFunction.calculateSimilarity(matchPair, deleted, added);
                     if (sim >= DiceFunction.minSimilarity) {
-                        newPairs.add(Pair.of(deleted, added));
-                        replacedDeleted.add(deleted);
-                        replacedAdded.add(added);
+                        processStatementMap(matchPair, temp, deleted, added);
                     }
                 }
-                if ((deleted.getDepth() == 1 && added.getDepth() == 1) || (matchPair.getMatchedStatements().contains(Pair.of(deleted.getParent(), added.getParent())) ||
-                        matchPair.getCandidateStatements().contains(Pair.of(deleted.getParent(), added.getParent())))) {
-                    if (deleted.getParent().getChildren().size() <= 2 && added.getParent().getChildren().size() == deleted.getParent().getChildren().size()) {
+                if (!deleted.isMatched() && !added.isMatched() && ((deleted.getDepth() == 1 && added.getDepth() == 1) || (matchPair.getMatchedStatements().contains(Pair.of(deleted.getParent(), added.getParent())) ||
+                        matchPair.getCandidateStatements().contains(Pair.of(deleted.getParent(), added.getParent()))))) {
+                    if (deleted.getParent().getChildren().size() <= 2 && added.getParent().getChildren().size() <= 2) {
                         double sim = DiceFunction.calculateSimilarity(matchPair, deleted, added);
-                        if (sim >= 0.5) {
+                        if (sim >= 0.5 && deleted.getType() == added.getType()) {
                             processStatementMap(matchPair, temp, deleted, added);
                         }
                     }
