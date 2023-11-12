@@ -1,9 +1,7 @@
 package org.remapper.service;
 
 import org.apache.commons.lang3.tuple.Pair;
-import org.eclipse.jdt.core.dom.ExpressionStatement;
-import org.eclipse.jdt.core.dom.MethodDeclaration;
-import org.eclipse.jdt.core.dom.MethodInvocation;
+import org.eclipse.jdt.core.dom.*;
 import org.eclipse.jgit.errors.MissingObjectException;
 import org.eclipse.jgit.lib.Repository;
 import org.eclipse.jgit.revwalk.RevCommit;
@@ -110,13 +108,9 @@ public class EntityMatcherServiceImpl implements EntityMatcherService {
                             }
                         }
                         for (StatementNodeTree snt : allControls) {
-                            NodeUsageVisitor visitor = new NodeUsageVisitor();
-                            snt.getStatement().accept(visitor);
-                            for (EntityInfo entity : visitor.getEntityUsages()) {
-                                if (entity.equals(addedEntity.getEntity())) {
-                                    locations.add(snt);
-                                    break;
-                                }
+                            if (isLocation(snt, addedEntity)) {
+                                locations.add(snt);
+                                break;
                             }
                         }
                         if (!locations.isEmpty()) {
@@ -203,13 +197,9 @@ public class EntityMatcherServiceImpl implements EntityMatcherService {
                             }
                         }
                         for (StatementNodeTree snt : allControls) {
-                            NodeUsageVisitor visitor = new NodeUsageVisitor();
-                            snt.getStatement().accept(visitor);
-                            for (EntityInfo entity : visitor.getEntityUsages()) {
-                                if (entity.equals(deletedEntity.getEntity())) {
-                                    locations.add(snt);
-                                    break;
-                                }
+                            if (isLocation(snt, deletedEntity)) {
+                                locations.add(snt);
+                                break;
                             }
                         }
                         if (!locations.isEmpty()) {
@@ -299,5 +289,73 @@ public class EntityMatcherServiceImpl implements EntityMatcherService {
 
         handler.handle(commitId, matchPair);
         return matchPair;
+    }
+
+    private boolean isLocation(StatementNodeTree snt, DeclarationNodeTree deletedEntity) {
+        NodeUsageVisitor visitor = new NodeUsageVisitor();
+        if (snt.getType() == StatementType.DO_STATEMENT) {
+            DoStatement statement = (DoStatement) snt.getStatement();
+            statement.getExpression().accept(visitor);
+            for (EntityInfo entity : visitor.getEntityUsages()) {
+                if (entity.equals(deletedEntity.getEntity())) {
+                    return true;
+                }
+            }
+        } else if (snt.getType() == StatementType.WHILE_STATEMENT) {
+            WhileStatement statement = (WhileStatement) snt.getStatement();
+            statement.getExpression().accept(visitor);
+            for (EntityInfo entity : visitor.getEntityUsages()) {
+                if (entity.equals(deletedEntity.getEntity())) {
+                    return true;
+                }
+            }
+        } else if (snt.getType() == StatementType.FOR_STATEMENT) {
+            ForStatement statement = (ForStatement) snt.getStatement();
+            Expression expression = statement.getExpression();
+            if (expression != null) {
+                expression.accept(visitor);
+                for (EntityInfo entity : visitor.getEntityUsages()) {
+                    if (entity.equals(deletedEntity.getEntity())) {
+                        return true;
+                    }
+                }
+            }
+        } else if (snt.getType() == StatementType.ENHANCED_FOR_STATEMENT) {
+            EnhancedForStatement statement = (EnhancedForStatement) snt.getStatement();
+            statement.getExpression().accept(visitor);
+            for (EntityInfo entity : visitor.getEntityUsages()) {
+                if (entity.equals(deletedEntity.getEntity())) {
+                    return true;
+                }
+            }
+        } else if (snt.getType() == StatementType.IF_STATEMENT) {
+            IfStatement statement = (IfStatement) snt.getStatement();
+            statement.getExpression().accept(visitor);
+            for (EntityInfo entity : visitor.getEntityUsages()) {
+                if (entity.equals(deletedEntity.getEntity())) {
+                    return true;
+                }
+            }
+        } else if (snt.getType() == StatementType.SWITCH_STATEMENT) {
+            SwitchStatement statement = (SwitchStatement) snt.getStatement();
+            statement.getExpression().accept(visitor);
+            for (EntityInfo entity : visitor.getEntityUsages()) {
+                if (entity.equals(deletedEntity.getEntity())) {
+                    return true;
+                }
+            }
+        } else if (snt.getType() == StatementType.TRY_STATEMENT) {
+            TryStatement statement = (TryStatement) snt.getStatement();
+            List<Expression> resources = statement.resources();
+            for (Expression expression : resources) {
+                expression.accept(visitor);
+                for (EntityInfo entity : visitor.getEntityUsages()) {
+                    if (entity.equals(deletedEntity.getEntity())) {
+                        return true;
+                    }
+                }
+            }
+        }
+        return false;
     }
 }

@@ -24,8 +24,8 @@ public class ReMapperTest {
 
     @Test
     public void detectAtCommit() throws Exception {
-        String folder = "E:/refactoring-toy-example";
-        String commitId = "d4bce13a443cf12da40a77c16c1e591f4f985b47";
+        String folder = "E:/contributions/ASE2023/Dataset/refactoring-engine";
+        String commitId = "6d5d01323ada8b53280e14d848e203a3dda7c6b6";
         GitService gitService = new GitServiceImpl();
         try (Repository repo = gitService.openRepository(folder)) {
             String gitURL = GitServiceImpl.getRemoteUrl(folder);
@@ -33,7 +33,8 @@ public class ReMapperTest {
             service.matchAtCommit(repo, commitId, new MatchingHandler() {
                 @Override
                 public void handle(String commitId, MatchPair matchPair) {
-                    commitJSON(gitURL, commitId, matchPair);
+                    System.out.println(matchPair);
+//                    commitJSON(gitURL, commitId, matchPair);
                 }
 
                 @Override
