@@ -467,7 +467,8 @@ public class MethodStatementMatcherService {
         Map<StatementNodeTree, StatementNodeTree> temp = new HashMap<>();
         for (StatementNodeTree deleted : deletedStatements) {
             for (StatementNodeTree added : addedStatements) {
-                if (!deleted.isMatched() && !added.isMatched() && ((deleted.getDepth() == 1 && added.getDepth() == 1) || matchedStatements.contains(Pair.of(deleted.getParent(), added.getParent()))) &&
+                if (!deleted.isMatched() && !added.isMatched() && ((deleted.getDepth() == 1 && added.getDepth() == 1) ||
+                        matchedStatements.contains(Pair.of(deleted.getParent(), added.getParent()))) &&
                         deleted.getType() == StatementType.VARIABLE_DECLARATION_STATEMENT &&
                         added.getType() == StatementType.VARIABLE_DECLARATION_STATEMENT) {
                     VariableDeclarationStatement deletedStatement = (VariableDeclarationStatement) deleted.getStatement();
@@ -499,10 +500,14 @@ public class MethodStatementMatcherService {
                         if (initializer1 instanceof ClassInstanceCreation && initializer2 instanceof ClassInstanceCreation) {
                             ClassInstanceCreation creation1 = (ClassInstanceCreation) initializer1;
                             ClassInstanceCreation creation2 = (ClassInstanceCreation) initializer2;
-                            String creationType1 = creation1.getType().toString().substring(0, creation1.getType().toString().indexOf("<"));
-                            String deletedType = deletedStatement.getType().toString().substring(0, deletedStatement.getType().toString().indexOf("<"));
-                            String creationType2 = creation2.getType().toString().substring(0, creation2.getType().toString().indexOf("<"));
-                            String addedType = addedStatement.getType().toString().substring(0, addedStatement.getType().toString().indexOf("<"));
+                            String creationType1 = creation1.getType().toString().contains("<") ?
+                                    creation1.getType().toString().substring(0, creation1.getType().toString().indexOf("<")) : creation1.getType().toString();
+                            String deletedType = deletedStatement.getType().toString().contains("<") ?
+                                    deletedStatement.getType().toString().substring(0, deletedStatement.getType().toString().indexOf("<")) : deletedStatement.getType().toString();
+                            String creationType2 = creation2.getType().toString().contains("<") ?
+                                    creation2.getType().toString().substring(0, creation2.getType().toString().indexOf("<")) : creation2.getType().toString();
+                            String addedType = addedStatement.getType().toString().contains("<") ?
+                                    addedStatement.getType().toString().substring(0, addedStatement.getType().toString().indexOf("<")) : addedStatement.getType().toString();
                             if (creationType1.equals(deletedType) && creationType2.equals(addedType)) {
                                 processStatementMap(matchPair, temp, deleted, added);
                                 continue;
@@ -530,20 +535,43 @@ public class MethodStatementMatcherService {
                         continue;
                     }
                 }
-                if (!deleted.isMatched() && !added.isMatched() && (deleted.getType() == StatementType.FOR_STATEMENT || deleted.getType() == StatementType.ENHANCED_FOR_STATEMENT ||
-                        deleted.getType() == StatementType.WHILE_STATEMENT || deleted.getType() == StatementType.DO_STATEMENT) &&
-                        MethodUtils.isStreamAPI(added.getStatement())) {
+                if (!deleted.isMatched() && !added.isMatched() && (deleted.getType() == StatementType.FOR_STATEMENT ||
+                        deleted.getType() == StatementType.ENHANCED_FOR_STATEMENT || deleted.getType() == StatementType.WHILE_STATEMENT ||
+                        deleted.getType() == StatementType.DO_STATEMENT) && MethodUtils.isStreamAPI(added.getStatement())) {
                     double sim = DiceFunction.calculateSimilarity(matchPair, deleted, added);
                     if (sim >= DiceFunction.minSimilarity) {
                         processStatementMap(matchPair, temp, deleted, added);
                         continue;
                     }
                 }
-                if (!deleted.isMatched() && !added.isMatched() && ((deleted.getDepth() == 1 && added.getDepth() == 1) || (matchPair.getMatchedStatements().contains(Pair.of(deleted.getParent(), added.getParent())) ||
-                        matchPair.getCandidateStatements().contains(Pair.of(deleted.getParent(), added.getParent()))))) {
+                if (!deleted.isMatched() && !added.isMatched() && ((deleted.getDepth() == 1 && added.getDepth() == 1) ||
+                        (matchPair.getMatchedStatements().contains(Pair.of(deleted.getParent(), added.getParent())) ||
+                                matchPair.getCandidateStatements().contains(Pair.of(deleted.getParent(), added.getParent()))))) {
                     if (deleted.getParent().getChildren().size() <= 2 && added.getParent().getChildren().size() <= 2) {
                         double sim = DiceFunction.calculateSimilarity(matchPair, deleted, added);
                         if (sim >= 0.5 && deleted.getType() == added.getType()) {
+                            processStatementMap(matchPair, temp, deleted, added);
+                            continue;
+                        }
+                    }
+                }
+                if (!deleted.isMatched() && !added.isMatched() && deleted.getType() == StatementType.VARIABLE_DECLARATION_STATEMENT &&
+                        added.getType() == StatementType.VARIABLE_DECLARATION_STATEMENT) {
+                    VariableDeclarationStatement deletedStatement = (VariableDeclarationStatement) deleted.getStatement();
+                    VariableDeclarationFragment deletedFragment = (VariableDeclarationFragment) deletedStatement.fragments().get(0);
+                    VariableDeclarationStatement addedStatement = (VariableDeclarationStatement) added.getStatement();
+                    VariableDeclarationFragment addedFragment = (VariableDeclarationFragment) addedStatement.fragments().get(0);
+                    if (deletedStatement.getType().toString().equals(addedStatement.getType().toString())) {
+                        Set<Pair<StatementNodeTree, StatementNodeTree>> pairs = matchPair.getMatchedStatements();
+                        boolean replaced = false;
+                        for (Pair<StatementNodeTree, StatementNodeTree> pair : pairs) {
+                            if (pair.getLeft().getExpression().contains(deletedFragment.getName().getIdentifier()) &&
+                            pair.getRight().getExpression().contains(addedFragment.getName().getIdentifier())) {
+                                replaced = true;
+                                break;
+                            }
+                        }
+                        if (replaced) {
                             processStatementMap(matchPair, temp, deleted, added);
                         }
                     }
