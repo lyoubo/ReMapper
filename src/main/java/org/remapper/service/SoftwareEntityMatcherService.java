@@ -198,13 +198,27 @@ public class SoftwareEntityMatcherService {
         for (String filePath : modifiedFiles) {
             RootNode dntBefore = fileDNTsBefore.get(filePath);
             RootNode dntCurrent = fileDNTsCurrent.get(filePath);
+            CompilationUnit cuBefore = (CompilationUnit) dntBefore.getDeclaration();
+            CompilationUnit cuCurrent = (CompilationUnit) dntCurrent.getDeclaration();
+            List<TypeDeclaration> typeDeclarationsBefore = cuBefore.types();
+            List<TypeDeclaration> typeDeclarationsCurrent = cuCurrent.types();
+            boolean repairPublicClass = false;
+            if (typeDeclarationsBefore.size() == 1 && typeDeclarationsCurrent.size() == 1) {
+                TypeDeclaration typeDeclarationBefore = typeDeclarationsBefore.get(0);
+                TypeDeclaration typeDeclarationCurrent = typeDeclarationsCurrent.get(0);
+                String identifierBefore = typeDeclarationBefore.getName().getIdentifier();
+                String identifierCurrent = typeDeclarationCurrent.getName().getIdentifier();
+                if (typeDeclarationBefore.toString().replace("public class " + identifierBefore,
+                        "public class " + identifierCurrent).equals(typeDeclarationCurrent.toString()))
+                    repairPublicClass = true;
+            }
             if (!dntBefore.hasChildren() || !dntCurrent.hasChildren())
                 continue;
             List<DeclarationNodeTree> treeNodesBefore = dntBefore.getAllNodes();
             List<DeclarationNodeTree> treeNodesCurrent = dntCurrent.getAllNodes();
             for (DeclarationNodeTree node1 : treeNodesBefore) {
                 for (DeclarationNodeTree node2 : treeNodesCurrent) {
-                    if (!node1.equals(node2))
+                    if (!node1.equals(node2) && !(repairPublicClass && node1.getType() == node2.getType() && node1.getName().equals(node2.getName())))
                         continue;
                     if (node1.getType() == EntityType.CLASS || node1.getType() == EntityType.INTERFACE ||
                             node1.getType() == EntityType.ENUM || node1.getType() == EntityType.RECORD ||
