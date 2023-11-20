@@ -198,20 +198,7 @@ public class SoftwareEntityMatcherService {
         for (String filePath : modifiedFiles) {
             RootNode dntBefore = fileDNTsBefore.get(filePath);
             RootNode dntCurrent = fileDNTsCurrent.get(filePath);
-            CompilationUnit cuBefore = (CompilationUnit) dntBefore.getDeclaration();
-            CompilationUnit cuCurrent = (CompilationUnit) dntCurrent.getDeclaration();
-            List<TypeDeclaration> typeDeclarationsBefore = cuBefore.types();
-            List<TypeDeclaration> typeDeclarationsCurrent = cuCurrent.types();
-            boolean repairPublicClass = false;
-            if (typeDeclarationsBefore.size() == 1 && typeDeclarationsCurrent.size() == 1) {
-                TypeDeclaration typeDeclarationBefore = typeDeclarationsBefore.get(0);
-                TypeDeclaration typeDeclarationCurrent = typeDeclarationsCurrent.get(0);
-                String identifierBefore = typeDeclarationBefore.getName().getIdentifier();
-                String identifierCurrent = typeDeclarationCurrent.getName().getIdentifier();
-                if (typeDeclarationBefore.toString().replace("public class " + identifierBefore,
-                        "public class " + identifierCurrent).equals(typeDeclarationCurrent.toString()))
-                    repairPublicClass = true;
-            }
+            boolean repairPublicClass = repairPublicClass(dntBefore, dntCurrent);
             if (!dntBefore.hasChildren() || !dntCurrent.hasChildren())
                 continue;
             List<DeclarationNodeTree> treeNodesBefore = dntBefore.getAllNodes();
@@ -280,6 +267,48 @@ public class SoftwareEntityMatcherService {
                 }
             }
         }
+    }
+
+    private boolean repairPublicClass(RootNode dntBefore, RootNode dntCurrent) {
+        CompilationUnit cuBefore = (CompilationUnit) dntBefore.getDeclaration();
+        CompilationUnit cuCurrent = (CompilationUnit) dntCurrent.getDeclaration();
+        List<AbstractTypeDeclaration> atdListBefore = cuBefore.types();
+        List<AbstractTypeDeclaration> atdListCurrent = cuCurrent.types();
+        boolean repairPublicClass = false;
+        if (atdListBefore.size() == 1 && atdListCurrent.size() == 1) {
+            AbstractTypeDeclaration atdBefore = atdListBefore.get(0);
+            AbstractTypeDeclaration atdCurrent = atdListCurrent.get(0);
+            String identifierBefore = atdBefore.getName().getIdentifier();
+            String identifierCurrent = atdCurrent.getName().getIdentifier();
+            String tempBefore = "", tempCurrent = "";
+            if (atdBefore instanceof TypeDeclaration) {
+                TypeDeclaration tdBefore = (TypeDeclaration) atdBefore;
+                if (tdBefore.isInterface()) {
+                    tempBefore = "public interface " + identifierBefore;
+                } else {
+                    tempBefore = "public class " + identifierBefore;
+                }
+            } else if (atdBefore instanceof EnumDeclaration) {
+                tempBefore = "public enum " + identifierBefore;
+            } else if (atdBefore instanceof AnnotationTypeDeclaration) {
+                tempBefore = "public @interface " + identifierBefore;
+            }
+            if (atdCurrent instanceof TypeDeclaration) {
+                TypeDeclaration tdCurrent = (TypeDeclaration) atdCurrent;
+                if (tdCurrent.isInterface()) {
+                    tempCurrent = "public interface " + identifierCurrent;
+                } else {
+                    tempCurrent = "public class " + identifierCurrent;
+                }
+            } else if (atdCurrent instanceof EnumDeclaration) {
+                tempCurrent = "public enum " + identifierCurrent;
+            } else if (atdCurrent instanceof AnnotationTypeDeclaration) {
+                tempCurrent = "public @interface " + identifierCurrent;
+            }
+            if (atdBefore.toString().replace(tempBefore, tempCurrent).equals(atdCurrent.toString()))
+                repairPublicClass = true;
+        }
+        return repairPublicClass;
     }
 
     private void matchByDiceCoefficient(MatchPair matchPair, Set<String> modifiedFiles, Map<String, String> renamedFiles,
