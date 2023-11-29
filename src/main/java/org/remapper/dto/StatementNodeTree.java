@@ -64,10 +64,8 @@ public abstract class StatementNodeTree {
     }
 
     public List<StatementNodeTree> getDescendants() {
-        if (descendants == null) {
-            descendants = new ArrayList<>();
-            depthFirstSearch(descendants, getChildren());
-        }
+        descendants = new ArrayList<>();
+        depthFirstSearch(descendants, getChildren());
         return descendants;
     }
 

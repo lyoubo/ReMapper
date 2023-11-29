@@ -59,19 +59,19 @@ public class EntityMatcherServiceImpl implements EntityMatcherService {
     public MatchPair matchEntities(Repository repository, RevCommit currentCommit, final MatchingHandler handler) throws Exception {
         GitService gitService = new GitServiceImpl();
         JDTService jdtService = new JDTServiceImpl();
-        SoftwareEntityMatcherService emService = new SoftwareEntityMatcherService();
-        MethodStatementMatcherService smService = new MethodStatementMatcherService();
+        SoftwareEntityMatcherService entityMatchingService = new SoftwareEntityMatcherService();
+        MethodStatementMatcherService statementMatchingService = new MethodStatementMatcherService();
         String commitId = currentCommit.getId().getName();
         MatchPair matchPair = new MatchPair();
-        emService.matchEntities(gitService, jdtService, repository, currentCommit, matchPair);
+        entityMatchingService.matchEntities(gitService, jdtService, repository, currentCommit, matchPair);
         Set<Pair<DeclarationNodeTree, DeclarationNodeTree>> matchedEntities = matchPair.getMatchedEntities();
         Set<DeclarationNodeTree> deletedEntities = matchPair.getDeletedEntities();
         Set<DeclarationNodeTree> addedEntities = matchPair.getAddedEntities();
         Set<DeclarationNodeTree> extractedEntities = new HashSet<>();
         Set<DeclarationNodeTree> inlinedEntities = new HashSet<>();
-        for (Pair<DeclarationNodeTree, DeclarationNodeTree> matchedEntity : matchedEntities) {
-            DeclarationNodeTree oldEntity = matchedEntity.getLeft();
-            DeclarationNodeTree newEntity = matchedEntity.getRight();
+        for (Pair<DeclarationNodeTree, DeclarationNodeTree> pair : matchedEntities) {
+            DeclarationNodeTree oldEntity = pair.getLeft();
+            DeclarationNodeTree newEntity = pair.getRight();
             if (oldEntity.getType() == EntityType.METHOD && newEntity.getType() == EntityType.METHOD) {
                 MethodDeclaration removedOperation = (MethodDeclaration) oldEntity.getDeclaration();
                 MethodDeclaration addedOperation = (MethodDeclaration) newEntity.getDeclaration();
@@ -259,7 +259,7 @@ public class EntityMatcherServiceImpl implements EntityMatcherService {
                         }
                     }
                 }
-                smService.matchStatements(oldMethod, newMethod, matchPair);
+                statementMatchingService.matchStatements(oldMethod, newMethod, matchPair);
             }
         }
 //        deletedEntities.removeAll(inlinedEntities);

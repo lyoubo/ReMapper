@@ -24,8 +24,8 @@ public class ReMapperTest {
 
     @Test
     public void detectAtCommit() throws Exception {
-        String folder = "E:/refactoring-toy-example";
-        String commitId = "d4bce13a443cf12da40a77c16c1e591f4f985b47";
+        String folder = "E:/contributions/ASE2023/Dataset/lucene-solr";
+        String commitId = "e6d9eaaf000bb00e52a776e298b3c7e9f37a4cd5";
         GitService gitService = new GitServiceImpl();
         try (Repository repo = gitService.openRepository(folder)) {
             String gitURL = GitServiceImpl.getRemoteUrl(folder);

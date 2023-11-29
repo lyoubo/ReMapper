@@ -67,10 +67,8 @@ public class SoftwareEntityMatcherService {
         gitService.resetHard(repository);
 
         fineMatching(matchPair);
-
         additionalMatchByName(matchPair);
         additionalMatchByDice(matchPair);
-
         filter(matchPair);
     }
 
@@ -136,6 +134,8 @@ public class SoftwareEntityMatcherService {
                     continue;
                 deletionBefore.add(node1);
                 deletionCurrent.add(node2);
+                node1.setMatched();
+                node2.setMatched();
                 matchPair.addUnchangedEntity(node1, node2);
                 break;
             }
@@ -172,6 +172,8 @@ public class SoftwareEntityMatcherService {
     private void addInternalCandidateEntity(MatchPair matchPair, String filePath, String renamedFilePath, DeclarationNodeTree node1, DeclarationNodeTree node2) {
         if (node1.equals(node2, filePath, renamedFilePath) &&
                 StringUtils.equals(node1.getDeclaration().toString(), node2.getDeclaration().toString())) {
+            node1.setMatched();
+            node2.setMatched();
             matchPair.addMatchedEntity(node1, node2);
             if (node1.hasChildren() && node2.hasChildren()) {
                 List<DeclarationNodeTree> children1 = node1.getChildren();
@@ -290,8 +292,6 @@ public class SoftwareEntityMatcherService {
                 }
             } else if (atdBefore instanceof EnumDeclaration) {
                 tempBefore = "public enum " + identifierBefore;
-            } else if (atdBefore instanceof AnnotationTypeDeclaration) {
-                tempBefore = "public @interface " + identifierBefore;
             }
             if (atdCurrent instanceof TypeDeclaration) {
                 TypeDeclaration tdCurrent = (TypeDeclaration) atdCurrent;
@@ -302,8 +302,6 @@ public class SoftwareEntityMatcherService {
                 }
             } else if (atdCurrent instanceof EnumDeclaration) {
                 tempCurrent = "public enum " + identifierCurrent;
-            } else if (atdCurrent instanceof AnnotationTypeDeclaration) {
-                tempCurrent = "public @interface " + identifierCurrent;
             }
             if (atdBefore.toString().replace(tempBefore, tempCurrent).equals(atdCurrent.toString()))
                 repairPublicClass = true;
@@ -823,7 +821,11 @@ public class SoftwareEntityMatcherService {
             currentEntities.removeAll(existCurrent);
             matchPair.updateAddedEntities(currentEntities);
         }
-        matchPair.getMatchedEntities().addAll(matchPair.getCandidateEntities());
+        for (Pair<DeclarationNodeTree, DeclarationNodeTree> pair : matchPair.getCandidateEntities()) {
+            pair.getLeft().setMatched();
+            pair.getRight().setMatched();
+            matchPair.getMatchedEntities().add(pair);
+        }
         matchPair.getCandidateEntities().clear();
     }
 
@@ -850,7 +852,8 @@ public class SoftwareEntityMatcherService {
                     EntityPair entityPair = new EntityPair(dntBefore, dntCurrent);
                     entityPairs.add(entityPair);
                     entityPair.setDice(dice);
-                } else if (dntBefore.getType() == EntityType.ENUM && dntCurrent.getType() == EntityType.ENUM &&
+                }
+                /*else if (dntBefore.getType() == EntityType.ENUM && dntCurrent.getType() == EntityType.ENUM &&
                         dntBefore.getName().equals(dntCurrent.getName())) {
                     List<DeclarationNodeTree> children1 = dntBefore.getChildren();
                     List<DeclarationNodeTree> children2 = dntCurrent.getChildren();
@@ -859,29 +862,29 @@ public class SoftwareEntityMatcherService {
                     List<DeclarationNodeTree> constants1 = children1.stream().filter(dnt -> dnt.getType() == EntityType.ENUM_CONSTANT).collect(Collectors.toList());
                     List<DeclarationNodeTree> constants2 = children2.stream().filter(dnt -> dnt.getType() == EntityType.ENUM_CONSTANT).collect(Collectors.toList());
                     if (methods1.size() == methods2.size()) {
-                        int intersection = 0;
-                        int constants = 0;
+                        int method_intersection = 0;
+                        int constant_intersection = 0;
                         for (DeclarationNodeTree leafBefore : methods1) {
                             for (DeclarationNodeTree leafCurrent : methods2) {
                                 if (matchPair.getMatchedEntities().contains(Pair.of(leafBefore, leafCurrent)) ||
                                         matchPair.getCandidateEntities().contains(Pair.of(leafBefore, leafCurrent)))
-                                    intersection++;
+                                    method_intersection++;
                             }
                         }
                         for (DeclarationNodeTree leafBefore : constants1) {
                             for (DeclarationNodeTree leafCurrent : constants2) {
                                 if (matchPair.getMatchedEntities().contains(Pair.of(leafBefore, leafCurrent)) ||
                                         matchPair.getCandidateEntities().contains(Pair.of(leafBefore, leafCurrent)))
-                                    constants++;
+                                    constant_intersection++;
                             }
                         }
-                        if (methods1.size() > 0 && methods1.size() == intersection && constants > 0) {
+                        if (method_intersection > 0 && constant_intersection > 0) {
                             EntityPair entityPair = new EntityPair(dntBefore, dntCurrent);
                             entityPairs.add(entityPair);
-                            entityPair.setDice(constants);
+                            entityPair.setDice(constant_intersection);
                         }
                     }
-                }
+                }*/
             }
         }
         selectByDice(matchPair, deletionBefore, deletionCurrent, entityPairs);
@@ -898,7 +901,7 @@ public class SoftwareEntityMatcherService {
                     if (dntBefore instanceof InternalNode && dntCurrent instanceof InternalNode) {
                         if (dntBefore.getType() == dntCurrent.getType() &&
                                 !dntBefore.hasChildren() && !dntCurrent.hasChildren() &&
-                                dntBefore.getDependencies().size() == 0 && dntCurrent.getDependencies().size() == 0 &&
+                                dntBefore.getDependencies().isEmpty() && dntCurrent.getDependencies().isEmpty() &&
                                 dntBefore.getHeight() == 1 && dntCurrent.getHeight() == 1 &&
                                 StringUtils.equals(dntBefore.getNamespace(), dntCurrent.getNamespace()) &&
                                 (((AbstractTypeDeclaration) dntBefore.getDeclaration()).getModifiers() & Modifier.PUBLIC) != 0 &&
@@ -912,7 +915,7 @@ public class SoftwareEntityMatcherService {
                     } else if (dntBefore instanceof LeafNode && dntCurrent instanceof LeafNode) {
                         dice = DiceFunction.calculateDice((LeafNode) dntBefore, (LeafNode) dntCurrent);
                     }
-                    if (dice <= 0.8) continue;
+                    if (dice < DiceFunction.minDice) continue;
                     EntityPair entityPair = new EntityPair(dntBefore, dntCurrent);
                     entityPairs.add(entityPair);
                     entityPair.setDice(dice);
@@ -933,6 +936,8 @@ public class SoftwareEntityMatcherService {
                 continue;
             existBefore.add(node1);
             existCurrent.add(node2);
+            node1.setMatched();
+            node2.setMatched();
             matchPair.addMatchedEntity(node1, node2);
             deletionBefore.add(node1);
             deletionCurrent.add(node2);

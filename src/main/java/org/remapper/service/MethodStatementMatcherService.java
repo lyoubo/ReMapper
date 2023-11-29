@@ -31,6 +31,8 @@ public class MethodStatementMatcherService {
         Set<Pair<StatementNodeTree, StatementNodeTree>> matchedStatements = matchPair.getMatchedStatements();
         for (Pair<StatementNodeTree, StatementNodeTree> matchedStatement : matchedStatements) {
             originalPair.addMatchedStatement(matchedStatement.getLeft(), matchedStatement.getRight());
+            matchedStatement.getLeft().setMatched();
+            matchedStatement.getRight().setMatched();
         }
         Set<StatementNodeTree> deletedStatements = matchPair.getDeletedStatements();
         for (StatementNodeTree deletedStatement : deletedStatements) {
@@ -45,9 +47,9 @@ public class MethodStatementMatcherService {
     private Map<String, String> getReplacements(MatchPair originalPair) {
         Map<String, String> replacements = new LinkedHashMap<>();
         Set<Pair<DeclarationNodeTree, DeclarationNodeTree>> matchedEntities = originalPair.getMatchedEntities();
-        for (Pair<DeclarationNodeTree, DeclarationNodeTree> matchedEntity : matchedEntities) {
-            DeclarationNodeTree dntBefore = matchedEntity.getLeft();
-            DeclarationNodeTree dntCurrent = matchedEntity.getRight();
+        for (Pair<DeclarationNodeTree, DeclarationNodeTree> pair : matchedEntities) {
+            DeclarationNodeTree dntBefore = pair.getLeft();
+            DeclarationNodeTree dntCurrent = pair.getRight();
             if ((dntBefore.getType() == EntityType.CLASS || dntBefore.getType() == EntityType.INTERFACE || dntBefore.getType() == EntityType.ENUM) &&
                     (dntCurrent.getType() == EntityType.CLASS || dntCurrent.getType() == EntityType.INTERFACE || dntCurrent.getType() == EntityType.ENUM)) {
                 replacements.put(dntBefore.getName(), dntCurrent.getName());

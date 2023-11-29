@@ -114,10 +114,8 @@ public class MethodNode extends StatementNodeTree {
     }
 
     public List<StatementNodeTree> getUnmatchedNodes() {
-        if (unmatchedNodes == null) {
-            unmatchedNodes = new ArrayList<>();
-            depthFirstSearch(unmatchedNodes, getChildren());
-        }
+        unmatchedNodes = new ArrayList<>();
+        depthFirstSearch(unmatchedNodes, getChildren());
         return unmatchedNodes;
     }
 

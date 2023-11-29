@@ -375,7 +375,7 @@ public class JDTServiceImpl implements JDTService {
             methodNode.addControl(snt);
             findSwitchCase(statement, initializedSNT, snt);
         } else if (statement instanceof LabeledStatement) {
-            snt = new OperationNode(cu, filePath, statement);
+            snt = new ControlNode(cu, filePath, statement);
             snt.setType(StatementType.LABELED_STATEMENT);
             snt.setStatement(statement);
             snt.setExpression(statement.toString());

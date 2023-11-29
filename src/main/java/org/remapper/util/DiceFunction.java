@@ -6,10 +6,7 @@ import org.eclipse.jdt.core.dom.*;
 import org.remapper.dto.*;
 import org.remapper.service.JDTService;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public class DiceFunction {
 
@@ -54,59 +51,11 @@ public class DiceFunction {
         return union == 0 ? 0 : 2.0 * intersection / union;
     }
 
-    public static double calculateBodyDice(LeafNode leafAdditional, LeafNode leafRefactored) {
-        JDTService jdtService = new JDTServiceImpl();
-        List<ChildNode> list1 = leafAdditional.getDescendantsInBody(jdtService);
-        List<ChildNode> list2 = leafRefactored.getDescendantsInBody(jdtService);
-        int intersection = 0;
-        Set<Integer> matched = new HashSet<>();
-        for (ChildNode childBefore : list1) {
-            for (int i = 0; i < list2.size(); i++) {
-                if (matched.contains(i)) continue;
-                ChildNode childCurrent = list2.get(i);
-                if (childBefore.equals(childCurrent)) {
-                    intersection++;
-                    matched.add(i);
-                    break;
-                }
-            }
-        }
-        double bodyDice = list1.size() == 0 ? 0 : 1.0 * intersection / list1.size();
-        double ignoredBodyDice = calculateBodyDiceIgnoreSimpleName(leafAdditional, leafRefactored);
-        return Math.max(bodyDice, ignoredBodyDice);
-    }
-
-    public static double calculateBodyDiceIgnoreSimpleName(LeafNode leafAdditional, LeafNode leafRefactored) {
-        JDTService jdtService = new JDTServiceImpl();
-        List<ChildNode> list1 = leafAdditional.getDescendantsInBody(jdtService);
-        List<ChildNode> list2 = leafRefactored.getDescendantsInBody(jdtService);
-        int intersection = 0;
-        Set<Integer> matched = new HashSet<>();
-        for (int i = 0; i < list1.size(); i++) {
-            ChildNode childBefore = list1.get(i);
-            for (int j = 0; j < list2.size(); j++) {
-                if (matched.contains(j)) continue;
-                ChildNode childCurrent = list2.get(j);
-                if (i > 1 && j > 1 && list1.get(i - 1).getLabel() == list2.get(j - 1).getLabel() &&
-                        childBefore.equalsIgnoreSimpleName(childCurrent)) {
-                    intersection++;
-                    matched.add(j);
-                    break;
-                } else if (childBefore.equals(childCurrent)) {
-                    intersection++;
-                    matched.add(j);
-                    break;
-                }
-            }
-        }
-        return list1.size() == 0 ? 0 : 1.0 * intersection / list1.size();
-    }
-
     public static double calculateReference(MatchPair matchPair, DeclarationNodeTree dntBefore, DeclarationNodeTree dntCurrent) {
         List<EntityInfo> list1 = dntBefore.getDependencies();
         List<EntityInfo> list2 = dntCurrent.getDependencies();
-        Set<Pair<EntityInfo, EntityInfo>> matchedEntities = matchPair.getMatchedEntityInfos();
-        Set<Pair<EntityInfo, EntityInfo>> candidateEntities = matchPair.getCandidateEntityInfos();
+        Set<Pair<EntityInfo, EntityInfo>> matchedEntityInfos = matchPair.getMatchedEntityInfos();
+        Set<Pair<EntityInfo, EntityInfo>> candidateEntityInfos = matchPair.getCandidateEntityInfos();
         int intersection = 0;
         int union = list1.size() + list2.size();
         Set<Integer> matched = new HashSet<>();
@@ -114,8 +63,7 @@ public class DiceFunction {
             for (int i = 0; i < list2.size(); i++) {
                 if (matched.contains(i)) continue;
                 EntityInfo entityCurrent = list2.get(i);
-                if (entityBefore.equals(entityCurrent) || matchedEntities.contains(Pair.of(entityBefore, entityCurrent)) ||
-                        candidateEntities.contains(Pair.of(entityBefore, entityCurrent))) {
+                if (matchedReference(matchPair, entityBefore, entityCurrent, matchedEntityInfos, candidateEntityInfos)) {
                     intersection++;
                     matched.add(i);
                     break;
@@ -123,16 +71,18 @@ public class DiceFunction {
             }
         }
         double dependencies = union == 0 ? 0 : 2.0 * intersection / union;
+        Set<EntityInfo> matched2 = new HashSet<>();
         if (dependencies > 0) {
-            Set<EntityInfo> set1 = new HashSet<>(list1);
-            Set<EntityInfo> set2 = new HashSet<>(list2);
+            Set<EntityInfo> set1 = new LinkedHashSet<>(list1);
+            Set<EntityInfo> set2 = new LinkedHashSet<>(list2);
             int intersection2 = 0;
             int union2 = set1.size() + set2.size();
             for (EntityInfo entityBefore : set1) {
                 for (EntityInfo entityCurrent : set2) {
-                    if (entityBefore.equals(entityCurrent) || matchedEntities.contains(Pair.of(entityBefore, entityCurrent)) ||
-                            candidateEntities.contains(Pair.of(entityBefore, entityCurrent))) {
+                    if (matched2.contains(entityCurrent)) continue;
+                    if (matchedReference(matchPair, entityBefore, entityCurrent, matchedEntityInfos, candidateEntityInfos)) {
                         intersection2++;
+                        matched2.add(entityCurrent);
                         break;
                     }
                 }
@@ -142,6 +92,36 @@ public class DiceFunction {
                 dependencies = dependencies2;
         }
         return dependencies;
+    }
+
+    private static boolean matchedReference(MatchPair matchPair, EntityInfo entityBefore, EntityInfo entityCurrent,
+                                            Set<Pair<EntityInfo, EntityInfo>> matchedEntityInfos,
+                                            Set<Pair<EntityInfo, EntityInfo>> candidateEntityInfos) {
+        Set<Pair<DeclarationNodeTree, DeclarationNodeTree>> matchedEntities = matchPair.getMatchedEntities();
+        Set<Pair<DeclarationNodeTree, DeclarationNodeTree>> candidateEntities = matchPair.getCandidateEntities();
+        Set<DeclarationNodeTree> addedEntities = matchPair.getAddedEntities();
+        if (entityBefore.equals(entityCurrent) || matchedEntityInfos.contains(Pair.of(entityBefore, entityCurrent)) ||
+                candidateEntityInfos.contains(Pair.of(entityBefore, entityCurrent)))
+            return true;
+        for (DeclarationNodeTree addedEntity : addedEntities) {
+            if (addedEntity.getEntity().equals(entityCurrent)) {
+                for (Pair<DeclarationNodeTree, DeclarationNodeTree> pair : matchedEntities) {
+                    DeclarationNodeTree left = pair.getLeft();
+                    DeclarationNodeTree right = pair.getRight();
+                    if (addedEntity.getDependencies().contains(right.getEntity()) && left.getEntity().equals(entityBefore)) {
+                        return true;
+                    }
+                }
+                for (Pair<DeclarationNodeTree, DeclarationNodeTree> pair : candidateEntities) {
+                    DeclarationNodeTree right = pair.getRight();
+                    DeclarationNodeTree left = pair.getLeft();
+                    if (addedEntity.getDependencies().contains(right.getEntity()) && left.getEntity().equals(entityBefore)) {
+                        return true;
+                    }
+                }
+            }
+        }
+        return false;
     }
 
     public static double calculateSimilarity(MatchPair matchPair, DeclarationNodeTree dntBefore, DeclarationNodeTree dntCurrent) {
@@ -320,7 +300,7 @@ public class DiceFunction {
             NormalizedLevenshtein nl = new NormalizedLevenshtein();
             type += 0.5 * (1 - nl.distance(statement1.getExpression(), statement2.getExpression()));*/
         }
-        if (contexts == 1.0 && descendants == 0.0 && statement1 instanceof OperationNode && statement2 instanceof  OperationNode)
+        if (contexts == 1.0 && descendants == 0.0 && statement1 instanceof OperationNode && statement2 instanceof OperationNode)
             return 0.99;
         else
             return descendants + contexts;
