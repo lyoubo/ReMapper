@@ -3,7 +3,6 @@ package org.remapper.dto;
 public enum EntityType {
 
     COMPILATION_UNIT("Compilation Unit"),
-    PACKAGE("Package"),
     CLASS("Class"),
     INTERFACE("Interface"),
     ENUM("Enum"),

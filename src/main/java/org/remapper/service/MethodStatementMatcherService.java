@@ -50,8 +50,9 @@ public class MethodStatementMatcherService {
         for (Pair<DeclarationNodeTree, DeclarationNodeTree> pair : matchedEntities) {
             DeclarationNodeTree dntBefore = pair.getLeft();
             DeclarationNodeTree dntCurrent = pair.getRight();
-            if ((dntBefore.getType() == EntityType.CLASS || dntBefore.getType() == EntityType.INTERFACE || dntBefore.getType() == EntityType.ENUM) &&
-                    (dntCurrent.getType() == EntityType.CLASS || dntCurrent.getType() == EntityType.INTERFACE || dntCurrent.getType() == EntityType.ENUM)) {
+            if (dntBefore.getType() == EntityType.INITIALIZER && dntCurrent.getType() == EntityType.INITIALIZER)
+                continue;
+            if (!dntBefore.getName().equals(dntCurrent.getName())) {
                 replacements.put(dntBefore.getName(), dntCurrent.getName());
             }
         }
@@ -195,9 +196,9 @@ public class MethodStatementMatcherService {
         NormalizedLevenshtein nl = new NormalizedLevenshtein();
         if (node1.getBlockType() == node2.getBlockType())
             weight += 1.0;
-        if (node1.getBlockType() == BlockType.IF && node2.getBlockType() == BlockType.ELSE)
+        if (node1.getBlockType() == BlockType.IF_BLOCK && node2.getBlockType() == BlockType.ELSE_BLOCK)
             weight += 1.0;
-        if (node1.getBlockType() == BlockType.ELSE && node2.getBlockType() == BlockType.IF)
+        if (node1.getBlockType() == BlockType.ELSE_BLOCK && node2.getBlockType() == BlockType.IF_BLOCK)
             weight += 1.0;
         weight += (1 - nl.distance(node1.getBlockExpression(), node2.getBlockExpression()));
         return weight;
@@ -292,7 +293,8 @@ public class MethodStatementMatcherService {
         matchPair.getCandidateStatements().clear();
     }
 
-    private Set<Pair<StatementNodeTree, StatementNodeTree>> matchByDiceCoefficient(MatchPair matchPair, MethodNode methodBefore, MethodNode methodAfter, Map<String, String> replacements) {
+    private Set<Pair<StatementNodeTree, StatementNodeTree>> matchByDiceCoefficient(MatchPair matchPair, MethodNode methodBefore,
+                                                                                   MethodNode methodAfter, Map<String, String> replacements) {
         Set<Pair<StatementNodeTree, StatementNodeTree>> temp = new HashSet<>();
         List<StatementNodeTree> allOperationsBefore = methodBefore.getAllOperations();
         List<StatementNodeTree> allOperationsAfter = methodAfter.getAllOperations();
@@ -380,8 +382,8 @@ public class MethodStatementMatcherService {
                         node1.getType() == StatementType.RETURN_STATEMENT) &&
                         (node2.getType() == StatementType.VARIABLE_DECLARATION_STATEMENT || node2.getType() == StatementType.EXPRESSION_STATEMENT ||
                                 node2.getType() == StatementType.RETURN_STATEMENT)) ||
-                (node1.getBlockType() == BlockType.IF && node2.getBlockType() == BlockType.ELSE) ||
-                (node1.getBlockType() == BlockType.ELSE && node2.getBlockType() == BlockType.IF) ||
+                (node1.getBlockType() == BlockType.IF_BLOCK && node2.getBlockType() == BlockType.ELSE_BLOCK) ||
+                (node1.getBlockType() == BlockType.ELSE_BLOCK && node2.getBlockType() == BlockType.IF_BLOCK) ||
                 ((node1.getType() == StatementType.FOR_STATEMENT || node1.getType() == StatementType.ENHANCED_FOR_STATEMENT ||
                         node1.getType() == StatementType.WHILE_STATEMENT || node1.getType() == StatementType.DO_STATEMENT) &&
                         (node2.getType() == StatementType.FOR_STATEMENT || node2.getType() == StatementType.ENHANCED_FOR_STATEMENT ||
@@ -568,7 +570,7 @@ public class MethodStatementMatcherService {
                         boolean replaced = false;
                         for (Pair<StatementNodeTree, StatementNodeTree> pair : pairs) {
                             if (pair.getLeft().getExpression().contains(deletedFragment.getName().getIdentifier()) &&
-                            pair.getRight().getExpression().contains(addedFragment.getName().getIdentifier())) {
+                                    pair.getRight().getExpression().contains(addedFragment.getName().getIdentifier())) {
                                 replaced = true;
                                 break;
                             }

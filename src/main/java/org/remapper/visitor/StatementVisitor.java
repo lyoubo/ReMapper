@@ -7,13 +7,13 @@ import java.util.List;
 
 public class StatementVisitor extends ASTVisitor {
 
-    private final List<Statement> statements;
+    private final List<ASTNode> statements;
 
     public StatementVisitor() {
         this.statements = new ArrayList<>();
     }
 
-    public List<Statement> getStatements() {
+    public List<ASTNode> getStatements() {
         return statements;
     }
 
@@ -153,9 +153,9 @@ public class StatementVisitor extends ASTVisitor {
         return true;
     }
 
-    /*@Override
+    @Override
     public boolean visit(CatchClause node) {
         statements.add(node);
         return true;
-    }*/
+    }
 }
