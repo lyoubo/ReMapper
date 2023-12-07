@@ -364,8 +364,8 @@ public class SoftwareEntityMatcherService {
             for (LeafNode leafCurrent : leafNodesCurrent) {
                 if (leafBefore.getType() != leafCurrent.getType())
                     continue;
-                double dice = DiceFunction.calculateDice(leafBefore, leafCurrent);
-                if (dice < DiceFunction.minDice)
+                double dice = DiceFunction.calculateDiceSimilarity(leafBefore, leafCurrent);
+                if (dice < DiceFunction.minSimilarity)
                     continue;
                 EntityPair entityPair = new EntityPair(leafBefore, leafCurrent);
                 entityPair.setDice(dice);
@@ -381,8 +381,8 @@ public class SoftwareEntityMatcherService {
             for (InternalNode internalCurrent : internalNodesCurrent) {
                 if (internalBefore.getType() != internalCurrent.getType())
                     continue;
-                double dice = DiceFunction.calculateDice(matchPair, internalBefore, internalCurrent);
-                if (dice < DiceFunction.minDice)
+                double dice = DiceFunction.calculateDiceSimilarity(matchPair, internalBefore, internalCurrent);
+                if (dice < DiceFunction.minSimilarity)
                     continue;
                 EntityPair entityPair = new EntityPair(internalBefore, internalCurrent);
                 entityPair.setDice(dice);
@@ -791,7 +791,7 @@ public class SoftwareEntityMatcherService {
                 for (DeclarationNodeTree dntCurrent : currentEntities) {
                     if (typeCompatible(dntBefore, dntCurrent)) {
                         double dice = DiceFunction.calculateSimilarity(matchPair, dntBefore, dntCurrent);
-                        if (dice < DiceFunction.minDice)
+                        if (dice < DiceFunction.minSimilarity)
                             continue;
                         EntityPair entityPair = new EntityPair(dntBefore, dntCurrent);
                         entityPairs.add(entityPair);
@@ -845,9 +845,9 @@ public class SoftwareEntityMatcherService {
                 if (dntBefore.equals(dntCurrent)) {
                     double dice = 0;
                     if (dntBefore instanceof InternalNode && dntCurrent instanceof InternalNode) {
-                        dice = DiceFunction.calculateDice(matchPair, (InternalNode) dntBefore, (InternalNode) dntCurrent);
+                        dice = DiceFunction.calculateDiceSimilarity(matchPair, (InternalNode) dntBefore, (InternalNode) dntCurrent);
                     } else if (dntBefore instanceof LeafNode && dntCurrent instanceof LeafNode) {
-                        dice = DiceFunction.calculateDice((LeafNode) dntBefore, (LeafNode) dntCurrent);
+                        dice = DiceFunction.calculateDiceSimilarity((LeafNode) dntBefore, (LeafNode) dntCurrent);
                     }
                     EntityPair entityPair = new EntityPair(dntBefore, dntCurrent);
                     entityPairs.add(entityPair);
@@ -911,11 +911,11 @@ public class SoftwareEntityMatcherService {
                             entityPair.setDice(1.0);
                             continue;
                         }
-                        dice = DiceFunction.calculateDice(matchPair, (InternalNode) dntBefore, (InternalNode) dntCurrent);
+                        dice = DiceFunction.calculateDiceSimilarity(matchPair, (InternalNode) dntBefore, (InternalNode) dntCurrent);
                     } else if (dntBefore instanceof LeafNode && dntCurrent instanceof LeafNode) {
-                        dice = DiceFunction.calculateDice((LeafNode) dntBefore, (LeafNode) dntCurrent);
+                        dice = DiceFunction.calculateDiceSimilarity((LeafNode) dntBefore, (LeafNode) dntCurrent);
                     }
-                    if (dice < DiceFunction.minDice) continue;
+                    if (dice < DiceFunction.minSimilarity) continue;
                     EntityPair entityPair = new EntityPair(dntBefore, dntCurrent);
                     entityPairs.add(entityPair);
                     entityPair.setDice(dice);

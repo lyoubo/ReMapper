@@ -1,6 +1,5 @@
 package org.remapper.util;
 
-import org.apache.commons.io.FileUtils;
 import org.eclipse.jdt.core.Flags;
 import org.eclipse.jdt.core.dom.*;
 import org.remapper.dto.*;
@@ -8,8 +7,6 @@ import org.remapper.service.JDTService;
 import org.remapper.visitor.AnonymousClassDeclarationVisitor;
 import org.remapper.visitor.StatementVisitor;
 
-import java.io.File;
-import java.nio.charset.StandardCharsets;
 import java.util.*;
 import java.util.stream.Collectors;
 

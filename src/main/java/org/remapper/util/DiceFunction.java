@@ -10,11 +10,9 @@ import java.util.*;
 
 public class DiceFunction {
 
-    public static double minDice = 0.5;
+    public static double minSimilarity = 0.5;
 
-    public static double minSimilarity = 1.0;
-
-    public static double calculateDice(LeafNode leafBefore, LeafNode leafCurrent) {
+    public static double calculateDiceSimilarity(LeafNode leafBefore, LeafNode leafCurrent) {
         JDTService jdtService = new JDTServiceImpl();
         List<ChildNode> list1 = leafBefore.getDescendants(jdtService);
         List<ChildNode> list2 = leafCurrent.getDescendants(jdtService);
@@ -35,7 +33,7 @@ public class DiceFunction {
         return union == 0 ? 0 : 2.0 * intersection / union;
     }
 
-    public static double calculateDice(MatchPair matchPair, InternalNode internalBefore, InternalNode internalCurrent) {
+    public static double calculateDiceSimilarity(MatchPair matchPair, InternalNode internalBefore, InternalNode internalCurrent) {
         List<DeclarationNodeTree> list1 = internalBefore.getDescendants();
         List<DeclarationNodeTree> list2 = internalCurrent.getDescendants();
         int intersection = 0;
@@ -51,7 +49,7 @@ public class DiceFunction {
         return union == 0 ? 0 : 2.0 * intersection / union;
     }
 
-    public static double calculateReference(MatchPair matchPair, DeclarationNodeTree dntBefore, DeclarationNodeTree dntCurrent) {
+    public static double calculateReferenceSimilarity(MatchPair matchPair, DeclarationNodeTree dntBefore, DeclarationNodeTree dntCurrent) {
         List<EntityInfo> list1 = dntBefore.getDependencies();
         List<EntityInfo> list2 = dntCurrent.getDependencies();
         Set<Pair<EntityInfo, EntityInfo>> matchedEntityInfos = matchPair.getMatchedEntityInfos();
@@ -63,7 +61,7 @@ public class DiceFunction {
             for (int i = 0; i < list2.size(); i++) {
                 if (matched.contains(i)) continue;
                 EntityInfo entityCurrent = list2.get(i);
-                if (matchedReference(matchPair, entityBefore, entityCurrent, matchedEntityInfos, candidateEntityInfos)) {
+                if (isMatchedReference(matchPair, entityBefore, entityCurrent, matchedEntityInfos, candidateEntityInfos)) {
                     intersection++;
                     matched.add(i);
                     break;
@@ -80,7 +78,7 @@ public class DiceFunction {
             for (EntityInfo entityBefore : set1) {
                 for (EntityInfo entityCurrent : set2) {
                     if (matched2.contains(entityCurrent)) continue;
-                    if (matchedReference(matchPair, entityBefore, entityCurrent, matchedEntityInfos, candidateEntityInfos)) {
+                    if (isMatchedReference(matchPair, entityBefore, entityCurrent, matchedEntityInfos, candidateEntityInfos)) {
                         intersection2++;
                         matched2.add(entityCurrent);
                         break;
@@ -94,15 +92,19 @@ public class DiceFunction {
         return dependencies;
     }
 
-    private static boolean matchedReference(MatchPair matchPair, EntityInfo entityBefore, EntityInfo entityCurrent,
-                                            Set<Pair<EntityInfo, EntityInfo>> matchedEntityInfos,
-                                            Set<Pair<EntityInfo, EntityInfo>> candidateEntityInfos) {
+    private static boolean isMatchedReference(MatchPair matchPair, EntityInfo entityBefore, EntityInfo entityCurrent,
+                                              Set<Pair<EntityInfo, EntityInfo>> matchedEntityInfos,
+                                              Set<Pair<EntityInfo, EntityInfo>> candidateEntityInfos) {
         Set<Pair<DeclarationNodeTree, DeclarationNodeTree>> matchedEntities = matchPair.getMatchedEntities();
         Set<Pair<DeclarationNodeTree, DeclarationNodeTree>> candidateEntities = matchPair.getCandidateEntities();
         Set<DeclarationNodeTree> addedEntities = matchPair.getAddedEntities();
+        Set<DeclarationNodeTree> deletedEntities = matchPair.getDeletedEntities();
         if (entityBefore.equals(entityCurrent) || matchedEntityInfos.contains(Pair.of(entityBefore, entityCurrent)) ||
                 candidateEntityInfos.contains(Pair.of(entityBefore, entityCurrent)))
             return true;
+        /**
+         * Reference-based similarity calculation for extract methods
+         */
         for (DeclarationNodeTree addedEntity : addedEntities) {
             if (addedEntity.getEntity().equals(entityCurrent)) {
                 for (Pair<DeclarationNodeTree, DeclarationNodeTree> pair : matchedEntities) {
@@ -121,35 +123,79 @@ public class DiceFunction {
                 }
             }
         }
+        /**
+         * Reference-based similarity calculation for inline methods
+         */
+        for (DeclarationNodeTree deletedEntity : deletedEntities) {
+            if (deletedEntity.getEntity().equals(entityBefore)) {
+                for (Pair<DeclarationNodeTree, DeclarationNodeTree> pair : matchedEntities) {
+                    DeclarationNodeTree left = pair.getLeft();
+                    DeclarationNodeTree right = pair.getRight();
+                    if (deletedEntity.getDependencies().contains(left.getEntity()) && right.getEntity().equals(entityCurrent)) {
+                        return true;
+                    }
+                }
+                for (Pair<DeclarationNodeTree, DeclarationNodeTree> pair : candidateEntities) {
+                    DeclarationNodeTree right = pair.getRight();
+                    DeclarationNodeTree left = pair.getLeft();
+                    if (deletedEntity.getDependencies().contains(left.getEntity()) && right.getEntity().equals(entityCurrent)) {
+                        return true;
+                    }
+                }
+            }
+        }
         return false;
     }
 
     public static double calculateSimilarity(MatchPair matchPair, DeclarationNodeTree dntBefore, DeclarationNodeTree dntCurrent) {
         double descendants = 0.0;
         if (dntBefore instanceof InternalNode && dntCurrent instanceof InternalNode)
-            descendants = calculateDice(matchPair, (InternalNode) dntBefore, (InternalNode) dntCurrent);
+            descendants = calculateDiceSimilarity(matchPair, (InternalNode) dntBefore, (InternalNode) dntCurrent);
         else if (dntBefore instanceof LeafNode && dntCurrent instanceof LeafNode)
-            descendants = calculateDice((LeafNode) dntBefore, (LeafNode) dntCurrent);
+            descendants = calculateDiceSimilarity((LeafNode) dntBefore, (LeafNode) dntCurrent);
         int union = dntBefore.getDependencies().size() + dntCurrent.getDependencies().size();
-        double dependencies = calculateReference(matchPair, dntBefore, dntCurrent);
+        double dependencies = calculateReferenceSimilarity(matchPair, dntBefore, dntCurrent);
         NGram ngram = new NGram(2);
         double biGram = 1 - ngram.distance(dntBefore.getNamespace() + "." + dntBefore.getName(), dntCurrent.getNamespace() + "." + dntCurrent.getName());
         return (union == 0 ? descendants : 0.5 * descendants + 0.5 * dependencies) + 0.01 * biGram;
     }
 
     public static double calculateContextSimilarity(MatchPair matchPair, StatementNodeTree statement1, StatementNodeTree statement2) {
-        if (matchPair.getMatchedStatements().contains(Pair.of(statement1.getParent(), statement2.getParent())) ||
-                matchPair.getCandidateStatements().contains(Pair.of(statement1.getParent(), statement2.getParent())))
-            return 1.0;
-        StatementNodeTree blockBefore = statement1.getParent();
-        StatementNodeTree blockAfter = statement2.getParent();
-        List<StatementNodeTree> context1 = blockBefore == null ? new ArrayList<>() : new ArrayList<>(blockBefore.getChildren());
+        StatementNodeTree parent1 = statement1.getParent();
+        StatementNodeTree parent2 = statement2.getParent();
+        List<StatementNodeTree> children1 = parent1.getChildren();
+        List<StatementNodeTree> children2 = parent2.getChildren();
+        int index1 = children1.indexOf(statement1);
+        int index2 = children2.indexOf(statement2);
+        if (index1 != -1 && index2 != -1) {
+            int previous1 = index1 - 1;
+            int next1 = index1 + 1;
+            int previous2 = index2 - 1;
+            int next2 = index2 + 1;
+            if (previous1 >= 0 && previous2 >= 0 && next1 < children1.size() && next2 < children2.size()) {
+                StatementNodeTree previousNode1 = children1.get(previous1);
+                StatementNodeTree nextNode1 = children1.get(next1);
+                StatementNodeTree previousNode2 = children2.get(previous2);
+                StatementNodeTree nextNode2 = children2.get(next2);
+                if ((matchPair.getMatchedStatements().contains(Pair.of(previousNode1, previousNode2)) ||
+                        matchPair.getCandidateStatements().contains(Pair.of(previousNode1, previousNode2))) &&
+                        (matchPair.getMatchedStatements().contains(Pair.of(nextNode1, nextNode2)) ||
+                                matchPair.getCandidateStatements().contains(Pair.of(nextNode1, nextNode2))))
+                    return 1.0;
+            }
+        }
+        List<StatementNodeTree> context1 = new ArrayList<>(children1);
         context1.remove(statement1);
-        List<StatementNodeTree> context2 = blockAfter == null ? new ArrayList<>() : new ArrayList<>(blockAfter.getChildren());
+        List<StatementNodeTree> context2 = new ArrayList<>(children2);
         context2.remove(statement2);
+        if (context1.isEmpty() || context2.isEmpty()) {
+            if (matchPair.getMatchedStatements().contains(Pair.of(statement1.getParent(), statement2.getParent())) ||
+                    matchPair.getCandidateStatements().contains(Pair.of(statement1.getParent(), statement2.getParent())))
+                return 1.0;
+        }
         int intersection = getMatchedElementCount(matchPair, context1, context2);
-        int union = context1.size() + context2.size();
-        return union == 0 ? 0 : 2.0 * intersection / union;
+        int lessOne = Math.min(context1.size(), context2.size());
+        return lessOne == 0 ? 0 : 1.0 * intersection / lessOne;
     }
 
     private static int getMatchedElementCount(MatchPair matchPair, List<StatementNodeTree> list1, List<StatementNodeTree> list2) {
@@ -175,14 +221,6 @@ public class DiceFunction {
     }
 
     public static double calculateDiceSimilarity(StatementNodeTree statement1, StatementNodeTree statement2) {
-        if (statement1.getType() == StatementType.VARIABLE_DECLARATION_STATEMENT && statement2.getType() == StatementType.VARIABLE_DECLARATION_STATEMENT) {
-            VariableDeclarationStatement vds1 = (VariableDeclarationStatement) statement1.getStatement();
-            VariableDeclarationStatement vds2 = (VariableDeclarationStatement) statement2.getStatement();
-            VariableDeclarationFragment vdf1 = (VariableDeclarationFragment) vds1.fragments().get(0);
-            VariableDeclarationFragment vdf2 = (VariableDeclarationFragment) vds2.fragments().get(0);
-            if (vds1.getType().toString().equals(vds2.getType().toString()) && vdf1.getName().getIdentifier().equals(vdf2.getName().getIdentifier()))
-                return 1.0;
-        }
         Expression expression1 = getExpression(statement1);
         Expression expression2 = getExpression(statement2);
         if (expression1 != null && expression2 != null && StringUtils.equals(expression1.toString(), expression2.toString()))
@@ -235,8 +273,9 @@ public class DiceFunction {
         List<StatementNodeTree> children2 = statement2.getChildren();
         int intersection = getMatchedElementCount(matchPair, children1, children2);
         int union = children1.size() + children2.size();
-        return union == 0 ? 0 : 2.0 * intersection / union;
+        return Math.max(union == 0 ? 0 : 2.0 * intersection / union, calculateDescendantSimilarity(matchPair, statement1, statement2));
     }
+
 
     public static double calculateDescendantSimilarity(MatchPair matchPair, StatementNodeTree statement1, StatementNodeTree statement2) {
         List<StatementNodeTree> descendants1 = statement1.getDescendants();
@@ -249,60 +288,37 @@ public class DiceFunction {
         return union == 0 ? 0 : 2.0 * intersection / union;
     }
 
+    public static boolean isMatchedGreaterThanAnyOne(MatchPair matchPair, StatementNodeTree statement1, StatementNodeTree statement2) {
+        List<StatementNodeTree> children1 = statement1.getChildren();
+        List<StatementNodeTree> children2 = statement2.getChildren();
+        int intersection = getMatchedElementCount(matchPair, children1, children2);
+        if (2.0 * intersection >= children1.size() || 2.0 * intersection >= children2.size())
+            return true;
+        else {
+            List<StatementNodeTree> descendants1 = statement1.getDescendants();
+            List<StatementNodeTree> descendants2 = statement2.getDescendants();
+            intersection = getMatchedElementCount(matchPair, descendants1, descendants2);
+            if (2.0 * intersection >= descendants1.size() || 2.0 * intersection >= descendants2.size())
+                return true;
+        }
+        return false;
+    }
+
     public static double calculateSimilarity(MatchPair matchPair, StatementNodeTree statement1, StatementNodeTree statement2) {
         double descendants = 0.0;
         double contexts = calculateContextSimilarity(matchPair, statement1, statement2);
-        double type = 0.0;
         if (statement1 instanceof OperationNode && statement2 instanceof OperationNode) {
             descendants = calculateDiceSimilarity(statement1, statement2);
-            /*if (statement1.getType() == statement2.getType())
-                type += 1.0;
-            else {
-                if ((statement1.getType() == StatementType.EXPRESSION_STATEMENT || statement1.getType() == StatementType.VARIABLE_DECLARATION_STATEMENT ||
-                        statement1.getType() == StatementType.RETURN_STATEMENT) &&
-                        (statement2.getType() == StatementType.EXPRESSION_STATEMENT || statement2.getType() == StatementType.VARIABLE_DECLARATION_STATEMENT ||
-                                statement2.getType() == StatementType.RETURN_STATEMENT))
-                    type += 0.5;
-            }*/
         }
         if (statement1 instanceof BlockNode && statement2 instanceof BlockNode) {
-            descendants = Math.max(calculateChildrenSimilarity(matchPair, statement1, statement2), calculateDescendantSimilarity(matchPair, statement1, statement2));
-            /*if (statement1.getBlockType() == statement2.getBlockType())
-                type += 0.5;
-            else {
-                if (statement1.getBlockType() == BlockType.IF && statement2.getBlockType() == BlockType.ELSE)
-                    type += 0.5;
-                if (statement1.getBlockType() == BlockType.ELSE && statement2.getBlockType() == BlockType.IF)
-                    type += 0.5;
-                if (statement1.getBlockType() == BlockType.IF && statement2.getBlockType() == BlockType.CASE)
-                    type += 0.5;
-                if (statement1.getBlockType() == BlockType.CASE && statement2.getBlockType() == BlockType.IF)
-                    type += 0.5;
-            }
-            NormalizedLevenshtein nl = new NormalizedLevenshtein();
-            type += 0.5 * (1 - nl.distance(statement1.getBlockExpression(), statement2.getBlockExpression()));*/
+            descendants = calculateChildrenSimilarity(matchPair, statement1, statement2);
         }
         if (statement1 instanceof ControlNode && statement2 instanceof ControlNode) {
-            descendants = Math.max(calculateChildrenSimilarity(matchPair, statement1, statement2), calculateDescendantSimilarity(matchPair, statement1, statement2));
-            /*if (statement1.getType() == statement2.getType())
-                type += 0.5;
-            else {
-                if ((statement1.getType() == StatementType.FOR_STATEMENT || statement1.getType() == StatementType.ENHANCED_FOR_STATEMENT ||
-                        statement1.getType() == StatementType.WHILE_STATEMENT || statement1.getType() == StatementType.DO_STATEMENT) &&
-                        (statement2.getType() == StatementType.FOR_STATEMENT || statement2.getType() == StatementType.ENHANCED_FOR_STATEMENT ||
-                                statement2.getType() == StatementType.WHILE_STATEMENT || statement2.getType() == StatementType.DO_STATEMENT))
-                    type += 0.5;
-                if (statement1.getType() == StatementType.IF_STATEMENT && statement2.getType() == StatementType.SWITCH_CASE)
-                    type += 0.5;
-                if (statement1.getType() == StatementType.SWITCH_CASE && statement2.getType() == StatementType.IF_STATEMENT)
-                    type += 0.5;
-            }
-            NormalizedLevenshtein nl = new NormalizedLevenshtein();
-            type += 0.5 * (1 - nl.distance(statement1.getExpression(), statement2.getExpression()));*/
+            descendants = calculateChildrenSimilarity(matchPair, statement1, statement2);
         }
         if (contexts == 1.0 && descendants == 0.0 && statement1 instanceof OperationNode && statement2 instanceof OperationNode)
-            return 0.99;
+            return 0.49;
         else
-            return descendants + contexts;
+            return (descendants + contexts) / 2;
     }
 }
