@@ -201,7 +201,8 @@ In both cases, you will get the output in JSON format:
                 "startLine": 12,
                 "endLine": 23,
                 "startColumn": 2,
-                "endColumn": 3
+                "endColumn": 3,
+                "codeElementType": "METHOD_DECLARATION"
               },
               "rightSideLocation": {
                 "container": "org.DogManager",
@@ -211,7 +212,8 @@ In both cases, you will get the output in JSON format:
                 "startLine": 12,
                 "endLine": 23,
                 "startColumn": 2,
-                "endColumn": 3
+                "endColumn": 3,
+                "codeElementType": "METHOD_DECLARATION"
               }
             },
             {
@@ -223,7 +225,8 @@ In both cases, you will get the output in JSON format:
                 "startLine": 5,
                 "endLine": 25,
                 "startColumn": 0,
-                "endColumn": 2
+                "endColumn": 2,
+                "codeElementType": "TYPE_DECLARATION"
               },
               "rightSideLocation": {
                 "container": "org.DogManager",
@@ -233,7 +236,8 @@ In both cases, you will get the output in JSON format:
                 "startLine": 5,
                 "endLine": 34,
                 "startColumn": 0,
-                "endColumn": 2
+                "endColumn": 2,
+                "codeElementType": "TYPE_DECLARATION"
               }
             },
             {
@@ -245,7 +249,8 @@ In both cases, you will get the output in JSON format:
                 "startLine": 5,
                 "endLine": 27,
                 "startColumn": 0,
-                "endColumn": 2
+                "endColumn": 2,
+                "codeElementType": "TYPE_DECLARATION"
               },
               "rightSideLocation": {
                 "container": "org.animals.Dog",
@@ -255,7 +260,8 @@ In both cases, you will get the output in JSON format:
                 "startLine": 4,
                 "endLine": 17,
                 "startColumn": 0,
-                "endColumn": 2
+                "endColumn": 2,
+                "codeElementType": "TYPE_DECLARATION"
               }
             },
             {
@@ -267,7 +273,8 @@ In both cases, you will get the output in JSON format:
                 "startLine": 14,
                 "endLine": 21,
                 "startColumn": 2,
-                "endColumn": 3
+                "endColumn": 3,
+                "codeElementType": "METHOD_DECLARATION"
               },
               "rightSideLocation": {
                 "container": "org.DogManager",
@@ -277,7 +284,8 @@ In both cases, you will get the output in JSON format:
                 "startLine": 25,
                 "endLine": 32,
                 "startColumn": 2,
-                "endColumn": 3
+                "endColumn": 3,
+                "codeElementType": "METHOD_DECLARATION"
               }
             },
             {
@@ -289,7 +297,8 @@ In both cases, you will get the output in JSON format:
                 "startLine": 17,
                 "endLine": 20,
                 "startColumn": 3,
-                "endColumn": 4
+                "endColumn": 4,
+                "codeElementType": "FOR_STATEMENT"
               },
               "rightSideLocation": {
                 "method": "public doStuff() : void",
@@ -299,7 +308,8 @@ In both cases, you will get the output in JSON format:
                 "startLine": 17,
                 "endLine": 20,
                 "startColumn": 3,
-                "endColumn": 4
+                "endColumn": 4,
+                "codeElementType": "FOR_STATEMENT"
               }
             },
             {
@@ -311,7 +321,8 @@ In both cases, you will get the output in JSON format:
                 "startLine": 17,
                 "endLine": 20,
                 "startColumn": 33,
-                "endColumn": 4
+                "endColumn": 4,
+                "codeElementType": "BLOCK"
               },
               "rightSideLocation": {
                 "method": "public doStuff() : void",
@@ -321,7 +332,8 @@ In both cases, you will get the output in JSON format:
                 "startLine": 17,
                 "endLine": 20,
                 "startColumn": 33,
-                "endColumn": 4
+                "endColumn": 4,
+                "codeElementType": "BLOCK"
               }
             },
             {
@@ -333,7 +345,8 @@ In both cases, you will get the output in JSON format:
                 "startLine": 18,
                 "endLine": 18,
                 "startColumn": 4,
-                "endColumn": 26
+                "endColumn": 26,
+                "codeElementType": "EXPRESSION_STATEMENT"
               },
               "rightSideLocation": {
                 "method": "public doStuff() : void",
@@ -343,29 +356,8 @@ In both cases, you will get the output in JSON format:
                 "startLine": 18,
                 "endLine": 18,
                 "startColumn": 4,
-                "endColumn": 26
-              }
-            },
-            {
-              "leftSideLocation": {
-                "method": "public doStuff() : void",
-                "type": "Variable Declaration Statement",
-                "expression": "int sum=0;\n",
-                "filePath": "src/org/DogManager.java",
-                "startLine": 16,
-                "endLine": 16,
-                "startColumn": 3,
-                "endColumn": 15
-              },
-              "rightSideLocation": {
-                "method": "public doStuff() : void",
-                "type": "Variable Declaration Statement",
-                "expression": "int sum=0;\n",
-                "filePath": "src/org/DogManager.java",
-                "startLine": 16,
-                "endLine": 16,
-                "startColumn": 3,
-                "endColumn": 15
+                "endColumn": 26,
+                "codeElementType": "EXPRESSION_STATEMENT"
               }
             },
             {
@@ -377,7 +369,8 @@ In both cases, you will get the output in JSON format:
                 "startLine": 19,
                 "endLine": 19,
                 "startColumn": 4,
-                "endColumn": 13
+                "endColumn": 13,
+                "codeElementType": "EXPRESSION_STATEMENT"
               },
               "rightSideLocation": {
                 "method": "public doStuff() : void",
@@ -387,51 +380,8 @@ In both cases, you will get the output in JSON format:
                 "startLine": 19,
                 "endLine": 19,
                 "startColumn": 4,
-                "endColumn": 13
-              }
-            },
-            {
-              "leftSideLocation": {
-                "method": "public doStuff() : void",
-                "type": "Expression Statement",
-                "expression": "sum-=dog.magicNumber;\n",
-                "filePath": "src/org/DogManager.java",
-                "startLine": 21,
-                "endLine": 21,
-                "startColumn": 3,
-                "endColumn": 26
-              },
-              "rightSideLocation": {
-                "method": "public doStuff() : void",
-                "type": "Expression Statement",
-                "expression": "sum-=dog.magicNumber;\n",
-                "filePath": "src/org/DogManager.java",
-                "startLine": 21,
-                "endLine": 21,
-                "startColumn": 3,
-                "endColumn": 26
-              }
-            },
-            {
-              "leftSideLocation": {
-                "method": "public doStuff() : void",
-                "type": "Expression Statement",
-                "expression": "dog.takeABreath();\n",
-                "filePath": "src/org/DogManager.java",
-                "startLine": 22,
-                "endLine": 22,
-                "startColumn": 3,
-                "endColumn": 21
-              },
-              "rightSideLocation": {
-                "method": "public doStuff() : void",
-                "type": "Expression Statement",
-                "expression": "dog.takeABreath();\n",
-                "filePath": "src/org/DogManager.java",
-                "startLine": 22,
-                "endLine": 22,
-                "startColumn": 3,
-                "endColumn": 21
+                "endColumn": 13,
+                "codeElementType": "EXPRESSION_STATEMENT"
               }
             },
             {
@@ -443,7 +393,8 @@ In both cases, you will get the output in JSON format:
                 "startLine": 15,
                 "endLine": 15,
                 "startColumn": 3,
-                "endColumn": 26
+                "endColumn": 26,
+                "codeElementType": "VARIABLE_DECLARATION_STATEMENT"
               },
               "rightSideLocation": {
                 "method": "public doStuff() : void",
@@ -453,7 +404,80 @@ In both cases, you will get the output in JSON format:
                 "startLine": 15,
                 "endLine": 15,
                 "startColumn": 3,
-                "endColumn": 26
+                "endColumn": 26,
+                "codeElementType": "VARIABLE_DECLARATION_STATEMENT"
+              }
+            },
+            {
+              "leftSideLocation": {
+                "method": "public doStuff() : void",
+                "type": "Variable Declaration Statement",
+                "expression": "int sum=0;\n",
+                "filePath": "src/org/DogManager.java",
+                "startLine": 16,
+                "endLine": 16,
+                "startColumn": 3,
+                "endColumn": 15,
+                "codeElementType": "VARIABLE_DECLARATION_STATEMENT"
+              },
+              "rightSideLocation": {
+                "method": "public doStuff() : void",
+                "type": "Variable Declaration Statement",
+                "expression": "int sum=0;\n",
+                "filePath": "src/org/DogManager.java",
+                "startLine": 16,
+                "endLine": 16,
+                "startColumn": 3,
+                "endColumn": 15,
+                "codeElementType": "VARIABLE_DECLARATION_STATEMENT"
+              }
+            },
+            {
+              "leftSideLocation": {
+                "method": "public doStuff() : void",
+                "type": "Expression Statement",
+                "expression": "sum-=dog.magicNumber;\n",
+                "filePath": "src/org/DogManager.java",
+                "startLine": 21,
+                "endLine": 21,
+                "startColumn": 3,
+                "endColumn": 26,
+                "codeElementType": "EXPRESSION_STATEMENT"
+              },
+              "rightSideLocation": {
+                "method": "public doStuff() : void",
+                "type": "Expression Statement",
+                "expression": "sum-=dog.magicNumber;\n",
+                "filePath": "src/org/DogManager.java",
+                "startLine": 21,
+                "endLine": 21,
+                "startColumn": 3,
+                "endColumn": 26,
+                "codeElementType": "EXPRESSION_STATEMENT"
+              }
+            },
+            {
+              "leftSideLocation": {
+                "method": "public doStuff() : void",
+                "type": "Expression Statement",
+                "expression": "dog.takeABreath();\n",
+                "filePath": "src/org/DogManager.java",
+                "startLine": 22,
+                "endLine": 22,
+                "startColumn": 3,
+                "endColumn": 21,
+                "codeElementType": "EXPRESSION_STATEMENT"
+              },
+              "rightSideLocation": {
+                "method": "public doStuff() : void",
+                "type": "Expression Statement",
+                "expression": "dog.takeABreath();\n",
+                "filePath": "src/org/DogManager.java",
+                "startLine": 22,
+                "endLine": 22,
+                "startColumn": 3,
+                "endColumn": 21,
+                "codeElementType": "EXPRESSION_STATEMENT"
               }
             },
             {
@@ -465,7 +489,8 @@ In both cases, you will get the output in JSON format:
                 "startLine": 13,
                 "endLine": 13,
                 "startColumn": 3,
-                "endColumn": 27
+                "endColumn": 27,
+                "codeElementType": "EXPRESSION_STATEMENT"
               },
               "rightSideLocation": {
                 "method": "public doStuff() : void",
@@ -475,7 +500,8 @@ In both cases, you will get the output in JSON format:
                 "startLine": 13,
                 "endLine": 13,
                 "startColumn": 3,
-                "endColumn": 22
+                "endColumn": 22,
+                "codeElementType": "EXPRESSION_STATEMENT"
               }
             },
             {
@@ -487,7 +513,8 @@ In both cases, you will get the output in JSON format:
                 "startLine": 15,
                 "endLine": 15,
                 "startColumn": 3,
-                "endColumn": 30
+                "endColumn": 30,
+                "codeElementType": "EXPRESSION_STATEMENT"
               },
               "rightSideLocation": {
                 "method": "public barkBark(dog Dog) : void",
@@ -497,29 +524,8 @@ In both cases, you will get the output in JSON format:
                 "startLine": 26,
                 "endLine": 26,
                 "startColumn": 3,
-                "endColumn": 30
-              }
-            },
-            {
-              "leftSideLocation": {
-                "method": "public barkBark(manager DogManager) : void",
-                "type": "Expression Statement",
-                "expression": "System.out.println(\"ruff\");\n",
-                "filePath": "src/org/animals/Dog.java",
-                "startLine": 18,
-                "endLine": 18,
-                "startColumn": 3,
-                "endColumn": 30
-              },
-              "rightSideLocation": {
-                "method": "public barkBark(dog Dog) : void",
-                "type": "Expression Statement",
-                "expression": "System.out.println(\"ruff\");\n",
-                "filePath": "src/org/DogManager.java",
-                "startLine": 29,
-                "endLine": 29,
-                "startColumn": 3,
-                "endColumn": 30
+                "endColumn": 30,
+                "codeElementType": "EXPRESSION_STATEMENT"
               }
             },
             {
@@ -531,7 +537,8 @@ In both cases, you will get the output in JSON format:
                 "startLine": 16,
                 "endLine": 16,
                 "startColumn": 3,
-                "endColumn": 30
+                "endColumn": 30,
+                "codeElementType": "EXPRESSION_STATEMENT"
               },
               "rightSideLocation": {
                 "method": "public barkBark(dog Dog) : void",
@@ -541,7 +548,8 @@ In both cases, you will get the output in JSON format:
                 "startLine": 27,
                 "endLine": 27,
                 "startColumn": 3,
-                "endColumn": 30
+                "endColumn": 30,
+                "codeElementType": "EXPRESSION_STATEMENT"
               }
             },
             {
@@ -550,20 +558,22 @@ In both cases, you will get the output in JSON format:
                 "type": "Expression Statement",
                 "expression": "System.out.println(\"ruff\");\n",
                 "filePath": "src/org/animals/Dog.java",
-                "startLine": 20,
-                "endLine": 20,
+                "startLine": 18,
+                "endLine": 18,
                 "startColumn": 3,
-                "endColumn": 30
+                "endColumn": 30,
+                "codeElementType": "EXPRESSION_STATEMENT"
               },
               "rightSideLocation": {
                 "method": "public barkBark(dog Dog) : void",
                 "type": "Expression Statement",
                 "expression": "System.out.println(\"ruff\");\n",
                 "filePath": "src/org/DogManager.java",
-                "startLine": 31,
-                "endLine": 31,
+                "startLine": 29,
+                "endLine": 29,
                 "startColumn": 3,
-                "endColumn": 30
+                "endColumn": 30,
+                "codeElementType": "EXPRESSION_STATEMENT"
               }
             },
             {
@@ -575,7 +585,8 @@ In both cases, you will get the output in JSON format:
                 "startLine": 19,
                 "endLine": 19,
                 "startColumn": 3,
-                "endColumn": 30
+                "endColumn": 30,
+                "codeElementType": "EXPRESSION_STATEMENT"
               },
               "rightSideLocation": {
                 "method": "public barkBark(dog Dog) : void",
@@ -585,7 +596,32 @@ In both cases, you will get the output in JSON format:
                 "startLine": 30,
                 "endLine": 30,
                 "startColumn": 3,
-                "endColumn": 30
+                "endColumn": 30,
+                "codeElementType": "EXPRESSION_STATEMENT"
+              }
+            },
+            {
+              "leftSideLocation": {
+                "method": "public barkBark(manager DogManager) : void",
+                "type": "Expression Statement",
+                "expression": "System.out.println(\"ruff\");\n",
+                "filePath": "src/org/animals/Dog.java",
+                "startLine": 20,
+                "endLine": 20,
+                "startColumn": 3,
+                "endColumn": 30,
+                "codeElementType": "EXPRESSION_STATEMENT"
+              },
+              "rightSideLocation": {
+                "method": "public barkBark(dog Dog) : void",
+                "type": "Expression Statement",
+                "expression": "System.out.println(\"ruff\");\n",
+                "filePath": "src/org/DogManager.java",
+                "startLine": 31,
+                "endLine": 31,
+                "startColumn": 3,
+                "endColumn": 30,
+                "codeElementType": "EXPRESSION_STATEMENT"
               }
             },
             {
@@ -597,7 +633,8 @@ In both cases, you will get the output in JSON format:
                 "startLine": 17,
                 "endLine": 17,
                 "startColumn": 3,
-                "endColumn": 17
+                "endColumn": 17,
+                "codeElementType": "EXPRESSION_STATEMENT"
               },
               "rightSideLocation": {
                 "method": "public barkBark(dog Dog) : void",
@@ -607,7 +644,8 @@ In both cases, you will get the output in JSON format:
                 "startLine": 28,
                 "endLine": 28,
                 "startColumn": 3,
-                "endColumn": 21
+                "endColumn": 21,
+                "codeElementType": "EXPRESSION_STATEMENT"
               }
             }
           ]
@@ -624,7 +662,7 @@ To add ReMapper as a maven dependency in your project, add the following snippet
     <dependency>
       <groupId>io.github.lyoubo</groupId>
       <artifactId>remapper</artifactId>
-      <version>2.0.0</version>
+      <version>2.1.0</version>
     </dependency>
 
 # Data
