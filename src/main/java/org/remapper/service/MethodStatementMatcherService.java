@@ -25,8 +25,8 @@ public class MethodStatementMatcherService {
 
         iterativeMatching(matchPair, methodBefore, methodAfter, replacements);
 
-        matchPair.addDeletedStatements(methodBefore.getUnmatchedNodes());
-        matchPair.addAddedStatements(methodAfter.getUnmatchedNodes());
+        matchPair.addDeletedStatements(methodBefore.getUnmatchedStatements());
+        matchPair.addAddedStatements(methodAfter.getUnmatchedStatements());
 
         additionalMatchByDice(matchPair);
         additionalMatchByChildren(matchPair);

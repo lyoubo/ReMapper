@@ -8,7 +8,7 @@ public class EntityInfo {
     private EntityType type;
     private String name;
     private String params;
-    private LocationInfo location;
+    private LocationInfo locationInfo;
 
     public String getContainer() {
         return container;
@@ -42,12 +42,12 @@ public class EntityInfo {
         this.params = params;
     }
 
-    public LocationInfo getLocation() {
-        return location;
+    public LocationInfo getLocationInfo() {
+        return locationInfo;
     }
 
-    public void setLocation(LocationInfo locationInfo) {
-        this.location = locationInfo;
+    public void setLocationInfo(LocationInfo locationInfo) {
+        this.locationInfo = locationInfo;
     }
 
     @Override
@@ -70,8 +70,8 @@ public class EntityInfo {
                 "container='" + container + '\'' +
                 ", type=" + type +
                 ", name='" + name + '\'' +
-                ", startLine=" + location.getStartLine() +
-                ", endLine=" + location.getEndLine() +
+                ", startLine=" + locationInfo.getStartLine() +
+                ", endLine=" + locationInfo.getEndLine() +
                 '}';
     }
 }

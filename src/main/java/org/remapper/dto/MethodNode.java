@@ -11,7 +11,8 @@ public class MethodNode extends StatementNodeTree {
     private List<StatementNodeTree> allBlocks;
     private List<StatementNodeTree> allOperations;
     private List<StatementNodeTree> allControls;
-    private List<StatementNodeTree> unmatchedNodes;
+    private List<StatementNodeTree> unmatchedStatements;
+    private List<StatementNodeTree> matchedStatements;
     private DeclarationNodeTree methodEntity;
 
     public MethodNode(CompilationUnit cu, String filePath, MethodDeclaration method) {
@@ -113,17 +114,23 @@ public class MethodNode extends StatementNodeTree {
         return allControls;
     }
 
-    public List<StatementNodeTree> getUnmatchedNodes() {
-        unmatchedNodes = new ArrayList<>();
-        depthFirstSearch(unmatchedNodes, getChildren());
-        return unmatchedNodes;
+    public List<StatementNodeTree> getUnmatchedStatements() {
+        unmatchedStatements = new ArrayList<>();
+        depthFirstSearch(unmatchedStatements, getChildren(), false);
+        return unmatchedStatements;
     }
 
-    private void depthFirstSearch(List<StatementNodeTree> list, List<StatementNodeTree> children) {
+    public List<StatementNodeTree> getMatchedStatements() {
+        matchedStatements = new ArrayList<>();
+        depthFirstSearch(matchedStatements, getChildren(), true);
+        return matchedStatements;
+    }
+
+    private void depthFirstSearch(List<StatementNodeTree> list, List<StatementNodeTree> children, boolean matched) {
         for (StatementNodeTree child : children) {
-            if (!child.isMatched())
+            if (child.isMatched() == matched)
                 list.add(child);
-            depthFirstSearch(list, child.getChildren());
+            depthFirstSearch(list, child.getChildren(), matched);
         }
     }
 

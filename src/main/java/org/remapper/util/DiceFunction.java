@@ -14,8 +14,8 @@ public class DiceFunction {
 
     public static double calculateDiceSimilarity(LeafNode leafBefore, LeafNode leafCurrent) {
         JDTService jdtService = new JDTServiceImpl();
-        List<ChildNode> list1 = leafBefore.getDescendants(jdtService);
-        List<ChildNode> list2 = leafCurrent.getDescendants(jdtService);
+        List<ChildNode> list1 = jdtService.getDescendants(leafBefore.getDeclaration());
+        List<ChildNode> list2 = jdtService.getDescendants(leafCurrent.getDeclaration());
         int intersection = 0;
         int union = list1.size() + list2.size();
         Set<Integer> matched = new HashSet<>();

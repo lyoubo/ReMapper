@@ -264,6 +264,7 @@ public class JDTServiceImpl implements JDTService {
                     depth += 1;
             }
             snt.setDepth(depth);
+            snt.setRoot(methodNode);
         }
         return methodNode;
     }

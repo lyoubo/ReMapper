@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
-public abstract class StatementNodeTree {
+public abstract class StatementNodeTree implements LocationInfoProvider{
 
     private int depth;
     private StatementType type;
@@ -23,10 +23,10 @@ public abstract class StatementNodeTree {
     private boolean isMatched;
     private int position;
     private StatementInfo entity;
-    private LocationInfo location;
+    private LocationInfo locationInfo;
 
     public StatementNodeTree(CompilationUnit cu, String filePath, ASTNode node) {
-        location = new LocationInfo(cu, filePath, node);
+        locationInfo = new LocationInfo(cu, filePath, node);
         children = new ArrayList<>();
     }
 
@@ -77,14 +77,18 @@ public abstract class StatementNodeTree {
     }
 
     public MethodNode getRoot() {
-        if (root == null) {
+        /*if (root == null) {
             StatementNodeTree root = this;
             while (!(root instanceof MethodNode)) {
                 root = root.parent;
             }
             this.root = (MethodNode) root;
-        }
+        }*/
         return root;
+    }
+
+    public void setRoot(MethodNode root) {
+        this.root = root;
     }
 
     public ASTNode getStatement() {
@@ -155,12 +159,16 @@ public abstract class StatementNodeTree {
             entity.setMethod(parent.getExpression());
             entity.setExpression(expression);
             entity.setType(type);
-            entity.setLocation(location);
+            entity.setLocationInfo(locationInfo);
         }
         return entity;
     }
 
-    public LocationInfo getLocation() {
-        return location;
+    public LocationInfo getLocationInfo() {
+        return this.locationInfo;
+    }
+
+    public CodeRange codeRange() {
+        return this.locationInfo.codeRange();
     }
 }

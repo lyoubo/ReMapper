@@ -89,21 +89,24 @@ public class EntityMatchingJSON {
         private final int endLine;
         private final int startColumn;
         private final int endColumn;
+        private final String codeElementType;
 
         public Location(EntityInfo entity) {
-            this.filePath = entity.getLocation().getFilePath();
-            this.startLine = entity.getLocation().getStartLine();
-            this.endLine = entity.getLocation().getEndLine();
-            this.startColumn = entity.getLocation().getStartColumn();
-            this.endColumn = entity.getLocation().getEndColumn();
+            this.filePath = entity.getLocationInfo().getFilePath();
+            this.startLine = entity.getLocationInfo().getStartLine();
+            this.endLine = entity.getLocationInfo().getEndLine();
+            this.startColumn = entity.getLocationInfo().getStartColumn();
+            this.endColumn = entity.getLocationInfo().getEndColumn();
+            this.codeElementType = entity.getLocationInfo().getCodeElementType().name();
         }
 
         public Location(StatementInfo entity) {
-            this.filePath = entity.getLocation().getFilePath();
-            this.startLine = entity.getLocation().getStartLine();
-            this.endLine = entity.getLocation().getEndLine();
-            this.startColumn = entity.getLocation().getStartColumn();
-            this.endColumn = entity.getLocation().getEndColumn();
+            this.filePath = entity.getLocationInfo().getFilePath();
+            this.startLine = entity.getLocationInfo().getStartLine();
+            this.endLine = entity.getLocationInfo().getEndLine();
+            this.startColumn = entity.getLocationInfo().getStartColumn();
+            this.endColumn = entity.getLocationInfo().getEndColumn();
+            this.codeElementType = entity.getLocationInfo().getCodeElementType().name();
         }
     }
 }

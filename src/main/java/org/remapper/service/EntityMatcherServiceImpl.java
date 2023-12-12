@@ -116,7 +116,7 @@ public class EntityMatcherServiceImpl implements EntityMatcherService {
                             }
                         }
                         if (!locations.isEmpty()) {
-                            MethodNode addedMethod = jdtService.parseMethodSNT(addedEntity.getFilePath(), addedMethodDeclaration);
+                            MethodNode addedMethod = addedEntity.getMethodNode() == null ? jdtService.parseMethodSNT(addedEntity.getFilePath(), addedMethodDeclaration) : addedEntity.getMethodNode();
                             if (!addedMethod.getChildren().isEmpty()) {
                                 addedEntity.setMethodNode(addedMethod);
                                 addedMethod.setMethodEntity(addedEntity);
@@ -128,7 +128,7 @@ public class EntityMatcherServiceImpl implements EntityMatcherService {
                                     int i = children.indexOf(statement);
                                     DeclarationNodeTree delegatedEntity = getDelegatedMethod(addedEntity, addedEntities);
                                     MethodDeclaration methodDeclaration = (MethodDeclaration) delegatedEntity.getDeclaration();
-                                    MethodNode delegatedMethod = jdtService.parseMethodSNT(delegatedEntity.getFilePath(), methodDeclaration);
+                                    MethodNode delegatedMethod = delegatedEntity.getMethodNode() == null ? jdtService.parseMethodSNT(delegatedEntity.getFilePath(), methodDeclaration) : delegatedEntity.getMethodNode();
                                     if (delegatedMethod != addedMethod) {
                                         StatementNodeTree proxyStatement = addedMethod.getAllOperations().get(0);
                                         proxyStatement.setMatched();
@@ -138,7 +138,7 @@ public class EntityMatcherServiceImpl implements EntityMatcherService {
                                     addedMethod = delegatedMethod;
                                     children.addAll(i, addedMethod.getChildren().get(0).getChildren());
                                     if ((statement.getType() == StatementType.EXPRESSION_STATEMENT && ((ExpressionStatement) statement.getStatement()).getExpression() instanceof MethodInvocation) ||
-                                            (statement.getType() == StatementType.RETURN_STATEMENT && ((ExpressionStatement) statement.getStatement()).getExpression() instanceof MethodInvocation)) {
+                                            (statement.getType() == StatementType.RETURN_STATEMENT && ((ReturnStatement) statement.getStatement()).getExpression() instanceof MethodInvocation)) {
                                         statement.setMatched();
                                         matchPair.addAddedStatement(statement);
                                         arguments2Parameters(allOperations, statement, addedEntity, newReplacements);
@@ -148,36 +148,57 @@ public class EntityMatcherServiceImpl implements EntityMatcherService {
                                     for (int j = 0; j < allControls.size(); j++) {
                                         StatementNodeTree control = allControls.get(j);
                                         if (position < control.getPosition()) {
+                                            for (StatementNodeTree snt : addedMethod.getAllControls()) {
+                                                snt.setDepth(snt.getDepth() + statement.getDepth() - 1);
+                                            }
                                             newMethod.addControls(j, addedMethod.getAllControls());
                                             inserted = true;
                                             break;
                                         }
                                     }
-                                    if (!inserted)
+                                    if (!inserted) {
+                                        for (StatementNodeTree snt : addedMethod.getAllControls()) {
+                                            snt.setDepth(snt.getDepth() + statement.getDepth() - 1);
+                                        }
                                         newMethod.addControls(-1, addedMethod.getAllControls());
+                                    }
                                     List<StatementNodeTree> allBlocks = newMethod.getAllBlocks();
                                     inserted = false;
                                     for (int j = 0; j < allBlocks.size(); j++) {
                                         StatementNodeTree block = allBlocks.get(j);
                                         if (position < block.getPosition()) {
+                                            for (StatementNodeTree snt : addedMethod.getAllBlocks()) {
+                                                snt.setDepth(snt.getDepth() + statement.getDepth() - 1);
+                                            }
                                             newMethod.addBlocks(j, addedMethod.getAllBlocks());
                                             inserted = true;
                                             break;
                                         }
                                     }
-                                    if (!inserted)
+                                    if (!inserted) {
+                                        for (StatementNodeTree snt : addedMethod.getAllBlocks()) {
+                                            snt.setDepth(snt.getDepth() + statement.getDepth() - 1);
+                                        }
                                         newMethod.addBlocks(-1, addedMethod.getAllBlocks());
+                                    }
                                     inserted = false;
                                     for (int j = 0; j < allOperations.size(); j++) {
                                         StatementNodeTree operation = allOperations.get(j);
                                         if (position < operation.getPosition()) {
+                                            for (StatementNodeTree snt : addedMethod.getAllOperations()) {
+                                                snt.setDepth(snt.getDepth() + statement.getDepth() - 1);
+                                            }
                                             newMethod.addOperations(j, addedMethod.getAllOperations());
                                             inserted = true;
                                             break;
                                         }
                                     }
-                                    if (!inserted)
+                                    if (!inserted) {
+                                        for (StatementNodeTree snt : addedMethod.getAllOperations()) {
+                                            snt.setDepth(snt.getDepth() + statement.getDepth() - 1);
+                                        }
                                         newMethod.addOperations(-1, addedMethod.getAllOperations());
+                                    }
                                 }
                                 extractedEntities.add(addedEntity);
                             }
@@ -214,7 +235,7 @@ public class EntityMatcherServiceImpl implements EntityMatcherService {
                             }
                         }
                         if (!locations.isEmpty()) {
-                            MethodNode deletedMethod = jdtService.parseMethodSNT(deletedEntity.getFilePath(), deletedMethodDeclaration);
+                            MethodNode deletedMethod = deletedEntity.getMethodNode() == null ? jdtService.parseMethodSNT(deletedEntity.getFilePath(), deletedMethodDeclaration) : deletedEntity.getMethodNode();
                             if (!deletedMethod.getChildren().isEmpty()) {
                                 deletedEntity.setMethodNode(deletedMethod);
                                 deletedMethod.setMethodEntity(deletedEntity);
@@ -226,7 +247,7 @@ public class EntityMatcherServiceImpl implements EntityMatcherService {
                                     int i = children.indexOf(statement);
                                     DeclarationNodeTree delegatedEntity = getDelegatedMethod(deletedEntity, deletedEntities);
                                     MethodDeclaration methodDeclaration = (MethodDeclaration) delegatedEntity.getDeclaration();
-                                    MethodNode delegatedMethod = jdtService.parseMethodSNT(delegatedEntity.getFilePath(), methodDeclaration);
+                                    MethodNode delegatedMethod = delegatedEntity.getMethodNode() == null ? jdtService.parseMethodSNT(delegatedEntity.getFilePath(), methodDeclaration) : delegatedEntity.getMethodNode();
                                     if (delegatedMethod != deletedMethod) {
                                         StatementNodeTree proxyStatement = deletedMethod.getAllOperations().get(0);
                                         proxyStatement.setMatched();
@@ -236,7 +257,7 @@ public class EntityMatcherServiceImpl implements EntityMatcherService {
                                     deletedMethod = delegatedMethod;
                                     children.addAll(i, deletedMethod.getChildren().get(0).getChildren());
                                     if ((statement.getType() == StatementType.EXPRESSION_STATEMENT && ((ExpressionStatement) statement.getStatement()).getExpression() instanceof MethodInvocation) ||
-                                            (statement.getType() == StatementType.RETURN_STATEMENT && ((ExpressionStatement) statement.getStatement()).getExpression() instanceof MethodInvocation)) {
+                                            (statement.getType() == StatementType.RETURN_STATEMENT && ((ReturnStatement) statement.getStatement()).getExpression() instanceof MethodInvocation)) {
                                         statement.setMatched();
                                         matchPair.addDeletedStatement(statement);
                                         arguments2Parameters(allOperations, statement, deletedEntity, oldReplacements);
@@ -246,36 +267,57 @@ public class EntityMatcherServiceImpl implements EntityMatcherService {
                                     for (int j = 0; j < allControls.size(); j++) {
                                         StatementNodeTree control = allControls.get(j);
                                         if (position < control.getPosition()) {
+                                            for (StatementNodeTree snt : deletedMethod.getAllControls()) {
+                                                snt.setDepth(snt.getDepth() + statement.getDepth() - 1);
+                                            }
                                             oldMethod.addControls(j, deletedMethod.getAllControls());
                                             inserted = true;
                                             break;
                                         }
                                     }
-                                    if (!inserted)
+                                    if (!inserted) {
+                                        for (StatementNodeTree snt : deletedMethod.getAllControls()) {
+                                            snt.setDepth(snt.getDepth() + statement.getDepth() - 1);
+                                        }
                                         oldMethod.addControls(-1, deletedMethod.getAllControls());
+                                    }
                                     List<StatementNodeTree> allBlocks = oldMethod.getAllBlocks();
                                     inserted = false;
                                     for (int j = 0; j < allBlocks.size(); j++) {
                                         StatementNodeTree block = allBlocks.get(j);
                                         if (position < block.getPosition()) {
+                                            for (StatementNodeTree snt : deletedMethod.getAllBlocks()) {
+                                                snt.setDepth(snt.getDepth() + statement.getDepth() - 1);
+                                            }
                                             oldMethod.addBlocks(j, deletedMethod.getAllBlocks());
                                             inserted = true;
                                             break;
                                         }
                                     }
-                                    if (!inserted)
+                                    if (!inserted) {
+                                        for (StatementNodeTree snt : deletedMethod.getAllBlocks()) {
+                                            snt.setDepth(snt.getDepth() + statement.getDepth() - 1);
+                                        }
                                         oldMethod.addBlocks(-1, deletedMethod.getAllBlocks());
+                                    }
                                     inserted = false;
                                     for (int j = 0; j < allOperations.size(); j++) {
                                         StatementNodeTree operation = allOperations.get(j);
                                         if (position < operation.getPosition()) {
+                                            for (StatementNodeTree snt : deletedMethod.getAllOperations()) {
+                                                snt.setDepth(snt.getDepth() + statement.getDepth() - 1);
+                                            }
                                             oldMethod.addOperations(j, deletedMethod.getAllOperations());
                                             inserted = true;
                                             break;
                                         }
                                     }
-                                    if (!inserted)
+                                    if (!inserted) {
+                                        for (StatementNodeTree snt : deletedMethod.getAllOperations()) {
+                                            snt.setDepth(snt.getDepth() + statement.getDepth() - 1);
+                                        }
                                         oldMethod.addOperations(-1, deletedMethod.getAllOperations());
+                                    }
                                 }
                                 inlinedEntities.add(deletedEntity);
                             }

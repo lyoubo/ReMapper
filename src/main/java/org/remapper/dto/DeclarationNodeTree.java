@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.StringJoiner;
 import java.util.stream.Collectors;
 
-public abstract class DeclarationNodeTree {
+public abstract class DeclarationNodeTree implements LocationInfoProvider{
 
     private int height;
     private EntityType type;
@@ -24,14 +24,14 @@ public abstract class DeclarationNodeTree {
     private String filePath;
     private EntityInfo entity;
     private MethodNode methodNode;
-    private LocationInfo location;
+    private LocationInfo locationInfo;
     private List<EntityInfo> dependencies;
 
     public DeclarationNodeTree() {
     }
 
     public DeclarationNodeTree(CompilationUnit cu, String filePath, ASTNode node) {
-        location = new LocationInfo(cu, filePath, node);
+        locationInfo = new LocationInfo(cu, filePath, node);
         children = new ArrayList<>();
         dependencies = new ArrayList<>();
     }
@@ -154,20 +154,20 @@ public abstract class DeclarationNodeTree {
                 String params = joiner.toString();
                 entity.setParams(params);
             }
-            entity.setLocation(location);
+            entity.setLocationInfo(locationInfo);
         } else if (type == EntityType.CLASS || type == EntityType.INTERFACE || type == EntityType.ENUM ||
                 type == EntityType.ANNOTATION_TYPE || type == EntityType.RECORD) {
             entity = new EntityInfo();
             entity.setContainer(namespace.equals("") ? name : namespace + "." + name);
             entity.setType(type);
             entity.setName(name);
-            entity.setLocation(location);
+            entity.setLocationInfo(locationInfo);
         } else {
             entity = new EntityInfo();
             entity.setContainer(namespace);
             entity.setType(type);
             entity.setName(name);
-            entity.setLocation(location);
+            entity.setLocationInfo(locationInfo);
         }
         return entity;
     }
@@ -218,7 +218,11 @@ public abstract class DeclarationNodeTree {
         this.methodNode = methodNode;
     }
 
-    public LocationInfo getLocation() {
-        return location;
+    public LocationInfo getLocationInfo() {
+        return this.locationInfo;
+    }
+
+    public CodeRange codeRange() {
+        return this.locationInfo.codeRange();
     }
 }

@@ -7,7 +7,7 @@ public class StatementInfo {
     private String method;
     private StatementType type;
     private String expression;
-    private LocationInfo location;
+    private LocationInfo locationInfo;
 
     public String getMethod() {
         return method;
@@ -33,12 +33,12 @@ public class StatementInfo {
         this.expression = expression;
     }
 
-    public LocationInfo getLocation() {
-        return location;
+    public LocationInfo getLocationInfo() {
+        return locationInfo;
     }
 
-    public void setLocation(LocationInfo locationInfo) {
-        this.location = locationInfo;
+    public void setLocationInfo(LocationInfo locationInfo) {
+        this.locationInfo = locationInfo;
     }
 
     @Override
@@ -60,8 +60,8 @@ public class StatementInfo {
                 "container='" + method + '\'' +
                 ", type=" + type +
                 ", name='" + expression + '\'' +
-                ", startLine=" + location.getStartLine() +
-                ", endLine=" + location.getEndLine() +
+                ", startLine=" + locationInfo.getStartLine() +
+                ", endLine=" + locationInfo.getEndLine() +
                 '}';
     }
 }

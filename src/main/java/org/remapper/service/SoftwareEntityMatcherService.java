@@ -453,7 +453,7 @@ public class SoftwareEntityMatcherService {
             populateWithModifiers(modifiers, entityUsages);
             EntityInfo typeEntity = EntityUtils.generateTypeEntity(declaration.resolveBinding());
             LocationInfo locationInfo = new LocationInfo(cu, filePath, declaration);
-            typeEntity.setLocation(locationInfo);
+            typeEntity.setLocationInfo(locationInfo);
             populateDependencyInReverse(typeEntity, entityUsages, dependencies);
         }
     }
@@ -467,7 +467,7 @@ public class SoftwareEntityMatcherService {
             populateWithModifiers(modifiers, entityUsages);
             EntityInfo enumEntity = EntityUtils.generateTypeEntity(declaration.resolveBinding());
             LocationInfo locationInfo = new LocationInfo(cu, filePath, declaration);
-            enumEntity.setLocation(locationInfo);
+            enumEntity.setLocationInfo(locationInfo);
             populateDependencyInReverse(enumEntity, entityUsages, dependencies);
         }
     }
@@ -479,7 +479,7 @@ public class SoftwareEntityMatcherService {
             populateWithModifiers(modifiers, entityUsages);
             EntityInfo annotationTypeEntity = EntityUtils.generateTypeEntity(declaration.resolveBinding());
             LocationInfo locationInfo = new LocationInfo(cu, filePath, declaration);
-            annotationTypeEntity.setLocation(locationInfo);
+            annotationTypeEntity.setLocationInfo(locationInfo);
             populateDependencyInReverse(annotationTypeEntity, entityUsages, dependencies);
         }
     }
@@ -495,7 +495,7 @@ public class SoftwareEntityMatcherService {
             populateWithModifiers(modifiers, entityUsages);
             EntityInfo recordEntity = EntityUtils.generateTypeEntity(declaration.resolveBinding());
             LocationInfo locationInfo = new LocationInfo(cu, filePath, declaration);
-            recordEntity.setLocation(locationInfo);
+            recordEntity.setLocationInfo(locationInfo);
             populateDependencyInReverse(recordEntity, entityUsages, dependencies);
         }
     }
@@ -544,7 +544,7 @@ public class SoftwareEntityMatcherService {
             int modifiers = initializer.getModifiers();
             EntityInfo initializerEntity = EntityUtils.generateInitializerEntity(typeBinding, Flags.isStatic(modifiers) ? "static block" : "non-static block");
             LocationInfo locationInfo = new LocationInfo(cu, filePath, initializer);
-            initializerEntity.setLocation(locationInfo);
+            initializerEntity.setLocationInfo(locationInfo);
             populateDependencyInReverse(initializerEntity, entityUsages, dependencies);
         }
     }
@@ -564,7 +564,7 @@ public class SoftwareEntityMatcherService {
                         StringUtils.equals(dependency.getContainer(), declaringClass.getQualifiedName()));
                 EntityInfo fieldEntity = EntityUtils.generateFieldEntity(variableBinding);
                 LocationInfo locationInfo = new LocationInfo(cu, filePath, fragment);
-                fieldEntity.setLocation(locationInfo);
+                fieldEntity.setLocationInfo(locationInfo);
                 populateDependencyInReverse(fieldEntity, entityUsages, dependencies);
             }
         }
@@ -585,7 +585,7 @@ public class SoftwareEntityMatcherService {
                     StringUtils.equals(dependency.getContainer(), declaringClass.getQualifiedName()));
             EntityInfo methodEntity = EntityUtils.generateMethodEntity(declaration.resolveBinding());
             LocationInfo locationInfo = new LocationInfo(cu, filePath, declaration);
-            methodEntity.setLocation(locationInfo);
+            methodEntity.setLocationInfo(locationInfo);
             populateDependencyInReverse(methodEntity, entityUsages, dependencies);
         }
     }
@@ -597,7 +597,7 @@ public class SoftwareEntityMatcherService {
             List<EntityInfo> entityUsages = visitor.getEntityUsages();
             EntityInfo typeMemberEntity = EntityUtils.generateMethodEntity(declaration.resolveBinding());
             LocationInfo locationInfo = new LocationInfo(cu, filePath, declaration);
-            typeMemberEntity.setLocation(locationInfo);
+            typeMemberEntity.setLocationInfo(locationInfo);
             populateDependencyInReverse(typeMemberEntity, entityUsages, dependencies);
         }
     }
@@ -614,7 +614,7 @@ public class SoftwareEntityMatcherService {
                     StringUtils.equals(dependency.getContainer(), declaringClass.getQualifiedName()));
             EntityInfo enumConstantEntity = EntityUtils.generateFieldEntity(declaration.resolveVariable());
             LocationInfo locationInfo = new LocationInfo(cu, filePath, declaration);
-            enumConstantEntity.setLocation(locationInfo);
+            enumConstantEntity.setLocationInfo(locationInfo);
             populateDependencyInReverse(enumConstantEntity, entityUsages, dependencies);
         }
     }
@@ -665,10 +665,10 @@ public class SoftwareEntityMatcherService {
                 if (node instanceof MethodDeclaration) {
                     MethodDeclaration declaration = (MethodDeclaration) node;
                     LocationInfo location = new LocationInfo((CompilationUnit) declaration.getRoot(), dnt.getFilePath(), declaration);
-                    if (location.getStartLine() == dnt.getLocation().getStartLine() &&
-                            location.getEndLine() == dnt.getLocation().getEndLine() &&
-                            location.getStartColumn() == dnt.getLocation().getStartColumn() &&
-                            location.getEndColumn() == dnt.getLocation().getEndColumn())
+                    if (location.getStartLine() == dnt.getLocationInfo().getStartLine() &&
+                            location.getEndLine() == dnt.getLocationInfo().getEndLine() &&
+                            location.getStartColumn() == dnt.getLocationInfo().getStartColumn() &&
+                            location.getEndColumn() == dnt.getLocationInfo().getEndColumn())
                         dnt.setDeclaration(declaration);
                 }
             }
@@ -677,10 +677,10 @@ public class SoftwareEntityMatcherService {
                 if (node instanceof FieldDeclaration) {
                     FieldDeclaration declaration = (FieldDeclaration) node;
                     LocationInfo location = new LocationInfo((CompilationUnit) declaration.getRoot(), dnt.getFilePath(), declaration);
-                    if (location.getStartLine() == dnt.getLocation().getStartLine() &&
-                            location.getEndLine() == dnt.getLocation().getEndLine() &&
-                            location.getStartColumn() == dnt.getLocation().getStartColumn() &&
-                            location.getEndColumn() == dnt.getLocation().getEndColumn())
+                    if (location.getStartLine() == dnt.getLocationInfo().getStartLine() &&
+                            location.getEndLine() == dnt.getLocationInfo().getEndLine() &&
+                            location.getStartColumn() == dnt.getLocationInfo().getStartColumn() &&
+                            location.getEndColumn() == dnt.getLocationInfo().getEndColumn())
                         dnt.setDeclaration(declaration);
                 }
             }
@@ -689,10 +689,10 @@ public class SoftwareEntityMatcherService {
                 if (node instanceof EnumConstantDeclaration) {
                     EnumConstantDeclaration declaration = (EnumConstantDeclaration) node;
                     LocationInfo location = new LocationInfo((CompilationUnit) declaration.getRoot(), dnt.getFilePath(), declaration);
-                    if (location.getStartLine() == dnt.getLocation().getStartLine() &&
-                            location.getEndLine() == dnt.getLocation().getEndLine() &&
-                            location.getStartColumn() == dnt.getLocation().getStartColumn() &&
-                            location.getEndColumn() == dnt.getLocation().getEndColumn())
+                    if (location.getStartLine() == dnt.getLocationInfo().getStartLine() &&
+                            location.getEndLine() == dnt.getLocationInfo().getEndLine() &&
+                            location.getStartColumn() == dnt.getLocationInfo().getStartColumn() &&
+                            location.getEndColumn() == dnt.getLocationInfo().getEndColumn())
                         dnt.setDeclaration(declaration);
                 }
             }
@@ -701,10 +701,10 @@ public class SoftwareEntityMatcherService {
                 if (node instanceof TypeDeclaration) {
                     TypeDeclaration declaration = (TypeDeclaration) node;
                     LocationInfo location = new LocationInfo((CompilationUnit) declaration.getRoot(), dnt.getFilePath(), declaration);
-                    if (location.getStartLine() == dnt.getLocation().getStartLine() &&
-                            location.getEndLine() == dnt.getLocation().getEndLine() &&
-                            location.getStartColumn() == dnt.getLocation().getStartColumn() &&
-                            location.getEndColumn() == dnt.getLocation().getEndColumn())
+                    if (location.getStartLine() == dnt.getLocationInfo().getStartLine() &&
+                            location.getEndLine() == dnt.getLocationInfo().getEndLine() &&
+                            location.getStartColumn() == dnt.getLocationInfo().getStartColumn() &&
+                            location.getEndColumn() == dnt.getLocationInfo().getEndColumn())
                         dnt.setDeclaration(declaration);
                 }
             }
@@ -713,10 +713,10 @@ public class SoftwareEntityMatcherService {
                 if (node instanceof AnnotationTypeDeclaration) {
                     AnnotationTypeDeclaration declaration = (AnnotationTypeDeclaration) node;
                     LocationInfo location = new LocationInfo((CompilationUnit) declaration.getRoot(), dnt.getFilePath(), declaration);
-                    if (location.getStartLine() == dnt.getLocation().getStartLine() &&
-                            location.getEndLine() == dnt.getLocation().getEndLine() &&
-                            location.getStartColumn() == dnt.getLocation().getStartColumn() &&
-                            location.getEndColumn() == dnt.getLocation().getEndColumn())
+                    if (location.getStartLine() == dnt.getLocationInfo().getStartLine() &&
+                            location.getEndLine() == dnt.getLocationInfo().getEndLine() &&
+                            location.getStartColumn() == dnt.getLocationInfo().getStartColumn() &&
+                            location.getEndColumn() == dnt.getLocationInfo().getEndColumn())
                         dnt.setDeclaration(declaration);
                 }
             }
@@ -725,10 +725,10 @@ public class SoftwareEntityMatcherService {
                 if (node instanceof AnnotationTypeMemberDeclaration) {
                     AnnotationTypeMemberDeclaration declaration = (AnnotationTypeMemberDeclaration) node;
                     LocationInfo location = new LocationInfo((CompilationUnit) declaration.getRoot(), dnt.getFilePath(), declaration);
-                    if (location.getStartLine() == dnt.getLocation().getStartLine() &&
-                            location.getEndLine() == dnt.getLocation().getEndLine() &&
-                            location.getStartColumn() == dnt.getLocation().getStartColumn() &&
-                            location.getEndColumn() == dnt.getLocation().getEndColumn())
+                    if (location.getStartLine() == dnt.getLocationInfo().getStartLine() &&
+                            location.getEndLine() == dnt.getLocationInfo().getEndLine() &&
+                            location.getStartColumn() == dnt.getLocationInfo().getStartColumn() &&
+                            location.getEndColumn() == dnt.getLocationInfo().getEndColumn())
                         dnt.setDeclaration(declaration);
                 }
             }
@@ -737,10 +737,10 @@ public class SoftwareEntityMatcherService {
                 if (node instanceof Initializer) {
                     Initializer declaration = (Initializer) node;
                     LocationInfo location = new LocationInfo((CompilationUnit) declaration.getRoot(), dnt.getFilePath(), declaration);
-                    if (location.getStartLine() == dnt.getLocation().getStartLine() &&
-                            location.getEndLine() == dnt.getLocation().getEndLine() &&
-                            location.getStartColumn() == dnt.getLocation().getStartColumn() &&
-                            location.getEndColumn() == dnt.getLocation().getEndColumn())
+                    if (location.getStartLine() == dnt.getLocationInfo().getStartLine() &&
+                            location.getEndLine() == dnt.getLocationInfo().getEndLine() &&
+                            location.getStartColumn() == dnt.getLocationInfo().getStartColumn() &&
+                            location.getEndColumn() == dnt.getLocationInfo().getEndColumn())
                         dnt.setDeclaration(declaration);
                 }
             }
