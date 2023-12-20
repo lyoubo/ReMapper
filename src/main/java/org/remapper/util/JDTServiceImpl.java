@@ -206,23 +206,31 @@ public class JDTServiceImpl implements JDTService {
         StatementVisitor visitor = new StatementVisitor();
         methodDeclaration.accept(visitor);
         List<ASTNode> statements = visitor.getStatements();
-        methodDeclaration.accept(new ASTVisitor() {
-            @Override
-            public boolean visit(LambdaExpression node) {
-                StatementVisitor visitor = new StatementVisitor();
-                node.accept(visitor);
-                statements.addAll(visitor.getStatements());
-                return true;
-            }
+        List<ASTNode> nodes = new ArrayList<>();
+        for (ASTNode statement : statements) {
+            if (statement instanceof Block)
+                continue;
+            if (statement instanceof TypeDeclarationStatement)
+                continue;
+            statement.accept(new ASTVisitor() {
+                @Override
+                public boolean visit(LambdaExpression node) {
+                    StatementVisitor visitor = new StatementVisitor();
+                    node.accept(visitor);
+                    nodes.addAll(visitor.getStatements());
+                    return true;
+                }
 
-            @Override
-            public boolean visit(AnonymousClassDeclaration node) {
-                StatementVisitor visitor = new StatementVisitor();
-                node.accept(visitor);
-                statements.addAll(visitor.getStatements());
-                return true;
-            }
-        });
+                @Override
+                public boolean visit(AnonymousClassDeclaration node) {
+                    StatementVisitor visitor = new StatementVisitor();
+                    node.accept(visitor);
+                    nodes.addAll(visitor.getStatements());
+                    return true;
+                }
+            });
+        }
+        statements.addAll(nodes);
         Map<ASTNode, StatementNodeTree> initializedSNT = new HashMap<>();
         initializedSNT.put(methodDeclaration, methodNode);
         for (ASTNode statement : statements) {
