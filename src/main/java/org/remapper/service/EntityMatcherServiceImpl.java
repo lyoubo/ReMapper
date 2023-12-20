@@ -136,7 +136,8 @@ public class EntityMatcherServiceImpl implements EntityMatcherService {
                                         arguments2Parameters(new ArrayList<>(), statement, delegatedEntity, newReplacements);
                                     }
                                     addedMethod = delegatedMethod;
-                                    children.addAll(i, addedMethod.getChildren().get(0).getChildren());
+                                    if (!addedMethod.getChildren().isEmpty())
+                                        children.addAll(i, addedMethod.getChildren().get(0).getChildren());
                                     if ((statement.getType() == StatementType.EXPRESSION_STATEMENT && ((ExpressionStatement) statement.getStatement()).getExpression() instanceof MethodInvocation) ||
                                             (statement.getType() == StatementType.RETURN_STATEMENT && ((ReturnStatement) statement.getStatement()).getExpression() instanceof MethodInvocation)) {
                                         statement.setMatched();
@@ -255,7 +256,8 @@ public class EntityMatcherServiceImpl implements EntityMatcherService {
                                         arguments2Parameters(new ArrayList<>(), proxyStatement, delegatedEntity, oldReplacements);
                                     }
                                     deletedMethod = delegatedMethod;
-                                    children.addAll(i, deletedMethod.getChildren().get(0).getChildren());
+                                    if (!deletedMethod.getChildren().isEmpty())
+                                        children.addAll(i, deletedMethod.getChildren().get(0).getChildren());
                                     if ((statement.getType() == StatementType.EXPRESSION_STATEMENT && ((ExpressionStatement) statement.getStatement()).getExpression() instanceof MethodInvocation) ||
                                             (statement.getType() == StatementType.RETURN_STATEMENT && ((ReturnStatement) statement.getStatement()).getExpression() instanceof MethodInvocation)) {
                                         statement.setMatched();
@@ -402,7 +404,8 @@ public class EntityMatcherServiceImpl implements EntityMatcherService {
                 VariableDeclarationStatement variableDeclarationStatement = (VariableDeclarationStatement) snt.getStatement();
                 List<VariableDeclarationFragment> fragments = variableDeclarationStatement.fragments();
                 for (VariableDeclarationFragment fragment : fragments) {
-                    variables.put(fragment.getName().getIdentifier(), fragment.getInitializer().toString());
+                    if (fragment.getInitializer() != null)
+                        variables.put(fragment.getName().getIdentifier(), fragment.getInitializer().toString());
                 }
             }
         }
