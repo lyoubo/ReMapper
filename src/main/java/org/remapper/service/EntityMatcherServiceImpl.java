@@ -117,9 +117,9 @@ public class EntityMatcherServiceImpl implements EntityMatcherService {
                         }
                         if (!locations.isEmpty()) {
                             MethodNode addedMethod = addedEntity.getMethodNode() == null ? jdtService.parseMethodSNT(addedEntity.getFilePath(), addedMethodDeclaration) : addedEntity.getMethodNode();
+                            addedEntity.setMethodNode(addedMethod);
+                            addedMethod.setMethodEntity(addedEntity);
                             if (!addedMethod.getChildren().isEmpty()) {
-                                addedEntity.setMethodNode(addedMethod);
-                                addedMethod.setMethodEntity(addedEntity);
                                 if (locations.size() > 1)
                                     addedMethod.setDuplicated();
                                 for (StatementNodeTree statement : locations) {
@@ -236,9 +236,9 @@ public class EntityMatcherServiceImpl implements EntityMatcherService {
                         }
                         if (!locations.isEmpty()) {
                             MethodNode deletedMethod = deletedEntity.getMethodNode() == null ? jdtService.parseMethodSNT(deletedEntity.getFilePath(), deletedMethodDeclaration) : deletedEntity.getMethodNode();
+                            deletedEntity.setMethodNode(deletedMethod);
+                            deletedMethod.setMethodEntity(deletedEntity);
                             if (!deletedMethod.getChildren().isEmpty()) {
-                                deletedEntity.setMethodNode(deletedMethod);
-                                deletedMethod.setMethodEntity(deletedEntity);
                                 if (locations.size() > 1)
                                     deletedMethod.setDuplicated();
                                 for (StatementNodeTree statement : locations) {
@@ -406,19 +406,21 @@ public class EntityMatcherServiceImpl implements EntityMatcherService {
                 }
             }
         }
-        MethodInvocation methodInvocation = null;
-        if (statement.getType() == StatementType.EXPRESSION_STATEMENT) {
-            ExpressionStatement expressionStatement = (ExpressionStatement) statement.getStatement();
-            methodInvocation = (MethodInvocation) expressionStatement.getExpression();
-        }
-        if (statement.getType() == StatementType.RETURN_STATEMENT) {
-            ReturnStatement returnStatement = (ReturnStatement) statement.getStatement();
-            methodInvocation = (MethodInvocation) returnStatement.getExpression();
-        }
-        if (methodInvocation != null) {
+        List<MethodInvocation> methodInvocations = new ArrayList<>();
+        statement.getStatement().accept(new ASTVisitor() {
+            @Override
+            public boolean visit(MethodInvocation node) {
+                methodInvocations.add(node);
+                return true;
+            }
+        });
+        MethodDeclaration declaration = (MethodDeclaration) additionalMethod.getDeclaration();
+        List<SingleVariableDeclaration> parameters = declaration.parameters();
+        for (MethodInvocation methodInvocation : methodInvocations) {
+            if (!methodInvocation.getName().getIdentifier().equals(declaration.getName().getIdentifier()) ||
+                    methodInvocation.arguments().size() != parameters.size())
+                continue;
             List<Expression> arguments = methodInvocation.arguments();
-            MethodDeclaration declaration = (MethodDeclaration) additionalMethod.getDeclaration();
-            List<SingleVariableDeclaration> parameters = declaration.parameters();
             for (int i = 0; i < parameters.size(); i++) {
                 String argument = arguments.get(i).toString();
                 String parameter = parameters.get(i).getName().getIdentifier();
