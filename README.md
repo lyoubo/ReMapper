@@ -35,9 +35,9 @@ Currently, it supports the matching of the following code entities:
 
 # Requirements
 
-Java 11.0.17 or newer
+**Java 17** or newer
 
-Apache Maven 3.8.1 or newer
+**Apache Maven 3.8** or newer
 
 # API usage guidelines
 
@@ -662,7 +662,7 @@ To add ReMapper as a maven dependency in your project, add the following snippet
     <dependency>
       <groupId>io.github.lyoubo</groupId>
       <artifactId>remapper</artifactId>
-      <version>2.1.2</version>
+      <version>2.1.3</version>
     </dependency>
 
 # Data
