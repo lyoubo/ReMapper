@@ -49,6 +49,8 @@ public class LocationInfo {
     private CodeElementType getCodeElementType(ASTNode node) {
         if (node instanceof TypeDeclaration)
             return CodeElementType.TYPE_DECLARATION;
+        if (node instanceof EnumDeclaration)
+            return CodeElementType.TYPE_DECLARATION;
         if (node instanceof MethodDeclaration)
             return CodeElementType.METHOD_DECLARATION;
         if (node instanceof FieldDeclaration)

@@ -157,6 +157,9 @@ public class DiceFunction {
         double dependencies = calculateReferenceSimilarity(matchPair, dntBefore, dntCurrent);
         NGram ngram = new NGram(2);
         double biGram = 1 - ngram.distance(dntBefore.getNamespace() + "." + dntBefore.getName(), dntCurrent.getNamespace() + "." + dntCurrent.getName());
+        if (dependencies == 1.0) {
+            return descendants * 3 + 0.01 * biGram;
+        }
         return (union == 0 ? descendants : 0.5 * descendants + 0.5 * dependencies) + 0.01 * biGram;
     }
 
