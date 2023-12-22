@@ -11,6 +11,7 @@ import org.remapper.handler.MatchingHandler;
 import org.remapper.util.GitServiceImpl;
 import org.remapper.util.JDTServiceImpl;
 import org.remapper.util.MethodUtils;
+import org.remapper.util.StringUtils;
 import org.remapper.visitor.NodeUsageVisitor;
 
 import java.util.*;
@@ -90,30 +91,32 @@ public class EntityMatcherServiceImpl implements EntityMatcherService {
                     for (DeclarationNodeTree addedEntity : addedEntities) {
                         if (addedEntity.getType() != EntityType.METHOD)
                             continue;
-                        List<EntityInfo> dependencies = addedEntity.getDependencies();
-                        if (!dependencies.contains(newEntity.getEntity()))
-                            continue;
                         MethodDeclaration addedMethodDeclaration = (MethodDeclaration) addedEntity.getDeclaration();
                         if (MethodUtils.isGetter(addedMethodDeclaration) || MethodUtils.isSetter(addedMethodDeclaration))
                             continue;
                         List<StatementNodeTree> allOperations = newMethod.getAllOperations();
                         List<StatementNodeTree> allControls = newMethod.getAllControls();
+                        List<EntityInfo> dependencies = addedEntity.getDependencies();
                         List<StatementNodeTree> locations = new ArrayList<>();
-                        for (StatementNodeTree snt : allOperations) {
-                            NodeUsageVisitor visitor = new NodeUsageVisitor();
-                            snt.getStatement().accept(visitor);
-                            for (EntityInfo entity : visitor.getEntityUsages()) {
-                                if (entity.equals(addedEntity.getEntity())) {
+                        if (dependencies.contains(newEntity.getEntity())) {
+                            for (StatementNodeTree snt : allOperations) {
+                                NodeUsageVisitor visitor = new NodeUsageVisitor();
+                                snt.getStatement().accept(visitor);
+                                for (EntityInfo entity : visitor.getEntityUsages()) {
+                                    if (entity.equals(addedEntity.getEntity())) {
+                                        locations.add(snt);
+                                        break;
+                                    }
+                                }
+                            }
+                            for (StatementNodeTree snt : allControls) {
+                                if (isLocation(snt, addedEntity)) {
                                     locations.add(snt);
                                     break;
                                 }
                             }
-                        }
-                        for (StatementNodeTree snt : allControls) {
-                            if (isLocation(snt, addedEntity)) {
-                                locations.add(snt);
-                                break;
-                            }
+                        } else if (StringUtils.equals(newEntity.getNamespace(), addedEntity.getNamespace())) {
+                            findMethodInvocation(allOperations, allControls, addedEntity, locations);
                         }
                         if (!locations.isEmpty()) {
                             MethodNode addedMethod = addedEntity.getMethodNode() == null ? jdtService.parseMethodSNT(addedEntity.getFilePath(), addedMethodDeclaration) : addedEntity.getMethodNode();
@@ -210,30 +213,33 @@ public class EntityMatcherServiceImpl implements EntityMatcherService {
                     for (DeclarationNodeTree deletedEntity : deletedEntities) {
                         if (deletedEntity.getType() != EntityType.METHOD)
                             continue;
-                        List<EntityInfo> dependencies = deletedEntity.getDependencies();
-                        if (!dependencies.contains(oldEntity.getEntity()))
-                            continue;
                         MethodDeclaration deletedMethodDeclaration = (MethodDeclaration) deletedEntity.getDeclaration();
                         if (MethodUtils.isGetter(deletedMethodDeclaration) || MethodUtils.isSetter(deletedMethodDeclaration))
                             continue;
                         List<StatementNodeTree> allOperations = oldMethod.getAllOperations();
                         List<StatementNodeTree> allControls = oldMethod.getAllControls();
+                        List<EntityInfo> dependencies = deletedEntity.getDependencies();
                         List<StatementNodeTree> locations = new ArrayList<>();
-                        for (StatementNodeTree snt : allOperations) {
-                            NodeUsageVisitor visitor = new NodeUsageVisitor();
-                            snt.getStatement().accept(visitor);
-                            for (EntityInfo entity : visitor.getEntityUsages()) {
-                                if (entity.equals(deletedEntity.getEntity())) {
+                        if (dependencies.contains(oldEntity.getEntity())) {
+                            for (StatementNodeTree snt : allOperations) {
+                                NodeUsageVisitor visitor = new NodeUsageVisitor();
+                                snt.getStatement().accept(visitor);
+                                for (EntityInfo entity : visitor.getEntityUsages()) {
+                                    if (entity.equals(deletedEntity.getEntity())) {
+                                        locations.add(snt);
+                                        break;
+                                    }
+                                }
+                            }
+                            for (StatementNodeTree snt : allControls) {
+                                if (isLocation(snt, deletedEntity)) {
                                     locations.add(snt);
                                     break;
                                 }
                             }
                         }
-                        for (StatementNodeTree snt : allControls) {
-                            if (isLocation(snt, deletedEntity)) {
-                                locations.add(snt);
-                                break;
-                            }
+                        else if (StringUtils.equals(oldEntity.getNamespace(), deletedEntity.getNamespace())) {
+                            findMethodInvocation(allOperations, allControls, deletedEntity, locations);
                         }
                         if (!locations.isEmpty()) {
                             MethodNode deletedMethod = deletedEntity.getMethodNode() == null ? jdtService.parseMethodSNT(deletedEntity.getFilePath(), deletedMethodDeclaration) : deletedEntity.getMethodNode();
@@ -353,6 +359,73 @@ public class EntityMatcherServiceImpl implements EntityMatcherService {
                 methodNode.addAddedStatements(matchPair, methodNode.getChildren());
             }
         }
+    }
+
+    private void findMethodInvocation(List<StatementNodeTree> allOperations, List<StatementNodeTree> allControls,
+                                      DeclarationNodeTree dnt, List<StatementNodeTree> locations) {
+        MethodDeclaration declaration2 = (MethodDeclaration) dnt.getDeclaration();
+        for (StatementNodeTree snt : allOperations) {
+            ASTNode statement = snt.getStatement();
+            if (hasMethodInvocation(statement, declaration2)) {
+                locations.add(snt);
+            }
+        }
+        for (StatementNodeTree snt : allControls) {
+            if (snt.getType() == StatementType.DO_STATEMENT) {
+                DoStatement statement = (DoStatement) snt.getStatement();
+                if (hasMethodInvocation(statement.getExpression(), declaration2)) {
+                    locations.add(snt);
+                }
+            } else if (snt.getType() == StatementType.WHILE_STATEMENT) {
+                WhileStatement statement = (WhileStatement) snt.getStatement();
+                if (hasMethodInvocation(statement.getExpression(), declaration2)) {
+                    locations.add(snt);
+                }
+            } else if (snt.getType() == StatementType.FOR_STATEMENT) {
+                ForStatement statement = (ForStatement) snt.getStatement();
+                if (hasMethodInvocation(statement.getExpression(), declaration2)) {
+                    locations.add(snt);
+                }
+            } else if (snt.getType() == StatementType.ENHANCED_FOR_STATEMENT) {
+                EnhancedForStatement statement = (EnhancedForStatement) snt.getStatement();
+                if (hasMethodInvocation(statement.getExpression(), declaration2)) {
+                    locations.add(snt);
+                }
+            } else if (snt.getType() == StatementType.IF_STATEMENT) {
+                IfStatement statement = (IfStatement) snt.getStatement();
+                if (hasMethodInvocation(statement.getExpression(), declaration2)) {
+                    locations.add(snt);
+                }
+            } else if (snt.getType() == StatementType.SWITCH_STATEMENT) {
+                SwitchStatement statement = (SwitchStatement) snt.getStatement();
+                if (hasMethodInvocation(statement.getExpression(), declaration2)) {
+                    locations.add(snt);
+                }
+            } else if (snt.getType() == StatementType.TRY_STATEMENT) {
+                TryStatement statement = (TryStatement) snt.getStatement();
+                List<Expression> resources = statement.resources();
+                for (Expression expression : resources) {
+                    if (hasMethodInvocation(expression, declaration2)) {
+                        locations.add(snt);
+                    }
+                }
+            }
+        }
+    }
+
+    private boolean hasMethodInvocation(ASTNode statement, MethodDeclaration declaration2) {
+        List<MethodInvocation> invocations = new ArrayList<>();
+
+        statement.accept(new ASTVisitor() {
+            @Override
+            public boolean visit(MethodInvocation node) {
+                if (node.getName().getIdentifier().equals(declaration2.getName().getIdentifier()) &&
+                        node.arguments().size() == declaration2.parameters().size())
+                    invocations.add(node);
+                return true;
+            }
+        });
+        return !invocations.isEmpty();
     }
 
     /**
