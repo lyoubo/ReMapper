@@ -507,6 +507,7 @@ public class JDTServiceImpl implements JDTService {
     @Override
     public List<ChildNode> getDescendants(ASTNode node) {
         List<ChildNode> descendants = new ArrayList<>();
+        if (node == null) return descendants;
         node.accept(new ASTVisitor() {
             @Override
             public boolean preVisit2(ASTNode node) {

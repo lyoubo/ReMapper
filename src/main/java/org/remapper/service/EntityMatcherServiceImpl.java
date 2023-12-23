@@ -237,8 +237,7 @@ public class EntityMatcherServiceImpl implements EntityMatcherService {
                                     break;
                                 }
                             }
-                        }
-                        else if (StringUtils.equals(oldEntity.getNamespace(), deletedEntity.getNamespace())) {
+                        } else if (StringUtils.equals(oldEntity.getNamespace(), deletedEntity.getNamespace())) {
                             findMethodInvocation(allOperations, allControls, deletedEntity, locations);
                         }
                         if (!locations.isEmpty()) {
@@ -414,8 +413,8 @@ public class EntityMatcherServiceImpl implements EntityMatcherService {
     }
 
     private boolean hasMethodInvocation(ASTNode statement, MethodDeclaration declaration2) {
+        if (statement == null) return false;
         List<MethodInvocation> invocations = new ArrayList<>();
-
         statement.accept(new ASTVisitor() {
             @Override
             public boolean visit(MethodInvocation node) {
