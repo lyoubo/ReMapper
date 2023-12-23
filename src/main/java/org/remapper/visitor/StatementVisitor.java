@@ -158,4 +158,10 @@ public class StatementVisitor extends ASTVisitor {
         statements.add(node);
         return true;
     }
+
+    @Override
+    public boolean visit(YieldStatement node) {
+        statements.add(node);
+        return true;
+    }
 }

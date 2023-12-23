@@ -25,7 +25,8 @@ public enum StatementType {
     TYPE_DECLARATION_STATEMENT("Type Declaration Statement"),
     VARIABLE_DECLARATION_STATEMENT("Variable Declaration Statement"),
     WHILE_STATEMENT("While Statement"),
-    CATCH_CLAUSE("Catch Clause");
+    CATCH_CLAUSE("Catch Clause"),
+    YIELD_STATEMENT("Yield Statement");
 
     private final String name;
 

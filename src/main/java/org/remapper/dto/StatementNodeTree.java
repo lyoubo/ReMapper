@@ -136,7 +136,7 @@ public abstract class StatementNodeTree implements LocationInfoProvider{
     }
 
     public boolean hasChildren() {
-        return children.size() > 0;
+        return !children.isEmpty();
     }
 
     public int getPosition() {

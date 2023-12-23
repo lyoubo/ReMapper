@@ -77,7 +77,7 @@ public class JDTServiceImpl implements JDTService {
      */
     private void breadthFirstSearch(CompilationUnit cu, String filePath, List<CustomizedBodyDeclaration> customizedBodyDeclarations) {
         int height = 1;
-        while (customizedBodyDeclarations.size() > 0) {
+        while (!customizedBodyDeclarations.isEmpty()) {
             height++;
             List<CustomizedBodyDeclaration> deletion = new ArrayList<>();
             List<CustomizedBodyDeclaration> addition = new ArrayList<>();
@@ -96,7 +96,7 @@ public class JDTServiceImpl implements JDTService {
                         internalNode.setType(EntityType.RECORD);
                     else if (body instanceof AnnotationTypeDeclaration)
                         internalNode.setType(EntityType.ANNOTATION_TYPE);
-                    internalNode.setNamespace(parent.getNamespace().equals("") ? parent.getName() : parent.getNamespace() + "." + parent.getName());
+                    internalNode.setNamespace("".equals(parent.getNamespace()) ? parent.getName() : parent.getNamespace() + "." + parent.getName());
                     internalNode.setName(((AbstractTypeDeclaration) body).getName().getFullyQualifiedName());
                     internalNode.setParent(parent);
                     body.setJavadoc(null);
@@ -123,7 +123,7 @@ public class JDTServiceImpl implements JDTService {
                     DeclarationNodeTree leafNode = new LeafNode(cu, filePath, body);
                     leafNode.setHeight(height);
                     leafNode.setType(EntityType.INITIALIZER);
-                    leafNode.setNamespace(parent.getNamespace().equals("") ? parent.getName() : parent.getNamespace() + "." + parent.getName());
+                    leafNode.setNamespace("".equals(parent.getNamespace()) ? parent.getName() : parent.getNamespace() + "." + parent.getName());
                     int modifiers = body.getModifiers();
                     leafNode.setName(Flags.isStatic(modifiers) ? "static" : "instance");
                     leafNode.setParent(parent);
@@ -138,7 +138,7 @@ public class JDTServiceImpl implements JDTService {
                         DeclarationNodeTree leafNode = new LeafNode(cu, filePath, fragment);
                         leafNode.setHeight(height);
                         leafNode.setType(EntityType.FIELD);
-                        leafNode.setNamespace(parent.getNamespace().equals("") ? parent.getName() : parent.getNamespace() + "." + parent.getName());
+                        leafNode.setNamespace("".equals(parent.getNamespace()) ? parent.getName() : parent.getNamespace() + "." + parent.getName());
                         leafNode.setName(fragment.getName().getFullyQualifiedName());
                         leafNode.setParent(parent);
                         body.setJavadoc(null);
@@ -159,7 +159,7 @@ public class JDTServiceImpl implements JDTService {
                     DeclarationNodeTree leafNode = new LeafNode(cu, filePath, body);
                     leafNode.setHeight(height);
                     leafNode.setType(EntityType.METHOD);
-                    leafNode.setNamespace(parent.getNamespace().equals("") ? parent.getName() : parent.getNamespace() + "." + parent.getName());
+                    leafNode.setNamespace("".equals(parent.getNamespace()) ? parent.getName() : parent.getNamespace() + "." + parent.getName());
                     leafNode.setName(((MethodDeclaration) body).getName().getFullyQualifiedName());
                     leafNode.setParent(parent);
                     body.setJavadoc(null);
@@ -171,7 +171,7 @@ public class JDTServiceImpl implements JDTService {
                     DeclarationNodeTree leafNode = new LeafNode(cu, filePath, body);
                     leafNode.setHeight(height);
                     leafNode.setType(EntityType.ANNOTATION_MEMBER);
-                    leafNode.setNamespace(parent.getNamespace().equals("") ? parent.getName() : parent.getNamespace() + "." + parent.getName());
+                    leafNode.setNamespace("".equals(parent.getNamespace()) ? parent.getName() : parent.getNamespace() + "." + parent.getName());
                     leafNode.setName(((AnnotationTypeMemberDeclaration) body).getName().getFullyQualifiedName());
                     leafNode.setParent(parent);
                     body.setJavadoc(null);
@@ -183,7 +183,7 @@ public class JDTServiceImpl implements JDTService {
                     DeclarationNodeTree leafNode = new LeafNode(cu, filePath, body);
                     leafNode.setHeight(height);
                     leafNode.setType(EntityType.ENUM_CONSTANT);
-                    leafNode.setNamespace(parent.getNamespace().equals("") ? parent.getName() : parent.getNamespace() + "." + parent.getName());
+                    leafNode.setNamespace("".equals(parent.getNamespace()) ? parent.getName() : parent.getNamespace() + "." + parent.getName());
                     leafNode.setName(((EnumConstantDeclaration) body).getName().getFullyQualifiedName());
                     leafNode.setParent(parent);
                     body.setJavadoc(null);
@@ -471,6 +471,14 @@ public class JDTServiceImpl implements JDTService {
             snt.setType(StatementType.CATCH_CLAUSE);
             snt.setStatement(statement);
             snt.setExpression("catch(" + ((CatchClause) statement).getException().getName().getFullyQualifiedName() + ")");
+            snt.setPosition(statement.getStartPosition());
+            methodNode.addControl(snt);
+            arrayStatementsInSwitchCase(statement, initializedSNT, snt);
+        } else if (statement instanceof YieldStatement) {
+            snt = new OperationNode(cu, filePath, statement);
+            snt.setType(StatementType.YIELD_STATEMENT);
+            snt.setStatement(statement);
+            snt.setExpression(statement.toString().replaceFirst("yield ", "-> "));
             snt.setPosition(statement.getStartPosition());
             methodNode.addControl(snt);
             arrayStatementsInSwitchCase(statement, initializedSNT, snt);

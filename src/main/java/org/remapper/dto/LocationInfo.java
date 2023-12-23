@@ -115,6 +115,8 @@ public class LocationInfo {
             return CodeElementType.WHILE_STATEMENT;
         if (node instanceof CatchClause)
             return CodeElementType.CATCH_CLAUSE;
+        if (node instanceof YieldStatement)
+            return CodeElementType.YIELD_STATEMENT;
         if (node instanceof Annotation)
             return CodeElementType.ANNOTATION;
         if (node instanceof Type)
@@ -241,6 +243,7 @@ public class LocationInfo {
         TRY_STATEMENT("try"),
         TRY_STATEMENT_RESOURCE,
         CATCH_CLAUSE("catch"),
+        YIELD_STATEMENT("yield"),
         CATCH_CLAUSE_EXCEPTION_NAME,
         EXPRESSION_STATEMENT,
         SWITCH_CASE,
