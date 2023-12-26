@@ -26,7 +26,8 @@ public enum StatementType {
     VARIABLE_DECLARATION_STATEMENT("Variable Declaration Statement"),
     WHILE_STATEMENT("While Statement"),
     CATCH_CLAUSE("Catch Clause"),
-    YIELD_STATEMENT("Yield Statement");
+    YIELD_STATEMENT("Yield Statement"),
+    LAMBDA_EXPRESSION_BODY("Lambda Expression Body");
 
     private final String name;
 

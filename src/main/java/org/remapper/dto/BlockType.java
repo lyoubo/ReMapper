@@ -14,6 +14,7 @@ public enum BlockType {
     CASE_BLOCK("Case Block"),
     LAMBDA_BLOCK("Lambda Block"),
     ANONYMOUS_CLASS_BlOCK("Anonymous Class Block"),
+    METHOD_BLOCK("Method Block"),
     BLOCK("Block");
 
     private final String name;

@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
-public abstract class StatementNodeTree implements LocationInfoProvider{
+public abstract class StatementNodeTree implements LocationInfoProvider {
 
     private int depth;
     private StatementType type;
@@ -71,7 +71,10 @@ public abstract class StatementNodeTree implements LocationInfoProvider{
 
     private void depthFirstSearch(List<StatementNodeTree> list, List<StatementNodeTree> children) {
         for (StatementNodeTree child : children) {
-            list.add(child);
+            if (child.getType() == StatementType.BLOCK && child.getBlockType() == BlockType.METHOD_BLOCK) ;
+            else {
+                list.add(child);
+            }
             depthFirstSearch(list, child.getChildren());
         }
     }

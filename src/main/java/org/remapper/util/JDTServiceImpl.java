@@ -215,6 +215,7 @@ public class JDTServiceImpl implements JDTService {
             statement.accept(new ASTVisitor() {
                 @Override
                 public boolean visit(LambdaExpression node) {
+                    nodes.add(node.getBody());
                     StatementVisitor visitor = new StatementVisitor();
                     node.accept(visitor);
                     nodes.addAll(visitor.getStatements());
@@ -480,8 +481,15 @@ public class JDTServiceImpl implements JDTService {
             snt.setStatement(statement);
             snt.setExpression(statement.toString().replaceFirst("yield ", "-> "));
             snt.setPosition(statement.getStartPosition());
-            methodNode.addControl(snt);
+            methodNode.addOperation(snt);
             arrayStatementsInSwitchCase(statement, initializedSNT, snt);
+        } else if (statement.getParent() instanceof LambdaExpression) {
+            snt = new OperationNode(cu, filePath, statement);
+            snt.setType(StatementType.LAMBDA_EXPRESSION_BODY);
+            snt.setStatement(statement);
+            snt.setExpression(statement.toString());
+            snt.setPosition(statement.getStartPosition());
+            methodNode.addOperation(snt);
         }
         return snt;
     }

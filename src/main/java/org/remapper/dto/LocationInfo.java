@@ -117,6 +117,8 @@ public class LocationInfo {
             return CodeElementType.CATCH_CLAUSE;
         if (node instanceof YieldStatement)
             return CodeElementType.YIELD_STATEMENT;
+        if (node.getParent() instanceof LambdaExpression && ((LambdaExpression) node.getParent()).getBody() == node)
+            return CodeElementType.LAMBDA_EXPRESSION_BODY;
         if (node instanceof Annotation)
             return CodeElementType.ANNOTATION;
         if (node instanceof Type)

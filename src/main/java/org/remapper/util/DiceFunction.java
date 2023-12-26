@@ -284,6 +284,9 @@ public class DiceFunction {
         List<StatementNodeTree> descendants1 = statement1.getDescendants();
         List<StatementNodeTree> descendants2 = statement2.getDescendants();
         if (descendants1.size() == 1 && descendants2.size() == 1) {
+            int intersection = getMatchedElementCount(matchPair, descendants1, descendants2);
+            if (intersection == 1)
+                return 1.0;
             return calculateDiceSimilarity(statement1, statement2);
         }
         int intersection = getMatchedElementCount(matchPair, descendants1, descendants2);
@@ -312,6 +315,10 @@ public class DiceFunction {
         double contexts = calculateContextSimilarity(matchPair, statement1, statement2);
         if (statement1 instanceof OperationNode && statement2 instanceof OperationNode) {
             descendants = calculateDiceSimilarity(statement1, statement2);
+            if (statement1.hasChildren() && statement2.hasChildren()) {
+                double temp = calculateChildrenSimilarity(matchPair, statement1, statement2);
+                descendants = Math.max(descendants, temp);
+            }
         }
         if (statement1 instanceof BlockNode && statement2 instanceof BlockNode) {
             descendants = calculateChildrenSimilarity(matchPair, statement1, statement2);

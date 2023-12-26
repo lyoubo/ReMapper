@@ -59,6 +59,8 @@ public class BlockNode extends StatementNodeTree {
             super.setBlockExpression("do(" + statement.getExpression().toString() + ")");
         } else if (parent instanceof MethodDeclaration) {
             super.setMatched();
+            super.setBlockType(BlockType.METHOD_BLOCK);
+            super.setBlockExpression("");
         } else if (parent instanceof SwitchStatement) {
             SwitchStatement switchStatement = (SwitchStatement) parent;
             List<Statement> statements = switchStatement.statements();

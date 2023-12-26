@@ -316,7 +316,7 @@ public class MethodStatementMatcherService {
         Map<StatementNodeTree, StatementNodeTree> temp1 = new LinkedHashMap<>();
         for (StatementNodeTree node1 : allOperationsBefore) {
             for (StatementNodeTree node2 : allOperationsAfter) {
-                if (!node1.isMatched() && !node2.isMatched() && StringUtils.equals(node1.getStatement().toString(), node2.getStatement().toString()) &&
+                if (!node1.isMatched() && !node2.isMatched() && isTheSameExpression(node1, node2) &&
                         node1.getDepth() == node2.getDepth()) {
                     processOperationMap(matchPair, temp1, node1, node2);
                 }
@@ -329,7 +329,7 @@ public class MethodStatementMatcherService {
         Map<StatementNodeTree, StatementNodeTree> temp2 = new LinkedHashMap<>();
         for (StatementNodeTree node1 : allOperationsBefore) {
             for (StatementNodeTree node2 : allOperationsAfter) {
-                if (!node1.isMatched() && !node2.isMatched() && StringUtils.equals(node1.getStatement().toString(), node2.getStatement().toString())) {
+                if (!node1.isMatched() && !node2.isMatched() && isTheSameExpression(node1, node2)) {
                     processOperationMap(matchPair, temp2, node1, node2);
                 }
             }
@@ -355,6 +355,20 @@ public class MethodStatementMatcherService {
             }
         }
         stmtMap2SetOfMatchedStatements(matchPair, temp3);
+    }
+
+    private boolean isTheSameExpression(StatementNodeTree node1, StatementNodeTree node2) {
+        if (node1.getType() == StatementType.EXPRESSION_STATEMENT && node2.getType() == StatementType.LAMBDA_EXPRESSION_BODY) {
+            String expression1 = node1.getExpression();
+            String expression2 = node2.getExpression();
+            return StringUtils.equals(expression1, expression2) || StringUtils.equals(expression1, expression2 + ";\n");
+        }
+        if (node1.getType() == StatementType.LAMBDA_EXPRESSION_BODY && node2.getType() == StatementType.EXPRESSION_STATEMENT) {
+            String expression1 = node1.getExpression();
+            String expression2 = node2.getExpression();
+            return StringUtils.equals(expression1, expression2) || StringUtils.equals(expression1 + ";\n", expression2);
+        }
+        return false;
     }
 
     private void stmtMap2SetOfMatchedStatements(MatchPair matchPair, Map<StatementNodeTree, StatementNodeTree> temp) {
@@ -615,6 +629,8 @@ public class MethodStatementMatcherService {
                     (node1.getBlockType() == BlockType.ELSE_BLOCK && node2.getBlockType() == BlockType.IF_BLOCK);
         else
             return node1.getType() == node2.getType() ||
+                    ((node1.getType() == StatementType.LAMBDA_EXPRESSION_BODY || node1.getType() == StatementType.EXPRESSION_STATEMENT) &&
+                            (node2.getType() == StatementType.LAMBDA_EXPRESSION_BODY || node2.getType() == StatementType.EXPRESSION_STATEMENT)) ||
                     ((node1.getType() == StatementType.FOR_STATEMENT || node1.getType() == StatementType.ENHANCED_FOR_STATEMENT ||
                             node1.getType() == StatementType.WHILE_STATEMENT || node1.getType() == StatementType.DO_STATEMENT) &&
                             (node2.getType() == StatementType.FOR_STATEMENT || node2.getType() == StatementType.ENHANCED_FOR_STATEMENT ||
