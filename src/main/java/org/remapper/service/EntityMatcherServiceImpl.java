@@ -8,10 +8,7 @@ import org.eclipse.jgit.revwalk.RevCommit;
 import org.eclipse.jgit.revwalk.RevWalk;
 import org.remapper.dto.*;
 import org.remapper.handler.MatchingHandler;
-import org.remapper.util.GitServiceImpl;
-import org.remapper.util.JDTServiceImpl;
-import org.remapper.util.MethodUtils;
-import org.remapper.util.StringUtils;
+import org.remapper.util.*;
 import org.remapper.visitor.NodeUsageVisitor;
 
 import java.util.*;
@@ -93,6 +90,9 @@ public class EntityMatcherServiceImpl implements EntityMatcherService {
                             continue;
                         MethodDeclaration addedMethodDeclaration = (MethodDeclaration) addedEntity.getDeclaration();
                         if (MethodUtils.isGetter(addedMethodDeclaration) || MethodUtils.isSetter(addedMethodDeclaration))
+                            continue;
+                        double dice = DiceFunction.calculateBodyDice((LeafNode) oldEntity, (LeafNode) newEntity, (LeafNode) addedEntity);
+                        if (dice < DiceFunction.minSimilarity)
                             continue;
                         List<StatementNodeTree> allOperations = newMethod.getAllOperations();
                         List<StatementNodeTree> allControls = newMethod.getAllControls();
@@ -215,6 +215,9 @@ public class EntityMatcherServiceImpl implements EntityMatcherService {
                             continue;
                         MethodDeclaration deletedMethodDeclaration = (MethodDeclaration) deletedEntity.getDeclaration();
                         if (MethodUtils.isGetter(deletedMethodDeclaration) || MethodUtils.isSetter(deletedMethodDeclaration))
+                            continue;
+                        double dice = DiceFunction.calculateBodyDice((LeafNode) newEntity, (LeafNode) oldEntity, (LeafNode) deletedEntity);
+                        if (dice < DiceFunction.minSimilarity)
                             continue;
                         List<StatementNodeTree> allOperations = oldMethod.getAllOperations();
                         List<StatementNodeTree> allControls = oldMethod.getAllControls();
