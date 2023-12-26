@@ -7,6 +7,7 @@ import org.remapper.dto.*;
 import org.remapper.service.JDTService;
 
 import java.util.*;
+import java.util.stream.Stream;
 
 public class DiceFunction {
 
@@ -349,29 +350,28 @@ public class DiceFunction {
     public static double calculateBodyDice(List<ChildNode> list1, List<ChildNode> list2, List<ChildNode> list3) {
         int intersection = 0;
         Set<Integer> matched = new HashSet<>();
-        for (ChildNode childBefore : list2) {
+        for (ChildNode node2 : list2) {
             for (int i = 0; i < list1.size(); i++) {
                 if (matched.contains(i)) continue;
-                ChildNode childCurrent = list1.get(i);
-                if (childBefore.equals(childCurrent)) {
+                ChildNode node1 = list1.get(i);
+                if (node2.equals(node1)) {
                     matched.add(i);
                     break;
                 }
             }
         }
-        List<ChildNode> temp = new ArrayList<>();
-        for (int i : matched) {
-            temp.add(list1.get(i));
+        for (int i = list1.size() - 1; i >= 0; i--) {
+            if (matched.contains(i))
+                list1.remove(i);
         }
-        list1.removeAll(temp);
-        Set<Integer> matched1 = new HashSet<>();
-        for (ChildNode childBefore : list3) {
+        matched.clear();
+        for (ChildNode node3 : list3) {
             for (int i = 0; i < list1.size(); i++) {
-                if (matched1.contains(i)) continue;
-                ChildNode childCurrent = list1.get(i);
-                if (childBefore.equals(childCurrent)) {
+                if (matched.contains(i)) continue;
+                ChildNode node1 = list1.get(i);
+                if (node3.equals(node1)) {
                     intersection++;
-                    matched1.add(i);
+                    matched.add(i);
                     break;
                 }
             }
