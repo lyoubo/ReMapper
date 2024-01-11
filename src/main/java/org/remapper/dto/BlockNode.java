@@ -82,7 +82,7 @@ public class BlockNode extends StatementNodeTree {
         } else if (parent instanceof AnonymousClassDeclaration) {
             super.setBlockType(BlockType.ANONYMOUS_CLASS_BlOCK);
             super.setBlockExpression("");
-        } else if (parent instanceof Block) {
+        } else {
             super.setBlockType(BlockType.BLOCK);
             super.setBlockExpression("");
         }
