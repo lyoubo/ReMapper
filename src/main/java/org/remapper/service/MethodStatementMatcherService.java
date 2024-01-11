@@ -502,18 +502,34 @@ public class MethodStatementMatcherService {
     private boolean equalsWithReplacements(String statement1, String statement2, List<Pair<String, String>> replacements1, List<Pair<String, String>> replacements2) {
         String replaced1 = statement1;
         String replaced2 = statement2;
+        NormalizedLevenshtein nl = new NormalizedLevenshtein();
+        double distance = nl.distance(statement1, statement2);
         for (Pair<String, String> pair : replacements1) {
             String name = pair.getLeft();
             String initializer = pair.getRight();
             if (statement1.contains(name)) {
-                replaced1 = replaced1.replace(name, initializer);
+                String replaced = replaced1.replace(name, initializer);
+                double compared = nl.distance(replaced, replaced2);
+                if (compared == 0.0)
+                    return true;
+                if (compared < distance) {
+                    replaced1 = replaced;
+                    distance = compared;
+                }
             }
         }
         for (Pair<String, String> pair : replacements2) {
             String name = pair.getLeft();
             String initializer = pair.getRight();
             if (statement2.contains(name)) {
-                replaced2 = replaced2.replace(name, initializer);
+                String replaced = replaced2.replace(name, initializer);
+                double compared = nl.distance(replaced1, replaced);
+                if (compared == 0.0)
+                    return true;
+                if (compared < distance) {
+                    replaced2 = replaced;
+                    distance = compared;
+                }
             }
         }
         return replaced1.equals(statement2) || statement1.equals(replaced2) || replaced1.equals(replaced2);
