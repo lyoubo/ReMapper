@@ -76,6 +76,8 @@ public class EntityMatcherServiceImpl implements EntityMatcherService {
             DeclarationNodeTree oldEntity = pair.getLeft();
             DeclarationNodeTree newEntity = pair.getRight();
             if (oldEntity.getType() == EntityType.METHOD && newEntity.getType() == EntityType.METHOD) {
+                if (StringUtils.equals(oldEntity.getDeclaration().toString(), newEntity.getDeclaration().toString()))
+                    continue;
                 MethodDeclaration removedOperation = (MethodDeclaration) oldEntity.getDeclaration();
                 MethodDeclaration addedOperation = (MethodDeclaration) newEntity.getDeclaration();
                 MethodNode oldMethod = jdtService.parseMethodSNT(oldEntity.getFilePath(), removedOperation);
