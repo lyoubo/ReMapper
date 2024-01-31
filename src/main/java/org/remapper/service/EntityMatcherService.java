@@ -5,10 +5,12 @@ import org.eclipse.jgit.revwalk.RevCommit;
 import org.remapper.dto.MatchPair;
 import org.remapper.handler.MatchingHandler;
 
+import java.io.File;
+
 public interface EntityMatcherService {
 
     /**
-     * Match software entities in the specified commit.
+     * Match code entities in the specified commit.
      *
      * @param repository A git repository (from JGit library).
      * @param commitId   The SHA key that identifies the commit.
@@ -17,7 +19,7 @@ public interface EntityMatcherService {
     void matchAtCommit(Repository repository, String commitId, MatchingHandler handler);
 
     /**
-     * Match software entities in the specified commit.
+     * Match code entities in the specified commit.
      *
      * @param repository A git repository (from JGit library).
      * @param commitId   The SHA key that identifies the commit.
@@ -27,4 +29,15 @@ public interface EntityMatcherService {
     void matchAtCommit(Repository repository, String commitId, MatchingHandler handler, int timeout);
 
     MatchPair matchEntities(Repository repository, RevCommit currentCommit, final MatchingHandler handler) throws Exception;
+
+    /**
+     * Match code entities between two files representing two versions of Java programs.
+     *
+     * @param previousFile The file corresponding to the previous version.
+     * @param nextFile The file corresponding to the next version.
+     * @param handler A handler object that is responsible to process the detected refactorings.
+     */
+    void matchAtFiles(File previousFile, File nextFile, MatchingHandler handler);
+
+    MatchPair matchEntities(File previousFile, File nextFile, final MatchingHandler handler) throws Exception;
 }

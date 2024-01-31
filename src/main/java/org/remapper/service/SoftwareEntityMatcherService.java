@@ -72,6 +72,39 @@ public class SoftwareEntityMatcherService {
         filter(matchPair);
     }
 
+    protected void matchEntities(JDTService jdtService, File previousFile, File nextFile, MatchPair matchPair) throws Exception {
+        Set<String> addedFiles = new LinkedHashSet<>();
+        Set<String> deletedFiles = new LinkedHashSet<>();
+        Set<String> modifiedFiles = new LinkedHashSet<>();
+        Map<String, String> renamedFiles = new LinkedHashMap<>();
+        Map<String, String> fileContentsBefore = new LinkedHashMap<>();
+        Map<String, String> fileContentsCurrent = new LinkedHashMap<>();
+        Map<String, RootNode> fileDNTsBefore = new LinkedHashMap<>();
+        Map<String, RootNode> fileDNTsCurrent = new LinkedHashMap<>();
+
+        String projectPath = "";
+        renamedFiles.put(previousFile.getPath().replace("\\", "/"), nextFile.getPath().replace("\\", "/"));
+
+        populateFileContents(previousFile, fileContentsBefore);
+        populateFileContents(nextFile, fileContentsCurrent);
+
+        populateFileDNTs(jdtService, fileContentsBefore, fileDNTsBefore);
+        populateFileDNTs(jdtService, fileContentsCurrent, fileDNTsCurrent);
+
+        pruneUnchangedEntitiesInRenamedFiles(matchPair, renamedFiles, fileDNTsBefore, fileDNTsCurrent);
+
+        matchByNameAndSignature(matchPair, modifiedFiles, fileDNTsBefore, fileDNTsCurrent);
+        matchByDiceCoefficient(matchPair, modifiedFiles, renamedFiles, deletedFiles, addedFiles, fileDNTsBefore, fileDNTsCurrent);
+
+        populateCurrentDependencies(matchPair, projectPath, modifiedFiles, renamedFiles, addedFiles);
+        populateBeforeDependencies(matchPair, projectPath, modifiedFiles, renamedFiles, deletedFiles);
+
+        fineMatching(matchPair);
+        additionalMatchByName(matchPair);
+        additionalMatchByDice(matchPair);
+        filter(matchPair);
+    }
+
     private void populateFileContents(Repository repository, RevCommit commit,
                                       Set<String> filePaths, Map<String, String> fileContents) throws IOException {
         RevTree parentTree = commit.getTree();
@@ -89,6 +122,12 @@ public class SoftwareEntityMatcherService {
                 }
             }
         }
+    }
+
+    private void populateFileContents(File file, Map<String, String> fileContents) throws IOException {
+        String path = file.getPath().replace("\\", "/");
+        String contents = FileUtils.readFileToString(file, StandardCharsets.UTF_8);
+        fileContents.put(path, contents);
     }
 
     private void populateFileDNTs(JDTService jdtService, Map<String, String> fileContents, Map<String, RootNode> fileDNTs) {
@@ -659,7 +698,7 @@ public class SoftwareEntityMatcherService {
     }
 
     private void replaceASTNodeWithBinding(Map<String, List<ASTNode>> nodeMap, String projectPath, DeclarationNodeTree dnt) {
-        List<ASTNode> astNodes = nodeMap.get(projectPath + "/" + dnt.getFilePath());
+        List<ASTNode> astNodes = nodeMap.get(projectPath.isEmpty() ? dnt.getFilePath() : projectPath + "/" + dnt.getFilePath());
         if (dnt.getType() == EntityType.METHOD) {
             for (ASTNode node : astNodes) {
                 if (node instanceof MethodDeclaration) {

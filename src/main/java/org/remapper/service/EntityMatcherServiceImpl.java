@@ -11,6 +11,7 @@ import org.remapper.handler.MatchingHandler;
 import org.remapper.util.*;
 import org.remapper.visitor.NodeUsageVisitor;
 
+import java.io.File;
 import java.util.*;
 import java.util.concurrent.*;
 
@@ -51,6 +52,7 @@ public class EntityMatcherServiceImpl implements EntityMatcherService {
         }
     }
 
+    @Override
     public MatchPair matchEntities(Repository repository, RevCommit currentCommit, final MatchingHandler handler) throws Exception {
         GitService gitService = new GitServiceImpl();
         JDTService jdtService = new JDTServiceImpl();
@@ -60,6 +62,31 @@ public class EntityMatcherServiceImpl implements EntityMatcherService {
         entityMatchingService.matchEntities(gitService, jdtService, repository, currentCommit, matchPair);
         matchStatementsInMethodPairs(matchPair, jdtService);
         handler.handle(commitId, matchPair);
+        return matchPair;
+    }
+
+    @Override
+    public void matchAtFiles(File previousFile, File nextFile, MatchingHandler handler) {
+        String id = previousFile.getName() + " -> " + nextFile.getName();
+        try {
+            this.matchEntities(previousFile, nextFile, handler);
+        } catch (Exception e) {
+            handler.handleException(id, e);
+        }
+    }
+
+    @Override
+    public MatchPair matchEntities(File previousFile, File nextFile, final MatchingHandler handler) throws Exception {
+        MatchPair matchPair = new MatchPair();
+        if (previousFile.exists() && nextFile.exists() && previousFile.isFile() && nextFile.isFile() &&
+                previousFile.getName().endsWith(".java") && nextFile.getName().endsWith(".java")) {
+            String id = previousFile.getName() + " -> " + nextFile.getName();
+            JDTService jdtService = new JDTServiceImpl();
+            SoftwareEntityMatcherService entityMatchingService = new SoftwareEntityMatcherService();
+            entityMatchingService.matchEntities(jdtService, previousFile, nextFile, matchPair);
+            matchStatementsInMethodPairs(matchPair, jdtService);
+            handler.handle(id, matchPair);
+        }
         return matchPair;
     }
 

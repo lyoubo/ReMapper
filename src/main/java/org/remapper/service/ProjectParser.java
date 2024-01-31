@@ -44,7 +44,12 @@ public class ProjectParser {
     }
 
     private void populateRelatedJavaFiles(List<String> changedJavaFiles) {
-        changedJavaFiles.forEach(file -> relatedJavaFiles.add(projectPath + "/" + file));
+        for (String file : changedJavaFiles) {
+            if (!projectPath.isEmpty())
+                relatedJavaFiles.add(projectPath + "/" + file);
+            else
+                relatedJavaFiles.add(file);
+        }
     }
 
     private void populateSourcepathEntries() {
