@@ -4,11 +4,15 @@ Table of Contents
    * [General info](#general-info)
    * [Requirements](#requirements)
    * [API usage guidelines](#api-usage-guidelines)
+     * [With a locally cloned git repository](#with-a-locally-cloned-git-repository)
+     * [With two files containing Java source code](#with-two-files-containing-java-source-code)
+
    * [Location information](#location-information)
    * [How to build and run](#how-to-build-and-run)
      * [Command line](#command-line)
      * [IntelliJ IDEA](#intellij-idea)
    * [How to add as a Maven dependency](#how-to-add-as-a-maven-dependency)
+   * [How to cite ReMapper](#how-to-cite-remapper)
    * [Data](#data)
 
 
@@ -40,6 +44,8 @@ Currently, it supports the matching of the following code entities:
 **Apache Maven 3.8** or newer
 
 # API usage guidelines
+
+## With a locally cloned git repository
 
 ReMapper can automatically match code entities between two successive versions of a git repository.
 
@@ -121,6 +127,28 @@ matcher.matchAtCommit(repo, "d4bce13a443cf12da40a77c16c1e591f4f985b47", new Matc
     / ** print all added statements */
     for (StatementInfo statement : matchPair.getAddedStatementInfos()) {
       System.out.println("Added statement --> " + statement);
+      System.out.println();
+    }
+  }
+});
+```
+
+## With two files containing Java source code
+
+It is possible to match code entities between two Java files containing the code before and after some changes:
+
+```java
+EntityMatcherService matcher = new EntityMatcherServiceImpl();
+// You must provide absolute paths to the files.
+File file1 = new File("/home/user/tmp/v1");
+File file2 = new File("/home/user/tmp/v2");
+matcher.matchAtFiles(file1, file2, new MatchingHandler() {
+  @Override
+  public void handle(String commitId, MatchPair matchPair) {
+    System.out.println("Matched code entities at " + commitId);
+    for (Pair<EntityInfo, EntityInfo> pair : matchPair.getMatchedEntityInfos()) {
+      System.out.println("Old entity --> " + pair.getLeft());
+      System.out.println("New entity --> " + pair.getRight());
       System.out.println();
     }
   }
@@ -664,6 +692,24 @@ To add ReMapper as a maven dependency in your project, add the following snippet
       <artifactId>remapper</artifactId>
       <version>2.1.15</version>
     </dependency>
+
+# How to cite ReMapper
+
+If you are using ReMapper in your research, please cite the following papers:
+
+Bo Liu, Hui Liu, Nan Niu, Yuxia Zhang, Guangjie Li, and Yanjie Jiang, "[Automated Software Entity Matching Between Successive Versions](#https://lyoubo.github.io/papers/Automated_Software_Entity_Matching_Between_Successive_Versions.pdf),"
+*38th IEEE/ACM International Conference on Automated Software Engineering (ASE 2023)*, September 11-15, 2023, Kirchberg, Luxembourg.
+
+    @inproceedings{liu2023automated,
+      title={Automated Software Entity Matching Between Successive Versions},
+      author={Liu, Bo and Liu, Hui and Niu, Nan and Zhang, Yuxia and Li, Guangjie and Jiang, Yanjie},
+      booktitle={Proceedings of the 38th IEEE/ACM International Conference on Automated Software Engineering},
+      series={ASE '23},
+      pages={1615--1627},
+      year={2023},
+      publisher={IEEE},
+      doi={10.1109/ASE56229.2023.00132}
+    }
 
 # Data
 
