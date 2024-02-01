@@ -6,7 +6,6 @@ Table of Contents
    * [API usage guidelines](#api-usage-guidelines)
      * [With a locally cloned git repository](#with-a-locally-cloned-git-repository)
      * [With two files containing Java source code](#with-two-files-containing-java-source-code)
-
    * [Location information](#location-information)
    * [How to build and run](#how-to-build-and-run)
      * [Command line](#command-line)
