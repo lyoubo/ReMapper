@@ -152,7 +152,7 @@ public class EntityMatcherServiceImpl implements EntityMatcherService {
                             addedEntity.setMethodNode(addedMethod);
                             addedMethod.setMethodEntity(addedEntity);
                             if (!addedMethod.getChildren().isEmpty()) {
-                                if (locations.size() > 1)
+                                if (locations.size() > 1 || dependencies.size() > 1)
                                     addedMethod.setDuplicated();
                                 for (StatementNodeTree statement : locations) {
                                     StatementNodeTree parent = statement.getParent();
@@ -277,7 +277,7 @@ public class EntityMatcherServiceImpl implements EntityMatcherService {
                             deletedEntity.setMethodNode(deletedMethod);
                             deletedMethod.setMethodEntity(deletedEntity);
                             if (!deletedMethod.getChildren().isEmpty()) {
-                                if (locations.size() > 1)
+                                if (locations.size() > 1 || dependencies.size() > 1)
                                     deletedMethod.setDuplicated();
                                 for (StatementNodeTree statement : locations) {
                                     StatementNodeTree parent = statement.getParent();
