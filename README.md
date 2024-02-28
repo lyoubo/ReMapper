@@ -689,7 +689,7 @@ To add ReMapper as a maven dependency in your project, add the following snippet
     <dependency>
       <groupId>io.github.lyoubo</groupId>
       <artifactId>remapper</artifactId>
-      <version>2.1.15</version>
+      <version>2.1.16</version>
     </dependency>
 
 # How to cite ReMapper
