@@ -20,6 +20,7 @@ public abstract class StatementNodeTree implements LocationInfoProvider {
     private BlockType blockType;
     private String blockExpression;
     private boolean isDuplicated;
+    private boolean isRefactored;
     private boolean isMatched;
     private int position;
     private StatementInfo entity;
@@ -127,11 +128,30 @@ public abstract class StatementNodeTree implements LocationInfoProvider {
     }
 
     public boolean isMatched() {
-        return isMatched && !isDuplicated;
+        return isMatched;
+    }
+
+    public boolean isMatchedOver() {
+        if (isRefactored)
+            return true;
+        else
+            return isMatched && !isDuplicated;
+    }
+
+    public boolean isRefactored() {
+        return isRefactored;
+    }
+
+    public boolean isDuplicated() {
+        return isDuplicated;
     }
 
     public void setDuplicated() {
         isDuplicated = true;
+    }
+
+    public void setRefactored() {
+        isRefactored = true;
     }
 
     public void setMatched() {

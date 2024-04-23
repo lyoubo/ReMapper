@@ -34,7 +34,7 @@ public class MethodUtils {
                             }
                         }
                     }
-                    String name = methodDeclaration.getName().getIdentifier();
+                    /*String name = methodDeclaration.getName().getIdentifier();
                     Type returnType = methodDeclaration.getReturnType2();
                     if ((name.startsWith("is") || name.startsWith("has")) && (parameters.size() == 0) &&
                             returnType != null && returnType.toString().equals("boolean")) {
@@ -42,7 +42,7 @@ public class MethodUtils {
                     }
                     if (statement.toString().equals("return null;\n")) {
                         return true;
-                    }
+                    }*/
                 }
             }
         }

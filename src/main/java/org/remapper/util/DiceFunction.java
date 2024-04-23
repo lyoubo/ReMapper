@@ -7,7 +7,6 @@ import org.remapper.dto.*;
 import org.remapper.service.JDTService;
 
 import java.util.*;
-import java.util.stream.Stream;
 
 public class DiceFunction {
 
@@ -17,6 +16,23 @@ public class DiceFunction {
         JDTService jdtService = new JDTServiceImpl();
         List<ChildNode> list1 = jdtService.getDescendants(leafBefore.getDeclaration());
         List<ChildNode> list2 = jdtService.getDescendants(leafCurrent.getDeclaration());
+        if (leafBefore.getType() == EntityType.FIELD && leafCurrent.getType() == EntityType.FIELD) {
+            List<ChildNode> removed = new ArrayList<>();
+            for (ChildNode node : list1) {
+                if (node.getLabel() == 83)
+                    removed.add(node);
+            }
+            for (ChildNode node : list2) {
+                if (node.getLabel() == 83)
+                    removed.add(node);
+            }
+            list1.removeAll(removed);
+            list2.removeAll(removed);
+        }
+        return calculateDiceSimilarity(list1, list2);
+    }
+
+    private static double calculateDiceSimilarity(List<ChildNode> list1, List<ChildNode> list2) {
         int intersection = 0;
         int union = list1.size() + list2.size();
         Set<Integer> matched = new HashSet<>();
@@ -32,6 +48,13 @@ public class DiceFunction {
             }
         }
         return union == 0 ? 0 : 2.0 * intersection / union;
+    }
+
+    public static double calculateDiceSimilarity(InternalNode internalBefore, InternalNode internalCurrent) {
+        JDTService jdtService = new JDTServiceImpl();
+        List<ChildNode> list1 = jdtService.getDescendants(internalBefore.getDeclaration());
+        List<ChildNode> list2 = jdtService.getDescendants(internalCurrent.getDeclaration());
+        return calculateDiceSimilarity(list1, list2);
     }
 
     public static double calculateDiceSimilarity(MatchPair matchPair, InternalNode internalBefore, InternalNode internalCurrent) {
@@ -89,6 +112,37 @@ public class DiceFunction {
             double dependencies2 = union2 == 0 ? 0 : 2.0 * intersection2 / union2;
             if (dependencies2 > dependencies)
                 dependencies = dependencies2;
+        }
+        Set<EntityInfo> matched3 = new HashSet<>();
+        if (dependencies > 0) {
+            Set<EntityInfo> set1 = new LinkedHashSet<>(list1);
+            Set<EntityInfo> set2 = new LinkedHashSet<>(list2);
+            Set<EntityInfo> removed = new HashSet<>();
+            for (EntityInfo info : set1) {
+                if (info.getType() == EntityType.METHOD && info.getName().startsWith("test"))
+                    removed.add(info);
+            }
+            for (EntityInfo info : set2) {
+                if (info.getType() == EntityType.METHOD && info.getName().startsWith("test"))
+                    removed.add(info);
+            }
+            set1.removeAll(removed);
+            set2.removeAll(removed);
+            int intersection3 = 0;
+            int union3 = set1.size() + set2.size();
+            for (EntityInfo entityBefore : set1) {
+                for (EntityInfo entityCurrent : set2) {
+                    if (matched3.contains(entityCurrent)) continue;
+                    if (isMatchedReference(matchPair, entityBefore, entityCurrent, matchedEntityInfos, candidateEntityInfos)) {
+                        intersection3++;
+                        matched3.add(entityCurrent);
+                        break;
+                    }
+                }
+            }
+            double dependencies3 = union3 == 0 ? 0 : 2.0 * intersection3 / union3;
+            if (dependencies3 > dependencies)
+                dependencies = dependencies3;
         }
         return dependencies;
     }
@@ -156,11 +210,97 @@ public class DiceFunction {
             descendants = calculateDiceSimilarity((LeafNode) dntBefore, (LeafNode) dntCurrent);
         int union = dntBefore.getDependencies().size() + dntCurrent.getDependencies().size();
         double dependencies = calculateReferenceSimilarity(matchPair, dntBefore, dntCurrent);
+        if (dntBefore.getType() == EntityType.METHOD && dntCurrent.getType() == EntityType.METHOD) {
+            MethodDeclaration declaration1 = (MethodDeclaration) dntBefore.getDeclaration();
+            MethodDeclaration declaration2 = (MethodDeclaration) dntCurrent.getDeclaration();
+            if (declaration1.isConstructor() && declaration2.isConstructor()) {
+                Set<Pair<DeclarationNodeTree, DeclarationNodeTree>> matchedEntities = matchPair.getMatchedEntities();
+                Set<Pair<DeclarationNodeTree, DeclarationNodeTree>> candidateEntities = matchPair.getCandidateEntities();
+                for (Pair<DeclarationNodeTree, DeclarationNodeTree> pair : matchedEntities) {
+                    DeclarationNodeTree node1 = pair.getLeft();
+                    DeclarationNodeTree node2 = pair.getRight();
+                    if (node1.getType() == EntityType.CLASS && node2.getType() == EntityType.CLASS) {
+                        if (node1.getName().equals(dntBefore.getName()) && node2.getName().equals(dntCurrent.getName())) {
+                            union = 1;
+                            dependencies = 1.0;
+                        }
+                    }
+                }
+                for (Pair<DeclarationNodeTree, DeclarationNodeTree> pair : candidateEntities) {
+                    DeclarationNodeTree node1 = pair.getLeft();
+                    DeclarationNodeTree node2 = pair.getRight();
+                    if (node1.getType() == EntityType.CLASS && node2.getType() == EntityType.CLASS) {
+                        if (node1.getName().equals(dntBefore.getName()) && node2.getName().equals(dntCurrent.getName())) {
+                            union = 1;
+                            dependencies = 1.0;
+                        }
+                    }
+                }
+            }
+            List<IExtendedModifier> modifiers1 = declaration1.modifiers();
+            List<IExtendedModifier> modifiers2 = declaration1.modifiers();
+            boolean isTest1 = false;
+            boolean isTest2 = false;
+            boolean isOverride1 = false;
+            boolean isOverride2 = false;
+            for (IExtendedModifier modifier : modifiers1) {
+                if (modifier.isAnnotation() && modifier.toString().equals("@Test"))
+                    isTest1 = true;
+                if (modifier.isAnnotation() && modifier.toString().equals("@Override"))
+                    isOverride1 = true;
+            }
+            for (IExtendedModifier modifier : modifiers2) {
+                if (modifier.isAnnotation() && modifier.toString().equals("@Test"))
+                    isTest2 = true;
+                if (modifier.isAnnotation() && modifier.toString().equals("@Override"))
+                    isOverride2 = true;
+            }
+            if (union == 0 && isTest1 && isTest2 && (dntBefore.getName().equals(dntCurrent.getName()) ||
+                    matchPair.getMatchedEntities().contains(Pair.of(dntBefore.getParent(), dntCurrent.getParent())) ||
+                    matchPair.getCandidateEntities().contains(Pair.of(dntBefore.getParent(), dntCurrent.getParent())))) {
+                return 0.8 * descendants;
+            }
+            if (isTest1 && !isTest2)
+                dependencies = 0.0;
+            if (!isTest1 && isTest2)
+                dependencies = 0.0;
+            if (isOverride1 && !isOverride2 && !dntBefore.getName().equals(dntCurrent.getName()) &&
+                    !(matchPair.getMatchedEntities().contains(Pair.of(dntBefore.getParent(), dntCurrent.getParent())) ||
+                            matchPair.getCandidateEntities().contains(Pair.of(dntBefore.getParent(), dntCurrent.getParent()))))
+                dependencies = 0.0;
+            if (!isOverride1 && isOverride2 && !dntBefore.getName().equals(dntCurrent.getName()) &&
+                    !(matchPair.getMatchedEntities().contains(Pair.of(dntBefore.getParent(), dntCurrent.getParent())) ||
+                            matchPair.getCandidateEntities().contains(Pair.of(dntBefore.getParent(), dntCurrent.getParent()))))
+                dependencies = 0.0;
+            if (MethodUtils.isSetter(declaration1) && !MethodUtils.isSetter(declaration2))
+                dependencies = 0.0;
+            if (!MethodUtils.isSetter(declaration1) && MethodUtils.isSetter(declaration2))
+                dependencies = 0.0;
+            if (MethodUtils.isGetter(declaration1) && !MethodUtils.isGetter(declaration2))
+                dependencies = 0.0;
+            if (!MethodUtils.isGetter(declaration1) && MethodUtils.isGetter(declaration2))
+                dependencies = 0.0;
+        }
+        if ((dntBefore.getType() == EntityType.CLASS || dntBefore.getType() == EntityType.INTERFACE || dntBefore.getType() == EntityType.ENUM) &&
+                (dntCurrent.getType() == EntityType.CLASS || dntCurrent.getType() == EntityType.INTERFACE || dntCurrent.getType() == EntityType.ENUM)) {
+            if (dependencies == 1.0 && new HashSet<>(dntBefore.getDependencies()).size() == 1 && new HashSet<>(dntCurrent.getDependencies()).size() == 1 &&
+                    descendants == 0.0) {
+                return 0.49;
+            }
+        }
+        if (dependencies == 1.0 && new HashSet<>(dntBefore.getDependencies()).size() == 1 && new HashSet<>(dntCurrent.getDependencies()).size() == 1 &&
+                dntBefore.getType() == EntityType.FIELD && dntCurrent.getType() == EntityType.FIELD && descendants == 0.0) {
+            return 0.49;
+        }
+        if (dependencies == 1.0 && new HashSet<>(dntBefore.getDependencies()).size() == 1 && new HashSet<>(dntCurrent.getDependencies()).size() == 1 &&
+                dntBefore.getType() == EntityType.METHOD && dntCurrent.getType() == EntityType.METHOD &&
+                ((MethodDeclaration) dntBefore.getDeclaration()).getBody() != null &&
+                ((MethodDeclaration) dntCurrent.getDeclaration()).getBody() != null &&
+                !matchPair.getMatchedEntities().contains(Pair.of(dntBefore.getParent(), dntCurrent.getParent()))) {
+            return descendants * 3;
+        }
         NGram ngram = new NGram(2);
         double biGram = 1 - ngram.distance(dntBefore.getNamespace() + "." + dntBefore.getName(), dntCurrent.getNamespace() + "." + dntCurrent.getName());
-        if (dependencies == 1.0) {
-            return descendants * 3 + 0.01 * biGram;
-        }
         return (union == 0 ? descendants : 0.5 * descendants + 0.5 * dependencies) + 0.01 * biGram;
     }
 
@@ -195,6 +335,9 @@ public class DiceFunction {
         if (context1.isEmpty() || context2.isEmpty()) {
             if (matchPair.getMatchedStatements().contains(Pair.of(statement1.getParent(), statement2.getParent())) ||
                     matchPair.getCandidateStatements().contains(Pair.of(statement1.getParent(), statement2.getParent())))
+                return 1.0;
+            if (statement1 instanceof ControlNode && statement2 instanceof ControlNode &&
+                    statement1.getDepth() == 1 && statement2.getDepth() == 1)
                 return 1.0;
         }
         int intersection = getMatchedElementCount(matchPair, context1, context2);
@@ -232,21 +375,7 @@ public class DiceFunction {
         JDTService jdtService = new JDTServiceImpl();
         List<ChildNode> list1 = jdtService.getDescendants(statement1.getStatement());
         List<ChildNode> list2 = jdtService.getDescendants(statement2.getStatement());
-        int intersection = 0;
-        int union = list1.size() + list2.size();
-        Set<Integer> matched = new HashSet<>();
-        for (ChildNode childBefore : list1) {
-            for (int i = 0; i < list2.size(); i++) {
-                if (matched.contains(i)) continue;
-                ChildNode childCurrent = list2.get(i);
-                if (childBefore.equals(childCurrent)) {
-                    intersection++;
-                    matched.add(i);
-                    break;
-                }
-            }
-        }
-        return union == 0 ? 0 : 2.0 * intersection / union;
+        return calculateDiceSimilarity(list1, list2);
     }
 
     private static Expression getExpression(StatementNodeTree statement) {
@@ -329,22 +458,51 @@ public class DiceFunction {
         }
         if (contexts == 1.0 && descendants == 0.0 && statement1 instanceof OperationNode && statement2 instanceof OperationNode)
             return 0.49;
-        else
-            return (descendants + contexts) / 2;
+        if (contexts == 1.0 && descendants < 0.15 && statement1.getType() == StatementType.VARIABLE_DECLARATION_STATEMENT &&
+                statement2.getType() == StatementType.VARIABLE_DECLARATION_STATEMENT) {
+            VariableDeclarationStatement variable1 = (VariableDeclarationStatement) statement1.getStatement();
+            VariableDeclarationStatement variable2 = (VariableDeclarationStatement) statement2.getStatement();
+            Type type1 = variable1.getType();
+            Type type2 = variable2.getType();
+            List<VariableDeclarationFragment> fragments1 = variable1.fragments();
+            List<VariableDeclarationFragment> fragments2 = variable2.fragments();
+            VariableDeclarationFragment fragment1 = fragments1.get(0);
+            VariableDeclarationFragment fragment2 = fragments2.get(0);
+            if (!StringUtils.equals(type1.toString(), type2.toString()) &&
+                    !StringUtils.equals(fragment1.getName().getIdentifier(), fragment2.getName().getIdentifier()))
+                return 0.49;
+        }
+        return (descendants + contexts) / 2;
     }
 
     public static double calculateBodyDice(LeafNode oldNode, LeafNode newNode, LeafNode anotherNode) {
-        JDTService jdtService = new JDTServiceImpl();
-        MethodDeclaration oldDeclaration = (MethodDeclaration) oldNode.getDeclaration();
-        Block oldBody = oldDeclaration.getBody();
-        List<ChildNode> list1 = jdtService.getDescendants(oldBody);
-        MethodDeclaration newDeclaration = (MethodDeclaration) newNode.getDeclaration();
-        Block newBody = newDeclaration.getBody();
-        List<ChildNode> list2 = jdtService.getDescendants(newBody);
-        MethodDeclaration anotherDeclaration = (MethodDeclaration) anotherNode.getDeclaration();
-        Block anotherBody = anotherDeclaration.getBody();
-        List<ChildNode> list3 = jdtService.getDescendants(anotherBody);
-        return calculateBodyDice(list1, list2, list3);
+        if (oldNode.getType() == EntityType.METHOD && newNode.getType() == EntityType.METHOD) {
+            JDTService jdtService = new JDTServiceImpl();
+            MethodDeclaration oldDeclaration = (MethodDeclaration) oldNode.getDeclaration();
+            Block oldBody = oldDeclaration.getBody();
+            List<ChildNode> list1 = jdtService.getDescendants(oldBody);
+            MethodDeclaration newDeclaration = (MethodDeclaration) newNode.getDeclaration();
+            Block newBody = newDeclaration.getBody();
+            List<ChildNode> list2 = jdtService.getDescendants(newBody);
+            MethodDeclaration anotherDeclaration = (MethodDeclaration) anotherNode.getDeclaration();
+            Block anotherBody = anotherDeclaration.getBody();
+            List<ChildNode> list3 = jdtService.getDescendants(anotherBody);
+            return calculateBodyDice(list1, list2, list3);
+        }
+        if (oldNode.getType() == EntityType.INITIALIZER && newNode.getType() == EntityType.INITIALIZER) {
+            JDTService jdtService = new JDTServiceImpl();
+            Initializer oldDeclaration = (Initializer) oldNode.getDeclaration();
+            Block oldBody = oldDeclaration.getBody();
+            List<ChildNode> list1 = jdtService.getDescendants(oldBody);
+            Initializer newDeclaration = (Initializer) newNode.getDeclaration();
+            Block newBody = newDeclaration.getBody();
+            List<ChildNode> list2 = jdtService.getDescendants(newBody);
+            MethodDeclaration anotherDeclaration = (MethodDeclaration) anotherNode.getDeclaration();
+            Block anotherBody = anotherDeclaration.getBody();
+            List<ChildNode> list3 = jdtService.getDescendants(anotherBody);
+            return calculateBodyDice(list1, list2, list3);
+        }
+        return 0.0;
     }
 
     public static double calculateBodyDice(List<ChildNode> list1, List<ChildNode> list2, List<ChildNode> list3) {
@@ -381,9 +539,48 @@ public class DiceFunction {
 
     public static double calculateBodyDice(VariableDeclarationFragment fragment, StatementNodeTree oldStatement, StatementNodeTree newStatement) {
         JDTService jdtService = new JDTServiceImpl();
-        List<ChildNode> list1 = jdtService.getDescendants(fragment.getInitializer());
+        List<ChildNode> list1 = jdtService.getDescendants(oldStatement.getStatement());
         List<ChildNode> list2 = jdtService.getDescendants(newStatement.getStatement());
-        List<ChildNode> list3 = jdtService.getDescendants(oldStatement.getStatement());
+        List<ChildNode> list3 = jdtService.getDescendants(fragment.getInitializer());
         return calculateBodyDice(list1, list2, list3);
+    }
+
+    public static double calculateMethodInvocation(MethodDeclaration md1, MethodDeclaration md2) {
+        List<IMethodBinding> list1 = new ArrayList<>();
+        List<IMethodBinding> list2 = new ArrayList<>();
+        md1.accept(new ASTVisitor() {
+            @Override
+            public boolean visit(MethodInvocation node) {
+                IMethodBinding iMethodBinding = node.resolveMethodBinding();
+                if (iMethodBinding != null)
+                    list1.add(iMethodBinding);
+                return super.visit(node);
+            }
+        });
+        md2.accept(new ASTVisitor() {
+            @Override
+            public boolean visit(MethodInvocation node) {
+                IMethodBinding iMethodBinding = node.resolveMethodBinding();
+                if (iMethodBinding != null)
+                    list2.add(iMethodBinding);
+                return super.visit(node);
+            }
+        });
+        int intersection = 0;
+        int union = list1.size() + list2.size();
+        Set<Integer> matched = new HashSet<>();
+        for (IMethodBinding binding1 : list1) {
+            for (int i = 0; i < list2.size(); i++) {
+                if (matched.contains(i)) continue;
+                IMethodBinding binding2 = list2.get(i);
+                if (StringUtils.equals(binding1.toString(), binding2.toString())) {
+                    intersection++;
+                    matched.add(i);
+                    break;
+                }
+            }
+        }
+        double dependencies = union == 0 ? 0 : 2.0 * intersection / union;
+        return dependencies;
     }
 }

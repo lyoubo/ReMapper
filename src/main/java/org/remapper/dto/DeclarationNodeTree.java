@@ -128,6 +128,10 @@ public abstract class DeclarationNodeTree implements LocationInfoProvider{
         this.isMatched = true;
     }
 
+    public void setMatched(boolean isMatched) {
+        this.isMatched = isMatched;
+    }
+
     public EntityInfo getEntity() {
         if (entity != null) {
             return entity;

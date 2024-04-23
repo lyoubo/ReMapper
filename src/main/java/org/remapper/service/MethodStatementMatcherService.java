@@ -2,8 +2,7 @@ package org.remapper.service;
 
 import info.debatty.java.stringsimilarity.NormalizedLevenshtein;
 import org.apache.commons.lang3.tuple.Pair;
-import org.eclipse.jdt.core.dom.VariableDeclarationFragment;
-import org.eclipse.jdt.core.dom.VariableDeclarationStatement;
+import org.eclipse.jdt.core.dom.*;
 import org.remapper.dto.*;
 import org.remapper.util.DiceFunction;
 import org.remapper.util.StringUtils;
@@ -16,21 +15,33 @@ public class MethodStatementMatcherService {
     public void matchStatements(MethodNode methodBefore, MethodNode methodAfter, MatchPair originalPair,
                                 List<Pair<String, String>> replacementsBefore, List<Pair<String, String>> replacementsCurrent) {
         MatchPair matchPair = new MatchPair();
-        Map<EntityType, List<Pair<String, String>>> replacements = getReplacements(originalPair);
         matchControls(matchPair, methodBefore, methodAfter);
         matchBlocks(matchPair, methodBefore, methodAfter);
         matchOperations(matchPair, methodBefore, methodAfter);
-        matchByEntityReplacement(matchPair, methodBefore, methodAfter, replacements);
-        matchByVariableReplacement(matchPair, methodBefore, methodAfter, replacementsBefore, replacementsCurrent);
+        matchByVariableReplacement(matchPair, methodBefore, methodAfter, originalPair, replacementsBefore, replacementsCurrent);
+        iterativeMatching(matchPair, methodBefore, methodAfter);
 
-        iterativeMatching(matchPair, methodBefore, methodAfter, replacements);
-
-        matchPair.addDeletedStatements(methodBefore.getUnmatchedStatements());
-        matchPair.addAddedStatements(methodAfter.getUnmatchedStatements());
+        List<StatementNodeTree> unmatchedStatementsBefore = methodBefore.getUnmatchedStatements();
+        for (StatementNodeTree unmatchedStatement : unmatchedStatementsBefore) {
+            if (unmatchedStatement.isRefactored())
+                continue;
+            if (unmatchedStatement.isMatched() && unmatchedStatement.isDuplicated())
+                continue;
+            matchPair.addDeletedStatement(unmatchedStatement);
+        }
+        List<StatementNodeTree> unmatchedStatementsAfter = methodAfter.getUnmatchedStatements();
+        for (StatementNodeTree unmatchedStatement : unmatchedStatementsAfter) {
+            if (unmatchedStatement.isRefactored())
+                continue;
+            if (unmatchedStatement.isMatched() && unmatchedStatement.isDuplicated())
+                continue;
+            matchPair.addAddedStatement(unmatchedStatement);
+        }
 
         additionalMatchByDice(matchPair);
         additionalMatchByChildren(matchPair);
         additionalMatchByContext(matchPair);
+        additionalMatchByReturn(matchPair);
 
         Set<Pair<StatementNodeTree, StatementNodeTree>> matchedStatements = matchPair.getMatchedStatements();
         for (Pair<StatementNodeTree, StatementNodeTree> matchedStatement : matchedStatements) {
@@ -146,7 +157,7 @@ public class MethodStatementMatcherService {
         Map<StatementNodeTree, StatementNodeTree> temp1 = new LinkedHashMap<>();
         for (StatementNodeTree node1 : allControlsBefore) {
             for (StatementNodeTree node2 : allControlsAfter) {
-                if (!node1.isMatched() && !node2.isMatched() && node1.getType() == node2.getType() &&
+                if (!node1.isMatchedOver() && !node2.isMatchedOver() && node1.getType() == node2.getType() &&
                         node1.getExpression().equals(node2.getExpression()) && node1.getDepth() == node2.getDepth()) {
                     processControlMap(temp1, node1, node2);
                 }
@@ -159,7 +170,7 @@ public class MethodStatementMatcherService {
         Map<StatementNodeTree, StatementNodeTree> temp2 = new LinkedHashMap<>();
         for (StatementNodeTree node1 : allControlsBefore) {
             for (StatementNodeTree node2 : allControlsAfter) {
-                if (!node1.isMatched() && !node2.isMatched() && node1.getType() == node2.getType() &&
+                if (!node1.isMatchedOver() && !node2.isMatchedOver() && node1.getType() == node2.getType() &&
                         node1.getExpression().equals(node2.getExpression())) {
                     processControlMap(temp2, node1, node2);
                 }
@@ -195,7 +206,7 @@ public class MethodStatementMatcherService {
     private void controlMap2SetOfMatchedStatements(MatchPair matchPair, Map<StatementNodeTree, StatementNodeTree> temp) {
         for (StatementNodeTree control1 : temp.keySet()) {
             StatementNodeTree control2 = temp.get(control1);
-            if (!control1.isMatched() && !control2.isMatched()) {
+            if (!control1.isMatchedOver() && !control2.isMatchedOver()) {
                 matchPair.addMatchedStatement(control1, control2);
                 control1.setMatched();
                 control2.setMatched();
@@ -208,7 +219,7 @@ public class MethodStatementMatcherService {
     private void matchSubStatements(MatchPair matchPair, List<StatementNodeTree> childrenBefore, List<StatementNodeTree> childrenAfter) {
         for (StatementNodeTree node1 : childrenBefore) {
             for (StatementNodeTree node2 : childrenAfter) {
-                if (!node1.isMatched() && !node2.isMatched() &&
+                if (!node1.isMatchedOver() && !node2.isMatchedOver() &&
                         StringUtils.equals(node1.getStatement().toString(), node2.getStatement().toString())) {
                     matchPair.addMatchedStatement(node1, node2);
                     node1.setMatched();
@@ -231,7 +242,7 @@ public class MethodStatementMatcherService {
         Map<StatementNodeTree, StatementNodeTree> temp1 = new LinkedHashMap<>();
         for (StatementNodeTree node1 : allBlocksBefore) {
             for (StatementNodeTree node2 : allBlocksAfter) {
-                if (!node1.isMatched() && !node2.isMatched() && StringUtils.equals(node1.getStatement().toString(), node2.getStatement().toString()) &&
+                if (!node1.isMatchedOver() && !node2.isMatchedOver() && StringUtils.equals(node1.getStatement().toString(), node2.getStatement().toString()) &&
                         node1.getDepth() == node2.getDepth()) {
                     processBlockMap(temp1, node1, node2);
                 }
@@ -244,7 +255,7 @@ public class MethodStatementMatcherService {
         Map<StatementNodeTree, StatementNodeTree> temp2 = new LinkedHashMap<>();
         for (StatementNodeTree node1 : allBlocksBefore) {
             for (StatementNodeTree node2 : allBlocksAfter) {
-                if (!node1.isMatched() && !node2.isMatched() && StringUtils.equals(node1.getStatement().toString(), node2.getStatement().toString())) {
+                if (!node1.isMatchedOver() && !node2.isMatchedOver() && StringUtils.equals(node1.getStatement().toString(), node2.getStatement().toString())) {
                     processBlockMap(temp2, node1, node2);
                 }
             }
@@ -285,7 +296,7 @@ public class MethodStatementMatcherService {
     private void blockMap2SetOfMatchedStatements(MatchPair matchPair, Map<StatementNodeTree, StatementNodeTree> temp) {
         for (StatementNodeTree node1 : temp.keySet()) {
             StatementNodeTree node2 = temp.get(node1);
-            if (!node1.isMatched() && !node2.isMatched()) {
+            if (!node1.isMatchedOver() && !node2.isMatchedOver()) {
                 matchPair.addMatchedStatement(node1, node2);
                 node1.setMatched();
                 node2.setMatched();
@@ -316,7 +327,7 @@ public class MethodStatementMatcherService {
         Map<StatementNodeTree, StatementNodeTree> temp1 = new LinkedHashMap<>();
         for (StatementNodeTree node1 : allOperationsBefore) {
             for (StatementNodeTree node2 : allOperationsAfter) {
-                if (!node1.isMatched() && !node2.isMatched() && isTheSameExpression(node1, node2) &&
+                if (!node1.isMatchedOver() && !node2.isMatchedOver() && isTheSameExpression(node1, node2) &&
                         node1.getDepth() == node2.getDepth()) {
                     processOperationMap(matchPair, temp1, node1, node2);
                 }
@@ -329,7 +340,7 @@ public class MethodStatementMatcherService {
         Map<StatementNodeTree, StatementNodeTree> temp2 = new LinkedHashMap<>();
         for (StatementNodeTree node1 : allOperationsBefore) {
             for (StatementNodeTree node2 : allOperationsAfter) {
-                if (!node1.isMatched() && !node2.isMatched() && isTheSameExpression(node1, node2)) {
+                if (!node1.isMatchedOver() && !node2.isMatchedOver() && isTheSameExpression(node1, node2)) {
                     processOperationMap(matchPair, temp2, node1, node2);
                 }
             }
@@ -341,7 +352,7 @@ public class MethodStatementMatcherService {
         Map<StatementNodeTree, StatementNodeTree> temp3 = new LinkedHashMap<>();
         for (StatementNodeTree node1 : allOperationsBefore) {
             for (StatementNodeTree node2 : allOperationsAfter) {
-                if (!node1.isMatched() && !node2.isMatched() && node1.getType() == StatementType.VARIABLE_DECLARATION_STATEMENT &&
+                if (!node1.isMatchedOver() && !node2.isMatchedOver() && node1.getType() == StatementType.VARIABLE_DECLARATION_STATEMENT &&
                         node2.getType() == StatementType.VARIABLE_DECLARATION_STATEMENT) {
                     VariableDeclarationStatement variableDeclaration1 = (VariableDeclarationStatement) node1.getStatement();
                     VariableDeclarationStatement variableDeclaration2 = (VariableDeclarationStatement) node2.getStatement();
@@ -374,7 +385,7 @@ public class MethodStatementMatcherService {
     private void stmtMap2SetOfMatchedStatements(MatchPair matchPair, Map<StatementNodeTree, StatementNodeTree> temp) {
         for (StatementNodeTree node1 : temp.keySet()) {
             StatementNodeTree node2 = temp.get(node1);
-            if (!node1.isMatched() && !node2.isMatched()) {
+            if (!node1.isMatchedOver() && !node2.isMatchedOver()) {
                 matchPair.addMatchedStatement(node1, node2);
                 node1.setMatched();
                 node2.setMatched();
@@ -388,7 +399,7 @@ public class MethodStatementMatcherService {
         List<StatementNodeTree> allControlsAfter = methodAfter.getAllControls();
         for (StatementNodeTree node1 : allControlsBefore) {
             for (StatementNodeTree node2 : allControlsAfter) {
-                if (!node1.isMatched() && !node2.isMatched() && equalsWithReplacements(node1.getExpression(), node2.getExpression(), replacements)) {
+                if (!node1.isMatchedOver() && !node2.isMatchedOver() && equalsWithReplacements(node1.getExpression(), node2.getExpression(), replacements)) {
                     processControlMap(temp1, node1, node2);
                     List<StatementNodeTree> children1 = node1.getChildren();
                     List<StatementNodeTree> children2 = node2.getChildren();
@@ -407,7 +418,7 @@ public class MethodStatementMatcherService {
         List<StatementNodeTree> allOperationsAfter = methodAfter.getAllOperations();
         for (StatementNodeTree node1 : allOperationsBefore) {
             for (StatementNodeTree node2 : allOperationsAfter) {
-                if (!node1.isMatched() && !node2.isMatched() && equalsWithReplacements(node1.getExpression(), node2.getExpression(), replacements))
+                if (!node1.isMatchedOver() && !node2.isMatchedOver() && equalsWithReplacements(node1.getExpression(), node2.getExpression(), replacements))
                     processOperationMap(matchPair, temp2, node1, node2);
             }
         }
@@ -446,36 +457,23 @@ public class MethodStatementMatcherService {
         return false;
     }
 
-    private void matchByVariableReplacement(MatchPair matchPair, MethodNode methodBefore, MethodNode methodAfter,
+    private void matchByVariableReplacement(MatchPair matchPair, MethodNode methodBefore, MethodNode methodAfter, MatchPair originalPair,
                                             List<Pair<String, String>> replacementsBefore, List<Pair<String, String>> replacementsCurrent) {
         List<StatementNodeTree> allControlsBefore = methodBefore.getAllControls();
         List<StatementNodeTree> allControlsAfter = methodAfter.getAllControls();
         List<StatementNodeTree> allOperationsBefore = methodBefore.getAllOperations();
         List<StatementNodeTree> allOperationsAfter = methodAfter.getAllOperations();
-        List<StatementNodeTree> allVariablesBefore = allOperationsBefore.stream().filter(node -> node.getType() == StatementType.VARIABLE_DECLARATION_STATEMENT).collect(Collectors.toList());
-        List<StatementNodeTree> allVariablesAfter = allOperationsAfter.stream().filter(node -> node.getType() == StatementType.VARIABLE_DECLARATION_STATEMENT).collect(Collectors.toList());
-        List<Pair<String, String>> replacements1 = new ArrayList<>(replacementsBefore);
-        for (StatementNodeTree variable : allVariablesBefore) {
-            VariableDeclarationStatement statement = (VariableDeclarationStatement) variable.getStatement();
-            List<VariableDeclarationFragment> fragments = statement.fragments();
-            for (VariableDeclarationFragment fragment : fragments) {
-                if (fragment.getInitializer() != null)
-                    replacements1.add(Pair.of(fragment.getName().getIdentifier(), fragment.getInitializer().toString()));
-            }
-        }
-        List<Pair<String, String>> replacements2 = new ArrayList<>(replacementsCurrent);
-        for (StatementNodeTree variable : allVariablesAfter) {
-            VariableDeclarationStatement statement = (VariableDeclarationStatement) variable.getStatement();
-            List<VariableDeclarationFragment> fragments = statement.fragments();
-            for (VariableDeclarationFragment fragment : fragments) {
-                if (fragment.getInitializer() != null)
-                    replacements2.add(Pair.of(fragment.getName().getIdentifier(), fragment.getInitializer().toString()));
-            }
-        }
+        Map<EntityType, List<Pair<String, String>>> entityReplacements = getReplacements(originalPair);
+        List<StatementNodeTree> allVariablesBefore = allOperationsBefore.stream().filter(
+                node -> node.getType() == StatementType.VARIABLE_DECLARATION_STATEMENT && !node.isMatched()).collect(Collectors.toList());
+        List<StatementNodeTree> allVariablesAfter = allOperationsAfter.stream().filter(
+                node -> node.getType() == StatementType.VARIABLE_DECLARATION_STATEMENT && !node.isMatched()).collect(Collectors.toList());
         Map<StatementNodeTree, StatementNodeTree> temp1 = new LinkedHashMap<>();
         for (StatementNodeTree node1 : allControlsBefore) {
             for (StatementNodeTree node2 : allControlsAfter) {
-                if (!node1.isMatched() && !node2.isMatched() && equalsWithReplacements(node1.getExpression(), node2.getExpression(), replacements1, replacements2)) {
+                if (!node1.isMatchedOver() && !node2.isMatchedOver() &&
+                        equalsWithReplacements(matchPair, methodBefore, methodAfter, node1, node2, entityReplacements,
+                                replacementsBefore, replacementsCurrent, allVariablesBefore, allVariablesAfter)) {
                     processControlMap(temp1, node1, node2);
                     List<StatementNodeTree> children1 = node1.getChildren();
                     List<StatementNodeTree> children2 = node2.getChildren();
@@ -492,23 +490,103 @@ public class MethodStatementMatcherService {
         Map<StatementNodeTree, StatementNodeTree> temp2 = new LinkedHashMap<>();
         for (StatementNodeTree node1 : allOperationsBefore) {
             for (StatementNodeTree node2 : allOperationsAfter) {
-                if (!node1.isMatched() && !node2.isMatched() && equalsWithReplacements(node1.getExpression(), node2.getExpression(), replacements1, replacements2))
+                if (!node1.isMatchedOver() && !node2.isMatchedOver() &&
+                        equalsWithReplacements(matchPair, methodBefore, methodAfter, node1, node2, entityReplacements,
+                                replacementsBefore, replacementsCurrent, allVariablesBefore, allVariablesAfter))
                     processOperationMap(matchPair, temp2, node1, node2);
             }
         }
         stmtMap2SetOfMatchedStatements(matchPair, temp2);
     }
 
-    private boolean equalsWithReplacements(String statement1, String statement2, List<Pair<String, String>> replacements1, List<Pair<String, String>> replacements2) {
+    private boolean equalsWithReplacements(MatchPair matchPair, MethodNode methodBefore, MethodNode methodAfter,
+                                           StatementNodeTree node1, StatementNodeTree node2,
+                                           Map<EntityType, List<Pair<String, String>>> entityReplacements,
+                                           List<Pair<String, String>> replacementsBefore, List<Pair<String, String>> replacementsCurrent,
+                                           List<StatementNodeTree> allVariablesBefore, List<StatementNodeTree> allVariablesAfter) {
+        String statement1 = node1.getExpression();
+        String statement2 = node2.getExpression();
+        if (node1.getType() == StatementType.RETURN_STATEMENT && node2.getType() != StatementType.RETURN_STATEMENT &&
+                statement1.startsWith("return ")) {
+            MethodNode root = node1.getRoot();
+            if (root != methodBefore)
+                statement1 = statement1.substring("return ".length());
+        }
+        if (node2.getType() == StatementType.RETURN_STATEMENT && node1.getType() != StatementType.RETURN_STATEMENT &&
+                statement2.startsWith("return ")) {
+            MethodNode root = node2.getRoot();
+            if (root != methodAfter)
+                statement2 = statement2.substring("return ".length());
+        }
+        List<String> astNodes1 = new ArrayList<>();
+        List<String> astNodes2 = new ArrayList<>();
+        node1.getStatement().accept(new ASTVisitor() {
+            @Override
+            public boolean visit(SimpleName node) {
+                astNodes1.add(node.getIdentifier());
+                return true;
+            }
+        });
+        node2.getStatement().accept(new ASTVisitor() {
+            @Override
+            public boolean visit(SimpleName node) {
+                astNodes2.add(node.getIdentifier());
+                return true;
+            }
+        });
+        List<Pair<String, String>> parameterReplacements = new ArrayList<>();
+        if (!methodBefore.getExpression().equals("initializer") && !methodAfter.getExpression().equals("initializer")) {
+            MethodDeclaration declaration1 = (MethodDeclaration) methodBefore.getMethodEntity().getDeclaration();
+            MethodDeclaration declaration2 = (MethodDeclaration) methodAfter.getMethodEntity().getDeclaration();
+            List<SingleVariableDeclaration> parameters1 = declaration1.parameters();
+            List<SingleVariableDeclaration> parameters2 = declaration2.parameters();
+            if (parameters1.size() == parameters2.size()) {
+                for (int i = 0; i < parameters1.size(); i++) {
+                    SingleVariableDeclaration parameter1 = parameters1.get(i);
+                    SingleVariableDeclaration parameter2 = parameters2.get(i);
+                    Type type1 = parameter1.getType();
+                    Type type2 = parameter2.getType();
+                    String name1 = parameter1.getName().getIdentifier();
+                    String name2 = parameter2.getName().getIdentifier();
+                    if (StringUtils.equals(type1.toString(), type2.toString()) &&
+                            !StringUtils.equals(name1, name2)) {
+                        parameterReplacements.add(Pair.of(name1, name2));
+                    }
+                }
+            }
+        }
+        return equalsWithReplacements(matchPair, statement1, statement2, astNodes1, astNodes2, entityReplacements, parameterReplacements,
+                replacementsBefore, replacementsCurrent, allVariablesBefore, allVariablesAfter);
+    }
+
+    private boolean equalsWithReplacements(MatchPair matchPair, String statement1, String statement2,
+                                           List<String> astNodes1, List<String> astNodes2,
+                                           Map<EntityType, List<Pair<String, String>>> entityReplacements,
+                                           List<Pair<String, String>> parameterReplacements,
+                                           List<Pair<String, String>> replacementsBefore, List<Pair<String, String>> replacementsCurrent,
+                                           List<StatementNodeTree> allVariablesBefore, List<StatementNodeTree> allVariablesAfter) {
         String replaced1 = statement1;
         String replaced2 = statement2;
+        List<Pair<String, String>> list = new ArrayList<>();
+        if (entityReplacements.get(EntityType.CLASS) != null)
+            list.addAll(entityReplacements.get(EntityType.CLASS));
+        if (entityReplacements.get(EntityType.INTERFACE) != null)
+            list.addAll(entityReplacements.get(EntityType.INTERFACE));
+        if (entityReplacements.get(EntityType.ENUM) != null)
+            list.addAll(entityReplacements.get(EntityType.ENUM));
+        if (entityReplacements.get(EntityType.FIELD) != null)
+            list.addAll(entityReplacements.get(EntityType.FIELD));
+        if (entityReplacements.get(EntityType.METHOD) != null)
+            list.addAll(entityReplacements.get(EntityType.METHOD));
+        if (entityReplacements.get(EntityType.ENUM_CONSTANT) != null)
+            list.addAll(entityReplacements.get(EntityType.ENUM_CONSTANT));
         NormalizedLevenshtein nl = new NormalizedLevenshtein();
         double distance = nl.distance(statement1, statement2);
-        for (Pair<String, String> pair : replacements1) {
-            String name = pair.getLeft();
-            String initializer = pair.getRight();
-            if (statement1.contains(name)) {
-                String replaced = replaced1.replace(name, initializer);
+        for (Pair<String, String> pair : list) {
+            String oldEntityName = pair.getLeft();
+            String newEntityName = pair.getRight();
+            if (astNodes1.contains(oldEntityName)) {
+                String replaced = replaced1.replace(oldEntityName, newEntityName);
                 double compared = nl.distance(replaced, replaced2);
                 if (compared == 0.0)
                     return true;
@@ -518,17 +596,152 @@ public class MethodStatementMatcherService {
                 }
             }
         }
-        for (Pair<String, String> pair : replacements2) {
+        for (Pair<String, String> pair : replacementsBefore) {
             String name = pair.getLeft();
             String initializer = pair.getRight();
-            if (statement2.contains(name)) {
-                String replaced = replaced2.replace(name, initializer);
-                double compared = nl.distance(replaced1, replaced);
+            if (astNodes1.contains(name)) {
+                if (replaced1.equals("this." + name + "=" + name + ";\n")) {
+                    String replaced = "this." + name + "=" + initializer + ";\n";
+                    double compared = nl.distance(replaced, replaced2);
+                    if (compared == 0.0)
+                        return true;
+                    if (compared < distance) {
+                        replaced1 = replaced;
+                        distance = compared;
+                    }
+                } else {
+                    String replaced = replaced1.replace(name, initializer);
+                    double compared = nl.distance(replaced, replaced2);
+                    if (compared == 0.0)
+                        return true;
+                    if (compared < distance) {
+                        replaced1 = replaced;
+                        distance = compared;
+                    }
+                }
+            }
+        }
+        for (StatementNodeTree variable : allVariablesBefore) {
+            VariableDeclarationStatement statement = (VariableDeclarationStatement) variable.getStatement();
+            List<VariableDeclarationFragment> fragments = statement.fragments();
+            for (VariableDeclarationFragment fragment : fragments) {
+                if (fragment.getInitializer() != null) {
+                    String name = fragment.getName().getIdentifier();
+                    String initializer = fragment.getInitializer().toString();
+                    if (replaced1.contains(name + "="))
+                        continue;
+                    if (astNodes1.contains(name)) {
+                        String replaced = replaced1.replace(name, initializer);
+                        double compared = nl.distance(replaced, replaced2);
+                        if (compared == 0.0) {
+                            variable.setRefactored();
+                            if (!variable.isMatched())
+                                matchPair.addDeletedStatement(variable);
+                            return true;
+                        }
+                        if (compared < distance) {
+                            replaced1 = replaced;
+                            distance = compared;
+                        }
+                    }
+                }
+            }
+        }
+        for (Pair<String, String> pair : replacementsCurrent) {
+            String name = pair.getLeft();
+            String initializer = pair.getRight();
+            if (astNodes2.contains(name)) {
+                if (replaced2.equals("this." + name + "=" + name + ";\n")) {
+                    String replaced = "this." + name + "=" + initializer + ";\n";
+                    double compared = nl.distance(replaced1, replaced);
+                    if (compared == 0.0)
+                        return true;
+                    if (compared < distance) {
+                        replaced2 = replaced;
+                        distance = compared;
+                    }
+                } else {
+                    String replaced = replaced2.replace(name, initializer);
+                    double compared = nl.distance(replaced1, replaced);
+                    if (compared == 0.0)
+                        return true;
+                    if (compared < distance) {
+                        replaced2 = replaced;
+                        distance = compared;
+                    }
+                }
+            }
+        }
+        for (StatementNodeTree variable : allVariablesAfter) {
+            VariableDeclarationStatement statement = (VariableDeclarationStatement) variable.getStatement();
+            List<VariableDeclarationFragment> fragments = statement.fragments();
+            for (VariableDeclarationFragment fragment : fragments) {
+                if (fragment.getInitializer() != null) {
+                    String name = fragment.getName().getIdentifier();
+                    String initializer = fragment.getInitializer().toString();
+                    if (replaced2.contains(name + "="))
+                        continue;
+                    if (astNodes2.contains(name)) {
+                        String replaced = replaced2.replace(name, initializer);
+                        double compared = nl.distance(replaced1, replaced);
+                        if (compared == 0.0) {
+                            variable.setRefactored();
+                            if (!variable.isMatched())
+                                matchPair.addAddedStatement(variable);
+                            return true;
+                        }
+                        if (compared < distance) {
+                            replaced2 = replaced;
+                            distance = compared;
+                        }
+                    }
+                }
+            }
+        }
+        for (Pair<String, String> pair : parameterReplacements) {
+            String oldParameter = pair.getLeft();
+            String newParameter = pair.getRight();
+            if (astNodes1.contains(oldParameter)) {
+                String replaced = replaced1.replace(oldParameter, newParameter);
+                double compared = nl.distance(replaced, replaced2);
                 if (compared == 0.0)
                     return true;
                 if (compared < distance) {
-                    replaced2 = replaced;
+                    replaced1 = replaced;
                     distance = compared;
+                }
+            }
+        }
+        for (StatementNodeTree variable1 : allVariablesBefore) {
+            if (variable1.isRefactored())
+                continue;
+            for (StatementNodeTree variable2 : allVariablesAfter) {
+                if (variable2.isRefactored())
+                    continue;
+                VariableDeclarationStatement variableDeclaration1 = (VariableDeclarationStatement) variable1.getStatement();
+                VariableDeclarationStatement variableDeclaration2 = (VariableDeclarationStatement) variable2.getStatement();
+                List<VariableDeclarationFragment> fragments1 = variableDeclaration1.fragments();
+                List<VariableDeclarationFragment> fragments2 = variableDeclaration2.fragments();
+                for (VariableDeclarationFragment fragment1 : fragments1) {
+                    for (VariableDeclarationFragment fragment2 : fragments2) {
+                        String name1 = fragment1.getName().getIdentifier();
+                        String name2 = fragment2.getName().getIdentifier();
+                        Expression initializer1 = fragment1.getInitializer();
+                        Expression initializer2 = fragment2.getInitializer();
+                        if (initializer1 == null || initializer2 == null)
+                            continue;
+                        if (!initializer1.toString().equals(initializer2.toString()))
+                            continue;
+                        if (!astNodes1.contains(name1) || !astNodes2.contains(name2))
+                            continue;
+                        if (StringUtils.equals(replaced1.replace(name1 + ".", initializer1.toString() + "."),
+                                replaced2.replace(name2 + ".", initializer2.toString() + "."))) {
+                            variable1.setMatched();
+                            variable2.setMatched();
+                            matchPair.addMatchedStatement(variable1, variable2);
+                            return true;
+                        }
+                    }
                 }
             }
         }
@@ -551,12 +764,13 @@ public class MethodStatementMatcherService {
             temp.put(node1, node2);
     }
 
-    private void iterativeMatching(MatchPair matchPair, MethodNode methodBefore, MethodNode methodAfter, Map<EntityType, List<Pair<String, String>>> replacements) {
-        Set<Pair<StatementNodeTree, StatementNodeTree>> candidateStatements = matchByDiceCoefficient(matchPair, methodBefore, methodAfter, replacements);
+    private void iterativeMatching(MatchPair matchPair, MethodNode methodBefore, MethodNode methodAfter) {
+        Set<Pair<StatementNodeTree, StatementNodeTree>> candidateStatements = matchByDiceCoefficient(matchPair, methodBefore, methodAfter);
         matchPair.setCandidateStatements(candidateStatements);
         for (int i = 0; i < 5; i++) {
-            Set<Pair<StatementNodeTree, StatementNodeTree>> temp = matchByDiceCoefficient(matchPair, methodBefore, methodAfter, replacements);
+            Set<Pair<StatementNodeTree, StatementNodeTree>> temp = matchByDiceCoefficient(matchPair, methodBefore, methodAfter);
             if (matchPair.getCandidateStatements().size() == temp.size() && matchPair.getCandidateStatements().equals(temp)) {
+//                System.out.println("At the " + (i + 1) + "th iteration, the candidate set of statement mapping does not change.");
                 break;
             }
             matchPair.setCandidateStatements(temp);
@@ -570,7 +784,7 @@ public class MethodStatementMatcherService {
     }
 
     private Set<Pair<StatementNodeTree, StatementNodeTree>> matchByDiceCoefficient(MatchPair matchPair, MethodNode methodBefore,
-                                                                                   MethodNode methodAfter, Map<EntityType, List<Pair<String, String>>> replacements) {
+                                                                                   MethodNode methodAfter) {
         Set<Pair<StatementNodeTree, StatementNodeTree>> temp = new HashSet<>();
         List<StatementNodeTree> allOperationsBefore = methodBefore.getAllOperations();
         List<StatementNodeTree> allOperationsAfter = methodAfter.getAllOperations();
@@ -580,7 +794,7 @@ public class MethodStatementMatcherService {
         Map<StatementNodeTree, StatementNodeTree> temp1 = new HashMap<>();
         for (StatementNodeTree node1 : allOperationsBefore) {
             for (StatementNodeTree node2 : allOperationsAfter) {
-                if (!node1.isMatched() && !node2.isMatched()) {
+                if (!node1.isMatchedOver() && !node2.isMatchedOver()) {
                     if (!typeCompatible(node1, node2))
                         continue;
                     double sim = DiceFunction.calculateSimilarity(matchPair, node1, node2);
@@ -602,7 +816,7 @@ public class MethodStatementMatcherService {
         List<StatementNodeTree> allBlocksAfter = methodAfter.getAllBlocks();
         for (StatementNodeTree node1 : allBlocksBefore) {
             for (StatementNodeTree node2 : allBlocksAfter) {
-                if (!node1.isMatched() && !node2.isMatched()) {
+                if (!node1.isMatchedOver() && !node2.isMatchedOver()) {
                     if (!typeCompatible(node1, node2))
                         continue;
                     if (DiceFunction.calculateSimilarity(matchPair, node1, node2) < DiceFunction.minSimilarity)
@@ -623,7 +837,7 @@ public class MethodStatementMatcherService {
         List<StatementNodeTree> allControlsAfter = methodAfter.getAllControls();
         for (StatementNodeTree node1 : allControlsBefore) {
             for (StatementNodeTree node2 : allControlsAfter) {
-                if (!node1.isMatched() && !node2.isMatched()) {
+                if (!node1.isMatchedOver() && !node2.isMatchedOver()) {
                     if (!typeCompatible(node1, node2))
                         continue;
                     if (DiceFunction.calculateSimilarity(matchPair, node1, node2) < DiceFunction.minSimilarity)
@@ -665,6 +879,17 @@ public class MethodStatementMatcherService {
                 temp.remove(candidateKey, node2);
                 temp.put(node1, node2);
             }
+            if (current == previousValue || current == previousKey) {
+                NormalizedLevenshtein levenshtein = new NormalizedLevenshtein();
+                double distance1 = candidateValue == null ? 1.0 : levenshtein.distance(node1.getExpression(), candidateValue.getExpression());
+                double distance2 = candidateKey == null ? 1.0 : levenshtein.distance(candidateKey.getExpression(), node2.getExpression());
+                double distance3 = levenshtein.distance(node1.getExpression(), node2.getExpression());
+                if (distance3 < distance2 && distance3 < distance1) {
+                    temp.remove(node1, candidateValue);
+                    temp.remove(candidateKey, node2);
+                    temp.put(node1, node2);
+                }
+            }
         } else
             temp.put(node1, node2);
     }
@@ -683,7 +908,8 @@ public class MethodStatementMatcherService {
         Map<StatementNodeTree, StatementNodeTree> temp = new HashMap<>();
         for (StatementNodeTree node1 : deletedStatements) {
             for (StatementNodeTree node2 : addedStatements) {
-                if (typeCompatible(node1, node2) && node1 instanceof OperationNode && node2 instanceof OperationNode) {
+                if (typeCompatible(node1, node2) && node1 instanceof OperationNode && node2 instanceof OperationNode &&
+                        !node1.isRefactored() && !node2.isRefactored()) {
                     double sim = DiceFunction.calculateDiceSimilarity(node1, node2);
                     if (sim < DiceFunction.minSimilarity)
                         continue;
@@ -704,7 +930,7 @@ public class MethodStatementMatcherService {
                     if (DiceFunction.isMatchedGreaterThanAnyOne(matchPair, node1, node2)) {
                         StatementNodeTree parent1 = node1.getParent();
                         StatementNodeTree parent2 = node2.getParent();
-                        if (typeCompatible(parent1, parent2)) {
+                        if (typeCompatible(parent1, parent2) && parent1 instanceof ControlNode && parent2 instanceof ControlNode) {
                             processStatementMap(matchPair, temp, node1, node2);
                             processStatementMap(matchPair, temp, parent1, parent2);
                         }
@@ -729,20 +955,82 @@ public class MethodStatementMatcherService {
     }
 
     private void additionalMatchByContext(MatchPair matchPair) {
+        Set<Pair<StatementNodeTree, StatementNodeTree>> matchedStatements = matchPair.getMatchedStatements();
         Set<StatementNodeTree> deletedStatements = matchPair.getDeletedStatements();
         Set<StatementNodeTree> addedStatements = matchPair.getAddedStatements();
         Map<StatementNodeTree, StatementNodeTree> temp = new HashMap<>();
         for (StatementNodeTree node1 : deletedStatements) {
             for (StatementNodeTree node2 : addedStatements) {
-                if (typeCompatible(node1, node2)) {
-                    double sim = DiceFunction.calculateSimilarity(matchPair, node1, node2);
-                    if (sim < DiceFunction.minSimilarity)
+                if (node1.getType() == StatementType.VARIABLE_DECLARATION_STATEMENT &&
+                        node2.getType() == StatementType.VARIABLE_DECLARATION_STATEMENT &&
+                        !node1.isRefactored() && !node2.isRefactored()) {
+                    double ctxSim = DiceFunction.calculateContextSimilarity(matchPair, node1, node2);
+                    if (ctxSim < 0.25)
                         continue;
-                    processStatementMap(matchPair, temp, node1, node2);
+                    VariableDeclarationStatement variableDeclaration1 = (VariableDeclarationStatement) node1.getStatement();
+                    VariableDeclarationStatement variableDeclaration2 = (VariableDeclarationStatement) node2.getStatement();
+                    VariableDeclarationFragment fragment1 = (VariableDeclarationFragment) variableDeclaration1.fragments().get(0);
+                    VariableDeclarationFragment fragment2 = (VariableDeclarationFragment) variableDeclaration2.fragments().get(0);
+                    String variableName1 = fragment1.getName().getIdentifier();
+                    String variableName2 = fragment2.getName().getIdentifier();
+                    Type type1 = variableDeclaration1.getType();
+                    Type type2 = variableDeclaration2.getType();
+                    double txtSim = DiceFunction.calculateDiceSimilarity(node1, node2);
+                    if (txtSim < 0.15 && !StringUtils.equals(type1.toString(), type2.toString()) &&
+                            !StringUtils.equals(fragment1.getName().getIdentifier(), fragment2.getName().getIdentifier()))
+                        continue;
+                    for (Pair<StatementNodeTree, StatementNodeTree> pair : matchedStatements) {
+                        StatementNodeTree left = pair.getLeft();
+                        StatementNodeTree right = pair.getRight();
+                        List<String> astNodes1 = new ArrayList<>();
+                        List<String> astNodes2 = new ArrayList<>();
+                        left.getStatement().accept(new ASTVisitor() {
+                            @Override
+                            public boolean visit(SimpleName node) {
+                                astNodes1.add(node.getIdentifier());
+                                return true;
+                            }
+                        });
+                        right.getStatement().accept(new ASTVisitor() {
+                            @Override
+                            public boolean visit(SimpleName node) {
+                                astNodes2.add(node.getIdentifier());
+                                return true;
+                            }
+                        });
+                        if (astNodes1.contains(variableName1) && astNodes2.contains(variableName2))
+                            processStatementMap(matchPair, temp, node1, node2);
+                    }
                 }
             }
         }
-        Set<Pair<StatementNodeTree, StatementNodeTree>> matchedStatements = matchPair.getMatchedStatements();
         replacedMap2SetOfMatchedStatements(matchedStatements, deletedStatements, addedStatements, temp);
+    }
+
+    private void additionalMatchByReturn(MatchPair matchPair) {
+        Set<Pair<StatementNodeTree, StatementNodeTree>> matchedStatements = matchPair.getMatchedStatements();
+        Set<StatementNodeTree> deletedStatements = matchPair.getDeletedStatements();
+        Set<StatementNodeTree> addedStatements = matchPair.getAddedStatements();
+        List<StatementNodeTree> returnStatements1 = new ArrayList<>();
+        List<StatementNodeTree> returnStatements2 = new ArrayList<>();
+        for (StatementNodeTree node : deletedStatements) {
+            if (node.getType() == StatementType.RETURN_STATEMENT)
+                returnStatements1.add(node);
+        }
+        for (StatementNodeTree node : addedStatements) {
+            if (node.getType() == StatementType.RETURN_STATEMENT)
+                returnStatements2.add(node);
+        }
+        if (returnStatements1.size() == 1 && returnStatements2.size() == 1) {
+            StatementNodeTree returnStatement1 = returnStatements1.get(0);
+            StatementNodeTree returnStatement2 = returnStatements2.get(0);
+            if (returnStatement1.getDepth() == 1 && returnStatement2.getDepth() == 1) {
+                returnStatement1.setMatched();
+                returnStatement2.setMatched();
+                matchedStatements.add(Pair.of(returnStatement1, returnStatement2));
+                deletedStatements.remove(returnStatement1);
+                addedStatements.remove(returnStatement2);
+            }
+        }
     }
 }

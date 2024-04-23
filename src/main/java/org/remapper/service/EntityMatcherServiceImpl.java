@@ -97,18 +97,27 @@ public class EntityMatcherServiceImpl implements EntityMatcherService {
         Set<DeclarationNodeTree> addedEntities = matchPair.getAddedEntities();
         Set<DeclarationNodeTree> extractedEntities = new HashSet<>();
         Set<DeclarationNodeTree> inlinedEntities = new HashSet<>();
-        List<Pair<String, String>> oldReplacements = new ArrayList<>();
-        List<Pair<String, String>> newReplacements = new ArrayList<>();
         for (Pair<DeclarationNodeTree, DeclarationNodeTree> pair : matchedEntities) {
             DeclarationNodeTree oldEntity = pair.getLeft();
             DeclarationNodeTree newEntity = pair.getRight();
-            if (oldEntity.getType() == EntityType.METHOD && newEntity.getType() == EntityType.METHOD) {
+            List<Pair<String, String>> oldReplacements = new ArrayList<>();
+            List<Pair<String, String>> newReplacements = new ArrayList<>();
+            if ((oldEntity.getType() == EntityType.METHOD && newEntity.getType() == EntityType.METHOD) ||
+                    (oldEntity.getType() == EntityType.INITIALIZER && newEntity.getType() == EntityType.INITIALIZER)) {
                 if (StringUtils.equals(oldEntity.getDeclaration().toString(), newEntity.getDeclaration().toString()))
                     continue;
-                MethodDeclaration removedOperation = (MethodDeclaration) oldEntity.getDeclaration();
-                MethodDeclaration addedOperation = (MethodDeclaration) newEntity.getDeclaration();
-                MethodNode oldMethod = jdtService.parseMethodSNT(oldEntity.getFilePath(), removedOperation);
-                MethodNode newMethod = jdtService.parseMethodSNT(newEntity.getFilePath(), addedOperation);
+                ASTNode removedOperation = oldEntity.getDeclaration();
+                ASTNode addedOperation = newEntity.getDeclaration();
+                MethodNode oldMethod = null;
+                MethodNode newMethod = null;
+                if (oldEntity.getType() == EntityType.METHOD && newEntity.getType() == EntityType.METHOD) {
+                    oldMethod = jdtService.parseMethodSNT(oldEntity.getFilePath(), (MethodDeclaration) removedOperation);
+                    newMethod = jdtService.parseMethodSNT(newEntity.getFilePath(), (MethodDeclaration) addedOperation);
+                }
+                if (oldEntity.getType() == EntityType.INITIALIZER && newEntity.getType() == EntityType.INITIALIZER) {
+                    oldMethod = jdtService.parseMethodSNT(oldEntity.getFilePath(), (Initializer) removedOperation);
+                    newMethod = jdtService.parseMethodSNT(newEntity.getFilePath(), (Initializer) addedOperation);
+                }
                 oldEntity.setMethodNode(oldMethod);
                 oldMethod.setMethodEntity(oldEntity);
                 newEntity.setMethodNode(newMethod);
@@ -121,7 +130,7 @@ public class EntityMatcherServiceImpl implements EntityMatcherService {
                         if (MethodUtils.isGetter(addedMethodDeclaration) || MethodUtils.isSetter(addedMethodDeclaration))
                             continue;
                         double dice = DiceFunction.calculateBodyDice((LeafNode) oldEntity, (LeafNode) newEntity, (LeafNode) addedEntity);
-                        if (dice < DiceFunction.minSimilarity)
+                        if (dice < 0.15)
                             continue;
                         List<StatementNodeTree> allOperations = newMethod.getAllOperations();
                         List<StatementNodeTree> allControls = newMethod.getAllControls();
@@ -152,8 +161,21 @@ public class EntityMatcherServiceImpl implements EntityMatcherService {
                             addedEntity.setMethodNode(addedMethod);
                             addedMethod.setMethodEntity(addedEntity);
                             if (!addedMethod.getChildren().isEmpty()) {
-                                if (locations.size() > 1 || dependencies.size() > 1)
+                                if (locations.size() > 1)
                                     addedMethod.setDuplicated();
+                                if (dependencies.size() > 1) {
+                                    int i = dependencies.size();
+                                    for (EntityInfo dependency : dependencies) {
+                                        for (DeclarationNodeTree entity : addedEntities) {
+                                            if (dependency.equals(entity.getEntity())) {
+                                                i -= 1;
+                                                break;
+                                            }
+                                        }
+                                    }
+                                    if (i > 1)
+                                        addedMethod.setDuplicated();
+                                }
                                 for (StatementNodeTree statement : locations) {
                                     StatementNodeTree parent = statement.getParent();
                                     List<StatementNodeTree> children = parent.getChildren();
@@ -165,8 +187,9 @@ public class EntityMatcherServiceImpl implements EntityMatcherService {
                                         StatementNodeTree proxyStatement = addedMethod.getAllOperations().get(0);
                                         proxyStatement.setMatched();
                                         matchPair.addDeletedStatement(proxyStatement);
-                                        arguments2Parameters(new ArrayList<>(), statement, delegatedEntity, newReplacements);
-                                    }
+                                        arguments2Parameters(new ArrayList<>(), proxyStatement, delegatedEntity, newReplacements);
+                                    } else
+                                        arguments2Parameters(new ArrayList<>(), statement, addedEntity, newReplacements);
                                     addedMethod = delegatedMethod;
                                     if (!addedMethod.getChildren().isEmpty())
                                         children.addAll(i, addedMethod.getChildren().get(0).getChildren());
@@ -246,7 +269,7 @@ public class EntityMatcherServiceImpl implements EntityMatcherService {
                         if (MethodUtils.isGetter(deletedMethodDeclaration) || MethodUtils.isSetter(deletedMethodDeclaration))
                             continue;
                         double dice = DiceFunction.calculateBodyDice((LeafNode) newEntity, (LeafNode) oldEntity, (LeafNode) deletedEntity);
-                        if (dice < DiceFunction.minSimilarity)
+                        if (dice < 0.15)
                             continue;
                         List<StatementNodeTree> allOperations = oldMethod.getAllOperations();
                         List<StatementNodeTree> allControls = oldMethod.getAllControls();
@@ -277,8 +300,21 @@ public class EntityMatcherServiceImpl implements EntityMatcherService {
                             deletedEntity.setMethodNode(deletedMethod);
                             deletedMethod.setMethodEntity(deletedEntity);
                             if (!deletedMethod.getChildren().isEmpty()) {
-                                if (locations.size() > 1 || dependencies.size() > 1)
+                                if (locations.size() > 1)
                                     deletedMethod.setDuplicated();
+                                if (dependencies.size() > 1) {
+                                    int i = dependencies.size();
+                                    for (EntityInfo dependency : dependencies) {
+                                        for (DeclarationNodeTree entity : deletedEntities) {
+                                            if (dependency.equals(entity.getEntity())) {
+                                                i -= 1;
+                                                break;
+                                            }
+                                        }
+                                    }
+                                    if (i > 1)
+                                        deletedMethod.setDuplicated();
+                                }
                                 for (StatementNodeTree statement : locations) {
                                     StatementNodeTree parent = statement.getParent();
                                     List<StatementNodeTree> children = parent.getChildren();
@@ -291,6 +327,8 @@ public class EntityMatcherServiceImpl implements EntityMatcherService {
                                         proxyStatement.setMatched();
                                         matchPair.addDeletedStatement(proxyStatement);
                                         arguments2Parameters(new ArrayList<>(), proxyStatement, delegatedEntity, oldReplacements);
+                                    } else {
+                                        arguments2Parameters(new ArrayList<>(), statement, deletedEntity, oldReplacements);
                                     }
                                     deletedMethod = delegatedMethod;
                                     if (!deletedMethod.getChildren().isEmpty())
@@ -447,6 +485,7 @@ public class EntityMatcherServiceImpl implements EntityMatcherService {
     private boolean hasMethodInvocation(ASTNode statement, MethodDeclaration declaration2) {
         if (statement == null) return false;
         List<MethodInvocation> invocations = new ArrayList<>();
+        List<ConstructorInvocation> constructors = new ArrayList<>();
         statement.accept(new ASTVisitor() {
             @Override
             public boolean visit(MethodInvocation node) {
@@ -455,8 +494,15 @@ public class EntityMatcherServiceImpl implements EntityMatcherService {
                     invocations.add(node);
                 return true;
             }
+
+            public boolean visit(ConstructorInvocation node) {
+                if (declaration2.isConstructor() &&
+                        node.arguments().size() == declaration2.parameters().size())
+                    constructors.add(node);
+                return true;
+            }
         });
-        return !invocations.isEmpty();
+        return !invocations.isEmpty() || !constructors.isEmpty();
     }
 
     /**
@@ -513,21 +559,44 @@ public class EntityMatcherServiceImpl implements EntityMatcherService {
                 }
             }
         }
-        List<MethodInvocation> methodInvocations = new ArrayList<>();
+        List<MethodInvocation> invocations = new ArrayList<>();
+        List<ConstructorInvocation> constructors = new ArrayList<>();
         statement.getStatement().accept(new ASTVisitor() {
             @Override
             public boolean visit(MethodInvocation node) {
-                methodInvocations.add(node);
+                invocations.add(node);
+                return true;
+            }
+
+            @Override
+            public boolean visit(ConstructorInvocation node) {
+                constructors.add(node);
                 return true;
             }
         });
         MethodDeclaration declaration = (MethodDeclaration) additionalMethod.getDeclaration();
         List<SingleVariableDeclaration> parameters = declaration.parameters();
-        for (MethodInvocation methodInvocation : methodInvocations) {
-            if (!methodInvocation.getName().getIdentifier().equals(declaration.getName().getIdentifier()) ||
-                    methodInvocation.arguments().size() != parameters.size())
+        for (MethodInvocation invocation : invocations) {
+            if (!invocation.getName().getIdentifier().equals(declaration.getName().getIdentifier()) ||
+                    invocation.arguments().size() != parameters.size())
                 continue;
-            List<Expression> arguments = methodInvocation.arguments();
+            List<Expression> arguments = invocation.arguments();
+            for (int i = 0; i < parameters.size(); i++) {
+                String argument = arguments.get(i).toString();
+                String parameter = parameters.get(i).getName().getIdentifier();
+                if (variables.containsKey(argument)) {
+                    if (!parameter.equals(variables.get(argument)))
+                        replacements.add(Pair.of(parameter, variables.get(argument)));
+                } else {
+                    if (!parameter.equals(argument))
+                        replacements.add(Pair.of(parameter, argument));
+                }
+            }
+        }
+        for (ConstructorInvocation constructor : constructors) {
+            if (constructor.arguments().size() != parameters.size() || !declaration.isConstructor())
+                continue;
+            List<Expression> arguments = constructor.arguments();
             for (int i = 0; i < parameters.size(); i++) {
                 String argument = arguments.get(i).toString();
                 String parameter = parameters.get(i).getName().getIdentifier();

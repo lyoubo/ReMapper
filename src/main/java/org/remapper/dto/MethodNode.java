@@ -26,6 +26,17 @@ public class MethodNode extends StatementNodeTree {
         allControls = new ArrayList<>();
     }
 
+    public MethodNode(CompilationUnit cu, String filePath, Initializer method) {
+        super(cu, filePath, method);
+        super.setMatched();
+        super.setDepth(0);
+        super.setType(StatementType.METHOD_DECLARATION);
+        super.setExpression("initializer");
+        allBlocks = new ArrayList<>();
+        allOperations = new ArrayList<>();
+        allControls = new ArrayList<>();
+    }
+
     public String getMethodDeclaration(MethodDeclaration methodDeclaration) {
         StringBuilder sb = new StringBuilder();
         int methodModifiers = methodDeclaration.getModifiers();

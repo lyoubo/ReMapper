@@ -203,6 +203,11 @@ public class JDTServiceImpl implements JDTService {
         MethodNode methodNode = new MethodNode(cu, filePath, methodDeclaration);
         methodNode.setStatement(methodDeclaration);
         methodNode.setPosition(methodDeclaration.getStartPosition());
+        parseMethodSNT(filePath, methodDeclaration, methodNode, cu);
+        return methodNode;
+    }
+
+    private void parseMethodSNT(String filePath, ASTNode methodDeclaration, MethodNode methodNode, CompilationUnit cu) {
         StatementVisitor visitor = new StatementVisitor();
         methodDeclaration.accept(visitor);
         List<ASTNode> statements = visitor.getStatements();
@@ -275,6 +280,15 @@ public class JDTServiceImpl implements JDTService {
             snt.setDepth(depth);
             snt.setRoot(methodNode);
         }
+    }
+
+    @Override
+    public MethodNode parseMethodSNT(String filePath, Initializer initializer) {
+        CompilationUnit cu = (CompilationUnit) initializer.getRoot();
+        MethodNode methodNode = new MethodNode(cu, filePath, initializer);
+        methodNode.setStatement(initializer);
+        methodNode.setPosition(initializer.getStartPosition());
+        parseMethodSNT(filePath, initializer, methodNode, cu);
         return methodNode;
     }
 
