@@ -17,9 +17,10 @@ public class MethodStatementMatcherService {
         MatchPair matchPair = new MatchPair();
         matchControls(matchPair, methodBefore, methodAfter);
         matchBlocks(matchPair, methodBefore, methodAfter);
-        matchOperations(matchPair, methodBefore, methodAfter);
-        matchByVariableReplacement(matchPair, methodBefore, methodAfter, originalPair, replacementsBefore, replacementsCurrent);
-        iterativeMatching(matchPair, methodBefore, methodAfter);
+        matchOperations(originalPair, matchPair, methodBefore, methodAfter);
+        Map<EntityType, List<Pair<String, String>>> entityReplacements = getReplacements(originalPair);
+        matchByVariableReplacement(matchPair, methodBefore, methodAfter, originalPair, replacementsBefore, replacementsCurrent, entityReplacements);
+        iterativeMatching(originalPair, matchPair, methodBefore, methodAfter);
 
         List<StatementNodeTree> unmatchedStatementsBefore = methodBefore.getUnmatchedStatements();
         for (StatementNodeTree unmatchedStatement : unmatchedStatementsBefore) {
@@ -38,9 +39,9 @@ public class MethodStatementMatcherService {
             matchPair.addAddedStatement(unmatchedStatement);
         }
 
-        additionalMatchByDice(matchPair);
-        additionalMatchByChildren(matchPair);
-        additionalMatchByContext(matchPair);
+        additionalMatchByDice(originalPair, matchPair);
+        additionalMatchByChildren(originalPair, matchPair);
+        additionalMatchByContext(originalPair, matchPair, entityReplacements);
         additionalMatchByReturn(matchPair);
 
         Set<Pair<StatementNodeTree, StatementNodeTree>> matchedStatements = matchPair.getMatchedStatements();
@@ -318,7 +319,7 @@ public class MethodStatementMatcherService {
         }
     }
 
-    private void matchOperations(MatchPair matchPair, MethodNode methodBefore, MethodNode methodAfter) {
+    private void matchOperations(MatchPair originalPair, MatchPair matchPair, MethodNode methodBefore, MethodNode methodAfter) {
         List<StatementNodeTree> allOperationsBefore = methodBefore.getAllOperations();
         List<StatementNodeTree> allOperationsAfter = methodAfter.getAllOperations();
         /**
@@ -329,7 +330,7 @@ public class MethodStatementMatcherService {
             for (StatementNodeTree node2 : allOperationsAfter) {
                 if (!node1.isMatchedOver() && !node2.isMatchedOver() && isTheSameExpression(node1, node2) &&
                         node1.getDepth() == node2.getDepth()) {
-                    processOperationMap(matchPair, temp1, node1, node2);
+                    processOperationMap(originalPair, matchPair, temp1, node1, node2);
                 }
             }
         }
@@ -341,7 +342,7 @@ public class MethodStatementMatcherService {
         for (StatementNodeTree node1 : allOperationsBefore) {
             for (StatementNodeTree node2 : allOperationsAfter) {
                 if (!node1.isMatchedOver() && !node2.isMatchedOver() && isTheSameExpression(node1, node2)) {
-                    processOperationMap(matchPair, temp2, node1, node2);
+                    processOperationMap(originalPair, matchPair, temp2, node1, node2);
                 }
             }
         }
@@ -356,11 +357,11 @@ public class MethodStatementMatcherService {
                         node2.getType() == StatementType.VARIABLE_DECLARATION_STATEMENT) {
                     VariableDeclarationStatement variableDeclaration1 = (VariableDeclarationStatement) node1.getStatement();
                     VariableDeclarationStatement variableDeclaration2 = (VariableDeclarationStatement) node2.getStatement();
-                    if (variableDeclaration1.getType().toString().equals(variableDeclaration2.getType().toString())) {
+                    if (StringUtils.type2String(variableDeclaration1.getType()).equals(StringUtils.type2String(variableDeclaration2.getType()))) {
                         VariableDeclarationFragment fragment1 = (VariableDeclarationFragment) variableDeclaration1.fragments().get(0);
                         VariableDeclarationFragment fragment2 = (VariableDeclarationFragment) variableDeclaration2.fragments().get(0);
                         if (fragment1.getName().getIdentifier().equals(fragment2.getName().getIdentifier()))
-                            processOperationMap(matchPair, temp3, node1, node2);
+                            processOperationMap(originalPair, matchPair, temp3, node1, node2);
                     }
                 }
             }
@@ -391,38 +392,6 @@ public class MethodStatementMatcherService {
                 node2.setMatched();
             }
         }
-    }
-
-    private void matchByEntityReplacement(MatchPair matchPair, MethodNode methodBefore, MethodNode methodAfter, Map<EntityType, List<Pair<String, String>>> replacements) {
-        Map<StatementNodeTree, StatementNodeTree> temp1 = new LinkedHashMap<>();
-        List<StatementNodeTree> allControlsBefore = methodBefore.getAllControls();
-        List<StatementNodeTree> allControlsAfter = methodAfter.getAllControls();
-        for (StatementNodeTree node1 : allControlsBefore) {
-            for (StatementNodeTree node2 : allControlsAfter) {
-                if (!node1.isMatchedOver() && !node2.isMatchedOver() && equalsWithReplacements(node1.getExpression(), node2.getExpression(), replacements)) {
-                    processControlMap(temp1, node1, node2);
-                    List<StatementNodeTree> children1 = node1.getChildren();
-                    List<StatementNodeTree> children2 = node2.getChildren();
-                    if (children1.size() == 1 && children2.size() == 1) {
-                        StatementNodeTree child1 = children1.get(0);
-                        StatementNodeTree child2 = children2.get(0);
-                        if (child1 instanceof BlockNode && child2 instanceof BlockNode)
-                            processBlockMap(temp1, child1, child2);
-                    }
-                }
-            }
-        }
-        stmtMap2SetOfMatchedStatements(matchPair, temp1);
-        Map<StatementNodeTree, StatementNodeTree> temp2 = new LinkedHashMap<>();
-        List<StatementNodeTree> allOperationsBefore = methodBefore.getAllOperations();
-        List<StatementNodeTree> allOperationsAfter = methodAfter.getAllOperations();
-        for (StatementNodeTree node1 : allOperationsBefore) {
-            for (StatementNodeTree node2 : allOperationsAfter) {
-                if (!node1.isMatchedOver() && !node2.isMatchedOver() && equalsWithReplacements(node1.getExpression(), node2.getExpression(), replacements))
-                    processOperationMap(matchPair, temp2, node1, node2);
-            }
-        }
-        stmtMap2SetOfMatchedStatements(matchPair, temp2);
     }
 
     private boolean equalsWithReplacements(String statement1, String statement2, Map<EntityType, List<Pair<String, String>>> replacements) {
@@ -458,12 +427,12 @@ public class MethodStatementMatcherService {
     }
 
     private void matchByVariableReplacement(MatchPair matchPair, MethodNode methodBefore, MethodNode methodAfter, MatchPair originalPair,
-                                            List<Pair<String, String>> replacementsBefore, List<Pair<String, String>> replacementsCurrent) {
+                                            List<Pair<String, String>> replacementsBefore, List<Pair<String, String>> replacementsCurrent,
+                                            Map<EntityType, List<Pair<String, String>>> entityReplacements) {
         List<StatementNodeTree> allControlsBefore = methodBefore.getAllControls();
         List<StatementNodeTree> allControlsAfter = methodAfter.getAllControls();
         List<StatementNodeTree> allOperationsBefore = methodBefore.getAllOperations();
         List<StatementNodeTree> allOperationsAfter = methodAfter.getAllOperations();
-        Map<EntityType, List<Pair<String, String>>> entityReplacements = getReplacements(originalPair);
         List<StatementNodeTree> allVariablesBefore = allOperationsBefore.stream().filter(
                 node -> node.getType() == StatementType.VARIABLE_DECLARATION_STATEMENT && !node.isMatched()).collect(Collectors.toList());
         List<StatementNodeTree> allVariablesAfter = allOperationsAfter.stream().filter(
@@ -493,7 +462,7 @@ public class MethodStatementMatcherService {
                 if (!node1.isMatchedOver() && !node2.isMatchedOver() &&
                         equalsWithReplacements(matchPair, methodBefore, methodAfter, node1, node2, entityReplacements,
                                 replacementsBefore, replacementsCurrent, allVariablesBefore, allVariablesAfter))
-                    processOperationMap(matchPair, temp2, node1, node2);
+                    processOperationMap(originalPair, matchPair, temp2, node1, node2);
             }
         }
         stmtMap2SetOfMatchedStatements(matchPair, temp2);
@@ -748,13 +717,13 @@ public class MethodStatementMatcherService {
         return replaced1.equals(statement2) || statement1.equals(replaced2) || replaced1.equals(replaced2);
     }
 
-    private void processOperationMap(MatchPair matchPair, Map<StatementNodeTree, StatementNodeTree> temp, StatementNodeTree node1, StatementNodeTree node2) {
+    private void processOperationMap(MatchPair originalPair, MatchPair matchPair, Map<StatementNodeTree, StatementNodeTree> temp, StatementNodeTree node1, StatementNodeTree node2) {
         if (temp.containsKey(node1) || temp.containsValue(node2)) {
             StatementNodeTree candidateValue = temp.get(node1);
             StatementNodeTree candidateKey = getKeyByValue(temp, node2);
-            double previousValue = candidateValue == null ? 0.0 : DiceFunction.calculateContextSimilarity(matchPair, node1, candidateValue);
-            double previousKey = candidateKey == null ? 0.0 : DiceFunction.calculateContextSimilarity(matchPair, candidateKey, node2);
-            double current = DiceFunction.calculateContextSimilarity(matchPair, node1, node2);
+            double previousValue = candidateValue == null ? 0.0 : DiceFunction.calculateContextSimilarity(originalPair, matchPair, node1, candidateValue);
+            double previousKey = candidateKey == null ? 0.0 : DiceFunction.calculateContextSimilarity(originalPair, matchPair, candidateKey, node2);
+            double current = DiceFunction.calculateContextSimilarity(originalPair, matchPair, node1, node2);
             if (current > previousValue && current > previousKey) {
                 temp.remove(node1, candidateValue);
                 temp.remove(candidateKey, node2);
@@ -764,11 +733,11 @@ public class MethodStatementMatcherService {
             temp.put(node1, node2);
     }
 
-    private void iterativeMatching(MatchPair matchPair, MethodNode methodBefore, MethodNode methodAfter) {
-        Set<Pair<StatementNodeTree, StatementNodeTree>> candidateStatements = matchByDiceCoefficient(matchPair, methodBefore, methodAfter);
+    private void iterativeMatching(MatchPair originalPair, MatchPair matchPair, MethodNode methodBefore, MethodNode methodAfter) {
+        Set<Pair<StatementNodeTree, StatementNodeTree>> candidateStatements = matchByDiceCoefficient(originalPair, matchPair, methodBefore, methodAfter);
         matchPair.setCandidateStatements(candidateStatements);
         for (int i = 0; i < 5; i++) {
-            Set<Pair<StatementNodeTree, StatementNodeTree>> temp = matchByDiceCoefficient(matchPair, methodBefore, methodAfter);
+            Set<Pair<StatementNodeTree, StatementNodeTree>> temp = matchByDiceCoefficient(originalPair, matchPair, methodBefore, methodAfter);
             if (matchPair.getCandidateStatements().size() == temp.size() && matchPair.getCandidateStatements().equals(temp)) {
 //                System.out.println("At the " + (i + 1) + "th iteration, the candidate set of statement mapping does not change.");
                 break;
@@ -783,8 +752,8 @@ public class MethodStatementMatcherService {
         matchPair.getCandidateStatements().clear();
     }
 
-    private Set<Pair<StatementNodeTree, StatementNodeTree>> matchByDiceCoefficient(MatchPair matchPair, MethodNode methodBefore,
-                                                                                   MethodNode methodAfter) {
+    private Set<Pair<StatementNodeTree, StatementNodeTree>> matchByDiceCoefficient(MatchPair originalPair, MatchPair matchPair,
+                                                                                   MethodNode methodBefore, MethodNode methodAfter) {
         Set<Pair<StatementNodeTree, StatementNodeTree>> temp = new HashSet<>();
         List<StatementNodeTree> allOperationsBefore = methodBefore.getAllOperations();
         List<StatementNodeTree> allOperationsAfter = methodAfter.getAllOperations();
@@ -795,12 +764,12 @@ public class MethodStatementMatcherService {
         for (StatementNodeTree node1 : allOperationsBefore) {
             for (StatementNodeTree node2 : allOperationsAfter) {
                 if (!node1.isMatchedOver() && !node2.isMatchedOver()) {
-                    if (!typeCompatible(node1, node2))
+                    if (!typeCompatible(matchPair, node1, node2))
                         continue;
-                    double sim = DiceFunction.calculateSimilarity(matchPair, node1, node2);
+                    double sim = DiceFunction.calculateSimilarity(originalPair, matchPair, node1, node2);
                     if (sim < DiceFunction.minSimilarity)
                         continue;
-                    processStatementMap(matchPair, temp1, node1, node2);
+                    processStatementMap(originalPair, matchPair, temp1, node1, node2);
                 }
             }
         }
@@ -817,11 +786,11 @@ public class MethodStatementMatcherService {
         for (StatementNodeTree node1 : allBlocksBefore) {
             for (StatementNodeTree node2 : allBlocksAfter) {
                 if (!node1.isMatchedOver() && !node2.isMatchedOver()) {
-                    if (!typeCompatible(node1, node2))
+                    if (!typeCompatible(matchPair, node1, node2))
                         continue;
-                    if (DiceFunction.calculateSimilarity(matchPair, node1, node2) < DiceFunction.minSimilarity)
+                    if (DiceFunction.calculateSimilarity(originalPair, matchPair, node1, node2) < DiceFunction.minSimilarity)
                         continue;
-                    processStatementMap(matchPair, temp2, node1, node2);
+                    processStatementMap(originalPair, matchPair, temp2, node1, node2);
                 }
             }
         }
@@ -838,11 +807,11 @@ public class MethodStatementMatcherService {
         for (StatementNodeTree node1 : allControlsBefore) {
             for (StatementNodeTree node2 : allControlsAfter) {
                 if (!node1.isMatchedOver() && !node2.isMatchedOver()) {
-                    if (!typeCompatible(node1, node2))
+                    if (!typeCompatible(matchPair, node1, node2))
                         continue;
-                    if (DiceFunction.calculateSimilarity(matchPair, node1, node2) < DiceFunction.minSimilarity)
+                    if (DiceFunction.calculateSimilarity(originalPair, matchPair, node1, node2) < DiceFunction.minSimilarity)
                         continue;
-                    processStatementMap(matchPair, temp3, node1, node2);
+                    processStatementMap(originalPair, matchPair, temp3, node1, node2);
                 }
             }
         }
@@ -853,27 +822,37 @@ public class MethodStatementMatcherService {
         return temp;
     }
 
-    private boolean typeCompatible(StatementNodeTree node1, StatementNodeTree node2) {
+    private boolean typeCompatible(MatchPair matchPair, StatementNodeTree node1, StatementNodeTree node2) {
         if (node1 instanceof BlockNode && node2 instanceof BlockNode)
             return node1.getBlockType() == node2.getBlockType() || (node1.getBlockType() == BlockType.IF_BLOCK && node2.getBlockType() == BlockType.ELSE_BLOCK) ||
                     (node1.getBlockType() == BlockType.ELSE_BLOCK && node2.getBlockType() == BlockType.IF_BLOCK);
-        else
-            return node1.getType() == node2.getType() ||
-                    ((node1.getType() == StatementType.LAMBDA_EXPRESSION_BODY || node1.getType() == StatementType.EXPRESSION_STATEMENT) &&
-                            (node2.getType() == StatementType.LAMBDA_EXPRESSION_BODY || node2.getType() == StatementType.EXPRESSION_STATEMENT)) ||
-                    ((node1.getType() == StatementType.FOR_STATEMENT || node1.getType() == StatementType.ENHANCED_FOR_STATEMENT ||
-                            node1.getType() == StatementType.WHILE_STATEMENT || node1.getType() == StatementType.DO_STATEMENT) &&
-                            (node2.getType() == StatementType.FOR_STATEMENT || node2.getType() == StatementType.ENHANCED_FOR_STATEMENT ||
-                                    node2.getType() == StatementType.WHILE_STATEMENT || node2.getType() == StatementType.DO_STATEMENT));
+        else {
+            boolean isSameType = node1.getType() == node2.getType();
+            boolean isLoopType = (node1.getType() == StatementType.FOR_STATEMENT || node1.getType() == StatementType.ENHANCED_FOR_STATEMENT ||
+                    node1.getType() == StatementType.WHILE_STATEMENT || node1.getType() == StatementType.DO_STATEMENT) &&
+                    (node2.getType() == StatementType.FOR_STATEMENT || node2.getType() == StatementType.ENHANCED_FOR_STATEMENT ||
+                            node2.getType() == StatementType.WHILE_STATEMENT || node2.getType() == StatementType.DO_STATEMENT);
+            boolean isLambdaType = (node1.getType() == StatementType.LAMBDA_EXPRESSION_BODY || node1.getType() == StatementType.EXPRESSION_STATEMENT) &&
+                    (node2.getType() == StatementType.LAMBDA_EXPRESSION_BODY || node2.getType() == StatementType.EXPRESSION_STATEMENT);
+            boolean isExtractedOrInlinedType = false;
+            if ((node1.getType() == StatementType.RETURN_STATEMENT && node2.getType() != StatementType.RETURN_STATEMENT) ||
+                    (node1.getType() != StatementType.RETURN_STATEMENT && node2.getType() == StatementType.RETURN_STATEMENT)) {
+                DeclarationNodeTree entity1 = node1.getRoot().getMethodEntity();
+                DeclarationNodeTree entity2 = node2.getRoot().getMethodEntity();
+                if (!matchPair.getMatchedEntities().contains(Pair.of(entity1, entity2)))
+                    isExtractedOrInlinedType = true;
+            }
+            return isSameType || isLoopType || isLambdaType || isExtractedOrInlinedType;
+        }
     }
 
-    private void processStatementMap(MatchPair matchPair, Map<StatementNodeTree, StatementNodeTree> temp, StatementNodeTree node1, StatementNodeTree node2) {
+    private void processStatementMap(MatchPair originalPair, MatchPair matchPair, Map<StatementNodeTree, StatementNodeTree> temp, StatementNodeTree node1, StatementNodeTree node2) {
         if (temp.containsKey(node1) || temp.containsValue(node2)) {
             StatementNodeTree candidateValue = temp.get(node1);
             StatementNodeTree candidateKey = getKeyByValue(temp, node2);
-            double previousValue = candidateValue == null ? 0.0 : DiceFunction.calculateSimilarity(matchPair, node1, candidateValue);
-            double previousKey = candidateKey == null ? 0.0 : DiceFunction.calculateSimilarity(matchPair, candidateKey, node2);
-            double current = DiceFunction.calculateSimilarity(matchPair, node1, node2);
+            double previousValue = candidateValue == null ? 0.0 : DiceFunction.calculateSimilarity(originalPair, matchPair, node1, candidateValue);
+            double previousKey = candidateKey == null ? 0.0 : DiceFunction.calculateSimilarity(originalPair, matchPair, candidateKey, node2);
+            double current = DiceFunction.calculateSimilarity(originalPair, matchPair, node1, node2);
             if (current > previousValue && current > previousKey) {
                 temp.remove(node1, candidateValue);
                 temp.remove(candidateKey, node2);
@@ -902,37 +881,37 @@ public class MethodStatementMatcherService {
                 .orElse(null);
     }
 
-    private void additionalMatchByDice(MatchPair matchPair) {
+    private void additionalMatchByDice(MatchPair originalPair, MatchPair matchPair) {
         Set<StatementNodeTree> deletedStatements = matchPair.getDeletedStatements();
         Set<StatementNodeTree> addedStatements = matchPair.getAddedStatements();
         Map<StatementNodeTree, StatementNodeTree> temp = new HashMap<>();
         for (StatementNodeTree node1 : deletedStatements) {
             for (StatementNodeTree node2 : addedStatements) {
-                if (typeCompatible(node1, node2) && node1 instanceof OperationNode && node2 instanceof OperationNode &&
+                if (typeCompatible(matchPair, node1, node2) && node1 instanceof OperationNode && node2 instanceof OperationNode &&
                         !node1.isRefactored() && !node2.isRefactored()) {
                     double sim = DiceFunction.calculateDiceSimilarity(node1, node2);
                     if (sim < DiceFunction.minSimilarity)
                         continue;
-                    processStatementMap(matchPair, temp, node1, node2);
+                    processStatementMap(originalPair, matchPair, temp, node1, node2);
                 }
             }
         }
         replacedMap2SetOfMatchedStatements(matchPair.getMatchedStatements(), deletedStatements, addedStatements, temp);
     }
 
-    private void additionalMatchByChildren(MatchPair matchPair) {
+    private void additionalMatchByChildren(MatchPair originalPair, MatchPair matchPair) {
         Set<StatementNodeTree> deletedStatements = matchPair.getDeletedStatements();
         Set<StatementNodeTree> addedStatements = matchPair.getAddedStatements();
         Map<StatementNodeTree, StatementNodeTree> temp = new HashMap<>();
         for (StatementNodeTree node1 : deletedStatements) {
             for (StatementNodeTree node2 : addedStatements) {
-                if (typeCompatible(node1, node2) && node1 instanceof BlockNode && node2 instanceof BlockNode) {
+                if (typeCompatible(matchPair, node1, node2) && node1 instanceof BlockNode && node2 instanceof BlockNode) {
                     if (DiceFunction.isMatchedGreaterThanAnyOne(matchPair, node1, node2)) {
                         StatementNodeTree parent1 = node1.getParent();
                         StatementNodeTree parent2 = node2.getParent();
-                        if (typeCompatible(parent1, parent2) && parent1 instanceof ControlNode && parent2 instanceof ControlNode) {
-                            processStatementMap(matchPair, temp, node1, node2);
-                            processStatementMap(matchPair, temp, parent1, parent2);
+                        if (typeCompatible(matchPair, parent1, parent2) && parent1 instanceof ControlNode && parent2 instanceof ControlNode) {
+                            processStatementMap(originalPair, matchPair, temp, node1, node2);
+                            processStatementMap(originalPair, matchPair, temp, parent1, parent2);
                         }
                     }
                 }
@@ -954,7 +933,7 @@ public class MethodStatementMatcherService {
         }
     }
 
-    private void additionalMatchByContext(MatchPair matchPair) {
+    private void additionalMatchByContext(MatchPair originalPair, MatchPair matchPair, Map<EntityType, List<Pair<String, String>>> entityReplacements) {
         Set<Pair<StatementNodeTree, StatementNodeTree>> matchedStatements = matchPair.getMatchedStatements();
         Set<StatementNodeTree> deletedStatements = matchPair.getDeletedStatements();
         Set<StatementNodeTree> addedStatements = matchPair.getAddedStatements();
@@ -962,9 +941,8 @@ public class MethodStatementMatcherService {
         for (StatementNodeTree node1 : deletedStatements) {
             for (StatementNodeTree node2 : addedStatements) {
                 if (node1.getType() == StatementType.VARIABLE_DECLARATION_STATEMENT &&
-                        node2.getType() == StatementType.VARIABLE_DECLARATION_STATEMENT &&
-                        !node1.isRefactored() && !node2.isRefactored()) {
-                    double ctxSim = DiceFunction.calculateContextSimilarity(matchPair, node1, node2);
+                        node2.getType() == StatementType.VARIABLE_DECLARATION_STATEMENT) {
+                    double ctxSim = DiceFunction.calculateContextSimilarity(originalPair, matchPair, node1, node2);
                     if (ctxSim < 0.25)
                         continue;
                     VariableDeclarationStatement variableDeclaration1 = (VariableDeclarationStatement) node1.getStatement();
@@ -975,31 +953,45 @@ public class MethodStatementMatcherService {
                     String variableName2 = fragment2.getName().getIdentifier();
                     Type type1 = variableDeclaration1.getType();
                     Type type2 = variableDeclaration2.getType();
-                    double txtSim = DiceFunction.calculateDiceSimilarity(node1, node2);
-                    if (txtSim < 0.15 && !StringUtils.equals(type1.toString(), type2.toString()) &&
-                            !StringUtils.equals(fragment1.getName().getIdentifier(), fragment2.getName().getIdentifier()))
-                        continue;
-                    for (Pair<StatementNodeTree, StatementNodeTree> pair : matchedStatements) {
-                        StatementNodeTree left = pair.getLeft();
-                        StatementNodeTree right = pair.getRight();
-                        List<String> astNodes1 = new ArrayList<>();
-                        List<String> astNodes2 = new ArrayList<>();
-                        left.getStatement().accept(new ASTVisitor() {
-                            @Override
-                            public boolean visit(SimpleName node) {
-                                astNodes1.add(node.getIdentifier());
-                                return true;
-                            }
-                        });
-                        right.getStatement().accept(new ASTVisitor() {
-                            @Override
-                            public boolean visit(SimpleName node) {
-                                astNodes2.add(node.getIdentifier());
-                                return true;
-                            }
-                        });
-                        if (astNodes1.contains(variableName1) && astNodes2.contains(variableName2))
-                            processStatementMap(matchPair, temp, node1, node2);
+                    Expression initializer1 = fragment1.getInitializer();
+                    Expression initializer2 = fragment2.getInitializer();
+                    if (initializer1 != null && initializer2 != null && initializer1.toString().equals(initializer2.toString()))
+                        processStatementMap(originalPair, matchPair, temp, node1, node2);
+                    if (initializer1 instanceof ClassInstanceCreation && initializer2 instanceof ClassInstanceCreation) {
+                        ClassInstanceCreation creation1 = (ClassInstanceCreation) initializer1;
+                        ClassInstanceCreation creation2 = (ClassInstanceCreation) initializer2;
+                        String classType1 = creation1.getType().toString();
+                        String classType2 = creation2.getType().toString();
+                        if (entityReplacements.get(EntityType.CLASS) != null && entityReplacements.get(EntityType.CLASS).contains(Pair.of(classType1, classType2)))
+                            processStatementMap(originalPair, matchPair, temp, node1, node2);
+                    }
+                    if (!node1.isRefactored() && !node2.isRefactored()) {
+                        double txtSim = DiceFunction.calculateDiceSimilarity(node1, node2);
+                        if (txtSim < 0.15 && !StringUtils.equals(type1.toString(), type2.toString()) &&
+                                !StringUtils.equals(fragment1.getName().getIdentifier(), fragment2.getName().getIdentifier()))
+                            continue;
+                        for (Pair<StatementNodeTree, StatementNodeTree> pair : matchedStatements) {
+                            StatementNodeTree left = pair.getLeft();
+                            StatementNodeTree right = pair.getRight();
+                            List<String> astNodes1 = new ArrayList<>();
+                            List<String> astNodes2 = new ArrayList<>();
+                            left.getStatement().accept(new ASTVisitor() {
+                                @Override
+                                public boolean visit(SimpleName node) {
+                                    astNodes1.add(node.getIdentifier());
+                                    return true;
+                                }
+                            });
+                            right.getStatement().accept(new ASTVisitor() {
+                                @Override
+                                public boolean visit(SimpleName node) {
+                                    astNodes2.add(node.getIdentifier());
+                                    return true;
+                                }
+                            });
+                            if (astNodes1.contains(variableName1) && astNodes2.contains(variableName2))
+                                processStatementMap(originalPair, matchPair, temp, node1, node2);
+                        }
                     }
                 }
             }

@@ -61,6 +61,7 @@ public class EntityMatcherServiceImpl implements EntityMatcherService {
         MatchPair matchPair = new MatchPair();
         entityMatchingService.matchEntities(gitService, jdtService, repository, currentCommit, matchPair);
         matchStatementsInMethodPairs(matchPair, jdtService);
+        findRefactoringsBetweenAttributesAndVariables(matchPair);
         handler.handle(commitId, matchPair);
         return matchPair;
     }
@@ -97,6 +98,22 @@ public class EntityMatcherServiceImpl implements EntityMatcherService {
         Set<DeclarationNodeTree> addedEntities = matchPair.getAddedEntities();
         Set<DeclarationNodeTree> extractedEntities = new HashSet<>();
         Set<DeclarationNodeTree> inlinedEntities = new HashSet<>();
+        for (DeclarationNodeTree deletedEntity : deletedEntities) {
+            if (deletedEntity.getType() != EntityType.METHOD)
+                continue;
+            MethodDeclaration deletedMethodDeclaration = (MethodDeclaration) deletedEntity.getDeclaration();
+            MethodNode deletedMethod = jdtService.parseMethodSNT(deletedEntity.getFilePath(), deletedMethodDeclaration);
+            deletedEntity.setMethodNode(deletedMethod);
+            deletedMethod.setMethodEntity(deletedEntity);
+        }
+        for (DeclarationNodeTree addedEntity : addedEntities) {
+            if (addedEntity.getType() != EntityType.METHOD)
+                continue;
+            MethodDeclaration addedMethodDeclaration = (MethodDeclaration) addedEntity.getDeclaration();
+            MethodNode addedMethod = jdtService.parseMethodSNT(addedEntity.getFilePath(), addedMethodDeclaration);
+            addedEntity.setMethodNode(addedMethod);
+            addedMethod.setMethodEntity(addedEntity);
+        }
         for (Pair<DeclarationNodeTree, DeclarationNodeTree> pair : matchedEntities) {
             DeclarationNodeTree oldEntity = pair.getLeft();
             DeclarationNodeTree newEntity = pair.getRight();
@@ -130,7 +147,7 @@ public class EntityMatcherServiceImpl implements EntityMatcherService {
                         if (MethodUtils.isGetter(addedMethodDeclaration) || MethodUtils.isSetter(addedMethodDeclaration))
                             continue;
                         double dice = DiceFunction.calculateBodyDice((LeafNode) oldEntity, (LeafNode) newEntity, (LeafNode) addedEntity);
-                        if (dice < 0.15)
+                        if (dice == 0)
                             continue;
                         List<StatementNodeTree> allOperations = newMethod.getAllOperations();
                         List<StatementNodeTree> allControls = newMethod.getAllControls();
@@ -157,9 +174,7 @@ public class EntityMatcherServiceImpl implements EntityMatcherService {
                             findMethodInvocation(allOperations, allControls, addedEntity, locations);
                         }
                         if (!locations.isEmpty()) {
-                            MethodNode addedMethod = addedEntity.getMethodNode() == null ? jdtService.parseMethodSNT(addedEntity.getFilePath(), addedMethodDeclaration) : addedEntity.getMethodNode();
-                            addedEntity.setMethodNode(addedMethod);
-                            addedMethod.setMethodEntity(addedEntity);
+                            MethodNode addedMethod = addedEntity.getMethodNode();
                             if (!addedMethod.getChildren().isEmpty()) {
                                 if (locations.size() > 1)
                                     addedMethod.setDuplicated();
@@ -269,7 +284,7 @@ public class EntityMatcherServiceImpl implements EntityMatcherService {
                         if (MethodUtils.isGetter(deletedMethodDeclaration) || MethodUtils.isSetter(deletedMethodDeclaration))
                             continue;
                         double dice = DiceFunction.calculateBodyDice((LeafNode) newEntity, (LeafNode) oldEntity, (LeafNode) deletedEntity);
-                        if (dice < 0.15)
+                        if (dice == 0)
                             continue;
                         List<StatementNodeTree> allOperations = oldMethod.getAllOperations();
                         List<StatementNodeTree> allControls = oldMethod.getAllControls();
@@ -296,9 +311,7 @@ public class EntityMatcherServiceImpl implements EntityMatcherService {
                             findMethodInvocation(allOperations, allControls, deletedEntity, locations);
                         }
                         if (!locations.isEmpty()) {
-                            MethodNode deletedMethod = deletedEntity.getMethodNode() == null ? jdtService.parseMethodSNT(deletedEntity.getFilePath(), deletedMethodDeclaration) : deletedEntity.getMethodNode();
-                            deletedEntity.setMethodNode(deletedMethod);
-                            deletedMethod.setMethodEntity(deletedEntity);
+                            MethodNode deletedMethod = deletedEntity.getMethodNode();
                             if (!deletedMethod.getChildren().isEmpty()) {
                                 if (locations.size() > 1)
                                     deletedMethod.setDuplicated();
@@ -677,5 +690,228 @@ public class EntityMatcherServiceImpl implements EntityMatcherService {
             }
         }
         return false;
+    }
+
+    private void findRefactoringsBetweenAttributesAndVariables(MatchPair matchPair) {
+        Set<Pair<DeclarationNodeTree, DeclarationNodeTree>> matchedEntityDeletion = new HashSet<>();
+        Set<StatementNodeTree> deletedStatementDeletion = new HashSet<>();
+        Set<StatementNodeTree> addedStatementDeletion = new HashSet<>();
+        Set<Pair<DeclarationNodeTree, DeclarationNodeTree>> matchedEntities = matchPair.getMatchedEntities();
+        Set<StatementNodeTree> deletedStatements = matchPair.getDeletedStatements();
+        Set<StatementNodeTree> addedStatements = matchPair.getAddedStatements();
+        Set<Pair<StatementNodeTree, StatementNodeTree>> matchedStatements = matchPair.getMatchedStatements();
+        for (Pair<DeclarationNodeTree, DeclarationNodeTree> entityPair : matchedEntities) {
+            DeclarationNodeTree dntBefore = entityPair.getLeft();
+            DeclarationNodeTree dntCurrent = entityPair.getRight();
+            if (dntBefore.getType() != EntityType.FIELD || dntCurrent.getType() != EntityType.FIELD)
+                continue;
+            FieldDeclaration fd1 = (FieldDeclaration) dntBefore.getDeclaration();
+            FieldDeclaration fd2 = (FieldDeclaration) dntCurrent.getDeclaration();
+            String type1 = StringUtils.type2String(fd1.getType());
+            String type2 = StringUtils.type2String(fd2.getType());
+            VariableDeclarationFragment fragment1 = (VariableDeclarationFragment) fd1.fragments().get(0);
+            VariableDeclarationFragment fragment2 = (VariableDeclarationFragment) fd2.fragments().get(0);
+            if (StringUtils.equals(type1, type2) || StringUtils.equals(fragment1.getName().getIdentifier(), fragment2.getName().getIdentifier()))
+                continue;
+            for (StatementNodeTree statement : deletedStatements) {
+                if (statement.getType() != StatementType.VARIABLE_DECLARATION_STATEMENT)
+                    continue;
+                VariableDeclarationStatement variableDeclaration = (VariableDeclarationStatement) statement.getStatement();
+                String type = StringUtils.type2String(variableDeclaration.getType());
+                if (!StringUtils.equals(type, type2) && !type.equals("var") && !type2.equals("var"))
+                    continue;
+                VariableDeclarationFragment fragment = (VariableDeclarationFragment) variableDeclaration.fragments().get(0);
+                for (Pair<StatementNodeTree, StatementNodeTree> statementPair : matchedStatements) {
+                    StatementNodeTree sntBefore = statementPair.getLeft();
+                    StatementNodeTree sntCurrent = statementPair.getRight();
+                    String expression1 = sntBefore.getExpression();
+                    String expression2 = sntCurrent.getExpression();
+                    if (!fragment.getName().getIdentifier().equals(fragment2.getName().getIdentifier()) && !expression1.equals(expression2) &&
+                            expression1.replace(fragment.getName().getIdentifier(), fragment2.getName().getIdentifier()).equals(expression2)) {
+                        matchPair.addVariableMapAttributes(statement, dntCurrent);
+                        dntBefore.setMatched(false);
+                        matchedEntityDeletion.add(entityPair);
+                        deletedStatementDeletion.add(statement);
+                    }
+                    if (fragment.getName().getIdentifier().equals(fragment2.getName().getIdentifier()) && expression1.equals(expression2) &&
+                            contains(sntBefore, fragment.getName().getIdentifier())) {
+                        matchPair.addVariableMapAttributes(statement, dntCurrent);
+                        dntBefore.setMatched(false);
+                        matchedEntityDeletion.add(entityPair);
+                        deletedStatementDeletion.add(statement);
+                    }
+                }
+            }
+            for (StatementNodeTree statement : addedStatements) {
+                if (statement.getType() != StatementType.VARIABLE_DECLARATION_STATEMENT)
+                    continue;
+                VariableDeclarationStatement variableDeclaration = (VariableDeclarationStatement) statement.getStatement();
+                String type = StringUtils.type2String(variableDeclaration.getType());
+                if (!StringUtils.equals(type1, type) && !type1.equals("var") && !type.equals("var"))
+                    continue;
+                VariableDeclarationFragment fragment = (VariableDeclarationFragment) variableDeclaration.fragments().get(0);
+                for (Pair<StatementNodeTree, StatementNodeTree> statementPair : matchedStatements) {
+                    StatementNodeTree sntBefore = statementPair.getLeft();
+                    StatementNodeTree sntCurrent = statementPair.getRight();
+                    String expression1 = sntBefore.getExpression();
+                    String expression2 = sntCurrent.getExpression();
+                    if (!fragment1.getName().getIdentifier().equals(fragment.getName().getIdentifier()) &&!expression1.equals(expression2) &&
+                            expression1.replace(fragment1.getName().getIdentifier(), fragment.getName().getIdentifier()).equals(expression2)) {
+                        matchPair.addAttributeMapVariables(dntBefore, statement);
+                        dntCurrent.setMatched(false);
+                        matchedEntityDeletion.add(entityPair);
+                        addedStatementDeletion.add(statement);
+                    }
+                    if (fragment1.getName().getIdentifier().equals(fragment.getName().getIdentifier()) && expression1.equals(expression2) &&
+                            contains(sntBefore, fragment1.getName().getIdentifier())) {
+                        matchPair.addAttributeMapVariables(dntBefore, statement);
+                        dntCurrent.setMatched(false);
+                        matchedEntityDeletion.add(entityPair);
+                        addedStatementDeletion.add(statement);
+                    }
+                }
+            }
+        }
+        matchedEntities.removeAll(matchedEntityDeletion);
+        for (StatementNodeTree statement : deletedStatementDeletion) {
+            statement.setMatched();
+            deletedStatements.remove(statement);
+        }
+        for (StatementNodeTree statement : addedStatementDeletion) {
+            statement.setMatched();
+            addedStatements.remove(statement);
+        }
+    }
+
+    private boolean contains(StatementNodeTree snt, String name) {
+        List<String> list = new ArrayList<>();
+        if (snt.getType() == StatementType.DO_STATEMENT) {
+            DoStatement doStatement = (DoStatement) snt.getStatement();
+            Expression expression = doStatement.getExpression();
+            expression.accept(new ASTVisitor() {
+                @Override
+                public boolean visit(SimpleName node) {
+                    list.add(node.getIdentifier());
+                    return true;
+                }
+            });
+            return list.contains(name);
+        } else if (snt.getType() == StatementType.ENHANCED_FOR_STATEMENT) {
+            EnhancedForStatement enhancedForStatement = (EnhancedForStatement) snt.getStatement();
+            SingleVariableDeclaration parameter = enhancedForStatement.getParameter();
+            Expression expression = enhancedForStatement.getExpression();
+            parameter.accept(new ASTVisitor() {
+                @Override
+                public boolean visit(SimpleName node) {
+                    list.add(node.getIdentifier());
+                    return true;
+                }
+            });
+            parameter.accept(new ASTVisitor() {
+                @Override
+                public boolean visit(SimpleName node) {
+                    list.add(node.getIdentifier());
+                    return true;
+                }
+            });
+            return list.contains(name);
+        } else if (snt.getType() == StatementType.FOR_STATEMENT) {
+            ForStatement forStatement = (ForStatement) snt.getStatement();
+            List<Expression> initializers = forStatement.initializers();
+            Expression expression = forStatement.getExpression();
+            List<Expression> updaters = forStatement.updaters();
+            for (Expression initializer : initializers) {
+                initializer.accept(new ASTVisitor() {
+                    @Override
+                    public boolean visit(SimpleName node) {
+                        list.add(node.getIdentifier());
+                        return true;
+                    }
+                });
+            }
+            expression.accept(new ASTVisitor() {
+                @Override
+                public boolean visit(SimpleName node) {
+                    list.add(node.getIdentifier());
+                    return true;
+                }
+            });
+            for (Expression updater : updaters) {
+                updater.accept(new ASTVisitor() {
+                    @Override
+                    public boolean visit(SimpleName node) {
+                        list.add(node.getIdentifier());
+                        return true;
+                    }
+                });
+            }
+            return list.contains(name);
+        } else if (snt.getType() == StatementType.IF_STATEMENT) {
+            IfStatement ifStatement = (IfStatement) snt.getStatement();
+            Expression expression = ifStatement.getExpression();
+            expression.accept(new ASTVisitor() {
+                @Override
+                public boolean visit(SimpleName node) {
+                    list.add(node.getIdentifier());
+                    return true;
+                }
+            });
+            return list.contains(name);
+        } else if (snt.getType() == StatementType.SWITCH_STATEMENT) {
+            SwitchStatement switchStatement = (SwitchStatement) snt.getStatement();
+            Expression expression = switchStatement.getExpression();
+            expression.accept(new ASTVisitor() {
+                @Override
+                public boolean visit(SimpleName node) {
+                    list.add(node.getIdentifier());
+                    return true;
+                }
+            });
+            return list.contains(name);
+        } else if (snt.getType() == StatementType.TRY_STATEMENT) {
+            TryStatement tryStatement = (TryStatement) snt.getStatement();
+            List<Expression> resources = tryStatement.resources();
+            for (Expression resource : resources) {
+                resource.accept(new ASTVisitor() {
+                    @Override
+                    public boolean visit(SimpleName node) {
+                        list.add(node.getIdentifier());
+                        return true;
+                    }
+                });
+            }
+            return list.contains(name);
+        } else if (snt.getType() == StatementType.WHILE_STATEMENT) {
+            WhileStatement whileStatement = (WhileStatement) snt.getStatement();
+            Expression expression = whileStatement.getExpression();
+            expression.accept(new ASTVisitor() {
+                @Override
+                public boolean visit(SimpleName node) {
+                    list.add(node.getIdentifier());
+                    return true;
+                }
+            });
+            return list.contains(name);
+        } else if (snt.getType() == StatementType.CATCH_CLAUSE) {
+            CatchClause catchClause = (CatchClause) snt.getStatement();
+            SingleVariableDeclaration variable = catchClause.getException();
+            variable.accept(new ASTVisitor() {
+                @Override
+                public boolean visit(SimpleName node) {
+                    list.add(node.getIdentifier());
+                    return true;
+                }
+            });
+            return list.contains(name);
+        }
+        ASTNode statement = snt.getStatement();
+        statement.accept(new ASTVisitor() {
+            @Override
+            public boolean visit(SimpleName node) {
+                list.add(node.getIdentifier());
+                return true;
+            }
+        });
+        return list.contains(name);
     }
 }

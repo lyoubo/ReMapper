@@ -1,5 +1,6 @@
 package org.remapper.service;
 
+import info.debatty.java.stringsimilarity.NormalizedLevenshtein;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang3.tuple.Pair;
@@ -57,6 +58,7 @@ public class SoftwareEntityMatcherService {
 
         matchByNameAndSignature(matchPair, modifiedFiles, fileDNTsBefore, fileDNTsCurrent);
         matchByDiceCoefficient(matchPair, modifiedFiles, renamedFiles, deletedFiles, addedFiles, fileDNTsBefore, fileDNTsCurrent);
+        matchByIntroduceObjectRefactoring(matchPair);
 
         gitService.checkoutCurrent(repository, commitId);
         String projectPath = repository.getWorkTree().getPath();
@@ -97,6 +99,7 @@ public class SoftwareEntityMatcherService {
 
         matchByNameAndSignature(matchPair, modifiedFiles, fileDNTsBefore, fileDNTsCurrent);
         matchByDiceCoefficient(matchPair, modifiedFiles, renamedFiles, deletedFiles, addedFiles, fileDNTsBefore, fileDNTsCurrent);
+        matchByIntroduceObjectRefactoring(matchPair);
 
         populateCurrentDependencies(matchPair, projectPath, modifiedFiles, renamedFiles, addedFiles);
         populateBeforeDependencies(matchPair, projectPath, modifiedFiles, renamedFiles, deletedFiles);
@@ -265,7 +268,9 @@ public class SoftwareEntityMatcherService {
                     } else if (node1.getType() == EntityType.FIELD) {
                         FieldDeclaration fd1 = ((FieldDeclaration) node1.getDeclaration());
                         FieldDeclaration fd2 = ((FieldDeclaration) node2.getDeclaration());
-                        if (StringUtils.equals(fd1.getType().toString(), fd2.getType().toString())) {
+                        UMLType type1 = UMLType.extractTypeObject(fd1.getType());
+                        UMLType type2 = UMLType.extractTypeObject(fd2.getType());
+                        if (type1 != null && type2 != null && type1.compatibleTypes(type2)) {
                             node1.setMatched();
                             node2.setMatched();
                             matchPair.addMatchedEntity(node1, node2);
@@ -275,10 +280,10 @@ public class SoftwareEntityMatcherService {
                         MethodDeclaration md1 = ((MethodDeclaration) node1.getDeclaration());
                         MethodDeclaration md2 = ((MethodDeclaration) node2.getDeclaration());
                         String pl1 = ((List<SingleVariableDeclaration>) md1.parameters()).stream().
-                                map(declaration -> declaration.isVarargs() ? declaration.getType().toString() + "[]" : declaration.getType().toString()).
+                                map(declaration -> declaration.isVarargs() ? StringUtils.type2String(declaration.getType()) + "[]" : StringUtils.type2String(declaration.getType())).
                                 collect(Collectors.joining(","));
                         String pl2 = ((List<SingleVariableDeclaration>) md2.parameters()).stream().
-                                map(declaration -> declaration.isVarargs() ? declaration.getType().toString() + "[]" : declaration.getType().toString()).
+                                map(declaration -> declaration.isVarargs() ? StringUtils.type2String(declaration.getType()) + "[]" : StringUtils.type2String(declaration.getType())).
                                 collect(Collectors.joining(","));
                         String tp1 = ((List<TypeParameter>) md1.typeParameters()).stream().
                                 map(TypeParameter::toString).
@@ -293,18 +298,22 @@ public class SoftwareEntityMatcherService {
                             matchPair.addMatchedEntity(node1, node2);
                             break;
                         }
-                        if (md1.getReturnType2() != null && md2.getReturnType2() != null &&
-                                StringUtils.equals(md1.getReturnType2().toString(), md2.getReturnType2().toString()) &&
-                                StringUtils.equals(pl1, pl2) && StringUtils.equals(tp1, tp2)) {
-                            node1.setMatched();
-                            node2.setMatched();
-                            matchPair.addMatchedEntity(node1, node2);
-                            break;
+                        if (md1.getReturnType2() != null && md2.getReturnType2() != null) {
+                            UMLType type1 = UMLType.extractTypeObject(md1.getReturnType2());
+                            UMLType type2 = UMLType.extractTypeObject(md2.getReturnType2());
+                            if (type1 != null && type2 != null && type1.compatibleTypes(type2) && StringUtils.equals(pl1, pl2) && StringUtils.equals(tp1, tp2)) {
+                                node1.setMatched();
+                                node2.setMatched();
+                                matchPair.addMatchedEntity(node1, node2);
+                                break;
+                            }
                         }
                     } else if (node1.getType() == EntityType.ANNOTATION_MEMBER) {
                         AnnotationTypeMemberDeclaration atd1 = ((AnnotationTypeMemberDeclaration) node1.getDeclaration());
                         AnnotationTypeMemberDeclaration atd2 = ((AnnotationTypeMemberDeclaration) node2.getDeclaration());
-                        if (StringUtils.equals(atd1.getType().toString(), atd2.getType().toString())) {
+                        UMLType type1 = UMLType.extractTypeObject(atd1.getType());
+                        UMLType type2 = UMLType.extractTypeObject(atd2.getType());
+                        if (type1 != null && type2 != null && type1.compatibleTypes(type2)) {
                             node1.setMatched();
                             node2.setMatched();
                             matchPair.addMatchedEntity(node1, node2);
@@ -354,8 +363,7 @@ public class SoftwareEntityMatcherService {
         return repairPublicClass;
     }
 
-    private void matchByDiceCoefficient(MatchPair
-                                                matchPair, Set<String> modifiedFiles, Map<String, String> renamedFiles,
+    private void matchByDiceCoefficient(MatchPair matchPair, Set<String> modifiedFiles, Map<String, String> renamedFiles,
                                         Set<String> deletedFiles, Set<String> addedFiles, Map<String, RootNode> fileDNTsBefore,
                                         Map<String, RootNode> fileDNTsCurrent) {
         for (String filePath : modifiedFiles) {
@@ -404,8 +412,7 @@ public class SoftwareEntityMatcherService {
         matchPair.getAddedEntities().removeAll(matchPair.getCandidateEntitiesRight());
     }
 
-    private void matchLeafNodesByDice(MatchPair
-                                              matchPair, List<LeafNode> leafNodesBefore, List<LeafNode> leafNodesCurrent) {
+    private void matchLeafNodesByDice(MatchPair matchPair, List<LeafNode> leafNodesBefore, List<LeafNode> leafNodesCurrent) {
         List<EntityPair> entityPairs = new ArrayList<>();
         for (LeafNode leafBefore : leafNodesBefore) {
             for (LeafNode leafCurrent : leafNodesCurrent) {
@@ -422,8 +429,7 @@ public class SoftwareEntityMatcherService {
         addCandidateEntities(matchPair, entityPairs);
     }
 
-    private void matchInternalNodesByDice(MatchPair
-                                                  matchPair, List<InternalNode> internalNodesBefore, List<InternalNode> internalNodesCurrent) {
+    private void matchInternalNodesByDice(MatchPair matchPair, List<InternalNode> internalNodesBefore, List<InternalNode> internalNodesCurrent) {
         List<EntityPair> entityPairs = new ArrayList<>();
         for (InternalNode internalBefore : internalNodesBefore) {
             for (InternalNode internalCurrent : internalNodesCurrent) {
@@ -455,8 +461,7 @@ public class SoftwareEntityMatcherService {
         }
     }
 
-    private void populateEntityDependencies(ProjectParser
-                                                    parser, Map<EntityInfo, List<EntityInfo>> dependencies, Map<String, List<ASTNode>> astNodes) {
+    private void populateEntityDependencies(ProjectParser parser, Map<EntityInfo, List<EntityInfo>> dependencies, Map<String, List<ASTNode>> astNodes) {
         for (String filePath : parser.getRelatedJavaFiles()) {
             ASTParser astParser = ASTParserUtils.getASTParser(parser.getSourcepathEntries(), parser.getEncodings());
             try {
@@ -489,9 +494,8 @@ public class SoftwareEntityMatcherService {
         }
     }
 
-    private void populateDependencyOnTypeDeclaration
-            (List<TypeDeclaration> typeDeclarations, Map<EntityInfo, List<EntityInfo>> dependencies, CompilationUnit
-                    cu, String filePath) {
+    private void populateDependencyOnTypeDeclaration(List<TypeDeclaration> typeDeclarations,
+                                                     Map<EntityInfo, List<EntityInfo>> dependencies, CompilationUnit cu, String filePath) {
         for (TypeDeclaration declaration : typeDeclarations) {
             Type superclassType = declaration.getSuperclassType();
             List<Type> superInterfaceTypes = declaration.superInterfaceTypes();
@@ -509,9 +513,8 @@ public class SoftwareEntityMatcherService {
         }
     }
 
-    private void populateDependencyOnEnumDeclaration
-            (List<EnumDeclaration> enumDeclarations, Map<EntityInfo, List<EntityInfo>> dependencies, CompilationUnit
-                    cu, String filePath) {
+    private void populateDependencyOnEnumDeclaration(List<EnumDeclaration> enumDeclarations,
+                                                     Map<EntityInfo, List<EntityInfo>> dependencies, CompilationUnit cu, String filePath) {
         for (EnumDeclaration declaration : enumDeclarations) {
             List<Type> superInterfaceTypes = declaration.superInterfaceTypes();
             List<IExtendedModifier> modifiers = declaration.modifiers();
@@ -525,9 +528,8 @@ public class SoftwareEntityMatcherService {
         }
     }
 
-    private void populateDependencyOnAnnotationTypeDeclaration
-            (List<AnnotationTypeDeclaration> annotationTypeDeclarations, Map<EntityInfo, List<EntityInfo>> dependencies, CompilationUnit
-                    cu, String filePath) {
+    private void populateDependencyOnAnnotationTypeDeclaration(List<AnnotationTypeDeclaration> annotationTypeDeclarations,
+                                                               Map<EntityInfo, List<EntityInfo>> dependencies, CompilationUnit cu, String filePath) {
         for (AnnotationTypeDeclaration declaration : annotationTypeDeclarations) {
             List<IExtendedModifier> modifiers = declaration.modifiers();
             List<EntityInfo> entityUsages = new ArrayList<>();
@@ -565,8 +567,7 @@ public class SoftwareEntityMatcherService {
         }
     }
 
-    private void populateWithSuperInterfaceTypes
-            (List<Type> superInterfaceTypes, List<EntityInfo> dependencies) {
+    private void populateWithSuperInterfaceTypes(List<Type> superInterfaceTypes, List<EntityInfo> dependencies) {
         for (Type superInterfaceType : superInterfaceTypes) {
             NodeUsageVisitor visitor = new NodeUsageVisitor();
             superInterfaceType.accept(visitor);
@@ -574,8 +575,7 @@ public class SoftwareEntityMatcherService {
         }
     }
 
-    private void populateWithTypeParameters
-            (List<TypeParameter> typeParameters, List<EntityInfo> entityUsages) {
+    private void populateWithTypeParameters(List<TypeParameter> typeParameters, List<EntityInfo> entityUsages) {
         for (TypeParameter typeParameter : typeParameters) {
             NodeUsageVisitor visitor = new NodeUsageVisitor();
             typeParameter.accept(visitor);
@@ -594,9 +594,8 @@ public class SoftwareEntityMatcherService {
         }
     }
 
-    private void populateDependencyInInitializers
-            (List<Initializer> initializers, Map<EntityInfo, List<EntityInfo>> dependencies, CompilationUnit
-                    cu, String filePath) {
+    private void populateDependencyInInitializers(List<Initializer> initializers,
+                                                  Map<EntityInfo, List<EntityInfo>> dependencies, CompilationUnit cu, String filePath) {
         for (Initializer initializer : initializers) {
             NodeUsageVisitor visitor = new NodeUsageVisitor();
             initializer.accept(visitor);
@@ -610,9 +609,8 @@ public class SoftwareEntityMatcherService {
         }
     }
 
-    private void populateDependencyInFieldDeclaration
-            (List<FieldDeclaration> fieldDeclarations, Map<EntityInfo, List<EntityInfo>> dependencies, CompilationUnit
-                    cu, String filePath) {
+    private void populateDependencyInFieldDeclaration(List<FieldDeclaration> fieldDeclarations,
+                                                      Map<EntityInfo, List<EntityInfo>> dependencies, CompilationUnit cu, String filePath) {
         for (FieldDeclaration declaration : fieldDeclarations) {
             List<VariableDeclarationFragment> fragments = declaration.fragments();
             for (VariableDeclarationFragment fragment : fragments) {
@@ -633,9 +631,8 @@ public class SoftwareEntityMatcherService {
         }
     }
 
-    private void populateDependencyInMethodDeclaration
-            (List<MethodDeclaration> methodDeclarations, Map<EntityInfo, List<EntityInfo>> dependencies, CompilationUnit
-                    cu, String filePath) {
+    private void populateDependencyInMethodDeclaration(List<MethodDeclaration> methodDeclarations,
+                                                       Map<EntityInfo, List<EntityInfo>> dependencies, CompilationUnit cu, String filePath) {
         for (MethodDeclaration declaration : methodDeclarations) {
             NodeUsageVisitor visitor = new NodeUsageVisitor();
             declaration.accept(visitor);
@@ -655,9 +652,8 @@ public class SoftwareEntityMatcherService {
         }
     }
 
-    private void populateDependencyInAnnotationMemberDeclaration
-            (List<AnnotationTypeMemberDeclaration> annotationMemberDeclarations, Map<EntityInfo, List<EntityInfo>> dependencies, CompilationUnit
-                    cu, String filePath) {
+    private void populateDependencyInAnnotationMemberDeclaration(List<AnnotationTypeMemberDeclaration> annotationMemberDeclarations,
+                                                                 Map<EntityInfo, List<EntityInfo>> dependencies, CompilationUnit cu, String filePath) {
         for (AnnotationTypeMemberDeclaration declaration : annotationMemberDeclarations) {
             NodeUsageVisitor visitor = new NodeUsageVisitor();
             declaration.accept(visitor);
@@ -669,9 +665,8 @@ public class SoftwareEntityMatcherService {
         }
     }
 
-    private void populateDependencyInEnumConstant
-            (List<EnumConstantDeclaration> enumConstantDeclarations, Map<EntityInfo, List<EntityInfo>> dependencies, CompilationUnit
-                    cu, String filePath) {
+    private void populateDependencyInEnumConstant(List<EnumConstantDeclaration> enumConstantDeclarations,
+                                                  Map<EntityInfo, List<EntityInfo>> dependencies, CompilationUnit cu, String filePath) {
         for (EnumConstantDeclaration declaration : enumConstantDeclarations) {
             NodeUsageVisitor visitor = new NodeUsageVisitor();
             declaration.accept(visitor);
@@ -688,8 +683,7 @@ public class SoftwareEntityMatcherService {
         }
     }
 
-    private void populateDependencyInReverse(EntityInfo
-                                                     entity, List<EntityInfo> entityUsages, Map<EntityInfo, List<EntityInfo>> dependencies) {
+    private void populateDependencyInReverse(EntityInfo entity, List<EntityInfo> entityUsages, Map<EntityInfo, List<EntityInfo>> dependencies) {
         for (EntityInfo dependency : entityUsages) {
             if (dependencies.containsKey(dependency))
                 dependencies.get(dependency).add(entity);
@@ -698,8 +692,7 @@ public class SoftwareEntityMatcherService {
         }
     }
 
-    private void populateCurrentDependencies(MatchPair matchPair, String
-            projectPath, Set<String> modifiedFiles,
+    private void populateCurrentDependencies(MatchPair matchPair, String projectPath, Set<String> modifiedFiles,
                                              Map<String, String> renamedFiles, Set<String> addedFiles) {
         ProjectParser parser = new ProjectParser(projectPath);
         Map<EntityInfo, DeclarationNodeTree> entities = new HashMap<>();
@@ -729,8 +722,7 @@ public class SoftwareEntityMatcherService {
         }
     }
 
-    private void replaceASTNodeWithBinding(Map<String, List<ASTNode>> nodeMap, String
-            projectPath, DeclarationNodeTree dnt) {
+    private void replaceASTNodeWithBinding(Map<String, List<ASTNode>> nodeMap, String projectPath, DeclarationNodeTree dnt) {
         List<ASTNode> astNodes = nodeMap.get(projectPath.isEmpty() ? dnt.getFilePath() : projectPath + "/" + dnt.getFilePath());
         if (dnt.getType() == EntityType.METHOD) {
             for (ASTNode node : astNodes) {
@@ -819,8 +811,7 @@ public class SoftwareEntityMatcherService {
         }
     }
 
-    private void populateBeforeDependencies(MatchPair matchPair, String
-            projectPath, Set<String> modifiedFiles,
+    private void populateBeforeDependencies(MatchPair matchPair, String projectPath, Set<String> modifiedFiles,
                                             Map<String, String> renamedFiles, Set<String> deletedFiles) {
         ProjectParser parser = new ProjectParser(projectPath);
         List<String> changedJavaFiles = new ArrayList<>();
@@ -848,6 +839,77 @@ public class SoftwareEntityMatcherService {
             if (dependencies.containsKey(entity))
                 entities.get(entity).addDependencies(dependencies.get(entity));
         }
+    }
+
+    private void matchByIntroduceObjectRefactoring(MatchPair matchPair) {
+        Set<Pair<DeclarationNodeTree, DeclarationNodeTree>> matchedEntities = matchPair.getMatchedEntities();
+        Set<Pair<DeclarationNodeTree, DeclarationNodeTree>> candidateEntities = matchPair.getCandidateEntities();
+        Set<DeclarationNodeTree> deletedEntities = matchPair.getDeletedEntities();
+        Set<DeclarationNodeTree> addedEntities = matchPair.getAddedEntities();
+        Set<DeclarationNodeTree> deletedEntitiesDeletion = new HashSet<>();
+        Set<DeclarationNodeTree> addedEntitiesDeletion = new HashSet<>();
+        for (Pair<DeclarationNodeTree, DeclarationNodeTree> pair : matchedEntities) {
+            DeclarationNodeTree dntBefore = pair.getLeft();
+            DeclarationNodeTree dntCurrent = pair.getRight();
+            if (!isSameType(dntBefore, dntCurrent))
+                continue;
+            List<DeclarationNodeTree> children1 = dntBefore.getChildren();
+            List<DeclarationNodeTree> children2 = dntCurrent.getChildren();
+            List<DeclarationNodeTree> fields1 = children1.stream().filter(child -> !child.isMatched() && child.getType() == EntityType.FIELD).collect(Collectors.toList());
+            List<DeclarationNodeTree> fields2 = children2.stream().filter(child -> !child.isMatched() && child.getType() == EntityType.FIELD).collect(Collectors.toList());
+            for (DeclarationNodeTree field : fields2) {
+                FieldDeclaration fieldDeclaration = (FieldDeclaration) field.getDeclaration();
+                Type type = fieldDeclaration.getType();
+                UMLType umlType = UMLType.extractTypeObject(type);
+                for (DeclarationNodeTree addedEntity : addedEntities) {
+                    if (addedEntity.getType() != EntityType.CLASS && addedEntity.getType() != EntityType.INTERFACE && addedEntity.getType() != EntityType.ENUM)
+                        continue;
+                    TypeDeclaration declaration = (TypeDeclaration) addedEntity.getDeclaration();
+                    if (umlType == null || !umlType.getClassType().equals(declaration.getName().getIdentifier()))
+                        continue;
+                    List<DeclarationNodeTree> children = addedEntity.getChildren();
+                    List<DeclarationNodeTree> addedFields = children.stream().filter(child -> !child.isMatched() && child.getType() == EntityType.FIELD).collect(Collectors.toList());
+                    Set<DeclarationNodeTree> matchedFields = new HashSet<>();
+                    for (DeclarationNodeTree field1 : fields1) {
+                        for (DeclarationNodeTree addedField : addedFields) {
+                            if (matchedFields.contains(addedField)) continue;
+                            FieldDeclaration fieldDeclaration1 = (FieldDeclaration) field1.getDeclaration();
+                            FieldDeclaration addedFieldDeclaration = (FieldDeclaration) addedField.getDeclaration();
+                            UMLType type1 = UMLType.extractTypeObject(fieldDeclaration1.getType());
+                            UMLType type2 = UMLType.extractTypeObject(addedFieldDeclaration.getType());
+                            if (type1 == null || type2 == null || !type1.compatibleTypes(type2))
+                                continue;
+                            matchedFields.add(addedField);
+                            field1.setMatched();
+                            addedField.setMatched();
+                            matchPair.addIntroducedObjects(addedEntity, field1, addedField);
+                            deletedEntitiesDeletion.add(field1);
+                            addedEntitiesDeletion.add(addedField);
+                            addedEntitiesDeletion.add(addedEntity);
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+        deletedEntities.removeAll(deletedEntitiesDeletion);
+        addedEntities.removeAll(addedEntitiesDeletion);
+        if (deletedEntitiesDeletion.isEmpty() && addedEntitiesDeletion.isEmpty())
+            return;
+        Set<Pair<DeclarationNodeTree, DeclarationNodeTree>> candidateEntitiesDeletion = new HashSet<>();
+        for (Pair<DeclarationNodeTree, DeclarationNodeTree> pair : candidateEntities) {
+            DeclarationNodeTree left = pair.getLeft();
+            DeclarationNodeTree right = pair.getRight();
+            if (deletedEntitiesDeletion.contains(left)) {
+                candidateEntitiesDeletion.add(pair);
+                addedEntities.add(right);
+            }
+            if (addedEntitiesDeletion.contains(right)) {
+                candidateEntitiesDeletion.add(pair);
+                deletedEntities.add(left);
+            }
+        }
+        candidateEntities.removeAll(candidateEntitiesDeletion);
     }
 
     private void fineMatching(MatchPair matchPair) {
@@ -900,7 +962,7 @@ public class SoftwareEntityMatcherService {
                                     DeclarationNodeTree parent1 = left.getParent();
                                     DeclarationNodeTree parent2 = right.getParent();
                                     if (((isSubTypeOf(dntBeforeParent, parent1) && isSubTypeOf(dntCurrentParent, parent2)) ||
-                                            (isOverride1 && isOverride2))&&
+                                            (isOverride1 && isOverride2)) &&
                                             isSameSignature(dntBefore, left) && isSameSignature(dntCurrent, right)) {
                                         EntityPair entityPair = new EntityPair(dntBefore, dntCurrent);
                                         entityPairs.add(entityPair);
@@ -952,8 +1014,14 @@ public class SoftwareEntityMatcherService {
 
     private boolean typeCompatible(DeclarationNodeTree dntBefore, DeclarationNodeTree dntCurrent) {
         return dntBefore.getType() == dntCurrent.getType() ||
-                ((dntBefore.getType() == EntityType.CLASS || dntBefore.getType() == EntityType.INTERFACE || dntBefore.getType() == EntityType.ENUM) &&
-                        (dntCurrent.getType() == EntityType.CLASS || dntCurrent.getType() == EntityType.INTERFACE || dntCurrent.getType() == EntityType.ENUM));
+                isSameType(dntBefore, dntCurrent);
+    }
+
+    private boolean isSameType(DeclarationNodeTree dntBefore, DeclarationNodeTree dntCurrent) {
+        return (dntBefore.getType() == EntityType.CLASS || dntBefore.getType() == EntityType.INTERFACE ||
+                dntBefore.getType() == EntityType.ENUM || dntBefore.getType() == EntityType.ANNOTATION_TYPE) &&
+                (dntCurrent.getType() == EntityType.CLASS || dntCurrent.getType() == EntityType.INTERFACE ||
+                        dntCurrent.getType() == EntityType.ENUM || dntCurrent.getType() == EntityType.ANNOTATION_TYPE);
     }
 
     private void additionalMatchByName(MatchPair matchPair) {
@@ -1008,11 +1076,24 @@ public class SoftwareEntityMatcherService {
                     }
                     if (dntBefore.getType() == EntityType.FIELD && dntCurrent.getType() == EntityType.FIELD) {
                         if (isSameSignature(dntBefore, dntCurrent)) {
-                            double dice = DiceFunction.calculateReferenceSimilarity(matchPair, dntBefore, dntCurrent);
-                            if (dice < 0.4) continue;
+                            double refs = DiceFunction.calculateReferenceSimilarity(matchPair, dntBefore, dntCurrent);
+                            if (refs < 0.4) continue;
                             EntityPair entityPair = new EntityPair(dntBefore, dntCurrent);
                             entityPairs.add(entityPair);
-                            entityPair.setDice(dice);
+                            entityPair.setDice(refs);
+                        }
+                    }
+                    if (dntBefore instanceof InternalNode && dntCurrent instanceof InternalNode &&
+                            (dntBefore.getType() == EntityType.CLASS || dntBefore.getType() == EntityType.INTERFACE) &&
+                            (dntCurrent.getType() == EntityType.CLASS || dntCurrent.getType() == EntityType.INTERFACE)) {
+                        if (dntBefore.getType() == dntCurrent.getType() && dntBefore.getName().equals(dntCurrent.getName())) {
+                            double refs = DiceFunction.calculateReferenceSimilarity(matchPair, dntBefore, dntCurrent);
+                            if (refs < 0.4) continue;
+                            double dice = DiceFunction.calculateDiceSimilarity(matchPair, (InternalNode) dntBefore, (InternalNode) dntCurrent);
+                            if (dice < 0.25) continue;
+                            EntityPair entityPair = new EntityPair(dntBefore, dntCurrent);
+                            entityPairs.add(entityPair);
+                            entityPair.setDice(refs);
                         }
                     }
                 }
@@ -1026,10 +1107,10 @@ public class SoftwareEntityMatcherService {
             MethodDeclaration md1 = ((MethodDeclaration) dntBefore.getDeclaration());
             MethodDeclaration md2 = ((MethodDeclaration) dntCurrent.getDeclaration());
             String pl1 = ((List<SingleVariableDeclaration>) md1.parameters()).stream().
-                    map(declaration -> declaration.isVarargs() ? declaration.getType().toString() + "[]" : declaration.getType().toString()).
+                    map(declaration -> declaration.isVarargs() ? StringUtils.type2String(declaration.getType()) + "[]" : StringUtils.type2String(declaration.getType())).
                     collect(Collectors.joining(","));
             String pl2 = ((List<SingleVariableDeclaration>) md2.parameters()).stream().
-                    map(declaration -> declaration.isVarargs() ? declaration.getType().toString() + "[]" : declaration.getType().toString()).
+                    map(declaration -> declaration.isVarargs() ? StringUtils.type2String(declaration.getType()) + "[]" : StringUtils.type2String(declaration.getType())).
                     collect(Collectors.joining(","));
             String tp1 = ((List<TypeParameter>) md1.typeParameters()).stream().
                     map(TypeParameter::toString).
@@ -1038,10 +1119,12 @@ public class SoftwareEntityMatcherService {
                     map(TypeParameter::toString).
                     collect(Collectors.joining(","));
             if (StringUtils.equals(md1.getName().getIdentifier(), md2.getName().getIdentifier()) &&
-                    md1.getReturnType2() != null && md2.getReturnType2() != null &&
-                    StringUtils.equals(md1.getReturnType2().toString(), md2.getReturnType2().toString()) &&
-                    StringUtils.equals(pl1, pl2) && StringUtils.equals(tp1, tp2)) {
-                return true;
+                    md1.getReturnType2() != null && md2.getReturnType2() != null) {
+                UMLType type1 = UMLType.extractTypeObject(md1.getReturnType2());
+                UMLType type2 = UMLType.extractTypeObject(md2.getReturnType2());
+                if (type1 != null && type2 != null && type1.compatibleTypes(type2) &&
+                        StringUtils.equals(pl1, pl2) && StringUtils.equals(tp1, tp2))
+                    return true;
             }
         }
         if (dntBefore.getType() == EntityType.FIELD && dntCurrent.getType() == EntityType.FIELD) {
@@ -1052,11 +1135,15 @@ public class SoftwareEntityMatcherService {
             if (fragments1.size() == 1 && fragments2.size() == 1) {
                 VariableDeclarationFragment fragment1 = fragments1.get(0);
                 VariableDeclarationFragment fragment2 = fragments2.get(0);
-                if (fd1.getType().toString().equals(fd2.getType().toString()) &&
-                        fragment1.getName().getIdentifier().equals(fragment2.getName().getIdentifier()) &&
-                        isEmptyOrCreation(fd1.getType(), fragment1) &&
-                        isEmptyOrCreation(fd2.getType(), fragment2)) {
-                    return true;
+                UMLType type1 = UMLType.extractTypeObject(fd1.getType());
+                UMLType type2 = UMLType.extractTypeObject(fd2.getType());
+                if (type1 != null && type2 != null && type1.compatibleTypes(type2) &&
+                        fragment1.getName().getIdentifier().equals(fragment2.getName().getIdentifier())) {
+                    if (isEmptyOrCreation(fd1.getType(), fragment1) && isEmptyOrCreation(fd2.getType(), fragment2))
+                        return true;
+                    if (fragment1.getInitializer() != null && fragment2.getInitializer() != null &&
+                            fragment1.getInitializer().toString().equals(fragment2.getInitializer().toString()))
+                        return true;
                 }
             }
         }
@@ -1079,6 +1166,9 @@ public class SoftwareEntityMatcherService {
 
     private void additionalMatchByDice(MatchPair matchPair) {
         List<EntityPair> entityPairs = new ArrayList<>();
+        Set<Pair<DeclarationNodeTree, DeclarationNodeTree>> unchangedEntities = matchPair.getUnchangedEntities();
+        Set<Pair<DeclarationNodeTree, DeclarationNodeTree>> matchedEntities = matchPair.getMatchedEntities();
+        NormalizedLevenshtein levenshtein = new NormalizedLevenshtein();
         for (DeclarationNodeTree dntBefore : matchPair.getDeletedEntities()) {
             for (DeclarationNodeTree dntCurrent : matchPair.getAddedEntities()) {
                 if (dntBefore.getType() == dntCurrent.getType()) {
@@ -1088,6 +1178,92 @@ public class SoftwareEntityMatcherService {
                         double references = DiceFunction.calculateReferenceSimilarity(matchPair, dntBefore, dntCurrent);
                         if (references == 0 && dice < 0.85)
                             dice = 0;
+                        if (references == 0 && !dntBefore.getDependencies().isEmpty() && !dntCurrent.getDependencies().isEmpty()
+                                && !dntBefore.getName().equals(dntCurrent.getName()))
+                            dice = 0;
+                        if (dntBefore.getType() == EntityType.FIELD && dntCurrent.getType() == EntityType.FIELD) {
+                            if (!matchedEntities.contains(Pair.of(dntBefore.getParent(), dntCurrent.getParent()))) {
+                                List<DeclarationNodeTree> children = dntCurrent.getParent().getChildren();
+                                for (DeclarationNodeTree child : children) {
+                                    if (child.getType() == EntityType.FIELD) continue;
+                                    if (child == dntCurrent) continue;
+                                    if (dntBefore.getDeclaration().toString().equals(child.getDeclaration().toString())) {
+                                        dice = 0;
+                                        break;
+                                    }
+                                }
+                                for (Pair<DeclarationNodeTree, DeclarationNodeTree> pair : unchangedEntities) {
+                                    DeclarationNodeTree right = pair.getRight();
+                                    if (dntBefore.getDeclaration().toString().equals(right.getDeclaration().toString()) &&
+                                            right.getParent() == dntCurrent.getParent()) {
+                                        dice = 0;
+                                        break;
+                                    }
+                                }
+                            }
+                            List<DeclarationNodeTree> children = dntCurrent.getParent().getChildren();
+                            for (DeclarationNodeTree child : children) {
+                                if (child.getType() != EntityType.FIELD) continue;
+                                if (child == dntCurrent) continue;
+                                FieldDeclaration fd1 = (FieldDeclaration) dntCurrent.getDeclaration();
+                                FieldDeclaration fd2 = (FieldDeclaration) child.getDeclaration();
+                                if (!fd1.getType().toString().equals(fd2.getType().toString()))
+                                    continue;
+                                double dice2 = DiceFunction.calculateDiceSimilarity((LeafNode) dntBefore, (LeafNode) child);
+                                if (dice != dice2)
+                                    continue;
+                                Set<EntityInfo> dependencies1 = new HashSet<>(dntCurrent.getDependencies());
+                                Set<EntityInfo> dependencies2 = new HashSet<>(child.getDependencies());
+                                String name1 = dntCurrent.getName();
+                                String name2 = child.getName();
+                                char c1 = name1.charAt(name1.length() - 1);
+                                char c2 = name2.charAt(name2.length() - 1);
+                                if (dependencies1.equals(dependencies2)) {
+                                    if (name1.substring(0, name1.length() - 1).equals(name2.substring(0, name2.length() - 1)) &&
+                                            Character.isDigit(c1) && Character.isDigit(c2)) {
+                                        dice = 0;
+                                        break;
+                                    }
+                                    name1 = name1.toLowerCase();
+                                    name2 = name2.toLowerCase();
+                                    if (name1.contains("prefix") && name2.contains("suffix")) {
+                                        name1 = name1.replace("prefix", "");
+                                        name2 = name2.replace("suffix", "");
+                                        if (name1.equals(name2)) {
+                                            dice = 0;
+                                            break;
+                                        }
+                                    }
+                                    if (name1.contains("suffix") && name2.contains("prefix")) {
+                                        name1 = name1.replace("suffix", "");
+                                        name2 = name2.replace("prefix", "");
+                                        if (name1.equals(name2)) {
+                                            dice = 0;
+                                            break;
+                                        }
+                                    }
+                                }
+                            }
+                            if (matchedEntities.contains(Pair.of(dntBefore.getParent(), dntCurrent.getParent()))) {
+                                List<DeclarationNodeTree> children1 = dntBefore.getParent().getChildren();
+                                List<DeclarationNodeTree> children2 = dntCurrent.getParent().getChildren();
+                                List<DeclarationNodeTree> fields1 = children1.stream().filter(child -> !child.isMatched() && child.getType() == EntityType.FIELD).collect(Collectors.toList());
+                                List<DeclarationNodeTree> fields2 = children2.stream().filter(child -> !child.isMatched() && child.getType() == EntityType.FIELD).collect(Collectors.toList());
+                                if (fields1.size() == fields2.size() && references > DiceFunction.minSimilarity) {
+                                    FieldDeclaration fd1 = (FieldDeclaration) dntBefore.getDeclaration();
+                                    FieldDeclaration fd2 = (FieldDeclaration) dntCurrent.getDeclaration();
+                                    if (fd1.getType().toString().equals("Object") || fd2.getType().toString().equals("Object"))
+                                        dice = references + 1 - levenshtein.distance(dntBefore.getName().toLowerCase(), dntCurrent.getName().toLowerCase());
+                                }
+                                if ((fields1.size() == fields2.size() + 1 || fields1.size() == fields2.size() - 1) &&
+                                        references > 0.85) {
+                                    FieldDeclaration fd1 = (FieldDeclaration) dntBefore.getDeclaration();
+                                    FieldDeclaration fd2 = (FieldDeclaration) dntCurrent.getDeclaration();
+                                    if (fd1.getType().toString().equals("Object") || fd2.getType().toString().equals("Object"))
+                                        dice = references + 1 - levenshtein.distance(dntBefore.getName().toLowerCase(), dntCurrent.getName().toLowerCase());
+                                }
+                            }
+                        }
                     }
                     if (dice < DiceFunction.minSimilarity) continue;
                     EntityPair entityPair = new EntityPair(dntBefore, dntCurrent);
@@ -1153,6 +1329,30 @@ public class SoftwareEntityMatcherService {
             matchPair.addMatchedEntity(node1, node2);
             deletionBefore.add(node1);
             deletionCurrent.add(node2);
+            if (node1 instanceof InternalNode && node2 instanceof InternalNode) {
+                List<DeclarationNodeTree> children1 = node1.getChildren();
+                List<DeclarationNodeTree> children2 = node2.getChildren();
+                for (DeclarationNodeTree child1 : children1) {
+                    for (DeclarationNodeTree child2 : children2) {
+                        if (isSameSignature(child1, child2)) {
+                            child1.setMatched();
+                            child2.setMatched();
+                            matchPair.addMatchedEntity(child1, child2);
+                            deletionBefore.add(child1);
+                            deletionCurrent.add(child2);
+                        } else if (child1.getName().equals(child2.getName())) {
+                            double reference = DiceFunction.calculateReferenceSimilarity(matchPair, child1, child2);
+                            if (reference > 0) {
+                                child1.setMatched();
+                                child2.setMatched();
+                                matchPair.addMatchedEntity(child1, child2);
+                                deletionBefore.add(child1);
+                                deletionCurrent.add(child2);
+                            }
+                        }
+                    }
+                }
+            }
         }
         matchPair.getDeletedEntities().removeAll(deletionBefore);
         matchPair.getAddedEntities().removeAll(deletionCurrent);
@@ -1177,6 +1377,8 @@ public class SoftwareEntityMatcherService {
                         int methodModifiers = methodDeclaration.getModifiers();
                         if ((methodModifiers & Modifier.ABSTRACT) != 0)
                             isAbstract = true;
+                        if (methodDeclaration.getBody() == null)
+                            isAbstract = true;
                     } else if (dntBefore.getType() == EntityType.FIELD) {
                         FieldDeclaration fieldDeclaration = (FieldDeclaration) dntBefore.getDeclaration();
                         int methodModifiers = fieldDeclaration.getModifiers();
@@ -1200,6 +1402,8 @@ public class SoftwareEntityMatcherService {
                         MethodDeclaration methodDeclaration = (MethodDeclaration) dntCurrent.getDeclaration();
                         int methodModifiers = methodDeclaration.getModifiers();
                         if ((methodModifiers & Modifier.ABSTRACT) != 0)
+                            isAbstract = true;
+                        if (methodDeclaration.getBody() == null)
                             isAbstract = true;
                     } else if (dntCurrent.getType() == EntityType.FIELD) {
                         FieldDeclaration fieldDeclaration = (FieldDeclaration) dntCurrent.getDeclaration();
@@ -1332,7 +1536,7 @@ public class SoftwareEntityMatcherService {
         for (Pair<DeclarationNodeTree, DeclarationNodeTree> pair : matchedEntities) {
             DeclarationNodeTree left = pair.getLeft();
             DeclarationNodeTree right = pair.getRight();
-            if (left.getType() == EntityType.METHOD || right.getType() == EntityType.METHOD) {
+            if (left.getType() == EntityType.METHOD && right.getType() == EntityType.METHOD) {
                 for (DeclarationNodeTree entity : deletedEntities) {
                     if (entity.getDependencies().isEmpty() && left.getDependencies().isEmpty() &&
                             right.getDependencies().isEmpty() && entity.getType() == EntityType.METHOD) {
@@ -1346,6 +1550,47 @@ public class SoftwareEntityMatcherService {
                                 declaration1.getBody() != null && declaration2.getBody() != null && declaration3.getBody() != null &&
                                 StringUtils.equals(declaration1.getBody().toString(), declaration3.getBody().toString()) &&
                                 !StringUtils.equals(declaration2.getBody().toString(), declaration3.getBody().toString())) {
+                            double sim1 = DiceFunction.calculateReferenceSimilarity(matchPair, left, right);
+                            double sim2 = DiceFunction.calculateReferenceSimilarity(matchPair, entity, right);
+                            double dice1 = DiceFunction.calculateDiceSimilarity((LeafNode) left, (LeafNode) right);
+                            double dice2 = DiceFunction.calculateDiceSimilarity((LeafNode) entity, (LeafNode) right);
+                            if (sim1 < sim2 || dice1 * 2 < dice2) {
+                                matchedEntitiesDeleted.add(pair);
+                                matchedEntitiesAdded.add(Pair.of(entity, right));
+                                deletedEntitiesDeleted.add(entity);
+                                deletedEntitiesAdded.add(left);
+                                entity.setMatched();
+                                left.setMatched(false);
+                            }
+                        }
+                        boolean isTest1 = false;
+                        boolean isTest2 = false;
+                        boolean isTest3 = false;
+                        List<IExtendedModifier> modifiers1 = declaration1.modifiers();
+                        List<IExtendedModifier> modifiers2 = declaration2.modifiers();
+                        List<IExtendedModifier> modifiers3 = declaration3.modifiers();
+                        for (IExtendedModifier modifier : modifiers1) {
+                            if (modifier.isAnnotation() && modifier.toString().equals("@Test")) {
+                                isTest1 = true;
+                                break;
+                            }
+                        }
+                        for (IExtendedModifier modifier : modifiers2) {
+                            if (modifier.isAnnotation() && modifier.toString().equals("@Test")) {
+                                isTest2 = true;
+                                break;
+                            }
+                        }
+                        for (IExtendedModifier modifier : modifiers3) {
+                            if (modifier.isAnnotation() && modifier.toString().equals("@Test")) {
+                                isTest3 = true;
+                                break;
+                            }
+                        }
+                        if (isTest1 && isTest2 && isTest3 && matchedEntities.contains(Pair.of(entity.getParent(), right.getParent())) &&
+                                declaration1.getBody() != null && declaration2.getBody() != null && declaration3.getBody() != null &&
+                                StringUtils.equals(declaration1.getBody().toString(), declaration3.getBody().toString()) &&
+                                !StringUtils.equals(declaration1.getBody().toString(), declaration2.getBody().toString())) {
                             matchedEntitiesDeleted.add(pair);
                             matchedEntitiesAdded.add(Pair.of(entity, right));
                             deletedEntitiesDeleted.add(entity);
@@ -1368,6 +1613,47 @@ public class SoftwareEntityMatcherService {
                                 declaration1.getBody() != null && declaration2.getBody() != null && declaration3.getBody() != null &&
                                 StringUtils.equals(declaration1.getBody().toString(), declaration3.getBody().toString()) &&
                                 !StringUtils.equals(declaration1.getBody().toString(), declaration2.getBody().toString())) {
+                            double sim1 = DiceFunction.calculateReferenceSimilarity(matchPair, left, right);
+                            double sim2 = DiceFunction.calculateReferenceSimilarity(matchPair, left, entity);
+                            double dice1 = DiceFunction.calculateDiceSimilarity((LeafNode) left, (LeafNode) right);
+                            double dice2 = DiceFunction.calculateDiceSimilarity((LeafNode) left, (LeafNode) entity);
+                            if (sim1 < sim2 || dice1 * 2 < dice2) {
+                                matchedEntitiesDeleted.add(pair);
+                                matchedEntitiesAdded.add(Pair.of(left, entity));
+                                addedEntitiesDeleted.add(entity);
+                                addedEntitiesAdded.add(right);
+                                entity.setMatched();
+                                right.setMatched(false);
+                            }
+                        }
+                        boolean isTest1 = false;
+                        boolean isTest2 = false;
+                        boolean isTest3 = false;
+                        List<IExtendedModifier> modifiers1 = declaration1.modifiers();
+                        List<IExtendedModifier> modifiers2 = declaration2.modifiers();
+                        List<IExtendedModifier> modifiers3 = declaration3.modifiers();
+                        for (IExtendedModifier modifier : modifiers1) {
+                            if (modifier.isAnnotation() && modifier.toString().equals("@Test")) {
+                                isTest1 = true;
+                                break;
+                            }
+                        }
+                        for (IExtendedModifier modifier : modifiers2) {
+                            if (modifier.isAnnotation() && modifier.toString().equals("@Test")) {
+                                isTest2 = true;
+                                break;
+                            }
+                        }
+                        for (IExtendedModifier modifier : modifiers3) {
+                            if (modifier.isAnnotation() && modifier.toString().equals("@Test")) {
+                                isTest3 = true;
+                                break;
+                            }
+                        }
+                        if (isTest1 && isTest2 && isTest3 && matchedEntities.contains(Pair.of(left.getParent(), entity.getParent())) &&
+                                declaration1.getBody() != null && declaration2.getBody() != null && declaration3.getBody() != null &&
+                                StringUtils.equals(declaration1.getBody().toString(), declaration3.getBody().toString()) &&
+                                !StringUtils.equals(declaration1.getBody().toString(), declaration2.getBody().toString())) {
                             matchedEntitiesDeleted.add(pair);
                             matchedEntitiesAdded.add(Pair.of(left, entity));
                             addedEntitiesDeleted.add(entity);
@@ -1378,7 +1664,7 @@ public class SoftwareEntityMatcherService {
                     }
                 }
             }
-            if (left.getType() == EntityType.FIELD || right.getType() == EntityType.FIELD) {
+            if (left.getType() == EntityType.FIELD && right.getType() == EntityType.FIELD) {
                 for (DeclarationNodeTree entity : addedEntities) {
                     if (entity.getType() == EntityType.FIELD) {
                         DeclarationNodeTree matchedEntity = findMatchedEntity(matchedEntities, left.getParent());

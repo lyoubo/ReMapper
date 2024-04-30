@@ -2,9 +2,7 @@ package org.remapper.dto;
 
 import org.apache.commons.lang3.tuple.Pair;
 
-import java.util.LinkedHashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class MatchPair {
@@ -28,6 +26,10 @@ public class MatchPair {
     private Set<StatementNodeTree> deletedStatements;
     private Set<StatementNodeTree> addedStatements;
 
+    private Set<Pair<DeclarationNodeTree, StatementNodeTree>> attributeMapVariables;
+    private Set<Pair<StatementNodeTree, DeclarationNodeTree>> variableMapAttributes;
+    private Map<DeclarationNodeTree, Set<Pair<DeclarationNodeTree, DeclarationNodeTree>>> introducedObjects;
+
     public MatchPair() {
         unchangedEntities = new LinkedHashSet<>();
         matchedEntities = new LinkedHashSet<>();
@@ -41,6 +43,9 @@ public class MatchPair {
         candidateStatements = new LinkedHashSet<>();
         deletedStatements = new LinkedHashSet<>();
         addedStatements = new LinkedHashSet<>();
+        attributeMapVariables = new LinkedHashSet<>();
+        variableMapAttributes = new LinkedHashSet<>();
+        introducedObjects = new LinkedHashMap<>();
     }
 
     /**
@@ -213,5 +218,35 @@ public class MatchPair {
 
     public void addAddedStatement(StatementNodeTree addedStatement) {
         this.addedStatements.add(addedStatement);
+    }
+
+    public void addAttributeMapVariables(DeclarationNodeTree entity, StatementNodeTree statement) {
+        this.attributeMapVariables.add(Pair.of(entity, statement));
+    }
+
+    public Set<Pair<DeclarationNodeTree, StatementNodeTree>> getAttributeMapVariables() {
+        return attributeMapVariables;
+    }
+
+    public void addVariableMapAttributes(StatementNodeTree statement, DeclarationNodeTree entity) {
+        this.variableMapAttributes.add(Pair.of(statement, entity));
+    }
+
+    public Set<Pair<StatementNodeTree, DeclarationNodeTree>> getVariableMapAttributes() {
+        return variableMapAttributes;
+    }
+
+    public void addIntroducedObjects(DeclarationNodeTree introducedObject, DeclarationNodeTree oldEntity, DeclarationNodeTree newEntity) {
+        if (introducedObjects.containsKey(introducedObject)) {
+            introducedObjects.get(introducedObject).add(Pair.of(oldEntity, newEntity));
+        } else {
+            Set<Pair<DeclarationNodeTree, DeclarationNodeTree>> set = new LinkedHashSet<>();
+            set.add(Pair.of(oldEntity, newEntity));
+            introducedObjects.put(introducedObject, set);
+        }
+    }
+
+    public Map<DeclarationNodeTree, Set<Pair<DeclarationNodeTree, DeclarationNodeTree>>> getIntroducedObjects() {
+        return introducedObjects;
     }
 }

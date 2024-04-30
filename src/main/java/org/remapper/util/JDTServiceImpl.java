@@ -453,7 +453,7 @@ public class JDTServiceImpl implements JDTService {
             snt.setStatement(statement);
             List<Expression> resources = ((TryStatement) statement).resources();
             String resource = resources.stream().map(Expression::toString).collect(Collectors.joining("; "));
-            snt.setExpression(resource.equals("") ? "try" : "try(" + resource + ")");
+            snt.setExpression("".equals(resource) ? "try" : "try(" + resource + ")");
             snt.setPosition(statement.getStartPosition());
             methodNode.addControl(snt);
             arrayStatementsInSwitchCase(statement, initializedSNT, snt);

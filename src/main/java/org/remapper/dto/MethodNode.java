@@ -1,6 +1,7 @@
 package org.remapper.dto;
 
 import org.eclipse.jdt.core.dom.*;
+import org.remapper.util.StringUtils;
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -63,9 +64,9 @@ public class MethodNode extends StatementNodeTree {
         List<String> list = new ArrayList<>();
         for (SingleVariableDeclaration parameter : parameters) {
             if (parameter.isVarargs()) {
-                list.add(parameter.getName().getFullyQualifiedName() + " " + parameter.getType().toString() + "...");
+                list.add(parameter.getName().getFullyQualifiedName() + " " + StringUtils.type2String(parameter.getType()) + "...");
             } else {
-                list.add(parameter.getName().getFullyQualifiedName() + " " + parameter.getType().toString());
+                list.add(parameter.getName().getFullyQualifiedName() + " " + StringUtils.type2String(parameter.getType()));
             }
         }
         sb.append(String.join(", ", list));

@@ -1,5 +1,8 @@
 package org.remapper.util;
 
+import org.eclipse.jdt.core.dom.Type;
+import org.remapper.dto.UMLType;
+
 public class StringUtils {
 
     public static boolean equals(String str1, String str2) {
@@ -13,5 +16,10 @@ public class StringUtils {
 
     public static boolean isEmpty(CharSequence cs) {
         return cs == null || cs.length() == 0;
+    }
+
+    public static String type2String(Type type) {
+        UMLType umlType = UMLType.extractTypeObject(type);
+        return umlType.toString();
     }
 }

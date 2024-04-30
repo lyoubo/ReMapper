@@ -1,6 +1,7 @@
 package org.remapper.util;
 
 import info.debatty.java.stringsimilarity.NGram;
+import info.debatty.java.stringsimilarity.NormalizedLevenshtein;
 import org.apache.commons.lang3.tuple.Pair;
 import org.eclipse.jdt.core.dom.*;
 import org.remapper.dto.*;
@@ -210,12 +211,18 @@ public class DiceFunction {
             descendants = calculateDiceSimilarity((LeafNode) dntBefore, (LeafNode) dntCurrent);
         int union = dntBefore.getDependencies().size() + dntCurrent.getDependencies().size();
         double dependencies = calculateReferenceSimilarity(matchPair, dntBefore, dntCurrent);
+        NGram ngram = new NGram(2);
+        double biGram = 1 - ngram.distance(dntBefore.getNamespace() + "." + dntBefore.getName(), dntCurrent.getNamespace() + "." + dntCurrent.getName());
+        if (descendants == 1.0 && dntBefore.getDeclaration().toString().equals(dntCurrent.getDeclaration().toString()) &&
+                matchPair.getCandidateEntities().contains(Pair.of(dntBefore.getParent(), dntCurrent.getParent()))) {
+            return 1.0 + biGram;
+        }
         if (dntBefore.getType() == EntityType.METHOD && dntCurrent.getType() == EntityType.METHOD) {
             MethodDeclaration declaration1 = (MethodDeclaration) dntBefore.getDeclaration();
             MethodDeclaration declaration2 = (MethodDeclaration) dntCurrent.getDeclaration();
+            Set<Pair<DeclarationNodeTree, DeclarationNodeTree>> matchedEntities = matchPair.getMatchedEntities();
+            Set<Pair<DeclarationNodeTree, DeclarationNodeTree>> candidateEntities = matchPair.getCandidateEntities();
             if (declaration1.isConstructor() && declaration2.isConstructor()) {
-                Set<Pair<DeclarationNodeTree, DeclarationNodeTree>> matchedEntities = matchPair.getMatchedEntities();
-                Set<Pair<DeclarationNodeTree, DeclarationNodeTree>> candidateEntities = matchPair.getCandidateEntities();
                 for (Pair<DeclarationNodeTree, DeclarationNodeTree> pair : matchedEntities) {
                     DeclarationNodeTree node1 = pair.getLeft();
                     DeclarationNodeTree node2 = pair.getRight();
@@ -236,9 +243,12 @@ public class DiceFunction {
                         }
                     }
                 }
+                if (dependencies == 0.0 && !(matchPair.getMatchedEntities().contains(Pair.of(dntBefore.getParent(), dntCurrent.getParent())) ||
+                        matchPair.getCandidateEntities().contains(Pair.of(dntBefore.getParent(), dntCurrent.getParent()))))
+                    return 0.49;
             }
             List<IExtendedModifier> modifiers1 = declaration1.modifiers();
-            List<IExtendedModifier> modifiers2 = declaration1.modifiers();
+            List<IExtendedModifier> modifiers2 = declaration2.modifiers();
             boolean isTest1 = false;
             boolean isTest2 = false;
             boolean isOverride1 = false;
@@ -255,60 +265,246 @@ public class DiceFunction {
                 if (modifier.isAnnotation() && modifier.toString().equals("@Override"))
                     isOverride2 = true;
             }
-            if (union == 0 && isTest1 && isTest2 && (dntBefore.getName().equals(dntCurrent.getName()) ||
-                    matchPair.getMatchedEntities().contains(Pair.of(dntBefore.getParent(), dntCurrent.getParent())) ||
-                    matchPair.getCandidateEntities().contains(Pair.of(dntBefore.getParent(), dntCurrent.getParent())))) {
-                return 0.8 * descendants;
+            if (union == 0 && isTest1 && isTest2) {
+                if (!(matchPair.getMatchedEntities().contains(Pair.of(dntBefore.getParent(), dntCurrent.getParent())) ||
+                        matchPair.getCandidateEntities().contains(Pair.of(dntBefore.getParent(), dntCurrent.getParent())))) {
+                    Block body1 = declaration1.getBody();
+                    Block body2 = declaration2.getBody();
+                    if (body1 != null && body1.toString().equals("{\n}\n") && body2 != null && body2.toString().equals("{\n}\n") &&
+                            dependencies == 0.0)
+                        return 0.49;
+                    if (body1 != null && body1.toString().equals("{\n}\n") && body2 != null && !body2.toString().equals("{\n}\n") &&
+                            dependencies == 0.0)
+                        return 0.49;
+                    if (body1 != null && !body1.toString().equals("{\n}\n") && body2 != null && body2.toString().equals("{\n}\n") &&
+                            dependencies == 0.0)
+                        return 0.49;
+                }
+                if (dntBefore.getName().equals(dntCurrent.getName()) ||
+                        matchPair.getMatchedEntities().contains(Pair.of(dntBefore.getParent(), dntCurrent.getParent())) ||
+                        matchPair.getCandidateEntities().contains(Pair.of(dntBefore.getParent(), dntCurrent.getParent()))) {
+                    return descendants + 0.01 * biGram;
+                } else
+                    return 0.8 * descendants + 0.01 * biGram;
             }
             if (isTest1 && !isTest2)
-                dependencies = 0.0;
+                return 0.49;
             if (!isTest1 && isTest2)
-                dependencies = 0.0;
+                return 0.49;
             if (isOverride1 && !isOverride2 && !dntBefore.getName().equals(dntCurrent.getName()) &&
                     !(matchPair.getMatchedEntities().contains(Pair.of(dntBefore.getParent(), dntCurrent.getParent())) ||
                             matchPair.getCandidateEntities().contains(Pair.of(dntBefore.getParent(), dntCurrent.getParent()))))
-                dependencies = 0.0;
+                return 0.49;
             if (!isOverride1 && isOverride2 && !dntBefore.getName().equals(dntCurrent.getName()) &&
                     !(matchPair.getMatchedEntities().contains(Pair.of(dntBefore.getParent(), dntCurrent.getParent())) ||
                             matchPair.getCandidateEntities().contains(Pair.of(dntBefore.getParent(), dntCurrent.getParent()))))
-                dependencies = 0.0;
+                return 0.49;
             if (MethodUtils.isSetter(declaration1) && !MethodUtils.isSetter(declaration2))
-                dependencies = 0.0;
+                return 0.49;
             if (!MethodUtils.isSetter(declaration1) && MethodUtils.isSetter(declaration2))
-                dependencies = 0.0;
+                return 0.49;
             if (MethodUtils.isGetter(declaration1) && !MethodUtils.isGetter(declaration2))
-                dependencies = 0.0;
+                return 0.49;
             if (!MethodUtils.isGetter(declaration1) && MethodUtils.isGetter(declaration2))
-                dependencies = 0.0;
+                return 0.49;
+            if (MethodUtils.isGetter(declaration1) && MethodUtils.isGetter(declaration2) && !dntBefore.getName().equals(dntCurrent.getName()) &&
+                    !(matchPair.getMatchedEntities().contains(Pair.of(dntBefore.getParent(), dntCurrent.getParent())) ||
+                            matchPair.getCandidateEntities().contains(Pair.of(dntBefore.getParent(), dntCurrent.getParent()))))
+                return 0.49;
+            if (!(matchPair.getMatchedEntities().contains(Pair.of(dntBefore.getParent(), dntCurrent.getParent())) ||
+                    matchPair.getCandidateEntities().contains(Pair.of(dntBefore.getParent(), dntCurrent.getParent())))) {
+                Block body1 = declaration1.getBody();
+                Block body2 = declaration2.getBody();
+                if ((body1 == null || body1.toString().equals("{\n}\n")) && (body2 == null || body2.toString().equals("{\n}\n")) &&
+                        dependencies == 0.0)
+                    return 0.49;
+            }
+        }
+        if (dntBefore.getType() == EntityType.ENUM_CONSTANT && dntCurrent.getType() == EntityType.ENUM_CONSTANT) {
+            String name1 = dntBefore.getName();
+            String name2 = dntCurrent.getName();
+            NormalizedLevenshtein levenshtein = new NormalizedLevenshtein();
+            double distance = levenshtein.distance(name1, name2);
+            if (distance > 0.8)
+                return 0.49;
+        }
+        if (dntBefore.getType() == EntityType.FIELD && dntCurrent.getType() == EntityType.FIELD) {
+            if (!(matchPair.getMatchedEntities().contains(Pair.of(dntBefore.getParent(), dntCurrent.getParent())) ||
+                    matchPair.getCandidateEntities().contains(Pair.of(dntBefore.getParent(), dntCurrent.getParent()))) &&
+                    dependencies == 0.0) {
+                Set<DeclarationNodeTree> candidateEntitiesLeft = matchPair.getDeletedEntities();
+                Set<DeclarationNodeTree> candidateEntitiesRight = matchPair.getAddedEntities();
+                boolean isMulti1 = false;
+                boolean isMulti2 = false;
+                for (DeclarationNodeTree entity : candidateEntitiesLeft) {
+                    if (entity.getType() != EntityType.FIELD)
+                        continue;
+                    if (entity == dntBefore)
+                        continue;
+                    FieldDeclaration declaration1 = (FieldDeclaration) entity.getDeclaration();
+                    FieldDeclaration declaration2 = (FieldDeclaration) dntBefore.getDeclaration();
+                    if (declaration1.toString().equals(declaration2.toString()) &&
+                            !dntBefore.getNamespace().equals(entity.getNamespace())) {
+                        isMulti1 = true;
+                        break;
+                    }
+                }
+                for (DeclarationNodeTree entity : candidateEntitiesRight) {
+                    if (entity.getType() != EntityType.FIELD)
+                        continue;
+                    if (entity == dntCurrent)
+                        continue;
+                    FieldDeclaration declaration1 = (FieldDeclaration) entity.getDeclaration();
+                    FieldDeclaration declaration2 = (FieldDeclaration) dntCurrent.getDeclaration();
+                    if (declaration1.toString().equals(declaration2.toString()) &&
+                            !entity.getNamespace().equals(dntCurrent.getNamespace())) {
+                        isMulti2 = true;
+                        break;
+                    }
+                }
+                if (isMulti1 || isMulti2)
+                    return 0.49;
+            }
+            List<DeclarationNodeTree> children = dntCurrent.getParent().getChildren();
+            for (DeclarationNodeTree child : children) {
+                if (child.getType() != EntityType.FIELD) continue;
+                if (child == dntCurrent) continue;
+                FieldDeclaration fd1 = (FieldDeclaration) dntCurrent.getDeclaration();
+                FieldDeclaration fd2 = (FieldDeclaration) child.getDeclaration();
+                if (fd1.getType().toString().equals(fd2.getType().toString())) {
+                    double dice = calculateDiceSimilarity((LeafNode) dntBefore, (LeafNode) child);
+                    if (dice == descendants) {
+                        Set<EntityInfo> dependencies1 = new HashSet<>(dntCurrent.getDependencies());
+                        Set<EntityInfo> dependencies2 = new HashSet<>(child.getDependencies());
+                        String name1 = dntCurrent.getName();
+                        String name2 = child.getName();
+                        char c1 = name1.charAt(name1.length() - 1);
+                        char c2 = name2.charAt(name2.length() - 1);
+                        if (dependencies1.equals(dependencies2)) {
+                            if (name1.substring(0, name1.length() - 1).equals(name2.substring(0, name2.length() - 1)) &&
+                                    Character.isDigit(c1) && Character.isDigit(c2))
+                                return 0.49;
+                            name1 = name1.toLowerCase();
+                            name2 = name2.toLowerCase();
+                            if (name1.contains("prefix") && name2.contains("suffix")) {
+                                name1 = name1.replace("prefix", "");
+                                name2 = name2.replace("suffix", "");
+                                if (name1.equals(name2))
+                                    return 0.49;
+                            }
+                            if (name1.contains("suffix") && name2.contains("prefix")) {
+                                name1 = name1.replace("suffix", "");
+                                name2 = name2.replace("prefix", "");
+                                if (name1.equals(name2))
+                                    return 0.49;
+                            }
+                        }
+                    }
+                }
+            }
         }
         if ((dntBefore.getType() == EntityType.CLASS || dntBefore.getType() == EntityType.INTERFACE || dntBefore.getType() == EntityType.ENUM) &&
                 (dntCurrent.getType() == EntityType.CLASS || dntCurrent.getType() == EntityType.INTERFACE || dntCurrent.getType() == EntityType.ENUM)) {
+            if (!dntBefore.hasChildren() && !dntCurrent.hasChildren() && dntBefore.getType() != dntCurrent.getType() && !dntBefore.getName().equals(dntCurrent.getName())) {
+                return 0.49;
+            }
+            Set<DeclarationNodeTree> candidateEntitiesLeft = matchPair.getDeletedEntities();
+            Set<DeclarationNodeTree> candidateEntitiesRight = matchPair.getAddedEntities();
+            boolean isMulti1 = false;
+            boolean isMulti2 = false;
+            for (DeclarationNodeTree entity : candidateEntitiesLeft) {
+                if (entity == dntBefore)
+                    continue;
+                if (dntBefore.getType() == entity.getType() &&
+                        dntBefore.getName().equals(entity.getName()) &&
+                        !dntBefore.getNamespace().equals(entity.getNamespace())) {
+                    isMulti1 = true;
+                    break;
+                }
+            }
+            for (DeclarationNodeTree entity : candidateEntitiesRight) {
+                if (entity == dntCurrent)
+                    continue;
+                if (entity.getType() == dntCurrent.getType() &&
+                        entity.getName().equals(dntCurrent.getName()) &&
+                        !entity.getNamespace().equals(dntCurrent.getNamespace())) {
+                    isMulti2 = true;
+                    break;
+                }
+            }
+            if (isMulti1 || isMulti2) {
+                return descendants + 0.01 * biGram;
+            }
             if (dependencies == 1.0 && new HashSet<>(dntBefore.getDependencies()).size() == 1 && new HashSet<>(dntCurrent.getDependencies()).size() == 1 &&
-                    descendants == 0.0) {
+                    descendants == 0.0 && !(matchPair.getMatchedEntities().contains(Pair.of(dntBefore.getParent(), dntCurrent.getParent())) ||
+                    matchPair.getCandidateEntities().contains(Pair.of(dntBefore.getParent(), dntCurrent.getParent())))) {
                 return 0.49;
             }
         }
         if (dependencies == 1.0 && new HashSet<>(dntBefore.getDependencies()).size() == 1 && new HashSet<>(dntCurrent.getDependencies()).size() == 1 &&
                 dntBefore.getType() == EntityType.FIELD && dntCurrent.getType() == EntityType.FIELD && descendants == 0.0) {
-            return 0.49;
+            if (!(matchPair.getMatchedEntities().contains(Pair.of(dntBefore.getParent(), dntCurrent.getParent())) ||
+                    matchPair.getCandidateEntities().contains(Pair.of(dntBefore.getParent(), dntCurrent.getParent()))))
+                return 0.49;
+            EntityInfo dependency1 = dntBefore.getDependencies().get(0);
+            EntityInfo dependency2 = dntCurrent.getDependencies().get(0);
+            if (!dependency1.getName().equals(dependency2.getName()))
+                return 0.49;
         }
         if (dependencies == 1.0 && new HashSet<>(dntBefore.getDependencies()).size() == 1 && new HashSet<>(dntCurrent.getDependencies()).size() == 1 &&
                 dntBefore.getType() == EntityType.METHOD && dntCurrent.getType() == EntityType.METHOD &&
                 ((MethodDeclaration) dntBefore.getDeclaration()).getBody() != null &&
-                ((MethodDeclaration) dntCurrent.getDeclaration()).getBody() != null &&
-                !matchPair.getMatchedEntities().contains(Pair.of(dntBefore.getParent(), dntCurrent.getParent()))) {
-            return descendants * 3;
+                ((MethodDeclaration) dntCurrent.getDeclaration()).getBody() != null) {
+            if (dntBefore.getName().equals(dntCurrent.getName()) && (matchPair.getMatchedEntities().contains(Pair.of(dntBefore.getParent(), dntCurrent.getParent())) ||
+                    matchPair.getCandidateEntities().contains(Pair.of(dntBefore.getParent(), dntCurrent.getParent()))))
+                return descendants * 3;
+            if (!(matchPair.getMatchedEntities().contains(Pair.of(dntBefore.getParent(), dntCurrent.getParent())) ||
+                    matchPair.getCandidateEntities().contains(Pair.of(dntBefore.getParent(), dntCurrent.getParent()))) ||
+                    !dntBefore.getName().equals(dntCurrent.getName()))
+                return descendants;
         }
-        NGram ngram = new NGram(2);
-        double biGram = 1 - ngram.distance(dntBefore.getNamespace() + "." + dntBefore.getName(), dntCurrent.getNamespace() + "." + dntCurrent.getName());
         return (union == 0 ? descendants : 0.5 * descendants + 0.5 * dependencies) + 0.01 * biGram;
     }
 
-    public static double calculateContextSimilarity(MatchPair matchPair, StatementNodeTree statement1, StatementNodeTree statement2) {
-        StatementNodeTree parent1 = statement1.getParent();
-        StatementNodeTree parent2 = statement2.getParent();
-        List<StatementNodeTree> children1 = parent1.getChildren();
-        List<StatementNodeTree> children2 = parent2.getChildren();
+    public static double calculateContextSimilarity(MatchPair originalPair, MatchPair matchPair, StatementNodeTree statement1, StatementNodeTree statement2) {
+        Set<Pair<DeclarationNodeTree, DeclarationNodeTree>> matchedEntities = originalPair.getMatchedEntities();
+        DeclarationNodeTree entity1 = statement1.getRoot().getMethodEntity();
+        DeclarationNodeTree entity2 = statement2.getRoot().getMethodEntity();
+        List<StatementNodeTree> children1 = new ArrayList<>();
+        List<StatementNodeTree> children2 = new ArrayList<>();
+        if (matchedEntities.contains(Pair.of(entity1, entity2))) {
+            StatementNodeTree parent1 = statement1.getParent();
+            StatementNodeTree parent2 = statement2.getParent();
+            children1 = parent1.getChildren();
+            children2 = parent2.getChildren();
+        } else {
+            for (Pair<DeclarationNodeTree, DeclarationNodeTree> pair : matchedEntities) {
+                DeclarationNodeTree left = pair.getLeft();
+                DeclarationNodeTree right = pair.getRight();
+                if (left == entity1) {
+                    StatementNodeTree parent1 = statement1.getParent();
+                    children1 = parent1.getChildren();
+                    List<StatementNodeTree> allBlocks = right.getMethodNode().getAllBlocks();
+                    for (StatementNodeTree block : allBlocks) {
+                        if (block.getChildren().contains(statement2)) {
+                            children2 = block.getChildren();
+                            break;
+                        }
+                    }
+                }
+                if (right == entity2) {
+                    StatementNodeTree parent2 = statement2.getParent();
+                    children2 = parent2.getChildren();
+                    List<StatementNodeTree> allBlocks = left.getMethodNode().getAllBlocks();
+                    for (StatementNodeTree block : allBlocks) {
+                        if (block.getChildren().contains(statement1)) {
+                            children1 = block.getChildren();
+                            break;
+                        }
+                    }
+                }
+            }
+        }
         int index1 = children1.indexOf(statement1);
         int index2 = children2.indexOf(statement2);
         if (index1 != -1 && index2 != -1) {
@@ -319,12 +515,38 @@ public class DiceFunction {
             if (previous1 >= 0 && previous2 >= 0 && next1 < children1.size() && next2 < children2.size()) {
                 StatementNodeTree previousNode1 = children1.get(previous1);
                 StatementNodeTree nextNode1 = children1.get(next1);
+                if (originalPair.getDeletedStatements().contains(nextNode1) && (next1 + 1) < children1.size()) {
+                    nextNode1 = children1.get(next1 + 1);
+                }
                 StatementNodeTree previousNode2 = children2.get(previous2);
                 StatementNodeTree nextNode2 = children2.get(next2);
+                if (originalPair.getAddedStatements().contains(nextNode2) && (next2 + 1) < children2.size()) {
+                    nextNode2 = children2.get(next2 + 1);
+                }
                 if ((matchPair.getMatchedStatements().contains(Pair.of(previousNode1, previousNode2)) ||
                         matchPair.getCandidateStatements().contains(Pair.of(previousNode1, previousNode2))) &&
                         (matchPair.getMatchedStatements().contains(Pair.of(nextNode1, nextNode2)) ||
                                 matchPair.getCandidateStatements().contains(Pair.of(nextNode1, nextNode2))))
+                    return 1.0;
+            }
+            if (previous1 == -1 && previous2 == -1 && next1 < children1.size() && next2 < children2.size()) {
+                StatementNodeTree nextNode1 = children1.get(next1);
+                if (matchPair.getDeletedStatements().contains(nextNode1) && (next1 + 1) < children1.size()) {
+                    nextNode1 = children1.get(next1 + 1);
+                }
+                StatementNodeTree nextNode2 = children2.get(next2);
+                if (matchPair.getAddedStatements().contains(nextNode2) && (next2 + 1) < children2.size()) {
+                    nextNode2 = children2.get(next2 + 1);
+                }
+                if (matchPair.getMatchedStatements().contains(Pair.of(nextNode1, nextNode2)) ||
+                        matchPair.getCandidateStatements().contains(Pair.of(nextNode1, nextNode2)))
+                    return 1.0;
+            }
+            if (previous1 >= 0 && previous2 >= 0 && next1 == children1.size() && next2 == children2.size()) {
+                StatementNodeTree previousNode1 = children1.get(previous1);
+                StatementNodeTree previousNode2 = children2.get(previous2);
+                if (matchPair.getMatchedStatements().contains(Pair.of(previousNode1, previousNode2)) ||
+                        matchPair.getCandidateStatements().contains(Pair.of(previousNode1, previousNode2)))
                     return 1.0;
             }
         }
@@ -440,9 +662,9 @@ public class DiceFunction {
         return false;
     }
 
-    public static double calculateSimilarity(MatchPair matchPair, StatementNodeTree statement1, StatementNodeTree statement2) {
+    public static double calculateSimilarity(MatchPair originalPair, MatchPair matchPair, StatementNodeTree statement1, StatementNodeTree statement2) {
         double descendants = 0.0;
-        double contexts = calculateContextSimilarity(matchPair, statement1, statement2);
+        double contexts = calculateContextSimilarity(originalPair, matchPair, statement1, statement2);
         if (statement1 instanceof OperationNode && statement2 instanceof OperationNode) {
             descendants = calculateDiceSimilarity(statement1, statement2);
             if (statement1.hasChildren() && statement2.hasChildren()) {
@@ -539,9 +761,86 @@ public class DiceFunction {
 
     public static double calculateBodyDice(VariableDeclarationFragment fragment, StatementNodeTree oldStatement, StatementNodeTree newStatement) {
         JDTService jdtService = new JDTServiceImpl();
-        List<ChildNode> list1 = jdtService.getDescendants(oldStatement.getStatement());
-        List<ChildNode> list2 = jdtService.getDescendants(newStatement.getStatement());
+        List<ChildNode> list1 = new ArrayList<>();
+        List<ChildNode> list2 = new ArrayList<>();
         List<ChildNode> list3 = jdtService.getDescendants(fragment.getInitializer());
+        if (oldStatement.getType() == StatementType.DO_STATEMENT && newStatement.getType() == StatementType.DO_STATEMENT) {
+            DoStatement statement1 = (DoStatement) oldStatement.getStatement();
+            DoStatement statement2 = (DoStatement) newStatement.getStatement();
+            list1.addAll(jdtService.getDescendants(statement1.getExpression()));
+            list2.addAll(jdtService.getDescendants(statement2.getExpression()));
+            return calculateBodyDice(list1, list2, list3);
+        } else if (oldStatement.getType() == StatementType.ENHANCED_FOR_STATEMENT && newStatement.getType() == StatementType.ENHANCED_FOR_STATEMENT) {
+            EnhancedForStatement statement1 = (EnhancedForStatement) oldStatement.getStatement();
+            EnhancedForStatement statement2 = (EnhancedForStatement) newStatement.getStatement();
+            list1.addAll(jdtService.getDescendants(statement1.getParameter()));
+            list1.addAll(jdtService.getDescendants(statement1.getExpression()));
+            list2.addAll(jdtService.getDescendants(statement2.getParameter()));
+            list2.addAll(jdtService.getDescendants(statement2.getExpression()));
+            return calculateBodyDice(list1, list2, list3);
+        } else if (oldStatement.getType() == StatementType.FOR_STATEMENT && newStatement.getType() == StatementType.FOR_STATEMENT) {
+            ForStatement statement1 = (ForStatement) oldStatement.getStatement();
+            ForStatement statement2 = (ForStatement) newStatement.getStatement();
+            List<Expression> initializers1 = statement1.initializers();
+            Expression expression1 = statement1.getExpression();
+            List<Expression> updaters1 = statement1.updaters();
+            List<Expression> initializers2 = statement2.initializers();
+            Expression expression2 = statement2.getExpression();
+            List<Expression> updaters2 = statement2.updaters();
+            for (Expression expression : initializers1) {
+                list1.addAll(jdtService.getDescendants(expression));
+            }
+            list1.addAll(jdtService.getDescendants(expression1));
+            for (Expression expression : updaters1) {
+                list1.addAll(jdtService.getDescendants(expression));
+            }
+            for (Expression expression : initializers2) {
+                list2.addAll(jdtService.getDescendants(expression));
+            }
+            list2.addAll(jdtService.getDescendants(expression2));
+            for (Expression expression : updaters2) {
+                list2.addAll(jdtService.getDescendants(expression));
+            }
+            return calculateBodyDice(list1, list2, list3);
+        } else if (oldStatement.getType() == StatementType.IF_STATEMENT && newStatement.getType() == StatementType.IF_STATEMENT) {
+            IfStatement statement1 = (IfStatement) oldStatement.getStatement();
+            IfStatement statement2 = (IfStatement) newStatement.getStatement();
+            list1.addAll(jdtService.getDescendants(statement1.getExpression()));
+            list2.addAll(jdtService.getDescendants(statement2.getExpression()));
+            return calculateBodyDice(list1, list2, list3);
+        } else if (oldStatement.getType() == StatementType.SWITCH_STATEMENT && newStatement.getType() == StatementType.SWITCH_STATEMENT) {
+            SwitchStatement statement1 = (SwitchStatement) oldStatement.getStatement();
+            SwitchStatement statement2 = (SwitchStatement) newStatement.getStatement();
+            list1.addAll(jdtService.getDescendants(statement1.getExpression()));
+            list2.addAll(jdtService.getDescendants(statement2.getExpression()));
+            return calculateBodyDice(list1, list2, list3);
+        } else if (oldStatement.getType() == StatementType.TRY_STATEMENT && newStatement.getType() == StatementType.TRY_STATEMENT) {
+            TryStatement statement1 = (TryStatement) oldStatement.getStatement();
+            TryStatement statement2 = (TryStatement) newStatement.getStatement();
+            List<Expression> resources1 = statement1.resources();
+            List<Expression> resources2 = statement2.resources();
+            for (Expression expression : resources1) {
+                list1.addAll(jdtService.getDescendants(expression));
+            }
+            for (Expression expression : resources2) {
+                list2.addAll(jdtService.getDescendants(expression));
+            }
+            return calculateBodyDice(list1, list2, list3);
+        } else if (oldStatement.getType() == StatementType.WHILE_STATEMENT && newStatement.getType() == StatementType.WHILE_STATEMENT) {
+            WhileStatement statement1 = (WhileStatement) oldStatement.getStatement();
+            WhileStatement statement2 = (WhileStatement) newStatement.getStatement();
+            list1.addAll(jdtService.getDescendants(statement1.getExpression()));
+            list2.addAll(jdtService.getDescendants(statement2.getExpression()));
+            return calculateBodyDice(list1, list2, list3);
+        } else if (oldStatement.getType() == StatementType.CATCH_CLAUSE && newStatement.getType() == StatementType.CATCH_CLAUSE) {
+            CatchClause statement1 = (CatchClause) oldStatement.getStatement();
+            CatchClause statement2 = (CatchClause) newStatement.getStatement();
+            list1.addAll(jdtService.getDescendants(statement1.getException()));
+            list2.addAll(jdtService.getDescendants(statement2.getException()));
+            return calculateBodyDice(list1, list2, list3);
+        }
+        list1 = jdtService.getDescendants(oldStatement.getStatement());
+        list2 = jdtService.getDescendants(newStatement.getStatement());
         return calculateBodyDice(list1, list2, list3);
     }
 
