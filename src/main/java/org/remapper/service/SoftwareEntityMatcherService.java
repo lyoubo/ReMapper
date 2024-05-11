@@ -270,7 +270,7 @@ public class SoftwareEntityMatcherService {
                         FieldDeclaration fd2 = ((FieldDeclaration) node2.getDeclaration());
                         UMLType type1 = UMLType.extractTypeObject(fd1.getType());
                         UMLType type2 = UMLType.extractTypeObject(fd2.getType());
-                        if (type1 != null && type2 != null && type1.compatibleTypes(type2)) {
+                        if (type1 != null && type2 != null && type1.equalClassType(type2)) {
                             node1.setMatched();
                             node2.setMatched();
                             matchPair.addMatchedEntity(node1, node2);
@@ -301,7 +301,7 @@ public class SoftwareEntityMatcherService {
                         if (md1.getReturnType2() != null && md2.getReturnType2() != null) {
                             UMLType type1 = UMLType.extractTypeObject(md1.getReturnType2());
                             UMLType type2 = UMLType.extractTypeObject(md2.getReturnType2());
-                            if (type1 != null && type2 != null && type1.compatibleTypes(type2) && StringUtils.equals(pl1, pl2) && StringUtils.equals(tp1, tp2)) {
+                            if (type1 != null && type2 != null && type1.equalClassType(type2) && StringUtils.equals(pl1, pl2) && StringUtils.equals(tp1, tp2)) {
                                 node1.setMatched();
                                 node2.setMatched();
                                 matchPair.addMatchedEntity(node1, node2);
@@ -313,7 +313,7 @@ public class SoftwareEntityMatcherService {
                         AnnotationTypeMemberDeclaration atd2 = ((AnnotationTypeMemberDeclaration) node2.getDeclaration());
                         UMLType type1 = UMLType.extractTypeObject(atd1.getType());
                         UMLType type2 = UMLType.extractTypeObject(atd2.getType());
-                        if (type1 != null && type2 != null && type1.compatibleTypes(type2)) {
+                        if (type1 != null && type2 != null && type1.equalClassType(type2)) {
                             node1.setMatched();
                             node2.setMatched();
                             matchPair.addMatchedEntity(node1, node2);
@@ -843,6 +843,7 @@ public class SoftwareEntityMatcherService {
 
     private void matchByIntroduceObjectRefactoring(MatchPair matchPair) {
         Set<Pair<DeclarationNodeTree, DeclarationNodeTree>> matchedEntities = matchPair.getMatchedEntities();
+        Set<Pair<DeclarationNodeTree, DeclarationNodeTree>> matchedEntitiesAddition = new LinkedHashSet<>();
         Set<Pair<DeclarationNodeTree, DeclarationNodeTree>> candidateEntities = matchPair.getCandidateEntities();
         Set<DeclarationNodeTree> deletedEntities = matchPair.getDeletedEntities();
         Set<DeclarationNodeTree> addedEntities = matchPair.getAddedEntities();
@@ -864,7 +865,7 @@ public class SoftwareEntityMatcherService {
                 for (DeclarationNodeTree addedEntity : addedEntities) {
                     if (addedEntity.getType() != EntityType.CLASS && addedEntity.getType() != EntityType.INTERFACE && addedEntity.getType() != EntityType.ENUM)
                         continue;
-                    TypeDeclaration declaration = (TypeDeclaration) addedEntity.getDeclaration();
+                    AbstractTypeDeclaration declaration = (AbstractTypeDeclaration) addedEntity.getDeclaration();
                     if (umlType == null || !umlType.getClassType().equals(declaration.getName().getIdentifier()))
                         continue;
                     List<DeclarationNodeTree> children = addedEntity.getChildren();
@@ -877,15 +878,17 @@ public class SoftwareEntityMatcherService {
                             FieldDeclaration addedFieldDeclaration = (FieldDeclaration) addedField.getDeclaration();
                             UMLType type1 = UMLType.extractTypeObject(fieldDeclaration1.getType());
                             UMLType type2 = UMLType.extractTypeObject(addedFieldDeclaration.getType());
-                            if (type1 == null || type2 == null || !type1.compatibleTypes(type2))
+                            if (type1 == null || type2 == null || !type1.equalClassType(type2))
                                 continue;
                             matchedFields.add(addedField);
-                            field1.setMatched();
-                            addedField.setMatched();
                             matchPair.addIntroducedObjects(addedEntity, field1, addedField);
-                            deletedEntitiesDeletion.add(field1);
-                            addedEntitiesDeletion.add(addedField);
                             addedEntitiesDeletion.add(addedEntity);
+                            if (fields1.size() > 1) {
+                                field1.setMatched();
+                                addedField.setMatched();
+                                deletedEntitiesDeletion.add(field1);
+                                addedEntitiesDeletion.add(addedField);
+                            }
                             break;
                         }
                     }
@@ -910,6 +913,7 @@ public class SoftwareEntityMatcherService {
             }
         }
         candidateEntities.removeAll(candidateEntitiesDeletion);
+        matchedEntities.addAll(matchedEntitiesAddition);
     }
 
     private void fineMatching(MatchPair matchPair) {
@@ -1102,7 +1106,7 @@ public class SoftwareEntityMatcherService {
         selectByDice(matchPair, entityPairs);
     }
 
-    private boolean isSameSignature(DeclarationNodeTree dntBefore, DeclarationNodeTree dntCurrent) {
+    private boolean isSameSignatureExceptName(DeclarationNodeTree dntBefore, DeclarationNodeTree dntCurrent) {
         if (dntBefore.getType() == EntityType.METHOD && dntCurrent.getType() == EntityType.METHOD) {
             MethodDeclaration md1 = ((MethodDeclaration) dntBefore.getDeclaration());
             MethodDeclaration md2 = ((MethodDeclaration) dntCurrent.getDeclaration());
@@ -1118,11 +1122,10 @@ public class SoftwareEntityMatcherService {
             String tp2 = ((List<TypeParameter>) md2.typeParameters()).stream().
                     map(TypeParameter::toString).
                     collect(Collectors.joining(","));
-            if (StringUtils.equals(md1.getName().getIdentifier(), md2.getName().getIdentifier()) &&
-                    md1.getReturnType2() != null && md2.getReturnType2() != null) {
+            if (md1.getReturnType2() != null && md2.getReturnType2() != null) {
                 UMLType type1 = UMLType.extractTypeObject(md1.getReturnType2());
                 UMLType type2 = UMLType.extractTypeObject(md2.getReturnType2());
-                if (type1 != null && type2 != null && type1.compatibleTypes(type2) &&
+                if (type1 != null && type2 != null && type1.equalClassType(type2) &&
                         StringUtils.equals(pl1, pl2) && StringUtils.equals(tp1, tp2))
                     return true;
             }
@@ -1137,8 +1140,7 @@ public class SoftwareEntityMatcherService {
                 VariableDeclarationFragment fragment2 = fragments2.get(0);
                 UMLType type1 = UMLType.extractTypeObject(fd1.getType());
                 UMLType type2 = UMLType.extractTypeObject(fd2.getType());
-                if (type1 != null && type2 != null && type1.compatibleTypes(type2) &&
-                        fragment1.getName().getIdentifier().equals(fragment2.getName().getIdentifier())) {
+                if (type1 != null && type2 != null && type1.equalClassType(type2)) {
                     if (isEmptyOrCreation(fd1.getType(), fragment1) && isEmptyOrCreation(fd2.getType(), fragment2))
                         return true;
                     if (fragment1.getInitializer() != null && fragment2.getInitializer() != null &&
@@ -1148,6 +1150,10 @@ public class SoftwareEntityMatcherService {
             }
         }
         return false;
+    }
+
+    private boolean isSameSignature(DeclarationNodeTree dntBefore, DeclarationNodeTree dntCurrent) {
+        return isSameSignatureExceptName(dntBefore, dntCurrent) && dntBefore.getName().equals(dntCurrent.getName());
     }
 
     private boolean isEmptyOrCreation(Type type, VariableDeclarationFragment fragment) {
@@ -1200,6 +1206,46 @@ public class SoftwareEntityMatcherService {
                                         break;
                                     }
                                 }
+                            }
+                            if (!(matchPair.getMatchedEntities().contains(Pair.of(dntBefore.getParent(), dntCurrent.getParent())) ||
+                                    matchPair.getCandidateEntities().contains(Pair.of(dntBefore.getParent(), dntCurrent.getParent()))) &&
+                                    references == 0.0) {
+                                boolean isMulti1 = false;
+                                boolean isMulti2 = false;
+                                for (DeclarationNodeTree entity : matchPair.getDeletedEntities()) {
+                                    if (entity.getType() != EntityType.FIELD)
+                                        continue;
+                                    if (entity == dntBefore)
+                                        continue;
+                                    FieldDeclaration declaration1 = (FieldDeclaration) entity.getDeclaration();
+                                    FieldDeclaration declaration2 = (FieldDeclaration) dntBefore.getDeclaration();
+                                    VariableDeclarationFragment fragment1 = (VariableDeclarationFragment) declaration1.fragments().get(0);
+                                    VariableDeclarationFragment fragment2 = (VariableDeclarationFragment) declaration2.fragments().get(0);
+                                    if (declaration1.getType().toString().equals(declaration2.getType().toString()) &&
+                                            fragment1.getName().getIdentifier().equals(fragment2.getName().getIdentifier()) &&
+                                            !dntBefore.getNamespace().equals(entity.getNamespace())) {
+                                        isMulti1 = true;
+                                        break;
+                                    }
+                                }
+                                for (DeclarationNodeTree entity : matchPair.getAddedEntities()) {
+                                    if (entity.getType() != EntityType.FIELD)
+                                        continue;
+                                    if (entity == dntCurrent)
+                                        continue;
+                                    FieldDeclaration declaration1 = (FieldDeclaration) entity.getDeclaration();
+                                    FieldDeclaration declaration2 = (FieldDeclaration) dntCurrent.getDeclaration();
+                                    VariableDeclarationFragment fragment1 = (VariableDeclarationFragment) declaration1.fragments().get(0);
+                                    VariableDeclarationFragment fragment2 = (VariableDeclarationFragment) declaration2.fragments().get(0);
+                                    if (declaration1.getType().toString().equals(declaration2.getType().toString()) &&
+                                            fragment1.getName().getIdentifier().equals(fragment2.getName().getIdentifier()) &&
+                                            !entity.getNamespace().equals(dntCurrent.getNamespace())) {
+                                        isMulti2 = true;
+                                        break;
+                                    }
+                                }
+                                if (isMulti1 || isMulti2)
+                                    dice = 0;
                             }
                             List<DeclarationNodeTree> children = dntCurrent.getParent().getChildren();
                             for (DeclarationNodeTree child : children) {
@@ -1290,8 +1336,7 @@ public class SoftwareEntityMatcherService {
                             continue;
                         }
                         dice = DiceFunction.calculateDiceSimilarity(matchPair, (InternalNode) dntBefore, (InternalNode) dntCurrent);
-                        if (dntBefore.getName().equals(dntCurrent.getName()) && (dntBefore.getName().endsWith("Test") || dntBefore.getName().startsWith("Test")) &&
-                                (dntCurrent.getName().endsWith("Test") || dntCurrent.getName().startsWith("Test"))) {
+                        if (dntBefore.getName().equals(dntCurrent.getName())) {
                             double dice2 = DiceFunction.calculateDiceSimilarity((InternalNode) dntBefore, (InternalNode) dntCurrent);
                             dice = Math.max(dice, dice2);
                             if (dice < 0.35) continue;
@@ -1387,7 +1432,7 @@ public class SoftwareEntityMatcherService {
                     }
                     if ((isSubTypeOf(matchedEntities, dntBefore, dntCurrent, 0) || isAbstract) &&
                             isSubTypeOf(matchedEntities, dntDeleted, dntCurrent, 0)
-                            && isSameSignature(dntDeleted, dntCurrent)) {
+                            && isSameSignatureExceptName(dntDeleted, dntCurrent) && dntDeleted.getName().equals(dntBefore.getName())) {
                         matchedEntitiesAdded.add(Pair.of(dntDeleted, dntCurrent));
                         dntDeleted.setMatched();
                         deletionBefore.add(dntDeleted);
@@ -1413,7 +1458,7 @@ public class SoftwareEntityMatcherService {
                     }
                     if ((isSubTypeOf(matchedEntities, dntCurrent, dntBefore, 1) || isAbstract) &&
                             isSubTypeOf(matchedEntities, dntAdded, dntBefore, 1)
-                            && isSameSignature(dntBefore, dntAdded)) {
+                            && isSameSignatureExceptName(dntBefore, dntAdded) && dntBefore.getName().equals(dntAdded.getName())) {
                         matchedEntitiesAdded.add(Pair.of(dntBefore, dntAdded));
                         dntAdded.setMatched();
                         deletionCurrent.add(dntAdded);
@@ -1599,6 +1644,14 @@ public class SoftwareEntityMatcherService {
                             left.setMatched(false);
                         }
                     }
+                    if (matchedEntities.contains(Pair.of(entity.getParent(), right.getParent())) && isSameSignature(entity, right)) {
+                        matchedEntitiesDeleted.add(pair);
+                        matchedEntitiesAdded.add(Pair.of(entity, right));
+                        deletedEntitiesDeleted.add(entity);
+                        deletedEntitiesAdded.add(left);
+                        entity.setMatched();
+                        left.setMatched(false);
+                    }
                 }
                 for (DeclarationNodeTree entity : addedEntities) {
                     if (left.getDependencies().isEmpty() && right.getDependencies().isEmpty() &&
@@ -1661,6 +1714,14 @@ public class SoftwareEntityMatcherService {
                             entity.setMatched();
                             right.setMatched(false);
                         }
+                    }
+                    if (matchedEntities.contains(Pair.of(left.getParent(), entity.getParent())) && isSameSignature(left, entity)) {
+                        matchedEntitiesDeleted.add(pair);
+                        matchedEntitiesAdded.add(Pair.of(left, entity));
+                        addedEntitiesDeleted.add(entity);
+                        addedEntitiesAdded.add(right);
+                        entity.setMatched();
+                        right.setMatched(false);
                     }
                 }
             }

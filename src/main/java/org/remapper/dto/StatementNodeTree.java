@@ -15,6 +15,7 @@ public abstract class StatementNodeTree implements LocationInfoProvider {
     private List<StatementNodeTree> children;
     private List<StatementNodeTree> descendants;
     private MethodNode root;
+    private MethodNode higherRoot;
     private ASTNode statement;
     private String expression;
     private BlockType blockType;
@@ -93,6 +94,15 @@ public abstract class StatementNodeTree implements LocationInfoProvider {
 
     public void setRoot(MethodNode root) {
         this.root = root;
+        this.higherRoot = root;
+    }
+
+    public MethodNode getHigherRoot() {
+        return higherRoot;
+    }
+
+    public void setHigherRoot(MethodNode higherRoot) {
+        this.higherRoot = higherRoot;
     }
 
     public ASTNode getStatement() {

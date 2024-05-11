@@ -14,6 +14,7 @@ public class MethodNode extends StatementNodeTree {
     private List<StatementNodeTree> allControls;
     private List<StatementNodeTree> unmatchedStatements;
     private List<StatementNodeTree> matchedStatements;
+    private List<StatementNodeTree> duplicatedStatements;
     private DeclarationNodeTree methodEntity;
 
     public MethodNode(CompilationUnit cu, String filePath, MethodDeclaration method) {
@@ -138,11 +139,25 @@ public class MethodNode extends StatementNodeTree {
         return matchedStatements;
     }
 
+    public List<StatementNodeTree> getDuplicatedStatements() {
+        duplicatedStatements = new ArrayList<>();
+        depthFirstSearch(duplicatedStatements, getChildren());
+        return duplicatedStatements;
+    }
+
     private void depthFirstSearch(List<StatementNodeTree> list, List<StatementNodeTree> children, boolean matched) {
         for (StatementNodeTree child : children) {
             if (child.isMatched() == matched)
                 list.add(child);
             depthFirstSearch(list, child.getChildren(), matched);
+        }
+    }
+
+    private void depthFirstSearch(List<StatementNodeTree> list, List<StatementNodeTree> children) {
+        for (StatementNodeTree child : children) {
+            if (child.isDuplicated() == true)
+                list.add(child);
+            depthFirstSearch(list, child.getChildren());
         }
     }
 

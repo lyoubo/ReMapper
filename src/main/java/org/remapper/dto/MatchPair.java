@@ -176,6 +176,14 @@ public class MatchPair {
         return matchedStatements.stream().map(pair -> Pair.of(pair.getLeft().getEntity(), pair.getRight().getEntity())).collect(Collectors.toCollection(LinkedHashSet::new));
     }
 
+    public Set<StatementNodeTree> getMatchedStatementsLeft() {
+        return matchedStatements.stream().map(Pair::getLeft).collect(Collectors.toCollection(LinkedHashSet::new));
+    }
+
+    public Set<StatementNodeTree> getMatchedStatementsRight() {
+        return matchedStatements.stream().map(Pair::getRight).collect(Collectors.toCollection(LinkedHashSet::new));
+    }
+
     public void addMatchedStatement(StatementNodeTree statementBefore, StatementNodeTree statementCurrent) {
         matchedStatements.add(Pair.of(statementBefore, statementCurrent));
     }

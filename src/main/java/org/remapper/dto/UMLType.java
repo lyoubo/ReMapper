@@ -12,7 +12,8 @@ import java.util.List;
 public abstract class UMLType implements Serializable {
     private int arrayDimension;
     private boolean parameterized;
-    private List<UMLType> typeArguments = new ArrayList<UMLType>();
+    private List<UMLType> typeArguments = new ArrayList<>();
+    protected List<Annotation> annotations = new ArrayList<>();
 
     public int getArrayDimension() {
         return this.arrayDimension;
@@ -21,6 +22,7 @@ public abstract class UMLType implements Serializable {
     public List<UMLType> getTypeArguments() {
         return typeArguments;
     }
+
     protected String typeArgumentsToString() {
         StringBuilder sb = new StringBuilder();
         if (typeArguments.isEmpty()) {
@@ -43,6 +45,14 @@ public abstract class UMLType implements Serializable {
         StringBuilder sb = new StringBuilder();
         if (isParameterized())
             sb.append(typeArgumentsToString());
+        for (int i = 0; i < getArrayDimension(); i++) {
+            for (int j = 0; j < annotations.size(); j++) {
+                if (i == j) {
+                    sb.append(" " + annotations.get(j) + " ");
+                }
+            }
+            sb.append("[]");
+        }
         return sb.toString();
     }
 
@@ -71,28 +81,28 @@ public abstract class UMLType implements Serializable {
     }
 
     public boolean equalTypeArgumentsAndArrayDimension(UMLType typeObject) {
-        if(!this.isParameterized() && !typeObject.isParameterized())
+        if (!this.isParameterized() && !typeObject.isParameterized())
             return this.arrayDimension == typeObject.arrayDimension;
-        else if(this.isParameterized() && typeObject.isParameterized())
+        else if (this.isParameterized() && typeObject.isParameterized())
             return equalTypeArguments(typeObject) && this.arrayDimension == typeObject.arrayDimension;
         return false;
     }
 
     public boolean equalTypeArgumentsAndArrayDimensionForSubType(UMLType typeObject) {
-        if(!this.isParameterized() && !typeObject.isParameterized())
+        if (!this.isParameterized() && !typeObject.isParameterized())
             return this.arrayDimension == typeObject.arrayDimension;
-        else if(this.isParameterized() && typeObject.isParameterized())
+        else if (this.isParameterized() && typeObject.isParameterized())
             return equalTypeArguments(typeObject) && this.arrayDimension == typeObject.arrayDimension;
-        else if(this.isParameterized() && this.typeArgumentsToString().equals("<?>") && !typeObject.isParameterized())
+        else if (this.isParameterized() && this.typeArgumentsToString().equals("<?>") && !typeObject.isParameterized())
             return this.arrayDimension == typeObject.arrayDimension;
-        else if(!this.isParameterized() && typeObject.isParameterized() && typeObject.typeArgumentsToString().equals("<?>"))
+        else if (!this.isParameterized() && typeObject.isParameterized() && typeObject.typeArgumentsToString().equals("<?>"))
             return this.arrayDimension == typeObject.arrayDimension;
         return false;
     }
 
     public boolean containsTypeArgument(String type) {
-        for(UMLType typeArgument : typeArguments) {
-            if(typeArgument.toString().equals(type)) {
+        for (UMLType typeArgument : typeArguments) {
+            if (typeArgument.toString().equals(type)) {
                 return true;
             }
         }
@@ -104,30 +114,36 @@ public abstract class UMLType implements Serializable {
     }
 
     public abstract boolean equals(Object o);
+
     public abstract String toString();
+
     public abstract String toQualifiedString();
+
     public abstract String getClassType();
 
     public boolean equalsQualified(UMLType type) {
-        if(this.getClass() == type.getClass()) {
+        if (this.getClass() == type.getClass()) {
             return this.equals(type);
         }
         return false;
     }
+
     public boolean equalsWithSubType(UMLType type) {
-        if(this.getClass() == type.getClass()) {
+        if (this.getClass() == type.getClass()) {
             return this.equals(type);
         }
         return false;
     }
+
     public boolean equalClassType(UMLType type) {
-        if(this.getClass() == type.getClass()) {
+        if (this.getClass() == type.getClass()) {
             return this.equals(type);
         }
         return false;
     }
+
     public boolean compatibleTypes(UMLType type) {
-        if(this.getClass() == type.getClass()) {
+        if (this.getClass() == type.getClass()) {
             return this.equals(type);
         }
         return false;
@@ -195,16 +211,31 @@ public abstract class UMLType implements Serializable {
     public static UMLType extractTypeObject(Type type) {
         if (type.isPrimitiveType() || type.isSimpleType()) {
             LeafType leafType = extractTypeObject(stringify(type));
+            AnnotatableType annotatableType = (AnnotatableType)type;
+            List<Annotation> annotations = annotatableType.annotations();
+            for(Annotation annotation : annotations) {
+                leafType.annotations.add(annotation);
+            }
             return leafType;
         } else if (type instanceof QualifiedType) {
             QualifiedType qualified = (QualifiedType) type;
             UMLType leftType = extractTypeObject(qualified.getQualifier());
             LeafType rightType = extractTypeObject(qualified.getName().getFullyQualifiedName());
+            AnnotatableType annotatableType = (AnnotatableType)qualified;
+            List<Annotation> annotations = annotatableType.annotations();
+            for(Annotation annotation : annotations) {
+                rightType.annotations.add(annotation);
+            }
             return new CompositeType(leftType, rightType);
         } else if (type instanceof NameQualifiedType) {
             NameQualifiedType nameQualified = (NameQualifiedType) type;
             LeafType leftType = extractTypeObject(nameQualified.getQualifier().getFullyQualifiedName());
             LeafType rightType = extractTypeObject(nameQualified.getName().getFullyQualifiedName());
+            AnnotatableType annotatableType = (AnnotatableType)nameQualified;
+            List<Annotation> annotations = annotatableType.annotations();
+            for(Annotation annotation : annotations) {
+                rightType.annotations.add(annotation);
+            }
             return new CompositeType(leftType, rightType);
         } else if (type instanceof WildcardType) {
             WildcardType wildcard = (WildcardType) type;
@@ -215,10 +246,22 @@ public abstract class UMLType implements Serializable {
             } else {
                 myWildcardType = new org.remapper.dto.WildcardType(null, false);
             }
+            AnnotatableType annotatableType = (AnnotatableType)wildcard;
+            List<Annotation> annotations = annotatableType.annotations();
+            for(Annotation annotation : annotations) {
+                myWildcardType.annotations.add(annotation);
+            }
             return myWildcardType;
         } else if (type instanceof ArrayType) {
             ArrayType array = (ArrayType) type;
             UMLType arrayType = extractTypeObject(array.getElementType());
+            for(Object dim : array.dimensions()) {
+                Dimension dimension = (Dimension)dim;
+                List<Annotation> annotations = dimension.annotations();
+                for(Annotation annotation : annotations) {
+                    arrayType.annotations.add(annotation);
+                }
+            }
             arrayType.arrayDimension = array.getDimensions();
             return arrayType;
         } else if (type instanceof ParameterizedType) {

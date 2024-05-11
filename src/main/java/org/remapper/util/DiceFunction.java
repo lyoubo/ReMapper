@@ -17,6 +17,19 @@ public class DiceFunction {
         JDTService jdtService = new JDTServiceImpl();
         List<ChildNode> list1 = jdtService.getDescendants(leafBefore.getDeclaration());
         List<ChildNode> list2 = jdtService.getDescendants(leafCurrent.getDeclaration());
+        if (leafBefore.getType() == EntityType.METHOD && leafCurrent.getType() == EntityType.METHOD) {
+            MethodDeclaration declaration1 = (MethodDeclaration) leafBefore.getDeclaration();
+            MethodDeclaration declaration2 = (MethodDeclaration) leafCurrent.getDeclaration();
+            if (declaration1.getBody() != null && declaration2.getBody() != null) {
+                List<ChildNode> body1 = jdtService.getDescendants(declaration1.getBody());
+                List<ChildNode> body2 = jdtService.getDescendants(declaration2.getBody());
+                if (!body1.isEmpty() && !body2.isEmpty() && body1.size() * 2 < list1.size() && body2.size() * 2 < list2.size() &&
+                        !leafBefore.getName().equals(leafCurrent.getName())) {
+                    list1 = body1;
+                    list2 = body2;
+                }
+            }
+        }
         if (leafBefore.getType() == EntityType.FIELD && leafCurrent.getType() == EntityType.FIELD) {
             List<ChildNode> removed = new ArrayList<>();
             for (ChildNode node : list1) {
@@ -343,7 +356,10 @@ public class DiceFunction {
                         continue;
                     FieldDeclaration declaration1 = (FieldDeclaration) entity.getDeclaration();
                     FieldDeclaration declaration2 = (FieldDeclaration) dntBefore.getDeclaration();
-                    if (declaration1.toString().equals(declaration2.toString()) &&
+                    VariableDeclarationFragment fragment1 = (VariableDeclarationFragment) declaration1.fragments().get(0);
+                    VariableDeclarationFragment fragment2 = (VariableDeclarationFragment) declaration2.fragments().get(0);
+                    if (declaration1.getType().toString().equals(declaration2.getType().toString()) &&
+                            fragment1.getName().getIdentifier().equals(fragment2.getName().getIdentifier()) &&
                             !dntBefore.getNamespace().equals(entity.getNamespace())) {
                         isMulti1 = true;
                         break;
@@ -356,7 +372,10 @@ public class DiceFunction {
                         continue;
                     FieldDeclaration declaration1 = (FieldDeclaration) entity.getDeclaration();
                     FieldDeclaration declaration2 = (FieldDeclaration) dntCurrent.getDeclaration();
-                    if (declaration1.toString().equals(declaration2.toString()) &&
+                    VariableDeclarationFragment fragment1 = (VariableDeclarationFragment) declaration1.fragments().get(0);
+                    VariableDeclarationFragment fragment2 = (VariableDeclarationFragment) declaration2.fragments().get(0);
+                    if (declaration1.getType().toString().equals(declaration2.getType().toString()) &&
+                            fragment1.getName().getIdentifier().equals(fragment2.getName().getIdentifier()) &&
                             !entity.getNamespace().equals(dntCurrent.getNamespace())) {
                         isMulti2 = true;
                         break;
@@ -402,6 +421,19 @@ public class DiceFunction {
                     }
                 }
             }
+            if ((matchPair.getMatchedEntities().contains(Pair.of(dntBefore.getParent(), dntCurrent.getParent())) ||
+                    matchPair.getCandidateEntities().contains(Pair.of(dntBefore.getParent(), dntCurrent.getParent()))) &&
+                    dependencies == 0.0 && dntBefore.getDependencies().isEmpty() && dntCurrent.getDependencies().isEmpty()) {
+                FieldDeclaration declaration1 = (FieldDeclaration) dntBefore.getDeclaration();
+                FieldDeclaration declaration2 = (FieldDeclaration) dntCurrent.getDeclaration();
+                VariableDeclarationFragment fragment1 = (VariableDeclarationFragment) declaration1.fragments().get(0);
+                VariableDeclarationFragment fragment2 = (VariableDeclarationFragment) declaration2.fragments().get(0);
+                if (!declaration1.getType().toString().equals(declaration2.getType().toString()) &&
+                        !fragment1.getName().getIdentifier().equals(fragment2.getName().getIdentifier())) {
+                    if (descendants <= 0.5)
+                        return 0.49;
+                }
+            }
         }
         if ((dntBefore.getType() == EntityType.CLASS || dntBefore.getType() == EntityType.INTERFACE || dntBefore.getType() == EntityType.ENUM) &&
                 (dntCurrent.getType() == EntityType.CLASS || dntCurrent.getType() == EntityType.INTERFACE || dntCurrent.getType() == EntityType.ENUM)) {
@@ -435,13 +467,15 @@ public class DiceFunction {
             if (isMulti1 || isMulti2) {
                 return descendants + 0.01 * biGram;
             }
-            if (dependencies == 1.0 && new HashSet<>(dntBefore.getDependencies()).size() == 1 && new HashSet<>(dntCurrent.getDependencies()).size() == 1 &&
+            if (dependencies == 1.0 && dntBefore.getDependencies().size() < 4 && dntCurrent.getDependencies().size() < 4 &&
+                    new HashSet<>(dntBefore.getDependencies()).size() == 1 && new HashSet<>(dntCurrent.getDependencies()).size() == 1 &&
                     descendants == 0.0 && !(matchPair.getMatchedEntities().contains(Pair.of(dntBefore.getParent(), dntCurrent.getParent())) ||
                     matchPair.getCandidateEntities().contains(Pair.of(dntBefore.getParent(), dntCurrent.getParent())))) {
                 return 0.49;
             }
         }
-        if (dependencies == 1.0 && new HashSet<>(dntBefore.getDependencies()).size() == 1 && new HashSet<>(dntCurrent.getDependencies()).size() == 1 &&
+        if (dependencies == 1.0 && dntBefore.getDependencies().size() < 4 && dntCurrent.getDependencies().size() < 4 &&
+                new HashSet<>(dntBefore.getDependencies()).size() == 1 && new HashSet<>(dntCurrent.getDependencies()).size() == 1 &&
                 dntBefore.getType() == EntityType.FIELD && dntCurrent.getType() == EntityType.FIELD && descendants == 0.0) {
             if (!(matchPair.getMatchedEntities().contains(Pair.of(dntBefore.getParent(), dntCurrent.getParent())) ||
                     matchPair.getCandidateEntities().contains(Pair.of(dntBefore.getParent(), dntCurrent.getParent()))))
@@ -451,7 +485,8 @@ public class DiceFunction {
             if (!dependency1.getName().equals(dependency2.getName()))
                 return 0.49;
         }
-        if (dependencies == 1.0 && new HashSet<>(dntBefore.getDependencies()).size() == 1 && new HashSet<>(dntCurrent.getDependencies()).size() == 1 &&
+        if (dependencies == 1.0 && dntBefore.getDependencies().size() < 4 && dntCurrent.getDependencies().size() < 4 &&
+                new HashSet<>(dntBefore.getDependencies()).size() == 1 && new HashSet<>(dntCurrent.getDependencies()).size() == 1 &&
                 dntBefore.getType() == EntityType.METHOD && dntCurrent.getType() == EntityType.METHOD &&
                 ((MethodDeclaration) dntBefore.getDeclaration()).getBody() != null &&
                 ((MethodDeclaration) dntCurrent.getDeclaration()).getBody() != null) {
@@ -459,7 +494,7 @@ public class DiceFunction {
                     matchPair.getCandidateEntities().contains(Pair.of(dntBefore.getParent(), dntCurrent.getParent()))))
                 return descendants * 3;
             if (!(matchPair.getMatchedEntities().contains(Pair.of(dntBefore.getParent(), dntCurrent.getParent())) ||
-                    matchPair.getCandidateEntities().contains(Pair.of(dntBefore.getParent(), dntCurrent.getParent()))) ||
+                    matchPair.getCandidateEntities().contains(Pair.of(dntBefore.getParent(), dntCurrent.getParent()))) &&
                     !dntBefore.getName().equals(dntCurrent.getName()))
                 return descendants;
         }
@@ -467,9 +502,16 @@ public class DiceFunction {
     }
 
     public static double calculateContextSimilarity(MatchPair originalPair, MatchPair matchPair, StatementNodeTree statement1, StatementNodeTree statement2) {
+        if (statement1 instanceof BlockNode && statement2 instanceof BlockNode && statement1.getParent() instanceof ControlNode && statement2.getParent() instanceof ControlNode) {
+            if (matchPair.getMatchedStatements().contains(Pair.of(statement1.getParent(), statement2.getParent())) ||
+                    matchPair.getCandidateStatements().contains(Pair.of(statement1.getParent(), statement2.getParent())))
+                return 1.0;
+        }
         Set<Pair<DeclarationNodeTree, DeclarationNodeTree>> matchedEntities = originalPair.getMatchedEntities();
-        DeclarationNodeTree entity1 = statement1.getRoot().getMethodEntity();
-        DeclarationNodeTree entity2 = statement2.getRoot().getMethodEntity();
+        MethodNode root1 = statement1.getRoot();
+        MethodNode root2 = statement2.getRoot();
+        DeclarationNodeTree entity1 = root1.getMethodEntity();
+        DeclarationNodeTree entity2 = root2.getMethodEntity();
         List<StatementNodeTree> children1 = new ArrayList<>();
         List<StatementNodeTree> children2 = new ArrayList<>();
         if (matchedEntities.contains(Pair.of(entity1, entity2))) {
@@ -478,29 +520,29 @@ public class DiceFunction {
             children1 = parent1.getChildren();
             children2 = parent2.getChildren();
         } else {
-            for (Pair<DeclarationNodeTree, DeclarationNodeTree> pair : matchedEntities) {
-                DeclarationNodeTree left = pair.getLeft();
-                DeclarationNodeTree right = pair.getRight();
-                if (left == entity1) {
-                    StatementNodeTree parent1 = statement1.getParent();
-                    children1 = parent1.getChildren();
-                    List<StatementNodeTree> allBlocks = right.getMethodNode().getAllBlocks();
-                    for (StatementNodeTree block : allBlocks) {
-                        if (block.getChildren().contains(statement2)) {
-                            children2 = block.getChildren();
-                            break;
-                        }
+            MethodNode higherRoot1 = statement1.getHigherRoot();
+            MethodNode higherRoot2 = statement2.getHigherRoot();
+            if (root1 == higherRoot1) {
+                StatementNodeTree parent = statement1.getParent();
+                children1 = parent.getChildren();
+            } else {
+                List<StatementNodeTree> allBlocks = higherRoot1.getAllBlocks();
+                for (StatementNodeTree block : allBlocks) {
+                    if (block.getChildren().contains(statement1)) {
+                        children1 = block.getChildren();
+                        break;
                     }
                 }
-                if (right == entity2) {
-                    StatementNodeTree parent2 = statement2.getParent();
-                    children2 = parent2.getChildren();
-                    List<StatementNodeTree> allBlocks = left.getMethodNode().getAllBlocks();
-                    for (StatementNodeTree block : allBlocks) {
-                        if (block.getChildren().contains(statement1)) {
-                            children1 = block.getChildren();
-                            break;
-                        }
+            }
+            if (root2 == higherRoot2) {
+                StatementNodeTree parent = statement2.getParent();
+                children2 = parent.getChildren();
+            } else {
+                List<StatementNodeTree> allBlocks = higherRoot2.getAllBlocks();
+                for (StatementNodeTree block : allBlocks) {
+                    if (block.getChildren().contains(statement2)) {
+                        children2 = block.getChildren();
+                        break;
                     }
                 }
             }
@@ -660,6 +702,10 @@ public class DiceFunction {
                 return true;
         }
         return false;
+    }
+
+    public static double calculateSimilarity(MatchPair matchPair, StatementNodeTree statement1, StatementNodeTree statement2) {
+        return calculateSimilarity(matchPair, matchPair, statement1, statement2);
     }
 
     public static double calculateSimilarity(MatchPair originalPair, MatchPair matchPair, StatementNodeTree statement1, StatementNodeTree statement2) {

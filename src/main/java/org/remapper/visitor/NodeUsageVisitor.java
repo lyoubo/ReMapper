@@ -25,6 +25,16 @@ public class NodeUsageVisitor extends ASTVisitor {
     }
 
     @Override
+    public boolean visit(ConstructorInvocation node) {
+        return visit(node.resolveConstructorBinding());
+    }
+
+    @Override
+    public boolean visit(SuperConstructorInvocation node) {
+        return visit(node.resolveConstructorBinding());
+    }
+
+    @Override
     public boolean visit(SuperMethodInvocation node) {
         return visit(node.resolveMethodBinding());
     }
