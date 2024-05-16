@@ -31,13 +31,13 @@ public class MethodStatementMatcherService {
         List<StatementNodeTree> duplicatedStatementsBefore = methodBefore.getDuplicatedStatements();
         Set<StatementNodeTree> matchedStatementsLeft = matchPair.getMatchedStatementsLeft();
         for (StatementNodeTree duplicatedStatement : duplicatedStatementsBefore) {
-            if (!matchedStatementsLeft.contains(duplicatedStatement) && !duplicatedStatement.isMatched())
+            if (!matchedStatementsLeft.contains(duplicatedStatement))
                 matchPair.addDeletedStatement(duplicatedStatement);
         }
         List<StatementNodeTree> duplicatedStatementsAfter = methodAfter.getDuplicatedStatements();
         Set<StatementNodeTree> matchedStatementsRight = matchPair.getMatchedStatementsRight();
         for (StatementNodeTree duplicatedStatement : duplicatedStatementsAfter) {
-            if (!matchedStatementsRight.contains(duplicatedStatement) && !duplicatedStatement.isMatched())
+            if (!matchedStatementsRight.contains(duplicatedStatement))
                 matchPair.addAddedStatement(duplicatedStatement);
         }
         List<StatementNodeTree> unmatchedStatementsAfter = methodAfter.getUnmatchedStatements();

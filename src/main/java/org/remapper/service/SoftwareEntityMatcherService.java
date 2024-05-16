@@ -68,7 +68,7 @@ public class SoftwareEntityMatcherService {
         populateBeforeDependencies(matchPair, projectPath, modifiedFiles, renamedFiles, deletedFiles);
         gitService.resetHard(repository);
 
-        fineMatching(matchPair);
+        fineMatching(matchPair, renamedFiles);
         additionalMatchByName(matchPair);
         additionalMatchByDice(matchPair);
         additionalMatchByReference(matchPair);
@@ -104,7 +104,7 @@ public class SoftwareEntityMatcherService {
         populateCurrentDependencies(matchPair, projectPath, modifiedFiles, renamedFiles, addedFiles);
         populateBeforeDependencies(matchPair, projectPath, modifiedFiles, renamedFiles, deletedFiles);
 
-        fineMatching(matchPair);
+        fineMatching(matchPair, renamedFiles);
         additionalMatchByName(matchPair);
         additionalMatchByDice(matchPair);
         additionalMatchByReference(matchPair);
@@ -916,7 +916,7 @@ public class SoftwareEntityMatcherService {
         matchedEntities.addAll(matchedEntitiesAddition);
     }
 
-    private void fineMatching(MatchPair matchPair) {
+    private void fineMatching(MatchPair matchPair, Map<String, String> renamedFiles) {
         for (int i = 0; i < 5; i++) {
             Set<Pair<DeclarationNodeTree, DeclarationNodeTree>> temp = new HashSet<>();
             Set<DeclarationNodeTree> beforeEntities = new HashSet<>();
@@ -926,6 +926,8 @@ public class SoftwareEntityMatcherService {
             beforeEntities.addAll(matchPair.getDeletedEntities());
             currentEntities.addAll(matchPair.getCandidateEntitiesRight());
             currentEntities.addAll(matchPair.getAddedEntities());
+            if (i == 0)
+                populateRenamedFiles(beforeEntities, currentEntities, renamedFiles, temp);
             for (DeclarationNodeTree dntBefore : beforeEntities) {
                 for (DeclarationNodeTree dntCurrent : currentEntities) {
                     if (typeCompatible(dntBefore, dntCurrent)) {
@@ -1015,6 +1017,33 @@ public class SoftwareEntityMatcherService {
         matchPair.getCandidateEntities().clear();
     }
 
+    private void populateRenamedFiles(Set<DeclarationNodeTree> beforeEntities, Set<DeclarationNodeTree> currentEntities,
+                                      Map<String, String> renamedFiles, Set<Pair<DeclarationNodeTree, DeclarationNodeTree>> temp) {
+        Set<Pair<String, String>> renamedPackages = new HashSet<>();
+        for (String oldFile : renamedFiles.keySet()) {
+            String newFile = renamedFiles.get(oldFile);
+            if (oldFile.lastIndexOf("/") != -1 && newFile.lastIndexOf("/") != -1) {
+                String oldNamespace = oldFile.substring(0, oldFile.lastIndexOf("/"));
+                String newNamespace = newFile.substring(0, newFile.lastIndexOf("/"));
+                renamedPackages.add(Pair.of(oldNamespace, newNamespace));
+            }
+        }
+        for (DeclarationNodeTree dntBefore : beforeEntities) {
+            for (DeclarationNodeTree dntCurrent : currentEntities) {
+                if (isSameType(dntBefore, dntCurrent) && dntBefore.getType() == dntCurrent.getType() && dntBefore.getName().equals(dntCurrent.getName())) {
+                    for (Pair<String, String> pair : renamedPackages) {
+                        String left = pair.getLeft();
+                        String right = pair.getRight();
+                        if (dntBefore.getFilePath().replace(left, right).equals(dntCurrent.getFilePath())) {
+                            temp.add(Pair.of(dntBefore, dntCurrent));
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 
     private boolean typeCompatible(DeclarationNodeTree dntBefore, DeclarationNodeTree dntCurrent) {
         return dntBefore.getType() == dntCurrent.getType() ||
@@ -1030,6 +1059,11 @@ public class SoftwareEntityMatcherService {
 
     private void additionalMatchByName(MatchPair matchPair) {
         List<EntityPair> entityPairs = new ArrayList<>();
+        Set<Pair<DeclarationNodeTree, DeclarationNodeTree>> matchedEntities = matchPair.getMatchedEntities();
+        Set<Pair<DeclarationNodeTree, DeclarationNodeTree>> matchedEntitiesDeletion = new HashSet<>();
+        Set<Pair<DeclarationNodeTree, DeclarationNodeTree>> matchedEntitiesAddition = new HashSet<>();
+        Set<DeclarationNodeTree> deletedEntityAddition = new HashSet<>();
+        Set<DeclarationNodeTree> addedEntityAddition = new HashSet<>();
         for (DeclarationNodeTree dntBefore : matchPair.getDeletedEntities()) {
             for (DeclarationNodeTree dntCurrent : matchPair.getAddedEntities()) {
                 if (dntBefore.equals(dntCurrent)) {
@@ -1091,6 +1125,57 @@ public class SoftwareEntityMatcherService {
                             (dntBefore.getType() == EntityType.CLASS || dntBefore.getType() == EntityType.INTERFACE) &&
                             (dntCurrent.getType() == EntityType.CLASS || dntCurrent.getType() == EntityType.INTERFACE)) {
                         if (dntBefore.getType() == dntCurrent.getType() && dntBefore.getName().equals(dntCurrent.getName())) {
+                            for (Pair<DeclarationNodeTree, DeclarationNodeTree> pair : matchedEntities) {
+                                DeclarationNodeTree left = pair.getLeft();
+                                DeclarationNodeTree right = pair.getRight();
+                                if ((left.getType() == EntityType.CLASS || left.getType() == EntityType.INTERFACE) &&
+                                        (right.getType() == EntityType.CLASS || right.getType() == EntityType.INTERFACE) &&
+                                        left.getType() == right.getType() && left.getNamespace().equals(dntBefore.getNamespace()) && right.getNamespace().equals(dntCurrent.getNamespace()) &&
+                                        left.getName().equals(right.getName())) {
+                                    EntityPair entityPair = new EntityPair(dntBefore, dntCurrent);
+                                    entityPairs.add(entityPair);
+                                    entityPair.setDice(1.0);
+                                    List<DeclarationNodeTree> children1 = dntBefore.getChildren();
+                                    List<DeclarationNodeTree> children2 = dntCurrent.getChildren();
+                                    for (DeclarationNodeTree child1 : children1) {
+                                        for (DeclarationNodeTree child2 : children2) {
+                                            if (child1.getType() == child2.getType() && child1.getName().equals(child2.getName()) &&
+                                                    StringUtils.equals(child1.getDeclaration().toString(), child2.getDeclaration().toString())) {
+                                                if (child1.isMatched()) {
+                                                    for (Pair<DeclarationNodeTree, DeclarationNodeTree> childPair : matchedEntities) {
+                                                        DeclarationNodeTree childBefore = childPair.getLeft();
+                                                        DeclarationNodeTree childCurrent = childPair.getRight();
+                                                        if (child1 == childBefore) {
+                                                            childCurrent.setMatched(false);
+                                                            addedEntityAddition.add(childCurrent);
+                                                            matchedEntitiesDeletion.add(childPair);
+                                                            matchedEntitiesAddition.add(Pair.of(child1, child2));
+                                                            break;
+                                                        }
+                                                    }
+                                                }
+                                                if (child2.isMatched()) {
+                                                    for (Pair<DeclarationNodeTree, DeclarationNodeTree> childPair : matchedEntities) {
+                                                        DeclarationNodeTree childBefore = childPair.getLeft();
+                                                        DeclarationNodeTree childCurrent = childPair.getRight();
+                                                        if (child2 == childCurrent) {
+                                                            childBefore.setMatched(false);
+                                                            deletedEntityAddition.add(childBefore);
+                                                            matchedEntitiesDeletion.add(childPair);
+                                                            matchedEntitiesAddition.add(Pair.of(child1, child2));
+                                                            break;
+                                                        }
+                                                    }
+                                                }
+                                                EntityPair childPair = new EntityPair(child1, child2);
+                                                entityPairs.add(childPair);
+                                                entityPair.setDice(1.0);
+                                            }
+                                        }
+                                    }
+                                    break;
+                                }
+                            }
                             double refs = DiceFunction.calculateReferenceSimilarity(matchPair, dntBefore, dntCurrent);
                             if (refs < 0.4) continue;
                             double dice = DiceFunction.calculateDiceSimilarity(matchPair, (InternalNode) dntBefore, (InternalNode) dntCurrent);
@@ -1104,6 +1189,10 @@ public class SoftwareEntityMatcherService {
             }
         }
         selectByDice(matchPair, entityPairs);
+        matchPair.getDeletedEntities().addAll(deletedEntityAddition);
+        matchPair.getAddedEntities().addAll(addedEntityAddition);
+        matchedEntities.removeAll(matchedEntitiesDeletion);
+        matchedEntities.addAll(matchedEntitiesAddition);
     }
 
     private boolean isSameSignatureExceptName(DeclarationNodeTree dntBefore, DeclarationNodeTree dntCurrent) {
@@ -1344,6 +1433,17 @@ public class SoftwareEntityMatcherService {
                             entityPairs.add(entityPair);
                             entityPair.setDice(dice);
                             continue;
+                        }
+                        if (dntBefore.getType() == EntityType.ENUM && dntCurrent.getType() == EntityType.ENUM) {
+                            List<DeclarationNodeTree> children1 = dntBefore.getChildren();
+                            List<DeclarationNodeTree> children2 = dntCurrent.getChildren();
+                            int union = children1.size() + children2.size();
+                            double intersection = union * dice * 0.5;
+                            if (intersection >= 2) {
+                                EntityPair entityPair = new EntityPair(dntBefore, dntCurrent);
+                                entityPairs.add(entityPair);
+                                entityPair.setDice(dice);
+                            }
                         }
                     }
                     if (dice < DiceFunction.minSimilarity) continue;

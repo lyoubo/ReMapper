@@ -132,6 +132,14 @@ public class GitServiceImpl implements GitService {
         }
     }
 
+    @Override
+    public void resetHard(String project) throws GitAPIException, IOException {
+        Repository repository = openRepository(project);
+        try (Git git = new Git(repository)) {
+            git.reset().setMode(ResetCommand.ResetType.HARD).call();
+        }
+    }
+
     private RevCommit getRevCommit(Repository repository, String commitId) throws IOException {
         try (RevWalk walk = new RevWalk(repository)) {
             RevCommit commit = walk.parseCommit(repository.resolve(commitId));

@@ -145,7 +145,7 @@ public class EntityMatcherServiceImpl implements EntityMatcherService {
                             continue;
                         MethodDeclaration addedMethodDeclaration = (MethodDeclaration) addedEntity.getDeclaration();
                         if (MethodUtils.isGetter(addedMethodDeclaration) || MethodUtils.isSetter(addedMethodDeclaration))
-                                continue;
+                            continue;
                         DeclarationNodeTree delegatedEntity = getDelegatedMethod(addedEntity, addedEntities);
                         double dice;
                         if (delegatedEntity != addedEntity)
@@ -218,6 +218,31 @@ public class EntityMatcherServiceImpl implements EntityMatcherService {
                                     addedMethod = delegatedMethod;
                                     if (!addedMethod.getChildren().isEmpty()) {
                                         List<StatementNodeTree> children1 = addedMethod.getChildren().get(0).getChildren();
+                                        StatementNodeTree lastStatement = children1.get(children1.size() - 1);
+                                        if (lastStatement.getType() == StatementType.RETURN_STATEMENT) {
+                                            for (StatementNodeTree child : children1) {
+                                                if (child.getType() == StatementType.VARIABLE_DECLARATION_STATEMENT) {
+                                                    VariableDeclarationStatement variableDeclarationStatement = (VariableDeclarationStatement) child.getStatement();
+                                                    VariableDeclarationFragment fragment = (VariableDeclarationFragment) variableDeclarationStatement.fragments().get(0);
+                                                    String identifier = fragment.getName().getIdentifier();
+                                                    if (lastStatement.getExpression().equals("return " + identifier + ";\n")) {
+                                                        matchPair.addDeletedStatement(lastStatement);
+                                                        children1.remove(lastStatement);
+                                                        break;
+                                                    }
+                                                }
+                                            }
+                                            MethodDeclaration declaration = (MethodDeclaration) delegatedEntity.getDeclaration();
+                                            List<SingleVariableDeclaration> parameters = declaration.parameters();
+                                            for (SingleVariableDeclaration parameter : parameters) {
+                                                String identifier = parameter.getName().getIdentifier();
+                                                if (lastStatement.getExpression().equals("return " + identifier + ";\n")) {
+                                                    matchPair.addDeletedStatement(lastStatement);
+                                                    children1.remove(lastStatement);
+                                                    break;
+                                                }
+                                            }
+                                        }
                                         children.addAll(i, children1);
                                         for (StatementNodeTree child : children1) {
                                             child.setHigherRoot(newMethod);
@@ -383,6 +408,31 @@ public class EntityMatcherServiceImpl implements EntityMatcherService {
                                     deletedMethod = delegatedMethod;
                                     if (!deletedMethod.getChildren().isEmpty()) {
                                         List<StatementNodeTree> children1 = deletedMethod.getChildren().get(0).getChildren();
+                                        StatementNodeTree lastStatement = children1.get(children1.size() - 1);
+                                        if (lastStatement.getType() == StatementType.RETURN_STATEMENT) {
+                                            for (StatementNodeTree child : children1) {
+                                                if (child.getType() == StatementType.VARIABLE_DECLARATION_STATEMENT) {
+                                                    VariableDeclarationStatement variableDeclarationStatement = (VariableDeclarationStatement) child.getStatement();
+                                                    VariableDeclarationFragment fragment = (VariableDeclarationFragment) variableDeclarationStatement.fragments().get(0);
+                                                    String identifier = fragment.getName().getIdentifier();
+                                                    if (lastStatement.getExpression().equals("return " + identifier + ";\n")) {
+                                                        matchPair.addDeletedStatement(lastStatement);
+                                                        children1.remove(lastStatement);
+                                                        break;
+                                                    }
+                                                }
+                                            }
+                                            MethodDeclaration declaration = (MethodDeclaration) delegatedEntity.getDeclaration();
+                                            List<SingleVariableDeclaration> parameters = declaration.parameters();
+                                            for (SingleVariableDeclaration parameter : parameters) {
+                                                String identifier = parameter.getName().getIdentifier();
+                                                if (lastStatement.getExpression().equals("return " + identifier + ";\n")) {
+                                                    matchPair.addDeletedStatement(lastStatement);
+                                                    children1.remove(lastStatement);
+                                                    break;
+                                                }
+                                            }
+                                        }
                                         children.addAll(i, children1);
                                         for (StatementNodeTree child : children1) {
                                             child.setHigherRoot(oldMethod);

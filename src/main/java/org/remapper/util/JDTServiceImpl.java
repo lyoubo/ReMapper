@@ -306,7 +306,10 @@ public class JDTServiceImpl implements JDTService {
             snt = new BlockNode(cu, filePath, statement, initializedSNT);
             snt.setType(StatementType.BLOCK);
             snt.setStatement(statement);
-            snt.setExpression("{");
+            if (snt.getBlockType() == BlockType.FINALLY_BLOCK)
+                snt.setExpression("finally");
+            else
+                snt.setExpression("{");
             snt.setPosition(statement.getStartPosition());
             methodNode.addBlock(snt);
             arrayStatementsInSwitchCase(statement, initializedSNT, snt);

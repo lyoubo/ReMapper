@@ -26,6 +26,8 @@ public interface GitService {
 
     void resetHard(Repository repository) throws GitAPIException;
 
+    void resetHard(String project) throws GitAPIException, IOException;
+
     Iterable<RevCommit> getAllCommits(String project) throws GitAPIException, IOException;
 
     boolean containJavaChange(Repository repository, RevCommit currentCommit) throws GitAPIException, IOException;

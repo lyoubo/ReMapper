@@ -334,12 +334,29 @@ public class DiceFunction {
             }
         }
         if (dntBefore.getType() == EntityType.ENUM_CONSTANT && dntCurrent.getType() == EntityType.ENUM_CONSTANT) {
-            String name1 = dntBefore.getName();
-            String name2 = dntCurrent.getName();
-            NormalizedLevenshtein levenshtein = new NormalizedLevenshtein();
-            double distance = levenshtein.distance(name1, name2);
-            if (distance > 0.8)
-                return 0.49;
+            List<DeclarationNodeTree> children1 = dntBefore.getChildren();
+            List<DeclarationNodeTree> children2 = dntBefore.getChildren();
+            boolean containSameElement = false;
+            boolean isSameEnum = dntBefore.getParent().getName().equals(dntCurrent.getParent().getName());
+            for (DeclarationNodeTree child1 : children1) {
+                for (DeclarationNodeTree child2 : children2) {
+                    if (!child1.getName().equals(child2.getName())) {
+                        containSameElement = true;
+                        break;
+                    }
+                }
+            }
+            if (!isSameEnum && !containSameElement) {
+                return dependencies + 0.01 * biGram;
+            } else {
+                NormalizedLevenshtein levenshtein = new NormalizedLevenshtein();
+                String name1 = dntBefore.getName();
+                String name2 = dntCurrent.getName();
+                double distance = levenshtein.distance(name1, name2);
+                if (distance > 0.8)
+                    return 0.49;
+                descendants = 1.0 - distance;
+            }
         }
         if (dntBefore.getType() == EntityType.FIELD && dntCurrent.getType() == EntityType.FIELD) {
             if (!(matchPair.getMatchedEntities().contains(Pair.of(dntBefore.getParent(), dntCurrent.getParent())) ||
