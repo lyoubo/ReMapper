@@ -315,15 +315,19 @@ public class MethodStatementMatcherService {
     }
 
     private void setChildrenMatched(MatchPair matchPair, List<StatementNodeTree> children1, List<StatementNodeTree> children2) {
-        for (int i = 0; i < children1.size(); i++) {
-            StatementNodeTree child1 = children1.get(i);
-            StatementNodeTree child2 = children2.get(i);
-            matchPair.addMatchedStatement(child1, child2);
-            child1.setMatched();
-            child2.setMatched();
-            if (child1.hasChildren() && child2.hasChildren()) {
-                setChildrenMatched(matchPair, child1.getChildren(), child2.getChildren());
+        if (children1.size() == children2.size()) {
+            for (int i = 0; i < children1.size(); i++) {
+                StatementNodeTree child1 = children1.get(i);
+                StatementNodeTree child2 = children2.get(i);
+                matchPair.addMatchedStatement(child1, child2);
+                child1.setMatched();
+                child2.setMatched();
+                if (child1.hasChildren() && child2.hasChildren()) {
+                    setChildrenMatched(matchPair, child1.getChildren(), child2.getChildren());
+                }
             }
+        } else {
+            matchSubStatements(matchPair, children1, children2);
         }
     }
 
