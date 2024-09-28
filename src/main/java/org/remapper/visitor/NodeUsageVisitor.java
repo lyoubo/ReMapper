@@ -1,6 +1,7 @@
 package org.remapper.visitor;
 
 import org.eclipse.jdt.core.dom.*;
+import org.eclipse.jdt.internal.core.CreateElementInCUOperation;
 import org.remapper.dto.EntityInfo;
 import org.remapper.util.EntityUtils;
 

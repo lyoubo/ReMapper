@@ -31,7 +31,6 @@ public class SoftwareEntityMatcherService {
 
     protected void matchEntities(GitService gitService, JDTService jdtService, Repository repository,
                                  RevCommit currentCommit, MatchPair matchPair) throws Exception {
-        String commitId = currentCommit.getId().getName();
         Set<String> addedFiles = new LinkedHashSet<>();
         Set<String> deletedFiles = new LinkedHashSet<>();
         Set<String> modifiedFiles = new LinkedHashSet<>();
@@ -49,24 +48,27 @@ public class SoftwareEntityMatcherService {
         populateFileContents(repository, currentCommit, addedFiles, fileContentsCurrent);
         populateFileContents(repository, currentCommit, modifiedFiles, fileContentsCurrent);
         populateFileContents(repository, currentCommit, new HashSet<>(renamedFiles.values()), fileContentsCurrent);
+        matchPair.setAddedFiles(addedFiles);
+        matchPair.setDeletedFiles(deletedFiles);
+        matchPair.setModifiedFiles(modifiedFiles);
+        matchPair.setRenamedFiles(renamedFiles);
+        matchPair.setFileContentsBefore(fileContentsBefore);
+        matchPair.setFileContentsCurrent(fileContentsCurrent);
 
         populateFileDNTs(jdtService, fileContentsBefore, fileDNTsBefore);
         populateFileDNTs(jdtService, fileContentsCurrent, fileDNTsCurrent);
 
         pruneUnchangedEntitiesInModifiedFiles(matchPair, modifiedFiles, fileDNTsBefore, fileDNTsCurrent);
         pruneUnchangedEntitiesInRenamedFiles(matchPair, renamedFiles, fileDNTsBefore, fileDNTsCurrent);
+        pruneUnchangedEntitiesInRenamedFiles(matchPair, deletedFiles, addedFiles, fileDNTsBefore, fileDNTsCurrent);
 
         matchByNameAndSignature(matchPair, modifiedFiles, fileDNTsBefore, fileDNTsCurrent);
         matchByDiceCoefficient(matchPair, modifiedFiles, renamedFiles, deletedFiles, addedFiles, fileDNTsBefore, fileDNTsCurrent);
         matchByIntroduceObjectRefactoring(matchPair);
 
-        gitService.checkoutCurrent(repository, commitId);
         String projectPath = repository.getWorkTree().getPath();
-        populateCurrentDependencies(matchPair, projectPath, modifiedFiles, renamedFiles, addedFiles);
-        gitService.resetHard(repository);
-        gitService.checkoutParent(repository, commitId);
-        populateBeforeDependencies(matchPair, projectPath, modifiedFiles, renamedFiles, deletedFiles);
-        gitService.resetHard(repository);
+        populateCurrentDependencies(matchPair, fileContentsCurrent, projectPath, modifiedFiles, renamedFiles, addedFiles);
+        populateBeforeDependencies(matchPair, fileContentsBefore, projectPath, modifiedFiles, renamedFiles, deletedFiles);
 
         fineMatching(matchPair, renamedFiles);
         additionalMatchByName(matchPair);
@@ -94,6 +96,9 @@ public class SoftwareEntityMatcherService {
 
         populateFileDNTs(jdtService, fileContentsBefore, fileDNTsBefore);
         populateFileDNTs(jdtService, fileContentsCurrent, fileDNTsCurrent);
+        matchPair.setRenamedFiles(renamedFiles);
+        matchPair.setFileContentsBefore(fileContentsBefore);
+        matchPair.setFileContentsCurrent(fileContentsCurrent);
 
         pruneUnchangedEntitiesInRenamedFiles(matchPair, renamedFiles, fileDNTsBefore, fileDNTsCurrent);
 
@@ -101,8 +106,8 @@ public class SoftwareEntityMatcherService {
         matchByDiceCoefficient(matchPair, modifiedFiles, renamedFiles, deletedFiles, addedFiles, fileDNTsBefore, fileDNTsCurrent);
         matchByIntroduceObjectRefactoring(matchPair);
 
-        populateCurrentDependencies(matchPair, projectPath, modifiedFiles, renamedFiles, addedFiles);
-        populateBeforeDependencies(matchPair, projectPath, modifiedFiles, renamedFiles, deletedFiles);
+        populateCurrentDependencies(matchPair, fileContentsCurrent, projectPath, modifiedFiles, renamedFiles, addedFiles);
+        populateBeforeDependencies(matchPair, fileContentsBefore, projectPath, modifiedFiles, renamedFiles, deletedFiles);
 
         fineMatching(matchPair, renamedFiles);
         additionalMatchByName(matchPair);
@@ -158,6 +163,37 @@ public class SoftwareEntityMatcherService {
             RootNode dntBefore = fileDNTsBefore.get(filePath);
             RootNode dntCurrent = fileDNTsCurrent.get(renamedFilePath);
             pruneUnchangedEntities(matchPair, filePath, renamedFilePath, dntBefore, dntCurrent);
+        }
+    }
+
+    private void pruneUnchangedEntitiesInRenamedFiles(MatchPair matchPair, Set<String> deletedFiles, Set<String> addedFiles, Map<String, RootNode> fileDNTsBefore, Map<String, RootNode> fileDNTsCurrent) {
+        NormalizedLevenshtein levenshtein = new NormalizedLevenshtein();
+        for (String deletedFilePath : deletedFiles) {
+            String deletedFileName = deletedFilePath.substring(deletedFilePath.lastIndexOf('/') + 1);
+            for (String addedFilePath : addedFiles) {
+                String addedFileName = addedFilePath.substring(addedFilePath.lastIndexOf('/') + 1);
+                if (!StringUtils.equals(deletedFileName, addedFileName)) continue;
+                RootNode dntBefore = fileDNTsBefore.get(deletedFilePath);
+                RootNode dntCurrent = fileDNTsCurrent.get(addedFilePath);
+                List<DeclarationNodeTree> deletedNodes = dntBefore.getChildren();
+                List<DeclarationNodeTree> addedNodes = dntCurrent.getChildren();
+                if (deletedNodes.size() == addedNodes.size()) {
+                    boolean exactMatch = true;
+                    for (int i = 0; i < deletedNodes.size(); i++) {
+                        DeclarationNodeTree node1 = deletedNodes.get(i);
+                        DeclarationNodeTree node2 = addedNodes.get(i);
+                        double similarity = levenshtein.distance(node1.getDeclaration().toString(), node2.getDeclaration().toString());
+                        if (node1.getType() == node2.getType() && (StringUtils.equals(node1.getDeclaration().toString(), node2.getDeclaration().toString()) ||
+                                similarity < 0.01)) ;
+                        else {
+                            exactMatch = false;
+                            break;
+                        }
+                    }
+                    if (exactMatch)
+                        pruneUnchangedEntities(matchPair, deletedFilePath, addedFilePath, dntBefore, dntCurrent);
+                }
+            }
         }
     }
 
@@ -461,36 +497,34 @@ public class SoftwareEntityMatcherService {
         }
     }
 
-    private void populateEntityDependencies(ProjectParser parser, Map<EntityInfo, List<EntityInfo>> dependencies, Map<String, List<ASTNode>> astNodes) {
-        for (String filePath : parser.getRelatedJavaFiles()) {
+    private void populateEntityDependencies(ProjectParser parser, Map<String, String> fileContents,
+                                            Map<EntityInfo, List<EntityInfo>> dependencies, Map<String, List<ASTNode>> astNodes) {
+        for (String filePath : fileContents.keySet()) {
             ASTParser astParser = ASTParserUtils.getASTParser(parser.getSourcepathEntries(), parser.getEncodings());
-            try {
-                String code = FileUtils.readFileToString(new File(filePath), StandardCharsets.UTF_8);
-                astParser.setSource(code.toCharArray());
-                CompilationUnit cu = (CompilationUnit) astParser.createAST(null);
-                NodeDeclarationVisitor visitor = new NodeDeclarationVisitor();
-                cu.accept(visitor);
-                astNodes.put(filePath, visitor.getASTNodes());
-                List<TypeDeclaration> typeDeclarations = visitor.getTypeDeclarations();
-                List<EnumDeclaration> enumDeclarations = visitor.getEnumDeclarations();
-                List<AnnotationTypeDeclaration> annotationTypeDeclarations = visitor.getAnnotationTypeDeclarations();
-                List<RecordDeclaration> recordDeclarations = visitor.getRecordDeclarations();
-                List<Initializer> initializers = visitor.getInitializers();
-                List<EnumConstantDeclaration> enumConstantDeclarations = visitor.getEnumConstantDeclarations();
-                List<FieldDeclaration> fieldDeclarations = visitor.getFieldDeclarations();
-                List<MethodDeclaration> methodDeclarations = visitor.getMethodDeclarations();
-                List<AnnotationTypeMemberDeclaration> annotationMemberDeclarations = visitor.getAnnotationMemberDeclarations();
-                populateDependencyOnTypeDeclaration(typeDeclarations, dependencies, cu, filePath);
-                populateDependencyOnEnumDeclaration(enumDeclarations, dependencies, cu, filePath);
-                populateDependencyOnAnnotationTypeDeclaration(annotationTypeDeclarations, dependencies, cu, filePath);
-                populateDependencyOnRecordDeclaration(recordDeclarations, dependencies, cu, filePath);
-                populateDependencyInInitializers(initializers, dependencies, cu, filePath);
-                populateDependencyInFieldDeclaration(fieldDeclarations, dependencies, cu, filePath);
-                populateDependencyInMethodDeclaration(methodDeclarations, dependencies, cu, filePath);
-                populateDependencyInAnnotationMemberDeclaration(annotationMemberDeclarations, dependencies, cu, filePath);
-                populateDependencyInEnumConstant(enumConstantDeclarations, dependencies, cu, filePath);
-            } catch (IOException ignored) {
-            }
+            String code = fileContents.get(filePath);
+            astParser.setSource(code.toCharArray());
+            CompilationUnit cu = (CompilationUnit) astParser.createAST(null);
+            NodeDeclarationVisitor visitor = new NodeDeclarationVisitor();
+            cu.accept(visitor);
+            astNodes.put(filePath, visitor.getASTNodes());
+            List<TypeDeclaration> typeDeclarations = visitor.getTypeDeclarations();
+            List<EnumDeclaration> enumDeclarations = visitor.getEnumDeclarations();
+            List<AnnotationTypeDeclaration> annotationTypeDeclarations = visitor.getAnnotationTypeDeclarations();
+            List<RecordDeclaration> recordDeclarations = visitor.getRecordDeclarations();
+            List<Initializer> initializers = visitor.getInitializers();
+            List<EnumConstantDeclaration> enumConstantDeclarations = visitor.getEnumConstantDeclarations();
+            List<FieldDeclaration> fieldDeclarations = visitor.getFieldDeclarations();
+            List<MethodDeclaration> methodDeclarations = visitor.getMethodDeclarations();
+            List<AnnotationTypeMemberDeclaration> annotationMemberDeclarations = visitor.getAnnotationMemberDeclarations();
+            populateDependencyOnTypeDeclaration(typeDeclarations, dependencies, cu, filePath);
+            populateDependencyOnEnumDeclaration(enumDeclarations, dependencies, cu, filePath);
+            populateDependencyOnAnnotationTypeDeclaration(annotationTypeDeclarations, dependencies, cu, filePath);
+            populateDependencyOnRecordDeclaration(recordDeclarations, dependencies, cu, filePath);
+            populateDependencyInInitializers(initializers, dependencies, cu, filePath);
+            populateDependencyInFieldDeclaration(fieldDeclarations, dependencies, cu, filePath);
+            populateDependencyInMethodDeclaration(methodDeclarations, dependencies, cu, filePath);
+            populateDependencyInAnnotationMemberDeclaration(annotationMemberDeclarations, dependencies, cu, filePath);
+            populateDependencyInEnumConstant(enumConstantDeclarations, dependencies, cu, filePath);
         }
     }
 
@@ -692,8 +726,8 @@ public class SoftwareEntityMatcherService {
         }
     }
 
-    private void populateCurrentDependencies(MatchPair matchPair, String projectPath, Set<String> modifiedFiles,
-                                             Map<String, String> renamedFiles, Set<String> addedFiles) {
+    private void populateCurrentDependencies(MatchPair matchPair, Map<String, String> fileContentsCurrent, String projectPath,
+                                             Set<String> modifiedFiles, Map<String, String> renamedFiles, Set<String> addedFiles) {
         ProjectParser parser = new ProjectParser(projectPath);
         Map<EntityInfo, DeclarationNodeTree> entities = new HashMap<>();
         List<String> changedJavaFiles = new ArrayList<>();
@@ -702,19 +736,19 @@ public class SoftwareEntityMatcherService {
         changedJavaFiles.addAll(renamedFiles.values());
         Map<EntityInfo, List<EntityInfo>> dependencies = new HashMap<>();
         Map<String, List<ASTNode>> nodeMap = new HashMap<>();
-        parser.buildEntityDependencies(changedJavaFiles);
-        populateEntityDependencies(parser, dependencies, nodeMap);
+        parser.buildEntityDependencies(fileContentsCurrent);
+        populateEntityDependencies(parser, fileContentsCurrent, dependencies, nodeMap);
         for (DeclarationNodeTree dnt : matchPair.getMatchedEntitiesRight()) {
             entities.put(dnt.getEntity(), dnt);
-            replaceASTNodeWithBinding(nodeMap, projectPath, dnt);
+            replaceASTNodeWithBinding(nodeMap, dnt);
         }
         for (DeclarationNodeTree dnt : matchPair.getCandidateEntitiesRight()) {
             entities.put(dnt.getEntity(), dnt);
-            replaceASTNodeWithBinding(nodeMap, projectPath, dnt);
+            replaceASTNodeWithBinding(nodeMap, dnt);
         }
         for (DeclarationNodeTree dnt : matchPair.getAddedEntities()) {
             entities.put(dnt.getEntity(), dnt);
-            replaceASTNodeWithBinding(nodeMap, projectPath, dnt);
+            replaceASTNodeWithBinding(nodeMap, dnt);
         }
         for (EntityInfo entity : entities.keySet()) {
             if (dependencies.containsKey(entity))
@@ -722,8 +756,8 @@ public class SoftwareEntityMatcherService {
         }
     }
 
-    private void replaceASTNodeWithBinding(Map<String, List<ASTNode>> nodeMap, String projectPath, DeclarationNodeTree dnt) {
-        List<ASTNode> astNodes = nodeMap.get(projectPath.isEmpty() ? dnt.getFilePath() : projectPath + "/" + dnt.getFilePath());
+    private void replaceASTNodeWithBinding(Map<String, List<ASTNode>> nodeMap, DeclarationNodeTree dnt) {
+        List<ASTNode> astNodes = nodeMap.get(dnt.getFilePath());
         if (dnt.getType() == EntityType.METHOD) {
             for (ASTNode node : astNodes) {
                 if (node instanceof MethodDeclaration) {
@@ -811,8 +845,8 @@ public class SoftwareEntityMatcherService {
         }
     }
 
-    private void populateBeforeDependencies(MatchPair matchPair, String projectPath, Set<String> modifiedFiles,
-                                            Map<String, String> renamedFiles, Set<String> deletedFiles) {
+    private void populateBeforeDependencies(MatchPair matchPair, Map<String, String> fileContentsBefore, String projectPath,
+                                            Set<String> modifiedFiles, Map<String, String> renamedFiles, Set<String> deletedFiles) {
         ProjectParser parser = new ProjectParser(projectPath);
         List<String> changedJavaFiles = new ArrayList<>();
         Map<EntityInfo, DeclarationNodeTree> entities = new HashMap<>();
@@ -821,19 +855,19 @@ public class SoftwareEntityMatcherService {
         changedJavaFiles.addAll(renamedFiles.keySet());
         Map<EntityInfo, List<EntityInfo>> dependencies = new HashMap<>();
         Map<String, List<ASTNode>> nodeMap = new HashMap<>();
-        parser.buildEntityDependencies(changedJavaFiles);
-        populateEntityDependencies(parser, dependencies, nodeMap);
+        parser.buildEntityDependencies(fileContentsBefore);
+        populateEntityDependencies(parser, fileContentsBefore, dependencies, nodeMap);
         for (DeclarationNodeTree dnt : matchPair.getMatchedEntitiesLeft()) {
             entities.put(dnt.getEntity(), dnt);
-            replaceASTNodeWithBinding(nodeMap, projectPath, dnt);
+            replaceASTNodeWithBinding(nodeMap, dnt);
         }
         for (DeclarationNodeTree dnt : matchPair.getCandidateEntitiesLeft()) {
             entities.put(dnt.getEntity(), dnt);
-            replaceASTNodeWithBinding(nodeMap, projectPath, dnt);
+            replaceASTNodeWithBinding(nodeMap, dnt);
         }
         for (DeclarationNodeTree dnt : matchPair.getDeletedEntities()) {
             entities.put(dnt.getEntity(), dnt);
-            replaceASTNodeWithBinding(nodeMap, projectPath, dnt);
+            replaceASTNodeWithBinding(nodeMap, dnt);
         }
         for (EntityInfo entity : entities.keySet()) {
             if (dependencies.containsKey(entity))
@@ -1043,7 +1077,6 @@ public class SoftwareEntityMatcherService {
             }
         }
     }
-
 
     private boolean typeCompatible(DeclarationNodeTree dntBefore, DeclarationNodeTree dntCurrent) {
         return dntBefore.getType() == dntCurrent.getType() ||

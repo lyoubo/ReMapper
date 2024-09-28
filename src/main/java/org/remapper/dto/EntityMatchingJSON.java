@@ -4,6 +4,8 @@ import org.apache.commons.lang3.tuple.Pair;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 public class EntityMatchingJSON {
 
@@ -22,12 +24,37 @@ public class EntityMatchingJSON {
         private String repository;
         private String sha1;
         private String url;
+        private List<FileContent> files;
         private List<Entity> matchedEntities;
 
         public Result(String repository, String sha1, String url, MatchPair matchPair) {
             this.repository = repository;
             this.sha1 = sha1;
             this.url = url;
+            this.files = new ArrayList<>();
+            Map<String, String> fileContentsBefore = matchPair.getFileContentsBefore();
+            Map<String, String> fileContentsCurrent = matchPair.getFileContentsCurrent();
+            Set<String> modifiedFiles = matchPair.getModifiedFiles();
+            Map<String, String> renamedFiles = matchPair.getRenamedFiles();
+            Set<String> deletedFiles = matchPair.getDeletedFiles();
+            Set<String> addedFiles = matchPair.getAddedFiles();
+            for (String name : modifiedFiles) {
+                FileContent fileContent = new FileContent(name, fileContentsBefore.get(name), fileContentsCurrent.get(name));
+                files.add(fileContent);
+            }
+            for (String oldName : renamedFiles.keySet()) {
+                String newName = renamedFiles.get(oldName);
+                FileContent fileContent = new FileContent(oldName + " --> " + newName, fileContentsBefore.get(oldName), fileContentsCurrent.get(newName));
+                files.add(fileContent);
+            }
+            for (String name : deletedFiles) {
+                FileContent fileContent = new FileContent(name, fileContentsBefore.get(name), "");
+                files.add(fileContent);
+            }
+            for (String name : addedFiles) {
+                FileContent fileContent = new FileContent(name, "", fileContentsCurrent.get(name));
+                files.add(fileContent);
+            }
             this.matchedEntities = new ArrayList<>();
             for (Pair<DeclarationNodeTree, DeclarationNodeTree> pair : matchPair.getMatchedEntities()) {
                 Location left = new EntityLocation(pair.getLeft().getEntity());
@@ -42,6 +69,18 @@ public class EntityMatchingJSON {
                 Entity entity = new Entity(left, right);
                 this.matchedEntities.add(entity);
             }
+        }
+    }
+
+    class FileContent {
+        private String name;
+        private String oldCode;
+        private String newCode;
+
+        public FileContent(String name, String oldCode, String newCode) {
+            this.name = name;
+            this.oldCode = oldCode;
+            this.newCode = newCode;
         }
     }
 

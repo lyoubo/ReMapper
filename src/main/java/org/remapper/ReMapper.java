@@ -98,7 +98,7 @@ public class ReMapper {
             try (BufferedWriter out = new BufferedWriter(new FileWriter(path.toFile()))) {
                 EntityMatchingJSON results = new EntityMatchingJSON();
                 results.populateJSON(cloneURL, currentCommitId, url, matchPair);
-                String jsonString = gson.toJson(results, EntityMatchingJSON.class).replace("\\t", "\t");
+                String jsonString = gson.toJson(results, EntityMatchingJSON.class);
                 out.write(jsonString);
             } catch (IOException e) {
                 throw new RuntimeException(e);
@@ -107,7 +107,7 @@ public class ReMapper {
             try (FileReader reader = new FileReader(path.toFile())) {
                 EntityMatchingJSON results = gson.fromJson(reader, EntityMatchingJSON.class);
                 results.populateJSON(cloneURL, currentCommitId, url, matchPair);
-                String jsonString = gson.toJson(results, EntityMatchingJSON.class).replace("\\t", "\t");
+                String jsonString = gson.toJson(results, EntityMatchingJSON.class);
                 BufferedWriter out = new BufferedWriter(new FileWriter(path.toFile()));
                 out.write(jsonString);
                 out.close();

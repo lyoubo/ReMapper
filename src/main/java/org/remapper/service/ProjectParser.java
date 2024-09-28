@@ -1,32 +1,24 @@
 package org.remapper.service;
 
-import org.apache.commons.io.FileUtils;
 import org.eclipse.jdt.core.dom.ASTParser;
 import org.eclipse.jdt.core.dom.CompilationUnit;
 import org.remapper.util.ASTParserUtils;
 
 import java.io.File;
-import java.nio.charset.StandardCharsets;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.List;
+import java.util.Map;
 import java.util.regex.Matcher;
 
 public class ProjectParser {
 
     private final String projectPath;
-    private List<String> relatedJavaFiles;
     private String[] sourcepathEntries;
     private String[] encodings;
 
     public ProjectParser(String projectPath) {
         this.projectPath = projectPath;
-    }
-
-    public List<String> getRelatedJavaFiles() {
-        return relatedJavaFiles;
     }
 
     public String[] getSourcepathEntries() {
@@ -37,35 +29,18 @@ public class ProjectParser {
         return encodings;
     }
 
-    public void buildEntityDependencies(List<String> changedJavaFiles) {
-        relatedJavaFiles = new ArrayList<>();
-        populateRelatedJavaFiles(changedJavaFiles);
-        populateSourcepathEntries();
-    }
-
-    private void populateRelatedJavaFiles(List<String> changedJavaFiles) {
-        for (String file : changedJavaFiles) {
-            if (!projectPath.isEmpty())
-                relatedJavaFiles.add(projectPath + "/" + file);
-            else
-                relatedJavaFiles.add(file);
-        }
-    }
-
-    private void populateSourcepathEntries() {
+    public void buildEntityDependencies(Map<String, String> fileContents) {
         HashSet<String> sourceRootSet = new HashSet<>();
-        for (String file : relatedJavaFiles) {
+        for (String filePath : fileContents.keySet()) {
+            String file = projectPath + "/" + filePath;
             ASTParser astParser = ASTParserUtils.getFastParser();
-            try {
-                String code = FileUtils.readFileToString(new File(file), StandardCharsets.UTF_8);
-                astParser.setSource(code.toCharArray());
-                CompilationUnit cu = (CompilationUnit) astParser.createAST(null);
-                if (cu.getPackage() == null) continue;
-                String rootPath = parseRootPath(file, cu.getPackage().getName().toString());
-                if (!rootPath.equals("") && Paths.get(rootPath).toFile().exists())
-                    sourceRootSet.add(rootPath);
-            } catch (Exception ignored) {
-            }
+            String code = fileContents.get(filePath);
+            astParser.setSource(code.toCharArray());
+            CompilationUnit cu = (CompilationUnit) astParser.createAST(null);
+            if (cu.getPackage() == null) continue;
+            String rootPath = parseRootPath(file, cu.getPackage().getName().toString());
+            if (!rootPath.equals("") && Paths.get(rootPath).toFile().exists())
+                sourceRootSet.add(rootPath);
         }
         sourcepathEntries = new String[sourceRootSet.size()];
         encodings = new String[sourceRootSet.size()];

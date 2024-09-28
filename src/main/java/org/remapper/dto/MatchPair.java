@@ -8,6 +8,16 @@ import java.util.stream.Collectors;
 public class MatchPair {
 
     /**
+     * Changed Files
+     */
+    private Set<String> addedFiles;
+    private Set<String> deletedFiles;
+    private Set<String> modifiedFiles;
+    private Map<String, String> renamedFiles;
+    private Map<String, String> fileContentsBefore;
+    private Map<String, String> fileContentsCurrent;
+
+    /**
      * Software Entities
      */
     private Set<Pair<DeclarationNodeTree, DeclarationNodeTree>> unchangedEntities;
@@ -31,6 +41,13 @@ public class MatchPair {
     private Map<DeclarationNodeTree, Set<Pair<DeclarationNodeTree, DeclarationNodeTree>>> introducedObjects;
 
     public MatchPair() {
+        addedFiles = new LinkedHashSet<>();
+        deletedFiles = new LinkedHashSet<>();
+        modifiedFiles = new LinkedHashSet<>();
+        renamedFiles = new LinkedHashMap<>();
+        fileContentsBefore = new LinkedHashMap<>();
+        fileContentsCurrent = new LinkedHashMap<>();
+
         unchangedEntities = new LinkedHashSet<>();
         matchedEntities = new LinkedHashSet<>();
         candidateEntities = new LinkedHashSet<>();
@@ -46,6 +63,54 @@ public class MatchPair {
         attributeMapVariables = new LinkedHashSet<>();
         variableMapAttributes = new LinkedHashSet<>();
         introducedObjects = new LinkedHashMap<>();
+    }
+
+    public Set<String> getAddedFiles() {
+        return addedFiles;
+    }
+
+    public void setAddedFiles(Set<String> addedFiles) {
+        this.addedFiles = addedFiles;
+    }
+
+    public Set<String> getDeletedFiles() {
+        return deletedFiles;
+    }
+
+    public void setDeletedFiles(Set<String> deletedFiles) {
+        this.deletedFiles = deletedFiles;
+    }
+
+    public Set<String> getModifiedFiles() {
+        return modifiedFiles;
+    }
+
+    public void setModifiedFiles(Set<String> modifiedFiles) {
+        this.modifiedFiles = modifiedFiles;
+    }
+
+    public Map<String, String> getRenamedFiles() {
+        return renamedFiles;
+    }
+
+    public void setRenamedFiles(Map<String, String> renamedFiles) {
+        this.renamedFiles = renamedFiles;
+    }
+
+    public Map<String, String> getFileContentsBefore() {
+        return fileContentsBefore;
+    }
+
+    public void setFileContentsBefore(Map<String, String> fileContentsBefore) {
+        this.fileContentsBefore = fileContentsBefore;
+    }
+
+    public Map<String, String> getFileContentsCurrent() {
+        return fileContentsCurrent;
+    }
+
+    public void setFileContentsCurrent(Map<String, String> fileContentsCurrent) {
+        this.fileContentsCurrent = fileContentsCurrent;
     }
 
     /**
