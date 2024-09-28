@@ -24,6 +24,8 @@ public interface GitService {
 
     void checkoutParent(Repository repository, String commitId) throws GitAPIException, IOException;
 
+    void checkoutBranch(Repository repository) throws GitAPIException, IOException;
+
     void resetHard(Repository repository) throws GitAPIException;
 
     void resetHard(String project) throws GitAPIException, IOException;

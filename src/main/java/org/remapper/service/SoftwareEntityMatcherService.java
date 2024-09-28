@@ -66,8 +66,13 @@ public class SoftwareEntityMatcherService {
         matchByDiceCoefficient(matchPair, modifiedFiles, renamedFiles, deletedFiles, addedFiles, fileDNTsBefore, fileDNTsCurrent);
         matchByIntroduceObjectRefactoring(matchPair);
 
+        String commitId = currentCommit.getId().getName();
         String projectPath = repository.getWorkTree().getPath();
+        gitService.resetHard(repository);
+        gitService.checkoutCurrent(repository, commitId);
         populateCurrentDependencies(matchPair, fileContentsCurrent, projectPath, modifiedFiles, renamedFiles, addedFiles);
+        gitService.resetHard(repository);
+        gitService.checkoutParent(repository, commitId);
         populateBeforeDependencies(matchPair, fileContentsBefore, projectPath, modifiedFiles, renamedFiles, deletedFiles);
 
         fineMatching(matchPair, renamedFiles);
@@ -76,6 +81,8 @@ public class SoftwareEntityMatcherService {
         additionalMatchByReference(matchPair);
         repairMatching(matchPair);
         filter(matchPair);
+        gitService.resetHard(repository);
+        gitService.checkoutBranch(repository);
     }
 
     protected void matchEntities(JDTService jdtService, File previousFile, File nextFile, MatchPair matchPair) throws Exception {

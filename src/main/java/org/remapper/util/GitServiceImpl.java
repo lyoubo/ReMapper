@@ -126,6 +126,16 @@ public class GitServiceImpl implements GitService {
     }
 
     @Override
+    public void checkoutBranch(Repository repository) throws GitAPIException, IOException {
+        try (Git git = new Git(repository)) {
+            String defaultBranch = repository.findRef("refs/remotes/origin/HEAD").getTarget().getName();
+            String branch = defaultBranch.substring("refs/remotes/origin/".length());
+            CheckoutCommand checkout = git.checkout().setForced(true).setName(branch);
+            checkout.call();
+        }
+    }
+
+    @Override
     public void resetHard(Repository repository) throws GitAPIException {
         try (Git git = new Git(repository)) {
             git.reset().setMode(ResetCommand.ResetType.HARD).call();
