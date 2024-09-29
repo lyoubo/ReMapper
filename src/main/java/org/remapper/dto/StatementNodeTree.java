@@ -75,6 +75,7 @@ public abstract class StatementNodeTree implements LocationInfoProvider {
         for (StatementNodeTree child : children) {
             if (child.getType() == StatementType.BLOCK && child.getBlockType() == BlockType.METHOD_BLOCK) ;
             else {
+                if (list.contains(child)) continue;
                 list.add(child);
             }
             depthFirstSearch(list, child.getChildren());

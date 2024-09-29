@@ -147,16 +147,20 @@ public class MethodNode extends StatementNodeTree {
 
     private void depthFirstSearch(List<StatementNodeTree> list, List<StatementNodeTree> children, boolean matched) {
         for (StatementNodeTree child : children) {
-            if (child.isMatched() == matched)
+            if (child.isMatched() == matched) {
+                if (list.contains(child)) continue;
                 list.add(child);
+            }
             depthFirstSearch(list, child.getChildren(), matched);
         }
     }
 
     private void depthFirstSearch(List<StatementNodeTree> list, List<StatementNodeTree> children) {
         for (StatementNodeTree child : children) {
-            if (child.isDuplicated() == true)
+            if (child.isDuplicated() == true) {
+                if (list.contains(child)) continue;
                 list.add(child);
+            }
             depthFirstSearch(list, child.getChildren());
         }
     }
