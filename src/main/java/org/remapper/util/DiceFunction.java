@@ -400,6 +400,8 @@ public class DiceFunction {
                 }
                 if (isMulti1 || isMulti2)
                     return 0.49;
+                if (!dntBefore.getName().equals(dntCurrent.getName()))
+                    return 0.49;
             }
             List<DeclarationNodeTree> children = dntCurrent.getParent().getChildren();
             for (DeclarationNodeTree child : children) {

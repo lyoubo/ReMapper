@@ -1721,6 +1721,7 @@ public class SoftwareEntityMatcherService {
         for (Pair<DeclarationNodeTree, DeclarationNodeTree> pair : matchedEntities) {
             DeclarationNodeTree left = pair.getLeft();
             DeclarationNodeTree right = pair.getRight();
+            if (isSameSignature(left, right)) continue;
             if (left.getType() == EntityType.METHOD && right.getType() == EntityType.METHOD) {
                 for (DeclarationNodeTree entity : deletedEntities) {
                     if (entity.getDependencies().isEmpty() && left.getDependencies().isEmpty() &&
