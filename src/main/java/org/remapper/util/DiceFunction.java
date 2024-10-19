@@ -692,7 +692,6 @@ public class DiceFunction {
         return Math.max(union == 0 ? 0 : 2.0 * intersection / union, calculateDescendantSimilarity(matchPair, statement1, statement2));
     }
 
-
     public static double calculateDescendantSimilarity(MatchPair matchPair, StatementNodeTree statement1, StatementNodeTree statement2) {
         List<StatementNodeTree> descendants1 = statement1.getDescendants();
         List<StatementNodeTree> descendants2 = statement2.getDescendants();

@@ -34,8 +34,8 @@ public interface EntityMatcherService {
      * Match code entities between two files representing two versions of Java programs.
      *
      * @param previousFile The file corresponding to the previous version.
-     * @param nextFile The file corresponding to the next version.
-     * @param handler A handler object that is responsible to process the detected refactorings.
+     * @param nextFile     The file corresponding to the next version.
+     * @param handler      A handler object that is responsible to process the detected refactorings.
      */
     void matchAtFiles(File previousFile, File nextFile, MatchingHandler handler);
 

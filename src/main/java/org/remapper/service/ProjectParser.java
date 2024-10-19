@@ -32,7 +32,7 @@ public class ProjectParser {
     public void buildEntityDependencies(Map<String, String> fileContents) {
         HashSet<String> sourceRootSet = new HashSet<>();
         for (String filePath : fileContents.keySet()) {
-            String file = projectPath + "/" + filePath;
+            String file = "".equals(projectPath) ? filePath : projectPath + "/" + filePath;
             ASTParser astParser = ASTParserUtils.getFastParser();
             String code = fileContents.get(filePath);
             astParser.setSource(code.toCharArray());

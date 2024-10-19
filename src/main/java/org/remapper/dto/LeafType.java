@@ -15,7 +15,7 @@ public class LeafType extends UMLType implements Cloneable {
 
     public LeafType cloneAsQualified() {
         try {
-            LeafType type = (LeafType)super.clone();
+            LeafType type = (LeafType) super.clone();
             type.nonQualifiedClassType = type.classType;
             return type;
         } catch (CloneNotSupportedException e) {

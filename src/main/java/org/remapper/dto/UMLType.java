@@ -211,9 +211,9 @@ public abstract class UMLType implements Serializable {
     public static UMLType extractTypeObject(Type type) {
         if (type.isPrimitiveType() || type.isSimpleType()) {
             LeafType leafType = extractTypeObject(stringify(type));
-            AnnotatableType annotatableType = (AnnotatableType)type;
+            AnnotatableType annotatableType = (AnnotatableType) type;
             List<Annotation> annotations = annotatableType.annotations();
-            for(Annotation annotation : annotations) {
+            for (Annotation annotation : annotations) {
                 leafType.annotations.add(annotation);
             }
             return leafType;
@@ -221,9 +221,9 @@ public abstract class UMLType implements Serializable {
             QualifiedType qualified = (QualifiedType) type;
             UMLType leftType = extractTypeObject(qualified.getQualifier());
             LeafType rightType = extractTypeObject(qualified.getName().getFullyQualifiedName());
-            AnnotatableType annotatableType = (AnnotatableType)qualified;
+            AnnotatableType annotatableType = (AnnotatableType) qualified;
             List<Annotation> annotations = annotatableType.annotations();
-            for(Annotation annotation : annotations) {
+            for (Annotation annotation : annotations) {
                 rightType.annotations.add(annotation);
             }
             return new CompositeType(leftType, rightType);
@@ -231,9 +231,9 @@ public abstract class UMLType implements Serializable {
             NameQualifiedType nameQualified = (NameQualifiedType) type;
             LeafType leftType = extractTypeObject(nameQualified.getQualifier().getFullyQualifiedName());
             LeafType rightType = extractTypeObject(nameQualified.getName().getFullyQualifiedName());
-            AnnotatableType annotatableType = (AnnotatableType)nameQualified;
+            AnnotatableType annotatableType = (AnnotatableType) nameQualified;
             List<Annotation> annotations = annotatableType.annotations();
-            for(Annotation annotation : annotations) {
+            for (Annotation annotation : annotations) {
                 rightType.annotations.add(annotation);
             }
             return new CompositeType(leftType, rightType);
@@ -246,19 +246,19 @@ public abstract class UMLType implements Serializable {
             } else {
                 myWildcardType = new org.remapper.dto.WildcardType(null, false);
             }
-            AnnotatableType annotatableType = (AnnotatableType)wildcard;
+            AnnotatableType annotatableType = (AnnotatableType) wildcard;
             List<Annotation> annotations = annotatableType.annotations();
-            for(Annotation annotation : annotations) {
+            for (Annotation annotation : annotations) {
                 myWildcardType.annotations.add(annotation);
             }
             return myWildcardType;
         } else if (type instanceof ArrayType) {
             ArrayType array = (ArrayType) type;
             UMLType arrayType = extractTypeObject(array.getElementType());
-            for(Object dim : array.dimensions()) {
-                Dimension dimension = (Dimension)dim;
+            for (Object dim : array.dimensions()) {
+                Dimension dimension = (Dimension) dim;
                 List<Annotation> annotations = dimension.annotations();
-                for(Annotation annotation : annotations) {
+                for (Annotation annotation : annotations) {
                     arrayType.annotations.add(annotation);
                 }
             }
