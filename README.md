@@ -184,7 +184,7 @@ int endColumn
 
 4. **Run the API usage example shown in README**
 
-   `m:java -Dexec.mainClass="org.remapper.ReMapper" -Dexec.args="-c refactoring-toy-example d4bce13a443cf12da40a77c16c1e591f4f985b47"`
+   `mvn compile exec:java -Dexec.mainClass="org.remapper.ReMapper" -Dexec.args="-c refactoring-toy-example d4bce13a443cf12da40a77c16c1e591f4f985b47"`
 
 ## IntelliJ IDEA
 
@@ -683,6 +683,8 @@ In both cases, you will get the output in JSON format:
 # How to add as a maven dependency
 
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.github.lyoubo/remapper/badge.svg)](https://maven-badges.herokuapp.com/maven-central/io.github.lyoubo/remapper)
+
+In order to use ReMapper as a maven dependency in your project, add the following snippet to your project's build configuration file:
 
 **pom.xml**
 
