@@ -62,7 +62,6 @@ public class EntityMatchingJSON {
                 Entity entity = new Entity(left, right);
                 this.matchedEntities.add(entity);
             }
-
             for (Pair<StatementNodeTree, StatementNodeTree> pair : matchPair.getMatchedStatements()) {
                 Location left = new StatementLocation(pair.getLeft().getEntity());
                 Location right = new StatementLocation(pair.getRight().getEntity());
@@ -122,7 +121,7 @@ public class EntityMatchingJSON {
         }
     }
 
-    class Location {
+    public class Location {
         private final String filePath;
         private final int startLine;
         private final int endLine;

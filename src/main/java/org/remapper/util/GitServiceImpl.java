@@ -8,10 +8,7 @@ import org.eclipse.jgit.api.errors.CanceledException;
 import org.eclipse.jgit.api.errors.GitAPIException;
 import org.eclipse.jgit.diff.DiffEntry;
 import org.eclipse.jgit.diff.RenameDetector;
-import org.eclipse.jgit.lib.ObjectId;
-import org.eclipse.jgit.lib.ObjectReader;
-import org.eclipse.jgit.lib.Repository;
-import org.eclipse.jgit.lib.RepositoryBuilder;
+import org.eclipse.jgit.lib.*;
 import org.eclipse.jgit.revwalk.RevCommit;
 import org.eclipse.jgit.revwalk.RevWalk;
 import org.eclipse.jgit.revwalk.filter.RevFilter;
@@ -24,11 +21,41 @@ import org.remapper.service.GitService;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
+import java.util.stream.Collectors;
+import java.util.stream.StreamSupport;
 
 public class GitServiceImpl implements GitService {
+
+    private static final String REMOTE_REFS_PREFIX = "refs/remotes/origin/";
+
+    DefaultCommitsFilter commitsFilter = new DefaultCommitsFilter();
+
+    public boolean isCommitAnalyzed(String sha1) {
+        return false;
+    }
+
+    private class DefaultCommitsFilter extends RevFilter {
+        @Override
+        public final boolean include(final RevWalk walker, final RevCommit c) {
+            return c.getParentCount() == 1;
+        }
+
+        @Override
+        public final RevFilter clone() {
+            return this;
+        }
+
+        @Override
+        public final boolean requiresCommitBody() {
+            return false;
+        }
+
+        @Override
+        public String toString() {
+            return "RegularCommitsFilter";
+        }
+    }
 
     @Override
     public void fileTreeDiff(Repository repository, RevCommit currentCommit, Set<String> addedFiles, Set<String> deletedFiles,
@@ -36,33 +63,102 @@ public class GitServiceImpl implements GitService {
         if (currentCommit.getParentCount() > 0) {
             ObjectId oldTree = currentCommit.getParent(0).getTree();
             ObjectId newTree = currentCommit.getTree();
-            final TreeWalk tw = new TreeWalk(repository);
-            tw.setRecursive(true);
-            tw.addTree(oldTree);
-            tw.addTree(newTree);
-            RenameDetector rd = new RenameDetector(repository);
-            rd.addAll(DiffEntry.scan(tw));
-            for (DiffEntry diff : rd.compute(tw.getObjectReader(), null)) {
-                DiffEntry.ChangeType changeType = diff.getChangeType();
-                String oldPath = diff.getOldPath();
-                String newPath = diff.getNewPath();
-                if (changeType == DiffEntry.ChangeType.ADD) {
-                    if (isJavaFile(newPath))
-                        addedFiles.add(newPath);
-                } else if (changeType == DiffEntry.ChangeType.DELETE) {
-                    if (isJavaFile(oldPath))
-                        deletedFiles.add(oldPath);
-                } else if (changeType == DiffEntry.ChangeType.MODIFY) {
-                    if (isJavaFile(oldPath) && isJavaFile(newPath))
-                        modifiedFiles.add(oldPath);
-                } else if (changeType == DiffEntry.ChangeType.RENAME) {
-                    if (isJavaFile(oldPath) && isJavaFile(newPath))
-                        renamedFiles.put(oldPath, newPath);
-                } else if (changeType == DiffEntry.ChangeType.COPY) {
-                    if (isJavaFile(newPath))
-                        addedFiles.add(newPath);
+            populateTreeDiff(repository, addedFiles, deletedFiles, modifiedFiles, renamedFiles, oldTree, newTree);
+        }
+    }
+
+    private void populateTreeDiff(Repository repository, Set<String> addedFiles, Set<String> deletedFiles, Set<String> modifiedFiles,
+                                  Map<String, String> renamedFiles, ObjectId oldTree, ObjectId newTree) throws IOException, CanceledException {
+        final TreeWalk tw = new TreeWalk(repository);
+        tw.setRecursive(true);
+        tw.addTree(oldTree);
+        tw.addTree(newTree);
+        RenameDetector rd = new RenameDetector(repository);
+        rd.addAll(DiffEntry.scan(tw));
+        for (DiffEntry diff : rd.compute(tw.getObjectReader(), null)) {
+            DiffEntry.ChangeType changeType = diff.getChangeType();
+            String oldPath = diff.getOldPath();
+            String newPath = diff.getNewPath();
+            if (changeType == DiffEntry.ChangeType.ADD) {
+                if (isJavaFile(newPath))
+                    addedFiles.add(newPath);
+            } else if (changeType == DiffEntry.ChangeType.DELETE) {
+                if (isJavaFile(oldPath))
+                    deletedFiles.add(oldPath);
+            } else if (changeType == DiffEntry.ChangeType.MODIFY) {
+                if (isJavaFile(oldPath) && isJavaFile(newPath))
+                    modifiedFiles.add(oldPath);
+            } else if (changeType == DiffEntry.ChangeType.RENAME) {
+                if (isJavaFile(oldPath) && isJavaFile(newPath))
+                    renamedFiles.put(oldPath, newPath);
+            } else if (changeType == DiffEntry.ChangeType.COPY) {
+                if (isJavaFile(newPath))
+                    addedFiles.add(newPath);
+            }
+        }
+    }
+
+    @Override
+    public void fileTreeDiff(Repository repository, RevCommit startCommit, RevCommit endCommit, Set<String> addedFiles, Set<String> deletedFiles,
+                             Set<String> modifiedFiles, Map<String, String> renamedFiles) throws IOException, CanceledException {
+        ObjectId oldTree = startCommit.getTree();
+        ObjectId newTree = endCommit.getTree();
+        populateTreeDiff(repository, addedFiles, deletedFiles, modifiedFiles, renamedFiles, oldTree, newTree);
+    }
+
+    public RevWalk createAllRevsWalk(Repository repository, String branch) throws Exception {
+        List<ObjectId> currentRemoteRefs = new ArrayList<ObjectId>();
+        for (Ref ref : repository.getRefDatabase().getRefs()) {
+            String refName = ref.getName();
+            if (refName.startsWith(REMOTE_REFS_PREFIX)) {
+                if (branch == null || refName.endsWith("/" + branch)) {
+                    currentRemoteRefs.add(ref.getObjectId());
                 }
             }
+        }
+
+        RevWalk walk = new RevWalk(repository);
+        for (ObjectId newRef : currentRemoteRefs) {
+            walk.markStart(walk.parseCommit(newRef));
+        }
+        walk.setRevFilter(commitsFilter);
+        return walk;
+    }
+
+    @Override
+    public Iterable<RevCommit> createRevsWalkBetweenTags(Repository repository, String startTag, String endTag)
+            throws Exception {
+        Ref refFrom = repository.findRef(startTag);
+        Ref refTo = repository.findRef(endTag);
+        try (Git git = new Git(repository)) {
+            List<RevCommit> revCommits = StreamSupport.stream(git.log().addRange(getActualRefObjectId(refFrom), getActualRefObjectId(refTo)).call()
+                            .spliterator(), false)
+                    .filter(r -> r.getParentCount() == 1)
+                    .collect(Collectors.toList());
+            Collections.reverse(revCommits);
+            return revCommits;
+        }
+    }
+
+    public ObjectId getActualRefObjectId(Ref ref) {
+        if(ref.getPeeledObjectId() != null) {
+            return ref.getPeeledObjectId();
+        }
+        return ref.getObjectId();
+    }
+
+    @Override
+    public Iterable<RevCommit> createRevsWalkBetweenCommits(Repository repository, String startCommitId, String endCommitId)
+            throws Exception {
+        ObjectId from = repository.resolve(startCommitId);
+        ObjectId to = repository.resolve(endCommitId);
+        try (Git git = new Git(repository)) {
+            List<RevCommit> revCommits = StreamSupport.stream(git.log().addRange(from, to).call()
+                            .spliterator(), false)
+                    .filter(r -> r.getParentCount() == 1)
+                    .collect(Collectors.toList());
+            Collections.reverse(revCommits);
+            return revCommits;
         }
     }
 
@@ -109,8 +205,7 @@ public class GitServiceImpl implements GitService {
 
     @Override
     public void checkoutCurrent(String project, String commitId) throws GitAPIException, IOException {
-        Repository repository = openRepository(project);
-        try (Git git = new Git(repository)) {
+        try (Repository repository = openRepository(project); Git git = new Git(repository)) {
             CheckoutCommand checkout = git.checkout().setForced(true).setName(commitId);
             checkout.call();
         }
@@ -128,8 +223,8 @@ public class GitServiceImpl implements GitService {
     @Override
     public void checkoutBranch(Repository repository) throws GitAPIException, IOException {
         try (Git git = new Git(repository)) {
-            String defaultBranch = repository.findRef("refs/remotes/origin/HEAD").getTarget().getName();
-            String branch = defaultBranch.substring("refs/remotes/origin/".length());
+            String defaultBranch = repository.findRef(REMOTE_REFS_PREFIX + "HEAD").getTarget().getName();
+            String branch = defaultBranch.substring(REMOTE_REFS_PREFIX.length());
             CheckoutCommand checkout = git.checkout().setForced(true).setName(branch);
             checkout.call();
         }
@@ -144,8 +239,7 @@ public class GitServiceImpl implements GitService {
 
     @Override
     public void resetHard(String project) throws GitAPIException, IOException {
-        Repository repository = openRepository(project);
-        try (Git git = new Git(repository)) {
+        try (Repository repository = openRepository(project); Git git = new Git(repository)) {
             git.reset().setMode(ResetCommand.ResetType.HARD).call();
         }
     }
@@ -163,8 +257,14 @@ public class GitServiceImpl implements GitService {
 
     @Override
     public Iterable<RevCommit> getAllCommits(String projectPath) throws GitAPIException, IOException {
-        try (Repository repository = openRepository(projectPath); Git git = new Git(repository)) {
-            LogCommand log = git.log().setRevFilter(RevFilter.NO_MERGES);
+        try (Repository repository = openRepository(projectPath)) {
+            return getAllCommits(repository);
+        }
+    }
+
+    public Iterable<RevCommit> getAllCommits(Repository repository) throws GitAPIException {
+        try (Git git = new Git(repository)) {
+            LogCommand log = git.log().setRevFilter(commitsFilter);
             return log.call();
         }
     }

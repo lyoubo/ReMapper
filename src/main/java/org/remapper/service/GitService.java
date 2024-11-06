@@ -2,8 +2,11 @@ package org.remapper.service;
 
 import org.eclipse.jgit.api.errors.CanceledException;
 import org.eclipse.jgit.api.errors.GitAPIException;
+import org.eclipse.jgit.lib.ObjectId;
+import org.eclipse.jgit.lib.Ref;
 import org.eclipse.jgit.lib.Repository;
 import org.eclipse.jgit.revwalk.RevCommit;
+import org.eclipse.jgit.revwalk.RevWalk;
 
 import java.io.IOException;
 import java.util.Map;
@@ -13,6 +16,15 @@ public interface GitService {
 
     void fileTreeDiff(Repository repository, RevCommit currentCommit, Set<String> addedFiles, Set<String> deletedFiles,
                       Set<String> modifiedFiles, Map<String, String> renamedFiles) throws IOException, CanceledException;
+
+    void fileTreeDiff(Repository repository, RevCommit startCommit, RevCommit endCommit, Set<String> addedFiles, Set<String> deletedFiles,
+                      Set<String> modifiedFiles, Map<String, String> renamedFiles) throws IOException, CanceledException;
+
+    RevWalk createAllRevsWalk(Repository repository, String branch) throws Exception;
+
+    Iterable<RevCommit> createRevsWalkBetweenTags(Repository repository, String startTag, String endTag) throws Exception;
+
+    Iterable<RevCommit> createRevsWalkBetweenCommits(Repository repository, String startCommitId, String endCommitId) throws Exception;
 
     Repository openRepository(String folder) throws IOException;
 
@@ -32,5 +44,9 @@ public interface GitService {
 
     Iterable<RevCommit> getAllCommits(String project) throws GitAPIException, IOException;
 
+    Iterable<RevCommit> getAllCommits(Repository repository) throws GitAPIException;
+
     boolean containJavaChange(Repository repository, RevCommit currentCommit) throws GitAPIException, IOException;
+
+    ObjectId getActualRefObjectId(Ref refFrom);
 }

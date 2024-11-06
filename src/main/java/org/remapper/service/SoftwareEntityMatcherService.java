@@ -81,8 +81,61 @@ public class SoftwareEntityMatcherService {
         additionalMatchByReference(matchPair);
         repairMatching(matchPair);
         filter(matchPair);
+    }
+
+    protected void matchEntities(GitService gitService, JDTService jdtService, Repository repository,
+                                 RevCommit startCommit, RevCommit endCommit, MatchPair matchPair) throws Exception {
+        Set<String> addedFiles = new LinkedHashSet<>();
+        Set<String> deletedFiles = new LinkedHashSet<>();
+        Set<String> modifiedFiles = new LinkedHashSet<>();
+        Map<String, String> renamedFiles = new LinkedHashMap<>();
+        Map<String, String> fileContentsBefore = new LinkedHashMap<>();
+        Map<String, String> fileContentsCurrent = new LinkedHashMap<>();
+        Map<String, RootNode> fileDNTsBefore = new LinkedHashMap<>();
+        Map<String, RootNode> fileDNTsCurrent = new LinkedHashMap<>();
+        gitService.fileTreeDiff(repository, startCommit, endCommit, addedFiles, deletedFiles, modifiedFiles, renamedFiles);
+
+        populateFileContents(repository, startCommit, deletedFiles, fileContentsBefore);
+        populateFileContents(repository, startCommit, modifiedFiles, fileContentsBefore);
+        populateFileContents(repository, startCommit, renamedFiles.keySet(), fileContentsBefore);
+        populateFileContents(repository, endCommit, addedFiles, fileContentsCurrent);
+        populateFileContents(repository, endCommit, modifiedFiles, fileContentsCurrent);
+        populateFileContents(repository, endCommit, new HashSet<>(renamedFiles.values()), fileContentsCurrent);
+        matchPair.setAddedFiles(addedFiles);
+        matchPair.setDeletedFiles(deletedFiles);
+        matchPair.setModifiedFiles(modifiedFiles);
+        matchPair.setRenamedFiles(renamedFiles);
+        matchPair.setFileContentsBefore(fileContentsBefore);
+        matchPair.setFileContentsCurrent(fileContentsCurrent);
+
+        populateFileDNTs(jdtService, fileContentsBefore, fileDNTsBefore);
+        populateFileDNTs(jdtService, fileContentsCurrent, fileDNTsCurrent);
+
+        pruneUnchangedEntitiesInModifiedFiles(matchPair, modifiedFiles, fileDNTsBefore, fileDNTsCurrent);
+        pruneUnchangedEntitiesInRenamedFiles(matchPair, renamedFiles, fileDNTsBefore, fileDNTsCurrent);
+        pruneUnchangedEntitiesInRenamedFiles(matchPair, deletedFiles, addedFiles, fileDNTsBefore, fileDNTsCurrent);
+
+        matchByNameAndSignature(matchPair, modifiedFiles, fileDNTsBefore, fileDNTsCurrent);
+        matchByDiceCoefficient(matchPair, modifiedFiles, renamedFiles, deletedFiles, addedFiles, fileDNTsBefore, fileDNTsCurrent);
+        matchByIntroduceObjectRefactoring(matchPair);
+
+        String endCommitId = endCommit.getId().getName();
+        String projectPath = repository.getWorkTree().getPath();
         gitService.resetHard(repository);
-        gitService.checkoutBranch(repository);
+        gitService.checkoutCurrent(repository, endCommitId);
+        populateCurrentDependencies(matchPair, fileContentsCurrent, projectPath, modifiedFiles, renamedFiles, addedFiles);
+        gitService.resetHard(repository);
+
+        String startCommitId = startCommit.getId().getName();
+        gitService.checkoutCurrent(repository, startCommitId);
+        populateBeforeDependencies(matchPair, fileContentsBefore, projectPath, modifiedFiles, renamedFiles, deletedFiles);
+
+        fineMatching(matchPair, renamedFiles);
+        additionalMatchByName(matchPair);
+        additionalMatchByDice(matchPair);
+        additionalMatchByReference(matchPair);
+        repairMatching(matchPair);
+        filter(matchPair);
     }
 
     protected void matchEntities(JDTService jdtService, File previousFile, File nextFile, MatchPair matchPair) throws Exception {

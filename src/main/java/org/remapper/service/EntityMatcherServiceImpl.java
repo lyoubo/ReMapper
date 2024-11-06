@@ -3,6 +3,8 @@ package org.remapper.service;
 import org.apache.commons.lang3.tuple.Pair;
 import org.eclipse.jdt.core.dom.*;
 import org.eclipse.jgit.errors.MissingObjectException;
+import org.eclipse.jgit.lib.ObjectId;
+import org.eclipse.jgit.lib.Ref;
 import org.eclipse.jgit.lib.Repository;
 import org.eclipse.jgit.revwalk.RevCommit;
 import org.eclipse.jgit.revwalk.RevWalk;
@@ -19,12 +21,13 @@ public class EntityMatcherServiceImpl implements EntityMatcherService {
 
     @Override
     public void matchAtCommit(Repository repository, String commitId, MatchingHandler handler) {
+        GitService gitService = new GitServiceImpl();
         RevWalk walk = new RevWalk(repository);
         try {
             RevCommit commit = walk.parseCommit(repository.resolve(commitId));
             if (commit.getParentCount() > 0) {
                 walk.parseCommit(commit.getParent(0));
-                this.matchEntities(repository, commit, handler);
+                this.matchEntities(gitService, repository, commit, handler);
             }
         } catch (MissingObjectException ignored) {
         } catch (Exception e) {
@@ -32,6 +35,12 @@ public class EntityMatcherServiceImpl implements EntityMatcherService {
         } finally {
             walk.close();
             walk.dispose();
+            try {
+                gitService.resetHard(repository);
+                gitService.checkoutBranch(repository);
+            } catch (Exception e) {
+                handler.handleException(commitId, e);
+            }
         }
     }
 
@@ -53,8 +62,7 @@ public class EntityMatcherServiceImpl implements EntityMatcherService {
     }
 
     @Override
-    public MatchPair matchEntities(Repository repository, RevCommit currentCommit, final MatchingHandler handler) throws Exception {
-        GitService gitService = new GitServiceImpl();
+    public MatchPair matchEntities(GitService gitService, Repository repository, RevCommit currentCommit, final MatchingHandler handler) throws Exception {
         JDTService jdtService = new JDTServiceImpl();
         SoftwareEntityMatcherService entityMatchingService = new SoftwareEntityMatcherService();
         String commitId = currentCommit.getId().getName();
@@ -63,6 +71,69 @@ public class EntityMatcherServiceImpl implements EntityMatcherService {
         matchStatementsInMethodPairs(matchPair, jdtService);
         findRefactoringsBetweenAttributesAndVariables(matchPair);
         handler.handle(commitId, matchPair);
+        return matchPair;
+    }
+
+    @Override
+    public void matchBetweenTags(Repository repository, String startTag, String endTag, MatchingHandler handler) {
+        GitService gitService = new GitServiceImpl();
+        RevWalk walk = new RevWalk(repository);
+        try {
+            Ref refFrom = repository.findRef(startTag);
+            Ref refTo = repository.findRef(endTag);
+            ObjectId startRefObjectId = gitService.getActualRefObjectId(refFrom);
+            ObjectId endRefObjectId = gitService.getActualRefObjectId(refTo);
+            RevCommit startCommit = walk.parseCommit(startRefObjectId);
+            RevCommit endCommit = walk.parseCommit(endRefObjectId);
+            this.matchEntities(gitService, repository, startCommit, endCommit, handler);
+        } catch (MissingObjectException ignored) {
+        } catch (Exception e) {
+            handler.handleException(startTag, endTag, e);
+        } finally {
+            walk.close();
+            walk.dispose();
+            try {
+                gitService.resetHard(repository);
+                gitService.checkoutBranch(repository);
+            } catch (Exception ignore) {
+            }
+        }
+    }
+
+    @Override
+    public void matchBetweenCommits(Repository repository, String startCommitId, String endCommitId,
+                                    MatchingHandler handler) {
+        GitService gitService = new GitServiceImpl();
+        RevWalk walk = new RevWalk(repository);
+        try {
+            RevCommit startCommit = walk.parseCommit(repository.resolve(startCommitId));
+            RevCommit endCommit = walk.parseCommit(repository.resolve(endCommitId));
+            this.matchEntities(gitService, repository, startCommit, endCommit, handler);
+        } catch (MissingObjectException ignored) {
+        } catch (Exception e) {
+            handler.handleException(startCommitId, endCommitId, e);
+        } finally {
+            walk.close();
+            walk.dispose();
+            try {
+                gitService.resetHard(repository);
+                gitService.checkoutBranch(repository);
+            } catch (Exception ignore) {
+            }
+        }
+    }
+
+    @Override
+    public MatchPair matchEntities(GitService gitService, Repository repository, RevCommit startCommit, RevCommit endCommit, final MatchingHandler handler) throws Exception {
+        JDTService jdtService = new JDTServiceImpl();
+        SoftwareEntityMatcherService entityMatchingService = new SoftwareEntityMatcherService();
+        String startCommitId = startCommit.getId().getName();
+        String endCommitId = endCommit.getId().getName();
+        MatchPair matchPair = new MatchPair();
+        entityMatchingService.matchEntities(gitService, jdtService, repository, startCommit, endCommit, matchPair);
+        matchStatementsInMethodPairs(matchPair, jdtService);
+        findRefactoringsBetweenAttributesAndVariables(matchPair);
+        handler.handle(startCommitId, endCommitId, matchPair);
         return matchPair;
     }
 

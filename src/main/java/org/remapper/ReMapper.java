@@ -1,9 +1,9 @@
 package org.remapper;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
+import com.google.gson.*;
 import org.eclipse.jgit.lib.Repository;
 import org.remapper.dto.EntityMatchingJSON;
+import org.remapper.dto.LocationDeserializer;
 import org.remapper.dto.MatchPair;
 import org.remapper.handler.MatchingHandler;
 import org.remapper.service.EntityMatcherService;
@@ -35,32 +35,76 @@ public class ReMapper {
             return;
         }
 
-        if (option.equalsIgnoreCase("-c")) {
+        if (option.equalsIgnoreCase("-bc")) {
+            detectBetweenCommits(args);
+        } else if (option.equalsIgnoreCase("-bt")) {
+            detectBetweenTags(args);
+        } else if (option.equalsIgnoreCase("-c")) {
             detectAtCommit(args);
         } else {
             throw argumentException();
         }
     }
 
-    private static void processJSONOption(String[] args) {
-        if (args[args.length - 2].equalsIgnoreCase("-json")) {
-            path = Paths.get(args[args.length - 1]);
-            if (Files.exists(path) && path.toFile().length() == 0) {
-                try {
-                    Files.delete(path);
-                } catch (IOException e) {
-                    throw new RuntimeException(e);
+    public static void detectBetweenCommits(String[] args) throws Exception {
+        int maxArgLength = processJSONoption(args, 4);
+        if (!(args.length == maxArgLength - 1 || args.length == maxArgLength)) {
+            throw argumentException();
+        }
+        String folder = args[1];
+        String startCommit = args[2];
+        String endCommit = containsEndArgument(args) ? args[3] : null;
+        GitService gitService = new GitServiceImpl();
+        try (Repository repo = gitService.openRepository(folder)) {
+            String gitURL = GitServiceImpl.getRemoteUrl(folder);
+            EntityMatcherService service = new EntityMatcherServiceImpl();
+            service.matchBetweenCommits(repo, startCommit, endCommit, new MatchingHandler() {
+                @Override
+                public void handle(String startCommitId, String endCommitId, MatchPair matchPair) {
+                    commitJSON(gitURL, endCommitId, matchPair);
                 }
-            }
+
+                @Override
+                public void handleException(String startCommitId, String endCommitId, Exception e) {
+                    System.err.println("Error processing commit " + endCommitId);
+                    e.printStackTrace(System.err);
+                }
+            });
+        }
+    }
+
+    public static void detectBetweenTags(String[] args) throws Exception {
+        int maxArgLength = processJSONoption(args, 4);
+        if (!(args.length == maxArgLength - 1 || args.length == maxArgLength)) {
+            throw argumentException();
+        }
+        String folder = args[1];
+        String startTag = args[2];
+        String endTag = containsEndArgument(args) ? args[3] : null;
+        GitService gitService = new GitServiceImpl();
+        try (Repository repo = gitService.openRepository(folder)) {
+            String gitURL = GitServiceImpl.getRemoteUrl(folder);
+            EntityMatcherService service = new EntityMatcherServiceImpl();
+            service.matchBetweenTags(repo, startTag, endTag, new MatchingHandler() {
+                @Override
+                public void handle(String startTag, String endTag, MatchPair matchPair) {
+                    commitJSON(gitURL, endTag, matchPair);
+                }
+
+                @Override
+                public void handleException(String startTag, String endTag, Exception e) {
+                    System.err.println("Error processing tag " + endTag);
+                    e.printStackTrace(System.err);
+                }
+            });
         }
     }
 
     public static void detectAtCommit(String[] args) throws Exception {
-        processJSONOption(args);
-        if (args.length != 5) {
+        int maxArgLength = processJSONoption(args, 3);
+        if (args.length != maxArgLength) {
             throw argumentException();
         }
-
         String folder = args[1];
         String commitId = args[2];
         GitService gitService = new GitServiceImpl();
@@ -82,8 +126,20 @@ public class ReMapper {
         }
     }
 
+    private static int processJSONoption(String[] args, int maxArgLength) {
+        if (args[args.length - 2].equalsIgnoreCase("-json")) {
+            path = Paths.get(args[args.length - 1]);
+            maxArgLength = maxArgLength + 2;
+        }
+        return maxArgLength;
+    }
+
+    private static boolean containsEndArgument(String[] args) {
+        return args.length == 4 || (args.length > 4 && args[4].equalsIgnoreCase("-json"));
+    }
+
     private static void commitJSON(String cloneURL, String currentCommitId, MatchPair matchPair) {
-        Gson gson = new GsonBuilder().disableHtmlEscaping().setPrettyPrinting().create();
+        Gson gson = new GsonBuilder().disableHtmlEscaping().setPrettyPrinting().registerTypeAdapter(EntityMatchingJSON.Location.class, new LocationDeserializer()).create();
         String url = cloneURL.replace(".git", "/commit/") + currentCommitId;
         if (Files.notExists(path)) {
             Path parent = path.getParent();
@@ -119,6 +175,10 @@ public class ReMapper {
 
     private static void printTips() {
         System.out.println("-h\t\t\t\t\t\t\t\t\t\t\tShow options");
+        System.out.println(
+                "-bc <git-repo-folder> <start-commit-sha1> <end-commit-sha1> -json <path-to-json-file>\tMatch entities between <start-commit-sha1> and <end-commit-sha1> for project <git-repo-folder>");
+        System.out.println(
+                "-bt <git-repo-folder> <start-tag> <end-tag> -json <path-to-json-file>\t\t\tMatch entities between <start-tag> and <end-tag> for project <git-repo-folder>");
         System.out.println(
                 "-c <git-repo-folder> <commit-sha1> -json <path-to-json-file>\t\t\t\tMatch entities at specified commit <commit-sha1> for project <git-repo-folder>");
     }
