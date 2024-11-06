@@ -184,7 +184,7 @@ int endColumn
 
 4. **Run the API usage example shown in README**
 
-   `mvn compile exec:java -Dexec.mainClass="org.remapper.ReMapper" -Dexec.args="-c refactoring-toy-example d4bce13a443cf12da40a77c16c1e591f4f985b47"`
+   `m:java -Dexec.mainClass="org.remapper.ReMapper" -Dexec.args="-c refactoring-toy-example d4bce13a443cf12da40a77c16c1e591f4f985b47"`
 
 ## IntelliJ IDEA
 
@@ -684,13 +684,17 @@ In both cases, you will get the output in JSON format:
 
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.github.lyoubo/remapper/badge.svg)](https://maven-badges.herokuapp.com/maven-central/io.github.lyoubo/remapper)
 
-To add ReMapper as a maven dependency in your project, add the following snippet to your project's pom.xml:
+**pom.xml**
 
     <dependency>
       <groupId>io.github.lyoubo</groupId>
       <artifactId>remapper</artifactId>
-      <version>2.3.7</version>
+      <version>2.4.0</version>
     </dependency>
+
+**build.gradle**
+
+    implementation 'io.github.lyoubo:remapper:2.4.0'
 
 # How to cite ReMapper
 
