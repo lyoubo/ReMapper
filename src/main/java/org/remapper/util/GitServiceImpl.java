@@ -1,26 +1,29 @@
 package org.remapper.util;
 
-import org.eclipse.jgit.api.CheckoutCommand;
-import org.eclipse.jgit.api.Git;
-import org.eclipse.jgit.api.LogCommand;
-import org.eclipse.jgit.api.ResetCommand;
+import org.apache.commons.io.FileUtils;
+import org.apache.commons.io.IOUtils;
+import org.eclipse.jgit.api.*;
 import org.eclipse.jgit.api.errors.CanceledException;
 import org.eclipse.jgit.api.errors.GitAPIException;
 import org.eclipse.jgit.diff.DiffEntry;
 import org.eclipse.jgit.diff.RenameDetector;
 import org.eclipse.jgit.lib.*;
 import org.eclipse.jgit.revwalk.RevCommit;
+import org.eclipse.jgit.revwalk.RevTree;
 import org.eclipse.jgit.revwalk.RevWalk;
 import org.eclipse.jgit.revwalk.filter.RevFilter;
 import org.eclipse.jgit.transport.RemoteConfig;
 import org.eclipse.jgit.transport.URIish;
 import org.eclipse.jgit.treewalk.CanonicalTreeParser;
 import org.eclipse.jgit.treewalk.TreeWalk;
+import org.remapper.dto.EntityMatchingJSON;
 import org.remapper.service.GitService;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.StringWriter;
+import java.nio.charset.StandardCharsets;
 import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
@@ -140,11 +143,119 @@ public class GitServiceImpl implements GitService {
         }
     }
 
+    @Override
     public ObjectId getActualRefObjectId(Ref ref) {
-        if(ref.getPeeledObjectId() != null) {
+        if (ref.getPeeledObjectId() != null) {
             return ref.getPeeledObjectId();
         }
         return ref.getObjectId();
+    }
+
+    @Override
+    public List<EntityMatchingJSON.FileContent> getDiffFiles(String projectPath, String... commits) throws Exception {
+        try (Repository repository = openRepository(projectPath); RevWalk walk = new RevWalk(repository)) {
+            if (commits.length == 1) {
+                String commitId = commits[0];
+                if (projectPath.endsWith(".java") && commitId.endsWith(".java")) {
+                    return getDiffFiles(projectPath, commitId);
+                } else {
+                    RevCommit currentCommit = walk.parseCommit(repository.resolve(commitId));
+                    if (currentCommit.getParentCount() > 0) {
+                        walk.parseCommit(currentCommit.getParent(0));
+                    }
+                    RevCommit parentCommit = currentCommit.getParent(0);
+                    return getDiffFiles(repository, parentCommit, currentCommit);
+                }
+            } else if (commits.length == 2) {
+                RevCommit startCommit = walk.parseCommit(repository.resolve(commits[0]));
+                RevCommit endCommit = walk.parseCommit(repository.resolve(commits[1]));
+                return getDiffFiles(repository, startCommit, endCommit);
+            }
+            return Collections.emptyList();
+        }
+    }
+
+    public List<EntityMatchingJSON.FileContent> getDiffFiles(Repository repository, RevCommit startCommit, RevCommit endCommit) throws Exception {
+        Set<String> addedFiles = new LinkedHashSet<>();
+        Set<String> deletedFiles = new LinkedHashSet<>();
+        Set<String> modifiedFiles = new LinkedHashSet<>();
+        Map<String, String> renamedFiles = new LinkedHashMap<>();
+        Map<String, String> fileContentsBefore = new LinkedHashMap<>();
+        Map<String, String> fileContentsCurrent = new LinkedHashMap<>();
+        fileTreeDiff(repository, startCommit, endCommit, addedFiles, deletedFiles, modifiedFiles, renamedFiles);
+
+        populateFileContents(repository, startCommit, deletedFiles, fileContentsBefore);
+        populateFileContents(repository, startCommit, modifiedFiles, fileContentsBefore);
+        populateFileContents(repository, startCommit, renamedFiles.keySet(), fileContentsBefore);
+        populateFileContents(repository, endCommit, addedFiles, fileContentsCurrent);
+        populateFileContents(repository, endCommit, modifiedFiles, fileContentsCurrent);
+        populateFileContents(repository, endCommit, new HashSet<>(renamedFiles.values()), fileContentsCurrent);
+
+        List<EntityMatchingJSON.FileContent> files = new ArrayList<>();
+        EntityMatchingJSON json = new EntityMatchingJSON();
+        for (String name : modifiedFiles) {
+            EntityMatchingJSON.FileContent fileContent = json.new FileContent(name, fileContentsBefore.get(name), fileContentsCurrent.get(name));
+            files.add(fileContent);
+        }
+        for (String oldName : renamedFiles.keySet()) {
+            String newName = renamedFiles.get(oldName);
+            EntityMatchingJSON.FileContent fileContent = json.new FileContent(oldName + " --> " + newName, fileContentsBefore.get(oldName), fileContentsCurrent.get(newName));
+            files.add(fileContent);
+        }
+        for (String name : deletedFiles) {
+            EntityMatchingJSON.FileContent fileContent = json.new FileContent(name, fileContentsBefore.get(name), "");
+            files.add(fileContent);
+        }
+        for (String name : addedFiles) {
+            EntityMatchingJSON.FileContent fileContent = json.new FileContent(name, "", fileContentsCurrent.get(name));
+            files.add(fileContent);
+        }
+        return files;
+    }
+
+    private List<EntityMatchingJSON.FileContent> getDiffFiles(String before, String after) throws Exception {
+        File previousFile = new File(before);
+        File nextFile = new File(after);
+        Map<String, String> renamedFiles = new LinkedHashMap<>();
+        Map<String, String> fileContentsBefore = new LinkedHashMap<>();
+        Map<String, String> fileContentsCurrent = new LinkedHashMap<>();
+
+        renamedFiles.put(previousFile.getPath().replace("\\", "/"), nextFile.getPath().replace("\\", "/"));
+        populateFileContents(previousFile, fileContentsBefore);
+        populateFileContents(nextFile, fileContentsCurrent);
+        List<EntityMatchingJSON.FileContent> files = new ArrayList<>();
+        EntityMatchingJSON json = new EntityMatchingJSON();
+        for (String oldName : renamedFiles.keySet()) {
+            String newName = renamedFiles.get(oldName);
+            EntityMatchingJSON.FileContent fileContent = json.new FileContent(oldName + " --> " + newName, fileContentsBefore.get(oldName), fileContentsCurrent.get(newName));
+            files.add(fileContent);
+        }
+        return files;
+    }
+
+    private void populateFileContents(Repository repository, RevCommit commit,
+                                      Set<String> filePaths, Map<String, String> fileContents) throws IOException {
+        RevTree parentTree = commit.getTree();
+        try (TreeWalk treeWalk = new TreeWalk(repository)) {
+            treeWalk.addTree(parentTree);
+            treeWalk.setRecursive(true);
+            while (treeWalk.next()) {
+                String pathString = treeWalk.getPathString();
+                if (filePaths.contains(pathString)) {
+                    ObjectId objectId = treeWalk.getObjectId(0);
+                    ObjectLoader loader = repository.open(objectId);
+                    StringWriter writer = new StringWriter();
+                    IOUtils.copy(loader.openStream(), writer, StandardCharsets.UTF_8);
+                    fileContents.put(pathString, writer.toString());
+                }
+            }
+        }
+    }
+
+    private void populateFileContents(File file, Map<String, String> fileContents) throws IOException {
+        String path = file.getPath().replace("\\", "/");
+        String contents = FileUtils.readFileToString(file, StandardCharsets.UTF_8);
+        fileContents.put(path, contents);
     }
 
     @Override
@@ -262,10 +373,26 @@ public class GitServiceImpl implements GitService {
         }
     }
 
+    @Override
     public Iterable<RevCommit> getAllCommits(Repository repository) throws GitAPIException {
         try (Git git = new Git(repository)) {
             LogCommand log = git.log().setRevFilter(commitsFilter);
             return log.call();
+        }
+    }
+
+    @Override
+    public List<Ref> getAllTags(String projectPath) throws GitAPIException, IOException {
+        try (Repository repository = openRepository(projectPath)) {
+            return getAllTags(repository);
+        }
+    }
+
+    @Override
+    public List<Ref> getAllTags(Repository repository) throws GitAPIException {
+        try (Git git = new Git(repository)) {
+            ListTagCommand listTagCommand = git.tagList();
+            return listTagCommand.call();
         }
     }
 

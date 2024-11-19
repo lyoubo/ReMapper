@@ -7,8 +7,10 @@ import org.eclipse.jgit.lib.Ref;
 import org.eclipse.jgit.lib.Repository;
 import org.eclipse.jgit.revwalk.RevCommit;
 import org.eclipse.jgit.revwalk.RevWalk;
+import org.remapper.dto.EntityMatchingJSON;
 
 import java.io.IOException;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
@@ -46,7 +48,13 @@ public interface GitService {
 
     Iterable<RevCommit> getAllCommits(Repository repository) throws GitAPIException;
 
+    List<Ref> getAllTags(String project) throws GitAPIException, IOException;
+
+    List<Ref> getAllTags(Repository repository) throws GitAPIException;
+
     boolean containJavaChange(Repository repository, RevCommit currentCommit) throws GitAPIException, IOException;
 
     ObjectId getActualRefObjectId(Ref refFrom);
+
+    List<EntityMatchingJSON.FileContent> getDiffFiles(String repository, String... commits) throws Exception;
 }

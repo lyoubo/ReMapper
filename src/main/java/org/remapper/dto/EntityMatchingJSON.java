@@ -1,5 +1,7 @@
 package org.remapper.dto;
 
+import lombok.Getter;
+import lombok.Setter;
 import org.apache.commons.lang3.tuple.Pair;
 
 import java.util.ArrayList;
@@ -7,6 +9,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+@Getter
+@Setter
 public class EntityMatchingJSON {
 
     private List<Result> results;
@@ -20,7 +24,10 @@ public class EntityMatchingJSON {
         results.add(result);
     }
 
-    class Result {
+    @Getter
+    @Setter
+    public class Result {
+
         private String repository;
         private String sha1;
         private String url;
@@ -71,7 +78,10 @@ public class EntityMatchingJSON {
         }
     }
 
-    class FileContent {
+    @Getter
+    @Setter
+    public class FileContent {
+
         private String name;
         private String oldCode;
         private String newCode;
@@ -83,7 +93,10 @@ public class EntityMatchingJSON {
         }
     }
 
-    class Entity {
+    @Getter
+    @Setter
+    public class Entity {
+
         private final Location leftSideLocation;
         private final Location rightSideLocation;
 
@@ -93,7 +106,9 @@ public class EntityMatchingJSON {
         }
     }
 
-    class EntityLocation extends Location {
+    @Getter
+    @Setter
+    public class EntityLocation extends Location {
 
         private final String container;
         private final String type;
@@ -107,7 +122,9 @@ public class EntityMatchingJSON {
         }
     }
 
-    class StatementLocation extends Location {
+    @Getter
+    @Setter
+    public class StatementLocation extends Location {
 
         private final String method;
         private final String type;
@@ -121,7 +138,10 @@ public class EntityMatchingJSON {
         }
     }
 
+    @Getter
+    @Setter
     public class Location {
+
         private final String filePath;
         private final int startLine;
         private final int endLine;
