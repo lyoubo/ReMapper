@@ -1,6 +1,7 @@
 package org.remapper.util;
 
 import org.eclipse.jdt.core.Flags;
+import org.eclipse.jdt.core.compiler.IProblem;
 import org.eclipse.jdt.core.dom.*;
 import org.remapper.dto.*;
 import org.remapper.service.JDTService;
@@ -18,8 +19,12 @@ public class JDTServiceImpl implements JDTService {
     @Override
     public RootNode parseFileDNT(String filePath, String fileContent) {
         ASTParser parser = ASTParserUtils.getASTParser();
-        parser.setSource(fileContent.toCharArray());
+        char[] charArray = fileContent.toCharArray();
+        parser.setSource(charArray);
         CompilationUnit cu = (CompilationUnit) parser.createAST(null);
+        String maxRecommendedVersionFromProblems = getMaxRecommendedVersionFromProblems(cu);
+        if (maxRecommendedVersionFromProblems != null)
+            cu = ASTParserUtils.getCompilationUnit(maxRecommendedVersionFromProblems, parser, charArray);
         PackageDeclaration packageDeclaration = cu.getPackage();
         String container = packageDeclaration != null ? packageDeclaration.getName().getFullyQualifiedName() : "";
         RootNode rootNode = new RootNode(cu, filePath, cu);
@@ -70,6 +75,25 @@ public class JDTServiceImpl implements JDTService {
             }
         }
         return rootNode;
+    }
+
+    private static String getMaxRecommendedVersionFromProblems(CompilationUnit compilationUnit) {
+        IProblem[] problems = compilationUnit.getProblems();
+        String result = null;
+        for (IProblem problem : problems) {
+            String[] arguments = problem.getArguments();
+            if (arguments != null && arguments.length > 1) {
+                try {
+                    double value = Double.parseDouble(arguments[1]);
+                    if (result == null || value > Double.parseDouble(result)) {
+                        result = arguments[1];
+                    }
+                } catch (NumberFormatException e) {
+//					System.out.println("Invalid number format in arguments: " + arguments[1]);
+                }
+            }
+        }
+        return result;
     }
 
     /**

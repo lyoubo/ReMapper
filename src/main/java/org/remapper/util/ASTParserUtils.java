@@ -3,6 +3,7 @@ package org.remapper.util;
 import org.eclipse.jdt.core.JavaCore;
 import org.eclipse.jdt.core.dom.AST;
 import org.eclipse.jdt.core.dom.ASTParser;
+import org.eclipse.jdt.core.dom.CompilationUnit;
 
 import java.util.Map;
 
@@ -58,5 +59,18 @@ public class ASTParserUtils {
         parser.setStatementsRecovery(true);
         parser.setUnitName("unitName");
         return parser;
+    }
+
+    public static CompilationUnit getCompilationUnit(String javaCoreVersion, ASTParser parser, char[] charArray) {
+        Map<String, String> options = JavaCore.getOptions();
+        options.put(JavaCore.COMPILER_CODEGEN_TARGET_PLATFORM, javaCoreVersion);
+        options.put(JavaCore.COMPILER_SOURCE, javaCoreVersion);
+        options.put(JavaCore.COMPILER_COMPLIANCE, javaCoreVersion);
+        parser.setCompilerOptions(options);
+        parser.setResolveBindings(false);
+        parser.setKind(ASTParser.K_COMPILATION_UNIT);
+        parser.setStatementsRecovery(true);
+        parser.setSource(charArray);
+        return (CompilationUnit) parser.createAST(null);
     }
 }

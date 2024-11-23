@@ -1,6 +1,7 @@
 package org.remapper;
 
-import com.google.gson.*;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import org.eclipse.jgit.lib.Repository;
 import org.remapper.dto.EntityMatchingJSON;
 import org.remapper.dto.LocationDeserializer;
