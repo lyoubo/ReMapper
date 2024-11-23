@@ -691,12 +691,12 @@ In order to use ReMapper as a maven dependency in your project, add the followin
     <dependency>
       <groupId>io.github.lyoubo</groupId>
       <artifactId>remapper</artifactId>
-      <version>2.4.0</version>
+      <version>2.4.1</version>
     </dependency>
 
 **build.gradle**
 
-    implementation 'io.github.lyoubo:remapper:2.4.0'
+    implementation 'io.github.lyoubo:remapper:2.4.1'
 
 # How to cite ReMapper
 
