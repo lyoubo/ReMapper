@@ -24,6 +24,12 @@ public class DiceFunction {
                 List<ChildNode> body1 = jdtService.getDescendants(declaration1.getBody());
                 List<ChildNode> body2 = jdtService.getDescendants(declaration2.getBody());
                 if (!body1.isEmpty() && !body2.isEmpty() && body1.size() * 2 < list1.size() && body2.size() * 2 < list2.size() &&
+                        body1.toString().equals(body2.toString()) && leafBefore.getName().equals(leafCurrent.getName()) &&
+                        leafBefore.getParent().getName().equals(leafCurrent.getParent().getName()) && declaration1.getReturnType2() != null &&
+                        declaration2.getReturnType2() != null && declaration1.getReturnType2().toString().equals(declaration2.getReturnType2().toString())) {
+                    return 1.0;
+                }
+                if (!body1.isEmpty() && !body2.isEmpty() && body1.size() * 2 < list1.size() && body2.size() * 2 < list2.size() &&
                         !leafBefore.getName().equals(leafCurrent.getName())) {
                     list1 = body1;
                     list2 = body2;
