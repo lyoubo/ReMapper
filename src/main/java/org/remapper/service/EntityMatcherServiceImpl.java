@@ -35,12 +35,6 @@ public class EntityMatcherServiceImpl implements EntityMatcherService {
         } finally {
             walk.close();
             walk.dispose();
-            try {
-                gitService.resetHard(repository);
-                gitService.checkoutBranch(repository);
-            } catch (Exception e) {
-                handler.handleException(commitId, e);
-            }
         }
     }
 
@@ -92,11 +86,6 @@ public class EntityMatcherServiceImpl implements EntityMatcherService {
         } finally {
             walk.close();
             walk.dispose();
-            try {
-                gitService.resetHard(repository);
-                gitService.checkoutBranch(repository);
-            } catch (Exception ignore) {
-            }
         }
     }
 
@@ -115,11 +104,6 @@ public class EntityMatcherServiceImpl implements EntityMatcherService {
         } finally {
             walk.close();
             walk.dispose();
-            try {
-                gitService.resetHard(repository);
-                gitService.checkoutBranch(repository);
-            } catch (Exception ignore) {
-            }
         }
     }
 

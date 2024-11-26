@@ -68,7 +68,6 @@ public class SoftwareEntityMatcherService {
 
         String commitId = currentCommit.getId().getName();
         String projectPath = repository.getWorkTree().getPath();
-        gitService.resetHard(repository);
         gitService.checkoutCurrent(repository, commitId);
         populateCurrentDependencies(matchPair, fileContentsCurrent, projectPath, modifiedFiles, renamedFiles, addedFiles);
         gitService.resetHard(repository);
@@ -121,7 +120,6 @@ public class SoftwareEntityMatcherService {
 
         String endCommitId = endCommit.getId().getName();
         String projectPath = repository.getWorkTree().getPath();
-        gitService.resetHard(repository);
         gitService.checkoutCurrent(repository, endCommitId);
         populateCurrentDependencies(matchPair, fileContentsCurrent, projectPath, modifiedFiles, renamedFiles, addedFiles);
         gitService.resetHard(repository);
