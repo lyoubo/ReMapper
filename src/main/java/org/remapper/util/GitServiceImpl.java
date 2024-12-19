@@ -124,7 +124,7 @@ public class GitServiceImpl implements GitService {
         for (ObjectId newRef : currentRemoteRefs) {
             walk.markStart(walk.parseCommit(newRef));
         }
-        walk.setRevFilter(commitsFilter);
+//        walk.setRevFilter(commitsFilter);
         return walk;
     }
 
@@ -133,10 +133,13 @@ public class GitServiceImpl implements GitService {
             throws Exception {
         Ref refFrom = repository.findRef(startTag);
         Ref refTo = repository.findRef(endTag);
-        try (Git git = new Git(repository)) {
+        try (Git git = new Git(repository); RevWalk walk = new RevWalk(repository)) {
+            RevCommit start = walk.parseCommit(getActualRefObjectId(refFrom));
+            int commitTime = start.getCommitTime();
             List<RevCommit> revCommits = StreamSupport.stream(git.log().addRange(getActualRefObjectId(refFrom), getActualRefObjectId(refTo)).call()
                             .spliterator(), false)
-                    .filter(r -> r.getParentCount() == 1)
+//                    .filter(r -> r.getParentCount() == 1)
+                    .filter(r -> r.getCommitTime() > commitTime)
                     .collect(Collectors.toList());
             Collections.reverse(revCommits);
             return revCommits;
@@ -263,10 +266,13 @@ public class GitServiceImpl implements GitService {
             throws Exception {
         ObjectId from = repository.resolve(startCommitId);
         ObjectId to = repository.resolve(endCommitId);
-        try (Git git = new Git(repository)) {
+        try (Git git = new Git(repository); RevWalk walk = new RevWalk(repository)) {
+            RevCommit commit = walk.parseCommit(from);
+            int commitTime = commit.getCommitTime();
             List<RevCommit> revCommits = StreamSupport.stream(git.log().addRange(from, to).call()
                             .spliterator(), false)
-                    .filter(r -> r.getParentCount() == 1)
+//                    .filter(r -> r.getParentCount() == 1)
+                    .filter(r -> r.getCommitTime() > commitTime)
                     .collect(Collectors.toList());
             Collections.reverse(revCommits);
             return revCommits;
@@ -376,7 +382,7 @@ public class GitServiceImpl implements GitService {
     @Override
     public Iterable<RevCommit> getAllCommits(Repository repository) throws GitAPIException {
         try (Git git = new Git(repository)) {
-            LogCommand log = git.log().setRevFilter(commitsFilter);
+            LogCommand log = git.log();
             return log.call();
         }
     }
