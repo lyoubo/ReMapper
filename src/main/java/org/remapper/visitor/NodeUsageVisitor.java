@@ -123,7 +123,14 @@ public class NodeUsageVisitor extends ASTVisitor {
         if (iBinding instanceof IVariableBinding) {
             IVariableBinding variableBinding = (IVariableBinding) iBinding;
             if (variableBinding.isField() || variableBinding.isEnumConstant())
-                return visit(variableBinding);
+                visit(variableBinding);
+        }
+        Name qualifier = node.getQualifier();
+        IBinding iBinding1 = qualifier.resolveBinding();
+        if (iBinding1 instanceof IVariableBinding) {
+            IVariableBinding variableBinding = (IVariableBinding) iBinding1;
+            if (variableBinding.isField() || variableBinding.isEnumConstant())
+                visit(variableBinding);
         }
         return true;
     }
